@@ -1,0 +1,8 @@
+module Dependabot
+  module Uv
+    class FileFetcher < ::Dependabot::Python::SharedFileFetcher
+      def self.ecosystem_specific_required_files: () -> []
+      def self.required_files_message: () -> "Repo must contain a requirements.txt, uv.lock, requirements.in, or pyproject.toml"
+    end
+  end
+end

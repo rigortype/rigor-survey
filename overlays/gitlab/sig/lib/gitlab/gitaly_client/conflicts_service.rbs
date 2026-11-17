@@ -1,0 +1,10 @@
+module Gitlab
+  module GitalyClient
+    class ConflictsService
+      def initialize: (untyped, untyped, untyped) -> void
+      def list_conflict_files: (?allow_tree_conflicts: untyped, ?skip_content: untyped) -> Gitlab::GitalyClient::ConflictFilesStitcher
+      def conflicts?: () -> (false | true)
+      def resolve_conflicts: (untyped, untyped, untyped, untyped) -> nil
+    end
+  end
+end

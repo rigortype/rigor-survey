@@ -1,0 +1,9 @@
+module Gitlab
+  module Checks
+    module FileSizeCheck
+      class HookEnvironmentAwareAnyOversizedBlobs
+        def initialize: (project: untyped, changes: untyped, file_size_limit_megabytes: untyped) -> void
+      end
+    end
+  end
+end

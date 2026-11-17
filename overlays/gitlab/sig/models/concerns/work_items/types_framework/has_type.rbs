@@ -1,0 +1,8 @@
+module WorkItems
+  module TypesFramework
+    module HasType
+      def work_item_type: () -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def exported_work_item_type: () -> Hash[String, untyped]
+    end
+  end
+end

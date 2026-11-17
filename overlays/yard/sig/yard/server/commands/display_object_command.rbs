@@ -1,0 +1,9 @@
+module YARD
+  module Server
+    module Commands
+      class DisplayObjectCommand < ::YARD::Server::Commands::LibraryCommand
+        def not_found: () -> String
+      end
+    end
+  end
+end

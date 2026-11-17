@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        def self.select_views: (untyped) -> (Array[singleton(Gitlab::Database::Diagnostics::Console::Views::AutovacuumSettings) | singleton(Gitlab::Database::Diagnostics::Console::Views::PlannerStatistics) | singleton(Gitlab::Database::Diagnostics::Console::Views::SchemaResolution) | singleton(Gitlab::Database::Diagnostics::Console::Views::Timeouts)] | [singleton(Gitlab::Database::Diagnostics::Console::Views::SchemaResolution), singleton(Gitlab::Database::Diagnostics::Console::Views::Timeouts), singleton(Gitlab::Database::Diagnostics::Console::Views::AutovacuumSettings), singleton(Gitlab::Database::Diagnostics::Console::Views::PlannerStatistics)])
+      end
+    end
+  end
+end

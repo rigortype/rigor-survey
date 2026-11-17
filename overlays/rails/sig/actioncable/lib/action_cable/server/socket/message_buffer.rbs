@@ -1,0 +1,12 @@
+module ActionCable
+  module Server
+    class Socket
+      class MessageBuffer
+        def initialize: (untyped) -> void
+        def processing?: () -> (nil | true)
+        def process!: () -> nil
+        def buffered_messages: () -> Array[untyped]
+      end
+    end
+  end
+end

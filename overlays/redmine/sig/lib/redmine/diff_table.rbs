@@ -1,0 +1,6 @@
+module Redmine
+  class DiffTable < ::Array[untyped]
+    def initialize: (?untyped, ?untyped) -> void
+    def add_line: (untyped) -> (false | true)
+  end
+end

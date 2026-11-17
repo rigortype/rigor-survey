@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class BatchCounter
+      def initialize: (untyped, ?column: Symbol, ?operation: Symbol, ?operation_args: untyped, ?max_allowed_loops: untyped) -> void
+      def count_with_timeout: (?batch_size: untyped, ?mode: untyped, ?start: untyped, ?finish: untyped, ?timeout: untyped, ?partial_results: untyped) -> ({ status: :bad_config } | { status: :cancelled } | { status: :completed, count: untyped } | { status: :timeout, partial_results: untyped, continue_from: untyped })
+    end
+  end
+end

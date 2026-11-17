@@ -1,0 +1,5 @@
+module DependencyProxy
+  class Manifest < ::ApplicationRecord
+    def self.find_by_file_name_or_digest: (file_name: untyped, digest: untyped) -> (DependencyProxy::Manifest | nil)
+  end
+end

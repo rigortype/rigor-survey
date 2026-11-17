@@ -1,0 +1,4 @@
+class StatusFilter
+  def initialize: (untyped, untyped) -> void
+  def filter_state_for_quote: () -> ("blocked_account" | "blocked_domain" | "muted_account" | "unauthorized" | nil)
+end

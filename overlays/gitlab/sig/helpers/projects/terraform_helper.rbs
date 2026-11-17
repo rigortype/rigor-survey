@@ -1,0 +1,5 @@
+module Projects
+  module TerraformHelper
+    def js_terraform_list_data: (untyped, untyped) -> { empty_state_image: untyped, project_path: untyped, terraform_admin: untyped, access_tokens_path: untyped, username: untyped, terraform_api_url: String }
+  end
+end

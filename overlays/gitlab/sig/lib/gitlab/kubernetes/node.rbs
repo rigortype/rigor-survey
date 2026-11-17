@@ -1,0 +1,8 @@
+module Gitlab
+  module Kubernetes
+    class Node
+      def initialize: (untyped) -> void
+      def all: () -> Hash[untyped, untyped]
+    end
+  end
+end

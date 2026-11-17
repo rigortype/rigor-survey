@@ -1,0 +1,11 @@
+module Gitlab
+  module Email
+    module Handler
+      class ServiceDeskHandler < ::Gitlab::Email::Handler::BaseHandler
+        def self.gem_handler: () -> :service_desk
+        def initialize: (untyped, String, ?service_desk_key: untyped) -> void
+        def metrics_event: () -> :receive_email_service_desk
+      end
+    end
+  end
+end

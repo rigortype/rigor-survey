@@ -1,0 +1,30 @@
+class Group < ::Namespace
+  def self.sti_name: () -> "Group"
+  def self.supported_keyset_orderings: () -> { name: [:asc] }
+  def self.without_integration: (untyped) -> ActiveRecord::Relation[Group]
+  def self.ids_with_disabled_email: (untyped) -> Set[untyped]
+  def self.project_creation_levels_for_user: (untyped) -> (Array[untyped] | Array[1 | 2 | 4] | [2, 1, 4, nil])
+  def dependency_proxy_image_prefix: () -> String
+  def visibility_level_allowed_by_projects?: (?untyped) -> (false | true)
+  def visibility_level_allowed_by_sub_groups?: (?untyped) -> (false | true)
+  def ldap_synced?: () -> false
+  def system_hook_service: () -> SystemHooksService
+  def descendant_project_members_with_inactive: () -> ActiveRecord::Relation[ProjectMember]
+  def mattermost_team_params: () -> { name: untyped, display_name: untyped, type: "I" | "O" }
+  def related_group_ids: () -> Array[untyped]
+  def hashed_storage?: (untyped) -> false
+  def membership_locked?: () -> false
+  def supports_events?: () -> false
+  def access_level_roles: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40 | 50]
+  def timelogs: () -> ActiveRecord::Relation[Timelog]
+  def use_work_item_url?: () -> (false | true)
+  def has_active_hooks?: (?untyped) -> false
+  def enterprise_user_settings_available?: (?untyped) -> false
+  def mcp_server_setting_available?: () -> false
+  def supports_saved_replies?: () -> false
+  def packages_policy_subject: () -> Packages::Policies::Group
+  def dependency_proxy_for_containers_policy_subject: () -> Packages::Policies::DependencyProxy::Group
+  def notification_group: () -> Group
+  def hook_attrs: () -> { group_name: untyped, group_path: untyped, group_id: untyped, full_path: untyped }
+  def cluster_agents: () -> ActiveRecord::Relation[Clusters::Agent]
+end

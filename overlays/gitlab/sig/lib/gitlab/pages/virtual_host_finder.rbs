@@ -1,0 +1,8 @@
+module Gitlab
+  module Pages
+    class VirtualHostFinder
+      def initialize: (untyped) -> void
+      def execute: () -> (::Pages::VirtualDomain | nil)
+    end
+  end
+end

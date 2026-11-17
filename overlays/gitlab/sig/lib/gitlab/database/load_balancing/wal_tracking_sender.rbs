@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      module WalTrackingSender
+        def wal_locations_by_db_name: () -> Hash[untyped, untyped]
+        def wal_location_sources_by_db_name: () -> Hash[untyped, untyped]
+        def wal_location_source: (untyped) -> (:primary | :replica)
+      end
+    end
+  end
+end

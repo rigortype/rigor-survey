@@ -1,0 +1,6 @@
+module PagesCore
+  module StaticCacheController
+    def disable_static_cache!: () -> true
+    def static_cached?: () -> (false | true)
+  end
+end

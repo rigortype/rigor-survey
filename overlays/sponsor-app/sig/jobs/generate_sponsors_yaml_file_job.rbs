@@ -1,0 +1,14 @@
+class GenerateSponsorsYamlFileJob < ::ApplicationJob
+  def perform: (Conference, ?push: bool) -> void
+  def repo: () -> Conference::GithubRepo?
+  def data: () -> Hash[String, Hash[Symbol, untyped]]?
+  def events_data: () -> Array[Hash[Symbol, untyped]]
+  def yaml_data: () -> String?
+  def json_data: () -> String?
+  def push_to_github: () -> void
+  def self.get_octokit: (String) -> Octokit::Client
+  class GitHubPusher
+    def initialize: (conference: untyped, filepath: String, content: String, last_editing_history_id: Integer, last_event_editing_history_id: nil, push_id: Integer, ?build_summary: untyped) -> void
+    def push: () -> void
+  end
+end

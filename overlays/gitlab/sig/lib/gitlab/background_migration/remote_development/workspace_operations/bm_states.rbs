@@ -1,0 +1,12 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module WorkspaceOperations
+        module BmStates
+          def valid_desired_state?: (untyped) -> (false | true)
+          def valid_actual_state?: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Gitlab
+  class AppTextLogger < ::Gitlab::Logger
+    def self.file_name_noext: () -> "application"
+    def format_message: (untyped, untyped, untyped, untyped) -> String
+  end
+end

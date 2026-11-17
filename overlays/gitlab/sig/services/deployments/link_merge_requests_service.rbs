@@ -1,0 +1,5 @@
+module Deployments
+  class LinkMergeRequestsService
+    def initialize: (untyped) -> void
+  end
+end

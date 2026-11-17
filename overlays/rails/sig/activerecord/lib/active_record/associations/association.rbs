@@ -1,0 +1,12 @@
+module ActiveRecord
+  module Associations
+    class Association
+      def reset: () -> nil
+      def reload: (?untyped) -> (ActiveRecord::Associations::Association | nil)
+      def reset_scope: () -> nil
+      def async_load_target: () -> nil
+      def marshal_dump: () -> [untyped, untyped]
+      def collection?: () -> false
+    end
+  end
+end

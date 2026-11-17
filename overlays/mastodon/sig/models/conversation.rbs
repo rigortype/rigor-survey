@@ -1,0 +1,5 @@
+class Conversation < ::ApplicationRecord
+  def to_param: () -> (String | nil)
+  def local?: () -> (false | true)
+  def object_type: () -> :conversation
+end

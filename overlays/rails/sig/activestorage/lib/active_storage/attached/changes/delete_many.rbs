@@ -1,0 +1,10 @@
+module ActiveStorage
+  class Attached
+    module Changes
+      class DeleteMany
+        def initialize: (untyped, untyped) -> void
+        def attachables: () -> []
+      end
+    end
+  end
+end

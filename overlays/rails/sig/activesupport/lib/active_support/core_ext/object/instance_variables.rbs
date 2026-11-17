@@ -1,0 +1,3 @@
+class Object
+  def instance_values: () -> Hash[untyped, untyped]
+end

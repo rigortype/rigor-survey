@@ -1,0 +1,11 @@
+module Clusters
+  module Agents
+    module Authorizations
+      module CiAccess
+        class Finder
+          def initialize: (untyped, ?agent: untyped) -> void
+        end
+      end
+    end
+  end
+end

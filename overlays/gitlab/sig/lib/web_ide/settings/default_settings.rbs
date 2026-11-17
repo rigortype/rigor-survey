@@ -1,0 +1,7 @@
+module WebIde
+  module Settings
+    class DefaultSettings
+      def self.default_settings: () -> { vscode_extension_marketplace: [{}, singleton(Hash)], vscode_extension_marketplace_metadata: [{ enabled: false, disabled_reason: :instance_disabled }, singleton(Hash)], vscode_extension_marketplace_home_url: ["", singleton(String)], vscode_extension_marketplace_view_model: [{ enabled: false, reason: :instance_disabled, help_url: "" }, singleton(Hash)] }
+    end
+  end
+end

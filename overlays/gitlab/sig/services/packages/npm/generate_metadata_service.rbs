@@ -1,0 +1,13 @@
+module Packages
+  module Npm
+    class GenerateMetadataService
+      def initialize: (untyped, untyped) -> void
+      def execute: (?only_dist_tags: untyped) -> ServiceResponse
+      def dependencies: () -> Hash[untyped, untyped]
+      def dependency_ids: () -> Hash[untyped, untyped]
+      def tags: () -> Hash[untyped, untyped]
+      def tags_updated_at: () -> Hash[untyped, untyped]
+      def versions: () -> Hash[untyped, untyped]
+    end
+  end
+end

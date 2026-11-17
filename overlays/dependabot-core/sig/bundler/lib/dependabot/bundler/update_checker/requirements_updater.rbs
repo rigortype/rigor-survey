@@ -1,0 +1,15 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, update_strategy: untyped, updated_source: untyped, latest_version: untyped, latest_resolvable_version: untyped) -> void
+        def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+        def latest_version: () -> (Dependabot::Bundler::Version | nil)
+        def latest_resolvable_version: () -> (Dependabot::Bundler::Version | nil)
+        class UnfixableRequirement < ::StandardError
+        end
+      end
+    end
+  end
+end

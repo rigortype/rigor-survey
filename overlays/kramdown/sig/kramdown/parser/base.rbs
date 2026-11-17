@@ -1,0 +1,10 @@
+module Kramdown
+  module Parser
+    class Base
+      def initialize: (untyped, untyped) -> void
+      def warning: (untyped) -> Array[untyped]
+      def warnings: () -> Array[untyped]
+      def root: () -> ::Kramdown::Element
+    end
+  end
+end

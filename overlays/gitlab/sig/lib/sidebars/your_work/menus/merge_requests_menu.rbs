@@ -1,0 +1,14 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class MergeRequestsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "merge-request"
+        def configure_menu_items: () -> false
+        def render?: () -> (false | true)
+        def active_routes: () -> { path: "dashboard#merge_requests" }
+        def has_pill?: () -> true
+        def pill_count_field: () -> "total_merge_requests"
+      end
+    end
+  end
+end

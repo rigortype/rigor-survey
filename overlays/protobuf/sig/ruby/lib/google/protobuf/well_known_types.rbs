@@ -1,0 +1,10 @@
+module Google
+  module Protobuf
+    def self.pack: (untyped, ?untyped) -> Google::Protobuf
+    def to_time: () -> Time
+    def from_time: (untyped) -> Google::Protobuf
+    def from_ruby: (untyped) -> Google::Protobuf
+    def to_h: () -> Hash[untyped, untyped]
+    def self.from_hash: (untyped) -> Struct[untyped]
+  end
+end

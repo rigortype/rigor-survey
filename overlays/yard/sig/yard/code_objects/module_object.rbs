@@ -1,0 +1,7 @@
+module YARD
+  module CodeObjects
+    class ModuleObject < ::YARD::CodeObjects::NamespaceObject
+      def inheritance_tree: (?untyped) -> (Array[untyped] | [YARD::CodeObjects::ModuleObject])
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Resolvers
+  class AuthoredMergeRequestsResolver < ::Resolvers::UserMergeRequestsResolverBase
+    def user_role: () -> :author
+  end
+end

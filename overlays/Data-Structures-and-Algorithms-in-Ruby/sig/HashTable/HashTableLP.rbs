@@ -1,0 +1,8 @@
+class HashTableLP
+  def initialize: (untyped) -> void
+  def add: (untyped, untyped) -> (false | true)
+  def add2: (untyped) -> (false | true)
+  def find: (untyped) -> (false | true)
+  def remove: (untyped) -> (false | true)
+  def printHash: () -> nil
+end

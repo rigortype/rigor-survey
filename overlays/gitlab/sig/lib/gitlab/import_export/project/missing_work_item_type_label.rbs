@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class MissingWorkItemTypeLabel
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

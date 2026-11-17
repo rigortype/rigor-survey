@@ -1,0 +1,12 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Handlers
+        class BaseHandler
+          def initialize: (untyped, untyped, untyped) -> void
+          def build_relationships: () -> ([Gitlab::Reflections::Relationships::Relationship] | [])
+        end
+      end
+    end
+  end
+end

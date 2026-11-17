@@ -1,0 +1,5 @@
+class SignatureParser
+  def self.parse: (untyped) -> Hash[untyped, untyped]
+  class ParsingError < ::StandardError
+  end
+end

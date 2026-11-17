@@ -1,0 +1,12 @@
+module Types
+  class QueryType < ::Types::BaseObject
+    def design_management: () -> Types::QueryType::DesignManagementObject
+    def query_complexity: () -> GraphQL::Query
+    class DesignManagementObject < ::Struct[untyped]
+      def issue: () -> untyped
+      def issue=: (untyped) -> untyped
+      def self.new: (?issue: untyped) -> instance | (?untyped issue) -> instance
+      def self.[]: (?issue: untyped) -> instance | (?untyped issue) -> instance
+    end
+  end
+end

@@ -1,0 +1,32 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class AbstractAdapter
+      def ractor_connection_profile: () -> { proxy_class: untyped, adapter_class: singleton(ActiveRecord::ConnectionAdapters::AbstractAdapter), adapter_name: untyped, prepared_statements: untyped, table_definition_class: singleton(ActiveRecord::ConnectionAdapters::TableDefinition), arel_visitor_class: singleton(Arel::Visitors::ToSql), bind_params_length: untyped, capabilities: { supports_advisory_locks?: untyped, supports_bulk_alter?: untyped, supports_check_constraints?: untyped, supports_comments?: untyped, supports_comments_in_create?: untyped, supports_common_table_expressions?: untyped, supports_concurrent_connections?: untyped, supports_ddl_transactions?: untyped, supports_deferrable_constraints?: untyped, supports_disabling_indexes?: untyped, supports_enforced_foreign_keys?: untyped, supports_exclusion_constraints?: untyped, supports_explain?: untyped, supports_expression_index?: untyped, supports_extensions?: untyped, supports_foreign_keys?: untyped, supports_foreign_tables?: untyped, supports_index_include?: untyped, supports_index_sort_order?: untyped, supports_indexes_in_create?: untyped, supports_insert_conflict_target?: untyped, supports_insert_on_duplicate_skip?: untyped, supports_insert_on_duplicate_update?: untyped, supports_insert_returning?: untyped, supports_json?: untyped, supports_lazy_transactions?: untyped, supports_materialized_views?: untyped, supports_nulls_not_distinct?: untyped, supports_partial_index?: untyped, supports_partitioned_indexes?: untyped, supports_restart_db_transaction?: untyped, supports_savepoints?: untyped, supports_transaction_isolation?: untyped, supports_unique_constraints?: untyped, supports_update_returning?: untyped, supports_validate_constraints?: untyped, supports_views?: untyped, supports_virtual_columns?: untyped } }
+      def self.build_read_query_regexp: (*untyped) -> Regexp
+      def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+      def inspect: () -> String
+      def lock_thread=: (untyped) -> (ActiveSupport::Concurrency::ThreadMonitor | Monitor | singleton(ActiveSupport::Concurrency::NullLock))
+      def valid_type?: (untyped) -> (false | true)
+      def steal!: () -> false
+      def savepoint_errors_invalidate_transactions?: () -> false
+      def prefetch_primary_key?: (?untyped) -> false
+      def supports_datetime_with_precision?: () -> true
+      def create_or_find_by_lock: () -> true
+      def connected?: () -> (false | true)
+      def verify: () -> (nil | true)
+      def verify!: () -> (nil | true)
+      def connect!: () -> ActiveRecord::ConnectionAdapters::AbstractAdapter
+      def clean!: () -> ActiveRecord::ConnectionAdapters::AbstractAdapter
+      def verified?: () -> (false | nil | true)
+      def needs_reconnect?: () -> (false | true)
+      def self.valid_type?: (untyped) -> (false | true)
+      def attempt_retry: (untyped, untyped) -> (false | true)
+      def downgrade_connection_after_error: (untyped) -> (nil | true)
+      def visitor: () -> Arel::Visitors::ToSql
+      def lock: () -> (ActiveSupport::Concurrency::ThreadMonitor | Monitor | nil | singleton(ActiveSupport::Concurrency::NullLock))
+      class Version
+        def initialize: (untyped, ?untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Matching
+      class RunnerMatcher
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

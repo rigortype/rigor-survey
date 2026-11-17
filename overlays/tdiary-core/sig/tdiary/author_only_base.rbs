@@ -1,0 +1,19 @@
+module TDiary
+  class TDiaryAuthorOnlyBase < ::TDiary::TDiaryBase
+    def csrf_protection_get_is_okay: () -> false
+    def self.csrf_origin_of: (untyped) -> (String | nil)
+    def self.csrf_fetch_verdict: (untyped, untyped, untyped) -> (:cross_site | :same_origin | :unknown)
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryFormPlugin < ::TDiary::TDiaryAuthorOnlyBase
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryConf < ::TDiary::TDiaryAuthorOnlyBase
+    def csrf_protection_get_is_okay: () -> true
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiarySaveConf < ::TDiary::TDiaryConf
+    def csrf_protection_get_is_okay: () -> false
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

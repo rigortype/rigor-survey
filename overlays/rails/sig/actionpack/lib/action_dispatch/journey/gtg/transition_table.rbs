@@ -1,0 +1,12 @@
+module ActionDispatch
+  module Journey
+    module GTG
+      class TransitionTable
+        def add_accepting: (untyped) -> true
+        def move: (untyped, untyped, untyped, untyped, untyped) -> Array[untyped]
+        def as_json: (?untyped) -> { regexp_states: untyped, string_states: untyped, stdparam_states: untyped, accepting: untyped }
+        def memos: () -> Hash
+      end
+    end
+  end
+end

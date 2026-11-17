@@ -1,0 +1,7 @@
+module ActionText
+  module Attachments
+    module TrixConversion
+      def to_trix_attachment: (?untyped) -> ActionText::TrixAttachment
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Authz
+  module GranularScopes
+    class Builder
+      def initialize: (untyped, boundary_rule: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Integrations
+  module Base
+    module Discord
+      def configurable_channels?: () -> true
+      def channel_limit_per_event: () -> 1
+      def mask_configurable_channels?: () -> true
+    end
+  end
+end

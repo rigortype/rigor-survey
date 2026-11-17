@@ -1,0 +1,17 @@
+module Gitlab
+  module HealthChecks
+    class Result < ::Struct[untyped]
+      def name: () -> untyped
+      def success: () -> untyped
+      def message: () -> untyped
+      def labels: () -> untyped
+      def name=: (untyped) -> untyped
+      def success=: (untyped) -> untyped
+      def message=: (untyped) -> untyped
+      def labels=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?success: untyped, ?message: untyped, ?labels: untyped) -> instance | (?untyped name, ?untyped success, ?untyped message, ?untyped labels) -> instance
+      def self.[]: (?name: untyped, ?success: untyped, ?message: untyped, ?labels: untyped) -> instance | (?untyped name, ?untyped success, ?untyped message, ?untyped labels) -> instance
+      def payload: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,4 @@
+module RelativePositioning
+  def check_repositioning_allowed!: () -> nil
+  def model_class: () -> singleton(RelativePositioning)
+end

@@ -1,0 +1,7 @@
+module Redmine
+  module Views
+    class ApiTemplateHandler
+      def self.call: (untyped, ?untyped) -> String
+    end
+  end
+end

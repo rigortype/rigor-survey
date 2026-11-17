@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class MembersMapper
+      def initialize: (exported_members: untyped, user: untyped, importable: untyped, ?default_member: (false | true)) -> void
+      def map: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    class Requirement < ::Dependabot::Requirement
+      def initialize: (*untyped) -> void
+    end
+  end
+end

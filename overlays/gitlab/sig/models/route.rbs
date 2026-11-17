@@ -1,0 +1,3 @@
+class Route < ::ApplicationRecord
+  def conflicting_redirects: () -> ActiveRecord::Relation[RedirectRoute]
+end

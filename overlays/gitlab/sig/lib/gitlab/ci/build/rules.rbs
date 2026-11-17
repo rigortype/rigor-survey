@@ -1,0 +1,31 @@
+module Gitlab
+  module Ci
+    module Build
+      class Rules
+        def initialize: (untyped, default_when: String) -> void
+        def evaluate: (untyped, untyped) -> Gitlab::Ci::Build::Rules::Result
+        class Result < ::Struct[untyped]
+          def when: () -> untyped
+          def start_in: () -> untyped
+          def allow_failure: () -> untyped
+          def variables: () -> untyped
+          def needs: () -> untyped
+          def errors: () -> untyped
+          def auto_cancel: () -> untyped
+          def interruptible: () -> untyped
+          def when=: (untyped) -> untyped
+          def start_in=: (untyped) -> untyped
+          def allow_failure=: (untyped) -> untyped
+          def variables=: (untyped) -> untyped
+          def needs=: (untyped) -> untyped
+          def errors=: (untyped) -> untyped
+          def auto_cancel=: (untyped) -> untyped
+          def interruptible=: (untyped) -> untyped
+          def self.new: (?when: untyped, ?start_in: untyped, ?allow_failure: untyped, ?variables: untyped, ?needs: untyped, ?errors: untyped, ?auto_cancel: untyped, ?interruptible: untyped) -> instance
+          def self.[]: (?when: untyped, ?start_in: untyped, ?allow_failure: untyped, ?variables: untyped, ?needs: untyped, ?errors: untyped, ?auto_cancel: untyped, ?interruptible: untyped) -> instance
+          def build_attributes: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

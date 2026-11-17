@@ -1,0 +1,7 @@
+module Concurrent
+  class MVar < ::Concurrent::Synchronization::Object
+    def initialize: (?untyped, ?untyped) -> void
+    def try_put!: (Integer) -> (false | true)
+    def full?: () -> (false | true)
+  end
+end

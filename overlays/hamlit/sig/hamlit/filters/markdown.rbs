@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Markdown < ::Hamlit::Filters::TiltBase
+      def compile: (untyped) -> (Array[untyped] | [:dynamic, String])
+    end
+  end
+end

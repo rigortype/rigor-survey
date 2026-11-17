@@ -1,0 +1,13 @@
+module Admin
+  module Metrics
+    class Measure
+      class InstanceMediaAttachmentsMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def self.with_params?: () -> true
+        def key: () -> "instance_media_attachments"
+        def unit: () -> "bytes"
+        def value_to_human_value: (untyped) -> (String | nil)
+        def total_in_time_range?: () -> false
+      end
+    end
+  end
+end

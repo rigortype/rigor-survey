@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Policy
+        class Specification
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

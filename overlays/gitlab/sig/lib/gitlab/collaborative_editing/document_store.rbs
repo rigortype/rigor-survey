@@ -1,0 +1,16 @@
+module Gitlab
+  module CollaborativeEditing
+    class DocumentStore
+      def initialize: (untyped) -> void
+      def append: (String) -> Gitlab::CollaborativeEditing::DocumentStore::Result
+      class Result < ::Struct[untyped]
+        def full: () -> untyped
+        def compaction_token: () -> untyped
+        def full=: (untyped) -> untyped
+        def compaction_token=: (untyped) -> untyped
+        def self.new: (?full: untyped, ?compaction_token: untyped) -> instance
+        def self.[]: (?full: untyped, ?compaction_token: untyped) -> instance
+      end
+    end
+  end
+end

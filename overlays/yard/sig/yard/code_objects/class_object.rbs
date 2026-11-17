@@ -1,0 +1,12 @@
+module YARD
+  module CodeObjects
+    class ClassObject < ::YARD::CodeObjects::NamespaceObject
+      def initialize: (Symbol, String, *untyped) ?{ (*untyped) -> untyped } -> void
+      def is_exception?: () -> (false | true)
+      def inheritance_tree: (?untyped) -> Array[untyped]
+      def inherited_meths: (?untyped) -> Array[untyped]
+      def inherited_constants: () -> Array[untyped]
+      def superclass=: (untyped) -> nil
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        module Limit
+          class ActiveJobs < ::Gitlab::Ci::Pipeline::Chain::Base
+            def perform!: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+          end
+        end
+      end
+    end
+  end
+end

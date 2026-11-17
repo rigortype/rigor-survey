@@ -1,0 +1,3 @@
+module ResolvableDiscussion
+  def resolved_by_push?: () -> (false | true)
+end

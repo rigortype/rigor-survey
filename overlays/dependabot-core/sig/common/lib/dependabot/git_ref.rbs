@@ -1,0 +1,7 @@
+module Dependabot
+  class GitRef
+    def initialize: (name: untyped, commit_sha: untyped, ?tag_sha: untyped, ?ref_sha: untyped, ?ref_type: untyped) -> void
+    def ==: (untyped) -> (false | true)
+    def to_h: () -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,5 @@
+module Mail
+  class LoggerDelivery
+    def initialize: (untyped) -> void
+  end
+end

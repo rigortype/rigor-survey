@@ -1,0 +1,7 @@
+module Gitlab
+  class GitPostReceive
+    def initialize: (untyped, untyped, untyped, ?{}, ?untyped) -> void
+    def changes: () -> Gitlab::Git::Changes
+    def push_options: () -> {}
+  end
+end

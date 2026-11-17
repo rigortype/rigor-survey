@@ -1,0 +1,8 @@
+module Dependabot
+  class Job
+    class BlockedVersion < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::BlockedVersion
+      def usable?: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Dependabot
+  module Julia
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> (Array[Dependabot::Julia::Requirement] | [Dependabot::Julia::Requirement])
+      def self.parse_compound_constraint: (untyped) -> [Dependabot::Julia::Requirement]
+      def self.parse_requirements: (untyped) -> Array[Dependabot::Julia::Requirement]
+      def admits?: (untyped) -> (false | true)
+      def self.normalize_julia_constraint: (untyped) -> (Array[String] | [untyped])
+      def self.parse_version_parts: (untyped) -> [untyped, untyped, untyped, untyped, untyped]
+      def self.caret_upper_bound: (untyped, untyped, untyped, untyped) -> ("0.1.0" | "1.0.0" | String)
+      def self.normalize_caret_constraint: (untyped) -> [String, String]
+      def self.tilde_upper_bound: (untyped, untyped, untyped, untyped) -> ("0.1.0" | String)
+      def self.normalize_tilde_constraint: (untyped) -> [String, String]
+      def self.normalize_range_constraint: (untyped) -> [String, String]
+    end
+  end
+end

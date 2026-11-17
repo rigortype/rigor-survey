@@ -1,0 +1,9 @@
+module Redmine
+  module Views
+    module Builders
+      class Structure < ::BasicObject
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Admin
+  class AppealFilter
+    def initialize: (untyped) -> void
+    def results: () -> ActiveRecord::Relation[Appeal]
+  end
+end

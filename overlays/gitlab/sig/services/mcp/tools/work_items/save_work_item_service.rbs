@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module WorkItems
+      class SaveWorkItemService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["create_work_item", "update_work_item"]
+      end
+    end
+  end
+end

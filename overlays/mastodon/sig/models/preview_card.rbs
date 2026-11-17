@@ -1,0 +1,9 @@
+class PreviewCard < ::ApplicationRecord
+  def local?: () -> false
+  def history: () -> Trends::History
+  def authors: () -> Array[PreviewCard::Author]
+  def self.image_styles: (untyped) -> ({ original: Hash[untyped, untyped] } | { original: { pixels: 230400, file_geometry_parser: singleton(FastGeometryParser), convert_options: "-coalesce", blurhash: { x_comp: 4, y_comp: 4 } } })
+  class Author < ::ActiveModelSerializers::Model
+    def initialize: (untyped) -> void
+  end
+end

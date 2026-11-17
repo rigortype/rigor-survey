@@ -1,0 +1,5 @@
+class Queue
+  class Node
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

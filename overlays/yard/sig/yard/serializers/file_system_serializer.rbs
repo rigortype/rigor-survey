@@ -1,0 +1,8 @@
+module YARD
+  module Serializers
+    class FileSystemSerializer < ::YARD::Serializers::Base
+      def initialize: (?untyped) -> void
+      def exists?: (untyped) -> (false | true)
+    end
+  end
+end

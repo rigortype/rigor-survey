@@ -1,0 +1,5 @@
+class GroupGroupLink < ::ApplicationRecord
+  def self.access_options: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40 | 50]
+  def self.default_access: () -> 30
+  def human_access: () -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+end

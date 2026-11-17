@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Type
+    module QueryPredicates
+      def query_predicates?: () -> true
+    end
+  end
+end

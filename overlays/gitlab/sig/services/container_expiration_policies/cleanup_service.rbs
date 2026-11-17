@@ -1,0 +1,6 @@
+module ContainerExpirationPolicies
+  class CleanupService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

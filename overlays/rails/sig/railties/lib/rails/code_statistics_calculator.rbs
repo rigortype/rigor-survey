@@ -1,0 +1,6 @@
+module Rails
+  class CodeStatisticsCalculator
+    def initialize: (?untyped, ?untyped, ?untyped, ?untyped) -> void
+    def add_by_io: (untyped, untyped) -> nil
+  end
+end

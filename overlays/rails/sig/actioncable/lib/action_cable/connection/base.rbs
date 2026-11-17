@@ -1,0 +1,9 @@
+module ActionCable
+  module Connection
+    class Base
+      def initialize: (untyped, untyped) -> void
+      def statistics: () -> { identifier: untyped, started_at: untyped, subscriptions: untyped, request_id: untyped }
+      def subscriptions: () -> ActionCable::Connection::Subscriptions
+    end
+  end
+end

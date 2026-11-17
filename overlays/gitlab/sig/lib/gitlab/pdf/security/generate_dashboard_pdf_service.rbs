@@ -1,0 +1,10 @@
+module Gitlab
+  module PDF
+    module Security
+      class GenerateDashboardPdfService
+        def initialize: (untyped, untyped, untyped) -> void
+        def section_pages: () -> Array[untyped]
+      end
+    end
+  end
+end

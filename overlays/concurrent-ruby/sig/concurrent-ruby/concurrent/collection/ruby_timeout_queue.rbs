@@ -1,0 +1,8 @@
+module Concurrent
+  module Collection
+    class RubyTimeoutQueue < ::Queue[untyped]
+      def initialize: (*untyped) -> void
+      def push: (untyped) -> ConditionVariable
+    end
+  end
+end

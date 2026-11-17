@@ -1,0 +1,8 @@
+module ActionDispatch
+  module Http
+    module MimeNegotiation
+      def variant=: (untyped) -> ActiveSupport::ArrayInquirer
+      def variant: () -> ActiveSupport::ArrayInquirer
+    end
+  end
+end

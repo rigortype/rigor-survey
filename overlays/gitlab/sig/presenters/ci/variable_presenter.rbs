@@ -1,0 +1,5 @@
+module Ci
+  class VariablePresenter < ::Gitlab::View::Presenter::Delegated
+    def placeholder: () -> "PROJECT_VARIABLE"
+  end
+end

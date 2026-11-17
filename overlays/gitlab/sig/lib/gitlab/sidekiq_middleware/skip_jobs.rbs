@@ -1,0 +1,14 @@
+module Gitlab
+  module SidekiqMiddleware
+    class SkipJobs
+      class DatabaseHealthStatusChecker < ::Struct[untyped]
+        def id: () -> untyped
+        def job_class_name: () -> untyped
+        def id=: (untyped) -> untyped
+        def job_class_name=: (untyped) -> untyped
+        def self.new: (?id: untyped, ?job_class_name: untyped) -> instance | (?untyped id, ?untyped job_class_name) -> instance
+        def self.[]: (?id: untyped, ?job_class_name: untyped) -> instance | (?untyped id, ?untyped job_class_name) -> instance
+      end
+    end
+  end
+end

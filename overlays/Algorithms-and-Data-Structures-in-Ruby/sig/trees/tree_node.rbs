@@ -1,0 +1,3 @@
+class Node
+  def initialize: (?val: untyped, ?left: untyped, ?right: untyped) -> void
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Handlers
+        class NullHandler
+          def call: () -> false
+        end
+      end
+    end
+  end
+end

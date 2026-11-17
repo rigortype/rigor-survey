@@ -1,0 +1,15 @@
+module Ci
+  class Runner < ::Ci::ApplicationRecord
+    def self.online_contact_time_deadline: () -> ActiveSupport::TimeWithZone
+    def self.stale_deadline: () -> ActiveSupport::TimeWithZone
+    def self.recent_queue_deadline: () -> ActiveSupport::TimeWithZone
+    def self.order_by: (untyped) -> ActiveRecord::Relation[Ci::Runner]
+    def self.taggings_join_model: () -> singleton(Ci::RunnerTagging)
+    def self.created_runner_prefix: () -> ("glrt-" | String)
+    def runner_matcher: () -> Gitlab::Ci::Matching::RunnerMatcher
+    def deprecated_rest_status: () -> (:never_contacted | :offline | :online | :paused | :stale)
+    def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+    def tick_runner_queue: () -> String
+    def dedicated_gitlab_hosted?: () -> false
+  end
+end

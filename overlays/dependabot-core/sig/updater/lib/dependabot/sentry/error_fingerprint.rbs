@@ -1,0 +1,9 @@
+module Dependabot
+  module Sentry
+    module ErrorFingerprint
+      def self.for: (error: untyped, package_manager: untyped) -> (["excon-eof", untyped, "unknown-call-site" | String] | nil)
+      def self.eof_socket_error?: (untyped) -> (false | true)
+      def self.dependabot_call_site: (untyped) -> (String | nil)
+    end
+  end
+end

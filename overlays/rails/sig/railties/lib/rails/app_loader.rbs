@@ -1,0 +1,5 @@
+module Rails
+  module AppLoader
+    def find_executable: () -> ("bin/rails" | "script/rails" | nil)
+  end
+end

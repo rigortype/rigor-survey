@@ -1,0 +1,7 @@
+module WorkItems
+  module DataSync
+    class BaseCreateService < ::WorkItems::CreateService
+      def initialize: (original_work_item: untyped, operation: untyped, **untyped) -> void
+    end
+  end
+end

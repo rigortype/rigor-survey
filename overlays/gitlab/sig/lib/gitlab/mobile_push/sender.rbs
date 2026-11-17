@@ -1,0 +1,8 @@
+module Gitlab
+  module MobilePush
+    class Sender
+      def initialize: (?untyped) -> void
+      def close: () -> nil
+    end
+  end
+end

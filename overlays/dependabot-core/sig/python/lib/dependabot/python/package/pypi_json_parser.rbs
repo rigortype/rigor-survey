@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    module Package
+      class PypiJsonParser
+        def initialize: (source_url: untyped) -> void
+        def parse: (untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

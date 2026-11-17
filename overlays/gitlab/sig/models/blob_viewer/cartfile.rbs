@@ -1,0 +1,6 @@
+module BlobViewer
+  class Cartfile < ::BlobViewer::DependencyManager
+    def manager_name: () -> "Carthage"
+    def manager_url: () -> "https://github.com/Carthage/Carthage"
+  end
+end

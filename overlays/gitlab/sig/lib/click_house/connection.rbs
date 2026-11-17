@@ -1,0 +1,9 @@
+module ClickHouse
+  class Connection
+    def initialize: (untyped, ?untyped) -> void
+    def version: () -> (String | nil)
+    def database_engine: () -> ("Atomic" | String)
+    def replicated_engine?: () -> (false | true)
+    def table_exists?: (untyped) -> (false | true)
+  end
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class Subscribe < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { work_item: untyped, errors: [] }
+    end
+  end
+end

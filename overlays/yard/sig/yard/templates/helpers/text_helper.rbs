@@ -1,0 +1,11 @@
+module YARD
+  module Templates
+    module Helpers
+      module TextHelper
+        def h: (untyped) -> String
+        def title_align_right: (untyped, ?untyped) -> String
+        def signature: (untyped) -> String
+      end
+    end
+  end
+end

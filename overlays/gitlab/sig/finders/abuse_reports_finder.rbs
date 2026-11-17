@@ -1,0 +1,3 @@
+class AbuseReportsFinder
+  def initialize: (?untyped, organization: untyped) -> void
+end

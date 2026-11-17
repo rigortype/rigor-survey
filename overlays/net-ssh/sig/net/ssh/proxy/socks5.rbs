@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Proxy
+      class SOCKS5
+        def initialize: (untyped, ?untyped, ?untyped) -> void
+        def open: (untyped, untyped, untyped) -> Socket
+      end
+    end
+  end
+end

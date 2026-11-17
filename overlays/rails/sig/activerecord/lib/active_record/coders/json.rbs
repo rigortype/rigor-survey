@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Coders
+    class JSON
+      def initialize: (?encode_options: untyped, ?decode_options: untyped) -> void
+    end
+  end
+end

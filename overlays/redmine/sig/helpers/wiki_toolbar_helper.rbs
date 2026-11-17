@@ -1,0 +1,3 @@
+module WikiToolbarHelper
+  def wiki_toolbar_button_data: (untyped) -> (Hash[untyped, untyped] | { action: "wiki-toolbar#apply", wiki_toolbar_button_param: untyped } | { action: "wiki-toolbar#help" } | { action: "wiki-toolbar#toggleMenu", wiki_toolbar_menu_param: untyped })
+end

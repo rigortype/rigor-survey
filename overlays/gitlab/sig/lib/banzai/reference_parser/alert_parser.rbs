@@ -1,0 +1,8 @@
+module Banzai
+  module ReferenceParser
+    class AlertParser < ::Banzai::ReferenceParser::BaseParser
+      def self.reference_class: () -> singleton(AlertManagement::Alert)
+      def references_relation: () -> singleton(AlertManagement::Alert)
+    end
+  end
+end

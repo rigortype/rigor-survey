@@ -1,0 +1,11 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Handlers
+        class BelongsToHandler < ::Gitlab::Reflections::Relationships::Handlers::BaseHandler
+          def relationship_attributes: () -> { parent_table: untyped, child_table: untyped, primary_key: untyped, foreign_key: untyped, relationship_type: "many_to_one", child_association: { name: untyped, type: untyped, model: untyped } }
+        end
+      end
+    end
+  end
+end

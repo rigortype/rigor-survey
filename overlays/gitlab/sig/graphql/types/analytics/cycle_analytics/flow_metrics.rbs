@@ -1,0 +1,9 @@
+module Types
+  module Analytics
+    module CycleAnalytics
+      module FlowMetrics
+        def self.[]: (?untyped) -> singleton(Types::BaseObject)
+      end
+    end
+  end
+end

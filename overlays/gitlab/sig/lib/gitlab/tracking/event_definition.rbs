@@ -1,0 +1,11 @@
+module Gitlab
+  module Tracking
+    class EventDefinition
+      def self.paths: () -> [untyped, untyped]
+      def self.load_from_file: (untyped) -> (Gitlab::Tracking::EventDefinition | nil)
+      def self.load_all_from_path: (untyped) -> Array[Gitlab::Tracking::EventDefinition | nil]
+      def initialize: (untyped, ?untyped) -> void
+      def event_selection_rules: () -> Array[untyped]
+    end
+  end
+end

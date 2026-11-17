@@ -1,0 +1,8 @@
+module Gitlab
+  module DataBuilder
+    module Milestone
+      def build: (untyped, untyped) -> { object_kind: "milestone", event_type: "milestone", project: untyped, group: untyped, object_attributes: untyped, action: untyped }
+      def build_sample: (untyped) -> { object_kind: "milestone", event_type: "milestone", project: untyped, group: untyped, object_attributes: untyped, action: "create" }
+    end
+  end
+end

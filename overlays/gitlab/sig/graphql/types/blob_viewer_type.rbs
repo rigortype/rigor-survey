@@ -1,0 +1,6 @@
+module Types
+  class BlobViewerType < ::Types::BaseObject
+    def collapsed: () -> (false | true)
+    def too_large: () -> (false | true)
+  end
+end

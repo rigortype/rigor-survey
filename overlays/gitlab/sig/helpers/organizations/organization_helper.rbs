@@ -1,0 +1,17 @@
+module Organizations
+  module OrganizationHelper
+    def organization_layout_nav: () -> ("organization" | "your_work")
+    def organization_show_app_data: (untyped) -> String
+    def group_settings_create_organization_app_data: (untyped) -> String
+    def organization_new_app_data: () -> String
+    def organization_settings_general_app_data: (untyped) -> String
+    def organization_groups_and_projects_app_data: (untyped) -> String
+    def organization_index_app_data: () -> String
+    def organization_user_app_data: (untyped) -> String
+    def organization_groups_new_app_data: (untyped) -> String
+    def organization_groups_edit_app_data: (untyped, untyped) -> String
+    def admin_organizations_index_app_data: () -> String
+    def organization_projects_edit_app_data: (untyped, untyped) -> String
+    def organization_activity_app_data: (untyped) -> String
+  end
+end

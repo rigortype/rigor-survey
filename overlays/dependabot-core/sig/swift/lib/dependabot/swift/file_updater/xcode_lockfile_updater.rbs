@@ -1,0 +1,11 @@
+module Dependabot
+  module Swift
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class XcodeLockfileUpdater
+        def initialize: (resolved_file: untyped, dependencies: untyped, ?workspace_files: untyped) -> void
+        def updated_lockfile_content: () -> String
+        def lockfile_changed?: () -> (false | true)
+      end
+    end
+  end
+end

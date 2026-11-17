@@ -1,0 +1,10 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class ImportHistoryMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "import"
+        def active_routes: () -> { controller: ["import/bulk_imports", "import/history"], path: "import/github#details" }
+      end
+    end
+  end
+end

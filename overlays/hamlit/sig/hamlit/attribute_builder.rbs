@@ -1,0 +1,8 @@
+module Hamlit
+  module AttributeBuilder
+    def self.build: (untyped, untyped, untyped, untyped, untyped, *untyped) -> String
+    def self.build_data_attribute: (untyped, untyped, untyped, *untyped) -> String
+    def self.flatten_attributes: (untyped) -> Hash[untyped, untyped]
+    def self.merge_all_attrs: (untyped) -> Hash[untyped, untyped]
+  end
+end

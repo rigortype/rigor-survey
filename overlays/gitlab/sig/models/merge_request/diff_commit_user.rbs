@@ -1,0 +1,7 @@
+class MergeRequest < ::ApplicationRecord
+  class DiffCommitUser < ::ApplicationRecord
+    def self.bulk_find: (untyped) -> Array[untyped]
+    def self.bulk_find_or_create: (untyped) -> Hash[[untyped, untyped, untyped], untyped]
+    def self.handle_concurrent_inserts: (untyped, untyped) -> (Array[untyped] | nil)
+  end
+end

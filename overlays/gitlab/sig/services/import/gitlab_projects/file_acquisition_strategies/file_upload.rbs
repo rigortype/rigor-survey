@@ -1,0 +1,9 @@
+module Import
+  module GitlabProjects
+    module FileAcquisitionStrategies
+      class FileUpload
+        def initialize: (params: ({ file: untyped } | {}), ?current_user: untyped) -> void
+      end
+    end
+  end
+end

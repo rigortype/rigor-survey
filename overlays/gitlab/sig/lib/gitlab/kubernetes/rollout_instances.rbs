@@ -1,0 +1,9 @@
+module Gitlab
+  module Kubernetes
+    class RolloutInstances
+      def initialize: ([Gitlab::Kubernetes::Deployment, Gitlab::Kubernetes::Deployment] | [Gitlab::Kubernetes::Deployment], Array[Gitlab::Kubernetes::Pod] | [Gitlab::Kubernetes::Pod, Gitlab::Kubernetes::Pod] | [Gitlab::Kubernetes::Pod]) -> void
+      def deployments: () -> ([Gitlab::Kubernetes::Deployment, Gitlab::Kubernetes::Deployment] | [Gitlab::Kubernetes::Deployment])
+      def pods: () -> (Array[Gitlab::Kubernetes::Pod] | [Gitlab::Kubernetes::Pod, Gitlab::Kubernetes::Pod] | [Gitlab::Kubernetes::Pod])
+    end
+  end
+end

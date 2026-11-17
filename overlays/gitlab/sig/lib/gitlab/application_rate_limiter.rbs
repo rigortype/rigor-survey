@@ -1,0 +1,9 @@
+module Gitlab
+  module ApplicationRateLimiter
+    def self.parent_scope: (untyped) -> ({ group: Group } | { project: Project } | {})
+    def self.validate_overrides!: (untyped, untyped) -> nil
+    def self.validate_override!: (untyped, untyped, untyped) -> nil
+    def self.initialize_filtered_params: () -> ActiveSupport::ParameterFilter
+    def self.validate_scope_keys!: (untyped, untyped) -> nil
+  end
+end

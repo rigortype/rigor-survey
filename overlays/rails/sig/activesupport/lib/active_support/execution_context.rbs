@@ -1,0 +1,12 @@
+module ActiveSupport
+  module ExecutionContext
+    def self.push: () -> singleton(ActiveSupport::ExecutionContext)
+    def self.pop: () -> singleton(ActiveSupport::ExecutionContext)
+    def self.clear: () -> nil
+    class Record
+      def push: () -> ActiveSupport::ExecutionContext::Record
+      def pop: () -> ActiveSupport::ExecutionContext::Record
+      def flush: () -> ActiveSupport::ExecutionContext::Record
+    end
+  end
+end

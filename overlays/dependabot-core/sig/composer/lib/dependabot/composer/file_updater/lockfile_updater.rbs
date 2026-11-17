@@ -1,0 +1,15 @@
+module Dependabot
+  module Composer
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockfileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def updated_lockfile_content: () -> (String | nil)
+        def composer_platform_extensions: () -> Hash[String, Array[String]]
+        def error_handler: () -> ::ComposerErrorHandler
+        class MissingExtensions < ::StandardError
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

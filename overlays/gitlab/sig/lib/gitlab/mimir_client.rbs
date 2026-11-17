@@ -1,0 +1,6 @@
+module Gitlab
+  class MimirClient < ::Gitlab::PrometheusClient
+    def initialize: (mimir_url: untyped, user: String, password: String, ?options: untyped) -> void
+    def ready_url: () -> String
+  end
+end

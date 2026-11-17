@@ -1,0 +1,15 @@
+module Banzai
+  module IframeProviders
+    class Provider
+      def self.from_config: (untyped, untyped) -> Banzai::IframeProviders::Provider
+      def self.fail!: (untyped, untyped) -> bot
+      def self.parse_name: (untyped, untyped) -> String
+      def self.parse_matches: (untyped, untyped) -> Array[Banzai::IframeProviders::MatchRule]
+      def self.parse_src: (untyped, untyped, untyped, untyped) -> String
+      def self.parse_sandbox: (untyped, untyped, untyped) -> Array[untyped]
+      def initialize: (id: untyped, name: untyped, matches: untyped, requires: untyped, src: untyped, additional_csp_hosts: untyped, sandbox: untyped, require_activation: untyped) -> void
+      def frame_src_origins: () -> Array[untyped]
+      def src_origin: () -> String
+    end
+  end
+end

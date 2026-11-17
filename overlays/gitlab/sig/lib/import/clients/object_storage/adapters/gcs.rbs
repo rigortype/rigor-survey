@@ -1,0 +1,11 @@
+module Import
+  module Clients
+    class ObjectStorage
+      module Adapters
+        class Gcs < ::Import::Clients::ObjectStorage::Adapters::Base
+          def request_url: (untyped) -> String
+        end
+      end
+    end
+  end
+end

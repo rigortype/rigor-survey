@@ -1,0 +1,12 @@
+module ActiveSupport
+  module Cache
+    class Store
+      def initialize: (?untyped) -> void
+      def silence!: () -> ActiveSupport::Cache::Store
+      def new_entry: (untyped, ?untyped) -> ActiveSupport::Cache::Entry
+    end
+    class WriteOptions
+      def initialize: (untyped) -> void
+    end
+  end
+end

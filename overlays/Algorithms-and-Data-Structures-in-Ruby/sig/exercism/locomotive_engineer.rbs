@@ -1,0 +1,5 @@
+class LocomotiveEngineer
+  def self.fix_list_of_wagons: (untyped, untyped) -> Array[untyped]
+  def self.add_missing_stops: (untyped, **untyped) -> Hash[untyped, untyped]
+  def self.extend_route_information: (untyped, untyped) -> Hash[untyped, untyped]
+end

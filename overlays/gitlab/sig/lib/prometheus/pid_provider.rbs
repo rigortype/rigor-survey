@@ -1,0 +1,5 @@
+module Prometheus
+  module PidProvider
+    def worker_id: () -> ("puma_master" | "sidekiq" | String)
+  end
+end

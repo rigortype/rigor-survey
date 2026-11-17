@@ -1,0 +1,6 @@
+module Packages
+  class MarkPackagesForDestructionService
+    def initialize: (packages: untyped, ?current_user: untyped) -> void
+    def execute: (?batch_size: untyped) -> ServiceResponse
+  end
+end

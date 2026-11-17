@@ -1,0 +1,11 @@
+module YARD
+  class Logger
+    def self.instance: (?untyped) -> YARD::Logger
+    def initialize: (untyped, *untyped) -> void
+    def self.create_log_method: (untyped) -> Symbol
+    def log: (untyped, untyped) -> nil
+    def progress: (untyped, ?untyped) -> (Thread | nil)
+    def clear_progress: () -> nil
+    def puts: (?untyped) -> nil
+  end
+end

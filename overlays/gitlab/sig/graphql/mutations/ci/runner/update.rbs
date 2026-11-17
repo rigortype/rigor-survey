@@ -1,0 +1,9 @@
+module Mutations
+  module Ci
+    module Runner
+      class Update < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

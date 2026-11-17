@@ -1,0 +1,12 @@
+module ActiveRecord
+  module AttributeMethods
+    def attribute_present?: (untyped) -> (false | true)
+    module ClassMethods
+      def attribute_methods_generated?: () -> (false | nil | true)
+      def define_attribute_methods: () -> (false | true)
+      def generate_alias_attributes: () -> (nil | true)
+      def undefine_attribute_methods: () -> false
+      def attribute_names: () -> Array[String]
+    end
+  end
+end

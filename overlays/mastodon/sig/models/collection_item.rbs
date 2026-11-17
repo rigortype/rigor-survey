@@ -1,0 +1,4 @@
+class CollectionItem < ::ApplicationRecord
+  def object_type: () -> :featured_item
+  def sign?: () -> true
+end

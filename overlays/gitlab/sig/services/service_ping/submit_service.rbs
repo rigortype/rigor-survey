@@ -1,0 +1,5 @@
+module ServicePing
+  class SubmitService
+    def initialize: (organization: untyped, ?payload: untyped) -> void
+  end
+end

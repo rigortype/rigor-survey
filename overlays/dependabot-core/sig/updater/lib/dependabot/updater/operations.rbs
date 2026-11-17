@@ -1,0 +1,7 @@
+module Dependabot
+  class Updater
+    module Operations
+      def self.class_for: (job: untyped) -> (nil | singleton(Dependabot::Updater::Operations::CreateSecurityUpdatePullRequest) | singleton(Dependabot::Updater::Operations::GroupUpdateAllVersions) | singleton(Dependabot::Updater::Operations::RefreshGroupUpdatePullRequest) | singleton(Dependabot::Updater::Operations::RefreshSecurityUpdatePullRequest) | singleton(Dependabot::Updater::Operations::RefreshVersionUpdatePullRequest))
+    end
+  end
+end

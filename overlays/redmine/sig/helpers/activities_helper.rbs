@@ -1,0 +1,3 @@
+module ActivitiesHelper
+  def sort_activity_events: (untyped) -> Array[untyped]
+end

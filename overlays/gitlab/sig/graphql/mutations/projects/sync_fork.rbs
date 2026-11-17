@@ -1,0 +1,9 @@
+module Mutations
+  module Projects
+    class SyncFork < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, target_branch: untyped) -> ({ details: ::Projects::Forks::Details, errors: ["Another fork sync is already in progress"] } | { details: ::Projects::Forks::Details, errors: ["The synchronization cannot happen due to the merge conflict"] } | { details: ::Projects::Forks::Details, errors: ["This service has been called too many times."] } | { details: ::Projects::Forks::Details, errors: [] } | { details: nil, errors: ["Target branch does not exist"] } | { details: nil, errors: ["This branch of this project cannot be updated from the upstream"] })
+      def enqueue_sync_fork: (untyped, untyped, untyped) -> ({ details: untyped, errors: ["Another fork sync is already in progress"] } | { details: untyped, errors: ["The synchronization cannot happen due to the merge conflict"] } | { details: untyped, errors: ["This service has been called too many times."] } | { details: untyped, errors: [] })
+      def respond: (untyped, untyped) -> { details: untyped, errors: untyped }
+    end
+  end
+end

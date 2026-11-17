@@ -1,0 +1,7 @@
+module ActiveRecord
+  class DatabaseConfigurations
+    class UrlConfig < ::ActiveRecord::DatabaseConfigurations::HashConfig
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    end
+  end
+end

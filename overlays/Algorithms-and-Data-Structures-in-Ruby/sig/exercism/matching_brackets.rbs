@@ -1,0 +1,3 @@
+class Brackets
+  def self.paired?: (untyped) -> (false | true)
+end

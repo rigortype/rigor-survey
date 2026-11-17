@@ -1,0 +1,12 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class RedisMetric < ::Gitlab::Usage::Metrics::Instrumentations::BaseMetric
+          def initialize: (untyped) -> void
+          def validate_options!: () -> nil
+        end
+      end
+    end
+  end
+end

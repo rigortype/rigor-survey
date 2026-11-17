@@ -1,0 +1,13 @@
+module Gitlab
+  module Auth
+    module Otp
+      module Strategies
+        module FortiAuthenticator
+          class PushOtp < ::Gitlab::Auth::Otp::Strategies::Base
+            def validate: () -> (Hash[untyped, untyped] | { message: untyped, status: :error } | { message: String, status: :error } | { status: :success })
+          end
+        end
+      end
+    end
+  end
+end

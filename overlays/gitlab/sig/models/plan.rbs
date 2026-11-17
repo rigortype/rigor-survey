@@ -1,0 +1,7 @@
+class Plan < ::ApplicationRecord
+  def self.all_plans: () -> [untyped]
+  def self.default_plans: () -> [untyped]
+  def default?: () -> (false | true)
+  def paid?: () -> false
+  def ultimate_or_ultimate_trial_plans?: () -> false
+end

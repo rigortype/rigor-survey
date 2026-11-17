@@ -1,0 +1,12 @@
+module Parser
+  module Source
+    class Comment
+      class Associator
+        def initialize: (nil, nil) -> void
+        def associate: () -> (Hash[untyped, untyped] | nil)
+        def associate_locations: () -> (Hash[untyped, untyped] | nil)
+        def associate_by_identity: () -> (Hash[untyped, untyped] | nil)
+      end
+    end
+  end
+end

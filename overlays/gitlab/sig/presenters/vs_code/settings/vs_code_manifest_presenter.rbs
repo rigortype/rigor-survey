@@ -1,0 +1,8 @@
+module VsCode
+  module Settings
+    class VsCodeManifestPresenter < ::Gitlab::View::Presenter::Simple
+      def initialize: (untyped) -> void
+      def latest: () -> Hash[untyped, untyped]
+    end
+  end
+end

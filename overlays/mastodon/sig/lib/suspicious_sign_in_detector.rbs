@@ -1,0 +1,4 @@
+class SuspiciousSignInDetector
+  def initialize: (untyped) -> void
+  def suspicious?: (untyped) -> (false | true)
+end

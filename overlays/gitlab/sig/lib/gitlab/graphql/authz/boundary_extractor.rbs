@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module Authz
+      class BoundaryExtractor
+        def initialize: (untyped, object: untyped, arguments: untyped) -> void
+        def extract: () -> Array[untyped]
+      end
+    end
+  end
+end

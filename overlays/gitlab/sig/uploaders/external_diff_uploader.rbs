@@ -1,0 +1,3 @@
+class ExternalDiffUploader < ::GitlabUploader
+  def store_dir: () -> String
+end

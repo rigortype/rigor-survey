@@ -1,0 +1,17 @@
+module YARD
+  module Parser
+    class OrderedParser
+      def initialize: (::OpenStruct, untyped) -> void
+      def parse: () -> nil
+    end
+    class SourceParser
+      def self.before_parse_list_callbacks: () -> []
+      def self.after_parse_list_callbacks: () -> []
+      def self.before_parse_file_callbacks: () -> []
+      def self.after_parse_file_callbacks: () -> []
+      def initialize: (?Symbol, ?untyped, ?untyped) -> void
+    end
+    class UndocumentableError < ::RuntimeError
+    end
+  end
+end

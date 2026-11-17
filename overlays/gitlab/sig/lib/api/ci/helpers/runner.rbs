@@ -1,0 +1,10 @@
+module API
+  module Ci
+    module Helpers
+      module Runner
+        def get_system_id_from_request: () -> ({ system_id: untyped } | {})
+        def get_runner_ip: () -> { ip_address: untyped }
+      end
+    end
+  end
+end

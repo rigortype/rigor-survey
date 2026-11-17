@@ -1,0 +1,9 @@
+module Dependabot
+  module NpmAndYarn
+    class RegistryParser
+      def initialize: (resolved_url: untyped, credentials: untyped) -> void
+      def registry_source_for: (untyped) -> { type: "registry", url: String }
+      def dependency_name: () -> String
+    end
+  end
+end

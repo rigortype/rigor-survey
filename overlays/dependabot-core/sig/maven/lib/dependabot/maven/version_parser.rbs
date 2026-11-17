@@ -1,0 +1,11 @@
+module Dependabot
+  module Maven
+    class VersionParser
+      def self.parse: (untyped) -> ::TokenBucket
+      def initialize: (untyped) -> void
+      def parse: () -> (::TokenBucket | nil)
+      def scanner: () -> StringScanner
+      def parse_result: () -> (::TokenBucket | nil)
+    end
+  end
+end

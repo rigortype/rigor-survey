@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class UserAccessDeniedReason
+      def initialize: (untyped) -> void
+      def rejection_message: () -> ("This action cannot be performed by internal users" | "This deploy token has been revoked." | "This deploy token has expired." | "Your account has been blocked." | "Your account is pending approval from your administrator and hence blocked." | String)
+    end
+  end
+end

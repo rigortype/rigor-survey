@@ -1,0 +1,5 @@
+module Ci
+  class DailyBuildGroupReportResultsFinder
+    def initialize: (?params: untyped, ?current_user: untyped) -> void
+  end
+end

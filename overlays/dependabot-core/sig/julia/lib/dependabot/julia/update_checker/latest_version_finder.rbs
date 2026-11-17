@@ -1,0 +1,10 @@
+module Dependabot
+  module Julia
+    class LatestVersionFinder
+      def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, raise_on_ignored: untyped, ?cooldown_config: untyped, ?custom_registries: untyped) -> void
+      def latest_version: () -> (Gem::Version | nil)
+      def available_versions: () -> (Array[Gem::Version] | nil)
+      def lowest_security_fix_version: () -> (Gem::Version | nil)
+    end
+  end
+end

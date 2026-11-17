@@ -1,0 +1,9 @@
+module Mutations
+  module Ml
+    module ModelVersions
+      class Create < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> ({ errors: ["Model not found"] } | { model_version: untyped, errors: untyped })
+      end
+    end
+  end
+end

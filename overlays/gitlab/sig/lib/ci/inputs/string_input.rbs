@@ -1,0 +1,7 @@
+module Ci
+  module Inputs
+    class StringInput < ::Ci::Inputs::BaseInput
+      def self.type_name: () -> "string"
+    end
+  end
+end

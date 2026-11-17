@@ -1,0 +1,5 @@
+module API
+  class DebianGroupPackages < ::API::Base
+    def self.resource_type: () -> :group
+  end
+end

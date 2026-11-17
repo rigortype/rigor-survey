@@ -1,0 +1,11 @@
+module Dependabot
+  module Python
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PepDependency < ::T::ImmutableStruct
+        def self.from_helper_result: (untyped) -> Array[::PepDependency]
+        def self.from_requirements_helper_result: (untyped) -> Array[::PepDependency]
+        def self.from_object: (untyped) -> Dependabot::Python::FileParser::PepDependency
+      end
+    end
+  end
+end

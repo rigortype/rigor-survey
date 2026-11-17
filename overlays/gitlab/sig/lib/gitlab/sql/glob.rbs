@@ -1,0 +1,7 @@
+module Gitlab
+  module SQL
+    module Glob
+      def to_like: (untyped) -> String
+    end
+  end
+end

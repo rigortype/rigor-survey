@@ -1,0 +1,5 @@
+module Integrations
+  class IrkerWorker
+    def perform: (untyped, untyped, untyped, untyped, untyped) -> (false | true)
+  end
+end

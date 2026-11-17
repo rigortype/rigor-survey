@@ -1,0 +1,12 @@
+module Gitlab
+  module MobilePush
+    class Payload
+      def initialize: (untyped, ?mode: Symbol) -> void
+      def subtitle: () -> (String | nil)
+      def body: () -> ("Could not merge." | "Removed from Merge Train." | "The pipeline failed." | "You have a new to-do" | "Your SSH key has expired." | "Your SSH key is expiring soon." | "added a to-do item." | "assigned you." | "created a merge request you can approve." | "has requested access." | "mentioned you." | "requested a review." | "requested an OKR update." | "reviewed your merge request." | String)
+      def thread_id: () -> (String | nil)
+      def collapse_id: () -> String
+      def gitlab_data: () -> ({ version: 1, type: "todo", todo_id: untyped, user_id: untyped } | { version: 1, type: "todo", todo_id: untyped, user_id: untyped, action: untyped, target_type: untyped, project_path: untyped, iid: untyped, target_url: untyped, note_id: untyped, created_at: untyped, author_id: untyped, author_name: untyped, author_username: untyped, author_avatar_url: untyped })
+    end
+  end
+end

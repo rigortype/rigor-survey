@@ -1,0 +1,7 @@
+module Ci
+  class DeleteObjectsService
+    def initialize: (?batch_size: Integer) -> void
+    def execute: () -> ServiceResponse
+    def batch_size: () -> 1
+  end
+end

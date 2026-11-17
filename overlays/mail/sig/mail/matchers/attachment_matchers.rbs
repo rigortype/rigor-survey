@@ -1,0 +1,13 @@
+module Mail
+  module Matchers
+    def any_attachment: () -> Mail::Matchers::AnyAttachmentMatcher
+    def an_attachment_with_filename: (untyped) -> Mail::Matchers::AttachmentFilenameMatcher
+    def an_attachment_with_mime_type: (untyped) -> Mail::Matchers::AttachmentMimeTypeMatcher
+    class AttachmentFilenameMatcher
+      def initialize: (untyped) -> void
+    end
+    class AttachmentMimeTypeMatcher
+      def initialize: (untyped) -> void
+    end
+  end
+end

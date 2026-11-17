@@ -1,0 +1,14 @@
+module Redmine
+  module WikiFormatting
+    def self.register: (untyped, *untyped) -> { formatter: untyped, helper: untyped, html_parser: untyped, label: untyped }
+    def self.cache_key_for: (untyped, untyped, untyped, untyped) -> (String | nil)
+    module NullFormatter
+      class Formatter
+        def initialize: (String, ?untyped) -> void
+        def to_html: (*untyped) -> ActiveSupport::SafeBuffer
+      end
+    end
+    class StaleSectionError < ::StandardError
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Ox
+  class Raw < ::Ox::Node
+    def initialize: (String) -> void
+  end
+end

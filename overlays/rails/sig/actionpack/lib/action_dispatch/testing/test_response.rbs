@@ -1,0 +1,5 @@
+module ActionDispatch
+  class TestResponse < ::ActionDispatch::Response
+    def self.from_response: (untyped) -> ActionDispatch::TestResponse
+  end
+end

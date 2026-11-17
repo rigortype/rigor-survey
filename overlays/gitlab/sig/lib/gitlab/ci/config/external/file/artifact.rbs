@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        module File
+          class Artifact < ::Gitlab::Ci::Config::External::File::Base
+            def initialize: (untyped, untyped) -> void
+            def include_type: () -> :artifact
+          end
+        end
+      end
+    end
+  end
+end

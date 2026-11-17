@@ -1,0 +1,3 @@
+class Insertion
+  def initialize: (untyped, untyped) -> void
+end

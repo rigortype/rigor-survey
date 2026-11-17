@@ -1,0 +1,8 @@
+module Gitlab
+  module Instrumentation
+    class Redis
+      def self.storage_key: () -> nil
+      def self.shard_key: () -> nil
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Arel
+  module Visitors
+    class UnsupportedVisitError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+  end
+end

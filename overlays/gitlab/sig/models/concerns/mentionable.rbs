@@ -1,0 +1,7 @@
+module Mentionable
+  def gfm_reference: (?untyped) -> String
+  def local_reference: () -> Mentionable
+  def extractors: () -> Hash[untyped, untyped]
+  def referenced_users: () -> ActiveRecord::Relation[User]
+  def user_mention_identifier: () -> Hash[untyped, untyped]
+end

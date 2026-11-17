@@ -1,0 +1,9 @@
+module Dependabot
+  module Devcontainers
+    class Version < ::Dependabot::Version
+      def same_precision?: (untyped) -> (false | true)
+      def truncate: (untyped) -> Dependabot::Devcontainers::Version
+      def truncate_to_precision_of: (untyped) -> Dependabot::Devcontainers::Version
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Bazel
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def self.updated_files_regex: () -> [Regexp, Regexp, Regexp, Regexp, Regexp, Regexp, Regexp, Regexp]
+      def updated_dependency_files: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  module RustToolchain
+    class Channel
+      def initialize: (?stability: untyped, ?date: untyped, ?version: untyped) -> void
+      def self.from_parsed_data: (untyped) -> Dependabot::RustToolchain::Channel
+      def <=>: (untyped) -> (Integer | nil)
+      def ==: (untyped) -> (false | true)
+      def inspect: () -> String
+    end
+  end
+end

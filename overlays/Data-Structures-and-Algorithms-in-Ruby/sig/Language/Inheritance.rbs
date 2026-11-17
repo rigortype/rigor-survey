@@ -1,0 +1,9 @@
+class Bulb
+  def turnOn: () -> true
+  def turnOff: () -> false
+  def IsOn: () -> (false | true)
+end
+
+class AdvanceBulb < ::Bulb
+  def initialize: (?untyped) -> void
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestCase
+        def initialize: (untyped) -> void
+        def set_recent_failures: (untyped, untyped) -> { count: untyped, base_branch: untyped }
+        def key: () -> String
+        def recent_failures: () -> (nil | { count: untyped, base_branch: untyped })
+      end
+    end
+  end
+end

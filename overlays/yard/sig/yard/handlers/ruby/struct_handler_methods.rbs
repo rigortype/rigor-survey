@@ -1,0 +1,9 @@
+module YARD
+  module Handlers
+    module Ruby
+      module StructHandlerMethods
+        def create_member_method?: (untyped, untyped, ?untyped) -> (false | true)
+      end
+    end
+  end
+end

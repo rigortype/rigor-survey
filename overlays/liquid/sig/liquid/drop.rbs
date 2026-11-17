@@ -1,0 +1,10 @@
+module Liquid
+  class Drop
+    def liquid_method_missing: (untyped) -> nil
+    def key?: (untyped) -> true
+    def inspect: () -> String
+    def to_liquid: () -> Liquid::Drop
+    def to_s: () -> String
+    def self.invokable_methods: () -> Set[untyped]
+  end
+end

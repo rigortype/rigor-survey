@@ -1,0 +1,17 @@
+module Gitlab
+  module MergeRequests
+    module Mergeability
+      class CheckResult
+        def self.default_payload: () -> { last_run_at: ActiveSupport::TimeWithZone }
+        def self.success: (?payload: untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def self.failed: (?payload: untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def self.checking: (?payload: untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def self.inactive: (?payload: untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def self.warning: (?payload: untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def self.from_hash: (untyped) -> Gitlab::MergeRequests::Mergeability::CheckResult
+        def initialize: (status: untyped, ?payload: untyped) -> void
+        def to_hash: () -> { status: untyped, payload: untyped }
+      end
+    end
+  end
+end

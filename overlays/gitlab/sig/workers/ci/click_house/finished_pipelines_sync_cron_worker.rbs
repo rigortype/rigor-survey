@@ -1,0 +1,7 @@
+module Ci
+  module ClickHouse
+    class FinishedPipelinesSyncCronWorker
+      def perform: (*untyped) -> nil
+    end
+  end
+end

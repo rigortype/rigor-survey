@@ -1,0 +1,10 @@
+module Redmine
+  module DefaultData
+    module Loader
+      def self.no_data?: () -> (false | true)
+      def self.load: (?untyped, ?untyped) -> true
+    end
+    class DataAlreadyLoaded < ::StandardError
+    end
+  end
+end

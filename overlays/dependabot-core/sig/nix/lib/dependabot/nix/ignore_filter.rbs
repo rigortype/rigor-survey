@@ -1,0 +1,8 @@
+module Dependabot
+  module Nix
+    class IgnoreFilter
+      def initialize: (untyped) -> void
+      def ignored?: (untyped) -> (false | true)
+    end
+  end
+end

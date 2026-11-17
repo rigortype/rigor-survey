@@ -1,0 +1,6 @@
+module Dependabot
+  module Workspace
+    def self.setup: (repo_contents_path: untyped, directory: untyped) -> Dependabot::Workspace::Git
+    def self.cleanup!: () -> nil
+  end
+end

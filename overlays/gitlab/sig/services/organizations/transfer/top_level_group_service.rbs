@@ -1,0 +1,8 @@
+module Organizations
+  module Transfer
+    class TopLevelGroupService
+      def initialize: (groups: untyped, new_organization: untyped, current_user: untyped, ?skip_authorization: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

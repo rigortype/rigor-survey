@@ -1,0 +1,7 @@
+module ActiveRecord
+  class PredicateBuilder
+    class ArrayHandler
+      def initialize: (untyped) -> void
+    end
+  end
+end

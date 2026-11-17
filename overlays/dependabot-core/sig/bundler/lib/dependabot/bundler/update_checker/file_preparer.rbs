@@ -1,0 +1,12 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class FilePreparer
+        def gemspec_sources: () -> [singleton(::Bundler::Source::Path), singleton(::Bundler::Source::Gemspec)]
+        def initialize: (dependency_files: untyped, dependency: untyped, ?remove_git_source: untyped, ?unlock_requirement: untyped, ?replacement_git_pin: untyped, ?latest_allowable_version: untyped, ?lock_ruby_version: untyped) -> void
+        def prepared_dependency_files: () -> Array[untyped]
+        def latest_allowable_version: () -> (String | nil)
+      end
+    end
+  end
+end

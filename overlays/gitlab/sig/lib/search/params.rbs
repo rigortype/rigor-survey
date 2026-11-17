@@ -1,0 +1,6 @@
+module Search
+  class Params
+    def initialize: (untyped, ?detect_abuse: untyped) -> void
+    def abuse_detection: () -> Gitlab::Search::AbuseDetection
+  end
+end

@@ -1,0 +1,7 @@
+module Analytics
+  module CycleAnalytics
+    class StagePresenter < ::Gitlab::View::Presenter::Delegated
+      def legend: () -> ""
+    end
+  end
+end

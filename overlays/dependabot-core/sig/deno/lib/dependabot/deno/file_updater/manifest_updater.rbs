@@ -1,0 +1,9 @@
+module Dependabot
+  module Deno
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class ManifestUpdater
+        def initialize: (dependencies: untyped, manifest: untyped) -> void
+      end
+    end
+  end
+end

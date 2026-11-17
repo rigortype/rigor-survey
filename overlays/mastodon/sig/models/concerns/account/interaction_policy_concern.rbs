@@ -1,0 +1,5 @@
+class Account < ::ApplicationRecord
+  module InteractionPolicyConcern
+    def feature_policy_for_account: (untyped) -> (:automatic | :denied | :manual | :missing | :unknown)
+  end
+end

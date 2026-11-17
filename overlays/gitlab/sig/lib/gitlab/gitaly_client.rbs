@@ -1,0 +1,27 @@
+module Gitlab
+  module GitalyClient
+    def self.interceptors: () -> ([untyped] | [])
+    def self.retry_policy: () -> { maxAttempts: untyped, initialBackoff: String, maxBackoff: untyped, backoffMultiplier: 2, retryableStatusCodes: ["UNAVAILABLE", "ABORTED"] }
+    def self.channel_args: (?untyped) -> (Hash[untyped, untyped] | { :"grpc.keepalive_time_ms" => 20000, :"grpc.keepalive_permit_without_calls" => 1, :"grpc.service_config" => String })
+    def self.clear_stubs!: () -> nil
+    def self.validate_storage_addresses!: (untyped) -> nil
+    def self.address_metadata: (untyped) -> String
+    def self.connection_data: (untyped) -> Hash[String, untyped]
+    def self.real_time: () -> Time
+    def self.authorization_token: (untyped) -> String
+    def self.request_kwargs: (untyped, timeout: untyped, ?remote_storage: untyped, ?gitaly_context: untyped) -> { metadata: Hash[untyped, untyped], deadline: untyped }
+    def self.application_context_metadata: () -> Hash[untyped, untyped]
+    def self.mvcc_manifest_metadata: () -> (Hash[String, untyped] | {})
+    def self.route_to_primary: () -> (Hash[String, "primary-only"] | {})
+    def self.request_deadline: (untyped) -> ({ deadline: untyped, deadline_type: "limited" | "regular" } | { deadline: untyped })
+    def self.session_id: () -> String
+    def self.enforce_gitaly_request_limits: (untyped) -> nil
+    def self.enforce_gitaly_request_limits?: () -> (false | true)
+    def self.reset_counts: () -> (0 | nil)
+    def self.timestamp: (untyped) -> Google::Protobuf::Timestamp
+    def self.feature_flag_actors: () -> Hash[untyped, untyped]
+    class TooManyInvocationsError < ::StandardError
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

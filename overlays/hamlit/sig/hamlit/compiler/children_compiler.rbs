@@ -1,0 +1,7 @@
+module Hamlit
+  class Compiler
+    class ChildrenCompiler
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> (Array[untyped] | [:multi])
+    end
+  end
+end

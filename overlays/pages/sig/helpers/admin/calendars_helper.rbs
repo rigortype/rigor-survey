@@ -1,0 +1,5 @@
+module Admin
+  module CalendarsHelper
+    def calendar_years_with_count: () -> Hash[untyped, untyped]
+  end
+end

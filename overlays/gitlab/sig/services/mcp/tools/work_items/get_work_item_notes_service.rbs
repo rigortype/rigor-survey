@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module WorkItems
+      class GetWorkItemNotesService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["get_work_item_notes"]
+        def unlisted?: () -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Python
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def initialize: (dependency: untyped, credentials: untyped) -> void
+      def maintainer_changes: () -> (String | nil)
+    end
+  end
+end

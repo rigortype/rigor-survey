@@ -1,0 +1,6 @@
+module Redmine
+  module Platform
+    def self.mswin?: () -> (false | true)
+    def self.osx?: () -> (false | true)
+  end
+end

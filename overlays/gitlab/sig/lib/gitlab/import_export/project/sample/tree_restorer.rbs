@@ -1,0 +1,12 @@
+module Gitlab
+  module ImportExport
+    module Project
+      module Sample
+        class TreeRestorer < ::Gitlab::ImportExport::Project::TreeRestorer
+          def relation_tree_restorer_class: () -> singleton(Gitlab::ImportExport::Project::Sample::RelationTreeRestorer)
+          def relation_factory: () -> singleton(Gitlab::ImportExport::Project::Sample::RelationFactory)
+        end
+      end
+    end
+  end
+end

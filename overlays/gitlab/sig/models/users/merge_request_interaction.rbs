@@ -1,0 +1,5 @@
+module Users
+  class MergeRequestInteraction
+    def initialize: (user: untyped, merge_request: untyped, ?current_user: untyped) -> void
+  end
+end

@@ -1,0 +1,13 @@
+module UnnestedInFilters
+  class Rewriter
+    def initialize: (untyped) -> void
+    class ValueTable
+      def initialize: (untyped, untyped, untyped) -> void
+      def to_sql: () -> String
+      def as_predicate: () -> String
+    end
+    class IndexCoverage
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

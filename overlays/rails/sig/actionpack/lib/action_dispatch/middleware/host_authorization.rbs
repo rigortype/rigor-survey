@@ -1,0 +1,11 @@
+module ActionDispatch
+  class HostAuthorization
+    def initialize: (untyped, untyped, ?exclude: untyped, ?response_app: untyped) -> void
+    class Permissions
+      def initialize: (untyped) -> void
+    end
+    class DefaultResponseApp
+      def call: (untyped) -> [403, Hash[String, untyped], [untyped]]
+    end
+  end
+end

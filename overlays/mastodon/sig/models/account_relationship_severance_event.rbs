@@ -1,0 +1,3 @@
+class AccountRelationshipSeveranceEvent < ::ApplicationRecord
+  def identifier: () -> String
+end

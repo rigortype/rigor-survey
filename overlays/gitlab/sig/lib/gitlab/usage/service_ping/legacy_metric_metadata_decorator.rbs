@@ -1,0 +1,9 @@
+module Gitlab
+  module Usage
+    module ServicePing
+      class LegacyMetricMetadataDecorator < ::SimpleDelegator
+        def initialize: (untyped, untyped, ?error: untyped) -> void
+      end
+    end
+  end
+end

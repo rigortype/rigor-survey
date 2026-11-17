@@ -1,0 +1,10 @@
+module Integrations
+  module SlackInteractions
+    module SlackBlockActions
+      class BaseHandler
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> bot
+      end
+    end
+  end
+end

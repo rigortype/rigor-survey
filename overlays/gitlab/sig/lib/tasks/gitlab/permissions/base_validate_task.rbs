@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      class BaseValidateTask
+        def sync_todo: () -> nil
+        def update_todo: () -> nil
+      end
+    end
+  end
+end

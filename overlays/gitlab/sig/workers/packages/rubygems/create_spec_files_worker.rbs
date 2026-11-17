@@ -1,0 +1,7 @@
+module Packages
+  module Rubygems
+    class CreateSpecFilesWorker
+      def perform: (untyped) -> nil
+    end
+  end
+end

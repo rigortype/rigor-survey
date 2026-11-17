@@ -1,0 +1,8 @@
+module BulkImports
+  module FileTransfer
+    class BaseConfig
+      def initialize: (untyped, ?offline: untyped) -> void
+      def export_path: () -> String
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module PagerDuty
+  class WebhookPayloadParser
+    def initialize: (untyped) -> void
+    def self.call: (untyped) -> (Hash[String, untyped] | {})
+    def call: () -> (Hash[String, untyped] | {})
+  end
+end

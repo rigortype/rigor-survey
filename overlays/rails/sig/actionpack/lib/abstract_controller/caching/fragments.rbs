@@ -1,0 +1,7 @@
+module AbstractController
+  module Caching
+    module Fragments
+      def combined_fragment_cache_key: (untyped) -> Array[untyped]
+    end
+  end
+end

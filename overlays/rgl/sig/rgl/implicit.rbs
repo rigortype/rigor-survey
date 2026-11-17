@@ -1,0 +1,7 @@
+module RGL
+  module Graph
+    def vertices_filtered_by: () ?{ (*untyped) -> untyped } -> RGL::ImplicitGraph
+    def edges_filtered_by: () ?{ (*untyped) -> untyped } -> RGL::ImplicitGraph
+    def implicit_graph: () -> RGL::ImplicitGraph
+  end
+end

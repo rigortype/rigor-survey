@@ -1,0 +1,3 @@
+class ProjectImportState < ::ApplicationRecord
+  def expire_etag_cache: () -> (Gitlab::EtagCaching::Store | nil)
+end

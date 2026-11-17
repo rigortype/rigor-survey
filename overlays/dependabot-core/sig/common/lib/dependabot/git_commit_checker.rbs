@@ -1,0 +1,35 @@
+module Dependabot
+  class GitCommitChecker
+    def initialize: (dependency: untyped, credentials: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped, ?consider_version_branches_pinned: untyped, ?dependency_source_details: untyped, ?git_metadata_fetcher: untyped) -> void
+    def pinned_ref_looks_like_version?: () -> (false | true)
+    def pinned_ref_looks_like_commit_sha?: () -> (false | true)
+    def head_commit_for_pinned_ref: () -> (String | nil)
+    def tags: () -> Array[::GitRef]
+    def ref_details: (untyped) -> (Excon::Response | nil)
+    def ref_details_for_pinned_ref: () -> Excon::Response
+    def branch_or_ref_in_release?: (untyped) -> (false | true)
+    def head_commit_for_current_branch: () -> (String | nil)
+    def head_commit_for_local_branch: (untyped) -> (String | nil)
+    def local_ref_for_latest_version_matching_existing_precision: () -> (Dependabot::GitTagDetails | nil)
+    def local_ref_for_latest_version_lower_precision: () -> (Dependabot::GitTagDetails | nil)
+    def local_tag_for_latest_version: (?untyped) -> (Dependabot::GitTagDetails | nil)
+    def local_tag_for_pinned_version_ref: (?untyped) -> (Dependabot::GitTagDetails | nil)
+    def local_tags_for_allowed_versions_matching_existing_precision: () -> Array[Dependabot::GitTagDetails]
+    def local_tags_for_allowed_versions: () -> Array[Dependabot::GitTagDetails]
+    def allowed_version_tags: () -> Array[Dependabot::GitRef]
+    def allowed_version_refs: () -> Array[Dependabot::GitRef]
+    def current_version: () -> (Gem::Version | nil)
+    def most_specific_tag_equivalent_to_pinned_ref: () -> (String | nil)
+    def local_tag_for_pinned_sha: () -> (String | nil)
+    def version_for_pinned_sha: () -> (Gem::Version | nil)
+    def git_repo_reachable?: () -> (false | true)
+    def dependency_source_details: () -> (Dependabot::GitCommitChecker::SourceDetails | ::SourceDetails | nil)
+    def refs_for_tag_with_detail: () -> Array[::GitTagWithDetail]
+    def most_specific_version_tag_for_sha: (untyped) -> (String | nil)
+    def most_specific_version_tags_for_sha: (untyped) -> Array[untyped]
+    def max_local_tag: (untyped) -> (Dependabot::GitTagDetails | nil)
+    def all_version_tags: () -> Array[Dependabot::GitRef]
+    def allowed_version_tags_with_release_dates: () -> Array[Dependabot::Package::PackageRelease]
+    def cooldown_credentials: () -> Array[Dependabot::Credential]
+  end
+end

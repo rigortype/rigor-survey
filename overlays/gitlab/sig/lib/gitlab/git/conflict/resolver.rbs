@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    module Conflict
+      class Resolver
+        def initialize: (untyped, untyped, untyped, ?allow_tree_conflicts: untyped, ?skip_content: untyped) -> void
+      end
+    end
+  end
+end

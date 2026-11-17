@@ -1,0 +1,4 @@
+class ActivityTracker
+  def initialize: (untyped, untyped) -> void
+  def get: (untyped, ?untyped) -> Array[[untyped, untyped]]
+end

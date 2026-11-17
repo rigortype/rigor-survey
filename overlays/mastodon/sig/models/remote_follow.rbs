@@ -1,0 +1,3 @@
+class RemoteFollow
+  def initialize: (?untyped) -> void
+end

@@ -1,0 +1,10 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class ChatMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "connected"
+        def active_routes: () -> { controller: :chat_names }
+      end
+    end
+  end
+end

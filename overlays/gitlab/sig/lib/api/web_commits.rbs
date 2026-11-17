@@ -1,0 +1,5 @@
+module API
+  class WebCommits < ::API::Base
+    def gitaly_server: () -> Gitaly::Server
+  end
+end

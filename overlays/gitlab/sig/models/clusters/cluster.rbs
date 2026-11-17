@@ -1,0 +1,8 @@
+module Clusters
+  class Cluster < ::ApplicationRecord
+    def on_creation?: () -> (false | true)
+    def knative_pre_installed?: () -> (false | true)
+    def platform_kubernetes_rbac?: () -> (false | true)
+    def instance: () -> (Clusters::Instance | nil)
+  end
+end

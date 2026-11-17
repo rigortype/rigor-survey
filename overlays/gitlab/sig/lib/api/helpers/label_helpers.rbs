@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module LabelHelpers
+      def create_service_params: (untyped) -> ({ group: Group } | { project: Project })
+    end
+  end
+end

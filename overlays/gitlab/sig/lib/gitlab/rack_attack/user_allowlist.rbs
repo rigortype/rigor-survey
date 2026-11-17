@@ -1,0 +1,7 @@
+module Gitlab
+  module RackAttack
+    class UserAllowlist
+      def initialize: (untyped) -> void
+    end
+  end
+end

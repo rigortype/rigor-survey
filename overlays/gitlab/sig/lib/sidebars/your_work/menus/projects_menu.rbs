@@ -1,0 +1,11 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class ProjectsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "project"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: ["projects", "dashboard/projects"] }
+      end
+    end
+  end
+end

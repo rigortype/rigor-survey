@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module MigrationHelpers
+      module WraparoundVacuumHelpers
+        class WraparoundCheck
+          def initialize: (untyped, migration: untyped) -> void
+        end
+      end
+    end
+  end
+end

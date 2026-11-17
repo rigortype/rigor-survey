@@ -1,0 +1,8 @@
+module ActionDispatch
+  module Routing
+    class Endpoint
+      def redirect?: () -> false
+      def rack_app: () -> ActionDispatch::Routing::Endpoint
+    end
+  end
+end

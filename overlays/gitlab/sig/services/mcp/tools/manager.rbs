@@ -1,0 +1,18 @@
+module Mcp
+  module Tools
+    class Manager
+      def tools: () -> Hash[untyped, untyped]
+      def alias_map: () -> Hash[untyped, untyped]
+      def tools_in_toolsets: (untyped, ?tools: untyped) -> Array[untyped]
+      class ToolNotFoundError < ::StandardError
+        def initialize: (untyped) -> void
+      end
+      class VersionNotFoundError < ::StandardError
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+      class InvalidVersionFormatError < ::StandardError
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

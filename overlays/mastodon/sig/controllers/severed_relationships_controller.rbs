@@ -1,0 +1,3 @@
+class SeveredRelationshipsController < ::ApplicationController
+  def index: () -> ActiveRecord::Relation[AccountRelationshipSeveranceEvent]
+end

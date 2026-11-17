@@ -1,0 +1,8 @@
+module Ml
+  class Candidate < ::ApplicationRecord
+    def artifact_root: () -> String
+    def self.with_project_id_and_eid: (untyped, untyped) -> (Ml::Candidate | nil)
+    def self.with_project_id_and_iid: (untyped, untyped) -> (Ml::Candidate | nil)
+    def self.with_project_id_and_id: (untyped, untyped) -> (Ml::Candidate | nil)
+  end
+end

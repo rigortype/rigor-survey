@@ -1,0 +1,7 @@
+module Enumerable[unchecked out E]
+  def index_by: () -> (Enumerator[untyped, untyped] | Hash[untyped, untyped])
+  def index_with: (?untyped) -> (Enumerator[untyped, untyped] | Hash[untyped, untyped])
+  def exclude?: (BasicObject) -> bool
+  def compact_blank: () -> Array[Elem]
+  def sole: () -> Elem
+end

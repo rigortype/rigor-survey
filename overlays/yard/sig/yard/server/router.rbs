@@ -1,0 +1,12 @@
+module YARD
+  module Server
+    class Router
+      def initialize: (untyped) -> void
+      def docs_prefix: () -> "docs"
+      def list_prefix: () -> "list"
+      def search_prefix: () -> "search"
+      def static_prefix: () -> "static"
+      def parse_library_from_path: (untyped) -> [untyped, untyped]
+    end
+  end
+end

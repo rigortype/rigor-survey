@@ -1,0 +1,44 @@
+class ProjectPresenter < ::Gitlab::View::Presenter::Delegated
+  def statistics_anchors: () -> Array[untyped]
+  def statistics_buttons: () -> Array[untyped]
+  def empty_repo_statistics_anchors: () -> []
+  def empty_repo_statistics_buttons: () -> Array[untyped]
+  def storage_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def releases_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def environments_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def commits_anchor_data: () -> ProjectPresenter::AnchorData
+  def branches_anchor_data: () -> ProjectPresenter::AnchorData
+  def terraform_states_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def tags_anchor_data: () -> ProjectPresenter::AnchorData
+  def new_file_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def readme_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def changelog_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def license_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def contribution_guide_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def autodevops_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def container_registry_disabled?: () -> (false | true)
+  def kubernetes_cluster_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def gitlab_ci_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def wiki_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def has_review_app?: () -> (false | true)
+  def pages_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  def observability_anchor_data: () -> (ProjectPresenter::AnchorData | nil)
+  class AnchorData < ::Struct[untyped]
+    def is_link: () -> untyped
+    def label: () -> untyped
+    def link: () -> untyped
+    def class_modifier: () -> untyped
+    def icon: () -> untyped
+    def itemprop: () -> untyped
+    def data: () -> untyped
+    def is_link=: (untyped) -> untyped
+    def label=: (untyped) -> untyped
+    def link=: (untyped) -> untyped
+    def class_modifier=: (untyped) -> untyped
+    def icon=: (untyped) -> untyped
+    def itemprop=: (untyped) -> untyped
+    def data=: (untyped) -> untyped
+    def self.new: (?is_link: untyped, ?label: untyped, ?link: untyped, ?class_modifier: untyped, ?icon: untyped, ?itemprop: untyped, ?data: untyped) -> instance | (?untyped is_link, ?untyped label, ?untyped link, ?untyped class_modifier, ?untyped icon, ?untyped itemprop, ?untyped data) -> instance
+    def self.[]: (?is_link: untyped, ?label: untyped, ?link: untyped, ?class_modifier: untyped, ?icon: untyped, ?itemprop: untyped, ?data: untyped) -> instance | (?untyped is_link, ?untyped label, ?untyped link, ?untyped class_modifier, ?untyped icon, ?untyped itemprop, ?untyped data) -> instance
+  end
+end

@@ -1,0 +1,8 @@
+module Concurrent
+  module Synchronization
+    module AbstractStruct
+      def initialize: (*untyped) -> void
+      def self.define_struct_class: (untyped, untyped, untyped, untyped) ?{ (*untyped) -> untyped } -> Class
+    end
+  end
+end

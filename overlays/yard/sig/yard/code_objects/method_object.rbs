@@ -1,0 +1,14 @@
+module YARD
+  module CodeObjects
+    class MethodObject < ::YARD::CodeObjects::Base
+      def initialize: (untyped, Symbol, ?Symbol) ?{ (*untyped) -> untyped } -> void
+      def scope=: (untyped) -> (YARD::CodeObjects::MethodObject | nil)
+      def module_function?: () -> (false | true)
+      def writer?: () -> (false | true)
+      def reader?: () -> (false | true)
+      def is_attribute?: () -> (false | true)
+      def is_explicit?: () -> (false | true)
+      def aliases: () -> Array[untyped]
+    end
+  end
+end

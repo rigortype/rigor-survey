@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      class Normalizer
+        class Factory
+          def initialize: (nil, nil) -> void
+        end
+      end
+    end
+  end
+end

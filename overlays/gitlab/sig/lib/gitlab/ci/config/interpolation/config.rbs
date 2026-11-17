@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Config
+          def visit!: () -> nil
+          def initialize: (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true) -> void
+          def self.fabricate: (untyped) -> Gitlab::Ci::Config::Interpolation::Config
+          def errors: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

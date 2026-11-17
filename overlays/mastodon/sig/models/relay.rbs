@@ -1,0 +1,4 @@
+class Relay < ::ApplicationRecord
+  def enable!: () -> String
+  def disable!: () -> String
+end

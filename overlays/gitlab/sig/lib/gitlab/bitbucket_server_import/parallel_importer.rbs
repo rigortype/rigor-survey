@@ -1,0 +1,10 @@
+module Gitlab
+  module BitbucketServerImport
+    class ParallelImporter
+      def self.async?: () -> true
+      def self.imports_repository?: () -> true
+      def initialize: (untyped) -> void
+      def execute: () -> true
+    end
+  end
+end

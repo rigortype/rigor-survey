@@ -1,0 +1,9 @@
+module ActiveRecord
+  module AutosaveAssociation
+    def mark_for_destruction: () -> true
+    def marked_for_destruction?: () -> (false | nil | true)
+    module AssociationBuilderExtension
+      def self.valid_options: () -> [:autosave]
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        class SeedBlock < ::Gitlab::Ci::Pipeline::Chain::Base
+          def perform!: () -> nil
+        end
+      end
+    end
+  end
+end

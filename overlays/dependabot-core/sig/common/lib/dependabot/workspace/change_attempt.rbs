@@ -1,0 +1,9 @@
+module Dependabot
+  module Workspace
+    class ChangeAttempt
+      def initialize: (untyped, id: untyped, memo: untyped, ?error: untyped) -> void
+      def success?: () -> (false | true)
+      def error?: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module MergeRequests
+  module Conflicts
+    class BaseService
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

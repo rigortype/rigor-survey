@@ -1,0 +1,11 @@
+module Containers
+  class Trie
+    def has_key?: (String) -> (false | true)
+    def wildcard: (String) -> (Array[untyped] | nil)
+    def wildcard_recursive: (untyped, untyped, untyped, untyped) -> (Array[untyped] | nil)
+    def get_recursive: (untyped, untyped, untyped) -> ([untyped, untyped] | nil)
+    class Node
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

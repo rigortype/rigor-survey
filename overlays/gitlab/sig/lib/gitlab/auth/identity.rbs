@@ -1,0 +1,17 @@
+module Gitlab
+  module Auth
+    class Identity
+      def self.link_from_oauth_token: (untyped) -> (Gitlab::Auth::Identity | NilClass)
+      def self.link_from_job: (untyped) -> (Gitlab::Auth::Identity | NilClass)
+      def self.link_from_scoped_user_id: (untyped, untyped, ?context: untyped) -> (Gitlab::Auth::Identity | NilClass | nil)
+      def self.link_from_scoped_user: (untyped, untyped, ?context: untyped) -> (Gitlab::Auth::Identity | NilClass)
+      def self.link_from_web_request: (service_account: untyped, scoped_user: untyped) -> (Gitlab::Auth::Identity | NilClass)
+      def self.sidekiq_restore!: (untyped) -> (Gitlab::Auth::Identity | nil)
+      def self.fabricate: (untyped) -> (Gitlab::Auth::Identity | nil)
+      def initialize: (untyped, ?store: untyped) -> void
+      def sidekiq_link!: (untyped) -> [untyped, untyped, untyped]
+      def link!: (untyped, ?context: Symbol) -> Gitlab::Auth::Identity
+      def valid?: () -> (false | true)
+    end
+  end
+end

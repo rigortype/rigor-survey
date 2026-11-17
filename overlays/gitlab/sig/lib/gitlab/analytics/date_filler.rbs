@@ -1,0 +1,8 @@
+module Gitlab
+  module Analytics
+    class DateFiller
+      def initialize: (untyped, from: untyped, to: untyped, ?period: untyped, ?default_value: untyped, ?date_formatter: untyped) -> void
+      def fill: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module WorkItems
+  module Callbacks
+    class LinkedItems < ::WorkItems::Callbacks::Base
+      def after_save_commit: () -> nil
+    end
+  end
+end

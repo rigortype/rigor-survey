@@ -1,0 +1,5 @@
+module Storage
+  class LegacyProject
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,38 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Node < ::Parser::AST::Node
+        def rest?: () -> false
+        def capture?: () -> false
+        def in_sequence_head: () -> nil
+        def variadic?: () -> (false | true)
+        def matches_within_set?: () -> (false | true)
+        def with: (?type: untyped, ?children: untyped, ?location: untyped) -> RuboCop::AST::NodePattern::Node
+        module ForbidInSeqHead
+          def in_sequence_head: () -> bot
+        end
+        class Capture < ::RuboCop::AST::NodePattern::Node
+          def capture?: () -> true
+          def in_sequence_head: () -> ([untyped, RuboCop::AST::NodePattern::Node::Capture] | nil)
+        end
+        class Sequence < ::RuboCop::AST::NodePattern::Node
+          def initialize: (untyped, ?untyped, ?untyped) -> void
+        end
+        class Repetition < ::RuboCop::AST::NodePattern::Node
+          def arity: () -> (Range[Integer] | Range[Float | Integer] | nil)
+        end
+        class Rest < ::RuboCop::AST::NodePattern::Node
+          def rest?: () -> true
+          def arity: () -> Range[Float | Integer]
+          def in_sequence_head: () -> [RuboCop::AST::NodePattern::Node, RuboCop::AST::NodePattern::Node::Rest]
+        end
+        class Subsequence < ::RuboCop::AST::NodePattern::Node
+          def in_sequence_head: () -> ([RuboCop::AST::NodePattern::Node::Subsequence] | nil)
+        end
+        class Union < ::RuboCop::AST::NodePattern::Node
+          def in_sequence_head: () -> ([RuboCop::AST::NodePattern::Node::Union] | nil)
+        end
+      end
+    end
+  end
+end

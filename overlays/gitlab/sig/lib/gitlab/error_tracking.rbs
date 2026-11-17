@@ -1,0 +1,9 @@
+module Gitlab
+  module ErrorTracking
+    def self.configure: () -> top
+    def self.track_and_raise_exception: (untyped, ?untyped, ?untyped) -> bot
+    def self.track_and_raise_for_dev_exception: (untyped, ?untyped, ?untyped) -> nil
+    def self.log_and_raise_exception: (untyped, ?untyped) -> bot
+    def self.default_trackers: () -> Array[untyped]
+  end
+end

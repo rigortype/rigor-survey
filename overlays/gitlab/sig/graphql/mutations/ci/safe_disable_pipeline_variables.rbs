@@ -1,0 +1,7 @@
+module Mutations
+  module Ci
+    class SafeDisablePipelineVariables < ::Mutations::BaseMutation
+      def resolve: (full_path: untyped) -> { success: true, errors: [] }
+    end
+  end
+end

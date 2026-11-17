@@ -1,0 +1,3 @@
+class BackfillSponsorshipAssetFileChecksumJob < ::ApplicationJob
+  def perform: (SponsorshipAssetFile) -> void
+end

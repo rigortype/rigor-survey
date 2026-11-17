@@ -1,0 +1,9 @@
+module Redmine
+  module CoreExt
+    module String
+      module Conversions
+        def to_hours: () -> (Float | nil)
+      end
+    end
+  end
+end

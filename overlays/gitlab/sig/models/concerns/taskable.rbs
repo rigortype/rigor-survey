@@ -1,0 +1,18 @@
+module Taskable
+  def self.get_tasks: (untyped) -> Array[untyped]
+  def self.get_updated_tasks: (old_content: untyped, new_content: untyped) -> Array[untyped]
+  def task_list_items: () -> Array[untyped]
+  def task_status: (?short: untyped) -> ("" | String)
+  def task_status_short: () -> ("" | String)
+  def task_completion_status: () -> { count: untyped, completed_count: untyped }
+  class Item < ::Struct[untyped]
+    def complete?: () -> untyped
+    def text: () -> untyped
+    def source: () -> untyped
+    def task_table_item?: () -> untyped
+    def text=: (untyped) -> untyped
+    def source=: (untyped) -> untyped
+    def self.new: (?complete?: untyped, ?text: untyped, ?source: untyped, ?task_table_item?: untyped) -> instance
+    def self.[]: (?complete?: untyped, ?text: untyped, ?source: untyped, ?task_table_item?: untyped) -> instance
+  end
+end

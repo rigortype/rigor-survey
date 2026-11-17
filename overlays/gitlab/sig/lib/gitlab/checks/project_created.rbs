@@ -1,0 +1,8 @@
+module Gitlab
+  module Checks
+    class ProjectCreated < ::Gitlab::Checks::PostPushMessage
+      def message: () -> String
+      def self.message_key: (untyped, untyped) -> String
+    end
+  end
+end

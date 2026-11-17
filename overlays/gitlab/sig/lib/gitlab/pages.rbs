@@ -1,0 +1,7 @@
+module Gitlab
+  module Pages
+    class UniqueDomainGenerationFailure < ::StandardError
+      def initialize: (?untyped) -> void
+    end
+  end
+end

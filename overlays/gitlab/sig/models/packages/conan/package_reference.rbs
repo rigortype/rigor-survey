@@ -1,0 +1,7 @@
+module Packages
+  module Conan
+    class PackageReference < ::ApplicationRecord
+      def self.for_package_id_and_reference: (untyped, untyped) -> ActiveRecord::Relation[Packages::Conan::PackageReference]
+    end
+  end
+end

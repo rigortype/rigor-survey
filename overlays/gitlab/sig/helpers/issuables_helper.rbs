@@ -1,0 +1,6 @@
+module IssuablesHelper
+  def sidebar_gutter_collapsed_class: (untyped) -> ("right-sidebar-expanded" | String)
+  def issuable_project_reference: (untyped) -> String
+  def issuable_initial_data: (untyped) -> Hash[untyped, untyped]
+  def issuable_label_selector_data: (untyped, untyped) -> { allow_scoped_labels: untyped, field_name: String, full_path: untyped, initial_labels: untyped, issuable_type: untyped, labels_filter_base_path: untyped, labels_manage_path: untyped, supports_lock_on_merge: untyped }
+end

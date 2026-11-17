@@ -1,0 +1,8 @@
+module Gitlab
+  module Audit
+    class CompositeIdentityAuthor < ::SimpleDelegator
+      def initialize: (untyped, human_author: untyped) -> void
+      def name: () -> String
+    end
+  end
+end

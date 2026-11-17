@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Create
+        class JobDefinitionBuilder
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  module Python
+    module NativeHelpers
+      def self.python_helper_path: () -> String
+      def self.python_requirements_path: () -> String
+      def self.python_helpers_dir: () -> String
+      def self.native_helpers_root: () -> String
+      def self.clean_path: (untyped) -> String
+    end
+  end
+end

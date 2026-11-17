@@ -1,0 +1,7 @@
+module Form
+  class AdminSettings
+    def authorized_fetch: () -> ("actors" | "all" | "none")
+    def save: () -> (Array[Symbol] | false)
+    def persisted?: () -> true
+  end
+end

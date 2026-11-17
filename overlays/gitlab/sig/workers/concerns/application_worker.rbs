@@ -1,0 +1,4 @@
+module ApplicationWorker
+  def logging_extras: () -> Hash[String, untyped]
+  def skip_writes_if_replica?: (untyped) -> false
+end

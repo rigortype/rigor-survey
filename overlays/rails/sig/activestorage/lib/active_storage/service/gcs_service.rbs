@@ -1,0 +1,8 @@
+module ActiveStorage
+  class Service
+    class GCSService < ::ActiveStorage::Service
+      def initialize: (?public: untyped, **untyped) -> void
+      def headers_for_direct_upload: (untyped, checksum: untyped, ?filename: untyped, ?disposition: untyped, ?custom_metadata: untyped, **untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

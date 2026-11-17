@@ -1,0 +1,9 @@
+module Mutations
+  module Terraform
+    module State
+      class Restore < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> { terraform_state: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

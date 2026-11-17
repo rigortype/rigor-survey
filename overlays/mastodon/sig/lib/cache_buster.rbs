@@ -1,0 +1,3 @@
+class CacheBuster
+  def initialize: (?untyped) -> void
+end

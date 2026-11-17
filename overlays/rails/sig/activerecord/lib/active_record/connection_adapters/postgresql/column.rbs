@@ -1,0 +1,9 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      class Column < ::ActiveRecord::ConnectionAdapters::Column
+        def initialize: (*untyped, ?serial: untyped, ?identity: untyped, ?generated: untyped, **untyped) -> void
+      end
+    end
+  end
+end

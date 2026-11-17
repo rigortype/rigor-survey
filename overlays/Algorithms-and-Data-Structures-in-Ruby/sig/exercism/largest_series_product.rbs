@@ -1,0 +1,3 @@
+class Series
+  def initialize: (untyped) -> void
+end

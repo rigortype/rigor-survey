@@ -1,0 +1,12 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      module Wrapper
+        class CommandBuilder
+          def initialize: (requirements: untyped, original_properties: untyped, gradle_version: untyped) -> void
+          def build: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

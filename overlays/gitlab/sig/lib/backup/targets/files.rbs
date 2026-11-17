@@ -1,0 +1,16 @@
+module Backup
+  module Targets
+    class Files < ::Backup::Targets::Target
+      def initialize: (untyped, untyped, options: untyped, ?excludes: [String]) -> void
+      def dump: (untyped, untyped) -> nil
+      def restore: (untyped, untyped) -> nil
+      def backup_existing_files_dir: (untyped) -> top
+      def noncritical_warning?: (untyped) -> true
+      def tar_ignore_non_success?: (untyped, untyped) -> (false | true)
+      def exclude_dirs_rsync: () -> Array[untyped]
+      def raise_custom_error: (untyped) -> bot
+      def asynchronous?: () -> false
+      def excludes: () -> ["@pages.tmp"]
+    end
+  end
+end

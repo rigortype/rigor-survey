@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class Note
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::Note
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::Note
+        def initialize: (untyped) -> void
+        def discussion_id: () -> String
+        def github_identifiers: () -> { note_id: untyped, noteable_iid: untyped, noteable_type: untyped }
+      end
+    end
+  end
+end

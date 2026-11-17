@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Publish < ::Gitlab::Config::Entry::Node
+          def self.default: () -> "public"
+        end
+      end
+    end
+  end
+end

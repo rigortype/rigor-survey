@@ -1,0 +1,12 @@
+module Dependabot
+  module Conda
+    class Version < ::Dependabot::Version
+      def self.new: (untyped) -> Dependabot::Conda::Version
+      def initialize: (untyped) -> void
+      def <=>: (untyped) -> (Integer | nil)
+      def epoch: () -> Integer
+      def version_parts: () -> Array[Integer | String]
+      def local_parts: () -> (Array[Integer | String] | nil)
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  module Bazel
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class DeclarationParser
+        def self.parse_bazel_dep: (untyped) -> Hash[untyped, untyped]
+        def self.parse_http_archive: (untyped) -> Hash[untyped, untyped]
+        def self.parse_git_repository: (untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

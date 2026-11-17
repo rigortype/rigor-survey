@@ -1,0 +1,16 @@
+module Gitlab
+  module Git
+    class Commit
+      def self.find: (untyped, ?untyped) -> (Gitlab::Git::Commit | nil)
+      def self.list_all: (untyped, ?untyped) -> Gitlab::GitalyClient::CommitCollectionWithNextCursor
+      def self.decorate: (untyped, untyped, ?untyped) -> Gitlab::Git::Commit
+      def initialize: (untyped, untyped, ?nil, ?lazy_load_parents: (false | true)) -> void
+      def no_commit_message: () -> "No commit message"
+      def to_hash: () -> {}
+      def diffs: (?untyped) -> Gitlab::Git::DiffCollection
+      def stats: () -> Gitlab::Git::CommitStats
+      def gitaly_commit?: () -> (false | true)
+      def self.valid?: (untyped) -> (false | true)
+    end
+  end
+end

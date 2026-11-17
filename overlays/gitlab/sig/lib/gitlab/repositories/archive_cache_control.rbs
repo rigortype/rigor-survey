@@ -1,0 +1,13 @@
+module Gitlab
+  module Repositories
+    class ArchiveCacheControl
+      def initialize: (untyped, ref: untyped, metadata: untyped, ?include_lfs_blobs: (false | true), ?exclude_paths: ([String, String, String] | [String, String] | [String])) -> void
+      def max_age: () -> (3600 | 60)
+      def etag_components: () -> (Array[untyped] | [untyped, untyped])
+      def cache_control: () -> String
+      def etag: () -> String
+      def include_lfs_blobs: () -> (false | true)
+      def exclude_paths: () -> (["lib", "lib", "test"] | ["lib", "test"] | ["lib"] | ["test", "lib"])
+    end
+  end
+end

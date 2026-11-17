@@ -1,0 +1,3 @@
+class KeyRestrictionValidator < ::ActiveModel::EachValidator
+  def self.supported_key_restrictions: (untyped) -> Array[untyped]
+end

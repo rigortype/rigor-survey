@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Pattern < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Value
+            class RegularExpression
+              def initialize: (untyped) -> void
+              def valid?: () -> (false | true)
+            end
+          end
+        end
+      end
+    end
+  end
+end

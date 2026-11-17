@@ -1,0 +1,3 @@
+class WildcardMatcher
+  def self.match?: (untyped, untyped) -> (false | true)
+end

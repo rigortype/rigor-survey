@@ -1,0 +1,10 @@
+module Gitlab
+  module MarkdownCache
+    def self.latest_cached_markdown_version: (local_version: untyped) -> Integer
+    def self.cached_markdown_version_for_write: (local_version: untyped) -> Integer
+    def self.previous_cached_markdown_version: (local_version: untyped) -> (Integer | nil)
+    def self.cached_markdown_version_for_bulk_clear: (?local_version: untyped) -> Integer
+    def self.version_tier: (untyped, local_version: untyped) -> (:current | :previous | :stale)
+    def self.current_shifted_version: () -> (2162688 | 2228224)
+  end
+end

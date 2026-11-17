@@ -1,0 +1,6 @@
+module Spam
+  class SpamVerdictService
+    def initialize: (user: untyped, target: untyped, options: {}, ?context: untyped, ?extra_features: untyped) -> void
+    def options: () -> {}
+  end
+end

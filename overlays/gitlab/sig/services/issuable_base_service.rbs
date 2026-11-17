@@ -1,0 +1,3 @@
+class IssuableBaseService < ::BaseContainerService
+  def self.constructor_container_arg: (untyped) -> { container: untyped }
+end

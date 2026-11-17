@@ -1,0 +1,9 @@
+module Dependabot
+  module Composer
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def fetcher: () -> Dependabot::Composer::Package::PackageDetailsFetcher
+      end
+    end
+  end
+end

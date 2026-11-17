@@ -1,0 +1,7 @@
+module Api
+  module V1
+    class SessionPresenter
+      def initialize: (app_mode: untyped, current_user: untyped, flags: untyped) -> void
+    end
+  end
+end

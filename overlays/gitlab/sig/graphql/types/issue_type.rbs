@@ -1,0 +1,5 @@
+module Types
+  class IssueType < ::Types::BaseObject
+    def discussion_locked: () -> (false | true)
+  end
+end

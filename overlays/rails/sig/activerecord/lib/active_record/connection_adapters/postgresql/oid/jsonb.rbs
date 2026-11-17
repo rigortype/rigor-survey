@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module OID
+        class Jsonb < ::ActiveRecord::Type::Json
+          def type: () -> :jsonb
+        end
+      end
+    end
+  end
+end

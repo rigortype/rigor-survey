@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module Kubernetes
+      module AgentHelpers
+        def update_configuration: (agent: untyped, config: untyped) -> true
+      end
+    end
+  end
+end

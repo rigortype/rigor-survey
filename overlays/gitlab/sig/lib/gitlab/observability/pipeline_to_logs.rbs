@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    class PipelineToLogs < ::Gitlab::Observability::PipelineConverterBase
+      def convert: () -> ({ resourceLogs: [] } | { resourceLogs: [{ resource: { attributes: Array[Hash[Symbol, Hash[Symbol, untyped] | String] | Hash[Symbol, Hash[Symbol, String] | String]] }, scopeLogs: [{ scope: { name: "gitlab-ci-logs", version: "1.0.0" }, logRecords: Array[untyped] }] }] })
+    end
+  end
+end

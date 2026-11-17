@@ -1,0 +1,3 @@
+module RecaptchaHelper
+  def recaptcha_enabled?: () -> (false | true)
+end

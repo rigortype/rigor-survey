@@ -1,0 +1,7 @@
+module Gitlab
+  class CrossProjectAccess
+    class CheckInfo
+      def initialize: ({ index: false | true } | {}, Proc | nil, Proc | nil, false | true) -> void
+    end
+  end
+end

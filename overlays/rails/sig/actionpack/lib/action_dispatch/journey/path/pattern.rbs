@@ -1,0 +1,17 @@
+module ActionDispatch
+  module Journey
+    module Path
+      class Pattern
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+        def build_formatter: () -> ActionDispatch::Journey::Format
+        def eager_load!: () -> nil
+        def requirements_anchored?: () -> (false | true)
+        def match: (untyped) -> (ActionDispatch::Journey::Path::Pattern::MatchData | nil)
+        class MatchData
+          def initialize: (untyped, untyped, untyped) -> void
+          def captures: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

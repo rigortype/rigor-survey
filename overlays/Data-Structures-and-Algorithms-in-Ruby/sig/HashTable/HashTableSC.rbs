@@ -1,0 +1,7 @@
+class HashTableSC
+  def printHash: () -> nil
+  def find: (untyped) -> (false | true)
+  class Node
+    def initialize: (untyped, untyped) -> void
+  end
+end

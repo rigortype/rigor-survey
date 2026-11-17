@@ -1,0 +1,8 @@
+module Ci
+  module PipelineTriggers
+    class DestroyService
+      def initialize: (user: untyped, trigger: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

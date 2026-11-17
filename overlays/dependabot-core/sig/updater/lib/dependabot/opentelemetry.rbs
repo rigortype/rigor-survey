@@ -1,0 +1,6 @@
+module Dependabot
+  module OpenTelemetry
+    def self.should_configure?: () -> (false | true)
+    def self.configure: () -> (::OpenTelemetry::Trace::Tracer | nil)
+  end
+end

@@ -1,0 +1,26 @@
+module Gitlab
+  module Ci
+    module Status
+      class Core
+        def initialize: (untyped, untyped) -> void
+        def id: () -> String
+        def icon: () -> bot
+        def favicon: () -> bot
+        def illustration: () -> bot
+        def name: () -> String
+        def group: () -> String
+        def has_details?: () -> false
+        def details_path: () -> bot
+        def has_action?: () -> false
+        def action_icon: () -> bot
+        def action_path: () -> bot
+        def action_method: () -> bot
+        def action_title: () -> bot
+        def action_button_title: () -> bot
+        def status_tooltip: () -> bot
+        def confirmation_message: () -> nil
+        def deployment_details_path: () -> nil
+      end
+    end
+  end
+end

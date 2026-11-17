@@ -1,0 +1,14 @@
+module Gitlab
+  module Runtime
+    def self.identify: () -> (:console | :geo_log_cursor | :puma | :rails_runner | :rake | :sidekiq | :test_suite | nil)
+    def self.safe_identify: () -> (:console | :geo_log_cursor | :puma | :rails_runner | :rake | :sidekiq | :test_suite | nil)
+    def self.puma?: () -> (false | true)
+    def self.sidekiq?: () -> (false | true)
+    def self.rake?: () -> (false | true)
+    def self.console?: () -> (false | true)
+    def self.geo_log_cursor?: () -> (false | true)
+    def self.rails_runner?: () -> (false | true)
+    def self.application?: () -> (false | true)
+    def self.multi_threaded?: () -> (false | true)
+  end
+end

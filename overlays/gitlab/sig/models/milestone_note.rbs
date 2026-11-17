@@ -1,0 +1,3 @@
+class MilestoneNote < ::SyntheticNote
+  def self.from_event: (untyped, ?resource: untyped, ?resource_parent: untyped) -> MilestoneNote
+end

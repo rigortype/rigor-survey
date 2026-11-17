@@ -1,0 +1,23 @@
+module Spree
+  module Api
+    module V3
+      class FilterTable
+        def self.for_model: (untyped, untyped) -> Spree::Api::V3::FilterTable
+        def self.for: (untyped) -> Spree::Api::V3::FilterTable::Endpoint
+        def self.reset!: () -> {}
+        def self.spec_for: (untyped) -> Hash[String, Hash[untyped, untyped] | Hash[String, untyped]]
+        def self.cache: () -> {}
+        def initialize: (untyped, untyped) -> void
+        def associations: () -> Hash[untyped, Spree::Api::V3::FilterTable]
+        def to_h: () -> Hash[String, untyped]
+        class Endpoint
+          def initialize: (untyped) -> void
+          def table: () -> Spree::Api::V3::FilterTable
+          def to_h: () -> (Hash[untyped, untyped] | Hash[String, untyped])
+        end
+        class Error < ::StandardError
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Concurrent
+  class LazyRegister < ::Concurrent::Synchronization::Object
+    def register: (untyped) ?{ (*untyped) -> untyped } -> Concurrent::LazyRegister
+    def unregister: (untyped) -> Concurrent::LazyRegister
+  end
+end

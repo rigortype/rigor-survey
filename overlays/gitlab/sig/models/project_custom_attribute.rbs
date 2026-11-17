@@ -1,0 +1,3 @@
+class ProjectCustomAttribute < ::ApplicationRecord
+  def self.declarative_policy_class: () -> "Projects::CustomAttributePolicy"
+end

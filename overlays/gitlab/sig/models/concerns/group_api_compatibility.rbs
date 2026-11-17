@@ -1,0 +1,4 @@
+module GroupAPICompatibility
+  def project_creation_level_str: () -> ("administrator" | "developer" | "maintainer" | "noone" | "owner" | nil)
+  def subgroup_creation_level_str: () -> ("maintainer" | "owner" | nil)
+end

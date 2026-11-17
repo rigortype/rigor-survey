@@ -1,0 +1,11 @@
+module ActionCable
+  class RemoteConnections
+    def initialize: (untyped) -> void
+    def where: (untyped) -> ActionCable::RemoteConnections::RemoteConnection
+    class RemoteConnection
+      def initialize: (untyped, untyped) -> void
+      class InvalidIdentifiersError < ::StandardError
+      end
+    end
+  end
+end

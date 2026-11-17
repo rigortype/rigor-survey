@@ -1,0 +1,18 @@
+module ActionDispatch
+  module Journey
+    class Formatter
+      def initialize: (untyped) -> void
+      def generate: (untyped, untyped, untyped) -> (ActionDispatch::Journey::Formatter::MissingRoute | ActionDispatch::Journey::Formatter::RouteWithParams)
+      def clear: () -> nil
+      def eager_load!: () -> nil
+      class RouteWithParams
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+      class MissingRoute
+        def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+        def path: (untyped) -> bot
+        def params: () -> bot
+      end
+    end
+  end
+end

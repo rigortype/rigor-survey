@@ -1,0 +1,13 @@
+module Rails
+  class Railtie
+    class Configuration
+      def self.eager_load_namespaces: () -> []
+      def eager_load_namespaces: () -> []
+      def watchable_files: () -> []
+      def watchable_dirs: () -> {}
+      def app_middleware: () -> Rails::Configuration::MiddlewareStackProxy
+      def to_prepare_blocks: () -> []
+      def to_prepare: () ?{ () [self: ActiveSupport::Reloader] -> void } -> void
+    end
+  end
+end

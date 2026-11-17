@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class ErrorHandler
+      def initialize: (Proc) -> void
+    end
+  end
+end

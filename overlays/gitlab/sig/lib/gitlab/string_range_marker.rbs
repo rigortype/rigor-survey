@@ -1,0 +1,5 @@
+module Gitlab
+  class StringRangeMarker
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

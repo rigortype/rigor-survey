@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      class SecurityPolicyDefault < ::Gitlab::Ci::ProjectConfig::Source
+        def initialize: (project: untyped, ?pipeline_source: untyped, ?triggered_for_branch: untyped, ?source_branch: untyped, ?pipeline_policy_context: untyped) -> void
+        def content: () -> nil
+        def source: () -> :security_policies_default_source
+      end
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module Redmine
+  module Themes
+    def self.rescan: () -> Array[Redmine::Themes::Theme]
+    def self.scan_themes: () -> Array[Redmine::Themes::Theme]
+    class Theme
+      def initialize: (Pathname | String) -> void
+      def stylesheets: () -> Array[String]
+      def images: () -> Array[String]
+      def javascripts: () -> Array[String]
+      def favicons: () -> Array[String]
+      def stylesheet_path: (untyped) -> String
+      def image_path: (untyped) -> String
+      def javascript_path: (untyped) -> String
+      def favicon_path: () -> String
+      def asset_prefix: () -> String
+      def asset_paths: () -> Redmine::AssetPath
+      def path: () -> ("/tmp/test" | Pathname)
+      def dir: () -> String
+    end
+  end
+end

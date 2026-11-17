@@ -1,0 +1,14 @@
+module BulkImports
+  class Error < ::StandardError
+    def self.unsupported_gitlab_version: () -> BulkImports::Error
+    def self.scope_or_url_validation_failure: () -> BulkImports::Error
+    def self.invalid_url: () -> BulkImports::Error
+    def self.destination_namespace_validation_failure: (untyped) -> BulkImports::Error
+    def self.destination_slug_validation_failure: () -> BulkImports::Error
+    def self.destination_full_path_validation_failure: (untyped) -> BulkImports::Error
+    def self.source_full_path_validation_failure: (untyped) -> BulkImports::Error
+    def self.not_authorized: (untyped) -> BulkImports::Error
+    def self.setting_not_enabled: () -> BulkImports::Error
+    def self.cross_organization_destination: (untyped) -> BulkImports::Error
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  class Version < ::Gem::Version
+    def initialize: (untyped) -> void
+    def self.new: (untyped) -> Dependabot::Version
+    def self.update_type: (untyped, untyped) -> nil
+    def to_semver: () -> String
+    def lowest_prerelease_suffix: () -> "a"
+    def self.valid_semver?: (untyped) -> (false | true)
+    def semver_parts: () -> ([0 | Integer, 0 | Integer, 0 | Integer] | nil)
+  end
+end

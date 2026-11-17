@@ -1,0 +1,7 @@
+module Ci
+  module Runners
+    class TokenPartition
+      def initialize: (untyped) -> void
+    end
+  end
+end

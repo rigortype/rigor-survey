@@ -1,0 +1,7 @@
+module PagesCore
+  class DigestVerifier
+    def initialize: (untyped, ?untyped) -> void
+    class InvalidSignatureError < ::StandardError
+    end
+  end
+end

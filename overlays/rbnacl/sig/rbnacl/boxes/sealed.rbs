@@ -1,0 +1,11 @@
+module RbNaCl
+  module Boxes
+    class Sealed
+      def initialize: (untyped, ?untyped) -> void
+      def self.from_private_key: (untyped) -> RbNaCl::Boxes::Sealed
+      def self.from_public_key: (untyped) -> RbNaCl::Boxes::Sealed
+      def box: (untyped) -> String
+      def open: (untyped) -> String
+    end
+  end
+end

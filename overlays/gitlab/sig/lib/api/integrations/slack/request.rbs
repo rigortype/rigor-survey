@@ -1,0 +1,9 @@
+module API
+  class Integrations < ::API::Base
+    module Slack
+      module Request
+        def self.verify!: (untyped) -> (false | true)
+      end
+    end
+  end
+end

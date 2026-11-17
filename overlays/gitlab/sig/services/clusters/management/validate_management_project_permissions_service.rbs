@@ -1,0 +1,8 @@
+module Clusters
+  module Management
+    class ValidateManagementProjectPermissionsService
+      def initialize: (?untyped) -> void
+      def execute: (untyped, untyped) -> (false | true)
+    end
+  end
+end

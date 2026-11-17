@@ -1,0 +1,8 @@
+module Gitlab
+  module Kubernetes
+    class ConfigMap
+      def initialize: (untyped, untyped) -> void
+      def config_map_name: () -> String
+    end
+  end
+end

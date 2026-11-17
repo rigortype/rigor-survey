@@ -1,0 +1,11 @@
+module Gitlab
+  module SQL
+    class RecursiveCTE
+      def initialize: (Symbol, ?union_args: untyped) -> void
+      def <<: (untyped) -> Array[untyped]
+      def to_arel: () -> Arel::Nodes::As
+      def alias_to: (untyped) -> Arel::Nodes::As
+      def table: () -> Arel::Table
+    end
+  end
+end

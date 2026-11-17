@@ -1,0 +1,16 @@
+module ActionController
+  class MiddlewareStack < ::ActionDispatch::MiddlewareStack
+    class Proxy
+      def initialize: (untyped) -> void
+    end
+    class Middleware < ::ActionDispatch::MiddlewareStack::Middleware
+      def initialize: (untyped, untyped, untyped, untyped, untyped, untyped) -> void
+    end
+  end
+  class Metal < ::AbstractController::Base
+    def self.make_response!: (untyped) -> ActionDispatch::Response
+    def self.action_encoding_template: (untyped) -> false
+    def set_request!: (untyped) -> ActionController::Metal
+    def self.middleware: () -> ActionController::MiddlewareStack::Proxy
+  end
+end

@@ -1,0 +1,7 @@
+module DependencyProxy
+  module GroupSettings
+    class UpdateService < ::BaseContainerService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

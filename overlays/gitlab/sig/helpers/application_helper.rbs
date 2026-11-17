@@ -1,0 +1,22 @@
+module ApplicationHelper
+  def show_last_push_widget?: (untyped) -> (false | true)
+  def hexdigest: (untyped) -> String
+  def body_data: () -> Hash[untyped, untyped]
+  def password_manager_data: () -> ({ :"1p_ignore" => "" } | {})
+  def project_data: () -> ({ project_id: untyped, project: untyped, project_full_path: untyped, group: untyped, group_full_path: untyped, namespace_id: untyped } | {})
+  def body_data_page: () -> String
+  def self.community_forum: () -> "https://forum.gitlab.com"
+  def community_forum: () -> "https://forum.gitlab.com"
+  def page_filter_path: (?untyped) -> String
+  def page_class: () -> Array[untyped]
+  def system_message_class: () -> (String | [])
+  def active_when: (untyped) -> ("active" | nil)
+  def linkedin_url: (untyped) -> String
+  def twitter_url: (untyped) -> ("" | String)
+  def discord_url: (untyped) -> ("" | String)
+  def github_url: (untyped) -> ("" | String)
+  def client_class_list: () -> String
+  def client_js_flags: () -> Hash[Symbol, true]
+  def page_startup_api_calls: () -> (Hash[untyped, untyped] | nil)
+  def autocomplete_data_sources: (untyped, untyped) -> Hash[untyped, untyped]
+end

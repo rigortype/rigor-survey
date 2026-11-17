@@ -1,0 +1,5 @@
+module Gitlab
+  module NoCacheHeaders
+    def no_cache_headers: () -> bot
+  end
+end

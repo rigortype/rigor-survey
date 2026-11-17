@@ -1,0 +1,8 @@
+module Packages
+  module Conan
+    class PackageFinder
+      def initialize: (untyped, untyped, ?project: untyped) -> void
+      def execute: () -> ActiveRecord::Relation[Packages::Conan::Package]
+    end
+  end
+end

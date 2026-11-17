@@ -1,0 +1,10 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class NotificationsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "notifications"
+        def active_routes: () -> { controller: :notifications }
+      end
+    end
+  end
+end

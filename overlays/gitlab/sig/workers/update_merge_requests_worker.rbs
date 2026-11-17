@@ -1,0 +1,3 @@
+class UpdateMergeRequestsWorker
+  def perform: (untyped, untyped, untyped, untyped, untyped, ?untyped) -> (nil | true)
+end

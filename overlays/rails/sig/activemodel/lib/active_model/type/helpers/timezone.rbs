@@ -1,0 +1,9 @@
+module ActiveModel
+  module Type
+    module Helpers
+      module Timezone
+        def default_timezone: () -> (:local | :utc)
+      end
+    end
+  end
+end

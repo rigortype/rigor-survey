@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        class Create < ::Gitlab::Ci::Pipeline::Chain::Base
+          def break?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

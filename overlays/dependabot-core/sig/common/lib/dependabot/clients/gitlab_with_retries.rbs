@@ -1,0 +1,13 @@
+module Dependabot
+  module Clients
+    class GitlabWithRetries < ::SimpleDelegator
+      def self.for_source: (source: untyped, credentials: untyped) -> Dependabot::Clients::GitlabWithRetries
+      def self.for_gitlab_dot_com: (credentials: untyped) -> Dependabot::Clients::GitlabWithRetries
+      def fetch_commit: (untyped, untyped) -> String
+      def fetch_default_branch: (untyped) -> String
+      def initialize: (?max_retries: untyped, **untyped) -> void
+      def create_commit: (untyped, untyped, untyped, untyped, **untyped) -> Gitlab::ObjectifiedHash
+      def respond_to_missing?: (untyped, ?untyped) -> (false | true)
+    end
+  end
+end

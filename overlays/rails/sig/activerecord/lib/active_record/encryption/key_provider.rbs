@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class KeyProvider
+      def initialize: (untyped) -> void
+    end
+  end
+end

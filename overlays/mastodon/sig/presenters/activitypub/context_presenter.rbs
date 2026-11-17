@@ -1,0 +1,5 @@
+module ActivityPub
+  class ContextPresenter < ::ActiveModelSerializers::Model
+    def self.from_conversation: (untyped) -> ActivityPub::ContextPresenter
+  end
+end

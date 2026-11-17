@@ -1,0 +1,11 @@
+module Types
+  module Analytics
+    module CycleAnalytics
+      module ValueStreams
+        class StageType < ::Types::BaseObject
+          def stage_entity: () -> ::Analytics::CycleAnalytics::StageEntity
+        end
+      end
+    end
+  end
+end

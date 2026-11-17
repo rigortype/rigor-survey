@@ -1,0 +1,4 @@
+class PagesDeployment < ::ApplicationRecord
+  def self.declarative_policy_class: () -> "Pages::DeploymentPolicy"
+  def url: () -> String
+end

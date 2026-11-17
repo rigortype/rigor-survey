@@ -1,0 +1,9 @@
+module ActionView
+  class Template
+    module Sources
+      class File
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

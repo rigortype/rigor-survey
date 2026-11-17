@@ -1,0 +1,9 @@
+module Net
+  module SSH
+    module Test
+      def socket: (?untyped) -> Net::SSH::Test::Socket
+      def connection: (?untyped) -> Net::SSH::Connection::Session
+      def transport: (?untyped) -> Net::SSH::Transport::Session
+    end
+  end
+end

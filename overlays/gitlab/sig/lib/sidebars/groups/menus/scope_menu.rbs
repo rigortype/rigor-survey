@@ -1,0 +1,10 @@
+module Sidebars
+  module Groups
+    module Menus
+      class ScopeMenu < ::Sidebars::Menu
+        def active_routes: () -> { path: ["groups#show", "groups#details", "groups#new", "projects#new"] }
+        def render?: () -> true
+      end
+    end
+  end
+end

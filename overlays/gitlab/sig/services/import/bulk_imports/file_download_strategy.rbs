@@ -1,0 +1,8 @@
+module Import
+  module BulkImports
+    class FileDownloadStrategy
+      def download_file: (untyped) -> nil
+      def log_and_raise_error: (untyped) -> bot
+    end
+  end
+end

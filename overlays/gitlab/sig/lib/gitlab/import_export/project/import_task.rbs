@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class ImportTask < ::Gitlab::ImportExport::Project::BaseTask
+        def import: () -> (false | true)
+      end
+    end
+  end
+end

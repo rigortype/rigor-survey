@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module Mcp
+      module JsonRpc
+        def jsonrpc_request_id: () -> (Integer | String | nil)
+      end
+    end
+  end
+end

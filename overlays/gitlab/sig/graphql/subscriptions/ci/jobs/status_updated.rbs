@@ -1,0 +1,9 @@
+module Subscriptions
+  module Ci
+    module Jobs
+      class StatusUpdated < ::Subscriptions::BaseSubscription
+        def authorized?: (job_id: untyped) -> true
+      end
+    end
+  end
+end

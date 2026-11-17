@@ -1,0 +1,7 @@
+module Wikis
+  class PageMetaFinder
+    def initialize: (untyped, ?search: String, **untyped) -> void
+    def klass: () -> singleton(WikiPage::Meta)
+    def search: () -> "deploy"
+  end
+end

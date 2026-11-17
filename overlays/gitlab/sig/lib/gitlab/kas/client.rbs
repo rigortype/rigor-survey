@@ -1,0 +1,7 @@
+module Gitlab
+  module Kas
+    class Client
+      def self.generate_workflow_token_binding: () -> String
+    end
+  end
+end

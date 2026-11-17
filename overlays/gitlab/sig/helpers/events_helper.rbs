@@ -1,0 +1,10 @@
+module EventsHelper
+  def localized_action_name_map: () -> Hash[untyped, untyped]
+  def localized_push_action_name_map: () -> { :"pushed new" => untyped, deleted: untyped, :"pushed to" => untyped }
+  def localized_created_project_action_name_map: () -> { created: untyped, imported: untyped }
+  def localized_design_action_names: () -> { added: untyped, updated: untyped, removed: untyped }
+  def event_action_name: (untyped) -> String
+  def event_preposition: (untyped) -> ("at" | "in the wiki for" | "in" | nil)
+  def event_feed_title: (untyped) -> String
+  def user_profile_activity_classes: () -> (" gl-font-semibold gl-text-default" | "")
+end

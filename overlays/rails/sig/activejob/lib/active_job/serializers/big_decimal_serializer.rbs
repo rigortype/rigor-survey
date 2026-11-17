@@ -1,0 +1,7 @@
+module ActiveJob
+  module Serializers
+    class BigDecimalSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def klass: () -> singleton(BigDecimal)
+    end
+  end
+end

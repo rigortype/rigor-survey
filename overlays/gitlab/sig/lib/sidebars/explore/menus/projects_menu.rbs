@@ -1,0 +1,11 @@
+module Sidebars
+  module Explore
+    module Menus
+      class ProjectsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "project"
+        def render?: () -> true
+        def active_routes: () -> { page: [untyped, untyped, untyped, untyped, untyped] }
+      end
+    end
+  end
+end

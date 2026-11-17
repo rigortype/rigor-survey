@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    module OauthClient
+      def self.refresh_credentials: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

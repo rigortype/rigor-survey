@@ -1,0 +1,5 @@
+module ActionDispatch
+  class Callbacks
+    def initialize: (untyped) -> void
+  end
+end

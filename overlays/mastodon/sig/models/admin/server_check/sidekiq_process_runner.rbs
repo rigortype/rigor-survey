@@ -1,0 +1,7 @@
+module Admin
+  class ServerCheck < ::ApplicationRecord
+    class SidekiqProcessRunner
+      def async?: () -> false
+    end
+  end
+end

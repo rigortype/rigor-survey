@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    class EventsCache
+      def initialize: (untyped) -> void
+    end
+  end
+end

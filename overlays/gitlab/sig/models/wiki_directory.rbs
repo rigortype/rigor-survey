@@ -1,0 +1,5 @@
+class WikiDirectory
+  def initialize: (String, ?untyped) -> void
+  def title: () -> String
+  def to_partial_path: () -> "shared/wikis/wiki_directory"
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module Cargo
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionResolver
+        def initialize: (dependency: untyped, credentials: untyped, original_dependency_files: untyped, prepared_dependency_files: untyped) -> void
+        def latest_resolvable_version: () -> (Gem::Version | String | nil)
+      end
+    end
+  end
+end

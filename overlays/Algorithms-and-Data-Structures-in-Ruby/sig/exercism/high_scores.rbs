@@ -1,0 +1,3 @@
+class HighScores
+  def initialize: (untyped) -> void
+end

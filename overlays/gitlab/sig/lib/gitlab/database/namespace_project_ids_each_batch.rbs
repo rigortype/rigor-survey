@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class NamespaceProjectIdsEachBatch
+      def initialize: (group_id: untyped, ?resolver: Proc, ?batch_size: untyped) -> void
+    end
+  end
+end

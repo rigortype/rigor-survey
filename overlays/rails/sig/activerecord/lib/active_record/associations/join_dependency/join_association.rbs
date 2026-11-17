@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Associations
+    class JoinDependency
+      class JoinAssociation < ::ActiveRecord::Associations::JoinDependency::JoinPart
+        def initialize: (untyped, untyped) -> void
+        def join_constraints: (untyped, untyped, untyped, untyped) -> Array[untyped]
+      end
+    end
+  end
+end

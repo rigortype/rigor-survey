@@ -1,0 +1,16 @@
+module Kramdown
+  module Parser
+    class Html < ::Kramdown::Parser::Base
+      module Parser
+        def parse_html_attributes: (untyped, ?untyped, ?untyped) -> Hash[untyped, untyped]
+      end
+      class ElementConverter
+        def initialize: (untyped) -> void
+        def process_text: (untyped, ?untyped) -> Array[::Kramdown::Element]
+        def wrap_text_children: (untyped) -> Array[untyped]
+        def set_basics: (untyped, untyped, ?untyped) -> nil
+        def convert_table: (untyped) -> ([::Kramdown::Element] | nil)
+      end
+    end
+  end
+end

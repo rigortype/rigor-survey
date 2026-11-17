@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class ForwardArgsNode < ::RuboCop::AST::Node
+      def to_a: () -> [RuboCop::AST::ForwardArgsNode]
+    end
+  end
+end

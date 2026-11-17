@@ -1,0 +1,5 @@
+module Gitlab
+  module FileMarkdownLinkBuilder
+    def markdown_link: () -> (String | nil)
+  end
+end

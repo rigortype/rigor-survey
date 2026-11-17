@@ -1,0 +1,5 @@
+module ActionView
+  module Helpers
+    def self.eager_load!: () -> nil
+  end
+end

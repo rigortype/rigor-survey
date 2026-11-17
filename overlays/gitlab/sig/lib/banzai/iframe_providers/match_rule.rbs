@@ -1,0 +1,9 @@
+module Banzai
+  module IframeProviders
+    class MatchRule
+      def self.from_config: (untyped, untyped) -> Banzai::IframeProviders::MatchRule
+      def initialize: (host: untyped, path_segments: untyped, params: untyped) -> void
+      def match: (untyped) -> (Hash[untyped, untyped] | nil)
+    end
+  end
+end

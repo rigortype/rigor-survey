@@ -1,0 +1,6 @@
+module NotesHelper
+  def diff_view_line_data: (untyped, untyped, untyped) -> (Hash[untyped, untyped] | nil)
+  def form_resources: () -> ([untyped, untyped] | [untyped])
+  def initial_notes_data: (untyped) -> { notesUrl: untyped, now: Integer, diffView: untyped, enableGFM: { emojis: true, members: untyped, issues: untyped, mergeRequests: untyped, vulnerabilities: untyped, epics: untyped, milestones: untyped, labels: untyped } }
+  def notes_data: (untyped) -> (Hash[untyped, untyped] | { noteableType: untyped, noteableId: untyped, projectId: untyped, groupId: untyped, discussionsPath: untyped, registerPath: untyped, newSessionPath: untyped, markdownDocsPath: untyped, quickActionsDocsPath: untyped, closePath: untyped, reopenPath: untyped, notesPath: untyped, prerenderedNotesCount: untyped, lastFetchedAt: Integer, notesFilter: untyped })
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  module TabWidth
+    def css_class_for_user: (untyped) -> String
+  end
+end

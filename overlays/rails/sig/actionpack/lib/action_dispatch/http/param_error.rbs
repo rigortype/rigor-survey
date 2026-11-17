@@ -1,0 +1,5 @@
+module ActionDispatch
+  class ParamError < ::ActionDispatch::Http::Parameters::ParseError
+    def initialize: (?untyped) -> void
+  end
+end

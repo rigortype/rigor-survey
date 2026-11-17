@@ -1,0 +1,17 @@
+module ActiveSupport
+  module Testing
+    class SimpleStubs
+      def stubbed?: () -> (false | true)
+      class Stub < ::Struct[untyped]
+        def object: () -> untyped
+        def method_name: () -> untyped
+        def original_method: () -> untyped
+        def object=: (untyped) -> untyped
+        def method_name=: (untyped) -> untyped
+        def original_method=: (untyped) -> untyped
+        def self.new: (?object: untyped, ?method_name: untyped, ?original_method: untyped) -> instance | (?untyped object, ?untyped method_name, ?untyped original_method) -> instance
+        def self.[]: (?object: untyped, ?method_name: untyped, ?original_method: untyped) -> instance | (?untyped object, ?untyped method_name, ?untyped original_method) -> instance
+      end
+    end
+  end
+end

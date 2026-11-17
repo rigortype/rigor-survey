@@ -1,0 +1,5 @@
+module Gitlab
+  class EncryptedIncomingEmailCommand < ::Gitlab::EncryptedCommandBase
+    def self.encrypted_file_template: () -> String
+  end
+end

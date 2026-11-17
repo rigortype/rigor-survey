@@ -1,0 +1,9 @@
+module Gitlab
+  module Cluster
+    module Mixins
+      module PumaCluster
+        def self.prepended: (untyped) -> nil
+      end
+    end
+  end
+end

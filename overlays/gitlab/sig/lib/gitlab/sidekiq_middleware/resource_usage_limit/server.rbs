@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ResourceUsageLimit
+      class Server
+        def call: (untyped, untyped, untyped) ?{ (*untyped) -> untyped } -> (Array[untyped] | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module IncidentManagement
+  module TimelineEvents
+    class CreateService < ::IncidentManagement::TimelineEvents::BaseService
+      def initialize: (untyped, untyped, untyped) -> void
+      def self.create_incident: (untyped, untyped) -> ServiceResponse
+      def self.reopen_incident: (untyped, untyped) -> ServiceResponse
+      def self.resolve_incident: (untyped, untyped) -> ServiceResponse
+      def self.change_incident_status: (untyped, untyped, untyped) -> ServiceResponse
+      def self.change_severity: (untyped, untyped) -> ServiceResponse
+      def self.change_labels: (untyped, untyped, ?added_labels: untyped, ?removed_labels: untyped) -> (ServiceResponse | nil)
+      def execute: () -> ServiceResponse
+      def auto_created: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  class PullRequestCreator
+    class Codecommit
+      def initialize: (source: untyped, branch_name: untyped, base_commit: untyped, credentials: untyped, files: untyped, commit_message: untyped, pr_description: untyped, pr_name: untyped, author_details: untyped, labeler: untyped, require_up_to_date_base: untyped) -> void
+      def create: () -> (Seahorse::Client::Response | nil)
+    end
+  end
+end

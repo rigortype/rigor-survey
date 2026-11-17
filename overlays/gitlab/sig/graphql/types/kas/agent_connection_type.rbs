@@ -1,0 +1,7 @@
+module Types
+  module Kas
+    class AgentConnectionType < ::Types::BaseObject
+      def connected_at: () -> Time
+    end
+  end
+end

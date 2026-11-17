@@ -1,0 +1,11 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      module Paginators
+        class BasePaginator
+          def initialize: (?bucket_prefix: untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Haml
+  class AttributeCompiler
+    def initialize: (untyped, untyped) -> void
+    def compile: (untyped) -> (Array[untyped] | [:html, :attrs, [:dynamic, String]])
+  end
+end

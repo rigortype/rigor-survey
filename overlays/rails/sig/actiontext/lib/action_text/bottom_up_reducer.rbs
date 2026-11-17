@@ -1,0 +1,5 @@
+module ActionText
+  class BottomUpReducer
+    def initialize: (untyped) -> void
+  end
+end

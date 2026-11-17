@@ -1,0 +1,11 @@
+module API
+  module Terraform
+    module Modules
+      module V1
+        class NamespacePackages < ::API::Base
+          def finder_params: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

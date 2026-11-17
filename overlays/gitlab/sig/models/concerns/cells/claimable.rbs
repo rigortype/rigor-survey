@@ -1,0 +1,6 @@
+module Cells
+  module Claimable
+    def build_destroy_metadata_for_worker: (untyped) -> (nil | Hash[String, untyped])
+    def cells_claims_metadata_for_attribute: (untyped) -> (nil | { subject: { type: untyped, id: untyped }, source: { type: untyped, rails_primary_key_id: String }, record: Cells::Claimable, claim: untyped })
+  end
+end

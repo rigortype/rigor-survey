@@ -1,0 +1,6 @@
+module Gitlab
+  module RobotsTxt
+    def self.parsed_robots_txt: () -> Gitlab::RobotsTxt::Parser
+    def self.robots_txt: () -> String
+  end
+end

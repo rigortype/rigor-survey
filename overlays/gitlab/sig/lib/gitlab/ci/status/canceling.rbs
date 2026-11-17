@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class Canceling < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_canceled"
+        def favicon: () -> "favicon_status_canceled"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module LocalAndRemoteStorageMigration
+    module FilePathFixer
+      def fix_file_path!: (untyped) -> (String | nil)
+    end
+  end
+end

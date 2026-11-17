@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    class NullMetric
+      def method_missing: (untyped, *untyped) ?{ (*untyped) -> untyped } -> nil
+    end
+  end
+end

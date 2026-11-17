@@ -1,0 +1,15 @@
+module Gitlab
+  module MailRoom
+    def self.enabled_configs: () -> Hash[untyped, untyped]
+    def self.configs: () -> Hash[untyped, untyped]
+    def self.fetch_config: (untyped) -> Hash[untyped, untyped]
+    def self.merged_configs: (untyped) -> Hash[untyped, untyped]
+    def self.redis_config: () -> (Hash[untyped, untyped] | { redis_url: untyped, redis_db: untyped })
+    def self.rails_env: () -> ("development" | String)
+    def self.config_file: () -> String
+    def self.application_secrets_file: () -> String
+    def self.application_secrets: () -> Hash[untyped, untyped]
+    def self.default_encrypted_secret_filename: (untyped) -> ("incoming_email.yaml.enc" | "service_desk_email.yaml.enc" | String | nil)
+    def self.encrypted_configuration_settings: (untyped) -> { content_path: untyped, base_key: untyped, previous_keys: untyped }
+  end
+end

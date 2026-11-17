@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Inputs
+      class RulesConverter
+        def convert: (untyped) -> (nil | Hash[String, untyped])
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Monitor
+        class RssMemoryLimit
+          def initialize: (memory_limit_bytes: untyped) -> void
+          def call: () -> ({ threshold_violated: false, payload: {} } | { threshold_violated: true, payload: { message: "rss memory limit exceeded", memwd_rss_bytes: untyped, memwd_max_rss_bytes: untyped } })
+        end
+      end
+    end
+  end
+end

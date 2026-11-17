@@ -1,0 +1,9 @@
+module ActionText
+  class AttachmentGallery
+    def self.from_node: (untyped) -> ActionText::AttachmentGallery
+    def self.attachment_selector: () -> String
+    def self.selector: () -> String
+    def initialize: (untyped) -> void
+    def inspect: () -> String
+  end
+end

@@ -1,0 +1,4 @@
+class ApplicationsFinder
+  def initialize: (?{ id: untyped }) -> void
+  def params: () -> { id: untyped }
+end

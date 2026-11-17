@@ -1,0 +1,7 @@
+module Gitlab
+  module Search
+    class RecentItems
+      def initialize: (user: untyped, ?items_limit: untyped, ?expires_after: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Issues
+  class BuildService < ::Issues::BaseService
+    def execute: (?initialize_callbacks: untyped) -> Issue
+    def issue_params_with_info_from_discussions: () -> ({ title: String, description: String } | {})
+    def title_from_merge_request: () -> String
+    def description_for_discussions: () -> String
+    def item_for_discussion: (untyped) -> String
+  end
+end

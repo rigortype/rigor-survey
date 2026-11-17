@@ -1,0 +1,8 @@
+module Gitlab
+  module GithubImport
+    class MilestoneFinder
+      def initialize: (untyped) -> void
+      def cache_key_for: (untyped) -> String
+    end
+  end
+end

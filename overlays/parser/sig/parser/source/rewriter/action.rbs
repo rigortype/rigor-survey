@@ -1,0 +1,10 @@
+module Parser
+  module Source
+    class Rewriter
+      class Action
+        def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+        def to_s: () -> ("do nothing" | String)
+      end
+    end
+  end
+end

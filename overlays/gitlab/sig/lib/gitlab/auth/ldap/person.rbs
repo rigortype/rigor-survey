@@ -1,0 +1,10 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class Person
+        def self.ldap_attributes: (untyped) -> Array[untyped]
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

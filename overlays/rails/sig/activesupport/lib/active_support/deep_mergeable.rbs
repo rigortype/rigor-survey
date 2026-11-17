@@ -1,0 +1,5 @@
+module ActiveSupport
+  module DeepMergeable
+    def deep_merge?: (untyped) -> (false | true)
+  end
+end

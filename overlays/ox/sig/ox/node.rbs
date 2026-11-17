@@ -1,0 +1,5 @@
+module Ox
+  class Node
+    def initialize: (untyped) -> void
+  end
+end

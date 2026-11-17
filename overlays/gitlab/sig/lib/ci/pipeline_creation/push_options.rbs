@@ -1,0 +1,9 @@
+module Ci
+  module PipelineCreation
+    class PushOptions
+      def initialize: (untyped) -> void
+      def variables: () -> Array[Hash[String, untyped]]
+      def inputs: () -> Hash[untyped, untyped]
+    end
+  end
+end

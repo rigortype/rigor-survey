@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Checks
+        class Base
+          def initialize: (untyped) -> void
+          def execute: () -> bot
+        end
+      end
+    end
+  end
+end

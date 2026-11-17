@@ -1,0 +1,3 @@
+class ThreadResolveWorker
+  def perform: (untyped, untyped, ?untyped) -> (String | nil | true)
+end

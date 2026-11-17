@@ -1,0 +1,8 @@
+module IncidentManagement
+  module TimelineEventTags
+    class CreateService
+      def initialize: (untyped, untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

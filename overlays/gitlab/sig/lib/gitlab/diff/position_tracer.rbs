@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    class PositionTracer
+      def initialize: (project: untyped, old_diff_refs: untyped, new_diff_refs: untyped, ?paths: untyped) -> void
+      def ac_diffs: () -> Gitlab::Diff::FileCollection::Compare
+      def bd_diffs: () -> Gitlab::Diff::FileCollection::Compare
+      def cd_diffs: () -> Gitlab::Diff::FileCollection::Compare
+    end
+  end
+end

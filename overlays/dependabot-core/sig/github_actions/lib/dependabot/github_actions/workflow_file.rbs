@@ -1,0 +1,28 @@
+module Dependabot
+  module GithubActions
+    class WorkflowFile
+      def initialize: (untyped) -> void
+      def steps_sequences: () -> Array[Psych::Nodes::Sequence]
+      def steps_key_node_for: (untyped) -> (Psych::Nodes::Scalar | nil)
+      def declaration_at: (untyped) -> (::UsesDeclaration | nil)
+      def declarations_in_sequence: (untyped) -> Array[::UsesDeclaration]
+      def source_metadata_required?: (untyped) -> (false | true)
+      def source_metadata: (untyped) -> Metadata
+      def node_source: (untyped) -> (String | nil)
+      def node_start_line: (untyped) -> Integer
+      def node_start_column: (untyped) -> Integer
+      def node_end_line: (untyped) -> Integer
+      def node_end_column: (untyped) -> Integer
+      def sequence_node_style: (untyped) -> Integer
+      def mapping_node_style: (untyped) -> Integer
+      def scalar_node_style: (untyped) -> Integer
+      def node_children: (untyped) -> Array[untyped]
+      def byte_column: (untyped, untyped) -> Integer
+      def line_body: (untyped) -> String
+      def newline: () -> ("\n" | "\r\n")
+      def data: () -> (Object | nil)
+      def uses_declarations: () -> Array[::UsesDeclaration]
+      def sequences: () -> Array[Psych::Nodes::Sequence]
+    end
+  end
+end

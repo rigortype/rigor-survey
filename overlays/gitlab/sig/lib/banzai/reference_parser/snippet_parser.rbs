@@ -1,0 +1,7 @@
+module Banzai
+  module ReferenceParser
+    class SnippetParser < ::Banzai::ReferenceParser::BaseParser
+      def references_relation: () -> singleton(Snippet)
+    end
+  end
+end

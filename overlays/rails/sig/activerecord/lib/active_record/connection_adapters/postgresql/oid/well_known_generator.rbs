@@ -1,0 +1,17 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module OID
+        module WellKnown
+          class Generator
+            def self.generate!: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> { mappings_by_version: Hash[untyped, untyped] }
+            def initialize: (?output_path: untyped, ?cache_path: untyped, ?pg_type_source: untyped, ?pg_range_source: untyped, ?pg_version: untyped) -> void
+            def generate!: () -> { mappings_by_version: Hash[untyped, untyped] }
+            def build_mappings: (pg_type_source: untyped, pg_range_source: untyped, pg_version: untyped) -> { type_aliases: Hash[untyped, untyped], array_types: Hash[untyped, untyped], array_type_delimiters: Hash[untyped, untyped], range_types: Hash[untyped, untyped], domain_types: Hash[untyped, untyped] }
+            def render: (mappings_by_version: untyped) -> String
+          end
+        end
+      end
+    end
+  end
+end

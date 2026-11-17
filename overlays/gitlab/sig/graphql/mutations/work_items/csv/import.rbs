@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module CSV
+      class Import < ::Mutations::BaseMutation
+        def resolve: (untyped) -> ({ message: untyped, errors: [] } | { message: nil, errors: [untyped] } | { message: nil, errors: [String] })
+      end
+    end
+  end
+end

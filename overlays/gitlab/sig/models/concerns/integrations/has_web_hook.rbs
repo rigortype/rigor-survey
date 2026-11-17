@@ -1,0 +1,6 @@
+module Integrations
+  module HasWebHook
+    def hook_url: () -> bot
+    def url_variables: () -> bot
+  end
+end

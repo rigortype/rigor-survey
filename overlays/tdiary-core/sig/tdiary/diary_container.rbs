@@ -1,0 +1,7 @@
+module TDiary
+  class DiaryContainer
+    def self.find_by_day: (untyped, untyped) -> TDiary::DiaryContainer
+    def self.find_by_month: (untyped, untyped) -> TDiary::DiaryContainer
+    def initialize: (untyped, untyped, untyped, ?untyped) -> void
+  end
+end

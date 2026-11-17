@@ -1,0 +1,9 @@
+module Rails
+  module Command
+    class Base < ::Thor
+      def self.exit_on_failure?: () -> false
+      def self.engine?: () -> (String | nil)
+      def self.resolve_path: (untyped) -> (nil | String)
+    end
+  end
+end

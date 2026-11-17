@@ -1,0 +1,14 @@
+module Rails
+  module TestUnit
+    class InvalidTestError < ::ArgumentError
+      def initialize: (untyped, untyped) -> void
+      def backtrace: (*untyped) -> []
+    end
+    class CompositeFilter
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class Filter
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

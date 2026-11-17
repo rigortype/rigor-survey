@@ -1,0 +1,8 @@
+module Gitlab
+  module BitbucketImport
+    class ProjectCreator
+      def initialize: (untyped, String, untyped, untyped, untyped) -> void
+      def name: () -> "vim"
+    end
+  end
+end

@@ -1,0 +1,20 @@
+module Gitlab
+  module Config
+    module Entry
+      class Simplifiable < ::SimpleDelegator
+        def initialize: (untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+        def self.strategies: () -> []
+        class EntryStrategy < ::Struct[untyped]
+          def name: () -> untyped
+          def klass: () -> untyped
+          def condition: () -> untyped
+          def name=: (untyped) -> untyped
+          def klass=: (untyped) -> untyped
+          def condition=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?klass: untyped, ?condition: untyped) -> instance | (?untyped name, ?untyped klass, ?untyped condition) -> instance
+          def self.[]: (?name: untyped, ?klass: untyped, ?condition: untyped) -> instance | (?untyped name, ?untyped klass, ?untyped condition) -> instance
+        end
+      end
+    end
+  end
+end

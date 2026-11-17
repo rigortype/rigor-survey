@@ -1,0 +1,13 @@
+module Ci
+  module Catalog
+    module Resources
+      module Bundle
+        class CollectService
+          def initialize: (untyped) -> void
+          def execute: () -> ServiceResponse
+          def errors: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

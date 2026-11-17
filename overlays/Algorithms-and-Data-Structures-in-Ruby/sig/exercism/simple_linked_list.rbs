@@ -1,0 +1,10 @@
+class Element
+  def initialize: (untyped) -> void
+end
+
+class SimpleLinkedList
+  def initialize: (?untyped) -> void
+  def push: (untyped) -> SimpleLinkedList
+  def to_a: () -> Array[untyped]
+  def reverse!: () -> SimpleLinkedList
+end

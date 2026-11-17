@@ -1,0 +1,4 @@
+class SnippetInputAction
+  def initialize: (?action: untyped, ?previous_path: untyped, ?file_path: untyped, ?content: untyped, ?allowed_actions: untyped) -> void
+  def to_commit_action: () -> { action: untyped, previous_path: untyped, file_path: untyped, content: untyped }
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module RepositoryCacheAdapter
+    def request_store_cache: () -> bot
+    def cache: () -> bot
+    def redis_set_cache: () -> bot
+    def redis_hash_cache: () -> bot
+    def cached_methods: () -> bot
+  end
+end

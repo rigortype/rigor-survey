@@ -1,0 +1,9 @@
+module Gitlab
+  module EtagCaching
+    module Router
+      class Graphql
+        def self.cache_key: (untyped) -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module WorkspaceOperations
+        class BmDesiredConfig
+          def diff: (untyped) -> Array[untyped]
+          def desired_config_validator: () -> (Array[String] | nil)
+        end
+      end
+    end
+  end
+end

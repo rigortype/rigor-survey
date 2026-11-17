@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    module ConstantNode
+      def relative?: () -> (false | true)
+      def each_path: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::ConstantNode)
+    end
+  end
+end

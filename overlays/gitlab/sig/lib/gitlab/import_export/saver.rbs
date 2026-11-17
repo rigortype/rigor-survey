@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class Saver
+      def initialize: (exportable: untyped, shared: untyped, user: untyped) -> void
+    end
+  end
+end

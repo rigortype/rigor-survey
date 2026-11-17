@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Pipelines
+      class PipelineService < ::Mcp::Tools::Base::AggregatedService
+        def self.tool_name: () -> "manage_pipeline"
+        def unlisted?: () -> true
+      end
+    end
+  end
+end

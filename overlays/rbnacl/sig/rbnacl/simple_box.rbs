@@ -1,0 +1,8 @@
+module RbNaCl
+  class SimpleBox
+    def initialize: (untyped) -> void
+    def self.from_secret_key: (untyped) -> RbNaCl::SimpleBox
+    def self.from_keypair: (untyped, untyped) -> RbNaCl::SimpleBox
+    def box: (untyped) -> String
+  end
+end

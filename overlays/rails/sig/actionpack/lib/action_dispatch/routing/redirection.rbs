@@ -1,0 +1,20 @@
+module ActionDispatch
+  module Routing
+    class Redirect < ::ActionDispatch::Routing::Endpoint
+      def initialize: (untyped, untyped, untyped) -> void
+      def redirect?: () -> true
+      def call: (untyped) -> ([untyped, untyped, ActionDispatch::Response::RackBody] | [untyped, untyped, []] | nil)
+      def build_response: (untyped) -> ActionDispatch::Response
+      def inspect: () -> String
+    end
+    class PathRedirect < ::ActionDispatch::Routing::Redirect
+      def inspect: () -> String
+    end
+    class OptionRedirect < ::ActionDispatch::Routing::Redirect
+      def inspect: () -> String
+    end
+    module Redirection
+      def redirect: (*untyped) ?{ (*untyped) -> untyped } -> (ActionDispatch::Routing::OptionRedirect | ActionDispatch::Routing::PathRedirect | ActionDispatch::Routing::Redirect)
+    end
+  end
+end

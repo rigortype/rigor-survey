@@ -1,0 +1,7 @@
+module Types
+  class MergeRequestType < ::Types::BaseObject
+    def diff_stats: (?path: untyped) -> Array[untyped]
+    def discussion_locked: () -> (false | true)
+    def detailed_merge_status: () -> Gitlab::Graphql::Lazy
+  end
+end

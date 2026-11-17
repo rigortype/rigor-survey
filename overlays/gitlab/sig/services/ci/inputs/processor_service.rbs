@@ -1,0 +1,8 @@
+module Ci
+  module Inputs
+    class ProcessorService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

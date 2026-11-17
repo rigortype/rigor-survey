@@ -1,0 +1,7 @@
+module RGL
+  module BidirectionalGraph
+    def each_in_neighbor: (untyped) -> bot
+    def has_in_edge?: (untyped, untyped) -> bot
+    def in_neighbors: (untyped) -> bot
+  end
+end

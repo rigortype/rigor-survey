@@ -1,0 +1,3 @@
+module Faraday
+  def disable?: () -> (false | true)
+end

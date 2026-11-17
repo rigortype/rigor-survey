@@ -1,0 +1,9 @@
+module Integrations
+  module ChatMessage
+    class WikiPageMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def activity: () -> { title: String, subtitle: String, text: untyped, image: untyped }
+      def action: () -> ("created" | "edited" | nil)
+    end
+  end
+end

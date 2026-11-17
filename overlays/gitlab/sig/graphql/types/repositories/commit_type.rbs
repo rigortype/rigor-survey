@@ -1,0 +1,8 @@
+module Types
+  module Repositories
+    class CommitType < ::Types::BaseObject
+      def diff_stats_summary: () -> (nil | { additions: untyped, deletions: untyped, file_count: untyped })
+      def author_gravatar: () -> (String | nil)
+    end
+  end
+end

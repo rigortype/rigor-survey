@@ -1,0 +1,9 @@
+module ActionCable
+  module SubscriptionAdapter
+    class SubscriberMap
+      class Async
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

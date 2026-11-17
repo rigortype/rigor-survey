@@ -1,0 +1,7 @@
+module AppConfig
+  class InstanceMetadata
+    def initialize: (?version: untyped, ?revision: untyped, ?enterprise: untyped) -> void
+    def plan: () -> "free"
+    def kas: () -> AppConfig::KasMetadata
+  end
+end

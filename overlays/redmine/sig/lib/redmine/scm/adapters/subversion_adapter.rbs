@@ -1,0 +1,13 @@
+module Redmine
+  module Scm
+    module Adapters
+      class SubversionAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.sq_bin: () -> String
+        def properties: (untyped, ?untyped) -> (Hash[untyped, untyped] | nil)
+        def revisions: (?untyped, ?untyped, ?untyped, ?untyped) -> (Redmine::Scm::Adapters::Revisions | nil)
+        def diff: (untyped, untyped, ?untyped) -> (Array[untyped] | nil)
+        def annotate: (untyped, ?untyped) -> (Redmine::Scm::Adapters::Annotate | nil)
+      end
+    end
+  end
+end

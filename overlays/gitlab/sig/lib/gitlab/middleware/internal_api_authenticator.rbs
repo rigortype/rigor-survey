@@ -1,0 +1,18 @@
+module Gitlab
+  module Middleware
+    class InternalApiAuthenticator
+      def initialize: (untyped) -> void
+      def verify_subscriptions: () -> (false | true)
+      def verify_kas: () -> (false | true)
+      def verify_workhorse: () -> (false | true)
+      def verify_shell: () -> (false | true)
+      def verify_org_mover: () -> (false | true)
+      def verify_shell_or_workhorse: () -> (false | true)
+      def verify_openbao: () -> (FalseClass | false | true)
+      def verify_dast_job: () -> (FalseClass | false | true)
+      def verify_mailroom: () -> (FalseClass | false | true)
+      def verify_coverage: () -> true
+      def headers: () -> Hash[untyped, untyped]
+    end
+  end
+end

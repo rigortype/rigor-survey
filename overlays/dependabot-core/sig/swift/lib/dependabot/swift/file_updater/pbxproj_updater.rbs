@@ -1,0 +1,10 @@
+module Dependabot
+  module Swift
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PbxprojUpdater
+        def initialize: (pbxproj_file: untyped, dependencies: untyped) -> void
+        def updated_pbxproj_content: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module Repositories
+    class TagsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> Gitlab::Graphql::ExternallyPaginatedArray
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Rails
+  module Generators
+    class PluginGenerator < ::Rails::Generators::AppBase
+      def initialize: (*untyped) -> void
+      def self.banner: () -> String
+    end
+  end
+end

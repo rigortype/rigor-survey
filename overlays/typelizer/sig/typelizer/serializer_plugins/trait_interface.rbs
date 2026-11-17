@@ -1,0 +1,8 @@
+module Typelizer
+  module SerializerPlugins
+    class TraitInterface
+      def initialize: (serializer: untyped, trait_name: untyped, context: untyped, plugin: untyped, ?suffix: untyped) -> void
+      def name: () -> String
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module ContainerRegistry
+  class ImagePlatform
+    def self.from_hash: (untyped, untyped) -> (ContainerRegistry::ImagePlatform | nil)
+    def initialize: (untyped, ?architecture: untyped, ?os: untyped, ?os_version: untyped, ?variant: untyped) -> void
+  end
+end

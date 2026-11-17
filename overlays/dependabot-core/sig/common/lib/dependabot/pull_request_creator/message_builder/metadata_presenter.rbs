@@ -1,0 +1,10 @@
+module Dependabot
+  class PullRequestCreator
+    class MessageBuilder
+      class MetadataPresenter
+        def initialize: (dependency: untyped, source: untyped, metadata_finder: untyped, vulnerabilities_fixed: untyped, github_redirection_service: untyped) -> void
+        def to_s: () -> String
+      end
+    end
+  end
+end

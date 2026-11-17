@@ -1,0 +1,9 @@
+module ActionView
+  module Helpers
+    module UrlHelper
+      module ClassMethods
+        def _url_for_modules: () -> singleton(ActionView::RoutingUrlFor)
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Diff
+    class ImagePoint
+      def initialize: (nil, nil, nil, nil) -> void
+      def to_h: () -> { width: untyped, height: untyped, x: untyped, y: untyped }
+      def width: () -> nil
+      def height: () -> nil
+      def x: () -> nil
+      def y: () -> nil
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module MergeRequests
+  class ReadyEvent < ::MergeRequests::BaseCloudEvent
+    def self.build: (merge_request: untyped, current_user: untyped) -> MergeRequests::ReadyEvent
+  end
+end

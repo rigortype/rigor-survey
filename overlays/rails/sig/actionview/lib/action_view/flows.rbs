@@ -1,0 +1,9 @@
+module ActionView
+  class OutputFlow
+    def set: (untyped, untyped) -> ActiveSupport::SafeBuffer
+    def content: () -> Hash
+  end
+  class StreamingFlow < ::ActionView::OutputFlow
+    def initialize: (untyped, untyped) -> void
+  end
+end

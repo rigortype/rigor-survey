@@ -1,0 +1,9 @@
+module Import
+  module Github
+    class ClientFactory
+      def initialize: (untyped, ?token_service: untyped) -> void
+      def create: (?parallel: untyped, ?per_page: untyped) -> Gitlab::GithubImport::Client
+      def create_for_repository: (repository_id: untyped, ?parallel: untyped, ?per_page: untyped) -> Gitlab::GithubImport::Client
+    end
+  end
+end

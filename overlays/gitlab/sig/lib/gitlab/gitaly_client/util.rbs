@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    module Util
+      def self.git_repository: (untyped) -> Gitlab::Git::Repository
+    end
+  end
+end

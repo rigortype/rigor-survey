@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module MergeRequests
+      class SaveMergeRequestService < ::Mcp::Tools::Base::AggregatedService
+        def self.tool_name: () -> "save_merge_request"
+        def self.tool_aliases: () -> ["create_merge_request", "update_merge_request"]
+      end
+    end
+  end
+end

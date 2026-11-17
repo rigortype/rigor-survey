@@ -1,0 +1,5 @@
+module Typelizer
+  module UnionTypeSorter
+    def self.split_union_members: (untyped) -> Array[untyped]
+  end
+end

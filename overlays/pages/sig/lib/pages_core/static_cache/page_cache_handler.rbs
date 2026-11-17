@@ -1,0 +1,8 @@
+module PagesCore
+  module StaticCache
+    class PageCacheHandler
+      def purge!: () -> top
+      def sweep_now!: () -> top
+    end
+  end
+end

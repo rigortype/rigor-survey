@@ -1,0 +1,9 @@
+module Dependabot
+  module Cargo
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkspaceManifestUpdater
+        def initialize: (dependencies: untyped, manifest: untyped) -> void
+      end
+    end
+  end
+end

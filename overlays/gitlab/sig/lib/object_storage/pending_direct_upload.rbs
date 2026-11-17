@@ -1,0 +1,8 @@
+module ObjectStorage
+  class PendingDirectUpload
+    def self.redis_key: (untyped, untyped) -> String
+    def self.log_event: (untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    def initialize: (redis_key: String, storage_location_identifier: untyped, object_storage_path: untyped, timestamp: untyped) -> void
+    def redis_key: () -> "artifacts:some/path"
+  end
+end

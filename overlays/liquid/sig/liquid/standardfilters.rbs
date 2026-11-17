@@ -1,0 +1,28 @@
+module Liquid
+  module StandardFilters
+    def escape: (untyped) -> (String | nil)
+    def url_encode: (untyped) -> (String | nil)
+    def url_decode: (untyped) -> (String | nil)
+    def base64_encode: (untyped) -> String
+    def base64_decode: (untyped) -> String
+    def base64_url_safe_encode: (untyped) -> String
+    def base64_url_safe_decode: (untyped) -> String
+    def join: (untyped, ?untyped) -> String
+    def sort: (untyped, ?untyped) -> (Array[untyped] | nil)
+    def sort_natural: (untyped, ?untyped) -> (Array[untyped] | nil)
+    def uniq: (untyped, ?untyped) -> (Array[untyped] | nil)
+    def reverse: (untyped) -> Array[untyped]
+    def map: (untyped, untyped) -> Array[untyped]
+    def compact: (untyped, ?untyped) -> (Array[untyped] | nil)
+    def concat: (untyped, untyped) -> Array[untyped]
+    class InputIterator
+      def initialize: (untyped, untyped) -> void
+      def join: (untyped) -> String
+      def concat: (untyped) -> Array[untyped]
+      def reverse: () -> Array[untyped]
+      def uniq: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def compact: () -> Array[untyped]
+      def empty?: () -> (false | true)
+    end
+  end
+end

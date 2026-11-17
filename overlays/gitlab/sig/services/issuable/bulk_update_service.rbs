@@ -1,0 +1,6 @@
+module Issuable
+  class BulkUpdateService
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def execute: (untyped) -> ServiceResponse
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Email
+    module Common
+      def config: () -> bot
+      def key_from_address: (untyped, ?wildcard_address: untyped) -> bot
+    end
+  end
+end

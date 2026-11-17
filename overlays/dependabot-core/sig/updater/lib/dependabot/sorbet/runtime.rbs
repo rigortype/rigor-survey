@@ -1,0 +1,9 @@
+module Dependabot
+  module Sorbet
+    module Runtime
+      def self.silently_report_errors!: () -> Proc
+      class InformationalError < ::StandardError
+      end
+    end
+  end
+end

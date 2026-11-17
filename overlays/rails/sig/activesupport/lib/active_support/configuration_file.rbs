@@ -1,0 +1,7 @@
+module ActiveSupport
+  class ConfigurationFile
+    def initialize: (untyped) -> void
+    class FormatError < ::StandardError
+    end
+  end
+end

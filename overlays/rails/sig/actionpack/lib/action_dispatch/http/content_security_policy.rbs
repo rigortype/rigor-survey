@@ -1,0 +1,10 @@
+module ActionDispatch
+  class ContentSecurityPolicy
+    def report_uri: (untyped) -> [untyped]
+    class Middleware
+      def initialize: (untyped) -> void
+    end
+    class InvalidDirectiveError < ::StandardError
+    end
+  end
+end

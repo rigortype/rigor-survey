@@ -1,0 +1,7 @@
+module ActiveSupport
+  class ErrorReporter
+    def initialize: (*untyped, ?logger: untyped) -> void
+    def unexpected: (Exception | String, ?severity: Symbol, ?context: Hash[Symbol, untyped], ?source: String?) -> void
+    def report: (Exception, ?handled: bool, ?severity: Symbol, ?context: Hash[Symbol, untyped], ?source: String?) -> void
+  end
+end

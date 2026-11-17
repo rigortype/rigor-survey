@@ -1,0 +1,6 @@
+module Projects
+  module PipelineHelper
+    def js_pipeline_tabs_data: (untyped, untyped, untyped) -> { failed_jobs_count: untyped, project_path: untyped, graphql_resource_etag: untyped, metrics_path: untyped, pipeline_iid: untyped, pipeline_path: untyped, pipeline_project_path: untyped, total_job_count: untyped, summary_endpoint: untyped, suite_endpoint: untyped, blob_path: untyped, has_test_report: untyped, tests_count: untyped, manual_variables_count: untyped, manual_variables_file_missing: "false" | "true", can_read_variables: untyped, display_pipeline_variables: untyped }
+    def js_pipeline_header_data: (untyped, untyped) -> { full_path: untyped, graphql_resource_etag: untyped, pipeline_iid: untyped, pipelines_path: untyped }
+  end
+end

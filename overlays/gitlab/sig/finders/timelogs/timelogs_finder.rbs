@@ -1,0 +1,5 @@
+module Timelogs
+  class TimelogsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

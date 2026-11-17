@@ -1,0 +1,7 @@
+module Namespaces
+  module Projects
+    class InvitedGroupsFinder
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

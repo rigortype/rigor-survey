@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class LfsObjectsImporter
+        def importer_class: () -> singleton(Gitlab::GithubImport::Importer::LfsObjectImporter)
+        def representation_class: () -> singleton(Gitlab::GithubImport::Representation::LfsObject)
+        def sidekiq_worker_class: () -> singleton(Gitlab::GithubImport::ImportLfsObjectWorker)
+        def object_type: () -> :lfs_object
+        def collection_method: () -> :lfs_objects
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mail
+  module Encodings
+    class UnixToUnix < ::Mail::Encodings::TransferEncoding
+      def self.encode: (untyped) -> String
+    end
+  end
+end

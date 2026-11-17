@@ -1,0 +1,6 @@
+module Packages
+  class Event
+    def self.event_allowed?: (untyped) -> (false | true)
+    def self.unique_counters_for: (untyped, untyped, untyped) -> ([String] | [])
+  end
+end

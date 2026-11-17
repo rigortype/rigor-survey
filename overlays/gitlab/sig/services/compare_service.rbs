@@ -1,0 +1,4 @@
+class CompareService
+  def initialize: (untyped, untyped) -> void
+  def execute: (untyped, untyped, ?base_sha: untyped, ?straight: untyped) -> (Compare | nil)
+end

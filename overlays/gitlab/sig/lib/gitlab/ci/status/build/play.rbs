@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class Play < ::Gitlab::Ci::Status::Extended
+          def label: () -> "manual play action"
+          def action_icon: () -> "play"
+          def action_title: () -> "Run"
+          def action_method: () -> :post
+        end
+      end
+    end
+  end
+end

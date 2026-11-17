@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Test
+      class Packet
+        def self.register_channel_request: (untyped, untyped) -> { extra_parts: untyped }
+        def initialize: (untyped, *untyped) -> void
+        def remote?: () -> false
+        def local?: () -> false
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Cacheable
+  module ClassMethods
+    def cache_ids: () -> Array[String]
+  end
+end

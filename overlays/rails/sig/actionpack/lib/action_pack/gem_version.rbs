@@ -1,0 +1,3 @@
+module ActionPack
+  def self.gem_version: () -> Gem::Version
+end

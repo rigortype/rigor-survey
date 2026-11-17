@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Value < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Base
+            def self.type: () -> :value
+            def initialize: (untyped) -> void
+          end
+        end
+      end
+    end
+  end
+end

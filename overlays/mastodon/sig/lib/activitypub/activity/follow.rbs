@@ -1,0 +1,8 @@
+module ActivityPub
+  class Activity
+    class Follow < ::ActivityPub::Activity
+      def perform: () -> (String | nil)
+      def reject_follow_request!: (untyped) -> String
+    end
+  end
+end

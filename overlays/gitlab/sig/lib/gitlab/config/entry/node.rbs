@@ -1,0 +1,20 @@
+module Gitlab
+  module Config
+    module Entry
+      class Node
+        def leaf?: () -> (false | true)
+        def warnings: () -> Array[untyped]
+        def add_warning: (untyped) -> Array[untyped]
+        def specified?: () -> true
+        def relevant?: () -> true
+        def inspect: () -> String
+        def hash?: () -> (false | true)
+        def array?: () -> (false | true)
+        def string?: () -> (false | true)
+        def integer?: () -> (false | true)
+        def self.aspects: () -> []
+        def entries: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

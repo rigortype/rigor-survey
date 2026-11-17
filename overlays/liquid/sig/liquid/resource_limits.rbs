@@ -1,0 +1,11 @@
+module Liquid
+  class ResourceLimits
+    def initialize: ({}) -> void
+    def increment_render_score: (Integer) -> nil
+    def increment_assign_score: (Integer) -> nil
+    def increment_write_score: (untyped) -> nil
+    def raise_limits_reached: () -> bot
+    def reached?: () -> (false | nil | true)
+    def reset: () -> nil
+  end
+end

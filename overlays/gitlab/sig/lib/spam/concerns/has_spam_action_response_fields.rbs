@@ -1,0 +1,7 @@
+module Spam
+  module Concerns
+    module HasSpamActionResponseFields
+      def spam_action_response_fields: (untyped) -> { spam: untyped, needs_captcha_response: untyped, spam_log_id: untyped, captcha_site_key: untyped }
+    end
+  end
+end

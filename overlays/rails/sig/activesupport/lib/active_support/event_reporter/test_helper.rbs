@@ -1,0 +1,10 @@
+module ActiveSupport
+  class EventReporter
+    module TestHelper
+      def event_matcher: (name: untyped, ?payload: untyped, ?tags: untyped, ?context: untyped, ?source_location: untyped) -> Proc
+      class EventSubscriber
+        def events: () -> Array[untyped]
+      end
+    end
+  end
+end

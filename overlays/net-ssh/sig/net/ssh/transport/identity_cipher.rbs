@@ -1,0 +1,18 @@
+module Net
+  module SSH
+    module Transport
+      class IdentityCipher
+        def self.block_size: () -> 8
+        def self.key_length: () -> 0
+        def self.iv_len: () -> 4
+        def self.encrypt: () -> singleton(Net::SSH::Transport::IdentityCipher)
+        def self.decrypt: () -> singleton(Net::SSH::Transport::IdentityCipher)
+        def self.final: () -> ""
+        def self.name: () -> "identity"
+        def self.iv=: (untyped) -> nil
+        def self.reset: () -> singleton(Net::SSH::Transport::IdentityCipher)
+        def self.implicit_mac?: () -> false
+      end
+    end
+  end
+end

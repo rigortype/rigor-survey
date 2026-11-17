@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class ProtectedBranch
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::ProtectedBranch
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::ProtectedBranch
+        def initialize: (untyped) -> void
+        def github_identifiers: () -> { id: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module WordDiff
+    class LineProcessor
+      def initialize: (untyped) -> void
+      def extract: () -> (Gitlab::WordDiff::Segments::Chunk | Gitlab::WordDiff::Segments::DiffHunk | Gitlab::WordDiff::Segments::Newline | nil)
+    end
+  end
+end

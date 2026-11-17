@@ -1,0 +1,9 @@
+module SearchHelper
+  def generic_results: (untyped) -> Array[untyped]
+  def search_service: () -> SearchService
+  def search_sort_options: () -> (Array[untyped] | [{ title: untyped, sortable: true, sortParam: { asc: "created_asc", desc: "created_desc" } }, { title: untyped, sortable: true, sortParam: { asc: "updated_asc", desc: "updated_desc" } }])
+  def header_search_context: () -> Hash[untyped, untyped]
+  def should_show_zoekt_results?: (untyped, untyped) -> false
+  def search_navigation_json: () -> String
+  def search_result_tracking_attrs: (untyped) -> (Hash[untyped, untyped] | { event_tracking: "click_search_result", event_label: untyped, event_value: untyped })
+end

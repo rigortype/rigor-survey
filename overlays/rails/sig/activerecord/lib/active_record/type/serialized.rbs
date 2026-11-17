@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Type
+    class Serialized
+      def initialize: (untyped, untyped, ?comparable: untyped) -> void
+      def accessor: () -> singleton(ActiveRecord::Store::IndifferentHashAccessor)
+      def force_equality?: (untyped) -> (false | true)
+      def serialized?: () -> true
+    end
+  end
+end

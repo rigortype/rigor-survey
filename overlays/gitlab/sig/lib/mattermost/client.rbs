@@ -1,0 +1,5 @@
+module Mattermost
+  class Client
+    def initialize: (untyped) -> void
+  end
+end

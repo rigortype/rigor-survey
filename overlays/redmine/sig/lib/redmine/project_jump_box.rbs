@@ -1,0 +1,6 @@
+module Redmine
+  class ProjectJumpBox
+    def initialize: (untyped) -> void
+    def recently_used_projects: () -> Array[untyped]
+  end
+end

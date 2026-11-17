@@ -1,0 +1,8 @@
+module YARD
+  module Serializers
+    class ProcessSerializer < ::YARD::Serializers::Base
+      def initialize: (untyped) -> void
+      def serialize: (untyped, untyped) -> Integer
+    end
+  end
+end

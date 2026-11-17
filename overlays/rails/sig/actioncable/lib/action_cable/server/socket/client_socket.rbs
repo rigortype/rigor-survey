@@ -1,0 +1,14 @@
+module ActionCable
+  module Server
+    class Socket
+      class ClientSocket
+        def self.determine_url: (untyped) -> String
+        def self.secure_request?: (untyped) -> (false | true)
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+        def rack_response: () -> [-1, {}, []]
+        def alive?: () -> (false | true)
+        def url: () -> String
+      end
+    end
+  end
+end

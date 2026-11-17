@@ -1,0 +1,16 @@
+module Dependabot
+  module Package
+    class NpmPackageJson
+      def self.from_file: (untyped) -> Dependabot::Package::NpmPackageJson
+      def initialize: (untyped, untyped) -> void
+      def each_dependency: () ?{ (*untyped) -> untyped } -> Array[String]
+      def name: () -> (String | nil)
+      def flat?: () -> (false | true)
+      def workspaces?: () -> (false | true)
+      def package_manager_config: () -> Dependabot::Package::NpmPackageManagerConfig
+      def catalog: () -> (CatalogEntries | {})
+      def catalogs: () -> Hash[untyped, untyped]
+      def catalog_container: () -> ("workspaces" | nil)
+    end
+  end
+end

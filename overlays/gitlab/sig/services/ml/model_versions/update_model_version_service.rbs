@@ -1,0 +1,8 @@
+module Ml
+  module ModelVersions
+    class UpdateModelVersionService
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

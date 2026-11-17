@@ -1,0 +1,9 @@
+module Gitlab
+  module MarkdownCache
+    module ActiveRecord
+      module Extension
+        def markdown_cache_current?: () -> (false | true)
+      end
+    end
+  end
+end

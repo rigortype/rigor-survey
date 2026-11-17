@@ -1,0 +1,4 @@
+class GroupChildSerializer < ::BaseSerializer
+  def expand_hierarchy: (?untyped) -> GroupChildSerializer
+  def should_expand_hierarchy: () -> true
+end

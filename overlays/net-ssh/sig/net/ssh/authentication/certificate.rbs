@@ -1,0 +1,13 @@
+module Net
+  module SSH
+    module Authentication
+      class Certificate
+        def self.read_certblob: (untyped, untyped) -> Net::SSH::Authentication::Certificate
+        def to_blob: () -> String
+        def sign!: (OpenSSL::PKey::DSA | OpenSSL::PKey::RSA, ?untyped) -> Net::SSH::Authentication::Certificate
+        def sign: (untyped, ?untyped) -> Net::SSH::Authentication::Certificate
+        def self.type_symbol: (untyped) -> (:host | :user)
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActionController
+  module TemplateAssertions
+    def assert_template: (?untyped, ?untyped) -> bot
+  end
+end

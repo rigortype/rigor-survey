@@ -1,0 +1,6 @@
+module AWS
+  module SigV4
+    def self.canonical_request: (untyped, untyped, untyped) -> String
+    def self.string2sign: (untyped, untyped, untyped) -> String
+  end
+end

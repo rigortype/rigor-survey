@@ -1,0 +1,6 @@
+module Gitlab
+  module FileDetector
+    def self.types_in_paths: (untyped) -> Array[untyped]
+    def self.type_of: (untyped) -> (:avatar | :cargo_toml | :cartfile | :changelog | :composer_json | :contributing | :gemfile | :gemfile_lock | :gemspec | :gitignore | :gitlab_ci | :go_mod | :go_sum | :godeps_json | :issue_template | :jenkinsfile | :license | :merge_request_template | :openapi | :package_json | :podfile | :podspec | :podspec_json | :readme | :requirements_txt | :route_map | :version | :xcode_config | :yarn_lock | nil)
+  end
+end

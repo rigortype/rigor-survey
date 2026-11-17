@@ -1,0 +1,24 @@
+module Gitlab
+  module Encryption
+    module DbKeyBaseRotation
+      class TokenDigestsStatus
+        def initialize: (rotated_at: untyped) -> void
+        def execute: () -> [untyped]
+        class Result < ::Struct[untyped]
+          def model: () -> untyped
+          def remaining: () -> untyped
+          def expired: () -> untyped
+          def without_expiry: () -> untyped
+          def latest_expiry: () -> untyped
+          def model=: (untyped) -> untyped
+          def remaining=: (untyped) -> untyped
+          def expired=: (untyped) -> untyped
+          def without_expiry=: (untyped) -> untyped
+          def latest_expiry=: (untyped) -> untyped
+          def self.new: (?model: untyped, ?remaining: untyped, ?expired: untyped, ?without_expiry: untyped, ?latest_expiry: untyped) -> instance
+          def self.[]: (?model: untyped, ?remaining: untyped, ?expired: untyped, ?without_expiry: untyped, ?latest_expiry: untyped) -> instance
+        end
+      end
+    end
+  end
+end

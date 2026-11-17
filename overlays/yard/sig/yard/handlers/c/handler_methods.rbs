@@ -1,0 +1,9 @@
+module YARD
+  module Handlers
+    module C
+      module HandlerMethods
+        def handle_attribute: (untyped, untyped, untyped, untyped) -> Hash[Symbol, untyped]
+      end
+    end
+  end
+end

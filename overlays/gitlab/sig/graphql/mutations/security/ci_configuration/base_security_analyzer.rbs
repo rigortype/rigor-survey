@@ -1,0 +1,9 @@
+module Mutations
+  module Security
+    module CiConfiguration
+      class BaseSecurityAnalyzer < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, **untyped) -> { branch: untyped, success_path: untyped, errors: untyped }
+      end
+    end
+  end
+end

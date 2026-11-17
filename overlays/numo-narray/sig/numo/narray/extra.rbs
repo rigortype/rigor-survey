@@ -1,0 +1,6 @@
+module Numo
+  class NArray
+    def new_narray: () -> Numo::NArray
+    def each_over_axis: (?untyped) -> (Enumerator[untyped, untyped] | Numo::NArray)
+  end
+end

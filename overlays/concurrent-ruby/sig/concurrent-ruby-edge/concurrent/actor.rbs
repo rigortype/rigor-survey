@@ -1,0 +1,5 @@
+module Concurrent
+  module Actor
+    def self.to_spawn_options: (*untyped) -> (::Hash[untyped, untyped] | { class: untyped, name: untyped, args: untyped })
+  end
+end

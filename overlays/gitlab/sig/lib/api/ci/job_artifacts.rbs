@@ -1,0 +1,7 @@
+module API
+  module Ci
+    class JobArtifacts < ::API::Base
+      def artifact_etag: (untyped, ?path: untyped) -> (String | nil)
+    end
+  end
+end

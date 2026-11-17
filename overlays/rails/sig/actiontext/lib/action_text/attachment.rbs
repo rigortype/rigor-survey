@@ -1,0 +1,9 @@
+module ActionText
+  class Attachment
+    def self.from_node: (untyped, ?untyped) -> ActionText::Attachment
+    def self.from_attachable: (untyped, ?untyped) -> (ActionText::Attachment | nil)
+    def self.from_attributes: (untyped, ?untyped) -> (ActionText::Attachment | nil)
+    def initialize: (untyped, untyped) -> void
+    def with_full_attributes: () -> (ActionText::Attachment | nil)
+  end
+end

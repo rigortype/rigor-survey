@@ -1,0 +1,11 @@
+module REST
+  class NotificationSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def group_key: () -> String
+    def status_type?: () -> (false | true)
+    def collection_type?: () -> (false | true)
+    def report_type?: () -> (false | true)
+    def relationship_severance_event?: () -> (false | true)
+    def moderation_warning_event?: () -> (false | true)
+  end
+end

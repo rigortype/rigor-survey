@@ -1,0 +1,9 @@
+module YARD
+  module Server
+    module Commands
+      class Base
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

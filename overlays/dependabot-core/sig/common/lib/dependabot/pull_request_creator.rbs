@@ -1,0 +1,25 @@
+module Dependabot
+  class PullRequestCreator
+    def initialize: (source: untyped, base_commit: untyped, dependencies: untyped, files: untyped, credentials: untyped, ?pr_message_header: untyped, ?pr_message_footer: untyped, ?custom_labels: untyped, ?author_details: untyped, ?signature_key: untyped, ?commit_message_options: untyped, ?vulnerabilities_fixed: untyped, ?reviewers: untyped, ?assignees: untyped, ?milestone: untyped, ?branch_name_separator: untyped, ?branch_name_prefix: untyped, ?branch_name_max_length: untyped, ?branch_name_word_separator: untyped, ?branch_name_case: untyped, ?branch_name_template: untyped, ?label_language: untyped, ?automerge_candidate: untyped, ?github_redirection_service: untyped, ?custom_headers: untyped, ?require_up_to_date_base: untyped, ?provider_metadata: untyped, ?message: untyped, ?dependency_group: untyped, ?pr_message_max_length: untyped, ?pr_message_encoding: untyped) -> void
+    def check_dependencies_have_previous_version: () -> nil
+    class AnnotationError < ::StandardError
+      def initialize: (untyped, untyped) -> void
+    end
+    class RepoNotFound < ::StandardError
+    end
+    class RepoArchived < ::StandardError
+    end
+    class RepoDisabled < ::StandardError
+    end
+    class NoHistoryInCommon < ::StandardError
+    end
+    class UnmergedPRExists < ::StandardError
+    end
+    class BranchAlreadyExists < ::StandardError
+    end
+    class BaseCommitNotUpToDate < ::StandardError
+    end
+    class UnexpectedError < ::StandardError
+    end
+  end
+end

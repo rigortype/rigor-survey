@@ -1,0 +1,9 @@
+module Authz
+  module Tokens
+    class AuthorizeGranularScopesService
+      def self.access_denied_message: (token: untyped, permissions: untyped, ?boundary_type: untyped) -> String
+      def initialize: (boundaries: untyped, permissions: untyped, token: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

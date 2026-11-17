@@ -1,0 +1,9 @@
+module ActiveSupport
+  module Cache
+    class MemCacheStore < ::ActiveSupport::Cache::Store
+      def self.supports_cache_versioning?: () -> true
+      def initialize: (*untyped) -> void
+      def inspect: () -> String
+    end
+  end
+end

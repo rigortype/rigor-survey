@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class PoolConfig
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def connection_descriptor=: (untyped) -> ActiveRecord::ConnectionAdapters::ConnectionHandler::ConnectionDescriptor
+      def disconnect!: (?automatic_reconnect: untyped) -> nil
+      def pool: () -> ActiveRecord::ConnectionAdapters::ConnectionPool
+      def discard_pool!: () -> nil
+    end
+  end
+end

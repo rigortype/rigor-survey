@@ -1,0 +1,5 @@
+module Clusters
+  class ClustersHierarchy
+    def initialize: (untyped) -> void
+  end
+end

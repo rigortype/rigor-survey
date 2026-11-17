@@ -1,0 +1,7 @@
+module Vite
+  class Config
+    def initialize: (?{ auto_build: false | true, manifest_path: untyped, manifest_assets_path: untyped } | { auto_build: false | true, manifest_path: untyped, manifest_assets_path: untyped, base_path: String, tag_strategies: [Symbol, Symbol] } | { auto_build: false | true, manifest_path: untyped, manifest_assets_path: untyped, base_path: String, tag_strategies: [Symbol] } | { https: false | true, base_path: String }) -> void
+    def protocol: () -> ("http" | "https")
+    def backend: () -> String
+  end
+end

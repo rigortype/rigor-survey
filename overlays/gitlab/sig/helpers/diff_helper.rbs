@@ -1,0 +1,12 @@
+module DiffHelper
+  def mark_inline_diffs: (untyped, untyped) -> [untyped, untyped]
+  def diff_options: () -> (Hash[untyped, untyped] | { ignore_whitespace_change: untyped, expanded: untyped, use_extra_viewer_as_main: true })
+  def diff_match_line: (untyped, untyped, ?text: untyped, ?view: untyped, ?bottom: untyped) -> String
+  def diff_nomappinginraw_line: (untyped, untyped, untyped, untyped) -> String
+  def parallel_diff_discussions: (untyped, untyped, untyped) -> ([untyped, untyped] | nil)
+  def submodule_link: (untyped, untyped, ?untyped) -> String
+  def submodule_diff_compare_data: (untyped) -> (nil | { title: untyped, href: untyped, tooltip: untyped })
+  def diff_file_html_data: (untyped, untyped, untyped) -> { blob_diff_path: untyped, view: untyped }
+  def diff_file_stats_data: (untyped) -> { old_size: untyped, new_size: untyped, added_lines: untyped, removed_lines: untyped, viewer_name: untyped }
+  def file_heading_id: (untyped) -> String
+end

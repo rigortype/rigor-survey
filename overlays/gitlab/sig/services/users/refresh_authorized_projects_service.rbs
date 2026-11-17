@@ -1,0 +1,6 @@
+module Users
+  class RefreshAuthorizedProjectsService
+    def initialize: (untyped, ?source: Symbol, ?incorrect_auth_found_callback: untyped, ?missing_auth_found_callback: untyped) -> void
+    def source: () -> :foo
+  end
+end

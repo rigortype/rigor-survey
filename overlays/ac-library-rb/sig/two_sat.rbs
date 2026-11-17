@@ -1,0 +1,6 @@
+class TwoSAT
+  def initialize: (Integer) -> void
+  def add_clause: (Integer, false | true, Integer, false | true) -> nil
+  def satisfiable?: () -> (false | true)
+  def answer: () -> Array[untyped]
+end

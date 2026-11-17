@@ -1,0 +1,11 @@
+module Dependabot
+  module Logger
+    class BasicFormatter < ::Logger::Formatter
+      def call: (untyped, untyped, untyped, untyped) -> String
+    end
+    class JobFormatter < ::Logger::Formatter
+      def initialize: (untyped) -> void
+      def call: (untyped, untyped, untyped, untyped) -> String
+    end
+  end
+end

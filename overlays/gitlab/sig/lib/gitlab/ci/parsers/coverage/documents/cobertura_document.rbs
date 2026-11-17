@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Parsers
+      module Coverage
+        module Documents
+          class CoberturaDocument < ::Nokogiri::XML::SAX::Document
+            def initialize: (untyped, untyped, untyped) -> void
+            def error: (untyped) -> bot
+          end
+        end
+      end
+    end
+  end
+end

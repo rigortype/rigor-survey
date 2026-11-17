@@ -1,0 +1,5 @@
+module Gitlab
+  class SafeRequestLoader
+    def initialize: (resource_key: untyped, resource_ids: untyped, ?default_value: untyped) -> void
+  end
+end

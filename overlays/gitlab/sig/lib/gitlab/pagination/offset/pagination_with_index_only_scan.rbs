@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    module Offset
+      class PaginationWithIndexOnlyScan
+        def initialize: (scope: untyped, page: untyped, per_page: untyped) -> void
+      end
+    end
+  end
+end

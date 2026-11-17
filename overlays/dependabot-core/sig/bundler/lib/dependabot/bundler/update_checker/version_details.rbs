@@ -1,0 +1,13 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionDetails < ::T::ImmutableStruct
+        def self.from_helper_result: (untyped) -> Dependabot::Bundler::UpdateChecker::VersionDetails
+        def self.object_fields: (untyped) -> Hash[untyped, untyped]
+        def self.parse_version: (untyped) -> Dependabot::Bundler::Version
+        def self.optional_string: (untyped, untyped) -> (String | nil)
+        def self.invalid_result: (untyped) -> bot
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module BulkImports
+  class Stage
+    def initialize: (untyped) -> void
+  end
+end

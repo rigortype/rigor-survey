@@ -1,0 +1,12 @@
+module Gitlab
+  class Color
+    def initialize: (String | nil) -> void
+    def self.color_for: (untyped) -> Gitlab::Color
+    def as_json: (?untyped) -> String
+    def eql: (untyped) -> (false | true)
+    def valid?: () -> (false | true)
+    def light?: () -> (false | true)
+    def luminosity: () -> (:dark | :light)
+    def contrast: () -> Gitlab::Color
+  end
+end

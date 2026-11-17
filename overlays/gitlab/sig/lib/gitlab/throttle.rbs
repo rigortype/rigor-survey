@@ -1,0 +1,15 @@
+module Gitlab
+  class Throttle
+    def self.bypass_header: () -> (String | nil)
+    def self.options: (untyped, authenticated: untyped) -> { limit: Proc, period: Proc }
+    def self.throttle_fragment!: (untyped, authenticated: untyped) -> String
+    def self.unauthenticated_web_options: () -> { limit: Proc, period: Proc }
+    def self.authenticated_web_options: () -> { limit: Proc, period: Proc }
+    def self.protected_paths_options: () -> { limit: Proc, period: Proc }
+    def self.throttle_unauthenticated_git_http_options: () -> { limit: Proc, period: Proc }
+    def self.throttle_authenticated_git_http_options: () -> { limit: Proc, period: Proc }
+    def self.throttle_authenticated_git_lfs_options: () -> { limit: Proc, period: Proc }
+    def self.throttle_authenticated_dependency_proxy_options: () -> { limit: Proc, period: Proc }
+    def self.throttle_authenticated_mcp_options: () -> { limit: Proc, period: Proc }
+  end
+end

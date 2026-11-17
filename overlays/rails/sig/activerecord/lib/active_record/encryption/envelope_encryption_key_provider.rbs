@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Encryption
+    class EnvelopeEncryptionKeyProvider
+      def encryption_key: () -> ActiveRecord::Encryption::Key
+      def decryption_keys: (untyped) -> ([ActiveRecord::Encryption::Key] | [])
+    end
+  end
+end

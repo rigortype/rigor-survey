@@ -1,0 +1,8 @@
+module Dependabot
+  class PullRequestUpdater
+    class Github
+      def initialize: (source: untyped, base_commit: untyped, old_commit: untyped, files: untyped, credentials: untyped, pull_request_number: untyped, ?author_details: untyped, ?signature_key: untyped, ?commit_message: untyped) -> void
+      def update: () -> (Sawyer::Resource | nil)
+    end
+  end
+end

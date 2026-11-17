@@ -1,0 +1,10 @@
+module ActionView
+  class StreamingTemplateRenderer < ::ActionView::TemplateRenderer
+    def render_template: (untyped, untyped, ?untyped, ?untyped) -> (ActionView::StreamingTemplateRenderer::Body | [untyped])
+    class Body
+      def initialize: () ?{ (*untyped) -> untyped } -> void
+      def each: () ?{ (*untyped) -> untyped } -> ActionView::StreamingTemplateRenderer::Body
+      def body: () -> String
+    end
+  end
+end

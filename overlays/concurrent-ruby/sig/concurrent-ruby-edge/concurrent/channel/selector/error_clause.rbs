@@ -1,0 +1,9 @@
+module Concurrent
+  class Channel
+    class Selector
+      class ErrorClause
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

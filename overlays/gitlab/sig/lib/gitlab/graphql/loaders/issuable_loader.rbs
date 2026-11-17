@@ -1,0 +1,19 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class IssuableLoader
+        def initialize: (untyped, untyped) -> void
+        class BatchKey < ::Struct[untyped]
+          def parent: () -> untyped
+          def finder_class: () -> untyped
+          def current_user: () -> untyped
+          def parent=: (untyped) -> untyped
+          def finder_class=: (untyped) -> untyped
+          def current_user=: (untyped) -> untyped
+          def self.new: (?parent: untyped, ?finder_class: untyped, ?current_user: untyped) -> instance | (?untyped parent, ?untyped finder_class, ?untyped current_user) -> instance
+          def self.[]: (?parent: untyped, ?finder_class: untyped, ?current_user: untyped) -> instance | (?untyped parent, ?untyped finder_class, ?untyped current_user) -> instance
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActionMailer
+  module TestHelper
+    def capture_emails: () ?{ () -> void } -> Array[Mail::Message]
+  end
+end

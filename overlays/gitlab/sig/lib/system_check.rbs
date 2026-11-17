@@ -1,0 +1,3 @@
+module SystemCheck
+  def self.run: (untyped, ?untyped) -> nil
+end

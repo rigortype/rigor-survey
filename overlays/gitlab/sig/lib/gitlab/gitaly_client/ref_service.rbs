@@ -1,0 +1,15 @@
+module Gitlab
+  module GitalyClient
+    class RefService
+      def initialize: (untyped) -> void
+      def find_branch: (untyped) -> (Gitlab::Git::Branch | nil)
+      def find_tag: (untyped) -> (Gitlab::Git::Tag | nil)
+      def delete_refs: (?refs: untyped, ?except_with_prefixes: untyped) -> nil
+      def tag_names_contains_sha: (untyped, ?limit: untyped) -> Array[untyped]
+      def branch_names_contains_sha: (untyped, ?limit: untyped) -> Array[untyped]
+      def get_tag_messages: (untyped) -> Hash[untyped, untyped]
+      def get_tag_signatures: (untyped, ?timeout: untyped) -> Hash[untyped, untyped]
+      def list_refs: (?untyped, ?pointing_at_oids: untyped, ?peel_tags: untyped, ?dynamic_timeout: untyped, ?sort_by: untyped, ?pagination_params: untyped, ?ignore_case: untyped, ?exclude_patterns: untyped) -> Gitlab::GitalyClient::RefCollectionWithNextCursor
+    end
+  end
+end

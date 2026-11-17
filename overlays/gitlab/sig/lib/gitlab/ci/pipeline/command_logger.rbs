@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      class CommandLogger
+        def initialize: (?destination: untyped) -> void
+      end
+    end
+  end
+end

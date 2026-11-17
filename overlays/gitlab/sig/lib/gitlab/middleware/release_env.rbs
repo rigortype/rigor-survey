@@ -1,0 +1,11 @@
+module Gitlab
+  module Middleware
+    class ReleaseEnv < ::Struct[untyped]
+      def app: () -> untyped
+      def app=: (untyped) -> untyped
+      def self.new: (?app: untyped) -> instance | (?untyped app) -> instance
+      def self.[]: (?app: untyped) -> instance | (?untyped app) -> instance
+      def call: (untyped) -> [untyped, untyped, Rack::BodyProxy]
+    end
+  end
+end

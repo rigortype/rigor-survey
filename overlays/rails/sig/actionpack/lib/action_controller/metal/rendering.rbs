@@ -1,0 +1,8 @@
+module ActionController
+  module Rendering
+    module ClassMethods
+      def setup_renderer!: () -> ActionController::Renderer
+      def renderer: () -> ActionController::Renderer
+    end
+  end
+end

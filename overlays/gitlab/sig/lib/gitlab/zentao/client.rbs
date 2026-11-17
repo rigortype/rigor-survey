@@ -1,0 +1,8 @@
+module Gitlab
+  module Zentao
+    class Client
+      def initialize: (untyped) -> void
+      def ping: () -> ({ success: false, message: "Not Found" } | { success: true })
+    end
+  end
+end

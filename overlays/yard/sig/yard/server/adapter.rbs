@@ -1,0 +1,11 @@
+module YARD
+  module Server
+    class Adapter
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+    class FinishRequest < ::RuntimeError
+    end
+    class NotFoundError < ::RuntimeError
+    end
+  end
+end

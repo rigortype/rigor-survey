@@ -1,0 +1,9 @@
+module Import
+  module Offline
+    module Imports
+      class MetadataFileReader
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

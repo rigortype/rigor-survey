@@ -1,0 +1,7 @@
+module WorkItems
+  module NamespaceChanges
+    class BroadcastService
+      def initialize: (untyped, action: untyped, ?updated_changes: untyped) -> void
+    end
+  end
+end

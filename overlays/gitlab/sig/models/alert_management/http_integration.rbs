@@ -1,0 +1,6 @@
+module AlertManagement
+  class HttpIntegration < ::ApplicationRecord
+    def legacy?: () -> (false | true)
+    def self.generate_token: () -> String
+  end
+end

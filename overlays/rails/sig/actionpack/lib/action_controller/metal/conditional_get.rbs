@@ -1,0 +1,7 @@
+module ActionController
+  module ConditionalGet
+    def fresh_when: (?untyped, ?etag: untyped, ?weak_etag: untyped, ?strong_etag: untyped, ?last_modified: untyped, ?public: untyped, ?cache_control: untyped, ?template: untyped) -> (nil | true)
+    def stale?: (?untyped, **untyped) -> (false | true)
+    def must_understand: () -> true
+  end
+end

@@ -1,0 +1,5 @@
+module Emails
+  module Members
+    def member: () -> (Member | nil)
+  end
+end

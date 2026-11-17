@@ -1,0 +1,7 @@
+module Dependabot
+  class PullRequestCreator
+    class Bitbucket
+      def initialize: (source: untyped, branch_name: untyped, base_commit: untyped, credentials: untyped, files: untyped, commit_message: untyped, pr_description: untyped, pr_name: untyped, author_details: untyped, ?labeler: untyped, ?work_item: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Users
+  class AutoBanService
+    def initialize: (user: untyped, reason: untyped) -> void
+    def execute!: () -> nil
+  end
+end

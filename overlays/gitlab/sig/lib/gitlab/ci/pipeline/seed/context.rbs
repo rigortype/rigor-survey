@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Seed
+        class Context
+          def initialize: (untyped, ?root_variables: untyped, ?logger: untyped) -> void
+          def check_execution_time!: () -> Integer
+          def evaluated_job_candidates_count: () -> (0 | Integer)
+        end
+      end
+    end
+  end
+end

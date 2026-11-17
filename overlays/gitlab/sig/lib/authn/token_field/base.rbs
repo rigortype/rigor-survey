@@ -1,0 +1,13 @@
+module Authn
+  module TokenField
+    class Base
+      def self.fabricate: (untyped, untyped, untyped) -> (Authn::TokenField::Digest | Authn::TokenField::Encrypted | Authn::TokenField::Insecure)
+      def initialize: (untyped, untyped, untyped) -> void
+      def sensitive_fields: () -> Array[untyped]
+      def ensure_token!: (untyped) -> bot
+      def expirable?: () -> (false | true)
+      def token_with_expiration: (untyped) -> API::Support::TokenWithExpiration
+      def expires_at_field: () -> String
+    end
+  end
+end

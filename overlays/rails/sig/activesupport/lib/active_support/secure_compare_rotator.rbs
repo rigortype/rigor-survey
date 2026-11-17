@@ -1,0 +1,6 @@
+module ActiveSupport
+  class SecureCompareRotator
+    def initialize: (untyped, ?on_rotation: untyped) -> void
+    def secure_compare!: (untyped, ?on_rotation: untyped) -> true
+  end
+end

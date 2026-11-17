@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Locking
+    module Optimistic
+      module ClassMethods
+        def reset_locking_column: () -> "lock_version"
+      end
+    end
+  end
+end

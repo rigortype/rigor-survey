@@ -1,0 +1,4 @@
+class Microwave
+  def initialize: (untyped) -> void
+  def timer: () -> String
+end

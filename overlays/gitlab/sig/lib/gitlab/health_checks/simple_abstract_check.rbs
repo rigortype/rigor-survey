@@ -1,0 +1,8 @@
+module Gitlab
+  module HealthChecks
+    module SimpleAbstractCheck
+      def readiness: () -> (Gitlab::HealthChecks::Result | nil)
+      def metrics: () -> ([Gitlab::HealthChecks::Metric, Gitlab::HealthChecks::Metric, Gitlab::HealthChecks::Metric] | nil)
+    end
+  end
+end

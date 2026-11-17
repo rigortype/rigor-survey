@@ -1,0 +1,9 @@
+module Dependabot
+  module RustToolchain
+    module Models
+      class RustToolchainConfig < ::T::ImmutableStruct
+        def self.from_hash: (untyped) -> Dependabot::RustToolchain::Models::RustToolchainConfig
+      end
+    end
+  end
+end

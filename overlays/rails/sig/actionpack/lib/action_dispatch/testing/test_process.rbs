@@ -1,0 +1,6 @@
+module ActionDispatch
+  module TestProcess
+    def assigns: (?untyped) -> bot
+    def cookies: () -> ActionDispatch::Cookies::CookieJar
+  end
+end

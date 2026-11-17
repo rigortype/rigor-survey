@@ -1,0 +1,7 @@
+module WebIde
+  module Settings
+    class ExtensionMarketplaceMetadataValidator
+      def self.validate: (untyped) -> Gitlab::Fp::Result
+    end
+  end
+end

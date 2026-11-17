@@ -1,0 +1,7 @@
+module Subscriptions
+  module Notes
+    class Base < ::Subscriptions::BaseSubscription
+      def authorized?: (noteable_id: untyped) -> true
+    end
+  end
+end

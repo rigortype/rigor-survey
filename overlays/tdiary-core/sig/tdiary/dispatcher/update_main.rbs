@@ -1,0 +1,10 @@
+module TDiary
+  class Dispatcher
+    class UpdateMain
+      def self.run: (untyped) -> TDiary::Response
+      def initialize: (untyped) -> void
+      def conf: () -> TDiary::Configuration
+      def tdiary: () -> (TDiary::TDiaryAppend | TDiary::TDiaryConf | TDiary::TDiaryEdit | TDiary::TDiaryForm | TDiary::TDiaryFormPlugin | TDiary::TDiaryPreview | TDiary::TDiaryReplace | TDiary::TDiaryRetry | TDiary::TDiarySaveConf | TDiary::TDiaryShowComment)
+    end
+  end
+end

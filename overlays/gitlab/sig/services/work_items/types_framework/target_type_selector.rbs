@@ -1,0 +1,8 @@
+module WorkItems
+  module TypesFramework
+    class TargetTypeSelector
+      def initialize: (source_type: untyped, target_namespace: untyped, action: untyped, ?type_name: untyped, ?same_namespace: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

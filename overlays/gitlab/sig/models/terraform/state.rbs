@@ -1,0 +1,5 @@
+module Terraform
+  class State < ::ApplicationRecord
+    def locked?: () -> (false | true)
+  end
+end

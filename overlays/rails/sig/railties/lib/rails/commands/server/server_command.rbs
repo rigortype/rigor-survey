@@ -1,0 +1,9 @@
+module Rails
+  module Command
+    class ServerCommand < ::Rails::Command::Base
+      def initialize: (untyped, untyped, *untyped) -> void
+      def perform: () -> Rails::Server
+      def server_options: () -> { user_supplied_options: untyped, server: untyped, log_stdout: untyped, Port: untyped, Host: untyped, DoNotReverseLookup: true, config: untyped, environment: untyped, daemonize: untyped, pid: nil | String, caching: untyped, restart_cmd: String, early_hints: untyped }
+    end
+  end
+end

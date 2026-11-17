@@ -1,0 +1,9 @@
+module ActionDispatch
+  class ServerTiming
+    def initialize: (untyped) -> void
+    class Subscriber
+      def collect_events: () -> Array[untyped]
+      def unsubscribe: () -> nil
+    end
+  end
+end

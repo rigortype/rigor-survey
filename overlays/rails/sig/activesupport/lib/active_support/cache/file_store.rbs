@@ -1,0 +1,8 @@
+module ActiveSupport
+  module Cache
+    class FileStore < ::ActiveSupport::Cache::Store
+      def initialize: (untyped, **untyped) -> void
+      def self.supports_cache_versioning?: () -> true
+    end
+  end
+end

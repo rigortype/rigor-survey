@@ -1,0 +1,9 @@
+module Gitlab
+  module Config
+    module Entry
+      class Validator < ::SimpleDelegator
+        def self.name: () -> "Validator"
+      end
+    end
+  end
+end

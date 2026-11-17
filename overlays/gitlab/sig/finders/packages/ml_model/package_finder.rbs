@@ -1,0 +1,7 @@
+module Packages
+  module MlModel
+    class PackageFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

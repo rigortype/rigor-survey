@@ -1,0 +1,5 @@
+module Clusters
+  class AgentTokensFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

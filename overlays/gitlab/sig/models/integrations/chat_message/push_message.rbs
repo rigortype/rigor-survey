@@ -1,0 +1,10 @@
+module Integrations
+  module ChatMessage
+    class PushMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def activity: () -> { title: String, subtitle: String, text: untyped, image: untyped }
+      def attachment_color: () -> "#334455"
+      def ref_type: () -> ("branch" | "tag")
+    end
+  end
+end

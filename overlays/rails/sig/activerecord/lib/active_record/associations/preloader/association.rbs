@@ -1,0 +1,22 @@
+module ActiveRecord
+  module Associations
+    class Preloader
+      class Association
+        def initialize: (untyped, untyped, untyped, untyped, untyped, untyped) -> void
+        def run?: () -> (false | true)
+        def run: () -> ActiveRecord::Associations::Preloader::Association
+        def loader_query: () -> ActiveRecord::Associations::Preloader::Association::LoaderQuery
+        def owners_by_key: () -> Hash[untyped, untyped]
+        def ignore_loaded_target!: () -> false
+        class LoaderQuery
+          def initialize: (untyped, untyped) -> void
+        end
+        class LoaderRecords
+          def initialize: (untyped, untyped) -> void
+          def keys_to_load: () -> Set[untyped]
+          def already_loaded_records_by_key: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

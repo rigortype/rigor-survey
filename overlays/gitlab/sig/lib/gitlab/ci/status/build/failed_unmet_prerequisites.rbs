@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class FailedUnmetPrerequisites < ::Gitlab::Ci::Status::Extended
+          def illustration: () -> { image: "illustrations/empty-state/empty-job-failed-md.svg", size: "", title: untyped, content: untyped }
+        end
+      end
+    end
+  end
+end

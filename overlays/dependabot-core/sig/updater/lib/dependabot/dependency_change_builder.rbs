@@ -1,0 +1,10 @@
+module Dependabot
+  class DependencyChangeBuilder
+    def self.create_from: (job: untyped, dependency_files: untyped, updated_dependencies: untyped, change_source: untyped, ?notices: untyped) -> Dependabot::DependencyChange
+    def self.cooldown_date_unavailable_notice: (package_manager_name: untyped) -> Dependabot::Notice
+    def initialize: (job: untyped, dependency_files: untyped, updated_dependencies: untyped, change_source: untyped, ?notices: untyped) -> void
+    def run: () -> Dependabot::DependencyChange
+    def dependency_files: () -> Array[Dependabot::DependencyFile]
+    def cooldown_notices: () -> Array[Dependabot::Notice]
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class RedisHLLMetric < ::Gitlab::Usage::Metrics::Instrumentations::BaseMetric
+          def initialize: (untyped) -> void
+          def value: () -> Gitlab::Usage::ServicePing::LegacyMetricMetadataDecorator
+        end
+      end
+    end
+  end
+end

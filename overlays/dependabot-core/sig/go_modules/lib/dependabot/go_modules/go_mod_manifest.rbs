@@ -1,0 +1,17 @@
+module Dependabot
+  module GoModules
+    class GoModManifest < ::T::ImmutableStruct
+      def self.from_json: (untyped, file_path: untyped) -> Dependabot::GoModules::GoModManifest
+      def self.parse_requirements: (untyped, untyped) -> Array[Dependabot::GoModules::GoModManifest::RequirementEntry]
+      def self.parse_replacements: (untyped, untyped) -> Array[Dependabot::GoModules::GoModManifest::Replacement]
+      def self.parse_exclusions: (untyped, untyped) -> Array[Dependabot::GoModules::GoModManifest::Exclusion]
+      def self.module_reference: (untyped, untyped) -> Dependabot::GoModules::GoModManifest::ModuleReference
+      def self.object: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.array: (untyped, untyped) -> Array[Object]
+      def self.string: (untyped, untyped) -> String
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      def self.indirect: (untyped, untyped) -> (false | true)
+      def self.invalid_output: (untyped) -> bot
+    end
+  end
+end

@@ -1,0 +1,33 @@
+module TDiary
+  module IO
+    class PStore
+      def initialize: (untyped) -> void
+      def transaction: (untyped) -> Hash[untyped, untyped]
+      def calendar: () -> Hash[untyped, []]
+      def diary_factory: (untyped, untyped, untyped, ?untyped) -> Diary
+    end
+  end
+end
+
+class Comment
+  def initialize: (untyped, untyped, untyped, ?untyped) -> void
+end
+
+class Paragraph
+  def initialize: (untyped, ?untyped) -> void
+  def to_src: () -> String
+  def to_s: () -> String
+end
+
+class Diary
+  def initialize: (untyped, untyped, untyped) -> void
+  def style: () -> "tDiary"
+  def replace: (untyped, untyped, untyped) -> Diary
+  def append: (untyped, ?untyped) -> Diary
+  def each_section: () -> Array[untyped]
+  def to_src: () -> String
+  def to_html: (untyped, ?untyped) -> String
+  def to_html4: (untyped) -> String
+  def to_chtml: (untyped) -> String
+  def to_s: () -> String
+end

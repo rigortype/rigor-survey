@@ -1,0 +1,5 @@
+module Organizations
+  class ConfirmedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["organization_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,7 @@
+module Import
+  module BulkImports
+    class EphemeralData
+      def initialize: (untyped) -> void
+    end
+  end
+end

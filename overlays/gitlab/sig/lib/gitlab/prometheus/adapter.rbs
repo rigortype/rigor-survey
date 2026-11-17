@@ -1,0 +1,7 @@
+module Gitlab
+  module Prometheus
+    class Adapter
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module DesignManagement
+  class DesignAtVersion
+    def initialize: (?design: untyped, ?version: untyped) -> void
+    def id: () -> String
+    def status: () -> (:current | :deleted | :not_created_yet)
+    def not_created_yet?: () -> (false | true)
+  end
+end

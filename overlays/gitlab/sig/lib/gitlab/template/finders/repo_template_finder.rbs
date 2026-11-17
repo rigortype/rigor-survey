@@ -1,0 +1,10 @@
+module Gitlab
+  module Template
+    module Finders
+      class RepoTemplateFinder < ::Gitlab::Template::Finders::BaseTemplateFinder
+        def initialize: (untyped, String, String, ?untyped) -> void
+        def find: (untyped) -> String
+      end
+    end
+  end
+end

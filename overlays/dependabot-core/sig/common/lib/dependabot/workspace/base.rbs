@@ -1,0 +1,10 @@
+module Dependabot
+  module Workspace
+    class Base
+      def initialize: (untyped) -> void
+      def changes: () -> Array[Dependabot::Workspace::ChangeAttempt]
+      def failed_change_attempts: () -> Array[Dependabot::Workspace::ChangeAttempt]
+      def change_attempts: () -> Array[Dependabot::Workspace::ChangeAttempt]
+    end
+  end
+end

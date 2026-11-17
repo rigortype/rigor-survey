@@ -1,0 +1,9 @@
+module Ci
+  module JobToken
+    class Scope
+      def initialize: (untyped) -> void
+      def accessible?: (untyped) -> (false | true)
+      def autopopulated_group_ids: () -> Array[untyped]
+    end
+  end
+end

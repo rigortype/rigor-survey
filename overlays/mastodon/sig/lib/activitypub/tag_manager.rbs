@@ -1,0 +1,10 @@
+module ActivityPub
+  class TagManager
+    def key_uri_for: (untyped) -> String
+    def generate_uri_for: (untyped) -> URI::Generic
+    def to: (untyped) -> (Array[untyped] | ["https://www.w3.org/ns/activitystreams#Public"] | [untyped] | nil)
+    def cc: (untyped) -> Array[untyped]
+    def uri_to_local_collection: (untyped) -> (Collection | nil)
+    def uri_to_local_conversation: (untyped) -> (Conversation | nil)
+  end
+end

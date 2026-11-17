@@ -1,0 +1,20 @@
+module ActionDispatch
+  class Cookies
+    def initialize: (untyped) -> void
+    module ChainedCookieJars
+      def permanent: () -> ActionDispatch::Cookies::PermanentCookieJar
+      def signed: () -> ActionDispatch::Cookies::SignedKeyRotatingCookieJar
+      def encrypted: () -> ActionDispatch::Cookies::EncryptedKeyRotatingCookieJar
+    end
+    class CookieJar
+      def self.build: (untyped, untyped) -> ActionDispatch::Cookies::CookieJar
+      def initialize: (untyped) -> void
+      def committed?: () -> (false | true)
+      def update: (untyped) -> ActionDispatch::Cookies::CookieJar
+    end
+    class AbstractCookieJar
+      def initialize: (untyped) -> void
+      def []=: (untyped, untyped) -> (Hash | { value: untyped })
+    end
+  end
+end

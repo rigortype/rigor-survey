@@ -1,0 +1,5 @@
+module Ci
+  class JobArtifactsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

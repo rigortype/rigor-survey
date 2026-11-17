@@ -1,0 +1,5 @@
+module ActiveSupport
+  class ParameterFilter
+    def initialize: (?untyped, ?mask: untyped) -> void
+  end
+end

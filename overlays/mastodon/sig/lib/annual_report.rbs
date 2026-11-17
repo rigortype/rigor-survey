@@ -1,0 +1,7 @@
+class AnnualReport
+  def self.table_name_prefix: () -> "annual_report_"
+  def self.current_campaign: () -> (Integer | nil)
+  def initialize: (untyped, untyped) -> void
+  def state: () -> ("available" | "eligible" | "generating" | "ineligible")
+  def refresh_key: () -> String
+end

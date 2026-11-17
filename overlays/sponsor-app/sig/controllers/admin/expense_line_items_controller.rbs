@@ -1,0 +1,7 @@
+module Admin
+  class ExpenseLineItemsController < ::Admin::ApplicationController
+    def create: () -> void
+    def update: () -> void
+    def destroy: () -> void
+  end
+end

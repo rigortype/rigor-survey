@@ -1,0 +1,12 @@
+module ActiveJob
+  class Continuation
+    def initialize: (untyped, untyped) -> void
+    def instrumentation: () -> { description: untyped, completed_steps: untyped, current_step: untyped }
+    def encountered: () -> Array[untyped]
+    def current: () -> (ActiveJob::Continuation::Step | nil)
+    class Interrupt < ::Exception
+    end
+    class Error < ::StandardError
+    end
+  end
+end

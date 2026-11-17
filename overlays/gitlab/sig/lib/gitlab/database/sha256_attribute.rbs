@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class Sha256Attribute < ::ActiveRecord::ConnectionAdapters::PostgreSQL::OID::Bytea
+      def deserialize: (untyped) -> (String | nil)
+    end
+  end
+end

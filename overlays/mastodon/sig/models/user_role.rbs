@@ -1,0 +1,5 @@
+class UserRole < ::ApplicationRecord
+  def self.nobody: () -> UserRole
+  def nobody?: () -> (false | true)
+  def permissions_as_keys: () -> Array[String]
+end

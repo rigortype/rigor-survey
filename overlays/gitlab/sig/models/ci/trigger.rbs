@@ -1,0 +1,5 @@
+module Ci
+  class Trigger < ::Ci::ApplicationRecord
+    def self.prefix_for_trigger_token: () -> ("glptt-" | String)
+  end
+end

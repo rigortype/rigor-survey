@@ -1,0 +1,8 @@
+module Packages
+  module Go
+    class ModuleFinder
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> (Packages::Go::Module | nil)
+    end
+  end
+end

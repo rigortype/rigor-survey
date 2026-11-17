@@ -1,0 +1,5 @@
+module RepositoryCheck
+  class DispatchWorker
+    def lease_timeout: () -> ActiveSupport::Duration
+  end
+end

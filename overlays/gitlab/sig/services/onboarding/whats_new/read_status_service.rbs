@@ -1,0 +1,8 @@
+module Onboarding
+  module WhatsNew
+    class ReadStatusService
+      def initialize: (untyped, untyped) -> void
+      def mark_article_as_read: (untyped) -> ServiceResponse
+    end
+  end
+end

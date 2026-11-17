@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module ParameterizedNode
+      def arguments?: () -> (false | true)
+    end
+  end
+end

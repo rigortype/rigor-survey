@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    module Actions
+      def initialize: (*untyped) -> void
+    end
+  end
+end

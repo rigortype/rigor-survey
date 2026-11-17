@@ -1,0 +1,5 @@
+module AuditEvents
+  module CommonModel
+    def initialize_details: () -> (nil | {})
+  end
+end

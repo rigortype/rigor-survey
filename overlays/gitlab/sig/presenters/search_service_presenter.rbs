@@ -1,0 +1,6 @@
+class SearchServicePresenter < ::Gitlab::View::Presenter::Delegated
+  def show_sort_dropdown?: () -> (false | true)
+  def without_count?: () -> (false | true)
+  def advanced_search_enabled?: () -> false
+  def zoekt_enabled?: () -> false
+end

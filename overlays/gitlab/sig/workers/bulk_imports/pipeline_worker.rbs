@@ -1,0 +1,11 @@
+module BulkImports
+  class PipelineWorker
+    class LimitedBatches < ::Struct[untyped]
+      def numbers: () -> untyped
+      def final?: () -> untyped
+      def numbers=: (untyped) -> untyped
+      def self.new: (?numbers: untyped, ?final?: untyped) -> instance
+      def self.[]: (?numbers: untyped, ?final?: untyped) -> instance
+    end
+  end
+end

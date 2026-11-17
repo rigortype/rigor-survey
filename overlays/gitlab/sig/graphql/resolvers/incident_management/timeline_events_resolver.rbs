@@ -1,0 +1,7 @@
+module Resolvers
+  module IncidentManagement
+    class TimelineEventsResolver < ::Resolvers::BaseResolver
+      def preloads: () -> { timeline_event_tags: [:timeline_event_tags] }
+    end
+  end
+end

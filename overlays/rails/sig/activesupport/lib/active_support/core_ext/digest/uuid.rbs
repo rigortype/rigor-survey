@@ -1,0 +1,5 @@
+module Digest
+  module UUID
+    def self.nil_uuid: () -> "00000000-0000-0000-0000-000000000000"
+  end
+end

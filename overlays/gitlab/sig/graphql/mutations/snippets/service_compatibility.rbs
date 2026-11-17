@@ -1,0 +1,7 @@
+module Mutations
+  module Snippets
+    module ServiceCompatibility
+      def convert_blob_actions_to_snippet_actions!: (untyped) -> nil
+    end
+  end
+end

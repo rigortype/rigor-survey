@@ -1,0 +1,9 @@
+module Gitlab
+  module Redis
+    class ConfigGenerator
+      def self.build_token_credential: (untyped) -> Gitlab::Redis::TokenCredential
+      def self.credentials_descriptor: (untyped, untyped) -> Hash[untyped, untyped]
+      def initialize: (?untyped) -> void
+    end
+  end
+end

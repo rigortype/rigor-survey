@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Stage
+        class Factory < ::Gitlab::Ci::Status::Factory
+          def self.extended_statuses: () -> [[singleton(Gitlab::Ci::Status::SuccessWarning)], [singleton(Gitlab::Ci::Status::Stage::PlayManual)]]
+          def self.common_helpers: () -> singleton(Gitlab::Ci::Status::Stage::Common)
+        end
+      end
+    end
+  end
+end

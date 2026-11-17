@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    class DistributionReleaseFileUploader < ::GitlabUploader
+      def filename: () -> ("InRelease" | "Release")
+      def store_dir: () -> Gitlab::HashedPath
+    end
+  end
+end

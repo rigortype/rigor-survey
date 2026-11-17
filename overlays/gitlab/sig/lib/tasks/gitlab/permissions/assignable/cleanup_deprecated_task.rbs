@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Assignable
+        class CleanupDeprecatedTask
+          def run: () -> nil
+        end
+      end
+    end
+  end
+end

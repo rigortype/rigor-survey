@@ -1,0 +1,9 @@
+module Vite
+  class Builder
+    def initialize: (config: untyped, logger: untyped) -> void
+    def build!: () -> nil
+    class BuildError < ::StandardError
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

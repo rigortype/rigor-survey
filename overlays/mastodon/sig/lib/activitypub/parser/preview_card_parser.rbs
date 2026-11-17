@@ -1,0 +1,8 @@
+module ActivityPub
+  module Parser
+    class PreviewCardParser
+      def initialize: (untyped) -> void
+      def significantly_changes?: (untyped) -> (false | true)
+    end
+  end
+end

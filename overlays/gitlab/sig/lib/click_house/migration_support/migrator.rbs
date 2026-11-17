@@ -1,0 +1,10 @@
+module ClickHouse
+  module MigrationSupport
+    class Migrator
+      def self.migrations_paths: (untyped) -> (Array[untyped] | [String])
+      def initialize: (Symbol, [untyped], untyped, ?nil, ?nil, ?untyped) -> void
+      def migrated: () -> Set[untyped]
+      def load_migrated: () -> Set[untyped]
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      class ProjectSetting < ::Gitlab::Ci::ProjectConfig::Source
+        def content: () -> (String | nil)
+        def internal_include_prepended?: () -> true
+        def source: () -> (:external_project_source | :remote_source | :repository_source | nil)
+        def url: () -> (String | nil)
+      end
+    end
+  end
+end

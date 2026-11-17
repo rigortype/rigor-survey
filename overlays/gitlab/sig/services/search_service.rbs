@@ -1,0 +1,7 @@
+class SearchService
+  def self.supported_search_types: () -> ["basic"]
+  def initialize: (untyped, ?untyped) -> void
+  def search_type: () -> "basic"
+  def level: () -> ("global" | "group" | "project")
+  def params: () -> Search::Params
+end

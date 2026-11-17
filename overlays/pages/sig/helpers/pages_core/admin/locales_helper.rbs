@@ -1,0 +1,10 @@
+module PagesCore
+  module Admin
+    module LocalesHelper
+      def locales_with_dir: () -> Hash[untyped, { name: untyped, dir: "ltr" | "rtl" }]
+      def locale_direction: (untyped) -> ("ltr" | "rtl")
+      def rtl_locale?: (untyped) -> (false | true)
+      def rtl_locales: () -> ["ar", "arc", "dv", "fa", "ha", "he", "khw", "ks", "ku", "ps", "ur", "yi"]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    class UniqueIpsLimiter
+      def self.limit_user_id!: (untyped) -> nil
+    end
+  end
+end

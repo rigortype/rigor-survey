@@ -1,0 +1,12 @@
+module Dependabot
+  module Nix
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class ChannelVersionFinder
+        def initialize: (current_channel: untyped, credentials: untyped, ?ignored_versions: untyped, ?extension: untyped) -> void
+        def latest_channel: () -> (nil | { channel: untyped, url: String, commit_sha: String })
+        def current_channel_revision: () -> (String | nil)
+        def current_channel: () -> ::Channel
+      end
+    end
+  end
+end

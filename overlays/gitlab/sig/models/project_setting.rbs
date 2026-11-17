@@ -1,0 +1,5 @@
+class ProjectSetting < ::ApplicationRecord
+  def feature_flags_minimum_role_privileged?: () -> (false | true)
+  def branch_rule: () -> Projects::AllBranchesRule
+  def reviewer_auto_assignment_available?: () -> false
+end

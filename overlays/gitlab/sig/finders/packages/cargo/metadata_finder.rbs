@@ -1,0 +1,7 @@
+module Packages
+  module Cargo
+    class MetadataFinder
+      def initialize: (untyped, package_name: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Redmine
+  module Pagination
+    def paginate: (untyped, ?untyped) -> bot
+    def paginator: (untyped, ?untyped) -> Redmine::Pagination::Paginator
+    class Paginator
+      def initialize: (*untyped) -> void
+      def first_page: () -> (1 | nil)
+      def linked_pages: () -> Array[untyped]
+      def current: () -> Redmine::Pagination::Paginator
+    end
+    module Helper
+      def pagination_links_each: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> String
+    end
+  end
+end

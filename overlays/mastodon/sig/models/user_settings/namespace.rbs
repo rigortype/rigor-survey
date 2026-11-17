@@ -1,0 +1,8 @@
+class UserSettings
+  class Namespace
+    def initialize: (untyped) -> void
+    def configure: () ?{ (*untyped) -> untyped } -> UserSettings::Namespace
+    def setting: (untyped, ?untyped) -> UserSettings::Setting
+    def definitions: () -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,13 @@
+module Mail
+  class IndifferentHash < ::Hash[untyped, untyped]
+    def initialize: (?untyped) -> void
+    def self.new_from_hash_copying_default: (untyped) -> Mail::IndifferentHash
+    def update: (untyped) -> Mail::IndifferentHash
+    def dup: () -> Mail::IndifferentHash
+    def reverse_merge!: (untyped) -> Mail::IndifferentHash
+    def stringify_keys!: () -> Mail::IndifferentHash
+    def stringify_keys: () -> Mail::IndifferentHash
+    def to_options!: () -> Mail::IndifferentHash
+    def to_hash: () -> Hash[untyped, untyped]
+  end
+end

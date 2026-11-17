@@ -1,0 +1,4 @@
+class ValidationErrorFormatter
+  def initialize: (untyped, ?untyped) -> void
+  def as_json: () -> { error: untyped, details: Hash[untyped, untyped] }
+end

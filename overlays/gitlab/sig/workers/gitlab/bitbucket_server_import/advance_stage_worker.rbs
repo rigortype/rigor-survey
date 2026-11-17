@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketServerImport
+    class AdvanceStageWorker
+      def find_import_state: (untyped) -> ProjectImportState
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Typelizer
+  class Shape
+    def initialize: (properties: ([untyped, untyped] | [untyped] | [])) -> void
+    def map_properties: () -> Typelizer::Shape
+    def render: (?sort_order: untyped, ?prefer_double_quotes: untyped) -> String
+    def inspect: () -> String
+    def fingerprint: () -> ["Shape", untyped]
+    def hash: () -> Integer
+  end
+end

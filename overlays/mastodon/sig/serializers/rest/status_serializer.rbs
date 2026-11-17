@@ -1,0 +1,16 @@
+module REST
+  class StatusSerializer < ::ActiveModel::Serializer[untyped]
+    def quote: () -> (Quote | nil)
+    def id: () -> String
+    def in_reply_to_id: () -> String
+    def in_reply_to_account_id: () -> String
+    def current_user?: () -> (false | true)
+    def visibility: () -> ("private" | Integer)
+    def content: () -> String
+    def tagged_collections: () -> Array[untyped]
+    def quote_approval: () -> { automatic: untyped, manual: untyped, current_user: untyped }
+    class MentionSerializer < ::ActiveModel::Serializer[untyped]
+      def id: () -> String
+    end
+  end
+end

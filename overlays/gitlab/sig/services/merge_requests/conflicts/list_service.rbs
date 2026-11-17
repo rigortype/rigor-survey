@@ -1,0 +1,7 @@
+module MergeRequests
+  module Conflicts
+    class ListService < ::MergeRequests::Conflicts::BaseService
+      def conflicts: () -> Gitlab::Conflict::FileCollection
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module ClickHouse
+  class Iterator
+    def initialize: (query_builder: untyped, connection: untyped, ?min_value: Integer, ?min_max_strategy: untyped) -> void
+    def min_value: () -> 5
+  end
+end

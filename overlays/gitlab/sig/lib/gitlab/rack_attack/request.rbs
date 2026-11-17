@@ -1,0 +1,8 @@
+module Gitlab
+  module RackAttack
+    module Request
+      def unauthenticated?: () -> (false | true)
+      def throttled_identifer: (untyped) -> (String | nil)
+    end
+  end
+end

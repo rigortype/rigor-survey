@@ -1,0 +1,11 @@
+module Dependabot
+  module Config
+    class File
+      def initialize: (updates: untyped, ?registries: untyped) -> void
+      def update_config: (untyped, ?directory: untyped, ?target_branch: untyped) -> Dependabot::Config::UpdateConfig
+      def self.parse: (untyped) -> Dependabot::Config::File
+      def updates: () -> Array[Hash[Symbol, String]]
+      def registries: () -> Hash[Symbol, Hash[Symbol, String]]
+    end
+  end
+end

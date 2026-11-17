@@ -1,0 +1,7 @@
+module Gitlab
+  class OmniauthInitializer
+    def initialize: (untyped) -> void
+    def self.default_arguments_for: (untyped) -> ({ attribute_statements: untyped } | { authorize_params: { gl_auth_type: "login" } } | { client_options: { connection_opts: { request: { timeout: 10 } } } } | { fail_with_empty_uid: true } | {})
+    def self.full_host: () -> Proc
+  end
+end

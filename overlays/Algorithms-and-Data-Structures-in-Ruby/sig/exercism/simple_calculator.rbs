@@ -1,0 +1,3 @@
+class SimpleCalculator
+  def self.calculate: (untyped, untyped, untyped) -> ("Division by zero is not allowed." | String)
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module NpmAndYarn
+    class SubDependencyFilesFilterer
+      def initialize: (dependency_files: untyped, updated_dependencies: untyped) -> void
+      def files_requiring_update: () -> (Array[::DependencyFile] | Array[::DependencyFile] | nil | nil)
+    end
+  end
+end

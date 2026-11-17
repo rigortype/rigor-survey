@@ -1,0 +1,9 @@
+module Routing
+  module PseudonymizationHelper
+    def mask_additional_params: (untyped) -> ("organization" | nil)
+    def masked_query_params: (untyped) -> (Hash[String, Array[String] | [String]] | nil)
+    class MaskHelper
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

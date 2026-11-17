@@ -1,0 +1,9 @@
+module Concurrent
+  module Edge
+    class LockFreeLinkedSet
+      class Window
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

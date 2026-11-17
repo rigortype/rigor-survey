@@ -1,0 +1,13 @@
+module Gitlab
+  module Metrics
+    module SliConfig
+      def self.registered_classes: () -> Set[untyped]
+      class RegisterClass < ::Data
+        def klass: () -> untyped
+        def is_runtime_enabled_block: () -> untyped
+        def self.new: (klass: untyped, is_runtime_enabled_block: untyped) -> instance | (untyped klass, untyped is_runtime_enabled_block) -> instance
+        def self.[]: (klass: untyped, is_runtime_enabled_block: untyped) -> instance | (untyped klass, untyped is_runtime_enabled_block) -> instance
+      end
+    end
+  end
+end

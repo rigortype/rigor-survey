@@ -1,0 +1,7 @@
+module Integrations
+  module JiraConnect
+    class RemoveBranchWorker
+      def perform: (untyped, ?untyped) -> (Array[untyped] | nil)
+    end
+  end
+end

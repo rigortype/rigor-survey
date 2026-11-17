@@ -1,0 +1,3 @@
+module HasWiki
+  def create_wiki: () -> (false | true)
+end

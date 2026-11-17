@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class RepairIndex
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

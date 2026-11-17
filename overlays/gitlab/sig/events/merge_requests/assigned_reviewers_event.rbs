@@ -1,0 +1,6 @@
+module MergeRequests
+  class AssignedReviewersEvent < ::Gitlab::EventStore::CloudEvent
+    def self.generate_event_data: (untyped, untyped) -> { merge_request_id: untyped, merge_request_iid: untyped, project_id: untyped, new_reviewers: untyped }
+    def data_schema: () -> { type: "object", required: ["merge_request_id", "merge_request_iid", "project_id", "new_reviewers"], properties: { merge_request_id: { type: "integer" }, merge_request_iid: { type: "integer" }, project_id: { type: "integer" }, new_reviewers: { type: "array", items: { type: "object", required: ["id", "user_type"], properties: { id: { type: "integer" }, user_type: { type: "string" } } } } }, additionalProperties: false }
+  end
+end

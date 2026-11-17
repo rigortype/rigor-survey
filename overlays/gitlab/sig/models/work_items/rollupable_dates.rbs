@@ -1,0 +1,6 @@
+module WorkItems
+  class RollupableDates
+    def initialize: (untyped, can_rollup: (false | true)) -> void
+    def fixed?: () -> (false | true)
+  end
+end

@@ -1,0 +1,5 @@
+module ActiveRecord
+  module Encryption
+    def self.eager_load!: () -> nil
+  end
+end

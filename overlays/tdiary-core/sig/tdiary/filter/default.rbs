@@ -1,0 +1,8 @@
+module TDiary
+  module Filter
+    class DefaultFilter < ::TDiary::Filter::Filter
+      def comment_filter: (untyped, untyped) -> (false | true)
+      def referer_filter: (untyped) -> (false | true)
+    end
+  end
+end

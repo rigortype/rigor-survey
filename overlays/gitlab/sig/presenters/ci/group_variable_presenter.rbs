@@ -1,0 +1,5 @@
+module Ci
+  class GroupVariablePresenter < ::Gitlab::View::Presenter::Delegated
+    def placeholder: () -> "GROUP_VARIABLE"
+  end
+end

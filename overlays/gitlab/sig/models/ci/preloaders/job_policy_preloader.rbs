@@ -1,0 +1,7 @@
+module Ci
+  module Preloaders
+    class JobPolicyPreloader
+      def initialize: (untyped, untyped, deployments: untyped, downstream_projects: untyped) -> void
+    end
+  end
+end

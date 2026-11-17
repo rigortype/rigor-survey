@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class RequirementReplacer
+        def initialize: (dependency: untyped, file_type: untyped, updated_requirement: untyped, ?previous_requirement: untyped, ?insert_if_bare: untyped) -> void
+        def rewrite: (untyped) -> ("" | String)
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Checks
+        class AutovacuumSettings < ::Gitlab::Database::Diagnostics::Checks::Base
+          def execute: () -> { settings: untyped, table_overrides: untyped, scale_factor_risks: untyped, findings: Array[untyped], severity: untyped, counts: Hash[untyped, Integer] }
+        end
+      end
+    end
+  end
+end

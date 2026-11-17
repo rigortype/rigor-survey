@@ -1,0 +1,6 @@
+class TranslationService
+  class DeepL < ::TranslationService
+    def initialize: (untyped, String) -> void
+    def languages: () -> Hash[untyped, untyped]
+  end
+end

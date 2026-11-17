@@ -1,0 +1,14 @@
+module Rails
+  module Generators
+    class ActiveModel
+      def initialize: (untyped) -> void
+      def self.all: (untyped) -> String
+      def self.find: (untyped, ?untyped) -> String
+      def self.build: (untyped, ?untyped) -> String
+      def save: () -> String
+      def update: (?untyped) -> String
+      def errors: () -> String
+      def destroy: () -> String
+    end
+  end
+end

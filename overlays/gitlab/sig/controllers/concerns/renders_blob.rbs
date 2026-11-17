@@ -1,0 +1,4 @@
+module RendersBlob
+  def blob_viewer_json: (untyped) -> ({ html: untyped } | {})
+  def conditionally_expand_blob: (untyped) -> (Array[untyped] | nil)
+end

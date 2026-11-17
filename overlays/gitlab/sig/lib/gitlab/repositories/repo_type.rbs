@@ -1,0 +1,13 @@
+module Gitlab
+  module Repositories
+    class RepoType
+      def name: () -> bot
+      def access_checker_class: () -> bot
+      def guest_read_ability: () -> bot
+      def container_class: () -> bot
+      def identifier_for_container: (untyped) -> String
+      def path_suffix: () -> ("" | String)
+      def repository_for: (untyped) -> nil
+    end
+  end
+end

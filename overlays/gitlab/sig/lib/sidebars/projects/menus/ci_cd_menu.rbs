@@ -1,0 +1,11 @@
+module Sidebars
+  module Projects
+    module Menus
+      class CiCdMenu < ::Sidebars::Menu
+        def extra_container_html_options: () -> { class: "shortcuts-pipelines" }
+        def sprite_icon: () -> "rocket"
+        def serialize_as_menu_item_args: () -> nil
+      end
+    end
+  end
+end

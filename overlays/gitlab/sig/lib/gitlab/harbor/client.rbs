@@ -1,0 +1,11 @@
+module Gitlab
+  module Harbor
+    class Client
+      def initialize: (untyped) -> void
+      def check_project_availability: () -> { success: untyped }
+      def get_repositories: (untyped) -> { body: untyped, total_count: untyped }
+      def get_artifacts: (untyped) -> { body: untyped, total_count: untyped }
+      def get_tags: (untyped) -> { body: untyped, total_count: untyped }
+    end
+  end
+end

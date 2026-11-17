@@ -1,0 +1,14 @@
+module Integrations
+  module ChatMessage
+    class PipelineMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def pretext: () -> ""
+      def activity: () -> { title: untyped, subtitle: untyped, text: untyped, image: untyped }
+      def attachment_color: () -> ("danger" | "good" | "warning")
+      def ref_type: () -> ("branch" | "tag")
+      def finished_at: () -> (Integer | nil)
+      def project: () -> Project
+      def pipeline: () -> Ci::Pipeline
+    end
+  end
+end

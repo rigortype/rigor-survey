@@ -1,0 +1,9 @@
+module Concurrent
+  class LockFreeQueue < ::Concurrent::Synchronization::Object
+    def push: (untyped) -> (nil | true)
+    def size: () -> Integer
+    class Node < ::Concurrent::Synchronization::Object
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

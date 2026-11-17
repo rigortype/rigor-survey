@@ -1,0 +1,3 @@
+class WordProblem
+  def initialize: (untyped) -> void
+end

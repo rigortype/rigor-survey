@@ -1,0 +1,29 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module SchemaStatements
+        def default_sequence_name: (untyped, ?untyped) -> (String | nil)
+        def pk_and_sequence_for: (untyped) -> ([untyped, ActiveRecord::ConnectionAdapters::PostgreSQL::Name] | [untyped, nil] | nil)
+        def build_create_index_definition: (untyped, untyped, **untyped) -> ActiveRecord::ConnectionAdapters::CreateIndexDefinition
+        def update_table_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::Table
+        def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaDumper
+        def schema_creation: () -> ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaCreation
+        class SequenceReset
+          def initialize: (untyped, untyped) -> void
+          class Data < ::Struct[untyped]
+            def column: () -> untyped
+            def sequence: () -> untyped
+            def max_value: () -> untyped
+            def min_value: () -> untyped
+            def column=: (untyped) -> untyped
+            def sequence=: (untyped) -> untyped
+            def max_value=: (untyped) -> untyped
+            def min_value=: (untyped) -> untyped
+            def self.new: (?column: untyped, ?sequence: untyped, ?max_value: untyped, ?min_value: untyped) -> instance | (?untyped column, ?untyped sequence, ?untyped max_value, ?untyped min_value) -> instance
+            def self.[]: (?column: untyped, ?sequence: untyped, ?max_value: untyped, ?min_value: untyped) -> instance | (?untyped column, ?untyped sequence, ?untyped max_value, ?untyped min_value) -> instance
+          end
+        end
+      end
+    end
+  end
+end

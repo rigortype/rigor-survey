@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Ractors
+    class Logger < ::ActiveSupport::Logger
+      def initialize: (*untyped, ?level: untyped, ?progname: untyped, ?formatter: untyped, ?datetime_format: untyped, **untyped) -> void
+    end
+  end
+end

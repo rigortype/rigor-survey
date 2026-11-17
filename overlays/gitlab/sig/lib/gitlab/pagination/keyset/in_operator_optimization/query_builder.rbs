@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        class QueryBuilder
+          def initialize: (scope: untyped, array_scope: untyped, array_mapping_scope: untyped, ?finder_query: untyped, ?values: untyped) -> void
+          def finder_strategy: () -> (Gitlab::Pagination::Keyset::InOperatorOptimization::Strategies::OrderValuesLoaderStrategy | Gitlab::Pagination::Keyset::InOperatorOptimization::Strategies::RecordLoaderStrategy)
+        end
+      end
+    end
+  end
+end

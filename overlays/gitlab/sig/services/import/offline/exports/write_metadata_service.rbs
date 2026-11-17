@@ -1,0 +1,10 @@
+module Import
+  module Offline
+    module Exports
+      class WriteMetadataService
+        def initialize: (untyped) -> void
+        def execute: () -> (ServiceResponse | nil)
+      end
+    end
+  end
+end

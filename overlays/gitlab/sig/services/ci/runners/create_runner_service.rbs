@@ -1,0 +1,8 @@
+module Ci
+  module Runners
+    class CreateRunnerService
+      def initialize: (user: untyped, params: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        module Strategies
+          class OrderValuesLoaderStrategy
+            def initialize: (untyped, untyped) -> void
+          end
+        end
+      end
+    end
+  end
+end

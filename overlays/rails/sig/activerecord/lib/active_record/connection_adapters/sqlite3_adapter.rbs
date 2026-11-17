@@ -1,0 +1,34 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class SQLite3Adapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+      def self.ractor_connection_proxy_class: () -> singleton(ActiveRecord::ConnectionAdapters::RactorConnectionHandler::SQLite3ProxyAdapter)
+      def self.native_database_types: () -> { primary_key: "integer PRIMARY KEY AUTOINCREMENT NOT NULL", string: { name: "varchar" }, text: { name: "text" }, integer: { name: "integer" }, float: { name: "float" }, decimal: { name: "decimal" }, datetime: { name: "datetime" }, time: { name: "time" }, date: { name: "date" }, binary: { name: "blob" }, boolean: { name: "boolean" }, json: { name: "json" } }
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      def supports_ddl_transactions?: () -> true
+      def supports_savepoints?: () -> true
+      def supports_transaction_isolation?: () -> true
+      def supports_partial_index?: () -> true
+      def supports_expression_index?: () -> true
+      def requires_reloading?: () -> true
+      def supports_foreign_keys?: () -> true
+      def supports_check_constraints?: () -> true
+      def supports_views?: () -> true
+      def supports_json?: () -> true
+      def supports_common_table_expressions?: () -> true
+      def supports_insert_returning?: () -> true
+      def supports_insert_on_conflict?: () -> true
+      def supports_concurrent_connections?: () -> (false | true)
+      def supports_virtual_columns?: () -> true
+      def connected?: () -> (false | true)
+      def active?: () -> (nil | true)
+      def disconnect!: () -> nil
+      def supports_index_sort_order?: () -> true
+      def supports_explain?: () -> true
+      def supports_lazy_transactions?: () -> true
+      def supports_deferrable_constraints?: () -> true
+      def check_all_foreign_keys_valid!: () -> nil
+      def get_database_version: () -> ActiveRecord::ConnectionAdapters::AbstractAdapter::Version
+      def check_version: () -> nil
+    end
+  end
+end

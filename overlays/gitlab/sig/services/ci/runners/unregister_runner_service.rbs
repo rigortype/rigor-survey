@@ -1,0 +1,9 @@
+module Ci
+  module Runners
+    class UnregisterRunnerService
+      def initialize: (untyped, String) -> void
+      def execute: () -> ServiceResponse
+      def author: () -> "some_token"
+    end
+  end
+end

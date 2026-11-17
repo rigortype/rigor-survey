@@ -1,0 +1,7 @@
+module REST
+  module Admin
+    class ExistingDomainBlockErrorSerializer < ::ActiveModel::Serializer[untyped]
+      def error: () -> String
+    end
+  end
+end

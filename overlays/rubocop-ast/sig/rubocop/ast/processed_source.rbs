@@ -1,0 +1,22 @@
+module RuboCop
+  module AST
+    class PrismPreparsed
+      def initialize: (untyped) -> void
+    end
+    module PrismLazyTokens
+      def tokenize_deferred: (untyped) -> [untyped, untyped, Proc]
+    end
+    class ProcessedSource
+      def self.from_file: (untyped, untyped, ?parser_engine: untyped) -> RuboCop::AST::ProcessedSource
+      def self.lazy_tokens_parser_class: (untyped) -> Class
+      def initialize: (untyped, untyped, ?untyped, ?parser_engine: untyped, ?prism_result: untyped) -> void
+      def valid_syntax?: () -> (false | true)
+      def checksum: () -> String
+      def blank?: () -> (false | true)
+      def contains_comment?: (untyped) -> (false | true)
+      def comments_before_line: (untyped) -> (Array[untyped] | Array[Integer])
+      def buffer: () -> (Parser::Source::Buffer | nil)
+      def diagnostics: () -> Array[untyped]
+    end
+  end
+end

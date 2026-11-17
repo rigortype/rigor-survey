@@ -1,0 +1,8 @@
+module Ci
+  class Group
+    def initialize: (untyped, String, name: String, jobs: untyped) -> void
+    def id: () -> String
+    def stage: () -> "test"
+    def name: () -> "rspec"
+  end
+end

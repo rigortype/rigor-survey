@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Concerns
+      module Versionable
+        def initialize_version: (?untyped) -> nil
+      end
+    end
+  end
+end

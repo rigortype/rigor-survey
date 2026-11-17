@@ -1,0 +1,5 @@
+class Array[unchecked out E]
+  def in_groups_of: (Integer, ?nil) -> Array[Array[Elem?]] | (Integer, ?nil) { (Array[Elem?]) -> void } -> Array[Elem?] | (Integer, false) -> Array[Array[Elem]] | (Integer, false) { (Array[Elem]) -> void } -> Array[Elem] | [FillType] (Integer, FillType) -> Array[Array[Elem | FillType]] | [FillType] (Integer, FillType) { (Array[Elem | FillType]) -> void } -> Array[Elem | FillType]
+  def in_groups: (Integer, ?nil) ?{ (Array[Elem?]) -> void } -> Array[Array[Elem?]] | (Integer, false) ?{ (Array[Elem]) -> void } -> Array[Array[Elem]] | [FillType] (Integer, FillType) ?{ (Array[Elem | FillType]) -> void } -> Array[Array[Elem | FillType]]
+  def split: (?untyped) ?{ (Elem) -> untyped } -> Array[Array[Elem]]
+end

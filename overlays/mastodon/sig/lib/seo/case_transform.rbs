@@ -1,0 +1,5 @@
+module SEO
+  module CaseTransform
+    def self.camel_lower_cache: () -> {}
+  end
+end

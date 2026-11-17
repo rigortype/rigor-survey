@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class Collaborator
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::Collaborator
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::Collaborator
+        def initialize: (untyped) -> void
+        def github_identifiers: () -> { id: untyped, login: untyped }
+      end
+    end
+  end
+end

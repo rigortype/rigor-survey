@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Monitor
+        class UniqueMemoryGrowth
+          def initialize: (max_mem_growth: untyped) -> void
+          def call: () -> ({ threshold_violated: false, payload: {} } | { threshold_violated: true, payload: { message: "memory limit exceeded", memwd_uss_bytes: untyped, memwd_ref_uss_bytes: untyped, memwd_max_uss_bytes: untyped } })
+        end
+      end
+    end
+  end
+end

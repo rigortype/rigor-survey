@@ -1,0 +1,7 @@
+module Releases
+  module Links
+    class CreateService < ::Releases::Links::BaseService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

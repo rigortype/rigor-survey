@@ -1,0 +1,12 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class RequirementReplacer
+        def initialize: (content: untyped, dependency_name: untyped, old_requirement: untyped, new_requirement: untyped, ?new_hash_version: untyped, ?index_urls: untyped) -> void
+        def updated_content: () -> String
+        def requirement_error_handler: (untyped) -> nil
+        def dependency_name: () -> String
+      end
+    end
+  end
+end

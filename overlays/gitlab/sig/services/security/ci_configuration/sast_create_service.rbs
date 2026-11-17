@@ -1,0 +1,7 @@
+module Security
+  module CiConfiguration
+    class SastCreateService < ::Security::CiConfiguration::BaseCreateService
+      def initialize: (untyped, untyped, untyped, ?commit_on_default: (false | true)) -> void
+    end
+  end
+end

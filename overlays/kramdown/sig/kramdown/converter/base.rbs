@@ -1,0 +1,13 @@
+module Kramdown
+  module Converter
+    class Base
+      def initialize: (untyped, untyped) -> void
+      def apply_template_before?: () -> false
+      def apply_template_after?: () -> true
+      def self.apply_template: (untyped, untyped) -> String
+      def warning: (untyped) -> Array[untyped]
+      def data: () -> Hash[untyped, untyped]
+      def warnings: () -> Array[untyped]
+    end
+  end
+end

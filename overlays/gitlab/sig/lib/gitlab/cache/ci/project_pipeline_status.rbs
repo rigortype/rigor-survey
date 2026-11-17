@@ -1,0 +1,11 @@
+module Gitlab
+  module Cache
+    module Ci
+      class ProjectPipelineStatus
+        def self.load_for_project: (untyped) -> Gitlab::Cache::Ci::ProjectPipelineStatus
+        def initialize: (untyped, ?pipeline_info: { sha: String, status: String }, ?loaded_from_cache: untyped) -> void
+        def cache_key: () -> String
+      end
+    end
+  end
+end

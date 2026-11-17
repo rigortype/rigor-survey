@@ -1,0 +1,3 @@
+module ApplicationSettingImplementation
+  def user_default_internal_regex_instance: () -> Regexp
+end

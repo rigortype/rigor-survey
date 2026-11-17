@@ -1,0 +1,3 @@
+class JobArtifactUploader < ::GitlabUploader
+  def store_dir: () -> (Gitlab::HashedPath | String)
+end

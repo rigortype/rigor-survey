@@ -1,0 +1,10 @@
+module Dependabot
+  module Nix
+    class Channel < ::Dependabot::Nix::VersionedName
+      def self.channel_url?: (untyped) -> (false | true)
+      def self.channel_name_from_url: (untyped) -> (String | nil)
+      def self.extension_from_url: (untyped) -> (String | nil)
+      def self.url_for: (untyped, ?extension: untyped) -> String
+    end
+  end
+end

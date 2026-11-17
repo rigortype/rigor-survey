@@ -1,0 +1,3 @@
+module MarkupHelper
+  def markdown_with_result: (untyped, ?untyped, ?untyped) -> (["", {}] | [untyped, untyped])
+end

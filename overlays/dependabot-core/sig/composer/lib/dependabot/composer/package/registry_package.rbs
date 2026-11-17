@@ -1,0 +1,15 @@
+module Dependabot
+  module Composer
+    module Package
+      class RegistryPackage < ::T::ImmutableStruct
+        def self.from_json: (untyped, package_name: untyped, source: untyped) -> Dependabot::Composer::Package::RegistryPackage
+        def self.source_label: (untyped) -> String
+        def self.version_entries: (untyped, untyped, untyped) -> (Array[untyped] | Array[Object])
+        def self.minified?: (untyped, untyped) -> (false | true)
+        def self.parse_release: (untyped, untyped) -> Dependabot::Composer::Package::RegistryPackage::Release
+        def self.parse_time: (untyped, untyped) -> (Time | nil)
+        def self.distribution_url: (untyped, untyped) -> (String | nil)
+      end
+    end
+  end
+end

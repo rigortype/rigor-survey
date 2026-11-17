@@ -1,0 +1,6 @@
+module Liquid
+  class StrainerTemplate
+    def initialize: (untyped) -> void
+    def self.filter_methods: () -> Set[untyped]
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Cleanup
+    class OrphanLfsObjects
+      def initialize: (?dry_run: untyped, ?logger: untyped) -> void
+    end
+  end
+end

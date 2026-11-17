@@ -1,0 +1,20 @@
+class DoublyLinkedList
+  def display: () -> nil
+  def removeNode: (untyped) -> (false | true)
+  def search: (untyped) -> (false | true)
+  def deleteList: () -> 0
+  def sortedInsert: (untyped) -> (DoublyLinkedList::Node | nil)
+  def reverseList: () -> nil
+  def removeDuplicate: () -> nil
+  def copyListReversed: () -> DoublyLinkedList
+  def copyList: () -> DoublyLinkedList
+  def self.main1: () -> nil
+  def self.main2: () -> nil
+  def self.main3: () -> nil
+  def self.main4: () -> nil
+  def self.main5: () -> nil
+  def self.main: () -> nil
+  class Node
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

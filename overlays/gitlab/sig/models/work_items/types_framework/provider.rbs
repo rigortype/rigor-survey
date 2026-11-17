@@ -1,0 +1,16 @@
+module WorkItems
+  module TypesFramework
+    class Provider
+      def self.unfiltered_base_types: () -> ["issue", "incident", "test_case", "requirement", "task", "objective", "key_result", "epic", "ticket"]
+      def initialize: (?untyped) -> void
+      def fetch_work_item_type: (untyped) -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def find_by_base_type: (untyped) -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def default_issue_type: () -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def find_by_gid: (untyped) -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def find_by_id: (untyped) -> (WorkItems::TypesFramework::NamespacedType | nil)
+      def by_ids: (untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+      def base_types_by_ids: (untyped) -> Array[untyped]
+      def by_ids_ordered_by_name: (untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Parser
+  class CurrentArgStack
+    def empty?: () -> (false | true)
+    def push: (untyped) -> Array[untyped]
+    def reset: () -> Array[untyped]
+    def stack: () -> Array[untyped]
+  end
+end

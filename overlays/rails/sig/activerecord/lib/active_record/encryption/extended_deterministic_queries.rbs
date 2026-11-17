@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Encryption
+    module ExtendedDeterministicQueries
+      class AdditionalValue
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Admin
+  module ContentPoliciesHelper
+    def moderation_subscription_policy_list: (untyped) -> String
+  end
+end

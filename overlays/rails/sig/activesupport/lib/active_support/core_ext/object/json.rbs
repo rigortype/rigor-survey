@@ -1,0 +1,29 @@
+class TrueClass
+  def as_json: (?untyped) -> TrueClass
+end
+
+class FalseClass
+  def as_json: (?untyped) -> FalseClass
+end
+
+class NilClass
+  def as_json: (?untyped) -> NilClass
+end
+
+class Numeric
+  def as_json: (?untyped) -> Numeric
+end
+
+class Float
+  def as_json: (?untyped) -> (Float | nil)
+end
+
+class Hash[unchecked out K, unchecked out V]
+  def as_json: (?untyped) -> Hash[untyped, untyped]
+end
+
+module Process
+  class Status
+    def as_json: (?untyped) -> { exitstatus: Integer | nil, pid: Integer }
+  end
+end

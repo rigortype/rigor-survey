@@ -1,0 +1,19 @@
+module CycleAnalytics
+  class ProjectLevelStageAdapter
+    def initialize: (untyped, untyped) -> void
+    class ProjectLevelStage < ::Struct[untyped]
+      def title: () -> untyped
+      def description: () -> untyped
+      def legend: () -> untyped
+      def name: () -> untyped
+      def project_median: () -> untyped
+      def title=: (untyped) -> untyped
+      def description=: (untyped) -> untyped
+      def legend=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def project_median=: (untyped) -> untyped
+      def self.new: (?title: untyped, ?description: untyped, ?legend: untyped, ?name: untyped, ?project_median: untyped) -> instance
+      def self.[]: (?title: untyped, ?description: untyped, ?legend: untyped, ?name: untyped, ?project_median: untyped) -> instance
+    end
+  end
+end

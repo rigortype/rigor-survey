@@ -1,0 +1,8 @@
+module Mastodon
+  module Snowflake
+    def self.to_time: (untyped) -> Time
+    def self.sanitized_timestamp_id_sql: () -> String
+    def self.timestamp_id_sql_array: () -> [String, { random_string: String }]
+    def self.timestamp_id_sql_string: () -> String
+  end
+end

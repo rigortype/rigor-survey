@@ -1,0 +1,7 @@
+module Rails
+  class Engine < ::Rails::Railtie
+    class Updater
+      def self.generator: () -> Rails::Generators::PluginGenerator
+    end
+  end
+end

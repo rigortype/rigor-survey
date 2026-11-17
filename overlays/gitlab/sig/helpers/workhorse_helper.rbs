@@ -1,0 +1,3 @@
+module WorkhorseHelper
+  def workhorse_set_content_type!: () -> "true"
+end

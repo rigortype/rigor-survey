@@ -1,0 +1,3 @@
+module ProgrammingLanguagesHelper
+  def language_state_class: (untyped) -> ("" | "is-active")
+end

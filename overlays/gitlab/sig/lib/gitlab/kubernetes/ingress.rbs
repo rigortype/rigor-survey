@@ -1,0 +1,7 @@
+module Gitlab
+  module Kubernetes
+    class Ingress
+      def initialize: (?untyped) -> void
+    end
+  end
+end

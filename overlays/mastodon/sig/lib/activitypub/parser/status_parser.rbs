@@ -1,0 +1,13 @@
+module ActivityPub
+  module Parser
+    class StatusParser
+      def initialize: (untyped, **untyped) -> void
+      def visibility: () -> (:direct | :private | :public | :unlisted)
+      def quote_policy: () -> (0 | Integer)
+      def quote?: () -> (false | true)
+      def legacy_quote?: () -> (false | true)
+      def audience_to: () -> Array[untyped]
+      def audience_cc: () -> Array[untyped]
+    end
+  end
+end

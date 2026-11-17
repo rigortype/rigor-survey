@@ -1,0 +1,16 @@
+module Gitlab
+  module GithubImport
+    module Markdown
+      class Attachment
+        def self.from_markdown: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+        def self.from_markdown_text: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+        def self.from_markdown_image: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+        def self.from_markdown_link: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+        def self.from_inline_html: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+        def self.whitelisted_type?: (untyped, untyped, ?docs: untyped, ?media: untyped) -> (false | nil | true)
+        def initialize: (untyped, untyped, untyped) -> void
+        def inspect: () -> String
+      end
+    end
+  end
+end

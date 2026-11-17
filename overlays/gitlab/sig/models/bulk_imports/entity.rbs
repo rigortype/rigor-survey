@@ -1,0 +1,12 @@
+module BulkImports
+  class Entity < ::ApplicationRecord
+    def encoded_source_full_path: () -> String
+    def base_resource_url_path: () -> String
+    def base_xid_resource_url_path: () -> String
+    def export_relations_url_path_base: () -> String
+    def wikis_url_path: () -> String
+    def checksums: () -> Hash[untyped, untyped]
+    def hashed_import_source: () -> (String | nil)
+    def import_event_attributes: () -> { user: untyped, additional_properties: Hash[untyped, untyped] }
+  end
+end

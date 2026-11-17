@@ -1,0 +1,6 @@
+module Blobs
+  class UnfoldPresenter < ::BlobPresenter
+    def initialize: (untyped, untyped) -> void
+    def match_line_text: () -> ("" | String)
+  end
+end

@@ -1,0 +1,11 @@
+module Rails
+  class Application < ::Rails::Engine
+    class RoutesReloader
+      def initialize: (?file_watcher: untyped) -> void
+      def execute_unless_loaded: () -> (false | true)
+      def route_sets: () -> Array[untyped]
+      def paths: () -> Array[untyped]
+      def external_routes: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,26 @@
+module Redmine
+  module SudoMode
+    def self.was_used?: () -> (false | true)
+    def self.active?: () -> (nil | true)
+    def self.active!: () -> true
+    def self.disable!: () -> true
+    def self.enable!: () -> nil
+    module Controller
+      def require_sudo_mode: (*untyped) -> (false | true)
+      class SudoRequestFilter < ::Struct[untyped]
+        def parameters: () -> untyped
+        def request_methods: () -> untyped
+        def parameters=: (untyped) -> untyped
+        def request_methods=: (untyped) -> untyped
+        def self.new: (?parameters: untyped, ?request_methods: untyped) -> instance | (?untyped parameters, ?untyped request_methods) -> instance
+        def self.[]: (?parameters: untyped, ?request_methods: untyped) -> instance | (?untyped parameters, ?untyped request_methods) -> instance
+      end
+    end
+    class Form
+      def initialize: (?untyped) -> void
+      def check_password: () -> (ActiveModel::Error | nil)
+    end
+    class SudoRequired < ::StandardError
+    end
+  end
+end

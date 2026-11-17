@@ -1,0 +1,30 @@
+module Gitlab
+  module Access
+    def self.all_values: () -> [10, 15, 20, 25, 30, 40, 50]
+    def self.values_with_minimal_access: () -> [10, 15, 20, 25, 30, 40, 50]
+    def self.all_keys: () -> ["Guest", "Planner", "Reporter", "Security Manager", "Developer", "Maintainer", "Owner"]
+    def self.options: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40]
+    def self.options_with_owner: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40 | 50]
+    def self.options_with_none: () -> Hash[String, 0 | 10 | 15 | 20 | 25 | 30 | 40 | 50]
+    def self.option_descriptions: () -> Hash[0 | 10 | 15 | 20 | 25 | 30 | 40 | 50, untyped]
+    def self.sym_options: () -> { guest: 10, planner: 15, reporter: 20, security_manager: 25, developer: 30, maintainer: 40 }
+    def self.sym_options_with_owner: () -> { guest: 10, planner: 15, reporter: 20, security_manager: 25, developer: 30, maintainer: 40, owner: 50 }
+    def self.sym_options_with_admin: () -> { guest: 10, planner: 15, reporter: 20, security_manager: 25, developer: 30, maintainer: 40, owner: 50, admin: 60 }
+    def self.protection_options: () -> [{ label: untyped, help_text: untyped, value: 0 }, { label: untyped, help_text: untyped, value: 3 }, { label: untyped, help_text: untyped, value: 1 }, { label: untyped, help_text: untyped, value: 2 }, { label: untyped, help_text: untyped, value: 4 }]
+    def self.global_protection_levels: () -> [{ label: untyped, help_text: untyped, value: false }, { label: untyped, help_text: untyped, value: true }]
+    def self.protection_values: () -> [0, 3, 1, 2, 4]
+    def self.human_access: (untyped, ?untyped) -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+    def self.human_access_with_none: (untyped, ?untyped) -> ("Developer" | "Guest" | "Maintainer" | "None" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+    def self.project_creation_options: () -> Hash[untyped, 0 | 1 | 2 | 3 | 4]
+    def self.project_creation_string_options: () -> Hash[String, 0 | 1 | 2 | 3 | 4]
+    def self.project_creation_values: () -> Array[0 | 1 | 2 | 3 | 4]
+    def self.project_creation_string_values: () -> ["noone", "owner", "maintainer", "developer", "administrator"]
+    def self.subgroup_creation_options: () -> Hash[untyped, 0 | 1]
+    def self.subgroup_creation_string_options: () -> Hash[String, 0 | 1]
+    def self.subgroup_creation_values: () -> Array[0 | 1]
+    def self.subgroup_creation_string_values: () -> ["owner", "maintainer"]
+    def human_access: () -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+    def human_access_with_none: () -> ("Developer" | "Guest" | "Maintainer" | "None" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+    def human_access_labeled: () -> String
+  end
+end

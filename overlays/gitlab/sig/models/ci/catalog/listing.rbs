@@ -1,0 +1,7 @@
+module Ci
+  module Catalog
+    class Listing
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,18 @@
+module Organizations
+  module Release
+    class Stage < ::Struct[untyped]
+      def key: () -> untyped
+      def flag: () -> untyped
+      def label: () -> untyped
+      def audience: () -> untyped
+      def description: () -> untyped
+      def key=: (untyped) -> untyped
+      def flag=: (untyped) -> untyped
+      def label=: (untyped) -> untyped
+      def audience=: (untyped) -> untyped
+      def description=: (untyped) -> untyped
+      def self.new: (?key: untyped, ?flag: untyped, ?label: untyped, ?audience: untyped, ?description: untyped) -> instance
+      def self.[]: (?key: untyped, ?flag: untyped, ?label: untyped, ?audience: untyped, ?description: untyped) -> instance
+    end
+  end
+end

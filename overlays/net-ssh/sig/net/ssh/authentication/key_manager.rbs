@@ -1,0 +1,23 @@
+module Net
+  module SSH
+    module Authentication
+      class KeyManager
+        def initialize: (nil, ?Hash[untyped, untyped]) -> void
+        def clear!: () -> Net::SSH::Authentication::KeyManager
+        def add: (untyped) -> Net::SSH::Authentication::KeyManager
+        def add_keycert: (untyped) -> Net::SSH::Authentication::KeyManager
+        def add_keycert_data: (untyped) -> Net::SSH::Authentication::KeyManager
+        def add_key_data: (untyped) -> Net::SSH::Authentication::KeyManager
+        def finish: () -> nil
+        def each_identity: () -> Net::SSH::Authentication::KeyManager
+        def agent: () -> (Net::SSH::Authentication::Agent | nil)
+        def key_files: () -> Array[untyped]
+        def key_data: () -> Array[untyped]
+        def keycert_files: () -> Array[untyped]
+        def keycert_data: () -> Array[untyped]
+        def known_identities: () -> Hash[untyped, untyped]
+        def options: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module PgAsh
+      class Report
+        def self.window: (untyped, ?from: untyped, ?to: untyped, ?latest_end: untyped, ?newest_rollup: untyped, ?now: untyped) -> Range[untyped]
+        def initialize: (untyped, ?untyped) -> void
+        def overview: () -> { coverage: nil | { from: untyped, to: untyped, source: untyped }, wait_event_types: untyped, top_queries: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module BranchRules
+    class SquashOption < ::ApplicationRecord
+      def branch_rule: () -> Projects::BranchRule
+    end
+  end
+end

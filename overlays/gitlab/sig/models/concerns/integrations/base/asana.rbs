@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Asana
+      def test: (untyped) -> ({ success: false, result: untyped } | { success: true })
+    end
+  end
+end

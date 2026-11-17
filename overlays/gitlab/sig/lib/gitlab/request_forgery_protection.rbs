@@ -1,0 +1,5 @@
+module Gitlab
+  module RequestForgeryProtection
+    def self.verified?: (untyped) -> (false | true)
+  end
+end

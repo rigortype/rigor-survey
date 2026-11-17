@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    class MigrationGenerator < ::Rails::Generators::NamedBase
+      def self.exit_on_failure?: () -> true
+    end
+  end
+end

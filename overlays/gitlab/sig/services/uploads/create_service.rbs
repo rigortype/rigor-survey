@@ -1,0 +1,6 @@
+module Uploads
+  class CreateService
+    def initialize: (untyped, untyped, file: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

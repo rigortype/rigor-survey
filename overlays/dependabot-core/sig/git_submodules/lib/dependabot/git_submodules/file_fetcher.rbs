@@ -1,0 +1,8 @@
+module Dependabot
+  module GitSubmodules
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a .gitmodules file."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

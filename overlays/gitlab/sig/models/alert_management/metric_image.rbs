@@ -1,0 +1,5 @@
+module AlertManagement
+  class MetricImage < ::ApplicationRecord
+    def uploads_sharding_key: () -> { project_id: untyped }
+  end
+end

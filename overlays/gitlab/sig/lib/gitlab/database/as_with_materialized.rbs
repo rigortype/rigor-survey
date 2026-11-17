@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class AsWithMaterialized < ::Arel::Nodes::As
+      def initialize: (untyped, untyped, ?materialized: untyped) -> void
+    end
+  end
+end

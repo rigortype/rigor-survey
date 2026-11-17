@@ -1,0 +1,5 @@
+module Gitlab
+  class GroupSearchResults < ::Gitlab::SearchResults
+    def initialize: (untyped, untyped, ?untyped, group: untyped, **untyped) -> void
+  end
+end

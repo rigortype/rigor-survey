@@ -1,0 +1,29 @@
+module Gitlab
+  module Graphql
+    module Queries
+      def self.find: (untyped) -> Array[untyped]
+      def self.fragments: () -> Gitlab::Graphql::Queries::Fragments
+      def self.all: () -> Array[untyped]
+      class WrappedError
+        def initialize: (untyped) -> void
+        def path: () -> []
+      end
+      class FileNotFound
+        def initialize: (untyped) -> void
+        def message: () -> String
+        def path: () -> []
+      end
+      class Definition
+        def initialize: (untyped, untyped) -> void
+        def query: () -> (String | nil)
+        def validate: (singleton(GitlabSchema)) -> ([:client_query, []] | [:validated, untyped] | [:validated, [Gitlab::Graphql::Queries::WrappedError]])
+        def imports: () -> Array[untyped]
+      end
+      class Fragments
+        def initialize: (untyped, ?String) -> void
+        def get: (String) -> Gitlab::Graphql::Queries::Definition
+        def dir: () -> "."
+      end
+    end
+  end
+end

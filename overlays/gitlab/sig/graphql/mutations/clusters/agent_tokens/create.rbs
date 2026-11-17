@@ -1,0 +1,9 @@
+module Mutations
+  module Clusters
+    module AgentTokens
+      class Create < ::Mutations::BaseMutation
+        def resolve: (untyped) -> { secret: untyped, token: untyped, errors: Array[untyped] }
+      end
+    end
+  end
+end

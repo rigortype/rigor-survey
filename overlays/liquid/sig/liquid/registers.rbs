@@ -1,0 +1,5 @@
+module Liquid
+  class Registers
+    def initialize: (?untyped) -> void
+  end
+end

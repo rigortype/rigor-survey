@@ -1,0 +1,9 @@
+module Admin
+  module Metrics
+    class Measure
+      class ResolvedReportsMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def key: () -> "resolved_reports"
+      end
+    end
+  end
+end

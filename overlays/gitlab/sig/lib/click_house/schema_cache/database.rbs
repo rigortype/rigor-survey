@@ -1,0 +1,8 @@
+module ClickHouse
+  module SchemaCache
+    class Database
+      def initialize: (name: Symbol, ?tables: [untyped]) -> void
+      def name: () -> :main
+    end
+  end
+end

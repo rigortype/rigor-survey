@@ -1,0 +1,15 @@
+module Dependabot
+  class DependencyRequirement < ::Hash[untyped, untyped]
+    def self.create: (untyped) -> Dependabot::DependencyRequirement
+    def file: () -> (String | nil)
+    def groups: () -> (Array[untyped] | nil)
+    def source: () -> (ObjectHash | String | nil)
+    def metadata: () -> (ObjectHash | nil)
+    def source_hash: () -> (::Source | nil)
+    def source_string: (untyped) -> (String | nil)
+    def metadata_string: (untyped) -> (String | nil)
+    def metadata_symbol: (untyped) -> (Symbol | nil)
+    def metadata_boolean: (untyped) -> nil
+    def metadata_string_hash: (untyped) -> (Hash[untyped, untyped] | nil)
+  end
+end

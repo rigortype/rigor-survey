@@ -1,0 +1,10 @@
+module Liquid
+  class RangeLookup
+    def self.parse: (untyped, untyped, untyped, ?untyped) -> (Liquid::RangeLookup | Range[untyped])
+    def initialize: (untyped, untyped) -> void
+    def evaluate: (untyped) -> Range[untyped]
+    class ParseTreeVisitor < ::Liquid::ParseTreeVisitor
+      def children: () -> [untyped, untyped]
+    end
+  end
+end

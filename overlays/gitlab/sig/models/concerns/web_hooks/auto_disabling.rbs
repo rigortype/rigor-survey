@@ -1,0 +1,6 @@
+module WebHooks
+  module AutoDisabling
+    def executable?: () -> (false | true)
+    def alert_status: () -> (:disabled | :executable | :temporarily_disabled)
+  end
+end

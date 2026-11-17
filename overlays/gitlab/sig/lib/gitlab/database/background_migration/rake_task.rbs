@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      module RakeTask
+        def connection_and_id_from_params: (untyped) -> [untyped, untyped]
+        def print_error: (untyped, ?force_exit: untyped) -> nil
+        def print_message: (untyped, ?force_exit: untyped) -> nil
+        def print_table: (untyped, ?headers: untyped) -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Parser
+  module Lexer
+    class StackState
+      def initialize: (String) -> void
+      def clear: () -> 0
+      def to_s: () -> String
+    end
+  end
+end

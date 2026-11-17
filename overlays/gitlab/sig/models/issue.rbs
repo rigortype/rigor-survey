@@ -1,0 +1,40 @@
+class Issue < ::ApplicationRecord
+  def self.related_link_class: () -> singleton(IssueLink)
+  def self.participant_includes: () -> Array[untyped]
+  def self.relative_positioning_parent_column: () -> :project_id
+  def self.reference_prefix: () -> "#"
+  def self.alternative_reference_prefix_without_postfix: () -> "GL-"
+  def self.alternative_reference_prefix_with_postfix: () -> "[issue:"
+  def self.reference_postfix: () -> "]"
+  def self.project_foreign_key: () -> "project_id"
+  def self.column_order_relative_position: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+  def self.column_order_work_item_position: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+  def self.column_order_id_asc: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+  def self.supported_keyset_orderings: () -> { id: [:asc, :desc], title: [:asc, :desc], created_at: [:asc, :desc], updated_at: [:asc, :desc], due_date: [:asc, :desc], relative_position: [:asc, :desc] }
+  def check_repositioning_allowed!: () -> nil
+  def to_reference: (?untyped, ?full: untyped, ?absolute_path: untyped) -> String
+  def moved?: () -> (false | true)
+  def duplicated?: () -> (false | true)
+  def clear_closure_reason_references: () -> nil
+  def can_be_worked_on?: () -> (false | true)
+  def allow_possible_spam?: (untyped) -> (false | true)
+  def supports_recaptcha?: () -> true
+  def real_time_notes_enabled?: () -> true
+  def discussions_rendered_on_frontend?: () -> true
+  def invalidate_project_counter_caches: () -> (Array[Array[untyped]] | nil)
+  def design_collection: () -> DesignManagement::DesignCollection
+  def max_number_of_labels: () -> (100 | nil)
+  def supports_confidentiality?: () -> true
+  def to_work_item_global_id: () -> GlobalID
+  def gfm_reference: (?untyped) -> String
+  def epic_work_item?: () -> false
+  def show_as_work_item?: () -> (false | true)
+  class DueDateStruct < ::Struct[untyped]
+    def title: () -> untyped
+    def name: () -> untyped
+    def title=: (untyped) -> untyped
+    def name=: (untyped) -> untyped
+    def self.new: (?title: untyped, ?name: untyped) -> instance | (?untyped title, ?untyped name) -> instance
+    def self.[]: (?title: untyped, ?name: untyped) -> instance | (?untyped title, ?untyped name) -> instance
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module Bazel
+    class FileParser < ::Dependabot::FileParsers::Base
+      class StarlarkParser
+        def initialize: (untyped) -> void
+        def parse_function_calls: () -> Array[::FunctionCall | nil]
+      end
+    end
+  end
+end

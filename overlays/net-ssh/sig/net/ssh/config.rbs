@@ -1,0 +1,13 @@
+module Net
+  module SSH
+    class Config
+      def self.translate_verify_host_key: (untyped) -> (:accept_new | :always | :never | nil)
+      def self.setup_proxy: (untyped, untyped) -> (Net::SSH::Proxy::Command | Net::SSH::Proxy::Jump | nil)
+      def self.pattern2regex: (untyped, ?ignore_case: untyped) -> Regexp
+      def self.eval_match_conditions: (untyped, untyped, untyped, untyped) -> (false | true)
+      def self.parse_match_conditions: (untyped) -> Array[[untyped, untyped, untyped]]
+      def self.warn_unsupported_match: (untyped, untyped) -> nil
+      def self.local_user: () -> (String | nil)
+    end
+  end
+end

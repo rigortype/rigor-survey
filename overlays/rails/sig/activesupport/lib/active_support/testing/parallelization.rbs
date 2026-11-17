@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    class Parallelization
+      def initialize: (untyped, ?work_stealing: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module RbNaCl
+  module Random
+    def self.random_bytes: (?untyped) -> String
+  end
+end

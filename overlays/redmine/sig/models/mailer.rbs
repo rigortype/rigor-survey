@@ -1,0 +1,9 @@
+class Mailer < ::ActionMailer::Base
+  def self.default_url_options: () -> Hash[untyped, untyped]
+  def self.deliver_password_updated: (untyped, untyped) -> (Array[untyped] | nil)
+  def self.deliver_security_notification: (untyped, untyped, ?untyped) -> Array[untyped]
+  def self.email_addresses: (untyped) -> Array[untyped]
+  def self.token_for: (untyped, untyped) -> String
+  def self.message_id_for: (untyped, untyped) -> String
+  def self.references_for: (untyped, untyped) -> String
+end

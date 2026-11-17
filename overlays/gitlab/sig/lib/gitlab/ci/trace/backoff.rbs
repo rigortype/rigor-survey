@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class Trace
+      class Backoff
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

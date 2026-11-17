@@ -1,0 +1,12 @@
+module Faraday
+  module Utils
+    def self?.build_query: (untyped) -> (String | nil)
+    def self?.build_nested_query: (untyped) -> (String | nil)
+    def self?.default_space_encoding: () -> "+"
+    def self?.unescape: (untyped) -> String
+    def self?.parse_query: (untyped) -> (Hash[untyped, untyped] | nil)
+    def self?.default_params_encoder: () -> singleton(Faraday::NestedParamsEncoder)
+    def self?.basic_header_from: (untyped, untyped) -> String
+    def self?.normalize_path: (untyped) -> String
+  end
+end

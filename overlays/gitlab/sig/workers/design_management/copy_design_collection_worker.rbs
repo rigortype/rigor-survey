@@ -1,0 +1,5 @@
+module DesignManagement
+  class CopyDesignCollectionWorker
+    def perform: (untyped, untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  end
+end

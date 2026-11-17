@@ -1,0 +1,5 @@
+module ActionDispatch
+  def self.eager_load!: () -> nil
+  class MissingController < ::NameError
+  end
+end

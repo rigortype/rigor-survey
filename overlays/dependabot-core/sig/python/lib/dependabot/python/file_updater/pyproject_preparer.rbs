@@ -1,0 +1,11 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PyprojectPreparer
+        def self.collect_pep621_dep_arrays: (untyped) -> Array[Array[untyped]]
+        def initialize: (pyproject_content: untyped, ?lockfile: untyped) -> void
+        def sanitize: () -> String
+      end
+    end
+  end
+end

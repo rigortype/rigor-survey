@@ -1,0 +1,10 @@
+module Erubi
+  class CaptureBlockEngine < ::Erubi::Engine
+    def initialize: (untyped, ?untyped) -> void
+    class Buffer < ::String
+      def <<: (untyped) -> Erubi::CaptureBlockEngine::Buffer
+      def |: (untyped) -> Erubi::CaptureBlockEngine::Buffer
+      def capture: (*untyped) -> Erubi::CaptureBlockEngine::Buffer
+    end
+  end
+end

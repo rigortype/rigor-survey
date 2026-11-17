@@ -1,0 +1,5 @@
+module Ci
+  class Ref < ::Ci::ApplicationRecord
+    def self.failing_state?: (untyped) -> (false | true)
+  end
+end

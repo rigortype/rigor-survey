@@ -1,0 +1,3 @@
+class PushEventAssetFileJob < ::ApplicationJob
+  def perform: (ApplicationRecord) -> void
+end

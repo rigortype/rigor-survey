@@ -1,0 +1,5 @@
+module WorkItems
+  class UpdateNamespaceTraversalIdsService
+    def initialize: (untyped) -> void
+  end
+end

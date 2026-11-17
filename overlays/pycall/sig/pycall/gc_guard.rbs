@@ -1,0 +1,12 @@
+module PyCall
+  module GCGuard
+    class Key < ::Struct[untyped]
+      def pyptr: () -> untyped
+      def pyptr=: (untyped) -> untyped
+      def self.new: (?pyptr: untyped) -> instance | (?untyped pyptr) -> instance
+      def self.[]: (?pyptr: untyped) -> instance | (?untyped pyptr) -> instance
+      def initialize: (untyped) -> void
+      def release: () -> nil
+    end
+  end
+end

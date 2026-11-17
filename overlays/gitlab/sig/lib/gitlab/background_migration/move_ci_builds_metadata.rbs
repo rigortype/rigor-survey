@@ -1,0 +1,33 @@
+module Gitlab
+  module BackgroundMigration
+    class MoveCiBuildsMetadata < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      def self.job_arguments_count: () -> 2
+      def definition_model: () -> Class
+      def definition_instance_model: () -> Class
+      def job_taggings_model: () -> Class
+      def job_model: () -> Class
+      def metadata_model: () -> Class
+      def job_artifact_model: () -> Class
+      def ci_model: (untyped, ?primary_key: untyped) -> Class
+      class SanitizedYamlCoder
+        def self.load: (untyped) -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | Symbol | false | nil | true)
+      end
+      class JobsFilter
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+      class JobsPreloader
+        def initialize: (untyped, untyped) -> void
+      end
+      class JobPresenter < ::SimpleDelegator
+        def initialize: (untyped, metadata: untyped, tag_list: untyped, run_steps: untyped) -> void
+        def definition_config: () -> Hash[untyped, untyped]
+      end
+      class JobsDefinitionsAssigner
+        def initialize: (untyped, untyped) -> void
+      end
+      class BulkJobDefinitionsCreator
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

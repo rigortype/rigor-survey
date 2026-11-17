@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Collection
+        class Item
+          def initialize: (key: untyped, value: untyped, ?public: untyped, ?file: (false | true), ?masked: untyped, ?raw: (false | true)) -> void
+          def to_runner_variable: () -> Hash[:file | :key | :masked | :public | :raw | :value, untyped]
+          def to_hash_variable: () -> { key: untyped, value: untyped, public: untyped, file: untyped, masked: untyped, raw: untyped }
+          def self.possible_var_reference?: (untyped) -> (false | nil | true)
+        end
+      end
+    end
+  end
+end

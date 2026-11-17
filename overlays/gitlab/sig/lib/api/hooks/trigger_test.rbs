@@ -1,0 +1,7 @@
+module API
+  module Hooks
+    class TriggerTest < ::Grape::API
+      def hook_test_service: (untyped, untyped) -> TestHooks::ProjectService
+    end
+  end
+end

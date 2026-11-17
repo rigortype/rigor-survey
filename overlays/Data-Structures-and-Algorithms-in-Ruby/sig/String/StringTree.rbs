@@ -1,0 +1,8 @@
+class StringTree
+  def printTree: (?untyped) -> nil
+  def freeTree: () -> nil
+  def find: (untyped, ?untyped) -> (false | true)
+  class Node
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+  end
+end

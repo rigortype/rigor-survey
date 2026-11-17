@@ -1,0 +1,9 @@
+module Net
+  module SSH
+    module Test
+      class Channel
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

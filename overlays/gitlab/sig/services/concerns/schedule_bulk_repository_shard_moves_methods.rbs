@@ -1,0 +1,3 @@
+module ScheduleBulkRepositoryShardMovesMethods
+  def execute: (untyped, ?untyped) -> Hash[untyped, untyped]
+end

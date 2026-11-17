@@ -1,0 +1,11 @@
+module ActiveRecord
+  module Associations
+    class CollectionProxy < ::ActiveRecord::Relation
+      def initialize: (untyped, untyped, **untyped) -> void
+      def include?: (untyped) -> (false | true)
+      def prepend: (*untyped) -> bot
+      def clear: () -> ActiveRecord::Associations::CollectionProxy
+      def reset_scope: () -> ActiveRecord::Associations::CollectionProxy
+    end
+  end
+end

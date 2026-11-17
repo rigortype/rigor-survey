@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Reindexing
+      class GrafanaNotifier
+        def initialize: (?api_key: untyped, ?api_url: untyped, ?additional_tag: untyped) -> void
+      end
+    end
+  end
+end

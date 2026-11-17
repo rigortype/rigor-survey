@@ -1,0 +1,15 @@
+module Packages
+  module TerraformModule
+    module Metadata
+      class ParseHclFileService
+        def initialize: (untyped) -> void
+        def execute: () -> ServiceResponse
+        def resources: () -> Array[untyped]
+        def modules: () -> Array[untyped]
+        def providers: () -> Array[untyped]
+        def variables: () -> Array[untyped]
+        def outputs: () -> Array[untyped]
+      end
+    end
+  end
+end

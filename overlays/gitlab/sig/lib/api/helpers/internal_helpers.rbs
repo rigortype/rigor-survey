@@ -1,0 +1,10 @@
+module API
+  module Helpers
+    module InternalHelpers
+      def actor: () -> ::API::Support::GitAccessActor
+      def ssh_authentication_abilities: () -> [:read_project, :download_code, :push_code]
+      def response_with_status: (?code: untyped, ?success: untyped, ?message: untyped, **untyped) -> Hash[untyped, untyped]
+      def need_git_audit_event?: () -> false
+    end
+  end
+end

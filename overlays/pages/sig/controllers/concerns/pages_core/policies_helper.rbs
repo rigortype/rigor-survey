@@ -1,0 +1,6 @@
+module PagesCore
+  module PoliciesHelper
+    def verify_policy_with_proc: (untyped, untyped) -> true
+    def verify_policy: (untyped) -> true
+  end
+end

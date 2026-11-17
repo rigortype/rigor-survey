@@ -1,0 +1,9 @@
+module Parser
+  module Source
+    class Map
+      class Collection < ::Parser::Source::Map
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

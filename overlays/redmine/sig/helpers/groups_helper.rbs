@@ -1,0 +1,4 @@
+module GroupsHelper
+  def group_settings_tabs: (untyped) -> Array[untyped]
+  def paginate_group_users: (untyped) -> [untyped, Redmine::Pagination::Paginator, untyped]
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class QueueEnumerator
+      def push: (untyped) -> top
+    end
+  end
+end

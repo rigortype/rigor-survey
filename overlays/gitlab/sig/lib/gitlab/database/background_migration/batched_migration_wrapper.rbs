@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      class BatchedMigrationWrapper
+        def initialize: (connection: untyped, ?metrics: untyped) -> void
+      end
+    end
+  end
+end

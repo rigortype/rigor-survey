@@ -1,0 +1,6 @@
+module Resolvers
+  class MergeRequestPipelinesResolver < ::Resolvers::BaseResolver
+    def model_class: () -> singleton(::Ci::Pipeline)
+    def query_input: (**untyped) -> [untyped, untyped]
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module NotificationAssertions
+      def capture_notifications: (?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+    end
+  end
+end

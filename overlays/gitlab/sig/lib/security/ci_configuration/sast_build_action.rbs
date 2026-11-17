@@ -1,0 +1,7 @@
+module Security
+  module CiConfiguration
+    class SastBuildAction < ::Security::CiConfiguration::BaseBuildAction
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PoetryFileUpdater
+        class Pep621Updater
+          def initialize: (dep: untyped) -> void
+          def replace: (untyped, untyped, untyped) -> (String | nil)
+          def group_versions_by_operator: (untyped) -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Issues
+  class BaseService < ::IssuableBaseService
+    def reopen_service: () -> singleton(Issues::ReopenService)
+    def close_service: () -> singleton(Issues::CloseService)
+    def self.constructor_container_arg: (untyped) -> { container: untyped }
+  end
+end

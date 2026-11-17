@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    class SidekiqTask
+      def self.name: () -> "Sidekiq"
+      def self.checks: () -> [singleton(SystemCheck::SidekiqCheck)]
+    end
+  end
+end

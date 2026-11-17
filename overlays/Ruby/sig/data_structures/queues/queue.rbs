@@ -1,0 +1,3 @@
+class ArrayQueue
+  def initialize: (?untyped) -> void
+end

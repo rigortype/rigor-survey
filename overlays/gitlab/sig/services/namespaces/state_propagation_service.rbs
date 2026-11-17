@@ -1,0 +1,6 @@
+module Namespaces
+  class StatePropagationService
+    def initialize: (untyped, untyped) -> void
+    def execute: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  end
+end

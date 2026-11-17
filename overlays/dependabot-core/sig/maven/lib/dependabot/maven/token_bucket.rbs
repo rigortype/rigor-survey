@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    class TokenBucket < ::T::Struct
+      def <=>: (untyped) -> (Integer | nil)
+      def compare_tokens: (untyped, untyped) -> (0 | Integer | nil)
+      def compare_token_pair: (?untyped, ?untyped) -> (-1 | 0 | 1 | Integer | nil)
+      def empty_addition: () -> Dependabot::Maven::TokenBucket
+    end
+  end
+end

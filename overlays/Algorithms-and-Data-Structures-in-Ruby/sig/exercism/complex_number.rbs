@@ -1,0 +1,10 @@
+class ComplexNumber
+  def initialize: (?untyped, ?untyped) -> void
+  def +: (untyped) -> ComplexNumber
+  def -: (untyped) -> ComplexNumber
+  def *: (untyped) -> ComplexNumber
+  def /: (untyped) -> ComplexNumber
+  def abs: () -> Float
+  def conjugate: () -> ComplexNumber
+  def exp: () -> ComplexNumber
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module BillingEvents
+    class InstanceIdentity
+      def self.to_h: () -> { instance_id: untyped, unique_instance_id: untyped, host_name: untyped, instance_version: untyped, realm: "SM", deployment_type: "self-managed" }
+      def to_h: () -> { instance_id: untyped, unique_instance_id: untyped, host_name: untyped, instance_version: untyped, realm: "SM", deployment_type: "self-managed" }
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Ci
+  module Catalog
+    module Resources
+      class TrackComponentUsageWorker
+        def perform: (untyped, untyped, [untyped, untyped] | [untyped, Hash[String, untyped], Hash[String, untyped]] | [untyped, Hash[String, untyped]] | [untyped] | [Hash[String, untyped]]) -> (ServiceResponse | nil)
+      end
+    end
+  end
+end

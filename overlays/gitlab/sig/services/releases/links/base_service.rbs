@@ -1,0 +1,7 @@
+module Releases
+  module Links
+    class BaseService
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

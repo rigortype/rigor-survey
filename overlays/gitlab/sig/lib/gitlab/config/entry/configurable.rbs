@@ -1,0 +1,9 @@
+module Gitlab
+  module Config
+    module Entry
+      module Configurable
+        def skip_config_hash_validation?: () -> false
+      end
+    end
+  end
+end

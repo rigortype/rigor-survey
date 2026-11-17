@@ -1,0 +1,7 @@
+module ActionMailbox
+  class Router
+    def routes: () -> Array[untyped]
+    class RoutingError < ::StandardError
+    end
+  end
+end

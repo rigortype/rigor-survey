@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Jobs
+      class GetJobService < ::Mcp::Tools::Base::CustomService
+        def self.tool_aliases: () -> ["get_job_log"]
+        def authorization_error_message: () -> ("Job log not accessible: you do not have permission to read this job's log." | "Job not found or inaccessible")
+      end
+    end
+  end
+end

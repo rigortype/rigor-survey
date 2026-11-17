@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Encryption
+    class Cipher
+      class Aes256Gcm
+        def initialize: (untyped, ?deterministic: untyped) -> void
+        def encrypt: (untyped) -> ActiveRecord::Encryption::Message
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  class PaginationDelegate
+    def initialize: (page: (Integer | nil), per_page: (Integer | nil | { wrong: Symbol }), count: Integer, ?options: untyped) -> void
+  end
+end

@@ -1,0 +1,12 @@
+module Dependabot
+  module Python
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PipVersionResolver
+        class MarkerEvaluator
+          def split_requirement_and_marker: (untyped) -> ([untyped, untyped] | [untyped, nil])
+          def marker_satisfied?: (marker: untyped, python_version: untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

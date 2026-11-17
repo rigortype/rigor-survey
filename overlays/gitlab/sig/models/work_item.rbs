@@ -1,0 +1,18 @@
+class WorkItem < ::Issue
+  def self.find_by_namespace_and_iid!: (untyped, untyped) -> WorkItem
+  def self.assignee_association_name: () -> "issue"
+  def self.test_reports_join_column: () -> "issues.id"
+  def self.namespace_reference_pattern: () -> Regexp
+  def self.alternative_reference_prefix_with_postfix: () -> "[work_item:"
+  def self.reference_pattern: () -> Regexp
+  def self.work_item_children_keyset_order_config: () -> Gitlab::Pagination::Keyset::Order
+  def self.linked_items_keyset_order: () -> Gitlab::Pagination::Keyset::Order
+  def self.related_link_class: () -> singleton(WorkItems::RelatedWorkItemLink)
+  def self.non_widgets: () -> [:pending_escalations]
+  def date_source_attributes_from_current_dates: () -> { due_date: untyped, start_date: untyped, start_date_is_fixed: untyped, due_date_is_fixed: untyped, start_date_fixed: untyped, due_date_fixed: untyped }
+  def noteable_target_type_name: () -> "issue"
+  def custom_notification_target_name: () -> "work_item"
+  def todoable_target_type_name: () -> ["Issue", "WorkItem"]
+  def supported_quick_action_commands: () -> Array[untyped]
+  def transform_quick_action_params: (untyped) -> { common: untyped, widgets: Hash[untyped, untyped] }
+end

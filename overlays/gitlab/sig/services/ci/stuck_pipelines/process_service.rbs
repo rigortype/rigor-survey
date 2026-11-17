@@ -1,0 +1,7 @@
+module Ci
+  module StuckPipelines
+    class ProcessService
+      def execute: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    end
+  end
+end

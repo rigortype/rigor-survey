@@ -1,0 +1,7 @@
+module API
+  module Admin
+    class BroadcastMessages < ::API::Base
+      def find_message: () -> System::BroadcastMessage
+    end
+  end
+end

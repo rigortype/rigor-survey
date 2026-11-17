@@ -1,0 +1,8 @@
+module Gitlab
+  module DataBuilder
+    class Pipeline < ::SimpleDelegator
+      def self.build: (untyped) -> Gitlab::DataBuilder::Pipeline
+      def initialize: (untyped) -> void
+    end
+  end
+end

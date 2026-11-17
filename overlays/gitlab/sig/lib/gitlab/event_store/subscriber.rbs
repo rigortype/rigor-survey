@@ -1,0 +1,8 @@
+module Gitlab
+  module EventStore
+    module Subscriber
+      def perform: (untyped, untyped) -> Array[untyped]
+      def handle_event: (untyped) -> bot
+    end
+  end
+end

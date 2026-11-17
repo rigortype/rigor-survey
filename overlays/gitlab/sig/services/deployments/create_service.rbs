@@ -1,0 +1,6 @@
+module Deployments
+  class CreateService
+    def initialize: (untyped, untyped, untyped) -> void
+    def deployment_attributes: () -> { project_id: untyped, environment_id: untyped, ref: untyped, tag: untyped, sha: untyped, user: untyped, on_stop: untyped }
+  end
+end

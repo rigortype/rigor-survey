@@ -1,0 +1,9 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      class Builder
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

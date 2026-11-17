@@ -1,0 +1,8 @@
+module ActiveSupport
+  module XmlMini_LibXMLSAX
+    def parse: (untyped) -> (Integer | {})
+    class HashBuilder
+      def on_start_document: () -> [Hash["__content__", ""]]
+    end
+  end
+end

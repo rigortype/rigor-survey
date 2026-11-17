@@ -1,0 +1,3 @@
+module SortTests
+  def sort: (untyped) -> bot
+end

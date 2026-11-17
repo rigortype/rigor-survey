@@ -1,0 +1,8 @@
+module ActionView
+  class FixtureResolver < ::ActionView::FileSystemResolver
+    def initialize: (?untyped) -> void
+  end
+  class NullResolver < ::ActionView::Resolver
+    def find_templates: (untyped, untyped, untyped, untyped, ?untyped) -> [ActionView::Template]
+  end
+end

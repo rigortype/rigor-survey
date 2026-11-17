@@ -1,0 +1,4 @@
+class GroupFinder
+  def initialize: (untyped) -> void
+  def execute: (*untyped) -> (Group | nil)
+end

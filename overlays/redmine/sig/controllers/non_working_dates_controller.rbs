@@ -1,0 +1,3 @@
+class NonWorkingDatesController < ::ApplicationController
+  def new: () -> NonWorkingDate
+end

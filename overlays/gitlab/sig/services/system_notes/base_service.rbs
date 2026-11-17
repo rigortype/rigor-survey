@@ -1,0 +1,5 @@
+module SystemNotes
+  class BaseService
+    def initialize: (?container: untyped, ?noteable: untyped, ?author: untyped) -> void
+  end
+end

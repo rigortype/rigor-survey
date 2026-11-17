@@ -1,0 +1,7 @@
+module Authz
+  module PermissionGroups
+    class Resource
+      def self.resource_identifier: (untyped, untyped) -> Symbol
+    end
+  end
+end

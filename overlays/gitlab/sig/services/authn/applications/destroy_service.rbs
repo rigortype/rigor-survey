@@ -1,0 +1,7 @@
+module Authn
+  module Applications
+    class DestroyService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module Attachments
+        class NotesImporter < ::Gitlab::GithubImport::Importer::Attachments::BaseImporter
+          def sidekiq_worker_class: () -> singleton(Gitlab::GithubImport::Attachments::ImportNoteWorker)
+          def collection_method: () -> :note_attachments
+          def object_type: () -> :note_attachment
+        end
+      end
+    end
+  end
+end

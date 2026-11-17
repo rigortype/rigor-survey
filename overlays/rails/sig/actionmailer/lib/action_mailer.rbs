@@ -1,0 +1,5 @@
+module ActionMailer
+  def self.deliver_all_later: (*untyped, **untyped) -> nil
+  def self.deliver_all_later!: (*untyped, **untyped) -> nil
+  def self._deliver_all_later: (untyped, *untyped, **untyped) -> nil
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module UpdateCheckers
+    module CooldownCalculation
+      def self.skip_cooldown?: (untyped, untyped, ?cooldown_enabled: untyped) -> (false | true)
+      def self.mark_cooldown_date_unavailable: (untyped, cooldown_days: untyped) -> (nil | true)
+    end
+  end
+end

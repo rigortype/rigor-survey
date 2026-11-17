@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class CreateFromTask < ::Mutations::BaseMutation
+      def resolve: (id: untyped, work_item_data: untyped) -> (Hash[untyped, untyped] | { errors: untyped })
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class CandidateCache
+        def self.for: (project_id: untyped, ref: untyped, ?ttl: untyped) -> Gitlab::Ci::RedundantPipelines::CandidateCache
+        def initialize: (untyped) -> void
+        def register: (untyped) -> Gitlab::Ci::RedundantPipelines::CandidateCache
+        def protect: (untyped) ?{ (*untyped) -> untyped } -> Gitlab::Ci::RedundantPipelines::CandidateCache
+        def delete: (untyped) -> Gitlab::Ci::RedundantPipelines::CandidateCache
+      end
+    end
+  end
+end

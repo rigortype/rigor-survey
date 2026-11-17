@@ -1,0 +1,22 @@
+module Gitlab
+  module Golang
+    def local_module_prefix: () -> String
+    def semver_tag?: (untyped) -> (false | true)
+    def pseudo_version?: (untyped) -> (false | true)
+    def parse_pseudo_version: (untyped) -> Gitlab::Golang::PseudoVersion
+    def parse_semver: (untyped) -> (Packages::SemVer | nil)
+    def go_path: (untyped, ?untyped) -> String
+    def pkg_go_dev_url: (untyped, ?untyped) -> String
+    def package_url: (untyped, ?untyped) -> (String | nil)
+    class PseudoVersion < ::Struct[untyped]
+      def semver: () -> untyped
+      def timestamp: () -> untyped
+      def commit_id: () -> untyped
+      def semver=: (untyped) -> untyped
+      def timestamp=: (untyped) -> untyped
+      def commit_id=: (untyped) -> untyped
+      def self.new: (?semver: untyped, ?timestamp: untyped, ?commit_id: untyped) -> instance | (?untyped semver, ?untyped timestamp, ?untyped commit_id) -> instance
+      def self.[]: (?semver: untyped, ?timestamp: untyped, ?commit_id: untyped) -> instance | (?untyped semver, ?untyped timestamp, ?untyped commit_id) -> instance
+    end
+  end
+end

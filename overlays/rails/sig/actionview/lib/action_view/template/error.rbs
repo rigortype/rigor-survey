@@ -1,0 +1,33 @@
+module ActionView
+  class MissingTemplate < ::ActionView::ActionViewError
+    def initialize: (untyped, untyped, untyped, untyped, untyped, *untyped) -> void
+    class Results
+      def initialize: (untyped) -> void
+      class Result < ::Struct[untyped]
+        def path: () -> untyped
+        def score: () -> untyped
+        def path=: (untyped) -> untyped
+        def score=: (untyped) -> untyped
+        def self.new: (?path: untyped, ?score: untyped) -> instance | (?untyped path, ?untyped score) -> instance
+        def self.[]: (?path: untyped, ?score: untyped) -> instance | (?untyped path, ?untyped score) -> instance
+      end
+    end
+  end
+  class WrongEncodingError < ::ActionView::EncodingError
+    def initialize: (untyped, untyped) -> void
+    def message: () -> String
+  end
+  class StrictLocalsError < ::ArgumentError
+    def initialize: (untyped, untyped) -> void
+  end
+  class Template
+    class Error < ::ActionView::ActionViewError
+      def initialize: (untyped) -> void
+      def line_number: () -> (String | nil)
+    end
+  end
+  class ActionViewError < ::StandardError
+  end
+  class EncodingError < ::StandardError
+  end
+end

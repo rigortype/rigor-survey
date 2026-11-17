@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Migrations
+      module SidekiqHelpers
+        def sidekiq_remove_jobs: (job_klasses: untyped, ?times_in_a_row: untyped, ?max_attempts: untyped) -> Hash[Symbol, FalseClass | Integer]
+        def migrate_across_instance: (untyped, untyped, untyped, untyped) -> top
+        def migrate_within_instance: (untyped, untyped) -> Sidekiq::RedisClientAdapter
+      end
+    end
+  end
+end

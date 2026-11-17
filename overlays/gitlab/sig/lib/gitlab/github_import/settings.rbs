@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    class Settings
+      def self.stages_array: (untyped, ?oauth: untyped) -> Array[{ name: "attachments_import" | "collaborators_import", label: untyped, selected: false | true, details: untyped }]
+      def self.available_stages: (untyped, ?oauth: untyped) -> { attachments_import: { selected: false }, collaborators_import: { selected: true } }
+      def initialize: (untyped) -> void
+      def disabled?: (untyped) -> (false | true)
+    end
+  end
+end

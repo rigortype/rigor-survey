@@ -1,0 +1,41 @@
+module Kramdown
+  module Converter
+    class Latex < ::Kramdown::Converter::Base
+      def initialize: (untyped, untyped) -> void
+      def inner: (untyped, untyped) -> String
+      def convert_root: (untyped, untyped) -> String
+      def convert_blank: (untyped, untyped) -> ("" | "\n")
+      def convert_p: (untyped, untyped) -> String
+      def convert_standalone_image: (untyped, untyped, untyped) -> String
+      def convert_codeblock: (untyped, untyped) -> String
+      def convert_blockquote: (untyped, untyped) -> String
+      def convert_header: (untyped, untyped) -> String
+      def convert_hr: (untyped, untyped) -> String
+      def convert_ul: (untyped, untyped) -> ("\\tableofcontents" | String)
+      def convert_dl: (untyped, untyped) -> String
+      def convert_li: (untyped, untyped) -> String
+      def convert_dt: (untyped, untyped) -> String
+      def convert_dd: (untyped, untyped) -> String
+      def convert_html_element: (untyped, untyped) -> ("" | String)
+      def convert_xml_pi: (untyped, untyped) -> ""
+      def convert_table: (untyped, untyped) -> String
+      def convert_thead: (untyped, untyped) -> String
+      def convert_tbody: (untyped, untyped) -> String
+      def convert_tfoot: (untyped, untyped) -> String
+      def convert_td: (untyped, untyped) -> String
+      def convert_br: (untyped, untyped) -> ("\\newline" | String)
+      def convert_a: (untyped, untyped) -> String
+      def convert_img: (untyped, untyped) -> ("" | String)
+      def convert_codespan: (untyped, untyped) -> String
+      def convert_footnote: (untyped, untyped) -> String
+      def convert_em: (untyped, untyped) -> String
+      def convert_strong: (untyped, untyped) -> String
+      def entity_to_latex: (untyped) -> ("" | "$-$" | "$A$" | "$B$" | "$E$" | "$H$" | "$I$" | "$K$" | "$M$" | "$N$" | "$O$" | "$P$" | "$T$" | "$X$" | "$Y$" | "$Z$" | "$\\Delta$" | "$\\Downarrow$" | "$\\Gamma$" | "$\\Im$" | "$\\Lambda$" | "$\\Leftarrow$" | "$\\Leftrightarrow$" | "$\\Omega$" | "$\\Phi$" | "$\\Pi$" | "$\\Psi$" | "$\\Re$" | "$\\Rightarrow$" | "$\\Sigma$" | "$\\Theta$" | "$\\Uparrow$" | "$\\Xi$" | "$\\aleph$" | "$\\alpha$" | "$\\angle$" | "$\\approx$" | "$\\ast$" | "$\\beta$" | "$\\bullet$" | "$\\cap$" | "$\\cdot$" | "$\\chi$" | "$\\clubsuit$" | "$\\cong$" | "$\\cup$" | "$\\degree$" | "$\\delta$" | "$\\diamondsuit$" | "$\\divide$" | "$\\downarrow$" | "$\\emptyset$" | "$\\epsilon$" | "$\\equiv$" | "$\\eta$" | "$\\eth$" | "$\\exists$" | "$\\forall$" | "$\\frac{1}{2}$" | "$\\frac{1}{4}$" | "$\\frac{3}{4}" | "$\\gamma$" | "$\\geq$" | "$\\heartsuit$" | "$\\hookleftarrow$" | "$\\in$" | "$\\infty$" | "$\\int$" | "$\\iota$" | "$\\kappa$" | "$\\lambda$" | "$\\langle$" | "$\\lceil$" | "$\\leftarrow$" | "$\\leftrightarrow$" | "$\\leq$" | "$\\lfloor$" | "$\\lozenge$" | "$\\mu$" | "$\\nabla$" | "$\\neg$" | "$\\neq$" | "$\\ni$" | "$\\notin$" | "$\\nsubset$" | "$\\nu$" | "$\\omega$" | "$\\oplus$" | "$\\otimes$" | "$\\partial$" | "$\\perp$" | "$\\phi$" | "$\\pi$" | "$\\pm$" | "$\\prime$" | "$\\prod$" | "$\\propto$" | "$\\psi$" | "$\\rangle$" | "$\\rceil$" | "$\\rfloor$" | "$\\rho$" | "$\\rightarrow$" | "$\\sigma$" | "$\\sim$" | "$\\spadesuit$" | "$\\subset$" | "$\\subseteq$" | "$\\sum$" | "$\\supset$" | "$\\supseteq$" | "$\\surd$" | "$\\tau$" | "$\\therefore$" | "$\\theta$" | "$\\times$" | "$\\uparrow$" | "$\\upsilon$" | "$\\varpi$" | "$\\varsigma$" | "$\\vartheta$" | "$\\vee$" | "$\\wedge$" | "$\\wp$" | "$\\xi$" | "$\\zeta$" | "$^1$" | "$^2$" | "$^3$" | "$^{\\rm TM}$" | "$o$" | "'" | "''" | "-" | "--" | "---" | "/" | "\"" | "\\&" | "\\'A" | "\\'E" | "\\'I" | "\\'O" | "\\'U" | "\\'Y" | "\\'a" | "\\'e" | "\\'i" | "\\'o" | "\\'u" | "\\'y" | "\\-" | "\\AA" | "\\AE" | "\\O" | "\\OE" | "\\P" | "\\S" | "\\Thorn" | "\\\"A" | "\\\"E" | "\\\"I" | "\\\"O" | "\\\"U" | "\\\"Y" | "\\\"a" | "\\\"e" | "\\\"i" | "\\\"o" | "\\\"u" | "\\\"y" | "\\^A" | "\\^E" | "\\^I" | "\\^O" | "\\^U" | "\\^a" | "\\^e" | "\\^i" | "\\^o" | "\\^u" | "\\`A" | "\\`E" | "\\`I" | "\\`O" | "\\`U" | "\\`a" | "\\`e" | "\\`i" | "\\`o" | "\\`u" | "\\aa" | "\\ae" | "\\brokenvert" | "\\cC" | "\\cc" | "\\cent" | "\\copyright" | "\\currency" | "\\dag" | "\\ddag" | "\\euro" | "\\guillemotleft" | "\\guillemotright" | "\\guilsinglleft" | "\\guilsinglright" | "\\hskip .5em\\relax" | "\\ldots" | "\\o" | "\\oe" | "\\permil" | "\\pounds" | "\\quad" | "\\quotedblbase" | "\\quotesinglbase" | "\\ss" | "\\textasciicircum" | "\\textasciitilde" | "\\textexclamdown" | "\\textflorin" | "\\textgreater" | "\\textless" | "\\textordfeminine" | "\\textordmasculine" | "\\textregistered" | "\\textyen" | "\\thinspace" | "\\thorn" | "\\v{S}" | "\\v{Z}" | "\\v{s}" | "\\v{z}" | "\\~A" | "\\~N" | "\\~O" | "\\~a" | "\\~n" | "\\~o" | "`" | "``" | "~")
+      def convert_entity: (untyped, untyped) -> ("" | "$-$" | "$A$" | "$B$" | "$E$" | "$H$" | "$I$" | "$K$" | "$M$" | "$N$" | "$O$" | "$P$" | "$T$" | "$X$" | "$Y$" | "$Z$" | "$\\Delta$" | "$\\Downarrow$" | "$\\Gamma$" | "$\\Im$" | "$\\Lambda$" | "$\\Leftarrow$" | "$\\Leftrightarrow$" | "$\\Omega$" | "$\\Phi$" | "$\\Pi$" | "$\\Psi$" | "$\\Re$" | "$\\Rightarrow$" | "$\\Sigma$" | "$\\Theta$" | "$\\Uparrow$" | "$\\Xi$" | "$\\aleph$" | "$\\alpha$" | "$\\angle$" | "$\\approx$" | "$\\ast$" | "$\\beta$" | "$\\bullet$" | "$\\cap$" | "$\\cdot$" | "$\\chi$" | "$\\clubsuit$" | "$\\cong$" | "$\\cup$" | "$\\degree$" | "$\\delta$" | "$\\diamondsuit$" | "$\\divide$" | "$\\downarrow$" | "$\\emptyset$" | "$\\epsilon$" | "$\\equiv$" | "$\\eta$" | "$\\eth$" | "$\\exists$" | "$\\forall$" | "$\\frac{1}{2}$" | "$\\frac{1}{4}$" | "$\\frac{3}{4}" | "$\\gamma$" | "$\\geq$" | "$\\heartsuit$" | "$\\hookleftarrow$" | "$\\in$" | "$\\infty$" | "$\\int$" | "$\\iota$" | "$\\kappa$" | "$\\lambda$" | "$\\langle$" | "$\\lceil$" | "$\\leftarrow$" | "$\\leftrightarrow$" | "$\\leq$" | "$\\lfloor$" | "$\\lozenge$" | "$\\mu$" | "$\\nabla$" | "$\\neg$" | "$\\neq$" | "$\\ni$" | "$\\notin$" | "$\\nsubset$" | "$\\nu$" | "$\\omega$" | "$\\oplus$" | "$\\otimes$" | "$\\partial$" | "$\\perp$" | "$\\phi$" | "$\\pi$" | "$\\pm$" | "$\\prime$" | "$\\prod$" | "$\\propto$" | "$\\psi$" | "$\\rangle$" | "$\\rceil$" | "$\\rfloor$" | "$\\rho$" | "$\\rightarrow$" | "$\\sigma$" | "$\\sim$" | "$\\spadesuit$" | "$\\subset$" | "$\\subseteq$" | "$\\sum$" | "$\\supset$" | "$\\supseteq$" | "$\\surd$" | "$\\tau$" | "$\\therefore$" | "$\\theta$" | "$\\times$" | "$\\uparrow$" | "$\\upsilon$" | "$\\varpi$" | "$\\varsigma$" | "$\\vartheta$" | "$\\vee$" | "$\\wedge$" | "$\\wp$" | "$\\xi$" | "$\\zeta$" | "$^1$" | "$^2$" | "$^3$" | "$^{\\rm TM}$" | "$o$" | "'" | "''" | "-" | "--" | "---" | "/" | "\"" | "\\&" | "\\'A" | "\\'E" | "\\'I" | "\\'O" | "\\'U" | "\\'Y" | "\\'a" | "\\'e" | "\\'i" | "\\'o" | "\\'u" | "\\'y" | "\\-" | "\\AA" | "\\AE" | "\\O" | "\\OE" | "\\P" | "\\S" | "\\Thorn" | "\\\"A" | "\\\"E" | "\\\"I" | "\\\"O" | "\\\"U" | "\\\"Y" | "\\\"a" | "\\\"e" | "\\\"i" | "\\\"o" | "\\\"u" | "\\\"y" | "\\^A" | "\\^E" | "\\^I" | "\\^O" | "\\^U" | "\\^a" | "\\^e" | "\\^i" | "\\^o" | "\\^u" | "\\`A" | "\\`E" | "\\`I" | "\\`O" | "\\`U" | "\\`a" | "\\`e" | "\\`i" | "\\`o" | "\\`u" | "\\aa" | "\\ae" | "\\brokenvert" | "\\cC" | "\\cc" | "\\cent" | "\\copyright" | "\\currency" | "\\dag" | "\\ddag" | "\\euro" | "\\guillemotleft" | "\\guillemotright" | "\\guilsinglleft" | "\\guilsinglright" | "\\hskip .5em\\relax" | "\\ldots" | "\\o" | "\\oe" | "\\permil" | "\\pounds" | "\\quad" | "\\quotedblbase" | "\\quotesinglbase" | "\\ss" | "\\textasciicircum" | "\\textasciitilde" | "\\textexclamdown" | "\\textflorin" | "\\textgreater" | "\\textless" | "\\textordfeminine" | "\\textordmasculine" | "\\textregistered" | "\\textyen" | "\\thinspace" | "\\thorn" | "\\v{S}" | "\\v{Z}" | "\\v{s}" | "\\v{z}" | "\\~A" | "\\~N" | "\\~O" | "\\~a" | "\\~n" | "\\~o" | "`" | "``" | "~")
+      def convert_smart_quote: (untyped, untyped) -> String
+      def convert_abbreviation: (untyped, untyped) -> String
+      def latex_environment: (untyped, untyped, untyped) -> String
+      def latex_link_target: (untyped, ?untyped) -> (String | nil)
+    end
+  end
+end

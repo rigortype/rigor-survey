@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Migrations
+      module TriggerHelpers
+        def rename_trigger_name: (untyped, untyped, untyped) -> String
+        def check_trigger_permissions!: (untyped) -> nil
+      end
+    end
+  end
+end

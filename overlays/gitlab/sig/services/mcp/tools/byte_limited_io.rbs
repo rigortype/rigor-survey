@@ -1,0 +1,8 @@
+module Mcp
+  module Tools
+    class ByteLimitedIo < ::SimpleDelegator
+      def initialize: (untyped, max_bytes: Integer) -> void
+      def remove_limit!: () -> nil
+    end
+  end
+end

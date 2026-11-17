@@ -1,0 +1,11 @@
+module YARD
+  module Parser
+    module C
+      class CParser < ::YARD::Parser::Base
+        def initialize: (untyped, ?untyped) -> void
+        def enumerator: () -> Array[untyped]
+        def tokenize: () -> bot
+      end
+    end
+  end
+end

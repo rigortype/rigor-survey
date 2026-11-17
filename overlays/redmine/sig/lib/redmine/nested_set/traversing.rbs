@@ -1,0 +1,8 @@
+module Redmine
+  module NestedSet
+    module Traversing
+      def root?: () -> (false | true)
+      def child?: () -> (false | true)
+    end
+  end
+end

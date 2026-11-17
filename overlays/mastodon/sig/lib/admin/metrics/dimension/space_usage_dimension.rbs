@@ -1,0 +1,9 @@
+module Admin
+  module Metrics
+    class Dimension
+      class SpaceUsageDimension < ::Admin::Metrics::Dimension::BaseDimension
+        def key: () -> "space_usage"
+      end
+    end
+  end
+end

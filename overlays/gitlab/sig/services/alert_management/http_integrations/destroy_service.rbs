@@ -1,0 +1,8 @@
+module AlertManagement
+  module HttpIntegrations
+    class DestroyService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

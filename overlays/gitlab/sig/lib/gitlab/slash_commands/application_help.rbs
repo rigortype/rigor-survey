@@ -1,0 +1,7 @@
+module Gitlab
+  module SlashCommands
+    class ApplicationHelp < ::Gitlab::SlashCommands::BaseCommand
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

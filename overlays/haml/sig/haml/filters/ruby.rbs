@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Ruby < ::Haml::Filters::Base
+      def compile: (untyped) -> [:multi, [:newline], [:code, untyped]]
+    end
+  end
+end

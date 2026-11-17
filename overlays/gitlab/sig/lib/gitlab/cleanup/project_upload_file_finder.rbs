@@ -1,0 +1,7 @@
+module Gitlab
+  module Cleanup
+    class ProjectUploadFileFinder
+      def each_file_batch: (?batch_size: untyped) ?{ (*untyped) -> untyped } -> nil
+    end
+  end
+end

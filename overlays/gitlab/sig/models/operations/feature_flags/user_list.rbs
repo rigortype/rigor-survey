@@ -1,0 +1,7 @@
+module Operations
+  module FeatureFlags
+    class UserList < ::ApplicationRecord
+      def self.belongs_to?: (untyped, untyped) -> (false | true)
+    end
+  end
+end

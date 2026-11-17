@@ -1,0 +1,13 @@
+module PagesCore
+  module Templates
+    def self.metadata_block_names: () -> [:meta_title, :meta_description, :open_graph_title, :open_graph_description]
+    def self.default_blocks: () -> { name: { size: :field, class: "page_title" }, body: { size: :large }, headline: { size: :field }, excerpt: {}, boxout: {}, meta_title: { size: :field }, meta_description: { size: :small }, open_graph_title: { size: :field }, open_graph_description: { size: :small } }
+    def self.default_meta_blocks: () -> { meta_title: { size: :field }, meta_description: { size: :small }, open_graph_title: { size: :field }, open_graph_description: { size: :small } }
+    def self.default_block_options: (untyped) -> Hash[untyped, untyped]
+    def self.template_block_localization: (untyped) -> String
+    class TemplateConfiguration
+      def initialize: (untyped) -> void
+      def metadata_blocks: () -> [:meta_title, :meta_description, :open_graph_title, :open_graph_description]
+    end
+  end
+end

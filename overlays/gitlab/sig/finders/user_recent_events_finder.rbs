@@ -1,0 +1,4 @@
+class UserRecentEventsFinder
+  def initialize: (untyped, untyped, untyped, ?untyped, ?exclude_transferred_events: (false | true)) -> void
+  def exclude_transferred_events: () -> true
+end

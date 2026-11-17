@@ -1,0 +1,7 @@
+module Mutations
+  module Users
+    class SetNamespaceCommitEmail < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { namespace_commit_email: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

@@ -1,0 +1,11 @@
+class Compare
+  def self.decorate: (untyped, untyped) -> Compare
+  def initialize: (untyped, untyped, ?base_sha: untyped, ?straight: untyped) -> void
+  def to_param: () -> Hash[Symbol, untyped]
+  def cache_key: () -> [untyped, :compare, Integer]
+  def commits: (?limit: untyped) -> CommitCollection
+  def diffs: (?untyped) -> Gitlab::Diff::FileCollection::Compare
+  def diff_refs: () -> Gitlab::Diff::DiffRefs
+  def modified_paths: () -> Array[untyped]
+  def first_diffs_slice: (untyped, ?untyped) -> Gitlab::Diff::FileCollection::Compare
+end

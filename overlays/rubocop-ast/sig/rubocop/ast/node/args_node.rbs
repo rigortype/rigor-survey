@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class ArgsNode < ::RuboCop::AST::Node
+      def empty_and_without_delimiters?: () -> (false | true)
+    end
+  end
+end

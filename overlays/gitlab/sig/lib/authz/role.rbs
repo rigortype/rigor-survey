@@ -1,0 +1,9 @@
+module Authz
+  class Role
+    def self.get: (untyped) -> Authz::Role
+    def self.get_from_access_level: (untyped) -> (Authz::Role | nil)
+    def self.reset!: () -> nil
+    def self.conditionally_enables_requirements: () -> Hash[untyped, untyped]
+    def initialize: (untyped) -> void
+  end
+end

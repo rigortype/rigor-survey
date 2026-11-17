@@ -1,0 +1,16 @@
+module Vite
+  class Tagger
+    def initialize: (config: untyped, ?manifest: untyped, ?dev_server: untyped) -> void
+    class DevServerStrategy
+      def initialize: (config: untyped, dev_server: untyped) -> void
+      def vite_polyfills_tag: (*untyped) -> ("" | Object)
+      def resolver: () -> Vite::NameResolver
+    end
+    class ManifestStrategy
+      def initialize: (config: untyped, ?manifest: untyped) -> void
+      def vite_client_tag: (*untyped) -> ""
+      def vite_react_refresh_tag: (*untyped) -> ""
+      def resolver: () -> Vite::NameResolver
+    end
+  end
+end

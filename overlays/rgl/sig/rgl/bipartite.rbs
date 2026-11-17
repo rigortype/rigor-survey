@@ -1,0 +1,11 @@
+module RGL
+  module Graph
+    def bipartite?: () -> (false | true)
+  end
+  class BipartiteBFSIterator < ::RGL::BFSIterator
+    def reset: () -> false
+    def set_to_begin: () -> 0
+    def bipartite_sets_map: () -> (Hash[untyped, untyped] | nil)
+    def found_odd_cycle: () -> (false | true)
+  end
+end

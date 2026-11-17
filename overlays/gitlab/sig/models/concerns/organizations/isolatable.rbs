@@ -1,0 +1,5 @@
+module Organizations
+  module Isolatable
+    def not_isolated?: () -> (false | true)
+  end
+end

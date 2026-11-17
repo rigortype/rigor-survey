@@ -1,0 +1,11 @@
+module RbNaCl
+  module Boxes
+    class Curve25519XSalsa20Poly1305
+      class PublicKey
+        def initialize: (untyped) -> void
+        def self.primitive: () -> :curve25519xsalsa20poly1305
+        def primitive: () -> :curve25519xsalsa20poly1305
+      end
+    end
+  end
+end

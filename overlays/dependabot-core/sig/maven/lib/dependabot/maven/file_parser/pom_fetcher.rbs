@@ -1,0 +1,11 @@
+module Dependabot
+  module Maven
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PomFetcher
+        def initialize: (dependency_files: untyped) -> void
+        def internal_dependency_poms: () -> (Hash[String, ::DependencyFile] | Hash[String, ::DependencyFile] | nil)
+        def fetch_remote_parent_pom: (untyped, untyped, untyped, untyped) -> (Dependabot::DependencyFile | ::DependencyFile | nil)
+      end
+    end
+  end
+end

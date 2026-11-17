@@ -1,0 +1,9 @@
+module Resolvers
+  module Ci
+    module Catalog
+      class BundledResourcesResolver < ::Resolvers::BaseResolver
+        def resolve: () -> ActiveRecord::Relation[::Ci::Catalog::BundledResource]
+      end
+    end
+  end
+end

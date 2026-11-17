@@ -1,0 +1,8 @@
+module Dependabot
+  module GithubActions
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::GithubActions::Version
+    end
+  end
+end

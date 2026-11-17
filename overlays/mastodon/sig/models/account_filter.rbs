@@ -1,0 +1,3 @@
+class AccountFilter
+  def initialize: ({}) -> void
+end

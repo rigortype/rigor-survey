@@ -1,0 +1,3 @@
+class TwelveDays
+  def self.song: () -> ("" | String)
+end

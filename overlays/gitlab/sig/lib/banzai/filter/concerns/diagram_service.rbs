@@ -1,0 +1,9 @@
+module Banzai
+  module Filter
+    module Concerns
+      module DiagramService
+        def css_selector_for_code_blocks: (lang: untyped) -> String
+      end
+    end
+  end
+end

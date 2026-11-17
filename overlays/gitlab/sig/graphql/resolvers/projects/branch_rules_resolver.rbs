@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class BranchRulesResolver < ::Resolvers::BaseResolver
+      def resolve_with_lookahead: (**untyped) -> Gitlab::Graphql::ExternallyPaginatedArray
+    end
+  end
+end

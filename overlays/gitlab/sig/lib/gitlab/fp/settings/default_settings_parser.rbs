@@ -1,0 +1,11 @@
+module Gitlab
+  module Fp
+    module Settings
+      class DefaultSettingsParser
+        def self.parse: (module_name: untyped, requested_setting_names: untyped, default_settings: untyped, ?mutually_dependent_settings_groups: untyped) -> [Hash[untyped, untyped], Hash[untyped, untyped]]
+        def self.validate_mutually_dependent_settings: (requested_setting_names: untyped, mutually_dependent_settings: untyped, default_setting_names: untyped) -> true
+        def self.validate_setting_type: (untyped, untyped, untyped, untyped) -> true
+      end
+    end
+  end
+end

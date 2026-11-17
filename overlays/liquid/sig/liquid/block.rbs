@@ -1,0 +1,8 @@
+module Liquid
+  class Block < ::Liquid::Tag
+    def initialize: (untyped, untyped, untyped) -> void
+    def self.raise_unknown_tag: (untyped, untyped, untyped, untyped) -> bot
+    def raise_tag_never_closed: (untyped) -> bot
+    def block_delimiter: () -> String
+  end
+end

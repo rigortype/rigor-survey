@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    class MentionsConverter
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

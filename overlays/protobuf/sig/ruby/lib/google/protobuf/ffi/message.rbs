@@ -1,0 +1,7 @@
+module Google
+  module Protobuf
+    class Descriptor
+      def build_message_class: () -> Class
+    end
+  end
+end

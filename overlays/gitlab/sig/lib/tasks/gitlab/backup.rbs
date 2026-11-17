@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module Backup
+      def self.create_backup: () -> nil
+      def self.verify_backup: () -> bot
+      def self.create_task: (untyped) -> nil
+      def self.restore_task: (untyped) -> nil
+    end
+  end
+end

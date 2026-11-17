@@ -1,0 +1,3 @@
+class MergeRequestCleanupRefsWorker
+  def max_running_jobs: () -> (4 | 6)
+end

@@ -1,0 +1,8 @@
+module ActiveJob
+  module Serializers
+    class DurationSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def deserialize: (untyped) -> ActiveSupport::Duration
+      def klass: () -> singleton(ActiveSupport::Duration)
+    end
+  end
+end

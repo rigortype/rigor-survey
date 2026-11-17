@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    class DpopToken
+      def initialize: (data: untyped) -> void
+      def validate!: () -> nil
+      def header: () -> Hash[String, untyped]
+    end
+  end
+end

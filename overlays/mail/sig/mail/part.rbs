@@ -1,0 +1,9 @@
+module Mail
+  class Part < ::Mail::Message
+    def cid: () -> String
+    def url: () -> String
+    def add_required_fields: () -> ("" | nil)
+    def bounced?: () -> (false | true)
+    def retryable?: () -> (false | true)
+  end
+end

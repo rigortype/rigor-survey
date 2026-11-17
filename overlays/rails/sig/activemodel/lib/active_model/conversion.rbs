@@ -1,0 +1,5 @@
+module ActiveModel
+  module Conversion
+    def to_model: () -> ActiveModel::Conversion
+  end
+end

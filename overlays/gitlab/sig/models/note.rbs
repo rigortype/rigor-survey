@@ -1,0 +1,22 @@
+class Note < ::ApplicationRecord
+  def self.model_name: () -> ActiveModel::Name
+  def self.parent_object_field: () -> :noteable
+  def self.supported_keyset_orderings: () -> { created_at: [:asc, :desc], updated_at: [:asc, :desc] }
+  def self.grouped_diff_discussions: (?untyped) -> Hash[untyped, untyped]
+  def diff_note?: () -> false
+  def for_work_item?: () -> (false | true)
+  def for_project_snippet?: () -> (false | true)
+  def for_personal_snippet?: () -> (false | true)
+  def for_project_noteable?: () -> (false | true)
+  def skip_project_check?: () -> (false | true)
+  def editable?: () -> (false | true)
+  def hidden?: () -> (false | true)
+  def emoji_awardable?: () -> (false | true)
+  def can_be_award_emoji?: () -> (false | true)
+  def can_create_todo?: () -> (false | true)
+  def references: () -> (Array[untyped] | [untyped])
+  def retrieve_upload: (untyped, untyped) -> (Upload | nil)
+  def post_processed_cache_key: () -> String
+  def issuable_ability_name: () -> (:read_internal_note | :read_note)
+  def check_for_spam?: (*untyped) -> (false | true)
+end

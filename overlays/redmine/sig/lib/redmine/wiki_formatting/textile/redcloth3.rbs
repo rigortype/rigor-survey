@@ -1,0 +1,3 @@
+class RedCloth3 < ::String
+  def initialize: (untyped, ?untyped) -> void
+end

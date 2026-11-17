@@ -1,0 +1,7 @@
+class SponsorshipsController < ::ApplicationController
+  def show: () -> void
+  def edit: () -> void
+  def new: () -> void
+  def create: () -> void
+  def update: () -> void
+end

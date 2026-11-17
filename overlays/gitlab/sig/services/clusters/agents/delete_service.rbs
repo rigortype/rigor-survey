@@ -1,0 +1,7 @@
+module Clusters
+  module Agents
+    class DeleteService < ::BaseContainerService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

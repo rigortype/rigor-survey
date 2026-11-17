@@ -1,0 +1,14 @@
+module Gitlab
+  module MobilePush
+    class BadgePayload
+      def initialize: (untyped) -> void
+      def title: () -> nil
+      def subtitle: () -> nil
+      def body: () -> nil
+      def thread_id: () -> nil
+      def collapse_id: () -> String
+      def mutable_content?: () -> false
+      def gitlab_data: () -> { version: 1, type: "badge", user_id: untyped }
+    end
+  end
+end

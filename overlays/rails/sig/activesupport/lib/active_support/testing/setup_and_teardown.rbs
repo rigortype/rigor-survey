@@ -1,0 +1,10 @@
+module ActiveSupport
+  module Testing
+    module SetupAndTeardown
+      module ClassMethods
+        def setup: (*untyped) ?{ (?untyped) [self: untyped] -> void } -> void
+        def teardown: (*untyped) ?{ (?untyped) [self: untyped] -> void } -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class EventPresenter < ::Gitlab::View::Presenter::Delegated
+  def initialize: (untyped, **untyped) -> void
+  def target_link_options: () -> ("" | [untyped, untyped])
+  def push_activity_description: () -> (String | nil)
+end

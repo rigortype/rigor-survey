@@ -1,0 +1,10 @@
+module Admin
+  module Metrics
+    class Dimension
+      class TagLanguagesDimension < ::Admin::Metrics::Dimension::BaseDimension
+        def self.with_params?: () -> true
+        def key: () -> "tag_languages"
+      end
+    end
+  end
+end

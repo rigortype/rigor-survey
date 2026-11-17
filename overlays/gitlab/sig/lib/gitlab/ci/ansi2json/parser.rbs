@@ -1,0 +1,67 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      class Parser
+        def self.matching_formats: (untyped) -> Array[String]
+        def initialize: (String, ?untyped) -> void
+        def on_0: (untyped) -> { reset: true }
+        def on_1: (untyped) -> { enable: 1 }
+        def on_3: (untyped) -> { enable: 2 }
+        def on_4: (untyped) -> { enable: 4 }
+        def on_8: (untyped) -> { enable: 8 }
+        def on_9: (untyped) -> { enable: 16 }
+        def on_21: (untyped) -> { disable: 1 }
+        def on_22: (untyped) -> { disable: 1 }
+        def on_23: (untyped) -> { disable: 2 }
+        def on_24: (untyped) -> { disable: 4 }
+        def on_28: (untyped) -> { disable: 8 }
+        def on_29: (untyped) -> { disable: 16 }
+        def on_30: (untyped) -> { fg: "term-fg-black" }
+        def on_31: (untyped) -> { fg: "term-fg-red" }
+        def on_32: (untyped) -> { fg: "term-fg-green" }
+        def on_33: (untyped) -> { fg: "term-fg-yellow" }
+        def on_34: (untyped) -> { fg: "term-fg-blue" }
+        def on_35: (untyped) -> { fg: "term-fg-magenta" }
+        def on_36: (untyped) -> { fg: "term-fg-cyan" }
+        def on_37: (untyped) -> { fg: "term-fg-white" }
+        def on_38: (untyped) -> { fg: String | nil }
+        def on_39: (untyped) -> { fg: nil }
+        def on_40: (untyped) -> { bg: "term-bg-black" }
+        def on_41: (untyped) -> { bg: "term-bg-red" }
+        def on_42: (untyped) -> { bg: "term-bg-green" }
+        def on_43: (untyped) -> { bg: "term-bg-yellow" }
+        def on_44: (untyped) -> { bg: "term-bg-blue" }
+        def on_45: (untyped) -> { bg: "term-bg-magenta" }
+        def on_46: (untyped) -> { bg: "term-bg-cyan" }
+        def on_47: (untyped) -> { bg: "term-bg-white" }
+        def on_48: (untyped) -> { bg: String | nil }
+        def on_49: (untyped) -> { bg: nil }
+        def on_90: (untyped) -> { fg: "term-fg-l-black" }
+        def on_91: (untyped) -> { fg: "term-fg-l-red" }
+        def on_92: (untyped) -> { fg: "term-fg-l-green" }
+        def on_93: (untyped) -> { fg: "term-fg-l-yellow" }
+        def on_94: (untyped) -> { fg: "term-fg-l-blue" }
+        def on_95: (untyped) -> { fg: "term-fg-l-magenta" }
+        def on_96: (untyped) -> { fg: "term-fg-l-cyan" }
+        def on_97: (untyped) -> { fg: "term-fg-l-white" }
+        def on_99: (untyped) -> { fg: String | nil }
+        def on_100: (untyped) -> { bg: "term-bg-l-black" }
+        def on_101: (untyped) -> { bg: "term-bg-l-red" }
+        def on_102: (untyped) -> { bg: "term-bg-l-green" }
+        def on_103: (untyped) -> { bg: "term-bg-l-yellow" }
+        def on_104: (untyped) -> { bg: "term-bg-l-blue" }
+        def on_105: (untyped) -> { bg: "term-bg-l-magenta" }
+        def on_106: (untyped) -> { bg: "term-bg-l-cyan" }
+        def on_107: (untyped) -> { bg: "term-bg-l-white" }
+        def on_109: (untyped) -> { fg: String | nil }
+        def fg_color: (untyped, ?untyped) -> (String | nil)
+        def fg_color_256: (untyped) -> (String | nil)
+        def bg_color: (untyped, ?untyped) -> (String | nil)
+        def bg_color_256: (untyped) -> (String | nil)
+        def term_color_class: (untyped, untyped) -> (String | nil)
+        def xterm_color_class: (untyped, untyped) -> (String | nil)
+        def color_class: (untyped) -> String
+      end
+    end
+  end
+end

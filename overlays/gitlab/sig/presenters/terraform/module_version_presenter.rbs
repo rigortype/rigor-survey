@@ -1,0 +1,9 @@
+module Terraform
+  class ModuleVersionPresenter < ::Gitlab::View::Presenter::Simple
+    def initialize: (untyped, untyped) -> void
+    def providers: () -> [untyped]
+    def root: () -> Hash[String, []]
+    def submodules: () -> []
+    def versions: () -> [untyped]
+  end
+end

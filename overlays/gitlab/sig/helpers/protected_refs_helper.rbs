@@ -1,0 +1,4 @@
+module ProtectedRefsHelper
+  def protected_access_levels_for_dropdowns: () -> { create_access_levels: { roles: untyped }, push_access_levels: { roles: untyped }, merge_access_levels: { roles: untyped } }
+  def protected_access_level_dropdown_roles: () -> { roles: untyped }
+end

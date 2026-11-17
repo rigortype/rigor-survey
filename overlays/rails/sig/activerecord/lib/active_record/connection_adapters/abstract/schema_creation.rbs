@@ -1,0 +1,7 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class SchemaCreation
+      def initialize: (untyped) -> void
+    end
+  end
+end

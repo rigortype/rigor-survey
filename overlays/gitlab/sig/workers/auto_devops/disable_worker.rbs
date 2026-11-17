@@ -1,0 +1,5 @@
+module AutoDevops
+  class DisableWorker
+    def perform: (untyped) -> (Array[untyped] | nil)
+  end
+end

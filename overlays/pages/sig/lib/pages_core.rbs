@@ -1,0 +1,7 @@
+module PagesCore
+  def self.deprecator: () -> ActiveSupport::Deprecation
+  def self.plugin_root: () -> Pathname
+  def self.reset_configuration!: () -> PagesCore::Configuration::Pages
+  class NotAuthorized < ::StandardError
+  end
+end

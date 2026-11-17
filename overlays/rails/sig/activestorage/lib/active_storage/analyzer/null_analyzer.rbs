@@ -1,0 +1,9 @@
+module ActiveStorage
+  class Analyzer
+    class NullAnalyzer < ::ActiveStorage::Analyzer
+      def self.accept?: (untyped) -> true
+      def self.analyze_later?: () -> false
+      def metadata: () -> {}
+    end
+  end
+end

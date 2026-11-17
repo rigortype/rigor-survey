@@ -1,0 +1,4 @@
+module CounterAttribute
+  def initiate_refresh!: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  def counters_key_prefix: () -> String
+end

@@ -1,0 +1,41 @@
+module Net
+  module SSH
+    module Connection
+      class Session
+        def initialize: (untyped, ?untyped) -> void
+        def preprocess: () ?{ (*untyped) -> untyped } -> (false | true)
+        def ev_do_calculate_rw_wait: (untyped) -> [untyped, untyped, untyped]
+        def ev_do_postprocess: (untyped) -> true
+        def send_global_request: (untyped, *untyped) ?{ (*untyped) -> untyped } -> Net::SSH::Connection::Session
+        def open_channel: (?untyped, *untyped) ?{ (*untyped) -> untyped } -> Net::SSH::Connection::Channel
+        def exec: (untyped, ?status: untyped) ?{ (*untyped) -> untyped } -> Net::SSH::Connection::Channel
+        def exec!: (untyped, ?status: untyped) ?{ (*untyped) -> untyped } -> Net::SSH::Connection::Session::StringWithExitstatus
+        def pause_reading: (untyped) -> (nil | true)
+        def reading_paused?: (untyped) -> (false | true)
+        def forward: () -> Net::SSH::Service::Forward
+        def channels: () -> Hash[untyped, Net::SSH::Connection::Session::NilChannel]
+        def listeners: () -> Hash[untyped, nil]
+        def channel_open_handlers: () -> Hash[untyped, untyped]
+        def pending_requests: () -> Array[untyped]
+        class SpareChannel < ::Struct[untyped]
+          def local_id: () -> untyped
+          def remote_id: () -> untyped
+          def window_size: () -> untyped
+          def packet_size: () -> untyped
+          def local_id=: (untyped) -> untyped
+          def remote_id=: (untyped) -> untyped
+          def window_size=: (untyped) -> untyped
+          def packet_size=: (untyped) -> untyped
+          def self.new: (?local_id: untyped, ?remote_id: untyped, ?window_size: untyped, ?packet_size: untyped) -> instance | (?untyped local_id, ?untyped remote_id, ?untyped window_size, ?untyped packet_size) -> instance
+          def self.[]: (?local_id: untyped, ?remote_id: untyped, ?window_size: untyped, ?packet_size: untyped) -> instance | (?untyped local_id, ?untyped remote_id, ?untyped window_size, ?untyped packet_size) -> instance
+        end
+        class NilChannel
+          def initialize: (untyped) -> void
+        end
+        class StringWithExitstatus < ::String
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

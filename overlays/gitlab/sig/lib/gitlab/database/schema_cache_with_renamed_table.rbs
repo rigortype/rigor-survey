@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    module SchemaCacheWithRenamedTable
+      def clear!: () -> nil
+      def clear_data_source_cache!: (untyped, untyped) -> nil
+    end
+  end
+end

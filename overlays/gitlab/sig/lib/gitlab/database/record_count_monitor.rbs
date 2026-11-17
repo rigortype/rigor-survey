@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class RecordCountMonitor
+      def self.subscribe: () -> (nil | true)
+      def self.warn_large_result_set: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

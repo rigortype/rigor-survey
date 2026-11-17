@@ -1,0 +1,9 @@
+module Spree
+  module Emails
+    module Samples
+      class NewsletterConfirmation < ::Spree::Emails::Samples::Base
+        def variables: () -> { confirmation_url: String }
+      end
+    end
+  end
+end

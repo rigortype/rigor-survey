@@ -1,0 +1,9 @@
+module Gitlab
+  module Zentao
+    class Query
+      def initialize: (untyped, ActionController::Parameters) -> void
+      def client: () -> Gitlab::Zentao::Client
+      def params: () -> ActionController::Parameters
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Builder
+        class Release
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

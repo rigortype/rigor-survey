@@ -1,0 +1,8 @@
+module Import
+  module PlaceholderReferences
+    module Pusher
+      def push_reference: (untyped, untyped, untyped, untyped) -> (ServiceResponse | nil)
+      def push_reference_with_composite_key: (untyped, untyped, untyped, untyped, untyped) -> (ServiceResponse | nil)
+    end
+  end
+end

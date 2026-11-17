@@ -1,0 +1,12 @@
+module Gitlab
+  module Chat
+    class Command
+      def initialize: (project: untyped, chat_name: untyped, name: String, arguments: String, channel: String, response_url: String) -> void
+      def chat_variables: () -> [{ key: "CHAT_INPUT", value: untyped }, { key: "CHAT_CHANNEL", value: untyped }, { key: "CHAT_USER_ID", value: untyped }]
+      def name: () -> "spinach"
+      def arguments: () -> "foo"
+      def response_url: () -> "http://example.com"
+      def channel: () -> "123"
+    end
+  end
+end

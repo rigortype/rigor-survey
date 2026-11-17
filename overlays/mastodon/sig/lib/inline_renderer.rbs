@@ -1,0 +1,5 @@
+class InlineRenderer
+  def initialize: (untyped, untyped, untyped) -> void
+  def render: () -> (Hash[Symbol, untyped] | nil)
+  def self.render: (untyped, untyped, untyped) -> (Hash[Symbol, untyped] | nil)
+end

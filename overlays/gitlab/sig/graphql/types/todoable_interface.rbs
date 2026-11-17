@@ -1,0 +1,5 @@
+module Types
+  module TodoableInterface
+    def self.resolve_type: (untyped, untyped) -> (singleton(Types::AlertManagement::AlertType) | singleton(Types::DesignManagement::DesignType) | singleton(Types::GroupType) | singleton(Types::IssueType) | singleton(Types::KeyType) | singleton(Types::MergeRequestType) | singleton(Types::ProjectType) | singleton(Types::Repositories::CommitType) | singleton(Types::UserType) | singleton(Types::Wikis::WikiPageType) | singleton(Types::WorkItemType))
+  end
+end

@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module ConditionalNode
+      def multiline_condition?: () -> (false | true)
+    end
+  end
+end

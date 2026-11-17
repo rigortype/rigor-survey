@@ -1,0 +1,18 @@
+module Mail
+  class Field
+    def self.parse: (untyped, ?untyped) -> (Mail::Field | nil)
+    def initialize: (String, ?untyped, ?String) -> void
+    def inspect: () -> String
+    class ParseError < ::Mail::Field::FieldError
+      def initialize: (singleton(Mail::ToField), String, String) -> void
+    end
+    class NilParseError < ::Mail::Field::ParseError
+      def initialize: (untyped) -> void
+    end
+    class IncompleteParseError < ::Mail::Field::ParseError
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class FieldError < ::StandardError
+    end
+  end
+end

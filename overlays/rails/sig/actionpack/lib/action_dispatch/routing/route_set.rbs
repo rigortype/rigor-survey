@@ -1,0 +1,53 @@
+module ActionDispatch
+  module Routing
+    class RouteSet
+      def self.default_resources_path_names: () -> { new: "new", edit: "edit" }
+      def self.new_with_config: (untyped) -> ActionDispatch::Routing::RouteSet
+      def initialize: (?untyped) -> void
+      def eager_load!: () -> nil
+      def request_class: () -> singleton(ActionDispatch::Request)
+      def default_env: () -> (nil | Hash[String, untyped])
+      def mounted_helpers: () -> singleton(ActionDispatch::Routing::RouteSet::MountedHelpers)
+      def url_helpers: (?untyped) -> Module
+      def add_polymorphic_mapping: (untyped, untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::RouteSet::CustomUrlHelper
+      def self.optimizable_default_url_options?: (untyped) -> (false | true)
+      def optimize_routes_generation?: () -> (false | true)
+      def env_key: () -> String
+      class Config < ::Struct[untyped]
+        def relative_url_root: () -> untyped
+        def api_only: () -> untyped
+        def default_scope: () -> untyped
+        def relative_url_root=: (untyped) -> untyped
+        def api_only=: (untyped) -> untyped
+        def default_scope=: (untyped) -> untyped
+        def self.new: (?relative_url_root: untyped, ?api_only: untyped, ?default_scope: untyped) -> instance | (?untyped relative_url_root, ?untyped api_only, ?untyped default_scope) -> instance
+        def self.[]: (?relative_url_root: untyped, ?api_only: untyped, ?default_scope: untyped) -> instance | (?untyped relative_url_root, ?untyped api_only, ?untyped default_scope) -> instance
+      end
+      class Dispatcher < ::ActionDispatch::Routing::Endpoint
+        def dispatcher?: () -> true
+      end
+      class StaticDispatcher < ::ActionDispatch::Routing::RouteSet::Dispatcher
+        def initialize: (untyped) -> void
+      end
+      class NamedRouteCollection
+        def each: () ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::RouteSet::NamedRouteCollection
+        def add_url_helper: (untyped, untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::RouteSet::NamedRouteCollection
+        def routes: () -> Hash[untyped, untyped]
+        def url_helpers_module: () -> Module
+        def path_helpers_module: () -> Module
+        class UrlHelper
+          def initialize: (untyped, untyped, untyped) -> void
+          class OptimizedUrlHelper < ::ActionDispatch::Routing::RouteSet::NamedRouteCollection::UrlHelper
+            def initialize: (untyped, untyped, untyped) -> void
+          end
+        end
+      end
+      class CustomUrlHelper
+        def initialize: (untyped, untyped) ?{ (*untyped) -> untyped } -> void
+      end
+      class Generator
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

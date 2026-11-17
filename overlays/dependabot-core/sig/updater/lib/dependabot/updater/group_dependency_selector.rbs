@@ -1,0 +1,9 @@
+module Dependabot
+  class Updater
+    class GroupDependencySelector
+      def initialize: (group: untyped, dependency_snapshot: untyped) -> void
+      def collect_updated_files: (untyped) -> Array[untyped]
+      def create_merged_change: (untyped, untyped, untyped) -> Dependabot::DependencyChange
+    end
+  end
+end

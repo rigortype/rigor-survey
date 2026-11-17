@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class Factory < ::Gitlab::Ci::Status::Factory
+          def self.extended_statuses: () -> [[singleton(Gitlab::Ci::Status::Build::Erased), singleton(Gitlab::Ci::Status::Build::Scheduled), singleton(Gitlab::Ci::Status::Build::Manual), singleton(Gitlab::Ci::Status::Build::Canceling), singleton(Gitlab::Ci::Status::Build::Canceled), singleton(Gitlab::Ci::Status::Build::Created), singleton(Gitlab::Ci::Status::Build::Preparing), singleton(Gitlab::Ci::Status::Build::Pending), singleton(Gitlab::Ci::Status::Build::Skipped), singleton(Gitlab::Ci::Status::Build::WaitingForApproval)], [singleton(Gitlab::Ci::Status::Build::WaitingForResource), singleton(Gitlab::Ci::Status::Build::Cancelable), singleton(Gitlab::Ci::Status::Build::Retryable)], [singleton(Gitlab::Ci::Status::Build::FailedUnmetPrerequisites), singleton(Gitlab::Ci::Status::Build::Failed)], [singleton(Gitlab::Ci::Status::Build::FailedAllowed), singleton(Gitlab::Ci::Status::Build::Unschedule), singleton(Gitlab::Ci::Status::Build::Play), singleton(Gitlab::Ci::Status::Build::Stop)], [singleton(Gitlab::Ci::Status::Build::Action)], [singleton(Gitlab::Ci::Status::Build::Retried)]]
+          def self.common_helpers: () -> singleton(Gitlab::Ci::Status::Build::Common)
+        end
+      end
+    end
+  end
+end

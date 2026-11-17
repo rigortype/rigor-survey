@@ -1,0 +1,12 @@
+module ActiveSupport
+  module Ractors
+    class Logger < ::ActiveSupport::Logger
+      class DeviceProxy
+        def initialize: (*untyped, **untyped) -> void
+        def flush: () -> true
+        def close: () -> true
+        def reopen: (?untyped, **untyped) -> ActiveSupport::Ractors::Logger::DeviceProxy
+      end
+    end
+  end
+end

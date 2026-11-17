@@ -1,0 +1,5 @@
+class TranslationService
+  def self.configured: () -> (TranslationService::DeepL | TranslationService::LibreTranslate)
+  class Error < ::StandardError
+  end
+end

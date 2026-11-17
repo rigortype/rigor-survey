@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class PipelineKey
+        def self.of: (untyped) -> Gitlab::Ci::RedundantPipelines::PipelineKey
+        def self.parse: (untyped) -> Gitlab::Ci::RedundantPipelines::PipelineKey
+        def initialize: (untyped, untyped) -> void
+        def to_s: () -> String
+        def hash: () -> Integer
+      end
+    end
+  end
+end

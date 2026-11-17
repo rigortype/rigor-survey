@@ -1,0 +1,14 @@
+module BulkImports
+  module Groups
+    module Graphql
+      class GetProjectsQuery
+        def initialize: (context: untyped) -> void
+        def to_s: () -> String
+        def variables: () -> { full_path: untyped, cursor: untyped, per_page: 500 }
+        def base_path: () -> ["data", "group", "projects"]
+        def data_path: () -> Array[untyped]
+        def page_info_path: () -> Array[untyped]
+      end
+    end
+  end
+end

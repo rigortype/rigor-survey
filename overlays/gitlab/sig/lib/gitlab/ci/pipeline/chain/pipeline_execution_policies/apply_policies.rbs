@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        module PipelineExecutionPolicies
+          class ApplyPolicies < ::Gitlab::Ci::Pipeline::Chain::Base
+            def break?: () -> false
+          end
+        end
+      end
+    end
+  end
+end

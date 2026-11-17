@@ -1,0 +1,5 @@
+module Sidebars
+  class Context
+    def initialize: (current_user: untyped, container: untyped, **untyped) -> void
+  end
+end

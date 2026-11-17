@@ -1,0 +1,8 @@
+module Dependabot
+  module Hex
+    module NativeHelpers
+      def self.hex_helpers_dir: () -> String
+      def self.clean_path: (untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Groups
+  class UpdateStatisticsService
+    def initialize: (untyped, ?statistics: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

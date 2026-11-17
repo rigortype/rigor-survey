@@ -1,0 +1,10 @@
+module Gitlab
+  module SlashCommands
+    module Presenters
+      module NoteBase
+        def color: (untyped) -> "#38ae67"
+        def fields: () -> [{ title: "Comment", value: untyped }]
+      end
+    end
+  end
+end

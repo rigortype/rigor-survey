@@ -1,0 +1,11 @@
+module Redmine
+  class Notifiable < ::Struct[untyped]
+    def name: () -> untyped
+    def parent: () -> untyped
+    def name=: (untyped) -> untyped
+    def parent=: (untyped) -> untyped
+    def self.new: (?name: untyped, ?parent: untyped) -> instance | (?untyped name, ?untyped parent) -> instance
+    def self.[]: (?name: untyped, ?parent: untyped) -> instance | (?untyped name, ?untyped parent) -> instance
+    def self.all: () -> Array[untyped]
+  end
+end

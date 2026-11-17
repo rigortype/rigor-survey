@@ -1,0 +1,5 @@
+module REST
+  class ScheduledStatusSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+  end
+end

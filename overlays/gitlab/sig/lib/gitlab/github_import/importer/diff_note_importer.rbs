@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class DiffNoteImporter
+        def initialize: (untyped, untyped, untyped) -> void
+        def import_attributes: () -> { noteable_type: untyped, noteable_id: untyped, project_id: untyped, author_id: untyped, note: untyped, discussion_id: untyped, system: false, created_at: untyped, updated_at: untyped, imported_from: untyped }
+      end
+    end
+  end
+end

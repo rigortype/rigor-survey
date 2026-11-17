@@ -1,0 +1,8 @@
+module Authn
+  module Users
+    class UpdateTwoFactorRequirementService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

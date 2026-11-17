@@ -1,0 +1,10 @@
+module Dependabot
+  module Config
+    class IgnoreCondition
+      def initialize: (dependency_name: untyped, ?versions: untyped, ?update_types: untyped) -> void
+      def ignored_versions: (untyped, untyped) -> (Array[untyped] | Array[String] | [">= 0"])
+      def versions: () -> Array[String]
+      def update_types: () -> Array[String]
+    end
+  end
+end

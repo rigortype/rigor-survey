@@ -1,0 +1,12 @@
+module ActionDispatch
+  module Journey
+    class Routes
+      def initialize: (?untyped) -> void
+      def clear: () -> nil
+      def ast: () -> ActionDispatch::Journey::Nodes::Or
+      def simulator: () -> ActionDispatch::Journey::GTG::Simulator
+      def custom_routes: () -> Array[untyped]
+      def anchored_routes: () -> Array[untyped]
+    end
+  end
+end

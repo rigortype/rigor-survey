@@ -1,0 +1,4 @@
+class Array[unchecked out E]
+  def sorted?: () -> (false | true)
+  def bogosort: () -> Array[untyped]
+end

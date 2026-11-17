@@ -1,0 +1,10 @@
+class Antispam
+  def initialize: (untyped) -> void
+  def local_preflight_check!: () -> nil
+  class SilentlyDrop < ::StandardError
+    def initialize: (untyped) -> void
+    def status: () -> Antispam::DummyStatus
+  end
+  class DummyStatus < ::SimpleDelegator
+  end
+end

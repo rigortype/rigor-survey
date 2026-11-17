@@ -1,0 +1,8 @@
+module Gitlab
+  module PoolRepositories
+    class MissingShardClassifier
+      def initialize: (shard_names: untyped, logger: untyped, output_file: untyped) -> void
+      def results: () -> Hash[untyped, 0]
+    end
+  end
+end

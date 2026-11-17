@@ -1,0 +1,11 @@
+module ActionView
+  class Base
+    def self.xss_safe?: () -> true
+    def self.with_empty_template_cache: () -> singleton(ActionView::Base)
+    def self.empty: () -> ActionView::Base
+    def self.with_view_paths: (untyped, ?untyped, ?untyped) -> ActionView::Base
+    def self.with_context: (untyped, ?untyped, ?untyped) -> ActionView::Base
+    def initialize: (untyped, untyped, untyped) -> void
+    def compiled_method_container: () -> bot
+  end
+end

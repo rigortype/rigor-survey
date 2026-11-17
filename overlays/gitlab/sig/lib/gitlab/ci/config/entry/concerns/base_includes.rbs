@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        module Concerns
+          module BaseIncludes
+            def composable_class: () -> bot
+          end
+        end
+      end
+    end
+  end
+end

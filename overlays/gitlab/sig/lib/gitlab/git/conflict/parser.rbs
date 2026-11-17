@@ -1,0 +1,11 @@
+module Gitlab
+  module Git
+    module Conflict
+      class Parser
+        def self.parse: (untyped, our_path: untyped, their_path: untyped, ?parent_file: untyped) -> Array[untyped]
+        def self.validate_text!: (untyped) -> nil
+        def self.validate_delimiter!: (untyped) -> nil
+      end
+    end
+  end
+end

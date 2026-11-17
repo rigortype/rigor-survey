@@ -1,0 +1,10 @@
+module Gitlab
+  module Usage
+    module ServicePing
+      class InstrumentedPayload
+        def initialize: (untyped, Symbol) -> void
+        def output_method: () -> (:with_instrumentation | :with_value)
+      end
+    end
+  end
+end

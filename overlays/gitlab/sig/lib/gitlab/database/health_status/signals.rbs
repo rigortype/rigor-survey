@@ -1,0 +1,22 @@
+module Gitlab
+  module Database
+    module HealthStatus
+      module Signals
+        class Base
+          def initialize: (untyped, reason: untyped) -> void
+          def to_s: () -> String
+          def log_info?: () -> false
+          def stop?: () -> false
+          def short_name: () -> String
+        end
+        class Stop < ::Gitlab::Database::HealthStatus::Signals::Base
+          def log_info?: () -> true
+          def stop?: () -> true
+        end
+        class Unknown < ::Gitlab::Database::HealthStatus::Signals::Base
+          def log_info?: () -> true
+        end
+      end
+    end
+  end
+end

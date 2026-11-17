@@ -1,0 +1,9 @@
+module Dependabot
+  module Helm
+    class FileUpdater < ::Dependabot::Shared::SharedFileUpdater
+      class LockFileGenerator
+        def initialize: (dependencies: untyped, dependency_files: untyped, repo_contents_path: untyped, credentials: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Packages
+  module Maven
+    module Metadata
+      class SyncWorker
+        def perform: (untyped, untyped, untyped) -> nil
+      end
+    end
+  end
+end

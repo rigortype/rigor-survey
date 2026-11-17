@@ -1,0 +1,18 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class YarnLockfileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, repo_contents_path: untyped, credentials: untyped, ?security_updates_only: untyped, ?release_age_days: untyped) -> void
+        def updated_yarn_lock_content: (untyped) -> String
+        def error_handler: () -> ::YarnErrorHandler
+      end
+    end
+    class YarnErrorHandler
+      def initialize: (dependencies: untyped, dependency_files: untyped) -> void
+      def raise_resolvability_error: (untyped, untyped) -> bot
+      def pattern_in_message: (untyped, untyped) -> (false | true)
+      def handle_package_not_found: (untyped, untyped) -> ({ sanitized_name: String | nil, sanitized_message: untyped } | {})
+      def package_missing: (untyped) -> (false | true)
+    end
+  end
+end

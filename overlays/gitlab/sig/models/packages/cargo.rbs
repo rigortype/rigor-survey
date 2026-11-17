@@ -1,0 +1,5 @@
+module Packages
+  module Cargo
+    def self.table_name_prefix: () -> "packages_cargo_"
+  end
+end

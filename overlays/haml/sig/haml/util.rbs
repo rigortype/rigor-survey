@@ -1,0 +1,12 @@
+module Haml
+  module Util
+    def self.escape_html: (untyped) -> String
+    def rails_xss_safe?: () -> false
+    def inspect_obj: (untyped) -> String
+    def handle_interpolation: (untyped) -> String
+    def balance: (untyped, untyped, untyped, ?untyped) -> ([String, String] | nil)
+    def human_indentation: (untyped) -> String
+    def contains_interpolation?: (untyped) -> (false | true)
+    def unescape_interpolation: (untyped) -> String
+  end
+end

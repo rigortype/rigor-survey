@@ -1,0 +1,15 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        class VersionCommenter
+          def initialize: (dependency: untyped, credentials: untyped) -> void
+          def recognized_comment?: (untyped, untyped, untyped) -> (false | true)
+          def new_comment: (untyped, untyped) -> (String | nil)
+          def comment_for_ref: (untyped) -> (String | nil)
+          def sha?: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

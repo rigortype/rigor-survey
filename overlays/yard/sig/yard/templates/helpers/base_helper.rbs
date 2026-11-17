@@ -1,0 +1,9 @@
+module YARD
+  module Templates
+    module Helpers
+      module BaseHelper
+        def link_include_file: (untyped) -> String
+      end
+    end
+  end
+end

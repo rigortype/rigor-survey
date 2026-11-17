@@ -1,0 +1,3 @@
+class WordCount
+  def initialize: (untyped, untyped) -> void
+end

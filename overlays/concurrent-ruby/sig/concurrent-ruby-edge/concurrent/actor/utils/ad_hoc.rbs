@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Utils
+      module AsAdHoc
+        def initialize: (*untyped) ?{ (*untyped) -> untyped } -> void
+      end
+    end
+  end
+end

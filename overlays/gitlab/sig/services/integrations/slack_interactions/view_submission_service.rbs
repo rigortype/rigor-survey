@@ -1,0 +1,7 @@
+module Integrations
+  module SlackInteractions
+    class ViewSubmissionService
+      def initialize: (untyped) -> void
+    end
+  end
+end

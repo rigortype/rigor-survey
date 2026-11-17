@@ -1,0 +1,5 @@
+module Ci
+  class DestroyOldPipelinesWorker
+    def max_running_jobs: () -> 10
+  end
+end

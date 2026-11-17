@@ -1,0 +1,7 @@
+module Mutations
+  module Todos
+    class DeleteAllDone < ::Mutations::BaseMutation
+      def resolve: (?updated_before: untyped) -> { message: String, errors: [] }
+    end
+  end
+end

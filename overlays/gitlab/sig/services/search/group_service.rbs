@@ -1,0 +1,6 @@
+module Search
+  class GroupService < ::Search::GlobalService
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> Gitlab::GroupSearchResults
+  end
+end

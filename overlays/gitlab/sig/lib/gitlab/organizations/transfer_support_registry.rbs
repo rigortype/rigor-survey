@@ -1,0 +1,7 @@
+module Gitlab
+  module Organizations
+    module TransferSupportRegistry
+      def self.registry: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

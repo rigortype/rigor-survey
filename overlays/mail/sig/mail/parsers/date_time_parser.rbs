@@ -1,0 +1,17 @@
+module Mail
+  module Parsers
+    module DateTimeParser
+      def self.parse: (untyped) -> Mail::Parsers::DateTimeParser::DateTimeStruct
+      class DateTimeStruct < ::Struct[untyped]
+        def date_string: () -> untyped
+        def time_string: () -> untyped
+        def error: () -> untyped
+        def date_string=: (untyped) -> untyped
+        def time_string=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?date_string: untyped, ?time_string: untyped, ?error: untyped) -> instance | (?untyped date_string, ?untyped time_string, ?untyped error) -> instance
+        def self.[]: (?date_string: untyped, ?time_string: untyped, ?error: untyped) -> instance | (?untyped date_string, ?untyped time_string, ?untyped error) -> instance
+      end
+    end
+  end
+end

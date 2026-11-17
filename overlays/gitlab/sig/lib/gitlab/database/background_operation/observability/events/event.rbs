@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module BackgroundOperation
+      module Observability
+        module Events
+          class Event
+            def initialize: (untyped, **untyped) -> void
+            def log: () -> Array[singleton(Gitlab::AppJsonLogger)]
+            def payload: () -> bot
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class DpopTokenUser
+      def initialize: (token: untyped, user: untyped, personal_access_token_plaintext: untyped) -> void
+      def validate!: () -> nil
+    end
+  end
+end

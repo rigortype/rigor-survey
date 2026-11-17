@@ -1,0 +1,8 @@
+module Gitlab
+  module Cleanup
+    class OrphanPackageFiles
+      def initialize: (?logger: untyped) -> void
+      def run!: (?dry_run: untyped) -> nil
+    end
+  end
+end

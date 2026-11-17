@@ -1,0 +1,7 @@
+module Redmine
+  module Activity
+    class Fetcher
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

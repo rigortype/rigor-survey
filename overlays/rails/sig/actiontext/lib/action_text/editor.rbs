@@ -1,0 +1,10 @@
+module ActionText
+  class Editor
+    def initialize: (?untyped) -> void
+    def editor_tag: (?untyped) ?{ (*untyped) -> untyped } -> ActionText::Editor::Tag
+    class Tag
+      def initialize: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> void
+      def element_name: () -> String
+    end
+  end
+end

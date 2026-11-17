@@ -1,0 +1,9 @@
+module Redmine
+  module WikiFormatting
+    module CommonMark
+      class Formatter
+        def initialize: (untyped, ?untyped) -> void
+      end
+    end
+  end
+end

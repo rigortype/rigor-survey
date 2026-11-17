@@ -1,0 +1,5 @@
+module Groups
+  class UpdateTwoFactorRequirementForMembersWorker
+    def perform: (untyped) -> (ServiceResponse | nil)
+  end
+end

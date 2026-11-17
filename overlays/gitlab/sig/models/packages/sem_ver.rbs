@@ -1,0 +1,8 @@
+module Packages
+  class SemVer
+    def initialize: (?untyped, ?untyped, ?untyped, ?untyped, ?untyped, ?prefixed: (false | true)) -> void
+    def to_s: () -> String
+    def self.match?: (untyped, ?prefixed: untyped) -> (false | true)
+    def self.parse: (untyped, ?prefixed: untyped) -> (Packages::SemVer | nil)
+  end
+end

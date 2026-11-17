@@ -1,0 +1,7 @@
+module Gitlab
+  module Email
+    class HTMLParser
+      def initialize: (untyped) -> void
+    end
+  end
+end

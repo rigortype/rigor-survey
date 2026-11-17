@@ -1,0 +1,9 @@
+module ActiveSupport
+  module Ractors
+    class Logger < ::ActiveSupport::Logger
+      class Writer
+        def async: (untyped) -> (Ractor::Port[untyped] | nil)
+      end
+    end
+  end
+end

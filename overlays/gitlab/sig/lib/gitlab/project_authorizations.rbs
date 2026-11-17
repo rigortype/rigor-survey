@@ -1,0 +1,5 @@
+module Gitlab
+  class ProjectAuthorizations
+    def initialize: (untyped) -> void
+  end
+end

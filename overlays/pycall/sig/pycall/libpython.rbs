@@ -1,0 +1,5 @@
+module PyCall
+  module LibPython
+    def self.handle: () -> bot
+  end
+end

@@ -1,0 +1,9 @@
+module ActionCable
+  module Connection
+    module Authorization
+      def reject_unauthorized_connection: () -> bot
+      class UnauthorizedError < ::StandardError
+      end
+    end
+  end
+end

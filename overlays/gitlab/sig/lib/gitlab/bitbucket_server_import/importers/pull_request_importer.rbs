@@ -1,0 +1,11 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      class PullRequestImporter
+        def initialize: (untyped, untyped) -> void
+        def formatter: () -> Gitlab::ImportFormatter
+        def user_finder: () -> Gitlab::BitbucketServerImport::UserFinder
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+class GitlabUploader < ::CarrierWave::Uploader::Base
+  def self.absolute_path: (untyped) -> String
+  def self.version: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> bot
+  def initialize: (untyped, ?untyped, **untyped) -> void
+  def file_cache_storage?: () -> (false | true)
+  def model_valid?: () -> (false | true)
+  def local_url: () -> String
+  def check_remote_file_existence_on_upload?: () -> true
+  def sync_model_object_store?: () -> false
+end

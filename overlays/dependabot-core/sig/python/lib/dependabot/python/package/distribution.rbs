@@ -1,0 +1,21 @@
+module Dependabot
+  module Python
+    module Package
+      class Distribution < ::T::ImmutableStruct
+        def self.from_pypi: (untyped, version_string: untyped, context: untyped) -> Dependabot::Python::Package::Distribution
+        def self.from_simple: (untyped, version_string: untyped, context: untyped, project_url: untyped) -> Dependabot::Python::Package::Distribution
+        def self.from_html: (untyped, version_string: untyped, context: untyped, project_url: untyped) -> Dependabot::Python::Package::Distribution
+        def self.context: (untyped, untyped) -> String
+        def self.parse_json: (untyped, untyped) -> Object
+        def self.object: (untyped, untyped) -> Hash[untyped, untyped]
+        def self.array: (untyped, untyped) -> Array[Object]
+        def self.optional_string: (untyped, untyped) -> (String | nil)
+        def self.invalid: (untyped, untyped) -> bot
+        def self.timestamp: (untyped, untyped) -> (Time | nil)
+        def self.boolean: (untyped, untyped) -> (false | true)
+        def self.downloads: (untyped, untyped) -> (-1 | Integer)
+        def self.resolve_url: (untyped, untyped, untyped) -> (String | nil)
+      end
+    end
+  end
+end

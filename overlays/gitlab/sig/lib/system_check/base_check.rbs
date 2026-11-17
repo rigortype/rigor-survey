@@ -1,0 +1,7 @@
+module SystemCheck
+  class BaseCheck
+    def can_repair?: () -> (false | true)
+    def can_skip?: () -> (false | true)
+    def multi_check?: () -> (false | true)
+  end
+end

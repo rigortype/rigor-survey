@@ -1,0 +1,7 @@
+module Gitlab
+  module Cleanup
+    class RemoteObjectStorage
+      def initialize: (untyped, untyped, ?logger: untyped) -> void
+    end
+  end
+end

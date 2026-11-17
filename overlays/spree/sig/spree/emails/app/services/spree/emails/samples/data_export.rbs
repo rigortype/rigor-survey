@@ -1,0 +1,9 @@
+module Spree
+  module Emails
+    module Samples
+      class DataExport < ::Spree::Emails::Samples::Base
+        def variables: () -> { download_url: String, expires_at: String }
+      end
+    end
+  end
+end

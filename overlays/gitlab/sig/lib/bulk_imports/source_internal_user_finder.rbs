@@ -1,0 +1,7 @@
+module BulkImports
+  class SourceInternalUserFinder
+    def self.cache_key: (untyped) -> String
+    def initialize: (untyped) -> void
+    def fetch_and_cache_ghost_id_from_source_instance: () -> (String | nil)
+  end
+end

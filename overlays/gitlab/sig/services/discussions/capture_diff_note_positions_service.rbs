@@ -1,0 +1,5 @@
+module Discussions
+  class CaptureDiffNotePositionsService
+    def initialize: (untyped) -> void
+  end
+end

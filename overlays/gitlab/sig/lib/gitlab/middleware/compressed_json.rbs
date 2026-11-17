@@ -1,0 +1,9 @@
+module Gitlab
+  module Middleware
+    class CompressedJson
+      def initialize: (untyped) -> void
+      def too_large: () -> [413, Hash[String, "text/plain"], ["Payload Too Large"]]
+      def relative_url: () -> String
+    end
+  end
+end

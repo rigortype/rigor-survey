@@ -1,0 +1,7 @@
+class NotificationService
+  def async: () -> NotificationService::Async
+  def email_template_name: (untyped) -> String
+  class Async
+    def initialize: (untyped) -> void
+  end
+end

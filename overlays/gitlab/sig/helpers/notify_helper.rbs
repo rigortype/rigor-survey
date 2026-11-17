@@ -1,0 +1,3 @@
+module NotifyHelper
+  def merge_request_hash_param: (untyped, untyped) -> { mr_highlight: String, highlight_end: String, mr_link: untyped, reviewer_highlight: String, reviewer_avatar: untyped, reviewer_link: untyped }
+end

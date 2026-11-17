@@ -1,0 +1,19 @@
+module Gitlab
+  class IssuableMetadata
+    def initialize: (untyped, untyped) -> void
+    class IssuableMeta < ::Struct[untyped]
+      def upvotes: () -> untyped
+      def downvotes: () -> untyped
+      def user_notes_count: () -> untyped
+      def merge_requests_count: () -> untyped
+      def blocking_issues_count: () -> untyped
+      def upvotes=: (untyped) -> untyped
+      def downvotes=: (untyped) -> untyped
+      def user_notes_count=: (untyped) -> untyped
+      def merge_requests_count=: (untyped) -> untyped
+      def blocking_issues_count=: (untyped) -> untyped
+      def self.new: (?upvotes: untyped, ?downvotes: untyped, ?user_notes_count: untyped, ?merge_requests_count: untyped, ?blocking_issues_count: untyped) -> instance | (?untyped upvotes, ?untyped downvotes, ?untyped user_notes_count, ?untyped merge_requests_count, ?untyped blocking_issues_count) -> instance
+      def self.[]: (?upvotes: untyped, ?downvotes: untyped, ?user_notes_count: untyped, ?merge_requests_count: untyped, ?blocking_issues_count: untyped) -> instance | (?untyped upvotes, ?untyped downvotes, ?untyped user_notes_count, ?untyped merge_requests_count, ?untyped blocking_issues_count) -> instance
+    end
+  end
+end

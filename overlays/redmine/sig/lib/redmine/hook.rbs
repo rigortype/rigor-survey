@@ -1,0 +1,12 @@
+module Redmine
+  module Hook
+    def self.add_listener: (untyped) -> {}
+    def self.listeners: () -> Array[untyped]
+    def self.clear_listeners: () -> {}
+    def self.clear_listeners_instances: () -> {}
+    def self.call_hook: (untyped, ?untyped) -> Array[untyped]
+    module Helper
+      def call_hook: (untyped, ?untyped) -> (Array[untyped] | String)
+    end
+  end
+end

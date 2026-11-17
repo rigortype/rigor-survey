@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Status
+      module Processable
+        class WaitingForResource < ::Gitlab::Ci::Status::Extended
+          def illustration: () -> { image: "illustrations/empty-state/empty-job-pending-md.svg", size: "", title: untyped }
+          def action_icon: () -> nil
+          def action_title: () -> nil
+          def action_method: () -> :get
+        end
+      end
+    end
+  end
+end

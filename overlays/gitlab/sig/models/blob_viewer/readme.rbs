@@ -1,0 +1,5 @@
+module BlobViewer
+  class Readme < ::BlobViewer::Base
+    def render_error: () -> (:no_wiki | nil)
+  end
+end

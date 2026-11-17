@@ -1,0 +1,20 @@
+module ActiveRecord
+  module ModelSchema
+    class SchemaContext
+      def initialize: (untyped) -> void
+      def has_query_constraints?: () -> (false | true)
+      def initialize_find_by_cache: () -> Hash[false | true, Concurrent::Map[untyped, untyped]]
+      def schema_loaded?: () -> (false | true)
+      def build_default_attributes: () -> (ActiveModel::AttributeSet | ActiveModel::ReadOnlyAttributeSet)
+      def load_schema!: () -> (nil | true)
+      def composite_query_constraints_definition: () -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+      class DatabaseDefaultKeys
+        def initialize: (untyped, untyped) -> void
+      end
+      class Attributes
+        def initialize: (untyped, untyped) -> void
+        def builder: () -> ActiveModel::AttributeSet::Builder
+      end
+    end
+  end
+end

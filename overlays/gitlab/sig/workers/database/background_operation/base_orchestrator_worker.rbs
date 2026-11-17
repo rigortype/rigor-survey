@@ -1,0 +1,7 @@
+module Database
+  module BackgroundOperation
+    class BaseOrchestratorWorker
+      def remaining_work_count: (*untyped) -> 0
+    end
+  end
+end

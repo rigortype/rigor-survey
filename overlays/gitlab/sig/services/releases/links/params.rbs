@@ -1,0 +1,7 @@
+module Releases
+  module Links
+    class Params
+      def initialize: (untyped) -> void
+    end
+  end
+end

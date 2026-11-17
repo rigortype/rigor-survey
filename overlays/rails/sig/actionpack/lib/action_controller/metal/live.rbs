@@ -1,0 +1,16 @@
+module ActionController
+  module Live
+    def process: (untyped) -> nil
+    class SSE
+      def initialize: (untyped, ?untyped) -> void
+    end
+    class Buffer < ::ActionDispatch::Response::Buffer
+      def initialize: (untyped) -> void
+      def close: () -> Thread::ConditionVariable
+      def abort: () -> Thread::ConditionVariable
+      def connected?: () -> (false | true)
+    end
+    class ClientDisconnected < ::RuntimeError
+    end
+  end
+end

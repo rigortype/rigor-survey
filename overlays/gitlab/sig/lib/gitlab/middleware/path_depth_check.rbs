@@ -1,0 +1,7 @@
+module Gitlab
+  module Middleware
+    class PathDepthCheck
+      def initialize: (untyped) -> void
+    end
+  end
+end

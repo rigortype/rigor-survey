@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    class ImportPullRequestWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::PullRequest)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::PullRequestImporter)
+      def object_type: () -> :pull_request
+      def parallel_import_batch: () -> { size: 200, delay: ActiveSupport::Duration }
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Saml
+      class User < ::Gitlab::Auth::OAuth::User
+        def protocol_name: () -> "SAML"
+      end
+    end
+  end
+end

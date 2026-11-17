@@ -1,0 +1,8 @@
+module Gitlab
+  module Ssh
+    class Signature
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def type: () -> :ssh
+    end
+  end
+end

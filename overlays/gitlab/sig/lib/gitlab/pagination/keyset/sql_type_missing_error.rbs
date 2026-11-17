@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class SqlTypeMissingError < ::StandardError
+        def self.for_column: (untyped) -> Gitlab::Pagination::Keyset::SqlTypeMissingError
+      end
+    end
+  end
+end

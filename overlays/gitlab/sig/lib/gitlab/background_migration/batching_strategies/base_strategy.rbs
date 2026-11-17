@@ -1,0 +1,9 @@
+module Gitlab
+  module BackgroundMigration
+    module BatchingStrategies
+      class BaseStrategy
+        def initialize: (connection: untyped) -> void
+      end
+    end
+  end
+end

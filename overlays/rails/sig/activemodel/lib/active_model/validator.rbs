@@ -1,0 +1,11 @@
+module ActiveModel
+  class Validator
+    def initialize: (?untyped) -> void
+  end
+  class EachValidator < ::ActiveModel::Validator
+    def initialize: (untyped) -> void
+  end
+  class BlockValidator < ::ActiveModel::EachValidator
+    def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+  end
+end

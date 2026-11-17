@@ -1,0 +1,8 @@
+module PagesCore
+  module AuthenticableUser
+    def use_recovery_code!: (untyped) -> (false | true)
+    module ClassMethods
+      def random_session_token: () -> String
+    end
+  end
+end

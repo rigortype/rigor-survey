@@ -1,0 +1,8 @@
+module PagesCore
+  module SearchableDocument
+    def search_document_attributes: () -> ({ content: untyped } | {})
+    class Indexer
+      def initialize: (untyped) -> void
+    end
+  end
+end

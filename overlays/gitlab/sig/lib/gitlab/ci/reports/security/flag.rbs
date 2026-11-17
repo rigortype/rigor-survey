@@ -1,0 +1,17 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Flag
+          def flag_type: () -> :false_positive
+          def initialize: (?type: String, ?origin: String, ?description: String) -> void
+          def to_h: () -> Hash[untyped, untyped]
+          def false_positive?: () -> true
+          def type: () -> "flagged-as-likely-false-positive"
+          def origin: () -> ("post analyzer X" | "post analyzer Y")
+          def description: () -> ("integer to sink" | "static string to sink")
+        end
+      end
+    end
+  end
+end

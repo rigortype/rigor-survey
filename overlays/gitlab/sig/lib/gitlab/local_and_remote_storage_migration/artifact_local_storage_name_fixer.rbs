@@ -1,0 +1,7 @@
+module Gitlab
+  module LocalAndRemoteStorageMigration
+    class ArtifactLocalStorageNameFixer
+      def initialize: (?untyped) -> void
+    end
+  end
+end

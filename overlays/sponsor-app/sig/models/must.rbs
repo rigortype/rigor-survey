@@ -1,0 +1,5 @@
+module Must
+  def self.because: [T] (T? value) { () -> String } -> T
+  def self.expect: [T] (T? value) -> T
+  def self.be_a: [T] (untyped value, Class[T] klass) -> T
+end

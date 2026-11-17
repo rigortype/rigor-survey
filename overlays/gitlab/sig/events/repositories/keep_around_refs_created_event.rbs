@@ -1,0 +1,5 @@
+module Repositories
+  class KeepAroundRefsCreatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | Hash[String, Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Tasks
+    class PostgreSQLDatabaseTasks < ::ActiveRecord::Tasks::AbstractTasks
+      def structure_load: (untyped, untyped) -> nil
+    end
+  end
+end

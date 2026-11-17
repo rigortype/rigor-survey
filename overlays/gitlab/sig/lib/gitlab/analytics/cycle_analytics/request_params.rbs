@@ -1,0 +1,12 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      class RequestParams
+        def initialize: (?untyped) -> void
+        def to_data_collector_params: () -> Hash[untyped, untyped]
+        def to_data_attributes: () -> Hash[untyped, untyped]
+        def resource_paths: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

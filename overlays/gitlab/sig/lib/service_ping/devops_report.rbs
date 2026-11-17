@@ -1,0 +1,6 @@
+module ServicePing
+  class DevopsReport
+    def initialize: (untyped) -> void
+    def execute: () -> nil
+  end
+end

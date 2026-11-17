@@ -1,0 +1,28 @@
+module Gitlab
+  module Ci
+    module Ansi2html
+      def self.convert: (untyped, ?untyped) -> Gitlab::Ci::Ansi2html::Result
+      class Result < ::Struct[untyped]
+        def html: () -> untyped
+        def state: () -> untyped
+        def append: () -> untyped
+        def truncated: () -> untyped
+        def offset: () -> untyped
+        def size: () -> untyped
+        def total: () -> untyped
+        def html=: (untyped) -> untyped
+        def state=: (untyped) -> untyped
+        def append=: (untyped) -> untyped
+        def truncated=: (untyped) -> untyped
+        def offset=: (untyped) -> untyped
+        def size=: (untyped) -> untyped
+        def total=: (untyped) -> untyped
+        def self.new: (?html: untyped, ?state: untyped, ?append: untyped, ?truncated: untyped, ?offset: untyped, ?size: untyped, ?total: untyped) -> instance
+        def self.[]: (?html: untyped, ?state: untyped, ?append: untyped, ?truncated: untyped, ?offset: untyped, ?size: untyped, ?total: untyped) -> instance
+      end
+      class Converter
+        def convert: (untyped, untyped) -> Gitlab::Ci::Ansi2html::Result
+      end
+    end
+  end
+end

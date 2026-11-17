@@ -1,0 +1,5 @@
+module API
+  class Namespaces < ::API::Base
+    def custom_namespace_present_options: (?untyped) -> {}
+  end
+end

@@ -1,0 +1,15 @@
+module Dependabot
+  module Clients
+    class GithubWithRetries < ::SimpleDelegator
+      def self.open_timeout_in_seconds: () -> Integer
+      def self.read_timeout_in_seconds: () -> Integer
+      def self.for_source: (source: untyped, credentials: untyped) -> Dependabot::Clients::GithubWithRetries
+      def self.for_github_dot_com: (credentials: untyped) -> Dependabot::Clients::GithubWithRetries
+      def fetch_commit: (untyped, untyped) -> String
+      def fetch_default_branch: (untyped) -> String
+      def raw_contents: (untyped, path: untyped, ref: untyped) -> String
+      def initialize: (?max_retries: untyped, **untyped) -> void
+      def respond_to_missing?: (untyped, ?untyped) -> (false | true)
+    end
+  end
+end

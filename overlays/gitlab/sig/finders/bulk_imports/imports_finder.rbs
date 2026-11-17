@@ -1,0 +1,5 @@
+module BulkImports
+  class ImportsFinder
+    def initialize: (user: untyped, ?params: ({ include_configuration: false | true } | { sort: untyped } | { status: String })) -> void
+  end
+end

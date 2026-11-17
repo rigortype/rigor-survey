@@ -1,0 +1,6 @@
+module ActionDispatch
+  class PublicExceptions
+    def initialize: (untyped) -> void
+    def call: (untyped) -> ([404, Hash[untyped, "pass"], []] | [untyped, Hash[String, "0" | String], [""]] | [untyped, Hash[String, untyped], [untyped]] | [untyped, Hash[String, String], [String]])
+  end
+end

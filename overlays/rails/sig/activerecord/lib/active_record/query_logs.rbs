@@ -1,0 +1,15 @@
+module ActiveRecord
+  module QueryLogs
+    def self.clear_cache: () -> nil
+    def self.uncached_comment: (untyped, untyped) -> (String | nil)
+    class GetKeyHandler
+      def initialize: (untyped) -> void
+    end
+    class IdentityHandler
+      def initialize: (untyped) -> void
+    end
+    class ZeroArityHandler
+      def initialize: (untyped) -> void
+    end
+  end
+end

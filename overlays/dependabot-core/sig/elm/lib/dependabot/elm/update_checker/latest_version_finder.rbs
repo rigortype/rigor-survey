@@ -1,0 +1,16 @@
+module Dependabot
+  module Elm
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, raise_on_ignored: untyped, ?options: untyped, ?cooldown_options: untyped) -> void
+      end
+      class Elm19LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, ?ignored_versions: untyped, ?cooldown_options: untyped) -> void
+        def latest_resolvable_version: (unlock_requirement: untyped) -> (Dependabot::Elm::Version | nil)
+        def updated_dependencies_after_full_unlock: () -> Array[Dependabot::Dependency]
+        class UnrecoverableState < ::StandardError
+        end
+      end
+    end
+  end
+end

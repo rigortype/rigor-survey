@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    module PredicateOperatorNode
+      def logical_operator?: () -> (false | true)
+      def semantic_operator?: () -> (false | true)
+    end
+  end
+end

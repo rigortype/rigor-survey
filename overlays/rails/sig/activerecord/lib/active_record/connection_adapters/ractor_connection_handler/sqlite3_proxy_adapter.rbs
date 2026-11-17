@@ -1,0 +1,9 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class SQLite3ProxyAdapter < ::ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::SQLite3::SchemaDumper
+      end
+    end
+  end
+end

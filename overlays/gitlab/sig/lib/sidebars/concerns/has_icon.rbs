@@ -1,0 +1,9 @@
+module Sidebars
+  module Concerns
+    module HasIcon
+      def sprite_icon: () -> nil
+      def sprite_icon_html_options: () -> {}
+      def image_path: () -> nil
+    end
+  end
+end

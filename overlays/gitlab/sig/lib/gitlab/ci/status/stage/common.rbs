@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      module Stage
+        module Common
+          def has_action?: () -> false
+        end
+      end
+    end
+  end
+end

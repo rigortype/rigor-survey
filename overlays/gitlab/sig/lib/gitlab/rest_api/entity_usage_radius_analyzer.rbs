@@ -1,0 +1,10 @@
+module Gitlab
+  module RestApi
+    class EntityUsageRadiusAnalyzer
+      def self.entity_file_path: (untyped) -> (String | nil)
+      def self.extract_field_names: (untyped) -> Array[untyped]
+      def self.extract_entity_classes: (untyped) -> (Array[untyped] | [Class])
+      def high_impact_entities: () -> Hash[untyped, untyped]
+    end
+  end
+end

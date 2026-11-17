@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ActiveRecord
+        class Engine < ::Gitlab::Database::Aggregation::Engine
+          def self.metrics_mapping: () -> { count: singleton(Gitlab::Database::Aggregation::ActiveRecord::Count), mean: singleton(Gitlab::Database::Aggregation::ActiveRecord::Mean) }
+          def self.dimensions_mapping: () -> { column: singleton(Gitlab::Database::Aggregation::ActiveRecord::DimensionDefinition), date_bucket: singleton(Gitlab::Database::Aggregation::ActiveRecord::DateBucketDimension) }
+          def self.filters_mapping: () -> { exact_match: singleton(Gitlab::Database::Aggregation::ActiveRecord::ExactMatchFilter) }
+        end
+      end
+    end
+  end
+end

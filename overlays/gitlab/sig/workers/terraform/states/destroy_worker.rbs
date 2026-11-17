@@ -1,0 +1,7 @@
+module Terraform
+  module States
+    class DestroyWorker
+      def perform: (untyped, ?Hash[String, untyped]) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    end
+  end
+end

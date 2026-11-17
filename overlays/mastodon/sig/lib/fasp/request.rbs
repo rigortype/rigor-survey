@@ -1,0 +1,5 @@
+module Fasp
+  class Request
+    def initialize: (untyped) -> void
+  end
+end

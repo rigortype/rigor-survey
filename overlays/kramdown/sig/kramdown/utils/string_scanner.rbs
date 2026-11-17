@@ -1,0 +1,9 @@
+module Kramdown
+  module Utils
+    class StringScanner < ::StringScanner
+      def initialize: (String, ?untyped) -> void
+      def save_pos: () -> [Integer, untyped, untyped]
+      def revert_pos: (untyped) -> [untyped, untyped]
+    end
+  end
+end

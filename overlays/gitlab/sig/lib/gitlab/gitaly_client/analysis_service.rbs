@@ -1,0 +1,8 @@
+module Gitlab
+  module GitalyClient
+    class AnalysisService
+      def initialize: (untyped) -> void
+      def check_blobs_generated: (untyped, untyped, untyped) -> Array[untyped]
+    end
+  end
+end

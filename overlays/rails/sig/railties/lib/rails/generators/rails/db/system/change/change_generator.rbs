@@ -1,0 +1,12 @@
+module Rails
+  module Generators
+    module Db
+      module System
+        class ChangeGenerator < ::Rails::Generators::Base
+          def self.default_generator_root: () -> (nil | String)
+          def initialize: (*untyped) -> void
+        end
+      end
+    end
+  end
+end

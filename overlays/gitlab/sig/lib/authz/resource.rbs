@@ -1,0 +1,6 @@
+module Authz
+  class Resource
+    def self.resource_identifier: (untyped, untyped) -> Symbol
+    def name: () -> String
+  end
+end

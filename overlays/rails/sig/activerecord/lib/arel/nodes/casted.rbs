@@ -1,0 +1,5 @@
+module Arel
+  module Nodes
+    def self.build_quoted: (untyped, ?untyped) -> (ActiveModel::Attribute | Arel::Attributes::Attribute | Arel::Nodes::Casted | Arel::Nodes::Node | Arel::Nodes::Quoted | Arel::Nodes::SqlLiteral | Arel::SelectManager | Arel::Table)
+  end
+end

@@ -1,0 +1,7 @@
+module ActionDispatch
+  module Http
+    class UploadedFile
+      def initialize: (untyped) -> void
+    end
+  end
+end

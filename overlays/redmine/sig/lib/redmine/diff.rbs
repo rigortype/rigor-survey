@@ -1,0 +1,8 @@
+module Redmine
+  class Diff
+    def html_line_left: () -> String
+    def html_line_right: () -> String
+    def html_line: () -> String
+    def inspect: () -> nil
+  end
+end

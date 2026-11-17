@@ -1,0 +1,9 @@
+module Dependabot
+  module Bun
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class SubdependencyVersionResolver
+        def initialize: (dependency: untyped, credentials: untyped, dependency_files: untyped, ignored_versions: untyped, latest_allowable_version: untyped, repo_contents_path: untyped) -> void
+      end
+    end
+  end
+end

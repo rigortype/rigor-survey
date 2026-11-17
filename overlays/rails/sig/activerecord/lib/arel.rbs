@@ -1,0 +1,4 @@
+module Arel
+  def self.sql: (untyped, *untyped, ?retryable: untyped, **untyped) -> (Arel::Nodes::BoundSqlLiteral | Arel::Nodes::SqlLiteral)
+  def self.arel_node?: (untyped) -> (false | true)
+end

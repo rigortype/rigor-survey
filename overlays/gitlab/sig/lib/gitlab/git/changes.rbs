@@ -1,0 +1,13 @@
+module Gitlab
+  module Git
+    class Changes
+      def add_branch_change: (untyped) -> Gitlab::Git::Changes
+      def add_tag_change: (untyped) -> Gitlab::Git::Changes
+      def refs: () -> Array[untyped]
+      def repository_data: () -> Array[untyped]
+      def items: () -> Array[untyped]
+      def branches_index: () -> Array[untyped]
+      def tags_index: () -> Array[untyped]
+    end
+  end
+end

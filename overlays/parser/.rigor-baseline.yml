@@ -1,0 +1,36 @@
+---
+version: 1
+ignored:
+- file: ".rigor.yml"
+  rule: rbs.coverage.missing-gem
+  count: 1
+- file: lib/parser/base.rb
+  rule: call.undefined-method
+  count: 2
+- file: lib/parser/base.rb
+  rule: call.argument-type-mismatch
+  count: 1
+- file: lib/parser/builders/default.rb
+  rule: call.undefined-method
+  count: 2
+- file: lib/parser/source/comment/associator.rb
+  rule: call.undefined-method
+  count: 1
+- file: lib/parser/source/comment/associator.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: lib/parser/source/comment.rb
+  rule: def.return-type-mismatch
+  count: 3
+- file: lib/parser/source/range.rb
+  rule: call.possible-nil-receiver
+  count: 4
+- file: lib/parser/source/rewriter.rb
+  rule: call.argument-type-mismatch
+  count: 2
+- file: lib/parser/source/tree_rewriter.rb
+  rule: call.possible-nil-receiver
+  count: 2
+- file: lib/parser/source/tree_rewriter.rb
+  rule: call.argument-type-mismatch
+  count: 2

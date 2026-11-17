@@ -1,0 +1,16 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class IssuesImporter
+        def initialize: (untyped, untyped, ?parallel: (false | true)) -> void
+        def importer_class: () -> singleton(Gitlab::GithubImport::Importer::IssueAndLabelLinksImporter)
+        def representation_class: () -> singleton(Gitlab::GithubImport::Representation::Issue)
+        def sidekiq_worker_class: () -> singleton(Gitlab::GithubImport::ImportIssueWorker)
+        def object_type: () -> :issue
+        def collection_method: () -> :issues
+        def collection_options: () -> { state: "all", sort: "created", direction: "asc" }
+        def increment_object_counter?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

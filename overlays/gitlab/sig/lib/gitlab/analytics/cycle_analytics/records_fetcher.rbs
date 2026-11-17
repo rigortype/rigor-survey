@@ -1,0 +1,10 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      class RecordsFetcher
+        def initialize: (stage: untyped, query: untyped, ?params: untyped) -> void
+        def per_page: () -> 50
+      end
+    end
+  end
+end

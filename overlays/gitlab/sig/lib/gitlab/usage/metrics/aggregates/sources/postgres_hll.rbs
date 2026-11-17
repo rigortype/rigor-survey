@@ -1,0 +1,13 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Aggregates
+        module Sources
+          class PostgresHll
+            def self.redis_key: (metric_name: untyped, time_period: untyped, recorded_at: untyped) -> String
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Config
+    module Entry
+      class Unspecified < ::SimpleDelegator
+        def specified?: () -> false
+      end
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class ListFeed < ::Feed
+  def initialize: (untyped) -> void
+end

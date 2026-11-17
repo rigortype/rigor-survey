@@ -1,0 +1,9 @@
+module Packages
+  module Nuget
+    module Symbols
+      class CreateSymbolFilesService
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

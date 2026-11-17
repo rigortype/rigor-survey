@@ -1,0 +1,17 @@
+module Parser
+  class StaticEnvironment
+    def reset: () -> []
+    def extend_static: () -> Parser::StaticEnvironment
+    def extend_dynamic: () -> Parser::StaticEnvironment
+    def unextend: () -> Parser::StaticEnvironment
+    def declare: (String | Symbol) -> Parser::StaticEnvironment
+    def declare_forward_args: () -> Parser::StaticEnvironment
+    def declare_anonymous_blockarg: () -> Parser::StaticEnvironment
+    def parent_has_anonymous_blockarg?: () -> (false | true)
+    def declare_anonymous_restarg: () -> Parser::StaticEnvironment
+    def parent_has_anonymous_restarg?: () -> (false | true)
+    def declare_anonymous_kwrestarg: () -> Parser::StaticEnvironment
+    def parent_has_anonymous_kwrestarg?: () -> (false | true)
+    def empty?: () -> (false | true)
+  end
+end

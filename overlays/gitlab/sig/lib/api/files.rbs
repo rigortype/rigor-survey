@@ -1,0 +1,12 @@
+module API
+  class Files < ::API::Base
+    def commit_params: (untyped) -> { file_path: untyped, start_branch: untyped, branch_name: untyped, commit_message: untyped, file_content: untyped, file_content_encoding: untyped, author_email: untyped, author_name: untyped, last_commit_sha: untyped, execute_filemode: untyped }
+    def verify_gitaly_availability!: () -> nil
+    def ai_workflow_scope?: () -> (false | true)
+    def user_access: () -> Gitlab::UserAccess
+    def commit_response: (untyped) -> { file_path: untyped, branch: untyped }
+    def cache_client: () -> Gitlab::Cache::Client
+    def fetch_blame_range: (untyped) -> (Range[untyped] | nil)
+    def blob_data: () -> { file_name: untyped, file_path: untyped, size: untyped, encoding: "base64", content_sha256: untyped, ref: untyped, blob_id: untyped, commit_id: untyped, last_commit_id: untyped, execute_filemode: untyped }
+  end
+end

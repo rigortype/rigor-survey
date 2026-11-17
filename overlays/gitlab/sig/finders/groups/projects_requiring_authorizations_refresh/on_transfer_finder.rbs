@@ -1,0 +1,7 @@
+module Groups
+  module ProjectsRequiringAuthorizationsRefresh
+    class OnTransferFinder < ::Groups::ProjectsRequiringAuthorizationsRefresh::Base
+      def execute: () -> Array[untyped]
+    end
+  end
+end

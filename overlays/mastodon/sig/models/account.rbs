@@ -1,0 +1,15 @@
+class Account < ::ApplicationRecord
+  def local?: () -> (false | true)
+  def remote?: () -> (false | true)
+  def bot?: () -> (false | true)
+  def bot=: (untyped) -> ("Person" | "Service")
+  def local_username_and_domain: () -> String
+  def to_webfinger_s: () -> String
+  def schedule_refresh_if_stale!: () -> (String | nil)
+  def sign?: () -> true
+  def fields_attributes=: (untyped) -> Array[untyped]
+  def build_fields: () -> (Array[untyped] | nil)
+  def object_type: () -> :person
+  def synchronization_uri_prefix: () -> ("local" | String)
+  def self.inverse_alias: (untyped, untyped) -> Symbol
+end

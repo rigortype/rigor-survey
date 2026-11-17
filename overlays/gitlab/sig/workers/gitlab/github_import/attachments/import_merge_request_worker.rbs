@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Attachments
+      class ImportMergeRequestWorker
+        def representation_class: () -> singleton(Gitlab::GithubImport::Representation::NoteText)
+        def importer_class: () -> singleton(Gitlab::GithubImport::Importer::NoteAttachmentsImporter)
+        def object_type: () -> :merge_request_attachment
+        def increment_object_counter?: (untyped) -> false
+      end
+    end
+  end
+end

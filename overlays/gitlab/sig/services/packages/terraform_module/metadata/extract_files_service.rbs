@@ -1,0 +1,11 @@
+module Packages
+  module TerraformModule
+    module Metadata
+      class ExtractFilesService
+        def initialize: (untyped) -> void
+        def execute: () -> ServiceResponse
+        def metadata: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

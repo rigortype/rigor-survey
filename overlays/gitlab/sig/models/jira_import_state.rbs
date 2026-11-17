@@ -1,0 +1,3 @@
+class JiraImportState < ::ApplicationRecord
+  def owner_class_attribute_default: () -> "initial"
+end

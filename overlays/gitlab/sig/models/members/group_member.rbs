@@ -1,0 +1,5 @@
+class GroupMember < ::Member
+  def self.permissible_access_level_roles: (untyped, untyped) -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40 | 50]
+  def self.access_level_roles: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40 | 50]
+  def real_source_type: () -> "Group"
+end

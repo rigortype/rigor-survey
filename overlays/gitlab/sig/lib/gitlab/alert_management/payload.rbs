@@ -1,0 +1,8 @@
+module Gitlab
+  module AlertManagement
+    module Payload
+      def self.parse: (untyped, untyped, ?monitoring_tool: untyped, ?integration: untyped) -> (Gitlab::AlertManagement::Payload::Generic | Gitlab::AlertManagement::Payload::Prometheus)
+      def self.payload_class_for: (monitoring_tool: untyped) -> (singleton(Gitlab::AlertManagement::Payload::Generic) | singleton(Gitlab::AlertManagement::Payload::Prometheus))
+    end
+  end
+end

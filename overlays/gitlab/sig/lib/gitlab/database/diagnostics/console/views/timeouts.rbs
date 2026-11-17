@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        module Views
+          class Timeouts < ::Gitlab::Database::Diagnostics::Console::Views::Base
+            def self.title: () -> "Timeouts"
+          end
+        end
+      end
+    end
+  end
+end

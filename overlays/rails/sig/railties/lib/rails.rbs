@@ -1,0 +1,10 @@
+module Rails
+  def self.application: () -> Rails::Application?
+  def self.backtrace_cleaner: () -> ActiveSupport::BacktraceCleaner
+  def self.root: () -> Pathname?
+  def self.env: () -> ActiveSupport::EnvironmentInquirer
+  def self.env=: (untyped) -> ActiveSupport::EnvironmentInquirer
+  def self.error: () -> ActiveSupport::ErrorReporter
+  def self.event: () -> ActiveSupport::EventReporter
+  def self.autoloaders: () -> Rails::Autoloaders?
+end

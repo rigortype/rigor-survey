@@ -1,0 +1,9 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      class BmDesiredConfigArrayValidator < ::ActiveModel::EachValidator
+        def validate_each: (untyped, untyped, untyped) -> (Array[String] | nil)
+      end
+    end
+  end
+end

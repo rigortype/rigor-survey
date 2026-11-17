@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Rescuable
+    module ClassMethods
+      def rescue_from: (*Module | String) { (Exception) [self: untyped] -> void } -> void | (*Module | String, with: Symbol | Proc) -> void
+    end
+  end
+end

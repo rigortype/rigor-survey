@@ -1,0 +1,9 @@
+module Rails
+  module Generators
+    module Actions
+      class CreateMigration < ::Thor::Actions::CreateFile
+        def migration_dir: () -> String
+      end
+    end
+  end
+end

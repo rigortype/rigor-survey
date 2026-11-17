@@ -1,0 +1,6 @@
+class BroadcastRecipientFilterParams
+  def self.build: (ActionController::Parameters) -> Rk::SponsorApp::Internal::BroadcastRecipientFilter?
+  def self.from_legacy_hash: (Hash[String, untyped]) -> Rk::SponsorApp::Internal::BroadcastRecipientFilter?
+  def initialize: (ActionController::Parameters) -> void
+  def filter: () -> Rk::SponsorApp::Internal::BroadcastRecipientFilter?
+end

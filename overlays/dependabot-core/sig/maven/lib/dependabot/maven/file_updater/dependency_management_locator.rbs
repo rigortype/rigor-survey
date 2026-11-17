@@ -1,0 +1,9 @@
+module Dependabot
+  module Maven
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class DependencyManagementLocator
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

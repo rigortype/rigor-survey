@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class IssueAndLabelLinksImporter
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module YARD
+  module Serializers
+    class StdoutSerializer < ::YARD::Serializers::Base
+      def initialize: (?untyped) -> void
+      def serialize: (untyped, untyped) -> nil
+    end
+  end
+end

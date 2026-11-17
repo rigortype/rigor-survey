@@ -1,0 +1,6 @@
+class Multibase
+  def self.decode_multicodec: (untyped) -> [:"ed25519-pub" | :"mldsa-44-pub" | :"rsa-pub", untyped]
+  def self.decode_key_to_pem: (untyped) -> ([:"ml-dsa-44", String] | [:ed25519, String] | [:rsa, untyped])
+  class Error < ::StandardError
+  end
+end

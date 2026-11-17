@@ -1,0 +1,5 @@
+module Mastodon
+  module MigrationWarning
+    def migration_duration_warning: (?untyped) -> (Integer | nil)
+  end
+end

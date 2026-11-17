@@ -1,0 +1,5 @@
+module Ci
+  class JobArtifactsDeletedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["job_ids"] | Hash[String, Hash[String, "array" | Hash[String, "integer"]]]]
+  end
+end

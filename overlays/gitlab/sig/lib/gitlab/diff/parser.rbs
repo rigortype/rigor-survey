@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class Parser
+      def parse: (untyped, ?diff_file: untyped) -> (Enumerator[untyped, untyped] | [])
+    end
+  end
+end

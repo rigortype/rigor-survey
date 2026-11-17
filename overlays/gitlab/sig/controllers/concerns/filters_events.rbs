@@ -1,0 +1,3 @@
+module FiltersEvents
+  def event_filter: () -> EventFilter
+end

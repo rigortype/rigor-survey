@@ -1,0 +1,5 @@
+module Gitlab
+  class BuildAccess < ::Gitlab::UserAccess
+    def can_access_git?: () -> true
+  end
+end

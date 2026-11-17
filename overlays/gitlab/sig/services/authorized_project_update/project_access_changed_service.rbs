@@ -1,0 +1,5 @@
+module AuthorizedProjectUpdate
+  class ProjectAccessChangedService
+    def initialize: ([Integer, Integer]) -> void
+  end
+end

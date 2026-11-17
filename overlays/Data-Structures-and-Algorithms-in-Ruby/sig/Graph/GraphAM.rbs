@@ -1,0 +1,30 @@
+class Heap
+  def initialize: (?untyped) -> void
+  def set: (untyped) -> nil
+  def percolateDown: (untyped) -> nil
+  def percolateUp: (untyped) -> nil
+  def add: (untyped) -> nil
+  def display: () -> nil
+end
+
+class GraphAM
+  def initialize: (untyped) -> void
+  def display: () -> nil
+  def self.main1: () -> nil
+  def dijkstra: (untyped) -> nil
+  def printPathUtil: (untyped, untyped, untyped) -> String
+  def printPath: (untyped, untyped, untyped, untyped) -> nil
+  def primsMST: () -> nil
+  def self.main2: () -> nil
+  def self.main3: () -> nil
+  def hamiltonianPathUtil: (untyped, untyped, untyped) -> (false | true)
+  def hamiltonianPath: () -> (false | true)
+  def self.main4: () -> nil
+  def hamiltonianCycleUtil: (untyped, untyped, untyped) -> (false | true)
+  def hamiltonianCycle: () -> (false | true)
+  def self.main5: () -> nil
+  def self.main: () -> nil
+  class Edge
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

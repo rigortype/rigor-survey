@@ -1,0 +1,9 @@
+module RbNaCl
+  module AEAD
+    class Base
+      def initialize: (untyped) -> void
+      def encrypt: (untyped, untyped, untyped) -> String
+      def decrypt: (untyped, untyped, untyped) -> String
+    end
+  end
+end

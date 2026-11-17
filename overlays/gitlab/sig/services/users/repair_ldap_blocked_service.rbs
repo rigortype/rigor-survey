@@ -1,0 +1,5 @@
+module Users
+  class RepairLdapBlockedService
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,16 @@
+module Concurrent
+  class LockFreeStack < ::Concurrent::Synchronization::Object
+    def next_node: () -> Concurrent::LockFreeStack
+    def self.of1: (untyped) -> Concurrent::LockFreeStack
+    def self.of2: (untyped, untyped) -> Concurrent::LockFreeStack
+    def initialize: (?untyped) -> void
+    def empty?: (?untyped) -> (false | true)
+    def push: (untyped) -> (Concurrent::LockFreeStack | nil)
+    def clear: () -> (false | nil | true)
+    def clear_each: () ?{ (*untyped) -> untyped } -> (Concurrent::LockFreeStack | nil)
+    def to_s: () -> String
+    class Node
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module ProcessManagement
+    def self.signal: (untyped, untyped) -> (false | true)
+    def self.all_alive?: (untyped) -> (false | true)
+    def self.process_alive?: (untyped) -> (false | true)
+    def self.process_died?: (untyped) -> (false | true)
+    def self.write_pid: (untyped) -> Integer
+  end
+end

@@ -1,0 +1,5 @@
+module Dependabot
+  module Utils
+    def self.validate_package_manager!: (untyped) -> nil
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class PlanLimitsResolver < ::Resolvers::BaseResolver
+      def resolve: () -> { ci_pipeline_schedules: untyped }
+    end
+  end
+end

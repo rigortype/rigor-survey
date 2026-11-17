@@ -1,0 +1,108 @@
+module Dependabot
+  def self.fetcher_error_details: (untyped) -> (::ErrorDetails | nil)
+  def self.parser_error_details: (untyped) -> (::ErrorDetails | nil)
+  def self.updater_error_details: (untyped) -> (::ErrorDetails | nil)
+  class TypedDependabotError < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+    def detail: (?untyped) -> { :"error-type" => String, :"error-detail" => untyped }
+  end
+  class DirectoryNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class BranchNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class RepoNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class MisconfiguredTooling < ::Dependabot::DependabotError
+    def initialize: (untyped, untyped) -> void
+    def tool_message: () -> String
+  end
+  class ToolVersionNotSupported < ::Dependabot::DependabotError
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class ToolFeatureNotSupported < ::Dependabot::DependabotError
+    def initialize: (tool_name: untyped, tool_type: untyped, feature: untyped) -> void
+  end
+  class DependencyFileNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+    def file_name: () -> (String | nil)
+    def directory: () -> (String | nil)
+  end
+  class DependencyFileNotParseable < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+    def file_name: () -> String
+    def directory: () -> String
+  end
+  class DependencyChecksumMismatch < ::Dependabot::DependabotError
+    def initialize: (untyped, ?dependency_name: untyped) -> void
+  end
+  class PrivateRegistryConfigNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class PrivateSourceAuthenticationFailure < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class PrivateSourceBadResponse < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+    def source: () -> String
+  end
+  class PrivateSourceTimedOut < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class PrivateSourceCertificateFailure < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class MissingEnvironmentVariable < ::Dependabot::DependabotError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class DependencyNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class InvalidGitAuthToken < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+    def source: () -> String
+  end
+  class RegistryError < ::Dependabot::DependabotError
+    def initialize: (untyped, untyped) -> void
+  end
+  class UpdateNotPossible < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+  end
+  class GitDependenciesNotReachable < ::Dependabot::DependabotError
+    def initialize: (*untyped) -> void
+    def dependency_urls: () -> Array[String]
+  end
+  class GitDependencyReferenceNotFound < ::Dependabot::DependabotError
+    def initialize: (untyped) -> void
+  end
+  class PathDependenciesNotReachable < ::Dependabot::DependabotError
+    def initialize: (*untyped) -> void
+    def dependencies: () -> Array[String]
+  end
+  class GoModulePathMismatch < ::Dependabot::DependabotError
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class BlockedDependencyVersion < ::Dependabot::DependabotError
+    def initialize: (dependency_name: untyped, blocked_version: untyped, version_requirement: untyped, ?reason: untyped) -> void
+  end
+  class IncompatibleCPU < ::Dependabot::TypedDependabotError
+    def initialize: (?untyped) -> void
+  end
+  class NetworkUnsafeHTTP < ::Dependabot::TypedDependabotError
+    def initialize: (?untyped) -> void
+  end
+  class SnapshotsUnavailableGraphError < ::Dependabot::TypedDependabotError
+    def initialize: (?untyped) -> void
+  end
+  class DependabotError < ::StandardError
+  end
+  class BadRequirementError < ::Gem::Requirement::BadRequirementError
+  end
+end

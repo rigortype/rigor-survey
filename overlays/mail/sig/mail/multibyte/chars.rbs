@@ -1,0 +1,17 @@
+module Mail
+  module Multibyte
+    class Chars
+      def initialize: (String) -> void
+      def acts_like_string?: () -> true
+      def reverse: () -> Mail::Multibyte::Chars
+      def upcase: () -> Mail::Multibyte::Chars
+      def downcase: () -> Mail::Multibyte::Chars
+      def titleize: () -> Mail::Multibyte::Chars
+      def normalize: (?untyped) -> Mail::Multibyte::Chars
+      def decompose: () -> Mail::Multibyte::Chars
+      def compose: () -> Mail::Multibyte::Chars
+      def g_length: () -> Integer
+      def tidy_bytes: (?untyped) -> Mail::Multibyte::Chars
+    end
+  end
+end

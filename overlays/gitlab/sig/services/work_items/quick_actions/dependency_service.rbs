@@ -1,0 +1,7 @@
+module WorkItems
+  module QuickActions
+    class DependencyService < ::WorkItems::QuickActions::BaseDependencyService
+      def param_hint: () -> ("<#item | group/project#item | item URL>")
+    end
+  end
+end

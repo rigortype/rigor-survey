@@ -1,0 +1,6 @@
+module GitlabEdition
+  def self.root: () -> Pathname
+  def self.path_glob: (untyped) -> String
+  def self.extension_path_prefixes: () -> ("" | String)
+  def self.extensions: () -> (["ee", "jh"] | ["ee"] | [])
+end

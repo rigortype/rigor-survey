@@ -1,0 +1,13 @@
+module RuboCop
+  module AST
+    module Traversal
+      def walk: (untyped) -> nil
+      module CallbackCompiler
+        def body: (untyped, untyped) -> String
+        def children_count_check_code: (untyped) -> ("" | String)
+      end
+      class DebugError < ::RuntimeError
+      end
+    end
+  end
+end

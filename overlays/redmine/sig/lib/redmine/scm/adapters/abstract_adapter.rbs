@@ -1,0 +1,41 @@
+module Redmine
+  module Scm
+    module Adapters
+      class AbstractAdapter
+        def self.shell_quote: (untyped) -> String
+        def self.shell_quote_command: () -> String
+        def initialize: (untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> void
+        def adapter_name: () -> "Abstract"
+        def supports_cat?: () -> true
+        def supports_annotate?: () -> (false | true)
+        def branches: () -> nil
+        def properties: (untyped, ?untyped) -> nil
+        def diff: (untyped, untyped, ?untyped) -> nil
+        def valid_name?: (untyped) -> (false | true)
+      end
+      class Entries < ::Array[untyped]
+        def revisions: () -> Redmine::Scm::Adapters::Revisions
+      end
+      class Info
+        def initialize: (?untyped) -> void
+      end
+      class Entry
+        def initialize: (?untyped) -> void
+        def is_text?: () -> (false | true)
+      end
+      class Revision
+        def initialize: (?untyped) -> void
+      end
+      class Annotate
+        def add_line: (untyped, untyped, ?untyped) -> Array[untyped]
+        def lines: () -> Array[untyped]
+        def revisions: () -> Array[untyped]
+        def previous_annotations: () -> Array[untyped]
+      end
+      class Revisions < ::Array[untyped]
+      end
+      class Branch < ::String
+      end
+    end
+  end
+end

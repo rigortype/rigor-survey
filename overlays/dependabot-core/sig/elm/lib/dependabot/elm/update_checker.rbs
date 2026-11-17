@@ -1,0 +1,11 @@
+module Dependabot
+  module Elm
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_version: () -> (Dependabot::Version | nil)
+      def latest_resolvable_version: () -> (Dependabot::Version | nil)
+      def latest_resolvable_version_with_no_unlock: () -> nil
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement | ::DependencyRequirement]
+      def can_update?: (requirements_to_unlock: untyped) -> (false | true)
+    end
+  end
+end

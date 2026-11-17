@@ -1,0 +1,3 @@
+class BaseGroupService < ::BaseContainerService
+  def initialize: (group: untyped, ?current_user: untyped, ?params: untyped) -> void
+end

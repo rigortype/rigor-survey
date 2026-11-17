@@ -1,0 +1,3 @@
+class StatusCacheHydrator
+  def initialize: (untyped) -> void
+end

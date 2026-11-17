@@ -1,0 +1,9 @@
+module Gitlab
+  module Ssh
+    class Tag < ::Gitlab::SignedTag
+      def signature: () -> Gitlab::Ssh::Signature
+      def attributes: () -> { key_id: untyped, key_fingerprint_sha256: untyped, verification_status: untyped, project: untyped, object_name: untyped }
+      def signature_class: () -> singleton(::Repositories::Tags::SshSignature)
+    end
+  end
+end

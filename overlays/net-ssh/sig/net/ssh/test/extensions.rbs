@@ -1,0 +1,18 @@
+module Net
+  module SSH
+    module Test
+      module Extensions
+        module PacketStream
+          def idle!: () -> (false | true)
+          def test_available_for_read?: () -> (false | true)
+          def test_poll_next_packet: () -> (Net::SSH::Packet | nil)
+        end
+        module IO
+          module ClassMethods
+            def self.extended: (untyped) -> Symbol
+          end
+        end
+      end
+    end
+  end
+end

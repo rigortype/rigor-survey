@@ -1,0 +1,7 @@
+module ActiveRecord
+  class QueryCache
+    module ExecutorHooks
+      def self.run: () -> [untyped, untyped]
+    end
+  end
+end

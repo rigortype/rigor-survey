@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class SnippetsRepoRestorer
+      def initialize: (project: untyped, shared: untyped, user: untyped) -> void
+    end
+  end
+end

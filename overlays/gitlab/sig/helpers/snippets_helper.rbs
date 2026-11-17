@@ -1,0 +1,3 @@
+module SnippetsHelper
+  def snippet_badge_attributes: (untyped) -> (["lock", untyped] | nil)
+end

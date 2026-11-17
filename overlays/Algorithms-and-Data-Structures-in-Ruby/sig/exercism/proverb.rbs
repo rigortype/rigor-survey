@@ -1,0 +1,4 @@
+class Proverb
+  def initialize: (*untyped, ?qualifier: untyped) -> void
+  def to_s: () -> String
+end

@@ -1,0 +1,8 @@
+module Admin
+  class SystemCheck
+    class SidekiqProcessCheck < ::Admin::SystemCheck::BaseCheck
+      def skip?: () -> (false | true)
+      def message: () -> Admin::SystemCheck::Message
+    end
+  end
+end

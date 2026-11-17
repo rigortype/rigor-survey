@@ -1,0 +1,239 @@
+[submodule "Algorithms-and-Data-Structures-in-Ruby"]
+	path = Algorithms-and-Data-Structures-in-Ruby
+	url = https://github.com/kumar91gopi/Algorithms-and-Data-Structures-in-Ruby.git
+	ignore = untracked
+	branch = master
+[submodule "Data-Structures-and-Algorithms-in-Ruby"]
+	path = Data-Structures-and-Algorithms-in-Ruby
+	url = https://github.com/Hemant-Jain-Author/Data-Structures-and-Algorithms-in-Ruby.git
+	ignore = untracked
+	branch = master
+[submodule "JSONSerializerBenchmarks"]
+	path = JSONSerializerBenchmarks
+	url = https://github.com/cookpad/JSONSerializerBenchmarks.git
+	ignore = untracked
+	branch = rigor-latest-deps
+[submodule "Ruby"]
+	path = Ruby
+	url = https://github.com/TheAlgorithms/Ruby.git
+	ignore = untracked
+	branch = master
+[submodule "ac-library-rb"]
+	path = ac-library-rb
+	url = https://github.com/universato/ac-library-rb.git
+	ignore = untracked
+	branch = main
+[submodule "alba"]
+	path = alba
+	url = https://github.com/okuramasafumi/alba.git
+	ignore = untracked
+	branch = main
+[submodule "algorithms"]
+	path = algorithms
+	url = https://github.com/kanwei/algorithms.git
+	ignore = untracked
+	branch = master
+[submodule "concurrent-ruby"]
+	path = concurrent-ruby
+	url = https://github.com/ruby-concurrency/concurrent-ruby.git
+	ignore = untracked
+	branch = master
+[submodule "conference-app"]
+	path = conference-app
+	url = https://github.com/kaigionrails/conference-app.git
+	ignore = untracked
+	branch = main
+[submodule "dependabot-core"]
+	path = dependabot-core
+	url = https://github.com/dependabot/dependabot-core.git
+	ignore = untracked
+	branch = main
+[submodule "erubi"]
+	path = erubi
+	url = https://github.com/jeremyevans/erubi.git
+	ignore = untracked
+	branch = master
+[submodule "faraday"]
+	path = faraday
+	url = https://github.com/lostisland/faraday.git
+	ignore = untracked
+	branch = main
+[submodule "gitlab"]
+	path = gitlab
+	url = https://gitlab.com/gitlab-org/gitlab.git
+	ignore = untracked
+	branch = master
+[submodule "haml"]
+	path = haml
+	url = https://github.com/haml/haml.git
+	ignore = untracked
+	branch = main
+[submodule "hamlit"]
+	path = hamlit
+	url = https://github.com/k0kubun/hamlit.git
+	ignore = untracked
+	branch = master
+[submodule "herb"]
+	path = herb
+	url = https://github.com/marcoroth/herb.git
+	ignore = untracked
+	branch = main
+[submodule "hexlet-basics"]
+	path = hexlet-basics
+	url = https://github.com/hexlet-basics/hexlet-basics.git
+	ignore = untracked
+	branch = main
+[submodule "jbuilder"]
+	path = jbuilder
+	url = https://github.com/rails/jbuilder.git
+	ignore = untracked
+	branch = main
+[submodule "kaminari"]
+	path = kaminari
+	url = https://github.com/kaminari/kaminari.git
+	ignore = untracked
+	branch = master
+[submodule "kramdown"]
+	path = kramdown
+	url = https://github.com/gettalong/kramdown.git
+	ignore = untracked
+	branch = master
+[submodule "liquid"]
+	path = liquid
+	url = https://github.com/shopify/liquid.git
+	ignore = untracked
+[submodule "mail"]
+	path = mail
+	url = https://github.com/mikel/mail.git
+	ignore = untracked
+	branch = master
+[submodule "mangrove"]
+	path = mangrove
+	url = https://github.com/kazzix14/mangrove.git
+	ignore = untracked
+	branch = main
+[submodule "marcel"]
+	path = marcel
+	url = https://github.com/rails/marcel.git
+	ignore = untracked
+	branch = main
+[submodule "mastodon"]
+	path = mastodon
+	url = https://github.com/mastodon/mastodon.git
+	ignore = untracked
+	branch = main
+[submodule "net-ssh"]
+	path = net-ssh
+	url = https://github.com/net-ssh/net-ssh.git
+	ignore = untracked
+	branch = master
+[submodule "numo-narray"]
+	path = numo-narray
+	url = https://github.com/ruby-numo/numo-narray.git
+	ignore = untracked
+	branch = master
+[submodule "oj"]
+	path = oj
+	url = https://github.com/ohler55/oj.git
+	ignore = untracked
+	branch = develop
+[submodule "ox"]
+	path = ox
+	url = https://github.com/ohler55/ox.git
+	ignore = untracked
+	branch = develop
+[submodule "pages"]
+	path = pages
+	url = https://github.com/anyone-oslo/pages.git
+	ignore = untracked
+	branch = main
+[submodule "parser"]
+	path = parser
+	url = https://github.com/whitequark/parser.git
+	ignore = untracked
+	branch = master
+[submodule "protobuf"]
+	path = protobuf
+	url = https://github.com/protocolbuffers/protobuf.git
+	ignore = untracked
+	branch = main
+[submodule "protobufable"]
+	path = protobufable
+	url = https://github.com/sorah/protobufable.git
+	ignore = untracked
+	branch = main
+[submodule "pycall"]
+	path = pycall
+	url = https://github.com/red-data-tools/pycall.rb.git
+	ignore = untracked
+	branch = master
+[submodule "rails"]
+	path = rails
+	url = https://github.com/rails/rails.git
+	ignore = untracked
+	branch = main
+[submodule "rbnacl"]
+	path = rbnacl
+	url = https://github.com/RubyCrypto/rbnacl.git
+	ignore = untracked
+	branch = main
+[submodule "redmine"]
+	path = redmine
+	url = https://github.com/redmine/redmine.git
+	ignore = untracked
+	branch = master
+[submodule "rgl"]
+	path = rgl
+	url = https://github.com/monora/rgl.git
+	ignore = untracked
+	branch = master
+[submodule "rubocop-ast"]
+	path = rubocop-ast
+	url = https://github.com/rubocop/rubocop-ast.git
+	ignore = untracked
+	branch = master
+[submodule "slim"]
+	path = slim
+	url = https://github.com/slim-template/slim.git
+	ignore = untracked
+	branch = main
+[submodule "sponsor-app"]
+	path = sponsor-app
+	url = https://github.com/ruby-no-kai/sponsor-app.git
+	ignore = untracked
+	branch = master
+[submodule "spree"]
+	path = spree
+	url = https://github.com/spree/spree.git
+	ignore = untracked
+	branch = main
+[submodule "strap"]
+	path = strap
+	url = https://github.com/MikeMcQuaid/strap.git
+	ignore = untracked
+	branch = main
+[submodule "swapmyvote"]
+	path = swapmyvote
+	url = https://github.com/swapmyvote/swapmyvote.git
+	ignore = untracked
+	branch = master
+[submodule "tdiary-core"]
+	path = tdiary-core
+	url = https://github.com/tdiary/tdiary-core.git
+	ignore = untracked
+	branch = master
+[submodule "textbringer"]
+	path = textbringer
+	url = https://github.com/shugo/textbringer.git
+	ignore = untracked
+	branch = fix-rbs-signatures
+[submodule "typelizer"]
+	path = typelizer
+	url = https://github.com/skryukov/typelizer.git
+	ignore = untracked
+	branch = main
+[submodule "yard"]
+	path = yard
+	url = https://github.com/lsegal/yard.git
+	ignore = untracked
+	branch = main

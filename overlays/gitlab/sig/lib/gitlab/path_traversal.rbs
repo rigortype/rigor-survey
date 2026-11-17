@@ -1,0 +1,7 @@
+module Gitlab
+  module PathTraversal
+    def logger: () -> singleton(Gitlab::AppLogger)
+    def check_allowed_absolute_path!: (untyped, untyped) -> nil
+    def check_allowed_absolute_path_and_path_traversal!: (untyped, untyped) -> nil
+  end
+end

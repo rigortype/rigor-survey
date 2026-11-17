@@ -1,0 +1,32 @@
+module Dependabot
+  module Clients
+    class Bitbucket
+      def self.for_source: (source: untyped, credentials: untyped) -> Dependabot::Clients::Bitbucket
+      def initialize: (credentials: untyped) -> void
+      def fetch_commit: (untyped, untyped) -> String
+      def fetch_default_branch: (untyped) -> String
+      def fetch_repo_contents: (untyped, ?untyped, ?untyped) -> Array[JsonObject]
+      def fetch_file_contents: (untyped, untyped, untyped) -> String
+      def commits: (untyped, ?untyped) -> Enumerator[JsonObject]
+      def branch: (untyped, untyped) -> JsonObject
+      def pull_requests: (untyped, untyped, untyped, ?untyped) -> Array[JsonObject]
+      def create_commit: (untyped, untyped, untyped, untyped, untyped, untyped) -> Excon::Response
+      def create_pull_request: (untyped, untyped, untyped, untyped, untyped, untyped, ?untyped) -> Excon::Response
+      def decline_pull_request: (untyped, untyped, ?untyped) -> Excon::Response
+      def current_user: () -> (String | nil)
+      def default_reviewers: (untyped) -> Array[{ uuid: untyped }]
+      def tags: (untyped) -> Array[JsonObject]
+      def compare: (untyped, untyped, untyped) -> Array[JsonObject]
+      def get: (untyped) -> Excon::Response
+      def auth_header: () -> Hash[String, String]
+      class NotFound < ::StandardError
+      end
+      class Unauthorized < ::StandardError
+      end
+      class Forbidden < ::StandardError
+      end
+      class TimedOut < ::StandardError
+      end
+    end
+  end
+end

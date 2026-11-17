@@ -1,0 +1,9 @@
+module Mutations
+  module Ml
+    module ModelVersions
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> ({ errors: [untyped] } | { model_version: untyped, errors: Array[untyped] | [] })
+      end
+    end
+  end
+end

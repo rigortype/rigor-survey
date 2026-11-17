@@ -1,0 +1,3 @@
+class InlineScriptManager
+  def file: (untyped) -> Hash[untyped, untyped]
+end

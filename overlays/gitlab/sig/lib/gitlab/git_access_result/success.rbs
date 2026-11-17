@@ -1,0 +1,7 @@
+module Gitlab
+  module GitAccessResult
+    class Success
+      def initialize: (?console_messages: untyped) -> void
+    end
+  end
+end

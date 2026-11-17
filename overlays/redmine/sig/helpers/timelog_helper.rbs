@@ -1,0 +1,3 @@
+module TimelogHelper
+  def activity_collection_for_select_options: (?untyped, ?untyped) -> Array[untyped]
+end

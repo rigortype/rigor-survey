@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class PartDefinition < ::Gitlab::Database::Aggregation::PartDefinition
+          def initialize: (*untyped, ?ctes: untyped, **untyped) -> void
+          def ctes: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

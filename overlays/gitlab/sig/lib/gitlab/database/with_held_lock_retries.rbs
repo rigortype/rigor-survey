@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    class WithHeldLockRetries < ::Gitlab::Database::WithLockRetries
+      def initialize: (tables: [String], **untyped) -> void
+      class WaiterPileupError < ::StandardError
+        def initialize: (?untyped, ?reason: untyped) -> void
+      end
+    end
+  end
+end

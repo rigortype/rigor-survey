@@ -1,0 +1,7 @@
+module Gitlab
+  module Organizations
+    class Isolation
+      def self.enabled?: () -> (false | true)
+    end
+  end
+end

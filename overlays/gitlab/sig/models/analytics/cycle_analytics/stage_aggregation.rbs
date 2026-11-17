@@ -1,0 +1,10 @@
+module Analytics
+  module CycleAnalytics
+    class StageAggregation < ::ApplicationRecord
+      def cursor_for: (untyped) -> Hash[untyped, untyped]
+      def refresh_last_run: () -> ActiveSupport::TimeWithZone
+      def set_stats: (untyped, untyped) -> Array[untyped]
+      def complete: () -> ActiveSupport::TimeWithZone
+    end
+  end
+end

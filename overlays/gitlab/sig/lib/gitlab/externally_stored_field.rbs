@@ -1,0 +1,5 @@
+module Gitlab
+  module ExternallyStoredField
+    def external_payload_filename: (untyped) -> String
+  end
+end

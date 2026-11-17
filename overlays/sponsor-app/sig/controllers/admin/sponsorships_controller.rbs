@@ -1,0 +1,9 @@
+module Admin
+  class SponsorshipsController < ::Admin::ApplicationController
+    def show: () -> void
+    def download_asset: () -> void
+    def edit: () -> void
+    def update: () -> void
+    def destroy: () -> void
+  end
+end

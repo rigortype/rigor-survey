@@ -1,0 +1,3 @@
+class SpamLog < ::ApplicationRecord
+  def text: () -> String
+end

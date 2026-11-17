@@ -1,0 +1,6 @@
+module Gitlab
+  class ObjectHierarchy
+    def initialize: (untyped, ?ActiveRecord::Relation[Group], ?options: untyped) -> void
+    def descendants_base: () -> ActiveRecord::Relation[Group]
+  end
+end

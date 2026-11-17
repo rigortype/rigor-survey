@@ -1,0 +1,7 @@
+module API
+  module WorkItems
+    class Discussions < ::API::Base
+      def discussions_list_params: () -> { notes_filter: untyped, sort: :created_asc | :created_desc | nil, cursor: untyped, per_page: untyped, include_synthetic_notes: false }
+    end
+  end
+end

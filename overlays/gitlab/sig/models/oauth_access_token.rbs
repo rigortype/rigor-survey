@@ -1,0 +1,3 @@
+class OauthAccessToken < ::Doorkeeper::AccessToken
+  def subject_to_granular_enforcement?: () -> false
+end

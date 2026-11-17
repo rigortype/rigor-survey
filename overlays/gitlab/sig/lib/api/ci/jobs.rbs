@@ -1,0 +1,9 @@
+module API
+  module Ci
+    class Jobs < ::API::Base
+      def set_trace_response_headers!: (untyped) -> :binary
+      def trace_content_disposition: (untyped) -> String
+      def trace_send_url_response_headers: (untyped) -> Hash[String, untyped]
+    end
+  end
+end

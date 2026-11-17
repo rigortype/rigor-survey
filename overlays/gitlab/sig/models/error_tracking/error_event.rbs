@@ -1,0 +1,5 @@
+module ErrorTracking
+  class ErrorEvent < ::ApplicationRecord
+    def to_sentry_error_event: () -> Gitlab::ErrorTracking::ErrorEvent
+  end
+end

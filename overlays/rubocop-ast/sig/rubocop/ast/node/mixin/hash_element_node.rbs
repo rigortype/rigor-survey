@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    module HashElementNode
+      class HashElementDelta
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Subscriptions
+  module Ci
+    module Jobs
+      class JobProcessed < ::Subscriptions::BaseSubscription
+        def authorized?: (project_id: untyped, **untyped) -> true
+      end
+    end
+  end
+end

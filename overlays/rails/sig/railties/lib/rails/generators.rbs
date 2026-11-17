@@ -1,0 +1,13 @@
+module Rails
+  module Generators
+    def self.templates_path: () -> []
+    def self.aliases: () -> { rails: { actions: "-a", orm: "-o", javascripts: ["-j", "--js"], resource_controller: "-c", scaffold_controller: "-c", stylesheets: "-y", template_engine: "-e", test_framework: "-t" }, test_unit: { fixture_replacement: "-r" } }
+    def self.options: () -> { rails: { api: false, assets: true, force_plural: false, helper: true, integration_tool: nil, orm: false, resource_controller: :controller, resource_route: true, scaffold_controller: :scaffold_controller, system_tests: nil, test_framework: nil, template_engine: :erb } }
+    def self.after_generate_callbacks: () -> []
+    def self.fallbacks: () -> {}
+    def self.command_type: () -> "generator"
+    def self.lookup_paths: () -> ["rails/generators", "generators"]
+    def self.file_lookup_paths: () -> [String, "**", "*_generator.rb"]
+    def self.run_after_generate_callback: () -> ([] | nil)
+  end
+end

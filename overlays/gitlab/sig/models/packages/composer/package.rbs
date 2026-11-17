@@ -1,0 +1,7 @@
+module Packages
+  module Composer
+    class Package < ::Packages::Package
+      def self.inheritance_column: () -> nil
+    end
+  end
+end

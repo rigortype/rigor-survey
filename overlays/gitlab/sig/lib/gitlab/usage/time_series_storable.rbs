@@ -1,0 +1,8 @@
+module Gitlab
+  module Usage
+    module TimeSeriesStorable
+      def keys_for_aggregation: (events: untyped, start_date: untyped, end_date: untyped, ?used_in_aggregate_metric: untyped) -> Array[untyped]
+      def apply_time_aggregation: (untyped, untyped) -> String
+    end
+  end
+end

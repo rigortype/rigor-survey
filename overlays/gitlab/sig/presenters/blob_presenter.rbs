@@ -1,0 +1,5 @@
+class BlobPresenter < ::Gitlab::View::Presenter::Delegated
+  def gitpod_blob_url: () -> (String | nil)
+  def base64_encoded_blob: () -> String
+  def code_owners: () -> []
+end

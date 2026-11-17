@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class AutoCancelPolicy
+        def initialize: (untyped, ?cache: untyped) -> void
+        def cancel_mode: () -> (:all | :interruptible | nil)
+      end
+    end
+  end
+end

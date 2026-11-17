@@ -1,0 +1,10 @@
+module RbNaCl
+  module PasswordHash
+    class Argon2
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def digest: (untyped, untyped, ?untyped) -> String
+      def digest_str: (untyped) -> String
+      def self.digest_str_verify: (untyped, untyped) -> Integer
+    end
+  end
+end

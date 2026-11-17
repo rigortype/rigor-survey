@@ -1,0 +1,6 @@
+module WorkItems
+  class RelatedWorkItemLink < ::ApplicationRecord
+    def self.issuable_type: () -> :issue
+    def self.issuable_name: () -> "work item"
+  end
+end

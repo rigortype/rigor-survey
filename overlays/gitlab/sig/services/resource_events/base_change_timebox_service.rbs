@@ -1,0 +1,5 @@
+module ResourceEvents
+  class BaseChangeTimeboxService
+    def initialize: (untyped, untyped) -> void
+  end
+end

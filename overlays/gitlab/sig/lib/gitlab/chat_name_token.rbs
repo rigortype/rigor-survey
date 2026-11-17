@@ -1,0 +1,5 @@
+module Gitlab
+  class ChatNameToken
+    def initialize: (?untyped) -> void
+  end
+end

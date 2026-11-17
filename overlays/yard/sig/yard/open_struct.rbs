@@ -1,0 +1,6 @@
+module YARD
+  class OpenStruct
+    def initialize: (?untyped) -> void
+    def hash: () -> Integer
+  end
+end

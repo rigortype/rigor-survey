@@ -1,0 +1,9 @@
+module Dependabot
+  module Sbt
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionFinder < ::Dependabot::Maven::Shared::BaseVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?cooldown_options: untyped, ?raise_on_ignored: untyped) -> void
+      end
+    end
+  end
+end

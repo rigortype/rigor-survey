@@ -1,0 +1,7 @@
+module Backup
+  class DatabaseConfiguration
+    def initialize: (untyped, ?custom_config: untyped) -> void
+    def activerecord_configuration: () -> ActiveRecord::DatabaseConfigurations::HashConfig
+    def pg_env_variables: () -> (Hash[untyped, untyped] | nil)
+  end
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module Packages
+    class BulkDestroy < ::Mutations::BaseMutation
+      def resolve: (ids: untyped) -> { errors: Array[untyped] }
+    end
+  end
+end

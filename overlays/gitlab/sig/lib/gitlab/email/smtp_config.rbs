@@ -1,0 +1,7 @@
+module Gitlab
+  module Email
+    class SmtpConfig
+      def self.secrets: () -> Gitlab::Email::SmtpConfig
+    end
+  end
+end

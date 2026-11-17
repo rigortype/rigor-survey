@@ -1,0 +1,5 @@
+module Repositories
+  class CommitsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

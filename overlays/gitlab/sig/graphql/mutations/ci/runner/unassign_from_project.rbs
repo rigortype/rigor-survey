@@ -1,0 +1,9 @@
+module Mutations
+  module Ci
+    module Runner
+      class UnassignFromProject < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> { errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

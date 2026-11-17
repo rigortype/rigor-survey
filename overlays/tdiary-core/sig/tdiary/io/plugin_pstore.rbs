@@ -1,0 +1,7 @@
+module TDiary
+  module IO
+    module PluginPStore
+      def plugin_open: (untyped) -> Pathname
+    end
+  end
+end

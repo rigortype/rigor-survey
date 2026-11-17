@@ -1,0 +1,5 @@
+module Repositories
+  class CommitCollectionWithNextCursor < ::CommitCollection
+    def initialize: (untyped, untyped, ?untyped, ?next_cursor: untyped) -> void
+  end
+end

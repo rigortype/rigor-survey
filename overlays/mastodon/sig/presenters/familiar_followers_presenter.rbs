@@ -1,0 +1,3 @@
+class FamiliarFollowersPresenter
+  def initialize: (untyped, untyped) -> void
+end

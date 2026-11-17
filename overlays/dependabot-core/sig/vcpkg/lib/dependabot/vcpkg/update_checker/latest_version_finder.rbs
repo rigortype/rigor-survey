@@ -1,0 +1,10 @@
+module Dependabot
+  module Vcpkg
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def package_details: () -> (Dependabot::Package::PackageDetails | nil)
+        def latest_release_info: () -> (Dependabot::Package::PackageRelease | nil)
+      end
+    end
+  end
+end

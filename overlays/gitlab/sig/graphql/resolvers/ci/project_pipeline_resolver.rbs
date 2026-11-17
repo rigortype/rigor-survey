@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class ProjectPipelineResolver < ::Resolvers::BaseResolver
+      def unconditional_includes: () -> [{ statuses: [:needs] }]
+    end
+  end
+end

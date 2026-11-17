@@ -1,0 +1,5 @@
+module RapidDiffs
+  class MergeRequestCreationPresenter < ::RapidDiffs::BasePresenter
+    def initialize: (untyped, project: untyped, diff_view: untyped, diff_options: untyped, ?current_user: untyped, ?request_params: untyped) -> void
+  end
+end

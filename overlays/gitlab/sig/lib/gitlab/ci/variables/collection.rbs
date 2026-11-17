@@ -1,0 +1,23 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Collection
+        def initialize: (?untyped, ?untyped) -> void
+        def append: (untyped) -> Gitlab::Ci::Variables::Collection
+        def compact: () -> Gitlab::Ci::Variables::Collection
+        def concat: (untyped) -> Gitlab::Ci::Variables::Collection
+        def each: () -> Array[untyped]
+        def +: (untyped) -> Gitlab::Ci::Variables::Collection
+        def size: () -> Integer
+        def to_runner_variables: () -> Array[untyped]
+        def to_hash_variables: () -> Array[untyped]
+        def to_hash: () -> ActiveSupport::HashWithIndifferentAccess[untyped, untyped]
+        def to_lazy_hash: () -> Gitlab::Ci::Variables::Collection::LazyHash
+        def reject: () ?{ (*untyped) -> untyped } -> Gitlab::Ci::Variables::Collection
+        def sort_and_expand_all: (?keep_undefined: untyped, ?expand_file_refs: untyped, ?expand_raw_refs: untyped) -> Gitlab::Ci::Variables::Collection
+        def to_s: () -> String
+        def variables: () -> Array[untyped]
+      end
+    end
+  end
+end

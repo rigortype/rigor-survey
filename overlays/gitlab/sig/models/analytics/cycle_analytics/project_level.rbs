@@ -1,0 +1,10 @@
+module Analytics
+  module CycleAnalytics
+    class ProjectLevel
+      def initialize: (project: untyped, options: untyped) -> void
+      def summary: () -> Array[untyped]
+      def stats: () -> [untyped, untyped, untyped, untyped, untyped, untyped]
+      def []: (untyped) -> ::CycleAnalytics::ProjectLevelStageAdapter
+    end
+  end
+end

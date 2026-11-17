@@ -1,0 +1,13 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class PlanStageStart < ::Gitlab::Analytics::CycleAnalytics::StageEvents::MetricsBasedStageEvent
+          def self.identifier: () -> :plan_stage_start
+          def object_type: () -> singleton(Issue)
+          def column_list: () -> [untyped, untyped]
+        end
+      end
+    end
+  end
+end

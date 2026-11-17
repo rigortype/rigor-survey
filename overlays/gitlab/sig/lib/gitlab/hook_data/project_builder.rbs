@@ -1,0 +1,7 @@
+module Gitlab
+  module HookData
+    class ProjectBuilder < ::Gitlab::HookData::BaseBuilder
+      def build: (untyped, ?include_deprecated_owner: untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

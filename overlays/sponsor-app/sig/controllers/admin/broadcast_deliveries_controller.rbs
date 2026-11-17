@@ -1,0 +1,6 @@
+module Admin
+  class BroadcastDeliveriesController < ::Admin::ApplicationController
+    def create: () -> void
+    def destroy: () -> void
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Cluster
+    class RackTimeoutObserver
+      def callback: () -> Method
+    end
+  end
+end

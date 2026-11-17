@@ -1,0 +1,7 @@
+module Import
+  module UserMapping
+    class ProjectBotBypassAuthorizer
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

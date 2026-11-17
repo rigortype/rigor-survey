@@ -1,0 +1,11 @@
+class WikiPage
+  class Meta < ::ApplicationRecord
+    def self.declarative_policy_class: () -> "WikiPagePolicy"
+    def self.wiki_page_updates: (untyped) -> { title: untyped, created_at: untyped, updated_at: untyped }
+    def self.container_attrs: (untyped) -> (nil | { namespace_id: Integer } | { project_id: Integer })
+    def container=: (untyped) -> (Namespace | nil)
+    def container_key: () -> (:namespace_id | :project_id)
+    def gfm_reference: (?untyped) -> String
+    def to_ability_name: () -> "wiki_page"
+  end
+end

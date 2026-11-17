@@ -1,0 +1,5 @@
+module Keys
+  class LastUsedService
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module InstrumentationHelper
+    def instrument_pid: (untyped) -> Integer
+    def instrument_worker_id: (untyped) -> ("puma_master" | "sidekiq" | String)
+    def self.buffering_duration_for_job: (untyped) -> (Float | Integer | nil)
+    def self.enqueue_latency_for_scheduled_job: (untyped) -> (Float | Integer | nil)
+    def self.convert_to_time: (untyped) -> (Time | nil)
+  end
+end

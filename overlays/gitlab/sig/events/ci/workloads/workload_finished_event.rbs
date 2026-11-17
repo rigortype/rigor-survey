@@ -1,0 +1,7 @@
+module Ci
+  module Workloads
+    class WorkloadFinishedEvent < ::Gitlab::EventStore::Event
+      def schema: () -> Hash[String, "object" | ["workload_id", "status"] | Hash[String, Hash[String, "integer"] | Hash[String, "string"]]]
+    end
+  end
+end

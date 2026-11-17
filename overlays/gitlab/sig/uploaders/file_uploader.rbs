@@ -1,0 +1,18 @@
+class FileUploader < ::GitlabUploader
+  def self.absolute_path: (untyped) -> String
+  def self.relative_path: (untyped) -> String
+  def self.absolute_base_dir: (untyped) -> String
+  def self.generate_secret: () -> String
+  def self.extract_dynamic_path: (untyped) -> (MatchData | nil)
+  def upload_paths: (untyped) -> [String, String]
+  def initialize: (untyped, ?Symbol, **untyped) -> void
+  def initialize_copy: (untyped) -> nil
+  def absolute_path: () -> String
+  def upload_path: () -> String
+  def local_storage_path: (untyped) -> String
+  def remote_storage_path: (untyped) -> String
+  def store_dirs: () -> Hash[untyped, String]
+  def to_h: () -> { alt: untyped, url: String, markdown: String | nil }
+  def upload=: (untyped) -> (String | nil)
+  def self.copy_to: (untyped, untyped) -> FileUploader
+end

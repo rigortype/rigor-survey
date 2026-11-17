@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module RakeTask
+        def self?.run: (untyped, ?check_name: untyped) -> nil
+      end
+    end
+  end
+end

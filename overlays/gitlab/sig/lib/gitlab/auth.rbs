@@ -1,0 +1,30 @@
+module Gitlab
+  module Auth
+    def self.skip_rate_limit?: (login: untyped) -> (false | true)
+    def self.service_request_check: (untyped, untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.user_with_password_for_git: (untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.personal_access_token_check: (untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.deploy_token_check: (untyped, untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.lfs_token_check: (untyped, untyped, untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.build_access_token_check: (untyped, untyped) -> (Gitlab::Auth::Result | nil)
+    def self.build_authentication_abilities: () -> [:read_project, :build_download_code, :build_push_code, :build_read_container_image, :build_create_container_image, :build_destroy_container_image]
+    def self.read_only_project_authentication_abilities: () -> [:read_project, :download_code]
+    def self.read_write_project_authentication_abilities: () -> [:read_project, :download_code, :push_code]
+    def self.read_only_authentication_abilities: () -> [:read_project, :download_code, :read_container_image]
+    def self.read_write_authentication_abilities: () -> [:read_project, :download_code, :read_container_image, :push_code, :create_container_image]
+    def self.full_authentication_abilities: () -> [:read_project, :download_code, :read_container_image, :push_code, :create_container_image, :admin_container_image]
+    def self.available_scopes_for: (untyped) -> Array[untyped]
+    def self.all_available_scopes: () -> Array[untyped]
+    def self.optional_scopes: () -> Array[untyped]
+    def self.registry_scopes: () -> ([:read_registry, :write_registry] | [])
+    def self.virtual_registry_scopes: () -> ([:read_virtual_registry, :write_virtual_registry] | [])
+    def self.resource_bot_scopes: () -> Array[untyped]
+    def self.unavailable_scopes_for_resource: (untyped) -> Array[untyped]
+    def self.unavailable_ai_features_scopes: () -> [:ai_workflows, :mcp, :mcp_orbit]
+    def self.unavailable_observability_scopes_for_resource: (untyped) -> ([:read_observability, :write_observability] | [])
+    def self.unavailable_virtual_registry_scopes_for_resource: (untyped) -> ([:read_virtual_registry, :write_virtual_registry] | [])
+    def self.non_admin_available_scopes: () -> Array[untyped]
+    def self.database_password_authenticator_for_user: (untyped, activity: untyped) -> (Gitlab::Auth::Crowd::Authentication | Gitlab::Auth::Database::Authentication | Gitlab::Auth::Ldap::Authentication | nil)
+    def self.password_authenticators_for_user: (untyped, activity: untyped) -> Array[untyped]
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Email
+    module Message
+      class RepositoryPush
+        def initialize: (singleton(Notify), untyped, ?untyped) -> void
+        def project: () -> Project
+        def author: () -> User
+        def ref_type: () -> ("branch" | "tag")
+        def subject: () -> String
+      end
+    end
+  end
+end

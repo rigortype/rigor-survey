@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class ReadOnly
+      def self.internal_routes: () -> [String, String]
+      def initialize: (untyped) -> void
+    end
+  end
+end

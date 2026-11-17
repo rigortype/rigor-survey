@@ -1,0 +1,15 @@
+module YARD
+  module Server
+    module DocServerHelper
+      def url_for: (untyped, ?untyped, ?untyped) -> ("" | String | nil)
+      def url_for_file: (untyped, ?untyped) -> String
+      def url_for_list: (untyped) -> String
+      def url_for_frameset: () -> ("" | String | nil)
+      def url_for_main: () -> String
+      def url_for_index: () -> String
+      def abs_url: (*untyped) -> String
+      def mtime: (untyped) -> (Integer | nil)
+      def mtime_url: (untyped) -> String
+    end
+  end
+end

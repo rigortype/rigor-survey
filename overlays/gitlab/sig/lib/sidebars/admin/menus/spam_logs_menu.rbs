@@ -1,0 +1,10 @@
+module Sidebars
+  module Admin
+    module Menus
+      class SpamLogsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "spam"
+        def active_routes: () -> { controller: :spam_logs }
+      end
+    end
+  end
+end

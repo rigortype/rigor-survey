@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class UnsupportedScopeOrder < ::StandardError
+        def message: () -> String
+      end
+    end
+  end
+end

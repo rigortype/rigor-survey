@@ -1,0 +1,11 @@
+module Sidebars
+  module Explore
+    module Menus
+      class CatalogMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "catalog-checkmark"
+        def render?: () -> true
+        def active_routes: () -> { controller: ["explore/catalog"] }
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      class BatchedJob < ::Gitlab::Database::SharedModel
+        def self.extract_transition_options: (untyped) -> ([untyped, untyped] | [])
+        def job_attributes: () -> Hash[Symbol, untyped]
+        def handle_sidekiq_shutdown_failure?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Tracking
+    module Destinations
+      class Snowplow
+        def self.dedicated?: () -> false
+        def initialize: (?untyped) -> void
+        def event: (untyped, untyped, ?label: untyped, ?property: untyped, ?value: untyped, ?context: untyped) -> (false | true)
+        def frontend_client_options: () -> ({ namespace: "gl", hostname: untyped, cookieDomain: untyped, appId: String, formTracking: true, linkClickTracking: true } | { namespace: "gl", hostname: String, postPath: untyped, forceSecureTracker: untyped, appId: String })
+        def app_id: () -> String
+      end
+    end
+  end
+end

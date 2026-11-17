@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class ReplayEvent
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::ReplayEvent
+        def initialize: (untyped) -> void
+        def github_identifiers: () -> { issuable_type: untyped, issuable_iid: untyped }
+      end
+    end
+  end
+end

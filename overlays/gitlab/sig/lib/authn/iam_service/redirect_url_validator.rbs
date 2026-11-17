@@ -1,0 +1,10 @@
+module Authn
+  module IamService
+    module RedirectUrlValidator
+      def self?.valid?: (untyped) -> (false | true)
+      def self?.authorize_path?: (untyped, untyped) -> (false | true)
+      def self?.allowed_origins: () -> [URI::FTP | URI::File | URI::Generic | URI::HTTP | URI::HTTPS | URI::LDAP | URI::LDAPS | URI::MailTo | URI::WS | URI::WSS, URI::FTP | URI::File | URI::Generic | URI::HTTP | URI::HTTPS | URI::LDAP | URI::LDAPS | URI::MailTo | URI::WS | URI::WSS]
+      def self?.allowed_schemes: () -> (["http", "https"] | ["https"])
+    end
+  end
+end

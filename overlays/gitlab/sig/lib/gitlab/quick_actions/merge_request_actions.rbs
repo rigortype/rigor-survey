@@ -1,0 +1,10 @@
+module Gitlab
+  module QuickActions
+    module MergeRequestActions
+      def merge_orchestration_service: () -> ::MergeRequests::MergeOrchestrationService
+      def create_pipeline_service: () -> ::MergeRequests::CreatePipelineService
+      def request_review_params: () -> {}
+      def process_reviewer_users_message: () -> nil
+    end
+  end
+end

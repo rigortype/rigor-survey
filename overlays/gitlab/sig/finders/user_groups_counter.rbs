@@ -1,0 +1,3 @@
+class UserGroupsCounter
+  def initialize: (untyped, ?organization: untyped) -> void
+end

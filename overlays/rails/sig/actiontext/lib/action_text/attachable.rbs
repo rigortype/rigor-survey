@@ -1,0 +1,5 @@
+module ActionText
+  module Attachable
+    def previewable_attachable?: () -> false
+  end
+end

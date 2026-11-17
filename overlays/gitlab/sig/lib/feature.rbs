@@ -1,0 +1,34 @@
+module Feature
+  def self.disabled?: (untyped, ?untyped, ?type: untyped, ?default_enabled_if_undefined: untyped) -> (false | true)
+  def self.reset: () -> nil
+  def self.current_pod: () -> Feature::FlipperPod
+  def self.gitlab_instance: () -> Feature::FlipperGitlabInstance
+  def self.current_endpoint: () -> (Feature::Endpoint | nil)
+  def self.logger: () -> Feature::Logger
+  def self.expire_cache: (untyped) -> nil
+  def self.build_flipper_instance: (?memoize: untyped) -> Flipper
+  def self.suggest_similar_flag_names: (untyped) -> Array[String]
+  def self.validate_thing!: (untyped, untyped) -> nil
+  def self.supported_models: () -> [untyped, untyped, untyped, untyped, untyped, untyped]
+  def self.operation_type: (untyped, untyped) -> ("disabled_actor" | "disabled_globally" | "enabled_actor" | "enabled_globally")
+  class OptOut
+    def initialize: (untyped) -> void
+    def flipper_id: () -> String
+  end
+  class Endpoint
+    def initialize: (String) -> void
+    def caller_id: () -> ("GET /api/v4/projects/:id" | "ProjectsController#show")
+    def flipper_id: () -> String
+  end
+  class Target
+    def initialize: (untyped) -> void
+    def gate_specified?: () -> (false | true)
+    def targets: () -> Array[untyped]
+  end
+  class FlipperPod
+    def flipper_id: () -> String
+  end
+  class FlipperGitlabInstance
+    def flipper_id: () -> String
+  end
+end

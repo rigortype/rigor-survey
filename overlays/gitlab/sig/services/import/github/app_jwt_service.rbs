@@ -1,0 +1,9 @@
+module Import
+  module Github
+    class AppJwtService
+      def initialize: (?configuration: untyped, ?current_time: Proc) -> void
+      def execute: () -> String
+      def current_time: () -> Proc
+    end
+  end
+end

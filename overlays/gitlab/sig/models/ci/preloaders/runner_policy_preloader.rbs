@@ -1,0 +1,7 @@
+module Ci
+  module Preloaders
+    class RunnerPolicyPreloader
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

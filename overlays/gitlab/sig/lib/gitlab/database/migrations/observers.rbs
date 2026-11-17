@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Migrations
+      module Observers
+        def self.all_observers: () -> [singleton(Gitlab::Database::Migrations::Observers::TotalDatabaseSizeChange), singleton(Gitlab::Database::Migrations::Observers::QueryStatistics), singleton(Gitlab::Database::Migrations::Observers::QueryLog), singleton(Gitlab::Database::Migrations::Observers::QueryDetails), singleton(Gitlab::Database::Migrations::Observers::TransactionDuration)]
+      end
+    end
+  end
+end

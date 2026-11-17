@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class YamlProcessor
+      def initialize: (untyped, ?{ project: untyped, sha: untyped, user: untyped }) -> void
+      def execute: () -> Gitlab::Ci::YamlProcessor::Result
+      def opts: () -> { project: untyped, sha: untyped, user: untyped }
+    end
+  end
+end

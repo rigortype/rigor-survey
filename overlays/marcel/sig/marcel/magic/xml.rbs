@@ -1,0 +1,16 @@
+module Marcel
+  class Magic
+    module Xml
+      def self.read_prefix: (untyped) -> (String | nil)
+      def self.decode: (untyped) -> ([untyped, :replaced, "1.0" | String] | [untyped, :utf8, "1.0" | String | nil] | nil)
+      def self.xml_declaration: (untyped) -> (["1.0", nil] | [String, String] | nil)
+      def self.find_encoding: (untyped) -> (Encoding | nil)
+      def self.root_element: (untyped, untyped, untyped) -> (["http://www.w3.org/XML/1998/namespace" | String | nil, String] | nil)
+      def self.parse_start_tag: (untyped, untyped, untyped, untyped, untyped) -> (["http://www.w3.org/XML/1998/namespace" | String | nil, String] | nil)
+      def self.split_qualified_name: (untyped) -> ([untyped, untyped] | [nil, untyped] | nil)
+      def self.namespace_bindings: (untyped, untyped) -> (Hash[untyped, untyped] | nil)
+      def self.valid_attributes?: (untyped, untyped, untyped, untyped) -> (false | true)
+      def self.resolve_name: (untyped, untyped) -> ([untyped, untyped] | nil)
+    end
+  end
+end

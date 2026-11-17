@@ -1,0 +1,8 @@
+module Types
+  module Projects
+    class ServiceTypeEnum < ::Types::BaseEnum
+      def self.graphql_value: (untyped) -> String
+      def self.value_description: (untyped) -> String
+    end
+  end
+end

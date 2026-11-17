@@ -1,0 +1,9 @@
+module Admin
+  module Metrics
+    class Measure
+      class InteractionsMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def key: () -> "interactions"
+      end
+    end
+  end
+end

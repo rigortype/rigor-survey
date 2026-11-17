@@ -1,0 +1,10 @@
+module Packages
+  module Rpm
+    module RepositoryMetadata
+      class UpdateXmlService
+        def initialize: (filename: untyped, ?xml: untyped, ?data: untyped) -> void
+        def xml: () -> Nokogiri::XML::Document
+      end
+    end
+  end
+end

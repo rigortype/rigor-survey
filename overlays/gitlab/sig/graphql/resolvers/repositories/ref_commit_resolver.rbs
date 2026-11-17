@@ -1,0 +1,7 @@
+module Resolvers
+  module Repositories
+    class RefCommitResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> (Commit | nil)
+    end
+  end
+end

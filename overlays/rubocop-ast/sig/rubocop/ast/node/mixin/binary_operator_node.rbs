@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module BinaryOperatorNode
+      def conditions: () -> Array[untyped]
+    end
+  end
+end

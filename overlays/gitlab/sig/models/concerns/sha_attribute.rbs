@@ -1,0 +1,9 @@
+module ShaAttribute
+  class ShaAttributeTypeMismatchError < ::StandardError
+    def initialize: (untyped, untyped) -> void
+    def message: () -> String
+  end
+  class Sha256AttributeTypeMismatchError < ::ShaAttribute::ShaAttributeTypeMismatchError
+    def message: () -> String
+  end
+end

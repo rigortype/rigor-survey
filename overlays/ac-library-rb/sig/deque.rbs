@@ -1,0 +1,19 @@
+class Deque
+  def self.[]: (*untyped) -> Deque
+  def initialize: (?Integer | [Integer, Integer, Integer, Integer, Integer] | [Integer, Integer, Integer] | [Integer, Integer] | [], ?Integer, ?initial_capacity: untyped) -> void
+  def <<: (untyped) -> Deque
+  def push: (*untyped) -> Deque
+  def unshift: (*untyped) -> Deque
+  def hash: () -> Integer
+  def reverse: () -> Deque
+  def reverse!: () -> Deque
+  def reversed?: () -> (false | true)
+  def clear: () -> Deque
+  def rotate!: (?untyped) -> Deque
+  def rotate: (?untyped) -> Deque
+  def shuffle: () -> Deque
+  def replace: (untyped) -> Deque
+  def swap: (untyped, untyped) -> Deque
+  def to_s: () -> String
+  def inspect: () -> String
+end

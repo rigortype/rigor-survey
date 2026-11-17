@@ -1,0 +1,7 @@
+module Gitlab
+  module Serializer
+    class Pagination
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

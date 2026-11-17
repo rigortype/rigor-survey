@@ -1,0 +1,3 @@
+class GenericCommitStatus < ::CommitStatus
+  def tags: () -> [:external]
+end

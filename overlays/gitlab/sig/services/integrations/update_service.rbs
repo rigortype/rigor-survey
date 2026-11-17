@@ -1,0 +1,5 @@
+module Integrations
+  class UpdateService
+    def initialize: (current_user: untyped, integration: untyped, attributes: untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Import
+    module UserFromMention
+      def source_user_cache_key: (untyped, untyped, untyped) -> String
+      def source_user_cache_value: (untyped, type: untyped) -> String
+    end
+  end
+end

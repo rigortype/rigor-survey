@@ -1,0 +1,11 @@
+module Dependabot
+  module Pub
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ?ignored_versions: untyped, ?security_advisories: untyped, ?options: untyped) -> void
+        def report: () -> (Array[::DependencyServicesResult::ReportEntry] | nil)
+        def package_details_metadata: () -> Array[Dependabot::Package::PackageRelease]
+      end
+    end
+  end
+end

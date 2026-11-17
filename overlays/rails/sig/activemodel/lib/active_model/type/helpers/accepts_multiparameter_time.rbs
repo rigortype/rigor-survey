@@ -1,0 +1,12 @@
+module ActiveModel
+  module Type
+    module Helpers
+      class AcceptsMultiparameterTime < ::Module
+        def initialize: (?defaults: untyped) -> void
+        module InstanceMethods
+          def value_constructed_by_mass_assignment?: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

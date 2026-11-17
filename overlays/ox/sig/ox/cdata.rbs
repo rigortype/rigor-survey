@@ -1,0 +1,5 @@
+module Ox
+  class CData < ::Ox::Node
+    def initialize: (untyped) -> void
+  end
+end

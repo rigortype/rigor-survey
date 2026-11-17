@@ -1,0 +1,14 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Parser < ::Racc::Parser
+        class WithMeta < ::RuboCop::AST::NodePattern::Parser
+          class Lexer < ::RuboCop::AST::NodePattern::Lexer
+            def initialize: (untyped) -> void
+            def pos: () -> ::Parser::Source::Range
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Import
+  module BulkImports
+    module ExportUploadable
+      def config: () -> (::BulkImports::FileTransfer::GroupConfig | ::BulkImports::FileTransfer::ProjectConfig)
+      def exported_filepath: () -> String
+      def compressed_filename: () -> String
+    end
+  end
+end

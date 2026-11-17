@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class Setup
+        def initialize: (untyped, ?start_service_discovery: (false | true)) -> void
+        def setup_service_discovery: () -> (Thread | nil)
+        def load_balancer: () -> Gitlab::Database::LoadBalancing::LoadBalancer
+        def configuration: () -> Gitlab::Database::LoadBalancing::Configuration
+      end
+    end
+  end
+end

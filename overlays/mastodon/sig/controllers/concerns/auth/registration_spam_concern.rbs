@@ -1,0 +1,5 @@
+module Auth
+  module RegistrationSpamConcern
+    def set_registration_form_time: () -> Time
+  end
+end

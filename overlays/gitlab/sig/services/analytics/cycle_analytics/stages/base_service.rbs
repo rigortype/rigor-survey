@@ -1,0 +1,10 @@
+module Analytics
+  module CycleAnalytics
+    module Stages
+      class BaseService
+        def initialize: (parent: untyped, current_user: untyped, ?params: untyped) -> void
+        def execute: () -> bot
+      end
+    end
+  end
+end

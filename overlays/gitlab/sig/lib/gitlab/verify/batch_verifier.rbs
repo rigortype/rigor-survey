@@ -1,0 +1,9 @@
+module Gitlab
+  module Verify
+    class BatchVerifier
+      def initialize: (batch_size: untyped, ?start: untyped, ?finish: untyped) -> void
+      def name: () -> bot
+      def describe: (untyped) -> bot
+    end
+  end
+end

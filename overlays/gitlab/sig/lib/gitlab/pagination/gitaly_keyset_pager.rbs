@@ -1,0 +1,7 @@
+module Gitlab
+  module Pagination
+    class GitalyKeysetPager
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

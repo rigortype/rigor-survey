@@ -1,0 +1,6 @@
+module Ci
+  module NamespaceSettings
+    def allow_stale_runner_pruning?: () -> false
+    def allow_stale_runner_pruning=: (untyped) -> bot
+  end
+end

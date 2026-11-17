@@ -1,0 +1,5 @@
+module Gitlab
+  class JWTToken < ::JSONWebToken::HMACToken
+    def self.decode: (untyped) -> (Gitlab::JWTToken | nil)
+  end
+end

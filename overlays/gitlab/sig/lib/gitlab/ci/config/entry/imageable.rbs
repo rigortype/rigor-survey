@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        module Imageable
+          def skip_config_hash_validation?: () -> true
+          def value: () -> (Hash[untyped, untyped] | { name: untyped })
+        end
+      end
+    end
+  end
+end

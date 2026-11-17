@@ -1,0 +1,9 @@
+module RbNaCl
+  class Auth
+    def initialize: (untyped) -> void
+    def self.auth: (untyped, untyped) -> String
+    def self.verify: (untyped, untyped, untyped) -> bot
+    def auth: (untyped) -> String
+    def verify: (untyped, untyped) -> bot
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    class Delta
+      def initialize: (?untyped) -> void
+    end
+  end
+end

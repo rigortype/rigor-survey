@@ -1,0 +1,8 @@
+module Gitlab
+  class BackgroundTask
+    def running?: () -> (false | true)
+    def initialize: (untyped, **untyped) -> void
+    def start: () -> Gitlab::BackgroundTask
+    def stop: () -> (:stopped | nil)
+  end
+end

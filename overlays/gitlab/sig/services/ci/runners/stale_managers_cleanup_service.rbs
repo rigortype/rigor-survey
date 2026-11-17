@@ -1,0 +1,7 @@
+module Ci
+  module Runners
+    class StaleManagersCleanupService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

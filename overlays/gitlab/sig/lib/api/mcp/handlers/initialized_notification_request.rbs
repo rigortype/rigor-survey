@@ -1,0 +1,9 @@
+module API
+  module Mcp
+    module Handlers
+      class InitializedNotificationRequest < ::API::Mcp::Handlers::Base
+        def invoke: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Projects
+  module ProjectMembers
+    class AppDataSerializer
+      def initialize: (untyped, current_user: untyped, ?members: untyped, ?direct_members_filter_params: ({ search: untyped, max_role: nil } | { search: nil, max_role: String })) -> void
+      def app_data: (invited: untyped, links: untyped, access_requests: untyped, pending_members_count: untyped) -> { user: untyped, direct_members: untyped, group: untyped, invite: untyped, access_request: untyped, source_id: untyped, can_manage_members: untyped, can_manage_access_requests: untyped, group_name: untyped, group_path: untyped, project_path: untyped, can_approve_access_requests: true, available_roles: untyped }
+      def list_data: (?untyped, ?untyped) -> { members: untyped, pagination: untyped, member_path: untyped }
+      def direct_members_filter_params: () -> ({ search: untyped, max_role: nil } | { search: nil, max_role: "static-30" })
+    end
+  end
+end

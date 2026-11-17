@@ -1,0 +1,9 @@
+module Gitlab
+  module BackgroundMigration
+    class DeduplicatePipelineIids < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      class BulkInternalId < ::ApplicationRecord
+        def self.reserve: (untyped, untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class Preparing < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_preparing"
+        def favicon: () -> "favicon_status_preparing"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

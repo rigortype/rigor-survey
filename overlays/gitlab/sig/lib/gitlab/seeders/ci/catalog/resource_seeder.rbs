@@ -1,0 +1,11 @@
+module Gitlab
+  module Seeders
+    module Ci
+      module Catalog
+        class ResourceSeeder
+          def initialize: (group_path: untyped, seed_count: untyped, publish: untyped) -> void
+        end
+      end
+    end
+  end
+end

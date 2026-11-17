@@ -1,0 +1,10 @@
+module PyCall
+  def self?.check_ismodule: (untyped) -> nil
+  def self?.check_isclass: (untyped) -> nil
+  module PyObjectWrapper
+    def coerce: (untyped) -> [PyCall::PyObjectWrapper::SwappedOperationAdapter, PyCall::PyObjectWrapper]
+    class SwappedOperationAdapter
+      def initialize: (untyped) -> void
+    end
+  end
+end

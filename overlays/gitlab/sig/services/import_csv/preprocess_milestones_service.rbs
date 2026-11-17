@@ -1,0 +1,8 @@
+module ImportCsv
+  class PreprocessMilestonesService < ::ImportCsv::BaseService
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> ServiceResponse
+    def results: () -> { success: 0, errors: nil }
+    def milestone_errors: () -> { missing: { header: {}, titles: [] } }
+  end
+end

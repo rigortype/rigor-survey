@@ -1,0 +1,17 @@
+module Gitlab
+  module ImportExport
+    class Shared
+      def initialize: (untyped) -> void
+      def active_export_count: () -> Integer
+      def export_path: () -> String
+      def archive_path: () -> String
+      def base_path: () -> String
+      def lock_files_path: () -> String
+      def add_error_message: (untyped) -> Array[untyped]
+      def after_export_in_progress?: () -> (false | true)
+      def locks_present?: () -> (false | true)
+      def errors: () -> Array[untyped]
+      def logger: () -> ::Import::Framework::Logger
+    end
+  end
+end

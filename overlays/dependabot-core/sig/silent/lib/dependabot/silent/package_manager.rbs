@@ -1,0 +1,7 @@
+module Dependabot
+  module Silent
+    class PackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped) -> void
+    end
+  end
+end

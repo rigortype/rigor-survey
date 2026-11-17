@@ -1,0 +1,5 @@
+module WorkItems
+  class ImportCsvService < ::Issuable::ImportCsv::BaseService
+    def initialize: (*untyped) -> void
+  end
+end

@@ -1,0 +1,3 @@
+class FeatureFlagStrategiesValidator < ::ActiveModel::EachValidator
+  def validate_each: (untyped, untyped, untyped) -> (Array[untyped] | false | nil)
+end

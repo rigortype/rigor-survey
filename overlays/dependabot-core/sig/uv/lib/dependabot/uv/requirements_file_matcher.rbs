@@ -1,0 +1,8 @@
+module Dependabot
+  module Uv
+    class RequiremenstFileMatcher
+      def initialize: (untyped) -> void
+      def compiled_file?: (untyped) -> (false | true)
+    end
+  end
+end

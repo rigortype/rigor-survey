@@ -1,0 +1,7 @@
+module ActiveRecord
+  module CounterCache
+    module ClassMethods
+      def reset_counters: (untyped, *untyped, ?touch: untyped) -> true
+    end
+  end
+end

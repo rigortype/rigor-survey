@@ -1,0 +1,7 @@
+module ActiveSupport
+  class ProxyLogger
+    def initialize: (untyped, ?untyped) -> void
+    def ignore: (*untyped) -> ActiveSupport::ProxyLogger
+    def close: () -> nil
+  end
+end

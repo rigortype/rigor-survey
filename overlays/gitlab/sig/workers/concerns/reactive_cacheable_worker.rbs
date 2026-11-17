@@ -1,0 +1,3 @@
+module ReactiveCacheableWorker
+  def self.context_for_arguments: (untyped) -> Gitlab::ApplicationContext
+end

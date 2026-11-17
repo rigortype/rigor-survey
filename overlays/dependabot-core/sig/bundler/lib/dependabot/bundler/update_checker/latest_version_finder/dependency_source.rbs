@@ -1,0 +1,14 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        class DependencySource
+          def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, options: untyped) -> void
+          def versions: () -> Array[Dependabot::Bundler::Version]
+          def git?: () -> (false | true)
+          def repo_contents_path: () -> (String | nil)
+        end
+      end
+    end
+  end
+end

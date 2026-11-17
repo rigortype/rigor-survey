@@ -1,0 +1,7 @@
+module SortHelper
+  def sort_init: (*untyped) -> (Array[untyped] | [[untyped, untyped]] | [[untyped]])
+  def sort_update: (untyped, ?untyped) -> String
+  def sort_clear: () -> nil
+  def sort_criteria: () -> (Redmine::SortCriteria | nil)
+  def sort_css_classes: () -> (String | nil)
+end

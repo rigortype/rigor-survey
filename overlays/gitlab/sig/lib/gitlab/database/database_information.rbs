@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    class DatabaseInformation
+      def self.execute: (?database_names: untyped) -> { databases: untyped }
+      def initialize: (?database_names: untyped) -> void
+      def execute: () -> { databases: untyped }
+    end
+  end
+end

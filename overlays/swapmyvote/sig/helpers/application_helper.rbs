@@ -1,0 +1,31 @@
+module ApplicationHelper
+  def sign_in_path: () -> "/users/sign_in"
+  def sign_up_path: () -> "/users/sign_up"
+  def logged_in?: () -> (false | true)
+  def display_login_modal: () -> ("inherit" | "none")
+  def github_url: () -> "https://github.com/swapmyvote/swapmyvote/"
+  def log_in_with_facebook?: () -> (false | true)
+  def log_in_with_twitter?: () -> (false | true)
+  def log_in_with_email?: () -> (false | true)
+  def log_in_methods: () -> String
+  def donate_info: () -> (nil | { link: "https://crowdfunder.co.uk/swapmyvote" | String, show: false | true } | { link: untyped, show: untyped })
+  def by_election_constituencies: () -> Array[untyped]
+  def by_election_constituencies_ampersand: () -> Array[untyped]
+  def by_election_constituencies_as_sentence: () -> String
+  def election_event_title_with_year: () -> String
+  def election_event_choice: () -> ("General Election" | String)
+  def election_hashtags: () -> ("#GeneralElection" | String)
+  def election_date: () -> Date
+  def default_meta_description: () -> String
+  def election_date_and_type_mdy: () -> String
+  def election_date_and_type_my: () -> String
+  def election_date_season_type: () -> String
+  def election_year: () -> String
+  def election_season: () -> (:autumn | :spring | :summer | :winter | nil)
+  def election_date_md: () -> String
+  def election_date_dm: () -> String
+  def election_constituency_other: () -> ("another constituency" | "the other constituency")
+  def election_type_override: () -> (:by | :general | nil)
+  def app_taglines: () -> [String, String]
+  def app_tagline: () -> (nil | String)
+end

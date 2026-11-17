@@ -1,0 +1,9 @@
+module Groups
+  module ImportExport
+    class ImportService
+      def initialize: (group: untyped, user: untyped, ?request_channel: Symbol) -> void
+      def shared: () -> Gitlab::ImportExport::Shared
+      def request_channel: () -> :ui
+    end
+  end
+end

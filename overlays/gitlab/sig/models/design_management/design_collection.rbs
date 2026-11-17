@@ -1,0 +1,6 @@
+module DesignManagement
+  class DesignCollection
+    def initialize: (untyped) -> void
+    def versions: () -> ActiveRecord::Relation[DesignManagement::Version]
+  end
+end

@@ -1,0 +1,5 @@
+module Resolvers
+  class BoardListIssuesResolver < ::Resolvers::BaseResolver
+    def self.complexity_multiplier: (untyped) -> Float
+  end
+end

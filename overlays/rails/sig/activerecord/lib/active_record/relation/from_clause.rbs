@@ -1,0 +1,9 @@
+module ActiveRecord
+  class Relation
+    class FromClause
+      def initialize: (untyped, untyped) -> void
+      def empty?: () -> (false | true)
+      def self.empty: () -> ActiveRecord::Relation::FromClause
+    end
+  end
+end

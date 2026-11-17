@@ -1,0 +1,7 @@
+module Sidebars
+  module Concerns
+    module RenderIfLoggedIn
+      def render?: () -> (false | true)
+    end
+  end
+end

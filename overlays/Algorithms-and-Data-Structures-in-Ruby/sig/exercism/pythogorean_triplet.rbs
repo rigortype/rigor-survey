@@ -1,0 +1,3 @@
+class PythagoreanTriplet
+  def self.triplets_with_sum: (untyped) -> Array[[Integer, untyped, untyped]]
+end

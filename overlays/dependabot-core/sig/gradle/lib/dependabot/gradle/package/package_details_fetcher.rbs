@@ -1,0 +1,37 @@
+module Dependabot
+  module Gradle
+    module Package
+      module EofRetry
+        def self.get: (url: untyped, headers: untyped) -> Excon::Response
+      end
+      module RepositoryDetailsHelpers
+        def string_key_value: (untyped, untyped) -> String
+        def auth_headers_value: (untyped) -> Hash[untyped, untyped]
+      end
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, forbidden_urls: untyped, ?cooldown_options: untyped) -> void
+        def fetch_available_versions: () -> Array[Hash[Symbol, Object] | { version: Dependabot::Gradle::Version, released_at: untyped, source_url: Hash[Symbol, Object] | { version: Dependabot::Version, source_url: Object } }]
+        def plugin_version_pom_url: (untyped, untyped) -> String
+        def build_release_with_date: (untyped, untyped) -> Dependabot::Package::PackageRelease
+        def dependency_metadata: (untyped) -> Nokogiri::XML::Document
+        def release_info_metadata: (untyped) -> Nokogiri::HTML::Document
+        def repository_urls: () -> Array[Hash[String, Object]]
+        def credentials_repository_details: () -> Array[Hash[String, untyped]]
+        def plugin_repository_details: () -> Array[untyped]
+        def distribution_repository_details: () -> [Hash[String, untyped]]
+        def matches_dependency_version_type?: (untyped) -> (false | true)
+        def pom: () -> (Dependabot::DependencyFile | nil)
+        def dependency_metadata_url: (untyped) -> String
+        def group_and_artifact_ids: () -> (Array[String] | [String, String])
+        def plugin?: () -> (false | true)
+        def kotlin_plugin?: () -> (false | true)
+        def distribution?: () -> (false | true)
+        def version_release_date_fallback_fetcher: () -> (Dependabot::Gradle::Package::VersionReleaseDateFallbackFetcher | ::VersionReleaseDateFallbackFetcher)
+        def central_repo_urls: () -> [String, String]
+        def version_class: () -> singleton(Dependabot::Version)
+        def auth_headers_finder: () -> (Dependabot::Maven::Utils::AuthHeadersFinder | nil)
+        def auth_headers: (untyped) -> Hash[String, String]
+      end
+    end
+  end
+end

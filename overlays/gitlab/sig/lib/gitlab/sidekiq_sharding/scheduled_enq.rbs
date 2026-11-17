@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqSharding
+    class ScheduledEnq < ::Sidekiq::Scheduled::Enq
+      def initialize: (Sidekiq::Config) -> void
+      class ScheduledEnqClient
+        def initialize: (untyped) -> void
+        def push: (untyped) -> String
+      end
+    end
+  end
+end

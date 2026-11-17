@@ -1,0 +1,7 @@
+module Gitlab
+  module HealthChecks
+    class Server < ::Gitlab::Daemon
+      def initialize: (address: String, port: Integer, **untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Tasks
+  module Ci
+    class BackfillCatalogBundlesTask
+      def execute: () -> nil
+    end
+  end
+end

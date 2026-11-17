@@ -1,0 +1,4 @@
+class SentNotification < ::ApplicationRecord
+  def self.reply_key: () -> String
+  def unsubscribable?: () -> (false | true)
+end

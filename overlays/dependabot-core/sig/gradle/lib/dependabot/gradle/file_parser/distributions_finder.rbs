@@ -1,0 +1,10 @@
+module Dependabot
+  module Gradle
+    class FileParser < ::Dependabot::FileParsers::Base
+      class DistributionsFinder
+        def self.resolve_dependency: (untyped) -> (Dependabot::Dependency | nil)
+        def self.load_properties: (untyped) -> [untyped, untyped]
+      end
+    end
+  end
+end

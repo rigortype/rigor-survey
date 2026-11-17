@@ -1,0 +1,7 @@
+module Todos
+  module Destroy
+    class DestroyedIssuableService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,16 @@
+module Dependabot
+  class DependencyGroup
+    def initialize: (name: untyped, rules: untyped, ?applies_to: untyped) -> void
+    def contains?: (untyped) -> (false | true)
+    def group_by_dependency_name?: () -> (false | true)
+    def to_h: () -> Hash[String, String]
+    def to_config_yaml: () -> String
+    def self.subgroup_name: (parent_name: untyped, dependency_name: untyped) -> String
+    def dependencies: () -> Array[Dependabot::Dependency]
+    def applies_to: () -> String
+    def group_by: () -> (String | nil)
+    def patterns: () -> (Array[String] | nil)
+    def exclude_patterns: () -> (Array[String] | nil)
+    def update_types: () -> (Array[String] | nil)
+  end
+end

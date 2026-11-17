@@ -1,0 +1,9 @@
+module Dependabot
+  module Pub
+    class RequirementSource
+      def initialize: (untyped) -> void
+      def type: () -> (String | nil)
+      def description_string: (untyped) -> (String | nil)
+    end
+  end
+end

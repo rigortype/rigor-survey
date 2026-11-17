@@ -1,0 +1,7 @@
+module RbNaCl
+  module SelfTest
+    def self?.vector: (untyped) -> String
+    def self?.secret_box_test: () -> (String | true)
+    def self?.sha256_test: () -> nil
+  end
+end

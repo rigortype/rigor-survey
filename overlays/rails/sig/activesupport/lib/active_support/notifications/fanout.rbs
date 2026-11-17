@@ -1,0 +1,51 @@
+module ActiveSupport
+  module Notifications
+    class InstrumentationSubscriberError < ::RuntimeError
+      def initialize: (untyped) -> void
+    end
+    class Fanout
+      def inspect: () -> String
+      def subscribe: (?untyped, ?untyped, ?monotonic: untyped, ?prepend: untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::Notifications::Fanout::Subscribers
+      def build_handle: (untyped, untyped, untyped) -> (ActiveSupport::Notifications::Fanout::Handle | singleton(ActiveSupport::Notifications::Fanout::NullHandle))
+      class Registry
+        def initialize: (?untyped, ?untyped) -> void
+        def add: (untyped, ?prepend: untyped) -> ActiveSupport::Notifications::Fanout::Registry
+        def delete: (untyped) -> ActiveSupport::Notifications::Fanout::Registry
+        def delete_pattern: (untyped) -> ActiveSupport::Notifications::Fanout::Registry
+      end
+      class BaseGroup
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+      end
+      class Handle
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+      end
+      module Subscribers
+        def self.new: (untyped, untyped, untyped) -> (ActiveSupport::Notifications::Fanout::Subscribers::EventObject | ActiveSupport::Notifications::Fanout::Subscribers::Evented | ActiveSupport::Notifications::Fanout::Subscribers::MonotonicTimed | ActiveSupport::Notifications::Fanout::Subscribers::Timed)
+        class Matcher
+          def self.wrap: (untyped) -> (ActiveSupport::Notifications::Fanout::Subscribers::Matcher | ActiveSupport::Notifications::Fanout::Subscribers::Matcher::AllMessages | String)
+          def initialize: (untyped) -> void
+          def exclusions: () -> Set[untyped]
+          class AllMessages
+            def ===: (untyped) -> true
+            def unsubscribe!: (*untyped) -> false
+          end
+        end
+        class Evented
+          def initialize: (untyped, untyped) -> void
+          def group_class: () -> singleton(ActiveSupport::Notifications::Fanout::EventedGroup)
+          def pattern: () -> (ActiveSupport::Notifications::Fanout::Subscribers::Matcher | ActiveSupport::Notifications::Fanout::Subscribers::Matcher::AllMessages | String)
+          def silenceable: () -> (false | true)
+        end
+        class Timed < ::ActiveSupport::Notifications::Fanout::Subscribers::Evented
+          def group_class: () -> singleton(ActiveSupport::Notifications::Fanout::TimedGroup)
+        end
+        class MonotonicTimed < ::ActiveSupport::Notifications::Fanout::Subscribers::Timed
+          def group_class: () -> singleton(ActiveSupport::Notifications::Fanout::MonotonicTimedGroup)
+        end
+        class EventObject < ::ActiveSupport::Notifications::Fanout::Subscribers::Evented
+          def group_class: () -> singleton(ActiveSupport::Notifications::Fanout::EventObjectGroup)
+        end
+      end
+    end
+  end
+end

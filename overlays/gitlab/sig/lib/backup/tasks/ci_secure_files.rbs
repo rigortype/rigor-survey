@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class CiSecureFiles < ::Backup::Tasks::Task
+      def self.id: () -> "ci_secure_files"
+      def destination_path: () -> "ci_secure_files.tar.gz"
+    end
+  end
+end

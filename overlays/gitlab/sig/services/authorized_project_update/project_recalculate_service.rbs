@@ -1,0 +1,6 @@
+module AuthorizedProjectUpdate
+  class ProjectRecalculateService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

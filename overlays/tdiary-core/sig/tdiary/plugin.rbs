@@ -1,0 +1,7 @@
+module TDiary
+  class Plugin
+    def self.cache_clear: () -> {}
+    def initialize: ({ conf: untyped, debug: false | true }) -> void
+    def prepare_for_reuse: (untyped) -> TDiary::Plugin
+  end
+end

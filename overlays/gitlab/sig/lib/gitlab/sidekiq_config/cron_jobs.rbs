@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqConfig
+    class CronJobs
+      def self.config: () -> Gitlab::SidekiqConfig::CronJobs
+      def self.reset!: () -> nil
+      def set_job: (untyped, untyped) -> nil
+    end
+  end
+end

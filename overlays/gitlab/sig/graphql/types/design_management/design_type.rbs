@@ -1,0 +1,7 @@
+module Types
+  module DesignManagement
+    class DesignType < ::Types::BaseObject
+      def request_cache_base_key: () -> (String | nil)
+    end
+  end
+end

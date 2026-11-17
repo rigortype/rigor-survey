@@ -1,0 +1,12 @@
+class Node
+  def initialize: (untyped) -> void
+end
+
+class SinglyLinkedList
+  def insert_tail: (untyped) -> Node
+  def insert_head: (untyped) -> Node
+  def each: () -> nil
+  def print_list: () -> nil
+  def delete_tail: () -> nil
+  def empty?: () -> (false | true)
+end

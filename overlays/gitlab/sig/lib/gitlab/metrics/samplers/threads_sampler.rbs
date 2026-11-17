@@ -1,0 +1,9 @@
+module Gitlab
+  module Metrics
+    module Samplers
+      class ThreadsSampler < ::Gitlab::Metrics::Samplers::BaseSampler
+        def metrics: () -> (Hash[:max_expected_threads | :running_threads, untyped] | Hash[untyped, untyped])
+      end
+    end
+  end
+end

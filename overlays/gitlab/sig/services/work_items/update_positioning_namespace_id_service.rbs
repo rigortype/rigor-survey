@@ -1,0 +1,5 @@
+module WorkItems
+  class UpdatePositioningNamespaceIdService
+    def initialize: (untyped) -> void
+  end
+end

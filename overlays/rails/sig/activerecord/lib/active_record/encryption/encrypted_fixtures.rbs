@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    module EncryptedFixtures
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

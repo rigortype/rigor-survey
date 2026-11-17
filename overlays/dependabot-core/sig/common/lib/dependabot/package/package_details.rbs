@@ -1,0 +1,8 @@
+module Dependabot
+  module Package
+    class PackageDetails
+      def initialize: (dependency: untyped, ?releases: untyped, ?dist_tags: untyped) -> void
+      def releases: () -> Array[Dependabot::Package::PackageRelease]
+    end
+  end
+end

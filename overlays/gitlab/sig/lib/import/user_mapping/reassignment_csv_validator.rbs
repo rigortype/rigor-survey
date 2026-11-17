@@ -1,0 +1,10 @@
+module Import
+  module UserMapping
+    class ReassignmentCsvValidator
+      def initialize: (untyped) -> void
+      def formatted_errors: () -> (String | nil)
+      def csv_data: () -> Array[Array[String | nil]]
+      def errors: () -> Array[untyped]
+    end
+  end
+end

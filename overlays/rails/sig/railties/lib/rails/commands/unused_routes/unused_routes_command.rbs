@@ -1,0 +1,10 @@
+module Rails
+  module Command
+    class UnusedRoutesCommand < ::Rails::Command::Base
+      def perform: (*untyped) -> nil
+      class RouteInfo
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

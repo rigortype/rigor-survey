@@ -1,0 +1,4 @@
+module RendersCommits
+  def limited_commits: (untyped, untyped) -> ([untyped, 0] | [untyped, untyped])
+  def valid_ref?: (untyped) -> (false | true)
+end

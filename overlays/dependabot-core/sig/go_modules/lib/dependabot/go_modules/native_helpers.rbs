@@ -1,0 +1,9 @@
+module Dependabot
+  module GoModules
+    module NativeHelpers
+      def self.helper_path: () -> String
+      def self.native_helpers_root: () -> String
+      def self.clean_path: (untyped) -> String
+    end
+  end
+end

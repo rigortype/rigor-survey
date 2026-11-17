@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class YamlProcessor
+      class Result
+        def initialize: (?ci_config: untyped, ?errors: untyped, ?warnings: untyped, ?timed_out: untyped) -> void
+        def any_includes_fully_filtered_by_rules?: () -> (false | true)
+        def uses_input_rules?: () -> (false | true)
+        def clear_jobs!: () -> {}
+      end
+    end
+  end
+end

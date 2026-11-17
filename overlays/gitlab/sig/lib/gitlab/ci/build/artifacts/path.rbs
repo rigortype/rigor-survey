@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Artifacts
+        class Path
+          def initialize: (String) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Liquid
+  class BlockBody
+    def self.unknown_tag_in_liquid_tag: (untyped, untyped) -> bot
+    def self.raise_missing_tag_terminator: (untyped, untyped) -> bot
+    def self.raise_missing_variable_terminator: (untyped, untyped) -> bot
+    def remove_blank_strings: () -> (Array[untyped] | nil)
+    def render: (untyped) -> String
+    def nodelist: () -> Array[untyped]
+  end
+end

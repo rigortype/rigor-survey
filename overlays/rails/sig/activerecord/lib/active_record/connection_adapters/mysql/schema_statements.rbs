@@ -1,0 +1,14 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module MySQL
+      module SchemaStatements
+        def create_index_definition: (untyped, untyped, untyped, untyped, **untyped) -> ActiveRecord::ConnectionAdapters::MySQL::IndexDefinition
+        def add_index_options: (untyped, untyped, ?name: untyped, ?if_not_exists: untyped, ?internal: untyped, **untyped) -> [untyped, untyped, untyped]
+        def update_table_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::MySQL::Table
+        def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::MySQL::SchemaDumper
+        def table_alias_length: () -> 256
+        def schema_creation: () -> ActiveRecord::ConnectionAdapters::MySQL::SchemaCreation
+      end
+    end
+  end
+end

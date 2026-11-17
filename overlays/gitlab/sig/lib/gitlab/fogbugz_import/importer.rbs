@@ -1,0 +1,9 @@
+module Gitlab
+  module FogbugzImport
+    class Importer
+      def initialize: (untyped) -> void
+      def execute: () -> true
+      def repo: () -> Gitlab::FogbugzImport::Repository
+    end
+  end
+end

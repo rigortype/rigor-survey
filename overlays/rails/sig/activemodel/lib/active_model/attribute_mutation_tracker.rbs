@@ -1,0 +1,17 @@
+module ActiveModel
+  class AttributeMutationTracker
+    def initialize: (untyped) -> void
+  end
+  class ForcedMutationTracker < ::ActiveModel::AttributeMutationTracker
+    def initialize: (untyped) -> void
+    def changed_in_place?: (untyped) -> false
+  end
+  class NullMutationTracker
+    def changed_attribute_names: () -> []
+    def changed_values: () -> {}
+    def changes: () -> {}
+    def any_changes?: () -> false
+    def changed?: (untyped, **untyped) -> false
+    def changed_in_place?: (untyped) -> false
+  end
+end

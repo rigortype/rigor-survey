@@ -1,0 +1,13 @@
+module Dependabot
+  module NpmAndYarn
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PnpmTransitiveUpdate
+        def initialize: (dependency: untyped, latest_allowable_version: untyped) -> void
+        def run: () -> String
+        def resolved_without_pin: () -> true
+        def changed_within?: (untyped, untyped, untyped) -> (false | true)
+        def pin_dropped: () -> (false | true)
+      end
+    end
+  end
+end

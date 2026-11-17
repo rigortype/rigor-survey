@@ -1,0 +1,11 @@
+module Import
+  module Offline
+    module Groups
+      module Pipelines
+        class SubgroupEntitiesPipeline
+          def extract: (untyped) -> ::BulkImports::Pipeline::ExtractedData
+        end
+      end
+    end
+  end
+end

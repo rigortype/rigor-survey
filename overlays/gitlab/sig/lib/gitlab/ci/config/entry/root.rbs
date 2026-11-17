@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Root < ::Gitlab::Config::Entry::Node
+          def initialize: (Integer, **untyped) -> void
+        end
+      end
+    end
+  end
+end

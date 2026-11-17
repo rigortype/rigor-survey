@@ -1,0 +1,16 @@
+module Import
+  module Sync
+    module Repositories
+      class ApplicationLease
+        def self.key: (untyped) -> String
+        def initialize: (untyped, ?retries: untyped, ?sleep_sec: untyped) -> void
+        class Context
+          def initialize: (untyped, untyped) -> void
+          def verify!: () -> true
+          def verify_repository!: (untyped) -> true
+          def renew!: () -> true
+        end
+      end
+    end
+  end
+end

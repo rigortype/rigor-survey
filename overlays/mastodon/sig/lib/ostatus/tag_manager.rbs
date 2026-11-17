@@ -1,0 +1,6 @@
+module OStatus
+  class TagManager
+    def unique_tag: (untyped, untyped, untyped) -> String
+    def unique_tag_to_local_id: (untyped, untyped) -> (String | nil)
+  end
+end

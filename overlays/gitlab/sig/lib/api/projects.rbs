@@ -1,0 +1,7 @@
+module API
+  class Projects < ::API::Base
+    def immediately_delete_project_error: (untyped) -> ("Project must be marked for deletion first." | "`full_path` is incorrect. You must enter the complete path for the project." | nil)
+    def project_delete_rate_limit_key: () -> (:project_delete_api | :project_permanent_delete_api)
+    def stash_import_request_channel: (untyped) -> (:api | :congregate | nil)
+  end
+end

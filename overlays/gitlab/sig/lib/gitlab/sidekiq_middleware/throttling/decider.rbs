@@ -1,0 +1,18 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      class Decider
+        def initialize: (untyped) -> void
+        def execute: () -> Gitlab::SidekiqMiddleware::Throttling::Decider::Decision
+        class Decision < ::Struct[untyped]
+          def needs_throttle: () -> untyped
+          def strategy: () -> untyped
+          def needs_throttle=: (untyped) -> untyped
+          def strategy=: (untyped) -> untyped
+          def self.new: (?needs_throttle: untyped, ?strategy: untyped) -> instance | (?untyped needs_throttle, ?untyped strategy) -> instance
+          def self.[]: (?needs_throttle: untyped, ?strategy: untyped) -> instance | (?untyped needs_throttle, ?untyped strategy) -> instance
+        end
+      end
+    end
+  end
+end

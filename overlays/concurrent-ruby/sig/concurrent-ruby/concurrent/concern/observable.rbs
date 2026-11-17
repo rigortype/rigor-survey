@@ -1,0 +1,8 @@
+module Concurrent
+  module Concern
+    module Observable
+      def with_observer: (?untyped, ?untyped) ?{ (*untyped) -> untyped } -> Concurrent::Concern::Observable
+      def delete_observers: () -> Concurrent::Concern::Observable
+    end
+  end
+end

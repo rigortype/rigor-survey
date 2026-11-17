@@ -1,0 +1,8 @@
+module Hamlit
+  module HamlHelpers
+    module XssMods
+      def self.included: (untyped) -> Array[String]
+      def haml_concat_with_haml_xss: (?untyped) -> Hamlit::HamlHelpers::ErrorReturn
+    end
+  end
+end

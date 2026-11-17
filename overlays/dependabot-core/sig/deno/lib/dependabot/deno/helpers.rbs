@@ -1,0 +1,9 @@
+module Dependabot
+  module Deno
+    module Helpers
+      def self.parse_json_or_jsonc: (untyped) -> Hash[String, untyped]
+      def self.safe_relative_path?: (untyped) -> (false | true)
+      def self.run_deno_command: (*untyped, dir: untyped) -> String
+    end
+  end
+end

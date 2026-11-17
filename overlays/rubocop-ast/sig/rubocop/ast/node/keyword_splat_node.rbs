@@ -1,0 +1,11 @@
+module RuboCop
+  module AST
+    class KeywordSplatNode < ::RuboCop::AST::Node
+      def hash_rocket?: () -> false
+      def colon?: () -> false
+      def operator: () -> "**"
+      def node_parts: () -> [RuboCop::AST::KeywordSplatNode, RuboCop::AST::KeywordSplatNode]
+      def kwsplat_type?: () -> true
+    end
+  end
+end

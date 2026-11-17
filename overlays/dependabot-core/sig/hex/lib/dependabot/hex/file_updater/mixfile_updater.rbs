@@ -1,0 +1,10 @@
+module Dependabot
+  module Hex
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class MixfileUpdater
+        def initialize: (mixfile: untyped, dependencies: untyped) -> void
+        def updated_mixfile_content: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Changelog
+    class Config
+      def self.from_git: (untyped, ?untyped, ?untyped, ?untyped) -> Gitlab::Changelog::Config
+      def self.from_hash: (untyped, untyped, ?untyped) -> Gitlab::Changelog::Config
+      def initialize: (untyped) -> void
+    end
+  end
+end

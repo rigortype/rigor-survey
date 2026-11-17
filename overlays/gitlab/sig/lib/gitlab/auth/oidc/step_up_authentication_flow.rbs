@@ -1,0 +1,12 @@
+module Gitlab
+  module Auth
+    module Oidc
+      class StepUpAuthenticationFlow
+        def initialize: (session: untyped, provider: untyped, scope: untyped) -> void
+        def request!: () -> "requested"
+        def fail!: () -> "failed"
+        def expire!: () -> "expired"
+      end
+    end
+  end
+end

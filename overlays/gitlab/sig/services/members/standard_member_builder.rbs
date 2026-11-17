@@ -1,0 +1,5 @@
+module Members
+  class StandardMemberBuilder
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

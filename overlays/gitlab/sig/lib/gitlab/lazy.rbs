@@ -1,0 +1,5 @@
+module Gitlab
+  class Lazy < ::BasicObject
+    def initialize: () ?{ (*untyped) -> untyped } -> void
+  end
+end

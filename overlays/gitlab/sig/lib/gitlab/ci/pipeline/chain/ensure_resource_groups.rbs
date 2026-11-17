@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        class EnsureResourceGroups < ::Gitlab::Ci::Pipeline::Chain::Base
+          def break?: () -> false
+        end
+      end
+    end
+  end
+end

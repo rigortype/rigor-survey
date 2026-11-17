@@ -1,0 +1,9 @@
+module Dependabot
+  module Bazel
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def bcr_suffix: () -> (Integer | nil)
+    end
+  end
+end

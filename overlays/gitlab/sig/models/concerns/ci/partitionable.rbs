@@ -1,0 +1,5 @@
+module Ci
+  module Partitionable
+    def id_and_partition_pair: () -> [[untyped, untyped]]
+  end
+end

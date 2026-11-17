@@ -1,0 +1,12 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionResolver
+        def initialize: (dependency: untyped, unprepared_dependency_files: untyped, credentials: untyped, ignored_versions: untyped, options: untyped, ?repo_contents_path: untyped, ?raise_on_ignored: untyped, ?replacement_git_pin: untyped, ?remove_git_source: untyped, ?unlock_requirement: untyped, ?latest_allowable_version: untyped, ?cooldown_options: untyped) -> void
+        def latest_resolvable_version_details: () -> (::VersionDetails | nil)
+        def latest_allowable_version_incompatible_with_ruby?: () -> (false | true)
+        def dependency_files: () -> Array[Dependabot::DependencyFile]
+      end
+    end
+  end
+end

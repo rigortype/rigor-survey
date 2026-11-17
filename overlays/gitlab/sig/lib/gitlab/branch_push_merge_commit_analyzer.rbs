@@ -1,0 +1,7 @@
+module Gitlab
+  class BranchPushMergeCommitAnalyzer
+    def initialize: (untyped, ?relevant_commit_ids: [untyped]) -> void
+    class CommitDecorator < ::SimpleDelegator
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module WorkItems
+  module DataSync
+    module Widgets
+      class Base < ::WorkItems::Callbacks::Base
+        def initialize: (work_item: untyped, target_work_item: untyped, current_user: untyped, ?params: untyped) -> void
+        def raise_error!: (untyped) -> bot
+      end
+    end
+  end
+end

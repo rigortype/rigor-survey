@@ -1,0 +1,13 @@
+module Gitlab
+  module Kubernetes
+    module Kubeconfig
+      class Template
+        def to_h: () -> Hash[untyped, untyped]
+        def to_yaml: () -> String
+        def clusters: () -> Array[untyped]
+        def users: () -> Array[untyped]
+        def contexts: () -> Array[untyped]
+      end
+    end
+  end
+end

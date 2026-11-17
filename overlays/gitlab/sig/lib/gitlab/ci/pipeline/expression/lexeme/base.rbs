@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Base
+            def name: () -> ::String
+            def self.build: (untyped) -> bot
+            def self.scan: (untyped) -> (Gitlab::Ci::Pipeline::Expression::Token | nil)
+          end
+        end
+      end
+    end
+  end
+end

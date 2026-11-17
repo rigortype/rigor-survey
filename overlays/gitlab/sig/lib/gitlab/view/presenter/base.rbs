@@ -1,0 +1,10 @@
+module Gitlab
+  module View
+    module Presenter
+      module Base
+        def present: (**untyped) -> Gitlab::View::Presenter::Base
+        def url_builder: () -> Gitlab::UrlBuilder
+      end
+    end
+  end
+end

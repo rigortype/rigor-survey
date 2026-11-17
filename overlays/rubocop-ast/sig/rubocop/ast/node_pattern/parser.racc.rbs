@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Parser < ::Racc::Parser
+        def _reduce_44: (untyped, untyped) -> [[]]
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Spree
+  module Emails
+    module Samples
+      class PaymentLink < ::Spree::Emails::Samples::Order
+        def variables: () -> { order: untyped, payment_url: String }
+      end
+    end
+  end
+end

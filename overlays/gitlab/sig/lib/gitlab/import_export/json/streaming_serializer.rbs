@@ -1,0 +1,12 @@
+module Gitlab
+  module ImportExport
+    module Json
+      class StreamingSerializer
+        def initialize: (untyped, untyped, untyped, current_user: untyped, exportable_path: untyped, ?excluded_relations: untyped, ?logger: untyped, ?offline_export_id: untyped) -> void
+        def exported_objects_count: () -> (0 | Integer)
+        class Raw < ::String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Namespaces
+  module Traversal
+    module Recursive
+      def object_hierarchy: (untyped) -> Gitlab::ObjectHierarchy
+    end
+  end
+end

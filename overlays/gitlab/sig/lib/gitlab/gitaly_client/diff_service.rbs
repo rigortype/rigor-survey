@@ -1,0 +1,9 @@
+module Gitlab
+  module GitalyClient
+    class DiffService
+      def initialize: (untyped) -> void
+      def diff_blobs: (untyped, ?diff_mode: untyped, ?whitespace_changes: untyped, ?patch_bytes_limit: untyped) -> Gitlab::GitalyClient::DiffBlobsStitcher
+      def diff_blobs_with_raw_info: (untyped, ?diff_mode: untyped, ?whitespace_changes: untyped, ?patch_bytes_limit: untyped) -> Gitlab::GitalyClient::DiffBlobsStitcher
+    end
+  end
+end

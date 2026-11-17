@@ -1,0 +1,7 @@
+module Database
+  module BatchedBackgroundMigration
+    class CiDatabaseWorker
+      def execution_worker_class: () -> singleton(Database::BatchedBackgroundMigration::CiExecutionWorker)
+    end
+  end
+end

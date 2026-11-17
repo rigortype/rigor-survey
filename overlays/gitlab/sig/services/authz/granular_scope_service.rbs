@@ -1,0 +1,6 @@
+module Authz
+  class GranularScopeService
+    def initialize: (untyped) -> void
+    def add_granular_scopes: ([untyped, untyped]) -> ServiceResponse
+  end
+end

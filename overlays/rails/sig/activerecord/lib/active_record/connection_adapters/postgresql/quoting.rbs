@@ -1,0 +1,17 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module Quoting
+        def check_int_in_range: (untyped) -> nil
+        def quoted_binary: (untyped) -> String
+        module ClassMethods
+          def column_name_matcher: () -> Regexp
+          def column_name_with_order_matcher: () -> Regexp
+        end
+        class IntegerOutOf64BitRange < ::StandardError
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

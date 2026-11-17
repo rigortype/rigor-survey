@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class User
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::User
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::User
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

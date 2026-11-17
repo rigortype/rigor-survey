@@ -1,0 +1,7 @@
+module Concurrent
+  module Actor
+    class Envelope
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Net
+  module SSH
+    def self.connect_directly: (untyped, untyped, untyped) -> Net::SSH::Connection::Session
+    def self.assign_defaults: (untyped) -> Array[Symbol]
+    def self.reject_nil_options: (untyped) -> nil
+  end
+end

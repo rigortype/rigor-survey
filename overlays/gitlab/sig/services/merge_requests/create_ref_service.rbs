@@ -1,0 +1,6 @@
+module MergeRequests
+  class CreateRefService
+    def initialize: (current_user: untyped, merge_request: untyped, target_ref: untyped, first_parent_ref: untyped, ?source_sha: untyped, ?merge_params: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

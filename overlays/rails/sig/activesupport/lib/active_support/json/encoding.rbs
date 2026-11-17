@@ -1,0 +1,12 @@
+module ActiveSupport
+  module JSON
+    module Encoding
+      class JSONGemEncoder
+        def initialize: (?untyped) -> void
+      end
+      class JSONGemCoderEncoder
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

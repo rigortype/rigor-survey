@@ -1,0 +1,5 @@
+module BulkImports
+  class EntitiesFinder
+    def initialize: (user: untyped, ?bulk_import: untyped, ?params: ({ sort: untyped } | { status: String })) -> void
+  end
+end

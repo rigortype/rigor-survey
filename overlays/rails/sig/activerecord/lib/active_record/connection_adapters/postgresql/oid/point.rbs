@@ -1,0 +1,10 @@
+module ActiveRecord
+  class Point < ::Struct[untyped]
+    def x: () -> untyped
+    def y: () -> untyped
+    def x=: (untyped) -> untyped
+    def y=: (untyped) -> untyped
+    def self.new: (?x: untyped, ?y: untyped) -> instance | (?untyped x, ?untyped y) -> instance
+    def self.[]: (?x: untyped, ?y: untyped) -> instance | (?untyped x, ?untyped y) -> instance
+  end
+end

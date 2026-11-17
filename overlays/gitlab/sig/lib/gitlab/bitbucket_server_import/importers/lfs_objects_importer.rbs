@@ -1,0 +1,10 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      class LfsObjectsImporter
+        def sidekiq_worker_class: () -> singleton(Gitlab::BitbucketServerImport::ImportLfsObjectWorker)
+        def collection_method: () -> :lfs_objects
+      end
+    end
+  end
+end

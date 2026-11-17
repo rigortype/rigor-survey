@@ -1,0 +1,7 @@
+module Resolvers
+  module MergeRequests
+    class ConflictStatusResolver < ::Resolvers::BaseResolver
+      def resolve: () -> (:branch_missing | :has_conflicts | :no_conflicts | :no_push_access | :unchecked)
+    end
+  end
+end

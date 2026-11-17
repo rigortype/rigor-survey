@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventCrossDatabaseModification < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.requires_tracking?: (untyped) -> (false | true)
+        def self.analyze: (untyped) -> nil
+        def self.transaction_begin?: (untyped) -> (false | true)
+        def self.transaction_end?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

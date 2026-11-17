@@ -1,0 +1,7 @@
+module Gitlab
+  class PrometheusClient
+    def initialize: (untyped, ?untyped) -> void
+    def health_url: () -> String
+    def ready_url: () -> String
+  end
+end

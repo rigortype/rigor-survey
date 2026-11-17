@@ -1,0 +1,6 @@
+module BranchRules
+  class BaseService
+    def initialize: (untyped, ?user: untyped, ?params: untyped) -> void
+    def execute: (?skip_authorization: untyped) -> ServiceResponse
+  end
+end

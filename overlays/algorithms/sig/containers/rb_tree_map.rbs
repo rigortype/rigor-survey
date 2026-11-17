@@ -1,0 +1,16 @@
+module Containers
+  class RubyRBTreeMap
+    def has_key?: (Integer) -> (false | true)
+    def empty?: () -> (false | true)
+    class Node
+      def initialize: (untyped, untyped) -> void
+      def colorflip: () -> (:black | :red)
+      def update_size: () -> Containers::RubyRBTreeMap::Node
+      def rotate_left: () -> Containers::RubyRBTreeMap::Node
+      def rotate_right: () -> Containers::RubyRBTreeMap::Node
+      def move_red_left: () -> Containers::RubyRBTreeMap::Node
+      def move_red_right: () -> Containers::RubyRBTreeMap::Node
+      def fixup: () -> Containers::RubyRBTreeMap::Node
+    end
+  end
+end

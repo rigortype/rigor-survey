@@ -1,0 +1,24 @@
+module Dependabot
+  class PullRequest
+    def self.create_from_job_definition: (untyped) -> Array[::PullRequest]
+    def self.create_from_updated_dependencies: (untyped) -> Dependabot::PullRequest
+    def initialize: (untyped, ?pr_number: untyped) -> void
+    def ==: (untyped) -> (false | true)
+    def contains_dependency?: (untyped, untyped, untyped) -> (false | true)
+    def using_directory?: () -> (false | true)
+    def self.from_job_value: (untyped) -> Dependabot::PullRequest
+    def self.dependency_array: (untyped) -> Array[Dependabot::PullRequest::Dependency]
+    def self.string_hash: (untyped, untyped) -> Hash[untyped, Object]
+    def self.optional_integer: (untyped, untyped) -> (Integer | nil)
+    class Dependency
+      def initialize: (name: untyped, version: untyped, ?removed: untyped, ?directory: untyped) -> void
+      def self.from_hash: (untyped) -> Dependabot::PullRequest::Dependency
+      def to_h: () -> Hash[Symbol, String | false | true]
+      def removed?: () -> (false | true)
+      def ==: (untyped) -> (false | true)
+      def self.required_string: (untyped, untyped) -> String
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      def directory: () -> (String | nil)
+    end
+  end
+end

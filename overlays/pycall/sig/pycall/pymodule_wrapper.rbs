@@ -1,0 +1,6 @@
+module PyCall
+  class WrapperModuleCache < ::PyCall::WrapperObjectCache
+    def check_wrapper_object: (untyped) -> nil
+    def self.instance: () -> PyCall::WrapperModuleCache
+  end
+end

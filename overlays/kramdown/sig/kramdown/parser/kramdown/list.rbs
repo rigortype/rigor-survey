@@ -1,0 +1,9 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def parse_first_list_line: (untyped, untyped) -> Array[untyped]
+      def parse_list: () -> true
+      def parse_definition_list: () -> (false | true)
+    end
+  end
+end

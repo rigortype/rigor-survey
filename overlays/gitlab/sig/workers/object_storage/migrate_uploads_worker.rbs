@@ -1,0 +1,15 @@
+module ObjectStorage
+  class MigrateUploadsWorker
+    class MigrationResult
+      def initialize: (untyped, ?untyped) -> void
+      def success?: () -> (false | true)
+    end
+    module Report
+      def report!: (untyped) -> nil
+      def header: (untyped, untyped) -> String
+      class MigrationFailures < ::StandardError
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

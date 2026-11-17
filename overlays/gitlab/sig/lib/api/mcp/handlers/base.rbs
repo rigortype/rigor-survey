@@ -1,0 +1,10 @@
+module API
+  module Mcp
+    module Handlers
+      class Base
+        def initialize: (untyped, untyped, untyped, ?client_info: untyped) -> void
+        def invoke: () -> bot
+      end
+    end
+  end
+end

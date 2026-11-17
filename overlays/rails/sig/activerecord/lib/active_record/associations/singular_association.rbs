@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Associations
+    class SingularAssociation < ::ActiveRecord::Associations::Association
+      def reset: () -> nil
+      def writer: (untyped) -> bot
+    end
+  end
+end

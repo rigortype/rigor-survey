@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class JwtV2 < ::Gitlab::Ci::Jwt
+      class ClaimMapper
+        class Repository
+          def initialize: (untyped) -> void
+          def to_h: () -> { ci_config_ref_uri: untyped, ci_config_sha: untyped }
+        end
+      end
+    end
+  end
+end

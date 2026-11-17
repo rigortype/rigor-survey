@@ -1,0 +1,9 @@
+module Gitlab
+  module Checks
+    class ContainerMoved < ::Gitlab::Checks::PostPushMessage
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def message: () -> String
+      def self.message_key: (untyped, untyped) -> String
+    end
+  end
+end

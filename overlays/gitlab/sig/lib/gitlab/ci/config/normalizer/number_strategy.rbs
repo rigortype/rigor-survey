@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      class Normalizer
+        class NumberStrategy
+          def self.applies_to?: (untyped) -> (false | true)
+          def self.build_from: (untyped, untyped) -> Array[Gitlab::Ci::Config::Normalizer::NumberStrategy]
+          def initialize: (untyped, untyped, untyped) -> void
+          def attributes: () -> { name: String, instance: untyped, parallel: { total: untyped } }
+          def name: () -> String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,26 @@
+module Mail
+  class Message
+    def initialize: (*untyped) ?{ (*untyped) -> untyped } -> void
+    def deliver: () -> Mail::Message
+    def reply: (*untyped) ?{ (*untyped) -> untyped } -> Mail::Message
+    def set_envelope: (untyped) -> (Mail::Envelope | nil)
+    def header=: (untyped) -> Mail::Header
+    def smtp_envelope_to=: (String | nil) -> (Array[untyped] | NilClass | [untyped])
+    def destinations: () -> Array[untyped]
+    def from_addrs: () -> ([untyped] | [])
+    def to_addrs: () -> ([untyped] | [])
+    def cc_addrs: () -> ([untyped] | [])
+    def bcc_addrs: () -> ([untyped] | [])
+    def has_content_type?: () -> (false | true)
+    def has_charset?: () -> (false | true)
+    def add_content_type: () -> "text/plain"
+    def has_attachments?: () -> (false | true)
+    def without_attachments!: () -> Mail::Message
+    def self.from_yaml: (untyped) -> Mail::Message
+    def self.from_hash: (untyped) -> Mail::Message
+    def inspect: () -> String
+    def inspect_structure: () -> String
+    def attachment?: () -> (false | true)
+    def skip_deletion: () -> false
+  end
+end

@@ -1,0 +1,5 @@
+class BroadcastMailer < ::ApplicationMailer
+  def announce: () -> void
+  def form_url: () -> ActiveSupport::SafeBuffer
+  def login_url: (**String?) -> ActiveSupport::SafeBuffer
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class Deploy < ::Gitlab::CycleAnalytics::Summary::Base
+        def identifier: () -> :deploys
+        def value: () -> Gitlab::CycleAnalytics::Summary::Value::PrettyNumeric
+      end
+    end
+  end
+end

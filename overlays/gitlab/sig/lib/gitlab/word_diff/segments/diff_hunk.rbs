@@ -1,0 +1,9 @@
+module Gitlab
+  module WordDiff
+    module Segments
+      class DiffHunk
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

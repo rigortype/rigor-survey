@@ -1,0 +1,4 @@
+class Array[unchecked out E]
+  def to_sentence: (?Hash[untyped, untyped]) -> String
+  def to_fs: (?Symbol) -> String
+end

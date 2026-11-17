@@ -1,0 +1,16 @@
+module Atlassian
+  module JiraConnect
+    module Serializers
+      class CommitEntity < ::Atlassian::JiraConnect::Serializers::BaseEntity
+        class CommitAuthor < ::Struct[untyped]
+          def name: () -> untyped
+          def email: () -> untyped
+          def name=: (untyped) -> untyped
+          def email=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?email: untyped) -> instance | (?untyped name, ?untyped email) -> instance
+          def self.[]: (?name: untyped, ?email: untyped) -> instance | (?untyped name, ?untyped email) -> instance
+        end
+      end
+    end
+  end
+end

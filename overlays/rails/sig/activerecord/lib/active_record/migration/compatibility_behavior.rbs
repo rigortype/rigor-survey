@@ -1,0 +1,7 @@
+module ActiveRecord
+  class Migration
+    class CompatibilityBehavior
+      def initialize: (untyped) -> void
+    end
+  end
+end

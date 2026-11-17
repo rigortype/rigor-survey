@@ -1,0 +1,3 @@
+class X509Certificate < ::ApplicationRecord
+  def all_emails: () -> Array[untyped]
+end

@@ -1,0 +1,8 @@
+module JSONWebToken
+  class UserProjectTokenClaims
+    def initialize: (project: untyped, user: untyped) -> void
+    def generate: () -> Hash[untyped, untyped]
+    def project_claims: (?key_prefix: untyped) -> Hash[Symbol, untyped]
+    def user_claims: () -> { user_id: untyped, user_login: untyped, user_email: untyped, user_access_level: untyped }
+  end
+end

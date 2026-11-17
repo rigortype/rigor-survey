@@ -1,0 +1,3 @@
+module StaticObjectExternalStorage
+  def external_storage_request?: () -> (false | true)
+end

@@ -1,0 +1,7 @@
+module ActiveSupport
+  class FileUpdateChecker
+    def initialize: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> void
+    def updated?: () -> (false | true)
+    def execute_if_updated: () -> (false | true)
+  end
+end

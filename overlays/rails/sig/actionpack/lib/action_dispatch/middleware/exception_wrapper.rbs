@@ -1,0 +1,15 @@
+module ActionDispatch
+  class ExceptionWrapper
+    def initialize: (untyped, untyped) -> void
+    def routing_error?: () -> (false | true)
+    def template_error?: () -> (false | true)
+    def has_corrections?: () -> (false | true)
+    def traces: () -> Hash[String, Array[untyped]]
+    def trace_to_show: () -> ("Application Trace" | "Full Trace")
+    def exception_inspect: () -> String
+    def exception_id: () -> Integer
+    class SourceMapLocation
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Hamlit
+  module ObjectRef
+    def self.parse: (untyped) -> (Hash[String, String] | {})
+  end
+end

@@ -1,0 +1,7 @@
+module BlobViewer
+  class Graph < ::BlobViewer::Base
+    def self.can_render?: (untyped, ?verify_binary: untyped) -> (false | true)
+    def self.graph_format: (untyped) -> ("d2" | "graphviz" | "mermaid" | "nomnoml" | "plantuml" | "vega" | "vegalite" | nil)
+    def banzai_render_context: () -> Hash[untyped, untyped]
+  end
+end

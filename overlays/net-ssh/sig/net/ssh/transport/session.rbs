@@ -1,0 +1,15 @@
+module Net
+  module SSH
+    module Transport
+      class Session
+        def initialize: (untyped, ?untyped) -> void
+        def service_request: (untyped) -> Net::SSH::Buffer
+        def peer: () -> { ip: untyped, port: untyped, host: untyped, canonized: untyped }
+        def push: (untyped) -> Array[untyped]
+        def server_version: () -> Net::SSH::Transport::ServerVersion
+        def algorithms: () -> Net::SSH::Transport::Algorithms
+        def queue: () -> Array[untyped]
+      end
+    end
+  end
+end

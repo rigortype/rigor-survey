@@ -1,0 +1,3 @@
+module CheckInitialSetup
+  def in_initial_setup_state?: () -> (false | true)
+end

@@ -1,0 +1,8 @@
+module ActiveModel
+  module Type
+    class Decimal < ::ActiveModel::Type::Value
+      def type: () -> :decimal
+      def type_cast_for_schema: (untyped) -> ::String
+    end
+  end
+end

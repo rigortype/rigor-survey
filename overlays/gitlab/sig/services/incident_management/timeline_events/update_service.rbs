@@ -1,0 +1,9 @@
+module IncidentManagement
+  module TimelineEvents
+    class UpdateService < ::IncidentManagement::TimelineEvents::BaseService
+      def initialize: (untyped, untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+      def validation_context: () -> :user_input
+    end
+  end
+end

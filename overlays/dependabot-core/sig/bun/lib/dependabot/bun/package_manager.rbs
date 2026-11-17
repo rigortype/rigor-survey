@@ -1,0 +1,14 @@
+module Dependabot
+  module Bun
+    class PackageManagerHelper
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def package_manager: () -> ::Ecosystem::VersionManager
+      def language: () -> (Dependabot::Bun::Language | ::Ecosystem::VersionManager)
+      def language_requirement: () -> (::Requirement | nil)
+      def find_engine_constraints_as_requirement: (untyped) -> (Dependabot::Bun::Requirement | nil)
+      def detect_version: (untyped) -> (String | nil)
+      def package_manager_by_name: (untyped) -> Dependabot::Bun::BunPackageManager
+      def installed_version: () -> (String | nil)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module ImportExport
+    class PruneExpiredExportJobsService
+      def self.uploads_for_expired_jobs: (untyped) -> ActiveRecord::Relation[Upload]
+    end
+  end
+end

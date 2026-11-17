@@ -1,0 +1,5 @@
+module Environments
+  class AutoStopCronWorker
+    def perform: () -> (false | true)
+  end
+end

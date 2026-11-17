@@ -1,0 +1,5 @@
+module ContainerRegistry
+  module MetadataMap
+    def self.sanitize: (untyped) -> Hash[untyped, untyped]
+  end
+end

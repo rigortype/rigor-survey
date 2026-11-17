@@ -1,0 +1,5 @@
+module MergeRequests
+  class ResolveTodosService
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module PagesCore
+  class ArchiveFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

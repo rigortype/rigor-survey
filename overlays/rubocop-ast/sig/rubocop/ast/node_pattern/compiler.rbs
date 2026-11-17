@@ -1,0 +1,12 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Compiler
+        def positional_parameter: (untyped) -> String
+        def parser: () -> RuboCop::AST::NodePattern::Parser
+        def next_capture: () -> String
+        def binding: () -> RuboCop::AST::NodePattern::Compiler::Binding
+      end
+    end
+  end
+end

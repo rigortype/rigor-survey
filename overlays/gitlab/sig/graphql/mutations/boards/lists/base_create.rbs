@@ -1,0 +1,9 @@
+module Mutations
+  module Boards
+    module Lists
+      class BaseCreate < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> { list: untyped, errors: untyped }
+      end
+    end
+  end
+end

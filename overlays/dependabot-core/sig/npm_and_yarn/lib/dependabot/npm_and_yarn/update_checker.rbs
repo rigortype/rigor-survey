@@ -1,0 +1,11 @@
+module Dependabot
+  module NpmAndYarn
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped, ?security_advisories: untyped, ?requirements_update_strategy: untyped, ?dependency_group: untyped, ?update_cooldown: untyped, ?options: untyped) -> void
+      def latest_resolvable_version: () -> (Dependabot::Version | String | nil)
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+      def requirements_unlocked_or_can_be?: () -> (false | true)
+      def conflicting_dependencies: () -> (Array[untyped] | Array[Dependabot::UpdateCheckers::Conflict])
+    end
+  end
+end

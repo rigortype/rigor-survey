@@ -1,0 +1,9 @@
+module Gitlab
+  module Kubernetes
+    class Deployment
+      def initialize: (?untyped, ?pods: untyped) -> void
+      def order: () -> (0 | 1)
+      def not_created_instances: () -> Array[Hash[Symbol, untyped]]
+    end
+  end
+end

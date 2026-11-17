@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class YieldNode < ::RuboCop::AST::Node
+      def node_parts: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  class GitTagDetails < ::Hash[untyped, untyped]
+    def initialize: (tag: untyped, ?version: untyped, ?commit_sha: untyped, ?tag_sha: untyped) -> void
+    def tag: () -> String
+    def version: () -> (Gem::Version | nil)
+    def commit_sha: () -> (String | nil)
+    def tag_sha: () -> (String | nil)
+  end
+end

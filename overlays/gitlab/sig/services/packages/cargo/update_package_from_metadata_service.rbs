@@ -1,0 +1,7 @@
+module Packages
+  module Cargo
+    class UpdatePackageFromMetadataService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

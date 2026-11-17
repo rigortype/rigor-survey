@@ -1,0 +1,9 @@
+module Typelizer
+  module ModelPlugins
+    class Poro
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      def comment_for: (untyped) -> nil
+      def enum_for: (untyped) -> nil
+    end
+  end
+end

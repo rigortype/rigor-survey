@@ -1,0 +1,9 @@
+module Jira
+  module Requests
+    module Issues
+      class ServerListService < ::Jira::Requests::Issues::ListService
+        def initialize: (untyped, ?untyped) -> void
+      end
+    end
+  end
+end

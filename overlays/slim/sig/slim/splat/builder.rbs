@@ -1,0 +1,11 @@
+module Slim
+  module Splat
+    class Builder
+      def initialize: (untyped) -> void
+      def build_tag: () ?{ (*untyped) -> untyped } -> String
+      def build_attrs: () -> String
+    end
+  end
+  class InvalidAttributeNameError < ::StandardError
+  end
+end

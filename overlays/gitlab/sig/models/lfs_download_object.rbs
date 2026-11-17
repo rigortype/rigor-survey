@@ -1,0 +1,5 @@
+class LfsDownloadObject
+  def initialize: (oid: untyped, size: untyped, link: untyped, ?headers: untyped) -> void
+  def to_hash: () -> Hash[String, untyped]
+  def sanitized_uri: () -> Gitlab::UrlSanitizer
+end

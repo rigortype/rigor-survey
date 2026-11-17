@@ -1,0 +1,19 @@
+module YARD
+  module Registry
+    def self.load: (?untyped, ?untyped) -> singleton(YARD::Registry)
+    def self.load_yardoc: (?untyped) -> singleton(YARD::Registry)
+    def self.load!: (?untyped) -> singleton(YARD::Registry)
+    def self.load_all: () -> singleton(YARD::Registry)
+    def self.save: (?untyped, ?untyped) -> true
+    def self.delete_from_disk: () -> (false | true)
+    def self.clear: () -> YARD::RegistryStore
+    def self.locked_for_writing?: (?untyped) -> (false | true)
+    def self.locale: (untyped) -> YARD::I18n::Locale
+    def self.checksum_for: (untyped) -> String
+    def self.instance: () -> singleton(YARD::Registry)
+    def self.old_global_yardoc_file: (untyped, ?untyped) -> (String | nil)
+    def self.local_yardoc_file: (untyped, ?untyped) -> (String | nil)
+    def self.thread_local_store: () -> YARD::RegistryStore
+    def self.thread_local_resolver: () -> YARD::RegistryResolver
+  end
+end

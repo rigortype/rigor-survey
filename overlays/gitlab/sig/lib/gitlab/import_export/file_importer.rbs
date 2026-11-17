@@ -1,0 +1,10 @@
+module Gitlab
+  module ImportExport
+    class FileImporter
+      def self.import: (*untyped, **untyped) -> (false | true)
+      def initialize: (importable: untyped, archive_file: untyped, shared: untyped, user: untyped, ?tmpdir: untyped) -> void
+      def import: () -> (false | true)
+      def tmpdir_valid: () -> true
+    end
+  end
+end

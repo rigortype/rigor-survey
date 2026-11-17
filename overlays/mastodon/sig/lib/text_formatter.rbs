@@ -1,0 +1,4 @@
+class TextFormatter
+  def initialize: (untyped, ?untyped) -> void
+  def self.link_to_mention: (untyped, ?with_domain: untyped) -> String
+end

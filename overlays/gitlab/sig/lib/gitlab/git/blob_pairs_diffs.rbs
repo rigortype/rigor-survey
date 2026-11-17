@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class BlobPairsDiffs
+      def initialize: (untyped) -> void
+    end
+  end
+end

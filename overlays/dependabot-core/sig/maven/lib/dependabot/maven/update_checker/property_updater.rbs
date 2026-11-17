@@ -1,0 +1,13 @@
+module Dependabot
+  module Maven
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PropertyUpdater
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, target_version_details: untyped, ?update_cooldown: untyped) -> void
+        def update_possible?: () -> (false | nil | true | false | nil | true)
+        def updated_dependencies: () -> (Array[Dependabot::Dependency] | nil)
+        def target_version: () -> (Dependabot::Maven::Version | nil)
+        def source_url: () -> (String | nil)
+      end
+    end
+  end
+end

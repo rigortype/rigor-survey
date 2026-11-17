@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    class IpRateLimiter
+      def initialize: (untyped) -> void
+    end
+  end
+end

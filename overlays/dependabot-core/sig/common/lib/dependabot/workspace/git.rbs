@@ -1,0 +1,10 @@
+module Dependabot
+  module Workspace
+    class Git < ::Dependabot::Workspace::Base
+      def initialize: (untyped) -> void
+      def to_patch: () -> String
+      def reset!: () -> nil
+      def initial_head_sha: () -> String
+    end
+  end
+end

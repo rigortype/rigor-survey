@@ -1,0 +1,4 @@
+module EditingHistoryTarget
+  def last_editing_history: () -> history?
+  def create_history: () { () -> void } -> void
+end

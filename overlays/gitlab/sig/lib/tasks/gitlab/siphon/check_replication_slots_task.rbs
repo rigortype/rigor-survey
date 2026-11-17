@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module Siphon
+      class CheckReplicationSlotsTask
+        def initialize: (?slot_names: untyped, ?database: untyped) -> void
+        def execute: () -> nil
+      end
+    end
+  end
+end

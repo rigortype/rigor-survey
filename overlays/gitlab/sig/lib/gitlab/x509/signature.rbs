@@ -1,0 +1,9 @@
+module Gitlab
+  module X509
+    class Signature
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      def type: () -> :x509
+      def verification_status: () -> (:unverified | :verified)
+    end
+  end
+end

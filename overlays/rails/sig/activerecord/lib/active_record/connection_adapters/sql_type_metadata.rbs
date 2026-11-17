@@ -1,0 +1,8 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class SqlTypeMetadata
+      def initialize: (?sql_type: untyped, ?type: untyped, ?limit: untyped, ?precision: untyped, ?scale: untyped) -> void
+      def as_schema_json: () -> Hash[String, untyped]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module AlertManagement
+    class Fingerprint
+      def self.generate: (untyped) -> (String | nil)
+      def generate: (untyped) -> (String | nil)
+    end
+  end
+end

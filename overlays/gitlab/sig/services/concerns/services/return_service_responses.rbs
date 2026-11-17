@@ -1,0 +1,6 @@
+module Services
+  module ReturnServiceResponses
+    def error: (untyped, untyped, ?pass_back: untyped) -> ServiceResponse
+    def success: (untyped) -> ServiceResponse
+  end
+end

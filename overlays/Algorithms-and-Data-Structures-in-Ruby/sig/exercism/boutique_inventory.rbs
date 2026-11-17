@@ -1,0 +1,3 @@
+class BoutiqueInventory
+  def initialize: (untyped) -> void
+end

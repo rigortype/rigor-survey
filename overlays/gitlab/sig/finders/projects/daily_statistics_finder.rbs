@@ -1,0 +1,7 @@
+module Projects
+  class DailyStatisticsFinder
+    def initialize: (untyped) -> void
+    def fetches: () -> ActiveRecord::Relation[ProjectDailyStatistic]
+    def total_fetch_count: () -> ActiveRecord::Relation[ProjectDailyStatistic]
+  end
+end

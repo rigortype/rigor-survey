@@ -1,0 +1,9 @@
+module Gitlab
+  module WorkItems
+    module Instrumentation
+      module EventActions
+        def self.valid_work_item_event?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

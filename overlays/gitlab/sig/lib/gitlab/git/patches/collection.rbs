@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    module Patches
+      class Collection
+        def initialize: ([untyped, untyped] | [String, String]) -> void
+      end
+    end
+  end
+end

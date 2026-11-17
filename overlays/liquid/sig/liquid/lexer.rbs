@@ -1,0 +1,6 @@
+module Liquid
+  class Lexer
+    def self.tokenize: (untyped) -> Array[untyped]
+    def self.raise_syntax_error: (untyped, untyped) -> bot
+  end
+end

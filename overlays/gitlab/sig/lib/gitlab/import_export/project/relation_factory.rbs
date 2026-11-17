@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class RelationFactory < ::Gitlab::ImportExport::Base::RelationFactory
+        def relation_hash: () -> (Hash[untyped, untyped] | nil)
+      end
+    end
+  end
+end

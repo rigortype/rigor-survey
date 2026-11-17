@@ -1,0 +1,13 @@
+module Gitlab
+  module Encryption
+    class KeyProvider
+      class KeyProviderBuilder < ::Struct[untyped]
+        def secrets: () -> untyped
+        def builder_class=: (untyped) -> untyped
+        def secrets=: (untyped) -> untyped
+        def self.new: (?builder_class: untyped, ?secrets: untyped) -> instance
+        def self.[]: (?builder_class: untyped, ?secrets: untyped) -> instance
+      end
+    end
+  end
+end

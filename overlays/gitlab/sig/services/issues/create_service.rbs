@@ -1,0 +1,5 @@
+module Issues
+  class CreateService < ::Issues::BaseService
+    def initialize: (container: untyped, ?current_user: untyped, ?params: untyped, ?build_service: untyped, ?perform_spam_check: untyped) -> void
+  end
+end

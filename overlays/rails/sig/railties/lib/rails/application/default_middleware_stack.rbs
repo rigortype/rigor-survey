@@ -1,0 +1,8 @@
+module Rails
+  class Application < ::Rails::Engine
+    class DefaultMiddlewareStack
+      def initialize: (untyped, untyped, untyped) -> void
+      def build_stack: () -> ActionDispatch::MiddlewareStack
+    end
+  end
+end

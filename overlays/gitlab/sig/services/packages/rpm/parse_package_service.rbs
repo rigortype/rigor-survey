@@ -1,0 +1,8 @@
+module Packages
+  module Rpm
+    class ParsePackageService
+      def initialize: (untyped) -> void
+      def execute: () -> Hash[untyped, untyped]
+    end
+  end
+end

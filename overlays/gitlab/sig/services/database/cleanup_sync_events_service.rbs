@@ -1,0 +1,6 @@
+module Database
+  class CleanupSyncEventsService
+    def initialize: (singleton(Namespaces::SyncEvent)) -> void
+    def execute: () -> { deleted_events: untyped }
+  end
+end

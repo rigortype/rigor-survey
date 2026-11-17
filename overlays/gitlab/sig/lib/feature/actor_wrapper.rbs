@@ -1,0 +1,6 @@
+module Feature
+  class ActorWrapper
+    def initialize: (singleton(Gitlab::GitalyClient::StorageSettings), String) -> void
+    def flipper_id: () -> String
+  end
+end

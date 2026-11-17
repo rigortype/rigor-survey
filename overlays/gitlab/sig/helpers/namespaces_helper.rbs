@@ -1,0 +1,8 @@
+module NamespacesHelper
+  def cascading_namespace_settings_popover_data: (untyped, untyped, untyped) -> { popover_data: String, testid: "cascading-settings-lock-icon" }
+  def cascading_namespace_settings_popover_raw_data: (untyped, untyped, untyped) -> (Hash[untyped, untyped] | { locked_by_application_setting: untyped, locked_by_ancestor: untyped })
+  def project_cascading_namespace_settings_popover_data: (untyped, untyped, untyped) -> (Hash[untyped, untyped] | nil | { locked_by_application_setting: untyped, locked_by_ancestor: untyped })
+  def pipeline_usage_app_data: (untyped) -> { namespace_actual_plan_name: untyped, namespace_id: untyped, user_namespace: untyped, page_size: untyped }
+  def storage_usage_app_data: (untyped) -> { namespace_id: untyped, namespace_path: untyped, user_namespace: untyped, default_per_page: untyped }
+  def import_usage_app_data: (untyped) -> { placeholder_users_count: untyped, placeholder_users_limit: untyped }
+end

@@ -1,0 +1,17 @@
+module Dependabot
+  module Vcpkg
+    module Package
+      class VersionsDatabase
+        def initialize: (?repository_path: untyped) -> void
+        def available?: () -> (false | true)
+        def versions_for: (untyped) -> Array[::PortVersion]
+        def baseline_version_for: (port: untyped, ref: untyped) -> (Dependabot::Vcpkg::Version | nil)
+        def baseline_versions: (untyped) -> Hash[String, Dependabot::Vcpkg::Version]
+        def release_tags: () -> Array[String]
+        def release_dates_for: (untyped) -> Hash[String, Time]
+        def commit_sha_for: (untyped) -> (String | nil)
+        def ancestor?: (ancestor: untyped, descendant: untyped) -> (false | true)
+      end
+    end
+  end
+end

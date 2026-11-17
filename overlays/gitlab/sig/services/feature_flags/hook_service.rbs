@@ -1,0 +1,5 @@
+module FeatureFlags
+  class HookService
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,40 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class NullPool
+      def schema_reflection: () -> ActiveRecord::ConnectionAdapters::SchemaReflection
+      def db_config: () -> ActiveRecord::ConnectionAdapters::NullPool::NullConfig
+      def dirties_query_cache: () -> true
+      def pool_transaction_isolation_level=: (untyped) -> bot
+      class NullConfig
+        def method_missing: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> nil
+      end
+    end
+    class ConnectionPool
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+      def schema_cache: () -> ActiveRecord::ConnectionAdapters::BoundSchemaReflection
+      def schema_reflection=: (untyped) -> nil
+      def migration_context: () -> ActiveRecord::MigrationContext
+      def schema_migration: () -> ActiveRecord::SchemaMigration
+      def internal_metadata: () -> ActiveRecord::InternalMetadata
+      def activate: () -> true
+      def activated?: () -> (false | true)
+      def permanent_lease?: () -> (false | true)
+      def pin_connection!: (untyped) -> true
+      def release_connection: (?untyped) -> (false | nil | true)
+      def discard!: () -> nil
+      def maintainable?: () -> (false | nil | true)
+      def flush!: () -> false
+      def prepopulate: () -> nil
+      def stat: () -> { size: untyped, connections: Integer, busy: untyped, dead: untyped, idle: untyped, waiting: untyped, checkout_timeout: untyped }
+      def reaper: () -> ActiveRecord::ConnectionAdapters::ConnectionPool::Reaper
+      class UsedPoolSet
+        def initialize: (?untyped) -> void
+        def without_pools: () -> ActiveRecord::ConnectionAdapters::ConnectionPool::UsedPoolSet
+      end
+      class Lease
+        def clear: (untyped) -> (false | true)
+      end
+    end
+  end
+end

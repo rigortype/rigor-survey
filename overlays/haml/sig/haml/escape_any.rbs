@@ -1,0 +1,5 @@
+module Haml
+  module EscapeanyDispathcer
+    def on_escapeany: (untyped, untyped) -> [:escapeany, untyped, untyped]
+  end
+end

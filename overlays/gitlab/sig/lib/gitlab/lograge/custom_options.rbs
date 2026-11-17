@@ -1,0 +1,7 @@
+module Gitlab
+  module Lograge
+    module CustomOptions
+      def self.call: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

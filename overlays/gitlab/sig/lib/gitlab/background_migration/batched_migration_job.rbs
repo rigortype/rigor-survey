@@ -1,0 +1,23 @@
+module Gitlab
+  module BackgroundMigration
+    class BatchedMigrationJob
+      def self.generic_instance: (batch_table: untyped, batch_column: untyped, connection: untyped, ?job_arguments: untyped) -> Gitlab::BackgroundMigration::BatchedMigrationJob
+      def self.job_arguments_count: () -> 0
+      def self.operation_name: (untyped) -> Symbol
+      def self.job_arguments: (*untyped) -> Symbol
+      def self.scope_to: (untyped) -> Symbol
+      def self.cursor_columns: () -> []
+      def self.cursor?: () -> (false | true)
+      def self.cursor: (*untyped) -> Symbol
+      def self.health_context_tables: () -> []
+      def self.tables_to_check_for_vacuum: (*untyped) -> Symbol
+      def initialize: (batch_table: Symbol, batch_column: Symbol, sub_batch_size: Integer, pause_ms: Integer, connection: untyped, ?job_arguments: [], ?start_id: untyped, ?end_id: untyped, ?start_cursor: [untyped], ?end_cursor: [untyped], ?sub_batch_exception: untyped) -> void
+      def batch_metrics: () -> Gitlab::Database::Batch::Metrics
+      def start_cursor: () -> [untyped]
+      def end_cursor: () -> [untyped]
+      def batch_table: () -> :granular_scopes
+      def batch_column: () -> :id
+      def sub_batch_size: () -> 100
+    end
+  end
+end

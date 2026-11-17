@@ -1,0 +1,5 @@
+module Users
+  class MigrateRecordsToGhostUserInBatchesService
+    def initialize: (user_types: ([Symbol, Symbol] | [Symbol])) -> void
+  end
+end

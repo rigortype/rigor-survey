@@ -1,0 +1,7 @@
+module Backup
+  module Targets
+    class Target
+      def initialize: (untyped, options: untyped) -> void
+    end
+  end
+end

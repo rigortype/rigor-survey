@@ -1,0 +1,8 @@
+module Gitlab
+  module Tracking
+    class AiContext
+      def initialize: (untyped) -> void
+      def to_h: () -> { session_id: untyped, workflow_id: untyped, flow_type: untyped, item_type: untyped, item_version: untyped, item_schema_version: untyped, flow_name: untyped, component_name: untyped, agent_name: untyped, agent_type: untyped, custom_item_id: untyped, input_tokens: untyped, output_tokens: untyped, total_tokens: untyped, ephemeral_5m_input_tokens: untyped, ephemeral_1h_input_tokens: untyped, cache_read: untyped, cache_creation: untyped, model_engine: untyped, model_name: untyped, model_provider: untyped, flow_version: untyped, flow_registry_version: untyped }
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Admin
+  module Settings
+    module DiscoveryHelper
+      def authorized_fetch_recommended_value: () -> (:overridden | nil)
+    end
+  end
+end

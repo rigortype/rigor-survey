@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class GitlabSchemasValidateConnection < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.enabled?: () -> true
+        def self.analyze: (untyped) -> nil
+      end
+    end
+  end
+end

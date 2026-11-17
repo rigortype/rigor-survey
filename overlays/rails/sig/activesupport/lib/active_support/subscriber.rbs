@@ -1,0 +1,8 @@
+module ActiveSupport
+  class Subscriber
+    def self.detach_from: (untyped, ?untyped) -> nil
+    def self.subscribers: () -> []
+    def self.prepare_pattern: (untyped) -> String
+    def patterns: () -> Hash[untyped, untyped]
+  end
+end

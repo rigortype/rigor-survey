@@ -1,0 +1,8 @@
+module Security
+  module CiConfiguration
+    class BaseBuildAction
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def generate: () -> { action: "create" | "update", file_path: untyped, content: untyped, default_values_overwritten: untyped }
+    end
+  end
+end

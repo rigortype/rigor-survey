@@ -1,0 +1,3 @@
+class PageExporter
+  def initialize: (untyped, ?progress_bar: untyped) -> void
+end

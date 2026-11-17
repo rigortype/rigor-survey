@@ -1,0 +1,7 @@
+module Gitlab
+  module UsageDataCounters
+    module IssueActivityUniqueCounter
+      def self.get_params_from_container: (untyped) -> ([untyped, nil] | [Namespace, Project | nil])
+    end
+  end
+end

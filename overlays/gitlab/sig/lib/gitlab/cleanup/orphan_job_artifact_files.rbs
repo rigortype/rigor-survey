@@ -1,0 +1,8 @@
+module Gitlab
+  module Cleanup
+    class OrphanJobArtifactFiles
+      def initialize: (?dry_run: (false | true), ?niceness: String, ?logger: untyped) -> void
+      def dry_run: () -> false
+    end
+  end
+end

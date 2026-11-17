@@ -1,0 +1,5 @@
+module Admin
+  module O11yServiceSettingsHelper
+    def o11y_per_page_options: () -> [10, 20, 50, 100]
+  end
+end

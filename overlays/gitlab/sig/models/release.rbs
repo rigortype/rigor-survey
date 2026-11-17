@@ -1,0 +1,5 @@
+class Release < ::ApplicationRecord
+  def milestone_titles: () -> String
+  def tagged_packages: () -> ActiveRecord::Relation[Packages::Package]
+  def self.sort_by_attribute: (untyped) -> ActiveRecord::Relation[Release]
+end

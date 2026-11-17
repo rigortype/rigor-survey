@@ -1,0 +1,8 @@
+module Users
+  module SupportPin
+    class BaseService
+      def initialize: (untyped) -> void
+      def pin_key: () -> String
+    end
+  end
+end

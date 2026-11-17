@@ -1,0 +1,5 @@
+class Squares
+  def initialize: (untyped) -> void
+  def square_of_sum: () -> Numeric
+  def difference: () -> Numeric
+end

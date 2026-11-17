@@ -1,0 +1,5 @@
+module Gitlab
+  module GlobalId
+    def self.as_global_id: (untyped, ?model_name: untyped) -> GlobalID
+  end
+end

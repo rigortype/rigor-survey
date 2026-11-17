@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class TablesSortedByForeignKeys
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> Array[Array[untyped]]
+    end
+  end
+end

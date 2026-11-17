@@ -1,0 +1,7 @@
+module PagesCore
+  module ImagesHelper
+    def image_class_name: (untyped, ?ratio: untyped) -> ("landscape" | "portrait" | "square")
+    def image_size: (untyped, untyped) -> String
+    def image_widths: (untyped) -> Array[1050 | 1400 | 2100 | 233 | 2800 | 350 | 700]
+  end
+end

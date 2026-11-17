@@ -1,0 +1,9 @@
+module RGL
+  class PrimAlgorithm
+    def initialize: (untyped, untyped, untyped) -> void
+    def minimum_spanning_tree: (?untyped) -> RGL::AdjacencyGraph
+  end
+  module Graph
+    def prim_minimum_spanning_tree: (untyped, ?untyped, ?untyped) -> RGL::AdjacencyGraph
+  end
+end

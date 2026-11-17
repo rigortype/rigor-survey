@@ -1,0 +1,13 @@
+module Mattermost
+  class Session
+    def initialize: (untyped) -> void
+    def request: () -> Mattermost::Session::Request
+    def params: () -> Hash[untyped, untyped]
+    class Request < ::Struct[untyped]
+      def parameters: () -> untyped
+      def parameters=: (untyped) -> untyped
+      def self.new: (?parameters: untyped) -> instance
+      def self.[]: (?parameters: untyped) -> instance
+    end
+  end
+end

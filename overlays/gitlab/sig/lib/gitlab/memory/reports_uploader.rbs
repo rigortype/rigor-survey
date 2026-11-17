@@ -1,0 +1,7 @@
+module Gitlab
+  module Memory
+    class ReportsUploader
+      def initialize: (gcs_key: untyped, gcs_project: untyped, gcs_bucket: untyped, logger: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Backup
+  class DatabaseConnection
+    def initialize: (untyped, ?custom_config: untyped) -> void
+    def release_snapshot!: () -> nil
+    def database_configuration: () -> Backup::DatabaseConfiguration
+  end
+end

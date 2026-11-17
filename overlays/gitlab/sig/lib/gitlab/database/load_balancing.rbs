@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      def self.db_role_for_connection: (untyped) -> (:primary | :replica | :unknown)
+      def self.empty_config?: (untyped) -> (false | true)
+    end
+  end
+end

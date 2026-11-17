@@ -1,0 +1,9 @@
+module ActionView
+  module Helpers
+    module NumberHelper
+      class InvalidNumberError < ::StandardError
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

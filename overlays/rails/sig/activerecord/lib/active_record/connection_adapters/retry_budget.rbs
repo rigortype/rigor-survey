@@ -1,0 +1,9 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RetryBudget
+      def initialize: (retries: untyped, deadline: untyped, reconnectable: untyped) -> void
+      def reconnect_consumed!: () -> false
+      def consume: () -> (false | true)
+    end
+  end
+end

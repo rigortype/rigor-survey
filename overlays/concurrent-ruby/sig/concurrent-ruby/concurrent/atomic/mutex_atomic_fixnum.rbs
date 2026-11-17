@@ -1,0 +1,5 @@
+module Concurrent
+  class MutexAtomicFixnum
+    def initialize: (?untyped) -> void
+  end
+end

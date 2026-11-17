@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class GitSourceRemover
+        def initialize: (dependency: untyped) -> void
+      end
+    end
+  end
+end

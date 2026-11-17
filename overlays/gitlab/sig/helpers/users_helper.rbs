@@ -1,0 +1,15 @@
+module UsersHelper
+  def admin_users_data_attributes: (untyped) -> { users: untyped, paths: String }
+  def profile_actions: (untyped) -> ([:overview, :activity, :groups, :contributed, :projects, :starred, :snippets, :followers, :following] | [:overview, :activity] | [])
+  def user_internal_regex_data: () -> { user_internal_regex_pattern: untyped, user_internal_regex_options: untyped }
+  def user_badges_in_admin_section: (untyped, ?untyped) -> Array[untyped]
+  def instance_admin_context?: (untyped) -> (false | true)
+  def instance_user_badges: (untyped) -> Array[untyped]
+  def organization_user_badges: (untyped, untyped) -> ([] | [{ text: untyped, variant: "success" }])
+  def can_force_email_confirmation?: (untyped) -> (false | true)
+  def confirm_user_data: (untyped) -> { path: untyped, method: "put", modal_attributes: untyped, testid: "confirm-user-button" }
+  def admin_user_actions_data_attributes: (untyped) -> { user: untyped, paths: String }
+  def user_profile_actions_data: (untyped) -> (Hash[untyped, untyped] | { user_id: untyped })
+  def user_activity_calendar_data: (untyped) -> { username: untyped, calendar_activities_path: untyped, activity_path: untyped, view_all_activity_path: untyped, is_current_user_profile: untyped, empty_state_svg_path: untyped, new_group_path: untyped, explore_groups_path: untyped, utc_offset: untyped }
+  def user_readme_data: (untyped) -> { project_path: untyped, ref: untyped, escaped_ref: untyped, name: untyped, path: untyped, web_path: untyped }
+end

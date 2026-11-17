@@ -1,0 +1,11 @@
+module RGL
+  class TopsortIterator
+    def initialize: (untyped) -> void
+    def set_to_begin: () -> Hash[untyped, Integer]
+    def at_beginning?: () -> true
+    def at_end?: () -> (false | true)
+  end
+  module Graph
+    def topsort_iterator: () -> RGL::TopsortIterator
+  end
+end

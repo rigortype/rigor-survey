@@ -1,0 +1,7 @@
+module WorkItems
+  class SortingKeys
+    def self.all: () -> Hash[untyped, untyped]
+    def self.order_by_values: () -> Array[untyped]
+    def self.available?: (untyped, ?widget_list: untyped) -> (false | true)
+  end
+end

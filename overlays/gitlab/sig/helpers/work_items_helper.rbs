@@ -1,0 +1,4 @@
+module WorkItemsHelper
+  def work_items_data: (untyped, untyped) -> Hash[Symbol, untyped]
+  def work_item_views_only_data: (untyped) -> { full_path: untyped, default_branch: untyped, router_path: untyped }
+end

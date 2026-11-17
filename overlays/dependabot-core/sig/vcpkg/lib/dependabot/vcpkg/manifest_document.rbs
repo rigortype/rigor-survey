@@ -1,0 +1,20 @@
+module Dependabot
+  module Vcpkg
+    class ManifestDocument
+      def self.from_file: (untyped) -> Dependabot::Vcpkg::ManifestDocument
+      def initialize: (untyped) -> void
+      def builtin_baseline: () -> (String | nil)
+      def dependencies_declared?: () -> (false | true)
+      def ports: () -> Array[Dependabot::Vcpkg::ManifestDocument::Port]
+      def default_registry_present?: () -> (false | true)
+      def default_registry_kind: () -> (String | nil)
+      def default_registry_repository: () -> (String | nil)
+      def default_registry_baseline: () -> (String | nil)
+      def default_registry: () -> (::Registry | nil)
+      def registries: () -> Array[::Registry]
+      def set_port_version: (name: untyped, version: untyped) -> (Array[untyped] | nil)
+      def set_override: (name: untyped, version: untyped) -> Array[untyped]
+      def content: () -> String
+    end
+  end
+end

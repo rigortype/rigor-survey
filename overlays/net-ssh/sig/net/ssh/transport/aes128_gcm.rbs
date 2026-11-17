@@ -1,0 +1,16 @@
+module Net
+  module SSH
+    module Transport
+      class AES128_GCM
+        def implicit_mac: () -> Net::SSH::Transport::AES128_GCM::ImplicitHMac
+        def algo_name: () -> "aes-128-gcm"
+        def name: () -> "aes128-gcm@openssh.com"
+        def self.key_length: () -> 16
+        class ImplicitHMac < ::Net::SSH::Transport::HMAC::Abstract
+          def aead: () -> true
+          def key_length: () -> 16
+        end
+      end
+    end
+  end
+end

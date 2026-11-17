@@ -1,0 +1,7 @@
+module Ci
+  module JobToken
+    class GroupScopeLink < ::Ci::ApplicationRecord
+      def self.for_source_and_target: (untyped, untyped) -> (Ci::JobToken::GroupScopeLink | nil)
+    end
+  end
+end

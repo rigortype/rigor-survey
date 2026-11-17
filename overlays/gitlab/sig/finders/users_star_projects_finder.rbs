@@ -1,0 +1,3 @@
+class UsersStarProjectsFinder
+  def initialize: (untyped, ?{}, ?current_user: untyped) -> void
+end

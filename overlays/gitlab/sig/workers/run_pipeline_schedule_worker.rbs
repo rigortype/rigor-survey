@@ -1,0 +1,5 @@
+class RunPipelineScheduleWorker
+  def perform: (untyped, untyped, ?untyped) -> (ServiceResponse | nil)
+  def schedule_valid?: (untyped, untyped, untyped, untyped) -> (false | true)
+  def run_pipeline_schedule: (untyped, untyped) -> (ServiceResponse | nil)
+end

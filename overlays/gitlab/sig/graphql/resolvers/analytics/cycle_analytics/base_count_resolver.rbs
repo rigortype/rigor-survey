@@ -1,0 +1,9 @@
+module Resolvers
+  module Analytics
+    module CycleAnalytics
+      class BaseCountResolver < ::Resolvers::BaseResolver
+        def self.[]: (?untyped) -> (nil | singleton(Resolvers::Analytics::CycleAnalytics::BaseCountResolver))
+      end
+    end
+  end
+end

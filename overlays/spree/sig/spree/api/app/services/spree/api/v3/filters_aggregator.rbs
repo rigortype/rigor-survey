@@ -1,0 +1,10 @@
+module Spree
+  module Api
+    module V3
+      class FiltersAggregator
+        def initialize: (scope: untyped, currency: untyped, ?category: untyped, ?sort_order: untyped, ?option_value_ids: untyped, ?scope_before_options: untyped) -> void
+        def call: () -> { filters: Array[untyped], sort_options: untyped, default_sort: untyped, total_count: untyped }
+      end
+    end
+  end
+end

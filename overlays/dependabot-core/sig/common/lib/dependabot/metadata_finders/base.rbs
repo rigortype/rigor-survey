@@ -1,0 +1,11 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      def initialize: (dependency: untyped, credentials: untyped) -> void
+      def source_url: () -> (String | nil)
+      def maintainer_changes: () -> nil
+      def install_script_changes: () -> nil
+      def attestation_changes: () -> nil
+    end
+  end
+end

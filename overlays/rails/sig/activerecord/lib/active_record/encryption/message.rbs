@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class Message
+      def initialize: (?payload: untyped, ?headers: untyped) -> void
+    end
+  end
+end

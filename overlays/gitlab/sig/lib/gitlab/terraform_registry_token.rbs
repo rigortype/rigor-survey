@@ -1,0 +1,5 @@
+module Gitlab
+  class TerraformRegistryToken < ::Gitlab::JWTToken
+    def self.from_token: (untyped) -> Gitlab::TerraformRegistryToken
+  end
+end

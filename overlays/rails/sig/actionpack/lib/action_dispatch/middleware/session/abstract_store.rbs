@@ -1,0 +1,15 @@
+module ActionDispatch
+  module Session
+    module Compatibility
+      def initialize: (untyped, ?untyped) -> void
+    end
+    module SessionObject
+      def prepare_session: (untyped) -> ActionDispatch::Http::Session
+    end
+    class AbstractSecureStore < ::Rack::Session::Abstract::PersistedSecure
+      def generate_sid: () -> Rack::Session::SessionId
+    end
+    class SessionRestoreError < ::StandardError
+    end
+  end
+end

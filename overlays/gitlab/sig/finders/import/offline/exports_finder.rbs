@@ -1,0 +1,7 @@
+module Import
+  module Offline
+    class ExportsFinder
+      def initialize: (user: untyped, ?params: untyped) -> void
+    end
+  end
+end

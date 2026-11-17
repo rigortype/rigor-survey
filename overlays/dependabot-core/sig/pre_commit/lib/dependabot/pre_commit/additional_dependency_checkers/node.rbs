@@ -1,0 +1,9 @@
+module Dependabot
+  module PreCommit
+    module AdditionalDependencyCheckers
+      class Node < ::Dependabot::PreCommit::AdditionalDependencyCheckers::Base
+        def latest_version: () -> (String | nil)
+      end
+    end
+  end
+end

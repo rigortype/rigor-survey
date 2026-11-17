@@ -1,0 +1,9 @@
+module API
+  module Concerns
+    module Packages
+      module NpmEndpoints
+        def generate_metadata_service: (untyped) -> ::Packages::Npm::GenerateMetadataService
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module UsageDataCounters
+    class BaseCounter
+      def self.redis_key: (untyped) -> String
+      def self.require_known_event: (untyped) -> nil
+      def self.counter_key: (untyped) -> Symbol
+    end
+  end
+end

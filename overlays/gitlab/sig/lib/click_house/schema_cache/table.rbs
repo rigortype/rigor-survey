@@ -1,0 +1,11 @@
+module ClickHouse
+  module SchemaCache
+    class Table
+      def initialize: (**untyped) -> void
+      def primary_key: () -> Array[untyped]
+      def sorting_key: () -> Array[untyped]
+      def engine_params: () -> Array[untyped]
+      def to_h: () -> Hash["columns" | "engine" | "engine_full" | "name" | "partition_key" | "primary_key" | "sampling_key" | "settings" | "sorting_key", untyped]
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class CircularQueue
+  def initialize: (untyped) -> void
+  def queue: () -> Array[untyped]
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  module GlobalAnonymousId
+    def self.user_id: (untyped) -> ("unknown" | String)
+  end
+end

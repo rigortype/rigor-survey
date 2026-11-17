@@ -1,0 +1,8 @@
+module Ci
+  class AuthJobFinder
+    def initialize: (token: untyped) -> void
+    class AuthError < ::StandardError
+      def initialize: (untyped, job: untyped) -> void
+    end
+  end
+end

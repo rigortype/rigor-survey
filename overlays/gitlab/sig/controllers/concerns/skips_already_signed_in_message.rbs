@@ -1,0 +1,3 @@
+module SkipsAlreadySignedInMessage
+  def require_no_authentication_without_flash: () -> nil
+end

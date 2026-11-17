@@ -1,0 +1,8 @@
+module BulkImports
+  class ExportStatus < ::Import::ExportStatus
+    def initialize: (untyped, untyped) -> void
+    def waiting_on_export?: () -> (false | true)
+    def all_batch_numbers: () -> Array[Integer]
+    def client: () -> BulkImports::Clients::HTTP
+  end
+end

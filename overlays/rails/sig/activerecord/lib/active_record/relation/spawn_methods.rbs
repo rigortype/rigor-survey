@@ -1,0 +1,6 @@
+module ActiveRecord
+  module SpawnMethods
+    def except: (*untyped) -> Integer
+    def only: (*untyped) -> Integer
+  end
+end

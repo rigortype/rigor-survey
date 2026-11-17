@@ -1,0 +1,5 @@
+module MergeRequests
+  class MergeBaseService < ::MergeRequests::BaseService
+    def hooks_validation_pass?: (untyped, ?validate_squash_message: untyped) -> true
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Tracking
+    module Destinations
+      class BillingOidcTokenSource
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

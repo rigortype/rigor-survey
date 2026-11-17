@@ -1,0 +1,7 @@
+module ActiveModel
+  module Type
+    class Boolean < ::ActiveModel::Type::Value
+      def type: () -> :boolean
+    end
+  end
+end

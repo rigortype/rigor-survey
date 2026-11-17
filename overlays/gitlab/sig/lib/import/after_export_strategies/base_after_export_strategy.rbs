@@ -1,0 +1,10 @@
+module Import
+  module AfterExportStrategies
+    class BaseAfterExportStrategy
+      def initialize: (?{ param1: Integer }) -> void
+      def ensure_lock_files_path!: () -> top
+      def lock_file: () -> String
+      def logger: () -> Gitlab::Export::Logger
+    end
+  end
+end

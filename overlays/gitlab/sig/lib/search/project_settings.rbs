@@ -1,0 +1,10 @@
+module Search
+  class ProjectSettings
+    def initialize: (untyped) -> void
+    def general_settings: () -> Array[{ text: untyped, href: untyped }]
+    def repository_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }]
+    def merge_request_settings: () -> [{ text: untyped, href: untyped }]
+    def ci_cd_settings: () -> Array[{ text: untyped, href: untyped }]
+    def monitor_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }]
+  end
+end

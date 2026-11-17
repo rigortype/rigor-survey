@@ -1,0 +1,5 @@
+module Redmine
+  module Utils
+    def self.random_hex: (untyped) -> String
+  end
+end

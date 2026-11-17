@@ -1,0 +1,7 @@
+module Gitlab
+  module Counters
+    class LegacyCounter
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Git
+    def self.commit_id?: (untyped) -> (false | true)
+    def self.diff_line_code: (untyped, untyped, untyped) -> String
+    class ResourceExhaustedError < ::Gitlab::Git::BaseError
+      def initialize: (?String, ?Integer) -> void
+      def headers: () -> (Hash[String, untyped] | {})
+    end
+    class ReferenceNotFoundError < ::Gitlab::Git::BaseError
+      def initialize: (?untyped, ?untyped) -> void
+    end
+  end
+end

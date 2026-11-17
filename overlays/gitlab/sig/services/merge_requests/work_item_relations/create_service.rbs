@@ -1,0 +1,8 @@
+module MergeRequests
+  module WorkItemRelations
+    class CreateService < ::MergeRequests::WorkItemRelations::BaseService
+      def initialize: (merge_request: untyped, current_user: untyped, target_work_items: untyped, ?link_type: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

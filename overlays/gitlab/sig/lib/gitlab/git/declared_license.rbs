@@ -1,0 +1,10 @@
+module Gitlab
+  module Git
+    class DeclaredLicense
+      def initialize: (?key: String, ?name: String, ?nickname: String, ?url: untyped, ?path: untyped) -> void
+      def key: () -> ("mit" | "woozle")
+      def name: () -> ("MIT License" | "foo" | "woozle wuzzle")
+      def nickname: () -> "GNU AGPLv3"
+    end
+  end
+end

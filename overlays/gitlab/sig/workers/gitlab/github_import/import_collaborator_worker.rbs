@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class ImportCollaboratorWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::Collaborator)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::CollaboratorImporter)
+      def object_type: () -> :collaborator
+    end
+  end
+end

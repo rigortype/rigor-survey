@@ -1,0 +1,7 @@
+module Gitlab
+  module Audit
+    class Target
+      def initialize: (untyped) -> void
+    end
+  end
+end

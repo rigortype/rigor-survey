@@ -1,0 +1,7 @@
+module Ci
+  module PipelineArtifacts
+    class CreateCodeQualityMrDiffReportService
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Concurrent
+  class JavaCountDownLatch
+    def initialize: (?untyped) -> void
+  end
+end

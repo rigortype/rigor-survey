@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        module Common
+          def illustration: () -> { image: "illustrations/empty-state/empty-job-skipped-md.svg", size: "", title: untyped }
+        end
+      end
+    end
+  end
+end

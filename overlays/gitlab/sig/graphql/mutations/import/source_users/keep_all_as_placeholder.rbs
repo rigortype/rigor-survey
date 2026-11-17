@@ -1,0 +1,9 @@
+module Mutations
+  module Import
+    module SourceUsers
+      class KeepAllAsPlaceholder < ::Mutations::BaseMutation
+        def resolve: (untyped) -> { updated_import_source_user_count: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

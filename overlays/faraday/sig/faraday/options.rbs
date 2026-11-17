@@ -1,0 +1,15 @@
+module Faraday
+  class Options < ::Struct[untyped]
+    def self.from: (untyped) -> Faraday::Options
+    def update: (untyped) -> Faraday::Options
+    def merge!: (untyped) -> Faraday::Options
+    def merge: (untyped) -> Faraday::Options
+    def deep_dup: () -> Faraday::Options
+    def to_hash: () -> Hash[untyped, untyped]
+    def inspect: () -> String
+    def self.attribute_options: () -> {}
+    def self.memoized_attributes: () -> {}
+    def symbolized_key_set: () -> Set[untyped]
+    def self.fetch_error_class: () -> (singleton(IndexError) | singleton(KeyError))
+  end
+end

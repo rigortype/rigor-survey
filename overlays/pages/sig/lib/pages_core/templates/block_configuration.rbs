@@ -1,0 +1,7 @@
+module PagesCore
+  module Templates
+    class BlockConfiguration
+      def large?: () -> (false | true)
+    end
+  end
+end

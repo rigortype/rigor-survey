@@ -1,0 +1,9 @@
+module Dependabot
+  module Composer
+    class Language < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?requirement: untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+  end
+end

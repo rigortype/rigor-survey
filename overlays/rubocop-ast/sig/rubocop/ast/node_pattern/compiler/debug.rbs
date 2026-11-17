@@ -1,0 +1,35 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Compiler
+        class Debug < ::RuboCop::AST::NodePattern::Compiler
+          def parser: () -> RuboCop::AST::NodePattern::Parser::WithMeta
+          def node_ids: () -> Hash[untyped, untyped]
+          class Colorizer
+            def initialize: (untyped, ?compiler: untyped) -> void
+            def node_pattern: () -> RuboCop::AST::NodePattern
+            class Result < ::Struct[untyped]
+              def colorizer: () -> untyped
+              def trace: () -> untyped
+              def returned: () -> untyped
+              def ruby_ast: () -> untyped
+              def colorizer=: (untyped) -> untyped
+              def trace=: (untyped) -> untyped
+              def returned=: (untyped) -> untyped
+              def ruby_ast=: (untyped) -> untyped
+              def self.new: (?colorizer: untyped, ?trace: untyped, ?returned: untyped, ?ruby_ast: untyped) -> instance | (?untyped colorizer, ?untyped trace, ?untyped returned, ?untyped ruby_ast) -> instance
+              def self.[]: (?colorizer: untyped, ?trace: untyped, ?returned: untyped, ?ruby_ast: untyped) -> instance | (?untyped colorizer, ?untyped trace, ?untyped returned, ?untyped ruby_ast) -> instance
+            end
+          end
+          class Trace
+            def enter: (untyped) -> true
+            def success: (untyped) -> true
+          end
+          module InstrumentationSubcompiler
+            def do_compile: () -> String
+          end
+        end
+      end
+    end
+  end
+end

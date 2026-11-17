@@ -1,0 +1,14 @@
+module Dependabot
+  module Bun
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Bun::Version
+      def major: () -> (Integer | nil)
+      def minor: () -> (Integer | nil)
+      def patch: () -> (Integer | nil)
+      def backwards_compatible_with?: (untyped) -> (false | true)
+      def to_s: () -> String
+      def inspect: () -> String
+    end
+  end
+end

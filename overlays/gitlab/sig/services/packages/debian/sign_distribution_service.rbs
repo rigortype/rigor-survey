@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class SignDistributionService
+      def initialize: (untyped, untyped, ?detach: untyped) -> void
+    end
+  end
+end

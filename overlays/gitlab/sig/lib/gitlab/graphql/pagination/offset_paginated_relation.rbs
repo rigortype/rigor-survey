@@ -1,0 +1,12 @@
+module Gitlab
+  module Graphql
+    module Pagination
+      class OffsetPaginatedRelation < ::SimpleDelegator
+        def preload: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+        def includes: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+        def merge: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+        def unscope: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+      end
+    end
+  end
+end

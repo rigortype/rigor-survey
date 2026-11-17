@@ -1,0 +1,4 @@
+module DiscussionOnDiff
+  def diff_discussion?: () -> true
+  def truncated_diff_lines: (?highlight: untyped, ?diff_limit: untyped) -> Array[untyped]
+end

@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    class ParallelizeExecutor
+      def initialize: (size: untyped, with: untyped, ?threshold: untyped, ?work_stealing: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Redmine
+  module Thumbnail
+    def self.valid_pdf_magic?: (untyped) -> (false | true)
+  end
+end

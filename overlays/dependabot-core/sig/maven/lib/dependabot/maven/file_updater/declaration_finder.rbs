@@ -1,0 +1,12 @@
+module Dependabot
+  module Maven
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class DeclarationFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, declaring_requirement: untyped) -> void
+        def declaration_strings: () -> Array[String]
+        def declaration_nodes: () -> Array[Nokogiri::XML::Document]
+        def declaring_requirement: () -> Dependabot::DependencyRequirement
+      end
+    end
+  end
+end

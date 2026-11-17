@@ -1,0 +1,9 @@
+module NotificationRecipients
+  module Builder
+    class Base
+      def initialize: (*untyped) -> void
+      def recipients: () -> Array[untyped]
+      def make_recipient: (untyped, untyped, untyped) -> NotificationRecipient
+    end
+  end
+end

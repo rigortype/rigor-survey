@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class Base
+        def self.default_options: () -> { max_files: untyped, max_lines: untyped, ignore_whitespace_change: false, expanded: false, include_stats: true, use_extra_viewer_as_main: false }
+        def initialize: (untyped, project: untyped, ?diff_options: untyped, ?diff_refs: untyped, ?fallback_diff_refs: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Parser
+  module Source
+    class Buffer
+      def self.recognize_encoding: (untyped) -> (Encoding | nil)
+      def initialize: (Pathname | String | nil, ?Integer, ?source: untyped) -> void
+      def read: () -> Parser::Source::Buffer
+      def decompose_position: (Integer) -> [untyped, untyped]
+      def line_range: (Integer) -> Parser::Source::Range
+      def source_range: () -> Parser::Source::Range
+      def inspect: () -> String
+      def first_line: () -> 5
+    end
+  end
+end

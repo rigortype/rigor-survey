@@ -1,0 +1,17 @@
+module JSON
+  module Ext
+    module Generator
+      class State
+        def self.from_state: (untyped) -> JSON::Ext::Generator::State
+        def initialize: (?untyped) -> void
+        def to_h: () -> Hash[untyped, untyped]
+        def to_hash: () -> Hash[untyped, untyped]
+        def configure: (untyped) -> Hash[untyped, untyped]
+        def generate: (Integer) -> String
+        def merge: (untyped) -> Hash[untyped, untyped]
+        def clear: () -> Hash[untyped, untyped]
+        def has_key?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

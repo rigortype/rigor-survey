@@ -1,0 +1,3 @@
+class JsonSchemaValidator < ::ActiveModel::EachValidator
+  def initialize: (untyped) -> void
+end

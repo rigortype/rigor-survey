@@ -1,0 +1,5 @@
+module ActiveSupport
+  module DescendantsTracker
+    def self.disable_clear!: () -> nil
+  end
+end

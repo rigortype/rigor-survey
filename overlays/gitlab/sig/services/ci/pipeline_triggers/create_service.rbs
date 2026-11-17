@@ -1,0 +1,8 @@
+module Ci
+  module PipelineTriggers
+    class CreateService
+      def initialize: (project: untyped, user: untyped, description: untyped, ?expires_at: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

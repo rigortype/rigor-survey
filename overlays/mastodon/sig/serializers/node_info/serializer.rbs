@@ -1,0 +1,10 @@
+module NodeInfo
+  class Serializer < ::ActiveModel::Serializer[untyped]
+    def version: () -> "2.0"
+    def software: () -> { name: "mastodon", version: String }
+    def services: () -> { outbound: [], inbound: [] }
+    def protocols: () -> ["activitypub"]
+    def usage: () -> { users: { total: untyped, active_month: untyped, active_halfyear: untyped }, local_posts: untyped }
+    def metadata: () -> { nodeName: untyped, nodeDescription: untyped, optInServerDirectory: untyped, optInServerRecommendation: untyped }
+  end
+end

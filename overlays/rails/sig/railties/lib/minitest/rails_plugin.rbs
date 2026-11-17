@@ -1,0 +1,9 @@
+module Minitest
+  class BacktraceFilterWithFallback
+    def initialize: (untyped, untyped) -> void
+  end
+  class ProfileReporter < ::Minitest::Reporter
+    def initialize: (?untyped, ?untyped) -> void
+    def passed?: () -> true
+  end
+end

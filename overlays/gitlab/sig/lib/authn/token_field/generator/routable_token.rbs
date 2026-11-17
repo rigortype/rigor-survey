@@ -1,0 +1,11 @@
+module Authn
+  module TokenField
+    module Generator
+      class RoutableToken
+        def self.random_bytes: (untyped) -> String
+        def initialize: (untyped, routing_payload: untyped, ?prefix: untyped) -> void
+        def generate_token: () -> String
+      end
+    end
+  end
+end

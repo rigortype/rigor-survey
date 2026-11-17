@@ -1,0 +1,9 @@
+module Gitlab
+  module Gpg
+    class Tag < ::Gitlab::SignedTag
+      def signature: () -> Gitlab::Gpg::Signature
+      def attributes: () -> (nil | { gpg_key: untyped, gpg_key_user_name: untyped, gpg_key_user_email: untyped, gpg_key_primary_keyid: untyped, verification_status: untyped, project: untyped, object_name: untyped })
+      def signature_class: () -> singleton(::Repositories::Tags::GpgSignature)
+    end
+  end
+end

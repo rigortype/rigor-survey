@@ -1,0 +1,8 @@
+module Ci
+  module JobArtifacts
+    class TrackArtifactReportService
+      def execute: (untyped) -> Array[Symbol]
+      def event_name: (untyped) -> String
+    end
+  end
+end

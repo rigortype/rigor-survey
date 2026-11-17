@@ -1,0 +1,10 @@
+module Analytics
+  module CycleAnalytics
+    module Stageable
+      def events_hash_code: () -> String
+      def params_for_start_event: () -> ({ label: untyped } | {})
+      def params_for_end_event: () -> ({ label: untyped } | {})
+      def default_stage?: () -> (false | true)
+    end
+  end
+end

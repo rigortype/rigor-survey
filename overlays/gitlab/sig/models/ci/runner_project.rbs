@@ -1,0 +1,5 @@
+module Ci
+  class RunnerProject < ::Ci::ApplicationRecord
+    def recent_runners: () -> ActiveRecord::Relation[Ci::Runner]
+  end
+end

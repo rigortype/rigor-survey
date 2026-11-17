@@ -1,0 +1,7 @@
+module VsCode
+  module Settings
+    class VsCodeSettingPresenter < ::Gitlab::View::Presenter::Simple
+      def initialize: (untyped) -> void
+    end
+  end
+end

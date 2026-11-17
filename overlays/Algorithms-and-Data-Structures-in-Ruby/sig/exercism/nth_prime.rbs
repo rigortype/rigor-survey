@@ -1,0 +1,3 @@
+class Prime
+  def self.is_prime: (untyped) -> (false | true)
+end

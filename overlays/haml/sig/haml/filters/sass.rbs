@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Sass < ::Haml::Filters::TiltBase
+      def compile: (untyped) -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,16 @@
+module Dependabot
+  module FileParsers
+    class Base
+      class DependencySet
+        def initialize: (?untyped, ?case_sensitive: untyped) -> void
+        def dependencies: () -> Array[untyped]
+        def <<: (untyped) -> Dependabot::FileParsers::Base::DependencySet
+        def +: (untyped) -> Dependabot::FileParsers::Base::DependencySet
+        class DependencySlot
+          def <<: (untyped) -> Dependabot::FileParsers::Base::DependencySet::DependencySlot
+          def all_versions: () -> Array[Dependabot::Dependency]
+        end
+      end
+    end
+  end
+end

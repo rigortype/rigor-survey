@@ -1,0 +1,7 @@
+module Dependabot
+  class ErrorDetails < ::T::ImmutableStruct
+    def self.from_hash: (untyped) -> Dependabot::ErrorDetails
+    def to_h: () -> Hash[Symbol, Object]
+    def self.parse_detail: (untyped) -> (DetailHash | String | nil)
+  end
+end

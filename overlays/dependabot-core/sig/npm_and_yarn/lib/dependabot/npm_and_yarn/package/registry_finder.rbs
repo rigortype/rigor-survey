@@ -1,0 +1,16 @@
+module Dependabot
+  module NpmAndYarn
+    module Package
+      class RegistryFinder
+        def initialize: (dependency: untyped, credentials: untyped, ?npmrc_file: untyped, ?yarnrc_file: untyped, ?yarnrc_yml_file: untyped) -> void
+        def registry: () -> (String | String | nil)
+        def auth_headers: () -> Hash[String, String]
+        def dependency_url: () -> String
+        def tarball_url: (untyped) -> String
+        def self.central_registry?: (untyped) -> (false | true)
+        def registry_from_rc: (untyped) -> String
+        def custom_registry?: () -> (false | true)
+      end
+    end
+  end
+end

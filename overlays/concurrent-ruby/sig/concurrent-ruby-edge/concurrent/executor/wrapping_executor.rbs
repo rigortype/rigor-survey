@@ -1,0 +1,5 @@
+module Concurrent
+  class WrappingExecutor < ::Concurrent::Synchronization::Object
+    def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+  end
+end

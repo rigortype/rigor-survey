@@ -1,0 +1,13 @@
+module Arel
+  module FactoryMethods
+    def create_true: () -> Arel::Nodes::True
+    def create_false: () -> Arel::Nodes::False
+    def create_table_alias: (untyped, untyped) -> Arel::Nodes::TableAlias
+    def create_string_join: (untyped) -> Arel::Nodes::StringJoin
+    def create_and: (untyped) -> Arel::Nodes::Nary
+    def grouping: (untyped) -> Arel::Nodes::Grouping
+    def lower: (untyped) -> Arel::Nodes::NamedFunction
+    def coalesce: (*untyped) -> Arel::Nodes::NamedFunction
+    def cast: (untyped, untyped) -> Arel::Nodes::NamedFunction
+  end
+end

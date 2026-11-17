@@ -1,0 +1,11 @@
+module Gitlab
+  module ImportExport
+    module Json
+      class NdjsonReader
+        def initialize: (untyped) -> void
+        def exist?: () -> (false | true)
+        def consume_relation: (untyped, String, ?mark_as_consumed: untyped) -> Enumerator[untyped, untyped]
+      end
+    end
+  end
+end

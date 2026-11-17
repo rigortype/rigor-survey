@@ -1,0 +1,5 @@
+module API
+  class Topics < ::API::Base
+    def find_topic!: (untyped) -> ::Projects::Topic
+  end
+end

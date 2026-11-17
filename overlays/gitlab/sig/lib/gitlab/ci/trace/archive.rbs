@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class Trace
+      class Archive
+        def initialize: (untyped, untyped, ?untyped) -> void
+      end
+    end
+  end
+end

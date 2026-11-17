@@ -1,0 +1,5 @@
+module Gitlab
+  class LogTimestampFormatter < ::Logger::Formatter
+    def call: (untyped, untyped, untyped, untyped) -> String
+  end
+end

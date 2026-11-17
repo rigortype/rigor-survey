@@ -1,0 +1,12 @@
+module GitlabSubscriptions
+  module SystemDefined
+    class Plan
+      def self.all_plans: () -> [untyped]
+      def self.default_plans: () -> [untyped]
+      def self.instance_plans: () -> [untyped]
+      def default?: () -> (false | true)
+      def paid?: () -> false
+      def ultimate_or_ultimate_trial_plans?: () -> false
+    end
+  end
+end

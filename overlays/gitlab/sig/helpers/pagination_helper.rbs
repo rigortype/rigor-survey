@@ -1,0 +1,4 @@
+module PaginationHelper
+  def page_size: () -> Integer
+  def paginate_event_tracking_data_attributes: (?event_tracking: untyped, ?event_label: untyped) -> ({ event_tracking: untyped, event_label: untyped } | {})
+end

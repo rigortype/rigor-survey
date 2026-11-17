@@ -1,0 +1,6 @@
+module REST
+  class CollectionItemSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def account_id: () -> String
+  end
+end

@@ -1,0 +1,5 @@
+module REST
+  class TermsOfServiceSerializer < ::ActiveModel::Serializer[untyped]
+    def effective_date: () -> String
+  end
+end

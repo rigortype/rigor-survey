@@ -1,0 +1,10 @@
+module Ci
+  module PipelineCreation
+    class FindPipelineInputsService
+      def self.from_cache: (untyped) -> Ci::PipelineCreation::FindPipelineInputsService
+      def initialize: (current_user: untyped, project: untyped, ref: untyped, ?pipeline_source: untyped) -> void
+      def calculate_reactive_cache: (untyped) -> ServiceResponse
+      def id: () -> String
+    end
+  end
+end

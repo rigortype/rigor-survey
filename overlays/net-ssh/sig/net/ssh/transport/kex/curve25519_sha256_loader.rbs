@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Transport
+      module Kex
+        module Curve25519Sha256Loader
+          def self.raiseUnlessLoaded: (untyped) -> nil
+          def self.x25519SupportRequired: () -> "net-ssh requires openssl >= 3.2.0 and a crypto backend with X25519 enabled for curve25519-sha256 support.\n"
+        end
+      end
+    end
+  end
+end

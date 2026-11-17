@@ -1,0 +1,6 @@
+module Projects
+  class GitlabProjectsImportService
+    def initialize: (untyped, untyped, ?untyped, import_type: String, ?request_channel: Symbol) -> void
+    def request_channel: () -> :ui
+  end
+end

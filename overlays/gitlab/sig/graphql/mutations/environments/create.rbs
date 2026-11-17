@@ -1,0 +1,7 @@
+module Mutations
+  module Environments
+    class Create < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, **untyped) -> { environment: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

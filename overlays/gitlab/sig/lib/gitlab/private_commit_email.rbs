@@ -1,0 +1,5 @@
+module Gitlab
+  module PrivateCommitEmail
+    def self.for_user: (untyped) -> String
+  end
+end

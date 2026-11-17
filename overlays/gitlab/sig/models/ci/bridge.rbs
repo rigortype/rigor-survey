@@ -1,0 +1,17 @@
+module Ci
+  class Bridge < ::Ci::Processable
+    def self.clone_accessors: () -> [:pipeline, :project, :ref, :tag, :name, :allow_failure, :stage_idx, :when, :environment, :description, :needs_attributes, :scheduling_type, :ci_stage, :partition_id, :resource_group]
+    def tags: () -> [:bridge]
+    def schedulable?: () -> false
+    def action?: () -> (false | true)
+    def can_auto_cancel_pipeline_on_job_failure?: () -> true
+    def play: (untyped, ?untyped, ?untyped, ?rate_limit: untyped) -> ServiceResponse
+    def job_artifacts: () -> ActiveRecord::Relation[Ci::JobArtifact]
+    def tag_list: () -> Gitlab::Ci::Tags::TagList
+    def artifacts?: () -> false
+    def runnable?: () -> false
+    def any_unmet_prerequisites?: () -> false
+    def execute_hooks: () -> bot
+    def to_partial_path: () -> "projects/generic_commit_statuses/generic_commit_status"
+  end
+end

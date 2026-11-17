@@ -1,0 +1,12 @@
+module Gitlab
+  module Metrics
+    class RequestsRackMiddleware
+      def initialize: (untyped) -> void
+      def self.initialize_slis!: () -> Gitlab::RackAttack::LabkitRateLimit::EndpointResolver
+      def call: (untyped) -> (["undefined", untyped, untyped] | [untyped, untyped, untyped])
+      def health_endpoint?: (untyped) -> (false | true)
+      def labels_from_context: () -> { feature_category: untyped, endpoint_id: untyped }
+      def status_class: (untyped) -> ("undefined" | String)
+    end
+  end
+end

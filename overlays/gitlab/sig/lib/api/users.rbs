@@ -1,0 +1,5 @@
+module API
+  class Users < ::API::Base
+    def finder: (?untyped) -> PersonalAccessTokensFinder
+  end
+end

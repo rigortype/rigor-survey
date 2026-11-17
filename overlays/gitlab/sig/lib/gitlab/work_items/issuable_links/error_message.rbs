@@ -1,0 +1,13 @@
+module Gitlab
+  module WorkItems
+    module IssuableLinks
+      class ErrorMessage
+        def initialize: (target_type: untyped) -> void
+        def for_http_status: (untyped) -> (String | nil)
+        def already_assigned: () -> String
+        def no_permission_error: () -> String
+        def not_found: () -> String
+      end
+    end
+  end
+end

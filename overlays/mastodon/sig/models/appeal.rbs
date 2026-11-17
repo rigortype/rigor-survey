@@ -1,0 +1,3 @@
+class Appeal < ::ApplicationRecord
+  def pending?: () -> (false | true)
+end

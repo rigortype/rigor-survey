@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    class AdvanceStageWorker
+      def find_import_state: (untyped) -> ProjectImportState
+    end
+  end
+end

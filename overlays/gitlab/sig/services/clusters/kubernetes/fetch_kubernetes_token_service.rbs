@@ -1,0 +1,8 @@
+module Clusters
+  module Kubernetes
+    class FetchKubernetesTokenService
+      def initialize: (untyped, untyped, untyped, ?token_retry_delay: Integer) -> void
+      def execute: () -> (String | nil)
+    end
+  end
+end

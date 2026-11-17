@@ -1,0 +1,4 @@
+class NewMergeRequestWorker
+  def self.idempotency_arguments: (untyped) -> ([untyped, untyped, untyped] | [untyped, untyped])
+  def issuable_class: () -> singleton(MergeRequest)
+end

@@ -1,0 +1,8 @@
+module Organizations
+  module Groups
+    class TransferWorker
+      def self.lease_key: (untyped) -> String
+      def perform: (untyped) -> (ServiceResponse | nil)
+    end
+  end
+end

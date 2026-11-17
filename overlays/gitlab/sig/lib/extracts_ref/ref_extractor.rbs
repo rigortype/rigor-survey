@@ -1,0 +1,6 @@
+module ExtractsRef
+  class RefExtractor
+    def initialize: (untyped, untyped, ?override_id: untyped) -> void
+    def extract_ref: (untyped) -> [untyped, untyped]
+  end
+end

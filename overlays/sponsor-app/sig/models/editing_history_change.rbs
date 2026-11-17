@@ -1,0 +1,9 @@
+class EditingHistoryChange
+  def initialize: (Array[untyped]) -> void
+  def operation: () -> String
+  def path: () -> String
+  def old_value?: () -> bool
+  def new_value?: () -> bool
+  def old_value: () -> untyped
+  def new_value: () -> untyped
+end

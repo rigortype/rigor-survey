@@ -1,0 +1,16 @@
+module Gitlab
+  class SubmoduleLinks
+    def initialize: (untyped) -> void
+    def for: (untyped, untyped, ?untyped) -> (Gitlab::SubmoduleLinks::Urls | nil)
+    class Urls < ::Struct[untyped]
+      def web: () -> untyped
+      def tree: () -> untyped
+      def compare: () -> untyped
+      def web=: (untyped) -> untyped
+      def tree=: (untyped) -> untyped
+      def compare=: (untyped) -> untyped
+      def self.new: (?web: untyped, ?tree: untyped, ?compare: untyped) -> instance | (?untyped web, ?untyped tree, ?untyped compare) -> instance
+      def self.[]: (?web: untyped, ?tree: untyped, ?compare: untyped) -> instance | (?untyped web, ?untyped tree, ?untyped compare) -> instance
+    end
+  end
+end

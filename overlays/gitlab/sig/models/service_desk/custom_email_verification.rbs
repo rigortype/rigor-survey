@@ -1,0 +1,7 @@
+module ServiceDesk
+  class CustomEmailVerification < ::ApplicationRecord
+    def owner_class_attribute_default: () -> nil
+    def self.generate_token: () -> String
+    def in_timeframe?: () -> (false | true)
+  end
+end

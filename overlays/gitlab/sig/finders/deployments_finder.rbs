@@ -1,0 +1,3 @@
+class DeploymentsFinder
+  def initialize: (?untyped) -> void
+end

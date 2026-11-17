@@ -1,0 +1,9 @@
+module Clusters
+  module Agents
+    module ManagedResources
+      class DeleteService
+        def initialize: (untyped, ?attempt_count: untyped) -> void
+      end
+    end
+  end
+end

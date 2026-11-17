@@ -1,0 +1,22 @@
+module Gitlab
+  module Database
+    module MigrationHelpers
+      module ConvertToBigint
+        def temp_column_removed?: (untyped, untyped) -> (false | true)
+        def skip_bigint_migration?: (untyped, untyped) -> (false | true)
+        def bigint_index_name: (untyped) -> String
+        def tmp_foreign_key_name: (untyped) -> String
+        class PkIndexDefinition < ::Struct[untyped]
+          def name: () -> untyped
+          def unique: () -> untyped
+          def columns: () -> untyped
+          def name=: (untyped) -> untyped
+          def unique=: (untyped) -> untyped
+          def columns=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?unique: untyped, ?columns: untyped) -> instance
+          def self.[]: (?name: untyped, ?unique: untyped, ?columns: untyped) -> instance
+        end
+      end
+    end
+  end
+end

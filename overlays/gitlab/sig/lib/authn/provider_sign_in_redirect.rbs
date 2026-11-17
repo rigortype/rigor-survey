@@ -1,0 +1,5 @@
+module Authn
+  module ProviderSignInRedirect
+    def self.redirector_for_provider: (untyped) -> (nil | singleton(Authn::ChatGpt::SiwcRedirect))
+  end
+end

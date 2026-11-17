@@ -1,0 +1,6 @@
+module Projects
+  class BatchCountService
+    def initialize: (untyped) -> void
+    def count_service: () -> bot
+  end
+end

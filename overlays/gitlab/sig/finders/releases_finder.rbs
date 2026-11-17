@@ -1,0 +1,4 @@
+class ReleasesFinder
+  def initialize: (untyped, ?untyped, ?untyped) -> void
+  def parent: () -> Array[untyped]
+end

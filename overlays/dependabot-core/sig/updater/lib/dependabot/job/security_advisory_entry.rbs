@@ -1,0 +1,9 @@
+module Dependabot
+  class Job
+    class SecurityAdvisoryEntry < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::SecurityAdvisoryEntry
+      def self.required_string: (untyped, untyped) -> String
+      def self.string_array_with_default: (untyped, untyped) -> Array[String]
+    end
+  end
+end

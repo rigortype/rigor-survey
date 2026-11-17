@@ -1,0 +1,7 @@
+module Mutations
+  module Organizations
+    class Restore < ::Mutations::BaseMutation
+      def resolve: (id: untyped) -> { organization: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

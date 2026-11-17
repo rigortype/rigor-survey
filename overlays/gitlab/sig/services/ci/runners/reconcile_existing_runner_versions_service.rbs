@@ -1,0 +1,7 @@
+module Ci
+  module Runners
+    class ReconcileExistingRunnerVersionsService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

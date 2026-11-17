@@ -1,0 +1,13 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      class ProcessList
+        def initialize: (?filename: untyped, ?force_restart: untyped, ?logger: untyped) -> void
+        def orphan_list_file: () -> File
+        def deleted_list_file: () -> File
+        def deleted_list_filename: () -> String
+        def cursor_tracker_key: () -> String
+      end
+    end
+  end
+end

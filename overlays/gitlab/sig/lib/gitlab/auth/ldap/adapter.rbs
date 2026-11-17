@@ -1,0 +1,11 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class Adapter
+        def self.config: (untyped) -> Gitlab::Auth::Ldap::Config
+        def initialize: (untyped, ?untyped) -> void
+        def config: () -> Gitlab::Auth::Ldap::Config
+      end
+    end
+  end
+end

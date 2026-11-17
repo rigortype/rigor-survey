@@ -1,0 +1,5 @@
+module Gitlab
+  class SnippetSearchResults < ::Gitlab::SearchResults
+    def initialize: (untyped, String, ?organization_id: untyped) -> void
+  end
+end

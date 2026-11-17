@@ -1,0 +1,7 @@
+module Resolvers
+  module WorkItems
+    class UserPreferenceResolver < ::Resolvers::BaseResolver
+      def resolve: (namespace_path: untyped, ?work_item_type_id: untyped) -> (::WorkItems::UserPreference | nil)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Users
+  module Pins
+    class MergeDefaultsService
+      def initialize: (untyped, defaults_by_panel: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

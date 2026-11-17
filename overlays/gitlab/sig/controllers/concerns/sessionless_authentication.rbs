@@ -1,0 +1,3 @@
+module SessionlessAuthentication
+  def request_authenticator: () -> Gitlab::Auth::RequestAuthenticator
+end

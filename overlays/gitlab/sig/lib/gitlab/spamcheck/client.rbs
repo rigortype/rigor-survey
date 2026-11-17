@@ -1,0 +1,7 @@
+module Gitlab
+  module Spamcheck
+    class Client
+      def spam?: (spammable: untyped, user: untyped, ?context: untyped, ?extra_features: { files: [{ path: String }] }) -> Gitlab::Spamcheck::Result
+    end
+  end
+end

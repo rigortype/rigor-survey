@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class HtmlAnchor
+      def initialize: (Proc) -> void
+    end
+  end
+end

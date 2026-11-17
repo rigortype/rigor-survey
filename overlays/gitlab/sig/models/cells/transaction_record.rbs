@@ -1,0 +1,11 @@
+module Cells
+  class TransactionRecord
+    def initialize: (untyped, untyped) -> void
+    def trigger_transactional_callbacks?: () -> true
+    def rolledback!: (?force_restore_state: untyped, ?should_run_callbacks: untyped) -> (nil | true)
+    def committed!: (?should_run_callbacks: untyped) -> (nil | true)
+    def create_records: () -> Array[untyped]
+    def destroy_records: () -> Array[untyped]
+    def done: () -> (false | true)
+  end
+end

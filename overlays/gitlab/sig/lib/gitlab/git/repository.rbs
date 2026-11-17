@@ -1,0 +1,38 @@
+module Gitlab
+  module Git
+    class Repository
+      def initialize: (untyped, untyped, untyped, untyped, ?container: untyped) -> void
+      def to_s: () -> String
+      def flipper_id: () -> String
+      def ==: (untyped) -> (false | true)
+      def hash: () -> Integer
+      def archive_metadata: (untyped, untyped, untyped, ?untyped, append_sha: untyped, ?path: untyped, ?ref_type: untyped, ?include_lfs_blobs: untyped, ?exclude_paths: untyped) -> (Hash[String, untyped] | {})
+      def diff: (untyped, untyped, ?untyped, *untyped) -> Gitlab::Git::DiffCollection
+      def diff_stats: (untyped, untyped) -> Gitlab::Git::DiffStatsCollection
+      def refs_hash: () -> Hash[untyped, untyped]
+      def clean: (?untyped) -> (Array[untyped] | nil)
+      def info_attributes: () -> Gitlab::Git::AttributesParser
+      def attributes_at: (untyped) -> Gitlab::Git::AttributesAtRefParser
+      def compare_source_branch: (untyped, untyped, untyped, straight: untyped) -> (Gitlab::Git::Compare | nil)
+      def commit: (?untyped) -> (Gitlab::Git::Commit | nil)
+      def empty?: () -> (false | true)
+      def blob_at: (untyped, untyped, ?limit: untyped) -> (Gitlab::Git::Blob | nil)
+      def fsck: () -> nil
+      def bundle_to_disk: (untyped) -> true
+      def gitaly_ref_client: () -> Gitlab::GitalyClient::RefService
+      def gitaly_commit_client: () -> Gitlab::GitalyClient::CommitService
+      def gitaly_repository_client: () -> Gitlab::GitalyClient::RepositoryService
+      def gitaly_operation_client: () -> Gitlab::GitalyClient::OperationService
+      def gitaly_remote_client: () -> Gitlab::GitalyClient::RemoteService
+      def gitaly_blob_client: () -> Gitlab::GitalyClient::BlobService
+      def gitaly_diff_client: () -> Gitlab::GitalyClient::DiffService
+      def gitaly_conflicts_client: (untyped, untyped) -> Gitlab::GitalyClient::ConflictsService
+      def praefect_info_client: () -> Gitlab::GitalyClient::PraefectInfoService
+      def gitaly_analysis_client: () -> Gitlab::GitalyClient::AnalysisService
+      def can_be_merged?: (untyped, untyped) -> (false | true)
+      class CreateTreeError < ::Gitlab::Git::BaseError
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

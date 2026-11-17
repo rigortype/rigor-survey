@@ -1,0 +1,7 @@
+module WebHooks
+  module Events
+    class ResendService
+      def initialize: (untyped, current_user: untyped) -> void
+    end
+  end
+end

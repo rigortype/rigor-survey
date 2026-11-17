@@ -1,0 +1,9 @@
+module YARD
+  module Handlers
+    module Ruby
+      class ModuleFunctionHandler < ::YARD::Handlers::Ruby::Base
+        def make_module_function: (untyped, untyped) -> :public
+      end
+    end
+  end
+end

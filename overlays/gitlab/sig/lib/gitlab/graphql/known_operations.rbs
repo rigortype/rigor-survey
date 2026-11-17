@@ -1,0 +1,17 @@
+module Gitlab
+  module Graphql
+    class KnownOperations
+      def self.default: () -> Gitlab::Graphql::KnownOperations
+      def initialize: (untyped) -> void
+      class Operation < ::Struct[untyped]
+        def name: () -> untyped
+        def metadata: () -> untyped
+        def name=: (untyped) -> untyped
+        def metadata=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?metadata: untyped) -> instance | (?untyped name, ?untyped metadata) -> instance
+        def self.[]: (?name: untyped, ?metadata: untyped) -> instance | (?untyped name, ?untyped metadata) -> instance
+        def to_caller_id: () -> String
+      end
+    end
+  end
+end

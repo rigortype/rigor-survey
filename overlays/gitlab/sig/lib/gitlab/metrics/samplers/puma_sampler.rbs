@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Samplers
+      class PumaSampler < ::Gitlab::Metrics::Samplers::BaseSampler
+        def metrics: () -> { puma_workers: untyped, puma_running_workers: untyped, puma_stale_workers: untyped, puma_running: untyped, puma_queued_connections: untyped, puma_active_connections: untyped, puma_pool_capacity: untyped, puma_max_threads: untyped, puma_idle_threads: untyped }
+        def init_metrics: () -> { puma_workers: untyped, puma_running_workers: untyped, puma_stale_workers: untyped, puma_running: untyped, puma_queued_connections: untyped, puma_active_connections: untyped, puma_pool_capacity: untyped, puma_max_threads: untyped, puma_idle_threads: untyped }
+      end
+    end
+  end
+end

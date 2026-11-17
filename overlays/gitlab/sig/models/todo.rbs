@@ -1,0 +1,8 @@
+class Todo < ::ApplicationRecord
+  def self.for_group_ids_and_descendants_by_ancestry: (untyped) -> ActiveRecord::Relation[Todo]
+  def self.pending_for_expiring_ssh_keys: (untyped) -> ActiveRecord::Relation[Todo]
+  def self.action_names: () -> Hash[Integer, Symbol]
+  def self.parentless_action_types: () -> [14, 15]
+  def action_name: () -> (Symbol | nil)
+  def parentless_type?: () -> (false | true)
+end

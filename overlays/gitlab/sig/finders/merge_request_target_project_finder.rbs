@@ -1,0 +1,4 @@
+class MergeRequestTargetProjectFinder
+  def initialize: (source_project: untyped, ?current_user: untyped, ?project_feature: Symbol) -> void
+  def project_feature: () -> :repository
+end

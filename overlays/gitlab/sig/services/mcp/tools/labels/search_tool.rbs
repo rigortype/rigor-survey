@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Labels
+      class SearchTool < ::Mcp::Tools::Base::GraphqlTool
+        def build_variables: () -> Hash[untyped, untyped]
+        def operation_name: () -> ("group" | "project")
+      end
+    end
+  end
+end

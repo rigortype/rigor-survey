@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        module Limit
+          class Size < ::Gitlab::Ci::Pipeline::Chain::Base
+            def initialize: (*untyped) -> void
+            def limit: () -> Gitlab::Ci::Pipeline::Quota::Size
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class JobTokenScopeResolver < ::Resolvers::BaseResolver
+      def resolve: () -> ::Ci::JobToken::Scope
+    end
+  end
+end

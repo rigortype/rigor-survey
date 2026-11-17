@@ -1,0 +1,9 @@
+module Redmine
+  module MyPage
+    def self.groups: () -> ["top", "left", "right"]
+    def self.blocks: () -> Hash[untyped, untyped]
+    def self.block_options: (?untyped) -> Array[[untyped, untyped]]
+    def self.additional_blocks: () -> Hash[untyped, untyped]
+    def self.default_layout: () -> Hash[String, ["issuesassignedtome"] | ["issuesreportedbyme"]]
+  end
+end

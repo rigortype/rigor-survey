@@ -1,0 +1,9 @@
+module Mutations
+  module Clusters
+    module Agents
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> { errors: Array[untyped] }
+      end
+    end
+  end
+end

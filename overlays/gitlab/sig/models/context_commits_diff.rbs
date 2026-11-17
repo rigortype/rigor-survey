@@ -1,0 +1,6 @@
+class ContextCommitsDiff
+  def initialize: (untyped) -> void
+  def diffs: (?untyped) -> Gitlab::Diff::FileCollection::Compare
+  def diff_refs: () -> Gitlab::Diff::DiffRefs
+  def first_diffs_slice: (untyped, ?untyped) -> Gitlab::Diff::FileCollection::Compare
+end

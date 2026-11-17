@@ -1,0 +1,6 @@
+module InternalRedirect
+  def sanitize_redirect: (untyped) -> (String | nil)
+  def safe_redirect_path: (untyped) -> (String | nil)
+  def safe_redirect_path_for_url: (untyped) -> (String | nil)
+  def referer_path: (untyped) -> (String | nil)
+end

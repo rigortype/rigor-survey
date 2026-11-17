@@ -1,0 +1,8 @@
+module Gitlab
+  module Cache
+    class JsonCache
+      def initialize: (?untyped) -> void
+      def write: (untyped, untyped, ?untyped) -> bot
+    end
+  end
+end

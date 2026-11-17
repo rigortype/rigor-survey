@@ -1,0 +1,13 @@
+module Dependabot
+  module Helm
+    module Helpers
+      def self.search_releases: (untyped) -> String
+      def self.add_repo: (untyped, untyped) -> String
+      def self.update_repo: () -> String
+      def self.update_lock: () -> String
+      def self.fetch_oci_tags: (untyped) -> String
+      def self.fetch_tags_with_release_date_using_oci: (untyped, untyped) -> String
+      def self.validate_cli_arg!: (untyped, untyped) -> nil
+    end
+  end
+end

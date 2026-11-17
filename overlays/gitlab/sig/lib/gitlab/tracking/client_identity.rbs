@@ -1,0 +1,20 @@
+module Gitlab
+  module Tracking
+    class ClientIdentity
+      def self.from_request: (untyped) -> Gitlab::Tracking::ClientIdentity::Identity
+      def self.from_headers: (untyped, untyped) -> (Gitlab::Tracking::ClientIdentity::Identity | nil)
+      def self.from_user_agent: (untyped) -> Gitlab::Tracking::ClientIdentity::Identity
+      def self.current: () -> (Gitlab::Tracking::ClientIdentity::Identity | nil)
+      class Identity < ::Struct[untyped]
+        def type: () -> untyped
+        def name: () -> untyped
+        def version: () -> untyped
+        def type=: (untyped) -> untyped
+        def name=: (untyped) -> untyped
+        def version=: (untyped) -> untyped
+        def self.new: (?type: untyped, ?name: untyped, ?version: untyped) -> instance | (?untyped type, ?untyped name, ?untyped version) -> instance
+        def self.[]: (?type: untyped, ?name: untyped, ?version: untyped) -> instance | (?untyped type, ?untyped name, ?untyped version) -> instance
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Arel
+  class BindError < ::Arel::ArelError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class ArelError < ::StandardError
+  end
+end

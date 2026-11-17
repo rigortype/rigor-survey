@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Runner
+      class Backoff
+        def initialize: (untyped) -> void
+        def slot: () -> (0 | Integer)
+        def to_seconds: () -> Numeric
+      end
+    end
+  end
+end

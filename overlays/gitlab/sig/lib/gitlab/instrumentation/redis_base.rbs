@@ -1,0 +1,12 @@
+module Gitlab
+  module Instrumentation
+    class RedisBase
+      def self.add_call_details: (untyped, untyped) -> (Array[untyped] | nil)
+      def self.detail_store: () -> Array[untyped]
+      def self.enable_redis_cluster_validation: () -> singleton(Gitlab::Instrumentation::RedisBase)
+      def self.storage_labels: () -> { storage: untyped, storage_shard: untyped }
+      def self.build_key: (untyped) -> String
+      def self.decompose_redirection_message: (untyped) -> { redirection_type: untyped, target_node_key: untyped }
+    end
+  end
+end

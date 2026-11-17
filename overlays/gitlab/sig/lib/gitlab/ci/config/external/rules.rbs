@@ -1,0 +1,18 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        class Rules
+          def initialize: (untyped) -> void
+          def evaluate: (untyped) -> Gitlab::Ci::Config::External::Rules::Result
+          class Result < ::Struct[untyped]
+            def when: () -> untyped
+            def when=: (untyped) -> untyped
+            def self.new: (?when: untyped) -> instance | (?untyped when) -> instance
+            def self.[]: (?when: untyped) -> instance | (?untyped when) -> instance
+          end
+        end
+      end
+    end
+  end
+end

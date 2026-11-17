@@ -1,0 +1,12 @@
+module TreeHelper
+  def tree_join: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> String
+  def tree_edit_branch: (?untyped, ?untyped) -> (String | nil)
+  def patch_branch_name: (untyped) -> (String | nil)
+  def breadcrumb_data_attributes: (?untyped, ?untyped) -> (Hash[untyped, untyped] | { selected_branch: untyped, can_push_code: untyped, can_push_to_branch: untyped, can_collaborate: untyped, new_blob_path: untyped, upload_path: untyped, new_dir_path: untyped, new_branch_path: untyped, new_tag_path: untyped, can_edit_tree: untyped })
+  def vue_tree_header_app_data: (untyped, untyped, untyped, untyped) -> { project_id: untyped, ref: untyped, ref_type: untyped, root_ref: untyped, breadcrumbs: Hash[untyped, untyped] | { selected_branch: untyped, can_push_code: untyped, can_push_to_branch: untyped, can_collaborate: untyped, new_blob_path: untyped, upload_path: untyped, new_dir_path: untyped, new_branch_path: untyped, new_tag_path: untyped, can_edit_tree: untyped }, project_root_path: untyped, project_path: untyped, compare_path: untyped, web_ide_button_options: String, ssh_url: untyped, http_url: untyped, xcode_url: untyped, download_links: untyped, escaped_ref: untyped, show_no_ssh_key_message: untyped, user_settings_ssh_keys_path: untyped, custom_code_dropdown_clients: untyped }
+  def vue_repository_app_data: (untyped, untyped, untyped, untyped, ?blob: untyped) -> Hash[untyped, untyped]
+  def vue_file_list_data: (untyped, untyped) -> { project_path: untyped, project_short_path: untyped, ref: untyped, escaped_ref: untyped, full_name: untyped, ref_type: untyped, can_download_code: untyped, has_revs_file: "false" | "true" }
+  def code_dropdown_ide_data: () -> { gitpod_enabled: untyped, show_web_ide_button: untyped, show_gitpod_button: untyped, web_ide_url: String, gitpod_url: "" | String }
+  def substitute_code_dropdown_clone_url: (untyped, untyped) -> (String | nil)
+  def compact_code_dropdown_data: (untyped, untyped, untyped) -> { ssh_url: untyped, http_url: untyped, xcode_url: untyped, ide_data: "" | String, directory_download_links: untyped, show_no_ssh_key_message: untyped, user_settings_ssh_keys_path: untyped, custom_code_dropdown_clients: untyped }
+end

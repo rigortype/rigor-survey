@@ -1,0 +1,7 @@
+module Members
+  class ScheduleDeletionService
+    def initialize: (untyped, untyped, untyped, ?String) -> void
+    def execute: () -> Hash[untyped, untyped]
+    def ip_address: () -> "100.12.10.5"
+  end
+end

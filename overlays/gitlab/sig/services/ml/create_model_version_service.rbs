@@ -1,0 +1,8 @@
+module Ml
+  class CreateModelVersionService
+    def initialize: (untyped, ?untyped) -> void
+    class ModelVersionCreationError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+  end
+end

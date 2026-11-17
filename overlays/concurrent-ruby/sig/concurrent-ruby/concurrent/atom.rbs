@@ -1,0 +1,6 @@
+module Concurrent
+  class Atom < ::Concurrent::Synchronization::Object
+    def initialize: (Integer, ?untyped) -> void
+    def compare_and_set: (Integer | Symbol, String | Symbol) -> (false | true)
+  end
+end

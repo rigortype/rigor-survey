@@ -1,0 +1,9 @@
+module Import
+  module BulkImports
+    class MaxIidsExportService
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def exported_filename: () -> String
+      def exported_objects_count: () -> 1
+    end
+  end
+end

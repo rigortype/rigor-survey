@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Batch
+      class Metrics
+        def time_operation: (untyped) ?{ (*untyped) -> untyped } -> nil
+        def instrument_operation: (untyped, ?instrument_affected_rows: untyped) -> (Array[untyped] | nil)
+        def timings: () -> Hash[untyped, untyped]
+        def affected_rows: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

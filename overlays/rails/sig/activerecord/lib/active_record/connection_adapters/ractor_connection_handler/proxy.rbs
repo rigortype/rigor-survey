@@ -1,0 +1,15 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      module Proxy
+        class RemoteError < ::ActiveRecord::ActiveRecordError
+          def initialize: (?untyped, ?untyped) -> void
+        end
+        class ErrorResponse
+          def initialize: (untyped) -> void
+          def remote_error: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::Proxy::RemoteError
+        end
+      end
+    end
+  end
+end

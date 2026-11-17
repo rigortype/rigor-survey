@@ -1,0 +1,4 @@
+class PoolRepository < ::ApplicationRecord
+  def object_pool: () -> Gitlab::Git::ObjectPool
+  def inspect: () -> String
+end

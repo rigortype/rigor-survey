@@ -1,0 +1,5 @@
+module SystemCheck
+  module InitHelpers
+    def systemd_get_wants: (untyped) -> Array[String]
+  end
+end

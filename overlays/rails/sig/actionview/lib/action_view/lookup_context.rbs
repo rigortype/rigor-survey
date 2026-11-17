@@ -1,0 +1,13 @@
+module ActionView
+  class LookupContext
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def with_prepended_formats: (untyped) -> ActionView::LookupContext
+    module ViewPaths
+      def exists?: (untyped, ?untyped, ?untyped, ?untyped, **untyped) -> (false | true)
+      def any?: (untyped, ?untyped, ?untyped) -> (false | true)
+      def append_view_paths: (untyped) -> ActionView::PathSet
+      def prepend_view_paths: (untyped) -> ActionView::PathSet
+      def view_paths: () -> (ActionView::PathSet | nil)
+    end
+  end
+end

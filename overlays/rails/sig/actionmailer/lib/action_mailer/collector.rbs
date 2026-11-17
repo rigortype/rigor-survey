@@ -1,0 +1,6 @@
+module ActionMailer
+  class Collector
+    def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+    def responses: () -> Array[untyped]
+  end
+end

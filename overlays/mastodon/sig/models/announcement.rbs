@@ -1,0 +1,4 @@
+class Announcement < ::ApplicationRecord
+  def tags: () -> Array[untyped]
+  def reactions_allowed: () -> (false | true)
+end

@@ -1,0 +1,5 @@
+class MergeRequest < ::ApplicationRecord
+  class ApprovalRemovalSettings
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

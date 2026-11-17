@@ -1,0 +1,6 @@
+module RGL
+  class PathBuilder
+    def initialize: (untyped, untyped) -> void
+    def paths: (untyped) -> Hash[untyped, untyped]
+  end
+end

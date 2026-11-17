@@ -1,0 +1,8 @@
+module Gitlab
+  module ApplicationRateLimiter
+    module LabkitAdapter
+      def self.cost_mode?: (untyped) -> (false | true)
+      def self.identifier_for: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

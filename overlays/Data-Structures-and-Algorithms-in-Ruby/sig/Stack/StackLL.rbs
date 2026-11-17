@@ -1,0 +1,6 @@
+class Stack
+  def display: () -> nil
+  class Node
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

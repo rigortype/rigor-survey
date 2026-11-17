@@ -1,0 +1,10 @@
+module Parser
+  module Source
+    class Map
+      def initialize: (untyped) -> void
+      def initialize_copy: (untyped) -> nil
+      def with_expression: (untyped) -> Parser::Source::Map
+      def to_hash: () -> Hash[untyped, untyped]
+    end
+  end
+end

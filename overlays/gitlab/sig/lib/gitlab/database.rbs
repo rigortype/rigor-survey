@@ -1,0 +1,20 @@
+module Gitlab
+  module Database
+    def self.clear_memoization!: () -> nil
+    def self.all_database_connection_files: () -> Array[String]
+    def self.all_gitlab_schema_files: () -> Array[String]
+    def self.database_mode: () -> ("multiple-databases" | "single-database" | "single-database-ci-connection")
+    def self.check_for_non_superuser: () -> nil
+    def self.random: () -> "RANDOM()"
+    def self.true_value: () -> "'t'"
+    def self.false_value: () -> "'f'"
+    def self.read_only?: () -> false
+    def self.read_write?: () -> true
+    def self.read_minimum_migration_version: () -> (Integer | nil)
+    def self.install_transaction_metrics_patches!: () -> singleton(ActiveRecord::Base)
+    def self.install_transaction_context_patches!: () -> singleton(ActiveRecord::ConnectionAdapters::RealTransaction)
+    module RealTransactionContext
+      def gitlab_transaction_context: () -> Gitlab::Database::Transaction::Context
+    end
+  end
+end

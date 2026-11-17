@@ -1,0 +1,17 @@
+module ActionDispatch
+  module Journey
+    class Format
+      def self.required_path: (untyped) -> ActionDispatch::Journey::Format::Parameter
+      def self.required_segment: (untyped) -> ActionDispatch::Journey::Format::Parameter
+      def initialize: (untyped) -> void
+      class Parameter < ::Struct[untyped]
+        def name: () -> untyped
+        def escaper: () -> untyped
+        def name=: (untyped) -> untyped
+        def escaper=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?escaper: untyped) -> instance | (?untyped name, ?untyped escaper) -> instance
+        def self.[]: (?name: untyped, ?escaper: untyped) -> instance | (?untyped name, ?untyped escaper) -> instance
+      end
+    end
+  end
+end

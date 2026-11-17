@@ -1,0 +1,7 @@
+module ContainerRegistry
+  class Registry
+    def initialize: (untyped, ?untyped) -> void
+    def client: () -> ContainerRegistry::Client
+    def gitlab_api_client: () -> ContainerRegistry::GitlabApiClient
+  end
+end

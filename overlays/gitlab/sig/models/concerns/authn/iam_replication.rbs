@@ -1,0 +1,5 @@
+module Authn
+  module IamReplication
+    def self.replicator_for: (untyped) -> (singleton(Authn::IamReplication::OauthAccessTokenReplicator) | singleton(Authn::IamReplication::OauthApplicationReplicator))
+  end
+end

@@ -1,0 +1,7 @@
+class PagePolicy < ::Policy
+  def index?: () -> true
+  def calendar?: () -> true
+  def deleted?: () -> true
+  def search?: () -> true
+  def show?: () -> true
+end

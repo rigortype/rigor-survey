@@ -1,0 +1,11 @@
+module Gitlab
+  module Git
+    class RefResolver
+      def initialize: (untyped, untyped, ?skip_existence_check: (false | true)) -> void
+      def branch?: () -> (false | true)
+      def tag?: () -> (false | true)
+      def merge_request?: () -> (false | true)
+      def workload?: () -> (false | true)
+    end
+  end
+end

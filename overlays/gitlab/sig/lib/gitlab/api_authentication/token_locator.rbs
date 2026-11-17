@@ -1,0 +1,16 @@
+module Gitlab
+  module APIAuthentication
+    class TokenLocator
+      def initialize: (untyped) -> void
+      def extract: (untyped) -> (Gitlab::APIAuthentication::TokenLocator::UsernameAndPassword | nil)
+      class UsernameAndPassword < ::Struct[untyped]
+        def username: () -> untyped
+        def password: () -> untyped
+        def username=: (untyped) -> untyped
+        def password=: (untyped) -> untyped
+        def self.new: (?username: untyped, ?password: untyped) -> instance | (?untyped username, ?untyped password) -> instance
+        def self.[]: (?username: untyped, ?password: untyped) -> instance | (?untyped username, ?untyped password) -> instance
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Ml
+  class CandidateDetailsPresenter
+    def initialize: (untyped, untyped) -> void
+    def present: () -> { candidate: { info: { iid: untyped, eid: untyped, gid: untyped, path_to_artifact: untyped, experiment_name: untyped, path_to_experiment: untyped, path: untyped, status: untyped, ci_job: Hash[untyped, untyped] | nil, created_at: untyped, author_web_url: untyped, author_name: untyped, promote_path: untyped, can_promote: untyped }, params: untyped, metrics: untyped, metrics_truncated: untyped, metadata: untyped, projectPath: untyped, can_write_model_experiments: untyped, markdown_preview_path: untyped, model_gid: untyped, model_name: untyped, latest_version: untyped } }
+  end
+end

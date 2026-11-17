@@ -1,0 +1,5 @@
+module Ci
+  class PersistentRef
+    def path: () -> String
+  end
+end

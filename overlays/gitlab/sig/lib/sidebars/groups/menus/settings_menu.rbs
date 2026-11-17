@@ -1,0 +1,11 @@
+module Sidebars
+  module Groups
+    module Menus
+      class SettingsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "settings"
+        def pick_into_super_sidebar?: () -> true
+        def separated?: () -> true
+      end
+    end
+  end
+end

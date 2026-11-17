@@ -1,0 +1,3 @@
+class ApplicationPolicy
+  def initialize: (untyped, untyped) -> void
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Transactions
+    def _committed_already_called: () -> (false | nil | true)
+    def _trigger_update_callback: () -> false
+    def _trigger_destroy_callback: () -> false
+  end
+end

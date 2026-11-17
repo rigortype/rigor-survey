@@ -1,0 +1,3 @@
+class FastIpMap
+  def initialize: ([IPAddr, IPAddr, IPAddr]) -> void
+end

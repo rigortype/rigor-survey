@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class Cancelable < ::Gitlab::Ci::Status::Extended
+          def action_icon: () -> "cancel"
+          def action_method: () -> :post
+          def action_title: () -> "Cancel"
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Backup
+  class GitalyBackup
+    def initialize: (untyped, ?max_parallelism: untyped, ?storage_parallelism: untyped, ?incremental: untyped, ?server_side: untyped) -> void
+    def start: (untyped, untyped, ?backup_id: untyped, ?remove_all_repositories: untyped) -> Thread
+    def finish!: () -> nil
+  end
+end

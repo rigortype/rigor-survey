@@ -1,0 +1,10 @@
+module Import
+  module Offline
+    module Imports
+      class ScheduleImportService
+        def initialize: (untyped, untyped, ?untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

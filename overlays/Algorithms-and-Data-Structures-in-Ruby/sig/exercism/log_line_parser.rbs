@@ -1,0 +1,3 @@
+class LogLineParser
+  def initialize: (untyped) -> void
+end

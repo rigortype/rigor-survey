@@ -1,0 +1,7 @@
+module Ci
+  class JobDefinition < ::Ci::ApplicationRecord
+    def self.fabricate: (config: untyped, project_id: untyped, partition_id: untyped) -> Ci::JobDefinition
+    def self.extract_and_parse_tags: (untyped) -> ({ tag_list: Gitlab::Ci::Tags::TagList } | {})
+    def tag_list: () -> Gitlab::Ci::Tags::TagList
+  end
+end

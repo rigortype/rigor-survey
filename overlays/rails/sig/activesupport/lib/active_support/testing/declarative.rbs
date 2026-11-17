@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module Declarative
+      def test: (String) ?{ () [self: untyped] -> void } -> void
+    end
+  end
+end

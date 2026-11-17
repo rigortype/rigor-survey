@@ -1,0 +1,3 @@
+class DeviseEmailValidator < ::ActiveModel::EachValidator
+  def check_validity!: () -> nil
+end

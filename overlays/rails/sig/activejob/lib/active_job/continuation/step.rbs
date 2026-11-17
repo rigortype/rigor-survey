@@ -1,0 +1,9 @@
+module ActiveJob
+  class Continuation
+    class Step
+      def initialize: (untyped, untyped, job: untyped, resumed: untyped) -> void
+      def to_a: () -> [untyped, untyped]
+      def description: () -> String
+    end
+  end
+end

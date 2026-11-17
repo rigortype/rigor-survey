@@ -1,0 +1,3 @@
+module PollsHelper
+  def poll_data_for: (untyped) -> String
+end

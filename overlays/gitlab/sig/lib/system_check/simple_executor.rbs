@@ -1,0 +1,9 @@
+module SystemCheck
+  class SimpleExecutor
+    def initialize: (String) -> void
+    def <<: (untyped) -> Set[untyped]
+    def execute: () -> nil
+    def checks: () -> Set[untyped]
+    def component: () -> "Test"
+  end
+end

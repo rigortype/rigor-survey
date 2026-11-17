@@ -1,0 +1,9 @@
+module Mutations
+  module Security
+    module CiConfiguration
+      class ConfigureSastIac < ::Mutations::Security::CiConfiguration::BaseSecurityAnalyzer
+        def configure_analyzer: (untyped, **untyped) -> ServiceResponse
+      end
+    end
+  end
+end

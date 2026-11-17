@@ -1,0 +1,5 @@
+module PersonalAccessTokens
+  class LastUsedService
+    def initialize: (untyped) -> void
+  end
+end

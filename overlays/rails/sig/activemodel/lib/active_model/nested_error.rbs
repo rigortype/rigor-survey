@@ -1,0 +1,5 @@
+module ActiveModel
+  class NestedError < ::ActiveModel::Error
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

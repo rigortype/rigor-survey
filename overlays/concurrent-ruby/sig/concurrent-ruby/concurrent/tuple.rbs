@@ -1,0 +1,6 @@
+module Concurrent
+  class Tuple
+    def initialize: (untyped) -> void
+    def each: () -> ::Array[untyped]
+  end
+end

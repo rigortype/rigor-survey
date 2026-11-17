@@ -1,0 +1,19 @@
+module Dependabot
+  module Bun
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PackageLatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?raise_on_ignored: untyped, ?cooldown_options: untyped) -> void
+        def package_fetcher: () -> (Dependabot::Bun::Package::PackageDetailsFetcher | ::Package::PackageDetailsFetcher)
+        def latest_version_from_registry: () -> (Dependabot::Version | nil)
+        def latest_version_with_no_unlock: (?language_version: untyped) -> (Dependabot::Version | nil)
+        def lowest_security_fix_version: (?language_version: untyped) -> (Dependabot::Version | nil)
+        def fetch_latest_version: (?language_version: untyped) -> (Dependabot::Version | nil)
+        def fetch_lowest_security_fix_version: (?language_version: untyped) -> (Dependabot::Version | nil)
+        def available_versions: () -> Array[Dependabot::Package::PackageRelease]
+        def possible_releases: (?filter_ignored: untyped) -> Array[Dependabot::Package::PackageRelease]
+        def possible_versions: (?filter_ignored: untyped) -> Array[untyped]
+        def cooldown_enabled?: () -> true
+      end
+    end
+  end
+end

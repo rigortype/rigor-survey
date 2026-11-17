@@ -1,0 +1,13 @@
+module Dependabot
+  module Swift
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class XcodeVersionResolver
+        def initialize: (dependency: untyped, git_commit_checker: untyped, security_advisories: untyped, ?update_cooldown: untyped) -> void
+        def latest_resolvable_version: () -> (Dependabot::Swift::Version | nil)
+        def latest_resolvable_version_tag: () -> (Hash[Symbol, Object] | nil)
+        def lowest_security_fix_version: () -> (Dependabot::Swift::Version | nil)
+        def version_pinned?: () -> (false | true)
+      end
+    end
+  end
+end

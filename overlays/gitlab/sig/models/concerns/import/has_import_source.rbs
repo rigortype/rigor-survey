@@ -1,0 +1,5 @@
+module Import
+  module HasImportSource
+    def imported?: () -> (false | true)
+  end
+end

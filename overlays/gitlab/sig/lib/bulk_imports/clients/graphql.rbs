@@ -1,0 +1,8 @@
+module BulkImports
+  module Clients
+    class Graphql
+      def initialize: (?url: untyped, ?token: untyped) -> void
+      def headers: () -> Hash[String, "application/json" | String]
+    end
+  end
+end

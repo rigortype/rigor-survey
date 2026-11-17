@@ -1,0 +1,8 @@
+module Dependabot
+  module Maven
+    module NativeHelpers
+      def self.wrapper_mirror: (untyped) -> Dependabot::Maven::Shared::MavenSettings::Mirror
+      def self.handle_wrapper_error: (untyped) -> bot
+    end
+  end
+end

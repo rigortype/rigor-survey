@@ -1,0 +1,7 @@
+module Clusters
+  module AgentTokens
+    class TrackUsageService
+      def initialize: (untyped) -> void
+    end
+  end
+end

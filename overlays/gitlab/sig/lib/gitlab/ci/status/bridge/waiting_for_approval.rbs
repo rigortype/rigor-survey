@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      module Bridge
+        class WaitingForApproval < ::Gitlab::Ci::Status::Extended
+          def self.matches?: (untyped, untyped) -> false
+        end
+      end
+    end
+  end
+end

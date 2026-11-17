@@ -1,0 +1,14 @@
+module Dependabot
+  module Bundler
+    module ChecksumMismatch
+      def self.error_for: (untyped) -> (Dependabot::DependencyChecksumMismatch | nil)
+      def self.parse: (untyped) -> (Dependabot::Bundler::ChecksumMismatch::ParsedMismatch | nil)
+      def self.parse_entries: (untyped) -> (Array[untyped] | nil)
+      def self.build_message: (untyped) -> String
+      def self.describe: (untyped) -> String
+      def self.describe_source: (untyped) -> ("another source" | String)
+      def self.describe_api_source: (untyped) -> ("a registry" | String)
+      def self.resolution_advice: (untyped) -> String
+    end
+  end
+end

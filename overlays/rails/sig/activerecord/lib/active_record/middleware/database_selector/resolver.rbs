@@ -1,0 +1,11 @@
+module ActiveRecord
+  module Middleware
+    class DatabaseSelector
+      class Resolver
+        def self.call: (untyped, ?untyped) -> ActiveRecord::Middleware::DatabaseSelector::Resolver
+        def initialize: (untyped, ?untyped) -> void
+        def instrumenter: () -> ActiveSupport::Notifications::Instrumenter
+      end
+    end
+  end
+end

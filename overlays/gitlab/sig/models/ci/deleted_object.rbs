@@ -1,0 +1,5 @@
+module Ci
+  class DeletedObject < ::Ci::ApplicationRecord
+    def delete_file_from_storage: () -> (false | true)
+  end
+end

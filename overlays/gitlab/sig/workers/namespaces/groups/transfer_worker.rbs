@@ -1,0 +1,7 @@
+module Namespaces
+  module Groups
+    class TransferWorker
+      def self.lease_key: (untyped) -> String
+    end
+  end
+end

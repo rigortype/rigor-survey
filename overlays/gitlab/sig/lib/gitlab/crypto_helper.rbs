@@ -1,0 +1,6 @@
+module Gitlab
+  module CryptoHelper
+    def sha256: (untyped) -> String
+    def aes256_gcm_encrypt: (untyped, ?nonce: untyped) -> String
+  end
+end

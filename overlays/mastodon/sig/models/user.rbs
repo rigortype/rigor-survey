@@ -1,0 +1,13 @@
+class User < ::ApplicationRecord
+  def self.those_who_can: (*untyped) -> ActiveRecord::Relation[User]
+  def self.skip_mx_check?: () -> (false | true)
+  def email_domain: () -> (String | nil)
+  def update_sign_in!: (?new_sign_in: untyped) -> (String | nil)
+  def pending?: () -> (false | true)
+  def active_for_authentication?: () -> (false | true)
+  def nonfunctional_reason: () -> (:"2fa_required" | :account_deleted | :account_suspended | :login_disabled | :memorial | :pending_approval | :pending_confirmation | nil)
+  def functional?: () -> (false | true)
+  def functional_or_moved?: () -> (false | true)
+  def unconfirmed_or_pending?: () -> (false | true)
+  def approve!: () -> (String | nil)
+end

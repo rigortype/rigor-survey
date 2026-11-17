@@ -1,0 +1,14 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class Engine < ::Gitlab::Database::Aggregation::Engine
+          def self.dimensions_mapping: () -> { column: singleton(Gitlab::Database::Aggregation::ClickHouse::DimensionDefinition), date_bucket: singleton(Gitlab::Database::Aggregation::ClickHouse::DateBucketDimension), tier: singleton(Gitlab::Database::Aggregation::ClickHouse::TierDimension), traversal_path: singleton(Gitlab::Database::Aggregation::ClickHouse::TraversalPathDimension) }
+          def self.metrics_mapping: () -> { count: singleton(Gitlab::Database::Aggregation::ClickHouse::Count), mean: singleton(Gitlab::Database::Aggregation::ClickHouse::Mean), min: singleton(Gitlab::Database::Aggregation::ClickHouse::Min), max: singleton(Gitlab::Database::Aggregation::ClickHouse::Max), rate: singleton(Gitlab::Database::Aggregation::ClickHouse::Rate), ratio: singleton(Gitlab::Database::Aggregation::ClickHouse::Ratio), quantile: singleton(Gitlab::Database::Aggregation::ClickHouse::Quantile), sum: singleton(Gitlab::Database::Aggregation::ClickHouse::Sum), retained_count: singleton(Gitlab::Database::Aggregation::ClickHouse::RetainedCount), lagged_count: singleton(Gitlab::Database::Aggregation::ClickHouse::LaggedCount), acquired_count: singleton(Gitlab::Database::Aggregation::ClickHouse::AcquiredCount), churned_count: singleton(Gitlab::Database::Aggregation::ClickHouse::ChurnedCount) }
+          def self.filters_mapping: () -> { exact_match: singleton(Gitlab::Database::Aggregation::ClickHouse::ExactMatchFilter), exact_not_match: singleton(Gitlab::Database::Aggregation::ClickHouse::ExactNotMatchFilter), range: singleton(Gitlab::Database::Aggregation::ClickHouse::RangeFilter), descendants: singleton(Gitlab::Database::Aggregation::ClickHouse::DescendantsFilter), metric_exact_match: singleton(Gitlab::Database::Aggregation::ClickHouse::MetricExactMatchFilter), metric_range: singleton(Gitlab::Database::Aggregation::ClickHouse::MetricRangeFilter) }
+          def self.max_page_size: () -> 500
+        end
+      end
+    end
+  end
+end

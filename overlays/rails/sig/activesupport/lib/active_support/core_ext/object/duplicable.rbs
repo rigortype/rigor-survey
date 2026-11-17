@@ -1,0 +1,15 @@
+class Object
+  def duplicable?: () -> true
+end
+
+class Method
+  def duplicable?: () -> false
+end
+
+class UnboundMethod
+  def duplicable?: () -> false
+end
+
+module Singleton
+  def duplicable?: () -> false
+end

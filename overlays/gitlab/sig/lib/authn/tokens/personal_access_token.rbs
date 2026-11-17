@@ -1,0 +1,9 @@
+module Authn
+  module Tokens
+    class PersonalAccessToken
+      def initialize: (untyped, Symbol) -> void
+      def present_with: () -> singleton(API::Entities::PersonalAccessToken)
+      def source: () -> :secret_detection
+    end
+  end
+end

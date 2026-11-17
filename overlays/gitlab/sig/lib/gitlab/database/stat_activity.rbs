@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class StatActivity
+      def initialize: (untyped) -> void
+      def non_idle_connections_by_db: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

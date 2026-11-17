@@ -1,0 +1,6 @@
+module Milestones
+  class ClosedIssuesCountService < ::BaseCountService
+    def initialize: (untyped) -> void
+    def cache_key: () -> String
+  end
+end

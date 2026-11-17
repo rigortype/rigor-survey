@@ -1,0 +1,5 @@
+module Namespaces
+  class ProjectsFinder
+    def initialize: (?namespace: untyped, ?current_user: untyped, ?params: untyped) -> void
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class SchemaDumper < ::ActiveRecord::SchemaDumper
+      def self.create: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::SchemaDumper
+    end
+  end
+end

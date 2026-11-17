@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Inheritance
+    module ClassMethods
+      def primary_abstract_class: () -> ActiveRecord::Inheritance::ClassMethods
+    end
+  end
+end

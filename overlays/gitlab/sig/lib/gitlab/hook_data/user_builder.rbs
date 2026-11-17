@@ -1,0 +1,7 @@
+module Gitlab
+  module HookData
+    class UserBuilder < ::Gitlab::HookData::BaseBuilder
+      def build: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

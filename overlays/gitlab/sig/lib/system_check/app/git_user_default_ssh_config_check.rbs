@@ -1,0 +1,7 @@
+module SystemCheck
+  module App
+    class GitUserDefaultSSHConfigCheck < ::SystemCheck::BaseCheck
+      def show_error: () -> nil
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class DamageBill
+        def filled_on_first_poll?: () -> (false | true)
+      end
+    end
+  end
+end

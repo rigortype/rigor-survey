@@ -1,0 +1,3 @@
+class MoveWorker
+  def perform: (untyped, untyped) -> (nil | true)
+end

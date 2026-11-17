@@ -1,0 +1,12 @@
+module ActionDispatch
+  class MiddlewareStack
+    def initialize: (*untyped) -> void
+    class Middleware
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def build_instrumented: (untyped) -> ActionDispatch::MiddlewareStack::InstrumentationProxy
+    end
+    class InstrumentationProxy
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

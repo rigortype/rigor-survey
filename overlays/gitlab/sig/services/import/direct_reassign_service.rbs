@@ -1,0 +1,8 @@
+module Import
+  class DirectReassignService
+    def self.model_list: () -> Hash[String, ["author_id", "assignee_id", "last_edited_by_id", "closed_by_id"] | ["author_id", "resolved_by_id", "dismissed_by_id", "confirmed_by_id"] | ["author_id", "updated_by_id", "closed_by_id"] | ["author_id", "updated_by_id", "merge_user_id"] | ["author_id"] | ["merged_by_id", "latest_closed_by_id"] | ["owner_id"] | ["user_id"]]
+    def self.supported?: (untyped, untyped, untyped) -> (false | true)
+    def initialize: (untyped, reassignment_throttling: untyped, ?sleep_time: Integer) -> void
+    def execute: () -> (Hash[String, Array[String]] | nil)
+  end
+end

@@ -1,0 +1,5 @@
+module Suggestions
+  class CreateService
+    def initialize: (untyped) -> void
+  end
+end

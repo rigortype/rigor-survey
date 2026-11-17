@@ -1,0 +1,5 @@
+module PackageMetadata
+  class IngestedAdvisoryEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["advisory_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

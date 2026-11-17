@@ -1,0 +1,5 @@
+module API
+  class SnippetRepositoryStorageMoves < ::API::Base
+    def user_snippet: () -> (Snippet | nil)
+  end
+end

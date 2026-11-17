@@ -1,0 +1,6 @@
+module Users
+  class Internal
+    def self.in_organization: (untyped) -> Users::Internal
+    def initialize: (?organization: untyped) -> void
+  end
+end

@@ -1,0 +1,6 @@
+class Upload < ::ApplicationRecord
+  def self.begin_fast_destroy: () -> Hash[singleton(Uploads::Fog) | singleton(Uploads::Local), untyped]
+  def self.destroy_for_associations!: (untyped, ?untyped) -> (Array[untyped] | nil)
+  def uploader_context: () -> Hash[untyped, untyped]
+  def filename: () -> String
+end

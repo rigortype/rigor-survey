@@ -1,0 +1,10 @@
+module Admin
+  module IdentitiesHelper
+    def label_for_identity_provider: (untyped) -> String
+    def provider_id_cell_testid: (untyped) -> "provider_id_blank"
+    def provider_id: (untyped) -> "-"
+    def saml_group_cell_testid: (untyped) -> "saml_group_blank"
+    def saml_group_link: (untyped) -> "-"
+    def scim_identities_collection: (untyped) -> []
+  end
+end

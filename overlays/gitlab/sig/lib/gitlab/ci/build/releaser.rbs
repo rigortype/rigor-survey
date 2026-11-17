@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Build
+      class Releaser
+        def initialize: (job: untyped) -> void
+        def script: () -> [String]
+      end
+    end
+  end
+end

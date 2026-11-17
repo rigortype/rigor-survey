@@ -1,0 +1,3 @@
+module BlobActiveModel
+  def to_ability_name: () -> "blob"
+end

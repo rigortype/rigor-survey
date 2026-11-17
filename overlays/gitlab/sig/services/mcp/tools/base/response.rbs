@@ -1,0 +1,15 @@
+module Mcp
+  module Tools
+    module Base
+      module Response
+        def self.success: (untyped, ?untyped) -> { content: untyped, structuredContent: Hash[untyped, untyped] | { items: Array[untyped], metadata: { count: Integer, has_more: false } } | {}, isError: false }
+        def self.error: (untyped, ?untyped, ?reason: untyped) -> (Hash[untyped, untyped] | { content: [{ type: "text", text: untyped }], structuredContent: { error: untyped } | {}, isError: true })
+        def self.reason_for_http_status: (untyped) -> (:bad_request | :error | :not_found | :unauthorized)
+        def self.rate_limited_error: (untyped, ?retry_after: untyped, ?limit: untyped) -> (Hash[untyped, untyped] | { content: [{ type: "text", text: untyped }], structuredContent: { error: Hash[untyped, untyped] }, isError: true })
+        def self.error?: (untyped) -> (false | true)
+        def self.error_message: (untyped) -> (String | nil)
+        def self.format_structured_content: (untyped) -> (Hash[untyped, untyped] | { items: Array[untyped], metadata: { count: Integer, has_more: false } })
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Fp
+    module RopHelpers
+      def public_singleton_methods_to_ignore: () -> Array[untyped]
+    end
+  end
+end

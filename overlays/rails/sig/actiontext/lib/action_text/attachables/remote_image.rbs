@@ -1,0 +1,12 @@
+module ActionText
+  module Attachables
+    class RemoteImage
+      def self.from_node: (untyped) -> (ActionText::Attachables::RemoteImage | nil)
+      def self.attributes_from_node: (untyped) -> { url: untyped, content_type: untyped, width: untyped, height: untyped }
+      def initialize: (?untyped) -> void
+      def attachable_plain_text_representation: (untyped) -> String
+      def attachable_markdown_representation: (untyped, ?attachment_links: untyped) -> String
+      def to_partial_path: () -> "action_text/attachables/remote_image"
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class Webhook < ::ApplicationRecord
+  def self.permission_for_event: (untyped) -> (:manage_reports | :manage_users | :view_devops | nil)
+end

@@ -1,0 +1,11 @@
+module Mcp
+  module Tools
+    module Search
+      class SearchService < ::Mcp::Tools::Base::AggregatedService
+        def self.tool_name: () -> "search"
+        def self.tool_aliases: () -> ["gitlab_search"]
+        def input_schema: () -> ({ type: "object", properties: untyped, required: ["scope", "search"] } | { type: "object", properties: untyped, required: ["scope", "search"], additionalProperties: false })
+      end
+    end
+  end
+end

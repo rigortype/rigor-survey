@@ -1,0 +1,8 @@
+module Ml
+  module ExperimentTracking
+    class CandidateRepository
+      def initialize: (untyped, ?untyped) -> void
+      def by_eid: (untyped) -> (Ml::Candidate | nil)
+    end
+  end
+end

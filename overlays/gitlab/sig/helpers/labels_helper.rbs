@@ -1,0 +1,7 @@
+module LabelsHelper
+  def label_tooltip_title_html: (untyped, ?tooltip_shows_title: untyped) -> String
+  def suggested_colors: () -> Hash[String, untyped]
+  def label_subscription_status: (untyped, untyped) -> ("group-level" | "project-level" | "unsubscribed")
+  def label_status_tooltip: (untyped, untyped) -> String
+  def label_dropdown_data: (untyped, ?untyped) -> Hash[untyped, untyped]
+end

@@ -1,0 +1,14 @@
+module Mcp
+  module Tools
+    module Jobs
+      class GetArtifactFileService < ::Mcp::Tools::Base::CustomService
+        def authorization_error_message: () -> "Job not found or inaccessible"
+        class GzipMembers
+          def initialize: (untyped) -> void
+          def read: (untyped) -> (String | nil)
+          def finish: () -> nil
+        end
+      end
+    end
+  end
+end

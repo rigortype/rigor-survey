@@ -1,0 +1,8 @@
+class DoublyLinkedList
+  def print_values: (?untyped) -> nil
+  def size: () -> (0 | Integer | nil)
+end
+
+class Node
+  def initialize: (?untyped, ?untyped, ?untyped) -> void
+end

@@ -1,0 +1,7 @@
+module Storage
+  class Hashed
+    def initialize: (untyped, ?prefix: untyped) -> void
+    def base_dir: () -> (String | nil)
+    def disk_path: () -> (String | nil)
+  end
+end

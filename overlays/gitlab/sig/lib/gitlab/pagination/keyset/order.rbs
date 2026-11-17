@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class Order < ::Arel::Nodes::SqlLiteral
+        def initialize: (column_definitions: untyped) -> void
+        def self.build: (untyped) -> Gitlab::Pagination::Keyset::Order
+        def where_values_with_or_query: (untyped) -> (Arel::Nodes::Grouping | [])
+        def reversed_order: () -> Gitlab::Pagination::Keyset::Order
+      end
+    end
+  end
+end

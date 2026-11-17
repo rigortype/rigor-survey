@@ -1,0 +1,11 @@
+module Clusters
+  module Agents
+    module Authorizations
+      module CiAccess
+        class FilterService
+          def initialize: (untyped, untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

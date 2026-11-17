@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class ReferenceUpdateError < ::StandardError
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module GoModules
+    module ResolvabilityErrors
+      def self.handle: (untyped) -> bot
+      def self.requires_reachability_check?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Types
+  module Namespaces
+    module MarkdownPaths
+      def self.type_mappings: () -> Hash[singleton(Group) | singleton(::Namespaces::ProjectNamespace) | singleton(::Namespaces::UserNamespace), singleton(Types::Namespaces::MarkdownPaths::GroupNamespaceMarkdownPathsType) | singleton(Types::Namespaces::MarkdownPaths::ProjectNamespaceMarkdownPathsType) | singleton(Types::Namespaces::MarkdownPaths::UserNamespaceMarkdownPathsType)]
+      def self.resolve_type: (untyped, untyped) -> (singleton(Types::Namespaces::MarkdownPaths::GroupNamespaceMarkdownPathsType) | singleton(Types::Namespaces::MarkdownPaths::ProjectNamespaceMarkdownPathsType) | singleton(Types::Namespaces::MarkdownPaths::UserNamespaceMarkdownPathsType))
+    end
+  end
+end

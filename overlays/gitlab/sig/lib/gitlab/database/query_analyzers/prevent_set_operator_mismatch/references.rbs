@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventSetOperatorMismatch < ::Gitlab::Database::QueryAnalyzers::Base
+        class References
+          def self.resolved?: (untyped) -> (false | true)
+          def self.unresolved?: (untyped) -> (false | true)
+          def self.table?: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

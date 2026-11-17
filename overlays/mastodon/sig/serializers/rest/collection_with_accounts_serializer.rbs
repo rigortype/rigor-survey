@@ -1,0 +1,5 @@
+module REST
+  class CollectionWithAccountsSerializer < ::ActiveModel::Serializer[untyped]
+    def accounts: () -> Array[untyped]
+  end
+end

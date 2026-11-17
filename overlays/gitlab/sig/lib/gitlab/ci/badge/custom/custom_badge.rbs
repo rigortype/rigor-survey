@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Custom
+        class CustomBadge < ::Gitlab::Ci::Badge::Base
+          def initialize: (untyped, ?opts: untyped) -> void
+          def entity: () -> "custom"
+          def metadata: () -> Gitlab::Ci::Badge::Custom::Metadata
+          def template: () -> Gitlab::Ci::Badge::Custom::Template
+          def customization: () -> { key_width: untyped, key_text: untyped, key_color: untyped, value_color: untyped, value_text: untyped, value_width: untyped }
+        end
+      end
+    end
+  end
+end

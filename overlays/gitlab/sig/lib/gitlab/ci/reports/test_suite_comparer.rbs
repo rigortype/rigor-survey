@@ -1,0 +1,25 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestSuiteComparer
+        def initialize: (untyped, untyped, untyped) -> void
+        class TestSummary < ::Struct[untyped]
+          def new_failures: () -> untyped
+          def existing_failures: () -> untyped
+          def resolved_failures: () -> untyped
+          def new_errors: () -> untyped
+          def existing_errors: () -> untyped
+          def resolved_errors: () -> untyped
+          def new_failures=: (untyped) -> untyped
+          def existing_failures=: (untyped) -> untyped
+          def resolved_failures=: (untyped) -> untyped
+          def new_errors=: (untyped) -> untyped
+          def existing_errors=: (untyped) -> untyped
+          def resolved_errors=: (untyped) -> untyped
+          def self.new: (?new_failures: untyped, ?existing_failures: untyped, ?resolved_failures: untyped, ?new_errors: untyped, ?existing_errors: untyped, ?resolved_errors: untyped) -> instance
+          def self.[]: (?new_failures: untyped, ?existing_failures: untyped, ?resolved_failures: untyped, ?new_errors: untyped, ?existing_errors: untyped, ?resolved_errors: untyped) -> instance
+        end
+      end
+    end
+  end
+end

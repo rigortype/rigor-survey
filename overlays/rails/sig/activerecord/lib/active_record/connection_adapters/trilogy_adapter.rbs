@@ -1,0 +1,8 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class TrilogyAdapter < ::ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter
+      def self.translate_connect_error: (untyped, untyped) -> (ActiveRecord::ConnectionNotEstablished | ActiveRecord::DatabaseConnectionError | ActiveRecord::NoDatabaseError)
+      def initialize: (untyped, *untyped) -> void
+    end
+  end
+end

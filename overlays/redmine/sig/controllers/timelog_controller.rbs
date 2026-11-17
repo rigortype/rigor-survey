@@ -1,0 +1,3 @@
+class TimelogController < ::ApplicationController
+  def bulk_edit: () -> Hash[untyped, untyped]
+end

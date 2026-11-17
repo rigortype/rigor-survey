@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class String < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Value
+            def inspect: () -> ::String
+            def self.build: (untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::String
+          end
+        end
+      end
+    end
+  end
+end

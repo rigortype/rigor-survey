@@ -1,0 +1,14 @@
+module Faraday
+  class Connection
+    def initialize: (?untyped, ?untyped) -> void
+    def params=: (untyped) -> Faraday::Utils::ParamsHash
+    def headers=: (untyped) -> Faraday::Utils::Headers
+    def in_parallel?: () -> (false | true)
+    def set_basic_auth: (untyped, untyped) -> String
+    def build_request: (untyped) -> Faraday::Request
+    def dup: () -> Faraday::Connection
+    def find_default_proxy: () -> (String | nil)
+    def params: () -> Faraday::Utils::ParamsHash
+    def headers: () -> Faraday::Utils::Headers
+  end
+end

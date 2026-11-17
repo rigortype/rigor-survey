@@ -1,0 +1,9 @@
+class Webfinger
+  def initialize: (untyped) -> void
+  def perform: () -> Webfinger::Response
+  class Response
+    def initialize: (untyped, untyped) -> void
+  end
+  class Error < ::StandardError
+  end
+end

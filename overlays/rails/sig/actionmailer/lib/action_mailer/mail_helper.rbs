@@ -1,0 +1,5 @@
+module ActionMailer
+  module MailHelper
+    def block_format: (untyped) -> String
+  end
+end

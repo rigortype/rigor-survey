@@ -1,0 +1,7 @@
+module API
+  module Support
+    class TokenWithExpiration
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

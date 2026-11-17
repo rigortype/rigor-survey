@@ -1,0 +1,9 @@
+module Dependabot
+  module DotnetSdk
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def package_details: () -> (Dependabot::Package::PackageDetails | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  class UsageDataQueries < ::Gitlab::UsageData
+    def self.add: (*untyped) -> String
+    def self.alt_usage_data: (?untyped, ?fallback: untyped) ?{ (*untyped) -> untyped } -> ({ alt_usage_data_block: "non-SQL usage data block" } | { alt_usage_data_value: untyped })
+    def self.redis_usage_data: (?untyped) ?{ (*untyped) -> untyped } -> (nil | { redis_usage_data_block: "non-SQL usage data block" } | { redis_usage_data_counter: untyped })
+    def self.topology_usage_data: () -> { duration_s: 0, failures: [] }
+  end
+end

@@ -1,0 +1,7 @@
+module Types
+  module Projects
+    module ProjectInterface
+      def self.resolve_type: (untyped, untyped) -> singleton(Types::ProjectType)
+    end
+  end
+end

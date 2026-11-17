@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Type
+    module Internal
+      module Timezone
+        def initialize: (?timezone: untyped, **untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module RbNaCl
+  module Hash
+    class Blake2b
+      def self.digest: (untyped, untyped) -> String
+      def initialize: (?untyped) -> void
+      def reset: () -> nil
+      def update: (untyped) -> Integer
+      def digest: () -> String
+    end
+  end
+end

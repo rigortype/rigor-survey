@@ -1,0 +1,8 @@
+module Mail
+  class AttachmentsList < ::Array[untyped]
+    def initialize: (untyped) -> void
+    def inline: () -> Mail::AttachmentsList
+    def guess_encoding: () -> ("7bit" | "binary")
+    def set_mime_type: (untyped) -> (String | nil)
+  end
+end

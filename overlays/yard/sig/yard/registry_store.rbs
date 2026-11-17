@@ -1,0 +1,10 @@
+module YARD
+  class RegistryStore
+    def locale: (untyped) -> YARD::I18n::Locale
+    def load: (?untyped) -> (false | true)
+    def load!: (?untyped) -> (false | true)
+    def save: (?untyped, ?untyped) -> true
+    def locked_for_writing?: (?untyped) -> (false | true)
+    def destroy: (?untyped) -> (false | true)
+  end
+end

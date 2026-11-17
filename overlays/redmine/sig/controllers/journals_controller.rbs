@@ -1,0 +1,3 @@
+class JournalsController < ::ApplicationController
+  def diff: () -> (Redmine::Helpers::Diff | false)
+end

@@ -1,0 +1,8 @@
+module WebIde
+  module Settings
+    class ExtensionMarketplaceViewModelGenerator
+      def self.build_view_model: (untyped) -> (Hash[untyped, untyped] | { enabled: true, vscode_settings: Hash[untyped, untyped] })
+      def self.gallery_disabled_extra_attributes: (disabled_reason: untyped, user: untyped) -> ({ user_preferences_url: untyped } | {})
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module YARD
+  module Templates
+    module Helpers
+      module Markup
+        class RDocMarkup
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

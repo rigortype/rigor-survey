@@ -1,0 +1,9 @@
+module ActionView
+  class Template
+    module Handlers
+      class Html < ::ActionView::Template::Handlers::Raw
+        def call: (untyped, untyped) -> String
+      end
+    end
+  end
+end

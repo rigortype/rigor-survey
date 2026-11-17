@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      class AccessLogger
+        def initialize: (pipeline: untyped, archived: untyped, ?destination: untyped) -> void
+      end
+    end
+  end
+end

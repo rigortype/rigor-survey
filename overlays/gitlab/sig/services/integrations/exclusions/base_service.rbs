@@ -1,0 +1,7 @@
+module Integrations
+  module Exclusions
+    class BaseService
+      def initialize: (current_user: untyped, organization: untyped, integration_name: untyped, ?projects: untyped, ?groups: untyped) -> void
+    end
+  end
+end

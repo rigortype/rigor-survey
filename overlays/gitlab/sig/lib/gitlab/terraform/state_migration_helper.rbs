@@ -1,0 +1,7 @@
+module Gitlab
+  module Terraform
+    class StateMigrationHelper
+      def self.batch_size: () -> Integer
+    end
+  end
+end

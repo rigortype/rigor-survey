@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PropertyValueUpdater
+        def initialize: (dependency_files: untyped) -> void
+        def update_pomfiles_for_property_change: (property_name: untyped, callsite_pom: untyped, updated_value: untyped) -> Array[untyped]
+      end
+    end
+  end
+end

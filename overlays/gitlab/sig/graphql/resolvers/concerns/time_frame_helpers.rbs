@@ -1,0 +1,3 @@
+module TimeFrameHelpers
+  def validate_timeframe_limit!: (untyped) -> nil
+end

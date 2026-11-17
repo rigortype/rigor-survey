@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class OidcBurnedPathError < ::StandardError
+      def initialize: (?String) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module LetsEncrypt
+    class Client
+      def new_order: (untyped) -> Gitlab::LetsEncrypt::Order
+      def load_order: (untyped) -> Gitlab::LetsEncrypt::Order
+      def load_challenge: (untyped) -> Gitlab::LetsEncrypt::Challenge
+    end
+  end
+end

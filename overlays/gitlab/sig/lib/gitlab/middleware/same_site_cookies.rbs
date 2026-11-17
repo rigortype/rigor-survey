@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class SameSiteCookies
+      def initialize: (untyped) -> void
+      def call: (untyped) -> (Array[untyped] | [untyped, untyped, untyped])
+    end
+  end
+end

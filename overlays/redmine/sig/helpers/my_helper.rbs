@@ -1,0 +1,3 @@
+module MyHelper
+  def render_blocks: (untyped, untyped, ?untyped) -> String
+end

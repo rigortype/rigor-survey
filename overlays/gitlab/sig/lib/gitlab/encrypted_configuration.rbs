@@ -1,0 +1,15 @@
+module Gitlab
+  class EncryptedConfiguration
+    def initialize: (?content_path: untyped, ?base_key: untyped, ?previous_keys: [untyped]) -> void
+    def write: (String) -> top
+    def change: () ?{ (*untyped) -> untyped } -> top
+    def content_path: () -> Pathname
+    def previous_keys: () -> [untyped]
+    class MissingKeyError < ::RuntimeError
+      def initialize: (?untyped) -> void
+    end
+    class InvalidConfigError < ::RuntimeError
+      def initialize: (?untyped) -> void
+    end
+  end
+end

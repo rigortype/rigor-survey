@@ -1,0 +1,3 @@
+module CurrentDataContext
+  def set_data_context: () -> Gitlab::Current::DataContext
+end

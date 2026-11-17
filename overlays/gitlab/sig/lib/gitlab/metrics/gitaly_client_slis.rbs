@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    module GitalyClientSlis
+      def self.error?: (untyped) -> (false | true)
+    end
+  end
+end

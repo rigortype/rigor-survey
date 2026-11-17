@@ -1,0 +1,4 @@
+module OauthApplications
+  def set_created_session: () -> true
+  def permitted_params: () -> [:name, :redirect_uri, :scopes, :confidential, :device_code_enabled]
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Cleanup
+    class RemoteUploads < ::Gitlab::Cleanup::RemoteObjectStorage
+      def initialize: (?logger: ::Logger) -> void
+    end
+  end
+end

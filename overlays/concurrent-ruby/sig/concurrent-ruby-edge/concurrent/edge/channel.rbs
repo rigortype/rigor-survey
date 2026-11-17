@@ -1,0 +1,12 @@
+module Concurrent
+  module Promises
+    class Channel < ::Concurrent::Synchronization::Object
+      def <=>: (untyped) -> 1
+      def ===: (untyped) -> true
+      def initialize: (?Integer) -> void
+      def try_select_matching: (untyped, untyped) -> ([untyped, untyped] | nil)
+      def size: () -> Integer
+      def to_s: () -> String
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Redmine
+  module VERSION
+    def self.revision: () -> (0 | Integer | nil)
+    def self.to_a: () -> Array[untyped]
+  end
+end

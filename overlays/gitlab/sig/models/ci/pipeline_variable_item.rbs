@@ -1,0 +1,8 @@
+module Ci
+  class PipelineVariableItem
+    def initialize: (pipeline: untyped, **untyped) -> void
+    def id: () -> String
+    def to_hash_variable: () -> { key: untyped, value: untyped, public: false, file: untyped, raw: untyped }
+    def hook_attrs: () -> { key: untyped, value: untyped }
+  end
+end

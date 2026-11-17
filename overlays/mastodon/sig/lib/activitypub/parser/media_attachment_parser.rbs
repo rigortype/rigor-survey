@@ -1,0 +1,7 @@
+module ActivityPub
+  module Parser
+    class MediaAttachmentParser
+      def initialize: (untyped) -> void
+    end
+  end
+end

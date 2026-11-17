@@ -1,0 +1,9 @@
+class TaskListToggleService
+  def initialize: (untyped, untyped, line_source: String, line_sourcepos: String, toggle_as_checked: (false | true)) -> void
+  def execute: () -> (false | nil | true)
+  def self.adjust_sourcepos: (untyped, **untyped) -> { start: untyped, end: untyped }
+  def self.render_sourcepos: (untyped) -> String
+  def line_source: () -> ("* [ ] Task 1" | "* [x] Task 2" | "+ [ ] No-break space (U+00A0)" | "- - [ ] Task 1" | "- [ ] Task to toggle" | "- [ ] huh?" | "- [ ] loose list" | "1. - [ ] Task 1" | "1. [X] Item 1" | "2) [ ] Another item" | ">    | [x] | [ ]  | [ ]  |   [ ] |" | "> > * [ ] Task 1" | "A paragraph" | "|    [~] |   [ ] |    [x] |" | "| 🐰 | [ ] | [ ] |")
+  def line_sourcepos: () -> ("13:1-14:0" | "13:4-13:5" | "15:1-15:19" | "15:5-15:5" | "17:15-17:16" | "1:1-1:12" | "1:17-1:17" | "1:3-1:14" | "1:4-1:15" | "1:4-1:4" | "1:5-1:16" | "2:1-2:12" | "2:4-2:4" | "3:4-3:4" | "3:6-3:6" | "4:1-4:11" | "5:4-5:4" | "6:15-6:15" | "6:5-6:5" | "9:20-9:30" | "9:4-9:4")
+  def toggle_as_checked: () -> (false | true)
+end

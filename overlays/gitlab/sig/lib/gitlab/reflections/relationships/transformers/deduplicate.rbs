@@ -1,0 +1,11 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Transformers
+        class Deduplicate
+          def initialize: ([untyped, untyped, untyped, untyped] | [untyped, untyped, untyped] | [untyped, untyped] | [untyped, Gitlab::Reflections::Relationships::Relationship] | [Gitlab::Reflections::Relationships::Relationship, untyped] | []) -> void
+        end
+      end
+    end
+  end
+end

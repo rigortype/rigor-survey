@@ -1,0 +1,6 @@
+module Authn
+  module WebauthnErrors
+    def webauthn_error_messages: () -> Hash[String, { webauthn: untyped, passkey: untyped }]
+    def webauthn_generic_error_messages: () -> { webauthn: untyped, passkey: untyped }
+  end
+end

@@ -1,0 +1,7 @@
+class Integer
+  def to_modint: () -> ModInt
+end
+
+class String
+  def to_modint: () -> ModInt
+end

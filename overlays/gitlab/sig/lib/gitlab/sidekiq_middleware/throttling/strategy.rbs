@@ -1,0 +1,16 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      module Strategy
+        class StrategyStruct < ::Struct[untyped]
+          def name: () -> untyped
+          def concurrency_operator: () -> untyped
+          def name=: (untyped) -> untyped
+          def concurrency_operator=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?concurrency_operator: untyped) -> instance | (?untyped name, ?untyped concurrency_operator) -> instance
+          def self.[]: (?name: untyped, ?concurrency_operator: untyped) -> instance | (?untyped name, ?untyped concurrency_operator) -> instance
+        end
+      end
+    end
+  end
+end

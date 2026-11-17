@@ -1,0 +1,7 @@
+module Packages
+  module Pypi
+    class SimplePackageVersionsJsonPresenter < ::Packages::Pypi::SimplePresenterBase
+      def initialize: (untyped, untyped, package_name: untyped) -> void
+    end
+  end
+end

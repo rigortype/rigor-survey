@@ -1,0 +1,4 @@
+class VideoMetadataExtractor
+  def initialize: (untyped) -> void
+  def valid?: () -> false
+end

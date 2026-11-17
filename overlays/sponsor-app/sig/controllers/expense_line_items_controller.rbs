@@ -1,0 +1,5 @@
+class ExpenseLineItemsController < ::ApplicationController
+  def create: () -> void
+  def update: () -> void
+  def destroy: () -> void
+end

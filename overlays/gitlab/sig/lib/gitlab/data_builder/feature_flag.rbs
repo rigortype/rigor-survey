@@ -1,0 +1,7 @@
+module Gitlab
+  module DataBuilder
+    module FeatureFlag
+      def build: (untyped, untyped) -> { object_kind: "feature_flag", project: untyped, user: untyped, user_url: untyped, object_attributes: untyped }
+    end
+  end
+end

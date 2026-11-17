@@ -1,0 +1,8 @@
+module Packages
+  module Helm
+    class PackagesFinder
+      def initialize: (untyped, untyped, ?with_recent_limit: (false | true)) -> void
+      def execute: () -> ActiveRecord::Relation[Packages::Package]
+    end
+  end
+end

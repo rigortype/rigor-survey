@@ -1,0 +1,10 @@
+module Gitlab
+  module Email
+    module Handler
+      class UnsubscribeHandler < ::Gitlab::Email::Handler::BaseHandler
+        def self.gem_handler: () -> :unsubscribe
+        def metrics_event: () -> :receive_email_unsubscribe
+      end
+    end
+  end
+end

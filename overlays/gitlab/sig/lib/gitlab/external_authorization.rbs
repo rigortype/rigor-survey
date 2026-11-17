@@ -1,0 +1,5 @@
+module Gitlab
+  module ExternalAuthorization
+    def self.load_access: (untyped, untyped, untyped) -> Gitlab::ExternalAuthorization::Access
+  end
+end

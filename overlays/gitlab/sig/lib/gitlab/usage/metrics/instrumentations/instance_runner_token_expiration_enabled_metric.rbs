@@ -1,0 +1,11 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class InstanceRunnerTokenExpirationEnabledMetric < ::Gitlab::Usage::Metrics::Instrumentations::GenericMetric
+          def value: () -> (false | true)
+        end
+      end
+    end
+  end
+end

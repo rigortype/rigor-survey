@@ -1,0 +1,11 @@
+module Dependabot
+  module GithubActions
+    class WorkflowFile
+      class MetadataBuilder
+        def initialize: (untyped) -> void
+        def build: (untyped) -> Metadata
+        def comment_anchor: (untyped) -> ([untyped, untyped] | nil)
+      end
+    end
+  end
+end

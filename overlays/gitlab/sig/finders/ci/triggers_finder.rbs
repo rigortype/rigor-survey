@@ -1,0 +1,5 @@
+module Ci
+  class TriggersFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  class Seeder
+    def self.log_message: (untyped) -> nil
+    def self.with_mass_insert: (untyped, untyped) -> nil
+    def self.estimated_time_message: (untyped) -> ("Rough estimated time: less than a minute ⏰" | String)
+    def self.quiet: () -> nil
+  end
+end

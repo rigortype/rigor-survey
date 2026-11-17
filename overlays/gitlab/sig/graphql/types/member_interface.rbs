@@ -1,0 +1,6 @@
+module Types
+  module MemberInterface
+    def resolve_type: (untyped, untyped) -> (singleton(Types::GroupMemberType) | singleton(Types::ProjectMemberType))
+    def merge_request_interaction: (?id: untyped) -> (::Users::MergeRequestInteraction | nil)
+  end
+end

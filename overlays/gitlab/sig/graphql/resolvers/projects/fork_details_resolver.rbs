@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class ForkDetailsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> (::Projects::Forks::Details | nil)
+    end
+  end
+end

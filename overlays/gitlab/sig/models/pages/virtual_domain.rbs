@@ -1,0 +1,5 @@
+module Pages
+  class VirtualDomain
+    def initialize: (projects: untyped, ?trim_prefix: untyped, ?domain: untyped, ?namespace: untyped) -> void
+  end
+end

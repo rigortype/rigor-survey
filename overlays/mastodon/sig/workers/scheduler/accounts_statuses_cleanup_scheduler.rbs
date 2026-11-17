@@ -1,0 +1,5 @@
+module Scheduler
+  class AccountsStatusesCleanupScheduler
+    def under_load?: () -> (false | true)
+  end
+end

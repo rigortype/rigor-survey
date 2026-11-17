@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Youtrack
+      def reference_pattern: (?only_long: untyped) -> (Regexp | nil)
+    end
+  end
+end

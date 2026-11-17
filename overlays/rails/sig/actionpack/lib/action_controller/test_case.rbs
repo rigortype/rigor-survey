@@ -1,0 +1,19 @@
+module ActionController
+  class TestRequest < ::ActionDispatch::TestRequest
+    def self.new_session: () -> ActionController::TestSession
+    def self.create: (untyped) -> ActionController::TestRequest
+    def initialize: (untyped, untyped, untyped) -> void
+    def assign_parameters: (untyped, untyped, untyped, untyped, untyped, untyped) -> Hash[untyped, untyped]
+    def content_type: () -> String
+  end
+  class TestSession < ::Rack::Session::Abstract::PersistedSecure::SecureSessionHash
+    def initialize: (?untyped, ?untyped) -> void
+    def exists?: () -> true
+    def enabled?: () -> true
+  end
+  class TestCase < ::ActiveSupport::TestCase
+    module Behavior
+      def setup_controller_request_and_response: () -> (nil | {})
+    end
+  end
+end

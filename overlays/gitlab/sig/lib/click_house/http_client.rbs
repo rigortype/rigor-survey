@@ -1,0 +1,6 @@
+module ClickHouse
+  module HttpClient
+    def self.build_post_proc: (**untyped) -> Proc
+    def self.with_query_settings: (untyped, ?untyped) -> String
+  end
+end

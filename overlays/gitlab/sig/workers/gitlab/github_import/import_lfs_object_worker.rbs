@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class ImportLfsObjectWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::LfsObject)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::LfsObjectImporter)
+      def object_type: () -> :lfs_object
+    end
+  end
+end

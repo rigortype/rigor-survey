@@ -1,0 +1,9 @@
+module Mutations
+  module DependencyProxy
+    module ImageTtlGroupPolicy
+      class Update < ::Mutations::BaseMutation
+        def resolve: (group_path: untyped, **untyped) -> { dependency_proxy_image_ttl_policy: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

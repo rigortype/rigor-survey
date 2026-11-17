@@ -1,0 +1,7 @@
+module Gitlab
+  class SignedTag
+    def self.from_repository_tag: (untyped, untyped) -> (Gitlab::Gpg::Tag | Gitlab::Ssh::Tag | Gitlab::X509::Tag | nil)
+    def self.class_for_signature_type: (untyped) -> (nil | singleton(Gitlab::Gpg::Tag) | singleton(Gitlab::Ssh::Tag) | singleton(Gitlab::X509::Tag))
+    def initialize: (untyped, untyped) -> void
+  end
+end

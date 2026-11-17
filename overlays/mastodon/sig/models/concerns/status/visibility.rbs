@@ -1,0 +1,5 @@
+class Status < ::ApplicationRecord
+  module Visibility
+    def hidden?: () -> (false | true)
+  end
+end

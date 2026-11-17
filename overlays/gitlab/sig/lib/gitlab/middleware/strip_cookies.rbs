@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class StripCookies
+      def initialize: (untyped, ?untyped) -> void
+      def call: (untyped) -> [untyped, untyped, untyped]
+    end
+  end
+end

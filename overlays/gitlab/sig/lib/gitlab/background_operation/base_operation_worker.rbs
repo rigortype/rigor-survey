@@ -1,0 +1,15 @@
+module Gitlab
+  module BackgroundOperation
+    class BaseOperationWorker
+      def self.operation_name: (untyped) -> Symbol
+      def self.cursor_columns: () -> []
+      def self.cursor?: () -> false
+      def self.cursor: (*untyped) -> Symbol
+      def self.scope_to: (untyped) -> Symbol
+      def self.reset_cursor!: () -> Symbol
+      def self.reset_cursor?: () -> false
+      def initialize: (batch_table: untyped, batch_column: untyped, sub_batch_size: untyped, pause_ms: untyped, connection: untyped, ?job_arguments: untyped, ?min_cursor: untyped, ?max_cursor: untyped, ?sub_batch_exception: untyped) -> void
+      def batch_metrics: () -> Gitlab::Database::Batch::Metrics
+    end
+  end
+end

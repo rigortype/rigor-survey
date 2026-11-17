@@ -1,0 +1,7 @@
+module Branches
+  class DivergingCommitCountsService
+    def initialize: (untyped) -> void
+    def diverging_counts: (untyped, untyped, ?max_count: untyped) -> { behind: untyped, ahead: untyped }
+    def cache: () -> Gitlab::RepositoryCache
+  end
+end

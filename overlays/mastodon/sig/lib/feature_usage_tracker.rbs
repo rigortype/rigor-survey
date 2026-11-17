@@ -1,0 +1,4 @@
+class FeatureUsageTracker
+  def self.for: (untyped) -> FeatureUsageTracker
+  def initialize: (untyped) -> void
+end

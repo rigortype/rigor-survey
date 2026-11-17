@@ -1,0 +1,9 @@
+module Kramdown
+  module Converter
+    module SyntaxHighlighter
+      module Minted
+        def self.call: (untyped, untyped, untyped, untyped, untyped) -> (String | nil)
+      end
+    end
+  end
+end

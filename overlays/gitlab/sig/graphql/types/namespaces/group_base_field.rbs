@@ -1,0 +1,7 @@
+module Types
+  module Namespaces
+    class GroupBaseField < ::Types::BaseField
+      def initialize: (**untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

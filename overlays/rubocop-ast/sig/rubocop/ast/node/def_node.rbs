@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class DefNode < ::RuboCop::AST::Node
+      def endless?: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module AlertManagement
+  class Alert < ::ApplicationRecord
+    def self.reference_prefix: () -> "^alert#"
+    def self.reference_pattern: () -> Regexp
+    def to_reference: (?untyped, ?full: untyped) -> String
+    def to_ability_name: () -> "alert_management_alert"
+  end
+end

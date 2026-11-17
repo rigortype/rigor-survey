@@ -1,0 +1,7 @@
+module Rails
+  class CodeStatistics
+    def self.register_extension: (untyped) -> Regexp
+    def initialize: (*untyped) -> void
+    def to_s: () -> nil
+  end
+end

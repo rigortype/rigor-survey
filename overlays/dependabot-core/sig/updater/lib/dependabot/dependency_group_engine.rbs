@@ -1,0 +1,10 @@
+module Dependabot
+  class DependencyGroupEngine
+    def self.from_job_config: (job: untyped) -> Dependabot::DependencyGroupEngine
+    def self.validate_group_configuration!: (untyped) -> (nil | true)
+    def find_group: (name: untyped) -> (Dependabot::DependencyGroup | nil)
+    def ungrouped_dependencies: () -> (Array[untyped] | Array[Dependabot::Dependency])
+    class ConfigurationError < ::StandardError
+    end
+  end
+end

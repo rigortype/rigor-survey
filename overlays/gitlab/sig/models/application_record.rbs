@@ -1,0 +1,9 @@
+class ApplicationRecord < ::ActiveRecord::Base
+  def self.id_in: (untyped) -> ActiveRecord::Relation[ApplicationRecord]
+  def self.primary_key_in: (untyped) -> ActiveRecord::Relation[ApplicationRecord]
+  def self.iid_in: (untyped) -> ActiveRecord::Relation[ApplicationRecord]
+  def self.underscore: () -> String
+  def self.where_exists: (untyped) -> ActiveRecord::Relation[ApplicationRecord]
+  def self.where_not_exists: (untyped) -> ActiveRecord::Relation[ApplicationRecord]
+  def self.===: (untyped) -> (false | true)
+end

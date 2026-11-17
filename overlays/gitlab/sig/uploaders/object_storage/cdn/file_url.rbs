@@ -1,0 +1,7 @@
+module ObjectStorage
+  module CDN
+    class FileUrl
+      def initialize: (file: untyped, ip_address: untyped, ?redirect_params: untyped) -> void
+    end
+  end
+end

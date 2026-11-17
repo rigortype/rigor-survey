@@ -1,0 +1,25 @@
+module Dependabot
+  module Vcpkg
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Vcpkg::Version
+      def self.correct?: (untyped) -> (false | true)
+      def self.split_port_version: (untyped) -> [untyped, untyped]
+      def self.comparison_class_for: (untyped) -> (:date | :dot | :string)
+      def self.coerce: (untyped) -> (Dependabot::Vcpkg::Version | nil)
+      def dot?: () -> (false | true)
+      def date?: () -> (false | true)
+      def string?: () -> (false | true)
+      def to_s: () -> String
+      def to_semver: () -> String
+      def inspect: () -> String
+      def prerelease?: () -> (false | true)
+      def eql?: (untyped) -> (false | true)
+      def hash: () -> Integer
+      def <=>: (untyped) -> (Integer | nil)
+      def text: () -> String
+      def port_version: () -> Integer
+      def comparison_class: () -> Symbol
+    end
+  end
+end

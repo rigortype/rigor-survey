@@ -1,0 +1,10 @@
+module Dependabot
+  module Nix
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class FlakeRefBuilder
+        def initialize: (source: untyped, revision: untyped) -> void
+        def to_s: () -> String
+      end
+    end
+  end
+end

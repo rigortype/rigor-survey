@@ -1,0 +1,5 @@
+module Gitlab
+  class StringRegexMarker < ::Gitlab::StringRangeMarker
+    def ranges: (untyped, ?group: untyped) -> Array[Range[untyped]]
+  end
+end

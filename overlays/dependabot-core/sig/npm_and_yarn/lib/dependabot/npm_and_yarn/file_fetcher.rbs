@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a package.json."
+      def clone_repo_contents: () -> (String | nil)
+      def ecosystem_versions: () -> { package_managers: Hash[untyped, untyped] | {} }
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

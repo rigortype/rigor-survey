@@ -1,0 +1,8 @@
+module API
+  class Base < ::Grape::API::Instance
+    def self.path_for_app: (untyped) -> String
+    def self.endpoint_id_for_route: (untyped) -> (String | nil)
+    def self.skip_global_organization_setup!: () -> true
+    def self.normalize_path: (untyped, untyped) -> String
+  end
+end

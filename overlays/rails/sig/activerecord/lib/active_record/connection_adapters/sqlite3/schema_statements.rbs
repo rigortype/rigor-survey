@@ -1,0 +1,10 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module SQLite3
+      module SchemaStatements
+        def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::SQLite3::SchemaDumper
+        def schema_creation: () -> ActiveRecord::ConnectionAdapters::SQLite3::SchemaCreation
+      end
+    end
+  end
+end

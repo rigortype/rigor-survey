@@ -1,0 +1,7 @@
+module Banzai
+  module ReferenceParser
+    class CommitParser < ::Banzai::ReferenceParser::BaseParser
+      def commit_ids_per_project: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

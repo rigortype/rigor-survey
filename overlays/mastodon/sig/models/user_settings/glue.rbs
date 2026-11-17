@@ -1,0 +1,7 @@
+class UserSettings
+  module Glue
+    def to_model: () -> UserSettings::Glue
+    def to_key: () -> ""
+    def persisted?: () -> false
+  end
+end

@@ -1,0 +1,5 @@
+module Releases
+  class EvidencePipelineFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,17 @@
+module YARD
+  module Server
+    module HTTPUtils
+      def self?._make_regex: (untyped) -> Regexp
+      def self?._make_regex!: (untyped) -> Regexp
+      def self?.escape_path: (untyped) -> String
+      class FormData < ::String
+        def initialize: (*untyped) -> void
+        def <<: (untyped) -> YARD::Server::HTTPUtils::FormData
+        def append_data: (untyped) -> YARD::Server::HTTPUtils::FormData
+        def each_data: () -> nil
+        def list: () -> Array[untyped]
+        def to_s: () -> String
+      end
+    end
+  end
+end

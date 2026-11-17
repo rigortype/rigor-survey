@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    module Presenters
+      class Base
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

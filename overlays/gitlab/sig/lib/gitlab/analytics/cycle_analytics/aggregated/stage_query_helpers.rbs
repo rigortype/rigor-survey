@@ -1,0 +1,13 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module Aggregated
+        module StageQueryHelpers
+          def percentile_cont: () -> Arel::Nodes::NamedFunction
+          def duration: () -> (Arel::Nodes::NamedFunction | Arel::Nodes::Subtraction)
+          def duration_in_seconds: (?untyped) -> Arel::Nodes::NamedFunction
+        end
+      end
+    end
+  end
+end

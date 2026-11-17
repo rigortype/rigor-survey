@@ -1,0 +1,5 @@
+module Trends
+  class Statuses < ::Trends::Base
+    def query: () -> Trends::Statuses::Query
+  end
+end

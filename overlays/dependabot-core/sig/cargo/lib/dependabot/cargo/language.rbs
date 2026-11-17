@@ -1,0 +1,7 @@
+module Dependabot
+  module Cargo
+    class Language < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped) -> void
+    end
+  end
+end

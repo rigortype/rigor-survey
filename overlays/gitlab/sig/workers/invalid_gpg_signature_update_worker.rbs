@@ -1,0 +1,3 @@
+class InvalidGpgSignatureUpdateWorker
+  def perform: (untyped) -> (Array[untyped] | nil)
+end

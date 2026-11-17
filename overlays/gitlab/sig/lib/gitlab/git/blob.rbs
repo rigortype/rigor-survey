@@ -1,0 +1,10 @@
+module Gitlab
+  module Git
+    class Blob
+      def self.find: (untyped, untyped, untyped, ?limit: untyped) -> (Gitlab::Git::Blob | nil)
+      def self.tree_entry: (untyped, untyped, untyped, untyped) -> (Gitlab::Git::Blob | nil)
+      def initialize: (untyped) -> void
+      def external_storage: () -> (:lfs | nil)
+    end
+  end
+end

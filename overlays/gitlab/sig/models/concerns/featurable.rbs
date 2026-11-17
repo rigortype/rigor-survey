@@ -1,0 +1,3 @@
+module Featurable
+  def feature_available?: (untyped, ?untyped) -> (false | true)
+end

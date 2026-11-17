@@ -1,0 +1,13 @@
+module Gitlab
+  module RateLimit
+    module TargetKey
+      def self.for: (untyped) -> (Gitlab::RateLimit::Target | nil)
+      def self.api_key: (untyped) -> (Gitlab::RateLimit::Target | nil)
+      def self.identifier_key: (untyped, untyped) -> (Gitlab::RateLimit::Target | nil)
+      def self.route_target: (untyped) -> (Gitlab::RateLimit::Target | nil)
+      def self.route_key: (untyped) -> (Gitlab::RateLimit::Target | nil)
+      def self.namespace_segments: (untyped) -> Array[untyped]
+      def self.max_route_segments: () -> 22
+    end
+  end
+end

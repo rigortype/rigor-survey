@@ -1,0 +1,6 @@
+module Dependabot
+  module GitCooldownDateResolver
+    def tag_creation_date: (untyped, untyped) -> Time
+    def cached_github_releases: () -> (Array[Dependabot::Clients::GithubRelease] | nil)
+  end
+end

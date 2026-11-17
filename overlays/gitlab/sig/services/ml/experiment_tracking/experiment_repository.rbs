@@ -1,0 +1,8 @@
+module Ml
+  module ExperimentTracking
+    class ExperimentRepository
+      def initialize: (untyped, ?untyped) -> void
+      def by_iid_or_name: (?iid: untyped, ?name: untyped) -> (Ml::Experiment | nil)
+    end
+  end
+end

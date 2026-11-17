@@ -1,0 +1,5 @@
+module ActiveRecord
+  class SchemaDumper
+    def self.generate_options: (untyped) -> { table_name_prefix: untyped, table_name_suffix: untyped }
+  end
+end

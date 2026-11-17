@@ -1,0 +1,5 @@
+module Groups
+  class AcceptingProjectTransfersFinder
+    def initialize: (untyped) -> void
+  end
+end

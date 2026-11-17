@@ -1,0 +1,7 @@
+module Ci
+  module JobToken
+    class Middleware
+      def initialize: (Proc) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  class EncryptedCommandBase
+    def self.write: (untyped, ?args: untyped) -> nil
+    def self.edit: (?args: untyped) -> nil
+    def self.show: (?args: untyped) -> nil
+    def self.validate_config: (untyped) -> (false | true)
+    def self.encrypted_file_template: () -> bot
+    def self.editor_args: () -> (Array[String] | nil)
+  end
+end

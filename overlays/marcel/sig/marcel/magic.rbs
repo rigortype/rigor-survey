@@ -1,0 +1,14 @@
+module Marcel
+  class Magic
+    def initialize: (String) -> void
+    def child_of?: (untyped) -> (false | true)
+    def canonical: () -> Marcel::Magic
+    def comment: () -> nil
+    def self.by_type: (untyped) -> (Marcel::Magic | nil)
+    def hash: () -> Integer
+    def self.child?: (untyped, untyped) -> (false | true)
+    def self.io_seek: (untyped, untyped, untyped, untyped) -> (false | true)
+    def self.read_mode: (untyped) -> (:buffer | :native | :single)
+    def type: () -> ("alias/type" | "application/vnd.ms-xpsdocument" | "canonical/type" | "image/x-xbitmap")
+  end
+end

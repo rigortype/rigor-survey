@@ -1,0 +1,9 @@
+module Integrations
+  module Base
+    module MattermostSlashCommands
+      def testable?: () -> false
+      def list_teams: (untyped) -> ([untyped, nil] | [[], String])
+      def redirect_url: (untyped, untyped, untyped) -> (String | nil)
+    end
+  end
+end

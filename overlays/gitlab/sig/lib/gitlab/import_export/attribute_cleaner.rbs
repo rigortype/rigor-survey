@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class AttributeCleaner
+      def initialize: (relation_hash: untyped, relation_class: untyped, ?excluded_keys: untyped) -> void
+    end
+  end
+end

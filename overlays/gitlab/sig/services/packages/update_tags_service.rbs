@@ -1,0 +1,5 @@
+module Packages
+  class UpdateTagsService
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

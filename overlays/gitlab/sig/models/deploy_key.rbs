@@ -1,0 +1,5 @@
+class DeployKey < ::Key
+  def private?: () -> (false | true)
+  def can_push_to?: (untyped) -> (false | true)
+  def impersonated?: () -> false
+end

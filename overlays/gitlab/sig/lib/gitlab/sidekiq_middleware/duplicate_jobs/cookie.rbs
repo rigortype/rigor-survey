@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module DuplicateJobs
+      class Cookie
+        def self.needs_conversion?: (untyped, untyped) -> (false | true)
+        def initialize: (jid: untyped, existing_wal_locations: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module CommitSignatures
+  class GpgSignature < ::ApplicationRecord
+    def type: () -> :gpg
+    def self.with_key_and_subkeys: (untyped) -> ActiveRecord::Relation[CommitSignatures::GpgSignature]
+    def gpg_commit: () -> (Gitlab::Gpg::Commit | nil)
+  end
+end

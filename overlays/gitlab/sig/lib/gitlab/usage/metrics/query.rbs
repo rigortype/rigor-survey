@@ -1,0 +1,9 @@
+module Gitlab
+  module Usage
+    module Metrics
+      class Query
+        def self.joined_column?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

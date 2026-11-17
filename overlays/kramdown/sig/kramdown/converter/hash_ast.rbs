@@ -1,0 +1,7 @@
+module Kramdown
+  module Converter
+    class HashAST < ::Kramdown::Converter::Base
+      def convert: (untyped) -> (Hash[untyped, untyped] | { type: untyped })
+    end
+  end
+end

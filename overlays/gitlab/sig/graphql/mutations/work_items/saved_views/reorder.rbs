@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module SavedViews
+      class Reorder < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> ({ saved_view: untyped, errors: [] } | { saved_view: nil, errors: [untyped] })
+      end
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Gitlab
+  module BitbucketImport
+    module Importers
+      class PullRequestNotesImporter
+        def initialize: (untyped, Integer) -> void
+        def formatter: () -> Gitlab::ImportFormatter
+        def user_finder: () -> Gitlab::BitbucketImport::UserFinder
+        def ref_converter: () -> Gitlab::BitbucketImport::RefConverter
+        def mentions_converter: () -> Gitlab::Import::MentionsConverter
+        def discussion_map: () -> Hash[untyped, untyped]
+        def position_map: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

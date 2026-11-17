@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    class MarkdownText
+      def self.fetch_attachments: (untyped, untyped) -> Array[untyped]
+      def self.extract_attachment: (untyped, untyped) -> (Gitlab::GithubImport::Markdown::Attachment | nil)
+      def initialize: (untyped, ?untyped, ?false | true, ?project: untyped, ?client: untyped) -> void
+      def exists: () -> true
+    end
+  end
+end

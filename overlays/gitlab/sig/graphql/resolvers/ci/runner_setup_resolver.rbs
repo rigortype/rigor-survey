@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class RunnerSetupResolver < ::Resolvers::BaseResolver
+      def resolve: (platform: untyped, architecture: untyped, **untyped) -> { install_instructions: untyped, register_instructions: String | nil }
+    end
+  end
+end

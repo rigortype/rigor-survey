@@ -1,0 +1,7 @@
+module Mail
+  module Encodings
+    class Identity < ::Mail::Encodings::TransferEncoding
+      def self.cost: (untyped) -> Float
+    end
+  end
+end

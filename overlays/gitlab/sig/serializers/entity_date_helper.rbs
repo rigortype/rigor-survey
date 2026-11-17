@@ -1,0 +1,3 @@
+module EntityDateHelper
+  def distance_of_time_as_hash: (untyped) -> (Hash[untyped, untyped] | { seconds: 0 })
+end

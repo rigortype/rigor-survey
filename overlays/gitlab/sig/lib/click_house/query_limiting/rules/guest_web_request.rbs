@@ -1,0 +1,10 @@
+module ClickHouse
+  class QueryLimiting
+    module Rules
+      module GuestWebRequest
+        def self.type: () -> "guest_web_request"
+        def self.settings: () -> { max_rows_to_read: 10000000, max_bytes_to_read: Integer, read_overflow_mode: "break", max_execution_time: 5, timeout_overflow_mode: "break", readonly: 2 }
+      end
+    end
+  end
+end

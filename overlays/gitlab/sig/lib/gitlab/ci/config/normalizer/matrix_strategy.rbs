@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      class Normalizer
+        class MatrixStrategy
+          def self.applies_to?: (untyped) -> (false | true)
+          def initialize: (untyped, untyped, untyped, untyped) -> void
+          def attributes: () -> Hash[untyped, untyped]
+          def name: () -> String
+        end
+      end
+    end
+  end
+end

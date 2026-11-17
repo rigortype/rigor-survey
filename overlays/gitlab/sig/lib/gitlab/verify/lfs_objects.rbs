@@ -1,0 +1,8 @@
+module Gitlab
+  module Verify
+    class LfsObjects < ::Gitlab::Verify::BatchVerifier
+      def name: () -> "LFS objects"
+      def describe: (untyped) -> String
+    end
+  end
+end

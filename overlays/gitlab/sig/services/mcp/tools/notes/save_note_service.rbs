@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Notes
+      class SaveNoteService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["create_merge_request_note", "create_workitem_note", "create_work_item_note"]
+      end
+    end
+  end
+end

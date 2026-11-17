@@ -1,0 +1,9 @@
+module Rails
+  module Generators
+    module Migration
+      module ClassMethods
+        def next_migration_number: (untyped) -> bot
+      end
+    end
+  end
+end

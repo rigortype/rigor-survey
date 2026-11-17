@@ -1,0 +1,14 @@
+module ApplicationHelper
+  def omniauth_only?: () -> (false | true)
+  def locale_direction: () -> ("ltr" | "rtl")
+  def html_attributes: (?theme: untyped) -> Hash[untyped, untyped]
+  def html_classes: () -> String
+  def body_classes: () -> String
+  def storage_host: () -> String
+  def storage_host?: () -> (false | true)
+  def grouped_scopes: (untyped) -> Array[untyped]
+  def prerender_custom_emojis: (untyped, untyped, ?untyped) -> String
+  def recent_tag_usage: (untyped) -> String
+  def app_store_url_ios: () -> "https://apps.apple.com/app/mastodon-for-iphone-and-ipad/id1571998974"
+  def app_store_url_android: () -> "https://play.google.com/store/apps/details?id=org.joinmastodon.android"
+end

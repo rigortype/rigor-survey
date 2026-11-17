@@ -1,0 +1,6 @@
+module WebHooks
+  class CreateService
+    def initialize: (untyped) -> void
+    def execute: (untyped, untyped, ?untyped) -> ServiceResponse
+  end
+end

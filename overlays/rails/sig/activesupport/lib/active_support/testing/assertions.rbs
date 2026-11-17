@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module Assertions
+      def assert_changes: [TResult] (String | Symbol | ^() -> untyped, ?String?, ?from: top, ?to: top) { () -> TResult } -> TResult
+    end
+  end
+end

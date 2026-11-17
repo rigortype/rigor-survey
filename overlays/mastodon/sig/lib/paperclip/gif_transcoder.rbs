@@ -1,0 +1,5 @@
+class GifReader
+  def initialize: (untyped, ?untyped) -> void
+  class GifReaderException < ::StandardError
+  end
+end

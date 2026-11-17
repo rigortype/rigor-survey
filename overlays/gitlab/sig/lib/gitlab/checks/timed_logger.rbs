@@ -1,0 +1,8 @@
+module Gitlab
+  module Checks
+    class TimedLogger
+      def initialize: (timeout: untyped, ?start_time: untyped, ?log: untyped, ?header: untyped) -> void
+      def check_timeout_reached: () -> nil
+    end
+  end
+end

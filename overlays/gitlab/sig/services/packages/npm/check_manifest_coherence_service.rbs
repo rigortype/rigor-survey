@@ -1,0 +1,8 @@
+module Packages
+  module Npm
+    class CheckManifestCoherenceService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

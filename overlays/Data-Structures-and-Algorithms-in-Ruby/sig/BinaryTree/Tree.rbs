@@ -1,0 +1,55 @@
+class Tree
+  def createCompleteBinaryTree: (untyped) -> Tree::Node
+  def createCompleteBinaryTreeUtil: (untyped, untyped) -> Tree::Node
+  def printPreOrder: () -> nil
+  def printPreOrderUtil: (untyped) -> nil
+  def nthPreOrder: (untyped) -> nil
+  def nthPreOrderUtil: (untyped, untyped, untyped) -> nil
+  def printPostOrder: () -> nil
+  def printPostOrderUtil: (untyped) -> nil
+  def nthPostOrder: (untyped) -> nil
+  def nthPostOrderUtil: (untyped, untyped, untyped) -> nil
+  def printInOrder: () -> nil
+  def printInOrderUtil: (untyped) -> nil
+  def nthInOrder: (untyped) -> nil
+  def nthInOrderUtil: (untyped, untyped, untyped) -> nil
+  def printBreadthFirst: () -> nil
+  def printDepthFirst: () -> nil
+  def printLevelOrderLineByLine: () -> nil
+  def printLevelOrderLineByLine2: () -> nil
+  def printSpiralTree: () -> nil
+  def find: (untyped) -> (false | true)
+  def free: () -> nil
+  def copyTree: () -> Tree
+  def copyTreeUtil: (untyped) -> (Tree::Node | nil)
+  def copyMirrorTree: () -> Tree
+  def copyMirrorTreeUtil: (untyped) -> (Tree::Node | nil)
+  def numNodes: () -> (0 | Integer)
+  def numNodesUtil: (untyped) -> (0 | Integer)
+  def iterativePreOrder: () -> nil
+  def iterativePostOrder: () -> nil
+  def iterativeInOrder: () -> nil
+  def isBST3: () -> (false | true)
+  def isBST3Util: (untyped) -> (false | true)
+  def isBST: () -> (false | true)
+  def isBSTUtil: (untyped, untyped, untyped) -> (false | true)
+  def isBST2: () -> (false | true)
+  def isBST2Util: (untyped, untyped) -> (false | true)
+  def isCompleteTree: () -> (false | true)
+  def isCompleteTreeUtil: (untyped, untyped, untyped) -> (false | true)
+  def isCompleteTree2: () -> (false | true)
+  def isHeapUtil: (untyped, untyped) -> (false | true)
+  def isHeap: () -> (false | true)
+  def isHeapUtil2: (untyped, untyped, untyped, untyped) -> (false | true)
+  def isHeap2: () -> (false | true)
+  def printInRange: (untyped, untyped) -> nil
+  def printInRangeUtil: (untyped, untyped, untyped) -> nil
+  def searchBT: (untyped) -> (false | true)
+  def searchBTUtil: (untyped, untyped) -> (false | true)
+  def createBinarySearchTree: (untyped) -> (Tree::Node | nil)
+  def createBinarySearchTreeUtil: (untyped, untyped, untyped) -> (Tree::Node | nil)
+  def isBSTArray: (untyped) -> (false | true)
+  class Node
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+  end
+end

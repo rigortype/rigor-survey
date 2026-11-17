@@ -1,0 +1,5 @@
+module Packages
+  class MarkPackageFilesForDestructionWorker
+    def perform: (untyped) -> (ServiceResponse | nil)
+  end
+end

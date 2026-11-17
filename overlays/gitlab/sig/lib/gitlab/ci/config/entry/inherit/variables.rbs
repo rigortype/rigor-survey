@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Inherit
+          class Variables < ::Gitlab::Config::Entry::Simplifiable
+            class UnknownStrategy < ::Gitlab::Config::Entry::Node
+              def errors: () -> [String]
+            end
+          end
+        end
+      end
+    end
+  end
+end

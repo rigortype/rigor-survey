@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class YamlProcessor
+      class Dag
+        def initialize: (untyped) -> void
+        def self.order: (untyped) -> Array[untyped]
+        def self.check_circular_dependencies!: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

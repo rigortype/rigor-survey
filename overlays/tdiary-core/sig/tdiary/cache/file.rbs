@@ -1,0 +1,7 @@
+module TDiary
+  module Cache
+    def restore_cache: (untyped) -> (String | nil)
+    def store_cache: (untyped, untyped) -> (Integer | nil)
+    def clear_cache: (?untyped) -> Array[String]
+  end
+end

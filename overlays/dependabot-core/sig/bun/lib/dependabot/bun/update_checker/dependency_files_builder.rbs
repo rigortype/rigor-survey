@@ -1,0 +1,14 @@
+module Dependabot
+  module Bun
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class DependencyFilesBuilder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def write_temporary_dependency_files: () -> Array[Dependabot::DependencyFile]
+        def bun_locks: () -> (Array[Dependabot::DependencyFile] | nil)
+        def root_bun_lock: () -> (Dependabot::DependencyFile | nil)
+        def lockfiles: () -> Array[untyped]
+        def package_files: () -> (Array[Dependabot::DependencyFile] | nil)
+      end
+    end
+  end
+end

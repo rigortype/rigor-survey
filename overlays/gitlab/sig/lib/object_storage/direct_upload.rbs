@@ -1,0 +1,16 @@
+module ObjectStorage
+  class DirectUpload
+    def initialize: (untyped, untyped, has_length: untyped, ?maximum_size: untyped, ?skip_delete: untyped) -> void
+    def to_hash: () -> Hash[untyped, untyped]
+    def multipart_upload_hash: () -> (nil | { PartSize: untyped, PartURLs: Array[untyped], CompleteURL: untyped, AbortURL: untyped })
+    def workhorse_client_hash: () -> ({ UseWorkhorseClient: false | true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "AWS", S3Config: Hash[untyped, untyped] } } | { UseWorkhorseClient: false | true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "Google", GoCloudConfig: { URL: String } } } | { UseWorkhorseClient: true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "AzureRM", GoCloudConfig: { URL: String } } } | {})
+    def workhorse_aws_hash: () -> { UseWorkhorseClient: false | true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "AWS", S3Config: Hash[untyped, untyped] } }
+    def workhorse_azure_hash: () -> { UseWorkhorseClient: true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "AzureRM", GoCloudConfig: { URL: String } } }
+    def azure_gocloud_url: () -> String
+    def workhorse_google_hash: () -> { UseWorkhorseClient: false | true, RemoteTempObjectID: untyped, ObjectStorage: { Provider: "Google", GoCloudConfig: { URL: String } } }
+    def google_gocloud_url: () -> String
+    def use_workhorse_s3_client?: () -> (false | true)
+    def use_workhorse_google_client?: () -> (false | true)
+    def multipart_part_urls: () -> Array[untyped]
+  end
+end

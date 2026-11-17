@@ -1,0 +1,9 @@
+module WebIdeButtonHelper
+  def fork?: () -> (false | true)
+  def readable_blob?: (?untyped) -> (false | true)
+  def needs_to_fork?: () -> (false | true)
+  def gitpod_url: () -> ("" | String)
+  def web_ide_button_data: (?untyped) -> { project_path: untyped, ref: untyped, is_fork: false | true, needs_to_fork: false | true, gitpod_enabled: untyped, is_blob: false | true, show_edit_button: untyped, show_web_ide_button: untyped, show_gitpod_button: untyped, show_pipeline_editor_button: untyped, web_ide_url: untyped, edit_url: untyped, pipeline_editor_url: untyped, gitpod_url: "" | String, user_preferences_gitpod_path: untyped, user_profile_enable_gitpod_path: untyped }
+  def repository_header_web_ide_button_options: (untyped) -> String
+  def fork_modal_options: (untyped, untyped) -> { fork_path: untyped, fork_modal_id: "modal-confirm-fork-edit" | "modal-confirm-fork-webide" | nil }
+end

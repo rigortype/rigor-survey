@@ -1,0 +1,11 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class UniqueCountMetric < ::Gitlab::Usage::Metrics::Instrumentations::BaseMetric
+          def value: () -> Gitlab::Usage::ServicePing::LegacyMetricMetadataDecorator
+        end
+      end
+    end
+  end
+end

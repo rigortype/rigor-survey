@@ -1,0 +1,17 @@
+module Observability
+  class O11yBffSession
+    def self.generate_tokens: (o11y_settings: untyped, user: untyped, access_resource: untyped) -> ({ accessJwt: untyped, refreshJwt: untyped } | {})
+    def initialize: (o11y_settings: untyped, user: untyped, access_resource: untyped) -> void
+    def generate_tokens: () -> ({ accessJwt: untyped, refreshJwt: untyped } | {})
+    class TokenResponse < ::Struct[untyped]
+      def access_jwt: () -> untyped
+      def refresh_jwt: () -> untyped
+      def access_jwt=: (untyped) -> untyped
+      def refresh_jwt=: (untyped) -> untyped
+      def self.new: (?access_jwt: untyped, ?refresh_jwt: untyped) -> instance
+      def self.[]: (?access_jwt: untyped, ?refresh_jwt: untyped) -> instance
+      def self.from_json: (untyped) -> Observability::O11yBffSession::TokenResponse
+      def to_h: () -> { accessJwt: untyped, refreshJwt: untyped }
+    end
+  end
+end

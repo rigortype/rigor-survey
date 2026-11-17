@@ -1,0 +1,3 @@
+class ProtectedBranchesFinder
+  def initialize: (untyped, ?untyped) -> void
+end

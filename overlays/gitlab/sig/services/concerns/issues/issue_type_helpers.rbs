@@ -1,0 +1,5 @@
+module Issues
+  module IssueTypeHelpers
+    def extract_namespace: (untyped) -> (Group | Namespace | Project | nil)
+  end
+end

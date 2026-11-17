@@ -1,0 +1,12 @@
+module Redmine
+  module Acts
+    module Webhookable
+      module InstanceMethods
+        def event_name: (untyped) -> String
+        def webhook_payload: (untyped, untyped) -> { type: String, timestamp: untyped, data: Hash[untyped, untyped] }
+        def webhook_payload_ivars: () -> Hash[untyped, Redmine::Acts::Webhookable::InstanceMethods]
+        def webhook_payload_api_template: () -> String
+      end
+    end
+  end
+end

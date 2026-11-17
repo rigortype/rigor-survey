@@ -1,0 +1,6 @@
+module BulkImports
+  class FileDownloadService
+    def self.for_context: (context: untyped, relation: untyped, tmpdir: untyped, filename: untyped) -> BulkImports::FileDownloadService
+    def initialize: (tmpdir: untyped, filename: untyped, file_download_strategy: untyped) -> void
+  end
+end

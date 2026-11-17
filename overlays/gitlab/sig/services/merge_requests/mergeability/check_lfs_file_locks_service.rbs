@@ -1,0 +1,7 @@
+module MergeRequests
+  module Mergeability
+    class CheckLfsFileLocksService < ::MergeRequests::Mergeability::CheckBaseService
+      def cache_key: () -> ("inactive_lfs_file_locks_mergeability_check" | String)
+    end
+  end
+end

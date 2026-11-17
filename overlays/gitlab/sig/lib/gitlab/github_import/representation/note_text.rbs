@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class NoteText
+        def self.from_db_record: (untyped) -> Gitlab::GithubImport::Representation::NoteText
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::NoteText
+        def self.check_record_class!: (untyped) -> nil
+        def initialize: (untyped) -> void
+        def github_identifiers: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

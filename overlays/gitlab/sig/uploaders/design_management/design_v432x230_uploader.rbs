@@ -1,0 +1,6 @@
+module DesignManagement
+  class DesignV432x230Uploader < ::GitlabUploader
+    def content_type_whitelist: () -> ["image/png", "image/jpeg", "image/bmp", "image/gif"]
+    def move_to_cache: () -> false
+  end
+end

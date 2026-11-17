@@ -1,0 +1,14 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class SessionMap
+        def self.with_sessions: (?untyped) -> Gitlab::Database::LoadBalancing::ScopedSessions
+        def self.cached_instance: () -> Gitlab::Database::LoadBalancing::SessionMap
+        def validate_db_name: (untyped) -> nil
+      end
+      class ScopedSessions
+        def initialize: (untyped, {}) -> void
+      end
+    end
+  end
+end

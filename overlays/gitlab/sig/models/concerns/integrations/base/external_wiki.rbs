@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module ExternalWiki
+      def sections: () -> [{ type: untyped, title: untyped, description: untyped }]
+    end
+  end
+end

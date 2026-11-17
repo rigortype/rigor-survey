@@ -1,0 +1,9 @@
+module Dependabot
+  module Swift
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockfileUpdater
+        def initialize: (dependency: untyped, manifest: untyped, repo_contents_path: untyped, credentials: untyped, ?target_version: untyped) -> void
+      end
+    end
+  end
+end

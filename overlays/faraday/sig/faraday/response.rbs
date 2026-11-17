@@ -1,0 +1,12 @@
+module Faraday
+  class Response
+    def initialize: (?untyped) -> void
+    def finished?: () -> (false | true)
+    def on_complete: () ?{ (*untyped) -> untyped } -> Faraday::Response
+    def finish: (untyped) -> Faraday::Response
+    def to_hash: () -> { status: untyped, body: untyped, response_headers: untyped, url: untyped }
+    def marshal_dump: () -> (nil | { status: untyped, body: untyped, response_headers: untyped, url: untyped })
+    def marshal_load: (untyped) -> []
+    def apply_request: (untyped) -> Faraday::Response
+  end
+end

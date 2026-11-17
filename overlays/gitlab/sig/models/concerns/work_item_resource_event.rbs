@@ -1,0 +1,3 @@
+module WorkItemResourceEvent
+  def synthetic_note_class: () -> bot
+end

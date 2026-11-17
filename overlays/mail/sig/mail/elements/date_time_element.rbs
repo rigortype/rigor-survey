@@ -1,0 +1,5 @@
+module Mail
+  class DateTimeElement
+    def initialize: (String | nil) -> void
+  end
+end

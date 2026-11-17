@@ -1,0 +1,5 @@
+module Labels
+  class FindOrCreateService
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

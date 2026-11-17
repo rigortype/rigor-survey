@@ -1,0 +1,9 @@
+module Mutations
+  module Import
+    module SourceUsers
+      class Reassign < ::Mutations::BaseMutation
+        def resolve: (untyped) -> { import_source_user: untyped, errors: untyped }
+      end
+    end
+  end
+end

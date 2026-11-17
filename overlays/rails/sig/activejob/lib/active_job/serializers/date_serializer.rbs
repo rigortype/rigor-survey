@@ -1,0 +1,7 @@
+module ActiveJob
+  module Serializers
+    class DateSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def klass: () -> singleton(Date)
+    end
+  end
+end

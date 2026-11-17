@@ -1,0 +1,21 @@
+class Wiki
+  def self.sluggified_full_path: (untyped, untyped) -> String
+  def self.sluggified_title: (untyped) -> String
+  def self.canonicalize_filename: (untyped) -> String
+  def initialize: (untyped, ?untyped) -> void
+  def has_home_page?: () -> (false | true)
+  def exists?: () -> (false | true)
+  def last_commits_for_pages: (untyped) -> Hash[untyped, untyped]
+  def find_page: (untyped, ?untyped, ?load_content: untyped) -> (WikiPage | nil)
+  def find_sidebar: (?untyped) -> (WikiPage | nil)
+  def find_file: (untyped, ?untyped, ?load_content: untyped) -> (Gitlab::Git::WikiFile | nil)
+  def create_page: (untyped, untyped, ?untyped, ?untyped) -> (false | true)
+  def update_page: (untyped, content: untyped, ?title: untyped, ?format: untyped, ?message: untyped) -> (false | true)
+  def delete_page: (untyped, ?untyped) -> (false | nil | true)
+  def page_title_and_dir: (untyped) -> ([untyped, untyped] | nil)
+  def hook_attrs: () -> { web_url: untyped, git_ssh_url: untyped, git_http_url: untyped, path_with_namespace: untyped, default_branch: untyped }
+  def repository_storage: () -> bot
+  def hashed_storage?: () -> bot
+  def git_garbage_collect_worker_klass: () -> singleton(Wikis::GitGarbageCollectWorker)
+  def cleanup: () -> nil
+end

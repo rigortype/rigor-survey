@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class Update < ::Mutations::BaseMutation
+      def resolve: (id: untyped, **untyped) -> ({ work_item: untyped, errors: [String] } | { work_item: untyped, errors: Array[untyped] })
+    end
+  end
+end

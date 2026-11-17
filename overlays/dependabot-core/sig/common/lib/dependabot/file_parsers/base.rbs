@@ -1,0 +1,9 @@
+module Dependabot
+  module FileParsers
+    class Base
+      def initialize: (dependency_files: untyped, source: untyped, ?repo_contents_path: untyped, ?credentials: untyped, ?reject_external_code: untyped, ?options: untyped) -> void
+      def ecosystem: () -> nil
+      def dealias_packages!: () -> true
+    end
+  end
+end

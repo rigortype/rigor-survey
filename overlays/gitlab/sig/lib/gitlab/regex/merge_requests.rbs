@@ -1,0 +1,9 @@
+module Gitlab
+  module Regex
+    module MergeRequests
+      def merge_request: () -> Regexp
+      def merge_request_draft: () -> Regexp
+      def git_diff_prefix: () -> Regexp
+    end
+  end
+end

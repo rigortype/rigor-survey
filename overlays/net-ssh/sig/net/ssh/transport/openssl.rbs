@@ -1,0 +1,25 @@
+module OpenSSL
+  class BN
+    def to_ssh: () -> String
+  end
+  module PKey
+    class RSA
+      def ssh_type: () -> "ssh-rsa"
+      def to_blob: () -> String
+    end
+    class DSA
+      def ssh_type: () -> "ssh-dss"
+      def to_blob: () -> String
+    end
+    class EC
+      def self.read_keyblob: (untyped, untyped) -> OpenSSL::PKey::EC
+      def ssh_type: () -> String
+      def to_blob: () -> String
+      def ssh_do_sign: (untyped, ?untyped) -> String
+      class Point
+        def ssh_type: () -> String
+        def to_blob: () -> String
+      end
+    end
+  end
+end

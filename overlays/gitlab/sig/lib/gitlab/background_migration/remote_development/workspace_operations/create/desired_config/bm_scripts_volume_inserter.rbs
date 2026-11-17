@@ -1,0 +1,15 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module WorkspaceOperations
+        module Create
+          module DesiredConfig
+            class BmScriptsVolumeInserter
+              def self.insert: (configmap_name: untyped, containers: untyped, volumes: untyped) -> nil
+            end
+          end
+        end
+      end
+    end
+  end
+end

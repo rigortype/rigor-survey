@@ -1,0 +1,4 @@
+class Sieve
+  def initialize: (untyped) -> void
+  def primes: () -> Array[untyped]
+end

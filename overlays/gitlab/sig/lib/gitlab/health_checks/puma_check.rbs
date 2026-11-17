@@ -1,0 +1,7 @@
+module Gitlab
+  module HealthChecks
+    class PumaCheck
+      def self.metric_prefix: () -> "puma_check"
+    end
+  end
+end

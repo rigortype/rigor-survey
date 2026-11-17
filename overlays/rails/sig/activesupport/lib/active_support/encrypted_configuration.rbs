@@ -1,0 +1,13 @@
+module ActiveSupport
+  class EncryptedConfiguration < ::ActiveSupport::EncryptedFile
+    def initialize: (config_path: untyped, key_path: untyped, env_key: untyped, raise_if_missing_key: untyped) -> void
+    def reload: () -> nil
+    def inspect: () -> String
+    class InvalidContentError < ::RuntimeError
+      def initialize: (untyped) -> void
+    end
+    class InvalidKeyError < ::RuntimeError
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

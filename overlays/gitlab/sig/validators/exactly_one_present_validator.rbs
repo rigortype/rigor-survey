@@ -1,0 +1,3 @@
+class ExactlyOnePresentValidator < ::ActiveModel::Validator
+  def initialize: (*untyped) -> void
+end

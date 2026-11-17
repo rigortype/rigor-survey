@@ -1,0 +1,19 @@
+module Gitlab
+  module RelativePositioning
+    class ItemContext
+      def initialize: (untyped, ::Range[Integer], ?ignoring: untyped, ?ideal_distance: untyped, ?max_gap: untyped) -> void
+      def lhs_neighbour: () -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def rhs_neighbour: () -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def neighbour: (untyped) -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def max_sibling: () -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def min_sibling: () -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def at_position: (untyped) -> (Gitlab::RelativePositioning::ItemContext | nil)
+      def shift_left: (?min_gap: untyped, ?exclude: untyped) -> (Gitlab::RelativePositioning::Gap | NilClass)
+      def shift_right: (?min_gap: untyped, ?exclude: untyped) -> (Gitlab::RelativePositioning::Gap | NilClass)
+      def find_next_gap_before: (?min_gap: untyped) -> (Gitlab::RelativePositioning::Gap | nil)
+      def find_next_gap_after: (?min_gap: untyped) -> (Gitlab::RelativePositioning::Gap | nil)
+      def find_next_gap: (untyped, untyped, order: untyped, ?min_gap: untyped) -> (Gitlab::RelativePositioning::Gap | nil)
+      def range: () -> ::Range[Integer]
+    end
+  end
+end

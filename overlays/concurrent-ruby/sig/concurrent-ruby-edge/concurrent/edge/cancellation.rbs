@@ -1,0 +1,10 @@
+module Concurrent
+  class Cancellation < ::Concurrent::Synchronization::Object
+    def self.timeout: (untyped) -> Concurrent::Cancellation
+    def initialize: (?untyped) -> void
+    def to_ary: () -> [Concurrent::Cancellation, untyped]
+    def check!: (?untyped) -> Concurrent::Cancellation
+    def join: (*untyped) -> Concurrent::Cancellation
+    def to_s: () -> String
+  end
+end

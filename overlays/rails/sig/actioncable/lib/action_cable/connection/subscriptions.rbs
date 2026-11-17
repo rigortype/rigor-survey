@@ -1,0 +1,25 @@
+module ActionCable
+  module Connection
+    class Subscriptions
+      def initialize: (untyped) -> void
+      def subscriptions: () -> Hash[untyped, untyped]
+      class AlreadySubscribedError < ::ActionCable::Connection::Subscriptions::Error
+        def initialize: (untyped) -> void
+      end
+      class ChannelNotFound < ::ActionCable::Connection::Subscriptions::Error
+        def initialize: (untyped) -> void
+      end
+      class MalformedCommandError < ::ActionCable::Connection::Subscriptions::Error
+        def initialize: (untyped) -> void
+      end
+      class UnknownCommandError < ::ActionCable::Connection::Subscriptions::Error
+        def initialize: (untyped) -> void
+      end
+      class UnknownSubscription < ::ActionCable::Connection::Subscriptions::Error
+        def initialize: (untyped) -> void
+      end
+      class Error < ::StandardError
+      end
+    end
+  end
+end

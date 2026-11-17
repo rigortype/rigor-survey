@@ -1,0 +1,7 @@
+module ActiveSupport
+  module ExecutionContext
+    module TestHelper
+      def after_teardown: () -> nil
+    end
+  end
+end

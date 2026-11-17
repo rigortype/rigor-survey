@@ -1,0 +1,5 @@
+module Mail
+  class PhraseList
+    def initialize: (String | nil) -> void
+  end
+end

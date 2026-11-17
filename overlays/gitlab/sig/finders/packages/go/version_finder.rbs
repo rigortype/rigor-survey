@@ -1,0 +1,7 @@
+module Packages
+  module Go
+    class VersionFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

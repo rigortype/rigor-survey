@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Assertions
+    module QueryAssertions
+      def assert_queries_count: [R] (?Integer?, ?include_schema: bool) { () -> R } -> R
+      def assert_no_queries: [R] (?include_schema: bool) { () -> R } -> R
+      def assert_queries_match: [R] (String | Regexp, ?count: Integer?, ?include_schema: bool) { () -> R } -> R
+      def assert_no_queries_match: [R] (String | Regexp, ?include_schema: bool) { () -> R } -> R
+    end
+  end
+end

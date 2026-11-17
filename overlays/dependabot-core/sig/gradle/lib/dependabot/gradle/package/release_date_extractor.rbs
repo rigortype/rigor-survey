@@ -1,0 +1,10 @@
+module Dependabot
+  module Gradle
+    module Package
+      class ReleaseDateExtractor
+        def initialize: (dependency_name: untyped, version_class: untyped) -> void
+        def extract: (repositories: untyped, dependency_metadata_fetcher: untyped, release_info_metadata_fetcher: untyped) -> Hash[String, Hash[Symbol, Object]]
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module TDiary
+  class Comment
+    def initialize: (untyped, untyped, untyped, ?untyped) -> void
+  end
+end

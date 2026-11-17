@@ -1,0 +1,5 @@
+module Gitlab
+  module Console
+    def self.welcome!: () -> nil
+  end
+end

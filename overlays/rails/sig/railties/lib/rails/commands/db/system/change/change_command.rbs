@@ -1,0 +1,11 @@
+module Rails
+  module Command
+    module Db
+      module System
+        class ChangeCommand < ::Rails::Command::Base
+          def initialize: (untyped, untyped, *untyped) -> void
+        end
+      end
+    end
+  end
+end

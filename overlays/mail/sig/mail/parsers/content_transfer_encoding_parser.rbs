@@ -1,0 +1,15 @@
+module Mail
+  module Parsers
+    module ContentTransferEncodingParser
+      def self.parse: (untyped) -> Mail::Parsers::ContentTransferEncodingParser::ContentTransferEncodingStruct
+      class ContentTransferEncodingStruct < ::Struct[untyped]
+        def encoding: () -> untyped
+        def error: () -> untyped
+        def encoding=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?encoding: untyped, ?error: untyped) -> instance | (?untyped encoding, ?untyped error) -> instance
+        def self.[]: (?encoding: untyped, ?error: untyped) -> instance | (?untyped encoding, ?untyped error) -> instance
+      end
+    end
+  end
+end

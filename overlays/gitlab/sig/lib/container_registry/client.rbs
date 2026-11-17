@@ -1,0 +1,8 @@
+module ContainerRegistry
+  class Client < ::ContainerRegistry::BaseClient
+    def registry_info: () -> ({ version: untyped, features: untyped, vendor: "gitlab" | "other", db_enabled: untyped } | {})
+    def connected?: () -> (false | true)
+    def upload_raw_blob: (untyped, untyped) -> ([untyped, untyped] | nil)
+    def generate_empty_manifest: (untyped) -> (nil | { schemaVersion: 2, mediaType: untyped, config: { mediaType: untyped, size: untyped, digest: untyped } })
+  end
+end

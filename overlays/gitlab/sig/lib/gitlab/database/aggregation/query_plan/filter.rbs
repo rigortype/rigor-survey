@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class QueryPlan
+        class Filter < ::Gitlab::Database::Aggregation::QueryPlan::BasePart
+          def initialize: (untyped, untyped, query_plan: nil) -> void
+        end
+      end
+    end
+  end
+end

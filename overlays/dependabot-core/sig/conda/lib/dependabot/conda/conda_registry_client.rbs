@@ -1,0 +1,11 @@
+module Dependabot
+  module Conda
+    class CondaRegistryClient
+      def fetch_package_metadata: (untyped, ?untyped) -> (Hash[String, Object] | nil)
+      def version_exists?: (untyped, untyped, ?untyped) -> (false | true)
+      def available_versions: (untyped, ?untyped) -> Array[Dependabot::Conda::Version]
+      def latest_version: (untyped, ?untyped) -> (Dependabot::Conda::Version | nil)
+      def package_metadata: (untyped, ?untyped) -> (nil | { homepage: Object, source_url: Object, description: Object, license: Object })
+    end
+  end
+end

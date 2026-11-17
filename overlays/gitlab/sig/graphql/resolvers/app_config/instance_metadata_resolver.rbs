@@ -1,0 +1,7 @@
+module Resolvers
+  module AppConfig
+    class InstanceMetadataResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> ::AppConfig::InstanceMetadata
+    end
+  end
+end

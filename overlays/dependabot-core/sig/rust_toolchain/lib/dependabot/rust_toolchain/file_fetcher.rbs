@@ -1,0 +1,8 @@
+module Dependabot
+  module RustToolchain
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> String
+      def fetch_files: () -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

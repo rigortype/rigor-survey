@@ -1,0 +1,5 @@
+module PagesCore
+  class ImageEmbedder
+    def initialize: (untyped) -> void
+  end
+end

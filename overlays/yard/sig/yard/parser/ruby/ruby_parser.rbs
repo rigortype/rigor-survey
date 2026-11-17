@@ -1,0 +1,9 @@
+module YARD
+  module Parser
+    module Ruby
+      class RubyParser < ::YARD::Parser::Base
+        def initialize: (untyped, nil) -> void
+      end
+    end
+  end
+end

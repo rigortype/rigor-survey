@@ -1,0 +1,14 @@
+class PagesDomain < ::ApplicationRecord
+  def self.find_by_domain_case_insensitive: (untyped) -> (PagesDomain | nil)
+  def verified?: () -> (false | true)
+  def unverified?: () -> (false | true)
+  def url: () -> (String | nil)
+  def verification_domain: () -> (String | nil)
+  def keyed_verification_code: () -> (String | nil)
+  def verification_record: () -> String
+  def user_provided_key=: (untyped) -> ("user_provided" | nil)
+  def user_provided_certificate=: (untyped) -> ("user_provided" | nil)
+  def gitlab_provided_certificate=: (untyped) -> ("gitlab_provided" | nil)
+  def gitlab_provided_key=: (untyped) -> ("gitlab_provided" | nil)
+  def clear_auto_ssl_failure: () -> false
+end

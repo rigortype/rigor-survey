@@ -1,0 +1,7 @@
+module ErrorTracking
+  class SentryClient
+    module PaginationParser
+      def self.parse_link: (untyped) -> ([untyped, Hash[String, untyped]] | nil)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module ActionView
+  module Helpers
+    module FormTagHelper
+      def field_name: (untyped, untyped, *untyped, ?multiple: untyped, ?index: untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module JSON
+  class GenericObject < ::OpenStruct
+    def self.load: (untyped, ?untyped, ?untyped) -> (Array[untyped] | Float | Hash[String, untyped] | Integer | JSON::GenericObject | String | false | true)
+    def as_json: (*untyped) -> Hash[untyped, untyped]
+    def to_json: (*untyped) -> String
+  end
+end

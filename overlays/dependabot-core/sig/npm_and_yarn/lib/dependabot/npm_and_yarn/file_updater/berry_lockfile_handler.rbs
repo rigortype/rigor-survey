@@ -1,0 +1,12 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class BerryLockfileHandler
+        def self.parse: (untyped) -> (Hash[String, untyped] | nil)
+        def self.replace_declaration: (untyped, untyped, untyped, untyped) -> (Integer | nil)
+        def self.split_descriptor: (untyped) -> ([untyped, untyped] | [untyped, nil])
+        def self.extract_protocol: (untyped, untyped) -> ("" | String)
+      end
+    end
+  end
+end

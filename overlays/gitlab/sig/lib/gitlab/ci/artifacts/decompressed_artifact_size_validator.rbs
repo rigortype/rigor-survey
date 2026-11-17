@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Artifacts
+      class DecompressedArtifactSizeValidator
+        def initialize: (file: untyped, file_format: untyped, ?max_bytes: untyped, ?local_archive_path: untyped) -> void
+        def validate!: () -> nil
+      end
+    end
+  end
+end

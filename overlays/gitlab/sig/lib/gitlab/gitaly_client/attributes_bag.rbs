@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    module AttributesBag
+      def initialize: (untyped) -> void
+    end
+  end
+end

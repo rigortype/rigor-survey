@@ -1,0 +1,11 @@
+module Ci
+  class JobRedisState
+    def self.redis_key: (untyped, untyped) -> String
+    def initialize: (?untyped) -> void
+    def save: () -> true
+    def update: (?untyped) -> true
+    class RedisBool < ::ActiveRecord::Type::Value
+      def serialize: (untyped) -> String
+    end
+  end
+end

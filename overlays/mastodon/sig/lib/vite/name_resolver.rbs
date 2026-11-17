@@ -1,0 +1,7 @@
+module Vite
+  class NameResolver
+    def initialize: (config: untyped) -> void
+    def full_path: (untyped) -> String
+    def bundle_path: (untyped) -> String
+  end
+end

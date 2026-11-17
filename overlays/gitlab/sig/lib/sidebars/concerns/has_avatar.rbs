@@ -1,0 +1,9 @@
+module Sidebars
+  module Concerns
+    module HasAvatar
+      def avatar: () -> nil
+      def avatar_shape: () -> "rect"
+      def entity_id: () -> nil
+    end
+  end
+end

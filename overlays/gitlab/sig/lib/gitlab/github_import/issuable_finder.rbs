@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    class IssuableFinder
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

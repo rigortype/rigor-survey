@@ -1,0 +1,6 @@
+module JSONWebToken
+  class Token
+    def encoded: () -> bot
+    def payload: () -> Hash[untyped, untyped]
+  end
+end

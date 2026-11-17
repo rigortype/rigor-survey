@@ -1,0 +1,8 @@
+module Gitlab
+  module Metrics
+    module RailsSlis
+      def self.known_git_endpoints: () -> ["GET /api/:version/internal/authorized_keys", "GET /api/:version/internal/discover", "POST /api/:version/internal/allowed", "POST /api/:version/internal/lfs_authenticate", "POST /api/:version/internal/two_factor_recovery_codes", "ProjectsController#show", "Repositories::GitHttpController#git_receive_pack", "Repositories::GitHttpController#git_upload_pack", "Repositories::GitHttpController#info_refs", "Repositories::LfsApiController#batch", "Repositories::LfsLocksApiController#index", "Repositories::LfsLocksApiController#verify", "Repositories::LfsStorageController#download", "Repositories::LfsStorageController#upload_authorize", "Repositories::LfsStorageController#upload_finalize"]
+      def self.uninitialized_endpoints: () -> Set[untyped]
+    end
+  end
+end

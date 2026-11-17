@@ -1,0 +1,8 @@
+module ActiveSupport
+  class Logger < ::Logger
+    def initialize: (*untyped, **untyped) -> void
+    class SimpleFormatter < ::Logger::Formatter
+      def call: (untyped, untyped, untyped, untyped) -> String
+    end
+  end
+end

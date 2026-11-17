@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Status
+      class WaitingForResource < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_pending"
+        def favicon: () -> "favicon_status_pending"
+        def name: () -> "WAITING_FOR_RESOURCE"
+        def group: () -> "waiting-for-resource"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mastodon
+  module Middleware
+    class SocketCleanup
+      def initialize: (untyped) -> void
+    end
+  end
+end

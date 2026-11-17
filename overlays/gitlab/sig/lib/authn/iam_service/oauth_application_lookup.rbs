@@ -1,0 +1,9 @@
+module Authn
+  module IamService
+    class OauthApplicationLookup
+      def self.cache_key: (untyped) -> ["authn", "iam_service", "oauth_application", untyped]
+      def initialize: (?client: untyped) -> void
+      def find: (untyped) -> (Authn::IamService::RemoteOauthApplication | nil)
+    end
+  end
+end

@@ -1,0 +1,16 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class AbstractProxyAdapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+        class QueryRequest
+          def initialize: (sql: untyped, name: untyped, binds: untyped, prepare: untyped, batch: untyped, allow_retry: untyped, materialize_transactions: untyped) -> void
+          def perform: (untyped) -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter::QueryResponse
+          def prepare: () -> (false | true)
+          def batch: () -> (false | true)
+          def allow_retry: () -> (false | true)
+          def materialize_transactions: () -> (false | true)
+        end
+      end
+    end
+  end
+end

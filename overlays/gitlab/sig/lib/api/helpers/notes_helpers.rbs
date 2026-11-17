@@ -1,0 +1,24 @@
+module API
+  module Helpers
+    module NotesHelpers
+      def self.noteable_types: () -> [::API::Helpers::NotesHelpers::NoteableType, ::API::Helpers::NotesHelpers::NoteableType, ::API::Helpers::NotesHelpers::NoteableType, ::API::Helpers::NotesHelpers::NoteableType]
+      def noteable_read_ability_name: (untyped) -> Symbol
+      def finder_params_by_noteable_type_and_id: (untyped, untyped, untyped) -> Hash[Symbol, untyped]
+      def create_note: (untyped, untyped) -> Note
+      def disable_query_limiting: () -> 200
+      def self.job_token_policy_for: (untyped, untyped) -> (Symbol | nil)
+      def self.permission_name_for: (untyped, untyped) -> Symbol
+      class NoteableType < ::Data
+        def noteable_class: () -> untyped
+        def feature_category: () -> :code_review_workflow
+        def noteables_str: () -> untyped
+        def parent_type: () -> "project"
+        def policy_base: () -> untyped
+        def tier: () -> untyped
+        def self.new: (noteable_class: untyped, feature_category: :code_review_workflow, noteables_str: untyped, parent_type: "project", policy_base: untyped, tier: untyped) -> instance | (untyped noteable_class, :code_review_workflow feature_category, untyped noteables_str, "project" parent_type, untyped policy_base, untyped tier) -> instance
+        def self.[]: (noteable_class: untyped, feature_category: :code_review_workflow, noteables_str: untyped, parent_type: "project", policy_base: untyped, tier: untyped) -> instance | (untyped noteable_class, :code_review_workflow feature_category, untyped noteables_str, "project" parent_type, untyped policy_base, untyped tier) -> instance
+        def initialize: (noteable_class: untyped, feature_category: Symbol, ?noteables_str: untyped, ?parent_type: String, ?policy_base: untyped, ?tier: untyped) -> void
+      end
+    end
+  end
+end

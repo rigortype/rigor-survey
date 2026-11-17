@@ -1,0 +1,5 @@
+module ActionView
+  class UnboundTemplate
+    def initialize: (untyped, untyped, details: untyped, virtual_path: untyped) -> void
+  end
+end

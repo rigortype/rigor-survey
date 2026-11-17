@@ -1,0 +1,8 @@
+module BaseServiceUtility
+  def notification_service: () -> NotificationService
+  def event_service: () -> EventCreateService
+  def todo_service: () -> TodoService
+  def system_hook_service: () -> SystemHooksService
+  def log_info: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  def log_error: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+end

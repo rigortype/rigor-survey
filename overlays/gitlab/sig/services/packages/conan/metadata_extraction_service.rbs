@@ -1,0 +1,8 @@
+module Packages
+  module Conan
+    class MetadataExtractionService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

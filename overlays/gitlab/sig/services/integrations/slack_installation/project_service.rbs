@@ -1,0 +1,7 @@
+module Integrations
+  module SlackInstallation
+    class ProjectService < ::Integrations::SlackInstallation::BaseService
+      def initialize: (untyped, current_user: untyped, params: untyped) -> void
+    end
+  end
+end

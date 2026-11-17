@@ -1,0 +1,7 @@
+module Gitlab
+  module BackgroundMigration
+    class RenameWriteWorkItemPermissionInGranularScopes < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      def self.job_arguments_count: () -> 2
+    end
+  end
+end

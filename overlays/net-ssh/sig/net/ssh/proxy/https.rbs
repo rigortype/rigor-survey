@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Proxy
+      class HTTPS < ::Net::SSH::Proxy::HTTP
+        def initialize: (String, ?untyped, ?untyped) -> void
+        module SSLSocketCompatibility
+          def self.extended: (untyped) -> true
+        end
+      end
+    end
+  end
+end

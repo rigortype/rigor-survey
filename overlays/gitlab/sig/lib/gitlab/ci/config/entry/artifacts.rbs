@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Artifacts < ::Gitlab::Config::Entry::Node
+          def expose_as_present?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

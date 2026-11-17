@@ -1,0 +1,14 @@
+module Ci
+  class AppendBuildTraceService
+    def initialize: (untyped, untyped) -> void
+    def execute: (untyped) -> Ci::AppendBuildTraceService::Result
+    class Result < ::Struct[untyped]
+      def status: () -> untyped
+      def stream_size: () -> untyped
+      def status=: (untyped) -> untyped
+      def stream_size=: (untyped) -> untyped
+      def self.new: (?status: untyped, ?stream_size: untyped) -> instance
+      def self.[]: (?status: untyped, ?stream_size: untyped) -> instance
+    end
+  end
+end

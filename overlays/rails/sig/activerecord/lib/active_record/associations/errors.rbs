@@ -1,0 +1,50 @@
+module ActiveRecord
+  class InverseOfAssociationNotFoundError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class InverseOfAssociationRecursiveError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class HasManyThroughAssociationNotFoundError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class HasManyThroughAssociationPolymorphicSourceError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class HasManyThroughAssociationPolymorphicThroughError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class HasManyThroughAssociationPointlessSourceTypeError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class HasOneThroughCantAssociateThroughCollection < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class HasOneAssociationPolymorphicThroughError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class HasManyThroughSourceAssociationNotFoundError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class HasManyThroughOrderError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class ThroughCantAssociateThroughHasOneOrManyReflection < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class CompositePrimaryKeyMismatchError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class AmbiguousSourceReflectionForThroughAssociation < ::ActiveRecord::ActiveRecordError
+    def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+  end
+  class ThroughNestedAssociationsAreReadonly < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class EagerLoadPolymorphicError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class DeleteRestrictionError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+end

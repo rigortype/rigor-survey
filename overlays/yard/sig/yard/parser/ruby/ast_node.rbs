@@ -1,0 +1,53 @@
+module YARD
+  module Parser
+    module Ruby
+      class AstNode < ::Array[untyped]
+        def self.node_class_for: (untyped) -> (singleton(YARD::Parser::Ruby::AstNode) | singleton(YARD::Parser::Ruby::ClassNode) | singleton(YARD::Parser::Ruby::ConditionalNode) | singleton(YARD::Parser::Ruby::KeywordNode) | singleton(YARD::Parser::Ruby::LiteralNode) | singleton(YARD::Parser::Ruby::LoopNode) | singleton(YARD::Parser::Ruby::MethodCallNode) | singleton(YARD::Parser::Ruby::MethodDefinitionNode) | singleton(YARD::Parser::Ruby::ModuleNode) | singleton(YARD::Parser::Ruby::ParameterNode) | singleton(YARD::Parser::Ruby::ReferenceNode))
+        def initialize: (untyped, untyped, ?untyped) -> void
+        def children: () -> Array[String]
+        def traverse: () -> nil
+        def token?: () -> true
+        def ref?: () -> false
+        def literal?: () -> false
+        def kw?: () -> false
+        def call?: () -> false
+        def def?: () -> false
+        def condition?: () -> false
+        def loop?: () -> false
+        def has_line?: () -> (false | true)
+        def show: () -> String
+        def inspect: () -> String
+        def unfreeze: () -> nil
+      end
+      class ReferenceNode < ::YARD::Parser::Ruby::AstNode
+        def ref?: () -> true
+        def path: () -> Array[untyped]
+        def namespace: () -> Array[untyped]
+      end
+      class LiteralNode < ::YARD::Parser::Ruby::AstNode
+        def literal?: () -> true
+      end
+      class KeywordNode < ::YARD::Parser::Ruby::AstNode
+        def kw?: () -> true
+      end
+      class MethodCallNode < ::YARD::Parser::Ruby::AstNode
+        def call?: () -> true
+      end
+      class MethodDefinitionNode < ::YARD::Parser::Ruby::AstNode
+        def kw?: () -> true
+        def def?: () -> true
+        def signature: () -> String
+      end
+      class ConditionalNode < ::YARD::Parser::Ruby::KeywordNode
+        def condition?: () -> true
+      end
+      class LoopNode < ::YARD::Parser::Ruby::KeywordNode
+        def loop?: () -> true
+      end
+      class CommentNode < ::YARD::Parser::Ruby::AstNode
+        def source: () -> ""
+        def first_line: () -> ""
+      end
+    end
+  end
+end

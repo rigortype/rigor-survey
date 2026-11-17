@@ -1,0 +1,5 @@
+module MirrorHelper
+  def mirrors_form_data_attributes: () -> { project_mirror_ssh_endpoint: untyped, project_mirror_endpoint: untyped }
+  def pull_mirror_table_data: (untyped) -> nil
+  def repository_mirrors_available?: () -> false
+end

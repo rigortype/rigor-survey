@@ -1,0 +1,10 @@
+module API
+  module Conan
+    module V1
+      class InstancePackages < ::API::Base
+        def self.authorization_boundary_options: () -> { boundary_type: :instance }
+        def search_project: () -> nil
+      end
+    end
+  end
+end

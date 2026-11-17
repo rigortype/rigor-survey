@@ -1,0 +1,8 @@
+module Authz
+  module OauthConsentGrants
+    class RevokeService
+      def initialize: (user: untyped, application_id: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

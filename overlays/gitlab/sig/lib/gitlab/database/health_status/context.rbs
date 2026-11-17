@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module HealthStatus
+      class Context
+        def initialize: (untyped, untyped, untyped) -> void
+        def status_checker_info: () -> { status_checker_id: untyped, status_checker_type: untyped, job_class_name: untyped }
+      end
+    end
+  end
+end

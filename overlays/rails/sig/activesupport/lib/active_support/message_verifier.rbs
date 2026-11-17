@@ -1,0 +1,8 @@
+module ActiveSupport
+  class MessageVerifier < ::ActiveSupport::Messages::Codec
+    def initialize: (untyped, **untyped) -> void
+    def valid_message?: (untyped) -> (false | true)
+    class InvalidSignature < ::StandardError
+    end
+  end
+end

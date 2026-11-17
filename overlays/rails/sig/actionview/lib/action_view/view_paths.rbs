@@ -1,0 +1,12 @@
+module ActionView
+  module ViewPaths
+    def lookup_context: () -> ActionView::LookupContext
+    def details_for_lookup: () -> {}
+    module ClassMethods
+      def _build_view_paths: (untyped) -> ActionView::PathSet
+      def append_view_path: (String | Array[String]) -> ActionView::PathSet
+      def prepend_view_path: (untyped) -> ActionView::PathSet
+      def view_paths=: (untyped) -> ActionView::PathSet
+    end
+  end
+end

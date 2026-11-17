@@ -1,0 +1,5 @@
+module Todos
+  class AllowedTargetFilterService
+    def initialize: (untyped, untyped) -> void
+  end
+end

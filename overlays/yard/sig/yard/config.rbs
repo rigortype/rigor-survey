@@ -1,0 +1,11 @@
+module YARD
+  class Config
+    def self.save: () -> Integer
+    def self.load_plugins: () -> (false | true)
+    def self.load_plugin: (untyped) -> (false | true)
+    def self.load_commandline_plugins: () -> Array[untyped]
+    def self.load_commandline_safemode: () -> Array[untyped]
+    def self.load_plugin_failed: (untyped, untyped) -> false
+    def self.arguments: () -> Array[untyped]
+  end
+end

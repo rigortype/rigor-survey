@@ -1,0 +1,9 @@
+module Integrations
+  module ChatMessage
+    class GroupMentionMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def activity: () -> { title: String, subtitle: String, text: untyped, image: untyped }
+      def source_name: () -> String
+    end
+  end
+end

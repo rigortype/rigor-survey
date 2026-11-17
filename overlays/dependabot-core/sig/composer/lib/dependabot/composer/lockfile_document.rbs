@@ -1,0 +1,21 @@
+module Dependabot
+  module Composer
+    class LockfileDocument
+      def self.from_file: (untyped) -> Dependabot::Composer::LockfileDocument
+      def initialize: (data: untyped, context: untyped) -> void
+      def plugin_api_version: () -> (Integer | String | nil)
+      def packages: (untyped) -> Array[::PackageRecord]
+      def find_package: (untyped, untyped) -> (::PackageRecord | nil)
+      def path_packages: (untyped) -> Array[::PackageRecord]
+      def find_path_package: (untyped, untyped) -> (::PackageRecord | nil)
+      class PackageRecord
+        def initialize: (data: untyped, context: untyped) -> void
+        def name: () -> (String | nil)
+        def path_source?: () -> (false | true)
+        def dist_url: () -> String
+        def source_reference: () -> (String | nil)
+        def git_source: () -> (nil | { type: "git", url: untyped })
+      end
+    end
+  end
+end

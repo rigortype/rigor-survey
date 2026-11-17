@@ -1,0 +1,8 @@
+module Users
+  module EmailVerification
+    class ValidateTokenService < ::Users::EmailVerification::BaseService
+      def initialize: (attr: Symbol, user: untyped, token: untyped) -> void
+      def execute: () -> ({ status: :failure, reason: :expired, message: untyped } | { status: :failure, reason: :invalid, message: untyped } | { status: :failure, reason: :rate_limited, message: untyped } | { status: :success })
+    end
+  end
+end

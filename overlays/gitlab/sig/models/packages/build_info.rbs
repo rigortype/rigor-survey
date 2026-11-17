@@ -1,0 +1,5 @@
+module Packages
+  class BuildInfo < ::ApplicationRecord
+    def self.supported_keyset_orderings: () -> { id: [:desc] }
+  end
+end

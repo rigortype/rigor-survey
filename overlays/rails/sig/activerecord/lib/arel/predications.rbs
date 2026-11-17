@@ -1,0 +1,46 @@
+module Arel
+  module Predications
+    def not_eq: (untyped) -> Arel::Nodes::NotEqual
+    def not_eq_any: (untyped) -> Arel::Nodes::Grouping
+    def not_eq_all: (untyped) -> Arel::Nodes::Grouping
+    def eq: (untyped) -> Arel::Nodes::Equality
+    def case_sensitive_eq: (untyped) -> Arel::Nodes::CaseSensitiveEquality
+    def case_insensitive_eq: (untyped) -> Arel::Nodes::CaseInsensitiveEquality
+    def is_not_distinct_from: (untyped) -> Arel::Nodes::IsNotDistinctFrom
+    def is_distinct_from: (untyped) -> Arel::Nodes::IsDistinctFrom
+    def eq_any: (untyped) -> Arel::Nodes::Grouping
+    def eq_all: (untyped) -> Arel::Nodes::Grouping
+    def between: (untyped) -> (Arel::Nodes::Between | Arel::Nodes::Equality | Arel::Nodes::GreaterThanOrEqual | Arel::Nodes::In | Arel::Nodes::LessThan | Arel::Nodes::LessThanOrEqual | Arel::Nodes::Nary | Arel::Nodes::NotIn)
+    def in: (untyped) -> Arel::Nodes::In
+    def in_any: (untyped) -> Arel::Nodes::Grouping
+    def in_all: (untyped) -> Arel::Nodes::Grouping
+    def not_between: (untyped) -> (Arel::Nodes::GreaterThan | Arel::Nodes::GreaterThanOrEqual | Arel::Nodes::Grouping | Arel::Nodes::In | Arel::Nodes::LessThan | Arel::Nodes::NotIn)
+    def not_in: (untyped) -> Arel::Nodes::NotIn
+    def not_in_any: (untyped) -> Arel::Nodes::Grouping
+    def not_in_all: (untyped) -> Arel::Nodes::Grouping
+    def matches: (untyped, ?untyped, ?untyped) -> Arel::Nodes::Matches
+    def matches_regexp: (untyped, ?untyped) -> Arel::Nodes::Regexp
+    def matches_any: (untyped, ?untyped, ?untyped) -> Arel::Nodes::Grouping
+    def matches_all: (untyped, ?untyped, ?untyped) -> Arel::Nodes::Grouping
+    def does_not_match: (untyped, ?untyped, ?untyped) -> Arel::Nodes::DoesNotMatch
+    def does_not_match_regexp: (untyped, ?untyped) -> Arel::Nodes::NotRegexp
+    def does_not_match_any: (untyped, ?untyped) -> Arel::Nodes::Grouping
+    def does_not_match_all: (untyped, ?untyped) -> Arel::Nodes::Grouping
+    def gteq: (untyped) -> Arel::Nodes::GreaterThanOrEqual
+    def gteq_any: (untyped) -> Arel::Nodes::Grouping
+    def gteq_all: (untyped) -> Arel::Nodes::Grouping
+    def gt: (untyped) -> Arel::Nodes::GreaterThan
+    def gt_any: (untyped) -> Arel::Nodes::Grouping
+    def gt_all: (untyped) -> Arel::Nodes::Grouping
+    def lt: (untyped) -> Arel::Nodes::LessThan
+    def lt_any: (untyped) -> Arel::Nodes::Grouping
+    def lt_all: (untyped) -> Arel::Nodes::Grouping
+    def lteq: (untyped) -> Arel::Nodes::LessThanOrEqual
+    def lteq_any: (untyped) -> Arel::Nodes::Grouping
+    def lteq_all: (untyped) -> Arel::Nodes::Grouping
+    def when: (untyped) -> Arel::Nodes::Case
+    def concat: (untyped) -> Arel::Nodes::Concat
+    def contains: (untyped) -> Arel::Nodes::Contains
+    def overlaps: (untyped) -> Arel::Nodes::Overlaps
+  end
+end

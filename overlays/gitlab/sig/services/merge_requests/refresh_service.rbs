@@ -1,0 +1,6 @@
+module MergeRequests
+  class RefreshService < ::MergeRequests::BaseService
+    def execute: (untyped, untyped, untyped) -> true
+    def push: () -> (Gitlab::Git::Push | nil)
+  end
+end

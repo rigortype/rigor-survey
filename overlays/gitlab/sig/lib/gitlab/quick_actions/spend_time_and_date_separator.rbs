@@ -1,0 +1,8 @@
+module Gitlab
+  module QuickActions
+    class SpendTimeAndDateSeparator
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ([untyped, untyped, untyped] | nil)
+    end
+  end
+end

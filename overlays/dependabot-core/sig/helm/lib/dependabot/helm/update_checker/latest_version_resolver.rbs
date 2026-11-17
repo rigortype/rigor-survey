@@ -1,0 +1,14 @@
+module Dependabot
+  module Helm
+    class LatestVersionResolver
+      def initialize: (dependency: untyped, credentials: untyped, cooldown_options: untyped) -> void
+      def select_tags_which_in_cooldown_from_chart: (untyped) -> Array[String]
+      def select_tags_which_in_cooldown_from_chart_index: (untyped, untyped) -> Array[String]
+      def check_if_version_in_cooldown_period?: (untyped) -> (false | true)
+      def release_date_to_seconds: (untyped) -> (0 | Integer)
+      def select_tags_which_in_cooldown_using_oci: (untyped) -> Array[String]
+      def package_details_fetcher: () -> (::Package::PackageDetailsFetcher | nil)
+      def cooldown_enabled?: () -> true
+    end
+  end
+end

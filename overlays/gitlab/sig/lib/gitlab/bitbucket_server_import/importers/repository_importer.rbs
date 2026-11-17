@@ -1,0 +1,10 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      class RepositoryImporter
+        def initialize: (untyped) -> void
+        def execute: () -> true
+      end
+    end
+  end
+end

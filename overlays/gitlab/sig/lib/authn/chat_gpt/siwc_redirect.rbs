@@ -1,0 +1,7 @@
+module Authn
+  module ChatGpt
+    class SiwcRedirect
+      def self.redirect_uri_host_allowed?: (untyped) -> (false | true)
+    end
+  end
+end

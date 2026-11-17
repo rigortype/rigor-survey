@@ -1,0 +1,5 @@
+module Arel
+  module AliasPredication
+    def as: (untyped) -> Arel::Nodes::As
+  end
+end

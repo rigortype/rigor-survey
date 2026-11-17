@@ -1,0 +1,11 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class MilestonesMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "milestone"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: "dashboard/milestones" }
+      end
+    end
+  end
+end

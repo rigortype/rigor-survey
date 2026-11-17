@@ -1,0 +1,8 @@
+module Gitlab
+  module Memory
+    class UploadAndCleanupReports
+      def initialize: (uploader: untyped, reports_path: untyped, logger: untyped, ?sleep_time_seconds: Integer) -> void
+      def sleep_time_seconds: () -> (60 | 600)
+    end
+  end
+end

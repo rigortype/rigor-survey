@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    module Utils
+      class AuthHeadersFinder
+        def initialize: (untyped) -> void
+        def auth_headers: (untyped) -> Hash[String, String]
+      end
+    end
+  end
+end

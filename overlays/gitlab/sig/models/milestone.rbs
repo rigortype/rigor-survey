@@ -1,0 +1,9 @@
+class Milestone < ::ApplicationRecord
+  def self.min_chars_for_partial_matching: () -> 2
+  def self.reference_prefix: () -> "%"
+  def self.reference_pattern: () -> Regexp
+  def self.states_count: (untyped, ?untyped) -> { opened: untyped, closed: untyped, all: untyped }
+  def for_display: () -> Milestone
+  def author_id: () -> nil
+  def to_reference: (?untyped, ?format: untyped, ?full: untyped, ?absolute_path: untyped) -> String
+end

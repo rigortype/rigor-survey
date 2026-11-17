@@ -1,0 +1,17 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module Quoting
+      def quoted_true: () -> "TRUE"
+      def unquoted_true: () -> true
+      def quoted_false: () -> "FALSE"
+      def unquoted_false: () -> false
+      def quoted_binary: (untyped) -> String
+      module ClassMethods
+        def column_name_matcher: () -> Regexp
+        def column_name_with_order_matcher: () -> Regexp
+        def quote_column_name: (untyped) -> bot
+        def quote_table_name: (untyped) -> bot
+      end
+    end
+  end
+end

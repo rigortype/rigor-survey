@@ -1,0 +1,19 @@
+module Parser
+  class Base < ::Racc::Parser
+    def self.parse_with_comments: (untyped, ?untyped, ?untyped) -> [untyped, untyped]
+    def self.parse_file_with_comments: (untyped) -> [untyped, untyped]
+    def self.default_parser: () -> Parser::Base
+    def self.setup_source_buffer: (untyped, untyped, untyped, untyped) -> Parser::Source::Buffer
+    def initialize: (?untyped) -> void
+    def reset: () -> Parser::Base
+    def parse_with_comments: (untyped) -> [untyped, untyped]
+    def tokenize: (untyped, ?untyped) -> [untyped, untyped, untyped]
+    def diagnostics: () -> Parser::Diagnostic::Engine
+    def static_env: () -> Parser::StaticEnvironment
+    def context: () -> Parser::Context
+    def max_numparam_stack: () -> Parser::MaxNumparamStack
+    def current_arg_stack: () -> Parser::CurrentArgStack
+    def pattern_variables: () -> Parser::VariablesStack
+    def pattern_hash_keys: () -> Parser::VariablesStack
+  end
+end

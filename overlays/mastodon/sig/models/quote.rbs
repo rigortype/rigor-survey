@@ -1,0 +1,4 @@
+class Quote < ::ApplicationRecord
+  def schedule_refresh_if_stale!: () -> (String | nil)
+  def sign?: () -> true
+end

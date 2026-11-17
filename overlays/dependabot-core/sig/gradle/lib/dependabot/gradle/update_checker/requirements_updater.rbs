@@ -1,0 +1,11 @@
+module Dependabot
+  module Gradle
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, latest_version: untyped, source_url: untyped, properties_to_update: untyped) -> void
+        def updated_requirements: () -> (Array[Dependabot::DependencyRequirement | ::DependencyRequirement] | Array[Dependabot::DependencyRequirement])
+        def latest_version: () -> ::Version
+      end
+    end
+  end
+end

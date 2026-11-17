@@ -1,0 +1,7 @@
+module Liquid
+  class Document
+    def self.parse: (untyped, untyped) -> Liquid::Document
+    def initialize: (untyped) -> void
+    def unknown_tag: (untyped, untyped, untyped) -> bot
+  end
+end

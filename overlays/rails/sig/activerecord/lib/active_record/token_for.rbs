@@ -1,0 +1,17 @@
+module ActiveRecord
+  module TokenFor
+    class TokenDefinition < ::Struct[untyped]
+      def defining_class: () -> untyped
+      def purpose: () -> untyped
+      def expires_in: () -> untyped
+      def block: () -> untyped
+      def defining_class=: (untyped) -> untyped
+      def purpose=: (untyped) -> untyped
+      def expires_in=: (untyped) -> untyped
+      def block=: (untyped) -> untyped
+      def self.new: (?defining_class: untyped, ?purpose: untyped, ?expires_in: untyped, ?block: untyped) -> instance | (?untyped defining_class, ?untyped purpose, ?untyped expires_in, ?untyped block) -> instance
+      def self.[]: (?defining_class: untyped, ?purpose: untyped, ?expires_in: untyped, ?block: untyped) -> instance | (?untyped defining_class, ?untyped purpose, ?untyped expires_in, ?untyped block) -> instance
+      def payload_for: (untyped) -> ([untyped, untyped] | [untyped])
+    end
+  end
+end

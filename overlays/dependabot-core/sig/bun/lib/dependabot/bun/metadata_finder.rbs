@@ -1,0 +1,7 @@
+module Dependabot
+  module Bun
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def maintainer_changes: () -> (String | nil)
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Auth
+    module Otp
+      module Strategies
+        class Devise < ::Gitlab::Auth::Otp::Strategies::Base
+          def validate: (untyped) -> ({ message: "invalid OTP code", status: :error } | { status: :success })
+        end
+      end
+    end
+  end
+end

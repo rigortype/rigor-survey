@@ -1,0 +1,14 @@
+module Dependabot
+  module Bundler
+    module NativeHelpers
+      def self.versioned_helper_path: (untyped) -> String
+      def self.subprocess_env: (untyped, untyped) -> (Hash[untyped, untyped] | Hash[String, String])
+      def self.native_helpers_root: () -> String
+      class BundleCommand
+        def initialize: (untyped) -> void
+        def build: (untyped) -> String
+        def timeout_seconds: () -> Integer
+      end
+    end
+  end
+end

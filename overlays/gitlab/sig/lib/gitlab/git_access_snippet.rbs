@@ -1,0 +1,7 @@
+module Gitlab
+  class GitAccessSnippet < ::Gitlab::GitAccess
+    def initialize: (untyped, untyped, untyped, **untyped) -> void
+    def download_ability: () -> :read_snippet
+    def push_ability: () -> :update_snippet
+  end
+end

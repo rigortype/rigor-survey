@@ -1,0 +1,6 @@
+module ActionView
+  class PartialRenderer < ::ActionView::AbstractRenderer
+    def initialize: (untyped, untyped) -> void
+    def render: (untyped, untyped, untyped) -> (ActionView::AbstractRenderer::RenderedTemplate | nil)
+  end
+end

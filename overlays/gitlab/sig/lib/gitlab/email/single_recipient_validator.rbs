@@ -1,0 +1,9 @@
+module Gitlab
+  module Email
+    module SingleRecipientValidator
+      def validate_single_recipient_in_opts!: (untyped) -> (nil | true)
+      def validate_single_recipient_in_email: (untyped) -> (false | true)
+      def validate_single_recipient_in_email!: (untyped) -> nil
+    end
+  end
+end

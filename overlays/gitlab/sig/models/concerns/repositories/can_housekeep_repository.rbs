@@ -1,0 +1,5 @@
+module Repositories
+  module CanHousekeepRepository
+    def git_garbage_collect_worker_klass: () -> bot
+  end
+end

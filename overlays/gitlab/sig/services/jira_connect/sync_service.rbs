@@ -1,0 +1,6 @@
+module JiraConnect
+  class SyncService
+    def initialize: (untyped) -> void
+    def execute: (**untyped) -> Array[untyped]
+  end
+end

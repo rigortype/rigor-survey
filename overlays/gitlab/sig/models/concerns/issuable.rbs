@@ -1,0 +1,23 @@
+module Issuable
+  def self.labels_hash: () -> Hash[untyped, untyped]
+  def self.locking_enabled?: () -> false
+  def self.max_number_of_assignees_or_reviewers_message: () -> String
+  def issuable_type: () -> String
+  def allows_multiple_assignees?: () -> false
+  def allows_reviewers?: () -> false
+  def supports_time_tracking?: () -> (false | true)
+  def supports_assignee?: () -> false
+  def max_number_of_labels: () -> nil
+  def supports_confidentiality?: () -> false
+  def supports_lock_on_merge?: () -> false
+  def hook_association_changes: (untyped) -> Hash[untyped, untyped]
+  def hook_reviewer_changes: (untyped) -> Hash[untyped, untyped]
+  def to_hook_data: (untyped, ?old_associations: untyped, ?action: untyped, ?actioned_at: untyped) -> (Hash[untyped, untyped] | { object_kind: untyped, event_type: untyped, user: untyped, project: untyped, object_attributes: untyped, labels: untyped, changes: untyped, repository: untyped })
+  def allows_scoped_labels?: () -> false
+  def card_attributes: () -> Hash[String, untyped]
+  def system_note_authors: () -> ActiveRecord::Relation[User]
+  def updated_tasks: () -> Array[untyped]
+  def can_move?: (*untyped) -> false
+  def first_contribution?: () -> false
+  def supports_health_status?: () -> false
+end

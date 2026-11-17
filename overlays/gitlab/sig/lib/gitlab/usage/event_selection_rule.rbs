@@ -1,0 +1,10 @@
+module Gitlab
+  module Usage
+    class EventSelectionRule
+      def initialize: (name: untyped, time_framed: untyped, ?filter: untyped, ?unique_identifier_name: untyped, ?operator: String) -> void
+      def total_counter?: () -> (false | true)
+      def hash: () -> Integer
+      def operator: () -> ("sum(value)" | "total")
+    end
+  end
+end

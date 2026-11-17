@@ -1,0 +1,31 @@
+module IssuesHelper
+  def render_issue_subject_with_tree: (untyped) -> String
+  def render_descendants_tree: (untyped) -> String
+  def issue_fields_rows: () -> ActiveSupport::SafeBuffer
+  def render_full_width_custom_fields_rows: (untyped) -> (String | nil)
+  def email_issue_attributes: (untyped, untyped, untyped) -> Array[untyped]
+  def details_to_strings: (untyped, ?untyped, ?untyped) -> Array[untyped]
+  def journals_by_attachment_id: (untyped) -> Hash[untyped, untyped]
+  def issue_history_tabs: () -> Array[untyped]
+  class MultipleValuesDetail < ::Struct[untyped]
+    def property: () -> untyped
+    def prop_key: () -> untyped
+    def custom_field: () -> untyped
+    def old_value: () -> untyped
+    def value: () -> untyped
+    def property=: (untyped) -> untyped
+    def prop_key=: (untyped) -> untyped
+    def custom_field=: (untyped) -> untyped
+    def old_value=: (untyped) -> untyped
+    def value=: (untyped) -> untyped
+    def self.new: (?property: untyped, ?prop_key: untyped, ?custom_field: untyped, ?old_value: untyped, ?value: untyped) -> instance | (?untyped property, ?untyped prop_key, ?untyped custom_field, ?untyped old_value, ?untyped value) -> instance
+    def self.[]: (?property: untyped, ?prop_key: untyped, ?custom_field: untyped, ?old_value: untyped, ?value: untyped) -> instance | (?untyped property, ?untyped prop_key, ?untyped custom_field, ?untyped old_value, ?untyped value) -> instance
+  end
+  class IssueFieldsRows
+    def left: (*untyped) -> Array[untyped]
+    def right: (*untyped) -> Array[untyped]
+    def size: () -> (nil | Integer)
+    def to_html: () -> ActiveSupport::SafeBuffer
+    def cells: (untyped, untyped, ?untyped) -> ActiveSupport::SafeBuffer
+  end
+end

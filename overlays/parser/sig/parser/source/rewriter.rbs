@@ -1,0 +1,17 @@
+module Parser
+  module Source
+    class Rewriter
+      def initialize: (Parser::Source::Buffer) -> void
+      def remove: (Parser::Source::Range) -> Parser::Source::Rewriter
+      def insert_before: (Parser::Source::Range, String) -> Parser::Source::Rewriter
+      def wrap: (untyped, untyped, untyped) -> Parser::Source::Rewriter
+      def insert_before_multi: (Parser::Source::Range, String) -> Parser::Source::Rewriter
+      def insert_after: (Parser::Source::Range, String) -> Parser::Source::Rewriter
+      def insert_after_multi: (Parser::Source::Range, String) -> Parser::Source::Rewriter
+      def replace: (Parser::Source::Range, String) -> Parser::Source::Rewriter
+      def transaction: () -> Parser::Source::Rewriter
+      def source_buffer: () -> Parser::Source::Buffer
+      def diagnostics: () -> Parser::Diagnostic::Engine
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class AggregationResult
+        def initialize: (nil, nil, nil, **untyped) -> void
+        def limit: (untyped) -> Gitlab::Database::Aggregation::AggregationResult
+        def offset: (untyped) -> Gitlab::Database::Aggregation::AggregationResult
+        def count: () -> bot
+        def engine: () -> nil
+        def plan: () -> nil
+        def query: () -> nil
+      end
+    end
+  end
+end

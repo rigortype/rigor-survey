@@ -1,0 +1,11 @@
+class List
+  class Node
+    def initialize: (untyped, ?untyped) -> void
+  end
+end
+
+class Tree
+  class Node
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+  end
+end

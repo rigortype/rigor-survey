@@ -1,0 +1,11 @@
+module Dependabot
+  module Bun
+    module ConstraintHelper
+      def self.extract_ruby_constraints: (untyped, ?untyped) -> (Array[String] | nil)
+      def self.find_highest_version_from_constraint_expression: (untyped, ?untyped) -> (String | nil)
+      def self.parse_constraints: (untyped, ?untyped) -> (Array[Hash[Symbol, String | nil]] | nil)
+      def self.to_ruby_constraint_with_version: (untyped, ?untyped) -> (nil | { constraint: untyped, version: untyped } | { constraint: String, version: untyped } | { constraint: nil, version: untyped })
+      def self.version_components: (untyped) -> Array[untyped]
+    end
+  end
+end

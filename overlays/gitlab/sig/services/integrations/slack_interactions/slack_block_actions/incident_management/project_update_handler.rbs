@@ -1,0 +1,12 @@
+module Integrations
+  module SlackInteractions
+    module SlackBlockActions
+      module IncidentManagement
+        class ProjectUpdateHandler
+          def initialize: (untyped, untyped) -> void
+          def execute: () -> (ServiceResponse | nil)
+        end
+      end
+    end
+  end
+end

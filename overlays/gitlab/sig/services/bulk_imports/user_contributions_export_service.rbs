@@ -1,0 +1,5 @@
+module BulkImports
+  class UserContributionsExportService
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+  end
+end

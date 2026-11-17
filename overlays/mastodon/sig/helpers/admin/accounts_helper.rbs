@@ -1,0 +1,5 @@
+module Admin
+  module AccountsHelper
+    def admin_accounts_moderation_options: () -> [[untyped, "active"], [untyped, "silenced"], [untyped, "disabled"], [untyped, "suspended"], [untyped, "pending"]]
+  end
+end

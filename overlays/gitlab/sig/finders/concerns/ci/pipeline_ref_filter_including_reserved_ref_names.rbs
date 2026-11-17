@@ -1,0 +1,5 @@
+module Ci
+  module PipelineRefFilterIncludingReservedRefNames
+    def ref_and_associated_reserved_refs: (untyped, untyped, ?untyped) -> (Array[untyped] | [untyped])
+  end
+end

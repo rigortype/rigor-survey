@@ -1,0 +1,15 @@
+module ActionController
+  module Redirecting
+    class OpenRedirectError < ::ActionController::Redirecting::UnsafeRedirectError
+      def initialize: (untyped) -> void
+    end
+    class PathRelativeRedirectError < ::ActionController::Redirecting::UnsafeRedirectError
+      def initialize: (untyped) -> void
+    end
+    module ClassMethods
+      def allowed_redirect_hosts=: (untyped) -> (ActionDispatch::HostAuthorization::Permissions | nil)
+    end
+    class UnsafeRedirectError < ::StandardError
+    end
+  end
+end

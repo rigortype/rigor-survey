@@ -1,0 +1,7 @@
+module Gitlab
+  module Kubernetes
+    def self.build_header_hash: () -> Hash[untyped, untyped]
+    def container_exec_url: (untyped, untyped, untyped, untyped) -> String
+    def to_kubeconfig: (url: untyped, namespace: untyped, token: untyped, ?ca_pem: untyped) -> (String | nil)
+  end
+end

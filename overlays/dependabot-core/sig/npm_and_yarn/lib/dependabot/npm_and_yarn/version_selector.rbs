@@ -1,0 +1,7 @@
+module Dependabot
+  module NpmAndYarn
+    class VersionSelector
+      def setup: (untyped, untyped, ?untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

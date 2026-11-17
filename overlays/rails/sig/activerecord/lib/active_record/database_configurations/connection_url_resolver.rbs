@@ -1,0 +1,7 @@
+module ActiveRecord
+  class DatabaseConfigurations
+    class ConnectionUrlResolver
+      def initialize: (untyped) -> void
+    end
+  end
+end

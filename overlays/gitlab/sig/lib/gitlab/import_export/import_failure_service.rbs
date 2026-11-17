@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class ImportFailureService
+      def initialize: (untyped) -> void
+    end
+  end
+end

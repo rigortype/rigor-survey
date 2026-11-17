@@ -1,0 +1,5 @@
+module Google
+  module Protobuf
+    def self.discard_unknown: (untyped) -> nil
+  end
+end

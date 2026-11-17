@@ -1,0 +1,10 @@
+module ActionCable
+  module Server
+    class Socket
+      def initialize: (untyped, untyped, ?coder: untyped) -> void
+      def request: () -> ActionDispatch::Request
+      def websocket: () -> ActionCable::Server::Socket::WebSocket
+      def message_buffer: () -> ActionCable::Server::Socket::MessageBuffer
+    end
+  end
+end

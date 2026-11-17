@@ -1,0 +1,4 @@
+class ContentSecurityPolicy
+  def media_hosts: () -> Array[untyped]
+  def admin_media_hosts: () -> Array[String]
+end

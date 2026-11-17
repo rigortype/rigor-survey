@@ -1,0 +1,5 @@
+module Resolvers
+  class NilResolver < ::Resolvers::BaseResolver
+    def resolve: () -> nil
+  end
+end

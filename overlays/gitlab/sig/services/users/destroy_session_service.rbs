@@ -1,0 +1,6 @@
+module Users
+  class DestroySessionService
+    def initialize: (current_user: untyped, user: untyped, private_session_id: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

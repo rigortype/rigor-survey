@@ -1,0 +1,8 @@
+module Organizations
+  module Release
+    class TableRenderer
+      def initialize: (?registry: untyped) -> void
+      def render: () -> String
+    end
+  end
+end

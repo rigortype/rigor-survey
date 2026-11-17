@@ -1,0 +1,5 @@
+module Rails
+  class TestUnitReporter < ::Minitest::StatisticsReporter
+    def record: (untyped) -> nil
+  end
+end

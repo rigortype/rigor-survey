@@ -1,0 +1,9 @@
+module Dependabot
+  module Maven
+    module Shared
+      class SharedVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def matches_dependency_version_type?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

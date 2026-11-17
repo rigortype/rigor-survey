@@ -1,0 +1,15 @@
+module ActionDispatch
+  module Routing
+    class RouteWrapper < ::SimpleDelegator
+      def endpoint: () -> ("Inline handler (Proc/Lambda)" | String)
+      def action_source_location: () -> (String | nil)
+      def to_h: () -> { name: untyped, verb: untyped, path: untyped, reqs: untyped, source_location: untyped, action_source_location: String | nil, action_source_file: untyped, action_source_line: untyped }
+    end
+    class RoutesInspector
+      def initialize: (untyped) -> void
+    end
+    class HtmlTableFormatter
+      def initialize: (untyped) -> void
+    end
+  end
+end

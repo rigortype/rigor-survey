@@ -1,0 +1,38 @@
+module Ci
+  class Build < ::Ci::Processable
+    def self.model_name: () -> ActiveModel::Name
+    def self.clone_accessors: () -> [:pipeline, :project, :ref, :tag, :name, :allow_failure, :stage_idx, :when, :environment, :coverage_regex, :description, :protected, :needs_attributes, :job_variables_attributes, :resource_group, :scheduling_type, :timeout, :timeout_source, :debug_trace_enabled, :ci_stage, :partition_id, :inputs_attributes]
+    def self.supported_keyset_orderings: () -> { id: [:asc, :desc] }
+    def self.tag_names_array_query: () -> String
+    def cancel_gracefully?: () -> (false | true)
+    def supports_force_cancel?: () -> true
+    def pages: () -> ({ publish: untyped } | {})
+    def runnable?: () -> true
+    def protect_pipeline_from_auto_cancellation: () -> (Gitlab::Ci::RedundantPipelines::CandidateCache | nil)
+    def can_auto_cancel_pipeline_on_job_failure?: () -> (false | true)
+    def play: (untyped, ?untyped, ?untyped, ?rate_limit: untyped) -> ServiceResponse
+    def prerequisites: () -> Array[Gitlab::Ci::Build::Prerequisite::KubernetesNamespace | Gitlab::Ci::Build::Prerequisite::ManagedResource]
+    def harbor_variables: () -> (Gitlab::Ci::Variables::Collection | [])
+    def apple_app_store_variables: () -> (Gitlab::Ci::Variables::Collection | [])
+    def google_play_variables: () -> (Gitlab::Ci::Variables::Collection | [])
+    def diffblue_cover_variables: () -> (Gitlab::Ci::Variables::Collection | [])
+    def pages_variables: () -> Gitlab::Ci::Variables::Collection
+    def base_variables: () -> Gitlab::Ci::Variables::Collection
+    def features: () -> { trace_sections: true, failure_reasons: untyped }
+    def trace: () -> Gitlab::Ci::Trace
+    def ensure_trace_metadata!: () -> Ci::BuildTraceMetadata
+    def tag_list: () -> Gitlab::Ci::Tags::TagList
+    def artifact_access_setting_in_config: () -> (:maintainer | :none | :private | :public)
+    def erased?: () -> (false | true)
+    def steps: () -> Array[Gitlab::Ci::Build::Step]
+    def image: () -> (Gitlab::Ci::Build::Image | nil)
+    def fallback_cache_keys_defined?: () -> (false | true)
+    def credentials: () -> Array[Gitlab::Ci::Build::Credentials::Registry::DependencyProxy | Gitlab::Ci::Build::Credentials::Registry::GitlabRegistry]
+    def valid_dependency?: () -> (false | true)
+    def doom!: () -> Array[singleton(Gitlab::AppJsonLogger)]
+    def max_test_cases_per_report: () -> (0 | 500000)
+    def all_queuing_entries: () -> ActiveRecord::Relation[Ci::PendingBuild]
+    def all_runtime_metadata: () -> ActiveRecord::Relation[Ci::RunningBuild]
+    def pending_build_args: () -> (Hash[untyped, untyped] | nil | { build: Ci::Build, project: Project, protected: untyped, namespace: Namespace, tag_ids: untyped, instance_runners_enabled: untyped })
+  end
+end

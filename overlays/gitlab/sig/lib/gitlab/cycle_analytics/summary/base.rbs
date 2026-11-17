@@ -1,0 +1,9 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class Base
+        def initialize: (project: untyped, options: untyped) -> void
+      end
+    end
+  end
+end

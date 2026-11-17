@@ -1,0 +1,10 @@
+module ActionView
+  class HerbChecker
+    class Failure < ::Data
+      def template: () -> untyped
+      def error: () -> untyped
+      def self.new: (template: untyped, error: untyped) -> instance | (untyped template, untyped error) -> instance
+      def self.[]: (template: untyped, error: untyped) -> instance | (untyped template, untyped error) -> instance
+    end
+  end
+end

@@ -1,0 +1,28 @@
+module RGL
+  module DOT
+    class Element
+      def initialize: (?untyped, ?untyped) -> void
+    end
+    class Port
+      def initialize: (?untyped, ?untyped) -> void
+      def to_s: () -> String
+    end
+    class Node < ::RGL::DOT::Element
+      def initialize: (?untyped, ?untyped) -> void
+    end
+    class Graph < ::RGL::DOT::Element
+      def initialize: (?untyped, ?untyped) -> void
+      def each_element: () ?{ (*untyped) -> untyped } -> RGL::DOT::Graph
+      def <<: (untyped) -> RGL::DOT::Graph
+    end
+    class Digraph < ::RGL::DOT::Graph
+      def initialize: (?untyped, ?untyped) -> void
+    end
+    class Subgraph < ::RGL::DOT::Graph
+      def initialize: (?untyped, ?untyped) -> void
+    end
+    class Edge < ::RGL::DOT::Element
+      def initialize: (?untyped, ?untyped) -> void
+    end
+  end
+end

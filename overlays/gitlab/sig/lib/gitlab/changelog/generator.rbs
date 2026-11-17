@@ -1,0 +1,7 @@
+module Gitlab
+  module Changelog
+    class Generator
+      def initialize: (?String) -> void
+    end
+  end
+end

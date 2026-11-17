@@ -1,0 +1,7 @@
+module Vite
+  def self.config: () -> Vite::Config
+  def self.dev_server: () -> Vite::DevServer
+  def self.tagger: () -> Vite::Tagger
+  def self.manifest: () -> Vite::Manifest
+  def self.tasks: () -> Vite::Tasks
+end

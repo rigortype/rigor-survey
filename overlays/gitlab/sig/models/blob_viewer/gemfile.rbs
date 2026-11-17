@@ -1,0 +1,6 @@
+module BlobViewer
+  class Gemfile < ::BlobViewer::DependencyManager
+    def manager_name: () -> "Bundler"
+    def manager_url: () -> "http://bundler.io/"
+  end
+end

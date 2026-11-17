@@ -1,0 +1,16 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module DatabaseStatements
+      def to_sql_and_binds: (untyped, ?untyped, ?untyped, ?untyped) -> ([untyped, untyped, untyped, untyped] | [untyped, [], nil, false])
+      def cacheable_query: (untyped, untyped) -> [untyped, untyped]
+      def query_command: (untyped, ?untyped, ?allow_retry: untyped, ?materialize_transactions: untyped) -> nil
+      def write_query?: (untyped) -> bot
+      def explain: (untyped, ?untyped, ?untyped) -> bot
+      def transaction_isolation_levels: () -> { read_uncommitted: "READ UNCOMMITTED", read_committed: "READ COMMITTED", repeatable_read: "REPEATABLE READ", serializable: "SERIALIZABLE" }
+      def begin_isolated_db_transaction: (untyped) -> bot
+      def restart_parent_transactions?: () -> true
+      def default_sequence_name: (untyped, untyped) -> nil
+      def empty_insert_statement_value: (?untyped) -> "DEFAULT VALUES"
+    end
+  end
+end

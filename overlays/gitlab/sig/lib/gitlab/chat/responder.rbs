@@ -1,0 +1,7 @@
+module Gitlab
+  module Chat
+    module Responder
+      def self.responder_for: (untyped) -> (Gitlab::Chat::Responder::Mattermost | Gitlab::Chat::Responder::Slack | nil)
+    end
+  end
+end

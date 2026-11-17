@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Sos
+      class DbStatsActivity < ::Gitlab::Database::Sos::BaseDbStatsHandler
+        def run: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

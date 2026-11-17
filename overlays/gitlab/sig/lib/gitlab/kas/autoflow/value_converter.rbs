@@ -1,0 +1,13 @@
+module Gitlab
+  module Kas
+    module Autoflow
+      module ValueConverter
+        def self?.sensitive_string: (untyped) -> Gitlab::Kas::Autoflow::ValueConverter::SensitiveString
+        class SensitiveString
+          def initialize: (untyped) -> void
+          def inspect: () -> String
+        end
+      end
+    end
+  end
+end

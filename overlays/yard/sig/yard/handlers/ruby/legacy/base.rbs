@@ -1,0 +1,11 @@
+module YARD
+  module Handlers
+    module Ruby
+      module Legacy
+        class Base < ::YARD::Handlers::Base
+          def call_params: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

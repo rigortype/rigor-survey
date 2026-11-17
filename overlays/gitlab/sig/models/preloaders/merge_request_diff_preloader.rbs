@@ -1,0 +1,5 @@
+module Preloaders
+  class MergeRequestDiffPreloader
+    def initialize: (untyped) -> void
+  end
+end

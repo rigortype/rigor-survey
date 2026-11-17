@@ -1,0 +1,5 @@
+module Issuables
+  class LabelEventReferencesService
+    def initialize: (untyped) -> void
+  end
+end

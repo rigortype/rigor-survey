@@ -1,0 +1,13 @@
+module Gitlab
+  module Middleware
+    class Multipart
+      def initialize: (untyped) -> void
+      class Handler
+        def initialize: (untyped, untyped) -> void
+        def decorate_params_value: (untyped, untyped) -> Hash[untyped, untyped]
+        def open_file: (untyped) -> (UploadedFile | nil)
+        def update_param: (untyped, untyped) -> top
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Packages
+  module Rpm
+    class RepositoryFile < ::ApplicationRecord
+      def self.installable_statuses: () -> [:default]
+    end
+  end
+end

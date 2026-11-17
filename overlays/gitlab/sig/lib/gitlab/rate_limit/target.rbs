@@ -1,0 +1,12 @@
+module Gitlab
+  module RateLimit
+    class Target < ::Data
+      def type: () -> untyped
+      def identifier: () -> untyped
+      def self.new: (type: untyped, identifier: untyped) -> instance | (untyped type, untyped identifier) -> instance
+      def self.[]: (type: untyped, identifier: untyped) -> instance | (untyped type, untyped identifier) -> instance
+      def initialize: (type: untyped, identifier: untyped) -> void
+      def cache_key: () -> String
+    end
+  end
+end

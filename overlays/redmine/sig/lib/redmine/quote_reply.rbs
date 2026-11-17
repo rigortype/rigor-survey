@@ -1,0 +1,10 @@
+module Redmine
+  module QuoteReply
+    module Builder
+      def quote_issue: (untyped, ?partial_quote: untyped) -> String
+      def quote_issue_journal: (untyped, indice: untyped, ?partial_quote: untyped) -> String
+      def quote_root_message: (untyped, ?partial_quote: untyped) -> String
+      def quote_message: (untyped, ?partial_quote: untyped) -> String
+    end
+  end
+end

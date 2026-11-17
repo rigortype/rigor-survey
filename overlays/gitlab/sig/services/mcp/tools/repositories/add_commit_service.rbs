@@ -1,0 +1,12 @@
+module Mcp
+  module Tools
+    module Repositories
+      class AddCommitService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["create_commit"]
+        class PartialEditError < ::StandardError
+          def initialize: (untyped, ?reason: untyped) -> void
+        end
+      end
+    end
+  end
+end

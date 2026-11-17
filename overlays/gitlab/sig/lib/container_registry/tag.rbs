@@ -1,0 +1,12 @@
+module ContainerRegistry
+  class Tag
+    def initialize: (untyped, String, ?from_api: (false | true)) -> void
+    def referrers=: (untyped) -> Array[ContainerRegistry::Referrer]
+    def path: () -> String
+    def location: () -> String
+    def updated_at=: (untyped) -> (DateTime | nil)
+    def published_at=: (untyped) -> (DateTime | nil)
+    def platform=: (untyped) -> (ContainerRegistry::ImagePlatform | nil)
+    def annotations: () -> Hash[untyped, untyped]
+  end
+end

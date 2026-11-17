@@ -1,0 +1,14 @@
+module Dependabot
+  class Ecosystem
+    def initialize: (name: untyped, package_manager: untyped, ?language: untyped) -> void
+    class VersionManager
+      def initialize: (name: untyped, ?detected_version: untyped, ?version: untyped, ?deprecated_versions: untyped, ?supported_versions: untyped, ?requirement: untyped) -> void
+      def version_to_s: () -> ("" | String)
+      def deprecated?: () -> (false | true)
+      def unsupported?: () -> (false | true)
+      def raise_if_unsupported!: () -> nil
+      def support_later_versions?: () -> false
+      def detected_version: () -> (Dependabot::Version | nil)
+    end
+  end
+end

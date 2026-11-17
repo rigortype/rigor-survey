@@ -1,0 +1,3 @@
+class AliquotSum
+  def self.divisors: (untyped) -> Array[untyped]
+end

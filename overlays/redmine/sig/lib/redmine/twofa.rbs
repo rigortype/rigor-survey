@@ -1,0 +1,6 @@
+module Redmine
+  module Twofa
+    def self.initialize_schemes: () -> (Array[String] | nil)
+    def self.scan_builtin_schemes: () -> Array[String]
+  end
+end

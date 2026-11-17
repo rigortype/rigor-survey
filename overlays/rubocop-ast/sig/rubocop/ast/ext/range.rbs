@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    module Ext
+      module Range
+        def line_span: (?exclude_end: untyped) -> ::Range[untyped]
+      end
+    end
+  end
+end

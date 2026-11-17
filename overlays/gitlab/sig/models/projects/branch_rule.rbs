@@ -1,0 +1,7 @@
+module Projects
+  class BranchRule
+    def self.find: (untyped) -> Projects::BranchRule
+    def initialize: (untyped, untyped) -> void
+    def protected?: () -> true
+  end
+end

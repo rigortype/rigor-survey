@@ -1,0 +1,7 @@
+module MergeRequests
+  class RebaseService < ::MergeRequests::BaseService
+    def validate: (untyped) -> ServiceResponse
+    def execute: (untyped, ?skip_ci: untyped) -> ServiceResponse
+    def rebase: () -> (false | true)
+  end
+end

@@ -1,0 +1,7 @@
+module Dependabot
+  class Updater
+    class ErrorHandler
+      def initialize: (service: untyped, job: untyped, ?operation_name: untyped) -> void
+    end
+  end
+end

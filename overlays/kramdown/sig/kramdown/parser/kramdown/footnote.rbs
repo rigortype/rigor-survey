@@ -1,0 +1,7 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def parse_footnote_definition: () -> true
+    end
+  end
+end

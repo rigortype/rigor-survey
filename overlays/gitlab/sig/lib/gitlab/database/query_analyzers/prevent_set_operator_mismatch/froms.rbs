@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventSetOperatorMismatch < ::Gitlab::Database::QueryAnalyzers::Base
+        class Froms
+          def self.references: (untyped, untyped) -> Hash[untyped, untyped]
+          def self.range_var_reference: (untyped, untyped) -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

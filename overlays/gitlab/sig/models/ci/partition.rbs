@@ -1,0 +1,5 @@
+module Ci
+  class Partition < ::Ci::ApplicationRecord
+    def exceed_time_window?: (?untyped) -> (false | true)
+  end
+end

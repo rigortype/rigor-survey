@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class BatchProjectStatisticsLoader
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

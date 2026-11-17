@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class Jwt < ::Gitlab::Ci::JwtBase
+      def initialize: (untyped, ttl: Integer) -> void
+      def ttl: () -> 30
+    end
+  end
+end

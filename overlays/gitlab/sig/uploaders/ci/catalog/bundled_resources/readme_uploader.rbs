@@ -1,0 +1,9 @@
+module Ci
+  module Catalog
+    module BundledResources
+      class ReadmeUploader < ::GitlabUploader
+        def store_dir: () -> String
+      end
+    end
+  end
+end

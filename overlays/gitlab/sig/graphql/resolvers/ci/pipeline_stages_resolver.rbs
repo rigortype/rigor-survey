@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class PipelineStagesResolver < ::Resolvers::BaseResolver
+      def preloads: () -> { jobs: { latest_statuses: [:needs] } }
+    end
+  end
+end

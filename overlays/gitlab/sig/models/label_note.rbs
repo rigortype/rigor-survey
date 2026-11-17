@@ -1,0 +1,6 @@
+class LabelNote < ::SyntheticNote
+  def self.from_event: (untyped, resource: untyped, resource_parent: untyped) -> LabelNote
+  def self.from_events: (untyped, resource: untyped, resource_parent: untyped) -> LabelNote
+  def cached_html_up_to_date?: (untyped) -> true
+  def note_html: () -> String
+end

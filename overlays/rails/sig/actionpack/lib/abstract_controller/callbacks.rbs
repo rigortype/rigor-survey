@@ -1,0 +1,7 @@
+module AbstractController
+  module Callbacks
+    class ActionFilter
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

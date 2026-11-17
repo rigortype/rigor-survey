@@ -1,0 +1,4 @@
+class ClassExample
+  def initialize: (untyped) -> void
+  def hello: () -> nil
+end

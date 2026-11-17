@@ -1,0 +1,13 @@
+module Gitlab
+  module Seeders
+    module Ci
+      module Runner
+        class RunnerFleetPipelineSeeder
+          def initialize: (?Gitlab::JsonLogger, projects_to_runners: untyped, job_count: untyped, username: untyped) -> void
+          def seed: () -> nil
+          def logger: () -> Gitlab::JsonLogger
+        end
+      end
+    end
+  end
+end

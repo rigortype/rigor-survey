@@ -1,0 +1,16 @@
+module Dependabot
+  module Maven
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+      def to_s: () -> String
+      def prerelease?: () -> (false | true)
+      def lowest_prerelease_suffix: () -> "a0"
+      def <=>: (untyped) -> (Integer | nil)
+      def ignored_patch_versions: () -> ([String] | [])
+      def ignored_minor_versions: () -> ([String] | [])
+      def ignored_major_versions: () -> ([String] | [])
+      def version_string: () -> String
+    end
+  end
+end

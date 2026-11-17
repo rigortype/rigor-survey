@@ -1,0 +1,4 @@
+module EditingHistory
+  def diff_changes: () -> Array[EditingHistoryChange]
+  def diff_summary: () -> Array[String]
+end

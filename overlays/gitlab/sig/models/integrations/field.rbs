@@ -1,0 +1,5 @@
+module Integrations
+  class Field
+    def initialize: (name: String, integration_class: untyped, ?type: Symbol, ?is_secret: untyped, ?api_only: untyped, **untyped) -> void
+  end
+end

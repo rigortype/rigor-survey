@@ -1,0 +1,8 @@
+module Gitlab
+  module RelativePositioning
+    class Mover
+      def initialize: (untyped, untyped, ?ideal_distance: untyped, ?max_gap: untyped) -> void
+      def context: (untyped, ?ignoring: untyped) -> (Gitlab::RelativePositioning::ItemContext | nil)
+    end
+  end
+end

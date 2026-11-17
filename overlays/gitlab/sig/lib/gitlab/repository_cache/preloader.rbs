@@ -1,0 +1,7 @@
+module Gitlab
+  class RepositoryCache
+    class Preloader
+      def initialize: (untyped) -> void
+    end
+  end
+end

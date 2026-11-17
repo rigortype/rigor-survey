@@ -1,0 +1,6 @@
+module BlobViewer
+  class CargoToml < ::BlobViewer::DependencyManager
+    def manager_name: () -> "Cargo"
+    def manager_url: () -> "https://crates.io/"
+  end
+end

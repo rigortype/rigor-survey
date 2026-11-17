@@ -1,0 +1,5 @@
+module Projects
+  module IncidentsHelper
+    def incidents_data: (untyped, untyped) -> Hash[String | Symbol, untyped]
+  end
+end

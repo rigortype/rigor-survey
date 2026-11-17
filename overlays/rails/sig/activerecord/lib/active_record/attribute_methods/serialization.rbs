@@ -1,0 +1,9 @@
+module ActiveRecord
+  module AttributeMethods
+    module Serialization
+      class ColumnNotSerializableError < ::StandardError
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

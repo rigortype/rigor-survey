@@ -1,0 +1,14 @@
+module Dependabot
+  module NpmAndYarn
+    class PackageName
+      def initialize: (untyped) -> void
+      def to_s: () -> ("" | String)
+      def eql?: (untyped) -> (false | true)
+      def hash: () -> Integer
+      def library_name: () -> (::PackageName | nil)
+      def types_package_name: () -> (::PackageName | nil)
+      class InvalidPackageName < ::StandardError
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module Pipelines
+    class HookService
+      def initialize: (untyped) -> void
+    end
+  end
+end

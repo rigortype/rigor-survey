@@ -1,0 +1,7 @@
+module Gitlab
+  module Slug
+    class Path
+      def initialize: (String | Symbol) -> void
+    end
+  end
+end

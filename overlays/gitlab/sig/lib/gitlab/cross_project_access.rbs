@@ -1,0 +1,6 @@
+module Gitlab
+  class CrossProjectAccess
+    def self.instance: () -> Gitlab::CrossProjectAccess
+    def checks: () -> Hash[untyped, untyped]
+  end
+end

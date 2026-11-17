@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Capture
+      module StorageConnectors
+        class Local
+          def initialize: (untyped) -> void
+          def upload: (untyped, untyped) -> Integer
+        end
+      end
+    end
+  end
+end

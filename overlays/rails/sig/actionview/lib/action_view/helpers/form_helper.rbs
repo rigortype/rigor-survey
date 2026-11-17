@@ -1,0 +1,9 @@
+module ActionView
+  module Helpers
+    class FormBuilder
+      def to_model: () -> ActionView::Helpers::FormBuilder
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def emitted_hidden_id?: () -> (nil | true)
+    end
+  end
+end

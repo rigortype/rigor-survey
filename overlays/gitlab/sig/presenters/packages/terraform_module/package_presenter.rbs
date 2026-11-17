@@ -1,0 +1,7 @@
+module Packages
+  module TerraformModule
+    class PackagePresenter
+      def initialize: (untyped) -> void
+    end
+  end
+end

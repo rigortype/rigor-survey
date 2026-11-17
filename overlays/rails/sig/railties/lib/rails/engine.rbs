@@ -1,0 +1,12 @@
+module Rails
+  class Engine < ::Rails::Railtie
+    def load_console: (?untyped) -> Rails::Engine
+    def load_runner: (?untyped) -> Rails::Engine
+    def load_tasks: (?untyped) -> Rails::Engine
+    def load_server: (?untyped) -> Rails::Engine
+    def railties: () -> Rails::Engine::Railties
+    def routes: () ?{ () [self: ActionDispatch::Routing::Mapper] -> void } -> ActionDispatch::Routing::RouteSet
+    def load_seed: () -> void
+    def self.find_root_with_flag: (untyped, untyped, ?untyped) -> Pathname
+  end
+end

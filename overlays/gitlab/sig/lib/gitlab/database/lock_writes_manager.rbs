@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    class LockWritesManager
+      def initialize: (table_name: untyped, connection: untyped, database_name: untyped, ?with_retries: (false | true), ?logger: untyped, ?dry_run: untyped, ?force: untyped) -> void
+      def lock_writes: () -> ({ action: "skipped", database: untyped, table: untyped, dry_run: untyped } | { action: String, database: untyped, table: untyped, dry_run: untyped })
+      def unlock_writes: () -> ({ action: "skipped", database: untyped, table: untyped, dry_run: untyped } | { action: String, database: untyped, table: untyped, dry_run: untyped })
+      def with_retries: () -> (false | true)
+    end
+  end
+end

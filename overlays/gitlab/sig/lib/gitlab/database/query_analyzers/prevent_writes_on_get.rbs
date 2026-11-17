@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventWritesOnGet < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.allowed_endpoint?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Parsers
+      module Security
+        class Common
+          def initialize: (untyped, untyped, ?signatures_enabled: untyped, ?validate: untyped) -> void
+        end
+      end
+    end
+  end
+end

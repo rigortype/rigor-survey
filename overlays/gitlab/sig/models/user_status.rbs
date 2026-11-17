@@ -1,0 +1,3 @@
+class UserStatus < ::ApplicationRecord
+  def clear_status_after=: (untyped) -> (ActiveSupport::TimeWithZone | nil)
+end

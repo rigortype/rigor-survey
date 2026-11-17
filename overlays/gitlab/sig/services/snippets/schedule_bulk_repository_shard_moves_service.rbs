@@ -1,0 +1,5 @@
+module Snippets
+  class ScheduleBulkRepositoryShardMovesService
+    def self.schedule_bulk_worker_klass: () -> singleton(Snippets::ScheduleBulkRepositoryShardMovesWorker)
+  end
+end

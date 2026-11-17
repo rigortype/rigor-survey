@@ -1,0 +1,18 @@
+module Dependabot
+  module Composer
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?raise_on_ignored: untyped) -> void
+        def fetch_releases: () -> Array[Dependabot::Package::PackageRelease]
+        def fetch: () -> Dependabot::Package::PackageDetails
+        def fetch_registry_versions_from_url: (untyped) -> Array[::RegistryPackage::Release]
+        def format_version_release: (untyped) -> (Dependabot::Package::PackageRelease | nil)
+        def package_release: (version: untyped, released_at: untyped, ?downloads: untyped, ?url: untyped, ?yanked: untyped, ?package_type: untyped) -> Dependabot::Package::PackageRelease
+        def registry_credentials: () -> Array[untyped]
+        def ignore_requirements: () -> Array[Dependabot::Requirement]
+        def version_class: () -> singleton(Dependabot::Version)
+        def requirement_class: () -> singleton(Dependabot::Requirement)
+      end
+    end
+  end
+end

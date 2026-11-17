@@ -1,0 +1,8 @@
+module ActiveSupport
+  class XMLConverter
+    def initialize: (untyped, ?untyped) -> void
+    class DisallowedType < ::StandardError
+      def initialize: (untyped) -> void
+    end
+  end
+end

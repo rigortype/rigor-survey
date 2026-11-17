@@ -1,0 +1,6 @@
+class FileMover
+  def initialize: (untyped, ?Symbol, from_model: untyped, to_model: untyped) -> void
+  def secret: () -> String
+  def file_name: () -> String
+  def update_field: () -> :non_existing_field
+end

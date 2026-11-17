@@ -1,0 +1,10 @@
+module YARD
+  module I18n
+    class Messages
+      def each: () ?{ (*untyped) -> untyped } -> Hash[untyped, untyped]
+      def register: (String) -> YARD::I18n::Message
+      def ==: (untyped) -> (false | true)
+      def messages: () -> Hash[untyped, untyped]
+    end
+  end
+end

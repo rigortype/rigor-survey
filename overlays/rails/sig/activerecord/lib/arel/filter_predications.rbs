@@ -1,0 +1,5 @@
+module Arel
+  module FilterPredications
+    def filter: (untyped) -> Arel::Nodes::Filter
+  end
+end

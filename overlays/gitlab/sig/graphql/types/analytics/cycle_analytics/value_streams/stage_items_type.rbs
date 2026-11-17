@@ -1,0 +1,11 @@
+module Types
+  module Analytics
+    module CycleAnalytics
+      module ValueStreams
+        class StageItemsType < ::Types::BaseObject
+          def duration: () -> (String | nil)
+        end
+      end
+    end
+  end
+end

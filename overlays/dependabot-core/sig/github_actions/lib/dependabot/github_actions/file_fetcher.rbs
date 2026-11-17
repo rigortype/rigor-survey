@@ -1,0 +1,9 @@
+module Dependabot
+  module GithubActions
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a .github/workflows directory with YAML files or an action.yml file"
+      def initialize: (source: untyped, credentials: untyped, ?repo_contents_path: untyped, ?options: untyped, ?update_config: untyped) -> void
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module API
+  module Mcp
+    module Handlers
+      class PingRequest < ::API::Mcp::Handlers::Base
+        def invoke: () -> {}
+      end
+    end
+  end
+end

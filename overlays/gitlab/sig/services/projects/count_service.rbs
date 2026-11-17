@@ -1,0 +1,7 @@
+module Projects
+  class CountService < ::BaseCountService
+    def initialize: (untyped) -> void
+    def cache_key_name: () -> bot
+    def cache_key: (?untyped) -> ["projects", "count_service", 1, untyped, untyped]
+  end
+end

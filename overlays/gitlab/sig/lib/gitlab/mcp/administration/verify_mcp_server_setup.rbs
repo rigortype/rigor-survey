@@ -1,0 +1,11 @@
+module Gitlab
+  module Mcp
+    module Administration
+      class VerifyMcpServerSetup
+        def initialize: (?untyped) -> void
+        def execute: () -> nil
+        def diagnostics: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Packages
+  class GroupOrProjectPackageFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+    def execute!: () -> bot
+  end
+end

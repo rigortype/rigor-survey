@@ -1,0 +1,4 @@
+module GraphHelper
+  def refs: (untyped, untyped) -> String
+  def should_render_quality_summary: () -> false
+end

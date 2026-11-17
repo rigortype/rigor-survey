@@ -1,0 +1,8 @@
+module JSON
+  module Ext
+    class Parser
+      def initialize: (untyped) -> void
+      def parse: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

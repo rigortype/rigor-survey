@@ -1,0 +1,7 @@
+module Packages
+  module Npm
+    class DeprecatePackageWorker
+      def perform: (untyped, untyped) -> ServiceResponse
+    end
+  end
+end

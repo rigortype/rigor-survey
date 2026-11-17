@@ -1,0 +1,9 @@
+class PersonalFileUploader < ::FileUploader
+  def self.workhorse_local_upload_path: () -> String
+  def self.base_dir: (untyped, ?untyped) -> String
+  def self.model_path_segment: (untyped) -> ("temp/" | String)
+  def model_valid?: () -> true
+  def store_dir: () -> (String | nil)
+  def upload_paths: (untyped) -> [String, String]
+  def store_dirs: () -> Hash[untyped, String]
+end

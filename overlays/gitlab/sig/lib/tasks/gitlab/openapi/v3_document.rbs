@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Openapi
+      class V3Document
+        def self.render: () -> String
+        def initialize: (?untyped) -> void
+        def render: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+class UserSettings
+  class Setting
+    def initialize: (untyped, ?untyped) -> void
+    def inverse_of: (untyped) -> UserSettings::Setting
+    def type: () -> (ActiveModel::Type::Boolean | ActiveModel::Type::String)
+    def to_a: () -> [untyped, untyped]
+  end
+end

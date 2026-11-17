@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class CaseMatchNode < ::RuboCop::AST::Node
+      def keyword: () -> "case"
+      def each_in_pattern: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::CaseMatchNode)
+      def else?: () -> (false | true)
+    end
+  end
+end

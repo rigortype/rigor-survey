@@ -1,0 +1,5 @@
+module Ci
+  class UnlockPipelineRequest
+    def self.log_event: (untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  end
+end

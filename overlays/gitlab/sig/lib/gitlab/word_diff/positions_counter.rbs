@@ -1,0 +1,8 @@
+module Gitlab
+  module WordDiff
+    class PositionsCounter
+      def increase_obj_index: () -> Integer
+      def line_obj_index: () -> (0 | Integer)
+    end
+  end
+end

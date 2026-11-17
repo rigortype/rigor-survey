@@ -1,0 +1,13 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      module Wrapper
+        class PropertiesDocument
+          def self.parse: (untyped) -> Dependabot::Gradle::FileUpdater::Wrapper::PropertiesDocument
+          def self.parse_line: (untyped) -> Dependabot::Gradle::FileUpdater::Wrapper::PropertiesDocument::Line
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

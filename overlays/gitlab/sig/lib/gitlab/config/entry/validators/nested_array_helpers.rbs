@@ -1,0 +1,11 @@
+module Gitlab
+  module Config
+    module Entry
+      module Validators
+        module NestedArrayHelpers
+          def validate_nested_array: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> (false | true)
+        end
+      end
+    end
+  end
+end

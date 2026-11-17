@@ -1,0 +1,3 @@
+class AccountSummary < ::ApplicationRecord
+  def self.readonly?: () -> true
+end

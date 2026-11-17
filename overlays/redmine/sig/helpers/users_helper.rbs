@@ -1,0 +1,6 @@
+module UsersHelper
+  def textarea_font_options: () -> Array[untyped]
+  def history_default_tab_options: () -> [[untyped, "notes"], [untyped, "history"], [untyped, "properties"], [untyped, "time_entries"], [untyped, "changesets"], [untyped, "last_tab_visited"]]
+  def user_emails: (untyped) -> String
+  def user_settings_tabs: () -> (Array[untyped] | [{ name: "general", partial: "users/general", label: :label_general }, { name: "memberships", partial: "users/memberships", label: :label_project_plural }])
+end

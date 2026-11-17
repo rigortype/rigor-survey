@@ -1,0 +1,4 @@
+class Instance < ::ApplicationRecord
+  def delivery_failure_tracker: () -> DeliveryFailureTracker
+  def availability_over_days: (untyped, ?untyped) -> Array[[untyped, untyped]]
+end

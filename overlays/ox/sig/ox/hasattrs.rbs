@@ -1,0 +1,5 @@
+module Ox
+  module HasAttrs
+    def attributes: () -> Hash[untyped, untyped]
+  end
+end

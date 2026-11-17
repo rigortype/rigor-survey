@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class ConnectionHandler
+      def active_connections?: (?untyped) -> (false | true)
+      def connection_name_to_pool_manager: () -> Concurrent::Map[untyped, untyped]
+      class ConnectionDescriptor
+        def initialize: (untyped, ?untyped) -> void
+      end
+    end
+  end
+end

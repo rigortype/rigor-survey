@@ -1,0 +1,9 @@
+module TDiary
+  module Filter
+    class Filter
+      def initialize: (untyped, untyped) -> void
+      def comment_filter: (untyped, untyped) -> true
+      def referer_filter: (untyped) -> true
+    end
+  end
+end

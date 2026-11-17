@@ -1,0 +1,7 @@
+module Resolvers
+  module Achievements
+    class UserAchievementCountsResolver < ::Resolvers::BaseResolver
+      def resolve_with_lookahead: () -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+    end
+  end
+end

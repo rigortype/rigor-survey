@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    module StuckImportJob
+      def perform: () -> bot
+    end
+  end
+end

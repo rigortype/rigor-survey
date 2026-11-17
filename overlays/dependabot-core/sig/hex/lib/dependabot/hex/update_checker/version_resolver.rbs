@@ -1,0 +1,10 @@
+module Dependabot
+  module Hex
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionResolver
+        def initialize: (dependency: untyped, credentials: untyped, original_dependency_files: untyped, prepared_dependency_files: untyped) -> void
+        def latest_resolvable_version: () -> (Dependabot::Version | String | false | nil | true)
+      end
+    end
+  end
+end

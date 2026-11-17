@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Batches
+    def find_each: (?start: untyped, ?finish: untyped, ?batch_size: untyped, ?error_on_ignore: untyped, ?cursor: untyped, ?order: untyped) ?{ (*untyped) -> untyped } -> (ActiveRecord::Batches::BatchEnumerator | Enumerator[untyped, untyped] | nil)
+    def find_in_batches: (?start: untyped, ?finish: untyped, ?batch_size: untyped, ?error_on_ignore: untyped, ?cursor: untyped, ?order: untyped) -> (ActiveRecord::Batches::BatchEnumerator | Enumerator[untyped, untyped] | nil)
+    def in_batches: (?of: untyped, ?start: untyped, ?finish: untyped, ?load: untyped, ?error_on_ignore: untyped, ?cursor: untyped, ?order: untyped, ?use_ranges: untyped) ?{ (*untyped) -> untyped } -> (ActiveRecord::Batches::BatchEnumerator | nil)
+  end
+end

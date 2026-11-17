@@ -1,0 +1,21 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module BmFiles
+        def self.read_file: (untyped) -> String
+        def self.default_devfile_yaml: () -> String
+        def self.git_credential_store_script: () -> String
+        def self.kubernetes_legacy_poststart_hook_command: () -> String
+        def self.kubernetes_poststart_hook_command: () -> String
+        def self.container_keepalive_command_args: () -> String
+        def self.internal_poststart_command_start_vscode_script: () -> String
+        def self.internal_poststart_command_sleep_until_workspace_is_running_script: () -> String
+        def self.internal_poststart_command_start_sshd_script: () -> String
+        def self.internal_poststart_command_clone_project_script: () -> String
+        def self.internal_poststart_command_clone_unshallow_script: () -> String
+        def self.all_expected_file_constants: () -> [:DEFAULT_DEVFILE_YAML, :GIT_CREDENTIAL_STORE_SCRIPT, :INTERNAL_POSTSTART_COMMAND_CLONE_PROJECT_SCRIPT, :INTERNAL_POSTSTART_COMMAND_CLONE_UNSHALLOW_SCRIPT, :INTERNAL_POSTSTART_COMMAND_START_VSCODE_SCRIPT, :INTERNAL_POSTSTART_COMMAND_SLEEP_UNTIL_WORKSPACE_IS_RUNNING_SCRIPT, :INTERNAL_POSTSTART_COMMAND_START_SSHD_SCRIPT, :KUBERNETES_LEGACY_POSTSTART_HOOK_COMMAND, :KUBERNETES_POSTSTART_HOOK_COMMAND, :CONTAINER_KEEPALIVE_COMMAND_ARGS]
+        def self.reload_constants!: () -> Array[Symbol]
+      end
+    end
+  end
+end

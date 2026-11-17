@@ -1,0 +1,9 @@
+module YARD
+  module Server
+    module Commands
+      class StaticFileCommand < ::YARD::Server::Commands::LibraryCommand
+        def run: () -> ("nocache" | nil)
+      end
+    end
+  end
+end

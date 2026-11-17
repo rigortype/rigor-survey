@@ -1,0 +1,5 @@
+class Identity < ::ApplicationRecord
+  module UniquenessScopes
+    def self.scopes: () -> [:provider]
+  end
+end

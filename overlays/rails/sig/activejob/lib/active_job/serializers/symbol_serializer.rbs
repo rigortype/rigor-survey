@@ -1,0 +1,7 @@
+module ActiveJob
+  module Serializers
+    class SymbolSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def klass: () -> singleton(Symbol)
+    end
+  end
+end

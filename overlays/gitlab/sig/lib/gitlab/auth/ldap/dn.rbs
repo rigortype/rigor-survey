@@ -1,0 +1,12 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class DN
+        def self.normalize_value: (untyped) -> String
+        def initialize: (*untyped) -> void
+        def to_a: () -> Array[untyped]
+        def to_normalized_s: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        module File
+          class Project < ::Gitlab::Ci::Config::External::File::Base
+            def initialize: (untyped, untyped) -> void
+            def include_type: () -> :project
+          end
+        end
+      end
+    end
+  end
+end

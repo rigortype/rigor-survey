@@ -1,0 +1,11 @@
+module Dependabot
+  class Updater
+    module Operations
+      class RefreshSecurityUpdatePullRequest
+        def self.tag_name: () -> :update_security_pr
+        def initialize: (service: untyped, job: untyped, dependency_snapshot: untyped, error_handler: untyped) -> void
+        def notices: () -> Array[Dependabot::Notice]
+      end
+    end
+  end
+end

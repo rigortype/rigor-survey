@@ -1,0 +1,6 @@
+module ContainerRegistry
+  class Config
+    def initialize: (untyped, untyped) -> void
+    def labels: () -> Hash[untyped, untyped]
+  end
+end

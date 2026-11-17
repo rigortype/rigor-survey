@@ -1,0 +1,6 @@
+class Account < ::ApplicationRecord
+  module StatusesSearch
+    def enqueue_add_to_public_statuses_index: () -> (String | nil)
+    def enqueue_remove_from_public_statuses_index: () -> (String | nil)
+  end
+end

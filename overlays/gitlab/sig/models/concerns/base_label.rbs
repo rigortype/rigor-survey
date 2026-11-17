@@ -1,0 +1,4 @@
+module BaseLabel
+  def self.searchable_columns: (untyped) -> ([:description] | [:title, :description] | [:title])
+  def self.min_chars_for_partial_matching: () -> 1
+end

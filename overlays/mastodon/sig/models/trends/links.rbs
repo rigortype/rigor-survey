@@ -1,0 +1,5 @@
+module Trends
+  class Links < ::Trends::Base
+    def query: () -> Trends::Links::Query
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module ImportExport
+    module CommandLineUtil
+      def tar_czf: (archive: untyped, dir: untyped) -> (false | true)
+      def untar_zxf: (archive: untyped, dir: untyped) -> true
+      def tar_cf: (archive: untyped, dir: untyped) -> (false | true)
+      def untar_xf: (archive: untyped, dir: untyped) -> true
+      def mkdir_p: (untyped) -> top
+    end
+  end
+end

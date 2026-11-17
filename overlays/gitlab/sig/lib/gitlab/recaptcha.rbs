@@ -1,0 +1,5 @@
+module Gitlab
+  module Recaptcha
+    def self.load_configurations!: () -> (nil | true)
+  end
+end

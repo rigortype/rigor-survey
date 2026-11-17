@@ -1,0 +1,6 @@
+class AwardEmoji < ::ApplicationRecord
+  def self.upvote_names: () -> (Array[untyped] | [untyped])
+  def self.downvote_names: () -> (Array[untyped] | [untyped])
+  def self.vote_names: (untyped) -> (Array[untyped] | [untyped])
+  def to_ability_name: () -> "emoji"
+end

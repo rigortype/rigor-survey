@@ -1,0 +1,10 @@
+module YARD
+  class DocstringParser
+    def initialize: (?untyped) -> void
+    def parse: (untyped, ?untyped, ?untyped) -> YARD::DocstringParser
+    def parse_content: (untyped) -> ("" | String)
+    def create_directive: (untyped, untyped) -> (YARD::Tags::Directive | nil)
+    def tag_is_directive?: (untyped) -> (false | true)
+    def self.after_parse_callbacks: () -> []
+  end
+end

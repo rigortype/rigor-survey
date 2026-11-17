@@ -1,0 +1,7 @@
+module Packages
+  module Rubygems
+    class CreateGemspecService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

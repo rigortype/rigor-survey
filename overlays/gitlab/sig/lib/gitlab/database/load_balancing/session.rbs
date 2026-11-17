@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class Session
+        def use_primary!: () -> true
+        def write!: () -> (nil | true)
+        def performed_write?: () -> (false | true)
+      end
+    end
+  end
+end

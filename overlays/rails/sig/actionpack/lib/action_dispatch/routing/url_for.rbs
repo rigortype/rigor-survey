@@ -1,0 +1,7 @@
+module ActionDispatch
+  module Routing
+    module UrlFor
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

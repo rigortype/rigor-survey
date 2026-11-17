@@ -1,0 +1,6 @@
+module Gitlab
+  class GitAccessDesign < ::Gitlab::GitAccess
+    def check: (untyped, untyped) -> Gitlab::GitAccessResult::Success
+    def push_ability: () -> :create_design
+  end
+end

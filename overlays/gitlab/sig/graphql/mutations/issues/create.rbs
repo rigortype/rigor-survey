@@ -1,0 +1,7 @@
+module Mutations
+  module Issues
+    class Create < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, **untyped) -> ({ issue: untyped, errors: untyped } | { issue: nil, errors: [String] })
+    end
+  end
+end

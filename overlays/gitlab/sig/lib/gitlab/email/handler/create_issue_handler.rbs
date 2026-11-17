@@ -1,0 +1,12 @@
+module Gitlab
+  module Email
+    module Handler
+      class CreateIssueHandler < ::Gitlab::Email::Handler::BaseHandler
+        def self.gem_handler: () -> :create_issue
+        def execute: () -> nil
+        def author: () -> (User | nil)
+        def metrics_event: () -> :receive_email_create_issue
+      end
+    end
+  end
+end

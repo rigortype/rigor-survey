@@ -1,0 +1,5 @@
+module REST
+  class ListSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+  end
+end

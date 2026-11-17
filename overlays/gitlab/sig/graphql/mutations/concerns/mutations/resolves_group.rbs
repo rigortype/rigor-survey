@@ -1,0 +1,5 @@
+module Mutations
+  module ResolvesGroup
+    def group_resolver: () -> Resolvers::GroupResolver
+  end
+end

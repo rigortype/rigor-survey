@@ -1,0 +1,5 @@
+module Achievements
+  class CreateService < ::Achievements::BaseService
+    def execute: () -> ServiceResponse
+  end
+end

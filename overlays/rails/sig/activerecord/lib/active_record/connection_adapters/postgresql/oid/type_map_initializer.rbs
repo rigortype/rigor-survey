@@ -1,0 +1,12 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module OID
+        class TypeMapInitializer
+          def initialize: (untyped) -> void
+          def run: (untyped) -> nil
+        end
+      end
+    end
+  end
+end

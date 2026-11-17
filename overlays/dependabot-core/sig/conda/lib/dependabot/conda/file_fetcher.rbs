@@ -1,0 +1,8 @@
+module Dependabot
+  module Conda
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain an environment.yml or environment.yaml file."
+      def fetch_files: () -> ([] | Array[untyped])
+    end
+  end
+end

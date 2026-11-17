@@ -1,0 +1,9 @@
+module RapidDiffs
+  class MergeRequestPresenter < ::RapidDiffs::BasePresenter
+    def initialize: (untyped, diff_view: untyped, diff_options: untyped, ?current_user: untyped, ?request_params: untyped, ?environment: untyped, ?conflicts: untyped) -> void
+    def sorted?: () -> true
+    def user_permissions: () -> { can_create_note: untyped }
+    def new_comment_template_paths: () -> [{ text: untyped, href: untyped }]
+    def code_review_enabled: () -> (false | true)
+  end
+end

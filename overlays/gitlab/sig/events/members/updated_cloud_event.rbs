@@ -1,0 +1,5 @@
+module Members
+  class UpdatedCloudEvent < ::Members::BaseEvent
+    def self.build: (source: untyped, current_user: untyped, user_ids: untyped) -> Members::UpdatedCloudEvent
+  end
+end

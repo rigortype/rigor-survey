@@ -1,0 +1,7 @@
+module Types
+  module Notes
+    module NoteableInterface
+      def self.resolve_type: (untyped, untyped) -> (singleton(Types::AlertManagement::AlertType) | singleton(Types::DesignManagement::DesignType) | singleton(Types::IssueType) | singleton(Types::MergeRequestType) | singleton(Types::Repositories::CommitType) | singleton(Types::SnippetType) | singleton(Types::Wikis::WikiPageType))
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Liquid
+  class Tag
+    def self.disable_tags: (*untyped) -> singleton(Liquid::Tag)
+    def self.disabled_tags: () -> []
+    def initialize: (untyped, untyped, untyped) -> void
+    def raw: () -> String
+    def name: () -> String
+  end
+end

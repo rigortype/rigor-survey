@@ -1,0 +1,15 @@
+module API
+  module Mcp
+    module Handlers
+      class CallTool
+        def initialize: (untyped) -> void
+        class ToolResponseError < ::StandardError
+          def initialize: (untyped) -> void
+        end
+        class ToolDeniedError < ::StandardError
+          def initialize: (untyped, ?untyped) -> void
+        end
+      end
+    end
+  end
+end

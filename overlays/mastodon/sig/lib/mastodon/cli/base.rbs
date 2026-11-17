@@ -1,0 +1,7 @@
+module Mastodon
+  module CLI
+    class Base < ::Thor
+      def self.exit_on_failure?: () -> true
+    end
+  end
+end

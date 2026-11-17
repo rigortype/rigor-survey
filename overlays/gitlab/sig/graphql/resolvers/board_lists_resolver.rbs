@@ -1,0 +1,6 @@
+module Resolvers
+  class BoardListsResolver < ::Resolvers::BaseResolver
+    def self.complexity_multiplier: (untyped) -> Float
+    def resolve_with_lookahead: (?id: untyped, ?issue_filters: untyped) -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module SQL
+    class Except < ::Gitlab::SQL::SetOperator
+      def self.operator_keyword: () -> "EXCEPT"
+    end
+  end
+end

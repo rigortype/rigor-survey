@@ -1,0 +1,13 @@
+class Deque < ::Array[untyped]
+  def unshift: (untyped) -> (Deque::NODE | nil)
+  class NODE < ::Struct[untyped]
+    def val: () -> untyped
+    def prev: () -> untyped
+    def next: () -> untyped
+    def val=: (untyped) -> untyped
+    def prev=: (untyped) -> untyped
+    def next=: (untyped) -> untyped
+    def self.new: (?val: untyped, ?prev: untyped, ?next: untyped) -> instance | (?untyped val, ?untyped prev, ?untyped next) -> instance
+    def self.[]: (?val: untyped, ?prev: untyped, ?next: untyped) -> instance | (?untyped val, ?untyped prev, ?untyped next) -> instance
+  end
+end

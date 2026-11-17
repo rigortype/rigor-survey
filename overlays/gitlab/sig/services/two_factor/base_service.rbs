@@ -1,0 +1,5 @@
+module TwoFactor
+  class BaseService
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

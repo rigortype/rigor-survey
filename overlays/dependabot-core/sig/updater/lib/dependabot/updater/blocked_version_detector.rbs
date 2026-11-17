@@ -1,0 +1,13 @@
+module Dependabot
+  class Updater
+    class BlockedVersionDetector
+      def initialize: (package_manager: untyped, blocked_versions: untyped, previous_dependencies: untyped, current_dependencies: untyped) -> void
+      def transitive_changes: () -> (Array[::TransitiveChange] | nil)
+      def blocked_changes: () -> Array[::TransitiveChange]
+      class TransitiveChange < ::T::Struct
+        def blocked?: () -> (false | true)
+        def humanized: () -> String
+      end
+    end
+  end
+end

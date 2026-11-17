@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class DiffRefs
+      def initialize: (base_sha: untyped, head_sha: untyped, ?start_sha: untyped) -> void
+      def hash: () -> Integer
+    end
+  end
+end

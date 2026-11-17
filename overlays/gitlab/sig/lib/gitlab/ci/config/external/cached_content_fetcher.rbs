@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        class CachedContentFetcher
+          def initialize: (project: untyped, cache_enabled: untyped) -> void
+        end
+      end
+    end
+  end
+end

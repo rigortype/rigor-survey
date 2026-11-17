@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class DeleteRelationWithReturning
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

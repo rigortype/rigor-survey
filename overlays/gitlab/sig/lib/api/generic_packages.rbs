@@ -1,0 +1,6 @@
+module API
+  class GenericPackages < ::API::Base
+    def authorize_workhorse_params: () -> { subject: untyped, maximum_size: untyped, use_final_store_path: true }
+    def encoded_file_name: () -> String
+  end
+end

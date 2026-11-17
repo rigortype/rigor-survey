@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class SessionGuard
+        def initialize: (pool: untyped) -> void
+      end
+    end
+  end
+end

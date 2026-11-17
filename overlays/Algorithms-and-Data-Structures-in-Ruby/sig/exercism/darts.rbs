@@ -1,0 +1,4 @@
+class Darts
+  def initialize: (untyped, untyped) -> void
+  def score: () -> (0 | 1 | 10 | 5)
+end

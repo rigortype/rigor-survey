@@ -1,0 +1,14 @@
+class EnvironmentSerializer < ::BaseSerializer
+  def within_folders: () -> EnvironmentSerializer
+  def itemized?: () -> (nil | true)
+  class Item < ::Struct[untyped]
+    def name: () -> untyped
+    def folder_size: () -> untyped
+    def latest: () -> untyped
+    def name=: (untyped) -> untyped
+    def folder_size=: (untyped) -> untyped
+    def latest=: (untyped) -> untyped
+    def self.new: (?name: untyped, ?folder_size: untyped, ?latest: untyped) -> instance | (?untyped name, ?untyped folder_size, ?untyped latest) -> instance
+    def self.[]: (?name: untyped, ?folder_size: untyped, ?latest: untyped) -> instance | (?untyped name, ?untyped folder_size, ?untyped latest) -> instance
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class SuccessWarning < ::Gitlab::Ci::Status::Extended
+        def icon: () -> "status_warning"
+        def name: () -> "SUCCESS_WITH_WARNINGS"
+        def group: () -> "success-with-warnings"
+      end
+    end
+  end
+end

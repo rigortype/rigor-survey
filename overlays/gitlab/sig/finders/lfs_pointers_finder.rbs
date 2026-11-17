@@ -1,0 +1,3 @@
+class LfsPointersFinder
+  def initialize: (untyped, untyped) -> void
+end

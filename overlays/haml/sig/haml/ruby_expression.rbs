@@ -1,0 +1,6 @@
+module Haml
+  class RubyExpression
+    def self.syntax_error?: (untyped) -> (false | true)
+    def self.string_literal?: (untyped) -> (false | true)
+  end
+end

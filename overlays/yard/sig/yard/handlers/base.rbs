@@ -1,0 +1,23 @@
+module YARD
+  module Handlers
+    class NamespaceMissingError < ::YARD::Parser::UndocumentableError
+      def initialize: (untyped) -> void
+    end
+    class Base
+      def self.clear_subclasses: () -> []
+      def self.inherited: (untyped) -> Array[untyped]
+      def self.handles: (*untyped) -> Array[untyped]
+      def self.handlers: () -> []
+      def self.namespace_only: () -> true
+      def self.in_file: (untyped) -> Array[untyped]
+      def self.process: () ?{ (*untyped) -> untyped } -> singleton(YARD::Handlers::Base)
+      def initialize: (untyped, untyped) -> void
+      def process: () -> bot
+      def abort!: () -> bot
+      def register_module_function: (untyped) -> (:private | nil)
+      def register_dynamic: (untyped) -> (nil | true)
+    end
+    class HandlerAborted < ::RuntimeError
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class DescendantsFilter < ::Gitlab::Database::Aggregation::ClickHouse::FilterDefinition
+          def initialize: (untyped, untyped, ?untyped, ?with_organization: untyped, **untyped) -> void
+        end
+      end
+    end
+  end
+end

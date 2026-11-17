@@ -1,0 +1,10 @@
+module Gitlab
+  module Auth
+    module EditorExtensions
+      class LanguageServerClient
+        def initialize: (client_version: untyped, user_agent: untyped) -> void
+        def version: () -> Gem::Version
+      end
+    end
+  end
+end

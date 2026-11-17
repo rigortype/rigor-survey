@@ -1,0 +1,8 @@
+module Gitlab
+  module Counters
+    class FlushStaleCounterIncrements
+      def initialize: (untyped) -> void
+      def logger: () -> singleton(Gitlab::AppLogger)
+    end
+  end
+end

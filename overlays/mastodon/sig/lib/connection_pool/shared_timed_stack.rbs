@@ -1,0 +1,8 @@
+module ConnectionPool[T]
+  class SharedTimedStack
+    def initialize: (?Integer) ?{ (*untyped) -> untyped } -> void
+    def push: (untyped) -> ConditionVariable
+    def size: () -> Integer
+    def flush: () -> Array[untyped]
+  end
+end

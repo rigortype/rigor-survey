@@ -1,0 +1,11 @@
+module ActionDispatch
+  module Journey
+    module GTG
+      class Builder
+        def initialize: (untyped) -> void
+        def transition_table: () -> ActionDispatch::Journey::GTG::TransitionTable
+        def ast: () -> ActionDispatch::Journey::Nodes::Cat
+      end
+    end
+  end
+end

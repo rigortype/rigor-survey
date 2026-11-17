@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class MergeBase
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

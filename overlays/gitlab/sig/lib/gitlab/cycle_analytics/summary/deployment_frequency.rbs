@@ -1,0 +1,11 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class DeploymentFrequency < ::Gitlab::CycleAnalytics::Summary::Base
+        def initialize: (deployments: Integer, options: { from: ActiveSupport::TimeWithZone }, project: untyped) -> void
+        def value: () -> (Gitlab::CycleAnalytics::Summary::Value::None | Gitlab::CycleAnalytics::Summary::Value::Numeric)
+        def links: () -> [Hash[String, untyped], Hash[String, untyped]]
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module MergeRequests
+  class UpdateReviewerStateService < ::MergeRequests::BaseService
+    def initialize: (project: untyped, ?current_user: untyped, ?params: { review_workflow_id: untyped }, ?review_workflow_id: untyped) -> void
+  end
+end

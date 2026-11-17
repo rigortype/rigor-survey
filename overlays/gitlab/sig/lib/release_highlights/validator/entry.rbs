@@ -1,0 +1,9 @@
+module ReleaseHighlights
+  class Validator
+    class Entry
+      def initialize: (untyped) -> void
+      def validate_published_at: () -> (ActiveModel::Error | nil)
+      def validate_available_in: () -> (ActiveModel::Error | nil)
+    end
+  end
+end

@@ -1,0 +1,4 @@
+module Faraday
+  def self.new: (?untyped, ?untyped) ?{ (*untyped) -> untyped } -> Faraday::Connection
+  def self.default_connection: () -> Faraday::Connection
+end

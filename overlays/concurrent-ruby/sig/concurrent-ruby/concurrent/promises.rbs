@@ -1,0 +1,65 @@
+module Concurrent
+  module Promises
+    module FactoryMethods
+      module Configuration
+        def default_executor: () -> :io
+      end
+    end
+    module InternalStates
+      def to_sym: () -> :resolved
+      class State
+        def resolved?: () -> bot
+        def to_sym: () -> bot
+      end
+      class Pending < ::Concurrent::Promises::InternalStates::State
+        def resolved?: () -> false
+        def to_sym: () -> :pending
+      end
+      class ResolvedWithResult < ::Concurrent::Promises::InternalStates::State
+        def resolved?: () -> true
+        def to_sym: () -> :resolved
+        def result: () -> [bot, bot, bot]
+        def fulfilled?: () -> bot
+      end
+      class Fulfilled < ::Concurrent::Promises::InternalStates::ResolvedWithResult
+        def initialize: (untyped) -> void
+        def fulfilled?: () -> true
+        def reason: () -> nil
+        def to_sym: () -> :fulfilled
+      end
+      class Rejected < ::Concurrent::Promises::InternalStates::ResolvedWithResult
+        def initialize: (untyped) -> void
+        def fulfilled?: () -> false
+        def value: () -> nil
+        def to_sym: () -> :rejected
+      end
+      class PartiallyRejected < ::Concurrent::Promises::InternalStates::ResolvedWithResult
+        def initialize: (untyped, untyped) -> void
+        def fulfilled?: () -> false
+        def to_sym: () -> :rejected
+      end
+    end
+    class AbstractEventFuture < ::Concurrent::Synchronization::Object
+      def pending?: () -> (false | true)
+      def touch: () -> Concurrent::Promises::AbstractEventFuture
+      def blocks: () -> ::Array[untyped]
+    end
+    class Event < ::Concurrent::Promises::AbstractEventFuture
+      def to_event: () -> Concurrent::Promises::Event
+    end
+    class Future < ::Concurrent::Promises::AbstractEventFuture
+      def to_future: () -> Concurrent::Promises::Future
+    end
+    class AbstractPromise < ::Concurrent::Synchronization::Object
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def delayed_because: () -> nil
+    end
+    class ResolvableEventPromise < ::Concurrent::Promises::AbstractPromise
+      def initialize: (untyped) -> void
+    end
+    class ResolvableFuturePromise < ::Concurrent::Promises::AbstractPromise
+      def initialize: (untyped) -> void
+    end
+  end
+end

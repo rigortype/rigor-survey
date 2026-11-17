@@ -1,0 +1,9 @@
+module Tasks
+  module Gitlab
+    module Tokens
+      class ManageExpiryTask
+        def analyze: () -> nil
+      end
+    end
+  end
+end

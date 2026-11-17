@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class FindingKey
+          def initialize: (location_fingerprint: untyped, identifier_fingerprint: untyped) -> void
+          def hash: () -> Integer
+        end
+      end
+    end
+  end
+end

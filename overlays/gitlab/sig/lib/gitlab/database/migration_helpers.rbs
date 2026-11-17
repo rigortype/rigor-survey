@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module MigrationHelpers
+      def true_value: () -> "'t'"
+      def false_value: () -> "'f'"
+      def convert_to_bigint_column: (untyped) -> String
+      def cleanup_conversion_of_integer_to_bigint: (untyped, untyped) -> top
+      def replace_sql: (untyped, untyped, untyped) -> Arel::Nodes::SqlLiteral
+      def table_integer_ids: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

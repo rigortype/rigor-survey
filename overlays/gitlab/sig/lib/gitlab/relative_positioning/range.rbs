@@ -1,0 +1,8 @@
+module Gitlab
+  module RelativePositioning
+    class Range
+      def open_on_left?: () -> (false | true)
+      def open_on_right?: () -> (false | true)
+    end
+  end
+end

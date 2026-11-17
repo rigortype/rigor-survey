@@ -1,0 +1,8 @@
+module Gitlab
+  module Git
+    class WikiPageVersion
+      def initialize: (untyped, nil) -> void
+      def format: () -> nil
+    end
+  end
+end

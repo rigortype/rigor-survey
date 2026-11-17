@@ -1,0 +1,12 @@
+module Gitlab
+  module Diff
+    module Rendered
+      module Notebook
+        module DiffFileHelper
+          def lines_in_source_diff: (untyped, untyped, untyped) -> { from: untyped, to: untyped }
+          def image_as_rich_text: (untyped) -> (String | nil)
+        end
+      end
+    end
+  end
+end

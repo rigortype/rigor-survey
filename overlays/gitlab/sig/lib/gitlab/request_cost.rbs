@@ -1,0 +1,9 @@
+module Gitlab
+  class RequestCost
+    def self.current: () -> (Gitlab::RequestCost | Gitlab::RequestCost::NullCost)
+    def get: (untyped) -> (Integer | nil)
+    class NullCost
+      def get: (untyped) -> 0
+    end
+  end
+end

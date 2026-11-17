@@ -1,0 +1,8 @@
+module Authn
+  module TokenField
+    class Encrypted < ::Authn::TokenField::Base
+      def encode: (untyped) -> String
+      def encrypted_field: () -> String
+    end
+  end
+end

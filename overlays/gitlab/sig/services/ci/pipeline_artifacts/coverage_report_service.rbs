@@ -1,0 +1,7 @@
+module Ci
+  module PipelineArtifacts
+    class CoverageReportService
+      def initialize: (untyped) -> void
+    end
+  end
+end

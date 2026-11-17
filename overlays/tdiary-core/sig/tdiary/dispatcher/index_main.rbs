@@ -1,0 +1,11 @@
+module TDiary
+  class Dispatcher
+    class IndexMain
+      def self.run: (untyped) -> TDiary::Response
+      def initialize: (untyped) -> void
+      def create_tdiary: () -> (TDiary::TDiaryCategoryView | TDiary::TDiaryComment | TDiary::TDiaryDay | TDiary::TDiaryLatest | TDiary::TDiaryMonth | TDiary::TDiaryNYear | TDiary::TDiaryPluginView | TDiary::TDiarySearch)
+      def conf: () -> TDiary::Configuration
+      def tdiary: () -> (TDiary::TDiaryCategoryView | TDiary::TDiaryComment | TDiary::TDiaryDay | TDiary::TDiaryLatest | TDiary::TDiaryMonth | TDiary::TDiaryNYear | TDiary::TDiaryPluginView | TDiary::TDiarySearch)
+    end
+  end
+end

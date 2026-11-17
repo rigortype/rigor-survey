@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class Session
+      def initialize: (untyped) -> void
+    end
+  end
+end

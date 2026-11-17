@@ -1,0 +1,18 @@
+---
+version: 1
+ignored:
+- file: ".rigor.yml"
+  rule: rbs.coverage.missing-gem
+  count: 1
+- file: lib/pycall/gc_guard.rb
+  rule: call.undefined-method
+  count: 4
+- file: lib/pycall/libpython/pyobject_struct.rb
+  rule: call.undefined-method
+  count: 1
+- file: lib/pycall/libpython/pytypeobject_struct.rb
+  rule: call.undefined-method
+  count: 5
+- file: lib/pycall/set.rb
+  rule: call.undefined-method
+  count: 2

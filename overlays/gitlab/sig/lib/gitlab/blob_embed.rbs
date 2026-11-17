@@ -1,0 +1,5 @@
+module Gitlab
+  module BlobEmbed
+    def self.permalink_pattern: () -> Regexp
+  end
+end

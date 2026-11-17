@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class Authentication < ::Gitlab::Auth::OAuth::Authentication
+        def config: () -> Gitlab::Auth::Ldap::Config
+      end
+    end
+  end
+end

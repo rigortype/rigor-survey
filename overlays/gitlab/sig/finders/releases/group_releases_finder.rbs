@@ -1,0 +1,5 @@
+module Releases
+  class GroupReleasesFinder
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class PaginatedMergeRequestDiff < ::Gitlab::Diff::FileCollection::MergeRequestDiffBase
+        def initialize: (untyped, untyped, untyped, ?untyped) -> void
+      end
+    end
+  end
+end

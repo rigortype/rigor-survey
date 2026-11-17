@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Railties
+    module ControllerRuntime
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

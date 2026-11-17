@@ -1,0 +1,6 @@
+module CustomAttributes
+  class UpsertService
+    def initialize: (untyped, current_user: untyped, key: untyped, value: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

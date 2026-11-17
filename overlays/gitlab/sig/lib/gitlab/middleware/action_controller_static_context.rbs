@@ -1,0 +1,7 @@
+module Gitlab
+  module Middleware
+    class ActionControllerStaticContext
+      def initialize: (untyped) -> void
+    end
+  end
+end

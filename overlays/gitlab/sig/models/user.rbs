@@ -1,0 +1,52 @@
+class User < ::ApplicationRecord
+  def should_use_flipped_dashboard_mapping_for_rollout?: () -> (false | true)
+  def blocked?: () -> true
+  def self.supported_keyset_orderings: () -> { id: [:asc, :desc], name: [:asc, :desc], username: [:asc, :desc], created_at: [:asc, :desc], updated_at: [:asc, :desc] }
+  def self.limit_to_todo_authors: (?user: untyped, ?with_todos: untyped, ?todo_state: untyped) -> ActiveRecord::Relation[User]
+  def self.password_length: () -> Range[untyped]
+  def self.filter_by_state: (untyped) -> (ActiveRecord::Relation[User] | nil)
+  def self.search_by_name_or_username: (untyped, ?use_minimum_char_limit: untyped) -> ActiveRecord::Relation[User]
+  def self.with_public_email: (untyped) -> ActiveRecord::Relation[User]
+  def self.with_primary_or_secondary_email: (untyped, ?use_minimum_char_limit: untyped, ?partial_email_search: untyped) -> ActiveRecord::Relation[User]
+  def self.user_search_minimum_char_limit: () -> true
+  def self.find_by_ssh_key_id: (untyped) -> (User | nil)
+  def self.reference_prefix: () -> "@"
+  def self.reference_pattern: () -> Regexp
+  def self.generate_incoming_mail_token: () -> String
+  def self.prefix_for_incoming_mail_token: () -> ("glimt-" | String)
+  def self.ends_with_reserved_file_extension?: (untyped) -> (false | true)
+  def to_reference: (?untyped, ?target_container: untyped, ?full: untyped) -> String
+  def password_allowed?: (untyped) -> (false | true)
+  def update_otp_secret!: () -> ActiveSupport::TimeWithZone
+  def notification_email_or_default: () -> String
+  def private_commit_email: () -> String
+  def already_forked?: (untyped) -> (false | true)
+  def sanitize_name: () -> (String | nil)
+  def ldap_sync_time: () -> ActiveSupport::Duration
+  def avatar_url: (?size: untyped, ?scale: untyped, **untyped) -> (String | nil)
+  def pending_invitations: () -> ActiveRecord::Relation[Member]
+  def all_emails: (?include_private_email: untyped) -> Array[untyped]
+  def verified_emails: (?include_private_email: untyped) -> Array[untyped]
+  def hook_attrs: () -> { id: untyped, name: untyped, username: untyped, avatar_url: untyped, email: untyped }
+  def notification_service: () -> NotificationService
+  def log_info: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  def system_hook_service: () -> SystemHooksService
+  def followed_by?: (untyped) -> (false | true)
+  def oauth_authorized_tokens: () -> ActiveRecord::Relation[OauthAccessToken]
+  def contributed_projects: () -> ActiveRecord::Relation[Project]
+  def can_remove_self?: () -> true
+  def ci_available_project_runners: () -> ActiveRecord::Relation[Ci::Runner]
+  def access_level: () -> (:admin | :regular)
+  def password_expired?: () -> (false | true)
+  def password_expired_if_applicable?: () -> (false | true)
+  def confirmation_required_on_sign_in?: () -> (false | nil | true)
+  def set_ci_job_token_scope!: (untyped) -> Ci::JobToken::Scope
+  def abuse_metadata: () -> { account_age: untyped, two_factor_enabled: 0 | 1 }
+  def supports_saved_replies?: () -> true
+  def uploads_sharding_key: () -> { organization_id: untyped }
+  def add_admin_note: (untyped) -> String
+  def sa_provisioned_by_subgroup?: () -> (false | true)
+  def composite_identity_enforced?: () -> (false | true)
+  def composite_identity_enforced!: () -> true
+  def self.prefix_for_feed_token: () -> ("glft-" | String)
+end

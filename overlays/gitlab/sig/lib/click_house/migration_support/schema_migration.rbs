@@ -1,0 +1,7 @@
+module ClickHouse
+  module MigrationSupport
+    class SchemaMigration
+      def initialize: (untyped, ?table_name: untyped) -> void
+    end
+  end
+end

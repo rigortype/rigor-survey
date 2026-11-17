@@ -1,0 +1,11 @@
+module REST
+  module Admin
+    module Trends
+      module Links
+        class PreviewCardProviderSerializer < ::ActiveModel::Serializer[untyped]
+          def requires_review: () -> (false | true)
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,16 @@
+module Gitlab
+  module EndpointAttributes
+    class Config
+      def defined_actions: () -> Array[untyped]
+      def set: (untyped, untyped) -> nil
+      class RequestUrgency < ::Struct[untyped]
+        def name: () -> untyped
+        def duration: () -> untyped
+        def name=: (untyped) -> untyped
+        def duration=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?duration: untyped) -> instance | (?untyped name, ?untyped duration) -> instance
+        def self.[]: (?name: untyped, ?duration: untyped) -> instance | (?untyped name, ?untyped duration) -> instance
+      end
+    end
+  end
+end

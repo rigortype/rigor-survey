@@ -1,0 +1,6 @@
+module Ci
+  class BuildSourceFinder
+    def initialize: (relation: untyped, sources: untyped, project: untyped, ?params: { cursor_id: untyped }) -> void
+    def params: () -> { cursor_id: untyped }
+  end
+end

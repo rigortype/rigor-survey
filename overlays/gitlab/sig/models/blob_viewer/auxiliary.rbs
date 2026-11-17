@@ -1,0 +1,5 @@
+module BlobViewer
+  module Auxiliary
+    def visible_to?: (untyped, untyped) -> true
+  end
+end

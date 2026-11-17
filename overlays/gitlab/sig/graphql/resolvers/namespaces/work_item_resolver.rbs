@@ -1,0 +1,7 @@
+module Resolvers
+  module Namespaces
+    class WorkItemResolver < ::Resolvers::BaseResolver
+      def self.recent_services_map: () -> Hash[String, singleton(Gitlab::Search::RecentIssues)]
+    end
+  end
+end

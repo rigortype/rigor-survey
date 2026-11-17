@@ -1,0 +1,18 @@
+class PassRedemption
+  def self.list_for_sponsorship: (Sponsorship) -> Collection
+  def self.list_for_source_id: (String, String, ?sponsorship: Sponsorship?) -> Collection
+  class Registration < ::Data
+    def self.[]: (id: untyped, slug: untyped, reference: untyped, discount_code: untyped, source: untyped, email: untyped, state: untyped, free: untyped, paid: untyped, cancelled: untyped, refunded: untyped, partially_refunded: untyped, tickets: untyped) -> instance | (untyped id, untyped slug, untyped reference, untyped discount_code, untyped source, untyped email, untyped state, untyped free, untyped paid, untyped cancelled, untyped refunded, untyped partially_refunded, untyped tickets) -> instance
+    def self.from_tito: (untyped, releases: untyped) -> PassRedemption::Registration
+  end
+  class Ticket < ::Data
+    def self.[]: (id: untyped, reference: untyped, discount_code: untyped, release_id: untyped, release_slug: untyped, email: untyped, state: untyped, void: untyped, assigned: untyped) -> instance | (untyped id, untyped reference, untyped discount_code, untyped release_id, untyped release_slug, untyped email, untyped state, untyped void, untyped assigned) -> instance
+    def self.from_tito: (untyped, releases: untyped) -> PassRedemption::Ticket
+  end
+  class Collection
+    def self.from_tito_registration_list: (TitoApi::json_object, ?sponsorship: Sponsorship?, ?conference: Conference?) -> Collection
+    def initialize: (registrations: Array[Registration], valid_discount_codes: Array[String]?) -> void
+    def tickets_for: (Registration) -> Array[Ticket]
+    def retractable?: (Registration) -> bool
+  end
+end

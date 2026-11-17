@@ -1,0 +1,7 @@
+module REST
+  class MediaAttachmentSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def remote_url: () -> (String | nil)
+    def preview_remote_url: () -> (String | nil)
+  end
+end

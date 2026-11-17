@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    class Help < ::Gitlab::SlashCommands::BaseCommand
+      def self.match: (untyped) -> true
+      def self.help_message: () -> "help"
+      def self.allowed?: (untyped, untyped) -> true
+    end
+  end
+end

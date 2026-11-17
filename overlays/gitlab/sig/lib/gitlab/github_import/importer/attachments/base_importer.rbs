@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module Attachments
+        class BaseImporter
+          def representation_class: () -> singleton(Gitlab::GithubImport::Representation::NoteText)
+          def importer_class: () -> singleton(Gitlab::GithubImport::Importer::NoteAttachmentsImporter)
+          def parallel_import_batch: () -> { size: 100, delay: ActiveSupport::Duration }
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class AttributesPermitter
+      def initialize: (?config: untyped) -> void
+      def permitted_attributes: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module ActiveSupport
+  class CodeGenerator
+    def initialize: (untyped, untyped, untyped) -> void
+    class MethodSet
+      def initialize: (untyped) -> void
+    end
+  end
+end

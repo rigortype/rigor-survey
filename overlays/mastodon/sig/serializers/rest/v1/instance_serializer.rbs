@@ -1,0 +1,9 @@
+module REST
+  module V1
+    class InstanceSerializer < ::ActiveModel::Serializer[untyped]
+      def stats: () -> { user_count: untyped, status_count: untyped, domain_count: untyped }
+      def urls: () -> { streaming_api: untyped }
+      def configuration: () -> { accounts: { max_featured_tags: 10 }, statuses: { max_characters: 500, max_media_attachments: 4, characters_reserved_per_url: 23 }, media_attachments: { supported_mime_types: untyped, image_size_limit: untyped, image_matrix_limit: 33177600, video_size_limit: untyped, video_frame_rate_limit: 120, video_matrix_limit: 8294400 }, polls: { max_options: 4, max_characters_per_option: 50, min_expiration: untyped, max_expiration: untyped } }
+    end
+  end
+end

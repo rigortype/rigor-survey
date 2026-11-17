@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Identifier
+          def initialize: (external_id: untyped, external_type: untyped, name: untyped, ?url: untyped) -> void
+          def to_hash: () -> Hash[:external_id | :external_type | :fingerprint | :name | :url, untyped]
+          def vendor: () -> ("GitHub" | "HackerOne" | "NVD" | "OSVDB" | "Oracle" | "RedHat" | "Ubuntu" | "Unknown")
+          def fingerprint: () -> String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module QueryLimiting
+    class Middleware
+      def initialize: (Proc) -> void
+      def action_name: (untyped) -> (String | nil)
+    end
+  end
+end

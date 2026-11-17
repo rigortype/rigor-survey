@@ -1,0 +1,7 @@
+module Mcp
+  module Tools
+    module Toolsets
+      def self.defaults: () -> ["core", "merge_requests", "work_items", "repository", "ci", "duo_agent_platform", "meta"]
+    end
+  end
+end

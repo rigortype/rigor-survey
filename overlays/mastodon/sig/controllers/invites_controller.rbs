@@ -1,0 +1,3 @@
+class InvitesController < ::ApplicationController
+  def index: () -> Invite
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module PoolRepositories
+    class StorageScanner
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def orphaned_pools: () -> Array[untyped]
+    end
+  end
+end

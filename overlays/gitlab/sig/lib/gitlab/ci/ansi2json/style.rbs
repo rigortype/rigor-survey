@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      class Style
+        def initialize: (?fg: String, ?bg: String, ?mask: Integer) -> void
+        def update: (untyped) -> nil
+        def reset!: () -> []
+        def ==: (untyped) -> (false | true)
+        def to_s: () -> ("" | String)
+        def to_h: () -> { fg: untyped, bg: untyped, mask: untyped }
+      end
+    end
+  end
+end

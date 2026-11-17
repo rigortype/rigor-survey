@@ -1,0 +1,52 @@
+module YARD
+  module Parser
+    module Ruby
+      module Legacy
+        module RubyToken
+          class Token
+            def initialize: (untyped, untyped) -> void
+            def set_text: (untyped) -> YARD::Parser::Ruby::Legacy::RubyToken::Token
+          end
+          class TkBlockContents < ::YARD::Parser::Ruby::Legacy::RubyToken::Token
+            def text: () -> "..."
+          end
+          class TkStatementEnd < ::YARD::Parser::Ruby::Legacy::RubyToken::Token
+            def text: () -> ""
+          end
+          class TkId < ::YARD::Parser::Ruby::Legacy::RubyToken::Token
+            def initialize: (untyped, untyped, untyped) -> void
+          end
+          class TkVal < ::YARD::Parser::Ruby::Legacy::RubyToken::Token
+            def initialize: (untyped, untyped, ?untyped) -> void
+          end
+          class TkOPASGN < ::YARD::Parser::Ruby::Legacy::RubyToken::TkOp
+            def initialize: (untyped, untyped, untyped) -> void
+          end
+          class TkUnknownChar < ::YARD::Parser::Ruby::Legacy::RubyToken::Token
+            def initialize: (untyped, untyped, untyped) -> void
+          end
+        end
+        class RubyLex
+          def self.debug?: () -> false
+          def initialize: (untyped) -> void
+          def gets: () -> (String | nil)
+          def ungetc: (?untyped) -> (false | nil)
+          def lex_init: () -> nil
+          def lex_int2: () -> nil
+          def skip_inner_expression: () -> String
+          def read_escape: () -> String
+          def continue: () -> (false | true)
+          class BufferedReader
+            def initialize: (untyped) -> void
+            def getc: () -> (String | nil)
+            def ungetc: (untyped) -> (false | nil)
+            def get_read: () -> (String | nil)
+            def peek: (untyped) -> (String | nil)
+            def peek_equal: (untyped) -> (false | true)
+            def divert_read_from: (untyped) -> Integer
+          end
+        end
+      end
+    end
+  end
+end

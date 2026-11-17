@@ -1,0 +1,8 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      def self.instance: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler
+      def active_connections?: (?untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Dependabot
+  module Python
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PipCompileVersionResolver
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, repo_contents_path: untyped) -> void
+        def latest_resolvable_version: (?requirement: untyped) -> (Dependabot::Python::Version | nil)
+        def resolvable?: (version: untyped) -> (false | true | false | true)
+        def error_handler: () -> ::PipCompileErrorHandler
+      end
+    end
+    class PipCompileErrorHandler
+      def handle_pipcompile_error: (untyped) -> nil
+    end
+  end
+end

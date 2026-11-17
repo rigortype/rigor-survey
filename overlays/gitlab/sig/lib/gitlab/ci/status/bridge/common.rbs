@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Bridge
+        module Common
+          def has_details?: () -> (false | true)
+          def has_action?: () -> false
+        end
+      end
+    end
+  end
+end

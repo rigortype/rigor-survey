@@ -1,0 +1,7 @@
+module Dependabot
+  class UpdateFilesCommand < ::Dependabot::BaseCommand
+    def initialize: (untyped) -> void
+    def job: () -> (Dependabot::Job | nil)
+    def base_commit_sha: () -> String
+  end
+end

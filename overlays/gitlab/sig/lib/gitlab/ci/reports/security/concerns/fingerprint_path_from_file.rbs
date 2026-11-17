@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        module Concerns
+          module FingerprintPathFromFile
+            def fingerprint_path: () -> String
+          end
+        end
+      end
+    end
+  end
+end

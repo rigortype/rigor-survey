@@ -1,0 +1,5 @@
+module Ci
+  class PrepareBuildService
+    def initialize: (untyped) -> void
+  end
+end

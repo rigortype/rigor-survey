@@ -1,0 +1,10 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      class BatchFromList
+        def initialize: (untyped, ?logger: untyped) -> void
+        def orphan_objects: () -> Array[untyped]
+      end
+    end
+  end
+end

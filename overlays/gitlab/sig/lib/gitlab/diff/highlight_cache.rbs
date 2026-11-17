@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class HighlightCache
+      def initialize: (untyped) -> void
+    end
+  end
+end

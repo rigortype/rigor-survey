@@ -1,0 +1,11 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      class RollbackDeletedObjects
+        def initialize: (?filename: untyped, ?force_restart: untyped, ?logger: untyped) -> void
+        def file: () -> File
+        def cursor_tracker_key: () -> String
+      end
+    end
+  end
+end

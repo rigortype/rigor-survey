@@ -1,0 +1,6 @@
+module Organizations
+  class PathValidator < ::AbstractPathValidator
+    def self.format_error_message: () -> "can contain only letters, digits, '_' and '-'. Cannot start with '-'."
+    def build_full_path_to_validate_against_reserved_names?: () -> false
+  end
+end

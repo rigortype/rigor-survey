@@ -1,0 +1,19 @@
+module YARD
+  module CodeObjects
+    class CodeObjectList < ::Array[untyped]
+      def initialize: (?untyped) -> void
+      def push: (untyped) -> YARD::CodeObjects::CodeObjectList
+    end
+    class Base
+      def self.===: (untyped) -> (false | true)
+      def initialize: (untyped, untyped, *untyped) -> void
+      def hash: () -> Integer
+      def to_ary: () -> nil
+      def docstring=: (untyped) -> YARD::Docstring
+      def type: () -> Symbol
+      def inspect: () -> String
+      def namespace=: (untyped) -> (YARD::CodeObjects::Base | nil)
+      def root?: () -> false
+    end
+  end
+end

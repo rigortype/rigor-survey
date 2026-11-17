@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Transport
+      module ChaCha20Poly1305CipherLoader
+        def self.raiseUnlessLoaded: (untyped) -> nil
+        def self.chacha20_poly1305_support_required: () -> "net-ssh requires openssl >= 3.2.0 and a crypto backend with ChaCha20 and Poly1305 enabled for chacha20-poly1305@openssh.com support.\n"
+      end
+    end
+  end
+end

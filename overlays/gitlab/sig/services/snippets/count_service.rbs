@@ -1,0 +1,5 @@
+module Snippets
+  class CountService
+    def initialize: (untyped, ?organization_id: untyped, ?author: untyped, ?project: untyped) -> void
+  end
+end

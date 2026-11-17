@@ -1,0 +1,13 @@
+module Dependabot
+  module Helm
+    class FileFetcher < ::Dependabot::Shared::SharedFileFetcher
+      def fetch_files: () -> Array[untyped]
+      def self.filename_regex: () -> Regexp
+      def helm_files: () -> (Array[::DependencyFile] | nil)
+      def chart_locks: () -> (Array[::DependencyFile] | nil)
+      def correctly_encoded_helm_files: () -> Array[Dependabot::DependencyFile]
+      def incorrectly_encoded_helm_files_files: () -> Array[Dependabot::DependencyFile]
+      def self.required_files_message: () -> "Repo must contain a Helm charts file."
+    end
+  end
+end

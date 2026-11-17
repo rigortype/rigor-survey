@@ -1,0 +1,7 @@
+module CustomerRelations
+  class Organization < ::ApplicationRecord
+    def self.search_by_state: (untyped) -> ActiveRecord::Relation[CustomerRelations::Organization]
+    def self.sort_by_field: (untyped, untyped) -> ActiveRecord::Relation[CustomerRelations::Organization]
+    def self.sort_by_name: () -> ActiveRecord::Relation[CustomerRelations::Organization]
+  end
+end

@@ -1,0 +1,21 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class Protection
+        def initialize: (bill: untyped, count_ceiling: Integer, pool: untyped, ddl_pid: Integer, quoted_backend_start: String, logger: untyped, log_params: {}) -> void
+        def reset_attempt!: () -> Gitlab::Database::LockAcquisition::Protection::Verdict
+        def count_ceiling: () -> 5
+        def ddl_pid: () -> 12345
+        def quoted_backend_start: () -> "'2026-08-21 10:00:00+00'::timestamptz"
+        def log_params: () -> {}
+        class Verdict < ::Data
+          def trip_reason: () -> untyped
+          def canceled: () -> untyped
+          def watch_lost: () -> untyped
+          def self.new: (trip_reason: untyped, canceled: untyped, watch_lost: untyped) -> instance | (untyped trip_reason, untyped canceled, untyped watch_lost) -> instance
+          def self.[]: (trip_reason: untyped, canceled: untyped, watch_lost: untyped) -> instance | (untyped trip_reason, untyped canceled, untyped watch_lost) -> instance
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module ActiveModel
+  module Type
+    module SerializeCastValue
+      def itself_if_serialize_cast_value_compatible: () -> (ActiveModel::Type::SerializeCastValue | nil)
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

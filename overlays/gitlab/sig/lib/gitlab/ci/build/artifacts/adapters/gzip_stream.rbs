@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Build
+      module Artifacts
+        module Adapters
+          class GzipStream
+            def initialize: (untyped) -> void
+            def each_blob: () -> nil
+          end
+        end
+      end
+    end
+  end
+end

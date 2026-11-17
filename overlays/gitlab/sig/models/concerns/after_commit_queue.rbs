@@ -1,0 +1,4 @@
+module AfterCommitQueue
+  def run_after_commit: () ?{ (*untyped) -> untyped } -> true
+  def run_after_commit_or_now: () ?{ (*untyped) -> untyped } -> true
+end

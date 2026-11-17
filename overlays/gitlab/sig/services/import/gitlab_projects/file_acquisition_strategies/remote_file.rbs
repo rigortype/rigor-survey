@@ -1,0 +1,10 @@
+module Import
+  module GitlabProjects
+    module FileAcquisitionStrategies
+      class RemoteFile
+        def initialize: (params: untyped, ?current_user: untyped) -> void
+        def project_params: () -> { import_export_upload: ImportExportUpload }
+      end
+    end
+  end
+end

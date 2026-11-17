@@ -1,0 +1,8 @@
+module Kramdown
+  module Utils
+    class LRUCache
+      def initialize: (untyped) -> void
+      def []=: (untyped, untyped) -> ([untyped, untyped] | nil)
+    end
+  end
+end

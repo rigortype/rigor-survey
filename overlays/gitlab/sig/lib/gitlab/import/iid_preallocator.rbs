@@ -1,0 +1,10 @@
+module Gitlab
+  module Import
+    class IidPreallocator
+      def self.trackable_resources: () -> { issues: { tracker: Proc, scope_resolver: Proc, valid_for: [:project] }, merge_requests: { tracker: Proc, scope_resolver: Proc, valid_for: [:project] }, project_milestones: { tracker: Proc, scope_resolver: Proc, valid_for: [:project] }, group_milestones: { tracker: Proc, scope_resolver: Proc, valid_for: [:project, :group] }, ci_pipelines: { tracker: Proc, scope_resolver: Proc, valid_for: [:project] }, design_management_designs: { tracker: Proc, scope_resolver: Proc, valid_for: [:project] } }
+      def self.valid_iid_value?: (untyped) -> (false | true)
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> Hash[Symbol, Hash[Symbol, Array[Symbol] | Proc]]
+    end
+  end
+end

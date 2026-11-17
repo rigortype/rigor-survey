@@ -1,0 +1,8 @@
+module Dependabot
+  class PullRequestUpdater
+    class Azure
+      def initialize: (source: untyped, files: untyped, base_commit: untyped, old_commit: untyped, credentials: untyped, pull_request_number: untyped, ?author_details: untyped) -> void
+      def update: () -> (NilClass | nil)
+    end
+  end
+end

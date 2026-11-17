@@ -1,0 +1,18 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class PrimaryHost
+        def initialize: (untyped) -> void
+        def release_connection: () -> nil
+        def enable_query_cache!: () -> nil
+        def disable_query_cache!: () -> nil
+        def disconnect!: (?timeout: untyped) -> nil
+        def offline!: () -> nil
+        def online?: () -> true
+        def primary_write_location: () -> bot
+        def database_replica_location: () -> bot
+        def caught_up?: (untyped) -> true
+      end
+    end
+  end
+end

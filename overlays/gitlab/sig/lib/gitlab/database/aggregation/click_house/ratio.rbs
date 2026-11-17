@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class Ratio < ::Gitlab::Database::Aggregation::ClickHouse::MetricDefinition
+          def initialize: (Symbol, ?Symbol | nil, numerator: Proc, denominator: Proc, ?numerator_agg: (String | Symbol | nil), ?denominator_agg: (Integer | Symbol), **untyped) -> void
+          def to_outer_arel: (untyped) -> Arel::Nodes::Division
+          def validate_part: (untyped) -> (Array[Symbol] | nil)
+        end
+      end
+    end
+  end
+end

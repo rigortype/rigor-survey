@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    class VisitorLocation
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class Status < ::ApplicationRecord
+  module SnapshotConcern
+    def build_snapshot: (?account_id: untyped, ?at_time: untyped, ?rate_limit: untyped) -> StatusEdit
+  end
+end

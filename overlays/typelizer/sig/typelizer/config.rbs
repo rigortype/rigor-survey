@@ -1,0 +1,48 @@
+module Typelizer
+  class Config < ::Struct[untyped]
+    def serializer_name_mapper: () -> untyped
+    def filename_mapper: () -> untyped
+    def serializer_model_mapper: () -> untyped
+    def properties_transformer: () -> untyped
+    def properties_sort_order: () -> untyped
+    def imports_sort_order: () -> untyped
+    def model_plugin: () -> untyped
+    def serializer_plugin: () -> untyped
+    def plugin_configs: () -> untyped
+    def type_mapping: () -> untyped
+    def null_strategy: () -> untyped
+    def types_import_path: () -> untyped
+    def types_global: () -> untyped
+    def verbatim_module_syntax: () -> untyped
+    def inheritance_strategy: () -> untyped
+    def associations_strategy: () -> untyped
+    def reject_class: () -> untyped
+    def comments: () -> untyped
+    def prefer_double_quotes: () -> untyped
+    def enum_runtime: () -> untyped
+    def serializer_name_mapper=: (untyped) -> untyped
+    def filename_mapper=: (untyped) -> untyped
+    def serializer_model_mapper=: (untyped) -> untyped
+    def properties_transformer=: (untyped) -> untyped
+    def properties_sort_order=: (untyped) -> untyped
+    def imports_sort_order=: (untyped) -> untyped
+    def model_plugin=: (untyped) -> untyped
+    def serializer_plugin=: (untyped) -> untyped
+    def plugin_configs=: (untyped) -> untyped
+    def type_mapping=: (untyped) -> untyped
+    def null_strategy=: (untyped) -> untyped
+    def output_dir=: (untyped) -> untyped
+    def types_import_path=: (untyped) -> untyped
+    def types_global=: (untyped) -> untyped
+    def verbatim_module_syntax=: (untyped) -> untyped
+    def inheritance_strategy=: (untyped) -> untyped
+    def associations_strategy=: (untyped) -> untyped
+    def reject_class=: (untyped) -> untyped
+    def comments=: (untyped) -> untyped
+    def prefer_double_quotes=: (untyped) -> untyped
+    def enum_runtime=: (untyped) -> untyped
+    def self.new: (?serializer_name_mapper: untyped, ?filename_mapper: untyped, ?serializer_model_mapper: untyped, ?properties_transformer: untyped, ?properties_sort_order: untyped, ?imports_sort_order: untyped, ?model_plugin: untyped, ?serializer_plugin: untyped, ?plugin_configs: untyped, ?type_mapping: untyped, ?null_strategy: untyped, ?output_dir: untyped, ?types_import_path: untyped, ?types_global: untyped, ?verbatim_module_syntax: untyped, ?inheritance_strategy: untyped, ?associations_strategy: untyped, ?reject_class: untyped, ?comments: untyped, ?prefer_double_quotes: untyped, ?enum_runtime: untyped) -> instance
+    def self.[]: (?serializer_name_mapper: untyped, ?filename_mapper: untyped, ?serializer_model_mapper: untyped, ?properties_transformer: untyped, ?properties_sort_order: untyped, ?imports_sort_order: untyped, ?model_plugin: untyped, ?serializer_plugin: untyped, ?plugin_configs: untyped, ?type_mapping: untyped, ?null_strategy: untyped, ?output_dir: untyped, ?types_import_path: untyped, ?types_global: untyped, ?verbatim_module_syntax: untyped, ?inheritance_strategy: untyped, ?associations_strategy: untyped, ?reject_class: untyped, ?comments: untyped, ?prefer_double_quotes: untyped, ?enum_runtime: untyped) -> instance
+    def self.defaults: () -> { serializer_name_mapper: Proc, filename_mapper: nil, serializer_model_mapper: Proc, model_plugin: singleton(Typelizer::ModelPlugins::Auto), serializer_plugin: singleton(Typelizer::SerializerPlugins::Auto), plugin_configs: {}, type_mapping: Hash[untyped, Symbol], null_strategy: :nullable, inheritance_strategy: :none, associations_strategy: :database, reject_class: Proc, comments: false, prefer_double_quotes: false, enum_runtime: false, output_dir: Proc, types_import_path: "@/types", types_global: ["Array", "Date", "Record", "File", "FileList"], properties_transformer: nil, properties_sort_order: :none, imports_sort_order: :none, verbatim_module_syntax: false }
+  end
+end

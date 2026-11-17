@@ -1,0 +1,10 @@
+module RuboCop
+  module AST
+    class BlockNode < ::RuboCop::AST::Node
+      def arguments?: () -> (false | true)
+      def delimiters: () -> [untyped, untyped]
+      def multiline?: () -> (false | true)
+      def void_context?: () -> (false | true)
+    end
+  end
+end

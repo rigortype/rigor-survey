@@ -1,0 +1,8 @@
+module Gitlab
+  module Current
+    class DataContext
+      def initialize: (?organization: untyped, ?user: untyped) -> void
+      def type: () -> (:nil | :organization | :user)
+    end
+  end
+end

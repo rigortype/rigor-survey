@@ -1,0 +1,3 @@
+class RefMatcher
+  def initialize: (untyped) -> void
+end

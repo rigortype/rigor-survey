@@ -1,0 +1,7 @@
+module Preloaders
+  module Environments
+    class DeploymentPreloader
+      def initialize: (untyped) -> void
+    end
+  end
+end

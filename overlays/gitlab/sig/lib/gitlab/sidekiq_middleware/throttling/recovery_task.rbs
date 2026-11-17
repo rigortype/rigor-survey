@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      class RecoveryTask
+        def call: () -> nil
+        def stop: () -> false
+      end
+    end
+  end
+end

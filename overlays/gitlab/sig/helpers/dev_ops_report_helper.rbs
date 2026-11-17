@@ -1,0 +1,3 @@
+module DevOpsReportHelper
+  def devops_score_metrics: (untyped) -> ({ averageScore: { value: untyped, scoreLevel: { label: untyped, variant: "danger", icon: "status-failed" } | { label: untyped, variant: "success", icon: "status_success_solid" } | { label: untyped, variant: "warning", icon: "status-alert" } }, cards: untyped, createdAt: untyped } | {})
+end

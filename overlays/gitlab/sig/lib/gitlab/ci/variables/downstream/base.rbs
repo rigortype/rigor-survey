@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      module Downstream
+        class Base
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Gitlab
+  class StackProf
+    def self.install: () -> top
+    def self.interval: (untyped) -> (100 | 10100)
+  end
+end

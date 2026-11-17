@@ -1,0 +1,11 @@
+module Dependabot
+  module Conda
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, raise_on_ignored: untyped, security_advisories: untyped, cooldown_options: untyped) -> void
+        def package_details: () -> (Dependabot::Package::PackageDetails | nil)
+        def cooldown_enabled?: () -> true
+      end
+    end
+  end
+end

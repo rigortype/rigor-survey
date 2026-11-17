@@ -1,0 +1,9 @@
+module Ci
+  module RedundantPipelines
+    class RegisterCandidateService
+      def self.for: (untyped) -> Ci::RedundantPipelines::RegisterCandidateService
+      def initialize: (untyped, policy: untyped, cache: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

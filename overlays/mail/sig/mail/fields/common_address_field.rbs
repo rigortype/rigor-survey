@@ -1,0 +1,5 @@
+module Mail
+  class AddressContainer < ::Array[untyped]
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,11 @@
+module Analytics
+  module CycleAnalytics
+    class Aggregation < ::ApplicationRecord
+      def self.safe_create_for_namespace: (untyped) -> Analytics::CycleAnalytics::Aggregation
+      def cursor_for: (untyped, untyped) -> Hash[untyped, untyped]
+      def consistency_check_cursor_for: (untyped) -> Hash[untyped, untyped]
+      def refresh_last_run: (untyped) -> ActiveSupport::TimeWithZone
+      def complete: () -> nil
+    end
+  end
+end

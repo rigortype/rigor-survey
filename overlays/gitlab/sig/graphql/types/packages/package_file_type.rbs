@@ -1,0 +1,7 @@
+module Types
+  module Packages
+    class PackageFileType < ::Types::BaseObject
+      def file_name: () -> String
+    end
+  end
+end

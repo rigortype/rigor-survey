@@ -1,0 +1,6 @@
+module BlobViewer
+  class RequirementsTxt < ::BlobViewer::DependencyManager
+    def manager_name: () -> "pip"
+    def manager_url: () -> "https://pip.pypa.io/"
+  end
+end

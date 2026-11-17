@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class Trace
+      def initialize: (untyped) -> void
+      def erase!: () -> top
+    end
+  end
+end

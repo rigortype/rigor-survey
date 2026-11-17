@@ -1,0 +1,21 @@
+module Parser
+  module Source
+    class Range
+      def initialize: (untyped, untyped, untyped) -> void
+      def begin: () -> Parser::Source::Range
+      def end: () -> Parser::Source::Range
+      def column_range: () -> ::Range[untyped]
+      def to_a: () -> Array[untyped]
+      def to_range: () -> ::Range[untyped]
+      def to_s: () -> String
+      def with: (?begin_pos: Integer, ?end_pos: Integer) -> Parser::Source::Range
+      def adjust: (?begin_pos: untyped, ?end_pos: untyped) -> Parser::Source::Range
+      def resize: (untyped) -> Parser::Source::Range
+      def join: (Parser::Source::Range | nil) -> Parser::Source::Range
+      def intersect: (Parser::Source::Range | nil) -> (Parser::Source::Range | nil)
+      def overlaps?: (Parser::Source::Range | nil) -> (false | true)
+      def hash: () -> Integer
+      def inspect: () -> String
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class ObsoleteIgnoredColumns
+      def initialize: (?untyped) -> void
+    end
+  end
+end

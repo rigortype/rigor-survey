@@ -1,0 +1,14 @@
+module Google
+  module Protobuf
+    class Map
+      def keys: () -> Array[untyped]
+      def values: () -> Array[untyped]
+      def clear: () -> nil
+      def frozen?: () -> (false | true)
+      def ==: (untyped) -> (false | true)
+      def to_h: () -> Hash[untyped, untyped]
+      def inspect: () -> String
+      def each: () ?{ (*untyped) -> untyped } -> nil
+    end
+  end
+end

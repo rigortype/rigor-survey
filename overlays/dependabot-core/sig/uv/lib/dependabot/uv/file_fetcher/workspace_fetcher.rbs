@@ -1,0 +1,12 @@
+module Dependabot
+  module Uv
+    class FileFetcher < ::Dependabot::Python::SharedFileFetcher
+      class WorkspaceFetcher
+        def initialize: (untyped, untyped) -> void
+        def workspace_member_files: () -> Array[untyped]
+        def version_source_files: () -> Array[untyped]
+        def license_files: () -> Array[untyped]
+      end
+    end
+  end
+end

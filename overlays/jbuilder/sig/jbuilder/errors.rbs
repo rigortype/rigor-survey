@@ -1,0 +1,11 @@
+class Jbuilder
+  class NullError < ::NoMethodError[untyped]
+    def self.build: (untyped) -> Jbuilder::NullError
+  end
+  class ArrayError < ::StandardError
+    def self.build: (untyped) -> Jbuilder::ArrayError
+  end
+  class MergeError < ::StandardError
+    def self.build: (untyped, untyped) -> Jbuilder::MergeError
+  end
+end

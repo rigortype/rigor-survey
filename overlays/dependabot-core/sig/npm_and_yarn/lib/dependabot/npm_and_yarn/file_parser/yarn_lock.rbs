@@ -1,0 +1,11 @@
+module Dependabot
+  module NpmAndYarn
+    class FileParser < ::Dependabot::FileParsers::Base
+      class YarnLock
+        def initialize: (untyped, ?dealias_packages: untyped) -> void
+        def parsed: () -> Hash[String, ::Record]
+        def dependencies: () -> Dependabot::FileParsers::Base::DependencySet
+      end
+    end
+  end
+end

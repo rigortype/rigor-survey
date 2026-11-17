@@ -1,0 +1,8 @@
+module Authn
+  module IamReplication
+    class OauthAccessTokenReplicator
+      def initialize: (?client: untyped, ?timeout: untyped) -> void
+      def upsert: (untyped) -> (:delivered | :skipped)
+    end
+  end
+end

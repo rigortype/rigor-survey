@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Type
+    class Time < ::ActiveModel::Type::Time
+      def serialize_cast_value: (untyped) -> (ActiveSupport::Delegation::ClassDelegator | nil)
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Dependabot
+  module Docker
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_semver: () -> String
+      def segments: () -> Array[untyped]
+      def <=>: (untyped) -> (Integer | nil)
+      def sort_criteria: () -> Array[untyped]
+      def release_part: () -> Dependabot::Version
+    end
+  end
+end

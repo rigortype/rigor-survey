@@ -1,0 +1,9 @@
+module ActionText
+  class Editor
+    class Registry
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+      def editors: () -> Hash[untyped, untyped]
+    end
+  end
+end

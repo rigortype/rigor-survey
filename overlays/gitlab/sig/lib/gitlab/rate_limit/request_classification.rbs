@@ -1,0 +1,7 @@
+module Gitlab
+  module RateLimit
+    module RequestClassification
+      def web_request?: () -> (false | true)
+    end
+  end
+end

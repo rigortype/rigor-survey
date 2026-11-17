@@ -1,0 +1,3 @@
+module UserQueriesHelper
+  def twofa_scheme_label: (untyped) -> String
+end

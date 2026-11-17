@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Partitioning
+      module List
+        class LockingConfiguration
+          def initialize: (untyped, table_locking_order: untyped) -> void
+          def locking_statement_for: (untyped) -> (String | nil)
+        end
+      end
+    end
+  end
+end

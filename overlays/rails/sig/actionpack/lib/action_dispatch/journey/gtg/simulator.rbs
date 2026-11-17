@@ -1,0 +1,9 @@
+module ActionDispatch
+  module Journey
+    module GTG
+      class Simulator
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

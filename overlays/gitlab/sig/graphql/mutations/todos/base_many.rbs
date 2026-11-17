@@ -1,0 +1,7 @@
+module Mutations
+  module Todos
+    class BaseMany < ::Mutations::BaseMutation
+      def resolve: (ids: untyped, **untyped) -> { updated_ids: untyped, todos: ActiveRecord::Relation[Todo], errors: untyped }
+    end
+  end
+end

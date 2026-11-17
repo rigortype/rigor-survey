@@ -1,0 +1,6 @@
+module ResourceEvents
+  class ChangeMilestoneService < ::ResourceEvents::BaseChangeTimeboxService
+    def initialize: (untyped, untyped, old_milestone: nil) -> void
+    def old_milestone: () -> nil
+  end
+end

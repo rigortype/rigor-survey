@@ -1,0 +1,12 @@
+module Mcp
+  module Tools
+    class RequestContext < ::Data
+      def current_user: () -> untyped
+      def access_token: () -> untyped
+      def request: () -> untyped
+      def self.new: (current_user: untyped, access_token: untyped, request: untyped) -> instance | (untyped current_user, untyped access_token, untyped request) -> instance
+      def self.[]: (current_user: untyped, access_token: untyped, request: untyped) -> instance | (untyped current_user, untyped access_token, untyped request) -> instance
+      def initialize: (current_user: untyped, ?access_token: untyped, ?request: untyped) -> void
+    end
+  end
+end

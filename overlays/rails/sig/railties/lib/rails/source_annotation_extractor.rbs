@@ -1,0 +1,32 @@
+module Rails
+  class SourceAnnotationExtractor
+    def self.enumerate: (?untyped, ?untyped) -> nil
+    def initialize: (untyped) -> void
+    def find_in: (untyped) -> Hash[untyped, untyped]
+    class ParserExtractor < ::Struct[untyped]
+      def pattern: () -> untyped
+      def pattern=: (untyped) -> untyped
+      def self.new: (?pattern: untyped) -> instance | (?untyped pattern) -> instance
+      def self.[]: (?pattern: untyped) -> instance | (?untyped pattern) -> instance
+    end
+    class PatternExtractor < ::Struct[untyped]
+      def pattern: () -> untyped
+      def pattern=: (untyped) -> untyped
+      def self.new: (?pattern: untyped) -> instance | (?untyped pattern) -> instance
+      def self.[]: (?pattern: untyped) -> instance | (?untyped pattern) -> instance
+    end
+    class Annotation < ::Struct[untyped]
+      def line: () -> untyped
+      def tag: () -> untyped
+      def text: () -> untyped
+      def line=: (untyped) -> untyped
+      def tag=: (untyped) -> untyped
+      def text=: (untyped) -> untyped
+      def self.new: (?line: untyped, ?tag: untyped, ?text: untyped) -> instance | (?untyped line, ?untyped tag, ?untyped text) -> instance
+      def self.[]: (?line: untyped, ?tag: untyped, ?text: untyped) -> instance | (?untyped line, ?untyped tag, ?untyped text) -> instance
+      def self.directories: () -> ["app", "config", "db", "lib", "test"]
+      def self.tags: () -> ["OPTIMIZE", "FIXME", "TODO"]
+      def self.extensions: () -> {}
+    end
+  end
+end

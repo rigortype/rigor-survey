@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    module Distribution
+      def self.container_foreign_key: () -> Symbol
+      def package_files: () -> ActiveRecord::Relation[Packages::PackageFile]
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Admin
+  class AnnouncementsController < ::Admin::ApplicationController
+    def index: () -> void
+    def new: () -> void
+    def create: () -> void
+    def show: () -> void
+    def edit: () -> void
+    def update: () -> void
+  end
+end

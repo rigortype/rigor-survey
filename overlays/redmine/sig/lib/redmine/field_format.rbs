@@ -1,0 +1,42 @@
+module Redmine
+  module FieldFormat
+    def self.all: () -> Hash[untyped, Redmine::FieldFormat::Base]
+    class Base
+      def self.add: (untyped) -> Redmine::FieldFormat::Base
+      def validate_custom_field: (untyped) -> Array[untyped]
+      def validate_custom_value: (untyped) -> Array[untyped]
+      def join_for_order_statement: (untyped) -> String
+    end
+    class List < ::Redmine::FieldFormat::Base
+      def query_filter_options: (untyped, untyped) -> { type: :list_optional, values: Proc }
+    end
+    class ListFormat < ::Redmine::FieldFormat::List
+      def validate_custom_field: (untyped) -> Array[untyped]
+      def validate_custom_value: (untyped) -> ([String] | [])
+    end
+    class BoolFormat < ::Redmine::FieldFormat::List
+      def label: () -> "label_boolean"
+      def cast_single_value: (untyped, untyped, ?untyped) -> (false | true)
+      def possible_values_options: (untyped, ?untyped) -> [[String, "1"], [String, "0"]]
+    end
+    class RecordList < ::Redmine::FieldFormat::List
+      def reset_target_class: () -> nil
+      def validate_custom_value: (untyped) -> ([String] | [])
+      def join_for_order_statement: (untyped) -> String
+    end
+    class EnumerationFormat < ::Redmine::FieldFormat::RecordList
+      def label: () -> "label_field_format_enumeration"
+      def target_class: () -> singleton(CustomFieldEnumeration)
+    end
+    class UserFormat < ::Redmine::FieldFormat::RecordList
+      def selectable_principal_types: (untyped) -> (["Group"] | ["User", "Group"] | ["User"])
+      def before_custom_field_save: (untyped) -> (Array[untyped] | nil)
+    end
+    class VersionFormat < ::Redmine::FieldFormat::RecordList
+      def before_custom_field_save: (untyped) -> (Array[untyped] | nil)
+    end
+    class AttachmentFormat < ::Redmine::FieldFormat::Base
+      def validate_custom_value: (untyped) -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module Forks
+    class SyncWorker
+      def perform: (untyped, untyped, untyped) -> (ServiceResponse | nil)
+    end
+  end
+end

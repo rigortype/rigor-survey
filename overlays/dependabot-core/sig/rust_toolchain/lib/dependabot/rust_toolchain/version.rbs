@@ -1,0 +1,11 @@
+module Dependabot
+  module RustToolchain
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::RustToolchain::Version
+      def self.correct?: (untyped) -> (false | true)
+      def to_s: () -> ("" | String | String | nil)
+      def channel: () -> (Dependabot::RustToolchain::Channel | nil)
+    end
+  end
+end

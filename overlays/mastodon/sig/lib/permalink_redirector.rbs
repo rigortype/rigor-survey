@@ -1,0 +1,3 @@
+class PermalinkRedirector
+  def initialize: (String) -> void
+end

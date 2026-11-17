@@ -1,0 +1,5 @@
+module WorkItems
+  class WorkItemCreatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["id", "namespace_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

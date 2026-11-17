@@ -1,0 +1,3 @@
+class FileHookWorker
+  def perform: (untyped, untyped) -> true
+end

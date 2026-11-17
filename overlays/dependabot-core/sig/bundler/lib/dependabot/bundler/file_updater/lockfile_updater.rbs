@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockfileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, options: untyped, ?repo_contents_path: untyped) -> void
+        def gemspec_sources: () -> [singleton(::Bundler::Source::Path), singleton(::Bundler::Source::Gemspec)]
+      end
+    end
+  end
+end

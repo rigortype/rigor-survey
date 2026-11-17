@@ -1,0 +1,5 @@
+module Subscriptions
+  class IssuableUpdated < ::Subscriptions::BaseSubscription
+    def authorized?: (issuable_id: untyped) -> true
+  end
+end

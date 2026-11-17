@@ -1,0 +1,5 @@
+class WeightedGraph
+  def initialize: (?nodes: untyped, ?edges: untyped, ?directed: untyped) -> void
+  def add_node: (untyped) -> {}
+  def nodes: () -> Set[untyped]
+end

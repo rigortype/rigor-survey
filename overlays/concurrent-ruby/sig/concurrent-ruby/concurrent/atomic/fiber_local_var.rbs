@@ -1,0 +1,5 @@
+module Concurrent
+  class FiberLocalVar
+    def initialize: (?untyped) ?{ (*untyped) -> untyped } -> void
+  end
+end

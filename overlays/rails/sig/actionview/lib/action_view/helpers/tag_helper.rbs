@@ -1,0 +1,10 @@
+module ActionView
+  module Helpers
+    module TagHelper
+      def cdata_section: (untyped) -> ActiveSupport::SafeBuffer
+      class TagBuilder
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  class UrlSanitizer
+    def self.valid_web?: (untyped) -> (false | true)
+    def self.encode_percent: (untyped) -> String
+    def initialize: (untyped, ?credentials: untyped) -> void
+    def sanitized_url: () -> String
+    def masked_url: () -> String
+    def full_url: () -> String
+  end
+end

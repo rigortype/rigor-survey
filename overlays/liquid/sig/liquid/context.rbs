@@ -1,0 +1,15 @@
+module Liquid
+  class Context
+    def self.build: (?environment: untyped, ?environments: untyped, ?outer_scope: untyped, ?registers: untyped, ?rethrow_errors: untyped, ?resource_limits: untyped, ?static_environments: untyped) ?{ (*untyped) -> untyped } -> Liquid::Context
+    def initialize: (?untyped, ?{}, ?Liquid::Registers | { my_register: Symbol } | {}, ?false | true, ?Liquid::ResourceLimits, ?untyped, ?untyped) -> void
+    def add_filters: (Module | [Module] | [singleton(StrainerTemplateUnitTest::PublicMethodOverrideFilter)]) -> nil
+    def interrupt?: () -> (false | true)
+    def push_interrupt: (untyped) -> Array[untyped]
+    def push: (?untyped) -> nil
+    def new_isolated_subcontext: () -> Liquid::Context
+    def clear_instance_assigns: () -> {}
+    def scopes: () -> Array[untyped]
+    def environments: () -> Array[untyped]
+    def static_environments: () -> [untyped]
+  end
+end

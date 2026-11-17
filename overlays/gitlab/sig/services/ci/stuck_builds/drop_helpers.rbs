@@ -1,0 +1,7 @@
+module Ci
+  module StuckBuilds
+    module DropHelpers
+      def log_dropping_message: (untyped, untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

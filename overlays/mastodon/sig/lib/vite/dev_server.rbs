@@ -1,0 +1,6 @@
+module Vite
+  class DevServer
+    def initialize: (config: untyped) -> void
+    def running?: () -> (false | nil | true)
+  end
+end

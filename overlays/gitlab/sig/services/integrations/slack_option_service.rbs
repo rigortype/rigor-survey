@@ -1,0 +1,5 @@
+module Integrations
+  class SlackOptionService
+    def initialize: (untyped) -> void
+  end
+end

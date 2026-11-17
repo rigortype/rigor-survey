@@ -1,0 +1,7 @@
+module Oj
+  class Bag
+    def initialize: (?untyped) -> void
+    def respond_to?: (untyped) -> (false | true)
+    def eql?: (untyped) -> (false | true)
+  end
+end

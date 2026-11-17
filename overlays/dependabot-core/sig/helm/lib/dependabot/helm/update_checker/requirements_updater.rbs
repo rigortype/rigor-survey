@@ -1,0 +1,11 @@
+module Dependabot
+  module Helm
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, update_strategy: untyped, latest_resolvable_version: untyped) -> void
+        def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+        def latest_resolvable_version: () -> Dependabot::Version
+      end
+    end
+  end
+end

@@ -1,0 +1,31 @@
+module Redmine
+  module MenuManager
+    module MenuController
+      def current_menu: (untyped) -> (:application_menu | :project_menu | nil)
+      def redirect_to_project_menu_item: (untyped, untyped) -> (false | true)
+    end
+    module MenuHelper
+      def render_menu_node_with_children: (untyped, ?untyped) -> String
+      def render_unattached_children_menu: (untyped, untyped) -> (String | nil)
+      def menu_items_for: (untyped, ?untyped) -> (Array[untyped] | nil)
+      def extract_node_details: (untyped, ?untyped) -> [untyped, untyped, untyped]
+    end
+    class Mapper
+      def initialize: (Symbol, { test_menu: String } | {}) -> void
+      def menu: () -> :test_menu
+    end
+    class MenuNode
+      def initialize: (untyped, ?untyped) -> void
+      def children: () -> Array[untyped]
+      def last_items_count: () -> (0 | Integer)
+    end
+    class MenuItem < ::Redmine::MenuManager::MenuNode
+      def initialize: (String | Symbol, String | Symbol | { controller: String, action: String }, ?{ children: Proc } | { children: [String] } | { html: [String] } | { html: { onclick: String } } | { icon: String, plugin: String } | { if: Proc } | { if: [String] } | { parent: Symbol } | { plugin: String } | {}) -> void
+      def allowed?: (untyped, untyped) -> (false | true)
+      def name: () -> ("test_child" | "test_child_allowed" | "test_child_unallowed" | :child_node | :child_one_node | :child_three_inner_node | :child_three_node | :child_two_node | :parent_node | :single_node | :test_error | :test_good_children | :test_good_html | :test_good_if | :test_good_menu | :test_missing_url | :test_plugin_menu | :testing | String)
+      def url: () -> ("/test" | "/testing" | :issues_path | :project_issues_path | { controller: "issues", action: "index" } | { controller: "issues", action: "new" } | { controller: "issues", action: "unallowed" })
+    end
+    class MenuError < ::StandardError
+    end
+  end
+end

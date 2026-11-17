@@ -1,0 +1,9 @@
+module SystemCheck
+  module IncomingEmail
+    class MailRoomRunningCheck < ::SystemCheck::BaseCheck
+      def skip?: () -> (nil | true)
+      def check?: () -> (false | true)
+      def show_error: () -> nil
+    end
+  end
+end

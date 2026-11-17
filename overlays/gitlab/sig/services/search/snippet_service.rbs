@@ -1,0 +1,6 @@
+module Search
+  class SnippetService < ::Search::GlobalService
+    def execute: () -> Gitlab::SnippetSearchResults
+    def scope: () -> "snippet_titles"
+  end
+end

@@ -1,0 +1,8 @@
+module API
+  class NugetGroupPackages < ::API::Base
+    def snowplow_gitlab_standard_context: () -> { namespace: untyped }
+    def snowplow_gitlab_standard_context_without_auth: () -> { namespace: untyped }
+    def required_permission: () -> :read_package_within_public_registries
+    def self.boundary_type: () -> :group
+  end
+end

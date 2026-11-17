@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class RackMiddleware
+        def initialize: (untyped) -> void
+        def add_path_stick_objects: (untyped) -> Hash[Regexp, Proc]
+      end
+    end
+  end
+end

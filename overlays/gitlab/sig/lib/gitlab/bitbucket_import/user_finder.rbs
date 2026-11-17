@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketImport
+    class UserFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

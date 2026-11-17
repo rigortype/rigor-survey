@@ -1,0 +1,8 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def parse_codeblock: () -> true
+      def parse_codeblock_fenced: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Kubernetes
+    class KubeClient
+      def self.graceful_request: (untyped) -> ({ status: :authentication_failure | :unreachable, connection_error: :http_error } | { status: :authentication_failure, connection_error: :authentication_error } | { status: :connected, response: untyped } | { status: :unknown_failure, connection_error: :unknown_error } | { status: :unreachable, connection_error: :connection_error })
+      def self.kubeclient_error_status: (untyped) -> (:authentication_failure | :unreachable)
+      def initialize: (untyped, **untyped) -> void
+    end
+  end
+end

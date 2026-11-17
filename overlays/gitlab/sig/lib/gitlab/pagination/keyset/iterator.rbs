@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class Iterator
+        def initialize: (scope: untyped, ?cursor: untyped, ?use_union_optimization: untyped, ?in_operator_optimization_options: untyped) -> void
+      end
+    end
+  end
+end

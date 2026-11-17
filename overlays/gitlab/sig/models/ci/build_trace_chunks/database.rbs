@@ -1,0 +1,7 @@
+module Ci
+  module BuildTraceChunks
+    class Database
+      def keys: (untyped) -> []
+    end
+  end
+end

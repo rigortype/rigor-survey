@@ -1,0 +1,3 @@
+module Dependabot
+  def self.logger: () -> (::Logger | nil)
+end

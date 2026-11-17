@@ -1,0 +1,10 @@
+module Admin
+  module Metrics
+    class Measure
+      class TagUsesMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def self.with_params?: () -> true
+        def key: () -> "tag_uses"
+      end
+    end
+  end
+end

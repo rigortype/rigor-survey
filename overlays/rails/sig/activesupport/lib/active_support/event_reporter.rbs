@@ -1,0 +1,13 @@
+module ActiveSupport
+  class TagStack
+    def self.resolve_tags: (untyped, untyped) -> Hash[untyped, untyped]
+  end
+  class EventContext
+    def self.clear: () -> {}
+  end
+  class EventReporter
+    def initialize: (*untyped, ?raise_on_error: untyped) -> void
+    def notify: (untyped, ?untyped, ?caller_depth: untyped, ?filter_payload: untyped, **untyped) -> nil
+    def subscribers: () -> Array[untyped]
+  end
+end

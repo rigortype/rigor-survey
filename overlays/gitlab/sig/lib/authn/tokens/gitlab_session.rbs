@@ -1,0 +1,12 @@
+module Authn
+  module Tokens
+    class GitlabSession
+      def self.session_cookie_key_prefix: () -> String
+      def initialize: (untyped, Symbol) -> void
+      def present_with: () -> singleton(API::Entities::User)
+      def revoke!: (untyped) -> ServiceResponse
+      def source: () -> :api_admin_token
+      def session_id: () -> Rack::Session::SessionId
+    end
+  end
+end

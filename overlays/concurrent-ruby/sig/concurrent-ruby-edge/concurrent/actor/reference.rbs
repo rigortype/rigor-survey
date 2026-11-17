@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    class Reference
+      def initialize: (untyped) -> void
+      def tell: (untyped) -> Concurrent::Actor::Reference
+      def to_s: () -> String
+    end
+  end
+end

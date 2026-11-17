@@ -1,0 +1,60 @@
+---
+version: 1
+ignored:
+- file: arrays/CreateProductArray.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: arrays/FindMissingNumber.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: arrays/FindTwoRepeatingElem.rb
+  rule: call.unresolved-toplevel
+  count: 2
+- file: arrays/FindTwoRepeatingElem.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: arrays/MaxDiffLargerOnRight.rb
+  rule: call.unresolved-toplevel
+  count: 1
+- file: arrays/MaximumInBitonicArray.rb
+  rule: call.unresolved-toplevel
+  count: 2
+- file: codility/Prefix Sums/PassingCars.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: codility/Prefix Sums/PassingCars1.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: codility/Prime and composite numbers/MinPerimeterRectangle.rb
+  rule: call.possible-nil-receiver
+  count: 1
+- file: exercism/amusement_park.rb
+  rule: call.unresolved-toplevel
+  count: 1
+- file: exercism/run_length_encoding.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: hackerRank/ModifiedKaprekarNumber.rb
+  rule: call.undefined-method
+  count: 1
+- file: leetcode/grind75/balanced_binary_tree.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: leetcode/grind75/first_bad_version.rb
+  rule: call.unresolved-toplevel
+  count: 1
+- file: leetcode/grind75/meeting_rooms.rb
+  rule: call.unresolved-toplevel
+  count: 2
+- file: leetcode/grind75/min_stack.rb
+  rule: def.ivar-write-mismatch
+  count: 1
+- file: leetcode/grind75/two_sum.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: leetcode/insert_delete_get_random_o1.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: ".rigor.yml"
+  rule: rbs.coverage.definition-build-failed
+  count: 1

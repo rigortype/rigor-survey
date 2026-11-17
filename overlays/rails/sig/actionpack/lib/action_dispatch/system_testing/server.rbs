@@ -1,0 +1,7 @@
+module ActionDispatch
+  module SystemTesting
+    class Server
+      def run: () -> true
+    end
+  end
+end

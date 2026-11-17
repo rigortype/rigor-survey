@@ -1,0 +1,8 @@
+module Import
+  class SourceUserPlaceholderReference < ::ApplicationRecord
+    def self.from_serialized: (untyped) -> Import::SourceUserPlaceholderReference
+    def self.composite_key_columns: (untyped) -> String
+    def self.composite_key_values: (untyped) -> String
+    def self.tuple: (untyped) -> String
+  end
+end

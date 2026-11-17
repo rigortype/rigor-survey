@@ -1,0 +1,9 @@
+module Organizations
+  module Release
+    class Registry
+      def self.instance: () -> Organizations::Release::Registry
+      def self.reset!: () -> nil
+      def initialize: (?untyped) -> void
+    end
+  end
+end

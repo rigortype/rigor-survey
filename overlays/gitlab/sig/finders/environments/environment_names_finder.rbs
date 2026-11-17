@@ -1,0 +1,6 @@
+module Environments
+  class EnvironmentNamesFinder
+    def initialize: (untyped, ?untyped) -> void
+    def namespace_environments: () -> ActiveRecord::Relation[Environment]
+  end
+end

@@ -1,0 +1,5 @@
+module Vacuum
+  class BackupsVacuum
+    def initialize: (untyped) -> void
+  end
+end

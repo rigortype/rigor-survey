@@ -1,0 +1,7 @@
+module Import
+  module Github
+    class RefreshOauthTokenService
+      def initialize: (untyped) -> void
+    end
+  end
+end

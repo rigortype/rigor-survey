@@ -1,0 +1,5 @@
+class LegacyDiffNote < ::Note
+  def discussion_class: (*untyped) -> singleton(LegacyDiffDiscussion)
+  def diff_file: () -> (Gitlab::Diff::File | nil)
+  def original_line_code: () -> String
+end

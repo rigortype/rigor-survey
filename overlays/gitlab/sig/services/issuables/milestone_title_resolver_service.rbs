@@ -1,0 +1,5 @@
+module Issuables
+  class MilestoneTitleResolverService
+    def initialize: (container: untyped, title: untyped) -> void
+  end
+end

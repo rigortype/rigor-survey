@@ -1,0 +1,7 @@
+class String
+  def at: (Integer | Range[Integer] | Regexp | String) -> String?
+  def from: (Integer) -> String?
+  def to: (Integer) -> String
+  def first: (?Integer) -> String
+  def last: (?Integer) -> String
+end

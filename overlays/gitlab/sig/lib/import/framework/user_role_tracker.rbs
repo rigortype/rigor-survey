@@ -1,0 +1,7 @@
+module Import
+  module Framework
+    class UserRoleTracker
+      def initialize: (current_user: untyped, tracking_class_name: untyped, import_type: untyped) -> void
+    end
+  end
+end

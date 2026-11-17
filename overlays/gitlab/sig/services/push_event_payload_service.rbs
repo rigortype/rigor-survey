@@ -1,0 +1,5 @@
+class PushEventPayloadService
+  def initialize: (untyped, untyped) -> void
+  def action: () -> (:created | :pushed | :removed)
+  def ref_type: () -> (:branch | :tag)
+end

@@ -1,0 +1,4 @@
+class SponsorshipWelcomeMailer < ::ApplicationMailer
+  def user_email: () -> void
+  def admin_email: () -> void
+end

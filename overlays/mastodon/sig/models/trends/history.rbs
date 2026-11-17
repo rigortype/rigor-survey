@@ -1,0 +1,18 @@
+module Trends
+  class History
+    def initialize: (untyped, untyped) -> void
+    def get: (untyped) -> Trends::History::Day
+    def aggregate: (untyped) -> Trends::History::Aggregate
+    def each: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | [untyped, untyped, untyped, untyped, untyped, untyped, untyped])
+    def as_json: (*untyped) -> Array[untyped]
+    class Aggregate
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class Day
+      def initialize: (untyped, untyped, untyped) -> void
+      def as_json: () -> { day: untyped, accounts: untyped, uses: untyped }
+      def key_for: (untyped) -> (String | nil)
+      def key_prefix: () -> String
+    end
+  end
+end

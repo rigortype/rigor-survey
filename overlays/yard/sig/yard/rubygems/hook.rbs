@@ -1,0 +1,11 @@
+module YARD
+  class RubygemsHook
+    def self.removal_hook: (untyped) -> top
+    def self.load_yard: () -> (Gem::Version | nil)
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def setup: () -> top
+    def uninstall_yard: () -> top
+    def uninstall_yri: () -> top
+    def remove: () -> top
+  end
+end

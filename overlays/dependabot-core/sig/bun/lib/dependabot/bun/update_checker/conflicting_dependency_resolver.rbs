@@ -1,0 +1,10 @@
+module Dependabot
+  module Bun
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class ConflictingDependencyResolver
+        def initialize: (dependency_files: untyped, credentials: untyped) -> void
+        def conflicting_dependencies: (dependency: untyped, target_version: untyped) -> Array[Dependabot::UpdateCheckers::Conflict]
+      end
+    end
+  end
+end

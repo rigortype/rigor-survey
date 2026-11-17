@@ -1,0 +1,5 @@
+module Oj
+  class EasyHash < ::Hash[untyped, untyped]
+    def respond_to?: (untyped, ?untyped) -> (false | true)
+  end
+end

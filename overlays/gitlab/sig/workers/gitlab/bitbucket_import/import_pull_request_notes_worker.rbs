@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketImport
+    class ImportPullRequestNotesWorker
+      def importer_class: () -> singleton(Gitlab::BitbucketImport::Importers::PullRequestNotesImporter)
+    end
+  end
+end

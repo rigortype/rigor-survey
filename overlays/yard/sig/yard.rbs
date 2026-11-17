@@ -1,0 +1,8 @@
+module YARD
+  def self.load_plugins: () -> (false | true)
+  def self.ruby18?: () -> (false | true)
+  def self.ruby19?: () -> (false | true)
+  def self.ruby2?: () -> (false | true)
+  def self.ruby3?: () -> (false | true)
+  def self.ruby31?: () -> (false | true)
+end

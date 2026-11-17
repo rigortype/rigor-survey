@@ -1,0 +1,7 @@
+module WorkItems
+  module DataSync
+    class MoveService < ::WorkItems::DataSync::BaseService
+      def initialize: (work_item: untyped, target_namespace: untyped, ?current_user: untyped, ?params: untyped, ?skip_work_item_type_check: (false | true)) -> void
+    end
+  end
+end

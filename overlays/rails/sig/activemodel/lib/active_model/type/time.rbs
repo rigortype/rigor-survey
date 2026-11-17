@@ -1,0 +1,7 @@
+module ActiveModel
+  module Type
+    class Time < ::ActiveModel::Type::Value
+      def type: () -> :time
+    end
+  end
+end

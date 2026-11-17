@@ -1,0 +1,8 @@
+module Import
+  module BulkImports
+    class RemoveExportUploadsService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

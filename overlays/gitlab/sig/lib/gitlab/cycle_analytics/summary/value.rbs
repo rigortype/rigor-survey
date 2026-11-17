@@ -1,0 +1,17 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class Value
+        def to_s: () -> bot
+        class None
+          def raw_value: () -> 0
+          def to_i: () -> 0
+          def to_s: () -> "-"
+        end
+        class Numeric
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

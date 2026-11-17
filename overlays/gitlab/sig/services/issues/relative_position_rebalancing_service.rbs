@@ -1,0 +1,6 @@
+module Issues
+  class RelativePositionRebalancingService
+    def initialize: (untyped) -> void
+    def caching: () -> Gitlab::Issues::Rebalancing::State
+  end
+end

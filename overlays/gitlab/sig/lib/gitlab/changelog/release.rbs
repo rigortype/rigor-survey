@@ -1,0 +1,9 @@
+module Gitlab
+  module Changelog
+    class Release
+      def initialize: (version: untyped, date: Time, config: untyped) -> void
+      def to_markdown: () -> String
+      def header_start_pattern: () -> Regexp
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Dependabot
+  module Python
+    module NameNormaliser
+      def self.normalise_including_extras: (untyped, untyped) -> String
+    end
+  end
+end

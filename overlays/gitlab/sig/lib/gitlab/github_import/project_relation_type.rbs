@@ -1,0 +1,8 @@
+module Gitlab
+  module GithubImport
+    class ProjectRelationType
+      def initialize: (untyped) -> void
+      def for: (untyped) -> ("collaborated" | "organization" | "owned")
+    end
+  end
+end

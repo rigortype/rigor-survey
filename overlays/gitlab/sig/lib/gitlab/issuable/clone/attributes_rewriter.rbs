@@ -1,0 +1,10 @@
+module Gitlab
+  module Issuable
+    module Clone
+      class AttributesRewriter
+        def initialize: (untyped, untyped, untyped) -> void
+        def execute: (?include_milestone: (false | true)) -> (Hash[untyped, untyped] | { label_ids: untyped })
+      end
+    end
+  end
+end

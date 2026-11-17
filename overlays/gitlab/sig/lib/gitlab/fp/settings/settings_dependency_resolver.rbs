@@ -1,0 +1,9 @@
+module Gitlab
+  module Fp
+    module Settings
+      class SettingsDependencyResolver
+        def self.resolve: (untyped, untyped) -> Array[untyped]
+      end
+    end
+  end
+end

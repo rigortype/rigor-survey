@@ -1,0 +1,7 @@
+module Mutations
+  module Ci
+    class NamespaceSettingsUpdate < ::Mutations::BaseMutation
+      def resolve: (full_path: untyped, **untyped) -> { ci_cd_settings: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

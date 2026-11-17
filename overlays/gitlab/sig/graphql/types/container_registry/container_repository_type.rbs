@@ -1,0 +1,7 @@
+module Types
+  module ContainerRegistry
+    class ContainerRepositoryType < ::Types::BaseObject
+      def migration_state: () -> ""
+    end
+  end
+end

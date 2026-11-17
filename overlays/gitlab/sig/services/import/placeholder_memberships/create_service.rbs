@@ -1,0 +1,9 @@
+module Import
+  module PlaceholderMemberships
+    class CreateService
+      def initialize: (source_user: untyped, access_level: untyped, ?expires_at: untyped, ?group: untyped, ?project: untyped, ?ignore_duplicate_errors: untyped) -> void
+      def execute: () -> ServiceResponse
+      def reference: () -> Import::Placeholders::Membership
+    end
+  end
+end

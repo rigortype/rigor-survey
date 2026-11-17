@@ -1,0 +1,4 @@
+class PageImagePolicy < ::Policy
+  def index?: () -> true
+  def show?: () -> true
+end

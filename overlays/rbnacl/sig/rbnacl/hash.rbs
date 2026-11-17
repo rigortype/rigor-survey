@@ -1,0 +1,7 @@
+module RbNaCl
+  module Hash
+    def self.sha256: (untyped) -> String
+    def self.sha512: (untyped) -> String
+    def self.blake2b: (untyped, ?untyped) -> String
+  end
+end

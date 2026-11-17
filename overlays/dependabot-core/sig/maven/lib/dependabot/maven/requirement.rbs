@@ -1,0 +1,8 @@
+module Dependabot
+  module Maven
+    class Requirement < ::Dependabot::Maven::Shared::SharedRequirement
+      def self.pattern: () -> Regexp
+      def self.ruby_style_pattern: () -> Regexp
+    end
+  end
+end

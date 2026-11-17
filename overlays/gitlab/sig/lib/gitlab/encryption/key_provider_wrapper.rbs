@@ -1,0 +1,7 @@
+module Gitlab
+  module Encryption
+    class KeyProviderWrapper
+      def initialize: (untyped) -> void
+    end
+  end
+end

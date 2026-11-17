@@ -1,0 +1,17 @@
+module Mail
+  module Parsers
+    module ContentDispositionParser
+      def self.parse: (untyped) -> Mail::Parsers::ContentDispositionParser::ContentDispositionStruct
+      class ContentDispositionStruct < ::Struct[untyped]
+        def disposition_type: () -> untyped
+        def parameters: () -> untyped
+        def error: () -> untyped
+        def disposition_type=: (untyped) -> untyped
+        def parameters=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?disposition_type: untyped, ?parameters: untyped, ?error: untyped) -> instance | (?untyped disposition_type, ?untyped parameters, ?untyped error) -> instance
+        def self.[]: (?disposition_type: untyped, ?parameters: untyped, ?error: untyped) -> instance | (?untyped disposition_type, ?untyped parameters, ?untyped error) -> instance
+      end
+    end
+  end
+end

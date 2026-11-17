@@ -1,0 +1,5 @@
+module FastDestroyAll
+  module Helpers
+    def perform_fast_destroy: (untyped) -> true
+  end
+end

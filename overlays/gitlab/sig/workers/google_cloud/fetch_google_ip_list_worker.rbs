@@ -1,0 +1,5 @@
+module GoogleCloud
+  class FetchGoogleIpListWorker
+    def perform: () -> Hash[untyped, untyped]
+  end
+end

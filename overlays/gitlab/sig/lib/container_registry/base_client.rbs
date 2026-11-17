@@ -1,0 +1,5 @@
+module ContainerRegistry
+  class BaseClient
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

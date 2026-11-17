@@ -1,0 +1,8 @@
+module Liquid
+  class Profiler
+    class Timing
+      def initialize: (?code: untyped, ?template_name: untyped, ?line_number: untyped) -> void
+      def children: () -> Array[untyped]
+    end
+  end
+end

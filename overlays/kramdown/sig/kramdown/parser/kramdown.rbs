@@ -1,0 +1,21 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def initialize: (untyped, untyped) -> void
+      def parse: () -> Integer
+      def self.define_parser: (untyped, untyped, ?untyped, ?untyped) -> ::Kramdown::Parser::Kramdown::Data
+      class Data < ::Struct[untyped]
+        def name: () -> untyped
+        def start_re: () -> untyped
+        def span_start: () -> untyped
+        def method: () -> untyped
+        def name=: (untyped) -> untyped
+        def start_re=: (untyped) -> untyped
+        def span_start=: (untyped) -> untyped
+        def method=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?start_re: untyped, ?span_start: untyped, ?method: untyped) -> instance | (?untyped name, ?untyped start_re, ?untyped span_start, ?untyped method) -> instance
+        def self.[]: (?name: untyped, ?start_re: untyped, ?span_start: untyped, ?method: untyped) -> instance | (?untyped name, ?untyped start_re, ?untyped span_start, ?untyped method) -> instance
+      end
+    end
+  end
+end

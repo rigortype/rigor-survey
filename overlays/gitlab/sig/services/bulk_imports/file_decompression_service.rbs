@@ -1,0 +1,8 @@
+module BulkImports
+  class FileDecompressionService
+    def initialize: (tmpdir: untyped, filename: untyped, ?context: untyped) -> void
+    def filepath: () -> String
+    def decompressed_filename: () -> String
+    def decompressed_filepath: () -> String
+  end
+end

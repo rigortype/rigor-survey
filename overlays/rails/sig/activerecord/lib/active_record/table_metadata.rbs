@@ -1,0 +1,6 @@
+module ActiveRecord
+  class TableMetadata
+    def initialize: (untyped, untyped) -> void
+    def associated_table: (untyped) -> ActiveRecord::TableMetadata
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module SQL
+    class Intersect < ::Gitlab::SQL::SetOperator
+      def self.operator_keyword: () -> "INTERSECT"
+    end
+  end
+end

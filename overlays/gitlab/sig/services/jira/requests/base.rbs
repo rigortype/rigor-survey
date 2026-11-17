@@ -1,0 +1,8 @@
+module Jira
+  module Requests
+    class Base
+      def initialize: (untyped, ?untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

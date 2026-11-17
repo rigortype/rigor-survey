@@ -1,0 +1,15 @@
+module Dependabot
+  module Config
+    class UpdateConfig
+      def initialize: (?ignore_conditions: untyped, ?commit_message_options: untyped, ?exclude_paths: untyped) -> void
+      def ignored_versions_for: (untyped, ?security_updates_only: untyped) -> Array[untyped]
+      def extract_base_version_from_requirement: (untyped) -> Dependabot::Dependency
+      def self.wildcard_match?: (untyped, untyped) -> (false | true)
+      def ignore_conditions: () -> Array[::IgnoreCondition]
+      class CommitMessageOptions
+        def initialize: (prefix: untyped, prefix_development: untyped, include: untyped) -> void
+        def to_h: () -> { prefix: untyped, prefix_development: untyped, include_scope: false | true }
+      end
+    end
+  end
+end

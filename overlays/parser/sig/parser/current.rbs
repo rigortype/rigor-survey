@@ -1,0 +1,3 @@
+module Parser
+  def self.warn_syntax_deviation: (untyped, untyped) -> nil
+end

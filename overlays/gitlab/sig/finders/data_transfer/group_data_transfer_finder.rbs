@@ -1,0 +1,5 @@
+module DataTransfer
+  class GroupDataTransferFinder
+    def initialize: (group: untyped, from: untyped, to: untyped, user: untyped) -> void
+  end
+end

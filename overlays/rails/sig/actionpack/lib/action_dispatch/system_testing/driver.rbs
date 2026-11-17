@@ -1,0 +1,7 @@
+module ActionDispatch
+  module SystemTesting
+    class Driver
+      def initialize: (untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

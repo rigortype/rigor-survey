@@ -1,0 +1,4 @@
+class ArmstrongNumbers
+  def self.include?: (untyped) -> (false | true)
+  def self.number_of_digits: (untyped) -> Integer
+end

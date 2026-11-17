@@ -1,0 +1,11 @@
+module Gitlab
+  class Logger < ::Logger
+    def self.debug: (untyped) -> true
+    def self.error: (untyped) -> true
+    def self.warn: (untyped) -> true
+    def self.info: (untyped) -> true
+    def self.read_latest: () -> Array[String]
+    def self.build: () -> Gitlab::Logger
+    def self.cache_key: () -> String
+  end
+end

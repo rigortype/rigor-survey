@@ -1,0 +1,9 @@
+module Gitlab
+  module Composer
+    class VersionIndex
+      def initialize: (untyped) -> void
+      def as_json: (?untyped) -> Hash[String, Hash[untyped, Hash[untyped, untyped]]]
+      def sha: () -> String
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module Pipelines
+    class CreatePersistentRefService
+      def initialize: (untyped) -> void
+    end
+  end
+end

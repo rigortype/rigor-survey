@@ -1,0 +1,5 @@
+module SupplyChain
+  class PostgresCaDriver < ::SupplyChain::RootCaDriver
+    def initialize: (untyped) -> void
+  end
+end

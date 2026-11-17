@@ -1,0 +1,6 @@
+module ClickHouse
+  class Migration
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def migrate: (untyped) -> nil
+  end
+end

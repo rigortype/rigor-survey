@@ -1,0 +1,9 @@
+module Sidebars
+  module Concerns
+    module HasPartial
+      def menu_partial: () -> nil
+      def menu_partial_options: () -> {}
+      def menu_with_partial?: () -> false
+    end
+  end
+end

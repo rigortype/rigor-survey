@@ -1,0 +1,4 @@
+class BadMatchTable
+  def initialize: (untyped) -> void
+  def table: () -> Hash[untyped, untyped]
+end

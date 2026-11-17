@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Transport
+      class ServerVersion
+        def initialize: (untyped, nil, ?untyped) -> void
+        def header: () -> String
+      end
+    end
+  end
+end

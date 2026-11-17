@@ -1,0 +1,8 @@
+module Gitlab
+  class BatchWorkerContext
+    def initialize: ([String, String], arguments_proc: Proc, context_proc: Proc) -> void
+    def objects: () -> ["hello", "world"]
+    def arguments_proc: () -> Proc
+    def context_proc: () -> Proc
+  end
+end

@@ -1,0 +1,11 @@
+module ActionView
+  module Helpers
+    module TextHelper
+      def pluralize: (untyped, untyped, ?untyped, ?plural: untyped, ?locale: untyped) -> String
+      class Cycle
+        def initialize: (untyped, *untyped) -> void
+        def reset: () -> 0
+      end
+    end
+  end
+end

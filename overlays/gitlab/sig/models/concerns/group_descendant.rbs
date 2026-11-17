@@ -1,0 +1,3 @@
+module GroupDescendant
+  def hierarchy: (?untyped, ?untyped, ?untyped) -> GroupDescendant
+end

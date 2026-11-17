@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    module ComponentFile
+      def self.container_foreign_key: () -> Symbol
+      def relative_path: () -> (String | nil)
+    end
+  end
+end

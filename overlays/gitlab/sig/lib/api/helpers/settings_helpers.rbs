@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module SettingsHelpers
+      def self.optional_attributes: () -> Array[untyped]
+    end
+  end
+end

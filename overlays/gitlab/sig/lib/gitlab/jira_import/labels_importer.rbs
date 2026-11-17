@@ -1,0 +1,8 @@
+module Gitlab
+  module JiraImport
+    class LabelsImporter < ::Gitlab::JiraImport::BaseImporter
+      def initialize: (untyped) -> void
+      def job_waiter: () -> Gitlab::JobWaiter
+    end
+  end
+end

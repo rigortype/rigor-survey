@@ -1,0 +1,7 @@
+module Mutations
+  module Packages
+    class DestroyFile < ::Mutations::BaseMutation
+      def resolve: (id: untyped) -> ({ errors: untyped } | { errors: [untyped] } | { errors: [] })
+    end
+  end
+end

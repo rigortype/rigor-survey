@@ -1,0 +1,10 @@
+module Dependabot
+  class Job
+    class CooldownDefinition < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::CooldownDefinition
+      def to_options: (default_days: untyped) -> Dependabot::Package::ReleaseCooldownOptions
+      def self.optional_integer: (untyped, untyped) -> (Integer | nil)
+      def self.string_array: (untyped, untyped) -> Array[String]
+    end
+  end
+end

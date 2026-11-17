@@ -1,0 +1,10 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class DependencySetUpdater
+        def initialize: (dependency_files: untyped) -> void
+        def update_files_for_dep_set_change: (dependency_set: untyped, buildfile: untyped, previous_requirement: untyped, updated_requirement: untyped) -> Array[Dependabot::DependencyFile]
+      end
+    end
+  end
+end

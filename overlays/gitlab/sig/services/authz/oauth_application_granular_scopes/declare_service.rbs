@@ -1,0 +1,8 @@
+module Authz
+  module OauthApplicationGranularScopes
+    class DeclareService
+      def initialize: (current_user: untyped, application: untyped, inputs: untyped, ?access_token: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

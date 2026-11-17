@@ -1,0 +1,15 @@
+module ActionView
+  module Helpers
+    module DateHelper
+      def select_datetime: (?untyped, ?untyped, ?untyped) -> ActiveSupport::SafeBuffer
+      def select_date: (?untyped, ?untyped, ?untyped) -> ActiveSupport::SafeBuffer
+      def select_time: (?untyped, ?untyped, ?untyped) -> ActiveSupport::SafeBuffer
+    end
+    class DateTimeSelector
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+      def select_datetime: () -> ActiveSupport::SafeBuffer
+      def select_date: () -> ActiveSupport::SafeBuffer
+      def select_time: () -> ActiveSupport::SafeBuffer
+    end
+  end
+end

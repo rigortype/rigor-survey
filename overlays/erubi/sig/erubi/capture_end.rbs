@@ -1,0 +1,5 @@
+module Erubi
+  class CaptureEndEngine < ::Erubi::Engine
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

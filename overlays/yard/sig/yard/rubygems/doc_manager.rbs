@@ -1,0 +1,6 @@
+module Gem
+  class DocManager
+    def self.load_yardoc: () -> (false | true)
+    def setup_rdoc: () -> (false | nil | true)
+  end
+end

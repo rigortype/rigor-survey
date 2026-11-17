@@ -1,0 +1,7 @@
+module Packages
+  module Helm
+    class CreatePackageFileService < ::Packages::CreatePackageFileService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

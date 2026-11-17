@@ -1,0 +1,7 @@
+module Gitlab
+  module Organizations
+    class IsolationStatus
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Types
+  module Ci
+    class PipelineType < ::Types::BaseObject
+      def commit_author_gravatar: () -> (String | nil)
+      def type: () -> ("branch" | "merge_request" | "merge_train" | "merged_result" | "tag")
+    end
+  end
+end

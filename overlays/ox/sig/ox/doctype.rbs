@@ -1,0 +1,5 @@
+module Ox
+  class DocType < ::Ox::Node
+    def initialize: (String) -> void
+  end
+end

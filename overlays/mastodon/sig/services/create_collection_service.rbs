@@ -1,0 +1,3 @@
+class CreateCollectionService
+  def call: (untyped, untyped) -> (Collection | nil)
+end

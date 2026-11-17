@@ -1,0 +1,9 @@
+module Mastodon
+  module CLI
+    class Maintenance < ::Mastodon::CLI::Base
+      class Account < ::ApplicationRecord
+        def local?: () -> (false | true)
+      end
+    end
+  end
+end

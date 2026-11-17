@@ -1,0 +1,9 @@
+module BulkImports
+  module Common
+    module Pipelines
+      class WikiPipeline
+        def extract: (*untyped) -> BulkImports::Pipeline::ExtractedData
+      end
+    end
+  end
+end

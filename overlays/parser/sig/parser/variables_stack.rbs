@@ -1,0 +1,7 @@
+module Parser
+  class VariablesStack
+    def empty?: () -> (false | true)
+    def push: () -> Array[untyped]
+    def reset: () -> Array[untyped]
+  end
+end

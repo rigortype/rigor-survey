@@ -1,0 +1,7 @@
+module Ox
+  class InvalidPath < ::Ox::Error
+    def initialize: (untyped) -> void
+  end
+  class Error < ::StandardError
+  end
+end

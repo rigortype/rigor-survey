@@ -1,0 +1,9 @@
+module Gitlab
+  module Utils
+    class UsernameAndEmailGenerator
+      def initialize: (username_prefix: untyped, ?email_domain: untyped, ?random_segment: String) -> void
+      def email: () -> String
+      def random_segment: () -> "random"
+    end
+  end
+end

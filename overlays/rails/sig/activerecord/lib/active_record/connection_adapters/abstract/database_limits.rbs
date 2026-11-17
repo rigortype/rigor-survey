@@ -1,0 +1,7 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module DatabaseLimits
+      def max_identifier_length: () -> 64
+    end
+  end
+end

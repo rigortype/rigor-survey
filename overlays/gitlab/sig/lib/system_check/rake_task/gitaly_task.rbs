@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    class GitalyTask
+      def self.name: () -> "Gitaly"
+      def self.checks: () -> [singleton(SystemCheck::GitalyCheck)]
+    end
+  end
+end

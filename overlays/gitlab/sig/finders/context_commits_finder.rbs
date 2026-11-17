@@ -1,0 +1,3 @@
+class ContextCommitsFinder
+  def initialize: (untyped, untyped, ?{ author: String } | { committed_before: Integer, committed_after: Integer } | { search: untyped } | { search: String }) -> void
+end

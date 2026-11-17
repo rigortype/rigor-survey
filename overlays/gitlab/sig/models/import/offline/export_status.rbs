@@ -1,0 +1,13 @@
+module Import
+  module Offline
+    class ExportStatus < ::Import::ExportStatus
+      def initialize: (untyped, untyped) -> void
+      def in_progress?: () -> false
+      def waiting_on_export?: () -> false
+      def batched?: () -> (false | true)
+      def batch_error: (untyped) -> (String | nil)
+      def total_objects_count: () -> 0
+      def client: () -> Import::Clients::ObjectStorage
+    end
+  end
+end

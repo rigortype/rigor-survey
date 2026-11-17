@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      class State
+        def initialize: (untyped, untyped) -> void
+        def encode: () -> String
+        def new_line!: (?timestamps: untyped, ?offset: untyped, ?style: untyped) -> Gitlab::Ci::Ansi2json::Line
+      end
+    end
+  end
+end

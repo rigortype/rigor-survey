@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class RunnerInstructions
+      def initialize: (os: untyped, arch: untyped) -> void
+      def install_script: () -> (String | nil)
+      def register_command: () -> (String | nil)
+      def errors: () -> Array[untyped]
+      class ArgumentError < ::ArgumentError
+      end
+    end
+  end
+end

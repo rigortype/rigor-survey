@@ -1,0 +1,8 @@
+module ActiveSupport
+  class KeyGenerator
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class CachingKeyGenerator
+    def initialize: (untyped) -> void
+  end
+end

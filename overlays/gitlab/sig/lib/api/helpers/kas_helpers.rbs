@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module KasHelpers
+      def gitaly_info: (untyped) -> Hash[String, untyped]
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Backup
+  class Manager
+    def initialize: (untyped, ?backup_tasks: untyped) -> void
+    def create: () -> (false | true)
+    def run_create_task: (untyped) -> (false | true)
+    def verify!: () -> bot
+    def run_restore_task: (untyped) -> nil
+    def remote_storage: () -> Backup::RemoteStorage
+    def options: () -> Backup::Options
+    def logger: () -> Gitlab::BackupLogger
+  end
+end

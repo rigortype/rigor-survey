@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class CleanupStaleSymbolsWorker
+      def max_running_jobs: () -> 2
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class FindingSignature
+          def initialize: (?untyped) -> void
+          def signature_sha: () -> String
+          def signature_hex: () -> String
+          def to_hash: () -> { algorithm_type: untyped, signature_sha: String }
+        end
+      end
+    end
+  end
+end

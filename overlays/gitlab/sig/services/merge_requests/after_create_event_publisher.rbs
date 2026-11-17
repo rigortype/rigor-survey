@@ -1,0 +1,5 @@
+module MergeRequests
+  class AfterCreateEventPublisher
+    def initialize: (untyped) -> void
+  end
+end

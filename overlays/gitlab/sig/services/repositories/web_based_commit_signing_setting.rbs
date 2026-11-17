@@ -1,0 +1,6 @@
+module Repositories
+  class WebBasedCommitSigningSetting
+    def initialize: (untyped) -> void
+    def sign_commits?: () -> true
+  end
+end

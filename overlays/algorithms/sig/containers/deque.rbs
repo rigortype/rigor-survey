@@ -1,0 +1,20 @@
+module Containers
+  class RubyDeque
+    def initialize: (?untyped) -> void
+    def empty?: () -> (false | true)
+    def clear: () -> 0
+    def size: () -> (0 | Integer)
+    def each_forward: () -> nil
+    def each_backward: () -> nil
+    class Node < ::Struct[untyped]
+      def left: () -> untyped
+      def right: () -> untyped
+      def obj: () -> untyped
+      def left=: (untyped) -> untyped
+      def right=: (untyped) -> untyped
+      def obj=: (untyped) -> untyped
+      def self.new: (?left: untyped, ?right: untyped, ?obj: untyped) -> instance | (?untyped left, ?untyped right, ?untyped obj) -> instance
+      def self.[]: (?left: untyped, ?right: untyped, ?obj: untyped) -> instance | (?untyped left, ?untyped right, ?untyped obj) -> instance
+    end
+  end
+end

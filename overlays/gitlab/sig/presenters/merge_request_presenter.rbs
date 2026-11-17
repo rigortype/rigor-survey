@@ -1,0 +1,5 @@
+class MergeRequestPresenter < ::Gitlab::View::Presenter::Delegated
+  def can_push_to_source_branch?: () -> (false | true)
+  def approvals_widget_type: () -> "base"
+  def pipeline_coverage_delta: () -> (String | nil)
+end

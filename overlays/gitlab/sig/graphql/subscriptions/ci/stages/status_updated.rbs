@@ -1,0 +1,9 @@
+module Subscriptions
+  module Ci
+    module Stages
+      class StatusUpdated < ::Subscriptions::BaseSubscription
+        def authorized?: (stage_id: untyped) -> true
+      end
+    end
+  end
+end

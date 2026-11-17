@@ -1,0 +1,7 @@
+module IncidentManagement
+  module PagerDuty
+    class ProcessIncidentWorker
+      def perform: (untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    end
+  end
+end

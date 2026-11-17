@@ -1,0 +1,6 @@
+module Banzai
+  class UploadsFinder
+    def initialize: (parent: untyped) -> void
+    def execute: () -> ActiveRecord::Relation[Upload]
+  end
+end

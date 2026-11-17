@@ -1,0 +1,66 @@
+module ActiveRecord
+  module Reflection
+    module ClassMethods
+      def clear_reflections_cache: () -> nil
+    end
+    class AbstractReflection
+      def through_reflection?: () -> false
+      def check_validity_of_inverse!: () -> nil
+      def alias_candidate: (untyped) -> String
+    end
+    class MacroReflection < ::ActiveRecord::Reflection::AbstractReflection
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+    class AssociationReflection < ::ActiveRecord::Reflection::MacroReflection
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def association_route_chain: (?origin_class: untyped, ?destination_class: untyped) -> [untyped]
+      def foreign_key_definition: (?infer_from_inverse_of: untyped) -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+      def association_foreign_key_definition: () -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+      def check_validity!: () -> (nil | true)
+      def check_eager_loadable!: () -> nil
+      def through_reflection: () -> nil
+      def source_reflection: () -> ActiveRecord::Reflection::AssociationReflection
+      def collect_join_chain: () -> [ActiveRecord::Reflection::AssociationReflection]
+      def constraints: () -> ([untyped] | [])
+      def nested?: () -> false
+      def macro: () -> bot
+      def collection?: () -> false
+      def belongs_to?: () -> false
+      def has_one?: () -> false
+      def association_class: () -> bot
+      def deprecated?: () -> (false | true)
+    end
+    class HasManyReflection < ::ActiveRecord::Reflection::AssociationReflection
+      def macro: () -> :has_many
+      def collection?: () -> true
+      def association_class: () -> (singleton(ActiveRecord::Associations::HasManyAssociation) | singleton(ActiveRecord::Associations::HasManyThroughAssociation))
+    end
+    class HasOneReflection < ::ActiveRecord::Reflection::AssociationReflection
+      def macro: () -> :has_one
+      def has_one?: () -> true
+      def association_class: () -> (singleton(ActiveRecord::Associations::HasOneAssociation) | singleton(ActiveRecord::Associations::HasOneThroughAssociation))
+    end
+    class BelongsToReflection < ::ActiveRecord::Reflection::AssociationReflection
+      def macro: () -> :belongs_to
+      def belongs_to?: () -> true
+      def association_class: () -> (singleton(ActiveRecord::Associations::BelongsToAssociation) | singleton(ActiveRecord::Associations::BelongsToPolymorphicAssociation))
+    end
+    class HasAndBelongsToManyReflection < ::ActiveRecord::Reflection::AssociationReflection
+      def macro: () -> :has_and_belongs_to_many
+      def collection?: () -> true
+    end
+    class ThroughReflection < ::ActiveRecord::Reflection::AbstractReflection
+      def initialize: (untyped) -> void
+      def through_reflection?: () -> true
+      def association_route: (**untyped) -> bot
+      def check_validity!: () -> (nil | true)
+      def deprecated_nested_reflections: () -> Array[untyped]
+    end
+    class PolymorphicReflection < ::ActiveRecord::Reflection::AbstractReflection
+      def initialize: (untyped, untyped) -> void
+    end
+    class RuntimeReflection < ::ActiveRecord::Reflection::AbstractReflection
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module CustomEmoji
+    class Create < ::Mutations::BaseMutation
+      def resolve: (group_path: untyped, **untyped) -> { custom_emoji: untyped, errors: untyped }
+    end
+  end
+end

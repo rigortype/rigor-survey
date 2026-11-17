@@ -1,0 +1,3 @@
+class BulkImport < ::ApplicationRecord
+  def import_source: () -> (:gitlab_migration | :offline_transfer)
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        class Statement
+          def initialize: (untyped, ?untyped) -> void
+          def valid?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

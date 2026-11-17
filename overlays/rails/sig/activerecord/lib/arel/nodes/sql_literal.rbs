@@ -1,0 +1,9 @@
+module Arel
+  module Nodes
+    class SqlLiteral < ::String
+      def initialize: (untyped, ?retryable: untyped) -> void
+      def encode_with: (untyped) -> String
+      def +: (untyped) -> Arel::Nodes::Fragments
+    end
+  end
+end

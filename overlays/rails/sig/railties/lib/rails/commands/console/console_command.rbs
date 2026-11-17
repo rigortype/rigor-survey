@@ -1,0 +1,11 @@
+module Rails
+  class Console
+    def initialize: (untyped, ?untyped) -> void
+    def show_default_startup_banner: () -> nil
+  end
+  module Command
+    class ConsoleCommand < ::Rails::Command::Base
+      def initialize: (?untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

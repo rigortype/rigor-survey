@@ -1,0 +1,27 @@
+module Gitlab
+  module ImportExport
+    def export_path: (relative_path: untyped) -> String
+    def storage_path: () -> String
+    def import_upload_path: (filename: untyped) -> String
+    def project_filename: () -> "project.json"
+    def project_bundle_filename: () -> "project.bundle"
+    def lfs_objects_filename: () -> "lfs-objects.json"
+    def lfs_objects_storage: () -> "lfs-objects"
+    def wiki_repo_bundle_filename: () -> "project.wiki.bundle"
+    def design_repo_bundle_filename: () -> "project.design.bundle"
+    def snippet_repo_bundle_dir: () -> "snippets"
+    def snippets_repo_bundle_path: (untyped) -> String
+    def snippet_repo_bundle_filename_for: (untyped) -> String
+    def version_filename: () -> "VERSION"
+    def gitlab_version_filename: () -> "GITLAB_VERSION"
+    def gitlab_revision_filename: () -> "GITLAB_REVISION"
+    def export_filename: (exportable: untyped) -> String
+    def export_download_content_type: () -> "application/octet-stream"
+    def version: () -> "0.2.4"
+    def reset_tokens?: () -> true
+    def group_filename: () -> "group.json"
+    def group_wiki_repo_bundle_filename: (untyped) -> String
+    def group_wiki_repo_bundle_path: (untyped, untyped) -> String
+    def group_wiki_repo_bundle_full_path: (untyped, untyped) -> String
+  end
+end

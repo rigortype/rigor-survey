@@ -1,0 +1,5 @@
+module Integrations
+  module EnableSslVerification
+    def initialize_properties: () -> (nil | true)
+  end
+end

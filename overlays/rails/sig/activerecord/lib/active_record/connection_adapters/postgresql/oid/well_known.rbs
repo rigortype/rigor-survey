@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module OID
+        module WellKnown
+          def self.build_mappings_for: (untyped) -> { type_aliases: untyped, array_types: untyped, array_type_delimiters: untyped, range_types: untyped, domain_types: untyped, type_oids: untyped }
+        end
+      end
+    end
+  end
+end

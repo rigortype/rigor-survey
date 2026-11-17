@@ -1,0 +1,9 @@
+module Analytics
+  module CycleAnalytics
+    module Stages
+      class ListService < ::Analytics::CycleAnalytics::Stages::BaseService
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

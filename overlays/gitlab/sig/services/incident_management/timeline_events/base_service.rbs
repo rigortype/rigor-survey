@@ -1,0 +1,10 @@
+module IncidentManagement
+  module TimelineEvents
+    class BaseService
+      def success: (untyped) -> ServiceResponse
+      def error: (untyped) -> ServiceResponse
+      def error_no_permissions: () -> ServiceResponse
+      def error_in_save: (untyped) -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Repositories
+    class ContainerClassMismatchError < ::StandardError
+      def initialize: (untyped, untyped) -> void
+      def message: () -> String
+    end
+  end
+end

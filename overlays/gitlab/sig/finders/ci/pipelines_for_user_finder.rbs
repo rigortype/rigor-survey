@@ -1,0 +1,6 @@
+module Ci
+  class PipelinesForUserFinder
+    def initialize: (untyped, ?untyped) -> void
+    def execute: () -> ActiveRecord::Relation[Ci::Pipeline]
+  end
+end

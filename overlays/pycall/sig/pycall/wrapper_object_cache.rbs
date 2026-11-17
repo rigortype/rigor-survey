@@ -1,0 +1,10 @@
+module PyCall
+  class WrapperObjectCache
+    def initialize: (*untyped) -> void
+    def check_wrapper_object: (untyped) -> nil
+    class Key
+      def self.[]: (untyped) -> PyCall::WrapperObjectCache::Key
+      def initialize: (untyped) -> void
+    end
+  end
+end

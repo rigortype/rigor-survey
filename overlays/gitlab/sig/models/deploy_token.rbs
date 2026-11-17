@@ -1,0 +1,10 @@
+class DeployToken < ::ApplicationRecord
+  def self.prefix_for_deploy_token: () -> ("gldt-" | String)
+  def self.ordered_for_keyset_pagination: () -> ActiveRecord::Relation[DeployToken]
+  def active?: () -> (false | true)
+  def deactivated?: () -> (false | true)
+  def bot?: () -> true
+  def scopes: () -> Array[:read_package_registry | :read_registry | :read_repository | :read_virtual_registry | :write_package_registry | :write_registry | :write_virtual_registry]
+  def impersonated?: () -> false
+  def prefix_for_deploy_token: () -> ("gldt-" | String)
+end

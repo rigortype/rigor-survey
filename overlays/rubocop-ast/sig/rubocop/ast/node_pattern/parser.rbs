@@ -1,0 +1,10 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Parser < ::Racc::Parser
+        def initialize: (?untyped) -> void
+        def inspect: () -> String
+      end
+    end
+  end
+end

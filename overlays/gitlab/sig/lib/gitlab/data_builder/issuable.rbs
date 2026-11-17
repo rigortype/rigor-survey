@@ -1,0 +1,8 @@
+module Gitlab
+  module DataBuilder
+    class Issuable
+      def initialize: (untyped) -> void
+      def build: (?user: untyped, ?changes: untyped, ?action: untyped, ?actioned_at: untyped) -> (Hash[untyped, untyped] | { object_kind: untyped, event_type: untyped, user: untyped, project: untyped, object_attributes: untyped, labels: untyped, changes: untyped, repository: untyped })
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module PreCommit
+    class FileParser < ::Dependabot::FileParsers::Base
+      class HookLanguageFetcher
+        def initialize: (credentials: untyped) -> void
+        def fetch_language: (repo_url: untyped, revision: untyped, hook_id: untyped) -> (String | nil)
+      end
+    end
+  end
+end

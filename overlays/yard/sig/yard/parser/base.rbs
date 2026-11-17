@@ -1,0 +1,7 @@
+module YARD
+  module Parser
+    class Base
+      def initialize: (String, String) -> void
+    end
+  end
+end

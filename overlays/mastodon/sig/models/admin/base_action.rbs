@@ -1,0 +1,8 @@
+module Admin
+  class BaseAction
+    def save: () -> (false | true)
+    def save!: () -> nil
+    def report: () -> (Report | nil)
+    def with_report?: () -> (false | true)
+  end
+end

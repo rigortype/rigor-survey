@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Handlers
+        class PumaHandler
+          def initialize: (?{}) -> void
+          def call: () -> true
+        end
+      end
+    end
+  end
+end

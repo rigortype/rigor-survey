@@ -1,0 +1,6 @@
+module Banzai
+  module Renderer
+    def self.full_cache_key: (untyped, untyped) -> (Array[untyped] | nil)
+    def self.color_for_duration: (untyped, ?min: untyped, ?max: untyped) -> (:green | :orange | :red)
+  end
+end

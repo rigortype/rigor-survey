@@ -1,0 +1,7 @@
+module Types
+  module Notes
+    class DiffLineType < ::Types::BaseObject
+      def rich_text: () -> String
+    end
+  end
+end

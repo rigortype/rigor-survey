@@ -1,0 +1,9 @@
+module Dependabot
+  module Uv
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PyprojectPreparer
+        def initialize: (pyproject_content: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Resolvers
+  module Analytics
+    module CycleAnalytics
+      module ValueStreams
+        class StageItemsResolver < ::Resolvers::BaseResolver
+          def resolve: (?sort: untyped) -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+        end
+      end
+    end
+  end
+end

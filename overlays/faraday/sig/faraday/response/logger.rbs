@@ -1,0 +1,7 @@
+module Faraday
+  class Response
+    class Logger < ::Faraday::Middleware
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

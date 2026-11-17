@@ -1,0 +1,11 @@
+module Gitlab
+  module Graphs
+    class Commits
+      def initialize: ([untyped, untyped]) -> void
+      def commits: () -> [untyped, untyped]
+      def commits_per_week_days: () -> Hash[untyped, untyped]
+      def commits_per_time: () -> Hash[untyped, untyped]
+      def commits_per_month: () -> Hash[untyped, untyped]
+    end
+  end
+end

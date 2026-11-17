@@ -1,0 +1,5 @@
+module Ci
+  class Stage < ::Ci::ApplicationRecord
+    def groups: () -> Array[Ci::Group]
+  end
+end

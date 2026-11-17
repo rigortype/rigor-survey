@@ -1,0 +1,9 @@
+module Dependabot
+  module Sbt
+    module NativeHelpers
+      def self.coursier_path: () -> String
+      def self.native_helpers_root: () -> String
+      def self.clean_path: (untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqDaemon
+    class Monitor < ::Gitlab::Daemon
+      def thread_name: () -> "job_monitor"
+      def jobs: () -> Hash[untyped, untyped]
+      def self.cancel_job_key: (untyped) -> String
+    end
+  end
+end

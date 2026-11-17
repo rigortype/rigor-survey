@@ -1,0 +1,10 @@
+module Dependabot
+  module Swift
+    class FileParser < ::Dependabot::FileParsers::Base
+      class XcodeSpmResolver
+        def initialize: (xcode_resolved_files: untyped, pbxproj_files: untyped) -> void
+        def parse: () -> Array[::Dependency]
+      end
+    end
+  end
+end

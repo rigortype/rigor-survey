@@ -1,0 +1,7 @@
+module Gitlab
+  class ResourceUsageLimiter
+    def initialize: (?worker_name: untyped) -> void
+    def exceeded_limits: () -> Array[untyped]
+    def exceeded_limits?: () -> (false | true)
+  end
+end

@@ -1,0 +1,7 @@
+module PagesCore
+  module Admin
+    module AdminHelper
+      def qr_code: (untyped) -> ActiveSupport::SafeBuffer
+    end
+  end
+end

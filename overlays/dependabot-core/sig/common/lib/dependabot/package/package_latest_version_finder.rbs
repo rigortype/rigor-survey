@@ -1,0 +1,10 @@
+module Dependabot
+  module Package
+    class PackageLatestVersionFinder
+      def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?cooldown_options: untyped, ?raise_on_ignored: untyped, ?options: untyped) -> void
+      def latest_release: (?language_version: untyped) -> (Dependabot::Package::PackageRelease | nil)
+      def latest_version_with_no_unlock: (?language_version: untyped) -> (Dependabot::Version | nil)
+      def cooldown_tracker: () -> ::CooldownDateTracker
+    end
+  end
+end

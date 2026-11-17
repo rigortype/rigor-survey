@@ -1,0 +1,5 @@
+module Users
+  class ActivityService
+    def initialize: (author: untyped, ?namespace: untyped, ?project: untyped) -> void
+  end
+end

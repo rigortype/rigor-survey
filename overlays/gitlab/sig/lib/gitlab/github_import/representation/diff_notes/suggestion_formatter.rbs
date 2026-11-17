@@ -1,0 +1,16 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      module DiffNotes
+        class SuggestionFormatter
+          def initialize: (note: (String | nil), ?start_line: Integer, ?end_line: (Integer | nil), ?original_start_line: Integer, ?original_end_line: Integer) -> void
+          def note: () -> (String | nil)
+          def start_line: () -> (426 | 6)
+          def end_line: () -> (8 | nil)
+          def original_start_line: () -> 374
+          def original_end_line: () -> 375
+        end
+      end
+    end
+  end
+end

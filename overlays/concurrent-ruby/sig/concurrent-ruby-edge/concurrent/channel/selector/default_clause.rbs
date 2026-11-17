@@ -1,0 +1,10 @@
+module Concurrent
+  class Channel
+    class Selector
+      class DefaultClause
+        def initialize: (untyped) -> void
+        def execute: () -> Concurrent::Maybe
+      end
+    end
+  end
+end

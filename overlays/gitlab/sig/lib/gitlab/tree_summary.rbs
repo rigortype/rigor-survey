@@ -1,0 +1,7 @@
+module Gitlab
+  class TreeSummary
+    def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    def fetch_logs: () -> [untyped, untyped]
+    def resolved_commits: () -> Hash[untyped, untyped]
+  end
+end

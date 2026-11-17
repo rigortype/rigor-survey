@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class MlhsNode < ::RuboCop::AST::Node
+      def assignments: () -> Array[untyped]
+    end
+  end
+end

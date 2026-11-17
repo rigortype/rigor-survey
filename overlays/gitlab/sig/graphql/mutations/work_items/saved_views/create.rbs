@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module SavedViews
+      class Create < ::Mutations::BaseMutation
+        def resolve: (namespace_path: untyped, **untyped) -> ({ saved_view: untyped, errors: [] } | { saved_view: nil, errors: Array[untyped] | [] })
+      end
+    end
+  end
+end

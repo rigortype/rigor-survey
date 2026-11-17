@@ -1,0 +1,8 @@
+module Gitlab
+  module Organizations
+    class MaintenanceReadiness
+      def initialize: (untyped) -> void
+      def blocking_reason: () -> ("active CI jobs" | "active batched background migrations" | "pending migrations" | nil)
+    end
+  end
+end

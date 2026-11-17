@@ -1,0 +1,11 @@
+module Concurrent
+  class Throttle < ::Concurrent::Synchronization::Object
+    def initialize: (Integer) -> void
+    def try_acquire: () -> (false | nil | true)
+    def release: () -> (Concurrent::Throttle | nil)
+    def to_s: () -> String
+    class ProxyExecutor < ::Concurrent::Synchronization::Object
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

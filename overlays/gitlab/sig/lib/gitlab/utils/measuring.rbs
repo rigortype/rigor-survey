@@ -1,0 +1,10 @@
+module Gitlab
+  module Utils
+    class Measuring
+      def self.logger: () -> Gitlab::Logger
+      def initialize: (?untyped) -> void
+      def time_to_finish: () -> Float
+      def sql_calls_count: () -> (0 | Integer)
+    end
+  end
+end

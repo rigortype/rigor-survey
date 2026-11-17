@@ -1,0 +1,7 @@
+module Ci
+  class CancelPipelineService
+    def initialize: (pipeline: untyped, current_user: untyped, ?cascade_to_children: untyped, ?auto_canceled_by_pipeline: untyped, ?execute_async: untyped, ?safe_cancellation: untyped, ?rate_limit: (false | true)) -> void
+    def execute: () -> ServiceResponse
+    def force_execute: () -> ServiceResponse
+  end
+end

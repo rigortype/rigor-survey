@@ -1,0 +1,22 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class QueryIntent
+      def initialize: (adapter: untyped, ?arel: untyped, ?raw_sql: untyped, ?processed_sql: untyped, ?name: untyped, ?binds: untyped, ?prepare: untyped, ?allow_async: untyped, ?allow_retry: untyped, ?materialize_transactions: untyped, ?batch: untyped) -> void
+      def to_h: () -> { arel: untyped, raw_sql: untyped, processed_sql: untyped, name: untyped, binds: untyped, prepare: untyped, allow_async: untyped, allow_retry: untyped, materialize_transactions: untyped, batch: untyped, type_casted_binds: untyped, notification_payload: untyped }
+      def inspect: () -> String
+      def cancel: () -> (ActiveRecord::ActiveRecordError | nil)
+      def finish: () -> nil
+      def reset_for_retry: () -> nil
+      def raw_result_available?: () -> (false | true)
+      def event_buffer: () -> (ActiveRecord::ConnectionAdapters::QueryIntent::EventBuffer | nil)
+      def finalized: () -> (false | true)
+      class EventBuffer
+        def initialize: (untyped, untyped) -> void
+        def build_handle: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::QueryIntent::EventBuffer::DeferredHandle
+        class DeferredHandle
+          def initialize: (untyped, untyped, untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

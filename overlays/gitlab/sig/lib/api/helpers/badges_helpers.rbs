@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module BadgesHelpers
+      def badge_source_params: (untyped) -> { project: untyped }
+    end
+  end
+end

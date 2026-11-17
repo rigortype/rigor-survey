@@ -1,0 +1,5 @@
+class Account < ::ApplicationRecord
+  module Interactions
+    def not_following_anyone?: () -> (false | true)
+  end
+end

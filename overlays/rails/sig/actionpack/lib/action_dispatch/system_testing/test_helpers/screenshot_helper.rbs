@@ -1,0 +1,10 @@
+module ActionDispatch
+  module SystemTesting
+    module TestHelpers
+      module ScreenshotHelper
+        def take_screenshot: (?html: untyped, ?screenshot: untyped) -> nil
+        def take_failed_screenshot: () -> (String | nil)
+      end
+    end
+  end
+end

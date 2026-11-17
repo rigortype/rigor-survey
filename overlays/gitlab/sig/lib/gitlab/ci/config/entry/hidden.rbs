@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Hidden < ::Gitlab::Config::Entry::Node
+          def self.visible?: () -> false
+          def relevant?: () -> false
+        end
+      end
+    end
+  end
+end

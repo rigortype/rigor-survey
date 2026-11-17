@@ -1,0 +1,7 @@
+module Ci
+  class BulkDeleteExpiredJobArtifactsWorker
+    def self.max_running_jobs_limit: () -> 5
+    def remaining_work_count: () -> (0 | 999)
+    def max_running_jobs: () -> 5
+  end
+end

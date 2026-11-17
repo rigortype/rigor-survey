@@ -1,0 +1,5 @@
+module Packages
+  class CreatePackageFileService
+    def initialize: (untyped, untyped) -> void
+  end
+end

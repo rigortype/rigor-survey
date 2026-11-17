@@ -1,0 +1,6 @@
+module Resolvers
+  class ProjectResolver < ::Resolvers::BaseResolver
+    def self.target_type: () -> "project"
+    def self.complexity_multiplier: (untyped) -> 0
+  end
+end

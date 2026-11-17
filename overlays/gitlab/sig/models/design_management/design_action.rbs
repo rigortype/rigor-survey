@@ -1,0 +1,7 @@
+module DesignManagement
+  class DesignAction
+    def initialize: (untyped, untyped, ?untyped) -> void
+    def row_attrs: (untyped) -> { design_id: untyped, version_id: untyped, event: untyped }
+    def gitaly_action: () -> Hash[untyped, untyped]
+  end
+end

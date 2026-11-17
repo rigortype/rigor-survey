@@ -1,0 +1,5 @@
+class DiffDiscussion < ::Discussion
+  def self.note_class: () -> singleton(DiffNote)
+  def legacy_diff_discussion?: () -> false
+  def cache_key: () -> String
+end

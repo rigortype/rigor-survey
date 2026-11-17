@@ -1,0 +1,9 @@
+module Mutations
+  module Users
+    module PersonalAccessTokens
+      class Revoke < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> ({ errors: [untyped] } | { errors: [] })
+      end
+    end
+  end
+end

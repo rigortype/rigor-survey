@@ -1,0 +1,3 @@
+module ChronicDurationAttribute
+  def chronic_duration_attributes: () -> Hash[untyped, untyped]
+end

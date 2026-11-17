@@ -1,0 +1,10 @@
+module ActiveStorage
+  class Attached
+    module Changes
+      class DeleteOne
+        def initialize: (untyped, untyped) -> void
+        def attachment: () -> nil
+      end
+    end
+  end
+end

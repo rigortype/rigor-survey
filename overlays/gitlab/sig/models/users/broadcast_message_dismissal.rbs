@@ -1,0 +1,6 @@
+module Users
+  class BroadcastMessageDismissal < ::ApplicationRecord
+    def cookie_key: () -> String
+    def self.get_cookie_key: (untyped) -> String
+  end
+end

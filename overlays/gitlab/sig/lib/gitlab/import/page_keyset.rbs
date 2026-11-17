@@ -1,0 +1,8 @@
+module Gitlab
+  module Import
+    class PageKeyset
+      def initialize: (untyped, String | Symbol, untyped) -> void
+      def cache_key: () -> String
+    end
+  end
+end

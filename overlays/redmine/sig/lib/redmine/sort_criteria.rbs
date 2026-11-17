@@ -1,0 +1,6 @@
+module Redmine
+  class SortCriteria < ::Array[untyped]
+    def initialize: (?untyped) -> void
+    def to_a: () -> Array[untyped]
+  end
+end

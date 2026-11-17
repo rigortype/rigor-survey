@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    class DistributionsFinder
+      def initialize: (Symbol | nil, ?untyped) -> void
+      def container: () -> (:invalid | nil)
+    end
+  end
+end

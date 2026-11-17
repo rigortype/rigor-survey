@@ -1,0 +1,7 @@
+module Packages
+  module Npm
+    class CreateTagService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class WikiDiff < ::Redmine::Helpers::Diff
+  def initialize: (untyped, untyped) -> void
+end

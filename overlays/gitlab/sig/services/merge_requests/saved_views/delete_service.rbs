@@ -1,0 +1,8 @@
+module MergeRequests
+  module SavedViews
+    class DeleteService
+      def initialize: (untyped, current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

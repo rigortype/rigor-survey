@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Pipeline
+        class Factory < ::Gitlab::Ci::Status::Factory
+          def self.extended_statuses: () -> [[singleton(Gitlab::Ci::Status::SuccessWarning), singleton(Gitlab::Ci::Status::Pipeline::Delayed), singleton(Gitlab::Ci::Status::Pipeline::Blocked)]]
+          def self.common_helpers: () -> singleton(Gitlab::Ci::Status::Pipeline::Common)
+        end
+      end
+    end
+  end
+end

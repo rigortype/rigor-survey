@@ -1,0 +1,7 @@
+module Gitlab
+  module Emoji
+    module SkinTones
+      def to_h: () -> Hash[String, untyped]
+    end
+  end
+end

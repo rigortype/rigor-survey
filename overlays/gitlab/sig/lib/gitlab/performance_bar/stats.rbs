@@ -1,0 +1,7 @@
+module Gitlab
+  module PerformanceBar
+    class Stats
+      def initialize: (untyped) -> void
+    end
+  end
+end

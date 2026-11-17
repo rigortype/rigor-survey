@@ -1,0 +1,5 @@
+module Gitlab
+  module QueryLimiting
+    def self.enable!: () -> nil
+  end
+end

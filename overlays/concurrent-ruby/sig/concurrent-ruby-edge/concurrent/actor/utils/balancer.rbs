@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Utils
+      class Balancer < ::Concurrent::Actor::RestartingContext
+        def distribute: () -> nil
+      end
+    end
+  end
+end

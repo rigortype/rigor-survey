@@ -1,0 +1,13 @@
+module RGL
+  class EdmondsKarpAlgorithm
+    def initialize: (untyped, untyped) -> void
+    def maximum_flow: (untyped, untyped) -> Hash[untyped, Integer]
+    class EdmondsKarpBFSIterator < ::RGL::BFSIterator
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def reset: () -> {}
+    end
+  end
+  module Graph
+    def maximum_flow: (untyped, untyped, untyped) -> Hash[untyped, Integer]
+  end
+end

@@ -1,0 +1,7 @@
+module Clusters
+  module Kubernetes
+    class CreateOrUpdateNamespaceService
+      def initialize: (cluster: untyped, kubernetes_namespace: untyped) -> void
+    end
+  end
+end

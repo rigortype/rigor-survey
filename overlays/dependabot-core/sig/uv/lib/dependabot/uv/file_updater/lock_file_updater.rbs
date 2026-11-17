@@ -1,0 +1,10 @@
+module Dependabot
+  module Uv
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockFileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, ?index_urls: untyped, ?repo_contents_path: untyped, ?target_requirement: untyped) -> void
+        def updated_dependency_files: () -> (Array[Dependabot::DependencyFile] | nil)
+      end
+    end
+  end
+end

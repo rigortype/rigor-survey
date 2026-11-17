@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class Context
+      def key_provider: () -> ActiveRecord::Encryption::DerivedSecretKeyProvider
+    end
+  end
+end

@@ -1,0 +1,8 @@
+class MediaAttachment < ::ApplicationRecord
+  def focus: () -> (String | nil)
+  def self.identified: (untyped) -> MediaAttachment
+  def self.supported_mime_types: () -> ["image/jpeg", "image/png", "image/gif", "image/webp", "video/webm", "video/mp4", "video/quicktime", "video/ogg", "audio/wave", "audio/wav", "audio/x-wav", "audio/x-pn-wave", "audio/vnd.wave", "audio/ogg", "audio/vorbis", "audio/mpeg", "audio/mp3", "audio/webm", "audio/flac", "audio/aac", "audio/m4a", "audio/x-m4a", "audio/mp4", "audio/3gpp", "video/x-ms-asf"]
+  def self.supported_file_extensions: () -> [".jpg", ".jpeg", ".png", ".gif", ".webp", ".webm", ".mp4", ".m4v", ".mov", ".ogg", ".oga", ".mp3", ".wav", ".flac", ".opus", ".aac", ".m4a", ".3gp", ".wma"]
+  def self.file_styles: (untyped) -> ({ original: Hash[untyped, untyped], small: Hash[untyped, untyped] } | { original: { format: "mp3", content_type: "audio/mpeg", convert_options: { output: Hash[String, "fatal" | 2] } } } | { original: { pixels: 8294400, file_geometry_parser: singleton(FastGeometryParser) }, small: { pixels: 230400, file_geometry_parser: singleton(FastGeometryParser), blurhash: untyped } } | { small: untyped, original: untyped } | { small: { convert_options: { output: Hash[String | Symbol, "fatal" | "scale='min(640\\, iw):min(640\\, ih)':force_original_aspect_ratio=decrease"] }, format: "png", time: 0, file_geometry_parser: singleton(FastGeometryParser), blurhash: untyped }, original: untyped })
+  def self.file_processors: (untyped) -> ([:gif_transcoder, :blurhash_transcoder] | [:image_extractor, :transcoder, :type_corrector] | [:lazy_thumbnail, :blurhash_transcoder, :type_corrector] | [:transcoder, :blurhash_transcoder, :type_corrector])
+end

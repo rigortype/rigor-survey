@@ -1,0 +1,5 @@
+class OAuthMetadataPresenter < ::ActiveModelSerializers::Model
+  def service_documentation: () -> "https://docs.joinmastodon.org/"
+  def token_endpoint_auth_methods_supported: () -> ["client_secret_basic", "client_secret_post"]
+  def prompt_values_supported: () -> ["login", "create"]
+end

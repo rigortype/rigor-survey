@@ -1,0 +1,12 @@
+module Sidebars
+  module Projects
+    module Menus
+      class InfrastructureMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (false | true)
+        def extra_container_html_options: () -> { class: "shortcuts-infrastructure" }
+        def sprite_icon: () -> "cloud-gear"
+        def serialize_as_menu_item_args: () -> nil
+      end
+    end
+  end
+end

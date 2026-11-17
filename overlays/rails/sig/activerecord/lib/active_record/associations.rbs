@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Associations
+    def self.eager_load!: () -> nil
+    module ClassMethods
+      def has_and_belongs_to_many: (untyped, ?untyped, **untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::Reflection::HasAndBelongsToManyReflection
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Projects
+  class DeleteBranchWorker
+    def perform: (untyped, untyped, untyped) -> (ServiceResponse | nil)
+  end
+end

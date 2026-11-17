@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    module PathConverter
+      def self.git_url_for_path: (untyped) -> (String | nil)
+    end
+  end
+end

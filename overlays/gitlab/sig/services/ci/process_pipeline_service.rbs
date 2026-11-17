@@ -1,0 +1,6 @@
+module Ci
+  class ProcessPipelineService
+    def initialize: (untyped) -> void
+    def metrics: () -> singleton(Gitlab::Ci::Pipeline::Metrics)
+  end
+end

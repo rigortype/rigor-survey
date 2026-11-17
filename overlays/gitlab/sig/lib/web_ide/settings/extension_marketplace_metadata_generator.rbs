@@ -1,0 +1,11 @@
+module WebIde
+  module Settings
+    class ExtensionMarketplaceMetadataGenerator
+      def self.build_metadata: (user: untyped, marketplace_home_url: untyped) -> ({ enabled: false, disabled_reason: Symbol } | { enabled: true })
+      def self.disabled_reasons: () -> Hash[Symbol, Symbol]
+      def self.build_metadata_for_user: (user: untyped, marketplace_home_url: untyped) -> ({ enabled: false, disabled_reason: Symbol } | { enabled: true })
+      def self.metadata_enabled: () -> { enabled: true }
+      def self.metadata_disabled: (untyped) -> { enabled: false, disabled_reason: Symbol }
+    end
+  end
+end

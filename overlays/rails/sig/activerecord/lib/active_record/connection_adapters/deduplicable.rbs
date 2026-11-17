@@ -1,0 +1,10 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module Deduplicable
+      def deduplicate: () -> ActiveRecord::ConnectionAdapters::Deduplicable
+      module ClassMethods
+        def registry: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

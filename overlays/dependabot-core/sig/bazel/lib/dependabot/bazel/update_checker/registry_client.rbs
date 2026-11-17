@@ -1,0 +1,15 @@
+module Dependabot
+  module Bazel
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RegistryClient
+        def initialize: (credentials: untyped) -> void
+        def latest_module_version: (untyped) -> (String | nil)
+        def get_metadata: (untyped) -> (nil | Hash[String, untyped])
+        def get_source: (untyped, untyped) -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+        def get_module_bazel: (untyped, untyped) -> (String | nil)
+        def module_version_exists?: (untyped, untyped) -> (false | true)
+        def get_version_release_date: (untyped, untyped) -> (Time | nil)
+      end
+    end
+  end
+end

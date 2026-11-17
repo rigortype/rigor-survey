@@ -1,0 +1,4 @@
+class Date
+  def blank?: () -> false
+  def present?: () -> true
+end

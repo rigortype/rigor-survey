@@ -1,0 +1,8 @@
+module ContainerRegistry
+  module Protection
+    class DeleteTagRuleService
+      def initialize: (untyped, current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

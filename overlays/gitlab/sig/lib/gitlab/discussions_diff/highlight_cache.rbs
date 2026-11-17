@@ -1,0 +1,8 @@
+module Gitlab
+  module DiscussionsDiff
+    class HighlightCache
+      def self.cache_key_for: (untyped) -> String
+      def self.cache_key_prefix: () -> String
+    end
+  end
+end

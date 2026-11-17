@@ -1,0 +1,23 @@
+module Dependabot
+  module Python
+    class PipPackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+    class PoetryPackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?untyped) -> void
+      def raise_if_unsupported!: () -> nil
+    end
+    class PipCompilePackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+    class PipenvPackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+  end
+end

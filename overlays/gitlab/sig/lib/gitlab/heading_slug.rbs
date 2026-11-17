@@ -1,0 +1,5 @@
+module Gitlab
+  module HeadingSlug
+    def prefix_from_file_path: (untyped) -> (String | nil)
+  end
+end

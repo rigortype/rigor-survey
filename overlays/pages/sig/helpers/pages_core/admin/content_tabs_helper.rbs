@@ -1,0 +1,7 @@
+module PagesCore
+  module Admin
+    module ContentTabsHelper
+      def content_tabs: () -> Array[untyped]
+    end
+  end
+end

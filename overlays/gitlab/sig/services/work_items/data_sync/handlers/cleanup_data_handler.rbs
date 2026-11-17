@@ -1,0 +1,9 @@
+module WorkItems
+  module DataSync
+    module Handlers
+      class CleanupDataHandler
+        def initialize: (work_item: untyped, ?current_user: untyped, ?params: untyped) -> void
+      end
+    end
+  end
+end

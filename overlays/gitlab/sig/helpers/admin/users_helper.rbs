@@ -1,0 +1,8 @@
+module Admin
+  module UsersHelper
+    def admin_new_user_organization_field_app_data: () -> String
+    def organization_admin_edit_user_organization_field_app_data: (untyped) -> String
+    def email_otp_status_text: (untyped) -> ("No" | String)
+    def invite_organization_user_app_data: (untyped) -> String
+  end
+end

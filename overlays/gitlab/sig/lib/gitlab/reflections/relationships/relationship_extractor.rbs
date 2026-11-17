@@ -1,0 +1,9 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      class RelationshipExtractor
+        def extract: () -> Array[untyped]
+      end
+    end
+  end
+end

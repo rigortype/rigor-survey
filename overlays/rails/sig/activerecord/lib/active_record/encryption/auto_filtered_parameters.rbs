@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Encryption
+    class AutoFilteredParameters
+      def initialize: (untyped) -> void
+      def enable: () -> false
+    end
+  end
+end

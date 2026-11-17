@@ -1,0 +1,10 @@
+module Dependabot
+  module Bazel
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class BzlmodFileUpdater
+        def initialize: (dependency_files: untyped, dependencies: untyped, credentials: untyped) -> void
+        def updated_module_files: () -> Array[Dependabot::DependencyFile]
+      end
+    end
+  end
+end

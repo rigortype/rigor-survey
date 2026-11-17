@@ -1,0 +1,8 @@
+module Gitlab
+  module Email
+    module Handler
+      def self.handlers: () -> [singleton(Gitlab::Email::Handler::CreateNoteHandler), singleton(Gitlab::Email::Handler::CreateIssueHandler), singleton(Gitlab::Email::Handler::CreateNoteOnIssuableHandler), singleton(Gitlab::Email::Handler::UnsubscribeHandler), singleton(Gitlab::Email::Handler::CreateMergeRequestHandler), singleton(Gitlab::Email::Handler::ServiceDeskHandler)]
+      def self.load_handlers: () -> [singleton(Gitlab::Email::Handler::CreateNoteHandler), singleton(Gitlab::Email::Handler::CreateIssueHandler), singleton(Gitlab::Email::Handler::CreateNoteOnIssuableHandler), singleton(Gitlab::Email::Handler::UnsubscribeHandler), singleton(Gitlab::Email::Handler::CreateMergeRequestHandler), singleton(Gitlab::Email::Handler::ServiceDeskHandler)]
+    end
+  end
+end

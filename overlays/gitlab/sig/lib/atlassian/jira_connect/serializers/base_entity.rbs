@@ -1,0 +1,9 @@
+module Atlassian
+  module JiraConnect
+    module Serializers
+      class BaseEntity < ::Grape::Entity
+        def eql: (untyped) -> (false | true)
+      end
+    end
+  end
+end

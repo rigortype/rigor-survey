@@ -1,0 +1,26 @@
+module Gitlab
+  module EtagCaching
+    module Router
+      class Route < ::Struct[untyped]
+        def router: () -> untyped
+        def regexp: () -> untyped
+        def name: () -> untyped
+        def feature_category: () -> untyped
+        def caller_id: () -> untyped
+        def urgency: () -> untyped
+        def router=: (untyped) -> untyped
+        def regexp=: (untyped) -> untyped
+        def name=: (untyped) -> untyped
+        def feature_category=: (untyped) -> untyped
+        def caller_id=: (untyped) -> untyped
+        def urgency=: (untyped) -> untyped
+        def self.new: (?router: untyped, ?regexp: untyped, ?name: untyped, ?feature_category: untyped, ?caller_id: untyped, ?urgency: untyped) -> instance
+        def self.[]: (?router: untyped, ?regexp: untyped, ?name: untyped, ?feature_category: untyped, ?caller_id: untyped, ?urgency: untyped) -> instance
+      end
+      module Helpers
+        def build_graphql_route: (untyped, untyped, untyped) -> Gitlab::EtagCaching::Router::Route
+        def build_rails_route: (untyped, untyped, untyped, untyped) -> Gitlab::EtagCaching::Router::Route
+      end
+    end
+  end
+end

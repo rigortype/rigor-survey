@@ -1,0 +1,27 @@
+module Ci
+  class Pipeline < ::Ci::ApplicationRecord
+    def self.supported_keyset_orderings: () -> { created_at: [:desc] }
+    def self.object_hierarchy: (untyped, ?untyped) -> Gitlab::Ci::PipelineObjectHierarchy
+    def self.internal_id_scope_usage: () -> :ci_pipelines
+    def self.parse_transition_args: (untyped) -> ([untyped, Hash[untyped, untyped]] | [untyped, {}])
+    def retry_failed: (untyped) -> ServiceResponse
+    def set_failed: (untyped) -> "failed"
+    def variables_builder: () -> Gitlab::Ci::Variables::Builder
+    def all_merge_requests: () -> ActiveRecord::Relation[MergeRequest]
+    def related_merge_requests: () -> ActiveRecord::Relation[MergeRequest]
+    def environments_in_self_and_project_descendants: (?deployment_status: untyped) -> ActiveRecord::Relation[Environment]
+    def accessibility_reports: () -> Gitlab::Ci::Reports::AccessibilityReports
+    def accessible_accessibility_reports: (untyped) -> Gitlab::Ci::Reports::AccessibilityReports
+    def codequality_reports: () -> Gitlab::Ci::Reports::CodequalityReports
+    def accessible_codequality_reports: (untyped) -> Gitlab::Ci::Reports::CodequalityReports
+    def terraform_reports: () -> Gitlab::Ci::Reports::TerraformReports
+    def accessible_terraform_reports: (untyped) -> Gitlab::Ci::Reports::TerraformReports
+    def type: () -> ("branch" | "merge_request" | "merge_train" | "merged_result" | "tag")
+    def persistent_ref: () -> Ci::PersistentRef
+    def dangling?: () -> (false | true)
+    def only_workload_variables?: () -> (false | true)
+    def ci_config_ref_uri: () -> String
+    def merge_train_pipeline?: () -> false
+    def interruptible_protected?: () -> (false | true)
+  end
+end

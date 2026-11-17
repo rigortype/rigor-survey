@@ -1,0 +1,5 @@
+module Types
+  class AccessLevelType < ::Types::BaseObject
+    def human_access: () -> ("Developer" | "Guest" | "Maintainer" | "None" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+  end
+end

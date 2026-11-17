@@ -1,0 +1,7 @@
+module Ci
+  module PipelineSchedules
+    class VariablesUpdateService < ::Ci::PipelineSchedules::VariablesBaseSaveService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

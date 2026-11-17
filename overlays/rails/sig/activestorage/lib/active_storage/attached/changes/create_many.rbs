@@ -1,0 +1,9 @@
+module ActiveStorage
+  class Attached
+    module Changes
+      class CreateMany
+        def initialize: (untyped, untyped, untyped, ?pending_uploads: untyped) -> void
+      end
+    end
+  end
+end

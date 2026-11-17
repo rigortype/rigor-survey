@@ -1,0 +1,7 @@
+module Dependabot
+  module PreCommit
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::PreCommit::Requirement]
+    end
+  end
+end

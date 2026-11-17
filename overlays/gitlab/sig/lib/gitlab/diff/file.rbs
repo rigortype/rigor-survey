@@ -1,0 +1,31 @@
+module Gitlab
+  module Diff
+    class File
+      def self.file_hash: (untyped) -> String
+      def self.short_file_hash: (untyped) -> (String | nil)
+      def initialize: (untyped, repository: untyped, ?diff_refs: untyped, ?fallback_diff_refs: untyped, ?stats: untyped, ?unique_identifier: untyped, ?max_blob_size: untyped) -> void
+      def position: (untyped, ?position_type: untyped) -> (Gitlab::Diff::Position | nil)
+      def position_for_line_code: (untyped) -> (Gitlab::Diff::Position | nil)
+      def viewer_hunks: () -> Array[untyped]
+      def unfold_diff_lines: (untyped) -> nil
+      def unfolded?: () -> (false | true)
+      def prevent_syntax_highlighting!: () -> true
+      def parallel_diff_lines: () -> Array[untyped]
+      def paths: () -> Array[untyped]
+      def path_traversal?: () -> (false | true)
+      def file_hash: () -> String
+      def short_file_hash: () -> (String | nil)
+      def file_identifier: () -> String
+      def file_identifier_hash: () -> String
+      def code_review_id: () -> String
+      def text_in_repo?: () -> (false | true)
+      def empty?: () -> (false | true)
+      def simple_viewer: () -> (DiffViewer::Added | DiffViewer::Collapsed | DiffViewer::Deleted | DiffViewer::ModeChanged | DiffViewer::NoPreview | DiffViewer::NotDiffable | DiffViewer::Renamed | DiffViewer::Text)
+      def alternate_viewer: () -> (DiffViewer::Image | DiffViewer::Text | nil)
+      def rendered?: () -> false
+      def ai_reviewable_patch?: () -> (false | true)
+      def expand_to_full!: () -> (nil | true)
+      def manually_expanded?: () -> (false | true)
+    end
+  end
+end

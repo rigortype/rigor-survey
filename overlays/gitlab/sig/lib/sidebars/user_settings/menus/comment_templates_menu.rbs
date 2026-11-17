@@ -1,0 +1,11 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class CommentTemplatesMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "comment-lines"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: :comment_templates }
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Verify
+    class JobArtifacts < ::Gitlab::Verify::BatchVerifier
+      def name: () -> "Job artifacts"
+      def describe: (untyped) -> String
+    end
+  end
+end

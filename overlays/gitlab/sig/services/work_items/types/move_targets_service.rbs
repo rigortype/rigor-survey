@@ -1,0 +1,18 @@
+module WorkItems
+  module Types
+    class MoveTargetsService
+      def initialize: (current_user: untyped, source_namespace: untyped, target_namespace: untyped, source_type_ids: untyped) -> void
+      def execute: () -> Array[WorkItems::Types::MoveTargetsService::Result]
+      class Result < ::Struct[untyped]
+        def source_type: () -> untyped
+        def suggested_target_type: () -> untyped
+        def valid_target_types: () -> untyped
+        def source_type=: (untyped) -> untyped
+        def suggested_target_type=: (untyped) -> untyped
+        def valid_target_types=: (untyped) -> untyped
+        def self.new: (?source_type: untyped, ?suggested_target_type: untyped, ?valid_target_types: untyped) -> instance
+        def self.[]: (?source_type: untyped, ?suggested_target_type: untyped, ?valid_target_types: untyped) -> instance
+      end
+    end
+  end
+end

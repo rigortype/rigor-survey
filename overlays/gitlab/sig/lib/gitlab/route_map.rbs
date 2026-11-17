@@ -1,0 +1,5 @@
+module Gitlab
+  class RouteMap
+    def initialize: (untyped) -> void
+  end
+end

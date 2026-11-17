@@ -1,0 +1,27 @@
+module GanttHelper
+  def gantt_period_style: (untyped) -> String
+  class ChartLayout
+    def initialize: (untyped) -> void
+    def months: () -> Array[GanttHelper::ChartLayout::Period]
+    def weeks: () -> Array[untyped]
+    def day_numbers: () -> Array[GanttHelper::ChartLayout::Period]
+    def days: () -> Array[GanttHelper::ChartLayout::Period]
+    def header_height: () -> 18
+    def content_top: () -> 8
+    def subject_width: () -> 330
+    class Period < ::Struct[untyped]
+      def date: () -> untyped
+      def width: () -> untyped
+      def non_working: () -> untyped
+      def spans_body: () -> untyped
+      def last: () -> untyped
+      def date=: (untyped) -> untyped
+      def width=: (untyped) -> untyped
+      def non_working=: (untyped) -> untyped
+      def spans_body=: (untyped) -> untyped
+      def last=: (untyped) -> untyped
+      def self.new: (?date: untyped, ?width: untyped, ?non_working: untyped, ?spans_body: untyped, ?last: untyped) -> instance
+      def self.[]: (?date: untyped, ?width: untyped, ?non_working: untyped, ?spans_body: untyped, ?last: untyped) -> instance
+    end
+  end
+end

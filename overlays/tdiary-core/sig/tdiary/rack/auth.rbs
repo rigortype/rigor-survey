@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class Auth
+      def initialize: (untyped) -> void
+    end
+  end
+end

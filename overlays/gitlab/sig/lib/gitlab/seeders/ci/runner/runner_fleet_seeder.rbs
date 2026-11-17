@@ -1,0 +1,13 @@
+module Gitlab
+  module Seeders
+    module Ci
+      module Runner
+        class RunnerFleetSeeder
+          def initialize: (?Gitlab::JsonLogger, **untyped) -> void
+          def seed: () -> ([{ project_id: untyped, runner_ids: Array[untyped] }, { project_id: untyped, runner_ids: Array[untyped] }, { project_id: untyped, runner_ids: Array[untyped] }] | nil)
+          def logger: () -> Gitlab::JsonLogger
+        end
+      end
+    end
+  end
+end

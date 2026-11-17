@@ -1,0 +1,6 @@
+module ActiveStorage
+  class Analyzer
+    def self.analyze_later?: () -> true
+    def initialize: (untyped) -> void
+  end
+end

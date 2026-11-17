@@ -1,0 +1,4 @@
+class Collection < ::ApplicationRecord
+  def remote?: () -> (false | true)
+  def object_type: () -> :featured_collection
+end

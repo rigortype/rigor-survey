@@ -1,0 +1,7 @@
+module REST
+  class TranslationSerializer < ::ActiveModel::Serializer[untyped]
+    class MediaAttachmentSerializer < ::ActiveModel::Serializer[untyped]
+      def id: () -> String
+    end
+  end
+end

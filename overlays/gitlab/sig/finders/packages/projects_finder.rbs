@@ -1,0 +1,5 @@
+module Packages
+  class ProjectsFinder
+    def initialize: (current_user: untyped, group: untyped, ?params: untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module Database
+  class BatchedBackgroundMigrationWorker
+    def execution_worker_class: () -> singleton(Database::BatchedBackgroundMigration::MainExecutionWorker)
+  end
+end

@@ -1,0 +1,13 @@
+module Dependabot
+  module GithubActions
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, raise_on_ignored: untyped, ?options: untyped, ?cooldown_options: untyped, ?git_metadata_fetcher: untyped) -> void
+        def latest_release_version: () -> (Dependabot::Version | String | nil)
+        def lowest_security_fix_release: () -> (Hash[Symbol, untyped] | nil)
+        def latest_version_tag: () -> (Hash[Symbol, untyped] | nil)
+        def latest_version_tag_respecting_cooldown: () -> (Hash[Symbol, untyped] | nil)
+      end
+    end
+  end
+end

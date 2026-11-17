@@ -1,0 +1,10 @@
+module Gitlab
+  module Config
+    module Loader
+      class MultiDocYaml
+        def initialize: (untyped, max_documents: Integer, ?additional_permitted_classes: untyped, ?reject_empty: untyped, ?filename: untyped) -> void
+        def max_documents: () -> 2
+      end
+    end
+  end
+end

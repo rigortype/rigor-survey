@@ -1,0 +1,7 @@
+module Gitlab
+  module ResourceEvents
+    class AssignmentEventRecorder
+      def initialize: (parent: untyped, old_assignees: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module Helm
+    class FileUpdater < ::Dependabot::Shared::SharedFileUpdater
+      class ChartUpdater
+        def initialize: (dependency: untyped) -> void
+        def updated_chart_yaml_content: (untyped) -> String
+      end
+    end
+  end
+end

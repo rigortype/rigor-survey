@@ -1,0 +1,6 @@
+module Users
+  class BroadcastMessageDismissalFinder
+    def initialize: (untyped) -> void
+    def execute: () -> ActiveRecord::Relation[Users::BroadcastMessageDismissal]
+  end
+end

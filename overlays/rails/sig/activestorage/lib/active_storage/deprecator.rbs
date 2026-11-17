@@ -1,0 +1,3 @@
+module ActiveStorage
+  def self.deprecator: () -> ActiveSupport::Deprecation
+end

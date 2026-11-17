@@ -1,0 +1,9 @@
+module BulkImports
+  module Common
+    module Pipelines
+      class MaxIidsPipeline
+        def transform: (untyped, untyped) -> (Hash[untyped, untyped] | nil)
+      end
+    end
+  end
+end

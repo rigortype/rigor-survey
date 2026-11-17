@@ -1,0 +1,6 @@
+module MicrosoftTeams
+  class Activity
+    def initialize: (title: String, subtitle: String, text: String, image: String) -> void
+    def prepare: () -> { type: "ColumnSet", columns: [{ type: "Column", width: "auto", items: [{ type: "Image", url: untyped, size: "medium" }] }, { type: "Column", width: "stretch", items: [{ type: "TextBlock", text: untyped, weight: "bolder", wrap: true }, { type: "TextBlock", text: untyped, isSubtle: true, wrap: true }, { type: "TextBlock", text: untyped, wrap: true }] }] }
+  end
+end

@@ -1,0 +1,8 @@
+module Hamlit
+  class Compiler
+    class TagCompiler
+      def initialize: (untyped, untyped) -> void
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> [:html, :tag, untyped, Array[untyped] | [:html, :attrs, [:dynamic, String]], untyped]
+    end
+  end
+end

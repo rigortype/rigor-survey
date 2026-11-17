@@ -1,0 +1,9 @@
+module Gitlab
+  module LegacyGithubImport
+    class LabelFormatter < ::Gitlab::LegacyGithubImport::BaseFormatter
+      def attributes: () -> { project: untyped, title: untyped, color: String }
+      def project_association: () -> :labels
+      def contributing_user_formatters: () -> {}
+    end
+  end
+end

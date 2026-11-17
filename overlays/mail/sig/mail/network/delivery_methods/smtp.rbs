@@ -1,0 +1,5 @@
+module Mail
+  class SMTP
+    def initialize: (untyped) -> void
+  end
+end

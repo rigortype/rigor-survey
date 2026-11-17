@@ -1,0 +1,18 @@
+module PagesCore
+  module Configuration
+    class Base
+      def self.settings: () -> {}
+      def self.setting: (untyped, untyped, ?untyped) -> Symbol
+      class SettingStruct < ::Struct[untyped]
+        def type: () -> untyped
+        def default: () -> untyped
+        def type=: (untyped) -> untyped
+        def default=: (untyped) -> untyped
+        def self.new: (?type: untyped, ?default: untyped) -> instance | (?untyped type, ?untyped default) -> instance
+        def self.[]: (?type: untyped, ?default: untyped) -> instance | (?untyped type, ?untyped default) -> instance
+      end
+      class InvalidConfigurationKey < ::StandardError
+      end
+    end
+  end
+end

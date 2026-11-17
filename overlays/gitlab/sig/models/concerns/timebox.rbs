@@ -1,0 +1,19 @@
+module Timebox
+  def to_reference: () -> bot
+  def resource_parent: () -> bot
+  def merge_requests_enabled?: () -> bot
+  class TimeboxStruct < ::Struct[untyped]
+    def title: () -> untyped
+    def name: () -> untyped
+    def id: () -> untyped
+    def class_name: () -> untyped
+    def title=: (untyped) -> untyped
+    def name=: (untyped) -> untyped
+    def id=: (untyped) -> untyped
+    def class_name=: (untyped) -> untyped
+    def self.new: (?title: untyped, ?name: untyped, ?id: untyped, ?class_name: untyped) -> instance | (?untyped title, ?untyped name, ?untyped id, ?untyped class_name) -> instance
+    def self.[]: (?title: untyped, ?name: untyped, ?id: untyped, ?class_name: untyped) -> instance | (?untyped title, ?untyped name, ?untyped id, ?untyped class_name) -> instance
+    def serializable_hash: (?untyped) -> { title: untyped, name: untyped, id: untyped }
+    def self.declarative_policy_class: () -> "TimeboxPolicy"
+  end
+end

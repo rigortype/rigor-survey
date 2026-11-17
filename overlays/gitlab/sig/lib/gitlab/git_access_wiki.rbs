@@ -1,0 +1,6 @@
+module Gitlab
+  class GitAccessWiki < ::Gitlab::GitAccess
+    def download_ability: () -> :download_wiki_code
+    def push_ability: () -> :create_wiki
+  end
+end

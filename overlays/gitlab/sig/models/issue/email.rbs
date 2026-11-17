@@ -1,0 +1,5 @@
+class Issue < ::ApplicationRecord
+  class Email < ::ApplicationRecord
+    def work_item: () -> (WorkItem | nil)
+  end
+end

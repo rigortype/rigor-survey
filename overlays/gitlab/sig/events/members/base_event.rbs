@@ -1,0 +1,7 @@
+module Members
+  class BaseEvent < ::Gitlab::EventStore::CloudEvent
+    def self.build_for_member_source: (source: untyped, current_user: untyped, ?extra_event_data: untyped) -> Members::BaseEvent
+    def self.member_source_event_data: (untyped) -> { source_id: untyped, source_type: untyped }
+    def data_schema: () -> Hash[String, "object" | Array[untyped] | Hash[String, Hash[String, "integer"] | Hash[String, "string" | ["Project", "Group"]]]]
+  end
+end

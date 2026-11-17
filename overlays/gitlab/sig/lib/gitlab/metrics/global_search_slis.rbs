@@ -1,0 +1,13 @@
+module Gitlab
+  module Metrics
+    module GlobalSearchSlis
+      def self.search_types: () -> ["basic"]
+      def self.search_levels: () -> ["project", "group", "global"]
+      def self.endpoint_ids: () -> (Array[untyped] | ["GET /api/:version/search", "GET /api/:version/projects/:id/(-/)search", "GET /api/:version/groups/:id/(-/)search"])
+      def self.possible_labels: () -> Array[untyped]
+      def self.autocomplete_labels: () -> ([] | [{ search_type: nil, search_level: nil, search_scope: nil, endpoint_id: untyped }])
+      def self.labels: (search_type: untyped, search_level: untyped, search_scope: untyped) -> { search_type: untyped, search_level: untyped, search_scope: untyped, endpoint_id: untyped }
+      def self.content_search?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module PostgresHll
+      class Buckets
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

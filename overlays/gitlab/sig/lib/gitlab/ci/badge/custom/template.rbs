@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Custom
+        class Template < ::Gitlab::Ci::Badge::Template
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

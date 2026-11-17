@@ -1,0 +1,8 @@
+module Mutations
+  module BranchRules
+    class Create < ::Mutations::BaseMutation
+      def protected_branch_params: (untyped) -> { name: untyped, push_access_levels_attributes: Array[untyped], merge_access_levels_attributes: Array[untyped] }
+      def access_level_attributes: (untyped) -> Array[untyped]
+    end
+  end
+end

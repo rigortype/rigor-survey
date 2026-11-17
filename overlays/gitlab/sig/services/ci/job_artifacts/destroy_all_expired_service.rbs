@@ -1,0 +1,22 @@
+module Ci
+  module JobArtifacts
+    class DestroyAllExpiredService
+      def initialize: (mod_bucket: untyped, max_buckets: Integer) -> void
+      def execute: () -> Ci::JobArtifacts::DestroyAllExpiredService::Result
+      class Result < ::Struct[untyped]
+        def destroyed_count: () -> untyped
+        def more_work_likely: () -> untyped
+        def drain_loops: () -> untyped
+        def partitions_exhausted: () -> untyped
+        def exited_early: () -> untyped
+        def destroyed_count=: (untyped) -> untyped
+        def more_work_likely=: (untyped) -> untyped
+        def drain_loops=: (untyped) -> untyped
+        def partitions_exhausted=: (untyped) -> untyped
+        def exited_early=: (untyped) -> untyped
+        def self.new: (?destroyed_count: untyped, ?more_work_likely: untyped, ?drain_loops: untyped, ?partitions_exhausted: untyped, ?exited_early: untyped) -> instance
+        def self.[]: (?destroyed_count: untyped, ?more_work_likely: untyped, ?drain_loops: untyped, ?partitions_exhausted: untyped, ?exited_early: untyped) -> instance
+      end
+    end
+  end
+end

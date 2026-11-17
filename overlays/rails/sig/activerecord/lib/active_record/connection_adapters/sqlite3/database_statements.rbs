@@ -1,0 +1,12 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module SQLite3
+      module DatabaseStatements
+        def write_query?: (untyped) -> (false | true)
+        def begin_db_transaction: () -> nil
+        def reset_isolation_level: () -> nil
+        def execute_batch: (untyped, ?untyped, **untyped) -> nil
+      end
+    end
+  end
+end

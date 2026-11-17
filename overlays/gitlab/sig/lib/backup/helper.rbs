@@ -1,0 +1,6 @@
+module Backup
+  module Helper
+    def compress_cmd: () -> ("gzip --rsyncable -c -1" | "gzip -c -1" | String | nil)
+    def decompress_cmd: () -> ("gzip -cd" | String | nil)
+  end
+end

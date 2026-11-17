@@ -1,0 +1,5 @@
+module REST
+  class NotificationPolicySerializer < ::ActiveModel::Serializer[untyped]
+    def summary: () -> { pending_requests_count: untyped, pending_notifications_count: untyped }
+  end
+end

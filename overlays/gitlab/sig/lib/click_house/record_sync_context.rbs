@@ -1,0 +1,11 @@
+module ClickHouse
+  class RecordSyncContext
+    def initialize: (last_record_id: Integer, max_records_per_batch: Integer, ?runtime_limiter: untyped) -> void
+    def new_batch!: () -> 0
+    def no_more_records!: () -> true
+    def no_more_records?: () -> (false | true)
+    def record_limit_reached?: () -> (false | true)
+    def total_record_count: () -> (0 | Integer)
+    def record_count_in_current_batch: () -> (0 | Integer)
+  end
+end

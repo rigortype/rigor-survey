@@ -1,0 +1,7 @@
+module Gitlab
+  module Cache
+    class Metadata
+      def initialize: (?cache_identifier: untyped, ?feature_category: untyped, ?backing_resource: untyped) -> void
+    end
+  end
+end

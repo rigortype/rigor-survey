@@ -1,0 +1,12 @@
+module Liquid
+  class Template
+    def self.parse: (String, ?untyped) -> Liquid::Template
+    def initialize: (?environment: untyped) -> void
+    def parse: (String, ?untyped) -> Liquid::Template
+    def registers: () -> Hash[untyped, untyped]
+    def assigns: () -> Hash[untyped, untyped]
+    def instance_assigns: () -> Hash[untyped, untyped]
+    def resource_limits: () -> Liquid::ResourceLimits
+    def profiler: () -> Liquid::Profiler
+  end
+end

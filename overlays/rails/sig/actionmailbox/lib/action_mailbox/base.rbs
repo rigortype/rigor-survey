@@ -1,0 +1,5 @@
+module ActionMailbox
+  class Base
+    def initialize: (untyped) -> void
+  end
+end

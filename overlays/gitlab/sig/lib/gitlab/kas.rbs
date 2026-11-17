@@ -1,0 +1,7 @@
+module Gitlab
+  module Kas
+    def self.enabled?: () -> (false | true)
+    def self.ssl?: () -> (false | true)
+    def self.ws?: () -> (false | true)
+  end
+end

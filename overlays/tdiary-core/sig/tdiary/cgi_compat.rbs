@@ -1,0 +1,7 @@
+module TDiary
+  class CGICompat
+    def initialize: (TDiary::Request) -> void
+    def base_url: () -> ("" | String)
+    def request: () -> TDiary::Request
+  end
+end

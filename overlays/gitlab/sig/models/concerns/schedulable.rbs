@@ -1,0 +1,4 @@
+module Schedulable
+  def allow_next_run_at_update?: () -> true
+  def set_next_run_at: () -> bot
+end

@@ -1,0 +1,16 @@
+module GroupsHelper
+  def projects_lfs_status: (untyped) -> ("for all projects" | String)
+  def subgroup_creation_data: (untyped) -> { parent_group_url: untyped, parent_group_name: untyped, import_existing_group_path: untyped }
+  def group_name_and_path_app_data: () -> { base_path: untyped, mattermost_enabled: untyped }
+  def groups_show_app_data: (untyped) -> String
+  def group_readme_app_data: (untyped) -> { web_path: untyped, name: untyped }
+  def group_settings_readme_app_data: (untyped) -> { group_readme_path: untyped, readme_project_path: untyped, group_path: untyped, group_id: untyped }
+  def group_general_settings_data: (untyped) -> { group_readme_path: untyped, readme_project_path: untyped, group_path: untyped, group_id: untyped, group_name: untyped, group_description: untyped, group_avatar_url: untyped, group_avatar_removable: untyped, max_description_length: 500, form_action: untyped, show_repository_size_limit_cta: untyped, service_ping_settings_path: untyped, visibility_level: untyped, can_change_visibility_level: untyped, visibility_levels: untyped, public_visibility_billing_path: untyped, disabled_visibility_levels: String }
+  def group_visibility_level_settings_data: (untyped) -> { visibility_level: untyped, can_change_visibility_level: untyped, visibility_levels: untyped, public_visibility_billing_path: untyped, disabled_visibility_levels: String }
+  def group_disabled_visibility_levels: (untyped) -> Hash[untyped, untyped]
+  def group_archive_settings_app_data: (untyped) -> { resource_type: "group", resource_id: untyped, resource_path: untyped, marked_for_deletion: untyped }
+  def group_unarchive_settings_app_data: (untyped) -> { resource_type: "group", resource_id: untyped, resource_path: untyped, ancestors_archived: untyped }
+  def enabled_git_access_protocol_options_for_group: () -> ([[untyped, "all"], [untyped, "ssh"], [untyped, "http"]] | [[untyped, "http"]] | [[untyped, "ssh"]] | nil)
+  def groups_list_with_filtered_search_app_data: (untyped) -> String
+  def group_more_action_data: (untyped) -> { group: untyped, can_request_access: untyped, can_withdraw_access_request: untyped, dashboard_path: untyped }
+end

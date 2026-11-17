@@ -1,0 +1,7 @@
+module Gitlab
+  class SidekiqQueue
+    def initialize: (String) -> void
+    def drop_jobs!: ({ user: String } | { username: String }, timeout: Integer) -> { completed: untyped, deleted_jobs: untyped, queue_size: untyped }
+    def queue_name: () -> ("foo" | "foobar")
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        class ColumnData
+          def initialize: (String | Symbol, String | Symbol, untyped) -> void
+          def array_aggregated_column_name: () -> String
+          def original_column_name: () -> ("id" | :id)
+        end
+      end
+    end
+  end
+end

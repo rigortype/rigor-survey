@@ -1,0 +1,9 @@
+module ActiveModel
+  module Type
+    module Helpers
+      module TimeValue
+        def type_cast_for_schema: (untyped) -> ::String
+      end
+    end
+  end
+end

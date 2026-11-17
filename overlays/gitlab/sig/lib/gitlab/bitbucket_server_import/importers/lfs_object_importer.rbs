@@ -1,0 +1,10 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      class LfsObjectImporter
+        def initialize: (untyped, untyped) -> void
+        def lfs_download_object: () -> LfsDownloadObject
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module ActionController
+  class MissingRenderer < ::LoadError
+    def initialize: (untyped) -> void
+  end
+  module Renderers
+    def self._render_with_renderer_method_name: (untyped) -> String
+  end
+end

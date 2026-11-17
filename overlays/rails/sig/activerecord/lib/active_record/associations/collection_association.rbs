@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Associations
+    class CollectionAssociation < ::ActiveRecord::Associations::Association
+      def reset: () -> nil
+      def collection?: () -> true
+    end
+  end
+end

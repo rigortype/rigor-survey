@@ -1,0 +1,3 @@
+class RelationshipsController < ::ApplicationController
+  def show: () -> Form::AccountBatch
+end

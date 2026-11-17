@@ -1,0 +1,8 @@
+module Authn
+  module IamService
+    class JwtValidationService
+      def initialize: (token: untyped, jwks: Proc, issuer: untyped, audience: untyped, required_claims: [String, String, String, String, String, String, String], ?exp_leeway: Integer, ?verify_iat: (false | true), ?verify_not_before: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class SuggestionsParser
+      def self.parse: (untyped, position: untyped, project: untyped, ?supports_suggestion: untyped) -> Array[Gitlab::Diff::Suggestion]
+    end
+  end
+end

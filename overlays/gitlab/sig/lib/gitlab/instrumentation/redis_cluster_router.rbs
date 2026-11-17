@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    module RedisClusterRouter
+      def self.format_slotmap: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

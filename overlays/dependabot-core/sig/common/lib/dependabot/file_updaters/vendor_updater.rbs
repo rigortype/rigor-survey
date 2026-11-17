@@ -1,0 +1,8 @@
+module Dependabot
+  module FileUpdaters
+    class VendorUpdater < ::Dependabot::FileUpdaters::ArtifactUpdater
+      def initialize: (repo_contents_path: untyped, vendor_dir: untyped) -> void
+      def updated_vendor_cache_files: (base_directory: untyped, ?only_paths: untyped) -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Transport
+      class State
+        def initialize: (untyped, Symbol) -> void
+        def set: (untyped) -> nil
+        def reset!: () -> nil
+        def cleanup: () -> nil
+      end
+    end
+  end
+end

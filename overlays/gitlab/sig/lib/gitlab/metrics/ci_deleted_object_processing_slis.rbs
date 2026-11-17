@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    module CiDeletedObjectProcessingSlis
+      def self.age_bucket_label: (untyped) -> ("0-1h" | "1-2h" | "12-24h" | "168h+" | "2-4h" | "24-48h" | "4-8h" | "48-72h" | "72-168h" | "8-12h")
+    end
+  end
+end

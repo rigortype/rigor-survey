@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Preserve < ::Hamlit::Filters::Base
+      def compile: (untyped) -> ([:dynamic, String] | [:static, untyped])
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Plain < ::Hamlit::Filters::Base
+      def compile: (untyped) -> Array[untyped]
+    end
+  end
+end

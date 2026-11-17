@@ -1,0 +1,12 @@
+---
+version: 1
+ignored:
+- file: ".rigor.yml"
+  rule: rbs.coverage.missing-gem
+  count: 1
+- file: lib/faraday/request/instrumentation.rb
+  rule: call.undefined-method
+  count: 1
+- file: lib/faraday/utils.rb
+  rule: flow.always-truthy-condition
+  count: 1

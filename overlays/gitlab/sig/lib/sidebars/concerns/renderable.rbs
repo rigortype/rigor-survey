@@ -1,0 +1,7 @@
+module Sidebars
+  module Concerns
+    module Renderable
+      def render?: () -> true
+    end
+  end
+end

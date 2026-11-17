@@ -1,0 +1,8 @@
+module Dependabot
+  class FileFetcherCommand < ::Dependabot::BaseCommand
+    def single_directory_normalized?: () -> (false | true)
+    def job: () -> (Dependabot::Job | nil)
+    def files: () -> Dependabot::FetchedFiles
+    def base_commit_sha: () -> ("unknown" | String | nil)
+  end
+end

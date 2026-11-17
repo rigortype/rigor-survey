@@ -1,0 +1,3 @@
+class PageBuilder
+  def initialize: (untyped, ?locale: untyped, ?parent: untyped) -> void
+end

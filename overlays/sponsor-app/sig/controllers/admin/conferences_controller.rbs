@@ -1,0 +1,16 @@
+module Admin
+  class ConferencesController < ::Admin::ApplicationController
+    def index: () -> void
+    def show: () -> void
+    def attendees_keeper: () -> void
+    def sponsors_yml: () -> void
+    def sponsors_json: () -> void
+    def table_view: () -> void
+    def asset_urls: () -> void
+    def new: () -> void
+    def edit: () -> void
+    def create: () -> void
+    def update: () -> void
+    def destroy: () -> void
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module PDF
+    class Header
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

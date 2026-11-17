@@ -1,0 +1,5 @@
+module ActionController
+  module Rescue
+    def show_detailed_exceptions?: () -> false
+  end
+end

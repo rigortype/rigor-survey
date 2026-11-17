@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module DuplicateJobs
+      module Strategies
+        def self.for: (untyped) -> (singleton(Gitlab::SidekiqMiddleware::DuplicateJobs::Strategies::None) | singleton(Gitlab::SidekiqMiddleware::DuplicateJobs::Strategies::UntilExecuted) | singleton(Gitlab::SidekiqMiddleware::DuplicateJobs::Strategies::UntilExecuting))
+      end
+    end
+  end
+end

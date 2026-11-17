@@ -1,0 +1,28 @@
+module ActiveRecord
+  module Associations
+    class JoinDependency
+      def self.make_tree: (untyped) -> Hash[untyped, untyped]
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def join_root: () -> ActiveRecord::Associations::JoinDependency::JoinBase
+      class Aliases
+        def initialize: (untyped) -> void
+        class Table < ::Struct[untyped]
+          def node: () -> untyped
+          def columns: () -> untyped
+          def node=: (untyped) -> untyped
+          def columns=: (untyped) -> untyped
+          def self.new: (?node: untyped, ?columns: untyped) -> instance | (?untyped node, ?untyped columns) -> instance
+          def self.[]: (?node: untyped, ?columns: untyped) -> instance | (?untyped node, ?untyped columns) -> instance
+        end
+        class Column < ::Struct[untyped]
+          def name: () -> untyped
+          def alias: () -> untyped
+          def name=: (untyped) -> untyped
+          def alias=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?alias: untyped) -> instance | (?untyped name, ?untyped alias) -> instance
+          def self.[]: (?name: untyped, ?alias: untyped) -> instance | (?untyped name, ?untyped alias) -> instance
+        end
+      end
+    end
+  end
+end

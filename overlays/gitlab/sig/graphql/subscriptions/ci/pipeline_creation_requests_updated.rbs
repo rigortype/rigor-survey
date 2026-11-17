@@ -1,0 +1,7 @@
+module Subscriptions
+  module Ci
+    class PipelineCreationRequestsUpdated < ::Subscriptions::BaseSubscription
+      def authorized?: (merge_request_id: untyped) -> true
+    end
+  end
+end

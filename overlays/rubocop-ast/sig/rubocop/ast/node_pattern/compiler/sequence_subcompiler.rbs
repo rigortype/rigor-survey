@@ -1,0 +1,11 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Compiler
+        class SequenceSubcompiler < ::RuboCop::AST::NodePattern::Compiler::Subcompiler
+          def initialize: (untyped, sequence: untyped, var: untyped) -> void
+        end
+      end
+    end
+  end
+end

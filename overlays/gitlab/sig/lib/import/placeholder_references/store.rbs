@@ -1,0 +1,8 @@
+module Import
+  module PlaceholderReferences
+    class Store
+      def initialize: (import_source: untyped, import_uid: untyped) -> void
+      def any?: () -> (false | true)
+    end
+  end
+end

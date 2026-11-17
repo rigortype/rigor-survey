@@ -1,0 +1,9 @@
+module Mutations
+  module Users
+    module GroupCallouts
+      class Create < ::Mutations::BaseMutation
+        def resolve: (feature_name: untyped, group_id: untyped) -> { user_group_callout: untyped, errors: untyped }
+      end
+    end
+  end
+end

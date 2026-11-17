@@ -1,0 +1,22 @@
+class ModInt < ::Numeric
+  def self.set_mod: (untyped) -> (false | true)
+  def self.mod=: (untyped) -> (false | true)
+  def self.prime?: (untyped) -> (false | true)
+  def self.inv_gcd: (untyped, untyped) -> ([untyped, 0] | [untyped, untyped])
+  def initialize: (?Integer) -> void
+  def inc!: () -> ModInt
+  def dec!: () -> ModInt
+  def add!: (untyped) -> ModInt
+  def sub!: (untyped) -> ModInt
+  def mul!: (untyped) -> ModInt
+  def div!: (untyped) -> ModInt
+  def +@: () -> ModInt
+  def coerce: (untyped) -> [ModInt, ModInt]
+  def +: (untyped) -> ModInt
+  def -: (untyped) -> ModInt
+  def *: (untyped) -> ModInt
+  def /: (untyped) -> ModInt
+  def pred: () -> ModInt
+  def succ: () -> ModInt
+  def inspect: () -> String
+end

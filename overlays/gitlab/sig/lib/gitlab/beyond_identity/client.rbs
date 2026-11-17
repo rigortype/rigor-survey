@@ -1,0 +1,11 @@
+module Gitlab
+  module BeyondIdentity
+    class Client
+      def initialize: (untyped) -> void
+      class ApiError
+        def initialize: (untyped, untyped) -> void
+        def acceptable_error?: () -> (false | true)
+      end
+    end
+  end
+end

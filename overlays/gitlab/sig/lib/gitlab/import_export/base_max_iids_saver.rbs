@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class BaseMaxIidsSaver
+      def self.resource_queries: () -> bot
+      def initialize: (exportable: untyped, shared: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Bun
+    class FileParser < ::Dependabot::FileParsers::Base
+      def self.each_dependency: (untyped) ?{ (*untyped) -> untyped } -> Array[String]
+      def ecosystem: () -> (::Ecosystem | nil)
+    end
+  end
+end

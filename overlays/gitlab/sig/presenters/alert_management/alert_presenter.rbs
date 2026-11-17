@@ -1,0 +1,7 @@
+module AlertManagement
+  class AlertPresenter < ::Gitlab::View::Presenter::Delegated
+    def initialize: (untyped, **untyped) -> void
+    def issue_description: () -> String
+    def email_title: () -> String
+  end
+end

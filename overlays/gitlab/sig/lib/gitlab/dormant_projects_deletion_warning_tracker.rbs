@@ -1,0 +1,5 @@
+module Gitlab
+  class DormantProjectsDeletionWarningTracker
+    def initialize: (untyped) -> void
+  end
+end

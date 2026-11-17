@@ -1,0 +1,7 @@
+module Gitlab
+  module HookData
+    class BaseBuilder
+      def initialize: (untyped) -> void
+    end
+  end
+end

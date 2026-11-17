@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Associations
+    class JoinDependency
+      class JoinPart
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

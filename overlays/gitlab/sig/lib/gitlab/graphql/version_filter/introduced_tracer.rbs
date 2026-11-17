@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module VersionFilter
+      module IntroducedTracer
+        def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      end
+    end
+  end
+end

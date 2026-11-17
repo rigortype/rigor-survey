@@ -1,0 +1,9 @@
+module Dependabot
+  module NpmAndYarn
+    class PNPMPackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (?detected_version: untyped, ?raw_version: untyped, ?requirement: untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+  end
+end

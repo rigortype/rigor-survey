@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Operator < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Base
+            def self.type: () -> bot
+            def self.precedence: () -> bot
+          end
+        end
+      end
+    end
+  end
+end

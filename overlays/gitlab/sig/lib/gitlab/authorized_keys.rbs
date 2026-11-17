@@ -1,0 +1,12 @@
+module Gitlab
+  class AuthorizedKeys
+    def initialize: (?untyped) -> void
+    def accessible?: () -> (false | true)
+    def create: () -> (false | true)
+    def add_key: (untyped, untyped) -> true
+    def batch_add_keys: (untyped) -> (false | true)
+    def remove_key: (untyped) -> (false | true)
+    def clear: () -> true
+    def list_key_ids: () -> Array[untyped]
+  end
+end

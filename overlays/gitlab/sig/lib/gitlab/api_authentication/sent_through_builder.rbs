@@ -1,0 +1,7 @@
+module Gitlab
+  module APIAuthentication
+    class SentThroughBuilder
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class MetricImageUploader < ::GitlabUploader
+  def self.workhorse_local_upload_path: () -> String
+  def self.default_store: () -> (1 | 2)
+end

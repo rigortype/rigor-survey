@@ -1,0 +1,12 @@
+module Gitlab
+  module Kubernetes
+    module Kubeconfig
+      module Entry
+        class User
+          def initialize: (name: untyped, token: untyped) -> void
+          def to_h: () -> { name: untyped, user: { token: untyped } }
+        end
+      end
+    end
+  end
+end

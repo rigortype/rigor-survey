@@ -1,0 +1,13 @@
+class Array[unchecked out E]
+  def from: (Integer) -> Array[Elem]
+  def to: (Integer) -> Array[Elem]
+  def including: (*untyped) -> Array[untyped]
+  def excluding: (*untyped) -> Array[Elem]
+  def second: () -> Elem?
+  def third: () -> Elem?
+  def fourth: () -> Elem?
+  def fifth: () -> Elem?
+  def forty_two: () -> Elem?
+  def third_to_last: () -> Elem?
+  def second_to_last: () -> Elem?
+end

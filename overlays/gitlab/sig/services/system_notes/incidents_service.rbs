@@ -1,0 +1,5 @@
+module SystemNotes
+  class IncidentsService < ::SystemNotes::BaseService
+    def initialize: (noteable: untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module ContainerRegistry
+  class DeleteContainerRepositoryWorker
+    def max_running_jobs: () -> 2
+  end
+end

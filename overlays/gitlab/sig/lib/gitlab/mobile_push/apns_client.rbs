@@ -1,0 +1,13 @@
+module Gitlab
+  module MobilePush
+    class ApnsClient
+      def initialize: (?auth_key_path: String, ?key_id: String, ?team_id: String, ?topic: untyped) -> void
+      def configured?: () -> (false | true)
+      def push: (untyped, untyped) -> (:bad_token | :delivered | :failed | :skipped)
+      def close: () -> nil
+      def auth_key_path: () -> ("/nonexistent/key.p8" | "/tmp/key.p8")
+      def key_id: () -> "KEYID12345"
+      def team_id: () -> "TEAM123456"
+    end
+  end
+end

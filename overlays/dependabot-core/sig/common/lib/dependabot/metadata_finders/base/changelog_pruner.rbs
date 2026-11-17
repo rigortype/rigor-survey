@@ -1,0 +1,12 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      class ChangelogPruner
+        def initialize: (dependency: untyped, changelog_text: untyped) -> void
+        def includes_new_version?: () -> (false | true)
+        def includes_previous_version?: () -> (false | true)
+        def pruned_text: () -> (String | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Releases
+  class CreateEvidenceService
+    def initialize: (untyped, ?pipeline: untyped) -> void
+  end
+end

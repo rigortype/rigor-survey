@@ -1,0 +1,8 @@
+module YARD
+  module Templates
+    class TemplateOptions < ::YARD::Options
+      def no_highlight: () -> (false | true)
+      def no_highlight=: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Net
+  module SSH
+    module Connection
+      class EventLoop
+        def initialize: (?untyped) -> void
+        def ev_preprocess: () ?{ (*untyped) -> untyped } -> (false | true)
+      end
+      class SingleSessionEventLoop < ::Net::SSH::Connection::EventLoop
+        def ev_preprocess: () ?{ (*untyped) -> untyped } -> (false | true)
+      end
+    end
+  end
+end

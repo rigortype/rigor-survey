@@ -1,0 +1,11 @@
+module Gitlab
+  module DuoAgentPlatform
+    class Config
+      def initialize: (untyped) -> void
+      def id_tokens: () -> (Hash[untyped, untyped] | nil)
+      def network_policy: () -> (Hash[untyped, untyped] | nil)
+      def reference_repository_path: () -> (String | nil)
+      def cache_config: () -> (Hash[untyped, untyped] | nil)
+    end
+  end
+end

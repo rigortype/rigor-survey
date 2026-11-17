@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class SharedModel < ::ActiveRecord::Base
+      def self.ensure_connection_set!: () -> nil
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class Module
+  def delegate: (*untyped, ?to: untyped, ?prefix: untyped, ?allow_nil: untyped, ?private: untyped) -> Array[untyped]
+end

@@ -1,0 +1,10 @@
+class Export
+  def initialize: (untyped) -> void
+  def to_bookmarks_csv: () -> String
+  def to_blocked_accounts_csv: () -> String
+  def to_muted_accounts_csv: () -> String
+  def to_following_accounts_csv: () -> String
+  def to_lists_csv: () -> String
+  def to_blocked_domains_csv: () -> String
+  def to_custom_filters_json: () -> String
+end

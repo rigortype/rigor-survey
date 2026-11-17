@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    class RequirementParser
+      def self.parse: (untyped) -> (nil | { name: untyped, normalised_name: String, version: untyped, requirement: untyped, extras: nil, language: "golang", registry: nil })
+    end
+  end
+end

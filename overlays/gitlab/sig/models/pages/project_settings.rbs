@@ -1,0 +1,5 @@
+module Pages
+  class ProjectSettings
+    def initialize: (untyped) -> void
+  end
+end

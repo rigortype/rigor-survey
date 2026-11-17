@@ -1,0 +1,11 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class AccountMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "account"
+        def active_routes: () -> { controller: [:accounts, :two_factor_auths] }
+        def extra_container_html_options: () -> { :"data-testid" => "profile_account_link" }
+      end
+    end
+  end
+end

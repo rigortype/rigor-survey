@@ -1,0 +1,7 @@
+module Gitlab
+  module Uploads
+    class MigrationHelper
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

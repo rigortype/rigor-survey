@@ -1,0 +1,12 @@
+module Dependabot
+  module Bundler
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def fetch: () -> (Dependabot::Package::PackageDetails | nil)
+        def options: () -> Hash[Symbol, untyped]
+        def repo_contents_path: () -> (String | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Concurrent
+  module Async
+    def self.validate_argc: (untyped, untyped, *untyped) -> nil
+    def async: () -> (Concurrent::Async::AsyncDelegator | nil)
+    def await: () -> (Concurrent::Async::AwaitDelegator | nil)
+    def init_synchronization: () -> Concurrent::Async
+    class AwaitDelegator
+      def initialize: (untyped) -> void
+    end
+  end
+end

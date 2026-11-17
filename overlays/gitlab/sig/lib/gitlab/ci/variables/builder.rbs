@@ -1,0 +1,17 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Builder
+        def initialize: (untyped) -> void
+        def scoped_variables: (untyped, environment: untyped, dependencies: untyped) -> Gitlab::Ci::Variables::Collection
+        def scoped_variables_for_pipeline_seed: (untyped, environment: untyped, kubernetes_namespace: untyped, user: untyped, trigger: untyped) -> Gitlab::Ci::Variables::Collection
+        def kubernetes_variables: (environment: untyped, token: untyped, kubernetes_namespace: untyped) -> Gitlab::Ci::Variables::Collection
+        def pipeline_variables_builder: () -> Gitlab::Ci::Variables::Builder::Pipeline
+        def instance_variables_builder: () -> Gitlab::Ci::Variables::Builder::Instance
+        def project_variables_builder: () -> Gitlab::Ci::Variables::Builder::Project
+        def group_variables_builder: () -> Gitlab::Ci::Variables::Builder::Group
+        def release_variables_builder: () -> Gitlab::Ci::Variables::Builder::Release
+      end
+    end
+  end
+end

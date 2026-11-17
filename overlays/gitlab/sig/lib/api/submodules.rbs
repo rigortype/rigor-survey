@@ -1,0 +1,5 @@
+module API
+  class Submodules < ::API::Base
+    def commit_params: (untyped) -> { submodule: untyped, commit_sha: untyped, branch_name: untyped, commit_message: untyped }
+  end
+end

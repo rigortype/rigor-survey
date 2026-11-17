@@ -1,0 +1,12 @@
+module Projects
+  class AfterRenameService
+    def initialize: (untyped, path_before: untyped, full_path_before: untyped, ?send_move_instructions: untyped) -> void
+    def rename_base_repository_in_registry!: () -> nil
+    def ensure_registry_tags_can_be_handled: () -> nil
+    def rename_or_migrate_repository!: () -> nil
+    def rename_transferred_documents: () -> top
+    def log_completion: () -> Array[singleton(Gitlab::AppJsonLogger)]
+    def rename_uploads?: () -> (false | true)
+    def rename_failed!: (untyped) -> bot
+  end
+end

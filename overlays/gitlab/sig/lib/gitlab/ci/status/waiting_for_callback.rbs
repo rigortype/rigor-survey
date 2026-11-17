@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      class WaitingForCallback < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_pending"
+        def favicon: () -> "favicon_status_pending"
+        def group: () -> "waiting-for-callback"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module ActiveSupport
+  module Cache
+    module SerializerWithFallback
+      module PassthroughWithFallback
+        def dumped?: (untyped) -> (false | true)
+      end
+      module Marshal70WithFallback
+        def _load: (untyped) -> ActiveSupport::Cache::Entry
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Sidebars
+  class UncategorizedMenu < ::Sidebars::Menu
+    def sprite_icon: () -> "question"
+  end
+end

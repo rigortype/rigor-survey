@@ -1,0 +1,9 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module MySQL
+      module DatabaseStatements
+        def write_query?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

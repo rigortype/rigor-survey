@@ -1,0 +1,7 @@
+module Dependabot
+  module Gradle
+    class Language < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped) -> void
+    end
+  end
+end

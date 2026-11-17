@@ -1,0 +1,14 @@
+module API
+  module Ml
+    module Mlflow
+      module ApiHelpers
+        def experiment_repository: () -> ::Ml::ExperimentTracking::ExperimentRepository
+        def candidate_repository: () -> ::Ml::ExperimentTracking::CandidateRepository
+        def candidates_order_params: (untyped) -> ({ order_by: untyped, order_by_type: "column" | "metric" | nil, sort: untyped } | { order_by: nil, order_by_type: nil, sort: nil })
+        def model_order_params: (untyped) -> { order_by: untyped, sort: untyped }
+        def model_filter_params: (untyped) -> ({ name: untyped } | {})
+        def gitlab_tags: () -> (Hash[untyped, untyped] | nil)
+      end
+    end
+  end
+end

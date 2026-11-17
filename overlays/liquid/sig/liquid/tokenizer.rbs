@@ -1,0 +1,5 @@
+module Liquid
+  class Tokenizer
+    def initialize: (source: String, string_scanner: StringScanner, ?line_numbers: untyped, ?line_number: untyped, ?for_liquid_tag: untyped) -> void
+  end
+end

@@ -1,0 +1,6 @@
+module MergeRequests
+  class SavedViewsFinder
+    def initialize: (untyped) -> void
+    def execute: () -> ActiveRecord::Relation[MergeRequests::SavedView]
+  end
+end

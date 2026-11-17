@@ -1,0 +1,5 @@
+module Gitlab
+  class HTTP
+    def self.http_v2_options: (untyped) -> Hash[untyped, untyped]
+  end
+end

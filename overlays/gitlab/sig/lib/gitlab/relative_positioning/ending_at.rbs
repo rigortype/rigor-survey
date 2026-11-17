@@ -1,0 +1,7 @@
+module Gitlab
+  module RelativePositioning
+    class EndingAt < ::Gitlab::RelativePositioning::Range
+      def initialize: (untyped) -> void
+    end
+  end
+end

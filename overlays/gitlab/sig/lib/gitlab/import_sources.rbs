@@ -1,0 +1,20 @@
+module Gitlab
+  module ImportSources
+    def self.values: () -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+    def self.import_source: (untyped) -> (Gitlab::ImportSources::ImportSource | nil)
+    def self.template?: (untyped) -> (false | true)
+    def self.import_table: () -> [Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource, Gitlab::ImportSources::ImportSource]
+    def self.project_template_importers: () -> ["gitlab_built_in_project_template"]
+    def self.importable_project_types: () -> Array[untyped]
+    class ImportSource < ::Struct[untyped]
+      def name: () -> untyped
+      def title: () -> untyped
+      def importer: () -> untyped
+      def name=: (untyped) -> untyped
+      def title=: (untyped) -> untyped
+      def importer=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?title: untyped, ?importer: untyped) -> instance | (?untyped name, ?untyped title, ?untyped importer) -> instance
+      def self.[]: (?name: untyped, ?title: untyped, ?importer: untyped) -> instance | (?untyped name, ?untyped title, ?untyped importer) -> instance
+    end
+  end
+end

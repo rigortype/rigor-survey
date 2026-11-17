@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    class PositionTracer
+      class BaseStrategy
+        def initialize: (untyped) -> void
+        def trace: (untyped) -> bot
+      end
+    end
+  end
+end

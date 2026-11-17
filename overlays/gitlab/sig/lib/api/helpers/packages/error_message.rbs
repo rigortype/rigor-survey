@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module Packages
+      module ErrorMessage
+        def error_message_detail: (untyped) -> (String | nil)
+      end
+    end
+  end
+end

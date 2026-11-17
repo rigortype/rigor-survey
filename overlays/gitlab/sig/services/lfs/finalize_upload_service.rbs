@@ -1,0 +1,7 @@
+module Lfs
+  class FinalizeUploadService
+    def initialize: (oid: untyped, size: untyped, uploaded_file: untyped, project: untyped, repository_type: Symbol) -> void
+    def execute: () -> (ServiceResponse | nil)
+    def repository_type: () -> :project
+  end
+end

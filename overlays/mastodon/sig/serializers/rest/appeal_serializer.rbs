@@ -1,0 +1,5 @@
+module REST
+  class AppealSerializer < ::ActiveModel::Serializer[untyped]
+    def state: () -> ("approved" | "pending" | "rejected")
+  end
+end

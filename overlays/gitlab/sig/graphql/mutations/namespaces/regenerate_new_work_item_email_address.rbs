@@ -1,0 +1,7 @@
+module Mutations
+  module Namespaces
+    class RegenerateNewWorkItemEmailAddress < ::Mutations::BaseMutation
+      def resolve: (full_path: untyped) -> ({ namespace: ::Namespaces::ProjectNamespace, errors: [] } | { namespace: nil, errors: [untyped] })
+    end
+  end
+end

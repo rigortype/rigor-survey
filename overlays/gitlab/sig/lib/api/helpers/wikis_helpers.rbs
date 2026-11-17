@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module WikisHelpers
+      def self.wiki_resource_kinds: () -> [:projects]
+      def self.wiki_resource_tier: (untyped) -> nil
+      def commit_params: (untyped) -> { branch_name: untyped, file_name: untyped, file_content: untyped }
+    end
+  end
+end

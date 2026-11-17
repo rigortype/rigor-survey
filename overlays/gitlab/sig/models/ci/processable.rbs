@@ -1,0 +1,10 @@
+module Ci
+  class Processable < ::CommitStatus
+    def self.fabricate: (partition_id: untyped, **untyped) -> Ci::Processable
+    def can_auto_cancel_pipeline_on_job_failure?: () -> bot
+    def expanded_environment_name: () -> bot
+    def persisted_environment: () -> bot
+    def dependency_variables: () -> Gitlab::Ci::Variables::Collection
+    def set_enqueue_immediately!: () -> true
+  end
+end

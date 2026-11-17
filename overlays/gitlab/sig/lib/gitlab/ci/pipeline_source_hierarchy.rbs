@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class PipelineSourceHierarchy
+      def initialize: (untyped, ?options: { project_condition: Symbol }) -> void
+      def options: () -> ({ project_condition: :different } | { project_condition: :same })
+    end
+  end
+end

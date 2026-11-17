@@ -1,0 +1,38 @@
+module RGL
+  module Edge
+    class DirectedEdge
+      def self.[]: (*untyped) -> RGL::Edge::DirectedEdge
+      def initialize: (untyped, untyped) -> void
+      def hash: () -> Integer
+      def reverse: () -> RGL::Edge::DirectedEdge
+      def to_s: () -> String
+      def to_a: () -> [untyped, untyped]
+      def <=>: (untyped) -> (Integer | nil)
+    end
+    class UnDirectedEdge < ::RGL::Edge::DirectedEdge
+      def to_s: () -> String
+    end
+  end
+  module Graph
+    def each_vertex: () ?{ (*untyped) -> untyped } -> bot
+    def each_adjacent: (untyped) ?{ (*untyped) -> untyped } -> bot
+    def each_edge: () ?{ (*untyped) -> untyped } -> bot
+    def each: () ?{ (*untyped) -> untyped } -> bot
+    def directed?: () -> false
+    def has_vertex?: (untyped) -> (false | true)
+    def has_edge?: (untyped, untyped) -> (false | true)
+    def vertices: () -> Array[untyped]
+    def edge_class: () -> (singleton(RGL::Edge::DirectedEdge) | singleton(RGL::Edge::UnDirectedEdge))
+    def edges: () -> Array[untyped]
+    def adjacent_vertices: (untyped) -> Array[untyped]
+    def to_s: () -> String
+  end
+  class NotDirectedError < ::RuntimeError
+  end
+  class NotUndirectedError < ::RuntimeError
+  end
+  class NoVertexError < ::IndexError
+  end
+  class NoEdgeError < ::IndexError
+  end
+end

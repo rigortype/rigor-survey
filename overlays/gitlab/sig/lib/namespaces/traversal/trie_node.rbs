@@ -1,0 +1,10 @@
+module Namespaces
+  module Traversal
+    class TrieNode
+      def self.build: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Namespaces::Traversal::TrieNode
+      def build: (untyped) -> Namespaces::Traversal::TrieNode
+      def prefix_search: (untyped) -> Array[untyped]
+      def to_a: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module BranchRules
+    class SquashOptionPresenter < ::Gitlab::View::Presenter::Delegated
+      def help_text: () -> ("Checkbox is visible and selected by default." | "Checkbox is visible and unselected by default." | "Squashing is always performed. Checkbox is visible and selected, and users cannot change it." | "Squashing is never performed and the checkbox is hidden." | nil)
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      class ChangelogFinder
+        def initialize: (source: untyped, dependency: untyped, credentials: untyped, ?suggested_changelog_url: untyped) -> void
+        def changelog_text: () -> (String | nil)
+        def upgrade_guide_text: () -> (String | nil)
+      end
+    end
+  end
+end

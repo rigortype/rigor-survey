@@ -1,0 +1,47 @@
+class Object
+  def blank?: () -> bool
+  def present?: () -> bool
+  def presence: () -> self?
+end
+
+class NilClass
+  def blank?: () -> true
+  def present?: () -> false
+end
+
+class FalseClass
+  def blank?: () -> true
+  def present?: () -> false
+end
+
+class TrueClass
+  def blank?: () -> false
+  def present?: () -> true
+end
+
+class Array[unchecked out E]
+  def present?: () -> (false | true)
+end
+
+class Hash[unchecked out K, unchecked out V]
+  def present?: () -> (false | true)
+end
+
+class Symbol
+  def present?: () -> (false | true)
+end
+
+class String
+  def blank?: () -> bool
+  def present?: () -> (false | true)
+end
+
+class Numeric
+  def blank?: () -> false
+  def present?: () -> true
+end
+
+class Time
+  def blank?: () -> false
+  def present?: () -> true
+end

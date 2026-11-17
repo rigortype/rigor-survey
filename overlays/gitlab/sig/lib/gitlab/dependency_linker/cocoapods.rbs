@@ -1,0 +1,7 @@
+module Gitlab
+  module DependencyLinker
+    module Cocoapods
+      def package_url: (untyped) -> String
+    end
+  end
+end

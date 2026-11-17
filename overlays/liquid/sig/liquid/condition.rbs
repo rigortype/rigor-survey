@@ -1,0 +1,18 @@
+module Liquid
+  class Condition
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+    def else?: () -> false
+    def inspect: () -> String
+    def child_relation: () -> (:and | :or | nil)
+    class MethodLiteral
+      def initialize: (untyped, untyped) -> void
+    end
+    class ParseTreeVisitor < ::Liquid::ParseTreeVisitor
+      def children: () -> Array[untyped]
+    end
+  end
+  class ElseCondition < ::Liquid::Condition
+    def else?: () -> true
+    def evaluate: (untyped) -> true
+  end
+end

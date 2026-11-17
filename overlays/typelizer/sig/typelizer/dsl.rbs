@@ -1,0 +1,8 @@
+module Typelizer
+  module DSL
+    def self.disable!: () -> singleton(Typelizer::DSL::ClassMethods)
+    module ClassMethods
+      def typelize_from: (untyped) -> Symbol
+    end
+  end
+end

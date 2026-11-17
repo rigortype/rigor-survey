@@ -1,0 +1,3 @@
+class WebHookWorker
+  def perform: (untyped, untyped, untyped, ?untyped) -> (ServiceResponse | nil)
+end

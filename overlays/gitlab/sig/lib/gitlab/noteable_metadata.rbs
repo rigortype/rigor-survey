@@ -1,0 +1,5 @@
+module Gitlab
+  module NoteableMetadata
+    def noteable_meta_data: (untyped, untyped) -> Hash[untyped, Noteable::NoteableMeta]
+  end
+end

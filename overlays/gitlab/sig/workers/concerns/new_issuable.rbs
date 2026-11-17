@@ -1,0 +1,5 @@
+module NewIssuable
+  def set_user: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  def set_issuable: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  def log_error: (untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+end

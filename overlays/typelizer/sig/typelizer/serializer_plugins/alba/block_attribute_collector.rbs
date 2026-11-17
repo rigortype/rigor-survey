@@ -1,0 +1,37 @@
+module Typelizer
+  module SerializerPlugins
+    class Alba < ::Typelizer::SerializerPlugins::Base
+      class BlockAttributeCollector
+        def attribute: (untyped, **untyped) ?{ (*untyped) -> untyped } -> nil
+        def nested_attribute: (untyped, **untyped) ?{ (*untyped) -> untyped } -> Typelizer::SerializerPlugins::Alba::BlockAttributeCollector::BlockNestedAttribute
+        def one: (untyped, **untyped) ?{ (*untyped) -> untyped } -> Typelizer::SerializerPlugins::Alba::BlockAttributeCollector::BlockAssociation
+        def many: (untyped, **untyped) ?{ (*untyped) -> untyped } -> Typelizer::SerializerPlugins::Alba::BlockAttributeCollector::BlockAssociation
+        def respond_to_missing?: (untyped, ?untyped) -> true
+        def collected_attributes: () -> Hash[untyped, untyped]
+        def collected_typelizes: () -> Hash[untyped, untyped]
+        class BlockAssociation < ::Struct[untyped]
+          def name: () -> untyped
+          def resource: () -> untyped
+          def with_traits: () -> untyped
+          def multi: () -> untyped
+          def key: () -> untyped
+          def name=: (untyped) -> untyped
+          def resource=: (untyped) -> untyped
+          def with_traits=: (untyped) -> untyped
+          def multi=: (untyped) -> untyped
+          def key=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?resource: untyped, ?with_traits: untyped, ?multi: untyped, ?key: untyped) -> instance
+          def self.[]: (?name: untyped, ?resource: untyped, ?with_traits: untyped, ?multi: untyped, ?key: untyped) -> instance
+        end
+        class BlockNestedAttribute < ::Struct[untyped]
+          def name: () -> untyped
+          def block: () -> untyped
+          def name=: (untyped) -> untyped
+          def block=: (untyped) -> untyped
+          def self.new: (?name: untyped, ?block: untyped) -> instance
+          def self.[]: (?name: untyped, ?block: untyped) -> instance
+        end
+      end
+    end
+  end
+end

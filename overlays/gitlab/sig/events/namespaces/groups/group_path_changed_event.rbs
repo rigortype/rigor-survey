@@ -1,0 +1,7 @@
+module Namespaces
+  module Groups
+    class GroupPathChangedEvent < ::Gitlab::EventStore::Event
+      def schema: () -> Hash[String, "object" | ["group_id"] | Hash[String, Hash[String, "integer"]]]
+    end
+  end
+end

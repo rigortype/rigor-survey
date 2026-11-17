@@ -1,0 +1,7 @@
+module Analytics
+  module Glql
+    class LoggingService
+      def initialize: (current_user: untyped, result: untyped, query_sha: untyped, ?glql_query: untyped, ?generated_graphql: untyped, ?fields: untyped, ?context: untyped) -> void
+    end
+  end
+end

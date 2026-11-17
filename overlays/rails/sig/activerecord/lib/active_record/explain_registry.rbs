@@ -1,0 +1,11 @@
+module ActiveRecord
+  class ExplainRegistry
+    def start: () -> true
+    def reset: () -> []
+    def queries: () -> Array[untyped]
+    class Subscriber
+      def self.ensure_subscribed: () -> (nil | true)
+      def silenced?: (untyped) -> (false | true)
+    end
+  end
+end

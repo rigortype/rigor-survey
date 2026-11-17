@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class ExactNotMatchFilter < ::Gitlab::Database::Aggregation::ClickHouse::FilterDefinition
+          def identifier: () -> Symbol
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Graphql
+        module SchemaDirectives
+          def each_granular_directive: () ?{ (*untyped) -> untyped } -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

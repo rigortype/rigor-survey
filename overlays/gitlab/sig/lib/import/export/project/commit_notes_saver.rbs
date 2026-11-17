@@ -1,0 +1,9 @@
+module Import
+  module Export
+    module Project
+      class CommitNotesSaver < ::Gitlab::ImportExport::Project::RelationSaver
+        def initialize: (project: untyped, shared: untyped, user: untyped, ?params: untyped) -> void
+      end
+    end
+  end
+end

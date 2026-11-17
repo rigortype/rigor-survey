@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        module Views
+          class PlannerStatistics < ::Gitlab::Database::Diagnostics::Console::Views::Base
+            def self.title: () -> "Planner statistics"
+          end
+        end
+      end
+    end
+  end
+end

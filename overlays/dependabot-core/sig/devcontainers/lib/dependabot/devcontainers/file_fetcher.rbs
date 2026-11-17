@@ -1,0 +1,8 @@
+module Dependabot
+  module Devcontainers
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a dev container configuration file."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

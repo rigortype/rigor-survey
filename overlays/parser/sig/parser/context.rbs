@@ -1,0 +1,5 @@
+module Parser
+  class Context
+    def reset: () -> false
+  end
+end

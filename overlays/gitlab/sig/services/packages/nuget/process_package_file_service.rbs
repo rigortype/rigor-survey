@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class ProcessPackageFileService
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

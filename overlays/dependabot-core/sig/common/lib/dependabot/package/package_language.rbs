@@ -1,0 +1,7 @@
+module Dependabot
+  module Package
+    class PackageLanguage
+      def initialize: (name: untyped, ?version: untyped, ?requirement: untyped) -> void
+    end
+  end
+end

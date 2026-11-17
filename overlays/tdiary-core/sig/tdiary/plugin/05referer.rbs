@@ -1,0 +1,6 @@
+class RefererDiary
+  def initialize: (untyped) -> void
+  def current_date=: (untyped) -> (Hash[untyped, untyped] | nil)
+  def add_referer: (untyped, ?untyped) -> ([untyped, untyped] | nil)
+  def each_date: () -> Array[untyped]
+end

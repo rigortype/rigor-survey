@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class JwtV2 < ::Gitlab::Ci::Jwt
+      def initialize: (untyped, ttl: Integer, aud: untyped, sub_components: untyped, target_audience: untyped) -> void
+    end
+  end
+end

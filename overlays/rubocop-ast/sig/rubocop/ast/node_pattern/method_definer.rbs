@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class NodePattern
+      module MethodDefiner
+        def compile_as_lambda: () -> String
+      end
+    end
+  end
+end

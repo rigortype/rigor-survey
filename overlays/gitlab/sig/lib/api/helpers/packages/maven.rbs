@@ -1,0 +1,11 @@
+module API
+  module Helpers
+    module Packages
+      module Maven
+        def extract_format: (untyped, ?skip_fips_check: untyped) -> [untyped, untyped]
+        def project: () -> nil
+        def group: () -> nil
+      end
+    end
+  end
+end

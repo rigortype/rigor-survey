@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Block
+          def initialize: (untyped, untyped, untyped) -> void
+          def errors: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

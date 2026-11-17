@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Type
+      class IndifferentJsonb < ::ActiveRecord::ConnectionAdapters::PostgreSQL::OID::Jsonb
+        def type: () -> :ind_jsonb
+      end
+    end
+  end
+end

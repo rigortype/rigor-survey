@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      class BatchedMigrationRunner
+        def self.finalize: (untyped, untyped, untyped, untyped, connection: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+        def initialize: (connection: untyped, ?migration_wrapper: untyped) -> void
+        def run_entire_migration: (untyped) -> nil
+        def finalize: (untyped, untyped, untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class KeepAround
+      def self.execute: (untyped, untyped, source: untyped) -> Array[untyped]
+      def initialize: (untyped) -> void
+      def execute: (untyped, source: String) -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module ActionController
+  class Renderer
+    def self.normalize_env: (untyped) -> Hash[untyped, untyped]
+    def self.for: (untyped, ?untyped, ?untyped) -> ActionController::Renderer
+    def new: (?untyped) -> ActionController::Renderer
+    def with_defaults: (untyped) -> ActionController::Renderer
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

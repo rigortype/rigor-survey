@@ -1,0 +1,8 @@
+module Redmine
+  module StringArrayDiff
+    module Diffable
+      def diff: (untyped) -> Redmine::StringArrayDiff::Diff
+      def reverse_hash: (?untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

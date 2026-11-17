@@ -1,0 +1,5 @@
+module GpgKeys
+  class ValidateIntegrationsService < ::Keys::BaseService
+    def initialize: (untyped) -> void
+  end
+end

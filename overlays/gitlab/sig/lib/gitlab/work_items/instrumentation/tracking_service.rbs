@@ -1,0 +1,11 @@
+module Gitlab
+  module WorkItems
+    module Instrumentation
+      class TrackingService
+        def self.current_source: () -> ("ai_workflows" | "api" | "internal")
+        def self.plan_event_properties: (untyped) -> (Hash[untyped, untyped] | { source: "ai_workflows" | "api" | "internal", work_item_id: untyped })
+        def initialize: (work_item: untyped, current_user: untyped, ?event: untyped, ?old_associations: (nil | { status: String } | {}), ?extra_properties: untyped) -> void
+      end
+    end
+  end
+end

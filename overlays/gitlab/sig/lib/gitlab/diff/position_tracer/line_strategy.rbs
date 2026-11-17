@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    class PositionTracer
+      class LineStrategy < ::Gitlab::Diff::PositionTracer::BaseStrategy
+        def trace: (untyped) -> (Hash[untyped, untyped] | { position: Gitlab::Diff::Position, outdated: false } | { position: Gitlab::Diff::Position, outdated: true } | { position: nil, outdated: true })
+      end
+    end
+  end
+end

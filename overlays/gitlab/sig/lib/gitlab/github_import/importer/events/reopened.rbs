@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module Events
+        class Reopened < ::Gitlab::GithubImport::Importer::Events::BaseImporter
+          def execute: (untyped) -> (ServiceResponse | nil)
+        end
+      end
+    end
+  end
+end

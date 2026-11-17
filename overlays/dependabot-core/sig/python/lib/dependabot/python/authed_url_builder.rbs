@@ -1,0 +1,7 @@
+module Dependabot
+  module Python
+    class AuthedUrlBuilder
+      def self.authed_url: (credential: untyped) -> ("" | String)
+    end
+  end
+end

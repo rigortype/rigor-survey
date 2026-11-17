@@ -1,0 +1,27 @@
+module ProjectsHelper
+  def remove_project_message: () -> String
+  def vue_fork_divergence_data: (untyped, untyped) -> ({ project_path: untyped, selected_branch: untyped, source_name: untyped, source_path: untyped, source_default_branch: untyped, can_sync_branch: untyped, ahead_compare_path: untyped, create_mr_path: untyped, view_mr_path: untyped, behind_compare_path: untyped } | {})
+  def remove_fork_project_confirm_json: (untyped, untyped) -> { remove_form_id: untyped, button_text: untyped, confirm_danger_message: untyped, phrase: untyped }
+  def autodeploy_flash_notice: (untyped) -> String
+  def show_invalid_gpg_key_message?: (untyped) -> (false | true)
+  def no_password_message: () -> String
+  def push_to_create_project_command: (?untyped) -> String
+  def xcode_uri_to_repo: (?untyped) -> String
+  def show_count?: (?disabled: untyped, ?compact_mode: untyped) -> (false | true)
+  def error_tracking_setting_project_json: () -> (String | nil)
+  def project_general_settings_data: (untyped) -> { project_id: untyped, project_name: untyped, project_description: untyped, project_avatar_url: untyped, project_avatar_removable: untyped, project_topics: untyped, max_description_length: 2000, form_action: untyped, organization_id: untyped, show_repository_size_limit_cta: untyped, service_ping_settings_path: untyped, external_authorization_enabled: untyped, external_authorization_classification_label: untyped, external_authorization_help_text: untyped }
+  def membership_locked?: () -> false
+  def project_permissions_panel_data: (untyped) -> { packagesAvailable: untyped, packagesHelpPath: untyped, currentSettings: { packagesEnabled: false | true, packageRegistryAccessLevel: untyped, packageRegistryAllowAnyoneToPullOption: untyped, visibilityLevel: untyped, requestAccessEnabled: false | true, issuesAccessLevel: untyped, repositoryAccessLevel: untyped, forkingAccessLevel: untyped, mergeRequestsAccessLevel: untyped, buildsAccessLevel: untyped, wikiAccessLevel: untyped, snippetsAccessLevel: untyped, pagesAccessLevel: untyped, analyticsAccessLevel: untyped, containerRegistryEnabled: false | true, lfsEnabled: false | true, emailsEnabled: untyped, extendedPratExpiryWebhooksExecute: untyped, showDiffPreviewInEmail: untyped, monitorAccessLevel: untyped, showDefaultAwardEmojis: untyped, warnAboutPotentiallyUnwantedCharacters: untyped, enforceAuthChecksOnUploads: untyped, securityAndComplianceAccessLevel: untyped, containerRegistryAccessLevel: untyped, environmentsAccessLevel: untyped, featureFlagsAccessLevel: untyped, releasesAccessLevel: untyped, infrastructureAccessLevel: untyped, modelExperimentsAccessLevel: untyped, modelRegistryAccessLevel: untyped }, canAddCatalogResource: untyped, canSetDiffPreviewInEmail: untyped, canChangeVisibilityLevel: untyped, canDisableEmails: untyped, allowedVisibilityOptions: untyped, visibilityHelpPath: untyped, registryAvailable: untyped, registryHelpPath: untyped, lfsAvailable: untyped, lfsHelpPath: untyped, lfsObjectsExist: untyped, lfsObjectsRemovalHelpPath: untyped, pagesAvailable: untyped, pagesAccessControlEnabled: untyped, pagesAccessControlForced: untyped, pagesHelpPath: untyped, issuesHelpPath: untyped, membersPagePath: untyped, environmentsHelpPath: untyped, featureFlagsHelpPath: untyped, releasesHelpPath: untyped, infrastructureHelpPath: untyped }
+  def project_classes: (untyped) -> ("" | "project-highlight-puc")
+  def fork_button_data_attributes: (untyped) -> (nil | { can_fork_project: untyped, can_read_code: untyped, forks_count: untyped, new_fork_url: untyped, project_forks_url: untyped, user_fork_url: untyped })
+  def star_count_data_attributes: (untyped) -> { project_id: untyped, sign_in_path: untyped, star_count: untyped, starred: untyped, starrers_path: untyped }
+  def notification_data_attributes: (untyped) -> (nil | { emails_disabled: untyped, notification_dropdown_items: untyped, notification_help_page_path: untyped, notification_level: untyped })
+  def home_panel_data_attributes: () -> Hash[untyped, untyped]
+  def project_coverage_chart_data_attributes: (untyped, untyped) -> { graph_endpoint: String, graph_start_date: untyped, graph_end_date: untyped, graph_ref: untyped, graph_csv_path: String }
+  def remote_mirror_setting_enabled?: () -> false
+  def show_built_in_project_templates_tab?: () -> true
+  def dashboard_projects_app_data: () -> String
+  def show_dashboard_projects_welcome_page?: () -> (false | true)
+  def project_archive_settings_app_data: (untyped) -> { resource_type: "project", resource_id: untyped, resource_path: untyped, marked_for_deletion: untyped, help_path: untyped }
+  def project_unarchive_settings_app_data: (untyped) -> { resource_type: "project", resource_id: untyped, resource_path: untyped, ancestors_archived: untyped, help_path: untyped }
+end

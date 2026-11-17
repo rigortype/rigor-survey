@@ -1,0 +1,13 @@
+module Concurrent
+  module Actor
+    module Behaviour
+      def self.basic_behaviour_definition: () -> ::Array[untyped]
+      def self.restarting_behaviour_definition: (?untyped, ?untyped) -> ::Array[untyped]
+      def self.base: (untyped) -> [[singleton(Concurrent::Actor::Behaviour::SetResults), untyped], singleton(Concurrent::Actor::Behaviour::RemovesChild), singleton(Concurrent::Actor::Behaviour::Termination)]
+      def self.linking: () -> [singleton(Concurrent::Actor::Behaviour::Linking)]
+      def self.supervised: () -> [singleton(Concurrent::Actor::Behaviour::Pausing)]
+      def self.supervising: (?untyped, ?untyped) -> [[singleton(Concurrent::Actor::Behaviour::Supervising), untyped, untyped]]
+      def self.user_messages: () -> [singleton(Concurrent::Actor::Behaviour::Awaits), singleton(Concurrent::Actor::Behaviour::ExecutesContext), singleton(Concurrent::Actor::Behaviour::ErrorsOnUnknownMessage)]
+    end
+  end
+end

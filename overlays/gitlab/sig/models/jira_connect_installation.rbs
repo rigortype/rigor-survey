@@ -1,0 +1,3 @@
+class JiraConnectInstallation < ::ApplicationRecord
+  def client: () -> (Atlassian::Forge::SystemTokenClient | Atlassian::JiraConnect::Client)
+end

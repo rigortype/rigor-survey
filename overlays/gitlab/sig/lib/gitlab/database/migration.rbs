@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    class Migration
+      def self.current_version: () -> Float
+      module LockRetriesConcern
+        def with_lock_retries_used!: () -> true
+      end
+    end
+  end
+end

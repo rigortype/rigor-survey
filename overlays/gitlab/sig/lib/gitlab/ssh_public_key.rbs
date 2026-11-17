@@ -1,0 +1,29 @@
+module Gitlab
+  class SSHPublicKey
+    def self.extract_key_parts: (untyped) -> (nil | { prefix: untyped, algorithm: untyped, key_data: untyped })
+    def self.with_sha256_prefix: (untyped) -> (String | nil)
+    def initialize: (untyped) -> void
+    def fingerprint_sha256: () -> (String | nil)
+    def weak_key_warning: () -> (Gitlab::SSHPublicKey::WeakKeyWarning | nil)
+    class Technology < ::Struct[untyped]
+      def name: () -> untyped
+      def key_class: () -> untyped
+      def supported_sizes: () -> untyped
+      def supported_algorithms: () -> untyped
+      def name=: (untyped) -> untyped
+      def key_class=: (untyped) -> untyped
+      def supported_sizes=: (untyped) -> untyped
+      def supported_algorithms=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?key_class: untyped, ?supported_sizes: untyped, ?supported_algorithms: untyped) -> instance | (?untyped name, ?untyped key_class, ?untyped supported_sizes, ?untyped supported_algorithms) -> instance
+      def self.[]: (?name: untyped, ?key_class: untyped, ?supported_sizes: untyped, ?supported_algorithms: untyped) -> instance | (?untyped name, ?untyped key_class, ?untyped supported_sizes, ?untyped supported_algorithms) -> instance
+    end
+    class WeakKeyWarning < ::Struct[untyped]
+      def code: () -> untyped
+      def message: () -> untyped
+      def code=: (untyped) -> untyped
+      def message=: (untyped) -> untyped
+      def self.new: (?code: untyped, ?message: untyped) -> instance | (?untyped code, ?untyped message) -> instance
+      def self.[]: (?code: untyped, ?message: untyped) -> instance | (?untyped code, ?untyped message) -> instance
+    end
+  end
+end

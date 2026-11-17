@@ -1,0 +1,21 @@
+module Dependabot
+  module Docker
+    class Tag
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def digest?: () -> (false | true)
+      def looks_like_prerelease?: () -> (false | true)
+      def comparable_to?: (untyped) -> (false | true)
+      def comparable?: () -> (false | true)
+      def canonical?: () -> (false | nil | true)
+      def prefix: () -> (String | nil)
+      def suffix: () -> (String | nil)
+      def version: () -> (String | nil)
+      def format: () -> (:build_num | :normal | :sha_suffixed | :year_month | :year_month_day | Symbol)
+      def numeric_version: () -> (String | nil)
+      def dated_version?: () -> (false | true)
+      def precision: () -> Integer
+      def segments: () -> Array[String]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module InternalEvents
+    module EventDefinitions
+      def self.load_configurations: () -> nil
+      def self.load_metric_definitions: () -> Hash[untyped, untyped]
+    end
+  end
+end

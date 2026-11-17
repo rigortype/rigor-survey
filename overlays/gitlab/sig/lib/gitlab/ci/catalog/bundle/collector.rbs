@@ -1,0 +1,17 @@
+module Gitlab
+  module Ci
+    module Catalog
+      module Bundle
+        class Collector
+          def initialize: (project: untyped, sha: untyped, entry_path: untyped) -> void
+          def files: () -> Hash[untyped, untyped]
+          def errors: () -> Array[untyped]
+          def seen: () -> Set[untyped]
+          class CollectError < ::StandardError
+            def initialize: (untyped) -> void
+          end
+        end
+      end
+    end
+  end
+end

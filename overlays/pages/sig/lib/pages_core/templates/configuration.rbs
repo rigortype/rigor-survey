@@ -1,0 +1,11 @@
+module PagesCore
+  module Templates
+    class Configuration < ::PagesCore::Templates::ConfigurationHandler
+      def valid_template_options: () -> [:template, :image, :images, :files, :text_filter, :blocks, :enabled_blocks, :sub_template, :tags, :dates, :name]
+      def configure_block: (untyped, untyped, ?untyped, ?untyped) -> (Hash[untyped, untyped] | false | true)
+      def configure_template: (untyped, untyped, untyped, ?untyped) -> (Hash[untyped, { value: untyped, options: untyped }] | false | true)
+      def blocks: (?untyped) ?{ (*untyped) -> untyped } -> PagesCore::Templates::ConfigurationProxy
+      def templates: (*untyped) ?{ (*untyped) -> untyped } -> PagesCore::Templates::ConfigurationProxy
+    end
+  end
+end

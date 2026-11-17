@@ -1,0 +1,5 @@
+module ExportCsv
+  class MapExportFieldsService < ::ExportCsv::BaseService
+    def initialize: (untyped, untyped) -> void
+  end
+end

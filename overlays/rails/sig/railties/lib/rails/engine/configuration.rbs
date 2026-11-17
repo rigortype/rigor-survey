@@ -1,0 +1,7 @@
+module Rails
+  class Engine < ::Rails::Railtie
+    class Configuration < ::Rails::Railtie::Configuration
+      def initialize: (?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Concurrent
+  module ImmutableStruct
+    def inspect: () -> String
+    def merge: (untyped) ?{ (*untyped) -> untyped } -> Concurrent::ImmutableStruct
+  end
+end

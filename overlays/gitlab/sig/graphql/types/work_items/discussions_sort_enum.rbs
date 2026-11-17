@@ -1,0 +1,7 @@
+module Types
+  module WorkItems
+    class DiscussionsSortEnum < ::Types::BaseEnum
+      def self.default_value: () -> :created_asc
+    end
+  end
+end

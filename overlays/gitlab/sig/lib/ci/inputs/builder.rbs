@@ -1,0 +1,12 @@
+module Ci
+  module Inputs
+    class Builder
+      def self.input_types: () -> Array[untyped]
+      def initialize: (untyped) -> void
+      def all_inputs: () -> Array[untyped]
+      def errors: () -> Array[untyped]
+      def validate_input_params!: (untyped) -> Hash[untyped, untyped]
+      def to_params: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

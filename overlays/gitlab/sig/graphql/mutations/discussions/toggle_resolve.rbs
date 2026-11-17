@@ -1,0 +1,7 @@
+module Mutations
+  module Discussions
+    class ToggleResolve < ::Mutations::BaseMutation
+      def resolve: (id: untyped, resolve: untyped) -> { discussion: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

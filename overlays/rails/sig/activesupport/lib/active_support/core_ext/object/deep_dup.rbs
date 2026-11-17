@@ -1,0 +1,3 @@
+class Object
+  def deep_dup: () -> Object
+end

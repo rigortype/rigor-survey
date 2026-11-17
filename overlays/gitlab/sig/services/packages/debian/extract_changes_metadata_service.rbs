@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    class ExtractChangesMetadataService
+      def initialize: (untyped) -> void
+      def execute: () -> { file_type: :buildinfo | :changes | :ddeb | :deb | :dsc | :source | :udeb | :unsupported, architecture: untyped, fields: untyped, files: untyped }
+    end
+  end
+end

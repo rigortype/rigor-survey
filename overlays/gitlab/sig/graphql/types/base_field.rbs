@@ -1,0 +1,7 @@
+module Types
+  class BaseField < ::GraphQL::Schema::Field
+    def initialize: (**untyped) ?{ (*untyped) -> untyped } -> void
+    def base_complexity: () -> (1 | 2)
+    def calls_gitaly?: () -> (false | true)
+  end
+end

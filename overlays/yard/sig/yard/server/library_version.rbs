@@ -1,0 +1,11 @@
+module YARD
+  module Server
+    class LibraryVersion
+      def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+      def hash: () -> Integer
+      def ready?: () -> (false | true)
+    end
+    class LibraryNotPreparedError < ::RuntimeError
+    end
+  end
+end

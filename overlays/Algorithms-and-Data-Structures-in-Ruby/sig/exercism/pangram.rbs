@@ -1,0 +1,3 @@
+class Pangram
+  def self.pangram?: (untyped) -> (false | true)
+end

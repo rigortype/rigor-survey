@@ -1,0 +1,9 @@
+module Backup
+  module Restore
+    class Preconditions
+      def initialize: (backup_information: untyped, logger: untyped) -> void
+      def ensure_supported_backup_version!: () -> nil
+      def validate_backup_version!: () -> bot
+    end
+  end
+end

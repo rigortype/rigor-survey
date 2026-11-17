@@ -1,0 +1,5 @@
+class BaseCountService
+  def raw?: () -> false
+  def cache_key: () -> bot
+  def cache_options: () -> { raw: untyped }
+end

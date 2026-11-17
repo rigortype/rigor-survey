@@ -1,0 +1,10 @@
+module Redmine
+  module WikiFormatting
+    module CommonMark
+      class MarkdownFilter
+        def initialize: (untyped, ?untyped) -> void
+        def call: () -> String
+      end
+    end
+  end
+end

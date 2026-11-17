@@ -1,0 +1,3 @@
+module CommitSignature
+  def signed_by_user: () -> bot
+end

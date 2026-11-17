@@ -1,0 +1,7 @@
+module Gitlab
+  module ManifestImport
+    class ProjectCreator
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

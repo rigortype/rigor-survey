@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module PartitionCache
+        def self.deserialize: (untyped) -> Hash[untyped, Range[untyped]]
+      end
+    end
+  end
+end

@@ -1,0 +1,40 @@
+module ActiveRecord
+  class Key
+    def self.for: (untyped) -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+    def present?: () -> true
+    def hash: () -> Integer
+    def composite?: () -> bot
+    def inferred_key: () -> bot
+    def resolve_aliases: (untyped) -> bot
+    class Single < ::ActiveRecord::Key
+      def initialize: (untyped) -> void
+      def composite?: () -> false
+      def where_hash: (untyped) -> Hash[untyped, untyped]
+      def expects_multiple_ids?: (untyped) -> (false | true)
+      def inferred_id: () -> nil
+      def inferred_key: () -> nil
+      def where_clauses: (untyped) -> [Hash[untyped, untyped]]
+      def resolve_aliases: (untyped) -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+    end
+    class Composite < ::ActiveRecord::Key
+      def initialize: (untyped) -> void
+      def composite?: () -> true
+      def cast: (untyped, untyped) -> Array[untyped]
+      def resolve_aliases: (untyped) -> (ActiveRecord::Key::Composite | ActiveRecord::Key::None | ActiveRecord::Key::Single)
+      def inferred_key: () -> (ActiveRecord::Key::Composite | ActiveRecord::Key::Single)
+    end
+    class None < ::ActiveRecord::Key::Single
+      def present?: () -> false
+      def include?: (untyped) -> false
+      def subset?: (untyped) -> true
+      def each: () ?{ (*untyped) -> untyped } -> (ActiveRecord::Key::None | Enumerator[untyped, untyped])
+      def map_value: () -> (Enumerator[untyped, untyped] | nil)
+      def _value_of: (untyped, ?untyped) -> nil
+    end
+    class Mapping
+      def self.empty: () -> ActiveRecord::Key::Mapping
+      def initialize: (reference_key: untyped, target_key: untyped) -> void
+      def normalize: () -> ActiveRecord::Key::Mapping
+    end
+  end
+end

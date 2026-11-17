@@ -1,0 +1,9 @@
+module WebIde
+  class Config
+    module Entry
+      class Global < ::Gitlab::Config::Entry::Node
+        def self.allowed_keys: () -> [:terminal]
+      end
+    end
+  end
+end

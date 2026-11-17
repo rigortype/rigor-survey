@@ -1,0 +1,10 @@
+module Ci
+  module Catalog
+    module BundledResources
+      class ComponentUploader < ::GitlabUploader
+        def store_dir: () -> String
+        def filename: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    module SourceIdentifier
+      def self.hash: (untyped) -> (String | nil)
+    end
+  end
+end

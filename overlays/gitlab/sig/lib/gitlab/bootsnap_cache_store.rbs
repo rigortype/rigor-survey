@@ -1,0 +1,7 @@
+module Gitlab
+  module BootsnapCacheStore
+    def self.enable!: () -> true
+    def self.counts: () -> Hash[:hit | :miss | :revalidated | :stale, untyped]
+    def self.reset!: () -> false
+  end
+end

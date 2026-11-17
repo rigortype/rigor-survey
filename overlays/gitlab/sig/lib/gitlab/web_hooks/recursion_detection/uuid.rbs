@@ -1,0 +1,10 @@
+module Gitlab
+  module WebHooks
+    module RecursionDetection
+      class UUID
+        def self.instance: () -> Gitlab::WebHooks::RecursionDetection::UUID
+        def header: (untyped) -> Hash[String, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Arel
+  module WindowPredications
+    def over: (?untyped) -> Arel::Nodes::Over
+  end
+end

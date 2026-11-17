@@ -1,0 +1,9 @@
+module Mutations
+  module Terraform
+    module State
+      class DeletePermanently < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> { errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

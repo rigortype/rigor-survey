@@ -1,0 +1,6 @@
+module WebHooks
+  class AdminDestroyService < ::WebHooks::DestroyService
+    def initialize: (rake_task: untyped) -> void
+    def log_message: (untyped) -> String
+  end
+end

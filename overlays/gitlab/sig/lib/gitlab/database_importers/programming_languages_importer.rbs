@@ -1,0 +1,7 @@
+module Gitlab
+  module DatabaseImporters
+    module ProgrammingLanguagesImporter
+      def self.load_definitions: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module ClickHouse
+  class QueryLimiting
+    def self.rule: (?untyped) -> (singleton(ClickHouse::QueryLimiting::NoLimit) | singleton(ClickHouse::QueryLimiting::Rules::GuestWebRequest))
+    module NoLimit
+      def self.type: () -> "none"
+      def self.settings: () -> {}
+    end
+  end
+end

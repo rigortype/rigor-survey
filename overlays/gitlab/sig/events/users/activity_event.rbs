@@ -1,0 +1,5 @@
+module Users
+  class ActivityEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["user_id", "namespace_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

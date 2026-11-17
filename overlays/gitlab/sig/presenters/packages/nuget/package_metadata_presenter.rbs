@@ -1,0 +1,8 @@
+module Packages
+  module Nuget
+    class PackageMetadataPresenter
+      def initialize: (untyped) -> void
+      def catalog_entry: () -> { json_url: untyped, dependency_groups: untyped, package_name: untyped, package_version: untyped, archive_url: untyped, tags: untyped, metadatum: untyped, published: untyped }
+    end
+  end
+end

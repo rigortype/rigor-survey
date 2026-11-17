@@ -1,0 +1,3 @@
+class ResistorColorDuo
+  def self.value: (untyped) -> Integer
+end

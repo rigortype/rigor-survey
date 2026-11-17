@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class UnaryOperator < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Operator
+            def self.type: () -> :unary_operator
+            def initialize: (untyped) -> void
+            def inspect: () -> ::String
+          end
+        end
+      end
+    end
+  end
+end

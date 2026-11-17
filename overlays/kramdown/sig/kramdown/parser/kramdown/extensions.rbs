@@ -1,0 +1,7 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def handle_extension: (untyped, untyped, untyped, untyped, ?untyped) -> (false | true)
+    end
+  end
+end

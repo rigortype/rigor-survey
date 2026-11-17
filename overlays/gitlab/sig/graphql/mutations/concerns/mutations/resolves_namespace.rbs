@@ -1,0 +1,5 @@
+module Mutations
+  module ResolvesNamespace
+    def namespace_resolver: () -> Resolvers::NamespaceResolver
+  end
+end

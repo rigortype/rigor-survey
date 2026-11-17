@@ -1,0 +1,3 @@
+class MembersFinder
+  def initialize: (untyped, untyped, ?params: untyped) -> void
+end

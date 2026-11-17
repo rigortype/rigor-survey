@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class SecureHeaders
+      def initialize: (untyped) -> void
+      def call: (untyped) -> [untyped, untyped, untyped]
+    end
+  end
+end

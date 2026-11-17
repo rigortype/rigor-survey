@@ -1,0 +1,6 @@
+module WikiPages
+  class EventCreateService
+    def initialize: (untyped) -> void
+    def execute: (untyped, untyped, untyped, untyped) -> ServiceResponse
+  end
+end

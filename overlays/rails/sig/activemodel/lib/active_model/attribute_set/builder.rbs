@@ -1,0 +1,15 @@
+module ActiveModel
+  class AttributeSet
+    class Builder
+      def initialize: (untyped, untyped, untyped) -> void
+      def build_from_database: (?untyped, ?untyped) -> ActiveModel::LazyAttributeSet
+      def build_from_initialize: (untyped) -> ActiveModel::LazyAttributeSet
+    end
+  end
+  class LazyAttributeHash
+    def initialize: (untyped, untyped, untyped, untyped, ?untyped) -> void
+    def deep_dup: () -> ActiveModel::LazyAttributeHash
+    def marshal_dump: () -> [untyped, untyped, untyped, untyped, untyped]
+    def marshal_load: (untyped) -> top
+  end
+end

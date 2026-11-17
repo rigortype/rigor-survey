@@ -1,0 +1,5 @@
+module Typelizer
+  class RouteGenerator
+    def call: (?force: untyped, ?skip_check: untyped) -> Array[untyped]
+  end
+end

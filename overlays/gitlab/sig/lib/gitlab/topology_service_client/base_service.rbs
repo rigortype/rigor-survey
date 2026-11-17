@@ -1,0 +1,7 @@
+module Gitlab
+  module TopologyServiceClient
+    class BaseService
+      def initialize: (?timeout: untyped) -> void
+    end
+  end
+end

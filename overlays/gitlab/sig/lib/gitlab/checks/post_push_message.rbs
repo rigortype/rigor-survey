@@ -1,0 +1,9 @@
+module Gitlab
+  module Checks
+    class PostPushMessage
+      def initialize: (untyped, untyped, untyped) -> void
+      def message: () -> bot
+      def self.message_key: (untyped, untyped) -> bot
+    end
+  end
+end

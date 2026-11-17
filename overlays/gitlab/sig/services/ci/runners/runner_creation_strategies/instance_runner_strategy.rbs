@@ -1,0 +1,10 @@
+module Ci
+  module Runners
+    module RunnerCreationStrategies
+      class InstanceRunnerStrategy
+        def initialize: (user: untyped, params: untyped) -> void
+        def normalize_params: () -> nil
+      end
+    end
+  end
+end

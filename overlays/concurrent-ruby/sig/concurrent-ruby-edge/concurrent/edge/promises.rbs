@@ -1,0 +1,9 @@
+module Concurrent
+  module Promises
+    module Resolvable
+      def reserve: () -> (false | nil | true)
+      def self.locking_order_by: (untyped) -> Integer
+      def self.atomic_resolution: (untyped) -> (false | true)
+    end
+  end
+end

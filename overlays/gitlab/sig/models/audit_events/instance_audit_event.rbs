@@ -1,0 +1,6 @@
+module AuditEvents
+  class InstanceAuditEvent < ::ApplicationRecord
+    def entity_id: () -> nil
+    def entity_type: () -> "Gitlab::Audit::InstanceScope"
+  end
+end

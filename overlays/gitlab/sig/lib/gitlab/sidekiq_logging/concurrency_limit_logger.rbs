@@ -1,0 +1,12 @@
+module Gitlab
+  module SidekiqLogging
+    class ConcurrencyLimitLogger
+      def deferred_log: (untyped) -> true
+      def resumed_log: (untyped, untyped) -> true
+      def batch_resumed_log: (untyped, untyped) -> true
+      def worker_stats_log: (untyped, untyped, untyped, untyped) -> true
+      def override_log: (untyped, untyped, untyped, untyped) -> true
+      def dropped_poison_job_log: (untyped, untyped, untyped) -> true
+    end
+  end
+end

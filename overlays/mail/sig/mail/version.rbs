@@ -1,0 +1,5 @@
+module Mail
+  module VERSION
+    def self.version: () -> String
+  end
+end

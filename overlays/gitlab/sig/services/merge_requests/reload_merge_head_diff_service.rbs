@@ -1,0 +1,6 @@
+module MergeRequests
+  class ReloadMergeHeadDiffService
+    def initialize: (untyped) -> void
+    def execute: () -> Hash[untyped, untyped]
+  end
+end

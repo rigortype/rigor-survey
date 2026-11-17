@@ -1,0 +1,3 @@
+module ActionCable
+  def self.gem_version: () -> Gem::Version
+end

@@ -1,0 +1,7 @@
+module Projects
+  class TriggeredHooks
+    def initialize: (untyped, untyped) -> void
+    def add_hooks: (untyped) -> Projects::TriggeredHooks
+    def execute: () -> Array[untyped]
+  end
+end

@@ -1,0 +1,8 @@
+module BulkImports
+  module FileTransfer
+    class ProjectConfig < ::BulkImports::FileTransfer::BaseConfig
+      def skipped_relations: () -> (["group_members", "project_members", "snippet_repositories"] | ["group_members"])
+      def file_relations: () -> [untyped, "lfs_objects", "repository", "design", "snippet_repositories"]
+    end
+  end
+end

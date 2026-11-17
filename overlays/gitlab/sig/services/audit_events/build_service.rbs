@@ -1,0 +1,6 @@
+module AuditEvents
+  class BuildService
+    def initialize: (author: untyped, scope: untyped, target: untyped, message: untyped, ?created_at: untyped, ?additional_details: untyped, ?ip_address: untyped, ?target_details: String) -> void
+    def execute: () -> (AuditEvents::GroupAuditEvent | AuditEvents::InstanceAuditEvent | AuditEvents::ProjectAuditEvent | AuditEvents::UserAuditEvent)
+  end
+end

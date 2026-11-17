@@ -1,0 +1,7 @@
+module Gitlab
+  module Cleanup
+    class OrphanLfsFileReferences
+      def initialize: (untyped, ?dry_run: untyped, ?logger: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module REST
+  class RelationshipSerializer < ::ActiveModel::Serializer[untyped]
+    def following: () -> (false | true)
+    def muting: () -> (false | true)
+    def requested: () -> (false | true)
+    def requested_by: () -> (false | true)
+  end
+end

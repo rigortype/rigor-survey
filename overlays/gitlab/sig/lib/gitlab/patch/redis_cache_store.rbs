@@ -1,0 +1,7 @@
+module Gitlab
+  module Patch
+    module RedisCacheStore
+      def initialize: (*untyped, **untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,3 @@
+module ActiveStorage
+  def self.version: () -> Gem::Version
+end

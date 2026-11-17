@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Authentication
+      module Methods
+        class Abstract
+          def initialize: (untyped, ?untyped) -> void
+          def userauth_request: (untyped, untyped, untyped, *untyped) -> Net::SSH::Buffer
+        end
+      end
+    end
+  end
+end

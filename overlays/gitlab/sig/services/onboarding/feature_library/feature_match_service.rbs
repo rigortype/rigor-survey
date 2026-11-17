@@ -1,0 +1,10 @@
+module Onboarding
+  module FeatureLibrary
+    class FeatureMatchService
+      def initialize: (query: untyped, panel: untyped, ?user: untyped, ?resource: untyped) -> void
+      def ai_execute: () -> []
+      def ai_search_enabled?: () -> false
+      def ai_search_available?: () -> false
+    end
+  end
+end

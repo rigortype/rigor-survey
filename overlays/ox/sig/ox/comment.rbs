@@ -1,0 +1,5 @@
+module Ox
+  class Comment < ::Ox::Node
+    def initialize: (String) -> void
+  end
+end

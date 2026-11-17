@@ -1,0 +1,7 @@
+module Gitlab
+  module Repositories
+    class BaseSignedCommit
+      def initialize: (untyped) -> void
+    end
+  end
+end

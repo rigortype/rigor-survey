@@ -1,0 +1,8 @@
+module ActivityPub
+  module Parser
+    class InteractionPolicyParser
+      def initialize: (untyped, untyped) -> void
+      def bitmap: () -> (0 | Integer)
+    end
+  end
+end

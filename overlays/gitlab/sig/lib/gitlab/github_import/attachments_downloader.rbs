@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class AttachmentsDownloader
+      def initialize: (untyped, ?options: untyped, ?file_size_limit: Integer, ?web_endpoint: untyped) -> void
+      def delete: () -> top
+      def file_size_limit: () -> Integer
+    end
+  end
+end

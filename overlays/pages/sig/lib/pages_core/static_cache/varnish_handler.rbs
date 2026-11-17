@@ -1,0 +1,8 @@
+module PagesCore
+  module StaticCache
+    class VarnishHandler
+      def initialize: (untyped) -> void
+      def cache_page: (untyped, untyped, untyped) -> true
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Database
+  class ListMigrationsService < ::Database::BaseMigrationService
+    def initialize: (connection: untyped, ?status: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

@@ -1,0 +1,7 @@
+module Redmine
+  module Helpers
+    module URL
+      def uri_with_link_safe_scheme?: (untyped) -> (false | true)
+    end
+  end
+end

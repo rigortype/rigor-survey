@@ -1,0 +1,18 @@
+module TDiary
+  module IO
+    module Comment
+      def restore_comment: (untyped, untyped) -> (0 | 2)
+    end
+    module Referer
+      def restore_referer: (untyped, untyped) -> 0
+      def store_referer: (untyped, untyped) -> nil
+    end
+    class Default < ::TDiary::IO::Base
+      def self.parse_tdiary: (untyped) -> [Hash[untyped, untyped] | {}, untyped]
+      def self.load_cgi_conf: (untyped) -> (String | nil)
+      def self.save_cgi_conf: (untyped, untyped) -> nil
+      def transaction: (untyped) -> (0 | nil)
+      def calendar: () -> Hash[String | nil, []]
+    end
+  end
+end

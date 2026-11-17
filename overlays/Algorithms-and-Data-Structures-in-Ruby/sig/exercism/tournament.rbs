@@ -1,0 +1,5 @@
+class Tournament
+  def self.tally: (untyped) -> String
+  def self.set_team_data: (untyped, untyped) -> { MP: 0, W: 0, L: 0, D: 0, P: 0 }
+  def self.format_scorebaord: (untyped) -> String
+end

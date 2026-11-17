@@ -1,0 +1,7 @@
+module Gitlab
+  module LetsEncrypt
+    class Challenge
+      def initialize: (untyped) -> void
+    end
+  end
+end

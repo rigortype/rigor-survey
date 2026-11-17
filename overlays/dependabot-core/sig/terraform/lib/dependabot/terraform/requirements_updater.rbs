@@ -1,0 +1,10 @@
+module Dependabot
+  module Terraform
+    class RequirementsUpdater
+      def initialize: (requirements: untyped, latest_version: untyped, tag_for_latest_version: untyped) -> void
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+      def requirements: () -> Array[Dependabot::DependencyRequirement]
+      def latest_version: () -> Dependabot::Terraform::Version
+    end
+  end
+end

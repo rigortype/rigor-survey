@@ -1,0 +1,9 @@
+module Dependabot
+  module GithubActions
+    module Lockfile
+      module VersionGate
+        def self.assert_supported!: (untyped) -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ContainerExpirationPolicies
+  class UpdateService < ::BaseContainerService
+    def execute: () -> ServiceResponse
+  end
+end

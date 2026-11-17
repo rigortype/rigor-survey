@@ -1,0 +1,9 @@
+module MergeRequests
+  module Mergeability
+    class RunChecksService
+      def initialize: (merge_request: untyped, params: {}) -> void
+      def execute: (untyped, ?execute_all: untyped, ?use_cache: untyped) -> ServiceResponse
+      def params: () -> {}
+    end
+  end
+end

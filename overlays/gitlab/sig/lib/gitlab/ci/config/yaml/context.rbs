@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Yaml
+        class Context
+          def initialize: (?variables: untyped, ?component: untyped) -> void
+        end
+      end
+    end
+  end
+end

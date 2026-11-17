@@ -1,0 +1,8 @@
+module RGL
+  module MutableGraph
+    def from_graphxml: (untyped) -> RGL::MutableGraph
+    class MutableGraphParser
+      def initialize: (untyped) -> void
+    end
+  end
+end

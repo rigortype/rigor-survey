@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class StrNode < ::RuboCop::AST::Node
+      def heredoc?: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Encryption
+    class Scheme
+      def initialize: (?key_provider: untyped, ?key: untyped, ?deterministic: untyped, ?support_unencrypted_data: untyped, ?downcase: untyped, ?ignore_case: untyped, ?previous_schemes: untyped, ?compress: untyped, ?compressor: untyped, **untyped) -> void
+      def deterministic?: () -> (false | true)
+      def merge: (untyped) -> ActiveRecord::Encryption::Scheme
+      def compatible_with?: (untyped) -> (false | true)
+    end
+  end
+end

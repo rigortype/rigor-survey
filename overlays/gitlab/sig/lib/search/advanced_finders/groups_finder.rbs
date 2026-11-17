@@ -1,0 +1,8 @@
+module Search
+  module AdvancedFinders
+    class GroupsFinder
+      def initialize: (untyped, ?untyped) -> void
+      def use_elasticsearch_finder?: () -> false
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Webhooks
+  class MailgunController < ::ApplicationController
+    def webhook: () -> void
+  end
+end

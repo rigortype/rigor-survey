@@ -1,0 +1,7 @@
+module Releases
+  module Links
+    class UpdateService < ::Releases::Links::BaseService
+      def execute: (untyped) -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module ExtractsRef
+  class RequestedRef
+    def initialize: (untyped, ref_type: untyped, ref: untyped) -> void
+    def find: () -> ({ ref_type: "heads", commit: Commit | nil } | { ref_type: "tags", commit: Commit | nil, ambiguous: false | true } | { ref_type: untyped, commit: Commit | nil } | { ref_type: nil, commit: untyped } | { ref_type: nil, commit: untyped, ambiguous: untyped } | { ref_type: nil, commit: nil })
+  end
+end

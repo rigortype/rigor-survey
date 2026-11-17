@@ -1,0 +1,17 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        module Functions
+          class Base
+            def self.function_expression_pattern: () -> bot
+            def self.name: () -> bot
+            def initialize: (untyped, untyped) -> void
+            def execute: (untyped) -> bot
+            def errors: () -> Array[untyped]
+          end
+        end
+      end
+    end
+  end
+end

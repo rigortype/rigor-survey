@@ -1,0 +1,8 @@
+module Gitlab
+  module GitalyClient
+    class DiffStitcher
+      def initialize: (untyped) -> void
+      def single_file?: () -> (false | true)
+    end
+  end
+end

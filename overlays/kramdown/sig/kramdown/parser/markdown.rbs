@@ -1,0 +1,7 @@
+module Kramdown
+  module Parser
+    class Markdown < ::Kramdown::Parser::Kramdown
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

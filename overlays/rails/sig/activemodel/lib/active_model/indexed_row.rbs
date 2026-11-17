@@ -1,0 +1,13 @@
+module ActiveModel
+  class IndexedRow
+    def initialize: (untyped, untyped) -> void
+    def new_empty_mutable_row: () -> ActiveModel::IndexedRow::Mutable
+    class Remapper
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def build: (untyped) -> ActiveModel::IndexedRow
+    end
+    class Mutable
+      def initialize: (untyped, ?untyped, ?size: untyped) -> void
+    end
+  end
+end

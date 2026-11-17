@@ -1,0 +1,10 @@
+module Dependabot
+  module DotnetSdk
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped) -> void
+        def fetch: () -> Dependabot::Package::PackageDetails
+      end
+    end
+  end
+end

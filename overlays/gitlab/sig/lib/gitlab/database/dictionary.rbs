@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    class Dictionary
+      def initialize: ([untyped]) -> void
+      def find_detach_allowed_partitions: () -> Hash[untyped, { bounds_clause: untyped, required_constraint: untyped, parent_table: untyped, parent_schema: untyped, lock_tables: untyped }]
+      def self.entries: (?untyped) -> Gitlab::Database::Dictionary
+      class Entry
+        def initialize: (untyped) -> void
+        def name_and_schema: () -> [untyped, untyped]
+        def milestone_greater_than_or_equal_to?: (untyped) -> (false | true)
+        def validate!: () -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class Namespace < ::ApplicationRecord
+  class RootStorageStatistics < ::ApplicationRecord
+    def self.namespace_statistics_attributes: () -> ["storage_size", "dependency_proxy_size"]
+  end
+end

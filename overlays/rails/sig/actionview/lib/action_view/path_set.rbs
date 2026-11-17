@@ -1,0 +1,9 @@
+module ActionView
+  class PathSet
+    def initialize: (?untyped) -> void
+    def initialize_copy: (untyped) -> ActionView::PathSet
+    def compact: () -> ActionView::PathSet
+    def +: (untyped) -> ActionView::PathSet
+    def exists?: (untyped, untyped, untyped, untyped, untyped, untyped) -> (false | true)
+  end
+end

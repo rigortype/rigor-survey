@@ -1,0 +1,15 @@
+module YARD
+  module Parser
+    module C
+      class Statement
+        def initialize: (untyped, ?untyped, ?untyped) -> void
+        def line_range: () -> Range[untyped]
+        def show: () -> String
+      end
+      class Comment < ::YARD::Parser::C::Statement
+        def initialize: (untyped, ?untyped, ?untyped) -> void
+        def comments: () -> YARD::Parser::C::Comment
+      end
+    end
+  end
+end

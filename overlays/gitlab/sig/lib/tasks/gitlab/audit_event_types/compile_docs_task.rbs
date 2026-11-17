@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module AuditEventTypes
+      class CompileDocsTask
+        def initialize: (untyped, untyped, untyped) -> void
+        def run: () -> nil
+      end
+    end
+  end
+end

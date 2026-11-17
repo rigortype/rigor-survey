@@ -1,0 +1,6 @@
+module AlertManagement
+  class ProcessPrometheusAlertService
+    def initialize: (untyped, untyped, ?integration: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

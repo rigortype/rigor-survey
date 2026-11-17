@@ -1,0 +1,20 @@
+module Integrations
+  module Base
+    module Integration
+      def manual_activation?: () -> true
+      def editable?: () -> true
+      def activate_disabled_reason: () -> nil
+      def initialize_properties: () -> (nil | {})
+      def to_param: () -> String
+      def sections: () -> []
+      def json_fields: () -> ["active"]
+      def reencrypt_properties: () -> Hash[String, untyped]
+      def event_channel_names: () -> []
+      def test: (untyped) -> { success: untyped, result: untyped }
+      def updated_properties: () -> ActiveSupport::HashWithIndifferentAccess[untyped, untyped]
+      def reset_updated_properties: () -> nil
+      def should_enqueue?: (untyped) -> true
+      def supports_data_fields?: () -> false
+    end
+  end
+end

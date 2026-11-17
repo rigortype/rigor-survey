@@ -1,0 +1,7 @@
+module ActiveRecord
+  class PredicateBuilder
+    class AssociationQueryValue
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

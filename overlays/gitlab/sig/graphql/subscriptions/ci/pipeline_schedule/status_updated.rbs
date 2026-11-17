@@ -1,0 +1,9 @@
+module Subscriptions
+  module Ci
+    module PipelineSchedule
+      class StatusUpdated < ::Subscriptions::BaseSubscription
+        def authorized?: (project_id: untyped) -> true
+      end
+    end
+  end
+end

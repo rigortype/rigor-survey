@@ -1,0 +1,3 @@
+class CustomFieldValue
+  def initialize: (?untyped) -> void
+end

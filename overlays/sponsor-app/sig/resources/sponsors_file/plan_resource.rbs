@@ -1,0 +1,5 @@
+module SponsorsFile
+  class PlanResource < ::SponsorsFile::ApplicationResource
+    def self.mapping: (Array[Sponsorship]) -> Hash[String, Hash[Symbol, untyped]]
+  end
+end

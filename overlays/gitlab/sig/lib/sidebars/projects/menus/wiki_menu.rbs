@@ -1,0 +1,11 @@
+module Sidebars
+  module Projects
+    module Menus
+      class WikiMenu < ::Sidebars::Menu
+        def extra_container_html_options: () -> { class: "shortcuts-wiki" }
+        def sprite_icon: () -> "book"
+        def active_routes: () -> { controller: :wikis }
+      end
+    end
+  end
+end

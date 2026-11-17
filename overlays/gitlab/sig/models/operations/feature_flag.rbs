@@ -1,0 +1,8 @@
+module Operations
+  class FeatureFlag < ::ApplicationRecord
+    def self.reference_prefix: () -> "[feature_flag:"
+    def self.reference_pattern: () -> Regexp
+    def self.reference_postfix: () -> "]"
+    def hook_attrs: () -> { id: untyped, name: untyped, description: untyped, active: untyped }
+  end
+end

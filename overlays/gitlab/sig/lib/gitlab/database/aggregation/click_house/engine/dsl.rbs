@@ -1,0 +1,17 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class Engine < ::Gitlab::Database::Aggregation::Engine
+          module Dsl
+            def table_name=: (untyped) -> (nil | { column: untyped, deleted_marker: untyped })
+            def versioned_by: (untyped, ?deleted_marker: untyped) -> { column: untyped, deleted_marker: untyped }
+            def supporting_cte: (untyped, join_key: untyped, ?join_type: untyped) ?{ (*untyped) -> untyped } -> { join_key: untyped, join_type: untyped, block: untyped }
+            def supporting_ctes: () -> Hash[untyped, untyped]
+            def versioning_config: () -> { column: untyped, deleted_marker: untyped }
+          end
+        end
+      end
+    end
+  end
+end

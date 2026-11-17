@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module BackgroundOperation
+      class WorkerCellLocal < ::Gitlab::Database::SharedModel
+        def self.allowed_enqueuer: () -> "Database::BackgroundOperation::CronEnqueueWorker"
+      end
+    end
+  end
+end

@@ -1,0 +1,61 @@
+module Gitlab
+  module TemplateParser
+    module AST
+      class Identifier < ::Struct[untyped]
+        def name: () -> untyped
+        def name=: (untyped) -> untyped
+        def self.new: (?name: untyped) -> instance | (?untyped name) -> instance
+        def self.[]: (?name: untyped) -> instance | (?untyped name) -> instance
+      end
+      class Integer < ::Struct[untyped]
+        def value: () -> untyped
+        def value=: (untyped) -> untyped
+        def self.new: (?value: untyped) -> instance | (?untyped value) -> instance
+        def self.[]: (?value: untyped) -> instance | (?untyped value) -> instance
+      end
+      class Selector < ::Struct[untyped]
+        def steps: () -> untyped
+        def steps=: (untyped) -> untyped
+        def self.new: (?steps: untyped) -> instance | (?untyped steps) -> instance
+        def self.[]: (?steps: untyped) -> instance | (?untyped steps) -> instance
+      end
+      class Variable < ::Struct[untyped]
+        def selector: () -> untyped
+        def selector=: (untyped) -> untyped
+        def self.new: (?selector: untyped) -> instance | (?untyped selector) -> instance
+        def self.[]: (?selector: untyped) -> instance | (?untyped selector) -> instance
+      end
+      class Expressions < ::Struct[untyped]
+        def nodes: () -> untyped
+        def nodes=: (untyped) -> untyped
+        def self.new: (?nodes: untyped) -> instance | (?untyped nodes) -> instance
+        def self.[]: (?nodes: untyped) -> instance | (?untyped nodes) -> instance
+      end
+      class Text < ::Struct[untyped]
+        def text: () -> untyped
+        def text=: (untyped) -> untyped
+        def self.new: (?text: untyped) -> instance | (?untyped text) -> instance
+        def self.[]: (?text: untyped) -> instance | (?untyped text) -> instance
+      end
+      class If < ::Struct[untyped]
+        def condition: () -> untyped
+        def true_body: () -> untyped
+        def false_body: () -> untyped
+        def condition=: (untyped) -> untyped
+        def true_body=: (untyped) -> untyped
+        def false_body=: (untyped) -> untyped
+        def self.new: (?condition: untyped, ?true_body: untyped, ?false_body: untyped) -> instance | (?untyped condition, ?untyped true_body, ?untyped false_body) -> instance
+        def self.[]: (?condition: untyped, ?true_body: untyped, ?false_body: untyped) -> instance | (?untyped condition, ?untyped true_body, ?untyped false_body) -> instance
+        def truthy?: (untyped) -> (false | true)
+      end
+      class Each < ::Struct[untyped]
+        def collection: () -> untyped
+        def body: () -> untyped
+        def collection=: (untyped) -> untyped
+        def body=: (untyped) -> untyped
+        def self.new: (?collection: untyped, ?body: untyped) -> instance | (?untyped collection, ?untyped body) -> instance
+        def self.[]: (?collection: untyped, ?body: untyped) -> instance | (?untyped collection, ?untyped body) -> instance
+      end
+    end
+  end
+end

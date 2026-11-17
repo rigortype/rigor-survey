@@ -1,0 +1,7 @@
+module ClickHouse
+  module MigrationSupport
+    class ExclusiveLock
+      def self.wait_until_workers_inactive: (untyped) -> nil
+    end
+  end
+end

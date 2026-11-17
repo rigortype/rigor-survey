@@ -1,0 +1,24 @@
+module Arel
+  class SelectManager < ::Arel::TreeManager
+    def initialize: (?untyped) -> void
+    def skip: (untyped) -> Arel::SelectManager
+    def as: (untyped) -> Arel::Nodes::TableAlias
+    def lock: (?untyped) -> Arel::SelectManager
+    def on: (*untyped) -> Arel::SelectManager
+    def group: (*untyped) -> Arel::SelectManager
+    def from: (untyped) -> Arel::SelectManager
+    def join: (untyped, ?untyped) -> Arel::SelectManager
+    def outer_join: (untyped) -> Arel::SelectManager
+    def having: (untyped) -> Arel::SelectManager
+    def window: (untyped) -> Arel::Nodes::NamedWindow
+    def project: (*untyped) -> Arel::SelectManager
+    def optimizer_hints: (*untyped) -> Arel::SelectManager
+    def distinct: (?untyped) -> Arel::SelectManager
+    def distinct_on: (untyped) -> Arel::SelectManager
+    def order: (*untyped) -> Arel::SelectManager
+    def where: (untyped) -> Arel::SelectManager
+    def where_sql: (?untyped) -> (Arel::Nodes::SqlLiteral | nil)
+    def with: (*untyped) -> Arel::SelectManager
+    def take: (untyped) -> Arel::SelectManager
+  end
+end

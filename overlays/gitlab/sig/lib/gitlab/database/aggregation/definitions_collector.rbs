@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class DefinitionsCollector
+        def initialize: (untyped, ?transients: untyped) -> void
+        def collect: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      end
+    end
+  end
+end

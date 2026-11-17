@@ -1,0 +1,6 @@
+module Gitlab
+  module TemplateHelper
+    def prepare_template_environment: (untyped, untyped) -> (ImportExportUpload | nil)
+    def tmp_filename: () -> String
+  end
+end

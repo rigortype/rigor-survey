@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    class Config
+      class Stages
+        def initialize: (untyped) -> void
+        def stages: () -> (Array[untyped] | [])
+      end
+    end
+  end
+end

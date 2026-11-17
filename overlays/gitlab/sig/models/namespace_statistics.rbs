@@ -1,0 +1,3 @@
+class NamespaceStatistics < ::ApplicationRecord
+  def self.columns_to_refresh: () -> [:dependency_proxy_size]
+end

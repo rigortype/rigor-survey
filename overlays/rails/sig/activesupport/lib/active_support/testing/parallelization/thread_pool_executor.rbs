@@ -1,0 +1,10 @@
+module ActiveSupport
+  module Testing
+    class Parallelization
+      class ThreadPoolExecutor
+        def initialize: (size: untyped, distributor: untyped) -> void
+        def shutdown: () -> (false | true)
+      end
+    end
+  end
+end

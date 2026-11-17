@@ -1,0 +1,21 @@
+module Rails
+  module Initializable
+    def run_initializers: (?untyped, *untyped) -> (nil | true)
+    class Initializer
+      def initialize: (untyped, untyped, before: untyped, after: untyped, ?group: untyped) ?{ (*untyped) -> untyped } -> void
+      def bind: (untyped) -> Rails::Initializable::Initializer
+    end
+    class Collection
+      def initialize: (?untyped) -> void
+      def to_a: () -> Array[untyped]
+      def +: (untyped) -> Rails::Initializable::Collection
+      def <<: (untyped) -> Rails::Initializable::Collection
+      def push: (*untyped) -> Rails::Initializable::Collection
+      def concat: (*untyped) -> Rails::Initializable::Collection
+    end
+    module ClassMethods
+      def initializers: () -> Rails::Initializable::Collection
+      def initializers_for: (untyped) -> Rails::Initializable::Collection
+    end
+  end
+end

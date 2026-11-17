@@ -1,0 +1,14 @@
+module Onboarding
+  module FeatureLibrary
+    module Catalog
+      class ExplorePage < ::Data
+        def highlights: () -> untyped
+        def credits: () -> untyped
+        def new_items: () -> untyped
+        def enhanced_items: () -> untyped
+        def self.new: (highlights: untyped, credits: untyped, new_items: untyped, enhanced_items: untyped) -> instance | (untyped highlights, untyped credits, untyped new_items, untyped enhanced_items) -> instance
+        def self.[]: (highlights: untyped, credits: untyped, new_items: untyped, enhanced_items: untyped) -> instance | (untyped highlights, untyped credits, untyped new_items, untyped enhanced_items) -> instance
+      end
+    end
+  end
+end

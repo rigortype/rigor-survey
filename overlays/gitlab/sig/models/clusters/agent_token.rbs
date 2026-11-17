@@ -1,0 +1,7 @@
+module Clusters
+  class AgentToken < ::ApplicationRecord
+    def to_ability_name: () -> :cluster
+    def glagent_prefix: () -> ("glagent-" | String)
+    def self.glagent_prefix: () -> ("glagent-" | String)
+  end
+end

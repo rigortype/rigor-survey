@@ -1,0 +1,3 @@
+class GroupedNotificationsPresenter < ::ActiveModelSerializers::Model
+  def initialize: (untyped, ?untyped) -> void
+end

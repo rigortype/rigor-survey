@@ -1,0 +1,7 @@
+module ActionView
+  module Layouts
+    def _process_render_template_options: (untyped) -> (Proc | String | nil)
+    def initialize: (*untyped) -> void
+    def action_has_layout?: () -> true
+  end
+end

@@ -1,0 +1,4 @@
+module CanMoveRepositoryStorage
+  def set_repository_writable!: () -> nil
+  def reference_counter: (type: untyped) -> Gitlab::ReferenceCounter
+end

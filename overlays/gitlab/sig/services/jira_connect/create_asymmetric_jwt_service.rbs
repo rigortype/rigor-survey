@@ -1,0 +1,6 @@
+module JiraConnect
+  class CreateAsymmetricJwtService
+    def initialize: (untyped, ?event: Symbol) -> void
+    def execute: () -> String
+  end
+end

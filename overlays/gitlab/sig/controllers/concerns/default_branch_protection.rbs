@@ -1,0 +1,3 @@
+module DefaultBranchProtection
+  def normalize_default_branch_params!: (untyped) -> (ActionController::Parameters | Array[Symbol] | nil)
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      module DiffNotes
+        class DiscussionId
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

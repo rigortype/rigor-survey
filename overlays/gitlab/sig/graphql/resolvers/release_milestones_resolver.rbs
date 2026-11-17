@@ -1,0 +1,5 @@
+module Resolvers
+  class ReleaseMilestonesResolver < ::Resolvers::BaseResolver
+    def resolve: (**untyped) -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+  end
+end

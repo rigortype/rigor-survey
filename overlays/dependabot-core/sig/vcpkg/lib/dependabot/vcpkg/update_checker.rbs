@@ -1,0 +1,9 @@
+module Dependabot
+  module Vcpkg
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_resolvable_version: () -> (Dependabot::Version | String | nil)
+      def latest_resolvable_version_with_no_unlock: () -> (Dependabot::Version | String | nil)
+      def lowest_resolvable_security_fix_version: () -> (Dependabot::Version | nil)
+    end
+  end
+end

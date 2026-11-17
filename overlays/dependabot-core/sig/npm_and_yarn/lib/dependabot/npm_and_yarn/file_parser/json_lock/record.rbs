@@ -1,0 +1,21 @@
+module Dependabot
+  module NpmAndYarn
+    class FileParser < ::Dependabot::FileParsers::Base
+      class JsonLock
+        class Record
+          def initialize: (untyped, path: untyped, context: untyped) -> void
+          def version: () -> (String | nil)
+          def name: () -> (String | nil)
+          def resolved: () -> (String | nil)
+          def resolution: () -> (String | nil)
+          def dev?: () -> (false | true)
+          def bundled?: () -> (false | true)
+          def legacy_entries: () -> Hash[String, ::Record]
+          def legacy_entry: (untyped) -> (Dependabot::NpmAndYarn::FileParser::JsonLock::Record | nil)
+          def package_entry: (untyped, untyped) -> (Dependabot::NpmAndYarn::FileParser::JsonLock::Record | nil)
+          def registry_uri: (untyped) -> (URI::FTP | URI::File | URI::Generic | URI::HTTP | URI::HTTPS | URI::LDAP | URI::LDAPS | URI::MailTo | URI::WS | URI::WSS | nil)
+        end
+      end
+    end
+  end
+end

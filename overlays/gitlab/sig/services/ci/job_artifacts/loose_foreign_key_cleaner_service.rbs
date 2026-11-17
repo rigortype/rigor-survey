@@ -1,0 +1,7 @@
+module Ci
+  module JobArtifacts
+    class LooseForeignKeyCleanerService < ::LooseForeignKeys::CleanerService
+      def execute: () -> { affected_rows: untyped, table: untyped }
+    end
+  end
+end

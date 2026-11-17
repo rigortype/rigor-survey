@@ -1,0 +1,3 @@
+module DeployTokensHelper
+  def deploy_token_revoke_button_data: (token: untyped, group_or_project: untyped) -> { token: untyped, revoke_path: untyped }
+end

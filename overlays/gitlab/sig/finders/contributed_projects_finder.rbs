@@ -1,0 +1,3 @@
+class ContributedProjectsFinder
+  def initialize: (user: untyped, ?current_user: untyped, ?params: untyped) -> void
+end

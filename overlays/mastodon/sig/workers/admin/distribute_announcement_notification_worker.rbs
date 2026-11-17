@@ -1,0 +1,5 @@
+module Admin
+  class DistributeAnnouncementNotificationWorker
+    def each_iteration: (untyped, untyped) -> Array[String | nil]
+  end
+end

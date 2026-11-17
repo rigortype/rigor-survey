@@ -1,0 +1,13 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      module Wrapper
+        module ExecutingVersionDetector
+          def self.from_distribution_url: (untyped) -> (Dependabot::Gradle::Version | nil)
+          def self.from_version_output: (untyped) -> (Dependabot::Gradle::Version | nil)
+          def self.build_version: (untyped) -> (Dependabot::Gradle::Version | nil)
+        end
+      end
+    end
+  end
+end

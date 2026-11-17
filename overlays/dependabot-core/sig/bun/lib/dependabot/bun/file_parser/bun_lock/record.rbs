@@ -1,0 +1,16 @@
+module Dependabot
+  module Bun
+    class FileParser < ::Dependabot::FileParsers::Base
+      class BunLock
+        class Record
+          def initialize: (untyped, path: untyped, context: untyped) -> void
+          def graph_compatible?: () -> (false | true)
+          def name: () -> String
+          def version: () -> (String | nil)
+          def lookup_details: () -> Dependabot::Package::NpmLockfileDetails
+          def dependency_names: () -> Array[String]
+        end
+      end
+    end
+  end
+end

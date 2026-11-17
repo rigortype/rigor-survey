@@ -1,0 +1,10 @@
+module YARD
+  module Templates
+    module Helpers
+      module MarkupHelper
+        def self.clear_markup_cache: () -> {}
+        def load_markup_provider: (?untyped) -> (false | true)
+      end
+    end
+  end
+end

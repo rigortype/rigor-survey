@@ -1,0 +1,10 @@
+module Ci
+  module Catalog
+    module Resources
+      class DestroyService
+        def initialize: (untyped, untyped) -> void
+        def execute: (untyped) -> ServiceResponse
+      end
+    end
+  end
+end

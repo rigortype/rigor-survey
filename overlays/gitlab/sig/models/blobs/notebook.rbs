@@ -1,0 +1,5 @@
+module Blobs
+  class Notebook < ::Blob
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module QuickActions
+    class TimelineTextAndDateTimeSeparator
+      def initialize: (untyped) -> void
+      def execute: () -> ([untyped, DateTime] | [untyped, String] | nil)
+    end
+  end
+end

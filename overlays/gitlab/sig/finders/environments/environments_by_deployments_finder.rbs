@@ -1,0 +1,5 @@
+module Environments
+  class EnvironmentsByDeploymentsFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

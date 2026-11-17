@@ -1,0 +1,4 @@
+class ResponseWithLimit
+  def initialize: (untyped, Integer) -> void
+  def limit: () -> (0 | Integer)
+end

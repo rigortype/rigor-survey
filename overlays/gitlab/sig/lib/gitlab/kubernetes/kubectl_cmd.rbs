@@ -1,0 +1,10 @@
+module Gitlab
+  module Kubernetes
+    module KubectlCmd
+      def self.delete: (*untyped) -> String
+      def self.apply_file: (untyped, *untyped) -> String
+      def self.delete_crds_from_group: (untyped) -> String
+      def self.api_resources: (*untyped) -> String
+    end
+  end
+end

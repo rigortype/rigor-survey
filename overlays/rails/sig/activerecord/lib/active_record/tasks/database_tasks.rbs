@@ -1,0 +1,14 @@
+module ActiveRecord
+  module Tasks
+    module DatabaseTasks
+      def name: () -> "primary"
+      def raise_for_multi_db: (?untyped, command: untyped) -> nil
+      def db_configs_with_versions: (?untyped) -> Hash
+      def migrate_status: () -> nil
+      def check_target_version: () -> nil
+      def migration_class: () -> singleton(ActiveRecord::Base)
+    end
+    class DatabaseNotSupported < ::StandardError
+    end
+  end
+end

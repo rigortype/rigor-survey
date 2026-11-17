@@ -1,0 +1,12 @@
+module Dependabot
+  module GithubActions
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, credentials: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped, ?security_advisories: untyped, ?git_metadata_fetcher: untyped) -> void
+        def lowest_security_fix_version_tag: () -> (Hash[Symbol, Object] | nil)
+        def fetch_tag_and_release_date: () -> Array[Dependabot::GitTagWithDetail]
+        def allowed_version_tags_with_release_dates: () -> Array[untyped]
+      end
+    end
+  end
+end

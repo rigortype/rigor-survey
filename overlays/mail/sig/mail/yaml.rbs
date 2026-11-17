@@ -1,0 +1,5 @@
+module Mail
+  module YAML
+    def self.load: (untyped) -> (Array[untyped] | Float | Hash[String, untyped] | Integer | Mail::Body | Mail::Exim | Mail::FileDelivery | Mail::LoggerDelivery | Mail::SMTP | Mail::SMTPConnection | Mail::Sendmail | Mail::TestMailer | String | Symbol | false | nil | true)
+  end
+end

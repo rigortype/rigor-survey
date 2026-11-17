@@ -1,0 +1,7 @@
+module ErrorTracking
+  class SentryClient
+    module Event
+      def issue_latest_event: (issue_id: untyped) -> Gitlab::ErrorTracking::ErrorEvent
+    end
+  end
+end

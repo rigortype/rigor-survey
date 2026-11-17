@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    class ReportsDaemon < ::Gitlab::Daemon
+      def initialize: (?reporter: untyped, ?reports: untyped, **untyped) -> void
+      def run_thread: () -> nil
+      def sleep_s: () -> (7200 | Integer)
+      def sleep_max_delta_s: () -> (600 | Integer)
+      def sleep_between_reports_s: () -> (120 | Integer)
+      def alive: () -> (false | true)
+    end
+  end
+end

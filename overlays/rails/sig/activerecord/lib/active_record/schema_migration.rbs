@@ -1,0 +1,8 @@
+module ActiveRecord
+  class SchemaMigration
+    def initialize: (untyped) -> void
+    def primary_key: () -> "version"
+    def table_name: () -> String
+    def arel_table: () -> Arel::Table
+  end
+end

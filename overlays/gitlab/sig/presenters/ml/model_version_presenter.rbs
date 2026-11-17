@@ -1,0 +1,5 @@
+module Ml
+  class ModelVersionPresenter < ::Gitlab::View::Presenter::Delegated
+    def display_name: () -> String
+  end
+end

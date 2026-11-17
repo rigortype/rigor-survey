@@ -1,0 +1,12 @@
+module Import
+  module SourceUsers
+    class BulkReassignFromCsvService
+      def initialize: (untyped, untyped, untyped) -> void
+      def async_execute: () -> ServiceResponse
+      def execute: () -> ServiceResponse
+      def csv_validator: () -> Import::UserMapping::ReassignmentCsvValidator
+      def reassignment_stats: () -> { skipped: 0, matched: 0, failed: 0 }
+      def reassignment_error_csv_data: () -> Array[untyped]
+    end
+  end
+end

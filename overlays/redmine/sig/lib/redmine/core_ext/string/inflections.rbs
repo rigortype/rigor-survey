@@ -1,0 +1,9 @@
+module Redmine
+  module CoreExt
+    module String
+      module Inflections
+        def with_leading_slash: () -> (Redmine::CoreExt::String::Inflections | ::String)
+      end
+    end
+  end
+end

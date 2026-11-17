@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Group
+      class ObjectBuilder < ::Gitlab::ImportExport::Base::ObjectBuilder
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

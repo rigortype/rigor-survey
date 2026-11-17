@@ -1,0 +1,8 @@
+module Observability
+  class ObservabilityPresenter
+    def initialize: (untyped, untyped, ?query_params: Hash[String, String]) -> void
+    def calculate_reactive_cache: () -> (Hash[untyped, :provisioning] | Hash[untyped, untyped])
+    def url_with_path: () -> (URI::Generic | nil)
+    def to_h: () -> { o11y_url: untyped, path: untyped, auth_tokens: untyped, title: untyped, query_params: untyped }
+  end
+end

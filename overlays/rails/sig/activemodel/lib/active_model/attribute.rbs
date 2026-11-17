@@ -1,0 +1,38 @@
+module ActiveModel
+  class Attribute
+    def self.from_database: (untyped, untyped, untyped, ?untyped) -> ActiveModel::Attribute::FromDatabase
+    def self.from_user: (untyped, untyped, untyped, ?untyped) -> ActiveModel::Attribute::FromUser
+    def self.with_cast_value: (untyped, untyped, untyped) -> ActiveModel::Attribute::WithCastValue
+    def self.null: (untyped) -> ActiveModel::Attribute::Null
+    def self.uninitialized: (untyped, untyped) -> ActiveModel::Attribute::Uninitialized
+    def initialize: (untyped, untyped, untyped, ?untyped, ?untyped) -> void
+    def freezable?: () -> true
+    def with_value_from_user: (untyped) -> ActiveModel::Attribute::FromUser
+    def with_value_from_database: (untyped) -> ActiveModel::Attribute::FromDatabase
+    def with_cast_value: (untyped) -> ActiveModel::Attribute::WithCastValue
+    def with_type: (untyped) -> (ActiveModel::Attribute | ActiveModel::Attribute::FromUser)
+    def initialized?: () -> true
+    def came_from_user?: () -> false
+    def has_been_read?: () -> (String | nil)
+    class FromUser < ::ActiveModel::Attribute
+      def came_from_user?: () -> (false | true)
+    end
+    class WithCastValue < ::ActiveModel::Attribute
+      def changed_in_place?: () -> false
+    end
+    class Null < ::ActiveModel::Attribute
+      def initialize: (untyped) -> void
+      def type_cast: (*untyped) -> nil
+      def with_type: (untyped) -> ActiveModel::Attribute::WithCastValue
+      def with_value_from_database: (untyped) -> bot
+    end
+    class Uninitialized < ::ActiveModel::Attribute
+      def initialize: (untyped, untyped) -> void
+      def value!: () -> bot
+      def original_value: () -> Object
+      def initialized?: () -> false
+      def forgetting_assignment: () -> ActiveModel::Attribute::Uninitialized
+      def with_type: (untyped) -> ActiveModel::Attribute::Uninitialized
+    end
+  end
+end

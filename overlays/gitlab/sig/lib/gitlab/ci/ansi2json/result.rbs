@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      class Result
+        def initialize: (lines: untyped, state: untyped, append: untyped, truncated: untyped, offset: untyped, stream: untyped) -> void
+      end
+    end
+  end
+end

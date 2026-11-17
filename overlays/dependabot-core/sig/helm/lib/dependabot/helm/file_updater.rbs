@@ -1,0 +1,11 @@
+module Dependabot
+  module Helm
+    class FileUpdater < ::Dependabot::Shared::SharedFileUpdater
+      def file_type: () -> "Helm chart"
+      def yaml_file_pattern: () -> Regexp
+      def container_image_regex: () -> Regexp
+      def build_old_declaration_regex: (untyped) -> Regexp
+      def updated_dependency_files: () -> Array[untyped]
+    end
+  end
+end

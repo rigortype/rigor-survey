@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      module Preloader
+        class MergeRequest
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

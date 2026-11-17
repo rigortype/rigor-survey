@@ -1,0 +1,7 @@
+module ClustersHelper
+  def display_cluster_agents?: (untyped) -> (false | true)
+  def js_clusters_list_data: (untyped) -> { ancestor_help_path: untyped, endpoint: untyped, img_tags: { aws: { path: untyped, text: untyped }, default: { path: untyped, text: untyped }, gcp: { path: untyped, text: untyped } }, clusters_empty_state_image: untyped, empty_state_image: untyped, empty_state_help_text: untyped, add_cluster_path: untyped, new_cluster_docs_path: untyped, can_add_cluster: untyped, can_admin_cluster: untyped, display_cluster_agents: "false" | "true", certificate_based_clusters_enabled: untyped, default_branch_name: untyped, full_path: untyped, is_group: "false" | "true", kas_address: untyped, kas_install_version: untyped, kas_check_version: untyped }
+  def js_cluster_form_data: (untyped, untyped) -> { enabled: untyped, editable: untyped, environment_scope: untyped, base_domain: untyped, auto_devops_help_path: untyped, external_endpoint_help_path: untyped }
+  def cluster_created?: (untyped) -> (false | true)
+  def migration_alert_config: (untyped) -> (Hash[untyped, untyped] | nil | { variant: :info, message: untyped } | { variant: :success, message: untyped } | { variant: :warning, title: untyped, message: untyped, show_help: true })
+end

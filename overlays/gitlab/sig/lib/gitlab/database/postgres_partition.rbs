@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class PostgresPartition < ::Gitlab::Database::SharedModel
+      def self.legacy_partition_exists?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module FileHook
+    def self.any?: () -> (false | true)
+    def self.files: () -> Array[String]
+    def self.dir_glob: () -> Array[String]
+    def self.execute: (untyped, untyped) -> ([untyped, untyped] | [false, String])
+  end
+end

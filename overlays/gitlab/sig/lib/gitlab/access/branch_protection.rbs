@@ -1,0 +1,13 @@
+module Gitlab
+  module Access
+    class BranchProtection
+      def initialize: (untyped) -> void
+      def to_hash: () -> (nil | { allowed_to_push: [Hash[String, 30]], allowed_to_merge: [Hash[String, 30]], allow_force_push: true, code_owner_approval_required: false, developer_can_initial_push: false } | { allowed_to_push: [Hash[String, 30]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, developer_can_initial_push: false } | { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 30]], allow_force_push: false, developer_can_initial_push: false } | { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, code_owner_approval_required: false, developer_can_initial_push: true } | { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, developer_can_initial_push: false })
+      def self.protection_none: () -> { allowed_to_push: [Hash[String, 30]], allowed_to_merge: [Hash[String, 30]], allow_force_push: true, code_owner_approval_required: false, developer_can_initial_push: false }
+      def self.protection_partial: () -> { allowed_to_push: [Hash[String, 30]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, developer_can_initial_push: false }
+      def self.protected_fully: () -> { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, developer_can_initial_push: false }
+      def self.protected_against_developer_pushes: () -> { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 30]], allow_force_push: false, developer_can_initial_push: false }
+      def self.protected_after_initial_push: () -> { allowed_to_push: [Hash[String, 40]], allowed_to_merge: [Hash[String, 40]], allow_force_push: false, code_owner_approval_required: false, developer_can_initial_push: true }
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module ActionText
+  class Fragment
+    def self.from_html: (untyped) -> ActionText::Fragment
+    def initialize: (untyped) -> void
+    def update: () -> ActionText::Fragment
+    def replace: (untyped) -> ActionText::Fragment
+  end
+end

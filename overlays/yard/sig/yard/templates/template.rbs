@@ -1,0 +1,17 @@
+module YARD
+  module Templates
+    module Template
+      def initialize: (?untyped) -> void
+      def run: (?untyped, ?untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> String
+      def file: (untyped, ?untyped) -> String
+      def inspect: () -> String
+      module ClassMethods
+        def reset_full_paths: () -> nil
+        def initialize: (untyped, untyped) -> void
+        def find_nth_file: (untyped, ?untyped) -> (String | nil)
+        def new: (*untyped) -> Object
+        def S: (*untyped) -> YARD::Templates::Section
+      end
+    end
+  end
+end

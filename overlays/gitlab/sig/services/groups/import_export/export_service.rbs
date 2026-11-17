@@ -1,0 +1,8 @@
+module Groups
+  module ImportExport
+    class ExportService
+      def initialize: (group: untyped, user: untyped, exported_by_admin: untyped, ?params: { shared: untyped }) -> void
+      def params: () -> { shared: untyped }
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module TemperatureConversion
+  def self.celsius_to_kelvin: (untyped) -> nil
+  def self.kelvin_to_celsius: (untyped) -> nil
+  def self.celsius_to_fahrenheit: (untyped) -> nil
+  def self.fahrenheit_to_celsius: (untyped) -> nil
+  def self.fahrenheit_to_kelvin: (untyped) -> nil
+  def self.kelvin_to_fahrenheit: (untyped) -> nil
+end

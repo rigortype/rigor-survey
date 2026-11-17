@@ -1,0 +1,14 @@
+module SupplyChain
+  class RootCaDriver
+    def ca_certificate: () -> bot
+    def generate_leaf_certificate: (ci_config_ref_uri: untyped) -> SupplyChain::RootCaDriver::LeafCertificate
+    class LeafCertificate < ::Struct[untyped]
+      def key: () -> untyped
+      def certificate: () -> untyped
+      def key=: (untyped) -> untyped
+      def certificate=: (untyped) -> untyped
+      def self.new: (?key: untyped, ?certificate: untyped) -> instance
+      def self.[]: (?key: untyped, ?certificate: untyped) -> instance
+    end
+  end
+end

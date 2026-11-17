@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class PackagesVersionsPresenter
+      def initialize: (ActiveRecord::Relation[Packages::Package]) -> void
+    end
+  end
+end

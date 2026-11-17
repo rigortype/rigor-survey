@@ -1,0 +1,5 @@
+module ActionText
+  module MarkdownConversion
+    def markdown_link: (untyped, untyped, ?image: untyped) -> String
+  end
+end

@@ -1,0 +1,7 @@
+module TDiary
+  class Server
+    def initialize: (untyped) -> void
+    def start: () -> top
+    def shutdown: () -> top
+  end
+end

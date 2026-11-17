@@ -1,0 +1,6 @@
+module PagesCore
+  module StaticCache
+    def self.default_handler: () -> (PagesCore::StaticCache::PageCacheHandler | PagesCore::StaticCache::VarnishHandler)
+    def self.varnish_handler: () -> PagesCore::StaticCache::VarnishHandler
+  end
+end

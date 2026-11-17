@@ -1,0 +1,13 @@
+module Gitlab
+  module Diff
+    module Rendered
+      module Notebook
+        class DiffFile < ::Gitlab::Diff::File
+          def initialize: (untyped) -> void
+          def rendered: () -> (Gitlab::Diff::Rendered::Notebook::DiffFile | nil)
+          def rendered?: () -> true
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+class String
+  def pluralize: (?(Integer | Symbol)?, ?Symbol) -> String
+  def singularize: (?Symbol) -> String
+  def camelize: (?Symbol) -> String
+  def titleize: (?keep_id_suffix: boolish) -> String
+  def underscore: () -> String
+  def dasherize: () -> String
+  def demodulize: () -> String
+  def deconstantize: () -> String
+  def parameterize: (?separator: String?, ?preserve_case: boolish, ?locale: Symbol?) -> String
+  def tableize: () -> String
+  def classify: () -> String
+  def humanize: (?capitalize: boolish, ?keep_id_suffix: boolish) -> String
+  def upcase_first: () -> String
+  def downcase_first: () -> String
+  def foreign_key: (?boolish) -> String
+end

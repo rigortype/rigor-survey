@@ -1,0 +1,13 @@
+module Redmine
+  class PluginPath
+    def initialize: (untyped) -> void
+    def run_initializer: () -> (false | nil | true)
+    def has_assets_dir?: () -> (false | true)
+    def has_initializer?: () -> (false | true)
+    def assets_dir: () -> String
+    def initializer: () -> String
+  end
+  class PluginLoader
+    def self.setup: () -> Array[String]
+  end
+end

@@ -1,0 +1,9 @@
+module Banzai
+  module ReferenceParser
+    class ExternalIssueParser < ::Banzai::ReferenceParser::BaseParser
+      def referenced_by: (untyped, ?untyped) -> Array[untyped]
+      def issue_ids_per_project: (untyped) -> Hash[untyped, untyped]
+      def can_read_reference?: (untyped, untyped, untyped) -> true
+    end
+  end
+end

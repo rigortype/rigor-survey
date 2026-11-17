@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    class Reflection
+      def initialize: (untyped) -> void
+      def human_adapter_name: () -> ("PostgreSQL" | "Unknown")
+      def primary?: () -> (false | true)
+      def flavor: () -> ("AlloyDB for PostgreSQL" | "Amazon Aurora PostgreSQL" | "Azure Database for PostgreSQL - Flexible Server" | "Azure Database for PostgreSQL - Single Server" | "Cloud SQL for PostgreSQL" | "PostgreSQL on Amazon RDS" | nil)
+    end
+  end
+end

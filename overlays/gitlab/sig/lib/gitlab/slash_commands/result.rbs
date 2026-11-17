@@ -1,0 +1,12 @@
+module Gitlab
+  module SlashCommands
+    class Result < ::Struct[untyped]
+      def type: () -> untyped
+      def message: () -> untyped
+      def type=: (untyped) -> untyped
+      def message=: (untyped) -> untyped
+      def self.new: (?type: untyped, ?message: untyped) -> instance | (?untyped type, ?untyped message) -> instance
+      def self.[]: (?type: untyped, ?message: untyped) -> instance | (?untyped type, ?untyped message) -> instance
+    end
+  end
+end

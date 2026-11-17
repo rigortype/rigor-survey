@@ -1,0 +1,6 @@
+class InternalId < ::ApplicationRecord
+  def self.build_generator: (untyped, untyped, untyped, ?untyped) -> InternalId::ImplicitlyLockingInternalIdGenerator
+  class ImplicitlyLockingInternalIdGenerator
+    def initialize: (untyped, untyped, untyped, ?untyped) -> void
+  end
+end

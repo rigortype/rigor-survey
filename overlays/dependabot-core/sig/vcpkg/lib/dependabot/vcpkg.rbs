@@ -1,0 +1,5 @@
+module Dependabot
+  module Vcpkg
+    def self.repository_path: () -> ("/opt/vcpkg" | String)
+  end
+end

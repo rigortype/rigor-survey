@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class Lfs < ::Backup::Tasks::Task
+      def self.id: () -> "lfs"
+      def destination_path: () -> "lfs.tar.gz"
+    end
+  end
+end

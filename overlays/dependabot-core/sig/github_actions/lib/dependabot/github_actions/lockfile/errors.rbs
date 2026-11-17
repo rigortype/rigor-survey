@@ -1,0 +1,9 @@
+module Dependabot
+  module GithubActions
+    module Lockfile
+      class UnsupportedLockfileVersion < ::Dependabot::DependencyFileNotParseable
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module BlobViewer
+  class Podspec < ::BlobViewer::DependencyManager
+    def manager_name: () -> "CocoaPods"
+    def manager_url: () -> "https://cocoapods.org/"
+    def package_type: () -> "pod"
+    def package_url: () -> String
+  end
+end

@@ -1,0 +1,8 @@
+module Authz
+  module Tokens
+    class PrivilegeEscalationCheck
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

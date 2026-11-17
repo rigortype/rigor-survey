@@ -1,0 +1,5 @@
+module Redmine
+  module Configuration
+    def self.load_from_yaml: (untyped, untyped) -> Hash[untyped, untyped]
+  end
+end

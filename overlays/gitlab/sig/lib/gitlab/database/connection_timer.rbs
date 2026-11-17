@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    class ConnectionTimer
+      def self.starting_now: () -> Gitlab::Database::ConnectionTimer
+      def self.interval: () -> 3600
+      def self.current_clock_value: () -> Float
+      def initialize: (Integer | nil, untyped) -> void
+      def reset!: () -> Float
+      def interval: () -> (0 | 20 | nil)
+    end
+  end
+end

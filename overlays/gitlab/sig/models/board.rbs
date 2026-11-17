@@ -1,0 +1,6 @@
+class Board < ::ApplicationRecord
+  def project_needed?: () -> (false | true)
+  def scoped?: () -> false
+  def self.to_type: () -> String
+  def to_type: () -> String
+end

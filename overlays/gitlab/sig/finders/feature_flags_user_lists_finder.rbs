@@ -1,0 +1,4 @@
+class FeatureFlagsUserListsFinder
+  def initialize: (untyped, untyped, ?{ search: String } | {}) -> void
+  def params: () -> ({ search: "test" } | {})
+end

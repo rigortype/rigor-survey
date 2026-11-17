@@ -1,0 +1,7 @@
+module Packages
+  module Generic
+    class PackageFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Organizations
+  class UserOrganizationsFinder < ::Organizations::OrganizationsFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

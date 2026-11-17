@@ -1,0 +1,5 @@
+module Ci
+  class CollectTimeSeriesPipelineAnalyticsService < ::Ci::CollectPipelineAnalyticsServiceBase
+    def initialize: (from_time: untyped, to_time: untyped, ?time_series_period: untyped, **untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+class PersonalSnippet < ::Snippet
+  def self.reference_pattern: () -> Regexp
+  def skip_project_check?: () -> true
+  def uploads_sharding_key: () -> { organization_id: untyped }
+end

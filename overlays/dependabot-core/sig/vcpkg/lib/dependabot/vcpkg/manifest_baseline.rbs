@@ -1,0 +1,9 @@
+module Dependabot
+  module Vcpkg
+    class ManifestBaseline
+      def initialize: (dependency_files: untyped) -> void
+      def ref: () -> (String | nil)
+      def location: () -> ([untyped, ["default-registry", "baseline"]] | [untyped, [untyped]] | nil)
+    end
+  end
+end

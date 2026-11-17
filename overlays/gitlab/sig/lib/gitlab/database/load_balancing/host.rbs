@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class Host
+        def initialize: (untyped, untyped, ?port: Integer) -> void
+        def try_disconnect: () -> (false | true)
+        def replication_lag_below_threshold?: () -> (false | true)
+        def intervals: () -> Array[untyped]
+        def port: () -> 5432
+      end
+    end
+  end
+end

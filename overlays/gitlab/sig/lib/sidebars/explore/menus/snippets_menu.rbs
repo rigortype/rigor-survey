@@ -1,0 +1,11 @@
+module Sidebars
+  module Explore
+    module Menus
+      class SnippetsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "snippet"
+        def render?: () -> true
+        def active_routes: () -> { controller: ["explore/snippets"] }
+      end
+    end
+  end
+end

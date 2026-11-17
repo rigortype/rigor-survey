@@ -1,0 +1,9 @@
+module Parser
+  module Source
+    class Map
+      class Operator < ::Parser::Source::Map
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

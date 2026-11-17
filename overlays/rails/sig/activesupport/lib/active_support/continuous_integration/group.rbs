@@ -1,0 +1,11 @@
+module ActiveSupport
+  class ContinuousIntegration
+    class Group
+      def initialize: (untyped, untyped, parallel: untyped) ?{ (*untyped) -> untyped } -> void
+      class TaskCollector
+        def initialize: () ?{ (*untyped) -> untyped } -> void
+        def tasks: () -> Array[untyped]
+      end
+    end
+  end
+end

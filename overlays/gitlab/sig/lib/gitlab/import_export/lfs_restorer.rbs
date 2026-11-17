@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class LfsRestorer
+      def initialize: (project: untyped, shared: untyped) -> void
+      def restore: () -> (false | true)
+    end
+  end
+end

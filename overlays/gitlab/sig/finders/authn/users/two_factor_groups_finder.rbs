@@ -1,0 +1,8 @@
+module Authn
+  module Users
+    class TwoFactorGroupsFinder
+      def initialize: (untyped, ?source_only: (false | true)) -> void
+      def source_only: () -> true
+    end
+  end
+end

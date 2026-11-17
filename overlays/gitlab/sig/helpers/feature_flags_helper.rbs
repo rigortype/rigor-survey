@@ -1,0 +1,4 @@
+module FeatureFlagsHelper
+  def unleash_api_url: (untyped) -> String
+  def edit_feature_flag_data: () -> { endpoint: untyped, project_id: untyped, feature_flags_path: untyped, environments_endpoint: untyped, strategy_type_docs_page_path: untyped, environments_scope_docs_path: untyped }
+end

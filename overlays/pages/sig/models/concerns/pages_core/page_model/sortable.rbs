@@ -1,0 +1,9 @@
+module PagesCore
+  module PageModel
+    module Sortable
+      def reorderable_children?: () -> (false | true)
+      def reorderable?: () -> (false | true)
+      def content_order: () -> ("pages.pinned DESC, published_at DESC" | "position ASC")
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Backup
+  class RemoteStorage
+    def initialize: (logger: untyped, options: untyped) -> void
+  end
+end

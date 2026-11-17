@@ -1,0 +1,5 @@
+module Admin
+  module UserActionsHelper
+    def admin_actions: (untyped) -> (Array[untyped] | nil)
+  end
+end

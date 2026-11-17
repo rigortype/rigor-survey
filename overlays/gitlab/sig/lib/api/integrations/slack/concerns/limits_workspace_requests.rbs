@@ -1,0 +1,11 @@
+module API
+  class Integrations < ::API::Base
+    module Slack
+      module Concerns
+        module LimitsWorkspaceRequests
+          def slack_workspace_throttled?: (untyped, untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

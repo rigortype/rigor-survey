@@ -1,0 +1,21 @@
+module Parser
+  module Source
+    class TreeRewriter
+      def initialize: (untyped, ?crossing_deletions: untyped, ?different_replacements: untyped, ?swallowed_insertions: untyped) -> void
+      def merge!: (untyped) -> Parser::Source::TreeRewriter
+      def merge: (untyped) -> Parser::Source::TreeRewriter
+      def import!: (Parser::Source::TreeRewriter | nil, ?offset: untyped) -> Parser::Source::TreeRewriter
+      def replace: (untyped, String) -> Parser::Source::TreeRewriter
+      def wrap: (untyped, String, String) -> Parser::Source::TreeRewriter
+      def remove: (untyped) -> Parser::Source::TreeRewriter
+      def insert_before: (untyped, String) -> Parser::Source::TreeRewriter
+      def insert_after: (untyped, untyped) -> Parser::Source::TreeRewriter
+      def process: () -> String
+      def transaction: () -> Parser::Source::TreeRewriter
+      def inspect: () -> String
+      def insert_before_multi: (untyped, untyped) -> Parser::Source::TreeRewriter
+      def insert_after_multi: (untyped, untyped) -> Parser::Source::TreeRewriter
+      def diagnostics: () -> Parser::Diagnostic::Engine
+    end
+  end
+end

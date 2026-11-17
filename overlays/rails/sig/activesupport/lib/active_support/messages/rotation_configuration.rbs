@@ -1,0 +1,8 @@
+module ActiveSupport
+  module Messages
+    class RotationConfiguration
+      def signed: () -> Array[untyped]
+      def encrypted: () -> Array[untyped]
+    end
+  end
+end

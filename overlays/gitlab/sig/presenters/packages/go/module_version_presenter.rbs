@@ -1,0 +1,7 @@
+module Packages
+  module Go
+    class ModuleVersionPresenter
+      def initialize: (untyped) -> void
+    end
+  end
+end

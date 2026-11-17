@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module QueryLogComment
+      def self.tag_sql: (untyped, untyped) -> String
+    end
+  end
+end

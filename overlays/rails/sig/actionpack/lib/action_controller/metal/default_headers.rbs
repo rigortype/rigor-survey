@@ -1,0 +1,7 @@
+module ActionController
+  module DefaultHeaders
+    module ClassMethods
+      def make_response!: (untyped) -> ActionDispatch::Response
+    end
+  end
+end

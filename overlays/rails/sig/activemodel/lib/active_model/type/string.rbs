@@ -1,0 +1,8 @@
+module ActiveModel
+  module Type
+    class String < ::ActiveModel::Type::ImmutableString
+      def mutable?: () -> true
+      def to_immutable_string: () -> ActiveModel::Type::ImmutableString
+    end
+  end
+end

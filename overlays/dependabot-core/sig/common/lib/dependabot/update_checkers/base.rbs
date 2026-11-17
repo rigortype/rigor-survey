@@ -1,0 +1,11 @@
+module Dependabot
+  module UpdateCheckers
+    class Base
+      def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped, ?security_advisories: untyped, ?requirements_update_strategy: untyped, ?dependency_group: untyped, ?update_cooldown: untyped, ?options: untyped) -> void
+      def conflicting_dependencies: () -> []
+      def version_class: () -> singleton(Dependabot::Version)
+      def requirement_class: () -> singleton(Dependabot::Requirement)
+      def ignore_requirements: () -> Array[untyped]
+    end
+  end
+end

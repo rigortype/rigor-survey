@@ -1,0 +1,12 @@
+module Clusters
+  module Agents
+    module Authorizations
+      module CiAccess
+        class ImplicitAuthorization
+          def initialize: (agent: untyped) -> void
+          def config: () -> {}
+        end
+      end
+    end
+  end
+end

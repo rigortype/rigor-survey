@@ -1,0 +1,5 @@
+class CollectionPolicy < ::ApplicationPolicy
+  def index?: () -> true
+  def show?: () -> (false | true)
+  def create?: () -> (false | true)
+end

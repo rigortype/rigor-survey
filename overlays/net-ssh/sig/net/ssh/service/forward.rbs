@@ -1,0 +1,21 @@
+module Net
+  module SSH
+    module Service
+      class Forward
+        def initialize: (untyped) -> void
+        def active_locals: () -> Array[untyped]
+        def active_local_sockets: () -> Array[untyped]
+        def active_remotes: () -> Array[untyped]
+        def active_remote_destinations: () -> Hash[[untyped, untyped], untyped]
+        class Remote < ::Struct[untyped]
+          def host: () -> untyped
+          def port: () -> untyped
+          def host=: (untyped) -> untyped
+          def port=: (untyped) -> untyped
+          def self.new: (?host: untyped, ?port: untyped) -> instance | (?untyped host, ?untyped port) -> instance
+          def self.[]: (?host: untyped, ?port: untyped) -> instance | (?untyped host, ?untyped port) -> instance
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActionView
+  module Context
+    def _prepare_context: () -> nil
+  end
+end

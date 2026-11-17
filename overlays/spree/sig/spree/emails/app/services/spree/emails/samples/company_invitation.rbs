@@ -1,0 +1,10 @@
+module Spree
+  module Emails
+    module Samples
+      class CompanyInvitation < ::Spree::Emails::Samples::Base
+        def self.required_permissions: () -> ["read_customers"]
+        def variables: () -> { company: untyped, accept_url: String }
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class OutOfContextDiscussion < ::Discussion
+  def self.build_discussion_id: (untyped) -> [:discussion, untyped, untyped]
+  def self.override_discussion_id: (untyped) -> String
+  def self.note_class: () -> singleton(Note)
+end

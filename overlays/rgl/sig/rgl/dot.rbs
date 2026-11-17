@@ -1,0 +1,6 @@
+module RGL
+  module Graph
+    def to_dot_graph: (?untyped) -> (RGL::DOT::Digraph | RGL::DOT::Graph)
+    def dotty: (?untyped) -> nil
+  end
+end

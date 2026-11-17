@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class SyncMetadatumService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

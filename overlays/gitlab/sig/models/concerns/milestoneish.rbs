@@ -1,0 +1,3 @@
+module Milestoneish
+  def expires_at: () -> (String | nil)
+end

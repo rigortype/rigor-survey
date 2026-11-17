@@ -1,0 +1,7 @@
+module API
+  module Entities
+    class ApplicationSetting < ::Grape::Entity
+      def self.exposed_attributes: () -> Array[Symbol]
+    end
+  end
+end

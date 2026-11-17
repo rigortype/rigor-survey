@@ -1,0 +1,7 @@
+module Kramdown
+  module Converter
+    class RemoveHtmlTags < ::Kramdown::Converter::Base
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

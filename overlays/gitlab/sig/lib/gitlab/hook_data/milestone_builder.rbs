@@ -1,0 +1,7 @@
+module Gitlab
+  module HookData
+    class MilestoneBuilder < ::Gitlab::HookData::BaseBuilder
+      def self.safe_hook_attributes: () -> [:id, :iid, :title, :description, :state, :created_at, :updated_at, :due_date, :start_date, :project_id]
+    end
+  end
+end

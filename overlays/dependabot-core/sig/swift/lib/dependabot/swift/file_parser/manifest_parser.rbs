@@ -1,0 +1,10 @@
+module Dependabot
+  module Swift
+    class FileParser < ::Dependabot::FileParsers::Base
+      class ManifestParser
+        def initialize: (untyped, requirement: untyped) -> void
+        def requirements: () -> ([] | [{ requirement: String, groups: ["dependencies"], file: String, source: ObjectHash | nil, metadata: { declaration_string: String, requirement_string: String } }])
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module ActiveModel
+  module Validations
+    class AcceptanceValidator < ::ActiveModel::EachValidator
+      def initialize: (untyped) -> void
+      class LazilyDefineAttributes < ::Module
+        def initialize: (untyped) -> void
+        def define_on: (untyped) -> nil
+      end
+    end
+  end
+end

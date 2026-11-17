@@ -1,0 +1,8 @@
+module Gitlab
+  module QuickActions
+    class Extractor
+      def initialize: (untyped, ?keep_actions: untyped) -> void
+      def extract_commands: (untyped, ?only: untyped) -> ([untyped, Array[untyped]] | [untyped, []])
+    end
+  end
+end

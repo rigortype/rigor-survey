@@ -1,0 +1,8 @@
+module NotificationRecipients
+  module Builder
+    class ProjectMaintainers < ::NotificationRecipients::Builder::Base
+      def initialize: (untyped, action: untyped) -> void
+      def acting_user: () -> nil
+    end
+  end
+end

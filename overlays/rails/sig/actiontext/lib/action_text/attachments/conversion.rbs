@@ -1,0 +1,8 @@
+module ActionText
+  module Attachments
+    module Conversion
+      def to_editor_attachment: () -> ActionText::Attachments::Conversion
+      def to_editor_attachment!: () -> ActionText::Attachments::Conversion
+    end
+  end
+end

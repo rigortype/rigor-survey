@@ -1,0 +1,5 @@
+module Enums
+  module IssuableLink
+    def self.link_types: () -> Hash["blocks" | "relates_to", 0 | 1]
+  end
+end

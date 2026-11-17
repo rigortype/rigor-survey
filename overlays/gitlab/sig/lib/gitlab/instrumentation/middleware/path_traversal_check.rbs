@@ -1,0 +1,9 @@
+module Gitlab
+  module Instrumentation
+    module Middleware
+      class PathTraversalCheck
+        def self.payload: () -> Hash[:path_traversal_check_duration_s, untyped]
+      end
+    end
+  end
+end

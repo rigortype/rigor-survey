@@ -1,0 +1,7 @@
+module Gitlab
+  module ErrorTracking
+    class LogFormatter
+      def generate_log: (untyped, untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

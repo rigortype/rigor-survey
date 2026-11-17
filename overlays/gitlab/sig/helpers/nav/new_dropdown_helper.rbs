@@ -1,0 +1,5 @@
+module Nav
+  module NewDropdownHelper
+    def new_dropdown_view_model: (group: untyped, project: untyped) -> (Hash[untyped, untyped] | nil)
+  end
+end

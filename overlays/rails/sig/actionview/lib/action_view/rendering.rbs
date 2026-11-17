@@ -1,0 +1,11 @@
+module ActionView
+  class I18nProxy < ::I18n::Config
+    def initialize: (untyped, untyped) -> void
+  end
+  module Rendering
+    def view_renderer: () -> ActionView::Renderer
+    module ClassMethods
+      def eager_load!: () -> nil
+    end
+  end
+end

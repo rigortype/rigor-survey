@@ -1,0 +1,7 @@
+module Gitlab
+  module Memory
+    class DiagnosticReportsLogger < ::Logger
+      def format_message: (untyped, untyped, untyped, untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module WebIde
+  class ExtensionMarketplaceOptIn
+    def self.params: (enabled: untyped, marketplace_home_url: untyped) -> { extensions_marketplace_opt_in_status: "disabled" | "enabled", extensions_marketplace_opt_in_url: untyped }
+  end
+end

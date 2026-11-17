@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Authentication
+      module ED25519Loader
+        def self.raiseUnlessLoaded: (untyped) -> nil
+        def self.ed25519SupportRequired: () -> "net-ssh requires openssl >= 3.2.0 and a crypto backend with Ed25519 enabled for ed25519 support.\n"
+      end
+    end
+  end
+end

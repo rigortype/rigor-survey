@@ -1,0 +1,5 @@
+module ActivityPub
+  class Forwarder
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

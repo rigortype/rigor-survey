@@ -1,0 +1,12 @@
+module Tasks
+  module Gitlab
+    module EmailOtp
+      class ManageEnrollment
+        def initialize: (?dry_run: (false | true), ?enrol_at: untyped, ?existing_enrol_at: untyped, ?batch_size: Integer, ?batch_sleep: Float) -> void
+        def enrol: () -> nil
+        def enforce: () -> nil
+        def unenforce: () -> nil
+      end
+    end
+  end
+end

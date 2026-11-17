@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    class ExclusiveLock
+      def self.payload: () -> Hash[:exclusive_lock_hold_duration_s | :exclusive_lock_requested_count | :exclusive_lock_wait_duration_s, untyped]
+    end
+  end
+end

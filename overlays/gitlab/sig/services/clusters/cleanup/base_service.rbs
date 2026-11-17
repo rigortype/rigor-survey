@@ -1,0 +1,7 @@
+module Clusters
+  module Cleanup
+    class BaseService
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class RelationTreeRestorer < ::Gitlab::ImportExport::Group::RelationTreeRestorer
+        def restore_single_relation: (untyped, ?extra_track_scope: untyped) -> (false | true)
+      end
+    end
+  end
+end

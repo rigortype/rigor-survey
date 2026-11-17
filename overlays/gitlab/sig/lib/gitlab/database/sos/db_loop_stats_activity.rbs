@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Sos
+      class DbLoopStatsActivity < ::Gitlab::Database::Sos::BaseDbStatsHandler
+        def run: () -> Hash[Symbol, String]
+      end
+    end
+  end
+end

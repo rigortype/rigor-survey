@@ -1,0 +1,7 @@
+module Admin
+  class AccountAction < ::Admin::BaseAction
+    def self.types_for_account: (untyped) -> (["none", "disable", "sensitive", "silence", "suspend"] | ["sensitive", "silence", "suspend"])
+    def self.disabled_types_for_account: (untyped) -> (["silence", "suspend"] | ["silence"] | nil)
+    def self.i18n_scope: () -> :activerecord
+  end
+end

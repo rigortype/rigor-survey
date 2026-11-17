@@ -1,0 +1,8 @@
+module Packages
+  module Helm
+    class CreateMetadataCacheService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

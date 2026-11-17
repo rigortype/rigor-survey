@@ -1,0 +1,10 @@
+module Gitlab
+  module ImportExport
+    module Base
+      class ObjectBuilder
+        def initialize: (untyped, untyped) -> void
+        def cache_key: () -> [untyped, untyped]
+      end
+    end
+  end
+end

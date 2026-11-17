@@ -1,0 +1,3 @@
+class IssuesFinder < ::IssuableFinder
+  def klass: () -> singleton(Issue)
+end

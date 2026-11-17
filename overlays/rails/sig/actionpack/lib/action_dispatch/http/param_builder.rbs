@@ -1,0 +1,8 @@
+module ActionDispatch
+  class ParamBuilder
+    def self.make_default: (untyped) -> ActionDispatch::ParamBuilder
+    def initialize: (untyped) -> void
+    def from_query_string: (untyped, ?separator: untyped, ?encoding_template: untyped) -> ActiveSupport::HashWithIndifferentAccess
+    def from_pairs: (untyped, ?encoding_template: untyped) -> ActiveSupport::HashWithIndifferentAccess
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Seeders
+    module Ci
+      class VariablesGroupSeeder
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

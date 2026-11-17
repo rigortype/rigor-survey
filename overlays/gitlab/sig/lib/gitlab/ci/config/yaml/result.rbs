@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      module Yaml
+        class Result
+          def initialize: (?config: untyped, ?error: (ArgumentError | String), ?error_class: untyped, ?interpolated: (false | true)) -> void
+          def valid?: () -> (false | true)
+          def interpolated?: () -> (false | true)
+          def has_header?: () -> (false | true)
+          def error: () -> ("Invalid configuration format" | ArgumentError)
+        end
+      end
+    end
+  end
+end

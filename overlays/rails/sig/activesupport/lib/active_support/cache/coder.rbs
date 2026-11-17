@@ -1,0 +1,13 @@
+module ActiveSupport
+  module Cache
+    class Coder
+      def initialize: (untyped, untyped, ?legacy_serializer: untyped) -> void
+      class StringDeserializer
+        def initialize: (untyped) -> void
+      end
+      class LazyEntry < ::ActiveSupport::Cache::Entry
+        def initialize: (untyped, untyped, untyped, **untyped) -> void
+      end
+    end
+  end
+end

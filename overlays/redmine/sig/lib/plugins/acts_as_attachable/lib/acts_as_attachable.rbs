@@ -1,0 +1,15 @@
+module Redmine
+  module Acts
+    module Attachable
+      class ObjectTypeConstraint
+        def self.register_object_type: (untyped) -> nil
+        def self.param_expression: () -> Regexp
+      end
+      module InstanceMethods
+        def saved_attachments: () -> Array[untyped]
+        def unsaved_attachments: () -> Array[untyped]
+        def save_attachments: (untyped, ?untyped) -> { files: untyped, unsaved: untyped }
+      end
+    end
+  end
+end

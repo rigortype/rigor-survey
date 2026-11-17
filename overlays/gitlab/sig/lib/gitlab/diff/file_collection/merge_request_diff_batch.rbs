@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class MergeRequestDiffBatch < ::Gitlab::Diff::FileCollection::MergeRequestDiffBase
+        def initialize: (untyped, untyped, untyped, diff_options: nil) -> void
+        def pagination_data: () -> { total_pages: untyped }
+      end
+    end
+  end
+end

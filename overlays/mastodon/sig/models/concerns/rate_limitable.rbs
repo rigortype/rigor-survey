@@ -1,0 +1,3 @@
+module RateLimitable
+  def rate_limiter: (untyped, ?untyped) -> (RateLimiter | nil)
+end

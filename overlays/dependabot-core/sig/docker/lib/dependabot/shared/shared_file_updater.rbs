@@ -1,0 +1,7 @@
+module Dependabot
+  module Shared
+    class SharedFileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,36 @@
+module Backup
+  class Metadata
+    def initialize: (untyped) -> void
+    def save!: () -> File
+    def manifest_filepath: () -> Pathname
+    def backup_information: () -> (Backup::Metadata::BackupInformation | nil)
+    class BackupInformation < ::Struct[untyped]
+      def db_version: () -> untyped
+      def backup_created_at: () -> untyped
+      def gitlab_version: () -> untyped
+      def tar_version: () -> untyped
+      def installation_type: () -> untyped
+      def skipped: () -> untyped
+      def repositories_storages: () -> untyped
+      def repositories_paths: () -> untyped
+      def skip_repositories_paths: () -> untyped
+      def repositories_server_side: () -> untyped
+      def backup_id: () -> untyped
+      def full_backup_id: () -> untyped
+      def db_version=: (untyped) -> untyped
+      def backup_created_at=: (untyped) -> untyped
+      def gitlab_version=: (untyped) -> untyped
+      def tar_version=: (untyped) -> untyped
+      def installation_type=: (untyped) -> untyped
+      def skipped=: (untyped) -> untyped
+      def repositories_storages=: (untyped) -> untyped
+      def repositories_paths=: (untyped) -> untyped
+      def skip_repositories_paths=: (untyped) -> untyped
+      def repositories_server_side=: (untyped) -> untyped
+      def backup_id=: (untyped) -> untyped
+      def full_backup_id=: (untyped) -> untyped
+      def self.new: (?db_version: untyped, ?backup_created_at: untyped, ?gitlab_version: untyped, ?tar_version: untyped, ?installation_type: untyped, ?skipped: untyped, ?repositories_storages: untyped, ?repositories_paths: untyped, ?skip_repositories_paths: untyped, ?repositories_server_side: untyped, ?backup_id: untyped, ?full_backup_id: untyped) -> instance
+      def self.[]: (?db_version: untyped, ?backup_created_at: untyped, ?gitlab_version: untyped, ?tar_version: untyped, ?installation_type: untyped, ?skipped: untyped, ?repositories_storages: untyped, ?repositories_paths: untyped, ?skip_repositories_paths: untyped, ?repositories_server_side: untyped, ?backup_id: untyped, ?full_backup_id: untyped) -> instance
+    end
+  end
+end

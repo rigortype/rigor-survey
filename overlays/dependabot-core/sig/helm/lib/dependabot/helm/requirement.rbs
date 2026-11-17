@@ -1,0 +1,8 @@
+module Dependabot
+  module Helm
+    class Requirement < ::Dependabot::Requirement
+      def self.parse: (untyped) -> ["=" | String, Dependabot::Helm::Version]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

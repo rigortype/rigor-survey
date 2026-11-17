@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    class TopologyService
+      def self.payload: () -> ({ topology_service_calls: untyped, topology_service_duration_s: untyped } | { topology_service_calls: untyped, topology_service_duration_s: untyped, topology_service_begin_update_calls: untyped, topology_service_begin_update_duration_s: untyped, topology_service_begin_update_create_records: untyped, topology_service_begin_update_destroy_records: untyped } | {})
+    end
+  end
+end

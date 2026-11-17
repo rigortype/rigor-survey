@@ -1,0 +1,8 @@
+module ActiveStorage
+  class Service
+    class MirrorService < ::ActiveStorage::Service
+      def self.build: (primary: untyped, mirrors: untyped, name: untyped, configurator: untyped, **untyped) -> ActiveStorage::Service::MirrorService
+      def initialize: (primary: untyped, mirrors: untyped) -> void
+    end
+  end
+end

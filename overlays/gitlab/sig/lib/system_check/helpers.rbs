@@ -1,0 +1,13 @@
+module SystemCheck
+  module Helpers
+    def say: (?untyped) -> nil
+    def fix_and_rerun: () -> nil
+    def see_installation_guide_section: (untyped) -> String
+    def finished_checking: (untyped) -> nil
+    def start_checking: (untyped) -> nil
+    def sanitized_message: (untyped) -> String
+    def should_sanitize?: () -> (false | true)
+    def omnibus_gitlab?: () -> (false | true)
+    def sudo_gitlab: (untyped) -> String
+  end
+end

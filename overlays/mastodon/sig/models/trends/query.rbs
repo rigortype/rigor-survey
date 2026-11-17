@@ -1,0 +1,16 @@
+module Trends
+  class Query
+    def initialize: (untyped, untyped) -> void
+    def allowed!: () -> Trends::Query
+    def allowed: () -> Trends::Query
+    def filtered_for!: (untyped) -> Trends::Query
+    def filtered_for: (untyped) -> Trends::Query
+    def in_locale!: (untyped) -> Trends::Query
+    def in_locale: (untyped) -> Trends::Query
+    def offset!: (untyped) -> Trends::Query
+    def offset: (untyped) -> Trends::Query
+    def limit!: (untyped) -> Trends::Query
+    def limit: (untyped) -> Trends::Query
+    def loaded: () -> (false | true)
+  end
+end

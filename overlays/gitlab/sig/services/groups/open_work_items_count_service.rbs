@@ -1,0 +1,6 @@
+module Groups
+  class OpenWorkItemsCountService < ::Groups::CountService
+    def initialize: (*untyped, ?fast_timeout: (false | true)) -> void
+    def clear_all_cache_keys: () -> Array[Array[untyped]]
+  end
+end

@@ -1,0 +1,5 @@
+module Observability
+  class GroupO11ySettingsUpdateService
+    def execute: (untyped, untyped) -> ServiceResponse
+  end
+end

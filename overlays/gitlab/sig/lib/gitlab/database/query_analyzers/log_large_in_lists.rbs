@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class LogLargeInLists < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.requires_tracking?: (untyped) -> (false | true)
+        def self.analyze: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+        def self.log: (untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+      end
+    end
+  end
+end

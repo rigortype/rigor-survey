@@ -1,0 +1,13 @@
+class ContainerRepository < ::ApplicationRecord
+  def location: () -> String
+  def each_tags_page: (?page_size: untyped) ?{ (*untyped) -> untyped } -> nil
+  def tags_page: (?before: untyped, ?last: untyped, ?sort: untyped, ?name: untyped, ?page_size: untyped, ?referrers: untyped, ?referrer_type: untyped) -> { tags: untyped, pagination: untyped }
+  def blob: (untyped) -> ContainerRegistry::Blob
+  def last_published_at: () -> (DateTime | nil)
+  def self.build_from_path: (untyped) -> ContainerRepository
+  def self.find_or_create_from_path!: (untyped) -> ContainerRepository
+  def self.build_root_repository: (untyped) -> ContainerRepository
+  def self.find_by_path!: (untyped) -> ContainerRepository
+  def self.find_by_path: (untyped) -> (ContainerRepository | nil)
+  def protected_from_delete_by_tag_rules?: (untyped) -> (false | true)
+end

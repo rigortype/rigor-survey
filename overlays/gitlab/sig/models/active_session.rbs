@@ -1,0 +1,8 @@
+class ActiveSession
+  def ids: () -> Array[untyped]
+  def self.rack_key_name: (untyped) -> String
+  def self.key_name: (untyped, ?untyped) -> String
+  def self.key_name_v1: (untyped, ?untyped) -> String
+  def self.lookup_key_name: (untyped) -> String
+  def dump: () -> String
+end

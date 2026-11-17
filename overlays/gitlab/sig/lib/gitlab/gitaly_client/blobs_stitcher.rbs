@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class BlobsStitcher
+      def initialize: (untyped, ?filter_function: Proc) -> void
+    end
+  end
+end

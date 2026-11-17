@@ -1,0 +1,5 @@
+module Ci
+  class AbortPipelinesService
+    def execute: (untyped, Symbol) -> ServiceResponse
+  end
+end

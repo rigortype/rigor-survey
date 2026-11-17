@@ -1,0 +1,7 @@
+module Ci
+  module Partitionable
+    module Switch
+      def self.routing_class?: () -> true
+    end
+  end
+end

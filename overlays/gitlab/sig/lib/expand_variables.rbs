@@ -1,0 +1,3 @@
+module ExpandVariables
+  def self.possible_var_reference?: (untyped) -> (false | nil | true)
+end

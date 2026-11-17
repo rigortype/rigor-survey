@@ -1,0 +1,7 @@
+module WorkItems
+  module Callbacks
+    class CrmContacts < ::WorkItems::Callbacks::Base
+      def after_save: () -> nil
+    end
+  end
+end

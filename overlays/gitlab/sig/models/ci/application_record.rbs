@@ -1,0 +1,6 @@
+module Ci
+  class ApplicationRecord < ::ApplicationRecord
+    def self.table_name_prefix: () -> "ci_"
+    def self.model_name: () -> ActiveModel::Name
+  end
+end

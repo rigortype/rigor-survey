@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class AbstractProxyAdapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+        class SchemaCreationProxy
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

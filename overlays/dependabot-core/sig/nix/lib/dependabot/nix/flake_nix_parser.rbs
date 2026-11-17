@@ -1,0 +1,11 @@
+module Dependabot
+  module Nix
+    class FlakeNixParser
+      def self.find_input_url: (untyped, untyped) -> (::InputUrl | nil)
+      def self.update_input_ref: (untyped, untyped, untyped) -> (String | nil)
+      def initialize: (untyped, untyped) -> void
+      def find: () -> (::InputUrl | nil)
+      def build_git_input: (untyped, untyped) -> (Dependabot::Nix::FlakeNixParser::InputUrl | nil)
+    end
+  end
+end

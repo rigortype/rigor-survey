@@ -1,0 +1,9 @@
+module Authn
+  module TokenField
+    module Finders
+      class BaseEncrypted
+        def initialize: (untyped, untyped, untyped, ?untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module ReleaseAssetLinks
+    class Create < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, tag: untyped, **untyped) -> ({ link: untyped, errors: [] } | { link: nil, errors: untyped } | { link: nil, errors: [untyped] })
+    end
+  end
+end

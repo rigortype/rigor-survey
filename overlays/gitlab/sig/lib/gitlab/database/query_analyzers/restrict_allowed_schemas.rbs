@@ -1,0 +1,18 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class RestrictAllowedSchemas < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.enabled?: () -> true
+        def self.analyze: (untyped) -> nil
+        def self.require_ddl_mode!: (?untyped) -> nil
+        def self.require_dml_mode!: (?untyped) -> nil
+        def self.restrict_to_ddl_only: (untyped) -> nil
+        def self.restrict_to_dml_only: (untyped) -> nil
+        def self.ddl_mode?: () -> (false | true)
+        def self.raise_dml_not_allowed_error: (untyped) -> bot
+        def self.raise_ddl_not_allowed_error: (untyped) -> bot
+        def self.documentation_url: () -> "For more information visit: https://docs.gitlab.com/ee/development/database/migrations_for_multiple_databases.html"
+      end
+    end
+  end
+end

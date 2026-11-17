@@ -1,0 +1,5 @@
+module Preloaders
+  class UserMaxAccessLevelInGroupsPreloader
+    def initialize: (untyped, untyped) -> void
+  end
+end

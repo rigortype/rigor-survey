@@ -1,0 +1,3 @@
+class String
+  def inquiry: () -> ActiveSupport::StringInquirer
+end

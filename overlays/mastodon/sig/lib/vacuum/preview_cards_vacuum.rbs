@@ -1,0 +1,5 @@
+module Vacuum
+  class PreviewCardsVacuum
+    def initialize: (untyped) -> void
+  end
+end

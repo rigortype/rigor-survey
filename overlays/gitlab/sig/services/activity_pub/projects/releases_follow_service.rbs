@@ -1,0 +1,7 @@
+module ActivityPub
+  module Projects
+    class ReleasesFollowService < ::ActivityPub::Projects::ReleasesSubscriptionService
+      def execute: () -> (false | true)
+    end
+  end
+end

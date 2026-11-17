@@ -1,0 +1,13 @@
+module Onboarding
+  module FeatureLibrary
+    module Catalog
+      class Enhancement < ::Data
+        def nav_item: () -> untyped
+        def tier: () -> untyped
+        def text: () -> untyped
+        def self.new: (nav_item: untyped, tier: untyped, text: untyped) -> instance | (untyped nav_item, untyped tier, untyped text) -> instance
+        def self.[]: (nav_item: untyped, tier: untyped, text: untyped) -> instance | (untyped nav_item, untyped tier, untyped text) -> instance
+      end
+    end
+  end
+end

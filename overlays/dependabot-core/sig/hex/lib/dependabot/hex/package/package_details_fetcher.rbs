@@ -1,0 +1,10 @@
+module Dependabot
+  module Hex
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped) -> void
+        def fetch_package_releases: () -> Array[Dependabot::Package::PackageRelease]
+      end
+    end
+  end
+end

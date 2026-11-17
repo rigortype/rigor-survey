@@ -1,0 +1,5 @@
+module TimeboxesHelper
+  def milestone_badge_variant: (untyped) -> (:info | :neutral | :success | :warning)
+  def milestone_time_for: (untyped, untyped) -> ("End date" | "Start date" | String)
+  def recent_releases_with_counts: (untyped, untyped) -> ([untyped, untyped, untyped] | [[], 0, 0])
+end

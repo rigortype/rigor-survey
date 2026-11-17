@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Sanitization
+    module ClassMethods
+      def disallow_raw_sql!: (untyped, ?permit: untyped) -> nil
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module API
+  module Terraform
+    module Modules
+      module V1
+        class ProjectPackages < ::API::Base
+          def finder_params: () -> Hash[Symbol, untyped]
+          def package_name: () -> String
+          def authorize_workhorse_params: () -> { subject: untyped, maximum_size: untyped, use_final_store_path: true }
+        end
+      end
+    end
+  end
+end

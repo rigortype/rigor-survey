@@ -1,0 +1,22 @@
+module TDiary
+  module RequestExtension
+    def mobile_agent?: () -> false
+    def smartphone?: () -> false
+    def static_assets?: () -> (false | true)
+    def cgi_params: () -> Hash[untyped, untyped]
+    def cgi_cookies: () -> Hash[String, CGI::Cookie]
+    def hide_referer!: () -> true
+    def https?: () -> (false | true)
+    def tdiary_base_url: () -> ("" | String)
+    module CGIMultipartValue
+      def read: () -> TDiary::RequestExtension::CGIMultipartValue
+      def original_filename: () -> ""
+      def content_type: () -> ""
+    end
+  end
+end
+
+class String
+  def make_link: () -> String
+  def emojify: () -> String
+end

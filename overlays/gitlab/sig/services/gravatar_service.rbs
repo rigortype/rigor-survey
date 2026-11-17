@@ -1,0 +1,3 @@
+class GravatarService
+  def execute: (untyped, ?Integer, ?Integer, ?username: String) -> (String | nil)
+end

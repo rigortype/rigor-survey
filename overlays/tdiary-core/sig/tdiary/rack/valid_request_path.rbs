@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class ValidRequestPath
+      def initialize: (Proc) -> void
+    end
+  end
+end

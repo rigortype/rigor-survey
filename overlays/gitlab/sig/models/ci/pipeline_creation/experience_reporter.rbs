@@ -1,0 +1,7 @@
+module Ci
+  module PipelineCreation
+    class ExperienceReporter
+      def self.bucket_for: (untyped) -> (:error | :no_emission | :success)
+    end
+  end
+end

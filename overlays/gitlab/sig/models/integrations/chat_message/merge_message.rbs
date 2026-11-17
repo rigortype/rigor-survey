@@ -1,0 +1,9 @@
+module Integrations
+  module ChatMessage
+    class MergeMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def attachments: () -> []
+      def activity: () -> { title: String, subtitle: String, text: untyped, image: untyped }
+    end
+  end
+end

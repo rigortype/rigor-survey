@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      module Representable
+        def github_identifiers: () -> {}
+      end
+    end
+  end
+end

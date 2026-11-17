@@ -1,0 +1,7 @@
+module Analytics
+  module CycleAnalytics
+    class StageFinder
+      def initialize: (parent: untyped, stage_id: untyped) -> void
+    end
+  end
+end

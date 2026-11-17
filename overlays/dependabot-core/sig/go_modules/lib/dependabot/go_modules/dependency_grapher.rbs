@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    class DependencyGrapher < ::Dependabot::DependencyGraphers::Base
+      def relevant_dependency_file: () -> (Dependabot::DependencyFile | nil)
+    end
+  end
+end

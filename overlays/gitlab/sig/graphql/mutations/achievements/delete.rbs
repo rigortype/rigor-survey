@@ -1,0 +1,7 @@
+module Mutations
+  module Achievements
+    class Delete < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { achievement: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Subscriptions
+  module User
+    class MergeRequestUpdated < ::Subscriptions::BaseSubscription
+      def authorized?: (user_id: untyped) -> true
+    end
+  end
+end

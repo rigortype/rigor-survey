@@ -1,0 +1,6 @@
+module Trends
+  class Base
+    def initialize: (?untyped) -> void
+    def query: () -> Trends::Query
+  end
+end

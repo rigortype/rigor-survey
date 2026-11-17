@@ -1,0 +1,9 @@
+module ActiveRecord
+  class DatabaseConfigurations
+    class HashConfig < ::ActiveRecord::DatabaseConfigurations::DatabaseConfig
+      def initialize: (untyped, untyped, untyped) -> void
+      def hash: () -> Integer
+      def database_tasks?: () -> (false | true)
+    end
+  end
+end

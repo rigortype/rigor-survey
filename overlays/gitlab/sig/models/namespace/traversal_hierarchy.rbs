@@ -1,0 +1,7 @@
+class Namespace < ::ApplicationRecord
+  class TraversalHierarchy
+    def initialize: (untyped) -> void
+    def self.for_namespace: (untyped) -> Namespace::TraversalHierarchy
+    def self.recursive_traversal_ids: (untyped) -> String
+  end
+end

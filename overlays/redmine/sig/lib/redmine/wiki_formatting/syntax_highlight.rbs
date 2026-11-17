@@ -1,0 +1,7 @@
+module Redmine
+  module WikiFormatting
+    module SyntaxHighlight
+      def process: (untyped, untyped, untyped) -> ("mermaid" | nil)
+    end
+  end
+end

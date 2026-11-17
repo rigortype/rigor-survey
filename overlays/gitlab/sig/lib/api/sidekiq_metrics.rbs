@@ -1,0 +1,9 @@
+module API
+  class SidekiqMetrics < ::API::Base
+    def queue_metrics: () -> Hash[untyped, untyped]
+    def queue_metrics_from_shard: () -> Hash[untyped, { backlog: untyped, latency: untyped }]
+    def process_metrics: () -> Array[untyped]
+    def job_stats: () -> Hash[untyped, untyped]
+    def job_stats_from_shard: () -> { processed: untyped, failed: untyped, enqueued: untyped, dead: untyped }
+  end
+end

@@ -1,0 +1,5 @@
+class Nucleotide
+  def initialize: (untyped) -> void
+  def self.from_dna: (untyped) -> Nucleotide
+  def histogram: () -> Hash[untyped, untyped]
+end

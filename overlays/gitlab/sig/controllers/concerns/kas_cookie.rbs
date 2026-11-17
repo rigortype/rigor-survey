@@ -1,0 +1,3 @@
+module KasCookie
+  def set_kas_cookie: () -> (Hash[untyped, untyped] | nil | { value: untyped, expires: ActiveSupport::Duration, httponly: true, path: "/" | String, secure: untyped })
+end

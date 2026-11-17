@@ -1,0 +1,8 @@
+module Integrations
+  module SlackOptions
+    class UserSearchHandler
+      def initialize: (untyped, untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

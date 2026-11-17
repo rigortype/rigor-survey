@@ -1,0 +1,7 @@
+module Resolvers
+  module ErrorTracking
+    class SentryErrorCollectionResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> Gitlab::ErrorTracking::ErrorCollection
+    end
+  end
+end

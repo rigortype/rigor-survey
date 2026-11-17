@@ -1,0 +1,7 @@
+module ActiveRecord
+  class PredicateBuilder
+    def initialize: (untyped) -> void
+    def build_bind_attribute: (untyped, untyped) -> (ActiveRecord::PredicateBuilder::ComparisonValue | ActiveRecord::Relation::QueryAttribute)
+    def with: (untyped) -> ActiveRecord::PredicateBuilder
+  end
+end

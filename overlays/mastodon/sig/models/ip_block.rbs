@@ -1,0 +1,3 @@
+class IpBlock < ::ApplicationRecord
+  def to_cidr: () -> String
+end

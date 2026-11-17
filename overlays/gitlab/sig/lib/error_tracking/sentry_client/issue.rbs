@@ -1,0 +1,7 @@
+module ErrorTracking
+  class SentryClient
+    module Issue
+      def issue_details: (issue_id: untyped) -> Gitlab::ErrorTracking::DetailedError
+    end
+  end
+end

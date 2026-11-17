@@ -1,0 +1,16 @@
+module Gitlab
+  module Config
+    module Entry
+      class Undefined < ::Gitlab::Config::Entry::Node
+        def initialize: (*untyped) -> void
+        def value: () -> nil
+        def valid?: () -> true
+        def errors: () -> []
+        def specified?: () -> false
+        def relevant?: () -> false
+        def type: () -> nil
+        def inspect: () -> String
+      end
+    end
+  end
+end

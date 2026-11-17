@@ -1,0 +1,5 @@
+module Resolvers
+  class DeploymentResolver < ::Resolvers::BaseResolver
+    def resolve: (iid: untyped) -> (ActiveRecord::Relation[Deployment] | nil)
+  end
+end

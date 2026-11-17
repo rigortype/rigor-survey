@@ -1,0 +1,23 @@
+module Gitlab
+  module Diff
+    class Line
+      def self.parse_id: (untyped) -> (nil | { file_hash: String, added: false | true, line: Integer })
+      def initialize: (untyped, untyped, untyped, untyped, untyped, ?parent_file: untyped, ?line_code: untyped, ?rich_text: untyped) -> void
+      def self.init_from_hash: (untyped) -> Gitlab::Diff::Line
+      def self.safe_init_from_hash: (untyped) -> Gitlab::Diff::Line
+      def to_hash: () -> Hash[:index | :line_code | :new_pos | :old_pos | :rich_text | :text | :type, untyped]
+      def unchanged?: () -> (false | true)
+      def added?: () -> (false | true)
+      def removed?: () -> (false | true)
+      def added_content?: () -> (false | true)
+      def removed_content?: () -> (false | true)
+      def meta?: () -> (false | true)
+      def has_mapping_in_raw?: () -> (false | true)
+      def discussable?: () -> (false | true)
+      def suggestible?: () -> (false | true)
+      def meta_positions: () -> (nil | { old_pos: untyped, new_pos: untyped })
+      def id: (untyped) -> (String | nil)
+      def legacy_id: (untyped) -> (String | nil)
+    end
+  end
+end

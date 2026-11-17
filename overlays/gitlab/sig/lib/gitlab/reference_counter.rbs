@@ -1,0 +1,10 @@
+module Gitlab
+  class ReferenceCounter
+    def initialize: (String) -> void
+    def increase: () -> (false | true)
+    def decrease: () -> (false | true)
+    def reset!: () -> (false | true)
+    def gl_repository: () -> "project-1"
+    def key: () -> String
+  end
+end

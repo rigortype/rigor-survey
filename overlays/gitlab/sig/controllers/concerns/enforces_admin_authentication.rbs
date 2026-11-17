@@ -1,0 +1,3 @@
+module EnforcesAdminAuthentication
+  def storable_location?: () -> (false | true)
+end

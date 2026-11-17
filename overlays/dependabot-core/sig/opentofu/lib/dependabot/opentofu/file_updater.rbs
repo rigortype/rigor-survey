@@ -1,0 +1,10 @@
+module Dependabot
+  module Opentofu
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> Array[untyped]
+    end
+    class FileUpdaterErrorHandler
+      def handle_helper_subprocess_failed_error: (untyped) -> nil
+    end
+  end
+end

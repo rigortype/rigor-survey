@@ -1,0 +1,13 @@
+module Gitlab
+  module UsageDataCounters
+    module QuickActionActivityUniqueCounter
+      def self.prepare_additional_properties: (untyped, untyped) -> ({ label: untyped } | {})
+      def self.event_name_for_assign: (untyped) -> ("assign_self" | String)
+      def self.event_name_for_copy_metadata: (untyped) -> ("copy_metadata_issue" | "copy_metadata_merge_request")
+      def self.event_name_for_spend: (untyped) -> ("spend_add" | "spend_subtract")
+      def self.event_name_for_unassign: (untyped) -> ("unassign_all" | "unassign_specific")
+      def self.event_name_for_unlabel: (untyped) -> ("unlabel_all" | "unlabel_specific")
+      def self.event_name_quantifier: (untyped) -> ("_multiple" | "_single")
+    end
+  end
+end

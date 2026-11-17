@@ -1,0 +1,10 @@
+module Redmine
+  module Helpers
+    class TimeReport
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def available_criteria: () -> (Hash[untyped, untyped] | Hash[String, { sql: String, klass: singleton(Issue), label: :label_issue } | { sql: String, klass: singleton(IssueCategory), label: :field_category } | { sql: String, klass: singleton(IssueStatus), label: :field_status } | { sql: String, klass: singleton(Project), label: :label_project } | { sql: String, klass: singleton(TimeEntryActivity), label: :field_activity } | { sql: String, klass: singleton(Tracker), label: :label_tracker } | { sql: String, klass: singleton(User), label: :label_user } | { sql: String, klass: singleton(Version), label: :label_version }])
+      def hours: () -> Array[untyped]
+      def periods: () -> Array[untyped]
+    end
+  end
+end

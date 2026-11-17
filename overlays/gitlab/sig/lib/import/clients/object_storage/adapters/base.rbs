@@ -1,0 +1,12 @@
+module Import
+  module Clients
+    class ObjectStorage
+      module Adapters
+        class Base
+          def initialize: (provider: untyped, bucket: untyped, credentials: untyped) -> void
+          def test_connection!: () -> bot
+        end
+      end
+    end
+  end
+end

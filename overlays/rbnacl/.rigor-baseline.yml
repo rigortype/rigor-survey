@@ -1,0 +1,15 @@
+---
+version: 1
+ignored:
+- file: ".rigor.yml"
+  rule: rbs.coverage.missing-gem
+  count: 1
+- file: lib/rbnacl/aead/base.rb
+  rule: call.undefined-method
+  count: 1
+- file: lib/rbnacl/auth.rb
+  rule: call.undefined-method
+  count: 1
+- file: lib/rbnacl/signatures/ed25519/signing_key.rb
+  rule: def.return-type-mismatch
+  count: 1

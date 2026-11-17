@@ -1,0 +1,3 @@
+class HtmlAwareFormatter
+  def initialize: (untyped, untyped, ?untyped) -> void
+end

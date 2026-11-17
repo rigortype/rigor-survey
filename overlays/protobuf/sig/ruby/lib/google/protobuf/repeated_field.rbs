@@ -1,0 +1,17 @@
+module Google
+  module Protobuf
+    class RepeatedField
+      def self.define_array_wrapper_method: (untyped) -> Symbol
+      def self.define_array_wrapper_with_result_method: (untyped) -> Symbol
+      class ProxyingEnumerator < ::Struct[untyped]
+        def repeated_field: () -> untyped
+        def external_enumerator: () -> untyped
+        def repeated_field=: (untyped) -> untyped
+        def external_enumerator=: (untyped) -> untyped
+        def self.new: (?repeated_field: untyped, ?external_enumerator: untyped) -> instance | (?untyped repeated_field, ?untyped external_enumerator) -> instance
+        def self.[]: (?repeated_field: untyped, ?external_enumerator: untyped) -> instance | (?untyped repeated_field, ?untyped external_enumerator) -> instance
+        def each: (*untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+      end
+    end
+  end
+end

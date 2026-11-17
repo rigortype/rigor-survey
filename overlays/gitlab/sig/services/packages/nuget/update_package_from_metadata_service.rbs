@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class UpdatePackageFromMetadataService
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+  end
+end

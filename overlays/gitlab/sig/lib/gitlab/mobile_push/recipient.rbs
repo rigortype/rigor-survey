@@ -1,0 +1,8 @@
+module Gitlab
+  module MobilePush
+    class Recipient
+      def initialize: (untyped) -> void
+      def skip_reason: () -> (:skipped_no_subscription | :skipped_user_inactive | nil)
+    end
+  end
+end

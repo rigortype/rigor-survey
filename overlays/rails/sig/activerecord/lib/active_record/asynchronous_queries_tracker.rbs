@@ -1,0 +1,6 @@
+module ActiveRecord
+  class AsynchronousQueriesTracker
+    def current_session: () -> ActiveRecord::AsynchronousQueriesTracker::Session
+    def finalize_session: (?untyped) -> ActiveRecord::AsynchronousQueriesTracker
+  end
+end

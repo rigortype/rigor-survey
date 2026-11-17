@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class ProjectPipelineScheduleStatusCountsResolver < ::Resolvers::BaseResolver
+      def resolve: () -> { active: untyped, inactive: untyped, total: untyped }
+    end
+  end
+end

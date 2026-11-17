@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Status
+      module Bridge
+        class SuccessWarning < ::Gitlab::Ci::Status::Extended
+          def icon: () -> "status_warning"
+          def group: () -> "success-with-warnings"
+          def status_tooltip: () -> String
+        end
+      end
+    end
+  end
+end

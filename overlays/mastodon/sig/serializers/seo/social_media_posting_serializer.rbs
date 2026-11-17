@@ -1,0 +1,9 @@
+module SEO
+  class SocialMediaPostingSerializer < ::ActiveModel::Serializer[untyped]
+    def context: () -> "https://schema.org"
+    def type: () -> "SocialMediaPosting"
+    def author: () -> { type: "Person", name: untyped, alternate_name: untyped, identifier: untyped, url: untyped, interaction_statistic: [{ type: "InteractionCounter", interaction_type: "https://schema.org/FollowAction", user_interaction_count: untyped }] }
+    def interaction_statistic: () -> [{ type: "InteractionCounter", interaction_type: "https://schema.org/LikeAction", user_interaction_count: untyped }, { type: "InteractionCounter", interaction_type: "https://schema.org/ShareAction", user_interaction_count: untyped }, { type: "InteractionCounter", interaction_type: "https://schema.org/ReplyAction", user_interaction_count: untyped }]
+    def shared_content: () -> { type: "WebPage", url: untyped }
+  end
+end

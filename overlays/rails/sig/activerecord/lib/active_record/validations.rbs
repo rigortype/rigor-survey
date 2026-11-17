@@ -1,0 +1,5 @@
+module ActiveRecord
+  class RecordInvalid < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+end

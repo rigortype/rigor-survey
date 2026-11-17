@@ -1,0 +1,6 @@
+module ActiveSupport
+  class CombinedConfiguration
+    def initialize: (*untyped) -> void
+    def inspect: () -> String
+  end
+end

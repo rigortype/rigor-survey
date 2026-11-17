@@ -1,0 +1,5 @@
+module Ci
+  class CloneJobService
+    def initialize: (untyped, current_user: untyped) -> void
+  end
+end

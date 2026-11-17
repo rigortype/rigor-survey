@@ -1,0 +1,7 @@
+module Types
+  module Organizations
+    class OrganizationUserType < ::Types::BaseObject
+      def badges: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Analyzer
+          def initialize: (id: untyped, name: untyped, version: untyped, vendor: untyped) -> void
+        end
+      end
+    end
+  end
+end

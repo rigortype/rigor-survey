@@ -1,0 +1,12 @@
+module ActiveModel
+  module Type
+    class Binary < ::ActiveModel::Type::Value
+      def type: () -> :binary
+      def binary?: () -> true
+      def serialize: (untyped) -> (ActiveModel::Type::Binary::Data | nil)
+      class Data
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

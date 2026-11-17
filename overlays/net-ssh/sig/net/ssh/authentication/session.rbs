@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Authentication
+      class Session
+        def initialize: (untyped, ?untyped) -> void
+        def authenticate: (untyped, untyped, ?untyped) -> (false | true)
+      end
+    end
+  end
+end

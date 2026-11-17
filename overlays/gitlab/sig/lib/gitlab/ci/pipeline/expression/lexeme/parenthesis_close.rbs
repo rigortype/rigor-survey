@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class ParenthesisClose < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Operator
+            def self.type: () -> :parenthesis_close
+            def self.precedence: () -> 900
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module BulkImports
+  module Pipeline
+    class Context
+      def initialize: (untyped, ?untyped) -> void
+      def import_export_config: () -> (BulkImports::FileTransfer::GroupConfig | BulkImports::FileTransfer::ProjectConfig)
+      def source_user_mapper: () -> Gitlab::Import::SourceUserMapper
+    end
+  end
+end

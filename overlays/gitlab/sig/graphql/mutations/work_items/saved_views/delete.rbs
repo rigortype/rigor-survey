@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module SavedViews
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> { saved_view: untyped, errors: [] }
+      end
+    end
+  end
+end

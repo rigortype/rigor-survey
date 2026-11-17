@@ -1,0 +1,6 @@
+module Integrations
+  class GroupMentionService
+    def initialize: (untyped, hook_data: untyped, is_confidential: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

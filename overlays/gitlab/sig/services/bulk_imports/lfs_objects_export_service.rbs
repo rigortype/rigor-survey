@@ -1,0 +1,8 @@
+module BulkImports
+  class LfsObjectsExportService
+    def initialize: (untyped, untyped) -> void
+    def execute: (?untyped) -> Integer
+    def exported_objects_count: () -> (0 | Integer)
+    def lfs_json: () -> Hash[untyped, untyped]
+  end
+end

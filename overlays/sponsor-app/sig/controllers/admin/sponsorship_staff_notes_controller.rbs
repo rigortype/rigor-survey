@@ -1,0 +1,9 @@
+module Admin
+  class SponsorshipStaffNotesController < ::Admin::ApplicationController
+    def index: () -> void
+    def create: () -> void
+    def edit: () -> void
+    def update: () -> void
+    def destroy: () -> void
+  end
+end

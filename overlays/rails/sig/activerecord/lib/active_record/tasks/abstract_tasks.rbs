@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Tasks
+    class AbstractTasks
+      def self.using_database_configurations?: () -> true
+      def initialize: (untyped) -> void
+    end
+  end
+end

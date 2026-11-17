@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      module ActionCableCallbacks
+        def self.wrapper: () -> Proc
+      end
+    end
+  end
+end

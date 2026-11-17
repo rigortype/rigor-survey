@@ -1,0 +1,5 @@
+module SortingPreference
+  def sorting_field: () -> nil
+  def default_sort_order: () -> nil
+  def legacy_sort_cookie_name: () -> nil
+end

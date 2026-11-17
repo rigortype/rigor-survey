@@ -1,0 +1,13 @@
+module Gitlab
+  module EventStore
+    class CloudEvent < ::Gitlab::EventStore::Event
+      def self.build_cloud_event: (source: untyped, subject: untyped, ?current_user: untyped, ?organization: untyped, ?event_data: untyped) -> Gitlab::EventStore::CloudEvent
+      def self.register: (untyped, untyped) -> Class
+      def self.current_duo_workflow_id: () -> (Integer | nil)
+      def self.build_data: (untyped) -> Hash[untyped, untyped]
+      def self.unwrap_attributes: (untyped) -> Hash[untyped, untyped]
+      def schema: () -> Hash[String, "object" | ["specversion", "type", "source", "id", "time", "datacontenttype", "dataschema", "subject", "data"] | Hash[String, Hash[String, "number"] | Hash[String, "object"] | Hash[String, "string"] | Hash[String, "date-time" | "string"] | Hash[String, "string" | "uri"]]]
+      def data_schema: () -> bot
+    end
+  end
+end

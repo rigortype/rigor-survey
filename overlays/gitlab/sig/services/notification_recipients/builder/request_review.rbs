@@ -1,0 +1,7 @@
+module NotificationRecipients
+  module Builder
+    class RequestReview < ::NotificationRecipients::Builder::Base
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

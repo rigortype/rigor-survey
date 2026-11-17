@@ -1,0 +1,10 @@
+module Gitlab
+  class GitAccess
+    def initialize: (untyped, untyped, untyped, authentication_abilities: untyped, ?repository_path: untyped, ?redirected_path: untyped, ?auth_result_type: untyped, ?push_options: untyped, ?gitaly_context: untyped, ?personal_access_token: untyped, ?oauth_access_token: untyped) -> void
+    def logger: () -> Gitlab::Checks::TimedLogger
+    def download_ability: () -> bot
+    def push_ability: () -> bot
+    def protocol_allowed?: () -> (false | true)
+    def push_options: () -> Gitlab::PushOptions
+  end
+end

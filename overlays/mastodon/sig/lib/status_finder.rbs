@@ -1,0 +1,4 @@
+class StatusFinder
+  def initialize: (untyped) -> void
+  def status: () -> Status
+end

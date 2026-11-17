@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Build
+      class Image
+        def self.from_image: (untyped) -> (Gitlab::Ci::Build::Image | nil)
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

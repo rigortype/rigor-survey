@@ -1,0 +1,6 @@
+class SponsorshipAssetFilesController < ::ApplicationController
+  def show: () -> void
+  def update: () -> void
+  def create: () -> void
+  def initiate_update: () -> void
+end

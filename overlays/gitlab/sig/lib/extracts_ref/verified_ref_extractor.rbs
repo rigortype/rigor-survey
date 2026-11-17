@@ -1,0 +1,5 @@
+module ExtractsRef
+  class VerifiedRefExtractor
+    def initialize: (untyped, ref_type: untyped, ref: untyped) -> void
+  end
+end

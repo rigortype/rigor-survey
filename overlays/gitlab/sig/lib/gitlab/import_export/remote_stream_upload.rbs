@@ -1,0 +1,15 @@
+module Gitlab
+  module ImportExport
+    class RemoteStreamUpload
+      def initialize: (download_url: untyped, upload_url: untyped, ?options: untyped) -> void
+      class StreamError < ::StandardError
+        def initialize: (String, ?String, ?String) -> void
+        def response_body: () -> ("Forbidden" | "Response body")
+        def response_code: () -> ("403" | "500")
+      end
+      class ChunkStream
+        def initialize: (Enumerator[String, Array[String]]) -> void
+      end
+    end
+  end
+end

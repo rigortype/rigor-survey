@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    class IncomingEmailTask
+      def self.name: () -> "Incoming Email"
+      def self.checks: () -> [singleton(SystemCheck::IncomingEmailCheck)]
+    end
+  end
+end

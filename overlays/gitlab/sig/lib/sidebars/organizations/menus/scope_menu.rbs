@@ -1,0 +1,10 @@
+module Sidebars
+  module Organizations
+    module Menus
+      class ScopeMenu < ::Sidebars::Menu
+        def active_routes: () -> { path: "organizations/organizations#show" }
+        def render?: () -> true
+      end
+    end
+  end
+end

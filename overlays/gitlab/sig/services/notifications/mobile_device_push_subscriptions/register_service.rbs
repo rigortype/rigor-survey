@@ -1,0 +1,8 @@
+module Notifications
+  module MobileDevicePushSubscriptions
+    class RegisterService
+      def initialize: (user: untyped, device_token: untyped, apns_environment: untyped, ?attributes: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  class StringPlaceholderReplacer
+    def self.placeholder_full_regex: (untyped, in_uri: untyped) -> Regexp
+  end
+end

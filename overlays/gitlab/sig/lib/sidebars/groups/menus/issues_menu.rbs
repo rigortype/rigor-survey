@@ -1,0 +1,13 @@
+module Sidebars
+  module Groups
+    module Menus
+      class IssuesMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (nil | true)
+        def sprite_icon: () -> "work-item-issue"
+        def has_pill?: () -> true
+        def pill_count_field: () -> "openIssuesCount"
+        def pill_html_options: () -> { class: "issue_counter" }
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Banzai
+  module ReferenceParser
+    class UserParser < ::Banzai::ReferenceParser::BaseParser
+      def nodes_visible_to_user: (untyped, untyped) -> Array[untyped]
+    end
+  end
+end

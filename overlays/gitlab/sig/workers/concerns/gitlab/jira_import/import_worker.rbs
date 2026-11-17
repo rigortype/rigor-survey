@@ -1,0 +1,7 @@
+module Gitlab
+  module JiraImport
+    module ImportWorker
+      def perform: (untyped) -> nil
+    end
+  end
+end

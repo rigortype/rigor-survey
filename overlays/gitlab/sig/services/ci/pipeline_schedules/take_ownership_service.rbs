@@ -1,0 +1,8 @@
+module Ci
+  module PipelineSchedules
+    class TakeOwnershipService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

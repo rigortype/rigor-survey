@@ -1,0 +1,10 @@
+module Typelizer
+  class Interface
+    def initialize: (serializer: untyped, context: untyped) -> void
+    def inline?: () -> (false | true)
+    def index_path: (untyped) -> String
+    def inspect: () -> String
+    def fingerprint: () -> String
+    def quote: (untyped) -> String
+  end
+end

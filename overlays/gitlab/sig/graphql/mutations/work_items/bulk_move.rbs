@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class BulkMove < ::Mutations::BaseMutation
+      def resolve: (ids: untyped, source_full_path: untyped, target_full_path: untyped) -> ({ errors: Array[untyped] | [] } | { moved_work_item_count: untyped, errors: Array[untyped] | [] })
+    end
+  end
+end

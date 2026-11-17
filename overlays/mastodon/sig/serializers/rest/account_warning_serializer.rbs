@@ -1,0 +1,6 @@
+module REST
+  class AccountWarningSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def status_ids: () -> Array[String]
+  end
+end

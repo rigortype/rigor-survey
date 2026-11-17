@@ -1,0 +1,12 @@
+module Rails
+  module Configuration
+    class MiddlewareStackProxy
+      def initialize: (?untyped, ?untyped) -> void
+      def +: (untyped) -> Rails::Configuration::MiddlewareStackProxy
+    end
+    class Generators
+      def hidden_namespaces: () -> Array[untyped]
+      def after_generate_callbacks: () -> Array[untyped]
+    end
+  end
+end

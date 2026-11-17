@@ -1,0 +1,30 @@
+module RestClient
+  class Response
+    def headers: () -> {}
+  end
+  module Exceptions
+    class Timeout < ::StandardError
+    end
+  end
+  class Forbidden < ::StandardError
+  end
+  class TooManyRequests < ::StandardError
+  end
+  class ServerBrokeConnection < ::StandardError
+  end
+  class ServiceUnavailable < ::StandardError
+  end
+  class InternalServerError < ::StandardError
+  end
+  class BadGateway < ::StandardError
+  end
+end
+
+module Dependabot
+  module Docker
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_version: () -> String
+      def latest_resolvable_version: () -> (Gem::Version | String | nil)
+    end
+  end
+end

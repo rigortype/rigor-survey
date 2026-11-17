@@ -1,0 +1,14 @@
+module Concurrent
+  module Actor
+    module Behaviour
+      class Pausing < ::Concurrent::Actor::Behaviour::Abstract
+        def initialize: (untyped, untyped, untyped) -> void
+        def paused?: () -> (false | true)
+        def pause!: (?untyped) -> true
+        def resume!: () -> (false | true)
+        def reset!: () -> (false | true)
+        def restart!: () -> (false | true)
+      end
+    end
+  end
+end

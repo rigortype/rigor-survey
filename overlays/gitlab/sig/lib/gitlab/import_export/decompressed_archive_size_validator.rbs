@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class DecompressedArchiveSizeValidator
+      def initialize: (archive_path: untyped) -> void
+    end
+  end
+end

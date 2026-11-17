@@ -1,0 +1,12 @@
+module Dependabot
+  module Julia
+    class Version < ::Dependabot::Version
+      def self.correct?: (untyped) -> (false | true)
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Julia::Version
+      def to_s: () -> String
+      def compat_version_string: () -> (String | nil)
+      def to_semver: () -> String
+    end
+  end
+end

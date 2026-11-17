@@ -1,0 +1,5 @@
+module API
+  class Branches < ::API::Base
+    def build_branches_finder: (untyped, untyped) -> (BranchesFinder | Gitlab::Git::Finders::BranchesFinder)
+  end
+end

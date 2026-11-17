@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class Config
+      def initialize: (?config: untyped) -> void
+    end
+  end
+end

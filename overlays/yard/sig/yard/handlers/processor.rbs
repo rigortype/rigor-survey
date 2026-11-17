@@ -1,0 +1,8 @@
+module YARD
+  module Handlers
+    class Processor
+      def self.namespace_for_handler: () -> {}
+      def initialize: (untyped) -> void
+    end
+  end
+end

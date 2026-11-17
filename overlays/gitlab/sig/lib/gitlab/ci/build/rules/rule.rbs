@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Build
+      class Rules
+        class Rule
+          def initialize: (untyped) -> void
+          def matches?: (untyped, untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

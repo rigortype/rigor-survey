@@ -1,0 +1,7 @@
+module Authn
+  module Groups
+    class UpdateTwoFactorRequirementService < ::BaseGroupService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

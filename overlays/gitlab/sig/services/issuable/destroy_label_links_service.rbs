@@ -1,0 +1,5 @@
+module Issuable
+  class DestroyLabelLinksService
+    def initialize: (untyped, untyped) -> void
+  end
+end

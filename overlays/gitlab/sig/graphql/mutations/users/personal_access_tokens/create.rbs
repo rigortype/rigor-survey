@@ -1,0 +1,9 @@
+module Mutations
+  module Users
+    module PersonalAccessTokens
+      class Create < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> ({ errors: untyped } | { token: untyped, errors: [] })
+      end
+    end
+  end
+end

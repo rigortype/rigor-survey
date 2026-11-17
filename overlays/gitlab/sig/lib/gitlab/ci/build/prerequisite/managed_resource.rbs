@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Prerequisite
+        class ManagedResource < ::Gitlab::Ci::Build::Prerequisite::Base
+          def unmet?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

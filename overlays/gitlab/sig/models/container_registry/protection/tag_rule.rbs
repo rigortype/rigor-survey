@@ -1,0 +1,11 @@
+module ContainerRegistry
+  module Protection
+    class TagRule < ::ApplicationRecord
+      def self.base_conditions_for_actions_and_access: (untyped, untyped) -> Array[untyped]
+      def push_restricted?: (untyped) -> (false | true)
+      def delete_restricted?: (untyped) -> (false | true)
+      def mutable?: () -> (false | true)
+      def type: () -> "mutable"
+    end
+  end
+end

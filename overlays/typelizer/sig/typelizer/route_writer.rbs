@@ -1,0 +1,7 @@
+module Typelizer
+  class RouteWriter
+    def initialize: (untyped) -> void
+    def call: (untyped, force: untyped) -> Array[untyped]
+    def template_cache: () -> Hash[untyped, untyped]
+  end
+end

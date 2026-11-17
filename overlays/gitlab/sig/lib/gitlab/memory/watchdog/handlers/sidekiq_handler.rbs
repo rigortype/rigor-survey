@@ -1,0 +1,13 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Handlers
+        class SidekiqHandler
+          def initialize: (untyped, untyped) -> void
+          def call: () -> true
+          def stop: () -> false
+        end
+      end
+    end
+  end
+end

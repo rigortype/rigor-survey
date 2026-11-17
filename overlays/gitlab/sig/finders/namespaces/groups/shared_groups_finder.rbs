@@ -1,0 +1,7 @@
+module Namespaces
+  module Groups
+    class SharedGroupsFinder
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      class SubBatchTimeoutError < ::StandardError
+        def initialize: (StandardError) -> void
+        def caused_by: () -> StandardError
+      end
+    end
+  end
+end

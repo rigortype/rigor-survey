@@ -1,0 +1,11 @@
+module Arel
+  module Collectors
+    class Composite
+      def initialize: (untyped, untyped) -> void
+      def <<: (untyped) -> Arel::Collectors::Composite
+      def add_bind: (untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::Composite
+      def add_binds: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::Composite
+      def value: () -> [untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Projects
+  module Ml
+    module ModelRegistryHelper
+      def index_ml_model_data: (untyped, untyped) -> String
+      def new_ml_model_data: (untyped, untyped) -> String
+      def show_ml_model_data: (untyped, untyped) -> String
+      def edit_ml_model_data: (untyped, untyped) -> String
+      def new_ml_model_version_data: (untyped, untyped) -> String
+      def show_ml_model_version_data: (untyped, untyped) -> String
+      def edit_ml_model_version_data: (untyped, untyped) -> String
+    end
+  end
+end

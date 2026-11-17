@@ -1,0 +1,4 @@
+module BlameHelper
+  def age_map_duration: (untyped, untyped) -> { now: untyped, started_days_ago: untyped }
+  def age_map_class: (untyped, untyped) -> ("blame-commit-age-0" | String)
+end

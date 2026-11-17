@@ -1,0 +1,7 @@
+module Issuable
+  module ImportCsv
+    class BaseService < ::ImportCsv::BaseService
+      def self.required_headers: () -> ["title", "description"]
+    end
+  end
+end

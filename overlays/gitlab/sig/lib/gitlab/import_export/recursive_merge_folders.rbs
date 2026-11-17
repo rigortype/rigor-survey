@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class RecursiveMergeFolders
+      def self.merge: (untyped, untyped) -> Array[String]
+      def self.recursive_merge: (untyped, untyped) -> Array[String]
+    end
+  end
+end

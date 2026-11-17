@@ -1,0 +1,5 @@
+module Users
+  class OmniauthCallbacksController < ::Devise::OmniauthCallbacksController
+    def facebook_app_settings: () -> "https://www.facebook.com/settings?tab=applications"
+  end
+end

@@ -1,0 +1,12 @@
+module Dependabot
+  module GoModules
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class GoModUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, repo_contents_path: untyped, directory: untyped, options: untyped) -> void
+        def updated_go_mod_content: () -> (String | nil)
+        def updated_go_sum_content: () -> (String | nil)
+        def updated_workspace_module_files: () -> (Hash[String, String] | nil)
+      end
+    end
+  end
+end

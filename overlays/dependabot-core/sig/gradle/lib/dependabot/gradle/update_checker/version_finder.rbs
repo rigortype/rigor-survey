@@ -1,0 +1,14 @@
+module Dependabot
+  module Gradle
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionFinder < ::Dependabot::Maven::Shared::SharedVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?raise_on_ignored: untyped, ?cooldown_options: untyped) -> void
+        def latest_version_details: () -> (nil | { version: untyped, source_url: String | nil })
+        def cooldown_enabled?: () -> true
+        def lowest_security_fix_version_details: () -> (nil | { version: untyped, source_url: String | nil })
+        def versions: () -> Array[Hash[Symbol, Object]]
+        def forbidden_urls: () -> Array[String]
+      end
+    end
+  end
+end

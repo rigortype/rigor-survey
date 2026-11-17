@@ -1,0 +1,5 @@
+module Resolvers
+  class GroupResolver < ::Resolvers::BaseResolver
+    def self.target_type: () -> "group"
+  end
+end

@@ -1,0 +1,7 @@
+module Tasks
+  module Ci
+    class ValidateIdTokenConfigurationTask
+      def validate!: () -> nil
+    end
+  end
+end

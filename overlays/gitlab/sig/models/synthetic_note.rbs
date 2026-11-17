@@ -1,0 +1,3 @@
+class SyntheticNote < ::Note
+  def self.note_attributes: (untyped, untyped, untyped, untyped) -> (Hash[untyped, untyped] | { system: true, author: untyped, created_at: untyped, updated_at: untyped, discussion_id: untyped, noteable: untyped, event: untyped, system_note_metadata: SystemNoteMetadata, resource_parent: untyped, imported_from: untyped })
+end

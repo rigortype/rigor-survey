@@ -1,0 +1,6 @@
+module Integrations
+  class SlackInteractionService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

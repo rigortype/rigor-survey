@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Associations
+    class Preloader
+      def initialize: (records: untyped, associations: untyped, ?scope: untyped, ?available_records: untyped, ?associate_by_default: untyped) -> void
+    end
+  end
+end

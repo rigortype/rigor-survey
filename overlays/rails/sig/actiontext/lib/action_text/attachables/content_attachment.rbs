@@ -1,0 +1,8 @@
+module ActionText
+  module Attachables
+    class ContentAttachment
+      def self.from_node: (untyped) -> (ActionText::Attachables::ContentAttachment | nil)
+      def to_partial_path: () -> "action_text/attachables/content_attachment"
+    end
+  end
+end

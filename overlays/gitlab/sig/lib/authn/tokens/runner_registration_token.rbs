@@ -1,0 +1,9 @@
+module Authn
+  module Tokens
+    class RunnerRegistrationToken
+      def initialize: (untyped, Symbol) -> void
+      def revocable: () -> nil
+      def source: () -> :api_admin_token
+    end
+  end
+end

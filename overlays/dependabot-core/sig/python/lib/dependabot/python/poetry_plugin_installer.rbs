@@ -1,0 +1,9 @@
+module Dependabot
+  module Python
+    class PoetryPluginInstaller
+      def self.from_dependency_files: (untyped) -> Dependabot::Python::PoetryPluginInstaller
+      def initialize: (pyproject_content: untyped) -> void
+      def install_required_plugins: () -> (nil | true)
+    end
+  end
+end

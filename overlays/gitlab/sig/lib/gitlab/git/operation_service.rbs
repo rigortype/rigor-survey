@@ -1,0 +1,17 @@
+module Gitlab
+  module Git
+    class OperationService
+      class BranchUpdate < ::Struct[untyped]
+        def newrev: () -> untyped
+        def repo_created: () -> untyped
+        def branch_created: () -> untyped
+        def newrev=: (untyped) -> untyped
+        def repo_created=: (untyped) -> untyped
+        def branch_created=: (untyped) -> untyped
+        def self.new: (?newrev: untyped, ?repo_created: untyped, ?branch_created: untyped) -> instance | (?untyped newrev, ?untyped repo_created, ?untyped branch_created) -> instance
+        def self.[]: (?newrev: untyped, ?repo_created: untyped, ?branch_created: untyped) -> instance | (?untyped newrev, ?untyped repo_created, ?untyped branch_created) -> instance
+        def self.from_gitaly: (untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      end
+    end
+  end
+end

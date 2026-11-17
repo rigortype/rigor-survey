@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module Stage
+      class ImportIssuesAndDiffNotesWorker
+        def importers: () -> [singleton(Gitlab::GithubImport::Importer::IssuesImporter), singleton(Gitlab::GithubImport::Importer::SingleEndpointDiffNotesImporter)]
+      end
+    end
+  end
+end

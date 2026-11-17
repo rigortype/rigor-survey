@@ -1,0 +1,9 @@
+module Packages
+  module Nuget
+    class ServiceIndexPresenter
+      def initialize: (untyped) -> void
+      def version: () -> "3.0.0"
+      def resources: () -> Array[untyped]
+    end
+  end
+end

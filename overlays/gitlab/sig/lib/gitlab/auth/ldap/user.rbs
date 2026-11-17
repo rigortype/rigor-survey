@@ -1,0 +1,11 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class User < ::Gitlab::Auth::OAuth::User
+        def ldap_config: () -> Gitlab::Auth::Ldap::Config
+        def auth_hash=: (untyped) -> Gitlab::Auth::Ldap::AuthHash
+        def protocol_name: () -> "LDAP"
+      end
+    end
+  end
+end

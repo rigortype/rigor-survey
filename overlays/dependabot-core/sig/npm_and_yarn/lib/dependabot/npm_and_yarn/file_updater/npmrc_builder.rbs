@@ -1,0 +1,12 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class NpmrcBuilder
+        def initialize: (dependency_files: untyped, credentials: untyped, ?dependencies: untyped) -> void
+        def self.npmrc_content_from_credentials: (untyped) -> (String | nil)
+        def npmrc_content: () -> ("" | String)
+        def yarnrc_content: () -> ("" | String)
+      end
+    end
+  end
+end

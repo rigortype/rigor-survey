@@ -1,0 +1,7 @@
+module Faraday
+  class Error < ::StandardError
+    def initialize: (?untyped, ?untyped) -> void
+    def inspect: () -> String
+    def wrapped_exception: () -> (Exception | nil)
+  end
+end

@@ -1,0 +1,5 @@
+module RGL
+  class EdgePropertiesMap
+    def initialize: (untyped, untyped) -> void
+  end
+end

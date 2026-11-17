@@ -1,0 +1,7 @@
+module Clusters
+  module Agents
+    class DeleteExpiredEventsService
+      def initialize: (untyped) -> void
+    end
+  end
+end

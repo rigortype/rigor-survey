@@ -1,0 +1,8 @@
+module Users
+  class CreditCardValidation < ::ApplicationRecord
+    def set_last_digits_hash: () -> String
+    def set_holder_name_hash: () -> String
+    def set_network_hash: () -> String
+    def set_expiration_date_hash: () -> String
+  end
+end

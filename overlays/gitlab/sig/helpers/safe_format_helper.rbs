@@ -1,0 +1,4 @@
+module SafeFormatHelper
+  def safe_format: (untyped, *untyped) -> String
+  def tag_pair: (untyped, untyped, untyped) -> Hash[untyped, untyped]
+end

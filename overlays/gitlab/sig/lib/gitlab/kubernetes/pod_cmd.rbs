@@ -1,0 +1,7 @@
+module Gitlab
+  module Kubernetes
+    module PodCmd
+      def self.retry_command: (untyped, ?times: untyped) -> String
+    end
+  end
+end

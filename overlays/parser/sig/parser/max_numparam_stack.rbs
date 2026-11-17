@@ -1,0 +1,8 @@
+module Parser
+  class MaxNumparamStack
+    def empty?: () -> (false | true)
+    def has_ordinary_params!: () -> -1
+    def push: (static: untyped) -> Array[untyped]
+    def stack: () -> Array[untyped]
+  end
+end

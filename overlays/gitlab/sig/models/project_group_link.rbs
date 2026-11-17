@@ -1,0 +1,3 @@
+class ProjectGroupLink < ::ApplicationRecord
+  def human_access: () -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+end

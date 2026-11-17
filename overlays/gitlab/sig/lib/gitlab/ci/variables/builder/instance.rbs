@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Builder
+        class Instance
+          def secret_variables: (?protected_ref: untyped, ?only: untyped) -> Gitlab::Ci::Variables::Collection
+        end
+      end
+    end
+  end
+end

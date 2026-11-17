@@ -1,0 +1,8 @@
+module Gitlab
+  module PoolRepositories
+    class DiscoveryService
+      def initialize: (untyped, untyped) -> void
+      def pool_disk_path_exists?: (untyped) -> (false | true)
+    end
+  end
+end

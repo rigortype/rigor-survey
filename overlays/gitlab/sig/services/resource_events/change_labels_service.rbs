@@ -1,0 +1,5 @@
+module ResourceEvents
+  class ChangeLabelsService
+    def initialize: (untyped, untyped) -> void
+  end
+end

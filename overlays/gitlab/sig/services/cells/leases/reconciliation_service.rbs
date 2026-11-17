@@ -1,0 +1,8 @@
+module Cells
+  module Leases
+    class ReconciliationService
+      def execute: (?full_scan: untyped) -> { processed: untyped, committed: untyped, rolled_back: untyped, pending: untyped, orphaned: untyped }
+      def claim_service: () -> Gitlab::TopologyServiceClient::ClaimService
+    end
+  end
+end

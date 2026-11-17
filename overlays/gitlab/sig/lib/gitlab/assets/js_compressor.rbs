@@ -1,0 +1,7 @@
+module Gitlab
+  module Assets
+    class JsCompressor
+      def self.cache_key: () -> String
+    end
+  end
+end

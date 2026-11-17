@@ -1,0 +1,9 @@
+module Concurrent
+  module Synchronization
+    class Object < ::Concurrent::Synchronization::AbstractObject
+      def self.safe_initialization!: () -> (nil | singleton(Concurrent::Synchronization::Object))
+      def self.safe_initialization?: () -> (false | nil | true)
+      def self.ensure_safe_initialization_when_final_fields_are_present: () -> true
+    end
+  end
+end

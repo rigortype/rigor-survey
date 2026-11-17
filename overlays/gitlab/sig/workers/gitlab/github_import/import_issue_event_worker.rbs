@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    class ImportIssueEventWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::IssueEvent)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::IssueEventImporter)
+      def object_type: () -> :issue_event
+      def import_settings: () -> Gitlab::GithubImport::Settings
+    end
+  end
+end

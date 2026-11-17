@@ -1,0 +1,13 @@
+class ReleaseHighlight
+  def self.release_date_reached?: (untyped) -> (false | true)
+  def self.cache_key: (untyped) -> String
+  def self.current_package: () -> ("Free" | "Premium" | "Ultimate")
+  class QueryResult < ::Struct[untyped]
+    def items: () -> untyped
+    def next_page: () -> untyped
+    def items=: (untyped) -> untyped
+    def next_page=: (untyped) -> untyped
+    def self.new: (?items: untyped, ?next_page: untyped) -> instance
+    def self.[]: (?items: untyped, ?next_page: untyped) -> instance
+  end
+end

@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    class NotesCommand < ::Rails::Command::Base
+      def perform: (*untyped) -> nil
+    end
+  end
+end

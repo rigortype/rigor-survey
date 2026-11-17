@@ -1,0 +1,6 @@
+---
+version: 1
+ignored:
+- file: lib/erubi.rb
+  rule: call.undefined-method
+  count: 1

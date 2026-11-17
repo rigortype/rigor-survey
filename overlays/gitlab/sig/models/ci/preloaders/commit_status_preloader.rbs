@@ -1,0 +1,8 @@
+module Ci
+  module Preloaders
+    class CommitStatusPreloader
+      def initialize: (untyped) -> void
+      def execute: (untyped, ?scope: untyped, ?available_records: untyped) -> Hash[Array[singleton(Ci::Bridge) | singleton(Ci::Build) | singleton(GenericCommitStatus)], Array[untyped]]
+    end
+  end
+end

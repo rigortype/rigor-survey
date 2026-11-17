@@ -1,0 +1,3 @@
+class MergeRequestAssignee < ::ApplicationRecord
+  def cache_key: () -> [untyped, untyped, untyped]
+end

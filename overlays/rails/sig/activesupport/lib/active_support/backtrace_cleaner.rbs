@@ -1,0 +1,6 @@
+module ActiveSupport
+  class BacktraceCleaner
+    def remove_silencers!: () -> []
+    def remove_filters!: () -> []
+  end
+end

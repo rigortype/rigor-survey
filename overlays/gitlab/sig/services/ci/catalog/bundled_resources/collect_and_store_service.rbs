@@ -1,0 +1,11 @@
+module Ci
+  module Catalog
+    module BundledResources
+      class CollectAndStoreService
+        def initialize: (untyped) -> void
+        def prepare: () -> ServiceResponse
+        def persist: (untyped) -> ServiceResponse
+      end
+    end
+  end
+end

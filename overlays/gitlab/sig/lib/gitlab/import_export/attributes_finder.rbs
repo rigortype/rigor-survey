@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class AttributesFinder
+      def initialize: (config: untyped) -> void
+      def find_root: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

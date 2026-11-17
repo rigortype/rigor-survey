@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Type
+      class SymbolizedJsonb < ::ActiveRecord::ConnectionAdapters::PostgreSQL::OID::Jsonb
+        def type: () -> :sym_jsonb
+      end
+    end
+  end
+end

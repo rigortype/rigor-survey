@@ -1,0 +1,5 @@
+module Admin
+  module BroadcastsHelper
+    def status_badge_class: (Broadcast | BroadcastDelivery) -> String
+  end
+end

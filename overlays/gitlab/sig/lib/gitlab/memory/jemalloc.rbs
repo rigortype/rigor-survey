@@ -1,0 +1,7 @@
+module Gitlab
+  module Memory
+    module Jemalloc
+      def stats: (?format: untyped) -> String
+    end
+  end
+end

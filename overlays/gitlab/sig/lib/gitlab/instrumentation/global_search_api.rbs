@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    class GlobalSearchApi
+      def self.payload: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Packages
+  module Cargo
+    class ProcessPackageFileService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

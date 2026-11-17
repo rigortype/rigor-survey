@@ -1,0 +1,5 @@
+module SupplyChain
+  class ArtifactsReader
+    def initialize: (untyped) -> void
+  end
+end

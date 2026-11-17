@@ -1,0 +1,7 @@
+module Ci
+  module Runners
+    class SetRunnerAssociatedProjectsService
+      def initialize: (runner: untyped, current_user: untyped, project_ids: untyped) -> void
+    end
+  end
+end

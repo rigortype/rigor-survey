@@ -1,0 +1,17 @@
+module ActiveSupport
+  class Deprecation
+    class DeprecationProxy < ::BasicObject
+      def inspect: () -> String
+    end
+    class DeprecatedObjectProxy < ::ActiveSupport::Deprecation::DeprecationProxy
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class DeprecatedInstanceVariableProxy < ::ActiveSupport::Deprecation::DeprecationProxy
+      def initialize: (untyped, untyped, ?untyped, deprecator: untyped) -> void
+    end
+    class DeprecatedConstantProxy < ::Module
+      def initialize: (untyped, untyped, untyped, ?message: untyped) -> void
+      def inspect: () -> String
+    end
+  end
+end

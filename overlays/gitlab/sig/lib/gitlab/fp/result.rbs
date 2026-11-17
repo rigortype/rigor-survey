@@ -1,0 +1,17 @@
+module Gitlab
+  module Fp
+    class Result
+      def self.ok: (untyped) -> Gitlab::Fp::Result
+      def self.err: (untyped) -> Gitlab::Fp::Result
+      def ok?: () -> (false | true)
+      def err?: () -> (false | true)
+      def and_then: (untyped) -> Gitlab::Fp::Result
+      def map: (untyped) -> Gitlab::Fp::Result
+      def map_err: (untyped) -> Gitlab::Fp::Result
+      def inspect_ok: (untyped, ?enforce_immutability: untyped) -> Gitlab::Fp::Result
+      def inspect_err: (untyped, ?enforce_immutability: untyped) -> Gitlab::Fp::Result
+      def to_h: () -> ({ err: untyped } | { ok: untyped })
+      def deconstruct_keys: (untyped) -> ({ err: untyped } | { ok: untyped })
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module ConfigChecker
+    module ExternalDatabaseChecker
+      def check: () -> Array[{ type: "warning", message: untyped }]
+    end
+  end
+end

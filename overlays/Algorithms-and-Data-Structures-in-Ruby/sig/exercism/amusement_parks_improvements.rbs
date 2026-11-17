@@ -1,0 +1,4 @@
+class Attendee
+  def initialize: (untyped) -> void
+  def revoke_pass!: () -> nil
+end

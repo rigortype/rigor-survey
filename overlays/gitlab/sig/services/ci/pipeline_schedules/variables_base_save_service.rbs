@@ -1,0 +1,7 @@
+module Ci
+  module PipelineSchedules
+    class VariablesBaseSaveService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

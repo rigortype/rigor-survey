@@ -1,0 +1,11 @@
+module Spree
+  module Api
+    module V3
+      class BaseSerializer
+        def self.without_formatted_money: (?untyped) -> Symbol
+        def self.display_money_type: (untyped, ?nullable: untyped) -> [:string, { nullable: untyped, comment: String, deprecated: String }]
+        def self.preference_type_hint: (untyped, untyped) -> (:boolean | :number | :string | :unknown | [:boolean | :number | :string | :unknown, Hash[untyped, untyped] | {}])
+      end
+    end
+  end
+end

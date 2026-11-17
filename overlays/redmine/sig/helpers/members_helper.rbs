@@ -1,0 +1,5 @@
+module MembersHelper
+  def member_status_options: () -> [[untyped, ""], [untyped, "1"], [untyped, "3"]]
+  def paginate_members: (untyped) -> [untyped, Redmine::Pagination::Paginator, untyped]
+  def members_list_params: () -> Hash[:member_name | :member_role_id | :member_status | :members_page, untyped]
+end

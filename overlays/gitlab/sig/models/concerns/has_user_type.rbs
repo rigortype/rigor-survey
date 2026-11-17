@@ -1,0 +1,3 @@
+module HasUserType
+  def bot?: () -> (false | true)
+end

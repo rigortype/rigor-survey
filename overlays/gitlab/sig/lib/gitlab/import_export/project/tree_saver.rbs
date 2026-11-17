@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class TreeSaver
+        def initialize: (project: untyped, current_user: untyped, shared: untyped, ?params: untyped, ?logger: untyped) -> void
+      end
+    end
+  end
+end

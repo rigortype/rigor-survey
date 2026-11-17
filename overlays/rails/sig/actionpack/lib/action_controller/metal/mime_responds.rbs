@@ -1,0 +1,10 @@
+module ActionController
+  module MimeResponds
+    class Collector
+      def initialize: (untyped, ?untyped) -> void
+      class VariantCollector
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

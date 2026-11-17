@@ -1,0 +1,13 @@
+module ActionMailer
+  module Parameterized
+    module ClassMethods
+      def with: (untyped) -> ActionMailer::Parameterized::Mailer
+    end
+    class Mailer
+      def initialize: (untyped, untyped) -> void
+    end
+    class MessageDelivery < ::ActionMailer::MessageDelivery
+      def initialize: (untyped, untyped, untyped, *untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

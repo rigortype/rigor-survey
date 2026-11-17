@@ -1,0 +1,4 @@
+class MyQueue
+  def push: (untyped) -> nil
+  def empty: () -> (false | true)
+end

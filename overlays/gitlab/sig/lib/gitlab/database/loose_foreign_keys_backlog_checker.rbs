@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    class LooseForeignKeysBacklogChecker
+      def self.run: (?logger: untyped) -> Hash[untyped, untyped]
+      def initialize: (untyped, String, untyped) -> void
+      def run: () -> Array[untyped]
+      def database_name: () -> "main"
+    end
+  end
+end

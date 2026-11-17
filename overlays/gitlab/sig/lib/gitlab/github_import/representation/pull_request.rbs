@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class PullRequest
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::PullRequest
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::PullRequest
+        def initialize: (untyped) -> void
+        def issuable_type: () -> "MergeRequest"
+        def github_identifiers: () -> { iid: untyped, issuable_type: untyped, title: untyped }
+      end
+    end
+  end
+end

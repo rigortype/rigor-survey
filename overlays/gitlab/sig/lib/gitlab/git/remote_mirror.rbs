@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class RemoteMirror
+      def initialize: (untyped, untyped, ?only_branches_matching: untyped, ?ssh_key: untyped, ?known_hosts: untyped, ?keep_divergent_refs: untyped, ?resolved_address: untyped) -> void
+    end
+  end
+end

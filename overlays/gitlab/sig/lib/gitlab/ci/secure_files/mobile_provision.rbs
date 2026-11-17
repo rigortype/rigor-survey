@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module SecureFiles
+      class MobileProvision
+        def initialize: (untyped) -> void
+        def metadata: () -> ({ id: untyped, expires_at: untyped, platforms: untyped, team_name: untyped, team_id: untyped, app_name: untyped, app_id: untyped, app_id_prefix: untyped, xcode_managed: untyped, entitlements: untyped, devices: untyped, certificate_ids: Array[untyped] | [] } | {})
+      end
+    end
+  end
+end

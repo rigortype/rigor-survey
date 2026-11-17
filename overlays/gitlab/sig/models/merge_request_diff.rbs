@@ -1,0 +1,11 @@
+class MergeRequestDiff < ::ApplicationRecord
+  def with_users: (?read_new_commits_table: untyped) -> MergeRequestDiff
+  def self.find_by_diff_refs: (untyped) -> (MergeRequestDiff | nil)
+  def self.ids_including_any_commits: (untyped, untyped, project: untyped) -> Set[untyped]
+  def ensure_commit_shas: () -> nil
+  def diff_refs: () -> (Gitlab::Diff::DiffRefs | nil)
+  def diffs_collection: (?untyped) -> Gitlab::Diff::FileCollection::MergeRequestDiff
+  def compare: () -> Gitlab::Git::Compare
+  def latest?: () -> (false | true)
+  def remove_cached_external_diff: () -> top
+end

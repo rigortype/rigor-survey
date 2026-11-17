@@ -1,0 +1,7 @@
+module Import
+  module Framework
+    class UrlBlockerParams
+      def to_h: () -> { allow_localhost: untyped, allow_local_network: untyped, schemes: ["http", "https"], deny_all_requests_except_allowed: untyped, outbound_local_requests_allowlist: untyped }
+    end
+  end
+end

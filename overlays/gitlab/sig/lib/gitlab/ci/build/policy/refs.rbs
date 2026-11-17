@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Policy
+        class Refs < ::Gitlab::Ci::Build::Policy::Specification
+          def initialize: ([untyped] | [String, String] | [String]) -> void
+        end
+      end
+    end
+  end
+end

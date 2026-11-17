@@ -1,0 +1,5 @@
+module Authz
+  class ProjectGrantSources
+    def initialize: (?cached: (false | true)) -> void
+  end
+end

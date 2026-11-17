@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    module DurationMeasuring
+      def duration_s: () -> Float
+    end
+  end
+end

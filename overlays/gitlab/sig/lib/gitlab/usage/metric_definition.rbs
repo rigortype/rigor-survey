@@ -1,0 +1,15 @@
+module Gitlab
+  module Usage
+    class MetricDefinition
+      def initialize: (untyped, ?untyped) -> void
+      def to_context: () -> (Gitlab::Tracking::ServicePingContext | nil)
+      def time_framed?: () -> (false | true)
+      def available?: () -> (false | true)
+      def valid_service_ping_status?: () -> (false | true)
+      def self.paths: () -> [untyped]
+      def self.load_from_file: (untyped) -> (Array[Gitlab::Usage::MetricDefinition] | [Gitlab::Usage::MetricDefinition] | nil)
+      def self.load_all_from_path!: (untyped, untyped) -> Array[String]
+      def self.map_time_frames: (untyped, untyped, untyped) -> (Array[Gitlab::Usage::MetricDefinition] | [Gitlab::Usage::MetricDefinition])
+    end
+  end
+end

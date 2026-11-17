@@ -1,0 +1,11 @@
+module Gitlab
+  module ImportExport
+    module Project
+      module Sample
+        class DateCalculator
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

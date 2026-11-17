@@ -1,0 +1,28 @@
+module Dependabot
+  module Maven
+    module Shared
+      class SharedPackageDetailsFetcher
+        def dependency_parts: () -> [String, String]
+        def dependency_base_url: (untyped) -> String
+        def dependency_metadata_url: (untyped) -> String
+        def dependency_files_url: (untyped, untyped) -> String
+        def dependency_pom_url: (untyped, untyped) -> String
+        def fetch_dependency_metadata: (untyped) -> (Nokogiri::XML::Document | nil)
+        def fetch_dependency_metadata_from_html: (untyped) -> (Nokogiri::HTML::Document | nil)
+        def extract_version_details_from_html: (untyped) -> Hash[untyped, untyped]
+        def extract_release_date_from_link: (untyped) -> (Time | nil)
+        def check_response: (untyped, untyped) -> (Array[untyped] | nil)
+        def handle_registry_error: (untyped, untyped, untyped) -> nil
+        def versions_details_from_xml: () -> Array[untyped]
+        def versions_details_hash_from_html: () -> Hash[String, HtmlVersionDetails]
+        def credentials_repository_details: () -> Array[Hash["auth_headers" | "url", untyped]]
+        def central_repo_urls: () -> [String, String]
+        def forbidden_urls: () -> (Array[String] | nil)
+        def repository_url: (untyped) -> String
+        def repository_auth_headers: (untyped) -> Hash[untyped, untyped]
+        def auth_headers_finder: () -> (::Utils::AuthHeadersFinder | nil)
+        def version_class: () -> singleton(Dependabot::Version)
+      end
+    end
+  end
+end

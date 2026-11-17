@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class SnippetRepoRestorer < ::Gitlab::ImportExport::RepoRestorer
+      def initialize: (snippet: untyped, user: untyped, shared: untyped, path_to_bundle: untyped) -> void
+      def restore: () -> (false | true)
+    end
+  end
+end

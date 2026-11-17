@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class Highlight
+      def initialize: (untyped, ?repository: untyped, ?plain: (false | true), ?diff_file: untyped) -> void
+      def plain: () -> true
+    end
+  end
+end

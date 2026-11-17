@@ -1,0 +1,16 @@
+module Rails
+  class Application < ::Rails::Engine
+    class Configuration < ::Rails::Engine::Configuration
+      def initialize: (*untyped) -> void
+      def reloading_enabled?: () -> (false | true)
+      def enable_reloading: () -> (false | true)
+      def enable_reloading=: (untyped) -> (false | true)
+      def annotations: () -> singleton(Rails::SourceAnnotationExtractor::Annotation)
+      def content_security_policy: () ?{ (*untyped) -> untyped } -> (ActionDispatch::ContentSecurityPolicy | nil)
+      def permissions_policy: () ?{ (*untyped) -> untyped } -> (ActionDispatch::PermissionsPolicy | nil)
+      class Custom
+        def respond_to_missing?: (untyped, untyped) -> true
+      end
+    end
+  end
+end

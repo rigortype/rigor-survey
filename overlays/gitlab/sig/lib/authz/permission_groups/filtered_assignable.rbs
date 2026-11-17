@@ -1,0 +1,8 @@
+module Authz
+  module PermissionGroups
+    class FilteredAssignable < ::SimpleDelegator
+      def initialize: (untyped, boundaries: [String, String]) -> void
+      def boundaries: () -> ["group", "project"]
+    end
+  end
+end

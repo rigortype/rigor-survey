@@ -1,0 +1,10 @@
+module Ci
+  module PrometheusMetrics
+    class ObserveHistogramsService
+      def self.available_histograms: () -> Hash[String, Proc]
+      def self.histogram: (untyped, *untyped) -> [untyped, Proc]
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

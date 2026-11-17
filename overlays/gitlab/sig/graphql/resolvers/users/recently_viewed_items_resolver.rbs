@@ -1,0 +1,15 @@
+module Resolvers
+  module Users
+    class RecentlyViewedItemsResolver < ::Resolvers::BaseResolver
+      def resolve: () -> Array[Resolvers::Users::RecentlyViewedItemsResolver::RecentlyViewedItem]
+      class RecentlyViewedItem < ::Struct[untyped]
+        def item: () -> untyped
+        def viewed_at: () -> untyped
+        def item=: (untyped) -> untyped
+        def viewed_at=: (untyped) -> untyped
+        def self.new: (?item: untyped, ?viewed_at: untyped) -> instance | (?untyped item, ?untyped viewed_at) -> instance
+        def self.[]: (?item: untyped, ?viewed_at: untyped) -> instance | (?untyped item, ?untyped viewed_at) -> instance
+      end
+    end
+  end
+end

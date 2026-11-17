@@ -1,0 +1,7 @@
+class IssuableFinder
+  class Params < ::SimpleDelegator
+    def initialize: (untyped, untyped, untyped) -> void
+    def current_user_related?: () -> (false | true)
+    def merge: (untyped) -> IssuableFinder::Params
+  end
+end

@@ -1,0 +1,23 @@
+class Object
+  def html_safe?: () -> false
+end
+
+class Numeric
+  def html_safe?: () -> true
+end
+
+module ActiveSupport
+  class SafeBuffer < ::String
+    def initialize: (?untyped) -> void
+    def initialize_copy: (untyped) -> (nil | true)
+    def concat: (untyped) -> ActiveSupport::SafeBuffer
+    def *: (untyped) -> ActiveSupport::SafeBuffer
+    def %: (untyped) -> ActiveSupport::SafeBuffer
+    def html_safe?: () -> (false | true)
+    def to_s: () -> ActiveSupport::SafeBuffer
+  end
+end
+
+class String
+  def html_safe: () -> ActiveSupport::SafeBuffer
+end

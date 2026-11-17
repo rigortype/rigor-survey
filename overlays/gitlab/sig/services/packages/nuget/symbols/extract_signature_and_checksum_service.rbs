@@ -1,0 +1,10 @@
+module Packages
+  module Nuget
+    module Symbols
+      class ExtractSignatureAndChecksumService
+        def initialize: (untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

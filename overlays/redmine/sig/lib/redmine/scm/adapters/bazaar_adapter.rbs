@@ -1,0 +1,15 @@
+module Redmine
+  module Scm
+    module Adapters
+      class BazaarAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.sq_bin: () -> String
+        def self.client_available: () -> (false | true)
+        def initialize: (untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> void
+        def revisions: (?String | nil, ?Integer, ?Integer, ?untyped) -> (Redmine::Scm::Adapters::Revisions | nil)
+        def diff: (String | nil, Integer, ?Integer) -> Array[untyped]
+        def annotate: (String, ?String) -> (Redmine::Scm::Adapters::Annotate | nil)
+        def self.branch_conf_path: (untyped) -> (String | nil)
+      end
+    end
+  end
+end

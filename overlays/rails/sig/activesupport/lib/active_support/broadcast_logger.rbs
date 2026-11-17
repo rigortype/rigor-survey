@@ -1,0 +1,6 @@
+module ActiveSupport
+  class BroadcastLogger
+    def initialize: (*untyped) -> void
+    def broadcasts: () -> Array[untyped]
+  end
+end

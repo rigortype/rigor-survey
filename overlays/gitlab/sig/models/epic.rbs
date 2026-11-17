@@ -1,0 +1,7 @@
+class Epic < ::ApplicationRecord
+  def self.link_reference_pattern: () -> nil
+  def self.reference_prefix: () -> "&"
+  def self.reference_prefix_escaped: () -> "&amp;"
+  def self.alternative_reference_prefix: () -> "[epic:"
+  def self.reference_postfix: () -> "]"
+end

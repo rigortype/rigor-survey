@@ -1,0 +1,14 @@
+module Backup
+  module Tasks
+    class Task
+      def self.id: () -> bot
+      def initialize: (progress: untyped, options: untyped) -> void
+      def id: () -> bot
+      def destination_path: () -> bot
+      def cleanup_path: () -> bot
+      def destination_optional: () -> false
+      def pre_restore_warning: () -> nil
+      def post_restore_warning: () -> nil
+    end
+  end
+end

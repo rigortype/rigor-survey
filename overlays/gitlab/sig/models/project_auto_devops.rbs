@@ -1,0 +1,3 @@
+class ProjectAutoDevops < ::ApplicationRecord
+  def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+end

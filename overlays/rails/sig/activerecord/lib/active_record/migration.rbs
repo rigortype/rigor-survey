@@ -1,0 +1,77 @@
+module ActiveRecord
+  class Migration
+    def self.migrate: (untyped) -> nil
+    def self.disable_ddl_transaction!: () -> true
+    def self.schema_needs_update?: (untyped, untyped) -> (false | true)
+    def self.pending_migrations: () -> Array[untyped]
+    def self.respond_to_missing?: (untyped, ?untyped) -> (false | true)
+    def initialize: (?untyped, ?untyped) -> void
+    def migrate: (untyped) -> nil
+    def write: (?untyped) -> nil
+    def announce: (untyped) -> nil
+    def say: (untyped, ?untyped) -> nil
+    def copy: (untyped, untyped, ?untyped) -> Array[untyped]
+    def table_name_options: (?untyped) -> { table_name_prefix: untyped, table_name_suffix: untyped }
+    class ReversibleBlockHelper < ::Struct[untyped]
+      def reverting: () -> untyped
+      def reverting=: (untyped) -> untyped
+      def self.new: (?reverting: untyped) -> instance | (?untyped reverting) -> instance
+      def self.[]: (?reverting: untyped) -> instance | (?untyped reverting) -> instance
+    end
+    class CheckPending
+      def initialize: (untyped, ?file_watcher: untyped) -> void
+    end
+  end
+  class MigrationProxy < ::Struct[untyped]
+    def name: () -> untyped
+    def version: () -> untyped
+    def filename: () -> untyped
+    def scope: () -> untyped
+    def name=: (untyped) -> untyped
+    def version=: (untyped) -> untyped
+    def filename=: (untyped) -> untyped
+    def scope=: (untyped) -> untyped
+    def self.new: (?name: untyped, ?version: untyped, ?filename: untyped, ?scope: untyped) -> instance | (?untyped name, ?untyped version, ?untyped filename, ?untyped scope) -> instance
+    def self.[]: (?name: untyped, ?version: untyped, ?filename: untyped, ?scope: untyped) -> instance | (?untyped name, ?untyped version, ?untyped filename, ?untyped scope) -> instance
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+  end
+  class MigrationError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class DuplicateMigrationVersionError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped) -> void
+  end
+  class DuplicateMigrationNameError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped) -> void
+  end
+  class UnknownMigrationVersionError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped) -> void
+  end
+  class IllegalMigrationNameError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped) -> void
+  end
+  class InvalidMigrationTimestampError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class PendingMigrationError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped, ?pending_migrations: untyped) -> void
+  end
+  class ConcurrentMigrationError < ::ActiveRecord::MigrationError
+    def initialize: (?untyped) -> void
+  end
+  class ProtectedEnvironmentError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class EnvironmentMismatchError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?current: untyped, ?stored: untyped) -> void
+  end
+  class MigrationContext
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def open: () -> ActiveRecord::Migrator
+  end
+  class Migrator
+    def initialize: (untyped, untyped, untyped, untyped, ?untyped) -> void
+    def migrated: () -> Set
+    def load_migrated: () -> Set
+  end
+end

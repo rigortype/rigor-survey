@@ -1,0 +1,18 @@
+class BTree
+  def initialize: (untyped) -> void
+  def printTree: () -> nil
+  def printTreeUtil: (untyped, untyped) -> nil
+  def printInOrder: (untyped) -> nil
+  def insert: (untyped) -> (BTree::Node | nil)
+  def removeUtil: (untyped, untyped) -> nil
+  def findKey: (untyped, untyped) -> Integer
+  def removeFromLeaf: (untyped, untyped) -> nil
+  def removeFromNonLeaf: (untyped, untyped) -> nil
+  def fixBTree: (untyped, untyped) -> nil
+  def borrowFromLeft: (untyped, untyped) -> nil
+  def borrowFromRight: (untyped, untyped) -> nil
+  def merge: (untyped, untyped) -> nil
+  class Node
+    def initialize: (untyped, untyped) -> void
+  end
+end

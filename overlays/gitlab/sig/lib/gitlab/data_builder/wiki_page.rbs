@@ -1,0 +1,7 @@
+module Gitlab
+  module DataBuilder
+    module WikiPage
+      def build: (untyped, untyped, untyped) -> ({ object_kind: untyped, user: untyped, project: untyped, wiki: untyped, object_attributes: untyped } | {})
+    end
+  end
+end

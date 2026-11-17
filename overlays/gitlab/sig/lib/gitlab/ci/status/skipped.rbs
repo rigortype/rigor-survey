@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class Skipped < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_skipped"
+        def favicon: () -> "favicon_status_skipped"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

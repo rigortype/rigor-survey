@@ -1,0 +1,10 @@
+module VisibilityLevelHelper
+  def visibility_level_color: (untyped) -> ("vs-internal" | "vs-private" | "vs-public" | nil)
+  def visibility_icon_description: (untyped) -> (String | nil)
+  def disallowed_visibility_level?: (untyped, untyped) -> (false | true)
+  def disallowed_visibility_level_by_organization?: (untyped, untyped) -> (false | true)
+  def disallowed_visibility_level_by_parent?: (untyped, untyped) -> (false | true)
+  def disallowed_visibility_level_by_projects?: (untyped, untyped) -> (false | true)
+  def disallowed_visibility_level_by_sub_groups?: (untyped, untyped) -> (false | true)
+  def group_public_visibility_billing_path: (untyped) -> nil
+end

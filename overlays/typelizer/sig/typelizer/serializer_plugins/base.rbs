@@ -1,0 +1,8 @@
+module Typelizer
+  module SerializerPlugins
+    class Base
+      def initialize: (serializer: untyped, config: untyped, context: untyped) -> void
+      def meta_fields: () -> nil
+    end
+  end
+end

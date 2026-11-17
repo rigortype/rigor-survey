@@ -1,0 +1,5 @@
+module Grafana
+  class Client
+    def initialize: (api_url: untyped, token: untyped) -> void
+  end
+end

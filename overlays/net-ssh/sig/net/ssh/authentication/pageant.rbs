@@ -1,0 +1,14 @@
+module Net
+  module SSH
+    module Authentication
+      module Pageant
+        module Win
+          def self.raise_error_if_zero: (untyped) -> nil
+        end
+        class Socket
+          def self.open: () -> Net::SSH::Authentication::Pageant::Socket
+        end
+      end
+    end
+  end
+end

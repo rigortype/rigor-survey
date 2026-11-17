@@ -1,0 +1,28 @@
+module Net
+  module SSH
+    class Buffer
+      def self.from: (*untyped) -> Net::SSH::Buffer
+      def initialize: (?untyped) -> void
+      def ==: (untyped) -> (false | true)
+      def reset!: () -> 0
+      def clear!: () -> 0
+      def consume!: (?Integer) -> Net::SSH::Buffer
+      def append: (String) -> Net::SSH::Buffer
+      def remainder_as_buffer: () -> Net::SSH::Buffer
+      def read_all: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def read_bignum: () -> (OpenSSL::BN | nil)
+      def read_private_keyblob: (untyped) -> (OpenSSL::PKey::EC | OpenSSL::PKey::RSA)
+      def read_buffer: () -> Net::SSH::Buffer
+      def write: (*untyped) -> Net::SSH::Buffer
+      def write_moved: (untyped) -> Net::SSH::Buffer
+      def write_int64: (*untyped) -> Net::SSH::Buffer
+      def write_long: (*untyped) -> Net::SSH::Buffer
+      def write_byte: (*untyped) -> Net::SSH::Buffer
+      def write_string: (*untyped) -> Net::SSH::Buffer
+      def write_mstring: (*untyped) -> Net::SSH::Buffer
+      def write_bool: (*untyped) -> Net::SSH::Buffer
+      def write_bignum: (*untyped) -> Net::SSH::Buffer
+      def write_key: (*untyped) -> Net::SSH::Buffer
+    end
+  end
+end

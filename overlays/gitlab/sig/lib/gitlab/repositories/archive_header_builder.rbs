@@ -1,0 +1,10 @@
+module Gitlab
+  module Repositories
+    class ArchiveHeaderBuilder
+      def initialize: (untyped, ref: untyped, format: untyped, append_sha: untyped, ?path: untyped, ?ref_type: untyped, ?storage_path: String, ?include_lfs_blobs: untyped, ?exclude_paths: untyped) -> void
+      def filename: () -> String
+      def content_type: () -> ("application/octet-stream" | "application/zip")
+      def storage_path: () -> "/var/downloads"
+    end
+  end
+end

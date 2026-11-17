@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      class AutoDevops < ::Gitlab::Ci::ProjectConfig::Source
+        def internal_include_prepended?: () -> true
+        def source: () -> :auto_devops_source
+      end
+    end
+  end
+end

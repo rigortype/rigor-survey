@@ -1,0 +1,4 @@
+class LicenseTemplateFinder
+  def initialize: (nil, ?untyped) -> void
+  def project: () -> nil
+end

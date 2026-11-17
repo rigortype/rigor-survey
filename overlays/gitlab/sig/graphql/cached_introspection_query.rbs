@@ -1,0 +1,4 @@
+module CachedIntrospectionQuery
+  def self.query_string: () -> String
+  def self.query_string_no_deprecated: () -> String
+end

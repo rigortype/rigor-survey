@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Transport
+      module Kex
+        class Abstract
+          def initialize: (untyped, untyped, untyped) -> void
+          def exchange_keys: () -> { session_id: untyped, server_key: untyped, shared_secret: untyped, hashing_algorithm: bot }
+        end
+      end
+    end
+  end
+end

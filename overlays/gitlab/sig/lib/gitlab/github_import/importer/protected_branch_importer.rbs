@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class ProtectedBranchImporter
+        def initialize: (untyped, untyped, untyped) -> void
+        def gitlab_user_id_to_github_user_id: () -> Hash[untyped, untyped]
+        def user_finder: () -> Gitlab::GithubImport::UserFinder
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Timelogs
+  class BaseService
+    def initialize: (untyped) -> void
+    def success: (untyped) -> ServiceResponse
+    def error: (untyped, ?untyped) -> ServiceResponse
+    def error_in_save: (untyped) -> ServiceResponse
+  end
+end

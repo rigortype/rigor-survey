@@ -1,0 +1,8 @@
+module Ci
+  module Components
+    class FetchService
+      def initialize: (address: untyped, current_user: untyped, ?logger: untyped, ?pipeline_policy_context: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

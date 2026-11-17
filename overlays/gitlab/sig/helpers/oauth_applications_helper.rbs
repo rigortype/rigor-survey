@@ -1,0 +1,3 @@
+module OauthApplicationsHelper
+  def oauth_application_granular_scopes_picker_data: (untyped, untyped) -> (nil | { allowed_access_levels: untyped, group_full_path: untyped, group_name: String, initial_scopes: untyped })
+end

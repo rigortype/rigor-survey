@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class BatchCommitLoader
+        def initialize: (container_class: singleton(::Project), container_id: untyped, oid: untyped) -> void
+        def container_class: () -> singleton(::Project)
+      end
+    end
+  end
+end

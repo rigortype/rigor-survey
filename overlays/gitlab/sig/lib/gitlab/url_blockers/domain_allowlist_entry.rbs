@@ -1,0 +1,8 @@
+module Gitlab
+  module UrlBlockers
+    class DomainAllowlistEntry
+      def initialize: (untyped, ?port: Integer) -> void
+      def port: () -> 8080
+    end
+  end
+end

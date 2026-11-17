@@ -1,0 +1,3 @@
+module SystemNoteHelper
+  def system_note_icon_name: (untyped) -> ("arrow-right" | "calendar" | "check" | "cherry-pick-commit" | "clock" | "comment" | "comment-dots" | "comment-lines" | "commit" | "doc-image" | "documents" | "duplicate" | "error" | "eye" | "eye-slash" | "fork" | "information-o" | "issue-close" | "label" | "link" | "lock" | "lock-open" | "merge" | "merge-request-close" | "milestone" | "mr-system-note-empty" | "pencil" | "review-warning" | "status" | "status-health" | "thumbtack" | "timer" | "todo-done" | "unapproval" | "user" | "users" | "warning" | "work-item-issue" | nil)
+end

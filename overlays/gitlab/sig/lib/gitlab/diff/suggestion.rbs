@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    class Suggestion
+      def initialize: (untyped, line: untyped, above: untyped, below: untyped, diff_file: untyped) -> void
+      def to_hash: () -> { from_content: untyped, to_content: "" | String, lines_above: untyped, lines_below: untyped }
+      def to_content: () -> ("" | String)
+    end
+  end
+end

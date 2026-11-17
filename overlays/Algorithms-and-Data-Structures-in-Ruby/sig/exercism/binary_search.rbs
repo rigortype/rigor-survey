@@ -1,0 +1,3 @@
+class BinarySearch
+  def initialize: (untyped) -> void
+end

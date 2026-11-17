@@ -1,0 +1,11 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class DatabaseDiagnosticsFindingMetric < ::Gitlab::Usage::Metrics::Instrumentations::GenericMetric
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

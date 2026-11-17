@@ -1,0 +1,5 @@
+module IncidentManagement
+  class ProcessAlertWorkerV2
+    def perform: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  end
+end

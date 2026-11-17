@@ -1,0 +1,12 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ConcurrencyLimit
+      class LimitManager
+        def initialize: (worker_name: untyped, prefix: untyped) -> void
+        def set_override_limit!: (Integer, ?ttl: untyped) -> true
+        def clear_override_limit!: () -> true
+        def override_status: () -> { limit: untyped, ttl: untyped }
+      end
+    end
+  end
+end

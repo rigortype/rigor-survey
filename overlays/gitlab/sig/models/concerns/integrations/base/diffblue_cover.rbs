@@ -1,0 +1,9 @@
+module Integrations
+  module Base
+    module DiffblueCover
+      def sections: () -> [{ type: untyped, title: untyped, description: untyped }, { type: untyped, title: untyped, description: String }]
+      def ci_variables: () -> ([] | [{ key: "DIFFBLUE_LICENSE_KEY", value: untyped, public: false, masked: true }, { key: "DIFFBLUE_ACCESS_TOKEN_NAME", value: untyped, public: false, masked: true }, { key: "DIFFBLUE_ACCESS_TOKEN", value: untyped, public: false, masked: true }])
+      def testable?: () -> false
+    end
+  end
+end

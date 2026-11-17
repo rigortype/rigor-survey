@@ -1,0 +1,9 @@
+module YARD
+  module Handlers
+    module Ruby
+      class MethodHandler < ::YARD::Handlers::Ruby::Base
+        def format_args: () -> Array[untyped]
+      end
+    end
+  end
+end

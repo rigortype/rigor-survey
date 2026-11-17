@@ -1,0 +1,5 @@
+module ActiveRecord
+  module ConnectionHandling
+    def connects_to: (?database: untyped, ?shards: untyped) -> Array[untyped]
+  end
+end

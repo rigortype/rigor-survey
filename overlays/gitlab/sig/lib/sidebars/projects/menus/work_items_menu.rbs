@@ -1,0 +1,14 @@
+module Sidebars
+  module Projects
+    module Menus
+      class WorkItemsMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (false | true)
+        def extra_container_html_options: () -> { class: "shortcuts-issues" }
+        def sprite_icon: () -> "work-item-issue"
+        def active_routes: () -> { path: ["projects/issues#index", "projects/issues#show", "projects/issues#new", "projects/work_items#index", "projects/work_items#show", "projects/work_items#new"] }
+        def pill_count_field: () -> "openWorkItemsCount"
+        def pill_html_options: () -> { class: "issue_counter" }
+      end
+    end
+  end
+end

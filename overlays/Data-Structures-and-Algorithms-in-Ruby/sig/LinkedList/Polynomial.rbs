@@ -1,0 +1,8 @@
+class Polynomial
+  def initialize: (untyped, untyped, untyped) -> void
+  def add: (untyped) -> Polynomial
+  def display: () -> nil
+  class Node
+    def initialize: (untyped, untyped) -> void
+  end
+end

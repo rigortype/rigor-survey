@@ -1,0 +1,4 @@
+class AbuseReport < ::ApplicationRecord
+  def report_type: () -> (:comment | :issue | :merge_request | :profile | nil)
+  def uploads_sharding_key: () -> { organization_id: untyped }
+end

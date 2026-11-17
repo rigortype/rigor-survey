@@ -1,0 +1,7 @@
+module Gitlab
+  module PoolRepositories
+    class MissingShardCleaner
+      def initialize: (shard_names: untyped, logger: untyped, ?output_file: untyped, ?deleted_output_file: untyped, ?dry_run: untyped, ?csv_writer: untyped, ?deleted_csv_writer: untyped) -> void
+    end
+  end
+end

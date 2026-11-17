@@ -1,0 +1,8 @@
+module WebHooks
+  module Hook
+    def execute: (untyped, untyped, ?idempotency_key: untyped, ?force: untyped) -> ServiceResponse
+    def application_context: () -> { related_class: String }
+    def masked_token: () -> ("************" | nil)
+    def validate_public_url?: () -> true
+  end
+end

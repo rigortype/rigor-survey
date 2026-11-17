@@ -1,0 +1,7 @@
+module Redmine
+  module Views
+    class OtherFormatsBuilder
+      def initialize: (untyped) -> void
+    end
+  end
+end

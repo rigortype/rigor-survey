@@ -1,0 +1,10 @@
+module ActionCable
+  module Server
+    class Socket
+      class WebSocket
+        def initialize: (untyped, untyped, untyped, ?protocols: untyped) -> void
+        def websocket: () -> (ActionCable::Server::Socket::ClientSocket | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Gitlab
+  module Template
+    class BaseTemplate
+      def initialize: (untyped, ?untyped, ?category: untyped) -> void
+      def name: () -> String
+      def full_name: () -> String
+      def content: () -> String
+      def resolve!: (?untyped) -> Gitlab::Template::BaseTemplate
+      def to_json: (*untyped) -> { key: String, name: String, content: String }
+      def self.find: (untyped, ?untyped) -> (Gitlab::Template::BaseTemplate | nil)
+      def self.categories: () -> {}
+      def self.extension: () -> bot
+      def self.finder: (?untyped) -> bot
+      def self.category_directory: (untyped) -> String
+    end
+  end
+end

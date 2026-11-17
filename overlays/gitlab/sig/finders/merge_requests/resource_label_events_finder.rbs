@@ -1,0 +1,5 @@
+module MergeRequests
+  class ResourceLabelEventsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

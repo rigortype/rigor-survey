@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module AsyncConstraints
+      module Validators
+        def self.for: (untyped) -> (Gitlab::Database::AsyncConstraints::Validators::CheckConstraint | Gitlab::Database::AsyncConstraints::Validators::ForeignKey)
+      end
+    end
+  end
+end

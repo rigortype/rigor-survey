@@ -1,0 +1,6 @@
+class Status < ::ApplicationRecord
+  module InteractionPolicyConcern
+    def quote_policy_for_account: (untyped) -> (:automatic | :denied | :manual | :unknown)
+    def downgrade_quote_policy: () -> 0
+  end
+end

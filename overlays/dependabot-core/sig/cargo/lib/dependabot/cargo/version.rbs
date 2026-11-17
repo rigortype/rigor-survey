@@ -1,0 +1,14 @@
+module Dependabot
+  module Cargo
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def inspect: () -> String
+      def self.update_type: (untyped, untyped) -> ("major" | String)
+      def self.normalize_versions: (untyped, untyped) -> [untyped, untyped]
+      def self.extract_version_parts: (untyped, untyped) -> [untyped, untyped, untyped, untyped, untyped, untyped]
+      def self.standard_semver_type: (untyped, untyped, untyped, untyped, untyped, untyped) -> ("major" | "minor" | "patch")
+      def self.cargo_pre_1_0_type: (untyped, untyped, untyped, untyped, untyped, untyped) -> ("major" | "patch")
+    end
+  end
+end

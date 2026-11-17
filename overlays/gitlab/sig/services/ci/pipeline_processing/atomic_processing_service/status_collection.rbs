@@ -1,0 +1,9 @@
+module Ci
+  module PipelineProcessing
+    class AtomicProcessingService
+      class StatusCollection
+        def initialize: (untyped, ?observe_processing_delay: (false | true)) -> void
+      end
+    end
+  end
+end

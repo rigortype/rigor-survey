@@ -1,0 +1,6 @@
+module MergeRequests
+  class MergeRequestDiffComparison
+    def initialize: (untyped) -> void
+    def compare_with: (untyped) -> (Compare | nil)
+  end
+end

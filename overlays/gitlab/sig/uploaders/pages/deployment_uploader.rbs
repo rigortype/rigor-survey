@@ -1,0 +1,6 @@
+module Pages
+  class DeploymentUploader < ::GitlabUploader
+    def self.direct_upload_enabled?: () -> false
+    def self.default_store: () -> (1 | 2)
+  end
+end

@@ -1,0 +1,3 @@
+module UpdateVisibilityLevel
+  def valid_visibility_level_change?: (untyped, untyped) -> (false | true)
+end

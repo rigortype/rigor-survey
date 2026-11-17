@@ -1,0 +1,6 @@
+module Environments
+  class DeleteManagedResourcesService
+    def initialize: (untyped, current_user: untyped) -> void
+    def execute: () -> (ServiceResponse | nil)
+  end
+end

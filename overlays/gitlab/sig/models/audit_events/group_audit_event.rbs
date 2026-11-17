@@ -1,0 +1,5 @@
+module AuditEvents
+  class GroupAuditEvent < ::ApplicationRecord
+    def entity_type: () -> "Group"
+  end
+end

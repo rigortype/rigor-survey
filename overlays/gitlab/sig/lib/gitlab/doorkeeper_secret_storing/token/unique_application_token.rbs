@@ -1,0 +1,10 @@
+module Gitlab
+  module DoorkeeperSecretStoring
+    module Token
+      class UniqueApplicationToken
+        def self.generate: (*untyped) -> String
+        def self.prefix_for_oauth_application_secret: () -> ("gloas-%{token}" | String)
+      end
+    end
+  end
+end

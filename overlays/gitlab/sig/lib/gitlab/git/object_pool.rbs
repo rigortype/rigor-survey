@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class ObjectPool
+      def self.init_from_gitaly: (untyped, untyped) -> Gitlab::Git::ObjectPool
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def repository: () -> Gitlab::Git::Repository
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Ci
+  class RunnerManagersFinder
+    def initialize: (runner: untyped, params: untyped) -> void
+    def execute: () -> ActiveRecord::Relation[Ci::RunnerManager]
+  end
+end

@@ -1,0 +1,10 @@
+module WorkItems
+  module SavedViews
+    class SavedView < ::ApplicationRecord
+      def self.column_order_name_asc: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+      def self.column_order_relative_position: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+      def self.column_order_id_desc: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+      def allow_possible_spam?: (*untyped) -> (false | true)
+    end
+  end
+end

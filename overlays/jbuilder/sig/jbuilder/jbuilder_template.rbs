@@ -1,0 +1,7 @@
+class JbuilderTemplate < ::Jbuilder
+  def initialize: (untyped, ?untyped) -> void
+end
+
+class JbuilderHandler
+  def self.call: (untyped, ?untyped) -> String
+end

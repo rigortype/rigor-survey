@@ -1,0 +1,6 @@
+module ActivityPub
+  class AcceptFollowService
+    def initialize: (untyped, String) -> void
+    def actor: () -> "http://localhost/my-project/releases"
+  end
+end

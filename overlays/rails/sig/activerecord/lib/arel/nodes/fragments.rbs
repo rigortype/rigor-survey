@@ -1,0 +1,8 @@
+module Arel
+  module Nodes
+    class Fragments < ::Arel::Nodes::Node
+      def initialize: (?untyped) -> void
+      def +: (untyped) -> Arel::Nodes::Fragments
+    end
+  end
+end

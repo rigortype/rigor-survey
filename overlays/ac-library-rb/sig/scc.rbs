@@ -1,0 +1,7 @@
+class SCC
+  def initialize: (Integer) -> void
+  def add_edge: (Integer, Integer) -> SCC
+  def add_edges: (untyped) -> SCC
+  def add: (Array[Array[Integer]], ?untyped) -> SCC
+  def scc: () -> Array[Array[untyped]]
+end

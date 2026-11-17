@@ -1,0 +1,5 @@
+module Projects
+  class ProjectPathChangedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["project_id", "namespace_id", "root_namespace_id", "old_path", "new_path"] | Hash[String, Hash[String, "integer"] | Hash[String, "string"]]]
+  end
+end

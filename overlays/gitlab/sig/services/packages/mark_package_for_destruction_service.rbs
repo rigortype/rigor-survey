@@ -1,0 +1,7 @@
+module Packages
+  class MarkPackageForDestructionService < ::BaseContainerService
+    def initialize: (container: untyped, ?current_user: untyped, ?skip_protection_check: (false | true)) -> void
+    def execute: () -> ServiceResponse
+    def skip_protection_check: () -> true
+  end
+end

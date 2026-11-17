@@ -1,0 +1,3 @@
+class NewNoteWorker
+  def perform: (untyped, ?untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | ServiceResponse | nil)
+end

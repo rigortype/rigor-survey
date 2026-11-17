@@ -1,0 +1,5 @@
+module DesignManagement
+  class Action < ::ApplicationRecord
+    def uploads_sharding_key: () -> { namespace_id: untyped }
+  end
+end

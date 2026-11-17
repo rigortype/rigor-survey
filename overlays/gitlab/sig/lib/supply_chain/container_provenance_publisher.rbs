@@ -1,0 +1,5 @@
+module SupplyChain
+  class ContainerProvenancePublisher < ::SupplyChain::ProvenancePublisher
+    def publish: () -> [Array[untyped] | [], false | true]
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class GitalyContext
+      def self.instance: () -> Gitlab::GitalyClient::GitalyContext
+    end
+  end
+end

@@ -1,0 +1,55 @@
+module ActionController
+  class ParameterMissing < ::KeyError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class UnpermittedParameters < ::IndexError
+    def initialize: (untyped) -> void
+  end
+  class Parameters
+    def initialize: (?untyped, ?untyped) -> void
+    def ==: (untyped) -> bool
+    def to_h: () ?{ (untyped, untyped) -> [ untyped, untyped ] } -> ActiveSupport::HashWithIndifferentAccess
+    def to_hash: () -> Hash[untyped, untyped]
+    def to_query: (*String?) -> String
+    def to_unsafe_h: () -> ActiveSupport::HashWithIndifferentAccess
+    def each_pair: () ?{ ([ untyped, untyped ]) -> void } -> (self | Enumerator[[ untyped, untyped ], self])
+    def converted_arrays: () -> Set[untyped]
+    def permitted?: () -> bool
+    def permit!: () -> self
+    def require: (String | Symbol | Array[String | Symbol]) -> untyped
+    def permit: (*untyped) -> self
+    def []: (String | Symbol) -> untyped
+    def []=: [V] (String | Symbol, V) -> V
+    def fetch: (String | Symbol, *untyped) ?{ (String | Symbol) -> untyped } -> untyped
+    def dig: (*String | Symbol | Integer) -> untyped
+    def slice: (*String | Symbol) -> self
+    def slice!: (*String | Symbol) -> self
+    def except: (*String | Symbol) -> self
+    def extract!: (*String | Symbol) -> self
+    def transform_values: () ?{ (untyped) -> untyped } -> (self | Enumerator[untyped, self])
+    def transform_values!: () ?{ (untyped) -> untyped } -> (self | Enumerator[untyped, self])
+    def transform_keys: () ?{ (untyped) -> untyped } -> (self | Enumerator[untyped, self])
+    def transform_keys!: () ?{ (untyped) -> untyped } -> (self | Enumerator[untyped, self])
+    def deep_transform_keys!: () ?{ (*untyped) -> untyped } -> ActionController::Parameters
+    def deep_transform_values!: () ?{ (*untyped) -> untyped } -> ActionController::Parameters
+    def delete: (String | Symbol) ?{ (String) -> untyped } -> untyped
+    def select: () ?{ (untyped, untyped) -> untyped } -> (self | Enumerator[[ untyped, untyped ], self])
+    def select!: () ?{ (untyped, untyped) -> untyped } -> self
+    def reject: () ?{ (untyped, untyped) -> untyped } -> (self | Enumerator[[ untyped, untyped ], self])
+    def reject!: () ?{ (untyped, untyped) -> untyped } -> self
+    def compact!: () -> (ActionController::Parameters | nil)
+    def compact_blank!: () -> ActionController::Parameters
+    def values_at: (*String | Symbol) -> Array[untyped]
+    def merge: (*untyped) ?{ (untyped, untyped, untyped) -> untyped } -> self
+    def merge!: (*untyped) ?{ (untyped, untyped, untyped) -> untyped } -> self
+    def deep_merge?: (untyped) -> (false | true)
+    def reverse_merge: (untyped) -> self
+    def reverse_merge!: (untyped) -> self
+    def inspect: () -> String
+    def encode_with: (untyped) -> Hash[String, untyped]
+    def deep_dup: () -> self
+  end
+  module StrongParameters
+    def params: () -> ActionController::Parameters
+  end
+end

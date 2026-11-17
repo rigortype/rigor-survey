@@ -1,0 +1,14 @@
+module Mcp
+  module Tools
+    module Base
+      class CustomService < ::Mcp::Tools::Base::BaseService
+        def initialize: (name: untyped, ?version: untyped) -> void
+        def authorize!: (untyped) -> nil
+        def authorization_error_message: () -> String
+        def auth_ability: () -> bot
+        def granular_permissions: () -> []
+        def skip_granular_token_authorization?: () -> false
+      end
+    end
+  end
+end

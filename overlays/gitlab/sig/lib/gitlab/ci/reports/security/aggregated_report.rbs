@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class AggregatedReport
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

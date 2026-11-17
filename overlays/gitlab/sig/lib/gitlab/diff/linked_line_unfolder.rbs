@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class LinkedLineUnfolder
+      def self.from_param: (untyped) -> (Gitlab::Diff::LinkedLineUnfolder | nil)
+      def initialize: (old_line: untyped) -> void
+    end
+  end
+end

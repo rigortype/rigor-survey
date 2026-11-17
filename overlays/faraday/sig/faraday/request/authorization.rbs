@@ -1,0 +1,7 @@
+module Faraday
+  class Request < ::Struct[untyped]
+    class Authorization < ::Faraday::Middleware
+      def initialize: (untyped, untyped, *untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module QuickActions
+  class InterpretService < ::BaseContainerService
+    def execute: (untyped, untyped, ?only: untyped, ?skip: untyped) -> ([untyped, Hash[untyped, untyped] | {}, untyped, untyped] | [untyped, {}, ""])
+    def explain: (untyped, untyped, ?keep_actions: untyped) -> ([untyped, untyped] | [untyped, []])
+  end
+end

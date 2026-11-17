@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubGistsImport
+    module Importer
+      class GistImporter
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> ServiceResponse
+        def user: () -> User
+        def snippet: () -> PersonalSnippet
+      end
+    end
+  end
+end

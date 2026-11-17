@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Bridge
+        class Factory < ::Gitlab::Ci::Status::Factory
+          def self.extended_statuses: () -> [[singleton(Gitlab::Ci::Status::Bridge::Retryable)], [singleton(Gitlab::Ci::Status::Bridge::Failed)], [singleton(Gitlab::Ci::Status::Bridge::Manual)], [singleton(Gitlab::Ci::Status::Bridge::WaitingForApproval)], [singleton(Gitlab::Ci::Status::Bridge::WaitingForResource)], [singleton(Gitlab::Ci::Status::Bridge::SuccessWarning)], [singleton(Gitlab::Ci::Status::Bridge::Play)], [singleton(Gitlab::Ci::Status::Bridge::Action)], [singleton(Gitlab::Ci::Status::Bridge::Retried)]]
+          def self.common_helpers: () -> singleton(Gitlab::Ci::Status::Bridge::Common)
+        end
+      end
+    end
+  end
+end

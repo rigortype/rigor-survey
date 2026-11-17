@@ -1,0 +1,7 @@
+module Gitlab
+  module Tracking
+    class FrontendStandardContext
+      def initialize: (untyped) -> void
+    end
+  end
+end

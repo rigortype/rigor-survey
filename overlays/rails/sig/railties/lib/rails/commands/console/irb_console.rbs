@@ -1,0 +1,10 @@
+module Rails
+  class Console
+    class IRBConsole
+      def initialize: (untyped, ?untyped) -> void
+      def name: () -> "IRB"
+      def unicode_logo: () -> (["⠀⢀⠀⢡⣶⣿⠟⡛⠢", "⠠⠀⣰⣿⣿⠁⠄⠀⠀", "⠶⢠⣿⣿⣿⠰⠆⠀⠀", "⠶⢸⣿⣿⣿⡄⠰⠆⠀"] | nil)
+      def env_color: () -> (:BLUE | :MAGENTA | :RED)
+    end
+  end
+end

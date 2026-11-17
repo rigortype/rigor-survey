@@ -1,0 +1,5 @@
+module Releases
+  class Link < ::ApplicationRecord
+    def hook_attrs: () -> { id: untyped, link_type: untyped, name: untyped, url: untyped }
+  end
+end

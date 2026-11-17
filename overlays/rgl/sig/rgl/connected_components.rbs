@@ -1,0 +1,5 @@
+module RGL
+  module Graph
+    def strongly_connected_components: () -> RGL::Graph::TarjanSccVisitor
+  end
+end

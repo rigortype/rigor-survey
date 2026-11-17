@@ -1,0 +1,12 @@
+module Ci
+  module Inputs
+    class BaseInput
+      def self.type_name: () -> bot
+      def initialize: (name: Symbol, spec: untyped) -> void
+      def type: () -> bot
+      def required?: () -> (false | true)
+      def errors: () -> Array[untyped]
+      def name: () -> (:test | :test_input | :the_input_name)
+    end
+  end
+end

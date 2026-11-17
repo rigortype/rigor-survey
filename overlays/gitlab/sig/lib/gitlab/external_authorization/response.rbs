@@ -1,0 +1,7 @@
+module Gitlab
+  module ExternalAuthorization
+    class Response
+      def initialize: (untyped) -> void
+    end
+  end
+end

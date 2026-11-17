@@ -1,0 +1,8 @@
+module Gitlab
+  module BlobHelper
+    def extname: () -> String
+    def viewable?: () -> (false | true)
+    def text_in_repo?: () -> (false | true)
+    def image?: () -> (false | true)
+  end
+end

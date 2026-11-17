@@ -1,0 +1,7 @@
+module Projects
+  module Security
+    class ConfigurationPresenter < ::Gitlab::View::Presenter::Delegated
+      def to_h: () -> { auto_devops_enabled: untyped, auto_devops_help_page_path: untyped, auto_devops_path: untyped, can_enable_auto_devops: untyped, features: untyped, help_page_path: untyped, latest_pipeline_path: untyped, gitlab_ci_present: untyped, gitlab_ci_history_path: untyped, security_training_enabled: untyped, container_scanning_for_registry_enabled: untyped, cvs_for_container_scanning_enabled: untyped, cvs_for_dependency_scanning_enabled: untyped, license_scanning_for_cyclonedx_enabled: untyped, secret_push_protection_available: untyped, secret_push_protection_enforced: untyped, secret_push_protection_enabled: untyped, validity_checks_available: untyped, validity_checks_enabled: untyped, user_is_project_admin: untyped, secret_detection_configuration_path: untyped, license_configuration_source: untyped, vulnerability_training_docs_path: untyped, upgrade_path: untyped, group_full_path: untyped, can_apply_profiles: untyped, can_read_attributes: untyped, can_manage_attributes: untyped, security_scan_profiles_licensed: untyped, group_manage_attributes_path: untyped, max_tracked_refs: untyped, merge_requests_enabled: untyped }
+    end
+  end
+end

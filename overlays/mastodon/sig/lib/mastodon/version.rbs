@@ -1,0 +1,14 @@
+module Mastodon
+  module Version
+    def self?.major: () -> 5
+    def self?.minor: () -> 0
+    def self?.patch: () -> 0
+    def self?.default_prerelease: () -> "alpha.3"
+    def self?.to_a: () -> [5, 0, 0]
+    def self?.to_s: () -> String
+    def self?.gem_version: () -> Gem::Version
+    def self?.api_versions: () -> { mastodon: 12 }
+    def self?.source_commit: () -> (String | nil)
+    def self?.user_agent: () -> String
+  end
+end

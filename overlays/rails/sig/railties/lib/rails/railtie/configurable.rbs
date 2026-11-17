@@ -1,0 +1,9 @@
+module Rails
+  class Railtie
+    module Configurable
+      module ClassMethods
+        def inherited: (untyped) -> bot
+      end
+    end
+  end
+end

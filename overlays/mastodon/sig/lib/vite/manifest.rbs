@@ -1,0 +1,34 @@
+module Vite
+  class Manifest
+    def initialize: (config: untyped, logger: untyped) -> void
+    def reload: () -> (false | true)
+    def load: () -> (nil | true)
+    def entries: () -> Hash[untyped, untyped]
+    def pool: () -> Array[untyped]
+    class Entrypoint < ::Struct[untyped]
+      def file: () -> untyped
+      def integrity: () -> untyped
+      def import_ids: () -> untyped
+      def stylesheet_ids: () -> untyped
+      def file=: (untyped) -> untyped
+      def integrity=: (untyped) -> untyped
+      def import_ids=: (untyped) -> untyped
+      def stylesheet_ids=: (untyped) -> untyped
+      def self.new: (?file: untyped, ?integrity: untyped, ?import_ids: untyped, ?stylesheet_ids: untyped) -> instance | (?untyped file, ?untyped integrity, ?untyped import_ids, ?untyped stylesheet_ids) -> instance
+      def self.[]: (?file: untyped, ?integrity: untyped, ?import_ids: untyped, ?stylesheet_ids: untyped) -> instance | (?untyped file, ?untyped integrity, ?untyped import_ids, ?untyped stylesheet_ids) -> instance
+    end
+    class Asset < ::Struct[untyped]
+      def file: () -> untyped
+      def integrity: () -> untyped
+      def file=: (untyped) -> untyped
+      def integrity=: (untyped) -> untyped
+      def self.new: (?file: untyped, ?integrity: untyped) -> instance | (?untyped file, ?untyped integrity) -> instance
+      def self.[]: (?file: untyped, ?integrity: untyped) -> instance | (?untyped file, ?untyped integrity) -> instance
+    end
+    class MissingEntryError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+    class MissingManifestError < ::StandardError
+    end
+  end
+end

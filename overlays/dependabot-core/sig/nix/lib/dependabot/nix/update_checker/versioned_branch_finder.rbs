@@ -1,0 +1,10 @@
+module Dependabot
+  module Nix
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionedBranchFinder
+        def initialize: (current_ref: untyped, dependency: untyped, credentials: untyped, ?ignored_versions: untyped) -> void
+        def latest_versioned_branch: () -> (Hash[Symbol, String] | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module ProfilesHelper
+  def commit_email_select_options: (untyped) -> Array[untyped]
+  def ssh_key_usage_types: () -> Hash[untyped, "auth" | "auth_and_signing" | "signing"]
+  def ssh_key_expiration_policy_enabled?: () -> false
+  def prevent_delete_account?: () -> false
+  def user_profile_data: (untyped) -> Hash[untyped, untyped]
+  def delete_account_modal_data: () -> { action_url: untyped, confirm_with_password: untyped, username: untyped, delay_user_account_self_deletion: untyped }
+  def email_profile_data: (untyped) -> { email: untyped, public_email: untyped, commit_email: untyped, public_email_options: String, commit_email_options: String, email_help_text: untyped, email_resend_confirmation_link: untyped, is_email_readonly: untyped, email_change_disabled: untyped, managing_group_name: untyped, needs_password_confirmation: untyped, password_automatically_set: untyped, allow_password_authentication_for_web: untyped, provider_label: untyped }
+  def email_otp_enrollment_restriction_confirm_data: (untyped) -> { help_text: untyped, disabled: "false" | "true", email_otp_required: untyped, path: untyped }
+end

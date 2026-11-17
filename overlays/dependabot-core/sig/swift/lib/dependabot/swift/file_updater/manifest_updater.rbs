@@ -1,0 +1,10 @@
+module Dependabot
+  module Swift
+    class FileUpdater < ::FileUpdaters::Base
+      class ManifestUpdater
+        def initialize: (untyped, old_requirements: untyped, new_requirements: untyped) -> void
+        def updated_manifest_content: () -> String
+      end
+    end
+  end
+end

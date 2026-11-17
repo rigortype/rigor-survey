@@ -1,0 +1,8 @@
+module NotificationRecipients
+  module Builder
+    class Default < ::NotificationRecipients::Builder::Base
+      def initialize: (untyped, untyped, action: untyped, ?custom_action: Symbol, ?previous_assignees: untyped, ?skip_current_user: untyped) -> void
+      def self.mention_type_actions: () -> [:new_issue, :new_merge_request, :new_work_item]
+    end
+  end
+end

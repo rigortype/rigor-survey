@@ -1,0 +1,8 @@
+module Concurrent
+  class ReadWriteLock < ::Concurrent::Synchronization::Object
+    def acquire_read_lock: () -> (nil | true)
+    def release_read_lock: () -> true
+    def acquire_write_lock: () -> true
+    def release_write_lock: () -> true
+  end
+end

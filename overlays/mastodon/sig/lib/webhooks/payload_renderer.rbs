@@ -1,0 +1,9 @@
+module Webhooks
+  class PayloadRenderer
+    def initialize: (untyped) -> void
+    class DocumentTraverser
+      def initialize: (untyped) -> void
+      def get: (untyped) -> (String | nil)
+    end
+  end
+end

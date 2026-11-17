@@ -1,0 +1,10 @@
+module Packages
+  module TerraformModule
+    module Metadata
+      class UpdateService
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

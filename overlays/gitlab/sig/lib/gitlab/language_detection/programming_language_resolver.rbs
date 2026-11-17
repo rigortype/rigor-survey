@@ -1,0 +1,7 @@
+module Gitlab
+  class LanguageDetection
+    class ProgrammingLanguageResolver
+      def initialize: (untyped) -> void
+    end
+  end
+end

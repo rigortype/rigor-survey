@@ -1,0 +1,3 @@
+class ResourceMilestoneEventFinder
+  def initialize: (untyped, untyped) -> void
+end

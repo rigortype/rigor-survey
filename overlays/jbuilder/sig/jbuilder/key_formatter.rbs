@@ -1,0 +1,5 @@
+class Jbuilder
+  class KeyFormatter
+    def initialize: (*untyped, **untyped) -> void
+  end
+end

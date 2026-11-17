@@ -1,0 +1,6 @@
+module Clusters
+  class ClusterPresenter < ::Gitlab::View::Presenter::Delegated
+    def provider_management_url: () -> (String | nil)
+    def read_only_kubernetes_platform_fields?: () -> (false | true)
+  end
+end

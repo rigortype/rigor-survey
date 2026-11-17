@@ -1,0 +1,8 @@
+module Typelizer
+  module ModelPlugins
+    module Auto
+      def self.new: (model_class: untyped, config: untyped) -> (Typelizer::ModelPlugins::ActiveRecord | Typelizer::ModelPlugins::Poro)
+      def self.plugin: (untyped) -> (singleton(Typelizer::ModelPlugins::ActiveRecord) | singleton(Typelizer::ModelPlugins::Poro))
+    end
+  end
+end

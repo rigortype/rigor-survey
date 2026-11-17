@@ -1,0 +1,8 @@
+module Integrations
+  module JiraForge
+    class FindOrCreateInstallationService
+      def initialize: (installation_id: untyped, cloud_id: untyped, organization_id: untyped, jira_api_base_url: untyped, forge_system_token: untyped) -> void
+      def forge_attrs: () -> { jira_api_base_url: untyped, forge_system_token: untyped }
+    end
+  end
+end

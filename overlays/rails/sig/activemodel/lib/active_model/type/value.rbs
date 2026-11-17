@@ -1,0 +1,14 @@
+module ActiveModel
+  module Type
+    class Value
+      def initialize: (?precision: untyped, ?limit: untyped, ?scale: untyped) -> void
+      def serializable?: (untyped) ?{ (*untyped) -> untyped } -> true
+      def binary?: () -> false
+      def value_constructed_by_mass_assignment?: (untyped) -> false
+      def force_equality?: (untyped) -> false
+      def serialized?: () -> false
+      def mutable?: () -> true
+      def as_json: (*untyped) -> bot
+    end
+  end
+end

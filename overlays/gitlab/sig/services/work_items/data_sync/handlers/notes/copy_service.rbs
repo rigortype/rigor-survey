@@ -1,0 +1,13 @@
+module WorkItems
+  module DataSync
+    module Handlers
+      module Notes
+        class CopyService
+          def initialize: (untyped, untyped, untyped) -> void
+          def execute: () -> ServiceResponse
+          def new_discussion_ids: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

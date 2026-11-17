@@ -1,0 +1,9 @@
+module Gitlab
+  module WorkItems
+    class TimeTrackingExtractor
+      def self.reference_pattern: () -> Regexp
+      def initialize: (untyped, untyped) -> void
+      def extractor: () -> Gitlab::ReferenceExtractor
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Metrics
+    class RuntimeLimiter
+      def initialize: (?untyped) -> void
+      def was_over_time?: () -> (false | true)
+    end
+  end
+end

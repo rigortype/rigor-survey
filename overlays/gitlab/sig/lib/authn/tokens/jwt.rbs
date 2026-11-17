@@ -1,0 +1,9 @@
+module Authn
+  module Tokens
+    class Jwt
+      def self.rsa_decode: (token: untyped, signing_public_key: untyped, subject_type: untyped, token_prefix: untyped, ?verify_expiration: untyped) -> (Authn::Tokens::Jwt | nil)
+      def initialize: (payload: (nil | Hash[String, Integer] | Hash[String, String] | {}), subject_type: untyped) -> void
+      def payload: () -> (nil | Hash[String, Integer] | Hash[String, String] | {})
+    end
+  end
+end

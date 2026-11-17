@@ -1,0 +1,5 @@
+class User < ::ApplicationRecord
+  module SignInToken
+    def generate_sign_in_token: () -> Time
+  end
+end

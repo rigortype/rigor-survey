@@ -1,0 +1,8 @@
+module Releases
+  class BaseService
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def param_for_milestone_titles_provided?: () -> (false | true)
+    def param_for_milestone_ids_provided?: () -> (false | true)
+    def param_for_milestones_provided?: () -> (false | true)
+  end
+end

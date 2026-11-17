@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class WhenNode < ::RuboCop::AST::Node
+      def each_condition: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::WhenNode)
+    end
+  end
+end

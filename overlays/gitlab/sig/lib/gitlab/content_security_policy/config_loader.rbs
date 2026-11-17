@@ -1,0 +1,27 @@
+module Gitlab
+  module ContentSecurityPolicy
+    class ConfigLoader
+      def self.default_directives: () -> Hash[untyped, untyped]
+      def self.default_directives_defaults: () -> Hash[String, "'none'" | "'self' 'unsafe-inline'" | "'self' data: blob: http: https:" | "'self' https: http:" | "'self'" | "'strict-dynamic' 'self' 'unsafe-eval' https://www.google.com/recaptcha/ https://www.recaptcha.net" | "https://www.google.com/recaptcha/ https://www.recaptcha.net/ https://www.googletagmanager.com/ns.html" | String | nil]
+      def self.allow_development_tooling: (untyped) -> (String | nil)
+      def self.allow_webpack_dev_server: (untyped) -> String
+      def self.allow_vite_dev_server: (untyped) -> (String | nil)
+      def self.allow_vite_dev_server_script: (untyped) -> (String | nil)
+      def self.allow_letter_opener: (untyped) -> String
+      def self.allow_snowplow_micro: (untyped) -> String
+      def self.allow_lfs: (untyped) -> (String | nil)
+      def self.allow_websocket_connections: (untyped) -> String
+      def self.allow_cdn: (untyped) -> (String | nil)
+      def self.allow_zuora: (untyped) -> (String | nil)
+      def self.allow_sentry: (untyped) -> (String | nil)
+      def self.allow_framed_gitlab_paths: (untyped) -> [String, String, String, String]
+      def self.allow_customersdot: (untyped) -> (String | nil)
+      def self.csp_level_3_backport: (untyped) -> String
+      def self.append_to_directive: (untyped, untyped, untyped) -> String
+      def self.zuora_host: () -> "https://*.zuora.com/apps/PublicHostedPageLite.do"
+      def self.vite_dev_server_urls: () -> (nil | { http_path: untyped, hmr_ws_url: untyped })
+      def initialize: (untyped) -> void
+      def load: (untyped) -> Array[String]
+    end
+  end
+end

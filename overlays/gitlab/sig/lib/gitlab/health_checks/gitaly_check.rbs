@@ -1,0 +1,8 @@
+module Gitlab
+  module HealthChecks
+    class GitalyCheck
+      def self.check: (untyped) -> Gitlab::HealthChecks::Result
+      def self.metric_prefix: () -> "gitaly_health_check"
+    end
+  end
+end

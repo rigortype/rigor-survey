@@ -1,0 +1,7 @@
+module Atlassian
+  module Forge
+    class InvocationToken
+      def initialize: (untyped, audience: untyped, ?jwks_client: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Namespaces
+  module Traversal
+    module Linear
+      def traversal_path: (with_organization: untyped) -> String
+    end
+  end
+end

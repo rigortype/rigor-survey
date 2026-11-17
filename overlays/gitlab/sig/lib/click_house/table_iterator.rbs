@@ -1,0 +1,16 @@
+module ClickHouse
+  class TableIterator
+    def initialize: (untyped, primary_keys: untyped, connection: untyped) -> void
+    def each_range: (?of: untyped) -> (Array[untyped] | Enumerator[untyped, untyped] | nil)
+    class Boundary < ::Struct[untyped]
+      def typed_values: () -> untyped
+      def raw_values: () -> untyped
+      def types: () -> untyped
+      def typed_values=: (untyped) -> untyped
+      def raw_values=: (untyped) -> untyped
+      def types=: (untyped) -> untyped
+      def self.new: (?typed_values: untyped, ?raw_values: untyped, ?types: untyped) -> instance | (?untyped typed_values, ?untyped raw_values, ?untyped types) -> instance
+      def self.[]: (?typed_values: untyped, ?raw_values: untyped, ?types: untyped) -> instance | (?untyped typed_values, ?untyped raw_values, ?untyped types) -> instance
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class PartitionExporter
+        def initialize: (connection: untyped) -> void
+        def export: () -> Array[untyped]
+      end
+    end
+  end
+end

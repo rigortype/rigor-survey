@@ -1,0 +1,8 @@
+module Clusters
+  module AgentTokens
+    class RevokeService
+      def initialize: (token: untyped, current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

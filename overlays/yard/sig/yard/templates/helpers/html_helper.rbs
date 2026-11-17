@@ -1,0 +1,24 @@
+module YARD
+  module Templates
+    module Helpers
+      module HtmlHelper
+        def h: (untyped) -> String
+        def html_markup_pre: (untyped) -> String
+        def html_markup_text: (untyped) -> String
+        def html_markup_none: (untyped) -> String
+        def html_markup_ruby: (untyped) -> String
+        def htmlify_line: (*untyped) -> String
+        def html_syntax_highlight_plain: (untyped) -> String
+        def link_url: (untyped, ?untyped, ?untyped) -> String
+        def mtime: (untyped) -> nil
+        def url_for_file: (untyped, ?untyped) -> ("" | String)
+        def url_for_list: (untyped) -> ("" | String)
+        def url_for_frameset: () -> ("" | String)
+        def url_for_main: () -> ("" | String)
+        def url_for_index: () -> ("" | String)
+        def format_types: (untyped, ?untyped) -> ("" | String | nil)
+        def signature: (untyped, ?untyped, ?untyped, ?untyped) -> String
+      end
+    end
+  end
+end

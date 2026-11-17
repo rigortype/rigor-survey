@@ -1,0 +1,13 @@
+module Gitlab
+  module Graphql
+    module Deprecations
+      class Deprecation
+        def self.parse: (?experiment: untyped, ?deprecated: untyped) -> (Gitlab::Graphql::Deprecations::Deprecation | nil)
+        def initialize: (?reason: (String | Symbol), ?milestone: String, ?replacement: untyped) -> void
+        def ==: (untyped) -> (false | true)
+        def deprecation_reason: () -> String
+        def deprecated?: () -> (false | true)
+      end
+    end
+  end
+end

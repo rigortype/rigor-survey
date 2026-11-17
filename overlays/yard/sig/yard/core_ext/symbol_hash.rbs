@@ -1,0 +1,6 @@
+class SymbolHash < ::Hash[untyped, untyped]
+  def initialize: (?false | true) -> void
+  def self.[]: (*untyped) -> SymbolHash
+  def update: (untyped) -> SymbolHash
+  def merge: (untyped) -> SymbolHash
+end

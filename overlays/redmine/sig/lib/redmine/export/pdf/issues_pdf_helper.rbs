@@ -1,0 +1,10 @@
+module Redmine
+  module Export
+    module PDF
+      module IssuesPdfHelper
+        def is_cjk?: () -> (false | true)
+        def calc_col_width: (untyped, untyped, untyped, untyped) -> Array[untyped]
+      end
+    end
+  end
+end

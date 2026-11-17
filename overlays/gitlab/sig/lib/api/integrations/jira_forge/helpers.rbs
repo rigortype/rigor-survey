@@ -1,0 +1,9 @@
+module API
+  class Integrations < ::API::Base
+    module JiraForge
+      module Helpers
+        def forge_native_jira_user: (untyped, untyped, untyped) -> (Atlassian::JiraConnect::JiraUser | nil)
+      end
+    end
+  end
+end

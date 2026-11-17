@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Bridge < ::Gitlab::Config::Entry::Node
+          def self.matching?: (untyped, untyped) -> (false | true)
+          def self.visible?: () -> true
+        end
+      end
+    end
+  end
+end

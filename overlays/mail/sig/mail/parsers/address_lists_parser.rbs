@@ -1,0 +1,37 @@
+module Mail
+  module Parsers
+    module AddressListsParser
+      def self.parse: (untyped) -> Mail::Parsers::AddressListsParser::AddressListStruct
+      class AddressListStruct < ::Struct[untyped]
+        def addresses: () -> untyped
+        def group_names: () -> untyped
+        def error: () -> untyped
+        def addresses=: (untyped) -> untyped
+        def group_names=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?addresses: untyped, ?group_names: untyped, ?error: untyped) -> instance | (?untyped addresses, ?untyped group_names, ?untyped error) -> instance
+        def self.[]: (?addresses: untyped, ?group_names: untyped, ?error: untyped) -> instance | (?untyped addresses, ?untyped group_names, ?untyped error) -> instance
+      end
+      class AddressStruct < ::Struct[untyped]
+        def raw: () -> untyped
+        def domain: () -> untyped
+        def comments: () -> untyped
+        def local: () -> untyped
+        def obs_domain_list: () -> untyped
+        def display_name: () -> untyped
+        def group: () -> untyped
+        def error: () -> untyped
+        def raw=: (untyped) -> untyped
+        def domain=: (untyped) -> untyped
+        def comments=: (untyped) -> untyped
+        def local=: (untyped) -> untyped
+        def obs_domain_list=: (untyped) -> untyped
+        def display_name=: (untyped) -> untyped
+        def group=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?raw: untyped, ?domain: untyped, ?comments: untyped, ?local: untyped, ?obs_domain_list: untyped, ?display_name: untyped, ?group: untyped, ?error: untyped) -> instance | (?untyped raw, ?untyped domain, ?untyped comments, ?untyped local, ?untyped obs_domain_list, ?untyped display_name, ?untyped group, ?untyped error) -> instance
+        def self.[]: (?raw: untyped, ?domain: untyped, ?comments: untyped, ?local: untyped, ?obs_domain_list: untyped, ?display_name: untyped, ?group: untyped, ?error: untyped) -> instance | (?untyped raw, ?untyped domain, ?untyped comments, ?untyped local, ?untyped obs_domain_list, ?untyped display_name, ?untyped group, ?untyped error) -> instance
+      end
+    end
+  end
+end

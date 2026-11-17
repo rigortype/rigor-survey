@@ -1,0 +1,7 @@
+module Search
+  module ScopeHandlers
+    class Registry
+      def self.registry: () -> {}
+    end
+  end
+end

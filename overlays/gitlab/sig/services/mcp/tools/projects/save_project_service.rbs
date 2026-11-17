@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Projects
+      class SaveProjectService < ::Mcp::Tools::Base::AggregatedService
+        def self.tool_name: () -> "save_project"
+      end
+    end
+  end
+end

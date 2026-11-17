@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ConcurrencyLimit
+      class WorkerExecutionTracker
+        def initialize: (worker_name: untyped, prefix: untyped) -> void
+      end
+    end
+  end
+end

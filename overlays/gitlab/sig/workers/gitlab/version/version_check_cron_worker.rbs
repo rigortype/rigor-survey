@@ -1,0 +1,7 @@
+module Gitlab
+  module Version
+    class VersionCheckCronWorker
+      def self.cache_key: () -> String
+    end
+  end
+end

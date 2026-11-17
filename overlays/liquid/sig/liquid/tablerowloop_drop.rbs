@@ -1,0 +1,14 @@
+module Liquid
+  class TablerowloopDrop < ::Liquid::Drop
+    def initialize: (untyped, untyped) -> void
+    def index: () -> Integer
+    def index0: () -> (0 | Integer)
+    def col0: () -> Integer
+    def first: () -> (false | true)
+    def last: () -> (false | true)
+    def col_first: () -> (false | true)
+    def col_last: () -> (false | true)
+    def col: () -> (1 | Integer)
+    def row: () -> (1 | Integer)
+  end
+end

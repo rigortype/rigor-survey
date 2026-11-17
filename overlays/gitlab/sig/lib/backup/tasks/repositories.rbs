@@ -1,0 +1,10 @@
+module Backup
+  module Tasks
+    class Repositories < ::Backup::Tasks::Task
+      def self.id: () -> "repositories"
+      def initialize: (progress: untyped, options: untyped, server_side_callable: untyped) -> void
+      def destination_path: () -> "repositories"
+      def destination_optional: () -> true
+    end
+  end
+end

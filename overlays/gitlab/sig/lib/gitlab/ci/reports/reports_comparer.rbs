@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      class ReportsComparer
+        def initialize: (untyped, untyped) -> void
+        def status: () -> ("failed" | "not_found" | "success")
+        def errors_count: () -> bot
+        def not_found?: () -> (false | true)
+      end
+    end
+  end
+end

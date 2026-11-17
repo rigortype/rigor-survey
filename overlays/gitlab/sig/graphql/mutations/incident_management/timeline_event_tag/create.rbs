@@ -1,0 +1,9 @@
+module Mutations
+  module IncidentManagement
+    module TimelineEventTag
+      class Create < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, **untyped) -> { timeline_event_tag: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

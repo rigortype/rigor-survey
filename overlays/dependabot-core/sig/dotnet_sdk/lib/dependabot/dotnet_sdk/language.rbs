@@ -1,0 +1,7 @@
+module Dependabot
+  module DotnetSdk
+    class DotnetSDK < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped) -> void
+    end
+  end
+end

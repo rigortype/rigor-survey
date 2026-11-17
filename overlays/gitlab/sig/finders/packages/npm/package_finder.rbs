@@ -1,0 +1,8 @@
+module Packages
+  module Npm
+    class PackageFinder
+      def initialize: (?project: untyped, ?namespace: untyped, ?params: untyped) -> void
+      def execute: () -> (ActiveRecord::Relation[Packages::Npm::Package] | ActiveRecord::Relation[Packages::Package])
+    end
+  end
+end

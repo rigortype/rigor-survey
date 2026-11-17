@@ -1,0 +1,6 @@
+module BlobViewer
+  class YarnLock < ::BlobViewer::DependencyManager
+    def manager_name: () -> "Yarn"
+    def manager_url: () -> "https://yarnpkg.com/"
+  end
+end

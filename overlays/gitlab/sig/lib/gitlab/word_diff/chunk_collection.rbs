@@ -1,0 +1,10 @@
+module Gitlab
+  module WordDiff
+    class ChunkCollection
+      def add: (untyped) -> Array[untyped]
+      def content: () -> String
+      def reset: () -> []
+      def marker_ranges: () -> Array[Gitlab::MarkerRange]
+    end
+  end
+end

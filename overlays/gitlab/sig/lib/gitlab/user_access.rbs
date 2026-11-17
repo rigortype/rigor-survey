@@ -1,0 +1,8 @@
+module Gitlab
+  class UserAccess
+    def initialize: (untyped, ?container: untyped, ?push_ability: untyped, ?skip_collaboration_check: (false | true)) -> void
+    def cannot_do_action?: (untyped) -> (false | true)
+    def allowed?: () -> (false | true)
+    def skip_collaboration_check: () -> true
+  end
+end

@@ -1,0 +1,14 @@
+module BlobHelper
+  def ide_edit_path: (?untyped, ?untyped, ?untyped) -> String
+  def ide_merge_request_path: (untyped, ?untyped) -> String
+  def encode_ide_path: (untyped) -> String
+  def parent_dir_raw_path: () -> String
+  def blob_editor_paths: (untyped, untyped) -> Hash[String | Symbol, untyped]
+  def blob_render_error_reason: (untyped) -> ("it is stored as a job artifact" | "it is stored externally" | "it is stored in LFS" | String | nil)
+  def blob_render_error_options: (untyped) -> Array[untyped]
+  def contribution_options: (untyped) -> Array[untyped]
+  def edit_blob_fork_params: (untyped, ?with_notice: untyped) -> Hash[untyped, untyped]
+  def vue_blob_app_data: (untyped, untyped, untyped) -> { blob_path: untyped, project_path: untyped, resource_id: untyped, original_branch: untyped, escaped_ref: untyped, can_download_code: untyped, full_name: untyped, has_revs_file: "false" | "true" }
+  def vue_blob_header_app_data: (untyped, untyped, untyped) -> { blob_path: untyped, is_binary: untyped, breadcrumbs: untyped, escaped_ref: untyped, history_link: untyped, project_id: untyped, project_root_path: untyped, project_path: untyped, project_short_path: untyped, ref_type: untyped, ref: untyped, root_ref: untyped, ssh_url: untyped, http_url: untyped, xcode_url: untyped, download_links: untyped, web_ide_button_options: String, show_no_ssh_key_message: untyped, user_settings_ssh_keys_path: untyped, custom_code_dropdown_clients: untyped }
+  def edit_blob_app_data: (untyped, untyped, untyped, untyped, untyped) -> (Hash[untyped, untyped] | { action: untyped, update_path: untyped, cancel_path: untyped, original_branch: untyped, target_branch: untyped, can_push_code: untyped, can_push_to_branch: untyped, empty_repo: untyped, blob_name: untyped, branch_allows_collaboration: untyped, last_commit_sha: untyped, project_id: untyped, project_path: untyped, new_merge_request_path: untyped, target_project_id: untyped, target_project_path: untyped })
+end

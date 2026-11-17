@@ -1,0 +1,5 @@
+module Admin
+  module BackgroundMigrationsHelper
+    def batched_migration_status_badge_variant: (untyped) -> (:danger | :info | :success | :warning | nil)
+  end
+end

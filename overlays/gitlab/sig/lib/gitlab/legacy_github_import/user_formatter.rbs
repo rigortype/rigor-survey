@@ -1,0 +1,7 @@
+module Gitlab
+  module LegacyGithubImport
+    class UserFormatter
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

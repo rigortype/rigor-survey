@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class PipenvRunner
+      def initialize: (dependency: untyped, lockfile: untyped, language_version_manager: untyped, ?dependency_files: untyped, ?repo_contents_path: untyped) -> void
+      def run_upgrade: (untyped) -> String
+      def run_upgrade_and_fetch_version: (untyped) -> (String | nil)
+      def run: (untyped, ?fingerprint: untyped) -> String
+    end
+  end
+end

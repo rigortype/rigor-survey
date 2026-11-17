@@ -1,0 +1,6 @@
+module Gitlab
+  class PipelineScopeCounts
+    def self.declarative_policy_class: () -> "Ci::ProjectPipelinesPolicy"
+    def initialize: (untyped, untyped, {}) -> void
+  end
+end

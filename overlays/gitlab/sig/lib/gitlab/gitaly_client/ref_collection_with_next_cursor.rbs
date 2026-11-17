@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class RefCollectionWithNextCursor < ::SimpleDelegator
+      def initialize: (untyped) -> void
+    end
+  end
+end

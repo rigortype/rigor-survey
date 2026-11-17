@@ -1,0 +1,7 @@
+module Dependabot
+  module Python
+    class RequirementParser
+      def self.parse: (untyped) -> (nil | { name: untyped, normalised_name: untyped, version: String, requirement: untyped, extras: untyped, markers: untyped })
+    end
+  end
+end

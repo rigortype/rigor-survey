@@ -1,0 +1,5 @@
+module ActivityPub
+  class ObjectIntegrityProof
+    def initialize: (untyped) -> void
+  end
+end

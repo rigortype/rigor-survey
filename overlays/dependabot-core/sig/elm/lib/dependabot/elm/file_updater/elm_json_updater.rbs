@@ -1,0 +1,10 @@
+module Dependabot
+  module Elm
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class ElmJsonUpdater
+        def initialize: (elm_json_file: untyped, dependencies: untyped) -> void
+        def updated_content: () -> (NilClass | String)
+      end
+    end
+  end
+end

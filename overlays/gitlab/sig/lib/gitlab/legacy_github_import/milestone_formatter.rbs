@@ -1,0 +1,10 @@
+module Gitlab
+  module LegacyGithubImport
+    class MilestoneFormatter < ::Gitlab::LegacyGithubImport::BaseFormatter
+      def attributes: () -> { iid: untyped, project: untyped, title: untyped, description: untyped, due_date: untyped, state: "active" | "closed", created_at: untyped, updated_at: untyped }
+      def project_association: () -> :milestones
+      def find_condition: () -> { iid: untyped }
+      def contributing_user_formatters: () -> {}
+    end
+  end
+end

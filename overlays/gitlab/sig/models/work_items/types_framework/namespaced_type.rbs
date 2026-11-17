@@ -1,0 +1,9 @@
+module WorkItems
+  module TypesFramework
+    class NamespacedType < ::SimpleDelegator
+      def initialize: (untyped, ?enabled: untyped, ?is_a_group: (false | true), ?tasks_on_boards: (false | true), ?namespace: untyped) -> void
+      def instance_of?: (untyped) -> (false | true)
+      def enabled_by_default_for_new_namespaces?: () -> true
+    end
+  end
+end

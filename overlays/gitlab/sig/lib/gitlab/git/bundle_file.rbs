@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class BundleFile
+      def self.check!: (untyped) -> nil
+      def initialize: (untyped) -> void
+      def check!: () -> nil
+    end
+  end
+end

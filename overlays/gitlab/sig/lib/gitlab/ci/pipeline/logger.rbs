@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      class Logger
+        def initialize: (project: untyped, ?destination: untyped) -> void
+        def log_conditions: () -> Array[untyped]
+      end
+    end
+  end
+end

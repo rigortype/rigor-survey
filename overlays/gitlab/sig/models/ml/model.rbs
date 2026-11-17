@@ -1,0 +1,8 @@
+module Ml
+  class Model < ::ApplicationRecord
+    def all_packages: () -> ActiveRecord::Relation[Packages::MlModel::Package]
+    def self.by_project_id_and_id: (untyped, untyped) -> (Ml::Model | nil)
+    def self.by_project_id_and_name: (untyped, untyped) -> (Ml::Model | nil)
+    def self.prefixed_experiment: (untyped) -> String
+  end
+end

@@ -1,0 +1,5 @@
+module SystemCheck
+  class GitlabShellCheck < ::SystemCheck::BaseCheck
+    def multi_check: () -> nil
+  end
+end

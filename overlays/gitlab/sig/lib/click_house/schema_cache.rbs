@@ -1,0 +1,7 @@
+module ClickHouse
+  module SchemaCache
+    def self.[]: (untyped) -> ClickHouse::SchemaCache::Database
+    def self.reset!: () -> nil
+    def self.cache: () -> {}
+  end
+end

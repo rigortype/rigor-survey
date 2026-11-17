@@ -1,0 +1,9 @@
+module Atlassian
+  module JiraConnect
+    module Jwt
+      class Asymmetric
+        def initialize: (untyped, untyped, ?base_url: untyped) -> void
+      end
+    end
+  end
+end

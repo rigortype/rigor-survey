@@ -1,0 +1,7 @@
+module JSONWebToken
+  class HMACToken < ::JSONWebToken::Token
+    def initialize: (untyped) -> void
+    def self.decode: (untyped, untyped, ?leeway: untyped, ?verify_iat: untyped) -> [untyped, Hash[String, untyped]]
+    def encoded: () -> String
+  end
+end

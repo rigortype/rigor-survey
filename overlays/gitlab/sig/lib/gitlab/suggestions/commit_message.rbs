@@ -1,0 +1,7 @@
+module Gitlab
+  module Suggestions
+    class CommitMessage
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Observability
+  class PipelinesSinceSetupExist
+    def initialize: (untyped) -> void
+  end
+end

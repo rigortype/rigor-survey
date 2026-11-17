@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Artifacts
+      module BucketManager
+        def self.log_bucket_claim: (claimed_bucket: untyped, available_buckets_before: untyped, available_buckets_after: untyped, occupied_buckets_after: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+      end
+    end
+  end
+end

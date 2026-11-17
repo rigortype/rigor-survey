@@ -1,0 +1,8 @@
+module Dependabot
+  module Composer
+    class ComposerErrorHandler
+      def handle_composer_error: (untyped) -> nil
+      def sanitize_uri: (untyped) -> (String | String | nil)
+    end
+  end
+end

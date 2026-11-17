@@ -1,0 +1,7 @@
+module BulkImports
+  module FileDownloads
+    module FilenameFetch
+      def raise_error: (untyped) -> bot
+    end
+  end
+end

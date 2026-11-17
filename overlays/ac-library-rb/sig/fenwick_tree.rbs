@@ -1,0 +1,6 @@
+class FenwickTree
+  def initialize: (untyped) -> void
+  def add: (untyped, untyped) -> nil
+  def to_s: () -> String
+  def data: () -> (Array[untyped] | Array[Integer])
+end

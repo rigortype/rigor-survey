@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class IdToken < ::Gitlab::Config::Entry::Node
+          def value: () -> { aud: untyped }
+        end
+      end
+    end
+  end
+end

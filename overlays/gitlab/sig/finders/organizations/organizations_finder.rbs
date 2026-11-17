@@ -1,0 +1,5 @@
+module Organizations
+  class OrganizationsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

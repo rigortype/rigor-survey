@@ -1,0 +1,65 @@
+module ActionDispatch
+  module Routing
+    class Mapper
+      def initialize: (untyped) -> void
+      class Constraints < ::ActionDispatch::Routing::Endpoint
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+      class Mapping
+        def self.build: (untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> ActionDispatch::Routing::Mapper::Mapping
+        def initialize: (set: untyped, ast: untyped, controller: untyped, default_action: untyped, to: untyped, formatted: untyped, via: untyped, options_constraints: untyped, anchor: untyped, scope_params: untyped, internal: untyped, options: untyped) -> void
+        def make_route: (untyped, untyped) -> ActionDispatch::Journey::Route
+        def application: () -> (ActionDispatch::Routing::Mapper::Constraints | ActionDispatch::Routing::RouteSet::Dispatcher | ActionDispatch::Routing::RouteSet::StaticDispatcher)
+      end
+      module Base
+        def mount: (?untyped, ?untyped, ?as: untyped, ?via: untyped, ?at: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::Base
+      end
+      module HttpHelpers
+        def get: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def post: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def patch: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def put: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def delete: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def query: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def options: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+        def connect: (*untyped, ?as: untyped, ?to: untyped, ?controller: untyped, ?action: untyped, ?on: untyped, ?defaults: untyped, ?constraints: untyped, ?anchor: untyped, ?format: untyped, ?path: untyped, ?internal: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::HttpHelpers
+      end
+      module Scoping
+        def scope: (*untyped, ?only: untyped, ?except: untyped, **untyped) -> ActionDispatch::Routing::Mapper::Scoping
+        def constraints: (?untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::Scoping
+      end
+      module Resources
+        def resource: (*untyped, ?concerns: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::Resources
+        def resources: (*untyped, ?concerns: untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::Routing::Mapper::Resources
+        def collection: [T] () { () -> T } -> T
+        def member: [T] () { () -> T } -> T
+        def shallow?: () -> bool?
+        class Resource
+          def self.default_actions: (untyped) -> ([:index, :create, :new, :show, :update, :destroy, :edit] | [:index, :create, :show, :update, :destroy])
+          def initialize: (untyped, untyped, untyped, ?only: untyped, ?except: untyped, **untyped) -> void
+          def default_actions: () -> ([:index, :create, :new, :show, :update, :destroy, :edit] | [:index, :create, :show, :update, :destroy])
+          def member_scope: () -> String
+          def new_scope: (untyped) -> String
+          def nested_param: () -> Symbol
+          def nested_scope: () -> String
+          def singleton?: () -> false
+        end
+        class SingletonResource < ::ActionDispatch::Routing::Mapper::Resources::Resource
+          def self.default_actions: (untyped) -> ([:show, :create, :update, :destroy, :new, :edit] | [:show, :create, :update, :destroy])
+          def initialize: (untyped, untyped, untyped, **untyped) -> void
+          def default_actions: () -> ([:show, :create, :update, :destroy, :new, :edit] | [:show, :create, :update, :destroy])
+          def singleton?: () -> true
+        end
+      end
+      class Scope
+        def initialize: (untyped, ?untyped, ?untyped) -> void
+        def null?: () -> (false | true)
+        def action_name: (untyped, untyped, untyped, untyped) -> ([untyped, :new, untyped, untyped] | [untyped, untyped, untyped] | [untyped, untyped])
+        def options: () -> [:path, :shallow_path, :as, :shallow_prefix, :module, :controller, :action, :path_names, :constraints, :shallow, :blocks, :defaults, :via, :format, :options, :to]
+        def new: (untyped) -> ActionDispatch::Routing::Mapper::Scope
+        def new_level: (untyped) -> ActionDispatch::Routing::Mapper::Scope
+        def each: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,23 @@
+module ActiveRecord
+  module Persistence
+    def new_record?: () -> bool
+    def previously_new_record?: () -> bool
+    def previously_persisted?: () -> bool
+    def destroyed?: () -> bool
+    def persisted?: () -> bool
+    def delete: () -> ActiveRecord::Persistence
+    def destroy: () -> ActiveRecord::Persistence
+    def destroy!: () -> ActiveRecord::Persistence
+    def becomes: [Klass] (Class[Klass]) -> Klass
+    def becomes!: [Klass] (Class[Klass]) -> Klass
+    def increment: (untyped, ?untyped) -> ActiveRecord::Persistence
+    def increment!: (untyped, ?untyped, ?touch: untyped) -> ActiveRecord::Persistence
+    def decrement: (untyped, ?untyped) -> ActiveRecord::Persistence
+    def decrement!: (untyped, ?untyped, ?touch: untyped) -> ActiveRecord::Persistence
+    def toggle: (untyped) -> ActiveRecord::Persistence
+    def reload: (?untyped) -> ActiveRecord::Persistence
+    module ClassMethods
+      def has_query_constraints?: () -> (false | true)
+    end
+  end
+end

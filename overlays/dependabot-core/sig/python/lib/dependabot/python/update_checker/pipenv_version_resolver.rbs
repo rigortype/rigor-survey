@@ -1,0 +1,11 @@
+module Dependabot
+  module Python
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PipenvVersionResolver
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, repo_contents_path: untyped) -> void
+        def latest_resolvable_version: (?requirement: untyped) -> (Dependabot::Python::Version | nil)
+        def resolvable?: (version: untyped) -> (false | true | false | true)
+      end
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Rails
+  module ActionMethods
+    def initialize: (untyped) -> void
+  end
+  module Generators
+    class AppGenerator < ::Rails::Generators::AppBase
+      def initialize: (*untyped) -> void
+      def self.banner: () -> String
+    end
+    class ARGVScrubber
+      def initialize: (?untyped) -> void
+      def self.default_rc_file: () -> String
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Tasks
+  module Ci
+    class JobTokensTask
+      def check_policies_completeness: () -> nil
+      def check_policies_correctness: () -> nil
+      def check_docs: () -> nil
+      def compile_docs: () -> nil
+      def allowed_endpoints: () -> { categorized: untyped, unavailable: String }
+    end
+  end
+end

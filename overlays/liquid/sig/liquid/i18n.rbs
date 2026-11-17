@@ -1,0 +1,5 @@
+module Liquid
+  class I18n
+    def initialize: (?untyped) -> void
+  end
+end

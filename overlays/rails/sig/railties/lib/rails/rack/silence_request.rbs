@@ -1,0 +1,7 @@
+module Rails
+  module Rack
+    class SilenceRequest
+      def initialize: (untyped, path: untyped) -> void
+    end
+  end
+end

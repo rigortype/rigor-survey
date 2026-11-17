@@ -1,0 +1,7 @@
+module BulkImports
+  class TreeExportService
+    def initialize: (untyped, untyped, untyped) -> void
+    def exported_filename: () -> String
+    def config: () -> (BulkImports::FileTransfer::GroupConfig | BulkImports::FileTransfer::ProjectConfig)
+  end
+end

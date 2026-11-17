@@ -1,0 +1,11 @@
+module Spree
+  module Emails
+    module Samples
+      class Fulfillment < ::Spree::Emails::Samples::Base
+        def self.required_permissions: () -> ["read_orders", "read_fulfillments"]
+        def self.record_type: () -> "fulfillment"
+        def variables: () -> { fulfillment: untyped, order: untyped, resend: false }
+      end
+    end
+  end
+end

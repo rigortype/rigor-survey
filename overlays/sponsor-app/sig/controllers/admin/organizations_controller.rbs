@@ -1,0 +1,10 @@
+module Admin
+  class OrganizationsController < ::Admin::ApplicationController
+    def index: () -> void
+    def show: () -> void
+    def new: () -> void
+    def create: () -> void
+    def edit: () -> void
+    def update: () -> void
+  end
+end

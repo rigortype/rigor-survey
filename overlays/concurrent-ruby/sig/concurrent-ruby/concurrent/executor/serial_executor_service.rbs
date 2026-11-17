@@ -1,0 +1,5 @@
+module Concurrent
+  module SerialExecutorService
+    def serialized?: () -> true
+  end
+end

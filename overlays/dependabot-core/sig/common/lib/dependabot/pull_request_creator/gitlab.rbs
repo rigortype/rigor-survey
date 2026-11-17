@@ -1,0 +1,8 @@
+module Dependabot
+  class PullRequestCreator
+    class Gitlab
+      def initialize: (source: untyped, branch_name: untyped, base_commit: untyped, credentials: untyped, files: untyped, commit_message: untyped, pr_description: untyped, pr_name: untyped, author_details: untyped, labeler: untyped, approvers: untyped, assignees: untyped, milestone: untyped, target_project_id: untyped) -> void
+      def create: () -> (::Gitlab::ObjectifiedHash | nil)
+    end
+  end
+end

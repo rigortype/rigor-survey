@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class BatchAverageCounter
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

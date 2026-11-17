@@ -1,0 +1,6 @@
+module Concurrent
+  def self.create_simple_logger: (?untyped, ?untyped) -> Proc
+  def self.use_simple_logger: (?untyped, ?untyped) -> Proc
+  def self.create_stdlib_logger: (?untyped, ?untyped) -> Proc
+  def self.use_stdlib_logger: (?untyped, ?untyped) -> Proc
+end

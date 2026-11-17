@@ -1,0 +1,6 @@
+module Gitlab
+  class SafeCsvValidator
+    def initialize: (?untyped) -> void
+    def validate!: (untyped) -> nil
+  end
+end

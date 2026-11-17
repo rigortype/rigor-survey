@@ -1,0 +1,9 @@
+module Mutations
+  module DependencyProxy
+    module GroupSettings
+      class Update < ::Mutations::BaseMutation
+        def resolve: (group_path: untyped, **untyped) -> { dependency_proxy_setting: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

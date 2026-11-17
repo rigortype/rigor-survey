@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    module IncidentManagement
+      class IncidentCommand < ::Gitlab::SlashCommands::BaseCommand
+        def self.available?: (untyped) -> true
+      end
+    end
+  end
+end

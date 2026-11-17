@@ -1,0 +1,7 @@
+module Projects
+  module SquashOption
+    def squash_enabled_by_default?: () -> (false | true)
+    def squash_readonly?: () -> (false | true)
+    def branch_rule: () -> bot
+  end
+end

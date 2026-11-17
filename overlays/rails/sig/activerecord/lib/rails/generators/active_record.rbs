@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Generators
+    class Base < ::Rails::Generators::NamedBase
+      def self.base_root: () -> (nil | String)
+    end
+  end
+end

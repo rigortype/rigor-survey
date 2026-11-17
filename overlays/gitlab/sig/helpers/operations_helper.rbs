@@ -1,0 +1,4 @@
+module OperationsHelper
+  def alerts_settings_data: (?disabled: untyped) -> Hash[String, untyped]
+  def operations_settings_data: () -> { operations_settings_endpoint: untyped, pagerduty_active: untyped, pagerduty_token: untyped, pagerduty_webhook_url: untyped, pagerduty_reset_key_path: untyped }
+end

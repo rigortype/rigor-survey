@@ -1,0 +1,3 @@
+class BaseConverter
+  def self.convert: (untyped, untyped, untyped) -> (Array[untyped] | [0])
+end

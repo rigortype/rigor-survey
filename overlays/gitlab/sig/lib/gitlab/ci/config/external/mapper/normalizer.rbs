@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        class Mapper
+          class Normalizer < ::Gitlab::Ci::Config::External::Mapper::Base
+            def initialize: (untyped) -> void
+            def variables_expander: () -> Gitlab::Ci::Config::External::Mapper::VariablesExpander
+          end
+        end
+      end
+    end
+  end
+end

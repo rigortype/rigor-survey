@@ -1,0 +1,15 @@
+module Gitlab
+  module Json
+    class SafeParser
+      def self.instance: (untyped) -> Gitlab::Json::SafeParser
+      def self.instance_for: (untyped) -> Gitlab::Json::SafeParser
+      def initialize: (**untyped) -> void
+      def owner_thread: () -> Thread
+      class UnknownConfigurationError < ::RuntimeError
+        def initialize: (untyped) -> void
+      end
+      class ConcurrencyError < ::RuntimeError
+      end
+    end
+  end
+end

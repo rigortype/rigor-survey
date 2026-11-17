@@ -1,0 +1,25 @@
+module Rails
+  module Generators
+    class AppBase < ::Rails::Generators::Base
+      def self.strict_args_position: () -> false
+      def initialize: (untyped, untyped, *untyped) -> void
+      class GemfileEntry < ::Struct[untyped]
+        def name: () -> untyped
+        def version: () -> untyped
+        def comment: () -> untyped
+        def options: () -> untyped
+        def commented_out: () -> untyped
+        def name=: (untyped) -> untyped
+        def version=: (untyped) -> untyped
+        def comment=: (untyped) -> untyped
+        def options=: (untyped) -> untyped
+        def commented_out=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?version: untyped, ?comment: untyped, ?options: untyped, ?commented_out: untyped) -> instance | (?untyped name, ?untyped version, ?untyped comment, ?untyped options, ?untyped commented_out) -> instance
+        def self.[]: (?name: untyped, ?version: untyped, ?comment: untyped, ?options: untyped, ?commented_out: untyped) -> instance | (?untyped name, ?untyped version, ?untyped comment, ?untyped options, ?untyped commented_out) -> instance
+        def initialize: (untyped, untyped, untyped, ?untyped, ?untyped) -> void
+        def self.version: (untyped, untyped, ?untyped) -> Rails::Generators::AppBase::GemfileEntry
+        def self.floats: (untyped, ?untyped) -> Rails::Generators::AppBase::GemfileEntry
+      end
+    end
+  end
+end

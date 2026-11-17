@@ -1,0 +1,4 @@
+class BoutiqueInventory
+  def initialize: (untyped) -> void
+  def items: () -> Array[untyped]
+end

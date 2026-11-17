@@ -1,0 +1,8 @@
+module API
+  module Internal
+    class Shellhorse < ::API::Base
+      def check_clone_or_pull_or_push_verb: (untyped) -> ("clone" | "pull" | "push")
+      def certificate_audit_details: () -> (Hash[:ca_fingerprint | :certificate_identity | :certificate_trust_source, untyped] | Hash[Symbol, untyped])
+    end
+  end
+end

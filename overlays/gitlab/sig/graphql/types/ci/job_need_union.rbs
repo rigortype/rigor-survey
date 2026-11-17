@@ -1,0 +1,7 @@
+module Types
+  module Ci
+    class JobNeedUnion < ::GraphQL::Schema::Union
+      def self.resolve_type: (untyped, untyped) -> (singleton(Types::Ci::BuildNeedType) | singleton(Types::Ci::JobType))
+    end
+  end
+end

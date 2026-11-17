@@ -1,0 +1,9 @@
+module Dependabot
+  module Python
+    class SharedFileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_in?: (untyped) -> (false | true)
+      def ecosystem_versions: () -> { languages: { python: Hash[String, untyped] } }
+      def fetch_files: () -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

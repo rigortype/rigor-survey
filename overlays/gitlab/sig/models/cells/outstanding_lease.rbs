@@ -1,0 +1,5 @@
+module Cells
+  class OutstandingLease < ::ApplicationRecord
+    def self.claim_service: () -> Gitlab::TopologyServiceClient::ClaimService
+  end
+end

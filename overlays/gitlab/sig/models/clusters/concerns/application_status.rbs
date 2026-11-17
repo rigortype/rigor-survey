@@ -1,0 +1,7 @@
+module Clusters
+  module Concerns
+    module ApplicationStatus
+      def status_states: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Haml
+  class AttributeParser
+    def self.available?: () -> true
+    def self.parse: (untyped) -> (Hash[untyped, "" | String] | nil)
+    def parse: (untyped) -> (Hash[untyped, "" | String] | nil)
+  end
+end

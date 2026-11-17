@@ -1,0 +1,5 @@
+module Gitlab
+  class MultiCollectionPaginator
+    def initialize: (*untyped, ?per_page: Integer) -> void
+  end
+end

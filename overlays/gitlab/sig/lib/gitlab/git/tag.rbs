@@ -1,0 +1,14 @@
+module Gitlab
+  module Git
+    class Tag < ::Gitlab::Git::Ref
+      def initialize: (untyped, untyped) -> void
+      def init_from_hash: () -> Array[Symbol]
+      def init_from_gitaly: () -> (Gitlab::Git::Commit | nil)
+      def date: () -> (Time | nil)
+      def signed_tag: () -> (Gitlab::Gpg::Tag | Gitlab::Ssh::Tag | Gitlab::X509::Tag | nil)
+      def can_use_lazy_cached_signature?: () -> (false | true)
+      def cache_key: () -> String
+      def project: () -> (Project | nil)
+    end
+  end
+end

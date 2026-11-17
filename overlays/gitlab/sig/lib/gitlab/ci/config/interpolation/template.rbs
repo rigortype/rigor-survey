@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Template
+          def initialize: (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true | { :"$[[ inputs.key ]]" => String }, untyped) -> void
+          def errors: () -> Array[untyped]
+          def size: () -> Integer
+          def blocks: () -> Hash[untyped, untyped]
+          def ctx: () -> Gitlab::Ci::Config::Interpolation::Context
+        end
+      end
+    end
+  end
+end

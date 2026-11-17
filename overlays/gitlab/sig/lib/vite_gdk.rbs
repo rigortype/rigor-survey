@@ -1,0 +1,3 @@
+module ViteGdk
+  def self.vite_gdk_config_path: () -> String
+end

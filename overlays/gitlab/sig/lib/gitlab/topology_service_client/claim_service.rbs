@@ -1,0 +1,7 @@
+module Gitlab
+  module TopologyServiceClient
+    class ClaimService < ::Gitlab::TopologyServiceClient::BaseService
+      def warmup!: () -> nil
+    end
+  end
+end

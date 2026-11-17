@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Associations
+    class AliasTracker
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

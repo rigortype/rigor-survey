@@ -1,0 +1,5 @@
+class ProjectMember < ::Member
+  def self.truncate_teams: (untyped) -> (false | true)
+  def self.truncate_team: (untyped) -> (false | true)
+  def self.access_level_roles: () -> Hash[String, 10 | 15 | 20 | 25 | 30 | 40]
+end

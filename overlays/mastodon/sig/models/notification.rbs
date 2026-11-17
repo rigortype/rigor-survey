@@ -1,0 +1,3 @@
+class Notification < ::ApplicationRecord
+  def self.browserable: (?types: untyped, ?exclude_types: untyped, ?from_account_id: untyped, ?include_filtered: untyped) -> ActiveRecord::Relation[Notification]
+end

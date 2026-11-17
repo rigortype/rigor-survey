@@ -1,0 +1,3 @@
+class CollatzConjecture
+  def self.steps: (untyped) -> Integer
+end

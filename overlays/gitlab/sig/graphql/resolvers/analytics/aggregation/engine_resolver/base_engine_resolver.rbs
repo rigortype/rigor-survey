@@ -1,0 +1,11 @@
+module Resolvers
+  module Analytics
+    module Aggregation
+      module EngineResolver
+        class BaseEngineResolver < ::Resolvers::BaseResolver
+          def resolve: (**untyped) -> { engine: untyped, request: Gitlab::Database::Aggregation::Request, validate_request: Method }
+        end
+      end
+    end
+  end
+end

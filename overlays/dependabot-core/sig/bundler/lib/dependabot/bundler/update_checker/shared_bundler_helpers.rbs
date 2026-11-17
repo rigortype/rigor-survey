@@ -1,0 +1,17 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      module SharedBundlerHelpers
+        def retryable_error?: (untyped) -> (false | true)
+        def handle_bundler_errors: (untyped) -> bot
+        def raise_if_checksum_mismatch: (untyped) -> nil
+        def registry_metadata_error: (untyped) -> (Dependabot::PrivateSourceBadResponse | nil)
+        def private_registry_source: () -> (String | nil)
+        def write_temporary_dependency_files: () -> (Integer | nil)
+        def private_registry_credentials: () -> Array[Dependabot::Credential]
+        def gemfile: () -> (Dependabot::DependencyFile | nil)
+        def lockfile: () -> (Dependabot::DependencyFile | nil)
+      end
+    end
+  end
+end

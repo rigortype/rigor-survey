@@ -1,0 +1,11 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class ActivityMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "history"
+        def render?: () -> (false | true)
+        def active_routes: () -> { path: "dashboard#activity" }
+      end
+    end
+  end
+end

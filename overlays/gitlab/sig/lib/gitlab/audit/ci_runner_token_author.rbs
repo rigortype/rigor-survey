@@ -1,0 +1,9 @@
+module Gitlab
+  module Audit
+    class CiRunnerTokenAuthor < ::Gitlab::Audit::NullAuthor
+      def initialize: (entity_type: String, entity_path: String, ?runner_authentication_token: untyped, ?runner_registration_token: untyped) -> void
+      def entity_type: () -> "Project"
+      def entity_path: () -> "test/project"
+    end
+  end
+end

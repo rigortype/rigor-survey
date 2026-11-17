@@ -1,0 +1,9 @@
+module Gitlab
+  module PDF
+    module Security
+      class GroupVulnerabilitiesProjectsGrades
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

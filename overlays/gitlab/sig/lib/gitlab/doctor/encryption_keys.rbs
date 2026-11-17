@@ -1,0 +1,17 @@
+module Gitlab
+  module Doctor
+    class EncryptionKeys
+      def initialize: (untyped) -> void
+      class Key < ::Struct[untyped]
+        def type: () -> untyped
+        def id: () -> untyped
+        def truncated_secret: () -> untyped
+        def type=: (untyped) -> untyped
+        def id=: (untyped) -> untyped
+        def truncated_secret=: (untyped) -> untyped
+        def self.new: (?type: untyped, ?id: untyped, ?truncated_secret: untyped) -> instance | (?untyped type, ?untyped id, ?untyped truncated_secret) -> instance
+        def self.[]: (?type: untyped, ?id: untyped, ?truncated_secret: untyped) -> instance | (?untyped type, ?untyped id, ?untyped truncated_secret) -> instance
+      end
+    end
+  end
+end

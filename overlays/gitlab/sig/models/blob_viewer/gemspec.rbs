@@ -1,0 +1,8 @@
+module BlobViewer
+  class Gemspec < ::BlobViewer::DependencyManager
+    def manager_name: () -> "RubyGems"
+    def manager_url: () -> "https://rubygems.org/"
+    def package_type: () -> "gem"
+    def package_url: () -> String
+  end
+end

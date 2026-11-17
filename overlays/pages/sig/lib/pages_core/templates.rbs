@@ -1,0 +1,10 @@
+module PagesCore
+  module Templates
+    def self.names: () -> Array[untyped]
+    def self.template_paths: () -> [Pathname, Pathname]
+    def self.template_files: () -> Array[untyped]
+    def self.template_files_in_dir: (untyped) -> Array[String]
+    def self.template_file?: (untyped, untyped) -> (false | true)
+    def self.find_all_templates: () -> Array[untyped]
+  end
+end

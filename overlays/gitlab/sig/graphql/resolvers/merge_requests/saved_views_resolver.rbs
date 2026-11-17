@@ -1,0 +1,7 @@
+module Resolvers
+  module MergeRequests
+    class SavedViewsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> ActiveRecord::Relation[::MergeRequests::SavedView]
+    end
+  end
+end

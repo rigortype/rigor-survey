@@ -1,0 +1,3 @@
+class CountMap
+  def self.main: () -> nil
+end

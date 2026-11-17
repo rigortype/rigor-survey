@@ -1,0 +1,10 @@
+module Integrations
+  module ChatMessage
+    class DeploymentMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def attachments: () -> (String | [{ text: String, color: "#334455" | "danger" | "good" | "warning" }])
+      def activity: () -> {}
+      def attachment_color: () -> ("#334455" | "danger" | "good" | "warning")
+    end
+  end
+end

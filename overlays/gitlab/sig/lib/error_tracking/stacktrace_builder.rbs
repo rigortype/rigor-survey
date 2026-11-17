@@ -1,0 +1,5 @@
+module ErrorTracking
+  class StacktraceBuilder
+    def initialize: (untyped) -> void
+  end
+end

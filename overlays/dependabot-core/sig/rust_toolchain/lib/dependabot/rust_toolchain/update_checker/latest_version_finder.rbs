@@ -1,0 +1,9 @@
+module Dependabot
+  module RustToolchain
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def package_details: () -> Dependabot::Package::PackageDetails
+      end
+    end
+  end
+end

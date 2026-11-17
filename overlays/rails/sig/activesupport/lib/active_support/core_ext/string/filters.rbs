@@ -1,0 +1,9 @@
+class String
+  def squish: () -> String
+  def squish!: () -> self
+  def remove: (*String | Regexp) -> String
+  def remove!: (*String | Regexp) -> self
+  def truncate: (Integer, ?Hash[Symbol, top]) -> String
+  def truncate_bytes: (Integer, ?omission: String?) -> String
+  def truncate_words: (Integer, ?Hash[Symbol, top]) -> String
+end

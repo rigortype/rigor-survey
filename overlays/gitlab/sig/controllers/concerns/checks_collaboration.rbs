@@ -1,0 +1,3 @@
+module ChecksCollaboration
+  def user_access: (untyped) -> Gitlab::UserAccess
+end

@@ -1,0 +1,19 @@
+module Gitlab
+  module InternalPostReceive
+    class Response
+      def add_basic_message: (untyped) -> (Array[untyped] | nil)
+      def add_alert_message: (untyped) -> (Array[untyped] | nil)
+      def messages: () -> Array[untyped]
+      class Message < ::Struct[untyped]
+        def message: () -> untyped
+        def type: () -> untyped
+        def message=: (untyped) -> untyped
+        def type=: (untyped) -> untyped
+        def self.new: (?message: untyped, ?type: untyped) -> instance | (?untyped message, ?untyped type) -> instance
+        def self.[]: (?message: untyped, ?type: untyped) -> instance | (?untyped message, ?untyped type) -> instance
+        def self.basic: (untyped) -> Gitlab::InternalPostReceive::Response::Message
+        def self.alert: (untyped) -> Gitlab::InternalPostReceive::Response::Message
+      end
+    end
+  end
+end

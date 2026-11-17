@@ -1,0 +1,5 @@
+module Liquid
+  class Error < ::StandardError
+    def to_s: (?untyped) -> String
+  end
+end

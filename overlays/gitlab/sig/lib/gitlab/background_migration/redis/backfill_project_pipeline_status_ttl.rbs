@@ -1,0 +1,10 @@
+module Gitlab
+  module BackgroundMigration
+    module Redis
+      class BackfillProjectPipelineStatusTtl
+        def scan_match_pattern: () -> String
+        def redis: () -> (::Redis | ::Redis::Cluster)
+      end
+    end
+  end
+end

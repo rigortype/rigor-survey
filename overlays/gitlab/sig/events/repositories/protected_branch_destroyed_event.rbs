@@ -1,0 +1,5 @@
+module Repositories
+  class ProtectedBranchDestroyedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["parent_id", "parent_type"] | Hash[String, Hash[String, "integer"] | Hash[String, "string" | ["group", "project"]]]]
+  end
+end

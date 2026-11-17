@@ -1,0 +1,7 @@
+module Admin
+  class SetFeatureFlagService
+    def initialize: (feature_flag_name: untyped, params: untyped) -> void
+    def execute: () -> ServiceResponse
+    def target: () -> Feature::Target
+  end
+end

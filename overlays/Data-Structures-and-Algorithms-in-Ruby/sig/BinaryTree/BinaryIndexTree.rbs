@@ -1,0 +1,5 @@
+class BinaryIndexTree
+  def initialize: (untyped) -> void
+  def set: (untyped, untyped, untyped) -> nil
+  def update: (untyped, untyped) -> nil
+end

@@ -1,0 +1,7 @@
+module Import
+  module AfterExportStrategies
+    class MoveFileStrategy < ::Import::AfterExportStrategies::BaseAfterExportStrategy
+      def initialize: (archive_path: untyped) -> void
+    end
+  end
+end

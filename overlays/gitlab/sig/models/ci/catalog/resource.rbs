@@ -1,0 +1,9 @@
+module Ci
+  module Catalog
+    class Resource < ::ApplicationRecord
+      def self.visible_to_user: (untyped) -> ActiveRecord::Relation[Ci::Catalog::Resource]
+      def self.visible_to_user_with_access_level: (untyped, untyped) -> ActiveRecord::Relation[Ci::Catalog::Resource]
+      def visibility_level_field: () -> :visibility_level
+    end
+  end
+end

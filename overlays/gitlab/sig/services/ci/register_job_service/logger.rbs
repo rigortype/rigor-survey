@@ -1,0 +1,7 @@
+module Ci
+  class RegisterJobService
+    class Logger
+      def initialize: (runner: untyped, ?destination: untyped) -> void
+    end
+  end
+end

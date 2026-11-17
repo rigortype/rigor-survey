@@ -1,0 +1,8 @@
+module WorkItems
+  module Widgets
+    class Development < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:create_merge_request]
+      def self.quick_action_params: () -> [:branch_name]
+    end
+  end
+end

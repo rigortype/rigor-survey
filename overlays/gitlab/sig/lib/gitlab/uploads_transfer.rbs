@@ -1,0 +1,5 @@
+module Gitlab
+  class UploadsTransfer < ::Gitlab::ProjectTransfer
+    def root_dir: () -> String
+  end
+end

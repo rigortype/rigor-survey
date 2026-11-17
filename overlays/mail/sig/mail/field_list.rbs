@@ -1,0 +1,9 @@
+module Mail
+  class FieldList < ::Array[untyped]
+    def has_field?: (untyped) -> (false | true)
+    def add_field: (untyped) -> Mail::FieldList
+    def replace_field: (untyped) -> Mail::FieldList
+    def insert_field: (untyped) -> Mail::FieldList
+    def delete_field: (untyped) -> Mail::FieldList
+  end
+end

@@ -1,0 +1,9 @@
+module Search
+  class GroupSettings
+    def initialize: (untyped) -> void
+    def general_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }]
+    def repository_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }]
+    def ci_cd_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }]
+    def packages_settings: () -> [{ text: untyped, href: untyped }, { text: untyped, href: untyped }, { text: untyped, href: untyped }]
+  end
+end

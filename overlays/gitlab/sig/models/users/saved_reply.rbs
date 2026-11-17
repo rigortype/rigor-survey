@@ -1,0 +1,5 @@
+module Users
+  class SavedReply < ::ApplicationRecord
+    def self.namespace_foreign_key: () -> :user_id
+  end
+end

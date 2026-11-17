@@ -1,0 +1,7 @@
+module Users
+  module EmailVerification
+    class GenerateTokenService < ::Users::EmailVerification::BaseService
+      def execute: () -> [untyped, untyped]
+    end
+  end
+end

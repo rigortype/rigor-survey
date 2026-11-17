@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    class SimilarityScore
+      def self.build_expression: (search: untyped, rules: untyped) -> Arel::Nodes::NamedFunction
+      def self.rule_to_arel: (untyped, untyped) -> Arel::Nodes::Grouping
+      def self.column_expression: (untyped) -> Arel::Nodes::NamedFunction
+      def self.similarity_function_call: (untyped, untyped) -> Arel::Nodes::NamedFunction
+      def self.multiplier_expression: (untyped) -> Arel::Nodes::NamedFunction
+    end
+  end
+end

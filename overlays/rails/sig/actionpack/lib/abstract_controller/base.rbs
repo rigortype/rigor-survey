@@ -1,0 +1,11 @@
+module AbstractController
+  class ActionNotFound < ::StandardError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class Base
+    def self.abstract!: () -> true
+    def self.clear_action_methods!: () -> nil
+    def self.method_added: (untyped) -> nil
+    def self.supports_path?: () -> true
+  end
+end

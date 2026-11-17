@@ -1,0 +1,15 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        class FlowSequenceComments
+          def initialize: (workflow_file: untyped, sequence: untyped, commenter: untyped, comment_locator: untyped, item_indent: untyped) -> void
+          def rendered_for: (untyped, untyped) -> (Dependabot::GithubActions::FileUpdater::WorkflowUpdater::FlowSequenceComments::ItemComments | ::ItemComments)
+          def render_item: (index: untyped, item_count: untyped, source: untyped, updates: untyped) -> String
+          def leading_lines: () -> Array[String]
+          def claim_trailing_comment: (untyped) -> (Dependabot::GithubActions::FileUpdater::WorkflowUpdater::ContentEdit | nil)
+        end
+      end
+    end
+  end
+end

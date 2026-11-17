@@ -1,0 +1,10 @@
+module ActionView
+  module CacheExpiry
+    class ViewReloader
+      def self.create: (watcher: untyped) -> ActionView::CacheExpiry::ViewReloader
+      def initialize: (watcher: untyped) -> void
+      def deactivate: () -> nil
+      def hook: () -> Method
+    end
+  end
+end

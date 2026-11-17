@@ -1,0 +1,8 @@
+module ActiveSupport
+  class Duration
+    class ISO8601Serializer
+      def initialize: (untyped, ?precision: untyped) -> void
+      def serialize: () -> ("P" | "PT0S" | String)
+    end
+  end
+end

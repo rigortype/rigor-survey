@@ -1,0 +1,101 @@
+class Project < ::ApplicationRecord
+  def self.integration_association_name: (untyped) -> String
+  def self.cascading_with_parent_namespace: (untyped) -> Symbol
+  def self.visibility_levels: () -> Hash[untyped, 0 | 10 | 20]
+  def self.reference_pattern: () -> Regexp
+  def self.reference_postfix: () -> ">"
+  def self.reference_postfix_escaped: () -> "&gt;"
+  def self.markdown_reference_pattern: () -> Regexp
+  def self.project_features_defaults: () -> { issues: untyped, merge_requests: untyped, builds: untyped, wiki: untyped, snippets: untyped }
+  def self.root_namespace_ids_by_project_ids: (untyped) -> Hash[untyped, untyped]
+  def initialize: (?untyped) -> void
+  def owner_entity: () -> Project
+  def owner_entity_name: () -> :project
+  def set_project_feature_defaults: () -> Hash[Symbol, untyped]
+  def resource_parent: () -> Project
+  def certificate_based_clusters_enabled?: () -> (false | true)
+  def jenkins_integration_active?: () -> (false | true)
+  def show_default_award_emojis?: () -> (false | true)
+  def enforce_auth_checks_on_uploads?: () -> (false | true)
+  def warn_about_potentially_unwanted_characters?: () -> (false | true)
+  def extended_prat_expiry_webhooks_execute?: () -> (false | true)
+  def no_import?: () -> (false | true)
+  def import_scheduled?: () -> (false | true)
+  def import_started?: () -> (false | true)
+  def import_in_progress?: () -> (false | true)
+  def import_failed?: () -> (false | true)
+  def import_finished?: () -> (false | true)
+  def default_pipeline_lock: () -> (:artifacts_locked | :unlocked)
+  def emails_disabled?: () -> (false | true)
+  def team: () -> ProjectTeam
+  def cleanup: () -> nil
+  def container_registry_url: () -> (String | nil)
+  def log_import_activity: (untyped, ?type: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  def reconcile_shared_runners_setting!: () -> (false | nil)
+  def to_reference: (?untyped, ?full: untyped) -> String
+  def project_id: () -> Integer
+  def default_issues_tracker?: () -> (false | true)
+  def disabled_integrations: () -> ["zentao"]
+  def hidden_integrations: () -> (["slack"] | [])
+  def triggered_hooks: (untyped, untyped) -> Projects::TriggeredHooks
+  def personal?: () -> (false | true)
+  def expire_caches_before_rename: (untyped) -> Array[Repository]
+  def check_repository_path_availability: () -> (false | true)
+  def create_repository: (?force: untyped, ?default_branch: untyped, ?object_format: untyped) -> (false | nil | true)
+  def hook_attrs: (?backward: untyped) -> (Hash[untyped, untyped] | { id: untyped, name: untyped, description: untyped, web_url: untyped, avatar_url: untyped, git_ssh_url: untyped, git_http_url: untyped, namespace: untyped, visibility_level: untyped, path_with_namespace: untyped, default_branch: untyped, ci_config_path: untyped })
+  def membership_locked?: () -> false
+  def visibility_level_field: () -> :visibility_level
+  def share_with_group_enabled?: () -> (false | true)
+  def feature_available?: (untyped, ?untyped) -> (false | true)
+  def builds_enabled?: () -> (false | true)
+  def wiki_enabled?: () -> (false | true)
+  def merge_requests_enabled?: () -> (false | true)
+  def forking_enabled?: () -> (false | true)
+  def issues_enabled?: () -> (false | true)
+  def pages_enabled?: () -> (false | true)
+  def analytics_enabled?: () -> (false | true)
+  def snippets_enabled?: () -> (false | true)
+  def public_pages?: () -> (false | true)
+  def operations_enabled?: () -> (false | true)
+  def container_registry_enabled?: () -> (false | true)
+  def group_runners: () -> ActiveRecord::Relation[Ci::Runner]
+  def valid_runners_token?: (untyped) -> (false | true)
+  def pages_show_onboarding?: () -> (false | true)
+  def update_project_counter_caches: () -> Array[singleton(Projects::OpenIssuesCountService) | singleton(Projects::OpenMergeRequestsCountService) | singleton(Projects::OpenWorkItemsCountService)]
+  def add_export_job: (current_user: untyped, ?after_export_strategy: untyped, ?params: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  def import_export_shared: () -> Gitlab::ImportExport::Shared
+  def export_status: (untyped) -> (:failed | :finished | :none | :queued | :regeneration_in_progress | :started)
+  def uses_external_ci_config?: () -> (false | true)
+  def predefined_ci_server_variables: () -> Gitlab::Ci::Variables::Collection
+  def pages_variables: () -> (Gitlab::Ci::Variables::Collection | nil)
+  def api_variables: () -> Gitlab::Ci::Variables::Collection
+  def ci_template_variables: () -> Gitlab::Ci::Variables::Collection
+  def multiple_issue_boards_available?: () -> true
+  def full_path_before_last_save: () -> String
+  def legacy_storage?: () -> (false | true)
+  def hashed_storage?: (untyped) -> (false | true)
+  def merge_method: () -> (:ff | :merge | :rebase_merge)
+  def merge_method=: (untyped) -> (false | nil | true)
+  def ff_merge_must_be_possible?: () -> (false | true)
+  def git_transfer_in_progress?: () -> (false | true)
+  def storage_version=: (untyped) -> nil
+  def licensed_feature_available?: (untyped) -> false
+  def licensed_features: () -> []
+  def storage: () -> (Storage::Hashed | Storage::LegacyProject)
+  def drop_visibility_level!: () -> (0 | nil)
+  def template_source?: () -> false
+  def default_branch_protected?: () -> (false | true)
+  def git_garbage_collect_worker_klass: () -> singleton(Projects::GitGarbageCollectWorker)
+  def topic_list: () -> Array[untyped]
+  def packages_policy_subject: () -> Packages::Policies::Project
+  def can_suggest_reviewers?: () -> false
+  def suggested_reviewers_available?: () -> false
+  def allows_multiple_merge_request_assignees?: () -> false
+  def allows_multiple_merge_request_reviewers?: () -> false
+  def on_demand_dast_available?: () -> false
+  def supports_saved_replies?: () -> false
+  def merge_trains_enabled?: () -> false
+  def placeholder_reference_store: () -> (Import::PlaceholderReferences::Store | nil)
+  def uploads_sharding_key: () -> { project_id: untyped }
+  def licensed_ai_features_available?: () -> false
+end

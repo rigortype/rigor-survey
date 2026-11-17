@@ -1,0 +1,6 @@
+class GitlabSchema < ::GraphQL::Schema
+  def self.legacy_invalid_return_type_conflicts: (untyped, untyped, untyped, untyped, untyped) -> nil
+  def self.parse_gid: (untyped, ?untyped) -> GlobalID
+  def self.max_query_complexity: (untyped) -> (200 | 226 | 250 | 300)
+  def self.max_query_depth: (untyped) -> (15 | 20)
+end

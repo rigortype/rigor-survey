@@ -1,0 +1,5 @@
+module Types
+  class UserPreferencesType < ::Types::BaseObject
+    def use_work_items_view: () -> true
+  end
+end

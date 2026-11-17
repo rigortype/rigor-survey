@@ -1,0 +1,7 @@
+module Authn
+  module IamReplication
+    class ReconciliationWorker
+      def replicator: () -> (Authn::IamReplication::OauthAccessTokenReplicator | Authn::IamReplication::OauthApplicationReplicator)
+    end
+  end
+end

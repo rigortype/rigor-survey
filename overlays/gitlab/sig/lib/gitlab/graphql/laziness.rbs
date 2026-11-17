@@ -1,0 +1,7 @@
+module Gitlab
+  module Graphql
+    module Laziness
+      def defer: () ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Lazy
+    end
+  end
+end

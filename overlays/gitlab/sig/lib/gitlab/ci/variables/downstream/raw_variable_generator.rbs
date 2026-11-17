@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      module Downstream
+        class RawVariableGenerator < ::Gitlab::Ci::Variables::Downstream::Base
+          def for: (untyped) -> [{ key: untyped, value: untyped, raw: true }]
+        end
+      end
+    end
+  end
+end

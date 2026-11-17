@@ -1,0 +1,7 @@
+module Atlassian
+  module Forge
+    class SystemTokenClient < ::Atlassian::Jira::DevInfoClient
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

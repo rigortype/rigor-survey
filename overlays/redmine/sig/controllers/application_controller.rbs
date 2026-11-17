@@ -1,0 +1,20 @@
+class ApplicationController < ::ActionController::Base
+  def session_expired?: () -> (false | true)
+  def start_user_session: (untyped) -> ("1" | nil)
+  def try_to_autologin: () -> (User | nil)
+  def logout_user: () -> nil
+  def require_login: () -> (false | true)
+  def require_admin: () -> (false | nil | true)
+  def replace_none_values_with_blank: (untyped) -> Hash[untyped, untyped]
+  def record_project_usage: () -> true
+  def redirect_back_or_default: (untyped, ?untyped) -> (false | nil)
+  def render_403: (?untyped) -> false
+  def render_404: (?untyped) -> false
+  def use_layout: () -> ("base" | false)
+  def api_offset_and_limit: (?untyped) -> [untyped, untyped]
+  def parse_qvalues: (untyped) -> (Array[untyped] | nil)
+  def api_request?: () -> (false | true)
+end
+
+class Unauthorized < ::StandardError
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class Stop < ::Gitlab::Ci::Status::Extended
+          def label: () -> "manual stop action"
+          def action_icon: () -> "stop"
+          def action_title: () -> "Stop"
+          def action_method: () -> :post
+        end
+      end
+    end
+  end
+end

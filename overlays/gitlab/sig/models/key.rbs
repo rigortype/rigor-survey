@@ -1,0 +1,9 @@
+class Key < ::ApplicationRecord
+  def self.regular_keys: () -> ActiveRecord::Relation[Key]
+  def self.regular_key_types: () -> [nil, "Key"]
+  def key=: (untyped) -> nil
+  def publishable_key: () -> String
+  def shell_id: () -> String
+  def can_delete?: () -> true
+  def public_key: () -> Gitlab::SSHPublicKey
+end

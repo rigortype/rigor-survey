@@ -1,0 +1,8 @@
+module Arel
+  module Crud
+    def compile_insert: (untyped) -> Arel::InsertManager
+    def create_insert: () -> Arel::InsertManager
+    def compile_update: (untyped, ?untyped) -> Arel::UpdateManager
+    def compile_delete: (?untyped) -> Arel::DeleteManager
+  end
+end

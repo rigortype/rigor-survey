@@ -1,0 +1,7 @@
+module Hamlit
+  module RailsHelpers
+    def surround: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::SafeBuffer
+    def precede: (untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::SafeBuffer
+    def succeed: (untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::SafeBuffer
+  end
+end

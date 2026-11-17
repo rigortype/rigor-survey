@@ -1,0 +1,8 @@
+module Mcp
+  module Tools
+    class GetServerVersionService < ::Mcp::Tools::Base::CustomService
+      def authorize!: (untyped) -> true
+      def skip_granular_token_authorization?: () -> true
+    end
+  end
+end

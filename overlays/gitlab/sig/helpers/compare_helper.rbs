@@ -1,0 +1,3 @@
+module CompareHelper
+  def project_compare_selector_data: (untyped, untyped, untyped) -> Hash[Symbol, untyped]
+end

@@ -1,0 +1,13 @@
+module Banzai
+  module ReferenceParser
+    class BaseParser
+      def initialize: (untyped) -> void
+      def gather_attributes_per_project: (untyped, untyped) -> Hash[untyped, untyped]
+      def grouped_objects_for_nodes: (untyped, untyped, untyped) -> Hash[untyped, untyped]
+      def unique_attribute_values: (untyped, untyped) -> Array[untyped]
+      def process: (untyped, ?ids_only: untyped) -> { visible: untyped, nodes: untyped, visible_nodes: untyped }
+      def gather_references: (untyped, ?ids_only: untyped) -> { visible: untyped, nodes: untyped, visible_nodes: untyped }
+      def groups_for_nodes: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

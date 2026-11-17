@@ -1,0 +1,24 @@
+module Kramdown
+  module Options
+    def self.define: (untyped, untyped, untyped, untyped) ?{ (*untyped) -> untyped } -> nil
+    def self.simple_array_validator: (untyped, untyped, ?untyped) -> (Array[untyped] | Array[String])
+    def self.simple_hash_validator: (untyped, untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    class Definition < ::Struct[untyped]
+      def name: () -> untyped
+      def type: () -> untyped
+      def default: () -> untyped
+      def desc: () -> untyped
+      def validator: () -> untyped
+      def name=: (untyped) -> untyped
+      def type=: (untyped) -> untyped
+      def default=: (untyped) -> untyped
+      def desc=: (untyped) -> untyped
+      def validator=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?type: untyped, ?default: untyped, ?desc: untyped, ?validator: untyped) -> instance | (?untyped name, ?untyped type, ?untyped default, ?untyped desc, ?untyped validator) -> instance
+      def self.[]: (?name: untyped, ?type: untyped, ?default: untyped, ?desc: untyped, ?validator: untyped) -> instance | (?untyped name, ?untyped type, ?untyped default, ?untyped desc, ?untyped validator) -> instance
+    end
+    class Boolean
+      def self.===: (untyped) -> (false | true)
+    end
+  end
+end

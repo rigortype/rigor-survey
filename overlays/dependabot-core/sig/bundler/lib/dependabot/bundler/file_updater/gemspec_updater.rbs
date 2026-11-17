@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class GemspecUpdater
+        def initialize: (dependencies: untyped, gemspec: untyped) -> void
+      end
+    end
+  end
+end

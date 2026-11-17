@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class Convert < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { work_item: untyped, errors: Array[untyped] }
+    end
+  end
+end

@@ -1,0 +1,18 @@
+module ActionDispatch
+  class Flash
+    module RequestMethods
+      def reset_session: () -> nil
+    end
+    class FlashNow
+      def initialize: (untyped) -> void
+    end
+    class FlashHash
+      def self.from_session_value: (untyped) -> ActionDispatch::Flash::FlashHash
+      def to_session_value: () -> (nil | Hash[String, untyped])
+      def initialize: (?untyped, ?untyped) -> void
+      def update: (untyped) -> ActionDispatch::Flash::FlashHash
+      def delete: (untyped) -> ActionDispatch::Flash::FlashHash
+      def replace: (untyped) -> ActionDispatch::Flash::FlashHash
+    end
+  end
+end

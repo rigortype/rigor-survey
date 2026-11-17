@@ -1,0 +1,5 @@
+module Types
+  class BaseArgument < ::GraphQL::Schema::Argument
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+  end
+end

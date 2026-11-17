@@ -1,0 +1,5 @@
+module Types
+  module UserInterface
+    def resolve_type: (untyped, untyped) -> singleton(Types::UserType)
+  end
+end

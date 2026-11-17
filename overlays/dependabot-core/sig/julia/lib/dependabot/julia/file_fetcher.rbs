@@ -1,0 +1,7 @@
+module Dependabot
+  module Julia
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a Project.toml or JuliaProject.toml file."
+    end
+  end
+end

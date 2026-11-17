@@ -1,0 +1,12 @@
+module Gitlab
+  module RackAttack
+    module LabkitRateLimit
+      module Limiters
+        def self.all: () -> Hash[untyped, untyped]
+        def self.reset!: () -> nil
+        def self.synthetic_rules: (untyped) -> Array[untyped]
+        def self.build_rules: (untyped) -> (Array[untyped] | [untyped])
+      end
+    end
+  end
+end

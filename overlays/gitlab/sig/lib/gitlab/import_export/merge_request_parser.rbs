@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class MergeRequestParser
+      def initialize: (untyped, untyped, untyped, untyped, user: untyped) -> void
+    end
+  end
+end

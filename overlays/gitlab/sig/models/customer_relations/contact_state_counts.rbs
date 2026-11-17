@@ -1,0 +1,6 @@
+module CustomerRelations
+  class ContactStateCounts
+    def self.declarative_policy_class: () -> "CustomerRelations::ContactPolicy"
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

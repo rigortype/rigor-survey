@@ -1,0 +1,8 @@
+module Gitlab
+  module PoolRepositories
+    class DeadShardMemberRemediator
+      def initialize: (input_file: untyped, output_file: untyped, logger: untyped, ?dry_run: untyped, ?classifications: untyped) -> void
+      def results: () -> Hash[untyped, untyped]
+    end
+  end
+end

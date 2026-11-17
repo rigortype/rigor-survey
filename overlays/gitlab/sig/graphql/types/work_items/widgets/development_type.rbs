@@ -1,0 +1,9 @@
+module Types
+  module WorkItems
+    module Widgets
+      class DevelopmentType < ::Types::BaseObject
+        def related_branches: () -> Array[{ name: untyped, pipeline_status: untyped, compare_path: untyped }]
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module BulkImports
+  module Groups
+    module Extractors
+      class SubgroupsExtractor
+        def extract: (untyped) -> BulkImports::Pipeline::ExtractedData
+      end
+    end
+  end
+end

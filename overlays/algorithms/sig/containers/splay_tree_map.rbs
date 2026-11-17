@@ -1,0 +1,22 @@
+module Containers
+  class RubySplayTreeMap
+    def size: () -> (0 | 1 | Integer)
+    def clear: () -> Containers::RubySplayTreeMap::Node
+    def height: () -> (0 | Integer)
+    def has_key?: (untyped) -> (false | true)
+    def min: () -> ([untyped, untyped] | nil)
+    def max: () -> ([untyped, untyped] | nil)
+    class Node < ::Struct[untyped]
+      def key: () -> untyped
+      def value: () -> untyped
+      def left: () -> untyped
+      def right: () -> untyped
+      def key=: (untyped) -> untyped
+      def value=: (untyped) -> untyped
+      def left=: (untyped) -> untyped
+      def right=: (untyped) -> untyped
+      def self.new: (?key: untyped, ?value: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped key, ?untyped value, ?untyped left, ?untyped right) -> instance
+      def self.[]: (?key: untyped, ?value: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped key, ?untyped value, ?untyped left, ?untyped right) -> instance
+    end
+  end
+end

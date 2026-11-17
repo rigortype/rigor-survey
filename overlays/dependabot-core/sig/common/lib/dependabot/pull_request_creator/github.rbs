@@ -1,0 +1,8 @@
+module Dependabot
+  class PullRequestCreator
+    class Github
+      def initialize: (source: untyped, branch_name: untyped, base_commit: untyped, credentials: untyped, files: untyped, commit_message: untyped, pr_description: untyped, pr_name: untyped, author_details: untyped, signature_key: untyped, custom_headers: untyped, labeler: untyped, reviewers: untyped, assignees: untyped, milestone: untyped, require_up_to_date_base: untyped) -> void
+      def create: () -> Sawyer::Resource
+    end
+  end
+end

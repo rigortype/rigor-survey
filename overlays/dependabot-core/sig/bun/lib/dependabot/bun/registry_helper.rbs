@@ -1,0 +1,7 @@
+module Dependabot
+  module Bun
+    class RegistryHelper
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

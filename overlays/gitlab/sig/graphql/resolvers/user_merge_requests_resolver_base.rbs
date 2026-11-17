@@ -1,0 +1,5 @@
+module Resolvers
+  class UserMergeRequestsResolverBase < ::Resolvers::MergeRequestsResolver
+    def user_role: () -> bot
+  end
+end

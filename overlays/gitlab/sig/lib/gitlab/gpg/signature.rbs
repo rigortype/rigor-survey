@@ -1,0 +1,8 @@
+module Gitlab
+  module Gpg
+    class Signature
+      def initialize: (untyped, untyped, untyped, untyped, ?preloaded_gpg_key: untyped) -> void
+      def type: () -> :gpg
+    end
+  end
+end

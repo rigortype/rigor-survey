@@ -1,0 +1,8 @@
+module Gitlab
+  module Search
+    class AbuseDetection
+      def initialize: (untyped) -> void
+      def abusive_pipes?: () -> (false | true)
+    end
+  end
+end

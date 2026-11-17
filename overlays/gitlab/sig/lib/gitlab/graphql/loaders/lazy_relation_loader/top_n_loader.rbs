@@ -1,0 +1,11 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class LazyRelationLoader
+        class TopNLoader
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

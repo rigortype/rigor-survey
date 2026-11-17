@@ -1,0 +1,6 @@
+class Segtree
+  def initialize: (untyped, Integer | Proc | String, ?Integer) ?{ (*untyped) -> untyped } -> void
+  def set: (untyped, untyped) -> Integer
+  def d: () -> Array[untyped]
+  def leaf_size: () -> Integer
+end

@@ -1,0 +1,7 @@
+module Mail
+  module Encodings
+    def collapse_adjacent_encodings: (untyped) -> Array[untyped]
+  end
+  class UnknownEncodingType < ::StandardError
+  end
+end

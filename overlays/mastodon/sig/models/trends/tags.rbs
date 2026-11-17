@@ -1,0 +1,5 @@
+module Trends
+  class Tags < ::Trends::Base
+    def query: () -> Trends::Tags::Query
+  end
+end

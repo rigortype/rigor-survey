@@ -1,0 +1,4 @@
+class ModerationSubscription < ::ApplicationRecord
+  def apply_conditions: () -> (:always | :never | :safely)
+  def apply_conditions=: (untyped) -> (false | true)
+end

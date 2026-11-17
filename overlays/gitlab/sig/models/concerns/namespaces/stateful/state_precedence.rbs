@@ -1,0 +1,8 @@
+module Namespaces
+  module Stateful
+    module StatePrecedence
+      def self.overwritable_states: (untyped, untyped) -> Array[:ancestor_inherited | :archived | :deletion_scheduled | :maintenance]
+      def self.log_non_propagatable_state: (untyped, untyped, untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

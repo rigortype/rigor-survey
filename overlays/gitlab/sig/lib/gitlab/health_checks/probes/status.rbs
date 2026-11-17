@@ -1,0 +1,14 @@
+module Gitlab
+  module HealthChecks
+    module Probes
+      class Status < ::Struct[untyped]
+        def http_status: () -> untyped
+        def json: () -> untyped
+        def http_status=: (untyped) -> untyped
+        def json=: (untyped) -> untyped
+        def self.new: (?http_status: untyped, ?json: untyped) -> instance | (?untyped http_status, ?untyped json) -> instance
+        def self.[]: (?http_status: untyped, ?json: untyped) -> instance | (?untyped http_status, ?untyped json) -> instance
+      end
+    end
+  end
+end

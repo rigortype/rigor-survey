@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Environment < ::Gitlab::Config::Entry::Node
+          def hash?: () -> (false | true)
+          def string?: () -> (false | true)
+          def skip_config_hash_validation?: () -> true
+        end
+      end
+    end
+  end
+end

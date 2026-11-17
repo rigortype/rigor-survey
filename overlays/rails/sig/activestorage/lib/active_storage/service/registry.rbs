@@ -1,0 +1,9 @@
+module ActiveStorage
+  class Service
+    class Registry
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+      def services: () -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module Authz
+      class GranularScopeAuthorization
+        def initialize: (untyped) -> void
+        def authorize!: (untyped, untyped, ?arguments: untyped) -> nil
+      end
+    end
+  end
+end

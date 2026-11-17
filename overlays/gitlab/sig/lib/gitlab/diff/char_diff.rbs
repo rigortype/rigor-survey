@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class CharDiff
+      def initialize: (untyped, untyped) -> void
+      def changed_ranges: (?offset: untyped) -> [Array[untyped], Array[untyped]]
+    end
+  end
+end

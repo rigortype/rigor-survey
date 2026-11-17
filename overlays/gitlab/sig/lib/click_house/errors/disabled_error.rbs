@@ -1,0 +1,7 @@
+module ClickHouse
+  module Errors
+    class DisabledError < ::StandardError
+      def initialize: (?msg: String) -> void
+    end
+  end
+end

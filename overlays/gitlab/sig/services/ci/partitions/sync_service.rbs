@@ -1,0 +1,7 @@
+module Ci
+  module Partitions
+    class SyncService
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Hamlit
+  class Error < ::StandardError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+end

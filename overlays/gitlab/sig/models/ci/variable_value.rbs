@@ -1,0 +1,5 @@
+module Ci
+  class VariableValue
+    def initialize: (untyped) -> void
+  end
+end

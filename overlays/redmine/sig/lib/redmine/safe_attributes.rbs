@@ -1,0 +1,7 @@
+module Redmine
+  module SafeAttributes
+    module ClassMethods
+      def safe_attributes: (*untyped) -> Array[untyped]
+    end
+  end
+end

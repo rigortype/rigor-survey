@@ -1,0 +1,7 @@
+module Gitlab
+  module EtagCaching
+    class Middleware
+      def initialize: (untyped) -> void
+    end
+  end
+end

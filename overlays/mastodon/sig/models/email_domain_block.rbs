@@ -1,0 +1,6 @@
+class EmailDomainBlock < ::ApplicationRecord
+  def history: () -> Trends::History
+  class Matcher
+    def initialize: (untyped, ?attempt_ip: untyped) -> void
+  end
+end

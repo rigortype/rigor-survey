@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      class Bridge < ::Gitlab::Ci::ProjectConfig::Source
+        def internal_include_prepended?: () -> true
+        def source: () -> :bridge_source
+        def url: () -> String
+      end
+    end
+  end
+end

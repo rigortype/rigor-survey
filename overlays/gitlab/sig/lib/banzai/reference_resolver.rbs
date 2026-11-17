@@ -1,0 +1,14 @@
+module Banzai
+  class ReferenceResolver
+    def self.from_context: (untyped) -> Banzai::ReferenceResolver
+    def initialize: (?project: untyped, ?group: untyped, ?author: untyped) -> void
+    def projects: () -> ActiveRecord::Relation[Project]
+    def namespaces: () -> ActiveRecord::Relation[Namespace]
+    def groups: () -> ActiveRecord::Relation[Group]
+    def users: () -> ActiveRecord::Relation[User]
+    def routes_by_paths: (untyped) -> ActiveRecord::Relation[Route]
+    def organization_user_details: () -> ActiveRecord::Relation[Organizations::OrganizationUserDetail]
+    def cache_key: () -> nil
+    def request_store_key: (untyped) -> [untyped, nil]
+  end
+end

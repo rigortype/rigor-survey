@@ -1,0 +1,5 @@
+module Packages
+  class CleanupPackageRegistryWorker
+    def perform: () -> nil
+  end
+end

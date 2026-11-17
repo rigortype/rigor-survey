@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    class UploadsManager
+      def initialize: (project: untyped, shared: untyped, ?relative_export_path: untyped) -> void
+      def save: () -> (false | true)
+      def restore: () -> (false | true)
+    end
+  end
+end

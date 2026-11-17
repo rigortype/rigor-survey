@@ -1,0 +1,9 @@
+module Typelizer
+  class Writer
+    def initialize: (untyped) -> void
+    def call: (untyped, force: untyped) -> []
+    def template_cache: () -> Hash[untyped, untyped]
+    class WriterError < ::StandardError
+    end
+  end
+end

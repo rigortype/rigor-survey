@@ -1,0 +1,3 @@
+module ActiveSupport
+  def self.version: () -> Gem::Version
+end

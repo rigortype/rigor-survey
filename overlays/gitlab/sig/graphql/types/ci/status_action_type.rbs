@@ -1,0 +1,7 @@
+module Types
+  module Ci
+    class StatusActionType < ::Types::BaseObject
+      def id: (parent: untyped) -> String
+    end
+  end
+end

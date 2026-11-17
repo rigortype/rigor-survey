@@ -1,0 +1,21 @@
+module SupplyChain
+  class ProvenancePublisher
+    def initialize: (untyped) -> void
+    class LocalCaSigningMaterial < ::Struct[untyped]
+      def key_path: () -> untyped
+      def password: () -> untyped
+      def certificate_path: () -> untyped
+      def trusted_root_path: () -> untyped
+      def signing_config_path: () -> untyped
+      def signing_certificate_id: () -> untyped
+      def key_path=: (untyped) -> untyped
+      def password=: (untyped) -> untyped
+      def certificate_path=: (untyped) -> untyped
+      def trusted_root_path=: (untyped) -> untyped
+      def signing_config_path=: (untyped) -> untyped
+      def signing_certificate_id=: (untyped) -> untyped
+      def self.new: (?key_path: untyped, ?password: untyped, ?certificate_path: untyped, ?trusted_root_path: untyped, ?signing_config_path: untyped, ?signing_certificate_id: untyped) -> instance
+      def self.[]: (?key_path: untyped, ?password: untyped, ?certificate_path: untyped, ?trusted_root_path: untyped, ?signing_config_path: untyped, ?signing_certificate_id: untyped) -> instance
+    end
+  end
+end

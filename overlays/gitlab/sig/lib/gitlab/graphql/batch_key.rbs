@@ -1,0 +1,7 @@
+module Gitlab
+  module Graphql
+    class BatchKey
+      def initialize: (untyped, ?untyped, ?object_name: Symbol) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    module Presenters
+      class Error < ::Gitlab::SlashCommands::Presenters::Base
+        def initialize: (String) -> void
+      end
+    end
+  end
+end

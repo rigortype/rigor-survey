@@ -1,0 +1,13 @@
+module Gitlab
+  module JiraImport
+    def self.validate_project_settings!: (untyped, ?user: untyped, ?configuration_check: untyped) -> nil
+    def self.jira_item_cache_key: (untyped, untyped, untyped) -> String
+    def self.jira_user_key_prefix: (untyped) -> String
+    def self.already_imported_cache_key: (untyped, untyped) -> String
+    def self.jira_issues_next_page_cache_key: (untyped) -> String
+    def self.failed_issues_counter_cache_key: (untyped) -> String
+    def self.import_label_cache_key: (untyped) -> String
+    def self.cache_class: () -> singleton(Gitlab::Cache::Import::Caching)
+    def self.jira_issues_pagination_state_cache_key: (untyped) -> String
+  end
+end

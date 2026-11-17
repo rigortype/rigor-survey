@@ -1,0 +1,5 @@
+module Ci
+  class UnitTest < ::Ci::ApplicationRecord
+    def self.find_or_create_by_batch: (untyped, untyped) -> ActiveRecord::Relation[Ci::UnitTest]
+  end
+end

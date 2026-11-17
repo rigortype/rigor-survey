@@ -1,0 +1,22 @@
+class TitoApi
+  def initialize: (?token: String?, ?endpoint: String) -> void
+  def get_release: (String, String) -> json_object
+  def list_releases: (String) -> json_object
+  def get_discount_code: (String, String | Integer) -> json_object
+  def create_discount_code: (String, code: String, type: String, value: String, **untyped) -> json_object
+  def update_discount_code: (String, String | Integer, code: String, type: String, value: String, **untyped) -> json_object
+  def list_registrations: (String, ?query) -> json_object
+  def get_registration: (String, String | Integer, ?query) -> json_object
+  def cancel_registration: (String, String | Integer) -> json_object
+  def create_registration_note: (String, String | Integer, content: String) -> json_object
+  def get_ticket: (String, String) -> json_object
+  def patch_ticket: (String, String, **untyped) -> json_object
+  def create_source: (String, name: String, code: String, ?description: String, **untyped) -> json_object
+  def http: () -> HTTPX::Session
+  def get: (String, ?query, ?headers: Hash[String, String]?) -> json_object
+  def put: (String, ?params: query, ?body: json_object?, ?headers: Hash[String, String]?, **untyped) -> json_object
+  def patch: (String, ?params: query, ?body: json_object?, ?headers: Hash[String, String]?, **untyped) -> json_object
+  def post: (String, ?params: query, ?body: json_object?, ?headers: Hash[String, String]?, ?timeout: Integer, **untyped) -> json_object
+  def request: (Symbol, String, ?query, json_object?, ?headers: Hash[String, String]?, ?timeout: Integer) -> json_object
+  def escape: (String) -> String
+end

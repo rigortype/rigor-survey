@@ -1,0 +1,5 @@
+module MergeRequests
+  class ByApprovalsFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

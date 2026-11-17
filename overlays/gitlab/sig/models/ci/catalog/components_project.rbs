@@ -1,0 +1,16 @@
+module Ci
+  module Catalog
+    class ComponentsProject
+      def initialize: (untyped, ?untyped) -> void
+      def extract_component_name: (untyped) -> (String | nil)
+      class ComponentData < ::Struct[untyped]
+        def content: () -> untyped
+        def path: () -> untyped
+        def content=: (untyped) -> untyped
+        def path=: (untyped) -> untyped
+        def self.new: (?content: untyped, ?path: untyped) -> instance
+        def self.[]: (?content: untyped, ?path: untyped) -> instance
+      end
+    end
+  end
+end

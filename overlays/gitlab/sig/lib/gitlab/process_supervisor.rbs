@@ -1,0 +1,6 @@
+module Gitlab
+  class ProcessSupervisor < ::Gitlab::Daemon
+    def initialize: (?health_check_interval_seconds: untyped, ?check_terminate_interval_seconds: untyped, ?terminate_timeout_seconds: untyped, ?term_signals: untyped, ?forwarded_signals: untyped, **untyped) -> void
+    def alive: () -> (false | true)
+  end
+end

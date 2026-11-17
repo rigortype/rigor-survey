@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class JwtV2 < ::Gitlab::Ci::Jwt
+      class ClaimMapper
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

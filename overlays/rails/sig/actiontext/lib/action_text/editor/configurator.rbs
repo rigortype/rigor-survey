@@ -1,0 +1,8 @@
+module ActionText
+  class Editor
+    class Configurator
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+    end
+  end
+end
