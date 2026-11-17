@@ -1,0 +1,3 @@
+overlays/**/sig/** linguist-generated=true
+overlays/**/.rigor-baseline.yml linguist-generated=true
+corpus.yml linguist-generated=true

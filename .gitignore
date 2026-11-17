@@ -1,0 +1,8 @@
+_reports/
+.DS_Store
+**/.DS_Store
+
+# Regenerated inside a target after `make apply-overlays`
+**/.rigor/cache/
+**/.gem_rbs_collection/
+**/vendor/bundle/
