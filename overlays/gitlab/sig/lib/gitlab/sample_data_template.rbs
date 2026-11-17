@@ -1,0 +1,6 @@
+module Gitlab
+  class SampleDataTemplate < ::Gitlab::ProjectTemplate
+    def self.localized_templates_table: () -> [Gitlab::SampleDataTemplate]
+    def self.all: () -> [Gitlab::SampleDataTemplate]
+  end
+end

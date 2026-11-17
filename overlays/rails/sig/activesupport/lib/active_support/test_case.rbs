@@ -1,0 +1,5 @@
+module ActiveSupport
+  class TestCase < ::Minitest::Test
+    def self.parallelize: (?workers: untyped, ?with: untyped, ?threshold: untyped, ?parallelize_databases: untyped, ?work_stealing: untyped) -> ActiveSupport::Testing::ParallelizeExecutor
+  end
+end

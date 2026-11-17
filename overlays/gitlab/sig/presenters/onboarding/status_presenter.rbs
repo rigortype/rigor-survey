@@ -1,0 +1,7 @@
+module Onboarding
+  class StatusPresenter
+    def self.registration_path_params: (params: untyped) -> {}
+    def initialize: (untyped, nil, untyped) -> void
+    def registration_omniauth_params: () -> {}
+  end
+end

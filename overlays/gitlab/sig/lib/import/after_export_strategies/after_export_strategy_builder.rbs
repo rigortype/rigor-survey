@@ -1,0 +1,7 @@
+module Import
+  module AfterExportStrategies
+    class AfterExportStrategyBuilder
+      def self.default_strategy: () -> singleton(Import::AfterExportStrategies::DownloadNotificationStrategy)
+    end
+  end
+end

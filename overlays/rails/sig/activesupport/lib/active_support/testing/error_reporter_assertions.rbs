@@ -1,0 +1,26 @@
+module ActiveSupport
+  module Testing
+    module ErrorReporterAssertions
+      def assert_error_reported: (?singleton(Exception)) { () -> void } -> ActiveSupport::Testing::ErrorReporterAssertions::ErrorCollector::Report
+      def capture_error_reports: (?singleton(Exception)) { () -> void } -> Array[ActiveSupport::Testing::ErrorReporterAssertions::ErrorCollector::Report]
+      module ErrorCollector
+        def self.record: () -> []
+        def self.report: (untyped, **untyped) -> true
+        class Report < ::Struct[untyped]
+          def error: () -> untyped
+          def handled: () -> untyped
+          def severity: () -> untyped
+          def context: () -> untyped
+          def source: () -> untyped
+          def error=: (untyped) -> untyped
+          def handled=: (untyped) -> untyped
+          def severity=: (untyped) -> untyped
+          def context=: (untyped) -> untyped
+          def source=: (untyped) -> untyped
+          def self.new: (?error: untyped, ?handled: untyped, ?severity: untyped, ?context: untyped, ?source: untyped) -> instance
+          def self.[]: (?error: untyped, ?handled: untyped, ?severity: untyped, ?context: untyped, ?source: untyped) -> instance
+        end
+      end
+    end
+  end
+end

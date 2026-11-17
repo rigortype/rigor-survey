@@ -1,0 +1,5 @@
+module PagesCore
+  class CreateUserService
+    def initialize: (untyped, ?invite: untyped) -> void
+  end
+end

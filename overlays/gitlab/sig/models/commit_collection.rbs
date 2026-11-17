@@ -1,0 +1,9 @@
+class CommitCollection
+  def initialize: (untyped, untyped, ?String, ?page: untyped, ?per_page: untyped, ?count: untyped) -> void
+  def with_latest_pipeline: (?untyped) -> CommitCollection
+  def with_markdown_cache: () -> CommitCollection
+  def enrich!: () -> CommitCollection
+  def respond_to_missing?: (untyped, ?untyped) -> (false | true)
+  def load_tags: () -> CommitCollection
+  def ref: () -> "close-by-commit"
+end

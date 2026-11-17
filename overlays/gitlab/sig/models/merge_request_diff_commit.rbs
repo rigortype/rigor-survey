@@ -1,0 +1,4 @@
+class MergeRequestDiffCommit < ::ApplicationRecord
+  def self.prepare_commits_for_bulk_insert: (untyped, untyped) -> [untyped, Set[untyped]]
+  def trailers: () -> {}
+end

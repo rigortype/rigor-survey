@@ -1,0 +1,7 @@
+module Gitlab
+  module Email
+    class ReplyParser
+      def initialize: (untyped, ?trim_reply: untyped, ?append_reply: untyped, ?allow_only_quotes: untyped) -> void
+    end
+  end
+end

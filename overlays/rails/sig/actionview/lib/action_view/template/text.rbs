@@ -1,0 +1,9 @@
+module ActionView
+  class Template
+    class Text
+      def initialize: (untyped) -> void
+      def identifier: () -> "text template"
+      def format: () -> :text
+    end
+  end
+end

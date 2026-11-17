@@ -1,0 +1,5 @@
+class DeploymentMergeRequest < ::ApplicationRecord
+  def self.by_deployment_id: (untyped) -> ActiveRecord::Relation[DeploymentMergeRequest]
+  def self.deployed_after: (untyped) -> ActiveRecord::Relation[DeploymentMergeRequest]
+  def self.deployed_before: (untyped) -> ActiveRecord::Relation[DeploymentMergeRequest]
+end

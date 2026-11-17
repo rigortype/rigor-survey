@@ -1,0 +1,5 @@
+module IssuableLinks
+  class ListService
+    def initialize: (untyped, untyped) -> void
+  end
+end

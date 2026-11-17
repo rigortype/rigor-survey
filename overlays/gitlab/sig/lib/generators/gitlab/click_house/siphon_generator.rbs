@@ -1,0 +1,7 @@
+module Gitlab
+  module ClickHouse
+    class SiphonGenerator < ::Rails::Generators::Base
+      def validate!: () -> nil
+    end
+  end
+end

@@ -1,0 +1,3 @@
+module StatAnchorsHelper
+  def stat_anchor_attrs: (untyped) -> Hash[untyped, untyped]
+end

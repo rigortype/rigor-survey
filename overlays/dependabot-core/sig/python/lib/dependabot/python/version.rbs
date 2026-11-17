@@ -1,0 +1,28 @@
+module Dependabot
+  module Python
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Python::Version
+      def to_s: () -> String
+      def inspect: () -> String
+      def prerelease?: () -> (false | true)
+      def release: () -> Dependabot::Python::Version
+      def <=>: (untyped) -> Integer
+      def compare_keys: (untyped, untyped) -> (-1 | 1 | Integer | nil)
+      def pre_cmp_key: () -> (1000 | Array[Integer | String] | nil | Integer)
+      def local_cmp_key: () -> (Array[untyped] | Integer)
+      def post_cmp_key: () -> (Array[Integer | String] | nil | Integer)
+      def dev_cmp_key: () -> (1000 | Array[Integer | String] | nil)
+      def lowest_prerelease_suffix: () -> "dev0"
+      def ignored_patch_versions: () -> [String]
+      def ignored_minor_versions: () -> [String]
+      def ignored_major_versions: () -> [String]
+      def epoch: () -> Integer
+      def release_segment: () -> Array[Integer]
+      def dev: () -> (Array[Integer | String] | nil)
+      def pre: () -> (Array[Integer | String] | nil)
+      def post: () -> (Array[Integer | String] | nil)
+      def local: () -> (Array[Integer | String] | nil)
+    end
+  end
+end

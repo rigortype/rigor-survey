@@ -1,0 +1,9 @@
+module Packages
+  module Rpm
+    module RepositoryMetadata
+      class BuildRepomdXmlService
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

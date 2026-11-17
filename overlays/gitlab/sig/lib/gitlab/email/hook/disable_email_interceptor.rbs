@@ -1,0 +1,9 @@
+module Gitlab
+  module Email
+    module Hook
+      class DisableEmailInterceptor
+        def self.delivering_email: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+      end
+    end
+  end
+end

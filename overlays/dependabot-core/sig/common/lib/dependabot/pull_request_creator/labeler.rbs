@@ -1,0 +1,10 @@
+module Dependabot
+  class PullRequestCreator
+    class Labeler
+      def initialize: (source: untyped, custom_labels: untyped, credentials: untyped, dependencies: untyped, includes_security_fixes: untyped, label_language: untyped, automerge_candidate: untyped) -> void
+      def create_default_labels_if_required: () -> (Array[String] | nil)
+      def labels_for_pr: () -> Array[untyped]
+      def label_pull_request: (untyped) -> (Array[Sawyer::Resource] | nil)
+    end
+  end
+end

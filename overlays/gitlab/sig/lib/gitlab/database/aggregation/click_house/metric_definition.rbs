@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class MetricDefinition < ::Gitlab::Database::Aggregation::ClickHouse::PartDefinition
+          def initialize: (*untyped, **untyped) -> void
+          def requires_window?: () -> false
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PackageJsonUpdater
+        def initialize: (package_json: untyped, dependencies: untyped) -> void
+        def updated_package_json: () -> Dependabot::DependencyFile
+      end
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class DispatchBroadcastDeliveryJob < ::ApplicationJob
+  def perform: (BroadcastDelivery, ?force: bool) -> void
+  def perform_real: (BroadcastDelivery, ?force: bool) -> void
+end

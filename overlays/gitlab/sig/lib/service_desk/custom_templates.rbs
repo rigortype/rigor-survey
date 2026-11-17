@@ -1,0 +1,6 @@
+module ServiceDesk
+  class CustomTemplates
+    def initialize: (untyped) -> void
+    def enabled?: () -> true
+  end
+end

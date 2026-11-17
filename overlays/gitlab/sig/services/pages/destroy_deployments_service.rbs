@@ -1,0 +1,5 @@
+module Pages
+  class DestroyDeploymentsService
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

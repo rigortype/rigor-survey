@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module PullRequests
+        class MergedByImporter
+          def initialize: (untyped, untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

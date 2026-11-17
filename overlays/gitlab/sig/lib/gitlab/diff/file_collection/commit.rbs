@@ -1,0 +1,11 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class Commit < ::Gitlab::Diff::FileCollection::Base
+        def initialize: (untyped, diff_options: nil) -> void
+        def with_highlights_preloaded: () -> Gitlab::Diff::FileCollection::Commit
+        def cache_key: () -> ["commit", untyped]
+      end
+    end
+  end
+end

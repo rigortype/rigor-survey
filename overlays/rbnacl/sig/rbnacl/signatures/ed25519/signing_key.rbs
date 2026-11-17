@@ -1,0 +1,11 @@
+module RbNaCl
+  module Signatures
+    module Ed25519
+      class SigningKey
+        def self.generate: () -> RbNaCl::Signatures::Ed25519::SigningKey
+        def sign_attached: (untyped) -> String
+        def to_curve25519_private_key: () -> RbNaCl::Boxes::Curve25519XSalsa20Poly1305::PrivateKey
+      end
+    end
+  end
+end

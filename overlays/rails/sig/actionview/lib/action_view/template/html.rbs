@@ -1,0 +1,8 @@
+module ActionView
+  class Template
+    class HTML
+      def initialize: (untyped, untyped) -> void
+      def identifier: () -> "html template"
+    end
+  end
+end

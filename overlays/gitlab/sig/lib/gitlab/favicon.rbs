@@ -1,0 +1,6 @@
+module Gitlab
+  class Favicon
+    def self.development_favicon: () -> "favicon-blue.png"
+    def self.available_status_names: () -> Array[String]
+  end
+end

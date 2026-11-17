@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::UpdateCheckers::Base
+      class ConflictingDependencyResolver
+        def initialize: (dependency_files: untyped, repo_contents_path: untyped, credentials: untyped, options: untyped) -> void
+      end
+    end
+  end
+end

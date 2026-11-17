@@ -1,0 +1,5 @@
+module ActionView
+  class TemplateRenderer < ::ActionView::AbstractRenderer
+    def render: (untyped, untyped) ?{ (*untyped) -> untyped } -> ActionView::AbstractRenderer::RenderedTemplate
+  end
+end

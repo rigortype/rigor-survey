@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Oidc
+      module StepUpAuthBeforeRequestPhase
+        def self.call: (untyped) -> ("requested" | nil)
+      end
+    end
+  end
+end

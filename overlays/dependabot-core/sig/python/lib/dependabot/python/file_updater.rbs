@@ -1,0 +1,7 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> Array[::DependencyFile]
+    end
+  end
+end

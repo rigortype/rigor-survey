@@ -1,0 +1,8 @@
+module Packages
+  module Helm
+    class ExtractFileMetadataService
+      def initialize: (untyped) -> void
+      def execute: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

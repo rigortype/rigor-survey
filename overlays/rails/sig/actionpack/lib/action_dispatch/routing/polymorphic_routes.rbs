@@ -1,0 +1,17 @@
+module ActionDispatch
+  module Routing
+    module PolymorphicRoutes
+      class HelperMethodBuilder
+        def self.url: () -> nil
+        def self.path: () -> nil
+        def self.build: (untyped, untyped) -> ActionDispatch::Routing::PolymorphicRoutes::HelperMethodBuilder
+        def self.singular: (untyped, untyped) -> ActionDispatch::Routing::PolymorphicRoutes::HelperMethodBuilder
+        def self.plural: (untyped, untyped) -> ActionDispatch::Routing::PolymorphicRoutes::HelperMethodBuilder
+        def initialize: (untyped, untyped, untyped) -> void
+        def handle_string: (untyped) -> [untyped, []]
+        def handle_class: (untyped) -> [untyped, []]
+        def handle_list: (untyped) -> [untyped, Array[untyped]]
+      end
+    end
+  end
+end

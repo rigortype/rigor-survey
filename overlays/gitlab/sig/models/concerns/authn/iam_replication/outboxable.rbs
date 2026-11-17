@@ -1,0 +1,8 @@
+module Authn
+  module IamReplication
+    module Outboxable
+      def iam_outbox_upsert_payload: () -> {}
+      def iam_outbox_delete_payload: () -> bot
+    end
+  end
+end

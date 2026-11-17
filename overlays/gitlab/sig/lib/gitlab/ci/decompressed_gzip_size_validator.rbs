@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class DecompressedGzipSizeValidator
+      def initialize: (archive_path: untyped, ?max_bytes: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Projects
+  class TransferWorker
+    def self.lease_key: (untyped) -> String
+  end
+end

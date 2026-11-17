@@ -1,0 +1,10 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WrapperUpdater
+        def initialize: (dependency_files: untyped, dependency: untyped) -> void
+        def update_files: (untyped) -> (Array[Dependabot::DependencyFile] | Array[untyped])
+      end
+    end
+  end
+end

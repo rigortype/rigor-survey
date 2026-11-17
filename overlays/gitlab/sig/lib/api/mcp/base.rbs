@@ -1,0 +1,12 @@
+module API
+  module Mcp
+    class Base < ::API::Base
+      def logger: () -> Gitlab::Mcp::Logger
+      def feature_available?: () -> (false | true)
+      def mcp_denial_reason: () -> (:instance_setting_disabled | nil)
+      def mcp_denial_message: () -> "MCP server disabled for this instance"
+      def mcp_client_info: () -> (Gitlab::Mcp::ClientInfo | nil)
+      def mcp_request_context: () -> ::Mcp::Tools::RequestContext
+    end
+  end
+end

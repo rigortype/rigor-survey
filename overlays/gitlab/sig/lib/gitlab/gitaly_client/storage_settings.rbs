@@ -1,0 +1,9 @@
+module Gitlab
+  module GitalyClient
+    class StorageSettings
+      def self.disk_access_denied?: () -> (false | true)
+      def initialize: (untyped) -> void
+      def legacy_disk_path: () -> String
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WrapperUpdater
+        def initialize: (dependency_files: untyped, dependency: untyped, credentials: untyped, ?distribution_version: untyped, ?wrapper_version: untyped) -> void
+        def update_files: (untyped) -> Array[::DependencyFile]
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module TDiary
+  module Rack
+    class Auth
+      class OmniAuth
+        def initialize: (untyped) -> void
+        class NoStrategyFoundError < ::StandardError
+        end
+      end
+    end
+  end
+end

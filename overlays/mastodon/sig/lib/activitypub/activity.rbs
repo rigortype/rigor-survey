@@ -1,0 +1,6 @@
+module ActivityPub
+  class Activity
+    def initialize: (untyped, untyped, **untyped) -> void
+    def self.klass_for: (untyped) -> (nil | singleton(ActivityPub::Activity::Accept) | singleton(ActivityPub::Activity::Add) | singleton(ActivityPub::Activity::Announce) | singleton(ActivityPub::Activity::Block) | singleton(ActivityPub::Activity::Create) | singleton(ActivityPub::Activity::Delete) | singleton(ActivityPub::Activity::FeatureRequest) | singleton(ActivityPub::Activity::Flag) | singleton(ActivityPub::Activity::Follow) | singleton(ActivityPub::Activity::Like) | singleton(ActivityPub::Activity::Move) | singleton(ActivityPub::Activity::QuoteRequest) | singleton(ActivityPub::Activity::Reject) | singleton(ActivityPub::Activity::Remove) | singleton(ActivityPub::Activity::Undo) | singleton(ActivityPub::Activity::Update))
+  end
+end

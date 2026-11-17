@@ -1,0 +1,32 @@
+class QueryColumn
+  def initialize: (String | Symbol, ?untyped) -> void
+end
+
+class TimestampQueryColumn < ::QueryColumn
+  def group_by_statement: () -> (String | nil)
+end
+
+class QueryAssociationColumn < ::QueryColumn
+  def initialize: (untyped, untyped, ?untyped) -> void
+  def css_classes: () -> String
+end
+
+class QueryCustomFieldColumn < ::QueryColumn
+  def initialize: (untyped, ?untyped) -> void
+  def css_classes: () -> String
+end
+
+class QueryAssociationCustomFieldColumn < ::QueryCustomFieldColumn
+  def initialize: (untyped, untyped, ?untyped) -> void
+  def css_classes: () -> String
+  def groupable?: () -> false
+end
+
+class QueryFilter
+  def initialize: (untyped, untyped) -> void
+end
+
+class Query < ::ApplicationRecord
+  class QueryError < ::StandardError
+  end
+end

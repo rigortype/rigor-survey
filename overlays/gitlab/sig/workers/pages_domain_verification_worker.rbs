@@ -1,0 +1,3 @@
+class PagesDomainVerificationWorker
+  def perform: (untyped) -> (ServiceResponse | nil)
+end

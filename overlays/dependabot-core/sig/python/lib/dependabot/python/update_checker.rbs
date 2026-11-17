@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_version: () -> (Gem::Version | nil)
+      def latest_resolvable_version: () -> (Gem::Version | nil)
+      def lowest_resolvable_security_fix_version: () -> (Gem::Version | nil)
+      def requirements_unlocked_or_can_be?: () -> (false | true)
+    end
+  end
+end

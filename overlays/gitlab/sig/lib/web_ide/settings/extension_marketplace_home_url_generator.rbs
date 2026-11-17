@@ -1,0 +1,7 @@
+module WebIde
+  module Settings
+    class ExtensionMarketplaceHomeUrlGenerator
+      def self.home_url: (untyped) -> ("" | String | nil)
+    end
+  end
+end

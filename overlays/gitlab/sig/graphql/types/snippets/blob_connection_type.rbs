@@ -1,0 +1,7 @@
+module Types
+  module Snippets
+    class BlobConnectionType < ::GraphQL::Types::Relay::BaseConnection
+      def unretrievable_blobs?: () -> (false | true)
+    end
+  end
+end

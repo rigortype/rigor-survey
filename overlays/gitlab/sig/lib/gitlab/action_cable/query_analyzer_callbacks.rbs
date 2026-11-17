@@ -1,0 +1,7 @@
+module Gitlab
+  module ActionCable
+    module QueryAnalyzerCallbacks
+      def self.wrapper: () -> Proc
+    end
+  end
+end

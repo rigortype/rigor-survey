@@ -1,0 +1,10 @@
+module Ci
+  module Catalog
+    module Resources
+      class ApplyCiCdCatalogSettingService
+        def initialize: (untyped, untyped, enabled: untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

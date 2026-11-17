@@ -1,0 +1,12 @@
+module Spree
+  module Api
+    module V3
+      module Admin
+        class ReportingResultSerializer
+          def initialize: (untyped, store: untyped, ?params: untyped) -> void
+          def to_h: () -> { meta: untyped, totals: untyped, rows: untyped }
+        end
+      end
+    end
+  end
+end

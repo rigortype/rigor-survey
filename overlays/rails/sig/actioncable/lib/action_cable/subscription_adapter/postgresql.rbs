@@ -1,0 +1,14 @@
+module ActionCable
+  module SubscriptionAdapter
+    class PostgreSQL < ::ActionCable::SubscriptionAdapter::Base
+      def initialize: (*untyped) -> void
+      def shutdown: () -> nil
+      class Listener < ::ActionCable::SubscriptionAdapter::SubscriberMap::Async
+        def initialize: (untyped, untyped) -> void
+        def shutdown: () -> nil
+        def add_channel: (untyped, untyped) -> top
+        def remove_channel: (untyped) -> top
+      end
+    end
+  end
+end

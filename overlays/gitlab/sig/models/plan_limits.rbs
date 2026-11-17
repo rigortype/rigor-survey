@@ -1,0 +1,3 @@
+class PlanLimits < ::ApplicationRecord
+  def dashboard_storage_limit_enabled?: () -> false
+end

@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        module Views
+          class Base
+            def self.title: () -> bot
+            def initialize: (databases: untyped, printer: untyped) -> void
+            def counts: () -> (Hash[untyped, untyped] | {})
+          end
+        end
+      end
+    end
+  end
+end

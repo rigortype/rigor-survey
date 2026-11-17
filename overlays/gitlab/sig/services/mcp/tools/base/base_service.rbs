@@ -1,0 +1,16 @@
+module Mcp
+  module Tools
+    module Base
+      class BaseService
+        def self.tool_aliases: () -> []
+        def initialize: (name: untyped) -> void
+        def input_schema: () -> bot
+        def to_h: () -> (Hash[untyped, untyped] | { name: untyped, description: bot, inputSchema: bot })
+        def icons: () -> [{ mimeType: "image/png", src: untyped, theme: "dark" }, { mimeType: "image/png", src: untyped, theme: "light" }]
+        def toolset: () -> :unassigned
+        def unlisted?: () -> false
+        def annotations: () -> {}
+      end
+    end
+  end
+end

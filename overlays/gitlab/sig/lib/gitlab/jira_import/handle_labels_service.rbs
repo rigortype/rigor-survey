@@ -1,0 +1,7 @@
+module Gitlab
+  module JiraImport
+    class HandleLabelsService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

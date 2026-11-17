@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    class GoWorkParser
+      def self.use_paths: (untyped) -> Array[untyped]
+    end
+  end
+end

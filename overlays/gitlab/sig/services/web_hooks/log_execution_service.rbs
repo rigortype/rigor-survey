@@ -1,0 +1,5 @@
+module WebHooks
+  class LogExecutionService
+    def initialize: (hook: untyped, log_data: untyped, response_category: untyped) -> void
+  end
+end

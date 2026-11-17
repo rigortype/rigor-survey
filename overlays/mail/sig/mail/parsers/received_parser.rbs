@@ -1,0 +1,19 @@
+module Mail
+  module Parsers
+    module ReceivedParser
+      def self.parse: (untyped) -> Mail::Parsers::ReceivedParser::ReceivedStruct
+      class ReceivedStruct < ::Struct[untyped]
+        def date: () -> untyped
+        def time: () -> untyped
+        def info: () -> untyped
+        def error: () -> untyped
+        def date=: (untyped) -> untyped
+        def time=: (untyped) -> untyped
+        def info=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?date: untyped, ?time: untyped, ?info: untyped, ?error: untyped) -> instance | (?untyped date, ?untyped time, ?untyped info, ?untyped error) -> instance
+        def self.[]: (?date: untyped, ?time: untyped, ?info: untyped, ?error: untyped) -> instance | (?untyped date, ?untyped time, ?untyped info, ?untyped error) -> instance
+      end
+    end
+  end
+end

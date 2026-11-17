@@ -1,0 +1,6 @@
+module Gitlab
+  module Qa
+    def self.user_agent: () -> (String | nil)
+    def self.request?: (untyped) -> (false | true)
+  end
+end

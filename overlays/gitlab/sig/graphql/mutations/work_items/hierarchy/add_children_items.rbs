@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module Hierarchy
+      class AddChildrenItems < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> { added_children: untyped, errors: Array[untyped] }
+      end
+    end
+  end
+end

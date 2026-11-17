@@ -1,0 +1,7 @@
+module Web
+  class NotificationSerializer < ::ActiveModel::Serializer[untyped]
+    def notification_id: () -> Integer
+    def notification_type: () -> String
+    def title: () -> String
+  end
+end

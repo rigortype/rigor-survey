@@ -1,0 +1,5 @@
+module Repositories
+  class ChangelogTagFinder
+    def initialize: (untyped, ?regex: untyped) -> void
+  end
+end

@@ -1,0 +1,18 @@
+module Gitlab
+  module GitalyClient
+    class OperationService
+      def initialize: (untyped) -> void
+      def rm_tag: (untyped, untyped) -> nil
+      def add_tag: (untyped, untyped, untyped, untyped) -> Gitlab::Git::Tag
+      def user_create_branch: (untyped, untyped, untyped, ?skip_ci: untyped) -> (Gitlab::Git::Branch | nil)
+      def user_update_branch: (untyped, untyped, untyped, untyped) -> nil
+      def user_merge_branch: (untyped, source_sha: untyped, target_branch: untyped, message: untyped, ?target_sha: untyped, ?sign: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_ff_branch: (untyped, source_sha: untyped, target_branch: untyped, ?target_sha: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_cherry_pick: (user: untyped, commit: untyped, branch_name: untyped, message: untyped, start_branch_name: untyped, start_repository: untyped, ?author_name: untyped, ?author_email: untyped, ?dry_run: untyped, ?target_sha: untyped, ?sign: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_revert: (user: untyped, commit: untyped, branch_name: untyped, message: untyped, start_branch_name: untyped, start_repository: untyped, ?dry_run: untyped, ?target_sha: untyped, ?sign: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_update_submodule: (user: untyped, submodule: untyped, commit_sha: untyped, branch: untyped, message: untyped, ?expected_old_oid: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_commit_files: (untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+      def user_commit_patches: (untyped, branch_name: untyped, patches: untyped, ?target_sha: untyped) -> (Gitlab::Git::OperationService::BranchUpdate | nil)
+    end
+  end
+end

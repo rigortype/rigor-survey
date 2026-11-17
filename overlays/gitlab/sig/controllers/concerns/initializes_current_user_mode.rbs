@@ -1,0 +1,3 @@
+module InitializesCurrentUserMode
+  def current_user_mode: () -> Gitlab::Auth::CurrentUserMode
+end

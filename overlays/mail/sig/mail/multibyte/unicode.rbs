@@ -1,0 +1,12 @@
+module Mail
+  module Multibyte
+    module Unicode
+      def in_char_class?: (untyped, untyped) -> (false | true)
+      def g_unpack: (untyped) -> Array[untyped]
+      class UnicodeDatabase
+        def self.dirname: () -> String
+        def self.filename: () -> String
+      end
+    end
+  end
+end

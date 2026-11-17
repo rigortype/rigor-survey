@@ -1,0 +1,10 @@
+module ActiveRecord
+  class Relation
+    class HashMerger
+      def initialize: (untyped, untyped) -> void
+    end
+    class Merger
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

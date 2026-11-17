@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class Registry < ::Backup::Tasks::Task
+      def self.id: () -> "registry"
+      def destination_path: () -> "registry.tar.gz"
+    end
+  end
+end

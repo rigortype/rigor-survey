@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    class ParallelDiff
+      def self.parallelize: (untyped) -> Array[untyped]
+      def initialize: (untyped) -> void
+      def parallelize: () -> Array[untyped]
+    end
+  end
+end

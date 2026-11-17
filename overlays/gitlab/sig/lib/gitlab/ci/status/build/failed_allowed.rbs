@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class FailedAllowed < ::Gitlab::Ci::Status::Extended
+          def label: () -> String
+          def icon: () -> "status_warning"
+          def group: () -> "failed-with-warnings"
+          def status_tooltip: () -> String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module RemoteMirrors
+  class HostKeysConverter
+    def initialize: (untyped, url: untyped) -> void
+    class InvalidHostKeyError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    class ImportIssueWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::Issue)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::IssueAndLabelLinksImporter)
+      def object_type: () -> :issue
+      def increment_object_counter?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Types
+  module Namespaces
+    module Metadata
+      def self.type_mappings: () -> Hash[singleton(Group) | singleton(::Namespaces::ProjectNamespace) | singleton(::Namespaces::UserNamespace), singleton(Types::Namespaces::Metadata::GroupNamespaceMetadataType) | singleton(Types::Namespaces::Metadata::ProjectNamespaceMetadataType) | singleton(Types::Namespaces::Metadata::UserNamespaceMetadataType)]
+      def self.resolve_type: (untyped, untyped) -> (singleton(Types::Namespaces::Metadata::GroupNamespaceMetadataType) | singleton(Types::Namespaces::Metadata::ProjectNamespaceMetadataType) | singleton(Types::Namespaces::Metadata::UserNamespaceMetadataType))
+    end
+  end
+end

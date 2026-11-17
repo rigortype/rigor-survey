@@ -1,0 +1,6 @@
+class FileSizeValidator < ::ActiveModel::EachValidator
+  def initialize: (untyped) -> void
+  def check_validity!: () -> Array[Symbol]
+  def validate_each: (untyped, untyped, untyped) -> Hash[Symbol, Symbol]
+  def help: () -> FileSizeValidator::Helper
+end

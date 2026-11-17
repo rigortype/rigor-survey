@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class TablesTruncate
+      def initialize: (database_name: untyped, ?min_batch_size: untyped, ?logger: untyped, ?until_table: untyped, ?dry_run: untyped) -> void
+      def execute: () -> Array[Array[Array[untyped]]]
+    end
+  end
+end

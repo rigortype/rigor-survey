@@ -1,0 +1,6 @@
+module PagesCore
+  class ExternalContentScanner
+    def initialize: (untyped) -> void
+    def results: () -> (Array[untyped] | nil)
+  end
+end

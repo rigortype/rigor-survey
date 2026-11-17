@@ -1,0 +1,5 @@
+class Jbuilder
+  class DependencyTracker
+    def initialize: (untyped, FakeTemplate, ?untyped) -> void
+  end
+end

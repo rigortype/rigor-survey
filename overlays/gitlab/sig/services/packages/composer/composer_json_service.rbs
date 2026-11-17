@@ -1,0 +1,7 @@
+module Packages
+  module Composer
+    class ComposerJsonService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Vite
+  class Tasks
+    def initialize: (config: untyped) -> void
+    def precompile: () -> nil
+    def clobber: () -> Array[untyped]
+  end
+end

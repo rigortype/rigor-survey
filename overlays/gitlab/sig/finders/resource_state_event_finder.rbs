@@ -1,0 +1,3 @@
+class ResourceStateEventFinder
+  def initialize: (untyped, untyped) -> void
+end

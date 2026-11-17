@@ -1,0 +1,7 @@
+module LooseForeignKeys
+  class TurboModificationTracker < ::LooseForeignKeys::ModificationTracker
+    def max_runtime: () -> ActiveSupport::Duration
+    def max_deletes: () -> 200000
+    def max_updates: () -> 150000
+  end
+end

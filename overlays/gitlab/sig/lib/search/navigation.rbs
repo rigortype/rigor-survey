@@ -1,0 +1,7 @@
+module Search
+  class Navigation
+    def initialize: (user: untyped, ?project: untyped, ?group: untyped, ?options: untyped) -> void
+    def tab_enabled_for_project?: (untyped) -> (false | true)
+    def tabs: () -> Hash[untyped, untyped]
+  end
+end

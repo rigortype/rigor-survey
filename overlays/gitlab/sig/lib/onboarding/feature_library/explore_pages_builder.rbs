@@ -1,0 +1,9 @@
+module Onboarding
+  module FeatureLibrary
+    class ExplorePagesBuilder
+      def self.available?: (user: untyped, resource: untyped) -> false
+      def initialize: (user: untyped, resource: untyped, panel: String) -> void
+      def execute: () -> { current_plan_context: untyped, pages: untyped }
+    end
+  end
+end

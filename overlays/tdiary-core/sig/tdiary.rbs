@@ -1,0 +1,11 @@
+module TDiary
+  def self.root: () -> String
+  def self.library_root: () -> String
+  def self.server_root: () -> String
+  def self.configuration: () -> TDiary::Configuration
+  class ForceRedirect < ::StandardError
+    def initialize: (untyped) -> void
+  end
+  class TDiaryError < ::StandardError
+  end
+end

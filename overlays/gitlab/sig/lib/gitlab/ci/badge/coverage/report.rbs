@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Coverage
+        class Report < ::Gitlab::Ci::Badge::Base
+          def initialize: (untyped, String, ?opts: { job: untyped }) -> void
+          def entity: () -> "coverage"
+          def metadata: () -> Gitlab::Ci::Badge::Coverage::Metadata
+          def template: () -> Gitlab::Ci::Badge::Coverage::Template
+          def ref: () -> "main"
+          def customization: () -> { key_width: untyped, key_text: untyped, min_good: untyped, min_acceptable: untyped, min_medium: untyped }
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,74 @@
+module Concurrent
+  module ErlangActor
+    def self.create: (untyped, untyped, untyped, untyped, untyped) -> (Concurrent::ErlangActor::OnPool | Concurrent::ErlangActor::OnThread)
+    class Pid < ::Concurrent::Synchronization::Object
+      def to_s: () -> String
+    end
+    module Functions
+      def terminate_actor: (untyped, untyped) -> true
+      def default_actor_executor: () -> :io
+      def default_executor: () -> :io
+    end
+    class Token
+      def initialize: (untyped) -> void
+    end
+    module EnvironmentConstants
+      class AbstractLogicOperationMatcher
+        def self.[]: (*untyped) -> Concurrent::ErlangActor::EnvironmentConstants::AbstractLogicOperationMatcher
+        def initialize: (*untyped) -> void
+      end
+    end
+    class Run
+      def self.[]: (untyped) -> Concurrent::ErlangActor::Run
+      def initialize: (untyped) -> void
+    end
+    class AbstractActor < ::Concurrent::Synchronization::Object
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def pid: () -> Concurrent::ErlangActor::Pid
+      def traps?: () -> (false | true)
+      def trap: (?untyped) -> (false | true)
+      def on: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> [untyped, untyped]
+      def link: (untyped) -> true
+      def unlink: (untyped) -> true
+      def linked?: (untyped) -> (false | true)
+      def monitor: (untyped) -> Concurrent::ErlangActor::Reference
+      def demonitor: (untyped, *untyped) -> (false | true)
+      def monitoring?: (untyped) -> (false | true)
+      def reply_resolution: (untyped, untyped, untyped) -> (false | true)
+    end
+    class OnPool < ::Concurrent::ErlangActor::AbstractActor
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def receive: (*untyped, ?timeout: untyped, ?timeout_value: untyped, ?keep: untyped) ?{ (*untyped) -> untyped } -> bot
+    end
+    class OnThread < ::Concurrent::ErlangActor::AbstractActor
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def run: (*untyped) ?{ (*untyped) -> untyped } -> Thread
+    end
+    module HasFrom
+      def initialize: (untyped) -> void
+      def hash: () -> Integer
+    end
+    module HasReason
+      def initialize: (untyped, untyped) -> void
+      def to_ary: () -> [untyped, untyped]
+      def hash: () -> Integer
+    end
+    module HasReference
+      def initialize: (untyped, untyped) -> void
+      def to_ary: () -> [untyped, untyped]
+      def hash: () -> Integer
+    end
+    class Terminated
+      def initialize: (untyped, Concurrent::ErlangActor::NoActor | Symbol) -> void
+      def to_ary: () -> [untyped, untyped]
+      def hash: () -> Integer
+      def reason: () -> (:boom | :continued | :kill | :normal | Concurrent::ErlangActor::NoActor)
+    end
+    class Down
+      def initialize: (untyped, untyped, Concurrent::ErlangActor::NoActor | Symbol) -> void
+      def to_ary: () -> [untyped, untyped, untyped]
+      def hash: () -> Integer
+      def info: () -> (:normal | Concurrent::ErlangActor::NoActor)
+    end
+  end
+end

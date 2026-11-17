@@ -1,0 +1,4 @@
+class ResistorColorTrio
+  def initialize: (untyped) -> void
+  def label: () -> String
+end

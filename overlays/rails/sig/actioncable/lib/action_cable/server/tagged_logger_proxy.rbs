@@ -1,0 +1,7 @@
+module ActionCable
+  module Server
+    class TaggedLoggerProxy
+      def initialize: (untyped, tags: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module ExternalAuthorization
+    class Access
+      def initialize: (untyped, String) -> void
+      def load!: () -> Gitlab::ExternalAuthorization::Access
+      def label: () -> "dummy_label"
+      def load_type: () -> (:cache | :request)
+    end
+  end
+end

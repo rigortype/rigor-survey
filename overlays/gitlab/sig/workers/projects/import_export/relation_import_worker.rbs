@@ -1,0 +1,8 @@
+module Projects
+  module ImportExport
+    class RelationImportWorker
+      def tracker: () -> Projects::ImportExport::RelationImportTracker
+      def current_user: () -> User
+    end
+  end
+end

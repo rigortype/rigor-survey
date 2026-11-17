@@ -1,0 +1,6 @@
+module Faraday
+  module FlatParamsEncoder
+    def self.encode: (untyped) -> (String | nil)
+    def self.decode: (untyped) -> (Hash[untyped, untyped] | nil)
+  end
+end

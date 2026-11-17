@@ -1,0 +1,5 @@
+module Mail
+  class SubjectField < ::Mail::NamedUnstructuredField
+    def self.singular?: () -> true
+  end
+end

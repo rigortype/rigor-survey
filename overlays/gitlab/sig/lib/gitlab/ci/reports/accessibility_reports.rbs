@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      class AccessibilityReports
+        def scans_count: () -> Integer
+        def passes_count: () -> Integer
+        def all_errors: () -> Array[untyped]
+        def urls: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

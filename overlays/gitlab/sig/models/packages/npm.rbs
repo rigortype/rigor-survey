@@ -1,0 +1,5 @@
+module Packages
+  module Npm
+    def self.table_name_prefix: () -> "packages_npm_"
+  end
+end

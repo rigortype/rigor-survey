@@ -1,0 +1,5 @@
+module AbstractController
+  module Rendering
+    def view_assigns: () -> Hash[untyped, untyped]
+  end
+end

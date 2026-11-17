@@ -1,0 +1,10 @@
+module Concurrent
+  module Collection
+    class JavaNonConcurrentPriorityQueue
+      def initialize: (?untyped) -> void
+      def clear: () -> true
+      def delete: (untyped) -> (false | true)
+      def self.from_list: (untyped, ?untyped) -> Concurrent::Collection::JavaNonConcurrentPriorityQueue
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class IndividualNoteDiscussion < ::Discussion
+  def self.note_class: () -> singleton(Note)
+  def individual_note?: () -> true
+end

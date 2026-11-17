@@ -1,0 +1,15 @@
+module Dependabot
+  module CommandHelpers
+    def self.capture3_with_timeout: (untyped, ?stdin_data: untyped, ?stderr_to_stdout: untyped, ?timeout: untyped, ?output_observer: untyped) -> [untyped, untyped, untyped, Float]
+    def self.open_process: (untyped) -> [IO, IO, Process::Waiter]
+    def self.extract_environment: (untyped) -> (::Environment | {})
+    def self.extract_options: (untyped) -> (SpawnOptions | {})
+    def self.command_for_popen: (untyped) -> (Array[Array[String] | String] | String)
+    def self.terminate_process: (untyped) -> (Integer | nil | true)
+    def self.process_alive?: (untyped) -> (false | true)
+    def self.escape_command: (untyped) -> String
+    class ProcessStatus
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

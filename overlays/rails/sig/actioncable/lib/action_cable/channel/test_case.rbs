@@ -1,0 +1,12 @@
+module ActionCable
+  module Channel
+    class NonInferrableChannelError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+    class TestCase < ::ActionCable::Connection::TestCase
+      module Behavior
+        def testserver: () -> ActionCable::Connection::TestServer
+      end
+    end
+  end
+end

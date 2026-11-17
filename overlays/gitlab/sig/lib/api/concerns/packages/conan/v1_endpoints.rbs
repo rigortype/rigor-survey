@@ -1,0 +1,11 @@
+module API
+  module Concerns
+    module Packages
+      module Conan
+        module V1Endpoints
+          def x_conan_server_capabilities_header: () -> ["revisions"]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class ImportExportCleanUpService
+  def initialize: (?untyped) -> void
+  def path: () -> String
+end

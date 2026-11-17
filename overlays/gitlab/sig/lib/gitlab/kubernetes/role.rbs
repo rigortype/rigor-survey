@@ -1,0 +1,7 @@
+module Gitlab
+  module Kubernetes
+    class Role
+      def initialize: (name: untyped, namespace: untyped, rules: untyped) -> void
+    end
+  end
+end

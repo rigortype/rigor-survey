@@ -1,0 +1,10 @@
+module Faraday
+  module Utils
+    class ParamsHash < ::Hash[untyped, untyped]
+      def update: (untyped) -> Faraday::Utils::ParamsHash
+      def merge: (untyped) -> Faraday::Utils::ParamsHash
+      def replace: (untyped) -> Faraday::Utils::ParamsHash
+      def merge_query: (untyped, ?untyped) -> Faraday::Utils::ParamsHash
+    end
+  end
+end

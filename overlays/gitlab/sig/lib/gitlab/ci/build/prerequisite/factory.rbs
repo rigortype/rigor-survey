@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Build
+      module Prerequisite
+        class Factory
+          def self.prerequisites: () -> [singleton(Gitlab::Ci::Build::Prerequisite::KubernetesNamespace), singleton(Gitlab::Ci::Build::Prerequisite::ManagedResource)]
+          def initialize: (untyped) -> void
+          def unmet: () -> Array[Gitlab::Ci::Build::Prerequisite::KubernetesNamespace | Gitlab::Ci::Build::Prerequisite::ManagedResource]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class Account < ::ApplicationRecord
+  module Mappings
+    def preload_relations!: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> (Hash[untyped, untyped] | { blocked_by: untyped, following: untyped })
+  end
+end

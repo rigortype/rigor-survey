@@ -1,0 +1,6 @@
+module Ci
+  class BuildDependencies
+    def initialize: (untyped) -> void
+    def invalid: () -> Array[untyped]
+  end
+end

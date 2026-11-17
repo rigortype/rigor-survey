@@ -1,0 +1,3 @@
+module ResolvesIds
+  def resolve_ids: (untyped) -> Array[untyped]
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  class Shell
+    def self.verify_api_request: (untyped) -> ([untyped, Hash[String, untyped]] | nil)
+    def self.secret_token: () -> String
+    def self.ensure_secret_token!: () -> top
+    def self.version_required: () -> String
+    def self.gitlab_shell_path: () -> String
+    def self.gitlab_shell_version_file: () -> String
+    def self.generate_and_link_secret_token: () -> top
+  end
+end

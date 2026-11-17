@@ -1,0 +1,21 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        class Context
+          def initialize: (?project: untyped, ?pipeline: untyped, ?sha: untyped, ?user: untyped, ?parent_pipeline: untyped, ?variables: untyped, ?pipeline_config: untyped, ?logger: untyped, ?pipeline_policy_context: untyped, ?component_data: untyped, ?parent_file: untyped, ?allowed_include_types: [Symbol], ?bundle: untyped) -> void
+          def mutate: (?untyped) -> Gitlab::Ci::Config::External::Context
+          def check_execution_time!: () -> nil
+          def sentry_payload: () -> { user: String, project: String, include_type_counts: Hash[untyped, untyped] }
+          def mark_all_includes_filtered_by_rules!: () -> true
+          def internal_include?: () -> (false | true)
+          class HTTPTimeoutError < ::StandardError
+            def initialize: (location: untyped, attempts: untyped) -> void
+            def user_message: () -> String
+            def sentry_extra_data: () -> { remote_location: untyped }
+          end
+        end
+      end
+    end
+  end
+end

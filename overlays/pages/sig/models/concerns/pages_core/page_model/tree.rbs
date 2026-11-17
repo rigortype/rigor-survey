@@ -1,0 +1,10 @@
+module PagesCore
+  module PageModel
+    module Tree
+      module InstanceMethods
+        def ancestors: () -> Array[untyped]
+        def self_and_ancestors: () -> Array[untyped]
+      end
+    end
+  end
+end

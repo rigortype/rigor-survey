@@ -1,0 +1,13 @@
+module BulkImports
+  module Common
+    module Extractors
+      class JsonExtractor
+        def initialize: (relation: String) -> void
+        def extract: (untyped) -> BulkImports::Pipeline::ExtractedData
+        def remove_tmpdir: () -> top
+        def relation: () -> "self"
+        def tmpdir: () -> String
+      end
+    end
+  end
+end

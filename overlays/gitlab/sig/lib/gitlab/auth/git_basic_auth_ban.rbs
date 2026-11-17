@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    module GitBasicAuthBan
+      def self.reset_limiter!: () -> nil
+    end
+  end
+end

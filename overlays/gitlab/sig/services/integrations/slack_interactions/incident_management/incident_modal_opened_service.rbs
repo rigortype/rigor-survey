@@ -1,0 +1,11 @@
+module Integrations
+  module SlackInteractions
+    module IncidentManagement
+      class IncidentModalOpenedService
+        def initialize: (untyped, untyped, untyped) -> void
+        def execute: () -> ServiceResponse
+        def self.cache_build_key: (untyped) -> String
+      end
+    end
+  end
+end

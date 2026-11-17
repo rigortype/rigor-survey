@@ -1,0 +1,4 @@
+class UserSettingsSerializer
+  def self.load: (untyped) -> UserSettings
+  def self.dump: (untyped) -> String
+end

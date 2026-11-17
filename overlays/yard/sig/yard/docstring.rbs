@@ -1,0 +1,9 @@
+module YARD
+  class Docstring < ::String
+    def initialize: (?untyped, ?untyped) -> void
+    def to_raw: () -> String
+    def tags: (?untyped) -> Array[untyped]
+    def delete_tag_if: () ?{ (*untyped) -> untyped } -> Array[untyped]
+    def ref_tags: () -> (Array[untyped] | nil)
+  end
+end

@@ -1,0 +1,7 @@
+module BulkImports
+  module Pipeline
+    class ExtractedData
+      def initialize: (?data: untyped, ?page_info: untyped) -> void
+    end
+  end
+end

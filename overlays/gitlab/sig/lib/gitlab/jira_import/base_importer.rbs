@@ -1,0 +1,8 @@
+module Gitlab
+  module JiraImport
+    class BaseImporter
+      def initialize: (untyped, ?untyped) -> void
+      def formatter: () -> Gitlab::ImportFormatter
+    end
+  end
+end

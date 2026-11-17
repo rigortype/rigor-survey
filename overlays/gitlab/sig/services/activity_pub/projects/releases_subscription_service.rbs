@@ -1,0 +1,8 @@
+module ActivityPub
+  module Projects
+    class ReleasesSubscriptionService
+      def initialize: (untyped, untyped) -> void
+      def errors: () -> Array[untyped]
+    end
+  end
+end

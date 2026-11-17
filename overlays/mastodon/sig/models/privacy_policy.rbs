@@ -1,0 +1,3 @@
+class PrivacyPolicy < ::ActiveModelSerializers::Model
+  def self.current: () -> PrivacyPolicy
+end

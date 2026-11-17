@@ -1,0 +1,7 @@
+module YARD
+  module Server
+    class DocServerSerializer < ::YARD::Serializers::FileSystemSerializer
+      def initialize: (?untyped) -> void
+    end
+  end
+end

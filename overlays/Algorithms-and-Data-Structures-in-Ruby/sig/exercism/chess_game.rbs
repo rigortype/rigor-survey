@@ -1,0 +1,4 @@
+module Chess
+  def self.valid_square?: (untyped, untyped) -> (false | true)
+  def self.move_message: (untyped, untyped, untyped) -> String
+end

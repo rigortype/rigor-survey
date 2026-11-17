@@ -1,0 +1,12 @@
+module Dependabot
+  module NpmAndYarn
+    class FileParser < ::Dependabot::FileParsers::Base
+      class JsonLock
+        def initialize: (untyped, ?dealias_packages: untyped) -> void
+        def parsed: () -> (::Record | nil)
+        def dependencies: () -> Dependabot::FileParsers::Base::DependencySet
+        def details: (untyped, untyped, untyped) -> (Dependabot::Package::NpmLockfileDetails | nil)
+      end
+    end
+  end
+end

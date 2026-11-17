@@ -1,0 +1,8 @@
+module REST
+  module Admin
+    class AccountSerializer < ::ActiveModel::Serializer[untyped]
+      def id: () -> String
+      def account: () -> Account
+    end
+  end
+end

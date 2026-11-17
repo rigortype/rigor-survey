@@ -1,0 +1,9 @@
+module Dependabot
+  module GithubActions
+    class WorkflowFile
+      class UsesDeclaration
+        def initialize: (value: untyped, path: untyped, value_node: untyped, source_node: untyped, mapping_node: untyped, steps_sequence: untyped, steps_key_node: untyped, sequence_item: untyped, sequence_item_index: untyped) -> void
+      end
+    end
+  end
+end

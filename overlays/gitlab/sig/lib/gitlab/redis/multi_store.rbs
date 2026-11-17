@@ -1,0 +1,22 @@
+module Gitlab
+  module Redis
+    class MultiStore
+      def self.create_using_pool: (untyped, untyped, untyped) -> Gitlab::Redis::MultiStore
+      def self.create_using_client: (untyped, untyped, untyped) -> Gitlab::Redis::MultiStore
+      def initialize: (primary_pool: untyped, secondary_pool: untyped, primary_store: untyped, secondary_store: untyped, instance_name: untyped) -> void
+      def respond_to_missing?: (untyped, ?untyped) -> true
+      def feature_flag_type: (untyped) -> (:undefined | nil)
+      class PipelinedDiffError < ::StandardError
+        def initialize: (untyped, untyped) -> void
+        def message: () -> String
+      end
+      class MethodMissingError < ::StandardError
+        def initialize: (untyped) -> void
+        def message: () -> String
+      end
+      class NestedReadonlyPipelineError < ::StandardError
+        def message: () -> "Nested use of with_readonly_pipeline is detected."
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module EtagCaching
+    module Router
+      class Rails
+        def self.all_routes: () -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+      end
+    end
+  end
+end

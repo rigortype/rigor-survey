@@ -1,0 +1,16 @@
+module ActiveRecord
+  class Relation
+    def initialize: (untyped, ?table: untyped, ?predicate_builder: untyped, ?values: untyped) -> void
+    def explain: (*untyped) -> ActiveRecord::Relation::ExplainProxy
+    def scheduled?: () -> (false | true)
+    def blank?: () -> bool
+    def loaded: () -> (false | nil | true)
+    class ExplainProxy
+      def initialize: (untyped, untyped) -> void
+    end
+    class StrictLoadingScope
+      def self.empty_scope?: () -> true
+      def self.strict_loading_value: () -> true
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class ServiceDiscovery
+        class Sampler
+          def initialize: (max_replica_pools: untyped, ?seed: untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Clusters
+  module Providers
+    class Gcp < ::ApplicationRecord
+      def has_rbac_enabled?: () -> (false | true)
+    end
+  end
+end

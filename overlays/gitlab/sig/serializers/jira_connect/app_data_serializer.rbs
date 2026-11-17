@@ -1,0 +1,6 @@
+module JiraConnect
+  class AppDataSerializer
+    def initialize: (untyped) -> void
+    def as_json: () -> { groups_path: untyped, subscriptions: untyped, subscriptions_path: untyped }
+  end
+end

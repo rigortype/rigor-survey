@@ -1,0 +1,10 @@
+module ActionDispatch
+  class RemoteIp
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    class GetIp
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class IpSpoofAttackError < ::StandardError
+    end
+  end
+end

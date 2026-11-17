@@ -1,0 +1,31 @@
+module TDiary
+  class TDiaryAdmin < ::TDiary::TDiaryAuthorOnlyBase
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryForm < ::TDiary::TDiaryAdmin
+    def csrf_protection_get_is_okay: () -> true
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryEdit < ::TDiary::TDiaryAdmin
+    def csrf_protection_get_is_okay: () -> true
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryPreview < ::TDiary::TDiaryAdmin
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryUpdate < ::TDiary::TDiaryAdmin
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryAppend < ::TDiary::TDiaryUpdate
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryReplace < ::TDiary::TDiaryUpdate
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class TDiaryRetry < ::TDiary::TDiaryAuthorOnlyBase
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+  end
+  class TDiaryShowComment < ::TDiary::TDiaryAdmin
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

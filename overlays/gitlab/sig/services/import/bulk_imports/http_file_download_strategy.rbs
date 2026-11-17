@@ -1,0 +1,9 @@
+module Import
+  module BulkImports
+    class HttpFileDownloadStrategy < ::Import::BulkImports::FileDownloadStrategy
+      def initialize: (context: untyped, relative_url: String, ?allowed_content_types: [String]) -> void
+      def relative_url: () -> "/test"
+      def allowed_content_types: () -> ["application/gzip"]
+    end
+  end
+end

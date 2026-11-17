@@ -1,0 +1,6 @@
+module InstanceSshCertificates
+  class DestroyService
+    def initialize: (untyped, current_user: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

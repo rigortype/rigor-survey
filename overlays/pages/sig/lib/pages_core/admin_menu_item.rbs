@@ -1,0 +1,6 @@
+module PagesCore
+  class AdminMenuItem
+    def self.register: (untyped, untyped, ?untyped, ?untyped) -> PagesCore::AdminMenuItem
+    def initialize: (untyped, untyped, ?untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,10 @@
+module ActiveRecord
+  module QueryLogs
+    module LegacyFormatter
+      def self.format: (untyped, untyped) -> String
+    end
+    class SQLCommenter
+      def self.format: (untyped, untyped) -> String
+    end
+  end
+end

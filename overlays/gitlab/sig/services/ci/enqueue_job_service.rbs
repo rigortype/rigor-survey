@@ -1,0 +1,5 @@
+module Ci
+  class EnqueueJobService
+    def initialize: (untyped, current_user: untyped, ?variables: untyped, ?inputs: untyped) -> void
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketImport
+    module StageMethods
+      def abort_on_failure: () -> false
+    end
+  end
+end

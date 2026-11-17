@@ -1,0 +1,5 @@
+module Observability
+  class O11yProvisioningClient
+    def provision_namespace: (untyped, untyped) -> ({ success: false, error: "API call failed for observability group setting" } | { success: false, error: "Observability provisioner is not configured" } | { success: true, settings_params: { o11y_service_name: untyped, o11y_service_user_email: String, o11y_service_password: String, o11y_service_post_message_encryption_key: String } })
+  end
+end

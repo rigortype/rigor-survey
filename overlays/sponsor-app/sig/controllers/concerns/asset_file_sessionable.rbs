@@ -1,0 +1,3 @@
+module AssetFileSessionable
+  def update: () -> void
+end

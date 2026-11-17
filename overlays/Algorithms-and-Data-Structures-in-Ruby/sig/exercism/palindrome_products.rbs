@@ -1,0 +1,6 @@
+class Palindromes
+  def initialize: (max_factor: untyped, ?min_factor: untyped) -> void
+  def generate: () -> Array[untyped]
+  def largest: () -> Struct[untyped]
+  def smallest: () -> Struct[untyped]
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Build
+      class Rules
+        class Rule
+          class Clause
+            def self.compile_regexp: (untyped, ?timeout: untyped) -> Regexp
+            def initialize: (untyped) -> void
+          end
+        end
+      end
+    end
+  end
+end

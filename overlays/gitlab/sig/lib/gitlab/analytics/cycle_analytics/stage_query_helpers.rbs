@@ -1,0 +1,11 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageQueryHelpers
+        def zero_interval: () -> Arel::Nodes::NamedFunction
+        def round_duration_to_seconds: () -> Arel::Nodes::NamedFunction
+        def duration: () -> Arel::Nodes::Subtraction
+      end
+    end
+  end
+end

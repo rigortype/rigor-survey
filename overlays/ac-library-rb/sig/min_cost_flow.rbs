@@ -1,0 +1,10 @@
+class MinCostFlow
+  def initialize: (Integer) -> void
+  def add_edge: (Integer, Integer, Integer, Integer) -> Integer
+  def add_edges: (untyped) -> MinCostFlow
+  def get_edge: (Integer) -> [untyped, untyped, untyped, untyped, untyped]
+  def edges: () -> Array[[untyped, untyped, untyped, untyped, untyped]]
+  def flow: (Integer, Integer, ?Integer) -> ([0, 0] | [untyped, untyped] | nil)
+  def dual_ref: (untyped, untyped) -> (false | true)
+  def slope: (Integer, Integer, ?Integer) -> Array[[0, 0] | [untyped, untyped]]
+end

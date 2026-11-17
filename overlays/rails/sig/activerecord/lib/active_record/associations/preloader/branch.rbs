@@ -1,0 +1,11 @@
+module ActiveRecord
+  module Associations
+    class Preloader
+      class Branch
+        def initialize: (association: untyped, children: untyped, parent: untyped, associate_by_default: untyped, scope: untyped) -> void
+        def root?: () -> (false | true)
+        def grouped_records: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

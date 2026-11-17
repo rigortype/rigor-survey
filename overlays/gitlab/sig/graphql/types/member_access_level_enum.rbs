@@ -1,0 +1,5 @@
+module Types
+  class MemberAccessLevelEnum < ::Types::BaseEnum
+    def self.descriptions: () -> Hash[0 | 10 | 15 | 20 | 25 | 30 | 40 | 50, untyped]
+  end
+end

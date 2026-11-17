@@ -1,0 +1,11 @@
+module Dependabot
+  module Uv
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PythonRequirementParser
+        def initialize: (dependency_files: untyped) -> void
+        def user_specified_requirements: () -> Array[String]
+        def imputed_requirements: () -> Array[untyped]
+      end
+    end
+  end
+end

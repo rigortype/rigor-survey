@@ -1,0 +1,6 @@
+module MergeRequests
+  class VersionedMergeRequest < ::SimpleDelegator
+    def self.from_diff_options: (untyped, untyped) -> MergeRequests::VersionedMergeRequest
+    def initialize: (untyped, ?version_params: ({ diff_id: Integer } | { diff_id: Integer, start_sha: String })) -> void
+  end
+end

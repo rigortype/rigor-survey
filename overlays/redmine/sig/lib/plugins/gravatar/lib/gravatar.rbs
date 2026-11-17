@@ -1,0 +1,6 @@
+module GravatarHelper
+  module PublicMethods
+    def gravatar_api_url: (untyped) -> String
+    def gravatar_url: (untyped, ?untyped) -> String
+  end
+end

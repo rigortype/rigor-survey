@@ -1,0 +1,12 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class NpmLockfileUpdater
+        def initialize: (lockfile: untyped, dependencies: untyped, dependency_files: untyped, credentials: untyped, ?security_updates_only: untyped, ?release_age_days: untyped) -> void
+        def updated_lockfile: () -> Dependabot::DependencyFile
+        def updated_package_json_files: () -> Hash[Dependabot::DependencyFile, String]
+        def updated_lockfile_reponse: (untyped) -> bot
+      end
+    end
+  end
+end

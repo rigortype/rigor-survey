@@ -1,0 +1,7 @@
+module PagesCore
+  module PageModel
+    module Templateable
+      def template_config: () -> PagesCore::Templates::TemplateConfiguration
+    end
+  end
+end

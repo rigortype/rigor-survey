@@ -1,0 +1,10 @@
+module Dependabot
+  module Deno
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Deno::Version
+      def to_s: () -> String
+      def inspect: () -> String
+    end
+  end
+end

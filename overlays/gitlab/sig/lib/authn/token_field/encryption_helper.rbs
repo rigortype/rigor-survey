@@ -1,0 +1,8 @@
+module Authn
+  module TokenField
+    class EncryptionHelper
+      def self.encrypt_token: (untyped) -> String
+      def self.nonce_for: (untyped) -> String
+    end
+  end
+end

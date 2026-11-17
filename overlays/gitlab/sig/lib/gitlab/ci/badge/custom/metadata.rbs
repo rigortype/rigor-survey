@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Custom
+        class Metadata < ::Gitlab::Ci::Badge::Metadata
+          def initialize: (untyped) -> void
+          def title: () -> "custom"
+        end
+      end
+    end
+  end
+end

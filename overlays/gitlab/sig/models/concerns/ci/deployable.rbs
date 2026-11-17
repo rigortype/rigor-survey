@@ -1,0 +1,7 @@
+module Ci
+  module Deployable
+    def deployment_status: () -> (:canceled | :creating | :failed | :last | :out_of_date | nil)
+    def successful_deployment_status: () -> (:last | :out_of_date)
+    def environment_status: () -> (EnvironmentStatus | nil)
+  end
+end

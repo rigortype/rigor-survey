@@ -1,0 +1,16 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PnpmLockfileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, repo_contents_path: untyped, credentials: untyped, ?security_updates_only: untyped, ?release_age_days: untyped) -> void
+        def updated_pnpm_lock_content: (untyped, ?updated_pnpm_workspace_content: untyped) -> String
+        def run_command_under_release_age_gate: (untyped, ?untyped) -> (String | nil)
+        def error_handler: () -> ::PnpmErrorHandler
+      end
+    end
+    class PnpmErrorHandler
+      def initialize: (dependencies: untyped, dependency_files: untyped) -> void
+      def handle_pnpm_error: (untyped) -> nil
+    end
+  end
+end

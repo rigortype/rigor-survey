@@ -1,0 +1,55 @@
+module Backup
+  class Options
+    def initialize: (?backup_id: untyped, ?previous_backup: untyped, ?incremental: untyped, ?force: untyped, ?strategy: untyped, ?skippable_tasks: untyped, ?skippable_operations: untyped, ?max_parallelism: untyped, ?max_storage_parallelism: untyped, ?repository_storages: untyped, ?repository_paths: untyped, ?skip_repository_paths: untyped, ?repositories_server_side_backup: (false | true), ?remote_directory: untyped, ?compression_options: untyped, ?gzip_rsyncable: untyped, ?container_registry_bucket: untyped, ?service_account_file: untyped, ?skip_storage_check: (false | true)) -> void
+    def serialize_skippables: () -> String
+    def skip_task?: (untyped) -> (false | true)
+    class SkippableTasks < ::Struct[untyped]
+      def db: () -> untyped
+      def uploads: () -> untyped
+      def builds: () -> untyped
+      def artifacts: () -> untyped
+      def lfs: () -> untyped
+      def terraform_state: () -> untyped
+      def registry: () -> untyped
+      def pages: () -> untyped
+      def repositories: () -> untyped
+      def packages: () -> untyped
+      def ci_secure_files: () -> untyped
+      def agent_plan_content: () -> untyped
+      def ci_catalog_bundles: () -> untyped
+      def external_diffs: () -> untyped
+      def db=: (untyped) -> untyped
+      def uploads=: (untyped) -> untyped
+      def builds=: (untyped) -> untyped
+      def artifacts=: (untyped) -> untyped
+      def lfs=: (untyped) -> untyped
+      def terraform_state=: (untyped) -> untyped
+      def registry=: (untyped) -> untyped
+      def pages=: (untyped) -> untyped
+      def repositories=: (untyped) -> untyped
+      def packages=: (untyped) -> untyped
+      def ci_secure_files=: (untyped) -> untyped
+      def agent_plan_content=: (untyped) -> untyped
+      def ci_catalog_bundles=: (untyped) -> untyped
+      def external_diffs=: (untyped) -> untyped
+      def self.new: (?db: untyped, ?uploads: untyped, ?builds: untyped, ?artifacts: untyped, ?lfs: untyped, ?terraform_state: untyped, ?registry: untyped, ?pages: untyped, ?repositories: untyped, ?packages: untyped, ?ci_secure_files: untyped, ?agent_plan_content: untyped, ?ci_catalog_bundles: untyped, ?external_diffs: untyped) -> instance
+      def self.[]: (?db: untyped, ?uploads: untyped, ?builds: untyped, ?artifacts: untyped, ?lfs: untyped, ?terraform_state: untyped, ?registry: untyped, ?pages: untyped, ?repositories: untyped, ?packages: untyped, ?ci_secure_files: untyped, ?agent_plan_content: untyped, ?ci_catalog_bundles: untyped, ?external_diffs: untyped) -> instance
+    end
+    class SkippableOperations < ::Struct[untyped]
+      def archive: () -> untyped
+      def remote_storage: () -> untyped
+      def archive=: (untyped) -> untyped
+      def remote_storage=: (untyped) -> untyped
+      def self.new: (?archive: untyped, ?remote_storage: untyped) -> instance
+      def self.[]: (?archive: untyped, ?remote_storage: untyped) -> instance
+    end
+    class CompressionOptions < ::Struct[untyped]
+      def compression_cmd: () -> untyped
+      def decompression_cmd: () -> untyped
+      def compression_cmd=: (untyped) -> untyped
+      def decompression_cmd=: (untyped) -> untyped
+      def self.new: (?compression_cmd: untyped, ?decompression_cmd: untyped) -> instance
+      def self.[]: (?compression_cmd: untyped, ?decompression_cmd: untyped) -> instance
+    end
+  end
+end

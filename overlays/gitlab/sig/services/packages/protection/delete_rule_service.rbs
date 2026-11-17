@@ -1,0 +1,8 @@
+module Packages
+  module Protection
+    class DeleteRuleService
+      def initialize: (untyped, current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

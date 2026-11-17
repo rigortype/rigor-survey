@@ -1,0 +1,9 @@
+module Mutations
+  module Clusters
+    module Agents
+      class Create < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, name: untyped) -> { cluster_agent: untyped, errors: Array[untyped] }
+      end
+    end
+  end
+end

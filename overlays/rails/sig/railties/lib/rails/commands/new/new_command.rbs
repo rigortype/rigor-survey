@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    class NewCommand < ::Rails::Command::Base
+      def perform: (*untyped) -> bot
+    end
+  end
+end

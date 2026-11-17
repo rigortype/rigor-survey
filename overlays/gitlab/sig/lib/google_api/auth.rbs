@@ -1,0 +1,6 @@
+module GoogleApi
+  class Auth
+    def initialize: (untyped, untyped, ?state: untyped) -> void
+    def get_token: (untyped) -> [untyped, untyped]
+  end
+end

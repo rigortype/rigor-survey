@@ -1,0 +1,9 @@
+module Trends
+  def self.table_name_prefix: () -> "trends_"
+  def self.links: () -> Trends::Links
+  def self.tags: () -> Trends::Tags
+  def self.statuses: () -> Trends::Statuses
+  def self.register!: (untyped) -> Array[untyped]
+  def self.refresh!: () -> Array[untyped]
+  def self.available_locales: () -> Array[String]
+end

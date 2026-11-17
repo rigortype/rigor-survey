@@ -1,0 +1,9 @@
+module Gitlab
+  module Instrumentation
+    class Openbao
+      def self.operation_for: (untyped) -> ("auth/other" | "other" | "sys/other" | String)
+      def self.sys_operation: (untyped) -> ("sys/other" | String)
+      def self.auth_operation: (untyped) -> ("auth/other" | String)
+    end
+  end
+end

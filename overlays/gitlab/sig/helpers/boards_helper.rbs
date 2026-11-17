@@ -1,0 +1,3 @@
+module BoardsHelper
+  def board_data: () -> { board_id: untyped, disabled: untyped, root_path: untyped, full_path: untyped, can_update: untyped, can_admin_list: untyped, can_admin_board: untyped, time_tracking_limit_to_hours: untyped, parent: untyped, labels_manage_path: untyped, releases_fetch_path: untyped, board_type: untyped, has_missing_boards: untyped, multiple_boards_available: untyped, board_base_url: untyped, wi: untyped }
+end

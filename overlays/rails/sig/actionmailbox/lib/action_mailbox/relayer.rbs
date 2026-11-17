@@ -1,0 +1,16 @@
+module ActionMailbox
+  class Relayer
+    def initialize: (url: untyped, ?username: untyped, password: untyped) -> void
+    def relay: (untyped) -> ActionMailbox::Relayer::Result
+    def uri: () -> URI::Generic
+    class Result < ::Struct[untyped]
+      def status_code: () -> untyped
+      def message: () -> untyped
+      def status_code=: (untyped) -> untyped
+      def message=: (untyped) -> untyped
+      def self.new: (?status_code: untyped, ?message: untyped) -> instance | (?untyped status_code, ?untyped message) -> instance
+      def self.[]: (?status_code: untyped, ?message: untyped) -> instance | (?untyped status_code, ?untyped message) -> instance
+      def success?: () -> (false | true)
+    end
+  end
+end

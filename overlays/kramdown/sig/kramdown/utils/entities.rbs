@@ -1,0 +1,15 @@
+module Kramdown
+  module Utils
+    module Entities
+      class Entity < ::Struct[untyped]
+        def code_point: () -> untyped
+        def name: () -> untyped
+        def code_point=: (untyped) -> untyped
+        def name=: (untyped) -> untyped
+        def self.new: (?code_point: untyped, ?name: untyped) -> instance | (?untyped code_point, ?untyped name) -> instance
+        def self.[]: (?code_point: untyped, ?name: untyped) -> instance | (?untyped code_point, ?untyped name) -> instance
+        def char: () -> (String | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module API
+  module Internal
+    class Workhorse < ::API::Base
+      def request_authenticated?: () -> (false | true)
+      def register_routing_decision: () -> ({ destination: "iam" } | { destination: "rails", reason: "flag_disabled" } | { destination: "rails", reason: "rate_limited" })
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class DummyConfig
+  def initialize: (untyped) -> void
+  def to_s: () -> "DummyConfig"
+end

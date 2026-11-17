@@ -1,0 +1,8 @@
+module Gitlab
+  module Kas
+    class ExponentialBackoff
+      def initialize: (?min: Integer, ?max: Integer, ?multiplier: Integer, ?jitter: (false | true)) -> void
+      def reset: () -> nil
+    end
+  end
+end

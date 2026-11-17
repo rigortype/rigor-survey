@@ -1,0 +1,11 @@
+module Gitlab
+  module Diff
+    module Formatters
+      class ImageFormatter < ::Gitlab::Diff::Formatters::BaseFormatter
+        def initialize: (untyped) -> void
+        def complete?: () -> (false | true)
+        def position_type: () -> "image"
+      end
+    end
+  end
+end

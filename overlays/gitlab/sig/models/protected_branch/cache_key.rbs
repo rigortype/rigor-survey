@@ -1,0 +1,6 @@
+class ProtectedBranch < ::ApplicationRecord
+  class CacheKey
+    def initialize: (untyped) -> void
+    def to_s: () -> String
+  end
+end

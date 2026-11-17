@@ -1,0 +1,5 @@
+class ProtobufMessageSerializer < ::ActiveJob::Serializers::ObjectSerializer
+  def serialize: (Google::Protobuf::AbstractMessage) -> Hash[String, untyped]
+  def deserialize: (Hash[String, untyped]) -> Google::Protobuf::AbstractMessage
+  def klass: () -> Module[untyped]
+end

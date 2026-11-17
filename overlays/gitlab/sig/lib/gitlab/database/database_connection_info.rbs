@@ -1,0 +1,28 @@
+module Gitlab
+  module Database
+    class DatabaseConnectionInfo < ::Struct[untyped]
+      def name: () -> ("ci" | "main")
+      def description: () -> untyped
+      def gitlab_schemas: () -> []
+      def lock_gitlab_schemas: () -> untyped
+      def klass: () -> ("ActiveRecord::Base" | "Ci::ApplicationRecord")
+      def fallback_database: () -> "main"
+      def db_dir: () -> untyped
+      def uses_load_balancing: () -> untyped
+      def file_path: () -> untyped
+      def name=: (("ci" | "main")) -> ("ci" | "main")
+      def description=: (untyped) -> untyped
+      def gitlab_schemas=: ([]) -> []
+      def lock_gitlab_schemas=: (untyped) -> untyped
+      def klass=: (("ActiveRecord::Base" | "Ci::ApplicationRecord")) -> ("ActiveRecord::Base" | "Ci::ApplicationRecord")
+      def fallback_database=: ("main") -> "main"
+      def db_dir=: (untyped) -> untyped
+      def uses_load_balancing=: (untyped) -> untyped
+      def file_path=: (untyped) -> untyped
+      def self.new: (?name: ("ci" | "main"), ?description: untyped, ?gitlab_schemas: [], ?lock_gitlab_schemas: untyped, ?klass: ("ActiveRecord::Base" | "Ci::ApplicationRecord"), ?fallback_database: "main", ?db_dir: untyped, ?uses_load_balancing: untyped, ?file_path: untyped) -> instance
+      def self.[]: (?name: ("ci" | "main"), ?description: untyped, ?gitlab_schemas: [], ?lock_gitlab_schemas: untyped, ?klass: ("ActiveRecord::Base" | "Ci::ApplicationRecord"), ?fallback_database: "main", ?db_dir: untyped, ?uses_load_balancing: untyped, ?file_path: untyped) -> instance
+      def initialize: (*untyped) -> void
+      def uses_load_balancing?: () -> (false | true)
+    end
+  end
+end

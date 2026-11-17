@@ -1,0 +1,5 @@
+module Members
+  class UnassignIssuablesService
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

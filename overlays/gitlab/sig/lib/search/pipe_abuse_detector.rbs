@@ -1,0 +1,6 @@
+module Search
+  class PipeAbuseDetector
+    def initialize: (untyped, untyped) -> void
+    def abusive?: () -> (false | true)
+  end
+end

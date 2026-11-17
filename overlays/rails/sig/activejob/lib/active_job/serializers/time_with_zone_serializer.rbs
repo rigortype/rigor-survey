@@ -1,0 +1,7 @@
+module ActiveJob
+  module Serializers
+    class TimeWithZoneSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def klass: () -> singleton(ActiveSupport::TimeWithZone)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Utils
+      class Broadcast < ::Concurrent::Actor::RestartingContext
+        def filtered_receivers: () -> Concurrent::Set
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module API
+  class Releases < ::API::Base
+    def event_context: () -> { release_cli: untyped }
+  end
+end

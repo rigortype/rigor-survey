@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class ProjectComponent < ::ApplicationRecord
+      def self.container_type: () -> :project
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Checks
+    class ChangedBlobs
+      def initialize: (untyped, untyped, bytes_limit: untyped, ?with_paths: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,18 @@
+module Dependabot
+  module Environment
+    def self.job_id: () -> (String | nil)
+    def self.job_token: () -> (String | nil)
+    def self.debug_enabled?: () -> (false | nil | true)
+    def self.log_level: () -> (:debug | :info)
+    def self.api_url: () -> (String | nil)
+    def self.job_path: () -> (String | nil)
+    def self.output_path: () -> (String | nil)
+    def self.repo_contents_path: () -> (String | nil)
+    def self.github_actions?: () -> (false | nil | true)
+    def self.updater_sha: () -> (String | nil)
+    def self.deterministic_updates?: () -> (false | nil | true)
+    def self.job_definition: () -> (Hash[String, Object] | nil)
+    def self.job_debug_enabled?: () -> (false | true)
+    def self.environment_debug_enabled?: () -> (false | true)
+  end
+end

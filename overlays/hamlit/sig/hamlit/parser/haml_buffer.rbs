@@ -1,0 +1,7 @@
+module Hamlit
+  class HamlBuffer
+    def xhtml?: () -> (false | true)
+    def toplevel?: () -> (false | true)
+    def initialize: (?untyped, ?untyped) -> void
+  end
+end

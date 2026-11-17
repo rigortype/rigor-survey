@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class CreateTemporaryPackageService
+      def initialize: (project: untyped, user: untyped, ?params: untyped) -> void
+    end
+  end
+end

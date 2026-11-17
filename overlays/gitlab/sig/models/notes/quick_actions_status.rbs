@@ -1,0 +1,7 @@
+module Notes
+  class QuickActionsStatus
+    def initialize: (command_names: untyped, commands_only: untyped) -> void
+    def success?: () -> (false | true)
+    def to_h: () -> Hash[untyped, untyped]
+  end
+end

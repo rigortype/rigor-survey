@@ -1,0 +1,6 @@
+module Repositories
+  class CommitsUploader < ::GitlabUploader
+    def self.direct_upload_enabled?: () -> false
+    def self.max_request_size: () -> Integer
+  end
+end

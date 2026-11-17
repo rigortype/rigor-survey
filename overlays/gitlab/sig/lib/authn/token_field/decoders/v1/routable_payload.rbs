@@ -1,0 +1,11 @@
+module Authn
+  module TokenField
+    module Decoders
+      module V1
+        class RoutablePayload
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Mail
+  class Header
+    def initialize: (?String | nil, ?String) -> void
+    def encoded: () -> String
+    def to_s: () -> String
+    def decoded: () -> bot
+  end
+end

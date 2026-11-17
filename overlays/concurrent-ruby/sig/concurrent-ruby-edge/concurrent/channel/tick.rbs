@@ -1,0 +1,7 @@
+module Concurrent
+  class Channel
+    class Tick < ::Concurrent::Synchronization::Object
+      def initialize: (?untyped) -> void
+    end
+  end
+end

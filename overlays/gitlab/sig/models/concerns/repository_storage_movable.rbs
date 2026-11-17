@@ -1,0 +1,3 @@
+module RepositoryStorageMovable
+  def schedule_repository_storage_update_worker: () -> bot
+end

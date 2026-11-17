@@ -1,0 +1,27 @@
+module ActionController
+  module RequestForgeryProtection
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    module ProtectionMethods
+      class NullSession
+        def initialize: (untyped) -> void
+        def handle_unverified_request: () -> ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullCookieJar
+        class NullSessionHash < ::Rack::Session::Abstract::SessionHash
+          def initialize: (untyped) -> void
+          def exists?: () -> true
+          def enabled?: () -> false
+        end
+      end
+      class ResetSession
+        def initialize: (untyped) -> void
+      end
+      class Exception
+        def initialize: (untyped) -> void
+        def handle_unverified_request: () -> bot
+      end
+    end
+    class CookieStore
+      def initialize: (?untyped) -> void
+      def store: (untyped, untyped) -> { value: untyped, httponly: true, same_site: :lax }
+    end
+  end
+end

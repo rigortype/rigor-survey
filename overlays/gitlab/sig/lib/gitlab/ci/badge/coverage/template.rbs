@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Coverage
+        class Template < ::Gitlab::Ci::Badge::Template
+          def initialize: (untyped) -> void
+          def value_text: () -> ("unknown" | String)
+          def value_width: () -> (54 | 58)
+          def value_color: () -> ("#4c1" | "#9f9f9f" | "#a3c51c" | "#dfb317" | "#e05d44")
+        end
+      end
+    end
+  end
+end

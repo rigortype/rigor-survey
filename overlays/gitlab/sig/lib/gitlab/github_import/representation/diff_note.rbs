@@ -1,0 +1,15 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class DiffNote
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::DiffNote
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::DiffNote
+        def initialize: (untyped) -> void
+        def line_code: () -> String
+        def diff_hash: () -> { diff: untyped, new_path: untyped, old_path: untyped, a_mode: "100644", b_mode: "100644", new_file: false }
+        def diff_position: () -> Gitlab::Diff::Position
+        def github_identifiers: () -> { note_id: untyped, noteable_iid: untyped, noteable_type: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  class SidekiqMigrateJobs
+    def initialize: (untyped, ?logger: untyped) -> void
+    def migrate_set: (untyped) -> { scanned: untyped, migrated: untyped }
+    def migrate_queues: () -> Sidekiq::RedisClientAdapter
+  end
+end

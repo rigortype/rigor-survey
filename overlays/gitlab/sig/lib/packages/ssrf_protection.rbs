@@ -1,0 +1,5 @@
+module Packages
+  class SsrfProtection
+    def self.params_for: (untyped) -> ({ ssrf_filter: true, allow_localhost: untyped, allowed_endpoints: untyped } | {})
+  end
+end

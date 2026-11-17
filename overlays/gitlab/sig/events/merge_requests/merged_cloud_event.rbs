@@ -1,0 +1,5 @@
+module MergeRequests
+  class MergedCloudEvent < ::MergeRequests::BaseCloudEvent
+    def self.build: (merge_request: untyped, current_user: untyped) -> MergeRequests::MergedCloudEvent
+  end
+end

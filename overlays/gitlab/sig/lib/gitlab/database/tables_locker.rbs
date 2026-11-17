@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    class TablesLocker
+      def initialize: (?logger: untyped, ?dry_run: (false | true), ?include_partitions: (false | true), ?options: { scope_to_database: Symbol }) -> void
+      def unlock_writes: () -> Array[untyped]
+      def lock_writes: () -> Array[untyped]
+    end
+  end
+end

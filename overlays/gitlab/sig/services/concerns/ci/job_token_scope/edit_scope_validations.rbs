@@ -1,0 +1,10 @@
+module Ci
+  module JobTokenScope
+    module EditScopeValidations
+      def validate_source_project_and_target_project_access!: (untyped, untyped, untyped) -> nil
+      def validate_source_project_and_target_group_access!: (untyped, untyped, untyped) -> nil
+      def validate_group_remove!: (untyped, untyped) -> nil
+      def validate_target_exists!: (untyped) -> nil
+    end
+  end
+end

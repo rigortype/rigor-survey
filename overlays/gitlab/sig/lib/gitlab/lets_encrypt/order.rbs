@@ -1,0 +1,8 @@
+module Gitlab
+  module LetsEncrypt
+    class Order
+      def initialize: (untyped) -> void
+      def new_challenge: () -> Gitlab::LetsEncrypt::Challenge
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Database
+    module Partitioning
+      module List
+        class ConvertTable
+          def initialize: (migration_context: untyped, table_name: untyped, parent_table_name: untyped, partitioning_column: untyped, zero_partition_value: untyped) -> void
+          def prepare_for_partitioning: (?async: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+          def revert_partitioning: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+          def zero_partition_value: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

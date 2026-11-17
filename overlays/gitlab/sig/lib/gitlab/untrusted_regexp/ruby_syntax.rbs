@@ -1,0 +1,11 @@
+module Gitlab
+  class UntrustedRegexp
+    class RubySyntax
+      def self.matches_syntax?: (untyped) -> (false | true)
+      def self.valid?: (untyped) -> (false | true)
+      def self.fabricate: (untyped, ?project: untyped) -> (Gitlab::UntrustedRegexp | nil)
+      def self.fabricate!: (untyped, ?project: untyped) -> Gitlab::UntrustedRegexp
+      def self.create_untrusted_regexp: (untyped, untyped) -> Gitlab::UntrustedRegexp
+    end
+  end
+end

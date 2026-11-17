@@ -1,0 +1,5 @@
+module Mail
+  class ContentTransferEncodingElement
+    def initialize: (untyped) -> void
+  end
+end

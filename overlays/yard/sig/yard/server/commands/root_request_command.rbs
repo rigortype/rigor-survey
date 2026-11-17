@@ -1,0 +1,9 @@
+module YARD
+  module Server
+    module Commands
+      class RootRequestCommand < ::YARD::Server::Commands::Base
+        def run: () -> ("nocache" | nil)
+      end
+    end
+  end
+end

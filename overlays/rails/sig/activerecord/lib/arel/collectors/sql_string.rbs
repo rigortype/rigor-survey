@@ -1,0 +1,9 @@
+module Arel
+  module Collectors
+    class SQLString < ::Arel::Collectors::PlainString
+      def initialize: (*untyped) -> void
+      def add_bind: (untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::SQLString
+      def add_binds: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::SQLString
+    end
+  end
+end

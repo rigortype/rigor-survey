@@ -1,0 +1,8 @@
+module Members
+  class CreatorService
+    def self.access_levels: () -> { guest: 10, planner: 15, reporter: 20, security_manager: 25, developer: 30, maintainer: 40, owner: 50 }
+    def self.parsed_args: (untyped) -> { current_user: untyped, expires_at: untyped, ldap: untyped, skip_authorization: untyped, skip_authorized_projects_refresh: untyped }
+    def self.parse_users_list: (untyped, untyped) -> [Array[untyped], Array[untyped], untyped, untyped]
+    def initialize: (invitee: untyped, ?builder: untyped, **untyped) -> void
+  end
+end

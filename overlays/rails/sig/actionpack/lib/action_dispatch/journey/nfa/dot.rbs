@@ -1,0 +1,9 @@
+module ActionDispatch
+  module Journey
+    module NFA
+      module Dot
+        def to_dot: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class Notification < ::ApplicationRecord
+  module Groups
+    def set_group_key!: () -> (String | nil)
+  end
+end

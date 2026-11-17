@@ -1,0 +1,7 @@
+module ActiveSupport
+  class Editor
+    def self.reset: () -> false
+    def initialize: (untyped) -> void
+    def url_for: (untyped, untyped) -> String
+  end
+end

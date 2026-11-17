@@ -1,0 +1,5 @@
+module Users
+  class SetStatusService
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqConfig
+    class DummyWorker
+      def initialize: (?untyped) -> void
+      def queue_namespace: () -> nil
+      def feature_category_not_owned?: () -> true
+      def get_worker_context: () -> nil
+      def context_for_arguments: (*untyped) -> nil
+    end
+  end
+end

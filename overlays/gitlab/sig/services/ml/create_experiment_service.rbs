@@ -1,0 +1,6 @@
+module Ml
+  class CreateExperimentService
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

@@ -1,0 +1,7 @@
+module ErrorTracking
+  class SentryClient
+    class Token
+      def self.masked_token?: (untyped) -> (false | true)
+    end
+  end
+end

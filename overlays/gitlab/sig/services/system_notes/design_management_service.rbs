@@ -1,0 +1,5 @@
+module SystemNotes
+  class DesignManagementService < ::SystemNotes::BaseService
+    def self.design_event_note_data: (untyped) -> ({ icon: "designs_added", past_tense: "added" } | { icon: "designs_modified", past_tense: "updated" } | { icon: "designs_removed", past_tense: "removed" })
+  end
+end

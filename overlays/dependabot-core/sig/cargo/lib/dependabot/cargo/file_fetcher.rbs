@@ -1,0 +1,9 @@
+module Dependabot
+  module Cargo
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a Cargo.toml."
+      def ecosystem_versions: () -> { package_managers: Hash[String, untyped] }
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

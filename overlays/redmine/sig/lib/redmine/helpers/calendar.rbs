@@ -1,0 +1,9 @@
+module Redmine
+  module Helpers
+    class Calendar
+      def initialize: (untyped, ?Symbol, ?Symbol) -> void
+      def format_month: () -> Array[untyped]
+      def day_css_classes: (untyped) -> ("other-month" | "this-month" | String)
+    end
+  end
+end

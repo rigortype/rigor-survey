@@ -1,0 +1,9 @@
+module Spree
+  module Emails
+    module Samples
+      class Downloads < ::Spree::Emails::Samples::Order
+        def variables: () -> { order: untyped, downloads: untyped, resend: false }
+      end
+    end
+  end
+end

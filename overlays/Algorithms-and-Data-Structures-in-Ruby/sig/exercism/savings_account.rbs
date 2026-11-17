@@ -1,0 +1,4 @@
+module SavingsAccount
+  def self.interest_rate: (?untyped) -> Float
+  def self.years_before_desired_balance: (untyped, untyped) -> Integer
+end

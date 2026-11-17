@@ -1,0 +1,5 @@
+module WorkItems
+  class BulkUpdatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["work_item_ids"] | Hash[String, "array" | Hash[String, "string"]] | Hash[String, Hash[String, "array" | Hash[String, "integer"]] | Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,9 @@
+module Terraform
+  module States
+    class DestroyService
+      def initialize: (untyped, ?permanent: (false | true), ?current_user: untyped) -> void
+      def execute: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      def permanent: () -> true
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Docker
+    class DockerPackageManager < ::Dependabot::Ecosystem::VersionManager
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+  end
+end

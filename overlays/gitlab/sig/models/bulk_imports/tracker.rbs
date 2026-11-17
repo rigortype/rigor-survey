@@ -1,0 +1,5 @@
+module BulkImports
+  class Tracker < ::ApplicationRecord
+    def checksums: () -> (Hash[untyped, untyped] | nil)
+  end
+end

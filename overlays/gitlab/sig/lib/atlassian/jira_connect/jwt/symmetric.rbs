@@ -1,0 +1,9 @@
+module Atlassian
+  module JiraConnect
+    module Jwt
+      class Symmetric
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

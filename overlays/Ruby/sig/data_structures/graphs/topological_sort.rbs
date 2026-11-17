@@ -1,0 +1,4 @@
+class TopologicalSorter
+  def initialize: (untyped) -> void
+  def topological_sort: () -> (Array[untyped] | nil)
+end

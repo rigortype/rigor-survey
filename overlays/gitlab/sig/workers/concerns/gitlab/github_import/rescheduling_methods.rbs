@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    module ReschedulingMethods
+      def try_import: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ({ success: false, reset_in: untyped } | { success: false, reset_in: nil } | { success: true })
+    end
+  end
+end

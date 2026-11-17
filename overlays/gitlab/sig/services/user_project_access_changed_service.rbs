@@ -1,0 +1,3 @@
+class UserProjectAccessChangedService
+  def initialize: (untyped) -> void
+end

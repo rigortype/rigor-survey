@@ -1,0 +1,7 @@
+module Ci
+  module PipelineArtifacts
+    class CodeCoveragePresenter < ::Gitlab::View::Presenter::Delegated
+      def for_files: (untyped) -> { files: untyped }
+    end
+  end
+end

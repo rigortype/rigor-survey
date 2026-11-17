@@ -1,0 +1,7 @@
+module Packages
+  module Composer
+    class VersionParserService
+      def initialize: (?tag_name: untyped, ?branch_name: untyped) -> void
+    end
+  end
+end

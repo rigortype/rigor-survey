@@ -1,0 +1,5 @@
+module ActionController
+  module Head
+    def head: (untyped, ?untyped) -> true
+  end
+end

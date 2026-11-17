@@ -1,0 +1,17 @@
+module Gitlab
+  class ApplicationContext
+    def self.known_keys: () -> [:organization_id, :user, :user_id, untyped, :scoped_user, :scoped_user_id, :project, :root_namespace, untyped, :client_id, :caller_id, :remote_ip, :job_id, :pipeline_id, :related_class, :feature_category, :artifact_size, :artifact_used_cdn, :artifacts_dependencies_size, :artifacts_dependencies_count, :root_caller_id, :root_started_at, :merge_action_status, :bulk_import_entity_id, :sidekiq_destination_shard_redis, :auth_fail_reason, :auth_fail_token_id, :auth_fail_requested_scopes, :http_router_rule_action, :http_router_rule_type, :kubernetes_agent_id, :auth_fail_token_type, :auth_fail_auth_header_type, :mvcc_manifest, :duo_workflow_id, :organization_source, :client_service, :client_type, :client_name, :client_version]
+    def self.allowed_job_keys: () -> Array[untyped]
+    def self.application_attributes: () -> [Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute, Gitlab::ApplicationContext::Attribute]
+    def initialize: (**untyped) -> void
+    def to_lazy_hash: () -> Hash[untyped, untyped]
+    class Attribute < ::Struct[untyped]
+      def name: () -> untyped
+      def type: () -> untyped
+      def name=: (untyped) -> untyped
+      def type=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?type: untyped) -> instance | (?untyped name, ?untyped type) -> instance
+      def self.[]: (?name: untyped, ?type: untyped) -> instance | (?untyped name, ?untyped type) -> instance
+    end
+  end
+end

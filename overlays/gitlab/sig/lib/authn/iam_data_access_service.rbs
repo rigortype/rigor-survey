@@ -1,0 +1,6 @@
+module Authn
+  module IamDataAccessService
+    def self.grpc_address: () -> String
+    def self.secret: () -> String
+  end
+end

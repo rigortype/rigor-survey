@@ -1,0 +1,6 @@
+module RemoteMirrors
+  class Attributes
+    def initialize: (untyped) -> void
+    def keys: () -> [:url, :enabled, :auth_method, :keep_divergent_refs, :only_protected_branches, :ssh_known_hosts, :user, :password]
+  end
+end

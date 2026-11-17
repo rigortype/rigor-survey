@@ -1,0 +1,7 @@
+module Dependabot
+  module Bazel
+    class Language < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

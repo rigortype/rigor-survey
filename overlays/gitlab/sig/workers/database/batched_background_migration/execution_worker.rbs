@@ -1,0 +1,7 @@
+module Database
+  module BatchedBackgroundMigration
+    module ExecutionWorker
+      def remaining_work_count: (*untyped) -> 0
+    end
+  end
+end

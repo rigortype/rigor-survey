@@ -1,0 +1,8 @@
+class Heap
+  def initialize: (?untyped) -> void
+  def set: (untyped) -> nil
+  def percolateDown: (untyped) -> nil
+  def percolateUp: (untyped) -> nil
+  def add: (untyped) -> nil
+  def display: () -> nil
+end

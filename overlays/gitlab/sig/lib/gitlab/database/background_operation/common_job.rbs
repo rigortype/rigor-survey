@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module BackgroundOperation
+      module CommonJob
+        def self.get_transition_args: (untyped, *untyped) -> Array[untyped]
+        def worker_attributes: () -> { batch_table: untyped, batch_column: untyped, sub_batch_size: untyped, pause_ms: untyped, job_arguments: untyped, min_cursor: untyped, max_cursor: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Ci
+  class CommitStatusesFinder
+    def initialize: (untyped, untyped, untyped, untyped, ?ref_type: untyped) -> void
+  end
+end

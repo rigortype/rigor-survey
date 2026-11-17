@@ -1,0 +1,10 @@
+module ActionCable
+  module Server
+    module Broadcasting
+      def broadcaster_for: (untyped, ?coder: untyped) -> ActionCable::Server::Broadcasting::Broadcaster
+      class Broadcaster
+        def initialize: (untyped, untyped, coder: untyped) -> void
+      end
+    end
+  end
+end

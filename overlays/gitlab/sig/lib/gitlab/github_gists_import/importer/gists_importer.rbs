@@ -1,0 +1,23 @@
+module Gitlab
+  module GithubGistsImport
+    module Importer
+      class GistsImporter
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> Gitlab::GithubGistsImport::Importer::GistsImporter::RESULT_CONTEXT
+        def client: () -> Gitlab::GithubImport::Client
+        def already_imported_cache_key: () -> String
+        class RESULT_CONTEXT < ::Struct[untyped]
+          def success?: () -> untyped
+          def error: () -> untyped
+          def waiter: () -> untyped
+          def next_attempt_in: () -> untyped
+          def error=: (untyped) -> untyped
+          def waiter=: (untyped) -> untyped
+          def next_attempt_in=: (untyped) -> untyped
+          def self.new: (?success?: untyped, ?error: untyped, ?waiter: untyped, ?next_attempt_in: untyped) -> instance
+          def self.[]: (?success?: untyped, ?error: untyped, ?waiter: untyped, ?next_attempt_in: untyped) -> instance
+        end
+      end
+    end
+  end
+end

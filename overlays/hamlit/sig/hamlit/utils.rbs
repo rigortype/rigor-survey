@@ -1,0 +1,5 @@
+module Hamlit
+  module Utils
+    def self.escape_html: (untyped) -> String
+  end
+end

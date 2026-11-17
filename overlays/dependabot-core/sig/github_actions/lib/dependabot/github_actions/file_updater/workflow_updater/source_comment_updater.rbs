@@ -1,0 +1,12 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        class SourceCommentUpdater
+          def initialize: (workflow_file: untyped, commenter: untyped, metadata_builder: untyped, comment_locator: untyped) -> void
+          def edits_for: (untyped) -> Array[::ContentEdit]
+        end
+      end
+    end
+  end
+end

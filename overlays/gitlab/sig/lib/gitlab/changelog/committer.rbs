@@ -1,0 +1,7 @@
+module Gitlab
+  module Changelog
+    class Committer
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

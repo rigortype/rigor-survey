@@ -1,0 +1,8 @@
+module Groups
+  module SshCertificates
+    class DestroyService
+      def initialize: (untyped, untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

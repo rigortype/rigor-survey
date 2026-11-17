@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    class ParallelImporter
+      def self.async?: () -> true
+      def self.imports_repository?: () -> true
+      def self.requires_ci_cd_setup?: () -> bot
+      def initialize: (untyped) -> void
+      def execute: () -> true
+    end
+  end
+end

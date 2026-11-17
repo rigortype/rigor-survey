@@ -1,0 +1,3 @@
+class MilestonesFinder
+  def initialize: (?untyped) -> void
+end

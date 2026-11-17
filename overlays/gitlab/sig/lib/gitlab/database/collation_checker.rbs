@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    class CollationChecker
+      def self.run: (?database_name: untyped, ?logger: untyped, ?max_table_size: untyped) -> Hash[untyped, untyped]
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def run: () -> Hash[untyped, untyped]
+    end
+  end
+end

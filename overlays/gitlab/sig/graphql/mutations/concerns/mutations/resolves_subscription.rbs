@@ -1,0 +1,5 @@
+module Mutations
+  module ResolvesSubscription
+    def resolve: (project_path: untyped, iid: untyped, subscribed_state: untyped) -> Hash[untyped, untyped]
+  end
+end

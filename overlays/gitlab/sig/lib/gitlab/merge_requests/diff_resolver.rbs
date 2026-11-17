@@ -1,0 +1,7 @@
+module Gitlab
+  module MergeRequests
+    class DiffResolver
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

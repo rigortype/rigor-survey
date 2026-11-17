@@ -1,0 +1,16 @@
+module Net
+  module SSH
+    module Authentication
+      class Agent
+        def self.connect: (?untyped, ?untyped, ?untyped) -> Net::SSH::Authentication::Agent
+        def initialize: (?untyped) -> void
+        def identities: () -> Array[untyped]
+        def add_identity: (untyped, untyped, ?lifetime: untyped, ?confirm: untyped) -> nil
+        def remove_identity: (untyped) -> nil
+        def remove_all_identities: () -> nil
+        def lock: (untyped) -> nil
+        def unlock: (untyped) -> nil
+      end
+    end
+  end
+end

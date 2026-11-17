@@ -1,0 +1,3 @@
+class IdempotencyCache
+  def initialize: (untyped, untyped) -> void
+end

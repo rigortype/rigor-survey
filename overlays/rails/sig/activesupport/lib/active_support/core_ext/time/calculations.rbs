@@ -1,0 +1,4 @@
+class Time
+  def self.days_in_year: (?untyped) -> (365 | 366)
+  def self.current: () -> (ActiveSupport::TimeWithZone | ::Time)
+end

@@ -1,0 +1,9 @@
+module BulkImports
+  module Common
+    module Rest
+      module GetBadgesQuery
+        def to_h: (untyped) -> { resource: String, query: { page: untyped } }
+      end
+    end
+  end
+end

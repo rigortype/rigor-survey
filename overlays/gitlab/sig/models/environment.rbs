@@ -1,0 +1,11 @@
+class Environment < ::ApplicationRecord
+  def self.for_id_and_slug: (untyped, untyped) -> (Environment | nil)
+  def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+  def ref_path: () -> String
+  def external_url_for: (untyped, untyped) -> (String | nil)
+  def expire_etag_cache: () -> Gitlab::EtagCaching::Store
+  def etag_cache_keys: () -> Array[untyped]
+  def folder_name: () -> String
+  def unfoldered?: () -> (false | true)
+  def set_default_auto_stop_setting: () -> (:always | :with_action)
+end

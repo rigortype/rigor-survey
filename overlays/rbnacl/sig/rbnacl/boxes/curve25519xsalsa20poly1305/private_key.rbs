@@ -1,0 +1,11 @@
+module RbNaCl
+  module Boxes
+    class Curve25519XSalsa20Poly1305
+      class PrivateKey
+        def initialize: (untyped) -> void
+        def self.generate: () -> RbNaCl::Boxes::Curve25519XSalsa20Poly1305::PrivateKey
+        def public_key: () -> RbNaCl::Boxes::Curve25519XSalsa20Poly1305::PublicKey
+      end
+    end
+  end
+end

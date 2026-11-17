@@ -1,0 +1,20 @@
+module ActionView
+  class AbstractRenderer
+    def initialize: (untyped) -> void
+    def render: () -> bot
+    module ObjectRendering
+      def initialize: (untyped, untyped) -> void
+    end
+    class RenderedCollection
+      def self.empty: (untyped) -> ActionView::AbstractRenderer::RenderedCollection::EmptyCollection
+      def initialize: (untyped, untyped) -> void
+      class EmptyCollection
+        def initialize: (untyped) -> void
+        def body: () -> nil
+      end
+    end
+    class RenderedTemplate
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

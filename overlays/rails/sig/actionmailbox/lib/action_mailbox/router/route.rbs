@@ -1,0 +1,7 @@
+module ActionMailbox
+  class Router
+    class Route
+      def initialize: (untyped, to: untyped) -> void
+    end
+  end
+end

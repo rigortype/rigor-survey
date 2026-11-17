@@ -1,0 +1,8 @@
+module API
+  class MergeRequests < ::API::Base
+    def ci_params: () -> {}
+    def self.update_params_at_least_one_of: () -> [:assignee_id, :assignee_ids, :reviewer_ids, :description, :labels, :add_labels, :remove_labels, :milestone_id, :milestone, :remove_source_branch, :allow_collaboration, :allow_maintainer_to_push, :squash, :target_branch, :title, :state_event, :discussion_locked, :merge_after]
+    def serializer_options_for: (untyped) -> Hash[untyped, untyped]
+    def group_merge_requests_count_cache_key: () -> [:group_merge_requests, untyped, untyped]
+  end
+end

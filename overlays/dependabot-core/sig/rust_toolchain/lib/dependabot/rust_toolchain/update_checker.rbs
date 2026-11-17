@@ -1,0 +1,8 @@
+module Dependabot
+  module RustToolchain
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_resolvable_version: () -> (Gem::Version | String | nil)
+      def latest_resolvable_version_with_no_unlock: () -> bot
+    end
+  end
+end

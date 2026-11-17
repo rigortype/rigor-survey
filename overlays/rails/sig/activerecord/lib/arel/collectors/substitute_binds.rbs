@@ -1,0 +1,10 @@
+module Arel
+  module Collectors
+    class SubstituteBinds
+      def initialize: (untyped, untyped) -> void
+      def <<: (untyped) -> Arel::Collectors::SubstituteBinds
+      def add_bind: (untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::SubstituteBinds
+      def add_binds: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::SubstituteBinds
+    end
+  end
+end

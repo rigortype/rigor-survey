@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Session
+      class Settings
+        def self.check_allowed!: (untyped) -> nil
+        def self.check_outside_transaction!: (untyped) -> nil
+      end
+    end
+  end
+end

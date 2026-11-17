@@ -1,0 +1,7 @@
+module MergeRequests
+  module Mergeability
+    class CheckCiStatusService < ::MergeRequests::Mergeability::CheckBaseService
+      def cacheable?: () -> false
+    end
+  end
+end

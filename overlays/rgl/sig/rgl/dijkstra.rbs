@@ -1,0 +1,10 @@
+module RGL
+  class DijkstraAlgorithm
+    def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    def shortest_paths: (untyped) -> Hash[untyped, untyped]
+    def find_shortest_paths: (untyped) -> nil
+  end
+  module Graph
+    def dijkstra_shortest_paths: (untyped, untyped, ?untyped) -> Hash[untyped, untyped]
+  end
+end

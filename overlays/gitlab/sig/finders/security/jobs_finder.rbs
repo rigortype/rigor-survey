@@ -1,0 +1,6 @@
+module Security
+  class JobsFinder
+    def initialize: (pipeline: nil, ?job_types: untyped) -> void
+    def pipeline: () -> nil
+  end
+end

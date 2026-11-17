@@ -1,0 +1,7 @@
+module Gitlab
+  module Ai
+    class CustomInstructionsResolver
+      def initialize: (untyped) -> void
+    end
+  end
+end

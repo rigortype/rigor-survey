@@ -1,0 +1,7 @@
+module ActionController
+  module AllowBrowser
+    class BrowserBlocker
+      def initialize: (untyped, versions: untyped) -> void
+    end
+  end
+end

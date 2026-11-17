@@ -1,0 +1,9 @@
+class InteractionPolicy
+  def initialize: (untyped) -> void
+  def automatic: () -> InteractionPolicy::SubPolicy
+  def manual: () -> InteractionPolicy::SubPolicy
+  class SubPolicy
+    def initialize: (untyped) -> void
+    def as_keys: () -> Array["disabled" | "followers" | "following" | "public" | "unsupported_policy"]
+  end
+end

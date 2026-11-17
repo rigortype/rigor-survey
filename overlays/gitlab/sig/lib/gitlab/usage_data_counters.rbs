@@ -1,0 +1,5 @@
+module Gitlab
+  module UsageDataCounters
+    def self.counters: () -> [singleton(Gitlab::UsageDataCounters::MergeRequestWidgetExtensionCounter)]
+  end
+end

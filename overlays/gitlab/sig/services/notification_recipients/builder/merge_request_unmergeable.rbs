@@ -1,0 +1,9 @@
+module NotificationRecipients
+  module Builder
+    class MergeRequestUnmergeable < ::NotificationRecipients::Builder::Base
+      def initialize: (untyped) -> void
+      def custom_action: () -> :unmergeable_merge_request
+      def acting_user: () -> nil
+    end
+  end
+end

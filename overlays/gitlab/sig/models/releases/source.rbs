@@ -1,0 +1,5 @@
+module Releases
+  class Source
+    def hook_attrs: () -> { format: untyped, url: untyped }
+  end
+end

@@ -1,0 +1,3 @@
+class LanguagePresenter < ::ActiveModelSerializers::Model
+  def initialize: (untyped) -> void
+end

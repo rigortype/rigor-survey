@@ -1,0 +1,41 @@
+module ActionDispatch
+  class Response
+    def self.create: (?untyped, ?untyped, ?untyped, ?default_headers: untyped) -> ActionDispatch::Response
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+    def await_commit: () -> nil
+    def await_sent: () -> nil
+    def commit!: () -> Thread::ConditionVariable
+    def sending!: () -> Thread::ConditionVariable
+    def sent!: () -> Thread::ConditionVariable
+    def sending?: () -> (false | true)
+    def committed?: () -> (false | true)
+    def sent?: () -> (false | true)
+    def content_type=: (untyped) -> (ActionDispatch::Response::ContentTypeHeader | nil)
+    def sending_file=: (untyped) -> (false | nil)
+    def charset=: (untyped) -> (ActionDispatch::Response::ContentTypeHeader | nil)
+    def send_file: (untyped) -> ActionDispatch::Response::FileBody
+    def reset_body!: () -> ActionDispatch::Response::Buffer
+    def body_parts: () -> Array[untyped]
+    def to_a: () -> ([untyped, untyped, []] | [untyped, untyped, ActionDispatch::Response::RackBody])
+    def cookies: () -> Hash[untyped, untyped]
+    class ContentTypeHeader < ::Struct[untyped]
+      def mime_type: () -> untyped
+      def charset: () -> untyped
+      def mime_type=: (untyped) -> untyped
+      def charset=: (untyped) -> untyped
+      def self.new: (?mime_type: untyped, ?charset: untyped) -> instance | (?untyped mime_type, ?untyped charset) -> instance
+      def self.[]: (?mime_type: untyped, ?charset: untyped) -> instance | (?untyped mime_type, ?untyped charset) -> instance
+    end
+    class Buffer
+      def initialize: (untyped, untyped) -> void
+      def close: () -> true
+      def closed?: () -> (false | true)
+    end
+    class FileBody
+      def initialize: (untyped) -> void
+    end
+    class RackBody
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class LabelsImporter
+        def build_labels: () -> [Array[untyped], Array[untyped]]
+        def build_attributes: (untyped) -> { title: untyped, color: String, project_id: untyped, type: "ProjectLabel", created_at: untyped, updated_at: untyped }
+        def object_type: () -> :label
+      end
+    end
+  end
+end

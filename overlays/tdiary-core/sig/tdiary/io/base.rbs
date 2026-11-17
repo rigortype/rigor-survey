@@ -1,0 +1,10 @@
+module TDiary
+  module IO
+    class Base
+      def initialize: (untyped) -> void
+      def calendar: () -> bot
+      def transaction: (untyped) -> bot
+      def load_styles: () -> Array[Symbol]
+    end
+  end
+end

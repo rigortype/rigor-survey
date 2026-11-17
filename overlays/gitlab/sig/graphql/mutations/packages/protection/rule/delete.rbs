@@ -1,0 +1,11 @@
+module Mutations
+  module Packages
+    module Protection
+      module Rule
+        class Delete < ::Mutations::BaseMutation
+          def resolve: (id: untyped, **untyped) -> { package_protection_rule: untyped, errors: Array[untyped] | [] }
+        end
+      end
+    end
+  end
+end

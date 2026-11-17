@@ -1,0 +1,7 @@
+module Resolvers
+  module Users
+    class FrecentProjectsResolver < ::Resolvers::BaseResolver
+      def resolve: () -> (Project | nil)
+    end
+  end
+end

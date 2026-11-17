@@ -1,0 +1,7 @@
+module Mastodon
+  class UnexpectedResponseError < ::Mastodon::Error
+    def initialize: (?untyped) -> void
+  end
+  class Error < ::StandardError
+  end
+end

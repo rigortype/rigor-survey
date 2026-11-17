@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Badge
+      class Base
+        def entity: () -> bot
+        def metadata: () -> bot
+        def template: () -> bot
+      end
+    end
+  end
+end

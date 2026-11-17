@@ -1,0 +1,3 @@
+class GitRefsFinder
+  def initialize: (untyped, ?untyped) -> void
+end

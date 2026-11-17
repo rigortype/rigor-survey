@@ -1,0 +1,6 @@
+module PersonalAccessTokens
+  class RotateService
+    def initialize: (untyped, untyped, ?nil, ?untyped) -> void
+    def resource: () -> nil
+  end
+end

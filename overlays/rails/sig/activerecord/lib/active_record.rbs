@@ -1,0 +1,5 @@
+module ActiveRecord
+  def self.deprecated_associations_options: () -> { mode: untyped, backtrace: untyped }
+  def self.eager_load!: () -> nil
+  def self.all_open_transactions: () -> Array[untyped]
+end

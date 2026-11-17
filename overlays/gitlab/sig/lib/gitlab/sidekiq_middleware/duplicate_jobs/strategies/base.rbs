@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqMiddleware
+    module DuplicateJobs
+      module Strategies
+        class Base
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

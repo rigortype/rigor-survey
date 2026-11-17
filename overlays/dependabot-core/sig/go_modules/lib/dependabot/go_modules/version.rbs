@@ -1,0 +1,9 @@
+module Dependabot
+  module GoModules
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+      def to_s: () -> String
+    end
+  end
+end

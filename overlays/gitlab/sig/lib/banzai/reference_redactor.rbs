@@ -1,0 +1,10 @@
+module Banzai
+  class ReferenceRedactor
+    def initialize: (Banzai::RenderContext) -> void
+    def redact: (untyped) -> Array[untyped]
+    def redact_document_nodes: (untyped) -> Array[untyped]
+    def redact_cross_project_references: (untyped) -> Hash[untyped, untyped]
+    def nodes_visible_to_user: (untyped) -> Set[untyped]
+    def context: () -> Banzai::RenderContext
+  end
+end

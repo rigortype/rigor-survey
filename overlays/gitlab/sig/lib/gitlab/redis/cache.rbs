@@ -1,0 +1,8 @@
+module Gitlab
+  module Redis
+    class Cache < ::Gitlab::Redis::Wrapper
+      def self.active_support_config: () -> { redis: untyped, pool: false, compress: untyped, namespace: "cache:gitlab", expires_in: Integer }
+      def self.default_ttl_seconds: () -> Integer
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ResourceEvents
+  class ChangeStateService
+    def initialize: (user: untyped, resource: untyped) -> void
+  end
+end

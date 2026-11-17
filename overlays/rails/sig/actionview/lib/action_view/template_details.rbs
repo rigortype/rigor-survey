@@ -1,0 +1,10 @@
+module ActionView
+  class TemplateDetails
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+    def sort_key_for: (untyped) -> [untyped, untyped, untyped, untyped]
+    def rank_for: (untyped) -> ([untyped, untyped, untyped, untyped] | nil)
+    class Requested
+      def initialize: (locale: untyped, handlers: untyped, formats: untyped, variants: untyped) -> void
+    end
+  end
+end

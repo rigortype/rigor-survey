@@ -1,0 +1,9 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      class PullRequestNoteImporter
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module ActiveSupport
+  module Testing
+    class Parallelization
+      class Worker
+        def initialize: (untyped, untyped) -> void
+        def start: () -> Integer
+        def work_from_queue: () -> nil
+      end
+    end
+  end
+end

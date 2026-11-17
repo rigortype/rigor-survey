@@ -1,0 +1,11 @@
+module Dependabot
+  module Uv
+    class UpdateChecker < ::Dependabot::Python::UpdateChecker
+      class LockFileResolver
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?security_advisories: untyped, ?ignored_versions: untyped, ?update_cooldown: untyped) -> void
+        def latest_resolvable_version: (requirement: untyped) -> (Dependabot::Uv::Version | nil)
+        def resolvable?: (version: untyped) -> (false | true | false | true)
+      end
+    end
+  end
+end

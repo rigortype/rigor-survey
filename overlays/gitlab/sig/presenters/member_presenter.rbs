@@ -1,0 +1,5 @@
+class MemberPresenter < ::Gitlab::View::Presenter::Delegated
+  def valid_member_roles: () -> []
+  def role_type: () -> "default"
+  def can_override?: () -> false
+end

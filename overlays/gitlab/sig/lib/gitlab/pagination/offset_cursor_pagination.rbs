@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    class OffsetCursorPagination
+      def initialize: (scope: untyped, ?cursor: untyped, ?per_page: untyped) -> void
+      def cursor_for_next_page: () -> (String | nil)
+      def cursor_for_previous_page: () -> (String | nil)
+      def offset: () -> (0 | Integer)
+    end
+  end
+end

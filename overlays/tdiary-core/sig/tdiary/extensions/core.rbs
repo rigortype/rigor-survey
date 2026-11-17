@@ -1,0 +1,7 @@
+module TDiary
+  module Extensions
+    class Core
+      def self.assets_path: () -> [[String, String], [String, String]]
+    end
+  end
+end

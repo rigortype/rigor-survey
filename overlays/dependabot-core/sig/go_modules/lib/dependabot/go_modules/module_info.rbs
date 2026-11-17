@@ -1,0 +1,11 @@
+module Dependabot
+  module GoModules
+    class ModuleInfo < ::T::ImmutableStruct
+      def self.from_json: (untyped, command: untyped) -> Dependabot::GoModules::ModuleInfo
+      def self.object: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.parse_versions: (untyped, untyped) -> (Array[String] | nil)
+      def self.parse_time: (untyped, untyped) -> (Time | nil)
+      def self.invalid_output: (untyped, untyped) -> bot
+    end
+  end
+end

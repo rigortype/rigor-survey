@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class HashNode < ::RuboCop::AST::Node
+      def each_pair: () -> (Enumerator[untyped, untyped] | Enumerator[untyped, Enumerator[untyped, untyped]] | RuboCop::AST::HashNode)
+      def each_key: () -> (Enumerator[untyped, untyped] | RuboCop::AST::HashNode)
+      def each_value: () -> (Enumerator[untyped, untyped] | RuboCop::AST::HashNode)
+    end
+  end
+end

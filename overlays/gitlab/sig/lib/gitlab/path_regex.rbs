@@ -1,0 +1,32 @@
+module Gitlab
+  module PathRegex
+    def organization_route_regex: () -> Regexp
+    def root_namespace_route_regex: () -> Regexp
+    def organization_scoped_redirect_path_regex: () -> Regexp
+    def full_namespace_route_regex: () -> Regexp
+    def without_organization_scope: (untyped) -> Regexp
+    def project_route_regex: () -> Regexp
+    def repository_route_regex: () -> Regexp
+    def repository_git_route_regex: () -> Regexp
+    def repository_git_http_route_regex: () -> Regexp
+    def repository_git_lfs_route_regex: () -> Regexp
+    def repository_wiki_git_route_regex: () -> Regexp
+    def full_namespace_path_regex: () -> Regexp
+    def organization_path_regex: () -> Regexp
+    def full_project_path_regex: () -> Regexp
+    def full_project_git_path_regex: () -> Regexp
+    def organization_format_regex: () -> Regexp
+    def organization_format_message: () -> "can contain only letters, digits, '_' and '-'. Cannot start with '-'."
+    def namespace_format_regex: () -> Regexp
+    def namespace_format_message: () -> String
+    def project_path_format_regex: () -> Regexp
+    def project_path_format_message: () -> String
+    def archive_formats_regex: () -> Regexp
+    def git_reference_regex: () -> Regexp
+    def full_snippets_repository_path_regex: () -> Regexp
+    def container_image_regex: () -> Regexp
+    def container_image_blob_sha_regex: () -> Regexp
+    def dependency_proxy_route_regex: () -> Regexp
+    def dependency_proxy_containers_route_regex: () -> Regexp
+  end
+end

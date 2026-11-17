@@ -1,0 +1,12 @@
+class SPLAYTree
+  def printTree: () -> nil
+  def printTreeUtil: (untyped, untyped, untyped) -> nil
+  def splay: (untyped) -> nil
+  def find: (untyped) -> (false | true)
+  def insert: (untyped) -> nil
+  def delete: (untyped) -> nil
+  def printInOrder: (untyped) -> nil
+  class Node
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

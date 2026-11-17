@@ -1,0 +1,8 @@
+class PostReceiveService
+  def initialize: (untyped, untyped, untyped, untyped) -> void
+  def execute: () -> Gitlab::InternalPostReceive::Response
+  def push_options: () -> Gitlab::PushOptions
+  def process_mr_push_options: (untyped, untyped) -> (String | nil)
+  def push_options_warning: (untyped) -> String
+  def merge_request_urls: () -> Array[{ branch_name: untyped, url: untyped, new_merge_request: false } | { branch_name: untyped, url: untyped, new_merge_request: true }]
+end

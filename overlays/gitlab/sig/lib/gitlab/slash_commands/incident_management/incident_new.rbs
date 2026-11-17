@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    module IncidentManagement
+      class IncidentNew < ::Gitlab::SlashCommands::IncidentManagement::IncidentCommand
+        def self.help_message: () -> "incident declare *(Beta)*"
+      end
+    end
+  end
+end

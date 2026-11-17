@@ -1,0 +1,3 @@
+class BoardProjectRecentVisit < ::ApplicationRecord
+  def self.board_parent_relation: () -> :project
+end

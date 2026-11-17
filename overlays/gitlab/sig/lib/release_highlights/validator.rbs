@@ -1,0 +1,8 @@
+module ReleaseHighlights
+  class Validator
+    def initialize: (file: untyped) -> void
+    def self.validate_all!: () -> (false | true)
+    def self.error_message: () -> String
+    def errors: () -> Array[untyped]
+  end
+end

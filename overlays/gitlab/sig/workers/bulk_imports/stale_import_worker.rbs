@@ -1,0 +1,7 @@
+module BulkImports
+  class StaleImportWorker
+    def logger: () -> BulkImports::Logger
+    def bulk_import_scope: () -> ActiveRecord::Relation[BulkImport]
+    def entity_scope: () -> ActiveRecord::Relation[BulkImports::Entity]
+  end
+end

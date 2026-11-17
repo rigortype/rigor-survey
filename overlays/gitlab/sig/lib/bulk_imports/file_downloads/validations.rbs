@@ -1,0 +1,10 @@
+module BulkImports
+  module FileDownloads
+    module Validations
+      def raise_error: (untyped) -> bot
+      def filepath: () -> bot
+      def file_size_limit: () -> bot
+      def response_headers: () -> bot
+    end
+  end
+end

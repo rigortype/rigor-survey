@@ -1,0 +1,10 @@
+module Gitlab
+  module Conflict
+    class FileCollection
+      def initialize: (untyped, ?allow_tree_conflicts: untyped, ?skip_content: untyped) -> void
+      def as_json: (?untyped) -> { target_branch: untyped, source_commit: { sha: untyped, message: untyped }, source_branch: untyped, commit_sha: untyped, commit_message: String, files: untyped }
+      def default_commit_message: () -> String
+      def resolver: () -> Gitlab::Git::Conflict::Resolver
+    end
+  end
+end

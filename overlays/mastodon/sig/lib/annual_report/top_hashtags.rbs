@@ -1,0 +1,5 @@
+class AnnualReport
+  class TopHashtags < ::AnnualReport::Source
+    def generate: () -> { top_hashtags: untyped }
+  end
+end

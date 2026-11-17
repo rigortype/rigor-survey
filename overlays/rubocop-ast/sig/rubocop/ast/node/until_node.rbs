@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    class UntilNode < ::RuboCop::AST::Node
+      def keyword: () -> "until"
+      def inverse_keyword: () -> "while"
+    end
+  end
+end

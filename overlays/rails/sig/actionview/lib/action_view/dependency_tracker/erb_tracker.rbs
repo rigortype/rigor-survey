@@ -1,0 +1,8 @@
+module ActionView
+  class DependencyTracker
+    class ERBTracker
+      def self.supports_view_paths?: () -> true
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+  end
+end

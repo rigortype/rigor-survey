@@ -1,0 +1,7 @@
+module Ci
+  module Queue
+    class BuildQueueService
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

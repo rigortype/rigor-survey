@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    module MergeRequestHelpers
+      def create_approval!: (untyped, untyped, untyped, untyped) -> ([untyped, untyped] | nil)
+    end
+  end
+end

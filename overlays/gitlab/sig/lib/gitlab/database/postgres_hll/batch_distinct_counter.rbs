@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module PostgresHll
+      class BatchDistinctCounter
+        def initialize: (untyped, ?untyped) -> void
+        def execute: (?batch_size: untyped, ?start: Integer, ?finish: untyped) -> Gitlab::Database::PostgresHll::Buckets
+      end
+    end
+  end
+end

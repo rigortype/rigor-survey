@@ -1,0 +1,5 @@
+module Resolvers
+  class LastCommitResolver < ::Resolvers::BaseResolver
+    def resolve: (**untyped) -> (Commit | nil)
+  end
+end

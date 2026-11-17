@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class Cipher
+      def encrypt: (untyped, key: untyped, ?deterministic: untyped) -> ActiveRecord::Encryption::Message
+    end
+  end
+end

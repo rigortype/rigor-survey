@@ -1,0 +1,7 @@
+module ActiveJob
+  module EnqueueAfterTransactionCommit
+    module ActiveJobMethods
+      def perform_all_later: (*untyped) -> nil
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Import
+  module AfterExportStrategies
+    class WebUploadStrategy < ::Import::AfterExportStrategies::BaseAfterExportStrategy
+      def initialize: (url: untyped, ?http_method: String) -> void
+    end
+  end
+end

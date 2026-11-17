@@ -1,0 +1,6 @@
+module Slim
+  class Command
+    def initialize: (untyped) -> void
+    def run: () -> bot
+  end
+end

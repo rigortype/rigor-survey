@@ -1,0 +1,14 @@
+module Dependabot
+  module Maven
+    class FileParser < ::Dependabot::FileParsers::Base
+      class MavenDependencyParser
+        def self.build_dependency_set: (untyped, ?credentials: untyped) -> (Dependabot::FileParsers::Base::DependencySet | nil)
+        def self.add_tree: (untyped, untyped, untyped) -> Array[Hash[String, Object]]
+        def self.add_tree_node: (untyped, untyped, untyped, pulled_in_by: untyped) -> (Array[Hash[String, Object]] | nil)
+        def self.tree_children: (untyped) -> Array[untyped]
+        def self.node_string: (untyped, untyped) -> (String | nil)
+        def self.merge_requirement_pair: (untyped, untyped) -> ::DependencyRequirement
+      end
+    end
+  end
+end

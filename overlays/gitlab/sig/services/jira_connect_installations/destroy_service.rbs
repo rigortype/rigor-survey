@@ -1,0 +1,7 @@
+module JiraConnectInstallations
+  class DestroyService
+    def self.execute: (untyped, untyped, untyped) -> (false | true)
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> (false | true)
+  end
+end

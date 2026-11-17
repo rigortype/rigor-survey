@@ -1,0 +1,9 @@
+module Typelizer
+  module SerializerPlugins
+    class Alba < ::Typelizer::SerializerPlugins::Base
+      def meta_fields: () -> ([Typelizer::Property] | nil)
+      def trait_properties: (untyped) -> [untyped, untyped]
+      def build_collected_property: (untyped, untyped) -> Typelizer::Property
+    end
+  end
+end

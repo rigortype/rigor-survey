@@ -1,0 +1,9 @@
+module Projects
+  class ProtectDefaultBranchService
+    def initialize: (untyped) -> void
+    def code_owner_approval_required?: () -> false
+    def push_access_level: () -> (0 | 30 | 40 | 60)
+    def merge_access_level: () -> (0 | 30 | 40 | 60)
+    def default_branch_protection: () -> Gitlab::Access::DefaultBranchProtection
+  end
+end

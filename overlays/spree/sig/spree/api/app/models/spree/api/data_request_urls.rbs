@@ -1,0 +1,7 @@
+module Spree
+  module Api
+    module DataRequestUrls
+      def self?.download_url: (untyped, untyped) -> String
+    end
+  end
+end

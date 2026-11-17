@@ -1,0 +1,11 @@
+module SponsorsFile
+  class ApplicationResource
+    def self.key_of: (String) -> String
+    def self.base_plan_of: (Sponsorship) -> String
+    def serializable_hash: () -> untyped
+    def to_h: () -> untyped
+    class Group < ::Data
+      def self.[]: (sponsors: untyped) -> instance | (untyped sponsors) -> instance
+    end
+  end
+end

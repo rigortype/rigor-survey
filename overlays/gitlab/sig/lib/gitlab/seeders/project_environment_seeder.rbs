@@ -1,0 +1,7 @@
+module Gitlab
+  module Seeders
+    class ProjectEnvironmentSeeder
+      def initialize: (untyped) -> void
+    end
+  end
+end

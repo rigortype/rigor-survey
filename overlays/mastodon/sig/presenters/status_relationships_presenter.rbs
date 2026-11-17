@@ -1,0 +1,4 @@
+class StatusRelationshipsPresenter
+  def initialize: (untyped, ?untyped, **untyped) -> void
+  def filters_map: () -> Hash[untyped, untyped]
+end

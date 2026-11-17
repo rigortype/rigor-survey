@@ -1,0 +1,10 @@
+module Dependabot
+  module Deno
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped) -> void
+        def available_versions: () -> Array[Dependabot::Package::PackageRelease]
+      end
+    end
+  end
+end

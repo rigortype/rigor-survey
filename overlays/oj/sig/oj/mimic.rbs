@@ -1,0 +1,12 @@
+module Oj
+  def self.mimic_loaded: (?untyped) -> :json_create
+  class MimicDumpOption < ::Hash[untyped, untyped]
+    def []=: (untyped, untyped) -> (nil | { ascii_only: untyped } | { quirks_mode: untyped })
+  end
+end
+
+class String
+  def to_json_raw_object: () -> Hash[untyped, Array[Integer] | String]
+  def to_json_raw: (*untyped) -> String
+  def self.json_create: (untyped) -> ("" | String)
+end

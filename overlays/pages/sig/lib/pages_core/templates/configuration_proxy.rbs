@@ -1,0 +1,8 @@
+module PagesCore
+  module Templates
+    class ConfigurationProxy
+      def initialize: (untyped, ?untyped) -> void
+      def respond_to_missing?: () -> true
+    end
+  end
+end

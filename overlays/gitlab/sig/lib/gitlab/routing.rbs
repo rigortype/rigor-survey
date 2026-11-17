@@ -1,0 +1,7 @@
+module Gitlab
+  module Routing
+    class LegacyRedirector
+      def initialize: (Symbol) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module SingleEndpointNotesImporting
+      def parent_collection: () -> bot
+      def parent_imported_cache_key: () -> bot
+      def page_keyset_id: (untyped) -> bot
+    end
+  end
+end

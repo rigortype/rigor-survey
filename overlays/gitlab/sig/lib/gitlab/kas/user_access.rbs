@@ -1,0 +1,10 @@
+module Gitlab
+  module Kas
+    class UserAccess
+      def self.enabled?: () -> (false | true)
+      def self.cookie_data: (untyped) -> (Hash[untyped, untyped] | { value: untyped, expires: ActiveSupport::Duration, httponly: true, path: "/" | String, secure: untyped })
+      def self.encryptor: () -> ActiveSupport::MessageEncryptor
+      def self.public_session_id_purpose: () -> "kas.user_public_session_id"
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Types
+  module Ci
+    class DetailedStatusType < ::Types::BaseObject
+      def id: (parent: untyped) -> String
+      def action: () -> (nil | { button_title: untyped, icon: untyped, method: untyped, path: untyped, title: untyped, confirmation_message: untyped })
+    end
+  end
+end

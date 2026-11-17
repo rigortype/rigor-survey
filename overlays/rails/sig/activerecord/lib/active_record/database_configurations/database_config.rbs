@@ -1,0 +1,9 @@
+module ActiveRecord
+  class DatabaseConfigurations
+    class DatabaseConfig
+      def initialize: (untyped, untyped) -> void
+      def inspect: () -> String
+      def validate!: () -> true
+    end
+  end
+end

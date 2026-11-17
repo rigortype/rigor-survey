@@ -1,0 +1,10 @@
+module JsonLdHelper
+  def as_array: (untyped) -> (Array[untyped] | [untyped])
+  def unsupported_uri_scheme?: (untyped) -> (false | true)
+  def non_matching_uri_hosts?: (untyped, untyped) -> (false | true)
+  def safe_prefetched_embed: (untyped, untyped, untyped) -> (Hash[untyped, untyped] | nil)
+  def unsupported_jsonld_features?: (untyped) -> (false | true)
+  def collection_items: (untyped, ?max_pages: untyped, ?max_items: untyped, ?reference_uri: untyped, ?on_behalf_of: untyped) -> ([Array[untyped], Integer] | nil)
+  def response_successful?: (untyped) -> (false | true)
+  def build_request: (untyped, ?untyped, ?options: untyped) -> Request
+end

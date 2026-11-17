@@ -1,0 +1,5 @@
+class CustomFilter < ::ApplicationRecord
+  def expires_in: () -> (ActiveSupport::Duration | nil)
+  def irreversible=: (untyped) -> (:hide | :warn)
+  def prepare_cache_invalidation!: () -> true
+end

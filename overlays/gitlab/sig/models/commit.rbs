@@ -1,0 +1,30 @@
+class Commit
+  def self.max_diff_options: () -> { max_files: untyped, max_lines: untyped }
+  def self.from_hash: (untyped, untyped) -> Commit
+  def self.valid_hash?: (untyped) -> (false | true)
+  def self.parent_class: () -> singleton(Project)
+  def self.build_from_sidekiq_hash: (untyped, untyped) -> Commit
+  def self.underscore: () -> "commit"
+  def initialize: (untyped, untyped) -> void
+  def with_pipeline: () -> Ci::CommitWithPipeline
+  def self.reference_prefix: () -> "@"
+  def self.reference_valid?: (untyped) -> (false | true)
+  def self.reference_pattern: () -> Regexp
+  def hook_attrs: (?with_changed_files: untyped, ?changed_paths: untyped) -> (Hash[untyped, untyped] | { id: untyped, message: untyped, title: untyped, timestamp: untyped, url: untyped, author: { name: untyped, email: untyped } })
+  def diff_refs: () -> Gitlab::Diff::DiffRefs
+  def gpg_commit: () -> Gitlab::Gpg::Commit
+  def revert_branch_name: () -> String
+  def cherry_pick_description: (untyped) -> String
+  def cherry_pick_message: (untyped) -> String
+  def revert_description: (untyped) -> String
+  def revert_message: (untyped) -> String
+  def change_type_title: (untyped) -> ("commit" | "merge request")
+  def diffs: (?untyped) -> Gitlab::Diff::FileCollection::Commit
+  def persisted?: () -> true
+  def draft?: () -> (false | true)
+  def merged_merge_request?: (untyped) -> (false | true)
+  def cache_key: () -> String
+  def user_mention_class: () -> singleton(CommitUserMention)
+  def user_mention_identifier: () -> { commit_id: untyped, note_id: nil }
+  def has_agent_session?: () -> false
+end

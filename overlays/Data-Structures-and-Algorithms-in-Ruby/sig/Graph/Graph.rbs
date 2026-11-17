@@ -1,0 +1,72 @@
+class Heap
+  def initialize: (?untyped) -> void
+  def set: (untyped) -> nil
+  def percolateDown: (untyped) -> nil
+  def percolateUp: (untyped) -> nil
+  def add: (untyped) -> nil
+  def display: () -> nil
+end
+
+class Graph
+  def initialize: (untyped) -> void
+  def display: () -> nil
+  def self.main0: () -> nil
+  def self.main1: () -> nil
+  def topologicalSort: () -> nil
+  def self.main2: () -> nil
+  def countAllPathDFS: (untyped, untyped, untyped) -> (0 | 1 | Integer)
+  def countAllPath: (untyped, untyped) -> (0 | 1 | Integer)
+  def rootVertex: () -> Integer
+  def self.main4: () -> Integer
+  def transitiveClosure: () -> (Array[Array[Integer]] | Array[untyped])
+  def self.main5: () -> nil
+  def bfsLevelNode: (untyped) -> nil
+  def self.main6: () -> nil
+  def isCyclePresentUndirectedDFS: (untyped, untyped, untyped) -> (false | true)
+  def isCyclePresentUndirected: () -> (false | true)
+  def isCyclePresentUndirected2: () -> (false | true)
+  def isCyclePresentUndirected3: () -> (false | true)
+  def self.main7: () -> nil
+  def isCyclePresentDFS: (untyped, untyped, untyped) -> (false | true)
+  def isCyclePresent: () -> (false | true)
+  def isCyclePresentDFSColour: (untyped, untyped) -> (false | true)
+  def isCyclePresentColour: () -> (false | true)
+  def self.main8: () -> nil
+  def transposeGraph: () -> Graph
+  def self.main9: () -> nil
+  def isConnectedUndirected: () -> (false | true)
+  def self.main10A: () -> nil
+  def isStronglyConnected: () -> (false | true)
+  def self.main10: () -> nil
+  def stronglyConnectedComponent: () -> nil
+  def self.main11: () -> nil
+  def primsMST: () -> nil
+  def kruskalMST: () -> nil
+  def self.main12: () -> nil
+  def shortestPath: (untyped) -> nil
+  def printPathUtil: (untyped, untyped, untyped) -> String
+  def printPath: (untyped, untyped, untyped, untyped) -> nil
+  def dijkstra: (untyped) -> nil
+  def bellmanFordShortestPath: (untyped) -> nil
+  def self.main13: () -> nil
+  def self.main14: () -> nil
+  def isConnected: () -> (false | true)
+  def isEulerian: () -> (0 | 1 | 2)
+  def self.main15: () -> (0 | 1 | 2)
+  def isStronglyConnected2: () -> (false | true)
+  def isEulerianCycle: () -> (false | true)
+  def self.main16: () -> nil
+  def self.main17: () -> nil
+  def self.main18: () -> nil
+  def floydWarshall: () -> nil
+  def printSolution: (untyped, untyped, untyped) -> nil
+  def printPath2: (untyped, untyped, untyped) -> nil
+  def self.main19: () -> nil
+  def self.main: () -> nil
+  class Edge
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class Set
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,17 @@
+module Gitlab
+  module GitalyClient
+    class CommitService
+      def initialize: (untyped) -> void
+      def diff: (untyped, untyped, ?untyped) -> Gitlab::GitalyClient::DiffStitcher
+      def diff_from_parent: (untyped, ?untyped) -> Gitlab::GitalyClient::DiffStitcher
+      def tree_entries: (untyped, untyped, untyped, untyped, untyped, untyped, ?with_last_commit: untyped) -> [untyped, untyped]
+      def diverging_commit_count: (untyped, untyped, max_count: untyped) -> [untyped, untyped]
+      def list_last_commits_for_tree: (untyped, untyped, ?offset: untyped, ?limit: untyped, ?literal_pathspec: untyped) -> Hash[untyped, Gitlab::Git::Commit]
+      def last_commit_for_path: (untyped, untyped, ?literal_pathspec: untyped) -> (Gitlab::Git::Commit | nil)
+      def list_commits: (untyped, ?untyped) -> Gitlab::GitalyClient::CommitCollectionWithNextCursor
+      def object_existence_map: (untyped, ?gitaly_repo: untyped) -> Hash[untyped, untyped]
+      def get_commit_signatures: (untyped) -> Hash[untyped, untyped]
+      def get_commit_messages: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module ActiveRecord
+  module Attributes
+    module ClassMethods
+      class PendingDatabaseDefault < ::Struct[untyped]
+        def name: () -> untyped
+        def default: () -> untyped
+        def name=: (untyped) -> untyped
+        def default=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?default: untyped) -> instance | (?untyped name, ?untyped default) -> instance
+        def self.[]: (?name: untyped, ?default: untyped) -> instance | (?untyped name, ?untyped default) -> instance
+        def apply_to: (untyped) -> ActiveModel::Attribute::FromDatabase
+      end
+    end
+  end
+end

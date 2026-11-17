@@ -1,0 +1,4 @@
+class CanonicalEmailBlock < ::ApplicationRecord
+  def self.digest: (untyped) -> String
+  def email=: (untyped) -> String
+end

@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class NodePattern
+      module Sets
+        def self.name: (untyped) -> (Range[untyped] | String)
+      end
+    end
+  end
+end

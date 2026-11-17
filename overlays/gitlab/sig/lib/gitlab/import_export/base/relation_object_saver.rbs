@@ -1,0 +1,11 @@
+module Gitlab
+  module ImportExport
+    module Base
+      class RelationObjectSaver
+        def initialize: (relation_object: untyped, relation_key: untyped, relation_definition: untyped, importable: untyped) -> void
+        def invalid_subrelations: () -> Array[untyped]
+        def failed_subrelations: () -> Array[untyped]
+      end
+    end
+  end
+end

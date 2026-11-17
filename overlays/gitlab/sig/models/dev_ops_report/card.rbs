@@ -1,0 +1,5 @@
+module DevOpsReport
+  class Card
+    def initialize: (metric: untyped, title: untyped, description: untyped, feature: untyped, blog: untyped, ?docs: untyped) -> void
+  end
+end

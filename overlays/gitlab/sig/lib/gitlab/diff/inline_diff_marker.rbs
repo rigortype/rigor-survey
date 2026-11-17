@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class InlineDiffMarker < ::Gitlab::StringRangeMarker
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

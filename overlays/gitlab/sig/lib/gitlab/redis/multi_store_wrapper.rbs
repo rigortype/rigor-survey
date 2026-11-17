@@ -1,0 +1,9 @@
+module Gitlab
+  module Redis
+    class MultiStoreWrapper < ::Gitlab::Redis::Wrapper
+      def self.multistore_pool: () -> Gitlab::Redis::MultiStoreConnectionPool
+      def self.pool_name: () -> String
+      def self.multistore: () -> bot
+    end
+  end
+end

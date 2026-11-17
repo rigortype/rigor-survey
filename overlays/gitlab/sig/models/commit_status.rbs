@@ -1,0 +1,7 @@
+class CommitStatus < ::Ci::ApplicationRecord
+  def self.names: () -> ActiveRecord::Relation[CommitStatus]
+  def self.locking_enabled?: () -> false
+  def supports_force_cancel?: () -> false
+  def latest?: () -> (false | true)
+  def to_ability_name: () -> "build"
+end

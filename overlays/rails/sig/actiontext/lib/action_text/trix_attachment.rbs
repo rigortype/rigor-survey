@@ -1,0 +1,6 @@
+module ActionText
+  class TrixAttachment
+    def self.from_attributes: (untyped) -> ActionText::TrixAttachment
+    def initialize: (untyped) -> void
+  end
+end

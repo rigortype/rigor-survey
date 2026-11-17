@@ -1,0 +1,5 @@
+module Trends
+  class PreviewCardProviderFilter
+    def initialize: (untyped) -> void
+  end
+end

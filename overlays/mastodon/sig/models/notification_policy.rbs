@@ -1,0 +1,7 @@
+class NotificationPolicy < ::ApplicationRecord
+  def filter_not_following=: (untyped) -> (:accept | :filter)
+  def filter_not_followers=: (untyped) -> (:accept | :filter)
+  def filter_new_accounts=: (untyped) -> (:accept | :filter)
+  def filter_private_mentions=: (untyped) -> (:accept | :filter)
+  def filter_bots=: (untyped) -> (:accept | :filter)
+end

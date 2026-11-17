@@ -1,0 +1,24 @@
+module ActiveModel
+  module AttributeMethods
+    def respond_to?: (untyped, ?untyped) -> (false | true)
+    module ClassMethods
+      class AttributeMethodPattern
+        def initialize: (?prefix: untyped, ?suffix: untyped, ?parameters: untyped) -> void
+        def method_for_attr: (untyped) -> ActiveModel::AttributeMethods::ClassMethods::AttributeMethodPattern::AttributeMethod
+        def define_method_proxy_target: () -> Symbol
+        class AttributeMethod < ::Struct[untyped]
+          def proxy_target: () -> untyped
+          def attr_name: () -> untyped
+          def proxy_target=: (untyped) -> untyped
+          def attr_name=: (untyped) -> untyped
+          def self.new: (?proxy_target: untyped, ?attr_name: untyped) -> instance | (?untyped proxy_target, ?untyped attr_name) -> instance
+          def self.[]: (?proxy_target: untyped, ?attr_name: untyped) -> instance | (?untyped proxy_target, ?untyped attr_name) -> instance
+        end
+      end
+      class AttributeMethodPatternSet
+        def initialize: (untyped) -> void
+        def +: (untyped) -> ActiveModel::AttributeMethods::ClassMethods::AttributeMethodPatternSet
+      end
+    end
+  end
+end

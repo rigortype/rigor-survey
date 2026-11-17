@@ -1,0 +1,7 @@
+class JobSequencing
+  def initialize: (untyped, untyped, untyped, untyped) -> void
+  def display: () -> nil
+  class Job
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

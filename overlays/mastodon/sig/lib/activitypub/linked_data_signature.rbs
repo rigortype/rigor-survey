@@ -1,0 +1,5 @@
+module ActivityPub
+  class LinkedDataSignature
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,10 @@
+module Benchmark
+  class Report
+    def results: () -> String
+    class FileParser
+      def initialize: (untyped) -> void
+      def duration: () -> ("n/a" | String)
+      def to_s: () -> String
+    end
+  end
+end

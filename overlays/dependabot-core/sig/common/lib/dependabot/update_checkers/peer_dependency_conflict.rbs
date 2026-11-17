@@ -1,0 +1,7 @@
+module Dependabot
+  module UpdateCheckers
+    class PeerDependencyConflict < ::T::ImmutableStruct
+      def self.from_captures: (untyped) -> (Dependabot::UpdateCheckers::PeerDependencyConflict | nil)
+    end
+  end
+end

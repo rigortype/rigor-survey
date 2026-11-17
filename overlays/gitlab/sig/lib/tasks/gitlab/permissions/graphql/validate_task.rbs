@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Graphql
+        class ValidateTask < ::Tasks::Gitlab::Permissions::BaseValidateTask
+          def violations: () -> { boundary_mismatch: [], invalid_permission: [], missing_authorization: [], invalid_skip_reason: [], conflicting_authorization: [], invalid_condition: [] }
+        end
+      end
+    end
+  end
+end

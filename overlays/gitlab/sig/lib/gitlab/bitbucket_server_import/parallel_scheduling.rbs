@@ -1,0 +1,11 @@
+module Gitlab
+  module BitbucketServerImport
+    module ParallelScheduling
+      def initialize: (untyped) -> void
+      def page_counter: () -> Gitlab::Import::PageCounter
+      def already_processed_cache_key: () -> String
+      def job_waiter_cache_key: () -> String
+      def job_waiter_remaining_cache_key: () -> String
+    end
+  end
+end

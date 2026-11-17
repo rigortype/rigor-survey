@@ -1,0 +1,9 @@
+module Dependabot
+  module Swift
+    class FileParser < ::Dependabot::FileParsers::Base
+      class DependencyParser
+        def initialize: (dependency_files: untyped, repo_contents_path: untyped, credentials: untyped) -> void
+      end
+    end
+  end
+end

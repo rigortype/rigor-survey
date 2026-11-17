@@ -1,0 +1,11 @@
+class Shape
+  def initialize: (?untyped) -> void
+end
+
+class Rectangle < ::Shape
+  def initialize: (untyped, untyped) -> void
+end
+
+class Circle < ::Shape
+  def initialize: (untyped) -> void
+end

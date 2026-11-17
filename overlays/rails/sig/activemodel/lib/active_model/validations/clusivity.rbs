@@ -1,0 +1,7 @@
+module ActiveModel
+  module Validations
+    module Clusivity
+      def check_validity!: () -> nil
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Reports
+      class CoverageReportGenerator
+        def initialize: (untyped) -> void
+        def report: () -> Gitlab::Ci::Reports::CoverageReport
+      end
+    end
+  end
+end

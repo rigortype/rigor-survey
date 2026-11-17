@@ -1,0 +1,7 @@
+module Gitlab
+  module Sessions
+    module CacheStoreCoder
+      def load: (untyped) -> ActiveSupport::Cache::Entry
+    end
+  end
+end

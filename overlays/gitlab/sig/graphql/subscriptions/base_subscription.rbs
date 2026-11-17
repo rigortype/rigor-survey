@@ -1,0 +1,7 @@
+module Subscriptions
+  class BaseSubscription < ::GraphQL::Schema::Subscription
+    def initialize: (object: untyped, context: untyped, field: untyped) -> void
+    def subscribe: (*untyped) -> nil
+    def authorized?: (*untyped) -> bot
+  end
+end

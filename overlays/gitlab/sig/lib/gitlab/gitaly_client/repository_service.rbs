@@ -1,0 +1,11 @@
+module Gitlab
+  module GitalyClient
+    class RepositoryService
+      def initialize: (untyped) -> void
+      def info_attributes: () -> String
+      def fsck: () -> (["", 0] | [untyped, 1])
+      def create_bundle: (untyped) -> top
+      def search_files_by_content: (untyped, untyped, ?untyped) -> Array[untyped]
+    end
+  end
+end

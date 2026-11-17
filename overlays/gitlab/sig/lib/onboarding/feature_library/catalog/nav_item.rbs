@@ -1,0 +1,23 @@
+module Onboarding
+  module FeatureLibrary
+    module Catalog
+      class NavItem < ::Data
+        def item_id: () -> untyped
+        def panel: () -> untyped
+        def category: () -> untyped
+        def tier: () -> untyped
+        def licensed_features: () -> untyped
+        def title: () -> untyped
+        def description: () -> untyped
+        def icon: () -> untyped
+        def docs_path: () -> untyped
+        def shown_on_deployments: () -> untyped
+        def enhancements: () -> untyped
+        def self.new: (item_id: untyped, panel: untyped, category: untyped, tier: untyped, licensed_features: untyped, title: untyped, description: untyped, icon: untyped, docs_path: untyped, shown_on_deployments: untyped, enhancements: untyped) -> instance | (untyped item_id, untyped panel, untyped category, untyped tier, untyped licensed_features, untyped title, untyped description, untyped icon, untyped docs_path, untyped shown_on_deployments, untyped enhancements) -> instance
+        def self.[]: (item_id: untyped, panel: untyped, category: untyped, tier: untyped, licensed_features: untyped, title: untyped, description: untyped, icon: untyped, docs_path: untyped, shown_on_deployments: untyped, enhancements: untyped) -> instance | (untyped item_id, untyped panel, untyped category, untyped tier, untyped licensed_features, untyped title, untyped description, untyped icon, untyped docs_path, untyped shown_on_deployments, untyped enhancements) -> instance
+        def initialize: (?licensed_features: untyped, ?shown_on_deployments: untyped, ?enhancements: untyped, **untyped) -> void
+        def enhancement_for: (Symbol) -> (Onboarding::FeatureLibrary::Catalog::Enhancement | nil)
+      end
+    end
+  end
+end

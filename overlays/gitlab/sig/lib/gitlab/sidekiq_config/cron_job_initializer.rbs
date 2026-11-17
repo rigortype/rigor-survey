@@ -1,0 +1,8 @@
+module Gitlab
+  module SidekiqConfig
+    class CronJobInitializer
+      def self.cron_for_session_credits_sync_v2: () -> String
+      def self.cron_for_service_ping: () -> String
+    end
+  end
+end

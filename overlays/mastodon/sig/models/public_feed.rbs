@@ -1,0 +1,3 @@
+class PublicFeed
+  def initialize: (untyped, ?untyped) -> void
+end

@@ -1,0 +1,9 @@
+module Types
+  module Namespaces
+    module MarkdownPaths
+      class ProjectNamespaceMarkdownPathsType < ::Types::BaseObject
+        def autocomplete_sources_path: (?iid: untyped, ?work_item_type_id: untyped) -> { members: untyped, issues: untyped, mergeRequests: untyped, labels: untyped, milestones: untyped, commands: untyped, snippets: untyped, contacts: untyped, wikis: untyped }
+      end
+    end
+  end
+end

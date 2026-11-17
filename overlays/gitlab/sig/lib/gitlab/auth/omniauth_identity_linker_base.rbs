@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class OmniauthIdentityLinkerBase
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def authorization_required?: () -> false
+    end
+  end
+end

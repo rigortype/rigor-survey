@@ -1,0 +1,11 @@
+module YARD
+  module Parser
+    module Ruby
+      module Legacy
+        class StatementList < ::Array[untyped]
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class ImportProtectedBranchWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::ProtectedBranch)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::ProtectedBranchImporter)
+      def object_type: () -> :protected_branch
+    end
+  end
+end

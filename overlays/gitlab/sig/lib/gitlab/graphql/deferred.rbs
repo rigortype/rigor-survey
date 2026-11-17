@@ -1,0 +1,7 @@
+module Gitlab
+  module Graphql
+    module Deferred
+      def execute: () -> bot
+    end
+  end
+end

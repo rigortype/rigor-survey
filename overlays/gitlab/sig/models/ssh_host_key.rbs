@@ -1,0 +1,14 @@
+class SshHostKey
+  def self.find_by: (?untyped) -> (SshHostKey | nil)
+  def self.fingerprint_host_keys: (untyped) -> Array[SshHostKey::Fingerprint]
+  def initialize: (project: untyped, url: untyped, ?compare_host_keys: untyped) -> void
+  def self.primary_key: () -> :id
+  def id: () -> String
+  def as_json: (*untyped) -> { host_keys_changed: untyped, fingerprints: untyped, known_hosts: untyped }
+  def fingerprints: () -> Array[SshHostKey::Fingerprint]
+  def calculate_reactive_cache: () -> ({ error: "Failed to detect SSH host keys" } | { known_hosts: String })
+  class Fingerprint < ::Gitlab::SSHPublicKey
+    def initialize: (untyped, ?index: untyped) -> void
+    def as_json: (*untyped) -> Hash[untyped, untyped]
+  end
+end

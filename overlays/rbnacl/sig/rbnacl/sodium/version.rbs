@@ -1,0 +1,7 @@
+module RbNaCl
+  module Sodium
+    module Version
+      def self.supported_version?: (untyped) -> (false | true)
+    end
+  end
+end

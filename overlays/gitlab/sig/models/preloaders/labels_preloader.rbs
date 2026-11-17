@@ -1,0 +1,6 @@
+module Preloaders
+  class LabelsPreloader
+    def initialize: (ActiveRecord::Relation[Label], untyped, ?untyped) -> void
+    def labels: () -> ActiveRecord::Relation[Label]
+  end
+end

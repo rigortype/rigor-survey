@@ -1,0 +1,7 @@
+module Pages
+  module Domains
+    class ObtainLetsEncryptCertificateService
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module HealthChecks
+    class Metric < ::Struct[untyped]
+      def name: () -> untyped
+      def value: () -> untyped
+      def labels: () -> untyped
+      def name=: (untyped) -> untyped
+      def value=: (untyped) -> untyped
+      def labels=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?value: untyped, ?labels: untyped) -> instance | (?untyped name, ?untyped value, ?untyped labels) -> instance
+      def self.[]: (?name: untyped, ?value: untyped, ?labels: untyped) -> instance | (?untyped name, ?untyped value, ?untyped labels) -> instance
+    end
+  end
+end

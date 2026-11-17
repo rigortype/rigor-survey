@@ -1,0 +1,3 @@
+class MergeRequestMergeabilityCheckWorker
+  def logger: () -> Sidekiq::Logger
+end

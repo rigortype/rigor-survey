@@ -1,0 +1,5 @@
+class CustomEmoji < ::ApplicationRecord
+  def local?: () -> (false | true)
+  def object_type: () -> :emoji
+  def self.search: (untyped) -> ActiveRecord::Relation[CustomEmoji]
+end

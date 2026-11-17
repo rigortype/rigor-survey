@@ -1,0 +1,17 @@
+module Gitlab
+  module RackAttack
+    class RequestThrottleData
+      def self.from_rack_attack: (untyped, untyped) -> (Gitlab::RackAttack::RequestThrottleData | nil)
+      def self.from_labkit_result: (name: untyped, result: untyped) -> (Gitlab::RackAttack::RequestThrottleData | nil)
+      def initialize: (name: String, period: Integer, limit: Integer, observed: Integer, now: Integer) -> void
+      def common_response_headers: () -> Hash[String, untyped]
+      def throttled_response_headers: () -> Hash[String, untyped]
+      def reset_time: () -> Time
+      def name: () -> ("test" | "throttle_unauthenticated")
+      def period: () -> (120 | 15 | 3600 | 60)
+      def limit: () -> (10 | 100 | 3600)
+      def observed: () -> (0 | 100 | 30 | 3700 | 50)
+      def now: () -> (1609840800 | 1609842570 | 1609844399 | Integer)
+    end
+  end
+end

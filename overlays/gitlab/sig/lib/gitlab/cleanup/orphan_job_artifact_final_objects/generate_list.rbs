@@ -1,0 +1,10 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      class GenerateList
+        def initialize: (?provider: untyped, ?filename: untyped, ?force_restart: untyped, ?logger: untyped) -> void
+        def file: () -> File
+      end
+    end
+  end
+end

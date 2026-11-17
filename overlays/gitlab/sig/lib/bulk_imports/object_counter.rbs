@@ -1,0 +1,10 @@
+module BulkImports
+  class ObjectCounter
+    def self.summary: (untyped) -> (Hash[untyped, untyped] | nil)
+    def self.counter_key: (untyped) -> String
+    def self.tracked_objects_key: (untyped, untyped) -> String
+    def self.valid_input?: (untyped, untyped) -> (false | true)
+    def self.valid_counter_type?: (untyped) -> (false | true)
+    def self.empty_response: () -> Hash[:fetched | :imported | :source, 0]
+  end
+end

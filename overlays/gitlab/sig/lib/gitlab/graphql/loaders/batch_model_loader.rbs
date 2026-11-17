@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class BatchModelLoader
+        def initialize: (untyped, untyped, ?untyped, ?default_value: untyped) -> void
+      end
+    end
+  end
+end

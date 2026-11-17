@@ -1,0 +1,17 @@
+module Gitlab
+  module JsRoutes
+    def self.match_ci_env!: (untyped) -> nil
+    def self.generate!: () -> (Integer | nil)
+    def self.write_file_if_changed: (untyped, untyped) -> (Integer | nil)
+    def self.generate_path_helper: (untyped, untyped) -> ("" | String)
+    def self.generate_project_path_helper: (untyped, untyped) -> String
+    def self.generate_standard_path_helper: (untyped, untyped) -> String
+    def self.generate_path_helper_without_organization_scoping: (untyped) -> ("" | String)
+    def self.generate_global_path_helper: (untyped, ?rails_route_name: untyped) -> [untyped, untyped, untyped]
+    def self.route_controller_action: (untyped) -> (String | nil)
+    def self.generate_organization_path_helper: (untyped) -> [untyped, untyped]
+    def self.private_path_helper_name: (untyped) -> String
+    def self.utils_import_statement: (untyped) -> ("" | String)
+    def self.javascript_utils: () -> String
+  end
+end

@@ -1,0 +1,10 @@
+module AlertManagement
+  module Responses
+    def success: (untyped) -> ServiceResponse
+    def created: () -> ServiceResponse
+    def bad_request: () -> ServiceResponse
+    def unauthorized: () -> ServiceResponse
+    def unprocessable_entity: () -> ServiceResponse
+    def forbidden: () -> ServiceResponse
+  end
+end

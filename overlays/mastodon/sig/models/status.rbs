@@ -1,0 +1,6 @@
+class Status < ::ApplicationRecord
+  def cache_key: () -> String
+  def reblog?: () -> (false | true)
+  def verb: () -> (:delete | :post | :share)
+  def object_type: () -> (:comment | :note)
+end

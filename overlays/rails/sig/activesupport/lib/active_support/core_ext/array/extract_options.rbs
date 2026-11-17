@@ -1,0 +1,7 @@
+class Hash[unchecked out K, unchecked out V]
+  def extractable_options?: () -> bool
+end
+
+class Array[unchecked out E]
+  def extract_options!: () -> Hash[untyped, untyped]
+end

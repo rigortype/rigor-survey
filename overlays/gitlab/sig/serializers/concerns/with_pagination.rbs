@@ -1,0 +1,3 @@
+module WithPagination
+  def with_pagination: (untyped, untyped) -> WithPagination
+end

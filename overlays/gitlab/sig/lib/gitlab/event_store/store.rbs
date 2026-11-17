@@ -1,0 +1,7 @@
+module Gitlab
+  module EventStore
+    class Store
+      def subscriptions: () -> Hash[untyped, untyped]
+    end
+  end
+end

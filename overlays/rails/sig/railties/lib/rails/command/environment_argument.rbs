@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    module EnvironmentArgument
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Template
+    module Finders
+      class GlobalTemplateFinder < ::Gitlab::Template::Finders::BaseTemplateFinder
+        def initialize: (untyped, String, ?Hash[String, String], ?untyped, ?excluded_patterns: untyped) -> void
+        def read: (untyped) -> String
+        def find: (untyped) -> (String | nil)
+        def list_files_for: (untyped) -> Array[String]
+      end
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      module V2
+        class Line
+          def initialize: (offset: untyped, style: untyped, ?sections: untyped, ?timestamps: untyped) -> void
+          def reset!: (offset: untyped, style: untyped, ?sections: untyped, ?timestamps: untyped) -> true
+          def <<: (untyped) -> false
+          def flush_current_segment!: () -> ("" | nil)
+          def clear!: () -> ""
+          def empty?: () -> (false | true)
+          def at_line_start?: () -> (false | nil | true)
+          def set_as_section_header: () -> true
+          def set_as_section_footer: () -> true
+          def set_section_duration: (untyped) -> String
+          def to_h: () -> (Hash[untyped, untyped] | { offset: untyped, content: Array[untyped] | nil })
+        end
+      end
+    end
+  end
+end

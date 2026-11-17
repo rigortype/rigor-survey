@@ -1,0 +1,13 @@
+module AWS
+  class PAAPI
+    def initialize: (untyped, untyped, untyped) -> void
+    class Market < ::Struct[untyped]
+      def host: () -> untyped
+      def region: () -> untyped
+      def host=: (untyped) -> untyped
+      def region=: (untyped) -> untyped
+      def self.new: (?host: untyped, ?region: untyped) -> instance | (?untyped host, ?untyped region) -> instance
+      def self.[]: (?host: untyped, ?region: untyped) -> instance | (?untyped host, ?untyped region) -> instance
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module AlertManagement
+  class CreateAlertIssueService
+    def initialize: (untyped, untyped) -> void
+  end
+end

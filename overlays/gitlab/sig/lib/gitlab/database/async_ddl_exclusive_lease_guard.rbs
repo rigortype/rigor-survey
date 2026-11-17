@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module AsyncDdlExclusiveLeaseGuard
+      def lease_key: () -> String
+    end
+  end
+end

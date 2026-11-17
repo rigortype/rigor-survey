@@ -1,0 +1,5 @@
+module Members
+  class DestroyedCloudEvent < ::Members::BaseEvent
+    def self.build: (source: untyped, current_user: untyped, user_id: untyped, root_namespace_id: untyped) -> Members::DestroyedCloudEvent
+  end
+end

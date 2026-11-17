@@ -1,0 +1,3 @@
+class ProcessBroadcastDeliveryMailgunEventJob < ::ApplicationJob
+  def perform: (mailgun_event) -> void
+end

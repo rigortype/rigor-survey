@@ -1,0 +1,12 @@
+module Rails
+  module Generators
+    class GeneratedAttribute
+      def self.parse: (untyped) -> Rails::Generators::GeneratedAttribute
+      def self.parse_type_and_options: (untyped) -> bot
+      def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+      def field_type: () -> (:checkbox | :date_field | :datetime_field | :file_field | :number_field | :rich_textarea | :text_field | :textarea | :time_field)
+      def inject_index_options: () -> ("" | ", unique: true")
+      def to_s: () -> String
+    end
+  end
+end

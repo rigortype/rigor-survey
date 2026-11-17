@@ -1,0 +1,6 @@
+module GithubApi
+  class DependencySubmission
+    def initialize: (job_id: untyped, branch: untyped, sha: untyped, package_manager: untyped, manifest_snapshots: untyped, ?status: untyped, ?reason: untyped) -> void
+    def payload: () -> { version: 1, sha: String, ref: String, job: { correlator: String, id: String }, detector: { name: "dependabot", version: String, url: "https://github.com/dependabot/dependabot-core" }, manifests: Hash[String, Object], metadata: Hash[untyped, untyped] }
+  end
+end

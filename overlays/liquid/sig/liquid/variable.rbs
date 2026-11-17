@@ -1,0 +1,14 @@
+module Liquid
+  class Variable
+    def initialize: (untyped, Liquid::ParseContext) -> void
+    def markup_context: (untyped) -> String
+    def lax_parse: (untyped) -> (Array[Array[String | nil] | String] | nil)
+    def parse_filterargs: (untyped) -> Array[untyped]
+    def disabled?: (untyped) -> false
+    def disabled_tags: () -> []
+    def parse_context: () -> Liquid::ParseContext
+    class ParseTreeVisitor < ::Liquid::ParseTreeVisitor
+      def children: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Subscriptions
+  class WorkItemUpdated < ::Subscriptions::BaseSubscription
+    def authorized?: (work_item_id: untyped) -> true
+  end
+end

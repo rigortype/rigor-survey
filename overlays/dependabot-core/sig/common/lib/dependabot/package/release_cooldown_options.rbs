@@ -1,0 +1,15 @@
+module Dependabot
+  module Package
+    class ReleaseCooldownOptions
+      def initialize: (?default_days: untyped, ?semver_major_days: untyped, ?semver_minor_days: untyped, ?semver_patch_days: untyped, ?include: untyped, ?exclude: untyped) -> void
+      def included?: (untyped) -> (false | true)
+      def cooldown_days_for: (untyped, untyped) -> Integer
+      def default_days: () -> Integer
+      def semver_major_days: () -> Integer
+      def semver_minor_days: () -> Integer
+      def semver_patch_days: () -> Integer
+      def include: () -> Set[untyped]
+      def exclude: () -> Set[untyped]
+    end
+  end
+end

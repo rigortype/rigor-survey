@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    class GitlabShellTask
+      def self.name: () -> "GitLab Shell"
+      def self.checks: () -> [singleton(SystemCheck::GitlabShellCheck)]
+    end
+  end
+end

@@ -1,0 +1,20 @@
+module Gitlab
+  module GithubImport
+    module ParallelScheduling
+      def initialize: (untyped, untyped, ?parallel: untyped) -> void
+      def increment_object_counter?: (untyped) -> true
+      def object_type: () -> bot
+      def id_for_already_imported_cache: (untyped) -> bot
+      def representation_class: () -> bot
+      def importer_class: () -> bot
+      def sidekiq_worker_class: () -> bot
+      def collection_method: () -> bot
+      def abort_on_failure: () -> false
+      def collection_options: () -> {}
+      def page_keyset: () -> Gitlab::Import::PageKeyset
+      def already_imported_cache_key: () -> String
+      def job_waiter_cache_key: () -> String
+      def job_waiter_remaining_cache_key: () -> String
+    end
+  end
+end

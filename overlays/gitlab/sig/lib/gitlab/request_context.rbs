@@ -1,0 +1,6 @@
+module Gitlab
+  class RequestContext
+    def self.instance: () -> Gitlab::RequestContext
+    def ensure_deadline_not_exceeded!: () -> nil
+  end
+end

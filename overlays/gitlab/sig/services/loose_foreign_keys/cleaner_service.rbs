@@ -1,0 +1,7 @@
+module LooseForeignKeys
+  class CleanerService
+    def initialize: (loose_foreign_key_definition: untyped, connection: untyped, deleted_parent_records: untyped, ?logger: untyped, ?with_skip_locked: (false | true)) -> void
+    def execute: () -> { affected_rows: untyped, table: untyped }
+    def with_skip_locked: () -> true
+  end
+end

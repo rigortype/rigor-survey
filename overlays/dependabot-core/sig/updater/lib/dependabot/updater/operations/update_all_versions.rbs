@@ -1,0 +1,14 @@
+module Dependabot
+  class Updater
+    module Operations
+      class UpdateAllVersions
+        def self.applies_to?: (_job: untyped) -> false
+        def self.tag_name: () -> :update_all_versions
+        def initialize: (service: untyped, job: untyped, dependency_snapshot: untyped, error_handler: untyped) -> void
+        def perform: () -> Array[Dependabot::Dependency]
+        def created_pull_requests: () -> Array[::PullRequest]
+        def notices: () -> Array[Dependabot::Notice]
+      end
+    end
+  end
+end

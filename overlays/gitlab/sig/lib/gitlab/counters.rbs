@@ -1,0 +1,12 @@
+module Gitlab
+  module Counters
+    class Increment < ::Struct[untyped]
+      def amount: () -> untyped
+      def ref: () -> untyped
+      def amount=: (untyped) -> untyped
+      def ref=: (untyped) -> untyped
+      def self.new: (?amount: untyped, ?ref: untyped) -> instance
+      def self.[]: (?amount: untyped, ?ref: untyped) -> instance
+    end
+  end
+end

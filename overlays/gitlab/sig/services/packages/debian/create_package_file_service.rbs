@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class CreatePackageFileService
+      def initialize: (package: untyped, current_user: untyped, ?params: untyped) -> void
+    end
+  end
+end

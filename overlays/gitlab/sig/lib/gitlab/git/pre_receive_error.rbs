@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class PreReceiveError < ::StandardError
+      def initialize: (?untyped, ?fallback_message: untyped) -> void
+    end
+  end
+end

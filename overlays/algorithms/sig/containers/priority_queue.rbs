@@ -1,0 +1,8 @@
+module Containers
+  class PriorityQueue
+    def initialize: () ?{ (*untyped) -> untyped } -> void
+    def clear: () -> nil
+    def empty?: () -> (false | true)
+    def has_priority?: (Integer) -> (false | true)
+  end
+end

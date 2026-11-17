@@ -1,0 +1,10 @@
+module WorkItems
+  module DataSync
+    module Handlers
+      class CopyDataHandler
+        def initialize: (work_item: untyped, target_namespace: untyped, target_work_item_type: untyped, ?current_user: untyped, ?params: untyped, ?overwritten_params: untyped) -> void
+        def create_params: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

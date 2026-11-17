@@ -1,0 +1,7 @@
+module Gitlab
+  module Suggestions
+    class FileSuggestion
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

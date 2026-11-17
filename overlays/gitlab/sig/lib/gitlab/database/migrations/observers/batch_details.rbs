@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Migrations
+      module Observers
+        class BatchDetails < ::Gitlab::Database::Migrations::Observers::MigrationObserver
+          def before: () -> Float
+          def after: () -> Float
+          def record: () -> Integer
+          def started_at: () -> Float
+          def finished_at: () -> Float
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class PnpmResolutions
+      def self.changed_versions: (untyped, untyped, untyped) -> Array[String]
+      def initialize: (untyped) -> void
+      def edges: (untyped) -> Hash[String, String]
+      def versions: (untyped) -> Array[String]
+    end
+  end
+end

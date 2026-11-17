@@ -1,0 +1,11 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PackageJsonPreparer
+        def initialize: (package_json_content: untyped) -> void
+        def prepared_content: () -> String
+        def swapped_ssh_requirements: () -> Array[String]
+      end
+    end
+  end
+end

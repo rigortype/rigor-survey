@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    class PositionTracer
+      class FileStrategy < ::Gitlab::Diff::PositionTracer::BaseStrategy
+        def trace: (untyped) -> ({ outdated: true } | { position: Gitlab::Diff::Position, outdated: false } | { position: Gitlab::Diff::Position, outdated: true })
+      end
+    end
+  end
+end

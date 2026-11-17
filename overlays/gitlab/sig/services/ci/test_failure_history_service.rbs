@@ -1,0 +1,10 @@
+module Ci
+  class TestFailureHistoryService
+    def initialize: (untyped) -> void
+    def execute: () -> (Hash[untyped, Hash[Symbol, untyped]] | nil)
+    def async: () -> Ci::TestFailureHistoryService::Async
+    class Async
+      def initialize: (untyped) -> void
+    end
+  end
+end

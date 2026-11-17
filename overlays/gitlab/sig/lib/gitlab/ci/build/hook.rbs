@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Build
+      class Hook
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

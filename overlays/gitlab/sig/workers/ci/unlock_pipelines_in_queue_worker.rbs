@@ -1,0 +1,5 @@
+module Ci
+  class UnlockPipelinesInQueueWorker
+    def max_running_jobs: () -> (0 | 10 | 1500 | 50 | 500)
+  end
+end

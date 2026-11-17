@@ -1,0 +1,7 @@
+module MergeRequests
+  module Mergeability
+    class Logger
+      def initialize: (merge_request: untyped, ?destination: untyped) -> void
+    end
+  end
+end

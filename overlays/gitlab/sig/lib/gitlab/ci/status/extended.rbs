@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Status
+      class Extended < ::SimpleDelegator
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

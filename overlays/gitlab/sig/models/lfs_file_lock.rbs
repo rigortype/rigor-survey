@@ -1,0 +1,3 @@
+class LfsFileLock < ::ApplicationRecord
+  def self.for_path!: (untyped) -> LfsFileLock
+end

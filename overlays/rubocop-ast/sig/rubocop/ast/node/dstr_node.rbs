@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class DstrNode < ::RuboCop::AST::StrNode
+      def value: () -> String
+    end
+  end
+end

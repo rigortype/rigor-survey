@@ -1,0 +1,7 @@
+module Authn
+  module TokenField
+    class PrefixHelper
+      def self.optional_instance_prefix_pattern: (untyped) -> Regexp
+    end
+  end
+end

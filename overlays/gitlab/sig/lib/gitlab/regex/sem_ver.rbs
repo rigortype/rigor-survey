@@ -1,0 +1,7 @@
+module Gitlab
+  module Regex
+    module SemVer
+      def optional_prefixed: () -> Regexp
+    end
+  end
+end

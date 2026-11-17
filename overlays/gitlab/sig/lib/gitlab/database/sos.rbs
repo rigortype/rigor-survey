@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module Sos
+      def self.run: (untyped) -> nil
+    end
+  end
+end

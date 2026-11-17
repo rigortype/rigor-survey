@@ -1,0 +1,8 @@
+module ActiveSupport
+  module Concurrency
+    class ShareLock
+      def start_exclusive: (?purpose: untyped, ?compatible: untyped, ?no_wait: untyped) -> (false | true)
+      def stop_exclusive: (?compatible: untyped) -> (Thread::ConditionVariable | nil)
+    end
+  end
+end

@@ -1,0 +1,11 @@
+class Fruit
+  def initialize: (untyped, untyped, untyped) -> void
+end
+
+class Knight
+  def initialize: (untyped, untyped, untyped) -> void
+end
+
+class Node
+  def initialize: (untyped, untyped, untyped) -> void
+end

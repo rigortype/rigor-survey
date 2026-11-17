@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Duration
+        class Period < ::Struct[untyped]
+          def started_at: () -> untyped
+          def finished_at: () -> untyped
+          def started_at=: (untyped) -> untyped
+          def finished_at=: (untyped) -> untyped
+          def self.new: (?started_at: untyped, ?finished_at: untyped) -> instance
+          def self.[]: (?started_at: untyped, ?finished_at: untyped) -> instance
+        end
+      end
+    end
+  end
+end

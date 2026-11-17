@@ -1,0 +1,21 @@
+module YARD
+  class StubProxy
+    def self._load: (untyped) -> YARD::StubProxy
+    def hash: () -> Integer
+    def initialize: (untyped, ?untyped) -> void
+  end
+  module Serializers
+    class YardocSerializer < ::YARD::Serializers::FileSystemSerializer
+      def initialize: (String) -> void
+      def objects_path: () -> String
+      def proxy_types_path: () -> String
+      def checksums_path: () -> String
+      def object_types_path: () -> String
+      def complete_lock_path: () -> String
+      def processing_path: () -> String
+      def complete?: () -> (false | true)
+      def locked_for_writing?: () -> (false | true)
+      def serialized_path: (String) -> String
+    end
+  end
+end

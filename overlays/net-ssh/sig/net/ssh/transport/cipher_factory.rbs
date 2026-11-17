@@ -1,0 +1,9 @@
+module Net
+  module SSH
+    module Transport
+      class CipherFactory
+        def self.get_lengths: (untyped, ?untyped) -> (Array[untyped] | [0, 0] | [untyped, untyped])
+      end
+    end
+  end
+end

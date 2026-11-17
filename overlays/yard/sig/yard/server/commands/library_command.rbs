@@ -1,0 +1,9 @@
+module YARD
+  module Server
+    module Commands
+      class LibraryCommand < ::YARD::Server::Commands::Base
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

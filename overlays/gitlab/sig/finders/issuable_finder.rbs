@@ -1,0 +1,5 @@
+class IssuableFinder
+  def initialize: (untyped, ?untyped) -> void
+  def klass: () -> bot
+  def parent_param: () -> (:group_id | :project_id)
+end

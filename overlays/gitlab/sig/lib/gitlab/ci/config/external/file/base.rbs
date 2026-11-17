@@ -1,0 +1,22 @@
+module Gitlab
+  module Ci
+    class Config
+      module External
+        module File
+          class Base
+            def initialize: (untyped, untyped) -> void
+            def inputs_only!: () -> Gitlab::Ci::Config::External::File::Base
+            def inputs_only?: () -> (false | true)
+            def invalid_location_type?: () -> (false | true)
+            def invalid_extension?: () -> (false | true)
+            def include_type: () -> bot
+            def eql?: (untyped) -> (false | true)
+            def hash: () -> Integer
+            def load_uninterpolated_yaml: () -> Gitlab::Ci::Config::Yaml::Result
+            def errors: () -> Array[untyped]
+          end
+        end
+      end
+    end
+  end
+end

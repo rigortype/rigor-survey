@@ -1,0 +1,5 @@
+module Gitlab
+  module QueryLogs
+    def self.tags: () -> (Array[untyped] | [{ application: "console" | "sidekiq" | "test" | "web" }, { correlation_id: Proc }, { jid: Proc }, { endpoint_id: Proc }, { db_config_database: Proc }, { db_config_name: Proc }, { console_hostname: Proc }, { console_username: Proc }, { feature_category: Proc }])
+  end
+end

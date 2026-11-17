@@ -1,0 +1,3 @@
+module ExtractsPath
+  def verify_gitaly_availability!: () -> nil
+end

@@ -1,0 +1,13 @@
+module RuboCop
+  module AST
+    module MethodIdentifierPredicates
+      def operator_method?: () -> (false | true)
+      def nonmutating_binary_operator_method?: () -> (false | true)
+      def nonmutating_unary_operator_method?: () -> (false | true)
+      def nonmutating_array_method?: () -> (false | true)
+      def nonmutating_hash_method?: () -> (false | true)
+      def nonmutating_string_method?: () -> (false | true)
+      def enumerable_method?: () -> (false | true)
+    end
+  end
+end

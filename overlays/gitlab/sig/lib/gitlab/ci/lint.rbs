@@ -1,0 +1,17 @@
+module Gitlab
+  module Ci
+    class Lint
+      def initialize: (project: untyped, current_user: untyped, surface: untyped, ?sha: untyped, ?verify_project_sha: untyped) -> void
+      def legacy_validate: (untyped, ?dry_run: (false | true), ?ref: untyped) -> Gitlab::Ci::Lint::Result
+      def validate: (untyped, dry_run: untyped, ref: untyped) -> Gitlab::Ci::Lint::Result
+      class Result
+        def initialize: (jobs: [], merged_yaml: untyped, errors: ([String] | []), warnings: [], includes: [], ?timed_out: untyped) -> void
+        def status: () -> (:invalid | :valid)
+        def jobs: () -> []
+        def errors: () -> (["Invalid configuration format"] | [])
+        def warnings: () -> []
+        def includes: () -> []
+      end
+    end
+  end
+end

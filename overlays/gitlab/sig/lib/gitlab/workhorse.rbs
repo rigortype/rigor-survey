@@ -1,0 +1,26 @@
+module Gitlab
+  class Workhorse
+    def self.git_http_ok: (untyped, untyped, untyped, untyped, ?show_all_refs: untyped, ?need_audit: untyped, ?authentication_context: untyped) -> Hash[untyped, untyped]
+    def self.attribute_ci_job: (untyped, untyped) -> ("gitlab-ci-job" | nil)
+    def self.send_git_blob: (untyped, untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_git_archive: (untyped, ref: untyped, format: untyped, append_sha: untyped, ?path: untyped, ?include_lfs_blobs: untyped, ?exclude_paths: untyped, ?client_name: untyped, ?ref_type: untyped, ?metadata: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_git_snapshot: (untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_git_diff: (untyped, untyped, ?client_name: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_changed_paths: (untyped, untyped, ?client_name: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_list_blobs: (untyped, untyped, bytes_limit: untyped, ?client_name: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_git_patch: (untyped, untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_artifacts_entry: (untyped, untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_url: (untyped, ?allow_localhost: untyped, ?allow_redirects: untyped, ?method: untyped, ?body: untyped, ?ssrf_filter: untyped, ?headers: untyped, ?timeouts: untyped, ?response_statuses: untyped, ?response_headers: untyped, ?allowed_endpoints: untyped, ?restrict_forwarded_response_headers: untyped, ?upstream_range: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_scaled_image: (untyped, untyped, untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.send_dependency: (untyped, untyped, ?allow_localhost: untyped, ?upload_config: untyped, ?response_headers: untyped, ?ssrf_filter: untyped, ?allowed_endpoints: untyped, ?restrict_forwarded_response_headers: untyped) -> ["Gitlab-Workhorse-Send-Data", String]
+    def self.channel_websocket: (untyped) -> (Hash[String, Hash[untyped, untyped]] | Hash[String, Hash[String, untyped]])
+    def self.detect_content_type: () -> ["Gitlab-Workhorse-Detect-Content-Type", "true"]
+    def self.encode: (untyped) -> String
+    def self.encode_binary: (untyped) -> String
+    def self.gitaly_server_hash: (untyped, ?client_name: untyped) -> { address: untyped, token: untyped, call_metadata: untyped }
+    def self.gitaly_diff_or_patch_hash: (untyped, untyped) -> { repository: untyped, left_commit_id: untyped, right_commit_id: untyped }
+    def self.git_archive_cache_cleaner_enabled?: () -> (false | true)
+    def self.send_git_archive_params: (untyped, untyped, untyped, untyped, untyped, untyped) -> Hash[String, untyped]
+    def self.restrict_forwarded_response_headers_params: (untyped) -> Hash[String, Hash[String, untyped]]
+  end
+end

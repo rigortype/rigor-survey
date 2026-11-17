@@ -1,0 +1,12 @@
+module YARD
+  module CodeObjects
+    class ExtraFileObject
+      def initialize: (String, ?untyped) -> void
+      def contents=: (untyped) -> false
+      def locale=: (untyped) -> false
+      def inspect: () -> String
+      def type: () -> :extra_file
+      def hash: () -> Integer
+    end
+  end
+end

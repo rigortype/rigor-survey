@@ -1,0 +1,18 @@
+module Dependabot
+  module Opentofu
+    class RegistryClient
+      def initialize: (?hostname: untyped, ?credentials: untyped) -> void
+      def self.all_oci_tags: (artifact_identifier: untyped, ?credentials: untyped) -> Array[Dependabot::Opentofu::Version]
+      def all_provider_package_hashes: (identifier: untyped, version: untyped) -> (Hash[untyped, untyped] | nil)
+      def source: (dependency: untyped) -> (Dependabot::Source | ::Source | nil)
+      def service_url_for_registry: (untyped) -> String
+      def self.oci_scheme_for: (untyped) -> ("http" | "https")
+      def self.oci_get: (untyped, host: untyped, credentials: untyped) -> Excon::Response
+      def self.oci_bearer_token_url: (untyped) -> (String | nil)
+      def self.oci_token_cache: () -> (Hash[String, Hash[Symbol, untyped]] | nil)
+      def self.oci_auth_header: (untyped) -> String
+      def api_base_url: () -> String
+      def tokens: () -> Hash[String, String]
+    end
+  end
+end

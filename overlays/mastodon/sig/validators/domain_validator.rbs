@@ -1,0 +1,3 @@
+class DomainValidator < ::ActiveModel::EachValidator
+  def validate_each: (untyped, untyped, untyped) -> (Array[untyped] | nil)
+end

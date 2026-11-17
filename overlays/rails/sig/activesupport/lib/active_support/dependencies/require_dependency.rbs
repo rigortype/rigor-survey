@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Dependencies
+    module RequireDependency
+      def require_dependency: (untyped) -> (false | true)
+    end
+  end
+end

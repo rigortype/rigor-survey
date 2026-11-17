@@ -1,0 +1,5 @@
+module Gitlab
+  module DependencyLinker
+    def self.linker: (untyped) -> (nil | singleton(Gitlab::DependencyLinker::CargoTomlLinker) | singleton(Gitlab::DependencyLinker::CartfileLinker) | singleton(Gitlab::DependencyLinker::ComposerJsonLinker) | singleton(Gitlab::DependencyLinker::GemfileLinker) | singleton(Gitlab::DependencyLinker::GemspecLinker) | singleton(Gitlab::DependencyLinker::GoModLinker) | singleton(Gitlab::DependencyLinker::GoSumLinker) | singleton(Gitlab::DependencyLinker::GodepsJsonLinker) | singleton(Gitlab::DependencyLinker::PackageJsonLinker) | singleton(Gitlab::DependencyLinker::PodfileLinker) | singleton(Gitlab::DependencyLinker::PodspecJsonLinker) | singleton(Gitlab::DependencyLinker::PodspecLinker) | singleton(Gitlab::DependencyLinker::RequirementsTxtLinker))
+  end
+end

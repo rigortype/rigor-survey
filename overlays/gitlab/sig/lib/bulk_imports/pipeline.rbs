@@ -1,0 +1,5 @@
+module BulkImports
+  module Pipeline
+    def initialize: (untyped) -> void
+  end
+end

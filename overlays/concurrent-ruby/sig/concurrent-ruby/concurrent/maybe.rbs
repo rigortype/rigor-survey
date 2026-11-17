@@ -1,0 +1,8 @@
+module Concurrent
+  class Maybe < ::Concurrent::Synchronization::Object
+    def self.from: (*untyped) -> Concurrent::Maybe
+    def self.just: (untyped) -> Concurrent::Maybe
+    def self.nothing: (?untyped) -> Concurrent::Maybe
+    def just?: () -> (false | true)
+  end
+end

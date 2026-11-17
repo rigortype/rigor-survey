@@ -1,0 +1,8 @@
+module Concurrent
+  module Utility
+    module NativeExtensionLoader
+      def c_extensions_loaded?: () -> (nil | true)
+      def load_native_extensions: () -> (nil | true)
+    end
+  end
+end

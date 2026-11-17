@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module CommonHelpers
+      def endpoint_id: () -> (String | nil)
+    end
+  end
+end

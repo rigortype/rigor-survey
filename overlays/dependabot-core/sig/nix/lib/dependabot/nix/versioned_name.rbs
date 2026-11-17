@@ -1,0 +1,13 @@
+module Dependabot
+  module Nix
+    class VersionedName
+      def initialize: (untyped) -> void
+      def versioned?: () -> (false | true)
+      def prefix: () -> (String | nil)
+      def suffix: () -> (String | nil)
+      def version_string: () -> (String | nil)
+      def version: () -> (Array[Integer] | nil)
+      def newer_than?: (untyped) -> (false | true)
+    end
+  end
+end

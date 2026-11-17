@@ -1,0 +1,9 @@
+module Dependabot
+  class Job
+    class AllowedUpdate < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::AllowedUpdate
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      def self.string_array_with_default: (untyped, untyped) -> Array[String]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module TDiary
+  module RefererManager
+    def add_referer: (untyped, ?untyped) -> ([untyped, untyped] | nil)
+    def clear_referers: () -> {}
+    def count_referers: () -> Integer
+    def each_referer: (?untyped) -> (Array[untyped] | nil)
+  end
+end

@@ -1,0 +1,6 @@
+module BulkImports
+  class RetryPipelineError < ::BulkImports::Error
+    def initialize: (String, ?Integer) -> void
+    def retry_delay: () -> 60
+  end
+end

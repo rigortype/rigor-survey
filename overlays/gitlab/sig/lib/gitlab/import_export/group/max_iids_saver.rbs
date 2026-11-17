@@ -1,0 +1,10 @@
+module Gitlab
+  module ImportExport
+    module Group
+      class MaxIidsSaver < ::Gitlab::ImportExport::BaseMaxIidsSaver
+        def self.resource_queries: () -> { group_milestones: Proc }
+        def initialize: (group: untyped, shared: untyped) -> void
+      end
+    end
+  end
+end

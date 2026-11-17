@@ -1,0 +1,9 @@
+module SystemCheck
+  module RakeTask
+    class GitlabTask
+      def self.name: () -> "GitLab"
+      def self.manual_run_checks!: () -> nil
+      def self.subtasks: () -> [singleton(SystemCheck::RakeTask::GitlabShellTask), singleton(SystemCheck::RakeTask::GitalyTask), singleton(SystemCheck::RakeTask::SidekiqTask), singleton(SystemCheck::RakeTask::IncomingEmailTask), singleton(SystemCheck::RakeTask::LdapTask), singleton(SystemCheck::RakeTask::AppTask)]
+    end
+  end
+end

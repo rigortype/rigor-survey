@@ -1,0 +1,7 @@
+module Gitlab
+  module Octokit
+    class UrlValidation
+      def initialize: (untyped) -> void
+    end
+  end
+end

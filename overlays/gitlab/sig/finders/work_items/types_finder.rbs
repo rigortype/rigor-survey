@@ -1,0 +1,5 @@
+module WorkItems
+  class TypesFinder
+    def initialize: (container: untyped) -> void
+  end
+end

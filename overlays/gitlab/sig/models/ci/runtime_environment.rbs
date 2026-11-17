@@ -1,0 +1,5 @@
+module Ci
+  class RuntimeEnvironment < ::Ci::ApplicationRecord
+    def self.detach_partition?: (untyped) -> (false | true)
+  end
+end

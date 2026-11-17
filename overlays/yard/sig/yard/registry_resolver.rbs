@@ -1,0 +1,5 @@
+module YARD
+  class RegistryResolver
+    def initialize: (?untyped) -> void
+  end
+end

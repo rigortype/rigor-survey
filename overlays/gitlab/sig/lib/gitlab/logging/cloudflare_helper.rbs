@@ -1,0 +1,8 @@
+module Gitlab
+  module Logging
+    module CloudflareHelper
+      def store_cloudflare_headers!: (untyped, untyped) -> Hash[String, Symbol]
+      def valid_cloudflare_header?: (untyped) -> (false | true)
+    end
+  end
+end

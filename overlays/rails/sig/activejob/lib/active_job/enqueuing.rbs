@@ -1,0 +1,7 @@
+module ActiveJob
+  module Enqueuing
+    def enqueue: (?untyped) -> (ActiveJob::Enqueuing | false)
+  end
+  class EnqueueError < ::StandardError
+  end
+end

@@ -1,0 +1,9 @@
+module Namespaces
+  module DeletableHelper
+    def group_confirm_modal_data: (group: untyped, ?remove_form_id: untyped, ?permanently_remove: untyped, ?button_text: untyped, ?has_security_policy_project: untyped) -> { remove_form_id: untyped, button_text: untyped, button_testid: "remove-group-button", disabled: untyped, confirm_danger_message: untyped, phrase: untyped, html_confirmation_message: "true", form_path: untyped, confirm_phrase: untyped, full_name: untyped, subgroups_count: untyped, projects_count: untyped, marked_for_deletion: untyped, permanent_deletion_date: untyped }
+    def project_delete_delayed_button_data: (untyped) -> { confirm_phrase: untyped, name_with_namespace: untyped, is_fork: "false" | "true", issues_count: untyped, merge_requests_count: untyped, forks_count: untyped, stars_count: untyped, button_text: untyped, permanent_deletion_date: untyped, marked_for_deletion: untyped, form_path: untyped }
+    def project_delete_immediately_button_data: (untyped) -> { confirm_phrase: untyped, name_with_namespace: untyped, is_fork: "false" | "true", issues_count: untyped, merge_requests_count: untyped, forks_count: untyped, stars_count: untyped, button_text: untyped, permanent_deletion_date: untyped, marked_for_deletion: untyped, form_path: untyped }
+    def _permanently_delete_group_message: (untyped) -> String
+    def _project_delete_button_shared_data: (untyped, ?untyped) -> { confirm_phrase: untyped, name_with_namespace: untyped, is_fork: "false" | "true", issues_count: untyped, merge_requests_count: untyped, forks_count: untyped, stars_count: untyped, button_text: untyped, permanent_deletion_date: untyped, marked_for_deletion: untyped }
+  end
+end

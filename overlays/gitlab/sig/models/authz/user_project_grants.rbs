@@ -1,0 +1,14 @@
+module Authz
+  class UserProjectGrants
+    def self.forget_memberships: (untyped) -> nil
+    def initialize: (untyped, ?cached: (false | true)) -> void
+    def cached: () -> false
+    class Grant < ::Data
+      def access_level: () -> untyped
+      def member_role_id: () -> untyped
+      def source: () -> untyped
+      def self.new: (access_level: untyped, member_role_id: untyped, source: untyped) -> instance | (untyped access_level, untyped member_role_id, untyped source) -> instance
+      def self.[]: (access_level: untyped, member_role_id: untyped, source: untyped) -> instance | (untyped access_level, untyped member_role_id, untyped source) -> instance
+    end
+  end
+end

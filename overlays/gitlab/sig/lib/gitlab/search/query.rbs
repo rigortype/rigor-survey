@@ -1,0 +1,7 @@
+module Gitlab
+  module Search
+    class Query < ::SimpleDelegator
+      def initialize: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

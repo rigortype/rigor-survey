@@ -1,0 +1,39 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class AbstractMysqlAdapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+      def self.ractor_connection_proxy_class: () -> singleton(ActiveRecord::ConnectionAdapters::RactorConnectionHandler::MysqlProxyAdapter)
+      def self.native_database_types: () -> { primary_key: "bigint auto_increment PRIMARY KEY", string: { name: "varchar", limit: 255 }, text: { name: "text" }, integer: { name: "int", limit: 4 }, bigint: { name: "bigint" }, float: { name: "float", limit: 24 }, decimal: { name: "decimal" }, datetime: { name: "datetime" }, timestamp: { name: "timestamp" }, time: { name: "time" }, date: { name: "date" }, binary: { name: "blob" }, blob: { name: "blob" }, boolean: { name: "boolean" }, json: { name: "json" } }
+      def get_database_version: () -> ActiveRecord::ConnectionAdapters::AbstractAdapter::Version
+      def supports_bulk_alter?: () -> true
+      def supports_transaction_isolation?: () -> true
+      def supports_restart_db_transaction?: () -> true
+      def supports_explain?: () -> true
+      def supports_indexes_in_create?: () -> true
+      def supports_foreign_keys?: () -> true
+      def supports_views?: () -> true
+      def supports_virtual_columns?: () -> true
+      def supports_optimizer_hints?: () -> (false | true)
+      def supports_advisory_locks?: () -> true
+      def supports_insert_on_duplicate_skip?: () -> true
+      def supports_insert_on_duplicate_update?: () -> true
+      def create_or_find_by_lock: () -> ("FOR SHARE" | "LOCK IN SHARE MODE")
+      def supports_json?: () -> (false | true)
+      def supports_comments?: () -> true
+      def supports_comments_in_create?: () -> true
+      def supports_savepoints?: () -> true
+      def savepoint_errors_invalidate_transactions?: () -> true
+      def supports_lazy_transactions?: () -> true
+      def index_algorithms: () -> { default: "ALGORITHM = DEFAULT", copy: "ALGORITHM = COPY", inplace: "ALGORITHM = INPLACE", instant: "ALGORITHM = INSTANT" }
+      def lock_options: () -> { default: "LOCK = DEFAULT", none: "LOCK = NONE", shared: "LOCK = SHARED", exclusive: "LOCK = EXCLUSIVE" }
+      def connected?: () -> false
+      def begin_db_transaction: () -> nil
+      def commit_db_transaction: () -> nil
+      def exec_rollback_db_transaction: () -> nil
+      def exec_restart_db_transaction: () -> nil
+      def empty_insert_statement_value: (?untyped) -> "VALUES ()"
+      def build_create_index_definition: (untyped, untyped, **untyped) -> (ActiveRecord::ConnectionAdapters::CreateIndexDefinition | nil)
+      def text_type?: (untyped) -> (false | true)
+      def check_version: () -> nil
+    end
+  end
+end

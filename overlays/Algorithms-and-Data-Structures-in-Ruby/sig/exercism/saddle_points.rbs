@@ -1,0 +1,5 @@
+class Grid
+  def self.saddle_points: (untyped) -> Array[untyped]
+  def self.get_row_min_map: (untyped) -> Hash[untyped, untyped]
+  def self.get_col_min_map: (untyped) -> Hash[untyped, untyped]
+end

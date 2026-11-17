@@ -1,0 +1,7 @@
+module Mutations
+  module BranchRules
+    class Update < ::Mutations::BaseMutation
+      def resolve: (id: untyped, **untyped) -> { branch_rule: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

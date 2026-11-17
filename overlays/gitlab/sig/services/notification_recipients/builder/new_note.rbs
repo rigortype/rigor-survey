@@ -1,0 +1,8 @@
+module NotificationRecipients
+  module Builder
+    class NewNote < ::NotificationRecipients::Builder::Base
+      def initialize: (untyped) -> void
+      def custom_action: () -> :new_note
+    end
+  end
+end

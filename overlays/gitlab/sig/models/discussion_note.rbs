@@ -1,0 +1,4 @@
+class DiscussionNote < ::Note
+  def self.noteable_types: () -> ["MergeRequest", "Issue", "Commit", "Snippet", "WikiPage::Meta"]
+  def discussion_class: (*untyped) -> singleton(Discussion)
+end

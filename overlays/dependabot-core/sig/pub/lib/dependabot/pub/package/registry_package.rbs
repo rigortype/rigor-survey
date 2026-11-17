@@ -1,0 +1,13 @@
+module Dependabot
+  module Pub
+    module Package
+      class RegistryPackage
+        def self.from_json: (untyped) -> Dependabot::Pub::Package::RegistryPackage
+        def initialize: (untyped) -> void
+        def versions: () -> Array[Dependabot::Pub::Version]
+        def releases: () -> Array[Dependabot::Package::PackageRelease]
+        def source_url: () -> (String | nil)
+      end
+    end
+  end
+end

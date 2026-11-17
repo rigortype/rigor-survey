@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        module Product
+          class Variables < ::Gitlab::Config::Entry::Node
+            def self.default: (**untyped) -> {}
+          end
+        end
+      end
+    end
+  end
+end

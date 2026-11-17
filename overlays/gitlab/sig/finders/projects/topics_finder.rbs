@@ -1,0 +1,6 @@
+module Projects
+  class TopicsFinder
+    def initialize: (organization_id: untyped, ?params: ({ search: untyped } | { without_projects: false | true })) -> void
+    def params: () -> ({ search: untyped } | { without_projects: false } | { without_projects: true })
+  end
+end

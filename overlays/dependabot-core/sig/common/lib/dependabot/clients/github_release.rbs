@@ -1,0 +1,9 @@
+module Dependabot
+  module Clients
+    class GithubRelease < ::T::ImmutableStruct
+      def self.from_resource: (untyped) -> (Dependabot::Clients::GithubRelease | nil)
+      def self.string_value: (untyped, untyped) -> (String | nil)
+      def self.time_value: (untyped, untyped) -> (Time | nil)
+    end
+  end
+end

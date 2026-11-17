@@ -1,0 +1,9 @@
+module Gitlab
+  module PDF
+    module Security
+      class BaseSvgChart
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

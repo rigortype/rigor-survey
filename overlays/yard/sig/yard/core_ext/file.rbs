@@ -1,0 +1,5 @@
+class File
+  def self.relative_path: (untyped, untyped) -> String
+  def self.cleanpath: (untyped, ?untyped) -> String
+  def self.read_binary: (untyped) -> String
+end

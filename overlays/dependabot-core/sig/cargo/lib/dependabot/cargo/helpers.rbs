@@ -1,0 +1,10 @@
+module Dependabot
+  module Cargo
+    module Helpers
+      def self.custom_registry_names: (untyped, untyped) -> Array[untyped]
+      def self.registry_token_env: (untyped, untyped) -> Hash[untyped, "garbage_token"]
+      def self.registry_token_env_from_files: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.cargo_command_env: (untyped, untyped) -> Hash[String, String]
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  class Notice
+    def initialize: (mode: untyped, type: untyped, package_manager_name: untyped, ?title: untyped, ?description: untyped, ?show_in_pr: untyped, ?show_alert: untyped) -> void
+    def to_h: () -> { mode: untyped, type: untyped, package_manager_name: untyped, title: untyped, description: untyped, show_in_pr: untyped, show_alert: untyped }
+    def self.generate_supported_versions_description: (untyped, untyped, ?untyped) -> String
+    def self.generate_deprecation_notice: (untyped, ?untyped) -> (Dependabot::Notice | nil)
+    def self.markdown_mode: (untyped) -> ("IMPORTANT" | "NOTE" | "WARNING")
+  end
+end

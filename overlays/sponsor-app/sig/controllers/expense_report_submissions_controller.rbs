@@ -1,0 +1,4 @@
+class ExpenseReportSubmissionsController < ::ApplicationController
+  def create: () -> void
+  def destroy: () -> void
+end

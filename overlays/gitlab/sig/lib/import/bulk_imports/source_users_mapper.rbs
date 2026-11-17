@@ -1,0 +1,12 @@
+module Import
+  module BulkImports
+    class SourceUsersMapper
+      def initialize: (context: untyped) -> void
+      def map: () -> Import::BulkImports::SourceUsersMapper::MockedHash
+      def include?: (untyped) -> (false | true)
+      class MockedHash
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

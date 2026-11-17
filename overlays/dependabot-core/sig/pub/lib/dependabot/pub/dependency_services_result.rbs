@@ -1,0 +1,13 @@
+module Dependabot
+  module Pub
+    module DependencyServicesResult
+      def self.list_from_json: (untyped) -> Array[Dependabot::Pub::DependencyServicesResult::ListedDependency]
+      def self.report_from_json: (untyped) -> ::Report
+      def self.report_from_cache: (untyped) -> ::Report
+      def self.invalid_result: (untyped, untyped) -> bot
+      def self.build_report: (untyped, untyped) -> Dependabot::Pub::DependencyServicesResult::Report
+      def self.report_entry: (untyped, untyped) -> Dependabot::Pub::DependencyServicesResult::ReportEntry
+      def self.updates: (untyped, untyped) -> Array[Dependabot::Pub::DependencyServicesResult::DependencyUpdate]
+    end
+  end
+end

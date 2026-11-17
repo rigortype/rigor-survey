@@ -1,0 +1,5 @@
+module ActiveSupport
+  module InspectBackport
+    def inspect: () -> String
+  end
+end

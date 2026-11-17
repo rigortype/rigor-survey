@@ -1,0 +1,6 @@
+module Integrations
+  module Loggable
+    def build_message: (untyped, ?untyped) -> Hash[untyped, untyped]
+    def logger: () -> singleton(Gitlab::IntegrationsLogger)
+  end
+end

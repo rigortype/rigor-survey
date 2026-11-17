@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class GroupComponent < ::ApplicationRecord
+      def self.container_type: () -> :group
+    end
+  end
+end

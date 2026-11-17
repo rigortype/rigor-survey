@@ -1,0 +1,7 @@
+module Gitlab
+  module Memory
+    class Instrumentation
+      def self.available?: () -> (false | true)
+    end
+  end
+end

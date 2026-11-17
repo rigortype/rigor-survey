@@ -1,0 +1,11 @@
+module Integrations
+  module ChatMessage
+    class BaseMessage
+      def initialize: (untyped) -> void
+      def summary: () -> String
+      def pretext: () -> String
+      def fallback: () -> String
+      def activity: () -> bot
+    end
+  end
+end

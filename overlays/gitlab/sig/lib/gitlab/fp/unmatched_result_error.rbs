@@ -1,0 +1,7 @@
+module Gitlab
+  module Fp
+    class UnmatchedResultError < ::RuntimeError
+      def initialize: (result: untyped) -> void
+    end
+  end
+end

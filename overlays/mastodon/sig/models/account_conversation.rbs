@@ -1,0 +1,4 @@
+class AccountConversation < ::ApplicationRecord
+  def participant_account_ids=: (untyped) -> nil
+  def self.remove_status: (untyped, untyped) -> (AccountConversation | nil)
+end

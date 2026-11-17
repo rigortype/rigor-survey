@@ -1,0 +1,4 @@
+module Typelizer
+  def self.configuration: () -> Typelizer::Configuration
+  def self.openapi_schemas: (?writer_name: untyped, ?openapi_version: untyped) -> Hash[untyped, untyped]
+end

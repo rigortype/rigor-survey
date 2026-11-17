@@ -1,0 +1,5 @@
+module Organizations
+  class ActivateWorker
+    def handle_event: (untyped) -> (ServiceResponse | nil)
+  end
+end

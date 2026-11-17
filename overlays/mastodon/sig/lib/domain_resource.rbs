@@ -1,0 +1,4 @@
+class DomainResource
+  def initialize: (untyped) -> void
+  def mx: () -> top
+end

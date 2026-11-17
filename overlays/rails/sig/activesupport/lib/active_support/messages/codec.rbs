@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Messages
+    class Codec
+      def initialize: (**untyped) -> void
+    end
+  end
+end

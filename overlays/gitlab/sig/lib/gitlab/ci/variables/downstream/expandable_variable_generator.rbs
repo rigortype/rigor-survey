@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Variables
+      module Downstream
+        class ExpandableVariableGenerator < ::Gitlab::Ci::Variables::Downstream::Base
+          def for: (untyped) -> Array[untyped]
+        end
+      end
+    end
+  end
+end

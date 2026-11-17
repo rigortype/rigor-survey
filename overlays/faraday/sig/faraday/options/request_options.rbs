@@ -1,0 +1,3 @@
+module Faraday
+  def stream_response?: () -> (false | true)
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  module Identifier
+    def identification_cache: () -> { email: {}, user: {}, username: {}, ssh_key: {}, deploy_token: {} }
+  end
+end

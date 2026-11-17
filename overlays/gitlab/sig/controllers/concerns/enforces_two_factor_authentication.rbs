@@ -1,0 +1,3 @@
+module EnforcesTwoFactorAuthentication
+  def two_factor_verifier: () -> Gitlab::Auth::TwoFactorAuthVerifier
+end

@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module RuboCopCompatibility
+      def rubocop_loaded: () -> nil
+    end
+  end
+end

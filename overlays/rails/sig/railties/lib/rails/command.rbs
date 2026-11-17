@@ -1,0 +1,17 @@
+module Rails
+  module Command
+    def self.hidden_commands: () -> []
+    def self.root: () -> (Pathname | nil)
+    def self.application_root: () -> (Pathname | nil)
+    def self.split_namespace: (untyped) -> (["help", "help"] | ["help", "help_extended"] | ["version", "version"] | [untyped, untyped] | [String, String])
+    def self.command_type: () -> "command"
+    def self.lookup_paths: () -> ["rails/commands", "commands"]
+    def self.file_lookup_paths: () -> [String, "**", "*_command.rb"]
+    class CorrectableNameError < ::StandardError
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class UnrecognizedCommandError < ::Rails::Command::CorrectableNameError
+      def initialize: (untyped) -> void
+    end
+  end
+end

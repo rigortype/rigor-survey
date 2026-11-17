@@ -1,0 +1,9 @@
+module Mutations
+  module Members
+    module Projects
+      class BulkUpdate < ::Mutations::Members::BulkUpdateBase
+        def source_type: () -> singleton(Project)
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Clusters
+  class DestroyService
+    def initialize: (?untyped, ?untyped) -> void
+    def execute: (untyped) -> Hash[untyped, untyped]
+  end
+end

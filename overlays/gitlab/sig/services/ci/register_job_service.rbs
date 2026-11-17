@@ -1,0 +1,15 @@
+module Ci
+  class RegisterJobService
+    def initialize: (untyped, untyped, ?request_timeout_at: untyped) -> void
+    def metrics: () -> Gitlab::Ci::Queue::Metrics
+    class Result < ::Struct[untyped]
+      def build: () -> untyped
+      def build_json: () -> untyped
+      def build_presented: () -> untyped
+      def valid?: () -> untyped
+      def build=: (untyped) -> untyped
+      def build_json=: (untyped) -> untyped
+      def build_presented=: (untyped) -> untyped
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Batch
+      class EfficiencyCalculator
+        def initialize: (worker: untyped) -> void
+        def optimizer: () -> Gitlab::Database::Batch::Optimizer
+      end
+    end
+  end
+end

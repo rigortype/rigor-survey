@@ -1,0 +1,15 @@
+module Rails
+  class Application < ::Rails::Engine
+    def initialize: (?untyped) ?{ (*untyped) -> untyped } -> void
+    def run_load_hooks!: () -> Rails::Application
+    def key_generator: (?untyped) -> ActiveSupport::CachingKeyGenerator
+    def revision=: (untyped) -> true
+    def require_environment!: () -> (false | nil | true)
+    def watchable_args: () -> [untyped, untyped]
+    def initialize!: (?untyped) -> Rails::Application
+    def dotenvs: (?untyped) -> ActiveSupport::DotEnvConfiguration
+    def encrypted: (untyped, ?key_path: untyped, ?env_key: untyped) -> ActiveSupport::EncryptedConfiguration
+    def to_app: () -> Rails::Application
+    def ractorize!: () -> (false | true)
+  end
+end

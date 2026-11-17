@@ -1,0 +1,5 @@
+module ExploreHelper
+  def projects_filter_items: () -> Array[untyped]
+  def explore_projects_app_data: () -> { initial_sort: untyped, programming_languages: untyped, base_path: untyped }
+  def explore_groups_app_data: () -> { endpoint: untyped, initial_sort: "id_desc", base_path: untyped }
+end

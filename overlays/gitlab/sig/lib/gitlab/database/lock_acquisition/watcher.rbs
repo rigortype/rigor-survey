@@ -1,0 +1,16 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class Watcher
+        def initialize: (pool: untyped, ddl_session: { pid: Integer, backend_start: String }, tables: untyped, pool_capacity: Integer, logger: untyped, ?log_params: untyped) -> void
+        def start: () -> Gitlab::Database::LockAcquisition::Watcher
+        def begin_attempt: () -> nil
+        def healthy?: () -> (false | true)
+        def degraded_reason: () -> ("watcher failed to arm in time" | "watcher thread killed after join timeout" | String | nil)
+        def bill: () -> Gitlab::Database::LockAcquisition::DamageBill
+        def protection: () -> Gitlab::Database::LockAcquisition::Protection
+        def session_guard: () -> Gitlab::Database::LockAcquisition::SessionGuard
+      end
+    end
+  end
+end

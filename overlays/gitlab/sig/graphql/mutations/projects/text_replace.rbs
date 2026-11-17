@@ -1,0 +1,7 @@
+module Mutations
+  module Projects
+    class TextReplace < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, replacements: untyped) -> { errors: Array[untyped] | [] }
+    end
+  end
+end

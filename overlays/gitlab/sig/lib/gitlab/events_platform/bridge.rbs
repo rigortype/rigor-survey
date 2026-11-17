@@ -1,0 +1,8 @@
+module Gitlab
+  module EventsPlatform
+    class Bridge
+      def initialize: (?topic: String, ?consumer_group: String, ?client: untyped, ?event_store: untyped) -> void
+      def stop: () -> true
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    module WithFeatureFlagActors
+      def gitaly_feature_flag_actors: (untyped) -> { repository: untyped, user: Feature::Gitaly::ActorWrapper | nil, project: Feature::Gitaly::ActorWrapper | nil, group: Feature::Gitaly::ActorWrapper | nil }
+    end
+  end
+end

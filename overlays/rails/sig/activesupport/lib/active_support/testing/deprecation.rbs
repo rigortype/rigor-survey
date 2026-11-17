@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module Deprecation
+      def collect_deprecations: (untyped) -> [untyped, Array[untyped]]
+    end
+  end
+end

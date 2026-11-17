@@ -1,0 +1,5 @@
+module Preloaders
+  class IssuablesPreloader
+    def initialize: (ActiveRecord::Relation[Issue], untyped, untyped) -> void
+  end
+end

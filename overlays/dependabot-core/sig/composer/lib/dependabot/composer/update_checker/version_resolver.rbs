@@ -1,0 +1,15 @@
+module Dependabot
+  module Composer
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionResolver
+        def initialize: (credentials: untyped, dependency: untyped, dependency_files: untyped, requirements_to_unlock: untyped, latest_allowable_version: untyped) -> void
+        def latest_resolvable_version: () -> (Dependabot::Version | nil)
+        def composer_platform_extensions: () -> Hash[String, Array[String]]
+        def error_handler: () -> ::ComposerErrorHandler
+        class MissingExtensions < ::StandardError
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module YARD
+  module Serializers
+    class Base
+      def initialize: (?untyped) -> void
+      def exists?: (untyped) -> false
+      def options: () -> SymbolHash
+    end
+  end
+end

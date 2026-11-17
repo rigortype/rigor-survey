@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      module Monitor
+        class HeapFragmentation
+          def initialize: (max_heap_fragmentation: untyped) -> void
+          def call: () -> ({ threshold_violated: false, payload: {} } | { threshold_violated: true, payload: { message: "heap fragmentation limit exceeded", memwd_cur_heap_frag: untyped, memwd_max_heap_frag: untyped } })
+        end
+      end
+    end
+  end
+end

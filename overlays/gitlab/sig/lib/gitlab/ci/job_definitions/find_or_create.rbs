@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module JobDefinitions
+      class FindOrCreate
+        def initialize: (untyped, ?definitions: untyped) -> void
+        def job_definitions: () -> Array[untyped]
+      end
+    end
+  end
+end

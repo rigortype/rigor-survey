@@ -1,0 +1,6 @@
+module Auth
+  class DpopAuthenticationService < ::BaseContainerService
+    def initialize: (current_user: untyped, personal_access_token_plaintext: untyped, request: untyped) -> void
+    def execute: (?enforce_dpop_authentication: untyped, ?group_id: untyped) -> ServiceResponse
+  end
+end

@@ -1,0 +1,22 @@
+module Authn
+  module IamService
+    class RemoteOauthApplication < ::Struct[untyped]
+      def client_id: () -> untyped
+      def name: () -> untyped
+      def owner_label: () -> untyped
+      def created_at: () -> untyped
+      def dynamic: () -> untyped
+      def placeholder: () -> untyped
+      def client_id=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def owner_label=: (untyped) -> untyped
+      def created_at=: (untyped) -> untyped
+      def dynamic=: (untyped) -> untyped
+      def placeholder=: (untyped) -> untyped
+      def self.new: (?client_id: untyped, ?name: untyped, ?owner_label: untyped, ?created_at: untyped, ?dynamic: untyped, ?placeholder: untyped) -> instance
+      def self.[]: (?client_id: untyped, ?name: untyped, ?owner_label: untyped, ?created_at: untyped, ?dynamic: untyped, ?placeholder: untyped) -> instance
+      def self.from_managed_client: (untyped) -> Authn::IamService::RemoteOauthApplication
+      def self.placeholder: (untyped) -> Authn::IamService::RemoteOauthApplication
+    end
+  end
+end

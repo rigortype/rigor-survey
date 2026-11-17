@@ -1,0 +1,11 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class Issue < ::Gitlab::CycleAnalytics::Summary::Base
+        def initialize: (project: untyped, options: { from: ActiveSupport::TimeWithZone }, current_user: untyped) -> void
+        def identifier: () -> :issues
+        def value: () -> Gitlab::CycleAnalytics::Summary::Value::PrettyNumeric
+      end
+    end
+  end
+end

@@ -1,0 +1,4 @@
+module BreadcrumbsHelper
+  def add_to_breadcrumbs: (untyped, untyped) -> Array[untyped]
+  def schema_breadcrumb_json: () -> String
+end

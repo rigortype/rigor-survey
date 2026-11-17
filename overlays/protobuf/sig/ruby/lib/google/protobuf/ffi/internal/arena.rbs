@@ -1,0 +1,11 @@
+module Google
+  module Protobuf
+    module Internal
+      class Arena
+        def self.from_native: (untyped, untyped) -> Google::Protobuf::Internal::Arena
+        def initialize: (untyped) -> void
+        def fuse: (untyped) -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Nav
+    class TopNavMenuItem
+      def self.build: (id: untyped, title: untyped, ?active: untyped, ?icon: untyped, ?href: untyped, ?view: untyped, ?css_class: untyped, ?partial: untyped, ?component: untyped) -> { id: untyped, type: :item, title: untyped, active: untyped, icon: untyped, href: untyped, view: untyped, css_class: untyped, partial: untyped, component: untyped }
+    end
+  end
+end

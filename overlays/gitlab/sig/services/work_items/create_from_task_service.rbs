@@ -1,0 +1,5 @@
+module WorkItems
+  class CreateFromTaskService
+    def initialize: (work_item: untyped, ?perform_spam_check: untyped, ?current_user: untyped, ?work_item_params: untyped) -> void
+  end
+end

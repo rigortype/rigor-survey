@@ -1,0 +1,10 @@
+module API
+  module Helpers
+    module Snippets
+      class HttpResponseMap
+        def self.status_for: (untyped) -> (200 | 400 | 403 | 404 | 422 | 500)
+        def self.unhandled_reason_error: (untyped) -> 500
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module QueriesHelper
+  def query_filters_hidden_tags: (untyped) -> String
+  def query_columns_hidden_tags: (untyped) -> String
+  def available_block_columns_tags: (untyped) -> String
+  def available_totalable_columns_tags: (untyped, ?untyped) -> String
+  def available_display_types_tags: (untyped) -> String
+  def render_sidebar_queries: (untyped, untyped) -> String
+end

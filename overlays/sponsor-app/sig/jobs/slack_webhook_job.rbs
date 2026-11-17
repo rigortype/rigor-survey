@@ -1,0 +1,3 @@
+class SlackWebhookJob < ::ApplicationJob
+  def perform: (?Hash[Symbol, String]?, ?text: String?, ?hook_name: Symbol | String) -> void
+end

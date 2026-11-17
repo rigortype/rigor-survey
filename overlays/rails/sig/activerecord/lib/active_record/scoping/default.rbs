@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Scoping
+    class DefaultScope
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

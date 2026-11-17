@@ -1,0 +1,8 @@
+module VsCode
+  module Settings
+    class DeleteService
+      def initialize: (current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

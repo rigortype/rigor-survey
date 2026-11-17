@@ -1,0 +1,16 @@
+module Gitlab
+  module Auth
+    module Oidc
+      module StepUpAuthentication
+        def self.succeeded?: (untyped, ?scope: untyped) -> (false | true)
+        def self.conditions_fulfilled?: (oauth_extra_metadata: untyped, provider: untyped, ?scope: untyped) -> (false | true)
+        def self.build_flow: (provider: untyped, session: untyped, ?scope: untyped) -> Gitlab::Auth::Oidc::StepUpAuthenticationFlow
+        def self.omniauth_step_up_auth_session_data: (untyped) -> Gitlab::NamespacedSessionStore
+        def self.disable_step_up_authentication!: (session: untyped, ?scope: untyped) -> Hash[untyped, untyped]
+        def self.failed_step_up_auth_flows: (untyped, ?scope: untyped) -> Array[untyped]
+        def self.step_up_session_expired?: (untyped, ?scope: untyped) -> (false | true)
+        def self.step_up_auth_flows: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

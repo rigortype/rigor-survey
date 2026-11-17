@@ -1,0 +1,20 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class SchemaReflection
+      def initialize: (untyped, ?untyped) -> void
+      def clear!: () -> nil
+      def load!: (untyped) -> ActiveRecord::ConnectionAdapters::SchemaReflection
+    end
+    class BoundSchemaReflection
+      def self.for_lone_connection: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::BoundSchemaReflection
+      def initialize: (untyped, untyped) -> void
+      class FakePool
+        def initialize: (untyped) -> void
+      end
+    end
+    class SchemaCache
+      def as_schema_json: () -> Hash[untyped, untyped]
+      def marshal_dump: () -> [untyped, untyped, {}, untyped, untyped, untyped]
+    end
+  end
+end

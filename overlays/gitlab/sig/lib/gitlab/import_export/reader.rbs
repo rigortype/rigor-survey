@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class Reader
+      def initialize: (shared: untyped, ?config: untyped) -> void
+      def attributes_finder: () -> Gitlab::ImportExport::AttributesFinder
+    end
+  end
+end

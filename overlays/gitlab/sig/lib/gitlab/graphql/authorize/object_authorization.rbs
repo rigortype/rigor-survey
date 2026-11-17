@@ -1,0 +1,11 @@
+module Gitlab
+  module Graphql
+    module Authorize
+      class ObjectAuthorization
+        def initialize: (untyped, ?untyped) -> void
+        def abilities: () -> Array[untyped]
+        def permitted_scopes: () -> Array[untyped]
+      end
+    end
+  end
+end

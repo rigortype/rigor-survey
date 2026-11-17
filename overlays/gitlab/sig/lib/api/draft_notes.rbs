@@ -1,0 +1,7 @@
+module API
+  class DraftNotes < ::API::Base
+    def scope_validator: () -> Gitlab::Auth::ScopeValidator
+    def update_composite_identity_reviewer_state: (untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    def draft_note_params: () -> { note: untyped, position: untyped, commit_id: untyped, resolve_discussion: untyped }
+  end
+end

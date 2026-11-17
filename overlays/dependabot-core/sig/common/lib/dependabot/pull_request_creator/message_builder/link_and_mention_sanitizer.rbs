@@ -1,0 +1,10 @@
+module Dependabot
+  class PullRequestCreator
+    class MessageBuilder
+      class LinkAndMentionSanitizer
+        def initialize: (github_redirection_service: untyped, ?metadata_source_url: untyped) -> void
+        def sanitize_links_and_mentions: (text: untyped, ?unsafe: untyped, ?format_html: untyped) -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ErrorTracking
+  class SentryClient
+    def initialize: (untyped, untyped) -> void
+  end
+end

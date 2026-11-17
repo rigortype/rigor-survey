@@ -1,0 +1,12 @@
+module Gitlab
+  module Auth
+    module OAuth
+      class User
+        def initialize: (untyped, ?untyped) -> void
+        def new?: () -> (false | true)
+        def protocol_name: () -> "OAuth"
+        def auth_hash: () -> Gitlab::Auth::OAuth::AuthHash
+      end
+    end
+  end
+end

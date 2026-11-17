@@ -1,0 +1,14 @@
+module Feature
+  class Definition
+    def initialize: (untyped, ?untyped) -> void
+    def validate!: () -> nil
+    def validate_default_enabled!: () -> nil
+    def valid_usage!: (type_in_code: untyped) -> nil
+    def self.paths: () -> [untyped]
+    def self.load_from_file: (untyped) -> Feature::Definition
+    def self.load_all_from_path!: (untyped, untyped) -> Array[String]
+    def self.reload_files: () -> []
+    def self.reload_directories: () -> Hash[untyped, "yml"]
+    def attributes: () -> Hash[untyped, untyped]
+  end
+end

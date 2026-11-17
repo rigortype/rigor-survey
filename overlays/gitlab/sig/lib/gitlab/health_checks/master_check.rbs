@@ -1,0 +1,13 @@
+module Gitlab
+  module HealthChecks
+    class MasterCheck
+      def self.register_master: () -> ([IO, IO] | nil)
+      def self.finish_master: () -> nil
+      def self.register_worker: () -> nil
+      def self.close_read: () -> nil
+      def self.close_write: () -> nil
+      def self.metric_prefix: () -> "master_check"
+      def self.check: () -> (false | true)
+    end
+  end
+end

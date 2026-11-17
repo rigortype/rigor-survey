@@ -1,0 +1,28 @@
+class CreateBroadcastDeliveriesJob < ::ApplicationJob
+  def perform: (Broadcast, Array[Rk::SponsorApp::Internal::BroadcastRecipientFilter | Hash[String, untyped]]) -> void
+  class Recipient < ::Data
+    def self.[]: (sponsorship: untyped, email: untyped, email_ccs: untyped) -> instance | (untyped sponsorship, untyped email, untyped email_ccs) -> instance
+  end
+  module Filters
+    class Base
+      def initialize: (broadcast: Broadcast) -> void
+      def recipients: () -> Array[Recipient]
+    end
+    class CurrentSponsors < ::CreateBroadcastDeliveriesJob::Filters::Base
+      def initialize: (broadcast: Broadcast, filter: Rk::SponsorApp::Internal::BroadcastRecipientFilter::CurrentSponsors) -> void
+      def recipients: () -> Array[Recipient]
+    end
+    class PastSponsors < ::CreateBroadcastDeliveriesJob::Filters::Base
+      def initialize: (broadcast: Broadcast, filter: Rk::SponsorApp::Internal::BroadcastRecipientFilter::PastSponsors) -> void
+      def recipients: () -> Array[Recipient]
+    end
+    class Manual < ::CreateBroadcastDeliveriesJob::Filters::Base
+      def initialize: (broadcast: Broadcast, filter: Rk::SponsorApp::Internal::BroadcastRecipientFilter::Manual) -> void
+      def recipients: () -> Array[Recipient]
+    end
+    class Raw < ::CreateBroadcastDeliveriesJob::Filters::Base
+      def initialize: (broadcast: Broadcast, filter: Rk::SponsorApp::Internal::BroadcastRecipientFilter::Raw) -> void
+      def recipients: () -> Array[Recipient]
+    end
+  end
+end

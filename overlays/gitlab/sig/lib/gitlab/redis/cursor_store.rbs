@@ -1,0 +1,7 @@
+module Gitlab
+  module Redis
+    class CursorStore
+      def initialize: (untyped, ?ttl: ActiveSupport::Duration) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module Preloaders
+    module CommitStatusRelationExtension
+      def preload_associations: (untyped) -> (Hash[untyped, Array[untyped]] | nil)
+    end
+  end
+end

@@ -1,0 +1,24 @@
+module Net
+  module SSH
+    module Connection
+      class Channel
+        def initialize: (untyped, String, Integer, ?Integer, ?Integer) ?{ (*untyped) -> untyped } -> void
+        def grant_window_on_consume!: () -> true
+        def closing?: () -> (false | true)
+        def local_closed?: () -> (false | nil | true)
+        def remote_closed?: () -> (false | true)
+        def remote_closed!: () -> true
+        def close: () -> (nil | true)
+        def eof?: () -> (false | true)
+        def eof!: () -> (nil | true)
+        def enqueue_pending_output: () -> nil
+        def local_id: () -> 0
+        def type: () -> ("direct-tcpip" | "session")
+        def local_maximum_packet_size: () -> 32768
+        def properties: () -> Hash[untyped, untyped]
+        def output: () -> Net::SSH::Buffer
+        def pending_requests: () -> Array[untyped]
+      end
+    end
+  end
+end

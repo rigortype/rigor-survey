@@ -1,0 +1,10 @@
+module CrossDatabaseModification
+  class TransactionStackTrackRecord
+    def self.logger: () -> Logger
+    def initialize: (untyped, untyped) -> void
+    def done!: () -> true
+    def trigger_transactional_callbacks?: () -> false
+    def rolledback!: (?force_restore_state: untyped, ?should_run_callbacks: untyped) -> true
+    def committed!: (?should_run_callbacks: untyped) -> true
+  end
+end

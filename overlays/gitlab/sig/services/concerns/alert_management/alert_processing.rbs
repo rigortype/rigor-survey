@@ -1,0 +1,6 @@
+module AlertManagement
+  module AlertProcessing
+    def build_new_alert: () -> AlertManagement::Alert
+    def logger: () -> singleton(Gitlab::AppLogger)
+  end
+end

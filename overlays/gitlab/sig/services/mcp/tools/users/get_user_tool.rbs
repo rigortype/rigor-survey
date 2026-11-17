@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Users
+      class GetUserTool < ::Mcp::Tools::Base::GraphqlTool
+        def build_variables: () -> Hash[untyped, untyped]
+        def operation_name: () -> ("currentUser" | "user")
+      end
+    end
+  end
+end

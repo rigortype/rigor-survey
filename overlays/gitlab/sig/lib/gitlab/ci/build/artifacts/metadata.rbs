@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Build
+      module Artifacts
+        class Metadata
+          def initialize: (File, String, **untyped) -> void
+          def find_entries!: () -> Hash[untyped, untyped]
+          def to_entry: () -> Gitlab::Ci::Build::Artifacts::Metadata::Entry
+        end
+      end
+    end
+  end
+end

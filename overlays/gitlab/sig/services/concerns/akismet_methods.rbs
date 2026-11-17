@@ -1,0 +1,4 @@
+module AkismetMethods
+  def target_owner: () -> User
+  def akismet: () -> Spam::AkismetService
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  class PullRequestCreator
+    class BranchNameTemplate
+      def self.validate_template: (untyped, strategy: untyped) -> true
+      def self.allowed_placeholders: (untyped) -> (["prefix", "package_manager", "directory", "target_branch", "dependency", "version", "name"] | ["prefix", "package_manager", "directory", "target_branch", "group_name", "name"] | ["prefix", "target_branch", "group_name", "name"])
+      def self.collect_template_errors: (untyped, untyped, untyped) -> Array[String]
+      def self.validate_ref_name: (untyped) -> true
+    end
+  end
+end

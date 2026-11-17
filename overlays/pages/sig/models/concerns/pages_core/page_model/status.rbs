@@ -1,0 +1,9 @@
+module PagesCore
+  module PageModel
+    module Status
+      module ClassMethods
+        def status_labels: () -> Hash[Integer, "Deleted" | "Draft" | "Hidden" | "Published" | "Reviewed"]
+      end
+    end
+  end
+end

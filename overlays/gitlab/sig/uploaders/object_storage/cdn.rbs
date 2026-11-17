@@ -1,0 +1,15 @@
+module ObjectStorage
+  module CDN
+    module Concern
+      def cdn_enabled_url: (untyped, ?untyped) -> ObjectStorage::CDN::Concern::UrlResult
+      class UrlResult < ::Struct[untyped]
+        def url: () -> untyped
+        def used_cdn: () -> untyped
+        def url=: (untyped) -> untyped
+        def used_cdn=: (untyped) -> untyped
+        def self.new: (?url: untyped, ?used_cdn: untyped) -> instance | (?untyped url, ?untyped used_cdn) -> instance
+        def self.[]: (?url: untyped, ?used_cdn: untyped) -> instance | (?untyped url, ?untyped used_cdn) -> instance
+      end
+    end
+  end
+end

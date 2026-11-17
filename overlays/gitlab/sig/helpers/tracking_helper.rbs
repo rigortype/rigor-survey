@@ -1,0 +1,4 @@
+module TrackingHelper
+  def tracking_attrs: (untyped, untyped, untyped) -> { data: { track_label: untyped, track_action: untyped, track_property: untyped } }
+  def tracking_attrs_data: (untyped, untyped, untyped) -> ({ track_label: untyped, track_action: untyped, track_property: untyped } | {})
+end

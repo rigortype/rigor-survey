@@ -1,0 +1,7 @@
+module ActionDispatch
+  class SystemTestCase < ::ActiveSupport::TestCase
+    def initialize: (*untyped) -> void
+    def self.start_application: () -> true
+    def self.driven_by: (untyped, ?using: untyped, ?screen_size: untyped, ?options: untyped) ?{ (*untyped) -> untyped } -> ActionDispatch::SystemTesting::Driver
+  end
+end

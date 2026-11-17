@@ -1,0 +1,6 @@
+class Stack
+  def initialize: (untyped, ?untyped) -> void
+end
+
+class StackOverflowError < ::StandardError
+end

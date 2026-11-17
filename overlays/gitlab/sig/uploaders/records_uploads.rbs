@@ -1,0 +1,6 @@
+module RecordsUploads
+  module Concern
+    def readd_upload: () -> Upload
+    def upload_path: () -> String
+  end
+end

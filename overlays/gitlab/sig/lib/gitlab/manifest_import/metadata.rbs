@@ -1,0 +1,8 @@
+module Gitlab
+  module ManifestImport
+    class Metadata
+      def initialize: (untyped, ?fallback: ({ manifest_import_group_id: Integer } | { manifest_import_repositories: untyped })) -> void
+      def fallback: () -> ({ manifest_import_group_id: 3 } | { manifest_import_repositories: untyped })
+    end
+  end
+end

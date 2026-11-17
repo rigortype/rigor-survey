@@ -1,0 +1,12 @@
+module Dependabot
+  module Hex
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, latest_resolvable_version: untyped, updated_source: untyped) -> void
+        def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+        def latest_resolvable_version: () -> (Dependabot::Hex::Version | Dependabot::Version | nil)
+      end
+    end
+  end
+end

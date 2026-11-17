@@ -1,0 +1,11 @@
+module Dependabot
+  module Sbt
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_resolvable_version: () -> (Dependabot::Version | nil)
+      def lowest_resolvable_security_fix_version: () -> (Dependabot::Version | nil)
+      def latest_resolvable_version_with_no_unlock: () -> nil
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+      def requirements_unlocked_or_can_be?: () -> (false | true)
+    end
+  end
+end

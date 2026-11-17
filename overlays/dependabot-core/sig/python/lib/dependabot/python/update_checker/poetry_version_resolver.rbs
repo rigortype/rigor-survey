@@ -1,0 +1,16 @@
+module Dependabot
+  module Python
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class PoetryVersionResolver
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, repo_contents_path: untyped) -> void
+        def latest_resolvable_version: (?requirement: untyped) -> (Dependabot::Python::Version | nil)
+        def resolvable?: (version: untyped) -> (false | true | false | true)
+        def error_handler: () -> Dependabot::Python::PoetryErrorHandler
+      end
+    end
+    class PoetryErrorHandler < ::Dependabot::Python::UpdateChecker
+      def initialize: (dependencies: untyped, dependency_files: untyped) -> void
+      def handle_poetry_error: (untyped) -> Hash[String | nil, Regexp]
+    end
+  end
+end

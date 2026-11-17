@@ -1,0 +1,7 @@
+module Namespaces
+  class ProjectNamespace < ::Namespace
+    def self.sti_name: () -> "Project"
+    def self.polymorphic_name: () -> "Namespaces::ProjectNamespace"
+    def all_projects: () -> ActiveRecord::Relation[Project]
+  end
+end

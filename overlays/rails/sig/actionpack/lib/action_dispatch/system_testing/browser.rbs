@@ -1,0 +1,7 @@
+module ActionDispatch
+  module SystemTesting
+    class Browser
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Net
+  module SSH
+    module Authentication
+      module SecurityKey
+        def self.understands?: (untyped) -> (false | true)
+        class PubKey
+          def self.read_keyblob: (untyped, untyped) -> Net::SSH::Authentication::SecurityKey::PubKey
+          def initialize: (untyped, untyped, untyped, ?curve: untyped) -> void
+          def to_blob: () -> String
+          def to_pem: () -> String
+        end
+      end
+    end
+  end
+end

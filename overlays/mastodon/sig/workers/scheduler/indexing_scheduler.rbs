@@ -1,0 +1,5 @@
+module Scheduler
+  class IndexingScheduler
+    def perform: () -> (Array[singleton(AccountsIndex) | singleton(PublicStatusesIndex) | singleton(StatusesIndex) | singleton(TagsIndex)] | nil)
+  end
+end

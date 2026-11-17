@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class LogicalOperator < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Operator
+            def initialize: (untyped, untyped) -> void
+            def inspect: () -> ::String
+            def self.type: () -> :logical_operator
+          end
+        end
+      end
+    end
+  end
+end

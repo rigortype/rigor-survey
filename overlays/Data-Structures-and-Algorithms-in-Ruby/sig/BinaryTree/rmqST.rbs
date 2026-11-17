@@ -1,0 +1,3 @@
+class RmqST
+  def initialize: (untyped) -> void
+end

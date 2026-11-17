@@ -1,0 +1,18 @@
+module Gitlab
+  module Ci
+    module Catalog
+      module Bundle
+        class Collector
+          class IncludeFile
+            def initialize: (path: untyped, content: untyped, include_matcher: untyped) -> void
+            def result: () -> Gitlab::Ci::Catalog::Bundle::Collector::IncludeFile::Result
+            class Result
+              def paths: () -> Array[untyped]
+              def errors: () -> Array[untyped]
+            end
+          end
+        end
+      end
+    end
+  end
+end

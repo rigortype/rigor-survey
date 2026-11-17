@@ -1,0 +1,7 @@
+module Banzai
+  module ReferenceParser
+    class MilestoneParser < ::Banzai::ReferenceParser::BaseParser
+      def references_relation: () -> singleton(Milestone)
+    end
+  end
+end

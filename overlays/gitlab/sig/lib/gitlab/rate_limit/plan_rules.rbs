@@ -1,0 +1,10 @@
+module Gitlab
+  module RateLimit
+    module PlanRules
+      def self.flags: () -> []
+      def self.active?: () -> false
+      def self.for_limiter: (untyped) -> []
+      def self.concealed_rules: () -> {}
+    end
+  end
+end

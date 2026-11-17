@@ -1,0 +1,7 @@
+module Liquid
+  class Environment
+    def self.build: (?tags: untyped, ?file_system: untyped, ?error_mode: untyped, ?exception_renderer: untyped) -> Liquid::Environment
+    def self.default: () -> Liquid::Environment
+    def register_filters: (untyped) -> Liquid::Environment
+  end
+end

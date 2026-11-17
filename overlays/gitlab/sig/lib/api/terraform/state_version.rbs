@@ -1,0 +1,7 @@
+module API
+  module Terraform
+    class StateVersion < ::API::Base
+      def remote_state_handler: () -> ::Terraform::RemoteStateHandler
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module SidekiqMiddleware
+    module PauseControl
+      def self.for: (untyped) -> (singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::ActiveContext) | singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::AdvancedSearch) | singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::ClickHouseMigration) | singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::Deprecated) | singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::None) | singleton(Gitlab::SidekiqMiddleware::PauseControl::Strategies::Zoekt))
+    end
+  end
+end

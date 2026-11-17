@@ -1,0 +1,8 @@
+module Gitlab
+  module PoolRepositories
+    class OrphanedDiscoverer
+      def initialize: (output_file: untyped, ?logger: untyped, ?verbose: untyped, ?csv_writer: untyped, ?discovery_service: untyped, ?storage_scanner: untyped) -> void
+      def orphaned_pools: () -> Array[untyped]
+    end
+  end
+end

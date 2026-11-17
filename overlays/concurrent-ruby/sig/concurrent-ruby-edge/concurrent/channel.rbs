@@ -1,0 +1,13 @@
+module Concurrent
+  class Channel
+    def initialize: (?Concurrent::Channel::Buffer::Buffered) -> void
+    def put?: (Integer | Symbol | nil) -> Concurrent::Maybe
+    def offer?: (Integer | Symbol | nil) -> Concurrent::Maybe
+    def take?: () -> Concurrent::Maybe
+    def next: () -> bot
+    def next?: () -> bot
+    def poll?: () -> Concurrent::Maybe
+    def self.timer: (untyped) -> Concurrent::Channel
+    def self.ticker: (untyped) -> Concurrent::Channel
+  end
+end

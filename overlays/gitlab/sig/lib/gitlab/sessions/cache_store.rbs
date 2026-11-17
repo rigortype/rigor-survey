@@ -1,0 +1,9 @@
+module Gitlab
+  module Sessions
+    class CacheStore < ::ActionDispatch::Session::CacheStore
+      def initialize: (untyped, ?{ cache: untyped } | { session_cookie_token_prefix: untyped }) -> void
+      def find_session: (untyped, untyped) -> [untyped, untyped]
+      def generate_sid: () -> Rack::Session::SessionId
+    end
+  end
+end

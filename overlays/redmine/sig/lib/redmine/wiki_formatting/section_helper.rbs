@@ -1,0 +1,9 @@
+module Redmine
+  module WikiFormatting
+    module SectionHelper
+      def get_section: (untyped) -> bot
+      def update_section: (untyped, untyped, ?untyped) -> String
+      def extract_sections: (untyped) -> [String, String, String]
+    end
+  end
+end

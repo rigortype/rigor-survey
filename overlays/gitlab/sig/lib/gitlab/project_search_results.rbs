@@ -1,0 +1,5 @@
+module Gitlab
+  class ProjectSearchResults < ::Gitlab::SearchResults
+    def initialize: (untyped, untyped, project: untyped, ?repository_ref: untyped, ?order_by: untyped, ?sort: untyped, ?filters: untyped, ?organization_id: untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module Projects
+  module RemoveRefs
+    def lock_params: () -> { ttl: ActiveSupport::Duration, retries: 3, sleep_sec: ActiveSupport::Duration }
+  end
+end

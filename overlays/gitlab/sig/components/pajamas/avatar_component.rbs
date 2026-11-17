@@ -1,0 +1,8 @@
+module Pajamas
+  class AvatarEmail < ::Struct[untyped]
+    def email: () -> untyped
+    def email=: (untyped) -> untyped
+    def self.new: (?email: untyped) -> instance | (?untyped email) -> instance
+    def self.[]: (?email: untyped) -> instance | (?untyped email) -> instance
+  end
+end

@@ -1,0 +1,12 @@
+module ActiveRecord
+  class Promise < ::BasicObject
+    def initialize: (untyped, untyped) -> void
+    def then: () ?{ (*untyped) -> untyped } -> ActiveRecord::Promise
+    def inspect: () -> String
+    class Complete
+      def initialize: (untyped) -> void
+      def then: () -> ActiveRecord::Promise::Complete
+      def pending?: () -> false
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Net
+  module SSH
+    module BufferedIo
+      def wait_for_pending_sends: () -> nil
+    end
+  end
+end

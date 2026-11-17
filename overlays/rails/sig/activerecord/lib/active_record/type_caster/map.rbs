@@ -1,0 +1,7 @@
+module ActiveRecord
+  module TypeCaster
+    class Map
+      def initialize: (untyped) -> void
+    end
+  end
+end

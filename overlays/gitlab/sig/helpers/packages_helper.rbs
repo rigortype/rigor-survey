@@ -1,0 +1,15 @@
+module PackagesHelper
+  def nuget_package_registry_url: (untyped) -> String
+  def package_registry_instance_url: (untyped) -> String
+  def package_registry_group_url: (untyped, ?untyped) -> String
+  def package_registry_project_url: (untyped, ?untyped) -> String
+  def terraform_module_presenter: (untyped) -> String
+  def pypi_registry_url: (untyped) -> (String | nil)
+  def composer_registry_url: (untyped) -> String
+  def composer_config_repository_name: (untyped) -> String
+  def group_packages_template_data: (untyped) -> { empty_list_illustration: untyped, group_list_url: untyped, npm_instance_url: String, project_list_url: "", can_delete_packages: untyped, endpoint: untyped, full_path: untyped, page_type: "groups", npm_group_url: String, settings_path: untyped }
+  def project_packages_template_data: (untyped) -> { empty_list_illustration: untyped, group_list_url: untyped, npm_instance_url: String, project_list_url: untyped, can_delete_packages: untyped, endpoint: untyped, full_path: untyped, page_type: "projects", npm_group_url: String, settings_path: untyped }
+  def cleanup_settings_data: (untyped) -> { project_id: untyped, project_path: untyped, cadence_options: untyped, keep_n_options: untyped, older_than_options: untyped, is_admin: untyped, admin_settings_path: untyped, project_settings_path: untyped, enable_historic_entries: untyped, help_page_path: untyped, show_cleanup_policy_link: untyped, tags_regex_help_page_path: untyped }
+  def settings_data: (untyped) -> { project_id: untyped, project_path: untyped, cadence_options: untyped, keep_n_options: untyped, older_than_options: untyped, is_admin: untyped, admin_settings_path: untyped, project_settings_path: untyped, enable_historic_entries: untyped, help_page_path: untyped, show_cleanup_policy_link: untyped, tags_regex_help_page_path: untyped, show_container_registry_settings: untyped, show_package_registry_settings: untyped, is_container_registry_metadata_database_enabled: untyped, cleanup_settings_path: untyped }
+  def packages_and_registries_group_settings_template_data: (untyped) -> { group_path: untyped, group_dependency_proxy_path: untyped }
+end

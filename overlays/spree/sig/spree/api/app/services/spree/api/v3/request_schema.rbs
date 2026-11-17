@@ -1,0 +1,23 @@
+module Spree
+  module Api
+    module V3
+      class RequestSchema
+        def self.shape: (untyped) ?{ (*untyped) -> untyped } -> Spree::Api::V3::RequestSchema
+        def self.definition: () -> Spree::Api::V3::RequestSchema
+        def initialize: (?untyped) -> void
+        def attribute: (untyped, untyped, ?of: untyped, ?shape: untyped, ?as: untyped, ?choices: untyped, ?required: untyped, ?on: untyped, **untyped) ?{ (*untyped) -> untyped } -> Spree::Api::V3::RequestSchema::Field
+        def external_references: () -> Spree::Api::V3::RequestSchema::Field
+        def require_attributes: (*untyped, ?on: untyped) -> nil
+        def permit_list: (?untyped) -> Array[untyped]
+        def json_schema: (?untyped) -> (Hash[untyped, untyped] | { :"$ref" => String } | { allOf: [{ :"$ref" => String }, Hash[untyped, untyped] | { type: :object, properties: untyped }] } | { type: :object, properties: untyped })
+        def shapes: () -> Array[untyped]
+        def code_lists: () -> Hash[untyped, untyped]
+        def fields: () -> Hash[untyped, untyped]
+        class Field
+          def initialize: (untyped, untyped, ?array: untyped, ?required: untyped, ?nullable: untyped, ?description: untyped, ?example: untyped, ?enum: untyped, ?open: untyped, ?only: untyped, ?schema: untyped, ?permit: untyped, ?format: untyped, ?deprecated: untyped) -> void
+          def required_copy: (untyped) -> Spree::Api::V3::RequestSchema::Field
+        end
+      end
+    end
+  end
+end

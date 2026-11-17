@@ -1,0 +1,5 @@
+module Ci
+  class PipelineVariable < ::Ci::ApplicationRecord
+    def hook_attrs: () -> { key: untyped, value: untyped }
+  end
+end

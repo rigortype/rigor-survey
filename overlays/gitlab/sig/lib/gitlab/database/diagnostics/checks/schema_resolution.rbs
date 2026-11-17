@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Checks
+        class SchemaResolution < ::Gitlab::Database::Diagnostics::Checks::Base
+          def execute: () -> { current_user: untyped, search_path: untyped, schemas: untyped, findings: Array[untyped], severity: untyped, counts: Hash[untyped, Integer] }
+        end
+      end
+    end
+  end
+end

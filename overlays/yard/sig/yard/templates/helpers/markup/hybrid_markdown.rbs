@@ -1,0 +1,12 @@
+module YARD
+  module Templates
+    module Helpers
+      module Markup
+        class HybridMarkdown
+          def initialize: (untyped, ?untyped) -> void
+          def to_html: () -> String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module ActiveSupport
+  module Notifications
+    class NullInstrumenter
+      def build_handle: (untyped, untyped) -> ActiveSupport::Notifications::NullInstrumenter::NullHandle
+    end
+    class Instrumenter
+      def initialize: (untyped) -> void
+      def new_event: (untyped, ?untyped) -> ActiveSupport::Notifications::Event
+      class LegacyHandle
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+        class Wrapper
+          def initialize: (untyped) -> void
+          def build_handle: (untyped, untyped, untyped) -> ActiveSupport::Notifications::Instrumenter::LegacyHandle
+        end
+      end
+    end
+    class Event
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

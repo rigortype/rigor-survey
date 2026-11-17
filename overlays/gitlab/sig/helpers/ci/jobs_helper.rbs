@@ -1,0 +1,5 @@
+module Ci
+  module JobsHelper
+    def jobs_data: (untyped, untyped) -> Hash[String, untyped]
+  end
+end

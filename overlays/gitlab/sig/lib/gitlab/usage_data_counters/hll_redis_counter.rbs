@@ -1,0 +1,12 @@
+module Gitlab
+  module UsageDataCounters
+    module HLLRedisCounter
+      def self.known_events: () -> Set[untyped]
+      def self.event_with_property_name: (untyped, untyped) -> ({ name: untyped } | { name: untyped, property_name: untyped })
+      def self.load_events: () -> Set[untyped]
+      def self.redis_key: (untyped, untyped, untyped) -> String
+      def self.validate!: (untyped, untyped, untyped) -> nil
+      def self.key_overrides: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    end
+  end
+end

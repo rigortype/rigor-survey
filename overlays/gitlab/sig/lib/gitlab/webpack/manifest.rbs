@@ -1,0 +1,16 @@
+module Gitlab
+  module Webpack
+    class Manifest
+      def self.entrypoint_paths: (untyped, ?manifest_filename: untyped) -> Array[String]
+      def self.asset_paths: (untyped, ?manifest_filename: untyped) -> Array[String]
+      def self.manifest_bundled?: (untyped) -> (false | true)
+      def self.bundler_name: (untyped) -> ("rspack" | "webpack")
+      class ManifestLoadError < ::StandardError
+        def initialize: (untyped, untyped) -> void
+      end
+      class WebpackError < ::StandardError
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

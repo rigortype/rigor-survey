@@ -1,0 +1,10 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      class SidekiqEventReporter
+        def initialize: (?logger: untyped) -> void
+        def event_reporter: () -> Gitlab::Memory::Watchdog::EventReporter
+      end
+    end
+  end
+end

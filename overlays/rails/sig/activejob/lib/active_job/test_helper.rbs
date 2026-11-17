@@ -1,0 +1,14 @@
+module ActiveJob
+  module TestHelper
+    def after_teardown: () -> nil
+    def assert_enqueued_jobs: (Integer, ?only: untyped, ?except: untyped, ?queue: (String | Symbol)?) ?{ () -> void } -> true
+    def assert_no_enqueued_jobs: (?only: untyped, ?except: untyped, ?queue: (String | Symbol)?) ?{ () -> void } -> true
+    def assert_performed_jobs: (Integer, ?only: untyped, ?except: untyped, ?queue: (String | Symbol)?) ?{ () -> void } -> true
+    def assert_no_performed_jobs: (?only: untyped, ?except: untyped, ?queue: (String | Symbol)?) ?{ () -> void } -> true
+    def perform_enqueued_jobs: [Block] (?only: untyped, ?except: untyped, ?queue: (String | Symbol)?, ?at: untyped) ?{ () -> Block } -> (Integer | Block)
+    module TestQueueAdapter
+      def self.reset: () -> nil
+      def self.compute_excluded: (untyped) -> (false | true)
+    end
+  end
+end

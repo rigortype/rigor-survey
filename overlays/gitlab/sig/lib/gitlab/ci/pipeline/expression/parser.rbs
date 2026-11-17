@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        class Parser
+          def initialize: (untyped) -> void
+          def self.seed: (untyped) -> Gitlab::Ci::Pipeline::Expression::Parser
+        end
+      end
+    end
+  end
+end

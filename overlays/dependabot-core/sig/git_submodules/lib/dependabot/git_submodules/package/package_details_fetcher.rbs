@@ -1,0 +1,9 @@
+module Dependabot
+  module GitSubmodules
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, credentials: untyped) -> void
+      end
+    end
+  end
+end

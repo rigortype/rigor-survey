@@ -1,0 +1,7 @@
+module Atlassian
+  module JiraIssueKeyExtractors
+    class Branch
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

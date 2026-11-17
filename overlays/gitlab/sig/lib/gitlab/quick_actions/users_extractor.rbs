@@ -1,0 +1,9 @@
+module Gitlab
+  module QuickActions
+    class UsersExtractor
+      def limit: () -> 100
+      def initialize: (untyped, project: untyped, group: untyped, target: untyped, text: untyped) -> void
+      def execute: () -> Array[untyped]
+    end
+  end
+end

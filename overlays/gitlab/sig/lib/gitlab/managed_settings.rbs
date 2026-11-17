@@ -1,0 +1,8 @@
+module Gitlab
+  module ManagedSettings
+    def self.validate!: () -> nil
+    def self.reset!: () -> nil
+    def self.allowed_keys: () -> Set[untyped]
+    def self.database_ready?: () -> (false | true)
+  end
+end

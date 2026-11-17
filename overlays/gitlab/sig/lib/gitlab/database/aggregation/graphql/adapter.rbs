@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module Graphql
+        module Adapter
+          def self.graphql_type: (untyped) -> (singleton(GraphQL::Types::Boolean) | singleton(GraphQL::Types::Float) | singleton(GraphQL::Types::Int) | singleton(GraphQL::Types::String) | singleton(Types::DateType) | singleton(Types::TimeType))
+          def self.build_filter: (untyped, untyped) -> (Hash[untyped, untyped] | { identifier: untyped })
+          def self.filter_to_arguments: (untyped) -> ([[untyped, [singleton(GraphQL::Types::Boolean) | singleton(GraphQL::Types::Float) | singleton(GraphQL::Types::Int) | singleton(GraphQL::Types::String) | singleton(Types::DateType) | singleton(Types::TimeType)], { required: false, description: untyped }]] | [[Symbol, singleton(GraphQL::Types::Boolean) | singleton(GraphQL::Types::Float) | singleton(GraphQL::Types::Int) | singleton(GraphQL::Types::String) | singleton(Types::DateType) | singleton(Types::TimeType), { required: false, description: String }], [Symbol, singleton(GraphQL::Types::Boolean) | singleton(GraphQL::Types::Float) | singleton(GraphQL::Types::Int) | singleton(GraphQL::Types::String) | singleton(Types::DateType) | singleton(Types::TimeType), { required: false, description: String }]])
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class PreferencesMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "preferences"
+        def active_routes: () -> { controller: :preferences }
+      end
+    end
+  end
+end

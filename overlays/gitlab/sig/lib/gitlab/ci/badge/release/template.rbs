@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Release
+        class Template < ::Gitlab::Ci::Badge::Template
+          def initialize: (untyped) -> void
+          def value_color: () -> ("#3076af" | "#e05d44")
+        end
+      end
+    end
+  end
+end

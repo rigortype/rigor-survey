@@ -1,0 +1,8 @@
+module Notifications
+  module MobilePush
+    class SendBadgeUpdateService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

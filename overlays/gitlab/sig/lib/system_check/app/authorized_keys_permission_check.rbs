@@ -1,0 +1,8 @@
+module SystemCheck
+  module App
+    class AuthorizedKeysPermissionCheck < ::SystemCheck::BaseCheck
+      def skip?: () -> (false | true)
+      def show_error: () -> nil
+    end
+  end
+end

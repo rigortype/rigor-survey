@@ -1,0 +1,7 @@
+module Gitlab
+  class UntrustedRegexp
+    def initialize: (untyped, ?multiline: untyped) -> void
+    def replace_gsub: (untyped, ?limit: untyped) -> (Enumerator[untyped, untyped] | String)
+    def self.with_fallback: (untyped, ?multiline: untyped) -> (Gitlab::UntrustedRegexp | Regexp)
+  end
+end

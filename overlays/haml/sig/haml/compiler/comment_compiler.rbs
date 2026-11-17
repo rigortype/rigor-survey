@@ -1,0 +1,7 @@
+module Haml
+  class Compiler
+    class CommentCompiler
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> ([:html, :comment, untyped] | [:html, :comment, [:multi, [:static, " "], [:escape, true, [:dynamic, untyped]] | [:static, untyped], [:static, " "]]] | [:html, :condcomment, untyped, untyped, untyped])
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      def self.available_for_type?: (untyped) -> (false | true)
+      def self.available?: (untyped, untyped) -> (false | true)
+    end
+  end
+end

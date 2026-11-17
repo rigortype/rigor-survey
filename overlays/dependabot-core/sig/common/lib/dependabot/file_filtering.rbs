@@ -1,0 +1,6 @@
+module Dependabot
+  module FileFiltering
+    def self.glob_match?: (untyped, untyped, untyped) -> (false | true)
+    def self.should_exclude_path?: (untyped, untyped, untyped) -> (false | true)
+  end
+end

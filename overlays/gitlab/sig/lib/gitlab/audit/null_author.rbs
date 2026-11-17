@@ -1,0 +1,12 @@
+module Gitlab
+  module Audit
+    class NullAuthor
+      def self.for: (untyped, untyped) -> (Gitlab::Audit::CiRunnerTokenAuthor | Gitlab::Audit::DeletedAuthor | Gitlab::Audit::DeployKeyAuthor | Gitlab::Audit::DeployTokenAuthor | Gitlab::Audit::OrbitIndexerAuthor | Gitlab::Audit::UnauthenticatedAuthor)
+      def initialize: (id: Integer, name: String) -> void
+      def to_global_id: () -> "gid://gitlab/ComplianceManagement::NullAuthor/@id"
+      def current_sign_in_ip: () -> nil
+      def impersonated?: () -> false
+      def id: () -> -1
+    end
+  end
+end

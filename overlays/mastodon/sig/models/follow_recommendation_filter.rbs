@@ -1,0 +1,3 @@
+class FollowRecommendationFilter
+  def initialize: (untyped) -> void
+end

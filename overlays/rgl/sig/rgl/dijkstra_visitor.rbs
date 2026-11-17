@@ -1,0 +1,6 @@
+module RGL
+  class DijkstraVisitor
+    def reset: () -> {}
+    def set_source: (untyped) -> 0
+  end
+end

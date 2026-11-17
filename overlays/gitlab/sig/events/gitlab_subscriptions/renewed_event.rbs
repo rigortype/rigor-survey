@@ -1,0 +1,5 @@
+module GitlabSubscriptions
+  class RenewedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["namespace_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,9 @@
+module API
+  class Integrations < ::API::Base
+    module JiraForge
+      class Subscriptions < ::API::Base
+        def forge_first_link_installation!: () -> [untyped, untyped, untyped]
+      end
+    end
+  end
+end

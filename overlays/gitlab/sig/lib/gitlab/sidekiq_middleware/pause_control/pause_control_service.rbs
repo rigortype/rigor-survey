@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqMiddleware
+    module PauseControl
+      class PauseControlService
+        def initialize: (untyped) -> void
+        def redis_set_key: () -> String
+        def redis_score_key: () -> String
+      end
+    end
+  end
+end

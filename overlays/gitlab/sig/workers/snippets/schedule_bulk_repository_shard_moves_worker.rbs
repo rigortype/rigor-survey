@@ -1,0 +1,5 @@
+module Snippets
+  class ScheduleBulkRepositoryShardMovesWorker
+    def perform: (untyped, ?untyped) -> Hash[untyped, untyped]
+  end
+end

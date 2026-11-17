@@ -1,0 +1,8 @@
+module Ci
+  module PipelineCreation
+    class CancelRedundantPipelinesService
+      def initialize: (untyped) -> void
+      def execute: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    end
+  end
+end

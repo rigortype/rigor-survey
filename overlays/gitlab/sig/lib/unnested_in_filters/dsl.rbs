@@ -1,0 +1,7 @@
+module UnnestedInFilters
+  module Dsl
+    module Relation
+      def use_unnested_filters!: () -> UnnestedInFilters::Dsl::Relation
+    end
+  end
+end

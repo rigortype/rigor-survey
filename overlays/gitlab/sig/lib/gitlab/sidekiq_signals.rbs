@@ -1,0 +1,6 @@
+module Gitlab
+  module SidekiqSignals
+    def self.install!: (untyped) -> (Array[String] | nil)
+    def self.blindly_signal_pgroup!: (untyped) -> Integer
+  end
+end

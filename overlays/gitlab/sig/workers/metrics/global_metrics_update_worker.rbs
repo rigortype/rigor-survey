@@ -1,0 +1,5 @@
+module Metrics
+  class GlobalMetricsUpdateWorker
+    def lease_timeout: () -> ActiveSupport::Duration
+  end
+end

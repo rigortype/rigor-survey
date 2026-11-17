@@ -1,0 +1,9 @@
+module TDiary
+  class Configuration
+    def initialize: (?untyped) -> void
+    def save: () -> nil
+    def mobile_agent?: () -> false
+    def smartphone?: () -> false
+    def bot?: () -> (Integer | nil)
+  end
+end

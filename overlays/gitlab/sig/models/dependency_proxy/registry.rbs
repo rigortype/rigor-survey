@@ -1,0 +1,8 @@
+module DependencyProxy
+  class Registry
+    def self.auth_url: (untyped) -> String
+    def self.manifest_url: (untyped, untyped) -> String
+    def self.blob_url: (untyped, untyped) -> String
+    def self.authenticate_header: () -> String
+  end
+end

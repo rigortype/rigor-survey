@@ -1,0 +1,7 @@
+module Mutations
+  module Members
+    class BulkUpdateBase < ::Mutations::BaseMutation
+      def resolve: (**untyped) -> (Hash[:errors | Symbol, untyped] | { errors: ["Unable to update members, please check user permissions."] })
+    end
+  end
+end

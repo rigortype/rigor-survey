@@ -1,0 +1,10 @@
+module ActionText
+  class Content
+    def initialize: (?untyped, ?untyped) -> void
+    def append_attachables: (untyped) -> ActionText::Content
+    def render_attachments: (**untyped) ?{ (*untyped) -> untyped } -> ActionText::Content
+    def render_attachment_galleries: () ?{ (*untyped) -> untyped } -> ActionText::Content
+    def to_partial_path: () -> "action_text/contents/content"
+    def inspect: () -> String
+  end
+end

@@ -1,0 +1,11 @@
+module ActionCable
+  module Channel
+    class Base
+      def self.clear_action_methods!: () -> nil
+      def self.method_added: (untyped) -> nil
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def subscribe_to_channel: () -> (nil | true)
+      def unsubscribed?: () -> (false | true)
+    end
+  end
+end

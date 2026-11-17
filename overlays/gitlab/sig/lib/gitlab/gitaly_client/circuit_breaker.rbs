@@ -1,0 +1,8 @@
+module Gitlab
+  module GitalyClient
+    class CircuitBreaker
+      def initialize: (service: untyped, rpc: untyped, storage: untyped) -> void
+      def check!: () -> nil
+    end
+  end
+end

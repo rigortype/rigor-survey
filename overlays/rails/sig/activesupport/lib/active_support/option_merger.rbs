@@ -1,0 +1,5 @@
+module ActiveSupport
+  class OptionMerger
+    def initialize: (untyped, untyped) -> void
+  end
+end

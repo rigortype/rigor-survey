@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class BatchLfsOidLoader
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

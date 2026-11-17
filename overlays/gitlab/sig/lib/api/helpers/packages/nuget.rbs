@@ -1,0 +1,10 @@
+module API
+  module Helpers
+    module Packages
+      module Nuget
+        def package_finder: (untyped, ?untyped) -> ::Packages::Nuget::PackageFinder
+        def search_packages: () -> ::Packages::Nuget::SearchService::Result
+      end
+    end
+  end
+end

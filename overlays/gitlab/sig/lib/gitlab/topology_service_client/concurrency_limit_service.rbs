@@ -1,0 +1,9 @@
+module Gitlab
+  module TopologyServiceClient
+    class ConcurrencyLimitService
+      def self.track_request_start: (?grpc_method: untyped) -> (String | nil)
+      def self.cleanup_stale_requests: () -> { removed_count: untyped }
+      def self.generate_request_id: (untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module FogbugzImport
+    class Repository
+      def initialize: (untyped) -> void
+      def valid?: () -> (false | true)
+    end
+  end
+end

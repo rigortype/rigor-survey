@@ -1,0 +1,3 @@
+module Mail
+  def self.register_autoload: (untyped, untyped) -> nil
+end

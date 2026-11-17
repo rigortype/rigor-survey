@@ -1,0 +1,5 @@
+module ActiveJob
+  class ConfiguredJob
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

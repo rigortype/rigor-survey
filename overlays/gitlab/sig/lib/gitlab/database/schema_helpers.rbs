@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module SchemaHelpers
+      def function_exists?: (untyped) -> (false | true)
+      def tmp_table_name: (untyped) -> String
+      def object_name: (untyped, untyped) -> String
+      def assert_not_in_transaction_block: (scope: untyped) -> nil
+      def find_all_id_columns_sql: () -> String
+    end
+  end
+end

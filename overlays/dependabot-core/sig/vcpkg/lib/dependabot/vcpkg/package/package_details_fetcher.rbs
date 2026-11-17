@@ -1,0 +1,10 @@
+module Dependabot
+  module Vcpkg
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, ?versions_database: untyped) -> void
+        def fetch: () -> (Dependabot::Package::PackageDetails | nil)
+      end
+    end
+  end
+end

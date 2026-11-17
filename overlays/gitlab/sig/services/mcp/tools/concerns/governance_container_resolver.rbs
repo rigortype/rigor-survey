@@ -1,0 +1,14 @@
+module Mcp
+  module Tools
+    module Concerns
+      module GovernanceContainerResolver
+        def record_resolvers: () -> Hash[untyped, untyped]
+        class GovernanceContainerResolutionResult
+          def self.none: () -> Mcp::Tools::Concerns::GovernanceContainerResolver::GovernanceContainerResolutionResult
+          def initialize: ([] | [nil], named: Integer) -> void
+          def named: () -> 1
+        end
+      end
+    end
+  end
+end

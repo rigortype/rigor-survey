@@ -1,0 +1,9 @@
+module Gitlab
+  module View
+    module Presenter
+      class Delegated < ::SimpleDelegator
+        def initialize: (untyped, **untyped) -> void
+      end
+    end
+  end
+end

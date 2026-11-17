@@ -1,0 +1,3 @@
+module SubmoduleHelper
+  def submodule_links_for_url: (untyped, untyped, untyped, ?untyped) -> ([untyped, untyped, untyped] | [String, String, String | nil] | [String | nil, nil, nil])
+end

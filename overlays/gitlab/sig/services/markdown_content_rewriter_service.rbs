@@ -1,0 +1,4 @@
+class MarkdownContentRewriterService
+  def initialize: (untyped, untyped, Symbol, untyped, untyped) -> void
+  def field: () -> (:author | :description)
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module OAuth
+      class Provider
+        def self.authentication: (untyped, untyped) -> (Gitlab::Auth::Crowd::Authentication | Gitlab::Auth::Database::Authentication | Gitlab::Auth::Ldap::Authentication | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActiveRecord
+  class DisableJoinsAssociationRelation < ::ActiveRecord::Relation
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

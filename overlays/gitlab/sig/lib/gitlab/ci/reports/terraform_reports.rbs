@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TerraformReports
+        def plans: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

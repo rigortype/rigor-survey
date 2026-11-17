@@ -1,0 +1,10 @@
+module Redmine
+  module WikiFormatting
+    module Macros
+      module Definitions
+        def extract_macro_options: (untyped, *untyped) -> [untyped, Hash[Symbol, String]]
+        def split_macro_args: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

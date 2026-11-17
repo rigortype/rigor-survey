@@ -1,0 +1,14 @@
+class EnsureSponsorshipTitoDiscountCodeJob < ::ApplicationJob
+  def perform: (Sponsorship, String, ?ignore_quantity: bool) -> void
+  def code: () -> String
+  def discount_code_attributes: () -> DiscountCodeAttributes
+  def quantity: () -> Integer
+  def code_prefix: () -> String
+  def release_slugs: () -> Array[String]
+  def tito_source: () -> TitoSource
+  def release_ids: () -> Array[String]
+  def tito: () -> TitoApi
+  class DiscountCodeAttributes < ::Data
+    def self.[]: (code: untyped, type: untyped, value: untyped, only_show_attached: untyped, reveal_secret: untyped, block_registrations_if_not_applicable: untyped, quantity: untyped, release_ids: untyped, source_id: untyped, description_for_organizer: untyped) -> instance | (untyped code, untyped type, untyped value, untyped only_show_attached, untyped reveal_secret, untyped block_registrations_if_not_applicable, untyped quantity, untyped release_ids, untyped source_id, untyped description_for_organizer) -> instance
+  end
+end

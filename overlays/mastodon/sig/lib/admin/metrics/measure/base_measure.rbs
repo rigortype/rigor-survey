@@ -1,0 +1,16 @@
+module Admin
+  module Metrics
+    class Measure
+      class BaseMeasure
+        def self.with_params?: () -> false
+        def initialize: (untyped, untyped, untyped) -> void
+        def cache_key: () -> String
+        def key: () -> bot
+        def unit: () -> nil
+        def total_in_time_range?: () -> true
+        def self.model_name: () -> (String | nil)
+        def loaded: () -> (false | true)
+      end
+    end
+  end
+end

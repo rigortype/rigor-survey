@@ -1,0 +1,7 @@
+class WebPushRequest
+  def initialize: (untyped) -> void
+  def legacy_authorization_header: () -> String
+  def crypto_key_header: () -> String
+  def standard_authorization_header: () -> String
+  def legacy: () -> (false | true)
+end

@@ -1,0 +1,6 @@
+module Dependabot
+  class UpdateGraphCommand < ::Dependabot::BaseCommand
+    def initialize: (untyped) -> void
+    def job: () -> (Dependabot::Job | nil)
+  end
+end

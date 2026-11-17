@@ -1,0 +1,8 @@
+module Gitlab
+  module Sanitizers
+    class Exif
+      def initialize: (?logger: untyped) -> void
+      def clean_existing_path: (untyped, ?dry_run: untyped, ?content: untyped, ?skip_unallowed_types: untyped) -> nil
+    end
+  end
+end

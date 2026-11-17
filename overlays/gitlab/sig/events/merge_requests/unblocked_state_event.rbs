@@ -1,0 +1,5 @@
+module MergeRequests
+  class UnblockedStateEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["current_user_id", "merge_request_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

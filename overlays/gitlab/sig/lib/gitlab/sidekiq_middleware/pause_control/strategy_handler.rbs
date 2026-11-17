@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module PauseControl
+      class StrategyHandler
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

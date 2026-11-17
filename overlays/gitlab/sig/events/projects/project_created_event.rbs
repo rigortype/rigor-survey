@@ -1,0 +1,5 @@
+module Projects
+  class ProjectCreatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["project_id", "namespace_id", "root_namespace_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

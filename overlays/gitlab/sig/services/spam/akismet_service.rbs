@@ -1,0 +1,7 @@
+module Spam
+  class AkismetService
+    def initialize: (untyped, untyped, untyped, ?{ ip_address: untyped, user_agent: untyped, referer: untyped }) -> void
+    def submit_ham: () -> (false | true)
+    def submit_spam: () -> (false | true)
+  end
+end

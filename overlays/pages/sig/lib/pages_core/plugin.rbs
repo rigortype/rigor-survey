@@ -1,0 +1,7 @@
+module PagesCore
+  class Plugin
+    def self.admin_menu_item: (untyped, untyped, ?untyped, ?untyped) -> PagesCore::AdminMenuItem
+    def self.default_paths: () -> Hash[String, "db/migrate"]
+    def root: () -> Pathname
+  end
+end

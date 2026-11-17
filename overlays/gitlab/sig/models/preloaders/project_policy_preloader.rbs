@@ -1,0 +1,5 @@
+module Preloaders
+  class ProjectPolicyPreloader
+    def initialize: (untyped, untyped) -> void
+  end
+end

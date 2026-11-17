@@ -1,0 +1,18 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module QueryCache
+      def initialize: (*untyped) -> void
+      class Store
+        def initialize: (untyped, untyped) -> void
+        def size: () -> Integer
+        def clear: () -> ActiveRecord::ConnectionAdapters::QueryCache::Store
+      end
+      module ConnectionPoolConfiguration
+        def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+        def enable_query_cache!: () -> true
+        def disable_query_cache!: () -> true
+        def build_query_cache: () -> ActiveRecord::ConnectionAdapters::QueryCache::Store
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module JiraImport
+    class MetadataCollector
+      def initialize: (untyped) -> void
+    end
+  end
+end

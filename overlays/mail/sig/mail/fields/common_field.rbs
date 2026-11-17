@@ -1,0 +1,11 @@
+module Mail
+  class CommonField
+    def self.singular?: () -> false
+    def self.parse: (*untyped) -> Mail::CommonField
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+    def value=: (untyped) -> Mail::CommonField
+    def parse: () -> Mail::CommonField
+    def element: () -> nil
+    def errors: () -> Array[untyped]
+  end
+end

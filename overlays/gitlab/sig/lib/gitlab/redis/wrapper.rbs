@@ -1,0 +1,14 @@
+module Gitlab
+  module Redis
+    class Wrapper
+      def self.config_file_path: (untyped) -> (String | nil)
+      def self.rails_root: () -> String
+      def self.redis_yml_path: () -> String
+      def self.store_name: () -> String
+      def self.config_fallback: () -> nil
+      def self.redis: () -> (::Redis | ::Redis::Cluster)
+      def self.init_redis: (untyped) -> (::Redis | ::Redis::Cluster)
+      def initialize: (?untyped) -> void
+    end
+  end
+end

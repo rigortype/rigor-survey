@@ -1,0 +1,11 @@
+module Dependabot
+  module DependencyGraphers
+    class Base
+      def initialize: (file_parser: untyped) -> void
+      def resolved_dependencies: () -> Hash[untyped, Dependabot::DependencyGraphers::ResolvedDependency]
+      def manifest_group_snapshots: () -> (Array[::ManifestGroupSnapshot] | nil)
+      def prepared: () -> (false | true)
+      def errored_fetching_subdependencies: () -> (false | true)
+    end
+  end
+end

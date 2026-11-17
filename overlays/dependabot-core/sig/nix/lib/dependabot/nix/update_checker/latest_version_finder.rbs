@@ -1,0 +1,9 @@
+module Dependabot
+  module Nix
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def wants_prerelease?: () -> true
+      end
+    end
+  end
+end

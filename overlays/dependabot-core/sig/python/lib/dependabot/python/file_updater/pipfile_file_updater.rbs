@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PipfileFileUpdater
+        def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, repo_contents_path: untyped) -> void
+        def updated_dependency_files: () -> Array[Dependabot::DependencyFile]
+      end
+    end
+  end
+end

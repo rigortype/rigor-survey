@@ -1,0 +1,7 @@
+module Authz
+  module RolePermissions
+    def self.define_role_permissions: (untyped) -> Hash[Symbol, Integer]
+    def role: () -> (Authz::Role | nil)
+    def access_level: () -> bot
+  end
+end

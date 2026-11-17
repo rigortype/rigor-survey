@@ -1,0 +1,14 @@
+module RuboCop
+  module AST
+    class Token
+      def self.from_parser_token: (untyped) -> RuboCop::AST::Token
+      def initialize: (untyped, untyped, untyped) -> void
+      def to_s: () -> String
+      def left_bracket?: () -> (false | true)
+      def left_curly_brace?: () -> (false | true)
+      def left_parens?: () -> (false | true)
+      def regexp_dots?: () -> (false | true)
+      def equal_sign?: () -> (false | true)
+    end
+  end
+end

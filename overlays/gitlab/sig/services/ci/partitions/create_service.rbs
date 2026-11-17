@@ -1,0 +1,7 @@
+module Ci
+  module Partitions
+    class CreateService
+      def initialize: (untyped) -> void
+    end
+  end
+end

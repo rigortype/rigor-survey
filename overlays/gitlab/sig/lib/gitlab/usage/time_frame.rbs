@@ -1,0 +1,10 @@
+module Gitlab
+  module Usage
+    module TimeFrame
+      def weekly_time_range: () -> { start_date: Date, end_date: Date }
+      def monthly_time_range: () -> { start_date: Date, end_date: Date }
+      def monthly_time_range_db_params: (?column: untyped) -> Hash[untyped, Range[ActiveSupport::TimeWithZone]]
+      def weekly_time_range_db_params: (?column: untyped) -> Hash[untyped, Range[ActiveSupport::TimeWithZone]]
+    end
+  end
+end

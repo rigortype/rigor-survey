@@ -1,0 +1,3 @@
+module BranchesHelper
+  def merge_request_status: (untyped) -> (nil | { icon: "merge" | "merge-request" | "merge-request-close", title: String, variant: :danger | :info | :success | :warning })
+end

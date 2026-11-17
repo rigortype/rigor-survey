@@ -1,0 +1,7 @@
+module Ci
+  module Workloads
+    class WorkloadDefinition
+      def to_job_hash: () -> (Hash[untyped, untyped] | { image: untyped, stage: "build", timeout: String, variables: untyped, script: untyped })
+    end
+  end
+end

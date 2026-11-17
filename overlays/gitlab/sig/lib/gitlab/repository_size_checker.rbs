@@ -1,0 +1,7 @@
+module Gitlab
+  class RepositorySizeChecker
+    def initialize: (current_size_proc: Proc, limit: untyped, namespace: untyped, ?enabled: untyped) -> void
+    def error_message: () -> Gitlab::RepositorySizeErrorMessage
+    def additional_repo_storage_available?: () -> false
+  end
+end

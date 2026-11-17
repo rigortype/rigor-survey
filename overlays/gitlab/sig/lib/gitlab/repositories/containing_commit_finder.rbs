@@ -1,0 +1,7 @@
+module Gitlab
+  module Repositories
+    class ContainingCommitFinder
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+  end
+end

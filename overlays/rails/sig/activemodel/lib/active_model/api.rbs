@@ -1,0 +1,6 @@
+module ActiveModel
+  module API
+    def initialize: (?untyped) -> void
+    def persisted?: () -> false
+  end
+end

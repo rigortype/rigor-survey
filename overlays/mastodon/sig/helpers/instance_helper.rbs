@@ -1,0 +1,3 @@
+module InstanceHelper
+  def instance_presenter: () -> InstancePresenter
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  class OptimisticLocking
+    def self.retry_lock_logger: () -> Gitlab::Services::Logger
+  end
+end

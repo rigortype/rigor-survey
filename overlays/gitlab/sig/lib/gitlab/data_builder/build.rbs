@@ -1,0 +1,7 @@
+module Gitlab
+  module DataBuilder
+    module Build
+      def build: (untyped, ?retries_count: untyped) -> (Hash[untyped, untyped] | { object_kind: "build", ref: untyped, tag: untyped, before_sha: untyped, sha: untyped, retries_count: untyped, build_id: untyped, build_name: untyped, build_stage: untyped, build_status: untyped, build_created_at: untyped, build_started_at: untyped, build_finished_at: untyped, build_created_at_iso: untyped, build_started_at_iso: untyped, build_finished_at_iso: untyped, build_duration: untyped, build_queued_duration: untyped, build_allow_failure: untyped, build_failure_reason: untyped, pipeline_id: untyped, runner: nil | { id: untyped, description: untyped, runner_type: untyped, active: untyped, is_shared: untyped, tags: untyped }, project_id: untyped, project_name: untyped, user: untyped, commit: { id: untyped, name: untyped, sha: untyped, message: untyped, author_name: untyped, author_email: untyped, author_url: untyped, status: untyped, duration: untyped, started_at: untyped, finished_at: untyped, started_at_iso: untyped, finished_at_iso: untyped }, repository: { name: untyped, url: untyped, description: untyped, homepage: untyped, git_http_url: untyped, git_ssh_url: untyped, visibility_level: untyped }, project: untyped, environment: nil | { name: untyped, action: untyped } })
+    end
+  end
+end

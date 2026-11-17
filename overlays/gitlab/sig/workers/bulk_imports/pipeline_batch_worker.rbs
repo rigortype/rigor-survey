@@ -1,0 +1,5 @@
+module BulkImports
+  class PipelineBatchWorker
+    def pending_retry: () -> (false | true)
+  end
+end

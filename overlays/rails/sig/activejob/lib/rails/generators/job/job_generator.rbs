@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    class JobGenerator < ::Rails::Generators::NamedBase
+      def self.default_generator_root: () -> (nil | String)
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module ImportCsv
+  class BaseService
+    def initialize: (untyped, untyped, untyped) -> void
+    def results: () -> { success: 0, error_lines: [], parse_error: false, preprocess_errors: {} }
+  end
+end

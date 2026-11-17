@@ -1,0 +1,4 @@
+class RetractTitoTicketJob < ::ApplicationJob
+  def perform: (TitoTicketRetraction) -> void
+  def logger: () -> SemanticLogger::Logger
+end

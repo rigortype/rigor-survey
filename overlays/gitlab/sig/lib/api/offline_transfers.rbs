@@ -1,0 +1,6 @@
+module API
+  class OfflineTransfers < ::API::Base
+    def object_storage_provider_and_credentials: () -> bot
+    def import_entities_params: () -> ({ entities: untyped } | { import_all: untyped })
+  end
+end

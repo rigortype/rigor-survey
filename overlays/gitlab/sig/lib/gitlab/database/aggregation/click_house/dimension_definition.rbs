@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class DimensionDefinition < ::Gitlab::Database::Aggregation::ClickHouse::PartDefinition
+          def initialize: (*untyped, ?association: untyped, **untyped) -> void
+          def association?: () -> (false | true)
+          def requires_window?: () -> false
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      class CommitsFinder
+        def initialize: (source: untyped, dependency: untyped, credentials: untyped) -> void
+        def commits_url: () -> (String | nil)
+        def commits: () -> Array[Hash[Symbol, String]]
+        def new_tag: () -> (String | String | nil | nil)
+      end
+    end
+  end
+end

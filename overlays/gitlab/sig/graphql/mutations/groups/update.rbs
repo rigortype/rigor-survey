@@ -1,0 +1,7 @@
+module Mutations
+  module Groups
+    class Update < ::Mutations::BaseMutation
+      def resolve: (full_path: untyped, **untyped) -> ({ group: untyped, errors: [] } | { group: nil, errors: untyped })
+    end
+  end
+end

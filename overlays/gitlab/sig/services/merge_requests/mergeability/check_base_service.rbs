@@ -1,0 +1,9 @@
+module MergeRequests
+  module Mergeability
+    class CheckBaseService
+      def initialize: (merge_request: untyped, params: untyped) -> void
+      def cache_key: () -> bot
+      def cache_ttl: () -> ActiveSupport::Duration
+    end
+  end
+end

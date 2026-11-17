@@ -1,0 +1,7 @@
+module Gitlab
+  module Issuable
+    class NamespaceGetter
+      def initialize: (untyped, ?excluded_issuable_types: untyped, ?allow_nil: untyped) -> void
+    end
+  end
+end

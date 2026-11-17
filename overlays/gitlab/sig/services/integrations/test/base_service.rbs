@@ -1,0 +1,7 @@
+module Integrations
+  module Test
+    class BaseService
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module Gitlab
+  module Auth
+    module Oidc
+      class StepUpAuthExpirationValidator
+        def self.validate: (untyped) -> Gitlab::Auth::Oidc::StepUpAuthExpirationValidator::Result
+        class Result < ::Struct[untyped]
+          def valid?: () -> untyped
+          def expired?: () -> untyped
+          def message: () -> untyped
+          def current_time: () -> untyped
+          def exp_timestamp: () -> untyped
+          def message=: (untyped) -> untyped
+          def current_time=: (untyped) -> untyped
+          def exp_timestamp=: (untyped) -> untyped
+          def self.new: (?valid?: untyped, ?expired?: untyped, ?message: untyped, ?current_time: untyped, ?exp_timestamp: untyped) -> instance
+          def self.[]: (?valid?: untyped, ?expired?: untyped, ?message: untyped, ?current_time: untyped, ?exp_timestamp: untyped) -> instance
+        end
+      end
+    end
+  end
+end

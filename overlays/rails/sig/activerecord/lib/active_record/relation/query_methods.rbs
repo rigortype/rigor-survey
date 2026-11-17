@@ -1,0 +1,84 @@
+module ActiveRecord
+  module QueryMethods
+    def includes!: (*untyped) -> ActiveRecord::QueryMethods
+    def _includes!: (untyped) -> ActiveRecord::QueryMethods
+    def all: () -> Integer
+    def eager_load!: (*untyped) -> ActiveRecord::QueryMethods
+    def _eager_load!: (untyped) -> ActiveRecord::QueryMethods
+    def preload!: (*untyped) -> ActiveRecord::QueryMethods
+    def _preload!: (untyped) -> ActiveRecord::QueryMethods
+    def references!: (*untyped) -> ActiveRecord::QueryMethods
+    def _references!: (untyped) -> ActiveRecord::QueryMethods
+    def _select!: (*untyped) -> ActiveRecord::QueryMethods
+    def with!: (*untyped) -> ActiveRecord::QueryMethods
+    def _with!: (untyped) -> ActiveRecord::QueryMethods
+    def with_recursive!: (*untyped) -> ActiveRecord::QueryMethods
+    def _with_recursive!: (untyped) -> ActiveRecord::QueryMethods
+    def reselect!: (*untyped) -> ActiveRecord::QueryMethods
+    def _reselect!: (untyped) -> ActiveRecord::QueryMethods
+    def group!: (*untyped) -> ActiveRecord::QueryMethods
+    def _group!: (untyped) -> ActiveRecord::QueryMethods
+    def regroup!: (*untyped) -> ActiveRecord::QueryMethods
+    def _regroup!: (untyped) -> ActiveRecord::QueryMethods
+    def order!: (*untyped) -> ActiveRecord::QueryMethods
+    def _order!: (untyped) -> ActiveRecord::QueryMethods
+    def reorder!: (*untyped) -> ActiveRecord::QueryMethods
+    def _reorder!: (untyped) -> ActiveRecord::QueryMethods
+    def default_order!: (*untyped) -> ActiveRecord::QueryMethods
+    def _default_order!: (untyped) -> ActiveRecord::QueryMethods
+    def unscope!: (*untyped) -> ActiveRecord::QueryMethods
+    def _unscope!: (untyped) -> ActiveRecord::QueryMethods
+    def joins!: (*untyped) -> ActiveRecord::QueryMethods
+    def _joins!: (untyped) -> ActiveRecord::QueryMethods
+    def left_outer_joins!: (*untyped) -> ActiveRecord::QueryMethods
+    def _left_outer_joins!: (untyped) -> ActiveRecord::QueryMethods
+    def where!: (untyped, ?untyped) -> ActiveRecord::QueryMethods
+    def invert_where!: () -> ActiveRecord::QueryMethods
+    def and!: (untyped) -> ActiveRecord::QueryMethods
+    def or!: (untyped) -> ActiveRecord::QueryMethods
+    def having!: (untyped, ?untyped) -> ActiveRecord::QueryMethods
+    def limit!: (untyped) -> ActiveRecord::QueryMethods
+    def offset!: (untyped) -> ActiveRecord::QueryMethods
+    def lock!: (?untyped) -> ActiveRecord::QueryMethods
+    def none!: () -> ActiveRecord::QueryMethods
+    def null_relation?: () -> (nil | true)
+    def readonly!: (?untyped) -> ActiveRecord::QueryMethods
+    def strict_loading!: (?untyped) -> ActiveRecord::QueryMethods
+    def create_with!: (untyped) -> ActiveRecord::QueryMethods
+    def from!: (untyped, ?untyped) -> ActiveRecord::QueryMethods
+    def distinct!: (?untyped) -> ActiveRecord::QueryMethods
+    def extending!: (*untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::QueryMethods
+    def _extending!: (untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::QueryMethods
+    def optimizer_hints!: (*untyped) -> ActiveRecord::QueryMethods
+    def _optimizer_hints!: (untyped) -> ActiveRecord::QueryMethods
+    def reverse_order!: () -> ActiveRecord::QueryMethods
+    def skip_query_cache!: (?untyped) -> ActiveRecord::QueryMethods
+    def skip_preloading!: () -> ActiveRecord::QueryMethods
+    def annotate!: (*untyped) -> ActiveRecord::QueryMethods
+    def _annotate!: (untyped) -> ActiveRecord::QueryMethods
+    def uniq!: (untyped) -> ActiveRecord::QueryMethods
+    def excluding!: (untyped) -> ActiveRecord::QueryMethods
+    def arel: (?untyped) -> Arel::SelectManager
+    def construct_join_dependency: (untyped, untyped) -> ActiveRecord::Associations::JoinDependency
+    class JoinBuckets < ::Data
+      def leading_joins: () -> untyped
+      def named_joins: () -> untyped
+      def stashed_joins: () -> untyped
+      def join_nodes: () -> untyped
+      def join_type: () -> untyped
+      def self.new: (leading_joins: untyped, named_joins: untyped, stashed_joins: untyped, join_nodes: untyped, join_type: untyped) -> instance | (untyped leading_joins, untyped named_joins, untyped stashed_joins, untyped join_nodes, untyped join_type) -> instance
+      def self.[]: (leading_joins: untyped, named_joins: untyped, stashed_joins: untyped, join_nodes: untyped, join_type: untyped) -> instance | (untyped leading_joins, untyped named_joins, untyped stashed_joins, untyped join_nodes, untyped join_type) -> instance
+    end
+    class JoinValues < ::Data
+      def association_names: () -> untyped
+      def join_dependencies: () -> untyped
+      def cte_names: () -> untyped
+      def nodes: () -> untyped
+      def self.new: (association_names: untyped, join_dependencies: untyped, cte_names: untyped, nodes: untyped) -> instance | (untyped association_names, untyped join_dependencies, untyped cte_names, untyped nodes) -> instance
+      def self.[]: (association_names: untyped, join_dependencies: untyped, cte_names: untyped, nodes: untyped) -> instance | (untyped association_names, untyped join_dependencies, untyped cte_names, untyped nodes) -> instance
+    end
+    class WhereChain
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    module JobDelayCalculator
+      def parallel_import_batch: () -> { size: untyped, delay: ActiveSupport::Duration }
+    end
+  end
+end

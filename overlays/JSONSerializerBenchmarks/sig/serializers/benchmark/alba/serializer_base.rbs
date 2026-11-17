@@ -1,0 +1,8 @@
+module Benchmark
+  module Alba
+    class SerializerBase
+      def self.cast_as_xml_datetime: () -> [singleton(String), Proc]
+      def self.datetime_to_xml_proc: () -> Proc
+    end
+  end
+end

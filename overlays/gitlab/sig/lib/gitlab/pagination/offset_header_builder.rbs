@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    class OffsetHeaderBuilder
+      def initialize: (request_context: untyped, per_page: untyped, page: untyped, next_page: untyped, ?prev_page: untyped, ?total: Integer, ?total_pages: Integer, ?params: { archived: untyped, page: untyped }) -> void
+      def total: () -> 10
+      def total_pages: () -> 3
+    end
+  end
+end

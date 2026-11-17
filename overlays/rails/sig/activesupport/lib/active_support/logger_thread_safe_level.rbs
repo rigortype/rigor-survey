@@ -1,0 +1,7 @@
+module ActiveSupport
+  module LoggerThreadSafeLevel
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    def initialize_copy: (untyped) -> Symbol
+    def local_level_key: () -> Symbol
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  module Uv
+    module SourcesTable
+      def self.tag_regex: (untyped, untyped) -> Regexp
+      def self.writable_for: (untyped) -> Hash[String, Hash[Symbol, String]]
+      def self.span: (untyped) -> ([Range[untyped], untyped] | nil)
+    end
+  end
+end

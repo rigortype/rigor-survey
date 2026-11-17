@@ -1,0 +1,8 @@
+module Gitlab
+  module Instrumentation
+    class ElasticsearchTransport
+      def self.detail_store: () -> Array[untyped]
+      def self.add_call_details: (untyped, untyped, untyped, untyped, untyped) -> (Array[untyped] | nil)
+    end
+  end
+end

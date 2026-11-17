@@ -1,0 +1,6 @@
+module AuthorizedProjectUpdate
+  class FindRecordsDueForRefreshService
+    def initialize: (untyped, ?source: untyped, ?incorrect_auth_found_callback: untyped, ?missing_auth_found_callback: untyped, ?skip_projects_pending_refresh: untyped, ?skip_deleted_projects: untyped) -> void
+    def execute: () -> [untyped, Array[{ user_id: untyped, project_id: untyped, access_level: untyped }]]
+  end
+end

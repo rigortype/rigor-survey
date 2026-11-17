@@ -1,0 +1,10 @@
+module Atlassian
+  module Jira
+    class DevInfoClient
+      def self.generate_update_sequence_id: () -> Integer
+      def initialize: (String) -> void
+      def send_info: (project: untyped, ?update_sequence_id: untyped, **untyped) -> Array[untyped]
+      def user_info: (untyped) -> (Atlassian::JiraConnect::JiraUser | nil)
+    end
+  end
+end

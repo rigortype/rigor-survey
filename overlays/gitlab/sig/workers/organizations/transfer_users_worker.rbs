@@ -1,0 +1,5 @@
+module Organizations
+  class TransferUsersWorker
+    def perform: (untyped) -> (ServiceResponse | nil)
+  end
+end

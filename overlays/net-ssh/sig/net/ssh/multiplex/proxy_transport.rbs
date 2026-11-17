@@ -1,0 +1,18 @@
+module Net
+  module SSH
+    module Multiplex
+      module PacketSocket
+        def available_for_read?: () -> (false | true)
+        def send_packet: (untyped) -> nil
+      end
+      class ProxyTransport
+        def initialize: (untyped, host: untyped, control_path: untyped, ?options: untyped) -> void
+        def peer: () -> { ip: nil, port: untyped, host: untyped, canonized: untyped }
+        def server_version: () -> bot
+        def algorithms: () -> bot
+        def host_keys: () -> bot
+        def host_key_verifier: () -> bot
+      end
+    end
+  end
+end

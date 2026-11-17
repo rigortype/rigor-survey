@@ -1,0 +1,7 @@
+module ActiveStorage
+  class Attached
+    module Model
+      def initialize_dup: (*untyped) -> nil
+    end
+  end
+end

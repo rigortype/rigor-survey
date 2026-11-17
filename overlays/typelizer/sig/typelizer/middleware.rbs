@@ -1,0 +1,8 @@
+module Typelizer
+  class Middleware
+    def initialize: (untyped) -> void
+    def mark_pending!: () -> true
+  end
+  class TypeGenerationError < ::StandardError
+  end
+end

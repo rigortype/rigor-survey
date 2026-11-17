@@ -1,0 +1,36 @@
+module Dependabot
+  class Updater
+    module GroupUpdateCreation
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def security_update_failures: () -> (Hash[String, Dependabot::Service::ErrorRecord] | nil)
+      def semver_rejected_dependency_names: () -> (Set[untyped] | nil)
+      def removed_dependency_names: () -> (Set[untyped] | nil)
+      def compile_all_dependency_changes_for: (untyped, ?dependency_files: untyped, ?workspace_files: untyped) -> (Dependabot::DependencyChange | nil)
+      def compile_all_dependency_changes_for_directories: (untyped) -> (Dependabot::DependencyChange | nil)
+      def working_dependency_files_for: (untyped, untyped, untyped) -> Array[untyped]
+      def skip_dependency?: (untyped, untyped) -> (false | true)
+      def log_missing_previous_version: (untyped) -> true
+      def dependency_file_parser: (untyped) -> Dependabot::FileParsers::Base
+      def create_change_for: (untyped, untyped, untyped, untyped) -> (Dependabot::DependencyChange | false)
+      def compile_updates_for: (untyped, untyped, untyped) -> Array[Dependabot::Dependency]
+      def log_up_to_date: (untyped) -> true
+      def raise_on_ignored?: (untyped) -> (false | true)
+      def update_checker_for: (untyped, untyped, untyped, raise_on_ignored: untyped) -> Dependabot::UpdateCheckers::Base
+      def all_versions_ignored?: (untyped, untyped) -> (false | true)
+      def semver_rules_allow_grouping?: (untyped, untyped, untyped) -> (false | true)
+      def requirements_to_unlock: (untyped) -> (:all | :none | :own | :update_not_possible)
+      def log_requirements_for_update: (untyped, untyped) -> (nil | true)
+      def warn_group_is_empty: (untyped) -> (nil | true)
+      def store_changes: (untyped) -> (Array[Dependabot::Workspace::ChangeAttempt] | nil)
+      def pr_exists_for_dependency_group?: (untyped) -> (false | true)
+      def find_existing_group_pr: (untyped) -> (Dependabot::Job::ExistingGroupPullRequest | nil)
+      def deduce_updated_dependency: (untyped, untyped) -> (Dependabot::Dependency | nil)
+      def log_security_dependency_details: (untyped) -> true
+      def vulnerability_conflict_explanation: (untyped) -> (String | nil)
+      def failed_security_update_dependencies: (untyped) -> Array[Dependabot::Dependency]
+      def deferred_to_individual_update?: (untyped) -> (false | true)
+      def resolved_by_removal?: (untyped) -> (false | true)
+      def report_security_update_failures: (untyped) -> Array[Dependabot::Dependency]
+    end
+  end
+end

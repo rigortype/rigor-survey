@@ -1,0 +1,10 @@
+module ActionCable
+  module Server
+    class Socket
+      class Stream
+        def initialize: (untyped, untyped) -> void
+        def shutdown: () -> nil
+      end
+    end
+  end
+end

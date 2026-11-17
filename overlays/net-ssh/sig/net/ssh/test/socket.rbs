@@ -1,0 +1,13 @@
+module Net
+  module SSH
+    module Test
+      class Socket < ::StringIO
+        def open: (untyped, untyped, ?untyped) -> Net::SSH::Test::Socket
+        def getpeername: () -> String
+        def recv: (untyped) -> ("" | String)
+        def readpartial: (untyped) -> ("" | String)
+        def script: () -> Net::SSH::Test::Script
+      end
+    end
+  end
+end

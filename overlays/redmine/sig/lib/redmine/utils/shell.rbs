@@ -1,0 +1,8 @@
+module Redmine
+  module Utils
+    module Shell
+      def self?.shell_quote: (untyped) -> String
+      def self?.shell_quote_command: (untyped) -> String
+    end
+  end
+end

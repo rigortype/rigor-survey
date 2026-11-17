@@ -1,0 +1,11 @@
+module Mutations
+  module Projects
+    module BranchRules
+      module SquashOptions
+        class Update < ::Mutations::BaseMutation
+          def resolve: (branch_rule_id: untyped, **untyped) -> { squash_option: untyped, errors: Array[untyped] | [] }
+        end
+      end
+    end
+  end
+end

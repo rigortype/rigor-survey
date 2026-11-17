@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class BumpSequences
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def execute: () -> Array[untyped]
+    end
+  end
+end

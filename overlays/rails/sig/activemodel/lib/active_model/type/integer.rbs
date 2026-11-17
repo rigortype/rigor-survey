@@ -1,0 +1,9 @@
+module ActiveModel
+  module Type
+    class Integer < ::ActiveModel::Type::Value
+      def initialize: (**untyped) -> void
+      def type: () -> :integer
+      def serializable?: (untyped) -> (false | true)
+    end
+  end
+end

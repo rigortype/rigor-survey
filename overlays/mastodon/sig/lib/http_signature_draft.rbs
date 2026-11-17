@@ -1,0 +1,5 @@
+class HttpSignatureDraft
+  def initialize: (untyped, untyped) -> void
+  def request_target: (untyped, untyped) -> String
+  def sign: (untyped, untyped, untyped) -> String
+end

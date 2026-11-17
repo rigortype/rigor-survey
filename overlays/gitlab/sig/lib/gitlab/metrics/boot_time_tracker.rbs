@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    class BootTimeTracker
+      def reset!: () -> nil
+    end
+  end
+end

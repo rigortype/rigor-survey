@@ -1,0 +1,6 @@
+module Members
+  class PendingInvitationsFinder
+    def initialize: (untyped) -> void
+    def execute: () -> ActiveRecord::Relation[Member]
+  end
+end

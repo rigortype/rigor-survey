@@ -1,0 +1,7 @@
+module Ci
+  module Inputs
+    class ArrayInput < ::Ci::Inputs::BaseInput
+      def self.type_name: () -> "array"
+    end
+  end
+end

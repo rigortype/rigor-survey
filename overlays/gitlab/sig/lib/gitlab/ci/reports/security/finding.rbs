@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Finding
+          def initialize: (**untyped) -> void
+          def to_hash: () -> Hash[:confidence | :description | :details | :evidence | :flags | :identifiers | :links | :location | :metadata_version | :name | :raw_metadata | :report_type | :scan | :scanner | :severity | :signatures | :solution | :uuid, untyped]
+          def hash: () -> Integer
+        end
+      end
+    end
+  end
+end

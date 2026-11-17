@@ -1,0 +1,7 @@
+module Ci
+  module Inputs
+    class NumberInput < ::Ci::Inputs::BaseInput
+      def self.type_name: () -> "number"
+    end
+  end
+end

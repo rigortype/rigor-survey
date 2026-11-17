@@ -1,0 +1,16 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        module Strategies
+          class RecordLoaderStrategy
+            def initialize: (untyped, untyped, untyped) -> void
+            def initializer_columns: () -> [String]
+            def columns: () -> [String]
+            def final_projections: () -> (Array[String] | [String])
+          end
+        end
+      end
+    end
+  end
+end

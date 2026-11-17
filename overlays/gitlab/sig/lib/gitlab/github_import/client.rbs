@@ -1,0 +1,28 @@
+module Gitlab
+  module GithubImport
+    class Client
+      def initialize: (untyped, ?host: untyped, ?per_page: untyped, ?parallel: untyped, ?token_refresher: untyped) -> void
+      def pull_request_reviews: (untyped, untyped) -> (Enumerator[untyped, untyped] | nil)
+      def each_hook_delivery_page: (untyped, untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+      def labels: (*untyped) -> (Enumerator[untyped, untyped] | nil)
+      def milestones: (*untyped) -> (Enumerator[untyped, untyped] | nil)
+      def releases: (*untyped) -> (Enumerator[untyped, untyped] | nil)
+      def branches: (*untyped) -> (Enumerator[untyped, untyped] | nil)
+      def collaborators: (*untyped) -> (Enumerator[untyped, untyped] | nil)
+      def each_page: (untyped, untyped, *untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+      def each_object: (untyped, *untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+      def raise_or_wait_for_rate_limit: (untyped) -> Integer
+      def octokit: () -> ::Octokit::Client
+      class Page < ::Struct[untyped]
+        def objects: () -> untyped
+        def url: () -> untyped
+        def next_url: () -> untyped
+        def objects=: (untyped) -> untyped
+        def url=: (untyped) -> untyped
+        def next_url=: (untyped) -> untyped
+        def self.new: (?objects: untyped, ?url: untyped, ?next_url: untyped) -> instance | (?untyped objects, ?untyped url, ?untyped next_url) -> instance
+        def self.[]: (?objects: untyped, ?url: untyped, ?next_url: untyped) -> instance | (?untyped objects, ?untyped url, ?untyped next_url) -> instance
+      end
+    end
+  end
+end

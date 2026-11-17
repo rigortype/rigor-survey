@@ -1,0 +1,5 @@
+class AnnualReport
+  class Archetype < ::AnnualReport::Source
+    def generate: () -> { archetype: :booster | :lurker | :oracle | :pollster | :replier }
+  end
+end

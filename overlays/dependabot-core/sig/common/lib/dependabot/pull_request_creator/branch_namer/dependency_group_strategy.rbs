@@ -1,0 +1,9 @@
+module Dependabot
+  class PullRequestCreator
+    class BranchNamer
+      class DependencyGroupStrategy < ::Dependabot::PullRequestCreator::BranchNamer::Base
+        def initialize: (dependencies: untyped, files: untyped, target_branch: untyped, dependency_group: untyped, includes_security_fixes: untyped, ?separator: untyped, ?prefix: untyped, ?max_length: untyped, ?word_separator: untyped, ?branch_name_case: untyped, ?template: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Network
+  class Graph
+    def self.max_count: () -> 650
+    def initialize: (untyped, String, untyped, String | nil) -> void
+    def days: () -> Array[untyped]
+    def map: () -> (Hash[untyped, untyped] | nil)
+  end
+end

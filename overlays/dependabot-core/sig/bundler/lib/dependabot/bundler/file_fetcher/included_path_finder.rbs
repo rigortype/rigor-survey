@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class IncludedPathFinder
+        def initialize: (file: untyped) -> void
+        def find_included_paths: () -> Array[untyped]
+      end
+    end
+  end
+end

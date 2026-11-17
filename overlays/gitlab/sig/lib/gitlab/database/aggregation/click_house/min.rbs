@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class Min < ::Gitlab::Database::Aggregation::ClickHouse::MetricDefinition
+          def initialize: (untyped, ?untyped, ?untyped, **untyped) -> void
+          def to_outer_arel: (untyped) -> Arel::Nodes::NamedFunction
+        end
+      end
+    end
+  end
+end

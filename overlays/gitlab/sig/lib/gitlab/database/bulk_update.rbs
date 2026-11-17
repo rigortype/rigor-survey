@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module BulkUpdate
+      class Setter
+        def initialize: (untyped, untyped, untyped) -> void
+        def self.column_definitions: (untyped, untyped) -> Array[untyped]
+        def columns: () -> Array[untyped]
+      end
+    end
+  end
+end

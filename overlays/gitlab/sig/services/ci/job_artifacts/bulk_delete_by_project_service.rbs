@@ -1,0 +1,8 @@
+module Ci
+  module JobArtifacts
+    class BulkDeleteByProjectService
+      def initialize: (job_artifact_ids: untyped, project: untyped, current_user: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

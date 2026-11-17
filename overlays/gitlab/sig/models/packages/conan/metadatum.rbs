@@ -1,0 +1,7 @@
+module Packages
+  module Conan
+    class Metadatum < ::ApplicationRecord
+      def recipe: () -> String
+    end
+  end
+end

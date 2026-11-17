@@ -1,0 +1,5 @@
+module PagesCore
+  module Authentication
+    def logged_in?: () -> (false | true)
+  end
+end

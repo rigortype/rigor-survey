@@ -1,0 +1,6 @@
+module ActiveRecord
+  class Transaction
+    def initialize: (untyped) -> void
+    def open?: () -> (false | true)
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module GithubImport
+    def self.refmap: () -> [:heads, :tags, "+refs/pull/*/head:refs/merge-requests/*/head"]
+    def self.new_client_for: (untyped, ?token: untyped, ?host: untyped, ?parallel: untyped) -> Gitlab::GithubImport::Client
+    def self.formatted_import_url: (untyped) -> (String | nil)
+  end
+end

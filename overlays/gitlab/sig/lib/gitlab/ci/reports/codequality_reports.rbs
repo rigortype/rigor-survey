@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Reports
+      class CodequalityReports
+        def code_quality_report_summary: () -> (Hash[untyped, untyped] | nil)
+      end
+    end
+  end
+end

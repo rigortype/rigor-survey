@@ -1,0 +1,3 @@
+class UsersStatistics < ::ApplicationRecord
+  def self.highest_role_stats: () -> { without_groups_and_projects: untyped, with_highest_role_guest: untyped, with_highest_role_planner: untyped, with_highest_role_reporter: untyped, with_highest_role_security_manager: untyped, with_highest_role_developer: untyped, with_highest_role_maintainer: untyped, with_highest_role_owner: untyped, bots: untyped, blocked: untyped }
+end

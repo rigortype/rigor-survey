@@ -1,0 +1,3 @@
+class GenerateAnnualReportWorker
+  def perform: (untyped, untyped) -> ("finished" | true)
+end

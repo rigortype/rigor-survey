@@ -1,0 +1,13 @@
+module Gitlab
+  module Repositories
+    class Identifier
+      def self.parse: (untyped) -> (Gitlab::Repositories::Identifier::ThreePartIdentifier | Gitlab::Repositories::Identifier::TwoPartIdentifier)
+      class TwoPartIdentifier < ::Gitlab::Repositories::Identifier
+        def initialize: (untyped, untyped) -> void
+      end
+      class ThreePartIdentifier < ::Gitlab::Repositories::Identifier
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

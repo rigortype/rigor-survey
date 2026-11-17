@@ -1,0 +1,9 @@
+module ActiveRecord
+  class InsertAll
+    def initialize: (untyped, untyped, untyped, on_duplicate: untyped, ?update_only: untyped, ?returning: untyped, ?unique_by: untyped, ?record_timestamps: untyped) -> void
+    class Builder
+      def initialize: (untyped) -> void
+      def into: () -> String
+    end
+  end
+end

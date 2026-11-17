@@ -1,0 +1,5 @@
+module Users
+  class BatchStatusCleanerService
+    def self.execute: (?batch_size: untyped) -> { deleted_rows: untyped }
+  end
+end

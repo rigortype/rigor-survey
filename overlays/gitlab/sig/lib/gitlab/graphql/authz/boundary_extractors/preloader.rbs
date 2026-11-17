@@ -1,0 +1,11 @@
+module Gitlab
+  module Graphql
+    module Authz
+      module BoundaryExtractors
+        class Preloader
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

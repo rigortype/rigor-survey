@@ -1,0 +1,22 @@
+module SortingHelper
+  def sort_options_hash: () -> Hash["closed_at" | "closed_at_asc" | "closed_at_desc" | "contacted_asc" | "created_asc" | "created_date" | "created_desc" | "downvotes_desc" | "due_date" | "due_date_asc" | "due_date_desc" | "expired_asc" | "label_priority" | "merged_at" | "merged_at_asc" | "merged_at_desc" | "milestone" | "milestone_due_asc" | "milestone_due_desc" | "name_asc" | "name_desc" | "oldest_sign_in" | "popularity" | "priority" | "recent_sign_in" | "relative_position" | "size_desc" | "storage_size_desc" | "title_asc" | "updated_asc" | "updated_desc" | "upvotes_desc", untyped]
+  def projects_sort_options_hash: () -> (Hash["created_asc" | "created_desc" | "latest_activity_asc" | "latest_activity_desc" | "name_asc" | "name_desc" | "stars_desc", untyped] | Hash[String, untyped])
+  def forks_reverse_sort_options_hash: () -> Hash["created_asc" | "created_desc" | "latest_activity_asc" | "latest_activity_desc", "created_asc" | "created_desc" | "latest_activity_asc" | "latest_activity_desc"]
+  def milestones_sort_options_hash: () -> Hash["due_date_asc" | "due_date_desc" | "name_asc" | "name_desc" | "start_date_asc" | "start_date_desc", untyped]
+  def branches_sort_options_hash: () -> Hash["name_asc" | "updated_asc" | "updated_desc", untyped]
+  def label_sort_options_hash: () -> Hash[untyped, untyped]
+  def users_sort_options_hash: () -> Hash["created_asc" | "created_desc" | "last_activity_on_asc" | "last_activity_on_desc" | "name_asc" | "oldest_sign_in" | "recent_sign_in" | "updated_asc" | "updated_desc", untyped]
+  def starrers_sort_options_hash: () -> Hash["created_asc" | "created_desc" | "name_asc" | "name_desc", untyped]
+  def issuable_sort_option_overrides: () -> Hash["closed_at_desc" | "created_asc" | "due_date_desc" | "merged_at_desc" | "milestone_due_desc" | "popularity_asc" | "title_desc" | "updated_asc", "closed_at" | "created_date" | "due_date" | "merged_at" | "milestone" | "popularity" | "title_asc" | "updated_desc"]
+  def issuable_reverse_sort_order_hash: () -> Hash[untyped, untyped]
+  def issuable_sort_options: (untyped, untyped) -> Array[untyped]
+  def can_sort_by_issue_weight?: (untyped) -> false
+  def due_date_option: () -> { value: "due_date", text: untyped, href: untyped }
+  def popularity_option: () -> { value: "popularity", text: untyped, href: untyped }
+  def label_priority_option: () -> { value: "label_priority", text: untyped, href: untyped }
+  def merged_option: () -> { value: "merged_at", text: untyped, href: untyped }
+  def relative_position_option: () -> { value: "relative_position", text: untyped, href: untyped }
+  def title_option: () -> { value: "title_asc", text: untyped, href: untyped }
+  def sort_direction_icon: (untyped) -> ("sort-highest" | "sort-lowest")
+  def admin_users_sort_options: (untyped) -> Array[{ value: "created_asc" | "created_desc" | "last_activity_on_asc" | "last_activity_on_desc" | "name_asc" | "oldest_sign_in" | "recent_sign_in" | "updated_asc" | "updated_desc", text: untyped, href: untyped }]
+end

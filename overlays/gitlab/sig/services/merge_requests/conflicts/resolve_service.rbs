@@ -1,0 +1,7 @@
+module MergeRequests
+  module Conflicts
+    class ResolveService < ::MergeRequests::Conflicts::BaseService
+      def execute: (untyped, untyped) -> ServiceResponse
+    end
+  end
+end

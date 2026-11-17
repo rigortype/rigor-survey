@@ -1,0 +1,12 @@
+module Ci
+  module JobToken
+    class Jwt
+      def self.decode: (untyped, ?verify_expiration: untyped) -> (Ci::JobToken::Jwt | nil)
+      def self.build_payload: (untyped) -> Hash[untyped, untyped]
+      def self.routable_payload: (untyped) -> Hash[:c | :g | :o | :p | :u, untyped]
+      def self.subject_type: () -> singleton(Ci::Build)
+      def self.expire_time: (untyped) -> ActiveSupport::TimeWithZone
+      def initialize: (untyped) -> void
+    end
+  end
+end

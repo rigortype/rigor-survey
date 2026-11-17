@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module AsyncIndexes
+      class IndexBase
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

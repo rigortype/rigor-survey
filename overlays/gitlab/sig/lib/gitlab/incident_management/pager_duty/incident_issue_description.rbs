@@ -1,0 +1,10 @@
+module Gitlab
+  module IncidentManagement
+    module PagerDuty
+      class IncidentIssueDescription
+        def initialize: (untyped) -> void
+        def to_s: () -> String
+      end
+    end
+  end
+end

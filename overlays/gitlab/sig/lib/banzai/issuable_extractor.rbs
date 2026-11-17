@@ -1,0 +1,7 @@
+module Banzai
+  class IssuableExtractor
+    def initialize: (Banzai::RenderContext) -> void
+    def extract: (untyped) -> Hash[untyped, untyped]
+    def context: () -> Banzai::RenderContext
+  end
+end

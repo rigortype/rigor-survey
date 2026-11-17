@@ -1,0 +1,6 @@
+module Clusters
+  class Agent < ::ApplicationRecord
+    def to_ability_name: () -> :cluster
+    def resource_management_enabled?: () -> false
+  end
+end

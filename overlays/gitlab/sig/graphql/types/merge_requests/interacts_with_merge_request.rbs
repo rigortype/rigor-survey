@@ -1,0 +1,7 @@
+module Types
+  module MergeRequests
+    module InteractsWithMergeRequest
+      def merge_request_interaction: (parent: untyped, ?id: untyped) -> ::Users::MergeRequestInteraction
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class TermsOfService < ::ApplicationRecord
+  class Generator
+    def render: () -> String
+  end
+end

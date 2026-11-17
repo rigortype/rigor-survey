@@ -1,0 +1,14 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class LexerRex
+        def matches: () -> Array[untyped]
+        def scanner_class: () -> singleton(StringScanner)
+        def location: () -> String
+        def next_token: () -> (Array[untyped] | nil)
+        class LexerError < ::StandardError
+        end
+      end
+    end
+  end
+end

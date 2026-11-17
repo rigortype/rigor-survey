@@ -1,0 +1,8 @@
+module Atlassian
+  module JiraConnect
+    class JiraUser
+      def initialize: (Hash[String, Hash[String, []]] | Hash[String, Hash[String, [Hash[String, String], Hash[String, String]]]] | Hash[String, Hash[String, [Hash[String, String]]]] | Hash[String, {}] | {}) -> void
+      def not_an_admin_error_message: () -> (String | nil)
+    end
+  end
+end

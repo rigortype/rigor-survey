@@ -1,0 +1,48 @@
+module Gitlab
+  module Regex
+    module Packages
+      def cargo_package_name_regex: () -> Regexp
+      def cargo_package_normalized_name_regex: () -> Regexp
+      def conan_package_reference_regex: () -> Regexp
+      def conan_revision_regex: () -> Regexp
+      def conan_revision_regex_v2: () -> Regexp
+      def conan_revision_regex_combined: () -> Regexp
+      def conan_recipe_user_channel_regex: () -> Regexp
+      def conan_recipe_component_regex: () -> Regexp
+      def composer_package_version_regex: () -> Regexp
+      def composer_dev_version_regex: () -> Regexp
+      def maven_file_name_regex: () -> Regexp
+      def maven_path_regex: () -> Regexp
+      def maven_app_name_regex: () -> Regexp
+      def maven_version_regex: () -> Regexp
+      def npm_package_name_regex_message: () -> "should be a valid NPM package name: https://github.com/npm/validate-npm-package-name#naming-rules."
+      def nuget_package_name_regex: () -> Regexp
+      def nuget_version_regex: () -> Regexp
+      def terraform_module_package_name_regex: () -> Regexp
+      def pypi_version_regex: () -> Regexp
+      def debian_package_name_regex: () -> Regexp
+      def debian_version_regex: () -> Regexp
+      def debian_architecture_regex: () -> Regexp
+      def debian_distribution_regex: () -> Regexp
+      def debian_component_regex: () -> Regexp
+      def debian_direct_upload_filename_regex: () -> Regexp
+      def helm_channel_regex: () -> Regexp
+      def helm_package_regex: () -> Regexp
+      def helm_version_regex: () -> Regexp
+      def unbounded_semver_regex: () -> Regexp
+      def semver_regex: () -> Regexp
+      def semver_regex_message: () -> "should follow SemVer: https://semver.org"
+      def _semver_major_minor_patch_regex: () -> Regexp
+      def _semver_major_regex: () -> Regexp
+      def _semver_minor_regex: () -> Regexp
+      def _semver_patch_regex: () -> Regexp
+      def _semver_prerelease_build_regex: () -> Regexp
+      def prefixed_semver_regex: () -> Regexp
+      def go_package_regex: () -> Regexp
+      def generic_package_file_name_regex: () -> Regexp
+      def sha256_regex: () -> Regexp
+      def slack_link_regex: () -> Gitlab::UntrustedRegexp
+      def helm_index_app_version_quote_regex: () -> Regexp
+    end
+  end
+end

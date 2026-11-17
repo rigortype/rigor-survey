@@ -1,0 +1,8 @@
+module ActionDispatch
+  module Journey
+    class Router
+      def initialize: (untyped) -> void
+      def eager_load!: () -> nil
+    end
+  end
+end

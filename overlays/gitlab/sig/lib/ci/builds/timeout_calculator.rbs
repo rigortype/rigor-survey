@@ -1,0 +1,16 @@
+module Ci
+  module Builds
+    class Timeout < ::Struct[untyped]
+      def value: () -> untyped
+      def source: () -> untyped
+      def value=: (untyped) -> untyped
+      def source=: (untyped) -> untyped
+      def self.new: (?value: untyped, ?source: untyped) -> instance | (?untyped value, ?untyped source) -> instance
+      def self.[]: (?value: untyped, ?source: untyped) -> instance | (?untyped value, ?untyped source) -> instance
+    end
+    class TimeoutCalculator
+      def initialize: (untyped) -> void
+      def applicable_timeout: () -> Enumerator[Ci::Builds::Timeout, Ci::Builds::Timeout | nil]
+    end
+  end
+end

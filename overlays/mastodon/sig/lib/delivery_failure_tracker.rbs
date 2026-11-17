@@ -1,0 +1,6 @@
+class DeliveryFailureTracker
+  def initialize: (String, ?resolution: Symbol) -> void
+  def available?: () -> (false | true)
+  def self.available?: (untyped) -> (false | true)
+  def self.exhausted_deliveries_key_by: (untyped) -> String
+end

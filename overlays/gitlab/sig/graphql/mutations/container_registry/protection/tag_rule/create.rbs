@@ -1,0 +1,11 @@
+module Mutations
+  module ContainerRegistry
+    module Protection
+      module TagRule
+        class Create < ::Mutations::BaseMutation
+          def resolve: (project_path: untyped, **untyped) -> { container_protection_tag_rule: untyped, errors: Array[untyped] | [] }
+        end
+      end
+    end
+  end
+end

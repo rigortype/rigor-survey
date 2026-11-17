@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class GemspecSanitizer
+        def initialize: (replacement_version: untyped) -> void
+        def replacement_version: () -> String
+      end
+    end
+  end
+end

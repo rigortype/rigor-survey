@@ -1,0 +1,6 @@
+module Hamlit
+  class HamlError < ::StandardError
+    def self.message: (untyped, *untyped) -> String
+    def initialize: (?untyped, ?untyped) -> void
+  end
+end

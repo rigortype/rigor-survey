@@ -1,0 +1,7 @@
+module Ci
+  class RunnerManager < ::Ci::ApplicationRecord
+    def self.stale_deadline: () -> ActiveSupport::TimeWithZone
+    def self.version_regex_expression_for_version: (untyped) -> ("^\\d+\\." | "^\\d+\\.\\d+\\." | "^\\d+\\.\\d+\\.\\d+")
+    def supports_after_script_on_cancel?: () -> (false | true)
+  end
+end

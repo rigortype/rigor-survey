@@ -1,0 +1,5 @@
+module Groups
+  class UpdateStatisticsWorker
+    def perform: (untyped, ?untyped) -> (ServiceResponse | nil)
+  end
+end

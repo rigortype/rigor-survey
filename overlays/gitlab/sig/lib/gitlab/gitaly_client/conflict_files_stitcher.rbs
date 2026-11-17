@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class ConflictFilesStitcher
+      def initialize: (Array[untyped] | [untyped, untyped, untyped, untyped, untyped] | [untyped, untyped], untyped) -> void
+    end
+  end
+end

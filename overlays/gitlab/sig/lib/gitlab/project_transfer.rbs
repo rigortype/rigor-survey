@@ -1,0 +1,8 @@
+module Gitlab
+  class ProjectTransfer
+    def move_namespace: (untyped, untyped, untyped) -> top
+    def rename_project: (untyped, untyped, untyped) -> top
+    def rename_namespace: (untyped, untyped) -> top
+    def root_dir: () -> bot
+  end
+end

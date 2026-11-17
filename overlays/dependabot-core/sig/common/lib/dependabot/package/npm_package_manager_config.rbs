@@ -1,0 +1,10 @@
+module Dependabot
+  module Package
+    class NpmPackageManagerConfig < ::T::ImmutableStruct
+      def self.from_package_json: (untyped) -> Dependabot::Package::NpmPackageManagerConfig
+      def self.parse_engines: (untyped) -> (Hash[untyped, untyped] | nil)
+      def self.object_hash: (untyped, untyped) -> ObjectHash
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

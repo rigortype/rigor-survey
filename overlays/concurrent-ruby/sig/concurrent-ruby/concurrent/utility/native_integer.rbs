@@ -1,0 +1,7 @@
+module Concurrent
+  module Utility
+    module NativeInteger
+      def ensure_integer: (untyped) -> Integer
+    end
+  end
+end

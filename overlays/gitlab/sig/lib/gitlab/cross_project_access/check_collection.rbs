@@ -1,0 +1,10 @@
+module Gitlab
+  class CrossProjectAccess
+    class CheckCollection
+      def add_collection: (untyped) -> Array[untyped]
+      def add_check: (untyped) -> Array[untyped]
+      def arranged_checks: () -> [Array[untyped], Array[untyped]]
+      def checks: () -> Array[untyped]
+    end
+  end
+end

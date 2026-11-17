@@ -1,0 +1,5 @@
+module Resolvers
+  class AssignedMergeRequestsResolver < ::Resolvers::UserMergeRequestsResolverBase
+    def user_role: () -> :assignee
+  end
+end

@@ -1,0 +1,19 @@
+class Snippet < ::ApplicationRecord
+  def self.parent_class: () -> singleton(Project)
+  def self.with_optional_visibility: (?untyped) -> ActiveRecord::Relation[Snippet]
+  def self.only_personal_snippets: () -> ActiveRecord::Relation[Snippet]
+  def self.only_include_authorized_projects: (untyped) -> ActiveRecord::Relation[Snippet]
+  def self.reference_prefix: () -> "$"
+  def self.reference_pattern: () -> Regexp
+  def self.find_by_id_and_project: (id: untyped, project: untyped) -> (Snippet | nil)
+  def self.max_file_limit: () -> 10
+  def initialize: (?untyped) -> void
+  def to_reference: (?untyped, ?full: untyped) -> String
+  def blob: () -> Blob
+  def hook_attrs: () -> { id: untyped, title: untyped, description: untyped, content: untyped, author_id: untyped, project_id: untyped, created_at: untyped, updated_at: untyped, file_name: untyped, type: untyped, visibility_level: untyped, url: untyped }
+  def visibility_level_field: () -> :visibility_level
+  def supports_recaptcha?: () -> true
+  def to_ability_name: () -> "snippet"
+  def storage: () -> Storage::Hashed
+  def hexdigest: () -> String
+end

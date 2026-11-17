@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class DependencyFilesFilterer
+      def initialize: (dependency_files: untyped, updated_dependencies: untyped) -> void
+      def paths_requiring_update_check: () -> (Array[String] | nil)
+      def files_requiring_update: () -> (Array[::DependencyFile] | nil)
+      def package_files_requiring_update: () -> (Array[::DependencyFile] | nil)
+    end
+  end
+end

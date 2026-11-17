@@ -1,0 +1,4 @@
+class UserFinder
+  def initialize: (untyped) -> void
+  def find_by_id!: () -> User
+end

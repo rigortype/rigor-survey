@@ -1,0 +1,9 @@
+module API
+  module Validations
+    module Types
+      class WorkhorseFile
+        def self.parsed?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

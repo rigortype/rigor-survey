@@ -1,0 +1,16 @@
+module ActiveRecord
+  class Relation
+    class WhereClause
+      def initialize: (untyped) -> void
+      def -: (untyped) -> ActiveRecord::Relation::WhereClause
+      def |: (untyped) -> ActiveRecord::Relation::WhereClause
+      def merge: (untyped) -> ActiveRecord::Relation::WhereClause
+      def except: (*untyped) -> ActiveRecord::Relation::WhereClause
+      def or: (untyped) -> ActiveRecord::Relation::WhereClause
+      def to_h: (?untyped, ?equality_only: untyped) -> Hash[untyped, untyped]
+      def invert: () -> ActiveRecord::Relation::WhereClause
+      def self.empty: () -> ActiveRecord::Relation::WhereClause
+      def extract_attributes: () -> Array[untyped]
+    end
+  end
+end

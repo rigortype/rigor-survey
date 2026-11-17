@@ -1,0 +1,6 @@
+module Achievements
+  class AwardService
+    def initialize: (untyped, untyped, untyped, ?award_message: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    class RakeCommand < ::Rails::Command::Base
+      def self.non_app_file_pattern: () -> Regexp
+    end
+  end
+end

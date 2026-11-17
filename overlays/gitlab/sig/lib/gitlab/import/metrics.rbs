@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    class Metrics
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

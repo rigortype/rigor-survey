@@ -1,0 +1,9 @@
+module WorkItems
+  module DataSync
+    module Widgets
+      class Hierarchy < ::WorkItems::DataSync::Widgets::Base
+        def self.cleanup_source_work_item_data?: (untyped) -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Autocomplete
+  class MoveToProjectFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

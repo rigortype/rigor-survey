@@ -1,0 +1,9 @@
+module Dependabot
+  module Devcontainers
+    class FileParser < ::Dependabot::FileParsers::Base
+      class FeatureDependencyParser
+        def initialize: (config_dependency_file: untyped, repo_contents_path: untyped, credentials: untyped) -> void
+      end
+    end
+  end
+end

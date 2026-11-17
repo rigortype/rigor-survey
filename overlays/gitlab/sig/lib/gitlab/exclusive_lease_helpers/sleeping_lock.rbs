@@ -1,0 +1,9 @@
+module Gitlab
+  module ExclusiveLeaseHelpers
+    class SleepingLock
+      def initialize: (untyped, timeout: untyped, delay: untyped) -> void
+      def obtain: (?untyped) -> nil
+      def attempts: () -> (0 | Integer)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain either a Gemfile, a gemspec, or a gems.rb."
+      def ecosystem_versions: () -> { package_managers: Hash[String, "unknown" | "unspecified" | String] }
+      def fetch_files: () -> Array[::DependencyFile]
+    end
+  end
+end

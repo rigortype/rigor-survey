@@ -1,0 +1,6 @@
+class DSU
+  def initialize: (?Integer) -> void
+  def groups: () -> Array[Array[Integer]]
+  def to_s: () -> String
+  def parent_or_size: () -> Array[Integer]
+end

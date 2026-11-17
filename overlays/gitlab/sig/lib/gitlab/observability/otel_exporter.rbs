@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    class OtelExporter
+      def initialize: (untyped) -> void
+    end
+  end
+end

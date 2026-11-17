@@ -1,0 +1,7 @@
+module ErrorTracking
+  class SentryClient
+    class ApiUrls
+      def initialize: (untyped) -> void
+    end
+  end
+end

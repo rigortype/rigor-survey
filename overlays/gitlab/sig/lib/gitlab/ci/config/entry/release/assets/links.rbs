@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Release < ::Gitlab::Config::Entry::Node
+          class Assets < ::Gitlab::Config::Entry::Node
+            class Links < ::Gitlab::Config::Entry::Node
+              def skip_config_hash_validation?: () -> true
+            end
+          end
+        end
+      end
+    end
+  end
+end

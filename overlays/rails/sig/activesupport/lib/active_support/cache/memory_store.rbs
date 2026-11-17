@@ -1,0 +1,10 @@
+module ActiveSupport
+  module Cache
+    class MemoryStore < ::ActiveSupport::Cache::Store
+      def initialize: (?untyped) -> void
+      def self.supports_cache_versioning?: () -> true
+      def pruning?: () -> (false | true)
+      def inspect: () -> String
+    end
+  end
+end

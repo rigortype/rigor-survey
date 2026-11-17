@@ -1,0 +1,4 @@
+class AnnualReportsPresenter
+  def initialize: (untyped) -> void
+  def self.model_name: () -> ActiveModel::Name
+end

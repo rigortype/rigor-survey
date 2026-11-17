@@ -1,0 +1,5 @@
+module Admin
+  class ExpenseReportReviewsController < ::Admin::ApplicationController
+    def create: () -> void
+  end
+end

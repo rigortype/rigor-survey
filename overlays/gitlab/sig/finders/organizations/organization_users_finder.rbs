@@ -1,0 +1,5 @@
+module Organizations
+  class OrganizationUsersFinder
+    def initialize: (organization: untyped, current_user: untyped, ?search: untyped) -> void
+  end
+end

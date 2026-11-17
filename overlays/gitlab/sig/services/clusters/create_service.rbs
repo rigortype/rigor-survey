@@ -1,0 +1,6 @@
+module Clusters
+  class CreateService
+    def initialize: (?untyped, ?untyped) -> void
+    def execute: (?access_token: untyped) -> Clusters::Cluster
+  end
+end

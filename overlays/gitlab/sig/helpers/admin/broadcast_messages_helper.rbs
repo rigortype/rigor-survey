@@ -1,0 +1,6 @@
+module Admin
+  module BroadcastMessagesHelper
+    def broadcast_message_status: (untyped) -> ("Active" | "Expired" | "Pending")
+    def broadcast_message_data: (untyped) -> { id: untyped, message: untyped, broadcast_type: untyped, theme: untyped, dismissable: untyped, target_access_levels: untyped, messages_path: untyped, preview_path: untyped, target_path: untyped, starts_at: untyped, ends_at: untyped, target_access_level_options: untyped, show_in_cli: untyped }
+  end
+end

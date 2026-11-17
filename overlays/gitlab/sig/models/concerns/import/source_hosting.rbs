@@ -1,0 +1,6 @@
+module Import
+  module SourceHosting
+    def gitea_self_hosted_import?: () -> (false | true)
+    def source_hosting: () -> ("cloud" | "self_hosted" | nil)
+  end
+end

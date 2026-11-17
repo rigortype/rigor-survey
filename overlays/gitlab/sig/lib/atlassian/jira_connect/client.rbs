@@ -1,0 +1,7 @@
+module Atlassian
+  module JiraConnect
+    class Client < ::Atlassian::Jira::DevInfoClient
+      def initialize: (String, String) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    class IndexNode < ::RuboCop::AST::Node
+      def attribute_accessor?: () -> false
+      def assignment_method?: () -> false
+      def method_name: () -> :[]
+    end
+  end
+end

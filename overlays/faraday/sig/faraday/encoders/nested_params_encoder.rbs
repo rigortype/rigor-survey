@@ -1,0 +1,5 @@
+module Faraday
+  module EncodeMethods
+    def encode: (untyped) -> (String | nil)
+  end
+end

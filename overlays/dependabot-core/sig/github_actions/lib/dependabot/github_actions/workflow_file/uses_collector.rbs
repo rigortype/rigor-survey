@@ -1,0 +1,10 @@
+module Dependabot
+  module GithubActions
+    class WorkflowFile
+      class UsesCollector
+        def initialize: (untyped) -> void
+        def uses: () -> Array[::ResolvedUse]
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module DesignManagement
+    class VersionInCollectionResolver < ::Resolvers::BaseResolver
+      def self.single: () -> singleton(Resolvers::DesignManagement::VersionInCollectionResolver)
+    end
+  end
+end

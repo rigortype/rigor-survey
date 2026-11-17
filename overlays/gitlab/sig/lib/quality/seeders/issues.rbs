@@ -1,0 +1,7 @@
+module Quality
+  module Seeders
+    class Issues
+      def initialize: (project: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Redmine
+  module Info
+    def self.app_name: () -> "Redmine"
+    def self.url: () -> "https://www.redmine.org/"
+    def self.help_url: () -> "https://www.redmine.org/guide"
+    def self.versioned_name: () -> String
+    def self.environment: () -> String
+  end
+end

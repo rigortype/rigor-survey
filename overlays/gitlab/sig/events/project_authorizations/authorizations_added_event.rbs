@@ -1,0 +1,5 @@
+module ProjectAuthorizations
+  class AuthorizationsAddedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["user_ids"] | Hash[String, Hash[String, "array"] | Hash[String, "integer"]]]
+  end
+end

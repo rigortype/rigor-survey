@@ -1,0 +1,3 @@
+class EntityRequest
+  def initialize: ({ current_user: untyped }) -> void
+end

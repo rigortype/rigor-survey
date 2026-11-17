@@ -1,0 +1,11 @@
+module Dependabot
+  module Shared
+    class SharedFileFetcher < ::Dependabot::FileFetchers::Base
+      def correctly_encoded_yamlfiles: () -> Array[::DependencyFile]
+      def incorrectly_encoded_yamlfiles: () -> Array[::DependencyFile]
+      def raise_appropriate_error: (?untyped) -> bot
+      def yamlfiles: () -> (Array[::DependencyFile] | nil)
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

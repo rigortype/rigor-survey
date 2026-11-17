@@ -1,0 +1,5 @@
+module Banzai
+  class RenderContext
+    def initialize: (?untyped, ?untyped, ?options: untyped, ?reference_resolver: Banzai::ReferenceResolver) -> void
+  end
+end

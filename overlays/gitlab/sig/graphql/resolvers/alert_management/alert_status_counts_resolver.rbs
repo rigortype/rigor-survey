@@ -1,0 +1,7 @@
+module Resolvers
+  module AlertManagement
+    class AlertStatusCountsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> Gitlab::AlertManagement::AlertStatusCounts
+    end
+  end
+end

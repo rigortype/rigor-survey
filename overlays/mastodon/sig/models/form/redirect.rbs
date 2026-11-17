@@ -1,0 +1,5 @@
+module Form
+  class Redirect
+    def valid_with_challenge?: (untyped) -> (false | true)
+  end
+end

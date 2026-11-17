@@ -1,0 +1,7 @@
+module Gitlab
+  module SidekiqLogging
+    module LogsJobs
+      def base_message: (untyped) -> String
+    end
+  end
+end

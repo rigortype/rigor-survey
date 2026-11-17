@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Release
+        class Metadata < ::Gitlab::Ci::Badge::Metadata
+          def initialize: (untyped) -> void
+          def title: () -> "Latest Release"
+        end
+      end
+    end
+  end
+end

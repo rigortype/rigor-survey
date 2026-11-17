@@ -1,0 +1,8 @@
+module Packages
+  module Go
+    class ModuleVersion
+      def initialize: (untyped, untyped, untyped, ?name: untyped, ?semver: untyped, ?ref: untyped) -> void
+      def full_name: () -> String
+    end
+  end
+end

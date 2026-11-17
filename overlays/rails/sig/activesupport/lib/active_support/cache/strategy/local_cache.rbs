@@ -1,0 +1,16 @@
+module ActiveSupport
+  module Cache
+    module Strategy
+      module LocalCache
+        def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+        def new_local_cache: () -> ActiveSupport::Cache::Strategy::LocalCache::LocalStore
+        def unset_local_cache: () -> nil
+        def middleware: () -> ActiveSupport::Cache::Strategy::LocalCache::Middleware
+        class LocalStore
+          def write_entry: (untyped, untyped) -> true
+          def delete_entry: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

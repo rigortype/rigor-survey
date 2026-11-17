@@ -1,0 +1,12 @@
+module Clusters
+  module Platforms
+    class Kubernetes < ::ApplicationRecord
+      def enabled?: () -> (false | true)
+      def provided_by_user?: () -> (false | true)
+      def allow_user_defined_namespace?: () -> (false | true)
+      def predefined_variables: (project: untyped, environment_name: untyped, ?kubernetes_namespace: untyped) -> Gitlab::Ci::Variables::Collection
+      def calculate_reactive_cache_for: (untyped) -> (nil | { pods: untyped, deployments: untyped, ingresses: untyped } | { pods: [], deployments: [], ingresses: [] })
+      def rollout_status: (untyped, untyped) -> Gitlab::Kubernetes::RolloutStatus
+    end
+  end
+end

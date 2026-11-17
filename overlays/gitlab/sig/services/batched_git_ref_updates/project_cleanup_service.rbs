@@ -1,0 +1,6 @@
+module BatchedGitRefUpdates
+  class ProjectCleanupService
+    def initialize: (untyped) -> void
+    def execute: () -> { total_deletes: untyped }
+  end
+end

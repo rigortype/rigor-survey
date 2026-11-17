@@ -1,0 +1,7 @@
+module Ci
+  module Observability
+    class ExportService
+      def initialize: (untyped) -> void
+    end
+  end
+end

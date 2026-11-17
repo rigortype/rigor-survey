@@ -1,0 +1,5 @@
+module Autocomplete
+  class GroupUsersFinder
+    def initialize: (group: untyped, current_user: untyped) -> void
+  end
+end

@@ -1,0 +1,4 @@
+module AppModeConcern
+  def valid_mode?: (untyped) -> (false | true)
+  def raise_invalid_mode: (untyped, untyped) -> bot
+end

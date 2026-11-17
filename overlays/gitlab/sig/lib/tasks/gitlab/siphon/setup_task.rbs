@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module Siphon
+      class SetupTask
+        def initialize: (?user_prefix: untyped, ?database: untyped, ?publication_name: untyped) -> void
+        def execute: () -> nil
+      end
+    end
+  end
+end

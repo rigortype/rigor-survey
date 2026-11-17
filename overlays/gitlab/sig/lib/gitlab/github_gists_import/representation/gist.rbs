@@ -1,0 +1,15 @@
+module Gitlab
+  module GithubGistsImport
+    module Representation
+      class Gist
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubGistsImport::Representation::Gist
+        def self.from_json_hash: (untyped) -> Gitlab::GithubGistsImport::Representation::Gist
+        def initialize: ({ files: { :"_Summary.md" => { filename: String, raw_url: String } }, something_else: String } | { id: Integer, something_else: String } | { is_public: false | true, something_else: String }) -> void
+        def visibility_level: () -> (0 | 20)
+        def first_file: () -> { file_name: untyped, file_content: untyped }
+        def github_identifiers: () -> { id: untyped }
+        def attributes: () -> ({ files: { :"_Summary.md" => { filename: "_Summary.md", raw_url: "https://some_url" } }, something_else: "_something_else_" } | { id: 1, something_else: "_something_else_" } | { is_public: false, something_else: "_something_else_" } | { is_public: true, something_else: "_something_else_" })
+      end
+    end
+  end
+end

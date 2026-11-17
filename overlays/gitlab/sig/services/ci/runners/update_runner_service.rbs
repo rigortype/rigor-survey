@@ -1,0 +1,8 @@
+module Ci
+  module Runners
+    class UpdateRunnerService
+      def initialize: (untyped, untyped) -> void
+      def execute: (untyped) -> ServiceResponse
+    end
+  end
+end

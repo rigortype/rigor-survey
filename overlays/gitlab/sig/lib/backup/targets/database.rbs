@@ -1,0 +1,12 @@
+module Backup
+  module Targets
+    class Database < ::Backup::Targets::Target
+      def initialize: (untyped, options: untyped) -> void
+      def dump: (untyped, untyped) -> Array[untyped]
+      def restore: (untyped, untyped) -> Array[untyped]
+      def do_restore: (untyped, untyped, untyped) -> (false | nil)
+      def errors: () -> Array[untyped]
+      def logger: () -> Gitlab::BackupLogger
+    end
+  end
+end

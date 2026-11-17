@@ -1,0 +1,14 @@
+module PreferencesHelper
+  def preferences_tabs: () -> Array[untyped]
+  def preferences_section: (untyped, ?id: untyped, ?testid: untyped, ?section_class: untyped) -> Layouts::SettingsSectionComponent
+  def layout_choices: () -> [[untyped, :fixed], [untyped, :fluid]]
+  def project_view_choices: () -> [[untyped, :files], [untyped, :activity], [untyped, :readme], [untyped, :wiki]]
+  def emoji_skin_tone_choices: () -> Array[{ text: String, value: "dark" | "default" | "light" | "medium" | "medium_dark" | "medium_light" }]
+  def first_day_of_week_choices: () -> [[untyped, untyped], [untyped, untyped], [untyped, untyped]]
+  def time_display_format_choices: () -> Hash[untyped, untyped]
+  def first_day_of_week_choices_with_default: () -> Array[untyped]
+  def user_tab_width: () -> String
+  def user_diffs_colors: () -> Hash[untyped, untyped]
+  def custom_diff_color_classes: () -> (Array[untyped] | nil)
+  def integration_views: () -> Array[untyped]
+end

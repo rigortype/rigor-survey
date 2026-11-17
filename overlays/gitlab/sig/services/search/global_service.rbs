@@ -1,0 +1,6 @@
+module Search
+  class GlobalService
+    def initialize: (untyped, { include_archived: false | true, search: String }) -> void
+    def execute: () -> Gitlab::SearchResults
+  end
+end

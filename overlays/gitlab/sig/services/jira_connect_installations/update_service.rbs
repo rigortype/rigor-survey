@@ -1,0 +1,7 @@
+module JiraConnectInstallations
+  class UpdateService
+    def self.execute: (untyped, untyped, untyped, ?skip_jira_admin_check: untyped) -> ServiceResponse
+    def initialize: (untyped, untyped, untyped, ?skip_jira_admin_check: (false | true)) -> void
+    def execute: () -> ServiceResponse
+  end
+end

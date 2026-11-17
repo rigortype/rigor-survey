@@ -1,0 +1,13 @@
+module Gitlab
+  module SidekiqConfig
+    class Worker
+      def initialize: (untyped, ee: (false | true), ?jh: (false | true)) -> void
+      def ==: (untyped) -> (false | true)
+      def <=>: (untyped) -> (Integer | nil)
+      def to_sort: () -> [0 | 1, untyped]
+      def to_yaml: () -> { name: untyped, worker_name: untyped, feature_category: untyped, has_external_dependencies: untyped, urgency: untyped, resource_boundary: untyped, weight: untyped, idempotent: untyped, tags: untyped, queue_namespace: untyped }
+      def namespace_and_weight: () -> [untyped, untyped]
+      def queue_and_weight: () -> [untyped, untyped]
+    end
+  end
+end

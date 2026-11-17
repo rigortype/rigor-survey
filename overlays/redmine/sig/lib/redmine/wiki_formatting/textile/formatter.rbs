@@ -1,0 +1,13 @@
+module Redmine
+  module WikiFormatting
+    module Textile
+      class Formatter
+        def initialize: (untyped, ?untyped) -> void
+      end
+      class Filter < ::RedCloth3
+        def initialize: (*untyped) -> void
+        def extract_sections: (untyped) -> [String, String, String]
+      end
+    end
+  end
+end

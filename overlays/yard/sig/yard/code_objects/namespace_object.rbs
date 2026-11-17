@@ -1,0 +1,13 @@
+module YARD
+  module CodeObjects
+    class NamespaceObject < ::YARD::CodeObjects::Base
+      def initialize: (untyped, untyped, *untyped) ?{ (*untyped) -> untyped } -> void
+      def included_meths: (?untyped) -> [untyped]
+      def children: () -> YARD::CodeObjects::CodeObjectList
+      def attributes: () -> SymbolHash
+      def aliases: () -> Hash[untyped, untyped]
+      def class_mixins: () -> YARD::CodeObjects::CodeObjectList
+      def instance_mixins: () -> YARD::CodeObjects::CodeObjectList
+    end
+  end
+end

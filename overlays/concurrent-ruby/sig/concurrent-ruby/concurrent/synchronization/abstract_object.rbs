@@ -1,0 +1,8 @@
+module Concurrent
+  module Synchronization
+    class AbstractObject
+      def full_memory_barrier: () -> bot
+      def self.attr_volatile: (*untyped) -> bot
+    end
+  end
+end

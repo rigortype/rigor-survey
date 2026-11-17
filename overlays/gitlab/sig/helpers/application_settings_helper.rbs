@@ -1,0 +1,20 @@
+module ApplicationSettingsHelper
+  def kroki_available_formats: () -> Array[{ name: String, label: "BPMN" | "BlockDiag (includes BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, and RackDiag)" | "Excalidraw" | "Mermaid", value: untyped }]
+  def mcp_server_setting_available?: () -> (false | true)
+  def global_search_settings_checkboxes: (untyped) -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+  def restricted_level_checkboxes: (untyped) -> Array[untyped]
+  def key_restriction_options_for_select: (untyped) -> Array[untyped]
+  def visible_attributes: () -> Array[Symbol]
+  def runner_token_expiration_interval_attributes: () -> { instance_runner_token_expiration_interval: untyped, group_runner_token_expiration_interval: untyped, project_runner_token_expiration_interval: untyped }
+  def external_authorization_service_attributes: () -> [:external_auth_client_cert, :external_auth_client_key, :external_auth_client_key_pass, :external_authorization_service_default_label, :external_authorization_service_enabled, :external_authorization_service_timeout, :external_authorization_service_url, :allow_deploy_tokens_and_keys_with_external_authn]
+  def deprecated_attributes: () -> [:admin_notification_email, :asset_proxy_whitelist, :ci_partitions_in_seconds_limit]
+  def signup_enabled?: () -> (false | true)
+  def pending_user_count: () -> Integer
+  def registration_features_can_be_prompted?: () -> (false | true)
+  def signup_form_data: () -> { host: untyped, settings_path: untyped, signup_enabled: untyped, require_admin_approval_after_user_signup: untyped, email_confirmation_setting: untyped, minimum_password_length: untyped, minimum_password_length_min: 8, minimum_password_length_max: untyped, minimum_password_length_help_link: untyped, domain_allowlist_raw: untyped, new_user_signups_cap: untyped, domain_denylist_enabled: untyped, denylist_type_raw_selected: untyped, domain_denylist_raw: untyped, email_restrictions_enabled: untyped, supported_syntax_link_url: "https://github.com/google/re2/wiki/Syntax", email_restrictions: untyped, after_sign_up_text: untyped, pending_user_count: Integer }
+  def sidekiq_timezone_dropdown_view_model: () -> { inputId: "application_setting_sidekiq_timezone_override", value: untyped, timezoneData: untyped, name: "application_setting[sidekiq_timezone_override]", defaultText: untyped, additionalClass: ["gl-md-form-input-lg"], disabled: untyped }
+  def vscode_extension_marketplace_settings_view: () -> { title: untyped, description: untyped, view_model: { presets: [untyped], initialSettings: untyped } }
+  def deletion_protection_data: () -> { deletion_adjourned_period: untyped }
+  def custom_admin_roles_available?: () -> false
+  def logging_field_changes_data: () -> Hash[untyped, untyped]
+end

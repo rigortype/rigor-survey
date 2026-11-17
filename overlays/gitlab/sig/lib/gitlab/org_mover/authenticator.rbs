@@ -1,0 +1,7 @@
+module Gitlab
+  module OrgMover
+    class Authenticator
+      def self.well_formed?: (untyped) -> (false | true)
+    end
+  end
+end

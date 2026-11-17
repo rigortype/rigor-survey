@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class QueryPlan
+        class Order < ::Gitlab::Database::Aggregation::QueryPlan::BasePart
+          def initialize: (untyped, { direction: Symbol } | {}, ?query_plan: untyped) -> void
+        end
+      end
+    end
+  end
+end

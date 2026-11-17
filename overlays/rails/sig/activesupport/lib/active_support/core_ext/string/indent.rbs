@@ -1,0 +1,4 @@
+class String
+  def indent!: (Integer, ?String?, ?boolish) -> String?
+  def indent: (Integer, ?String?, ?boolish) -> String
+end

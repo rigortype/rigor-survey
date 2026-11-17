@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class ConnectionProxy
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

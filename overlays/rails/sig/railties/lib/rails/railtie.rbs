@@ -1,0 +1,6 @@
+module Rails
+  class Railtie
+    def self.load_hook_guard_message_for: (untyped) -> String
+    def self.register_block_for: (untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+  end
+end

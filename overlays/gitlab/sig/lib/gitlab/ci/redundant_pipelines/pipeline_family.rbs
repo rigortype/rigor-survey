@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class PipelineFamily
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

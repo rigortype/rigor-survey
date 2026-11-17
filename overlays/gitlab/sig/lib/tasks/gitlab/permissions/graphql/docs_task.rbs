@@ -1,0 +1,34 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Graphql
+        class DocsTask
+          def check_docs: () -> nil
+          def compile_docs: () -> nil
+          def allowed_fields: () -> String
+          def items: () -> Array[untyped]
+          class Item < ::Struct[untyped]
+            def kind: () -> untyped
+            def name: () -> untyped
+            def category: () -> untyped
+            def resource: () -> untyped
+            def resource_description: () -> untyped
+            def action: () -> untyped
+            def boundary: () -> untyped
+            def permissions: () -> untyped
+            def kind=: (untyped) -> untyped
+            def name=: (untyped) -> untyped
+            def category=: (untyped) -> untyped
+            def resource=: (untyped) -> untyped
+            def resource_description=: (untyped) -> untyped
+            def action=: (untyped) -> untyped
+            def boundary=: (untyped) -> untyped
+            def permissions=: (untyped) -> untyped
+            def self.new: (?kind: untyped, ?name: untyped, ?category: untyped, ?resource: untyped, ?resource_description: untyped, ?action: untyped, ?boundary: untyped, ?permissions: untyped) -> instance | (?untyped kind, ?untyped name, ?untyped category, ?untyped resource, ?untyped resource_description, ?untyped action, ?untyped boundary, ?untyped permissions) -> instance
+            def self.[]: (?kind: untyped, ?name: untyped, ?category: untyped, ?resource: untyped, ?resource_description: untyped, ?action: untyped, ?boundary: untyped, ?permissions: untyped) -> instance | (?untyped kind, ?untyped name, ?untyped category, ?untyped resource, ?untyped resource_description, ?untyped action, ?untyped boundary, ?untyped permissions) -> instance
+          end
+        end
+      end
+    end
+  end
+end

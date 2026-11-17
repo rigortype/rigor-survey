@@ -1,0 +1,9 @@
+module Google
+  module Protobuf
+    class MethodDescriptor
+      def self.new: (*untyped) ?{ (*untyped) -> untyped } -> bot
+      def to_s: () -> String
+      def inspect: () -> String
+    end
+  end
+end

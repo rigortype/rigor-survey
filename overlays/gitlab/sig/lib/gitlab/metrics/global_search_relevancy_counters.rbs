@@ -1,0 +1,8 @@
+module Gitlab
+  module Metrics
+    module GlobalSearchRelevancyCounters
+      def self.recorded_search_types: () -> ["basic"]
+      def self.position_bucket: (untyped) -> ("11+" | String)
+    end
+  end
+end

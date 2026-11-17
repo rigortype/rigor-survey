@@ -1,0 +1,12 @@
+module Gitlab
+  module Config
+    module Loader
+      class Yaml
+        def initialize: (untyped, ?additional_permitted_classes: untyped, ?filename: String) -> void
+        def valid?: () -> (false | true)
+        def load_raw!: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | Symbol | false | nil | true)
+        def blank?: () -> (false | true)
+      end
+    end
+  end
+end

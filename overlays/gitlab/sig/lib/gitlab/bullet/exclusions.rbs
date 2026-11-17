@@ -1,0 +1,7 @@
+module Gitlab
+  module Bullet
+    class Exclusions
+      def initialize: (?untyped) -> void
+    end
+  end
+end

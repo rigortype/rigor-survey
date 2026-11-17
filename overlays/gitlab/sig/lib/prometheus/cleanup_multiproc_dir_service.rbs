@@ -1,0 +1,6 @@
+module Prometheus
+  class CleanupMultiprocDirService
+    def initialize: (untyped) -> void
+    def execute: () -> top
+  end
+end

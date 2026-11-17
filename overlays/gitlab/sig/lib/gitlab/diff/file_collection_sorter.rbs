@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class FileCollectionSorter
+      def initialize: (untyped) -> void
+    end
+  end
+end

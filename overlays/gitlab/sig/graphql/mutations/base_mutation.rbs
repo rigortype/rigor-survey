@@ -1,0 +1,9 @@
+module Mutations
+  class BaseMutation < ::GraphQL::Schema::RelayClassicMutation
+    def self.authorizes_object?: () -> true
+    def self.authorization: () -> Gitlab::Graphql::Authorize::ObjectAuthorization
+    def read_only?: () -> false
+    def load_application_object: (untyped, untyped, untyped) -> Gitlab::Graphql::Lazy
+    def granular_scope_authorization: () -> Gitlab::Graphql::Authz::GranularScopeAuthorization
+  end
+end

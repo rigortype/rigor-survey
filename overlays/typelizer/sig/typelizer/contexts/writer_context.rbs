@@ -1,0 +1,6 @@
+module Typelizer
+  class WriterContext
+    def initialize: (?writer_name: Symbol, ?configuration: untyped) -> void
+    def interface_for: (untyped) -> Typelizer::Interface
+  end
+end

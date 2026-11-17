@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module Events
+        class BaseImporter
+          def initialize: (untyped, untyped) -> void
+          def user_finder: () -> Gitlab::GithubImport::UserFinder
+        end
+      end
+    end
+  end
+end

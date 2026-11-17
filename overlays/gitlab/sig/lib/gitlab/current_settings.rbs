@@ -1,0 +1,6 @@
+module Gitlab
+  module CurrentSettings
+    def self.signup_disabled?: () -> (false | true)
+    def self.respond_to_organization_setting?: (untyped, untyped) -> (false | true)
+  end
+end

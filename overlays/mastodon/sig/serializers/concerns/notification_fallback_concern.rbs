@@ -1,0 +1,5 @@
+module NotificationFallbackConcern
+  def fallback: () -> { title: String | nil, summary: String | nil, description: nil }
+  def fallback_title: () -> (String | nil)
+  def fallback_summary: () -> (String | nil)
+end

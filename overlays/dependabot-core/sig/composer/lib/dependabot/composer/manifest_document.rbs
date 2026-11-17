@@ -1,0 +1,23 @@
+module Dependabot
+  module Composer
+    class ManifestDocument
+      def self.from_file: (untyped) -> Dependabot::Composer::ManifestDocument
+      def initialize: (data: untyped, context: untyped) -> void
+      def name: () -> (String | nil)
+      def requirements: (untyped) -> Array[Dependabot::Composer::ManifestDocument::DependencyEntry]
+      def required_dependency_names: () -> Array[untyped]
+      def platform: (untyped) -> (String | nil)
+      def dependency_constraint: (untyped) -> (String | nil)
+      def repositories: () -> Array[Dependabot::Composer::ManifestDocument::Repository]
+      class DependencyEntry
+        def initialize: (name: untyped, value: untyped, context: untyped) -> void
+        def string_requirement: () -> (String | nil)
+        def requirement: () -> String
+      end
+      class Repository
+        def initialize: (type: untyped, url: untyped, context: untyped) -> void
+        def url: () -> String
+      end
+    end
+  end
+end

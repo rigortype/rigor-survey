@@ -1,0 +1,7 @@
+module Packages
+  module Maven
+    module Metadata
+      def self.filename: () -> "maven-metadata.xml"
+    end
+  end
+end

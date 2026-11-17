@@ -1,0 +1,17 @@
+module Mail
+  module Utilities
+    def atom_safe?: (untyped) -> (false | true)
+    def token_safe?: (untyped) -> (false | true)
+    def dquote: (untyped) -> String
+    def generate_message_id: () -> String
+    def paren: (untyped) -> String
+    def bracket: (untyped) -> String
+    def encode_base64: (untyped) -> String
+    def b_value_encode: (untyped, ?untyped) -> [String, untyped]
+    def q_value_encode: (untyped, ?untyped) -> [String, untyped]
+    def param_encode: (untyped) -> String
+    def uri_parser: () -> URI::RFC2396_Parser
+    def pick_encoding: (untyped) -> (Encoding | nil)
+    def self.convert_to_encoding: (untyped) -> (Encoding | nil)
+  end
+end

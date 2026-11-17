@@ -1,0 +1,11 @@
+module Mcp
+  module Tools
+    module Repositories
+      module Branches
+        class AddBranchService < ::Mcp::Tools::Base::GraphqlService
+          def self.tool_aliases: () -> ["create_branch"]
+        end
+      end
+    end
+  end
+end

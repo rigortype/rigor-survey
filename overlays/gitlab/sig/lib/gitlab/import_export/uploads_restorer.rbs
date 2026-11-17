@@ -1,0 +1,7 @@
+module Gitlab
+  module ImportExport
+    class UploadsRestorer < ::Gitlab::ImportExport::UploadsSaver
+      def restore: () -> (false | true)
+    end
+  end
+end

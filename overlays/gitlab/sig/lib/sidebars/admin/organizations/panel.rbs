@@ -1,0 +1,9 @@
+module Sidebars
+  module Admin
+    module Organizations
+      class Panel < ::Sidebars::Panel
+        def configure_menus: () -> Array[untyped]
+      end
+    end
+  end
+end

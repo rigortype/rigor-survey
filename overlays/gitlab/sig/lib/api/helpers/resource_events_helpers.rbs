@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module ResourceEventsHelpers
+      def self.eventable_types: () -> Hash[singleton(Issue) | singleton(MergeRequest), { feature_category: :code_review_workflow, id_field: "IID" } | { feature_category: :team_planning, id_field: "IID" }]
+    end
+  end
+end

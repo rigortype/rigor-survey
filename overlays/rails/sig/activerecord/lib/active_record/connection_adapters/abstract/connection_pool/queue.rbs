@@ -1,0 +1,14 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class ConnectionPool
+      class Queue
+        def initialize: (?untyped) -> void
+      end
+      module BiasableQueue
+        class BiasedConditionVariable
+          def initialize: (untyped, untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

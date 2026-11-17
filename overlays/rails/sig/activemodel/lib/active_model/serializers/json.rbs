@@ -1,0 +1,7 @@
+module ActiveModel
+  module Serializers
+    module JSON
+      def from_json: (untyped, ?untyped) -> ActiveModel::Serializers::JSON
+    end
+  end
+end

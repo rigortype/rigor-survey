@@ -1,0 +1,10 @@
+module ActiveRecord
+  module ModelSchema
+    module ClassMethods
+      def build_schema_context: () -> ActiveRecord::ModelSchema::SchemaContext
+      def table_name=: (untyped) -> nil
+      def sequence_name=: (untyped) -> true
+      def load_schema: () -> (nil | true)
+    end
+  end
+end

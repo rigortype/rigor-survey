@@ -1,0 +1,11 @@
+module Dependabot
+  module Gradle
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PropertyValueFinder
+        def initialize: (dependency_files: untyped) -> void
+        def property_details: (property_name: untyped, callsite_buildfile: untyped) -> (Hash[Symbol, String] | nil)
+        def property_value: (property_name: untyped, callsite_buildfile: untyped) -> (String | nil)
+      end
+    end
+  end
+end

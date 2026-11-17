@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class JwtBase < ::JSONWebToken::Token
+      def self.decode: (untyped, untyped) -> [untyped, Hash[String, untyped]]
+      def encoded: () -> String
+    end
+  end
+end

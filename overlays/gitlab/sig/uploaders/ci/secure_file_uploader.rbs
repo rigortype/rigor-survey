@@ -1,0 +1,9 @@
+module Ci
+  class SecureFileUploader < ::GitlabUploader
+    def key: () -> String
+    def checksum: () -> String
+    def store_dir: () -> Gitlab::HashedPath
+    def self.direct_upload_enabled?: () -> false
+    def self.default_store: () -> (1 | 2)
+  end
+end

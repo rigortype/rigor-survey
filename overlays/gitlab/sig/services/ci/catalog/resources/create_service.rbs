@@ -1,0 +1,10 @@
+module Ci
+  module Catalog
+    module Resources
+      class CreateService
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

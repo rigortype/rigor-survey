@@ -1,0 +1,10 @@
+module Gitlab
+  module Regex
+    module Cd
+      def cd_name_regex: () -> Regexp
+      def cd_name_regex_message: () -> "can contain only letters, digits, '_' and '-'. Cannot start or end with '-'."
+      def cd_version_name_regex: () -> Regexp
+      def cd_version_name_regex_message: () -> "can contain only letters, digits, '_', '.' and '-'. Cannot start or end with '-' or '.'."
+    end
+  end
+end

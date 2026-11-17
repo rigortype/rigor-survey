@@ -1,0 +1,31 @@
+module ActiveModel
+  module AttributeRegistration
+    module ClassMethods
+      def _default_attributes: () -> ActiveModel::AttributeSet
+      class PendingType < ::Struct[untyped]
+        def name: () -> untyped
+        def type: () -> untyped
+        def name=: (untyped) -> untyped
+        def type=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?type: untyped) -> instance | (?untyped name, ?untyped type) -> instance
+        def self.[]: (?name: untyped, ?type: untyped) -> instance | (?untyped name, ?untyped type) -> instance
+      end
+      class PendingDefault < ::Struct[untyped]
+        def name: () -> untyped
+        def default: () -> untyped
+        def name=: (untyped) -> untyped
+        def default=: (untyped) -> untyped
+        def self.new: (?name: untyped, ?default: untyped) -> instance | (?untyped name, ?untyped default) -> instance
+        def self.[]: (?name: untyped, ?default: untyped) -> instance | (?untyped name, ?untyped default) -> instance
+      end
+      class PendingDecorator < ::Struct[untyped]
+        def names: () -> untyped
+        def decorator: () -> untyped
+        def names=: (untyped) -> untyped
+        def decorator=: (untyped) -> untyped
+        def self.new: (?names: untyped, ?decorator: untyped) -> instance | (?untyped names, ?untyped decorator) -> instance
+        def self.[]: (?names: untyped, ?decorator: untyped) -> instance | (?untyped names, ?untyped decorator) -> instance
+      end
+    end
+  end
+end

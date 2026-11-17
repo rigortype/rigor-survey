@@ -1,0 +1,12 @@
+module Dependabot
+  module Maven
+    module Shared
+      module MavenSettings
+        def self.xml: (?mirror: untyped, ?repository_urls: untyped, ?proxy: untyped) -> String
+        def self.proxy_env: () -> (Hash[String, "" | String] | {})
+        def self.mirrors_xml: (untyped) -> String
+        def self.repositories_xml: (untyped) -> String
+      end
+    end
+  end
+end

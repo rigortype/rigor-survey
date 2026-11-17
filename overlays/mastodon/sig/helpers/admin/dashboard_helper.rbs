@@ -1,0 +1,5 @@
+module Admin
+  module DashboardHelper
+    def date_range: (untyped) -> String
+  end
+end

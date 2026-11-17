@@ -1,0 +1,7 @@
+module Dependabot
+  class ApiClient
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+  class ApiError < ::StandardError
+  end
+end

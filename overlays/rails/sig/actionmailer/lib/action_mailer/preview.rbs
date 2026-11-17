@@ -1,0 +1,5 @@
+module ActionMailer
+  class Preview
+    def initialize: (?untyped) -> void
+  end
+end

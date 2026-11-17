@@ -1,0 +1,12 @@
+class WebHookService
+  def initialize: (untyped, untyped, Symbol, ?untyped, ?idempotency_key: untyped, ?force: untyped) -> void
+  def disabled?: () -> (false | true)
+  def execute: () -> ServiceResponse
+  class InternalErrorResponse
+    def success?: () -> false
+    def redirection?: () -> false
+    def internal_server_error?: () -> true
+    def body: () -> String
+    def code: () -> "internal error"
+  end
+end

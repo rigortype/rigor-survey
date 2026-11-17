@@ -1,0 +1,7 @@
+module ErrorTracking
+  class Error < ::ApplicationRecord
+    def self.sort_by_attribute: (untyped) -> ActiveRecord::Relation[ErrorTracking::Error]
+    def to_sentry_error: () -> Gitlab::ErrorTracking::Error
+    def to_sentry_detailed_error: () -> Gitlab::ErrorTracking::DetailedError
+  end
+end

@@ -1,0 +1,16 @@
+module Gitlab
+  module Database
+    module Migrations
+      class Version
+        def initialize: (Integer, String, untyped) -> void
+        def type: () -> (:post | :regular | nil)
+        def type=: (untyped) -> (0 | 1)
+        def coerce: (untyped) -> [-1, untyped]
+        def eql?: (untyped) -> (false | true)
+        def ==: (untyped) -> (false | true)
+        def hash: () -> Integer
+        def timestamp: () -> (10 | 11 | 12 | 4 | 5 | 6 | 8 | 9)
+      end
+    end
+  end
+end

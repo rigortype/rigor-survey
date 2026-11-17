@@ -1,0 +1,21 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class FunctionsStack
+          def initialize: (untyped, nil) -> void
+          def errors: () -> Array[untyped]
+          def ctx: () -> nil
+          class Output < ::Struct[untyped]
+            def value: () -> untyped
+            def errors: () -> untyped
+            def value=: (untyped) -> untyped
+            def errors=: (untyped) -> untyped
+            def self.new: (?value: untyped, ?errors: untyped) -> instance | (?untyped value, ?untyped errors) -> instance
+            def self.[]: (?value: untyped, ?errors: untyped) -> instance | (?untyped value, ?untyped errors) -> instance
+          end
+        end
+      end
+    end
+  end
+end

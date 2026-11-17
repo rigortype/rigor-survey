@@ -1,0 +1,5 @@
+module Users
+  class GroupCallout < ::ApplicationRecord
+    def source_feature_name: () -> String
+  end
+end

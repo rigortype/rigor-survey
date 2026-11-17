@@ -1,0 +1,7 @@
+module Admin
+  class ServerCheck < ::ApplicationRecord
+    class Result
+      def initialize: (status: untyped, ?data: untyped, ?severity: untyped) -> void
+    end
+  end
+end

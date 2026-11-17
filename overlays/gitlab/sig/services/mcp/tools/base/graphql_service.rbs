@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Base
+      class GraphqlService < ::Mcp::Tools::Base::BaseService
+        def initialize: (name: untyped, ?version: untyped) -> void
+      end
+    end
+  end
+end

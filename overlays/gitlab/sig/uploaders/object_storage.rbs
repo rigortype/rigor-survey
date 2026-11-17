@@ -1,0 +1,27 @@
+module ObjectStorage
+  def direct_upload_final_path_attribute_name: () -> String
+  class ExclusiveLeaseTaken < ::StandardError
+    def initialize: (untyped) -> void
+    def message: () -> String
+  end
+  module Extension
+    module RecordsUploads
+      def exclusive_lease_key: () -> String
+    end
+  end
+  module Concern
+    def file_storage?: () -> (false | true)
+    def file_cache_storage?: () -> (false | true)
+    def persist_object_store?: () -> (false | true)
+    def persist_object_store!: () -> nil
+    def fog_public: () -> nil
+    def fog_acl: () -> false
+    def store_dir: (?untyped) -> (String | nil)
+    def store_dirs: () -> Hash[1 | 2, String]
+    def upload_paths: (untyped) -> Array[String]
+    def exclusive_lease_key: () -> String
+    class OpenFile
+      def initialize: (untyped, ?original_filename: untyped) -> void
+    end
+  end
+end

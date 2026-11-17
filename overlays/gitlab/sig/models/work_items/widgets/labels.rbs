@@ -1,0 +1,9 @@
+module WorkItems
+  module Widgets
+    class Labels < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:label, :labels, :relabel, :remove_label, :unlabel]
+      def self.quick_action_params: () -> [:add_label_ids, :remove_label_ids, :label_ids]
+      def self.sorting_keys: () -> { label_priority_asc: { description: "Label priority by ascending order." }, label_priority_desc: { description: "Label priority by descending order." } }
+    end
+  end
+end

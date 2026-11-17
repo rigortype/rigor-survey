@@ -1,0 +1,9 @@
+module Dependabot
+  module Hex
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def inspect: () -> String
+    end
+  end
+end

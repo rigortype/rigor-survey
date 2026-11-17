@@ -1,0 +1,6 @@
+module Gitlab
+  class GitAccessProject < ::Gitlab::GitAccess
+    def download_ability: () -> :download_code
+    def push_ability: () -> :push_code
+  end
+end

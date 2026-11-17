@@ -1,0 +1,7 @@
+module Import
+  class ExportStatus
+    def self.for_context: (untyped, untyped) -> (::BulkImports::ExportStatus | Import::Offline::ExportStatus)
+    def initialize: (untyped, untyped) -> void
+    def waiting_on_export?: () -> bot
+  end
+end

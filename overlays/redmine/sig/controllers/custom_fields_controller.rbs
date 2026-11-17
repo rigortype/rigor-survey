@@ -1,0 +1,3 @@
+class CustomFieldsController < ::ApplicationController
+  def new: () -> nil
+end

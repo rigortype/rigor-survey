@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Partitioning
+      def self.clear_registered_models: () -> Set[untyped]
+      def self.clear_registered_tables: () -> Set[untyped]
+      def self.sync_partitions_ignore_db_error: (?analyze: untyped) -> (:disallow_database_ddl_feature_flags | :partition_manager_sync_partitions | Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      def self.sync_partitions: (?untyped, ?only_on: untyped, ?analyze: untyped, ?analyze_tables_with_default_interval: untyped, ?owner_db_only: untyped) -> (:disallow_database_ddl_feature_flags | :partition_manager_sync_partitions | Array[singleton(Gitlab::AppJsonLogger)])
+      def self.drop_detached_partitions: () -> (:disallow_database_ddl_feature_flags | :partition_manager_sync_partitions | Array[singleton(Gitlab::AppJsonLogger)])
+      def self.registered_models: () -> Set[untyped]
+      def self.registered_tables: () -> Set[untyped]
+      def self.table_without_model: (table_name: untyped, partitioned_column: untyped, strategy: untyped, ?limit_connection_names: untyped, **untyped) -> singleton(Gitlab::Database::Partitioning::TableWithoutModel)
+      def self.blocking_feature_flag: () -> (:disallow_database_ddl_feature_flags | :partition_manager_sync_partitions | nil)
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Spree
+  module Emails
+    module Samples
+      class Base
+        def self.record_type: () -> nil
+        def self.required_permissions: () -> (["read_orders"] | [])
+        def initialize: (store: untyped, ?record_id: untyped) -> void
+        def variables: () -> bot
+      end
+    end
+  end
+end

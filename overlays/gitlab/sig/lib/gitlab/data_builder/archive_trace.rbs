@@ -1,0 +1,7 @@
+module Gitlab
+  module DataBuilder
+    module ArchiveTrace
+      def build: (untyped) -> { object_kind: "archive_trace", trace_url: untyped, build_id: untyped, pipeline_id: untyped, project: untyped }
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module ActionView
+  class DependencyTracker
+    class WildcardResolver
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

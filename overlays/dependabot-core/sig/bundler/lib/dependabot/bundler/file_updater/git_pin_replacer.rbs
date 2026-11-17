@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class GitPinReplacer
+        def initialize: (dependency: untyped, new_pin: untyped) -> void
+      end
+    end
+  end
+end

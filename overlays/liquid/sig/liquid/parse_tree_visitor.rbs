@@ -1,0 +1,6 @@
+module Liquid
+  class ParseTreeVisitor
+    def initialize: (untyped, untyped) -> void
+    def add_callback_for: (*untyped) ?{ (*untyped) -> untyped } -> Liquid::ParseTreeVisitor
+  end
+end

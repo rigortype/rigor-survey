@@ -1,0 +1,9 @@
+module ActionText
+  module Attachables
+    class MissingAttachable
+      def initialize: (untyped) -> void
+      def attachable_plain_text_representation: (?untyped) -> "☒"
+      def attachable_markdown_representation: (?untyped, ?attachment_links: untyped) -> "☒"
+    end
+  end
+end

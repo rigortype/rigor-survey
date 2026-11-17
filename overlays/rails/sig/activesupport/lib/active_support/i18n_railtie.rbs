@@ -1,0 +1,7 @@
+module I18n
+  class Railtie < ::Rails::Railtie
+    def self.initialize_i18n: (untyped) -> (nil | true)
+    def self.setup_raise_on_missing_translations_config: (untyped, untyped) -> (Proc | nil)
+    def self.watched_dirs_with_extensions: (untyped) -> Hash[untyped, untyped]
+  end
+end

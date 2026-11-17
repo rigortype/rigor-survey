@@ -1,0 +1,5 @@
+module ActionDispatch
+  class ShowExceptions
+    def initialize: (untyped, untyped) -> void
+  end
+end

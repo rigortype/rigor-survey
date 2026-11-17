@@ -1,0 +1,13 @@
+module Concurrent
+  module Utility
+    module EngineDetector
+      def on_cruby?: () -> (false | true)
+      def on_jruby?: () -> (false | true)
+      def on_truffleruby?: () -> (false | true)
+      def on_windows?: () -> (false | true)
+      def on_osx?: () -> (false | true)
+      def on_linux?: () -> (false | true)
+      def ruby_version: (?untyped, untyped, untyped, untyped, untyped) -> (false | true)
+    end
+  end
+end

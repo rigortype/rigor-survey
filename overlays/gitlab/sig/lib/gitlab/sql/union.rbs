@@ -1,0 +1,7 @@
+module Gitlab
+  module SQL
+    class Union < ::Gitlab::SQL::SetOperator
+      def self.operator_keyword: () -> "UNION"
+    end
+  end
+end

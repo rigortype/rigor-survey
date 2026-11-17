@@ -1,0 +1,5 @@
+module Organizations
+  class OrganizationDetail < ::ApplicationRecord
+    def uploads_sharding_key: () -> { organization_id: untyped }
+  end
+end

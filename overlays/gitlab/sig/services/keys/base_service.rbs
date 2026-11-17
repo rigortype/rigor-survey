@@ -1,0 +1,7 @@
+module Keys
+  class BaseService
+    def initialize: (untyped, ?untyped) -> void
+    def notification_service: () -> NotificationService
+    def todo_service: () -> TodoService
+  end
+end

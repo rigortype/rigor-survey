@@ -1,0 +1,8 @@
+module Gitlab
+  module BackgroundMigration
+    class BackfillDesiredShardingKeyJob < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      def backfill_via_table_primary_key: () -> "id"
+      def construct_query: (sub_batch: untyped) -> String
+    end
+  end
+end

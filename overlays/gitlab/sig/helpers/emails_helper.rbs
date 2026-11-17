@@ -1,0 +1,7 @@
+module EmailsHelper
+  def action_title: (untyped) -> (String | nil)
+  def create_list_id_string: (untyped, ?untyped) -> String
+  def manage_passkeys: (?format: untyped) -> String
+  def link_start: (untyped) -> String
+  def link_end: () -> String
+end

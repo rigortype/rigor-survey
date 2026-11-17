@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Policy
+        class Kubernetes < ::Gitlab::Ci::Build::Policy::Specification
+          def initialize: (String) -> void
+        end
+      end
+    end
+  end
+end

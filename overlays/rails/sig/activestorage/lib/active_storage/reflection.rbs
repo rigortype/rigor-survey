@@ -1,0 +1,13 @@
+module ActiveStorage
+  module Reflection
+    class HasAttachedReflection < ::ActiveRecord::Reflection::MacroReflection
+      def named_variants: () -> Hash[untyped, untyped]
+    end
+    class HasOneAttachedReflection < ::ActiveStorage::Reflection::HasAttachedReflection
+      def macro: () -> :has_one_attached
+    end
+    class HasManyAttachedReflection < ::ActiveStorage::Reflection::HasAttachedReflection
+      def macro: () -> :has_many_attached
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Escaped < ::Haml::Filters::Base
+      def compile: (untyped) -> [:escape, true, [:dynamic, String] | [:static, untyped]]
+    end
+  end
+end

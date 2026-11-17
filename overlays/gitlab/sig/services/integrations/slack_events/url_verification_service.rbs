@@ -1,0 +1,8 @@
+module Integrations
+  module SlackEvents
+    class UrlVerificationService
+      def initialize: ({ challenge: String }) -> void
+      def execute: () -> { challenge: untyped }
+    end
+  end
+end

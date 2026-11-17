@@ -1,0 +1,7 @@
+module PrometheusAdapter
+  def prometheus_client: () -> bot
+  def prometheus_client_default_options: () -> { timeout: ActiveSupport::Duration }
+  def managed_prometheus?: () -> false
+  def configured?: () -> bot
+  def calculate_reactive_cache: (untyped, *untyped) -> (nil | { success: false, result: String } | { success: true, data: untyped, last_update: Time })
+end

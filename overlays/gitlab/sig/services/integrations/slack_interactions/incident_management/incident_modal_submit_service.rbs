@@ -1,0 +1,10 @@
+module Integrations
+  module SlackInteractions
+    module IncidentManagement
+      class IncidentModalSubmitService
+        def initialize: (untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

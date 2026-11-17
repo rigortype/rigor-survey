@@ -1,0 +1,12 @@
+module ActiveSupport
+  module TaggedLogging
+    def self.logger: (*untyped, **untyped) -> ActiveSupport::TaggedLogging
+    def self.ractor_logger: (*untyped, **untyped) -> ActiveSupport::TaggedLogging
+    module LocalTagStorage
+      def self.extended: (untyped) -> ActiveSupport::TaggedLogging::TagStack
+    end
+    class TagStack
+      def tags: () -> Array[untyped]
+    end
+  end
+end

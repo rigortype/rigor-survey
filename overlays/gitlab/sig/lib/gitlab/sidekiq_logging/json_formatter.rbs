@@ -1,0 +1,7 @@
+module Gitlab
+  module SidekiqLogging
+    class JSONFormatter
+      def call: (String, untyped, String, untyped) -> String
+    end
+  end
+end

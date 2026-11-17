@@ -1,0 +1,5 @@
+module Gitlab
+  module LoopHelpers
+    def loop_until: (?timeout: untyped, ?limit: untyped) -> (false | true)
+  end
+end

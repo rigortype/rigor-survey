@@ -1,0 +1,5 @@
+module MergeRequests
+  class ApprovedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["current_user_id", "merge_request_id"] | Hash[String, Hash[String, "integer"] | Hash[String, "date-time" | "string"]]]
+  end
+end

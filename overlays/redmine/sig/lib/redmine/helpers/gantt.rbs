@@ -1,0 +1,27 @@
+module Redmine
+  module Helpers
+    class Gantt
+      def initialize: (?untyped) -> void
+      def common_params: () -> { controller: "gantts", action: "show", project_id: untyped }
+      def subjects: (?untyped) -> String
+      def lines: (?untyped) -> String
+      def relations: () -> (Hash[untyped, Array[untyped]] | Hash[untyped, untyped])
+      def render_object_row: (untyped, untyped, row: untyped) -> nil
+      def gantt_project_row_key: (untyped) -> String
+      def gantt_version_row_key: (untyped, untyped) -> String
+      def gantt_issue_row_key: (untyped) -> String
+      def gantt_project_row: (untyped, ?parent_row_key: untyped) -> (Hash[untyped, untyped] | { gantt_row_key: untyped, gantt_row_type: "project" })
+      def gantt_version_row: (untyped, untyped) -> { gantt_row_key: untyped, gantt_row_type: "version", gantt_parent_row_key: untyped }
+      def gantt_issue_row: (untyped, ?parent_row_key: untyped) -> (Hash[untyped, untyped] | { gantt_row_key: untyped, gantt_row_type: "issue" })
+      def to_image: (?untyped) -> String
+      def self.sort_issue_logic: (untyped) -> Array[[untyped, untyped]]
+      def date_from: () -> Date
+      def truncated: () -> (false | true)
+      class PDF
+        def self.right_pane_width: () -> 180
+      end
+      class MaxLinesLimitReached < ::StandardError
+      end
+    end
+  end
+end

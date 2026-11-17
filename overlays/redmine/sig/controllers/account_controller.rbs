@@ -1,0 +1,3 @@
+class AccountController < ::ApplicationController
+  def lost_password: () -> nil
+end

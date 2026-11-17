@@ -1,0 +1,11 @@
+module Gitlab
+  module Diff
+    module Formatters
+      class TextFormatter < ::Gitlab::Diff::Formatters::BaseFormatter
+        def initialize: (untyped) -> void
+        def line_age: () -> ("new" | "old" | nil)
+        def position_type: () -> "text"
+      end
+    end
+  end
+end

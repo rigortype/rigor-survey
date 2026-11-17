@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class Call
+      def initialize: (untyped, untyped, untyped, untyped, untyped, untyped, ?gitaly_context: untyped) -> void
+    end
+  end
+end

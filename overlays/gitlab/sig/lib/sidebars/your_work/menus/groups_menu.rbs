@@ -1,0 +1,11 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class GroupsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "group"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: ["groups", "dashboard/groups"] }
+      end
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Metrics
+    module Subscribers
+      class ActiveRecord < ::ActiveSupport::Subscriber
+        def self.db_counter_payload: () -> Hash[untyped, untyped]
+        def self.db_counter_keys: () -> [:db_count, :db_write_count, :db_cached_count, :db_txn_count]
+        def self.load_balancing_roles_metric_keys: (untyped) -> Array[untyped]
+        def self.load_balancing_metric_keys: (untyped) -> Array[untyped]
+        def self.compose_metric_key: (untyped, ?untyped, ?untyped) -> Symbol
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Admin
+  module Metrics
+    class Dimension
+      class InstanceAccountsDimension < ::Admin::Metrics::Dimension::BaseDimension
+        def self.with_params?: () -> true
+        def key: () -> "instance_accounts"
+      end
+    end
+  end
+end

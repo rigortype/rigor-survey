@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class FileParser < ::Dependabot::FileParsers::Base
+      class LockfileParser
+        def initialize: (dependency_files: untyped, ?dealias_packages: untyped) -> void
+        def parse: () -> Array[::Dependency]
+      end
+    end
+  end
+end

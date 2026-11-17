@@ -1,0 +1,11 @@
+module Dependabot
+  module Terraform
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class ProviderCliConfigBuilder
+        def initialize: (dependency: untyped, terraform_files: untyped) -> void
+        def env: () -> (Hash[String, String] | {})
+        def cleanup: () -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  module Python
+    class PipCompileFileMatcher
+      def initialize: (untyped) -> void
+      def lockfile_for_pip_compile_file?: (untyped) -> (false | true)
+      def manifest_for_pip_compile_lockfile: (untyped) -> (Dependabot::DependencyFile | ::DependencyFile | nil)
+    end
+  end
+end

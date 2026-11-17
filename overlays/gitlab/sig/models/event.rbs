@@ -1,0 +1,8 @@
+class Event < ::ApplicationRecord
+  def self.model_name: () -> ActiveModel::Name
+  def self.find_sti_class: (untyped) -> (singleton(Event) | singleton(PushEvent))
+  def self.target_types: () -> Array[untyped]
+  def push_action?: () -> false
+  def note?: () -> (false | true)
+  def has_no_project_and_group?: () -> (false | true)
+end

@@ -1,0 +1,9 @@
+module Authz
+  module GranularScopes
+    class GroupBoundaryRule
+      def initialize: (untyped) -> void
+      def allowed_access?: (untyped) -> (false | true)
+      def personal_projects_namespace: () -> bot
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module MergeRequests
+  class OldestPerCommitFinder
+    def initialize: (untyped) -> void
+    def execute: ([untyped, untyped, untyped] | [untyped, untyped] | [untyped]) -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,18 @@
+module ClickHouse
+  module Finders
+    module Ci
+      class SiphonFinishedBuildsFinder
+        def self.for_container: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def initialize: (?inner_query: untyped, ?outer_query: untyped, ?selected_fields: untyped) -> void
+        def for_container: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def where: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def with_stages: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def select: (*untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def filter_by_job_name: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def within_dates: (untyped, untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def limit: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+        def offset: (untyped) -> ClickHouse::Finders::Ci::SiphonFinishedBuildsFinder
+      end
+    end
+  end
+end

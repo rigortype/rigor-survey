@@ -1,0 +1,5 @@
+module ActiveSupport
+  module XmlMini_REXML
+    def parse: (untyped) -> Hash[untyped, untyped]
+  end
+end

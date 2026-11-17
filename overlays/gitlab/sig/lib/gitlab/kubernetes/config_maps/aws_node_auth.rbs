@@ -1,0 +1,9 @@
+module Gitlab
+  module Kubernetes
+    module ConfigMaps
+      class AwsNodeAuth
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

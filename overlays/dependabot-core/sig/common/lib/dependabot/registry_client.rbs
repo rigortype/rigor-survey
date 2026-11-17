@@ -1,0 +1,8 @@
+module Dependabot
+  class RegistryClient
+    def self.get: (url: untyped, ?headers: untyped, ?options: untyped) -> Excon::Response
+    def self.head: (url: untyped, ?headers: untyped, ?options: untyped) -> Excon::Response
+    def self.clear_cache!: () -> {}
+    def self.cacheable_error?: (untyped) -> (false | true)
+  end
+end

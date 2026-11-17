@@ -1,0 +1,9 @@
+module Gitlab
+  module Mailgun
+    module WebhookProcessors
+      class MemberInvites < ::Gitlab::Mailgun::WebhookProcessors::Base
+        def member: () -> (Member | nil)
+      end
+    end
+  end
+end

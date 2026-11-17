@@ -1,0 +1,10 @@
+module REST
+  class AnnouncementSerializer < ::ActiveModel::Serializer[untyped]
+    def current_user?: () -> (false | true)
+    def id: () -> String
+    def content: () -> String
+    class AccountSerializer < ::ActiveModel::Serializer[untyped]
+      def id: () -> String
+    end
+  end
+end

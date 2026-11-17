@@ -1,0 +1,5 @@
+module Ci
+  class CommitWithPipeline < ::SimpleDelegator
+    def initialize: (untyped) -> void
+  end
+end

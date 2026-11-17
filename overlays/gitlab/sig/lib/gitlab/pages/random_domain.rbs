@@ -1,0 +1,7 @@
+module Gitlab
+  module Pages
+    class RandomDomain
+      def initialize: (project_path: untyped) -> void
+    end
+  end
+end

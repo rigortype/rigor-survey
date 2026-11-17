@@ -1,0 +1,16 @@
+module Gitlab
+  class UsageData
+    class Topology
+      def topology_usage_data: () -> { topology: untyped }
+      class CollectionFailure < ::Struct[untyped]
+        def query: () -> untyped
+        def error: () -> untyped
+        def query=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?query: untyped, ?error: untyped) -> instance | (?untyped query, ?untyped error) -> instance
+        def self.[]: (?query: untyped, ?error: untyped) -> instance | (?untyped query, ?untyped error) -> instance
+        def to_h: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

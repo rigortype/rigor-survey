@@ -1,0 +1,11 @@
+module Projects
+  module Forks
+    class Details
+      def initialize: (untyped, untyped) -> void
+      def counts: () -> { ahead: untyped, behind: untyped }
+      def exclusive_lease: () -> Gitlab::ExclusiveLease
+      def has_conflicts?: () -> (false | true)
+      def update!: ({ source_sha: untyped, sha: untyped, counts: [Integer, Integer], has_conflicts: false | true }) -> nil
+    end
+  end
+end

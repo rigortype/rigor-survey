@@ -1,0 +1,6 @@
+class Status < ::ApplicationRecord
+  module SearchConcern
+    def searchable_text: () -> String
+    def searchable_properties: () -> Array[untyped]
+  end
+end

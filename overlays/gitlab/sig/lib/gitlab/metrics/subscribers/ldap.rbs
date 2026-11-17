@@ -1,0 +1,9 @@
+module Gitlab
+  module Metrics
+    module Subscribers
+      class Ldap < ::ActiveSupport::Subscriber
+        def self.payload: () -> { net_ldap_count: untyped, net_ldap_duration_s: untyped }
+      end
+    end
+  end
+end

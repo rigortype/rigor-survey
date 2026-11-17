@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Encryption
+    class NullEncryptor
+      def encrypted?: (untyped) -> false
+      def binary?: () -> false
+    end
+  end
+end

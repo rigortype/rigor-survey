@@ -1,0 +1,5 @@
+module Containers
+  class Stack
+    def initialize: (?untyped) -> void
+  end
+end

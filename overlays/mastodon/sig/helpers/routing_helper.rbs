@@ -1,0 +1,3 @@
+module RoutingHelper
+  def full_asset_url: (untyped, **untyped) -> String
+end

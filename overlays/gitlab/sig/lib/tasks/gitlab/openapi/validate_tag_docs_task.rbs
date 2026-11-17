@@ -1,0 +1,10 @@
+module Tasks
+  module Gitlab
+    module Openapi
+      class ValidateTagDocsTask
+        def self.run: () -> nil
+        def run: () -> nil
+      end
+    end
+  end
+end

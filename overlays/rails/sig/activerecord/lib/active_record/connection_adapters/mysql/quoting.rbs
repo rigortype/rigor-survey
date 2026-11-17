@@ -1,0 +1,15 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module MySQL
+      module Quoting
+        def unquoted_true: () -> 1
+        def unquoted_false: () -> 0
+        def quoted_binary: (untyped) -> String
+        module ClassMethods
+          def column_name_matcher: () -> Regexp
+          def column_name_with_order_matcher: () -> Regexp
+        end
+      end
+    end
+  end
+end

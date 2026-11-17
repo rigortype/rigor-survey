@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Saml
+      class Config
+        def initialize: (?String) -> void
+      end
+    end
+  end
+end

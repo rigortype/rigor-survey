@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Build
+      class Rules
+        class Rule
+          class Clause
+            class RegexpMatcher
+              def initialize: (raw_pattern: untyped, expanded_pattern: untyped, max_comparisons: untyped, log_scope: String, project_id: untyped) -> void
+              def validate_pattern_length!: () -> nil
+            end
+          end
+        end
+      end
+    end
+  end
+end

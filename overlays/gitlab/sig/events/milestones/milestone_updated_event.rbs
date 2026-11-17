@@ -1,0 +1,5 @@
+module Milestones
+  class MilestoneUpdatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["id"] | Hash[String, Hash[String, "array" | Hash[String, "string"]] | Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,7 @@
+module Spam
+  class SpamActionService
+    def initialize: (spammable: untyped, user: untyped, action: Symbol, ?extra_features: untyped) -> void
+    def execute: () -> ServiceResponse
+    def action: () -> :create
+  end
+end

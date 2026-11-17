@@ -1,0 +1,12 @@
+module IRB
+  module Notifier
+    def self.def_notifier: (*untyped) -> singleton(IRB::Notifier)
+  end
+  class SLex
+    def postproc: (untyped) -> Proc
+    def inspect: () -> String
+    class Node
+      def initialize: (?untyped, ?untyped) -> void
+    end
+  end
+end

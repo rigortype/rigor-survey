@@ -1,0 +1,7 @@
+module Mutations
+  module UserPreferences
+    class Update < ::Mutations::BaseMutation
+      def resolve: (**untyped) -> { user_preferences: untyped, errors: untyped }
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class RandomizedSet
+  def insert: (untyped) -> (false | true)
+  def remove: (untyped) -> (false | true)
+end

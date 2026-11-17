@@ -1,0 +1,6 @@
+module Security
+  class ReportSchemaVersionMatcher
+    def initialize: (report_declared_version: untyped, supported_versions: untyped) -> void
+    def report_version: () -> Gem::Version
+  end
+end

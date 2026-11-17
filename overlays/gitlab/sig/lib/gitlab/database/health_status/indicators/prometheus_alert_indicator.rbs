@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module HealthStatus
+      module Indicators
+        class PrometheusAlertIndicator
+          def initialize: (untyped) -> void
+          def evaluate: () -> (Gitlab::Database::HealthStatus::Signals::Normal | Gitlab::Database::HealthStatus::Signals::NotAvailable | Gitlab::Database::HealthStatus::Signals::Stop | Gitlab::Database::HealthStatus::Signals::Unknown)
+        end
+      end
+    end
+  end
+end

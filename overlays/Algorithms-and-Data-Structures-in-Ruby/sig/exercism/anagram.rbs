@@ -1,0 +1,4 @@
+class Anagram
+  def initialize: (untyped) -> void
+  def match: (untyped) -> Array[untyped]
+end

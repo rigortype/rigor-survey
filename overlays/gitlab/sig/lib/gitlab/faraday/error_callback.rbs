@@ -1,0 +1,7 @@
+module Gitlab
+  module Faraday
+    class ErrorCallback < ::Faraday::Middleware
+      def initialize: (untyped, ?{ callback: Proc } | {}) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module GithubApi
+  class EcosystemMapper
+    def self.ecosystem_for: (untyped) -> ("other" | String)
+  end
+end

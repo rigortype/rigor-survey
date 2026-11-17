@@ -1,0 +1,11 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class SnippetsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "snippet"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: :snippets }
+      end
+    end
+  end
+end

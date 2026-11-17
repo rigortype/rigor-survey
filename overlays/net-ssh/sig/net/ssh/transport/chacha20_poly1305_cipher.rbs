@@ -1,0 +1,26 @@
+module Net
+  module SSH
+    module Transport
+      class ChaCha20Poly1305Cipher
+        def initialize: (encrypt: untyped, key: untyped) -> void
+        def mac_length: () -> 16
+        def block_size: () -> 8
+        def name: () -> "chacha20-poly1305@openssh.com"
+        def implicit_mac?: () -> true
+        def implicit_mac: () -> Net::SSH::Transport::ChaCha20Poly1305Cipher::ImplicitHMac
+        def self.block_size: () -> 8
+        def self.key_length: () -> 64
+        def self.iv_len: () -> 0
+        def self.auth_length: () -> 16
+        def self.ensure_supported!: () -> nil
+        def self.validate_poly1305_key!: (untyped) -> nil
+        class ImplicitHMac
+          def etm: () -> true
+          def key_length: () -> 64
+        end
+        class UnsupportedError < ::StandardError
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Concurrent
+  class AbstractExchanger < ::Concurrent::Synchronization::Object
+    def exchange: (untyped, ?untyped) -> nil
+    def exchange!: (untyped, ?untyped) -> bot
+    def try_exchange: (untyped, ?untyped) -> Concurrent::Maybe
+  end
+  class RubyExchanger < ::Concurrent::AbstractExchanger
+    class Node < ::Concurrent::Synchronization::Object
+      def initialize: (untyped) -> void
+      def latch: () -> Concurrent::CountDownLatch
+    end
+  end
+end

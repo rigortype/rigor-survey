@@ -1,0 +1,5 @@
+module BulkImports
+  class NetworkError < ::BulkImports::Error
+    def initialize: (?String, ?response: untyped) -> void
+  end
+end

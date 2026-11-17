@@ -1,0 +1,10 @@
+module Gitlab
+  module AlertManagement
+    module Payload
+      class Base
+        def self.attribute: (untyped, paths: untyped, ?type: untyped, ?fallback: untyped) -> Symbol
+        def alert_params: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

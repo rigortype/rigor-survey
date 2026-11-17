@@ -1,0 +1,4 @@
+class UploadService
+  def initialize: (untyped, untyped, ?singleton(FileUploader) | singleton(NamespaceFileUploader), **untyped) -> void
+  def uploader_class: () -> (singleton(FileUploader) | singleton(NamespaceFileUploader))
+end

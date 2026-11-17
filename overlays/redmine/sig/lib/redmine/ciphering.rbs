@@ -1,0 +1,9 @@
+module Redmine
+  module Ciphering
+    def self.cipher_key: () -> (String | nil)
+    module ClassMethods
+      def encrypt_all: (untyped) -> (false | true)
+      def decrypt_all: (untyped) -> (false | true)
+    end
+  end
+end

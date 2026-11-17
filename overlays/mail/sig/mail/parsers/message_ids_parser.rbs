@@ -1,0 +1,15 @@
+module Mail
+  module Parsers
+    module MessageIdsParser
+      def self.parse: (untyped) -> Mail::Parsers::MessageIdsParser::MessageIdsStruct
+      class MessageIdsStruct < ::Struct[untyped]
+        def message_ids: () -> untyped
+        def error: () -> untyped
+        def message_ids=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?message_ids: untyped, ?error: untyped) -> instance | (?untyped message_ids, ?untyped error) -> instance
+        def self.[]: (?message_ids: untyped, ?error: untyped) -> instance | (?untyped message_ids, ?untyped error) -> instance
+      end
+    end
+  end
+end

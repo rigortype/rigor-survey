@@ -1,0 +1,3 @@
+class AccountSuggestions
+  def initialize: (untyped) -> void
+end

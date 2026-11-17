@@ -1,0 +1,7 @@
+module Gitlab
+  module MailRoom
+    class MailboxConfig
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

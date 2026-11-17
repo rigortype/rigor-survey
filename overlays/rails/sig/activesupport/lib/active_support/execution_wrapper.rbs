@@ -1,0 +1,16 @@
+module ActiveSupport
+  class ExecutionWrapper
+    class RunHook < ::Struct[untyped]
+      def hook: () -> untyped
+      def hook=: (untyped) -> untyped
+      def self.new: (?hook: untyped) -> instance | (?untyped hook) -> instance
+      def self.[]: (?hook: untyped) -> instance | (?untyped hook) -> instance
+    end
+    class CompleteHook < ::Struct[untyped]
+      def hook: () -> untyped
+      def hook=: (untyped) -> untyped
+      def self.new: (?hook: untyped) -> instance | (?untyped hook) -> instance
+      def self.[]: (?hook: untyped) -> instance | (?untyped hook) -> instance
+    end
+  end
+end

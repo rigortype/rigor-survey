@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    module Finders
+      class BranchesFinder
+        def initialize: (untyped, ?untyped, ?include_commits: untyped) -> void
+      end
+    end
+  end
+end

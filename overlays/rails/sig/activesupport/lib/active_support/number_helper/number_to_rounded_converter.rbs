@@ -1,0 +1,7 @@
+module ActiveSupport
+  module NumberHelper
+    class NumberToRoundedConverter < ::ActiveSupport::NumberHelper::NumberConverter
+      def self.separator_regexps: (untyped) -> [Regexp, Regexp]
+    end
+  end
+end

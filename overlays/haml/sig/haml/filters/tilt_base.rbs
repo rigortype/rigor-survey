@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class TiltBase < ::Haml::Filters::Base
+      def explicit_require?: (untyped) -> (false | true)
+    end
+  end
+end

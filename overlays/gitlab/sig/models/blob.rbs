@@ -1,0 +1,9 @@
+class Blob < ::SimpleDelegator
+  def self.decorate: (untyped, ?untyped) -> (Blob | nil)
+  def initialize: (untyped, ?untyped) -> void
+  def inspect: () -> String
+  def external_storage_error?: () -> (false | true)
+  def simple_viewer: () -> (BlobViewer::Download | BlobViewer::Empty | BlobViewer::Text)
+  def expanded?: () -> (false | true)
+  def expand!: () -> true
+end

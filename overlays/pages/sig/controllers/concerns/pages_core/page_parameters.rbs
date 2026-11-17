@@ -1,0 +1,7 @@
+module PagesCore
+  module PageParameters
+    def page_attachment_attributes: () -> { page_images_attributes: [[:id, :position, :image_id, :primary, :_destroy]], page_files_attributes: [[:id, :position, :attachment_id, :_destroy]] }
+    def page_content_attributes: () -> [[:template, :user_id, :status, :feed_enabled, :published_at, :redirect_to, :news_page, :unique_name, :pinned, :parent_page_id, :serialized_tags, :meta_image_id, :starts_at, :ends_at, :all_day, :skip_index], untyped, :path_segment, untyped, { page_images_attributes: [[:id, :position, :image_id, :primary, :_destroy]], page_files_attributes: [[:id, :position, :attachment_id, :_destroy]] }]
+    def page_static_attributes: () -> [:template, :user_id, :status, :feed_enabled, :published_at, :redirect_to, :news_page, :unique_name, :pinned, :parent_page_id, :serialized_tags, :meta_image_id, :starts_at, :ends_at, :all_day, :skip_index]
+  end
+end

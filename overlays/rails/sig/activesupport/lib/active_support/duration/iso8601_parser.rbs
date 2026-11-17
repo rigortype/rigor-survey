@@ -1,0 +1,11 @@
+module ActiveSupport
+  class Duration
+    class ISO8601Parser
+      def initialize: (untyped) -> void
+      def parts: () -> Hash[untyped, untyped]
+      def scanner: () -> StringScanner
+      class ParsingError < ::ArgumentError
+      end
+    end
+  end
+end

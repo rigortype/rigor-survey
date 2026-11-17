@@ -1,0 +1,9 @@
+module Gitlab
+  module View
+    module Presenter
+      class Factory
+        def initialize: (untyped, **untyped) -> void
+      end
+    end
+  end
+end

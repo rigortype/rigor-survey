@@ -1,0 +1,5 @@
+module BatchedGitRefUpdates
+  class CleanupSchedulerService
+    def execute: () -> { total_projects: untyped }
+  end
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  module Profiler
+    def self.with_profiler: (untyped) -> Hash[Symbol, untyped]
+  end
+end

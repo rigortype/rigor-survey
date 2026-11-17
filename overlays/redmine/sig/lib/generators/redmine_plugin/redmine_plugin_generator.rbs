@@ -1,0 +1,4 @@
+class RedminePluginGenerator < ::Rails::Generators::NamedBase
+  def initialize: (*untyped) -> void
+  def plugin_path: () -> String
+end

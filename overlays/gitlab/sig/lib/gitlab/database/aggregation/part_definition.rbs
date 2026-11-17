@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class PartDefinition
+        def parameterized?: () -> false
+      end
+    end
+  end
+end

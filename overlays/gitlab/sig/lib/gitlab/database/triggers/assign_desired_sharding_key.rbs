@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Triggers
+      class AssignDesiredShardingKey
+        def initialize: (table: untyped, sharding_key: untyped, parent_table: untyped, parent_sharding_key: untyped, foreign_key: untyped, connection: untyped, ?parent_table_primary_key: untyped, ?trigger_name: untyped) -> void
+      end
+    end
+  end
+end

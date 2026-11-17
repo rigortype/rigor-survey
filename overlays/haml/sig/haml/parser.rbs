@@ -1,0 +1,52 @@
+module Haml
+  class Parser
+    def initialize: ({}) -> void
+    def call: (untyped) -> (Haml::Error | Haml::Parser::ParseNode | Haml::SyntaxError)
+    def self.parse_class_and_id: (untyped) -> Hash[untyped, untyped]
+    def root: () -> Haml::Parser::ParseNode
+    class Line < ::Struct[untyped]
+      def whitespace: () -> untyped
+      def text: () -> untyped
+      def full: () -> untyped
+      def index: () -> untyped
+      def parser: () -> untyped
+      def eod: () -> untyped
+      def whitespace=: (untyped) -> untyped
+      def text=: (untyped) -> untyped
+      def full=: (untyped) -> untyped
+      def index=: (untyped) -> untyped
+      def parser=: (untyped) -> untyped
+      def eod=: (untyped) -> untyped
+      def self.new: (?whitespace: untyped, ?text: untyped, ?full: untyped, ?index: untyped, ?parser: untyped, ?eod: untyped) -> instance | (?untyped whitespace, ?untyped text, ?untyped full, ?untyped index, ?untyped parser, ?untyped eod) -> instance
+      def self.[]: (?whitespace: untyped, ?text: untyped, ?full: untyped, ?index: untyped, ?parser: untyped, ?eod: untyped) -> instance | (?untyped whitespace, ?untyped text, ?untyped full, ?untyped index, ?untyped parser, ?untyped eod) -> instance
+      def strip!: (untyped) -> Haml::Parser::Line
+    end
+    class ParseNode < ::Struct[untyped]
+      def type: () -> untyped
+      def line: () -> untyped
+      def value: () -> untyped
+      def parent: () -> untyped
+      def children: () -> untyped
+      def type=: (untyped) -> untyped
+      def line=: (untyped) -> untyped
+      def value=: (untyped) -> untyped
+      def parent=: (untyped) -> untyped
+      def children=: (untyped) -> untyped
+      def self.new: (?type: untyped, ?line: untyped, ?value: untyped, ?parent: untyped, ?children: untyped) -> instance | (?untyped type, ?untyped line, ?untyped value, ?untyped parent, ?untyped children) -> instance
+      def self.[]: (?type: untyped, ?line: untyped, ?value: untyped, ?parent: untyped, ?children: untyped) -> instance | (?untyped type, ?untyped line, ?untyped value, ?untyped parent, ?untyped children) -> instance
+      def initialize: (*untyped) -> void
+      def inspect: () -> String
+    end
+    class DynamicAttributes < ::Struct[untyped]
+      def new: () -> untyped
+      def old: () -> untyped
+      def new=: (untyped) -> untyped
+      def self.new: (?new: untyped, ?old: untyped) -> instance | (?untyped new, ?untyped old) -> instance
+      def self.[]: (?new: untyped, ?old: untyped) -> instance | (?untyped new, ?untyped old) -> instance
+      def to_literal: () -> String
+    end
+    class ParserOptions
+      def initialize: (?untyped) -> void
+    end
+  end
+end

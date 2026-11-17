@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class EnvironmentMatcher
+      def initialize: (untyped) -> void
+    end
+  end
+end

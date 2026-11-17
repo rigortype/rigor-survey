@@ -1,0 +1,10 @@
+class MailHandler < ::ActionMailer::Base
+  def self.extract_options_from_env: (untyped) -> Hash[:allow_override | :default_group | :no_account_notice | :no_notification | :no_permission_check | :project_from_subaddress | :unknown_user | Symbol, untyped]
+  def self.new_user_from_attributes: (untyped, ?untyped) -> User
+  class UnauthorizedAction < ::StandardError
+  end
+  class MissingInformation < ::StandardError
+  end
+  class MissingContainer < ::StandardError
+  end
+end

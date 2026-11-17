@@ -1,0 +1,7 @@
+module Import
+  module BitbucketImport
+    class TokenRefreshStrategy
+      def initialize: (untyped) -> void
+    end
+  end
+end

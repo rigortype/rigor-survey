@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    module AppTask
+      def self.name: () -> "GitLab App"
+      def self.checks: () -> [singleton(SystemCheck::App::DatabaseConfigExistsCheck), singleton(SystemCheck::App::TableTruncateCheck), singleton(SystemCheck::App::MigrationsAreUpCheck), singleton(SystemCheck::App::OrphanedGroupMembersCheck), singleton(SystemCheck::App::GitlabConfigExistsCheck), singleton(SystemCheck::App::GitlabConfigUpToDateCheck), singleton(SystemCheck::App::GitlabCableConfigExistsCheck), singleton(SystemCheck::App::GitlabResqueConfigExistsCheck), singleton(SystemCheck::App::LogWritableCheck), singleton(SystemCheck::App::TmpWritableCheck), singleton(SystemCheck::App::UploadsDirectoryExistsCheck), singleton(SystemCheck::App::UploadsPathPermissionCheck), singleton(SystemCheck::App::UploadsPathTmpPermissionCheck), singleton(SystemCheck::App::SystemdUnitFilesOrInitScriptExistCheck), singleton(SystemCheck::App::SystemdUnitFilesOrInitScriptUpToDateCheck), singleton(SystemCheck::App::ProjectsHaveNamespaceCheck), singleton(SystemCheck::App::RedisVersionCheck), singleton(SystemCheck::App::RubyVersionCheck), singleton(SystemCheck::App::GitUserDefaultSSHConfigCheck), singleton(SystemCheck::App::ActiveUsersCheck), singleton(SystemCheck::App::AuthorizedKeysPermissionCheck), singleton(SystemCheck::App::HashedStorageEnabledCheck), singleton(SystemCheck::App::HashedStorageAllProjectsCheck)]
+    end
+  end
+end

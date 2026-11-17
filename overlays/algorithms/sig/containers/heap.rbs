@@ -1,0 +1,18 @@
+module Containers
+  class Heap
+    def initialize: (?untyped) ?{ (*untyped) -> untyped } -> void
+    def has_key?: (untyped) -> (false | true)
+    def clear: () -> nil
+    def empty?: () -> (false | true)
+    def change_key: (untyped, untyped, ?untyped) -> ([untyped, untyped] | nil)
+    class Node
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+  class MaxHeap < ::Containers::Heap
+    def initialize: (?Array[untyped] | [Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer] | [Integer, Integer, Integer]) -> void
+  end
+  class MinHeap < ::Containers::Heap
+    def initialize: (?untyped) -> void
+  end
+end

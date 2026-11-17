@@ -1,0 +1,7 @@
+module Resolvers
+  module Wikis
+    class WikiPagesResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> Gitlab::Graphql::ExternallyPaginatedArray
+    end
+  end
+end

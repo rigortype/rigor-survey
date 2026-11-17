@@ -1,0 +1,7 @@
+module Gitlab
+  module Pages
+    class DeploymentValidations
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

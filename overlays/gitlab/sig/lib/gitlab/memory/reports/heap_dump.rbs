@@ -1,0 +1,12 @@
+module Gitlab
+  module Memory
+    module Reports
+      class HeapDump
+        def self.enqueue!: () -> true
+        def self.enqueued?: () -> (false | true)
+        def name: () -> "heap_dump"
+        def run: (untyped) -> (false | true)
+      end
+    end
+  end
+end

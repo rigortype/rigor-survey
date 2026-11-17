@@ -1,0 +1,5 @@
+module Packages
+  class PackageCreatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["project_id", "id", "name", "package_type"] | Hash[String, Hash[String, "integer"] | Hash[String, "string"] | Hash[String, untyped] | Hash[String, ["string", "null"]]]]
+  end
+end

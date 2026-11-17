@@ -1,0 +1,5 @@
+module Importer
+  class BaseImporter
+    def initialize: (batch_size: Integer, executor: untyped) -> void
+  end
+end

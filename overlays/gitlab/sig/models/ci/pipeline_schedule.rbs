@@ -1,0 +1,5 @@
+module Ci
+  class PipelineSchedule < ::Ci::ApplicationRecord
+    def inactive?: () -> (false | true)
+  end
+end

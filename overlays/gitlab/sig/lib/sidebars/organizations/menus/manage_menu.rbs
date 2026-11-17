@@ -1,0 +1,10 @@
+module Sidebars
+  module Organizations
+    module Menus
+      class ManageMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "users"
+        def pick_into_super_sidebar?: () -> true
+      end
+    end
+  end
+end

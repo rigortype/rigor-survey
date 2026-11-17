@@ -1,0 +1,16 @@
+module Gitlab
+  class UsageMetricDefinitionGenerator < ::Rails::Generators::Base
+    def tier: () -> String
+    class Directory < ::Struct[untyped]
+      def name: () -> untyped
+      def time_frame: () -> untyped
+      def value_type: () -> untyped
+      def name=: (untyped) -> untyped
+      def time_frame=: (untyped) -> untyped
+      def value_type=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?time_frame: untyped, ?value_type: untyped) -> instance | (?untyped name, ?untyped time_frame, ?untyped value_type) -> instance
+      def self.[]: (?name: untyped, ?time_frame: untyped, ?value_type: untyped) -> instance | (?untyped name, ?untyped time_frame, ?untyped value_type) -> instance
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

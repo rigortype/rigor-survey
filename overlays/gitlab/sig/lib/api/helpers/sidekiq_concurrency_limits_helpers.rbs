@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module SidekiqConcurrencyLimitsHelpers
+      def concurrency_limit_service: (untyped) -> Gitlab::SidekiqMiddleware::ConcurrencyLimit::ConcurrencyLimitService
+      def concurrency_limit_status: (untyped, untyped) -> { worker_class: untyped, class_limit: untyped, effective_limit: untyped, adaptive_limit: untyped, default_limit_requires_shard_context: untyped, middleware_enabled: untyped, disabled_for_worker: untyped, override_limit: untyped, override_ttl: untyped, running_jobs: untyped, deferred_jobs: untyped }
+      def log_concurrency_limit_override: (untyped, untyped, untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Collection
+        class Sort
+          def initialize: (untyped) -> void
+          def valid?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

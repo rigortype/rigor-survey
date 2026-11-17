@@ -1,0 +1,5 @@
+module Haml
+  module Preserver
+    def self.build_regex: (untyped) -> Regexp
+  end
+end

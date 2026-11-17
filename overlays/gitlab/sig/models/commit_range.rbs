@@ -1,0 +1,8 @@
+class CommitRange
+  def self.reference_prefix: () -> "@"
+  def self.reference_pattern: () -> Regexp
+  def initialize: (String, untyped) -> void
+  def inspect: () -> String
+  def to_param: () -> { from: untyped, to: untyped }
+  def persisted?: () -> true
+end

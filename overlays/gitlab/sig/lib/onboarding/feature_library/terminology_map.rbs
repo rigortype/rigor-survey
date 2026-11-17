@@ -1,0 +1,7 @@
+module Onboarding
+  module FeatureLibrary
+    module TerminologyMap
+      def self.all: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | TrueClass)
+    end
+  end
+end

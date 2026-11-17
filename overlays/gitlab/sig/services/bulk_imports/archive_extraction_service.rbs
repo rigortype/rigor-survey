@@ -1,0 +1,6 @@
+module BulkImports
+  class ArchiveExtractionService
+    def initialize: (tmpdir: untyped, filename: untyped) -> void
+    def filepath: () -> String
+  end
+end

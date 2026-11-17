@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    class Lazy
+      def initialize: () ?{ (*untyped) -> untyped } -> void
+      def then: () ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Lazy
+      def catch: (?untyped) ?{ (*untyped) -> untyped } -> Gitlab::Graphql::Lazy
+    end
+  end
+end

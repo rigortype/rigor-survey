@@ -1,0 +1,5 @@
+module Namespaces
+  class VerifiedNamespace < ::ApplicationRecord
+    def self.for_project: (untyped) -> (Namespaces::VerifiedNamespace | nil)
+  end
+end

@@ -1,0 +1,9 @@
+module Redmine
+  module WikiFormatting
+    module Textile
+      module Helper
+        def initial_page_content: (untyped) -> String
+      end
+    end
+  end
+end

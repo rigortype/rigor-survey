@@ -1,0 +1,3 @@
+class Stringclass
+  def demo2: () -> "Hello, World!"
+end

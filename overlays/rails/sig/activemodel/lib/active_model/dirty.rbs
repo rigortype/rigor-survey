@@ -1,0 +1,12 @@
+module ActiveModel
+  module Dirty
+    def initialize_dup: (untyped) -> nil
+    def changes_applied: () -> nil
+    def changed?: () -> bool
+    def changed: () -> Array[String]
+    def clear_changes_information: () -> nil
+    def changed_attributes: () -> ActiveSupport::HashWithIndifferentAccess
+    def changes: () -> ActiveSupport::HashWithIndifferentAccess
+    def previous_changes: () -> (ActiveSupport::HashWithIndifferentAccess | Hash[String, [ untyped, untyped ]])
+  end
+end

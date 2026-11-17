@@ -1,0 +1,8 @@
+module ClickHouse
+  module SchemaCache
+    class Loader
+      def initialize: (database: Symbol) -> void
+      def load: () -> ClickHouse::SchemaCache::Database
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Mail
+  module Parsers
+    module EnvelopeFromParser
+      def self.parse: (untyped) -> Mail::Parsers::EnvelopeFromParser::EnvelopeFromStruct
+      class EnvelopeFromStruct < ::Struct[untyped]
+        def address: () -> untyped
+        def ctime_date: () -> untyped
+        def error: () -> untyped
+        def address=: (untyped) -> untyped
+        def ctime_date=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?address: untyped, ?ctime_date: untyped, ?error: untyped) -> instance | (?untyped address, ?untyped ctime_date, ?untyped error) -> instance
+        def self.[]: (?address: untyped, ?ctime_date: untyped, ?error: untyped) -> instance | (?untyped address, ?untyped ctime_date, ?untyped error) -> instance
+      end
+    end
+  end
+end

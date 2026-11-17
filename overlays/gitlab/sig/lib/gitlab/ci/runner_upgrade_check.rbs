@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class RunnerUpgradeCheck
+      def initialize: (untyped, ?untyped) -> void
+      def check_runner_upgrade_suggestion: (untyped) -> ([untyped, :error] | [untyped, :invalid_version] | [untyped, untyped] | nil)
+    end
+  end
+end

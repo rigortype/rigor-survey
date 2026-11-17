@@ -1,0 +1,8 @@
+module CacheMarkdownField
+  def skip_project_check?: () -> false
+  def parent_user: () -> nil
+  def mentions_to_store: () -> ([untyped, Hash[untyped, untyped]] | nil)
+  def write_mentions!: (untyped, untyped) -> true
+  def store_mentions?: () -> true
+  def store_mentions_after_commit?: () -> false
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class AttributesAtRefParser
+      def initialize: (untyped, String) -> void
+    end
+  end
+end

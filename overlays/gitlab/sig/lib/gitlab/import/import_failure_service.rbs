@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    class ImportFailureService
+      def initialize: (exception: untyped, ?import_state: untyped, ?project_id: untyped, ?error_source: untyped, ?fail_import: untyped, ?metrics: untyped, ?external_identifiers: untyped, ?message: untyped, ?extra_attributes: untyped, ?capture_exception: untyped) -> void
+    end
+  end
+end

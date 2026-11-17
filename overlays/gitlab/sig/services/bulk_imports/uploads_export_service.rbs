@@ -1,0 +1,6 @@
+module BulkImports
+  class UploadsExportService
+    def initialize: (untyped, untyped, untyped) -> void
+    def exported_objects_count: () -> (0 | Integer)
+  end
+end

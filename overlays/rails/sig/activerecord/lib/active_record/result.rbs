@@ -1,0 +1,10 @@
+module ActiveRecord
+  class Result
+    def initialize: (untyped, untyped, ?untyped, ?affected_rows: untyped) -> void
+    def result: () -> ActiveRecord::Result
+    def cancel: () -> ActiveRecord::Result
+    def initialize_copy: (untyped) -> nil
+    def shuffle_rows: (untyped) -> ActiveRecord::Result
+    def shuffle!: () -> ActiveRecord::Result
+  end
+end

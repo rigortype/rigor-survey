@@ -1,0 +1,5 @@
+module MergeRequests
+  class SavedView < ::ApplicationRecord
+    def self.views_limit: () -> 5
+  end
+end

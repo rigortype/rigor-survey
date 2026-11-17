@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module WebHooksHelpers
+      def hook_container: () -> nil
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class DndCharacter
+  def self.modifier: (untyped) -> (-1 | -2 | -3 | -4 | 0 | 1 | 2 | 3 | 4)
+  def hitpoints: () -> Integer
+end

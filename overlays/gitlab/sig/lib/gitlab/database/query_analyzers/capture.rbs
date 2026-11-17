@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class Capture < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.hex_encode: (untyped) -> String
+      end
+    end
+  end
+end

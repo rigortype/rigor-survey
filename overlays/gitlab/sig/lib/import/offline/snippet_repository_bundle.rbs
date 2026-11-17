@@ -1,0 +1,9 @@
+module Import
+  module Offline
+    module SnippetRepositoryBundle
+      def self.filename_for: (untyped) -> String
+      def self.ambiguous_filenames: (untyped) -> Set[untyped]
+      def self.filename_from: (untyped, untyped) -> String
+    end
+  end
+end

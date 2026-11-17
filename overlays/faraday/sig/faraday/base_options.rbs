@@ -1,0 +1,11 @@
+module Faraday
+  class BaseOptions
+    def initialize: (?untyped) -> void
+    def update: (untyped) -> Faraday::BaseOptions
+    def merge: (untyped) -> Faraday::BaseOptions
+    def merge!: (untyped) -> Faraday::BaseOptions
+    def deep_dup: () -> Faraday::BaseOptions
+    def to_hash: () -> Hash[untyped, untyped]
+    def inspect: () -> String
+  end
+end

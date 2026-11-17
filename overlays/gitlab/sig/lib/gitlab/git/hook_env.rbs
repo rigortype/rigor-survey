@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class HookEnv
+      def self.to_env_hash: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

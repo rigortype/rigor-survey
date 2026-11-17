@@ -1,0 +1,7 @@
+module Subscriptions
+  module WorkItems
+    class NamespaceWorkItemChanges < ::Subscriptions::BaseSubscription
+      def authorized?: (namespace_id: untyped) -> true
+    end
+  end
+end

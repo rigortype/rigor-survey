@@ -1,0 +1,9 @@
+module Ci
+  class JobArtifact < ::Ci::ApplicationRecord
+    def self.of_report_type: (untyped) -> ActiveRecord::Relation[Ci::JobArtifact]
+    def self.associated_file_types_for: (untyped) -> ([untyped] | nil)
+    def self.begin_fast_destroy: () -> Ci::JobArtifacts::DestroyAssociationsService
+    def local_store?: () -> (false | true)
+    def to_deleted_object_attrs: (?untyped) -> { file_store: untyped, store_dir: untyped, file: untyped, pick_up_at: untyped, project_id: untyped }
+  end
+end

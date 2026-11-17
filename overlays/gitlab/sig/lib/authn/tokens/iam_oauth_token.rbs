@@ -1,0 +1,14 @@
+module Authn
+  module Tokens
+    class IamOauthToken
+      def self.from_jwt: (untyped) -> (Authn::Tokens::IamOauthToken | nil)
+      def self.prefix?: (untyped) -> (false | true)
+      def self.validate_jwt: (untyped) -> ServiceResponse
+      def self.valid_subject?: (untyped) -> (false | true)
+      def self.from_validated_jwt: (untyped) -> Authn::Tokens::IamOauthToken
+      def initialize: (user_id: untyped, scopes: untyped, id: untyped, expires_at: untyped, issued_at: untyped, ?scope_user_id: untyped) -> void
+      def reload: () -> Authn::Tokens::IamOauthToken
+      def to_s: () -> String
+    end
+  end
+end

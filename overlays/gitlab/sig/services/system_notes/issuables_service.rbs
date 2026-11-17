@@ -1,0 +1,6 @@
+module SystemNotes
+  class IssuablesService < ::SystemNotes::BaseService
+    def self.issuable_events: () -> { assigned: untyped, unassigned: untyped, review_requested: untyped, review_request_removed: untyped }
+    def self.cross_reference_note_prefix: () -> "mentioned in "
+  end
+end

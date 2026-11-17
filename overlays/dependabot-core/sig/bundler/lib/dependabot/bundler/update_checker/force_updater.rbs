@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class ForceUpdater
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, target_version: untyped, requirements_update_strategy: untyped, options: untyped, ?repo_contents_path: untyped, ?update_multiple_dependencies: untyped) -> void
+        def updated_dependencies: () -> Array[Dependabot::Dependency]
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Organizations
+  module Transfer
+    class OrganizationUsersService
+      def initialize: (organization: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

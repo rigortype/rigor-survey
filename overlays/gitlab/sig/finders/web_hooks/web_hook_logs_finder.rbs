@@ -1,0 +1,5 @@
+module WebHooks
+  class WebHookLogsFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

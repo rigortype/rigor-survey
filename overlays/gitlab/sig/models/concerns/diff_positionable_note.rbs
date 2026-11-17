@@ -1,0 +1,9 @@
+module DiffPositionableNote
+  def stringified_hash?: (untyped) -> (false | true)
+  def recover_stringified_position: (untyped, ?untyped) -> (Gitlab::Diff::Position | nil)
+  def should_update_position?: () -> (false | true)
+  def on_text?: () -> (false | true)
+  def on_file?: () -> (false | true)
+  def on_image?: () -> (false | true)
+  def shas: () -> Array[untyped]
+end

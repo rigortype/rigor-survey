@@ -1,0 +1,9 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class PostgreSQLProxyAdapter < ::ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::SchemaDumper
+      end
+    end
+  end
+end

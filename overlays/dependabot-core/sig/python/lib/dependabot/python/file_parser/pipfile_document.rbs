@@ -1,0 +1,15 @@
+module Dependabot
+  module Python
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PipfileDocument
+        def self.from_file: (untyped) -> Dependabot::Python::FileParser::PipfileDocument
+        def initialize: (data: untyped, context: untyped) -> void
+        class Entry
+          def initialize: (name: untyped, value: untyped, context: untyped) -> void
+          def specifies_version?: () -> (false | true)
+          def lockfile_version: () -> (String | nil)
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Mastodon
+  module CLI
+    module ProgressHelper
+      def parallelize_with_progress: (untyped) -> [untyped, untyped]
+    end
+  end
+end

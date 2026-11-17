@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class ListBlobsAdapter
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Faraday
+  class Response
+    class RaiseError < ::Faraday::Middleware
+      def on_request: (untyped) -> (false | nil)
+      def response_values: (untyped) -> ({ status: untyped, headers: untyped, body: untyped } | { status: untyped, headers: untyped, body: untyped, request: { method: untyped, url: untyped, url_path: untyped, params: untyped, headers: untyped, body: untyped } })
+    end
+  end
+end

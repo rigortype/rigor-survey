@@ -1,0 +1,34 @@
+module ActionCable
+  module Connection
+    class NonInferrableConnectionError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+    class TestSocket
+      def self.build_request: (untyped, ?params: untyped, ?headers: untyped, ?session: untyped, ?env: untyped, ?cookies: untyped) -> ActionCable::Connection::TestSocket::Request
+      def initialize: (untyped) -> void
+      def close: () -> true
+      def logger: () -> ActionCable::Server::TaggedLoggerProxy
+      def transmissions: () -> Array[untyped]
+      def closed: () -> (false | true)
+    end
+    class TestTimer
+      def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+      def shutdown: () -> true
+      def advance: (untyped) -> nil
+    end
+    class TestServer
+      def initialize: (untyped) -> void
+      def timer: (untyped) ?{ (*untyped) -> untyped } -> ActionCable::Connection::TestTimer
+      def streams: () -> Hash
+      def timers: () -> Array[untyped]
+    end
+    class TestCase < ::ActiveSupport::TestCase
+      module Behavior
+        def disconnect: () -> nil
+        def cookies: () -> ActionCable::Connection::TestCookieJar
+        def socket: () -> ActionCable::Connection::TestSocket
+        def testserver: () -> ActionCable::Connection::TestServer
+      end
+    end
+  end
+end

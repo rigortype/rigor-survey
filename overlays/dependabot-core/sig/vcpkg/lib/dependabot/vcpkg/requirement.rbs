@@ -1,0 +1,8 @@
+module Dependabot
+  module Vcpkg
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::Vcpkg::Requirement]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

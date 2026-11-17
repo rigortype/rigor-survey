@@ -1,0 +1,13 @@
+module Gitlab
+  module MobilePush
+    class WorkingHours
+      def initialize: (window: untyped, days: untyped, zone: untyped) -> void
+      class Window < ::Data
+        def start_minute: () -> untyped
+        def end_minute: () -> untyped
+        def self.new: (start_minute: untyped, end_minute: untyped) -> instance | (untyped start_minute, untyped end_minute) -> instance
+        def self.[]: (start_minute: untyped, end_minute: untyped) -> instance | (untyped start_minute, untyped end_minute) -> instance
+      end
+    end
+  end
+end

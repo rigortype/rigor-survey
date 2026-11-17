@@ -1,0 +1,12 @@
+module API
+  class NugetProjectPackages < ::API::Base
+    def snowplow_gitlab_standard_context: () -> { project: untyped, namespace: untyped }
+    def snowplow_gitlab_standard_context_without_auth: () -> { project: untyped, namespace: untyped }
+    def file_name: (untyped) -> ("package.nupkg" | "package.snupkg")
+    def extracted_metadata: () -> (ServiceResponse | Zip::InputStream)
+    def required_permission: () -> :read_package
+    def format_filename: (untyped) -> (String | nil)
+    def track_package_event_attrs: () -> (Hash[untyped, untyped] | { category: "API::NugetPackages", project: untyped, namespace: untyped })
+    def self.boundary_type: () -> :project
+  end
+end

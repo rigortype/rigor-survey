@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Less < ::Haml::Filters::TiltBase
+      def compile: (untyped) -> Array[untyped]
+    end
+  end
+end

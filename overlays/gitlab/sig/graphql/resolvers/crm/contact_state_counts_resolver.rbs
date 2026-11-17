@@ -1,0 +1,7 @@
+module Resolvers
+  module Crm
+    class ContactStateCountsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> CustomerRelations::ContactStateCounts
+    end
+  end
+end

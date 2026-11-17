@@ -1,0 +1,9 @@
+module Admin
+  module Metrics
+    class Dimension
+      class ServersDimension < ::Admin::Metrics::Dimension::BaseDimension
+        def key: () -> "servers"
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Scheduling
+    module TaskExecutor
+      def cache_key: () -> String
+      def cache_period: () -> nil
+      def cache_key_for_period: (untyped) -> String
+    end
+  end
+end

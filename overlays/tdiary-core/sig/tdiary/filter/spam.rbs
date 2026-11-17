@@ -1,0 +1,12 @@
+module TDiary
+  module Filter
+    class SpamFilter < ::TDiary::Filter::Filter
+      def initialize: (*untyped) -> void
+      def update_config: () -> nil
+      def lookup: (untyped, untyped, ?untyped) -> (false | true)
+      def black_url?: (untyped) -> (false | true)
+      def comment_filter: (untyped, untyped) -> (false | true)
+      def referer_filter: (untyped) -> (false | true)
+    end
+  end
+end

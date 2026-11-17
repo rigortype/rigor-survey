@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Checks
+        class PlannerStatistics < ::Gitlab::Database::Diagnostics::Checks::Base
+          def execute: () -> { stats_reset: untyped, relations: untyped, findings: Array[{ severity: untyped, code: "partitioned_statistics_stale", message: String } | { severity: untyped, code: "statistics_missing", message: String }], severity: untyped, counts: Hash[untyped, Integer] }
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Concurrent
+  class Transaction
+    def unlock: () -> ::Hash[untyped, untyped]
+    class OpenEntry < ::Struct[untyped]
+      def value: () -> untyped
+      def modified: () -> untyped
+      def value=: (untyped) -> untyped
+      def modified=: (untyped) -> untyped
+      def self.new: (?value: untyped, ?modified: untyped) -> instance | (?untyped value, ?untyped modified) -> instance
+      def self.[]: (?value: untyped, ?modified: untyped) -> instance | (?untyped value, ?untyped modified) -> instance
+    end
+  end
+  class TVar < ::Concurrent::Synchronization::Object
+    def initialize: (Integer) -> void
+    def unsafe_lock: () -> Mutex
+  end
+end

@@ -1,0 +1,9 @@
+module Types
+  module Authz
+    module AccessTokens
+      class PermissionType < ::Types::BaseObject
+        def self.authorization_scopes: () -> [:api, :read_api, :ai_workflows]
+      end
+    end
+  end
+end

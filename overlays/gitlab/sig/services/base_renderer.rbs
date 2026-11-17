@@ -1,0 +1,3 @@
+class BaseRenderer
+  def initialize: (?untyped) -> void
+end

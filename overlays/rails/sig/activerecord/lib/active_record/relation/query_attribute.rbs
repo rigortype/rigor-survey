@@ -1,0 +1,8 @@
+module ActiveRecord
+  class Relation
+    class QueryAttribute < ::ActiveModel::Attribute
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      def with_cast_value: (untyped) -> ActiveRecord::Relation::QueryAttribute
+    end
+  end
+end

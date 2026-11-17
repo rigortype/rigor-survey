@@ -1,0 +1,7 @@
+module Gitlab
+  module Popen
+    class Runner
+      def results: () -> Array[untyped]
+    end
+  end
+end

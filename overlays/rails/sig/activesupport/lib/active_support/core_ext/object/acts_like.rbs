@@ -1,0 +1,3 @@
+class Object
+  def acts_like?: (untyped) -> (false | true)
+end

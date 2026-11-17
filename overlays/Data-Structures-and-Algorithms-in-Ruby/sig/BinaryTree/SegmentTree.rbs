@@ -1,0 +1,3 @@
+class SegmentTree
+  def initialize: (untyped) -> void
+end

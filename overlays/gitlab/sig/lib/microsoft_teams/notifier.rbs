@@ -1,0 +1,6 @@
+module MicrosoftTeams
+  class Notifier
+    def initialize: (untyped) -> void
+    def ping: (?untyped) -> (false | true)
+  end
+end

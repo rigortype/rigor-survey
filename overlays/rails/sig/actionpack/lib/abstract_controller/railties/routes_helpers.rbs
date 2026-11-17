@@ -1,0 +1,7 @@
+module AbstractController
+  module Railties
+    module RoutesHelpers
+      def self.with: (untyped, ?untyped) -> Module
+    end
+  end
+end

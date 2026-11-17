@@ -1,0 +1,5 @@
+module Ci
+  class CollectPipelineAnalyticsServiceBase
+    def initialize: (current_user: untyped, container: untyped, from_time: nil, to_time: nil, ?source: untyped, ?ref: untyped, ?status_groups: untyped, ?duration_percentiles: untyped, ?subgroup_full_paths: untyped, ?name_search: untyped) -> void
+  end
+end

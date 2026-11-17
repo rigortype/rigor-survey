@@ -1,0 +1,9 @@
+module Gitlab
+  module BitbucketImport
+    module Importers
+      class UsersImporter
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

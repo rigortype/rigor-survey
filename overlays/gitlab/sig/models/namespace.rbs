@@ -1,0 +1,26 @@
+class Namespace < ::ApplicationRecord
+  def self.sti_class_for: (untyped) -> (singleton(Group) | singleton(Namespace) | singleton(Namespaces::ProjectNamespace) | singleton(Namespaces::UserNamespace))
+  def self.by_path: (untyped) -> (Namespace | nil)
+  def self.find_by_path_or_name: (untyped) -> (Namespace | nil)
+  def self.reference_prefix: () -> "@"
+  def self.traversal_ids_type: () -> ("bigint[]" | "integer[]")
+  def archived?: () -> (false | true)
+  def to_reference: (*untyped) -> String
+  def visibility_level_field: () -> :visibility_level
+  def kind: () -> ("group" | "project" | "user")
+  def bot_user_namespace?: () -> (false | true)
+  def emails_disabled?: () -> (false | true)
+  def can_push_initial_commit?: (untyped) -> (false | true)
+  def all_projects: () -> ActiveRecord::Relation[Project]
+  def all_catalog_resources: () -> ActiveRecord::Relation[Ci::Catalog::Resource]
+  def multiple_issue_boards_available?: () -> false
+  def licensed_feature_available?: (untyped) -> false
+  def container_repositories_size_cache_key: () -> String
+  def all_container_repositories: () -> ActiveRecord::Relation[ContainerRepository]
+  def shared_runners_setting: () -> ("disabled_and_overridable" | "disabled_and_unoverridable" | "enabled")
+  def root?: () -> (false | true)
+  def allow_runner_registration_token?: () -> (false | true)
+  def pages_access_control_trie: (?untyped) -> Namespaces::Traversal::TrieNode
+  def uploads_sharding_key: () -> { namespace_id: untyped }
+  def user_role: (untyped) -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+end

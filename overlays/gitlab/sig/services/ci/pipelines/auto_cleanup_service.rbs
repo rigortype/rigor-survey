@@ -1,0 +1,8 @@
+module Ci
+  module Pipelines
+    class AutoCleanupService
+      def initialize: (project: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

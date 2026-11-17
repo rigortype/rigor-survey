@@ -1,0 +1,8 @@
+module Gitlab
+  module Sessions
+    class StoreBuilder
+      def initialize: (untyped, untyped) -> void
+      def prepare: () -> [singleton(Gitlab::Sessions::CacheStore), { cache: ActiveSupport::Cache::RedisCacheStore, key: untyped, secure: untyped, httponly: true, path: untyped, session_cookie_token_prefix: untyped }]
+    end
+  end
+end

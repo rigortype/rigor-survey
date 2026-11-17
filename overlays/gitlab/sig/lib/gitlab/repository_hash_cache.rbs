@@ -1,0 +1,6 @@
+module Gitlab
+  class RepositoryHashCache
+    def initialize: (untyped, ?extra_namespace: untyped, ?expires_in: untyped) -> void
+    def cache_key: (untyped) -> String
+  end
+end

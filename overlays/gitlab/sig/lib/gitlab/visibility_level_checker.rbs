@@ -1,0 +1,9 @@
+module Gitlab
+  class VisibilityLevelChecker
+    def initialize: (untyped, untyped, ?project_params: untyped) -> void
+    def level_restricted?: () -> Gitlab::VisibilityEvaluationResult
+  end
+  class VisibilityEvaluationResult
+    def initialize: (untyped, untyped) -> void
+  end
+end

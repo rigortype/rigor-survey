@@ -1,0 +1,32 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module SchemaStatements
+      def compatibility_behavior_for: (untyped) -> singleton(ActiveRecord::Migration::CompatibilityBehavior)
+      def native_database_types: () -> {}
+      def table_comment: (untyped) -> nil
+      def indexes: (untyped) -> bot
+      def build_alter_table_definition: (untyped) -> ActiveRecord::ConnectionAdapters::AlterTable
+      def rename_table: (untyped, untyped, **untyped) -> bot
+      def change_column: (untyped, untyped, untyped, **untyped) -> bot
+      def change_column_default: (untyped, untyped, untyped) -> bot
+      def change_column_null: (untyped, untyped, untyped, ?untyped) -> bot
+      def rename_column: (untyped, untyped, untyped) -> bot
+      def build_create_index_definition: (untyped, untyped, **untyped) -> ActiveRecord::ConnectionAdapters::CreateIndexDefinition
+      def foreign_keys: (untyped) -> bot
+      def change_foreign_key: (untyped, ?untyped, **untyped) -> bot
+      def foreign_key_column_for: (untyped, untyped) -> String
+      def check_constraints: (untyped) -> bot
+      def update_table_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::Table
+      def add_index_options: (untyped, untyped, ?name: untyped, ?if_not_exists: untyped, ?internal: untyped, **untyped) -> [ActiveRecord::ConnectionAdapters::IndexDefinition, untyped, untyped]
+      def change_table_comment: (untyped, untyped) -> bot
+      def change_column_comment: (untyped, untyped, untyped) -> bot
+      def enable_index: (untyped, untyped) -> bot
+      def disable_index: (untyped, untyped) -> bot
+      def create_schema_dumper: (untyped) -> ActiveRecord::ConnectionAdapters::SchemaDumper
+      def schema_creation: () -> ActiveRecord::ConnectionAdapters::SchemaCreation
+      def valid_table_definition_options: () -> [:temporary, :if_not_exists, :options, :as, :comment, :charset, :collation]
+      def valid_primary_key_options: () -> [:limit, :default, :precision]
+      def max_index_name_size: () -> 62
+    end
+  end
+end

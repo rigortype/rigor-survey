@@ -1,0 +1,9 @@
+module Gitlab
+  module JiraImport
+    class IssueSerializer
+      def initialize: (untyped, untyped, untyped, untyped, ?untyped) -> void
+      def execute: () -> { iid: untyped, project_id: untyped, namespace_id: untyped, description: String, title: String, state_id: untyped, updated_at: untyped, created_at: untyped, author_id: untyped, assignee_ids: [untyped] | nil, label_ids: untyped, work_item_type_id: untyped, imported_from: untyped }
+      def formatter: () -> Gitlab::ImportFormatter
+    end
+  end
+end

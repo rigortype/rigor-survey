@@ -1,0 +1,8 @@
+module Mail
+  def self.new: (*untyped) ?{ (*untyped) -> untyped } -> Mail::Message
+  def self.deliver: (*untyped) ?{ (*untyped) -> untyped } -> Mail
+  def self.read: (untyped) -> Mail
+  def read_from_string: (untyped) -> Mail
+  def self.random_tag: () -> String
+  def self.something_random: () -> (0 | Integer)
+end

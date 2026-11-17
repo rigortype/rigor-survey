@@ -1,0 +1,5 @@
+module MergeRequests
+  class ApprovalService < ::MergeRequests::BaseService
+    def execute: (untyped) -> ServiceResponse
+  end
+end

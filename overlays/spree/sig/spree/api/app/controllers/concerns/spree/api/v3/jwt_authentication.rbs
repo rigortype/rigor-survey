@@ -1,0 +1,9 @@
+module Spree
+  module Api
+    module V3
+      module JwtAuthentication
+        def require_authentication!: () -> (false | true)
+      end
+    end
+  end
+end

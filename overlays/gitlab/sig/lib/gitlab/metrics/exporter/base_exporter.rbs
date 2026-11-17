@@ -1,0 +1,9 @@
+module Gitlab
+  module Metrics
+    module Exporter
+      class BaseExporter < ::Gitlab::Daemon
+        def initialize: (untyped, log_enabled: untyped, log_file: String, ?gc_requests: untyped, **untyped) -> void
+      end
+    end
+  end
+end

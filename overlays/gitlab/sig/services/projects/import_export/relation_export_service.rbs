@@ -1,0 +1,9 @@
+module Projects
+  module ImportExport
+    class RelationExportService
+      def initialize: (untyped, untyped, String, ?untyped) -> void
+      def jid: () -> "jid"
+      def logger: () -> Gitlab::Export::Logger
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module RGL
+  class BellmanFordVisitor < ::RGL::DijkstraVisitor
+    def initialize: (untyped) -> void
+  end
+  class BellmanFordAlgorithm
+    def initialize: (untyped, untyped, untyped) -> void
+    def shortest_paths: (untyped) -> Hash[untyped, untyped]
+  end
+  module Graph
+    def bellman_ford_shortest_paths: (untyped, untyped, ?untyped) -> Hash[untyped, untyped]
+  end
+end

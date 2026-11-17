@@ -1,0 +1,7 @@
+class Account < ::ApplicationRecord
+  class Field < ::ActiveModelSerializers::Model
+    def initialize: (untyped, untyped) -> void
+    def mark_verified!: () -> Time
+    def to_h: () -> { name: untyped, value: untyped, verified_at: untyped }
+  end
+end

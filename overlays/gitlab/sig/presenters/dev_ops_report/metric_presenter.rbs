@@ -1,0 +1,6 @@
+module DevOpsReport
+  class MetricPresenter < ::Gitlab::View::Presenter::Simple
+    def cards: () -> [DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card, DevOpsReport::Card]
+    def idea_to_production_steps: () -> [DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep, DevOpsReport::IdeaToProductionStep]
+  end
+end

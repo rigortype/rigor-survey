@@ -1,0 +1,11 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        class YamlCommentFinder
+          def find: (untyped) -> (String | nil)
+        end
+      end
+    end
+  end
+end

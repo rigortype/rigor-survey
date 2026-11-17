@@ -1,0 +1,12 @@
+module Concurrent
+  module Collection
+    class RubyNonConcurrentPriorityQueue
+      def initialize: (?untyped) -> void
+      def clear: () -> true
+      def include?: (untyped) -> (false | true)
+      def length: () -> (0 | Integer | nil)
+      def push: (untyped) -> true
+      def self.from_list: (untyped, ?untyped) -> Concurrent::Collection::RubyNonConcurrentPriorityQueue
+    end
+  end
+end

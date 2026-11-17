@@ -1,0 +1,7 @@
+module ActiveRecord
+  class FixtureSet
+    class File
+      def initialize: (untyped) -> void
+    end
+  end
+end

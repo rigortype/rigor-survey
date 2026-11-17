@@ -1,0 +1,6 @@
+module Repositories
+  class ChangelogService
+    def initialize: (untyped, untyped, version: String, ?branch: untyped, ?from: untyped, ?to: untyped, ?date: untyped, ?trailer: untyped, ?config_file: String, ?config_file_ref: untyped, ?file: untyped, ?message: untyped) -> void
+    def verify_commit_range!: (untyped, untyped) -> nil
+  end
+end

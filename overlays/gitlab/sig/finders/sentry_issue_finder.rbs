@@ -1,0 +1,3 @@
+class SentryIssueFinder
+  def initialize: (untyped, ?current_user: untyped) -> void
+end

@@ -1,0 +1,8 @@
+module RbNaCl
+  module GroupElements
+    class Curve25519
+      def initialize: (untyped) -> void
+      def mult: (untyped) -> RbNaCl::GroupElements::Curve25519
+    end
+  end
+end

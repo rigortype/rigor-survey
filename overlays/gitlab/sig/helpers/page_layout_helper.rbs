@@ -1,0 +1,8 @@
+module PageLayoutHelper
+  def page_title: (*untyped) -> String
+  def page_card_meta_tags: () -> String
+  def container_class: () -> String
+  def full_content_class: () -> String
+  def page_itemtype: (?untyped) -> ({ itemscope: true, itemtype: untyped } | {})
+  def user_status_properties: (untyped) -> ({ current_emoji: "", current_message: "", default_emoji: untyped } | { current_emoji: untyped, current_message: untyped, default_emoji: untyped, current_availability: untyped, current_clear_status_after: untyped })
+end

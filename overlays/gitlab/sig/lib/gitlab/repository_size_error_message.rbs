@@ -1,0 +1,11 @@
+module Gitlab
+  class RepositorySizeErrorMessage
+    def initialize: (untyped) -> void
+    def commit_error: () -> String
+    def merge_error: () -> String
+    def push_error: () -> String
+    def new_changes_error: () -> String
+    def more_info_message: () -> "Contact your GitLab administrator for more information."
+    def above_size_limit_message: () -> String
+  end
+end

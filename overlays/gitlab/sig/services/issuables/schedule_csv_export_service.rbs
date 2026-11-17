@@ -1,0 +1,7 @@
+module Issuables
+  class ScheduleCsvExportService
+    def initialize: (type: Symbol, current_user: untyped, project: untyped, params: untyped) -> void
+    def execute: () -> nil
+    def type: () -> :issue
+  end
+end

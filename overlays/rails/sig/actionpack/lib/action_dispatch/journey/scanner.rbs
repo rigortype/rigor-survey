@@ -1,0 +1,9 @@
+module ActionDispatch
+  module Journey
+    class Scanner
+      def scan_setup: (untyped) -> ActionDispatch::Journey::Scanner::Scanner
+      class Scanner < ::StringScanner
+      end
+    end
+  end
+end

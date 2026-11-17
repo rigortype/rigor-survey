@@ -1,0 +1,5 @@
+module ActiveSupport
+  class LogSubscriber < ::ActiveSupport::Subscriber
+    def self.logger=: (untyped) -> (false | true)
+  end
+end

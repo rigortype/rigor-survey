@@ -1,0 +1,13 @@
+module Captcha
+  class CaptchaVerificationService
+    def initialize: (spam_params: untyped) -> void
+    def execute: () -> (false | true)
+    def request: () -> Captcha::CaptchaVerificationService::RequestStruct
+    class RequestStruct < ::Struct[untyped]
+      def remote_ip: () -> untyped
+      def remote_ip=: (untyped) -> untyped
+      def self.new: (?remote_ip: untyped) -> instance | (?untyped remote_ip) -> instance
+      def self.[]: (?remote_ip: untyped) -> instance | (?untyped remote_ip) -> instance
+    end
+  end
+end

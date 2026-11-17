@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        class Lexer
+          def self.lexemes: () -> [singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::ParenthesisOpen), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::ParenthesisClose), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Input), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Variable), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::String), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Pattern), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Null), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Boolean), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Equals), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Matches), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::NotEquals), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::NotMatches), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::And), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Or), singleton(Gitlab::Ci::Pipeline::Expression::Lexeme::Not)]
+          def initialize: (untyped, ?max_tokens: Integer) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module ActiveRecord
+  class PredicateBuilder
+    class RangeHandler
+      def initialize: (untyped) -> void
+      class RangeWithBinds < ::Struct[untyped]
+        def begin: () -> untyped
+        def end: () -> untyped
+        def exclude_end?: () -> untyped
+        def begin=: (untyped) -> untyped
+        def end=: (untyped) -> untyped
+      end
+    end
+  end
+end

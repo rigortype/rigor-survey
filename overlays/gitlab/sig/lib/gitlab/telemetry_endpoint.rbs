@@ -1,0 +1,11 @@
+module Gitlab
+  module TelemetryEndpoint
+    def self.service_ping_url: () -> ("https://gitlab-org-gitlab-services-version-gitlab-com-staging.version-staging.gitlab.org" | "https://version.gitlab.com" | String)
+    def self.version_check_url: () -> ("https://gitlab-org-gitlab-services-version-gitlab-com-staging.version-staging.gitlab.org" | "https://version.gitlab.com" | String)
+    def self.default_url: () -> ("https://gitlab-org-gitlab-services-version-gitlab-com-staging.version-staging.gitlab.org" | "https://version.gitlab.com")
+    def self.log_configuration: () -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    def self.service_ping_consequence: () -> ("Service Ping is sent there" | "Service Ping may be sent there, unless the licence requires it")
+    def self.log_override: (untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    def self.override: (untyped) -> (String | nil)
+  end
+end

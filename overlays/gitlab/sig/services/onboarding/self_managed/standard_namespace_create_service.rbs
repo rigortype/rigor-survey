@@ -1,0 +1,8 @@
+module Onboarding
+  module SelfManaged
+    class StandardNamespaceCreateService
+      def initialize: (untyped, group_params: untyped, project_params: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

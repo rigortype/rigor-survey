@@ -1,0 +1,8 @@
+module Gitlab
+  module SlashCommands
+    class VerifyRequest
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def valid?: () -> (false | true)
+    end
+  end
+end

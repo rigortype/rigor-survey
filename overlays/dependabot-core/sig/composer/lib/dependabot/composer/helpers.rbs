@@ -1,0 +1,14 @@
+module Dependabot
+  module Composer
+    module Helpers
+      def self.composer_version: (untyped, ?untyped) -> "2"
+      def self.out_of_memory_error?: (untyped) -> (false | true)
+      def self.dependency_url_from_git_clone_error: (untyped) -> (String | nil)
+      def self.extract_and_clean_dependency_url: (untyped, untyped) -> (String | nil)
+      def self.package_manager_run_command: (untyped, ?fingerprint: untyped) -> String
+      def self.fetch_composer_and_php_versions: () -> ({ composer: String | nil, php: String | nil } | {})
+      def self.capture_platform_php: (untyped) -> (String | nil)
+      def self.php_constraint: (untyped) -> (String | nil)
+    end
+  end
+end

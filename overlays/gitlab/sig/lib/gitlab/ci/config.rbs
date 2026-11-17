@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class Config
+      def initialize: (untyped, ?project: untyped, ?pipeline: untyped, ?sha: untyped, ?ref: untyped, ?user: untyped, ?parent_pipeline: untyped, ?source: untyped, ?pipeline_config: untyped, ?logger: untyped, ?inject_edge_stages: (false | true), ?pipeline_policy_context: untyped, ?inputs: untyped) -> void
+      def metadata: () -> { includes: untyped, merged_yaml: Proc }
+      def inject_edge_stages: () -> false
+    end
+  end
+end

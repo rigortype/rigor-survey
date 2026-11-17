@@ -1,0 +1,10 @@
+module Gitlab
+  module Git
+    class LfsPointerFile
+      def initialize: (untyped) -> void
+      def pointer: () -> String
+      def sha256: () -> String
+      def inspect: () -> String
+    end
+  end
+end

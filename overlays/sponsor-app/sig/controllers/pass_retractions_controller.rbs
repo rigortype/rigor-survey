@@ -1,0 +1,5 @@
+class PassRetractionsController < ::ApplicationController
+  def new: () -> void
+  def create: () -> void
+  def show: () -> void
+end

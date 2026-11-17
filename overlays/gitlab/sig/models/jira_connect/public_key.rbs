@@ -1,0 +1,9 @@
+module JiraConnect
+  class PublicKey
+    def self.create!: (key: untyped) -> JiraConnect::PublicKey
+    def initialize: (key: untyped, uuid: String) -> void
+    def save!: () -> JiraConnect::PublicKey
+    def self.redis_key: (untyped) -> String
+    def uuid: () -> "123"
+  end
+end

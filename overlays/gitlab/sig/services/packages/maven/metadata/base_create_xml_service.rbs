@@ -1,0 +1,9 @@
+module Packages
+  module Maven
+    module Metadata
+      class BaseCreateXmlService
+        def initialize: (metadata_content: untyped, package: untyped, ?logger: untyped) -> void
+      end
+    end
+  end
+end

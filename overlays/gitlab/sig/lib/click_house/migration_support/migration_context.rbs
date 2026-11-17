@@ -1,0 +1,11 @@
+module ClickHouse
+  module MigrationSupport
+    class MigrationContext
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+    class MigrationProxy
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      def basename: () -> String
+    end
+  end
+end

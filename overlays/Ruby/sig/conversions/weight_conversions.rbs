@@ -1,0 +1,8 @@
+module WeightConversion
+  def self.kilogram_to_gram: (untyped) -> String
+  def self.gram_to_kilogram: (untyped) -> String
+  def self.pound_to_ounce: (untyped) -> String
+  def self.ounce_to_pound: (untyped) -> String
+  def self.kilogram_to_pound: (untyped) -> String
+  def self.pound_to_kilogram: (untyped) -> String
+end

@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module ImportGithubHelpers
+      def client: () -> Gitlab::GithubImport::Client
+      def access_params: () -> { github_access_token: untyped }
+      def provider: () -> :github
+    end
+  end
+end

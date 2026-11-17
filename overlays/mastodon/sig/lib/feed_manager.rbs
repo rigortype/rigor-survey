@@ -1,0 +1,10 @@
+class FeedManager
+  def key: (untyped, untyped, ?untyped) -> String
+  def filter: (untyped, untyped, untyped) -> (:filter | :skip_home | nil)
+  def filter?: (untyped, untyped, untyped) -> (false | true)
+  def push_to_home: (untyped, untyped, ?update: untyped) -> (false | true)
+  def unpush_from_home: (untyped, untyped, ?update: untyped) -> (false | true)
+  def push_to_list: (untyped, untyped, ?update: untyped) -> (false | true)
+  def unpush_from_list: (untyped, untyped, ?update: untyped) -> (false | true)
+  def clean_feeds!: (untyped, untyped) -> nil
+end

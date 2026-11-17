@@ -1,0 +1,4 @@
+class LfsObject < ::ApplicationRecord
+  def self.for_oid_and_size: (untyped, untyped) -> (LfsObject | nil)
+  def self.not_linked_to_project: (untyped, ?repository_type: untyped) -> ActiveRecord::Relation[LfsObject]
+end

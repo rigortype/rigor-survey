@@ -1,0 +1,9 @@
+module Ci
+  module ClickHouse
+    module DataIngestion
+      class FinishedPipelinesSyncService
+        def initialize: (?worker_index: untyped, ?total_workers: Integer, ?logger: untyped) -> void
+      end
+    end
+  end
+end

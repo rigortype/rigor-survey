@@ -1,0 +1,6 @@
+class Tag < ::ApplicationRecord
+  def formatted_name: () -> String
+  def history: () -> Trends::History
+  def to_log_human_identifier: () -> String
+  def self.matching_name: (untyped) -> ActiveRecord::Relation[Tag]
+end

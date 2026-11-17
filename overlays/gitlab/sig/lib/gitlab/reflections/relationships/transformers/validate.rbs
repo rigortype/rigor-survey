@@ -1,0 +1,11 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Transformers
+        class Validate
+          def initialize: ([untyped, untyped, untyped] | [untyped, untyped] | []) -> void
+        end
+      end
+    end
+  end
+end

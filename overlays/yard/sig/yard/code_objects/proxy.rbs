@@ -1,0 +1,16 @@
+module YARD
+  module CodeObjects
+    class Proxy
+      def self.===: (untyped) -> (false | true)
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def inspect: () -> ("nil" | String)
+      def is_a?: (untyped) -> (false | nil | true)
+      def hash: () -> Integer
+      def instance_of?: (untyped) -> (false | true)
+      def kind_of?: (untyped) -> (false | nil | true)
+      def root?: () -> false
+    end
+    class ProxyMethodError < ::NoMethodError[untyped]
+    end
+  end
+end

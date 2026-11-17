@@ -1,0 +1,11 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Handlers
+        class PolymorphicHasAssociationHandler < ::Gitlab::Reflections::Relationships::Handlers::BaseHandler
+          def relationship_attributes: () -> { parent_table: untyped, child_table: nil, primary_key: untyped, foreign_key: String, relationship_type: "one_to_many" | "one_to_one" | nil, polymorphic: true, polymorphic_type_column: String, polymorphic_name: untyped, parent_association: { name: untyped, type: untyped, model: untyped } }
+        end
+      end
+    end
+  end
+end

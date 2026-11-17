@@ -1,0 +1,8 @@
+module Arel
+  module Collectors
+    class PlainString
+      def value: () -> String
+      def <<: (untyped) -> Arel::Collectors::PlainString
+    end
+  end
+end

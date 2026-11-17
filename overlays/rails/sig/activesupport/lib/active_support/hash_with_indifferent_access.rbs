@@ -1,0 +1,14 @@
+module ActiveSupport
+  class HashWithIndifferentAccess < ::Hash
+    def extractable_options?: () -> true
+    def with_indifferent_access: () -> ActiveSupport::HashWithIndifferentAccess
+    def nested_under_indifferent_access: () -> ActiveSupport::HashWithIndifferentAccess
+    def initialize: (?untyped) -> void
+    def self.[]: (*untyped) -> ActiveSupport::HashWithIndifferentAccess
+    def update: (*untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::HashWithIndifferentAccess
+    def dup: () -> ActiveSupport::HashWithIndifferentAccess
+    def except: (*untyped) -> ActiveSupport::HashWithIndifferentAccess
+    def to_options!: () -> ActiveSupport::HashWithIndifferentAccess
+    def slice: (*untyped) -> ActiveSupport::HashWithIndifferentAccess
+  end
+end

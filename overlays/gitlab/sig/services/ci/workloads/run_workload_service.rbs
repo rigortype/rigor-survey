@@ -1,0 +1,8 @@
+module Ci
+  module Workloads
+    class RunWorkloadService
+      def initialize: (project: untyped, current_user: untyped, source: untyped, workload_definition: untyped, ?ref: untyped, ?ci_variables_included: [String, String, String], ?duo_workflow_definition: String) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

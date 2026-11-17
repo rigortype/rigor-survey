@@ -1,0 +1,16 @@
+module Gitlab
+  module Mcp
+    class ClientInfo
+      def self.from_request: (untyped, user_agent: untyped) -> (Gitlab::Mcp::ClientInfo | nil)
+      def self.declared: (untyped) -> (Gitlab::Mcp::ClientInfo | nil)
+      def self.from_declared: (untyped) -> (Gitlab::Mcp::ClientInfo | nil)
+      def self.from_user_agent: (untyped) -> (Gitlab::Mcp::ClientInfo | nil)
+      def self.build: (untyped, untyped) -> (Gitlab::Mcp::ClientInfo | nil)
+      def self.sanitize: (untyped) -> (String | nil)
+      def initialize: (name: String, ?version: String) -> void
+      def to_h: () -> Hash[untyped, untyped]
+      def name: () -> ("Cursor" | "GitLab-Workhorse-Mcp-Client")
+      def version: () -> "1.0.0"
+    end
+  end
+end

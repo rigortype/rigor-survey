@@ -1,0 +1,8 @@
+module Admin
+  class ServerCheck < ::ApplicationRecord
+    class NoopRunner
+      def async?: () -> false
+      def authorized?: (*untyped) -> false
+    end
+  end
+end

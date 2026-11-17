@@ -1,0 +1,3 @@
+module SignatureType
+  def type: () -> bot
+end

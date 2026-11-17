@@ -1,0 +1,3 @@
+module AuthSourcesHelper
+  def auth_source_partial_name: (untyped) -> String
+end

@@ -1,0 +1,4 @@
+module MirrorAuthentication
+  def ssh_known_hosts_verified_by: () -> (User | nil)
+  def ssh_known_hosts_fingerprints: () -> Array[SshHostKey::Fingerprint]
+end

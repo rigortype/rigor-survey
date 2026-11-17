@@ -1,0 +1,11 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class BzlFileFetcher
+        def initialize: (module_file: untyped, fetcher: untyped) -> void
+        def fetch_bzl_files: () -> Array[::DependencyFile]
+        def visited_bzl_files: () -> Set[untyped]
+      end
+    end
+  end
+end

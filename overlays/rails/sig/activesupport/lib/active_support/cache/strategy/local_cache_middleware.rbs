@@ -1,0 +1,12 @@
+module ActiveSupport
+  module Cache
+    module Strategy
+      module LocalCache
+        class Middleware
+          def initialize: (untyped, untyped) -> void
+          def new: (untyped) -> ActiveSupport::Cache::Strategy::LocalCache::Middleware
+        end
+      end
+    end
+  end
+end

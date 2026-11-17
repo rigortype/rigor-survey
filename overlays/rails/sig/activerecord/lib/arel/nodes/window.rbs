@@ -1,0 +1,13 @@
+module Arel
+  module Nodes
+    class Window < ::Arel::Nodes::Node
+      def order: (*untyped) -> Arel::Nodes::Window
+      def partition: (*untyped) -> Arel::Nodes::Window
+      def rows: (?untyped) -> Arel::Nodes::Rows
+      def range: (?untyped) -> Arel::Nodes::Range
+    end
+    class NamedWindow < ::Arel::Nodes::Window
+      def initialize: (untyped) -> void
+    end
+  end
+end

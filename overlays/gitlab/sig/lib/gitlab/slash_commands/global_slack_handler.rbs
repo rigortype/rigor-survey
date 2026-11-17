@@ -1,0 +1,7 @@
+module Gitlab
+  module SlashCommands
+    class GlobalSlackHandler
+      def initialize: (untyped) -> void
+    end
+  end
+end

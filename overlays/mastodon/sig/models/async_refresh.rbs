@@ -1,0 +1,8 @@
+class AsyncRefresh
+  def self.find: (untyped) -> (AsyncRefresh | nil)
+  def self.create: (untyped, ?count_results: untyped) -> AsyncRefresh
+  def initialize: (untyped) -> void
+  def finish!: () -> "finished"
+  def reload: () -> AsyncRefresh
+  def to_json: (untyped) -> String
+end

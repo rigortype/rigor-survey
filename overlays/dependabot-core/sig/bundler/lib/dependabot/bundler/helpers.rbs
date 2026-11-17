@@ -1,0 +1,12 @@
+module Dependabot
+  module Bundler
+    module Helpers
+      def self.detected_bundler_version: (untyped) -> ("unknown" | "unspecified" | String)
+      def self.dependency_requirement: (untyped, untyped) -> (Dependabot::Bundler::Requirement | nil)
+      def self.combined_dependency_constraints: (untyped, untyped) -> Array[String]
+      def self.ruby_version_regex: (untyped) -> (Regexp | nil)
+      def self.gemfile_dependency_regex: (untyped) -> Regexp
+      def self.gemspec_dependency_regex: (untyped) -> Regexp
+    end
+  end
+end

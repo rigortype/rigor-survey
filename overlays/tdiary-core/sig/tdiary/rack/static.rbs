@@ -1,0 +1,7 @@
+module TDiary
+  module Rack
+    class Static
+      def initialize: (Proc, [String, String] | [String]) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module DataBuilder
+    module ResourceAccessTokenPayload
+      def build: (untyped, untyped, untyped, ?untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

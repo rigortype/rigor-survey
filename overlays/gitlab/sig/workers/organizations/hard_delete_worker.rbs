@@ -1,0 +1,5 @@
+module Organizations
+  class HardDeleteWorker
+    def perform: (untyped, untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  end
+end

@@ -1,0 +1,4 @@
+class CustomEmojiFilter
+  def initialize: (untyped) -> void
+  def results: () -> ActiveRecord::Relation[CustomEmoji]
+end

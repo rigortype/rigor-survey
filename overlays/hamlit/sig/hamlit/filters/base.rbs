@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Base
+      def initialize: (?untyped) -> void
+    end
+  end
+end

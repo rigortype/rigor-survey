@@ -1,0 +1,7 @@
+module Gitlab
+  module Redis
+    class ClusterStore < ::Redis::Cluster
+      def initialize: (?untyped) -> void
+    end
+  end
+end

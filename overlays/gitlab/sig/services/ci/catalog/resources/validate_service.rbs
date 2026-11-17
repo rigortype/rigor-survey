@@ -1,0 +1,11 @@
+module Ci
+  module Catalog
+    module Resources
+      class ValidateService
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> ServiceResponse
+        def errors: () -> Array[untyped]
+      end
+    end
+  end
+end

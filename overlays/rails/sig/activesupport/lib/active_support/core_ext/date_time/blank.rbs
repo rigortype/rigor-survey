@@ -1,0 +1,4 @@
+class DateTime
+  def blank?: () -> false
+  def present?: () -> true
+end

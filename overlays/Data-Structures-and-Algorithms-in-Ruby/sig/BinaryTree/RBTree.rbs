@@ -1,0 +1,12 @@
+class RBTree
+  def printTree: () -> nil
+  def printTreeUtil: (untyped, untyped, untyped) -> nil
+  def insert: (untyped) -> (nil | true)
+  def fixRedRed: (untyped) -> (nil | true)
+  def delete: (untyped) -> (false | nil)
+  def deleteUtil: (untyped, untyped) -> (false | nil)
+  def fixDoubleBlack: (untyped) -> (false | nil)
+  class Node
+    def initialize: (untyped, untyped) -> void
+  end
+end

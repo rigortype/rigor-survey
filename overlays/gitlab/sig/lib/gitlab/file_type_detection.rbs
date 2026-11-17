@@ -1,0 +1,14 @@
+module Gitlab
+  module FileTypeDetection
+    def image?: () -> (false | true)
+    def image_safe_for_scaling?: () -> (false | true)
+    def video?: () -> (false | true)
+    def audio?: () -> (false | true)
+    def pdf?: () -> (false | true)
+    def embeddable?: () -> (false | true)
+    def dangerous_image?: () -> (false | true)
+    def dangerous_video?: () -> (false | true)
+    def dangerous_audio?: () -> (false | true)
+    def dangerous_embeddable?: () -> (false | true)
+  end
+end

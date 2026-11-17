@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Linear
+      def supports_data_fields?: () -> false
+    end
+  end
+end

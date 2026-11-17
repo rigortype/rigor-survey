@@ -1,0 +1,10 @@
+module Gitlab
+  module LegacyGithubImport
+    class IssuableFormatter < ::Gitlab::LegacyGithubImport::BaseFormatter
+      def project_association: () -> bot
+      def find_condition: () -> { iid: untyped }
+      def project_assignee_association: () -> bot
+      def contributing_assignee_formatters: () -> bot
+    end
+  end
+end

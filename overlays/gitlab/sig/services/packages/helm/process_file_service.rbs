@@ -1,0 +1,7 @@
+module Packages
+  module Helm
+    class ProcessFileService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

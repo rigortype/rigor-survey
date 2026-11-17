@@ -1,0 +1,15 @@
+module Gitaly
+  class Server
+    def initialize: (String) -> void
+    def server_signature_error?: () -> (false | true)
+    def storage: () -> "default"
+    class ServerSignature < ::Struct[untyped]
+      def public_key: () -> untyped
+      def error: () -> untyped
+      def public_key=: (untyped) -> untyped
+      def error=: (untyped) -> untyped
+      def self.new: (?public_key: untyped, ?error: untyped) -> instance
+      def self.[]: (?public_key: untyped, ?error: untyped) -> instance
+    end
+  end
+end

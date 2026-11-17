@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module SizeLimiter
+      class Compressor
+        def self.compress: (untyped, untyped) -> String
+        def self.validate_args!: (untyped) -> nil
+      end
+    end
+  end
+end

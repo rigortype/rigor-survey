@@ -1,0 +1,9 @@
+module SystemCheck
+  module App
+    class UploadsPathTmpPermissionCheck < ::SystemCheck::BaseCheck
+      def skip?: () -> (false | true)
+      def check?: () -> (false | true)
+      def show_error: () -> nil
+    end
+  end
+end

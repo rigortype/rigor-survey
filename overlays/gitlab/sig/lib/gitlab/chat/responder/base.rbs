@@ -1,0 +1,10 @@
+module Gitlab
+  module Chat
+    module Responder
+      class Base
+        def initialize: (untyped) -> void
+        def scheduled_output: () -> bot
+      end
+    end
+  end
+end

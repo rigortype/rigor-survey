@@ -1,0 +1,14 @@
+module Dependabot
+  module Bundler
+    class FileParser < ::Dependabot::FileParsers::Base
+      module HelperDependencies
+        def self.from_gemfile_result: (untyped, file: untyped) -> Array[Dependabot::Bundler::FileParser::HelperDependencies::GemfileDependency]
+        def self.from_gemspec_result: (untyped, file: untyped) -> Array[Dependabot::Bundler::FileParser::HelperDependencies::GemspecDependency]
+        def self.object: (untyped, untyped) -> Hash[untyped, untyped]
+        def self.array: (untyped, untyped) -> Array[Object]
+        def self.string: (untyped, untyped) -> String
+        def self.strings: (untyped, untyped) -> Array[String]
+      end
+    end
+  end
+end

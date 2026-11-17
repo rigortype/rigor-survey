@@ -1,0 +1,3 @@
+module JiraConnectHelper
+  def jira_connect_app_data: (untyped, untyped) -> { groups_path: untyped, subscriptions: untyped, subscriptions_path: untyped, gitlab_user_path: untyped, oauth_metadata: String, public_key_storage_enabled: untyped }
+end

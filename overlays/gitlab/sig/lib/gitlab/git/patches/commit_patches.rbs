@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    module Patches
+      class CommitPatches
+        def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

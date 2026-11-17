@@ -1,0 +1,8 @@
+module Dependabot
+  module FileUpdaters
+    class ArtifactUpdater
+      def initialize: (repo_contents_path: untyped, target_directory: untyped) -> void
+      def updated_files: (base_directory: untyped, ?only_paths: untyped) -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

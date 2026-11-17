@@ -1,0 +1,6 @@
+module BulkImports
+  class GetImportableDataService
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> { version_validation: { features: { project_migration: { available: untyped, min_version: untyped }, source_instance_version: untyped } }, response: untyped }
+  end
+end

@@ -1,0 +1,7 @@
+module Namespaces
+  class UpdateDenormalizedDescendantsService
+    def initialize: (namespace_id: untyped) -> void
+    def execute: () -> (:not_updated_due_to_lock_timeout | :not_updated_due_to_optimistic_lock | :processed | nil)
+    def execute_with_optimistic_locking: () -> (:not_updated_due_to_lock_timeout | :not_updated_due_to_optimistic_lock | :processed | nil)
+  end
+end

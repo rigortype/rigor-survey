@@ -1,0 +1,7 @@
+module Gitlab
+  module QuickActions
+    class SubstitutionDefinition < ::Gitlab::QuickActions::CommandDefinition
+      def noop?: () -> true
+    end
+  end
+end

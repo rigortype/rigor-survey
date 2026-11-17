@@ -1,0 +1,7 @@
+module WorkItems
+  module Callbacks
+    class AwardEmoji < ::WorkItems::Callbacks::Base
+      def before_update: () -> nil
+    end
+  end
+end

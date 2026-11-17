@@ -1,0 +1,12 @@
+module Import
+  module Framework
+    class DestinationValidator
+      def initialize: (current_user: untyped) -> void
+      def validate!: (untyped, untyped, untyped, untyped) -> nil
+      def validate_destination_namespace!: (untyped, untyped) -> nil
+      def validate_destination_slug!: (untyped) -> nil
+      def validate_destination_full_path_in_batch!: (untyped, untyped) -> nil
+      def validate_destination_full_path!: (untyped, untyped, untyped, untyped) -> nil
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class TwoFactorAuthVerifier
+      def initialize: (untyped, ?untyped, ?treat_email_otp_as_2fa: untyped) -> void
+      def two_factor_authentication_reason: () -> (:admin_2fa | :global | :group | false)
+    end
+  end
+end

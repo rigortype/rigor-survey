@@ -1,0 +1,8 @@
+module API
+  class API < ::API::Base
+    def clone: () -> singleton(::API::API)
+    class MovedPermanentlyError < ::StandardError
+      def initialize: (untyped) -> void
+    end
+  end
+end

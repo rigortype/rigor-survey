@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class StatsCache
+      def initialize: (cachable_key: untyped) -> void
+    end
+  end
+end

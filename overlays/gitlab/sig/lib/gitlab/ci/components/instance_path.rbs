@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Components
+      class InstancePath
+        def self.fqdn_prefix: () -> String
+        def initialize: (address: untyped, ?logger: untyped, ?pipeline_policy_context: untyped) -> void
+        def template_file_paths: () -> [String, String]
+      end
+    end
+  end
+end

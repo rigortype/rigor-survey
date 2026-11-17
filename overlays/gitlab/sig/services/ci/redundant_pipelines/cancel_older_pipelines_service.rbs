@@ -1,0 +1,9 @@
+module Ci
+  module RedundantPipelines
+    class CancelOlderPipelinesService
+      def self.for: (untyped) -> Ci::RedundantPipelines::CancelOlderPipelinesService
+      def initialize: (untyped, policy: untyped, cache: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

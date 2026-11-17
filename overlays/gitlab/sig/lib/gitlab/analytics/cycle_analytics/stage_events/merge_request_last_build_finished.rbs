@@ -1,0 +1,13 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class MergeRequestLastBuildFinished < ::Gitlab::Analytics::CycleAnalytics::StageEvents::MetricsBasedStageEvent
+          def self.identifier: () -> :merge_request_last_build_finished
+          def object_type: () -> singleton(MergeRequest)
+          def column_list: () -> [untyped]
+        end
+      end
+    end
+  end
+end

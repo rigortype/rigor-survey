@@ -1,0 +1,12 @@
+module Dependabot
+  class Source
+    def self.from_url: (untyped) -> (Dependabot::Source | ::Source | nil)
+    def self.github_enterprise_from_url: (untyped) -> (Dependabot::Source | nil)
+    def self.detect_github_enterprise: (untyped) -> (false | nil | true)
+    def initialize: (provider: untyped, repo: untyped, ?directory: untyped, ?directories: untyped, ?branch: untyped, ?commit: untyped, ?hostname: untyped, ?api_endpoint: untyped) -> void
+    def url: () -> String
+    def url_with_directory: () -> String
+    def project: () -> String
+    def unscoped_repo: () -> String
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Audit
+    class Auditor
+      def initialize: (?untyped) -> void
+      def authentication_event_payload: () -> { user: untyped, user_name: untyped, ip_address: untyped, result: untyped, provider: untyped, organization: untyped }
+    end
+  end
+end

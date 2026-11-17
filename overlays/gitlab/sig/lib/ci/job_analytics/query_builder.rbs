@@ -1,0 +1,7 @@
+module Ci
+  module JobAnalytics
+    class QueryBuilder
+      def initialize: (project: untyped, current_user: untyped, ?options: untyped) -> void
+    end
+  end
+end

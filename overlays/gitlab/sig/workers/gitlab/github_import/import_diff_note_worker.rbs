@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class ImportDiffNoteWorker
+      def representation_class: () -> singleton(Gitlab::GithubImport::Representation::DiffNote)
+      def importer_class: () -> singleton(Gitlab::GithubImport::Importer::DiffNoteImporter)
+      def object_type: () -> :diff_note
+    end
+  end
+end

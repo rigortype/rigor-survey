@@ -1,0 +1,6 @@
+class Jbuilder
+  def initialize: (?key_formatter: Integer, ?ignore_nil: Integer, ?deep_format_keys: untyped) ?{ (*untyped) -> untyped } -> void
+  def key_format!: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Jbuilder::KeyFormatter
+  def self.key_format: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Jbuilder::KeyFormatter
+  def nil!: () -> nil
+end

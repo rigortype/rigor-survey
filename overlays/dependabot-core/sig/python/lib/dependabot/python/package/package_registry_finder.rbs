@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    module Package
+      class PackageRegistryFinder
+        def initialize: (dependency_files: untyped, credentials: untyped, dependency: untyped) -> void
+        def registry_urls: () -> Array[untyped]
+      end
+    end
+  end
+end

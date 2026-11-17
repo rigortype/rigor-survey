@@ -1,0 +1,19 @@
+module Dependabot
+  class Service
+    def initialize: (client: untyped) -> void
+    def errors: () -> Array[untyped]
+    def fetch_blocked_versions: (untyped) -> Array[Hash[String, Object]]
+    def wait_for_calls_to_finish: () -> (Array[Thread] | nil)
+    def create_pull_request: (untyped, untyped) -> Array[untyped]
+    def update_pull_request: (untyped, untyped) -> Array[untyped]
+    def close_pull_request: (untyped, untyped) -> Array[untyped]
+    def noop?: () -> (false | true)
+    def failure?: () -> (false | true)
+    def summary: () -> (String | nil)
+    def pull_requests: () -> Array[PullRequestResult]
+    def workflow_summary: () -> Dependabot::WorkflowSummary
+    class ErrorRecord < ::T::ImmutableStruct
+      def to_result: () -> [untyped, untyped, untyped]
+    end
+  end
+end

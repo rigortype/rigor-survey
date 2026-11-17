@@ -1,0 +1,10 @@
+module Redmine
+  module WikiToolbar
+    def self.menus: () -> ["table", "precode"]
+    def self.label_for: (untyped) -> (:label_wiki_toolbar_code | :label_wiki_toolbar_deleted | :label_wiki_toolbar_heading_1 | :label_wiki_toolbar_heading_2 | :label_wiki_toolbar_heading_3 | :label_wiki_toolbar_help | :label_wiki_toolbar_image | :label_wiki_toolbar_italic | :label_wiki_toolbar_ordered_list | :label_wiki_toolbar_preformatted_code | :label_wiki_toolbar_preformatted_text | :label_wiki_toolbar_quote | :label_wiki_toolbar_strong | :label_wiki_toolbar_table | :label_wiki_toolbar_task_list | :label_wiki_toolbar_underline | :label_wiki_toolbar_unordered_list | :label_wiki_toolbar_unquote | :label_wiki_toolbar_wiki_link | Symbol)
+    def self.shortcut_for: (untyped) -> ("b" | "i" | "u" | nil)
+    module Helper
+      def heads_for_wiki_formatter: () -> (nil | true)
+    end
+  end
+end

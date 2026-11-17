@@ -1,0 +1,9 @@
+module RbNaCl
+  module SecretBoxes
+    class XSalsa20Poly1305
+      def initialize: (untyped) -> void
+      def box: (untyped, untyped) -> (String | nil)
+      def open: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Coffee < ::Hamlit::Filters::TiltBase
+      def compile: (untyped) -> Array[untyped]
+    end
+  end
+end

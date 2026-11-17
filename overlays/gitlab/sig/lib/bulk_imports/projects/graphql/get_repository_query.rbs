@@ -1,0 +1,9 @@
+module BulkImports
+  module Projects
+    module Graphql
+      class GetRepositoryQuery
+        def to_s: () -> "          query($full_path: ID!) {\n            project(fullPath: $full_path) {\n              httpUrlToRepo\n            }\n          }\n"
+      end
+    end
+  end
+end

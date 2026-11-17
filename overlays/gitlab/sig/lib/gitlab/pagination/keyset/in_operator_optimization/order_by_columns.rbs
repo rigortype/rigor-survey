@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        class OrderByColumns
+          def initialize: (untyped, untyped) -> void
+          def cursor_values: (untyped) -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

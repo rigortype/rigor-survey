@@ -1,0 +1,8 @@
+module Google
+  module Protobuf
+    class DescriptorPool
+      def add_serialized_file: (untyped) -> Google::Protobuf::FileDescriptor
+      def self.generated_pool: () -> Google::Protobuf::DescriptorPool
+    end
+  end
+end

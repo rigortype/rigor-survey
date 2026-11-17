@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class IssueImporter
+        def initialize: (untyped, untyped, untyped) -> void
+        def import_attributes: () -> { iid: untyped, title: untyped, author_id: untyped, assignee_ids: untyped, project_id: untyped, namespace_id: untyped, description: untyped, milestone_id: untyped, state_id: untyped, created_at: untyped, updated_at: untyped, work_item_type_id: untyped, imported_from: :github }
+        def user_finder: () -> Gitlab::GithubImport::UserFinder
+        def milestone_finder: () -> Gitlab::GithubImport::MilestoneFinder
+        def issuable_finder: () -> Gitlab::GithubImport::IssuableFinder
+      end
+    end
+  end
+end

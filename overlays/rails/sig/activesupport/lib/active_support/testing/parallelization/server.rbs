@@ -1,0 +1,15 @@
+module ActiveSupport
+  module Testing
+    class Parallelization
+      class PrerecordResultClass < ::Struct[untyped]
+        def name: () -> untyped
+        def name=: (untyped) -> untyped
+        def self.new: (?name: untyped) -> instance | (?untyped name) -> instance
+        def self.[]: (?name: untyped) -> instance | (?untyped name) -> instance
+      end
+      class Server
+        def initialize: (distributor: untyped) -> void
+      end
+    end
+  end
+end

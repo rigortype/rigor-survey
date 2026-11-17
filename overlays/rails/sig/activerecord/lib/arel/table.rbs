@@ -1,0 +1,18 @@
+module Arel
+  class Table
+    def initialize: (?name: untyped, ?as: untyped, ?klass: untyped, ?type_caster: untyped) -> void
+    def alias: (?untyped) -> Arel::Nodes::TableAlias
+    def from: () -> Arel::SelectManager
+    def join: (untyped, ?untyped) -> Arel::SelectManager
+    def outer_join: (untyped) -> Arel::SelectManager
+    def group: (*untyped) -> Arel::SelectManager
+    def order: (*untyped) -> Arel::SelectManager
+    def where: (untyped) -> Arel::SelectManager
+    def project: (*untyped) -> Arel::SelectManager
+    def take: (untyped) -> Arel::SelectManager
+    def skip: (untyped) -> Arel::SelectManager
+    def having: (untyped) -> Arel::SelectManager
+    def hash: () -> Integer
+    def able_to_type_cast?: () -> (false | true)
+  end
+end

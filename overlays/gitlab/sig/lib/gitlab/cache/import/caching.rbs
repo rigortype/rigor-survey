@@ -1,0 +1,11 @@
+module Gitlab
+  module Cache
+    module Import
+      module Caching
+        def self.write_if_greater: (untyped, untyped, ?timeout: untyped) -> (false | true)
+        def self.cache_key_for: (untyped) -> String
+        def self.validate_redis_value!: (untyped) -> nil
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Banzai
+  module Filter
+    module Concerns
+      module AssetProxying
+        def asset_proxy_url: (untyped) -> String
+        def can_skip_asset_proxy_for_url?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

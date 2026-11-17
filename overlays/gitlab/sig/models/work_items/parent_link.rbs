@@ -1,0 +1,6 @@
+module WorkItems
+  class ParentLink < ::ApplicationRecord
+    def self.relative_positioning_query_base: (untyped) -> ActiveRecord::Relation[WorkItems::ParentLink]
+    def self.relative_positioning_parent_column: () -> :work_item_parent_id
+  end
+end

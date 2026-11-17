@@ -1,0 +1,13 @@
+module Analytics
+  module CycleAnalytics
+    class IssueStageEvent < ::ApplicationRecord
+      def self.project_column: () -> :project_id
+      def self.issuable_id_column: () -> :issue_id
+      def self.issuable_model: () -> singleton(Issue)
+      def self.select_columns: () -> Array[untyped]
+      def self.column_list: () -> Array[untyped]
+      def self.insert_column_list: () -> Array[untyped]
+      def self.assignees_model: () -> singleton(IssueAssignee)
+    end
+  end
+end

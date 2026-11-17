@@ -1,0 +1,5 @@
+module Import
+  class SourceUsersFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

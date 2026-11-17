@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class Page
+        def initialize: (?order_by: untyped, ?lower_bounds: untyped, ?per_page: untyped) -> void
+        def next: (untyped) -> Gitlab::Pagination::Keyset::Page
+      end
+    end
+  end
+end

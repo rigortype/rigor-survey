@@ -1,0 +1,7 @@
+module Packages
+  module Conan
+    class PackagePresenter
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    end
+  end
+end

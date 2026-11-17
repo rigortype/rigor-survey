@@ -1,0 +1,11 @@
+module ActionView
+  class Digestor
+    class Node
+      def self.create: (untyped, untyped, untyped, untyped) -> (ActionView::Digestor::Node | ActionView::Digestor::Partial)
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    end
+    class Missing < ::ActionView::Digestor::Node
+      def digest: (untyped, ?untyped) -> ""
+    end
+  end
+end

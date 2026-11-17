@@ -1,0 +1,8 @@
+module Gitlab
+  module EventStore
+    class Event
+      def initialize: (data: untyped) -> void
+      def schema: () -> bot
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Nix
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::Nix::Requirement]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

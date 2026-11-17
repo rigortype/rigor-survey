@@ -1,0 +1,7 @@
+module Gitlab
+  module Usage
+    class Metric
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Behaviour
+      class Supervising < ::Concurrent::Actor::Behaviour::Abstract
+        def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

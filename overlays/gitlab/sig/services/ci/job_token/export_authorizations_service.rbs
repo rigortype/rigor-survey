@@ -1,0 +1,8 @@
+module Ci
+  module JobToken
+    class ExportAuthorizationsService
+      def initialize: (current_user: untyped, accessed_project: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Google
+  module Protobuf
+    def self.interpreter_supports_non_finalized_keys_in_weak_map?: () -> (false | true)
+    def self.cache_implementation: () -> (singleton(Google::Protobuf::Internal::LegacyObjectCache) | singleton(Google::Protobuf::Internal::ObjectCache))
+  end
+end

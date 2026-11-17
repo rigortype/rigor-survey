@@ -1,0 +1,17 @@
+module Containers
+  class KDTree
+    def initialize: (Hash[untyped, [untyped, untyped]] | Hash[Integer, [Integer, Integer]]) -> void
+    class Node < ::Struct[untyped]
+      def id: () -> untyped
+      def coords: () -> untyped
+      def left: () -> untyped
+      def right: () -> untyped
+      def id=: (untyped) -> untyped
+      def coords=: (untyped) -> untyped
+      def left=: (untyped) -> untyped
+      def right=: (untyped) -> untyped
+      def self.new: (?id: untyped, ?coords: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped id, ?untyped coords, ?untyped left, ?untyped right) -> instance
+      def self.[]: (?id: untyped, ?coords: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped id, ?untyped coords, ?untyped left, ?untyped right) -> instance
+    end
+  end
+end

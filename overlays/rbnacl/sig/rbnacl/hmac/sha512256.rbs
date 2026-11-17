@@ -1,0 +1,9 @@
+module RbNaCl
+  module HMAC
+    class SHA512256 < ::RbNaCl::Auth
+      def initialize: (untyped) -> void
+      def digest: () -> String
+      def hexdigest: () -> (Float | Integer | String | nil)
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module PyCall
+  class IterableWrapper
+    def initialize: (untyped) -> void
+    def each: () -> (Enumerator[untyped, untyped] | nil)
+  end
+end

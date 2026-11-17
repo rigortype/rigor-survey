@@ -1,0 +1,15 @@
+module Mail
+  module Parsers
+    module ContentLocationParser
+      def self.parse: (untyped) -> Mail::Parsers::ContentLocationParser::ContentLocationStruct
+      class ContentLocationStruct < ::Struct[untyped]
+        def location: () -> untyped
+        def error: () -> untyped
+        def location=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?location: untyped, ?error: untyped) -> instance | (?untyped location, ?untyped error) -> instance
+        def self.[]: (?location: untyped, ?error: untyped) -> instance | (?untyped location, ?untyped error) -> instance
+      end
+    end
+  end
+end

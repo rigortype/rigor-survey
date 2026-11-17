@@ -1,0 +1,8 @@
+module Ml
+  class UpdateModelService
+    def initialize: (untyped, untyped) -> void
+    def execute: () -> ServiceResponse
+    def success: (untyped) -> ServiceResponse
+    def error: (untyped) -> ServiceResponse
+  end
+end

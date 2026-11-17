@@ -1,0 +1,9 @@
+module Admin
+  class SponsorEventsController < ::Admin::ApplicationController
+    def index: () -> void
+    def show: () -> void
+    def edit: () -> void
+    def download_asset: () -> void
+    def update: () -> void
+  end
+end

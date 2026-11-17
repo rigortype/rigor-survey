@@ -1,0 +1,7 @@
+module ActiveModel
+  module Type
+    class BigInteger < ::ActiveModel::Type::Integer
+      def serializable?: (untyped) ?{ (*untyped) -> untyped } -> true
+    end
+  end
+end

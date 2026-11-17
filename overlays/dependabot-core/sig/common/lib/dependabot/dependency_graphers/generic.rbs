@@ -1,0 +1,7 @@
+module Dependabot
+  module DependencyGraphers
+    class Generic < ::Dependabot::DependencyGraphers::Base
+      def relevant_dependency_file: () -> Dependabot::DependencyFile
+    end
+  end
+end

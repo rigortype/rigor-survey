@@ -1,0 +1,8 @@
+module Haml
+  class Compiler
+    class DoctypeCompiler
+      def initialize: (?untyped) -> void
+      def compile: (untyped) -> ([:html, :doctype, :html] | [:html, :doctype, untyped] | [:multi] | [:static, "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" \"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"] | [:static, "<?xml version='1.0' encoding='utf-8' ?>\n"])
+    end
+  end
+end

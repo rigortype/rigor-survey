@@ -1,0 +1,9 @@
+module ActionView
+  class Template
+    class RawFile
+      def initialize: (untyped) -> void
+      def render: (*untyped) -> String
+      def supports_streaming?: () -> false
+    end
+  end
+end

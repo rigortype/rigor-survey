@@ -1,0 +1,8 @@
+module Gitlab
+  module MobilePush
+    class HeldSummary
+      def initialize: (untyped, sender: untyped) -> void
+      def recipient: () -> Gitlab::MobilePush::Recipient
+    end
+  end
+end

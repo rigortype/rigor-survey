@@ -1,0 +1,36 @@
+---
+version: 1
+ignored:
+- file: ".rigor.yml"
+  rule: rbs.coverage.missing-gem
+  count: 1
+- file: lib/concurrent-ruby/concurrent/delay.rb
+  rule: call.possible-nil-receiver
+  count: 1
+- file: lib/concurrent-ruby/concurrent/executor/serial_executor_service.rb
+  rule: def.override-return-widened
+  count: 1
+- file: lib/concurrent-ruby/concurrent/executor/serialized_execution_delegator.rb
+  rule: def.override-return-widened
+  count: 1
+- file: lib/concurrent-ruby/concurrent/promises.rb
+  rule: def.override-return-widened
+  count: 10
+- file: lib/concurrent-ruby/concurrent/thread_safe/util/xor_shift_random.rb
+  rule: flow.always-truthy-condition
+  count: 1
+- file: lib/concurrent-ruby-edge/concurrent/actor/context.rb
+  rule: def.override-return-widened
+  count: 2
+- file: lib/concurrent-ruby-edge/concurrent/actor/root.rb
+  rule: def.override-return-widened
+  count: 1
+- file: lib/concurrent-ruby-edge/concurrent/channel/selector/error_clause.rb
+  rule: flow.return-in-ensure
+  count: 1
+- file: lib/concurrent-ruby-edge/concurrent/edge/channel.rb
+  rule: call.wrong-arity
+  count: 1
+- file: lib/concurrent-ruby-edge/concurrent/edge/old_channel_integration.rb
+  rule: call.wrong-arity
+  count: 1

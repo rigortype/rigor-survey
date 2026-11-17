@@ -1,0 +1,10 @@
+module Import
+  module Offline
+    module Exports
+      class SnippetRepositoriesExportService
+        def initialize: (untyped, untyped) -> void
+        def exported_objects_count: () -> (0 | Integer)
+      end
+    end
+  end
+end

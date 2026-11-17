@@ -1,0 +1,11 @@
+module Dependabot
+  class Updater
+    module Operations
+      class GroupUpdateAllVersions
+        def self.applies_to?: (job: untyped) -> (false | true)
+        def self.tag_name: () -> :group_update_all_versions
+        def initialize: (service: untyped, job: untyped, dependency_snapshot: untyped, error_handler: untyped) -> void
+      end
+    end
+  end
+end

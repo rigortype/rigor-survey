@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class Paginator
+        def initialize: (scope: untyped, ?cursor: untyped, ?per_page: untyped, ?cursor_converter: untyped, ?direction_key: untyped, ?keyset_order_options: untyped) -> void
+        module Base64CursorConverter
+          def self.dump: (untyped) -> String
+        end
+      end
+    end
+  end
+end

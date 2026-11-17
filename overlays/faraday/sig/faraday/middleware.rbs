@@ -1,0 +1,7 @@
+module Faraday
+  class Middleware
+    def initialize: (?untyped, ?untyped) -> void
+    def self.default_options: () -> Hash[untyped, untyped]
+    def self.validate_default_options: (untyped) -> nil
+  end
+end

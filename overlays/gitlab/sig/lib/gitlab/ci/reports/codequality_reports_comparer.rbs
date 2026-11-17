@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Reports
+      class CodequalityReportsComparer < ::Gitlab::Ci::Reports::ReportsComparer
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

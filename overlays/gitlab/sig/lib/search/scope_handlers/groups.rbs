@@ -1,0 +1,8 @@
+module Search
+  module ScopeHandlers
+    class Groups < ::Search::ScopeHandlers::Base
+      def self.scope_name: () -> "groups"
+      def self.available?: () -> true
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class SoftwareDeprecation < ::ApplicationRecord
+  def self.current: () -> (SoftwareDeprecation | nil)
+end

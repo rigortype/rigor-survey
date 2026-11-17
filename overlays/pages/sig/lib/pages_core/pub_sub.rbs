@@ -1,0 +1,9 @@
+module PagesCore
+  module PubSub
+    def self.subscribe: (untyped) ?{ (*untyped) -> untyped } -> PagesCore::PubSub::Subscriber
+    def self.subscribers: () -> []
+    class Subscriber
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

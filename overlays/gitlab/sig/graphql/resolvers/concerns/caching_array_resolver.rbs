@@ -1,0 +1,5 @@
+module CachingArrayResolver
+  def allowed?: (untyped) -> true
+  def preload: () -> nil
+  def max_union_size: () -> 50
+end

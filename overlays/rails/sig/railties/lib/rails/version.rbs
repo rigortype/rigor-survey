@@ -1,0 +1,3 @@
+module Rails
+  def self.version: () -> String
+end

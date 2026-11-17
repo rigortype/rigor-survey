@@ -1,0 +1,9 @@
+module Gitlab
+  module LegacyGithubImport
+    class CommentFormatter < ::Gitlab::LegacyGithubImport::BaseFormatter
+      def attributes: () -> { project: untyped, note: untyped, commit_id: untyped, line_code: String | nil, author_id: untyped, type: "LegacyDiffNote" | nil, created_at: untyped, updated_at: untyped, imported_from: :gitea | :github | :none }
+      def project_association: () -> :notes
+      def contributing_user_formatters: () -> { author_id: untyped }
+    end
+  end
+end

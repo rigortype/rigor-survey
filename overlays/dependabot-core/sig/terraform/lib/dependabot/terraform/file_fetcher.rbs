@@ -1,0 +1,8 @@
+module Dependabot
+  module Terraform
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a Terraform configuration file."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

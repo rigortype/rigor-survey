@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Cache
+    class NullStore < ::ActiveSupport::Cache::Store
+      def self.supports_cache_versioning?: () -> true
+    end
+  end
+end

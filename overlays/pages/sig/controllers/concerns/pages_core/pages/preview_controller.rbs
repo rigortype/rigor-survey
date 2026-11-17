@@ -1,0 +1,7 @@
+module PagesCore
+  module Pages
+    module PreviewController
+      def preview?: () -> (false | true)
+    end
+  end
+end

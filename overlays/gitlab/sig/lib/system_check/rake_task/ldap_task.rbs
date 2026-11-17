@@ -1,0 +1,8 @@
+module SystemCheck
+  module RakeTask
+    class LdapTask
+      def self.name: () -> "LDAP"
+      def self.checks: () -> [singleton(SystemCheck::LdapCheck)]
+    end
+  end
+end

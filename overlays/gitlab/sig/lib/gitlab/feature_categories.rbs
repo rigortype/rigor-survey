@@ -1,0 +1,7 @@
+module Gitlab
+  class FeatureCategories
+    def self.default: () -> Gitlab::FeatureCategories
+    def self.load_from_yaml: () -> Gitlab::FeatureCategories
+    def initialize: (untyped) -> void
+  end
+end

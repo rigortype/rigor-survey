@@ -1,0 +1,3 @@
+class AnyFieldValidator < ::ActiveModel::Validator
+  def initialize: (*untyped) -> void
+end

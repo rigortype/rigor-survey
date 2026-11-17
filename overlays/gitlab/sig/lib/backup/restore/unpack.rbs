@@ -1,0 +1,7 @@
+module Backup
+  module Restore
+    class Unpack
+      def initialize: (backup_id: untyped, backup_path: untyped, manifest_filepath: untyped, options: untyped, logger: untyped) -> void
+    end
+  end
+end

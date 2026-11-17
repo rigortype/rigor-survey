@@ -1,0 +1,5 @@
+module Spam
+  class AkismetMarkAsSpamService
+    def initialize: (target: untyped) -> void
+  end
+end

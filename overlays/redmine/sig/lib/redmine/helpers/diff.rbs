@@ -1,0 +1,8 @@
+module Redmine
+  module Helpers
+    class Diff
+      def initialize: (String, String) -> void
+      def to_html: () -> ActiveSupport::SafeBuffer
+    end
+  end
+end

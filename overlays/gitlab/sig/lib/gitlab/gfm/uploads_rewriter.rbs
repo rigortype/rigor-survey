@@ -1,0 +1,7 @@
+module Gitlab
+  module Gfm
+    class UploadsRewriter
+      def initialize: (untyped, nil, untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Dependabot
+  module Maven
+    class FileParser < ::Dependabot::FileParsers::Base
+      class RepositoriesFinder
+        def initialize: (pom_fetcher: untyped, ?dependency_files: untyped, ?credentials: untyped, ?evaluate_properties: untyped) -> void
+        def central_repo_url: () -> ("https://repo.maven.apache.org/maven2" | String)
+        def repository_urls: (pom: untyped, ?exclude_inherited: untyped, ?exclude_snapshots: untyped) -> Array[untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Gitlab
+  module ImportExport
+    module Group
+      class TreeRestorer
+        def initialize: (user: untyped, shared: untyped, group: untyped) -> void
+        def restore: () -> (false | true)
+        def groups_mapping: () -> Hash[untyped, untyped]
+        class GroupAttributes
+          def initialize: (untyped, untyped) -> void
+          def path: () -> String
+        end
+      end
+    end
+  end
+end

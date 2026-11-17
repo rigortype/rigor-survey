@@ -1,0 +1,16 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class LazyRelationLoader
+        class Registry
+          def initialize: (untyped) -> void
+          def register: (untyped) -> Array[untyped]
+          def respond_to_missing?: (untyped, ?untyped) -> (false | true)
+          def for: (untyped) -> Array[String]
+          def parents: () -> Array[untyped]
+          def loaded: () -> (false | true)
+        end
+      end
+    end
+  end
+end

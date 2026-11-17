@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Null < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Value
+            def initialize: (?::String) -> void
+            def evaluate: (?untyped) -> nil
+            def inspect: () -> "null"
+            def self.build: (untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::Null
+          end
+        end
+      end
+    end
+  end
+end

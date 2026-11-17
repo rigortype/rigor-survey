@@ -1,0 +1,9 @@
+module ActiveSupport
+  class ErrorReporter
+    module TestHelper
+      class ErrorSubscriber
+        def events: () -> Array[untyped]
+      end
+    end
+  end
+end

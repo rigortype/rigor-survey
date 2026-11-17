@@ -1,0 +1,5 @@
+module Gitlab
+  class EncryptedRedisCommand < ::Gitlab::EncryptedCommandBase
+    def self.encrypted_file_template: () -> "# password: '123'\n"
+  end
+end

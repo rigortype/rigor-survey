@@ -1,0 +1,7 @@
+module Types
+  module Packages
+    module FileMetadataType
+      def self.resolve_type: (untyped, untyped) -> (singleton(Types::Packages::Conan::FileMetadatumType) | singleton(Types::Packages::Helm::FileMetadatumType))
+    end
+  end
+end

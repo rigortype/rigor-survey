@@ -1,0 +1,12 @@
+module ActiveRecord
+  class FutureResult
+    def initialize: (untyped) -> void
+    def then: () ?{ (*untyped) -> untyped } -> ActiveRecord::Promise
+    class Complete
+      def initialize: (untyped) -> void
+      def pending?: () -> false
+      def canceled?: () -> false
+      def then: () ?{ (*untyped) -> untyped } -> ActiveRecord::Promise::Complete
+    end
+  end
+end

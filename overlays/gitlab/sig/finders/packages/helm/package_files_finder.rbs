@@ -1,0 +1,8 @@
+module Packages
+  module Helm
+    class PackageFilesFinder
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def execute: () -> ActiveRecord::Relation[Packages::PackageFile]
+    end
+  end
+end

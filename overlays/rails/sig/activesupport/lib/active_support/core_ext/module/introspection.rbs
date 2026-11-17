@@ -1,0 +1,3 @@
+class Module
+  def module_parents: () -> Array[untyped]
+end

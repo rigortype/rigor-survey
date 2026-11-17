@@ -1,0 +1,8 @@
+module Typelizer
+  module SerializerPlugins
+    module Auto
+      def self.new: (serializer: untyped, config: untyped, context: untyped) -> (Typelizer::SerializerPlugins::AMS | Typelizer::SerializerPlugins::Alba | Typelizer::SerializerPlugins::Blueprinter | Typelizer::SerializerPlugins::OjSerializers | Typelizer::SerializerPlugins::Panko)
+      def self.plugin: (untyped) -> (singleton(Typelizer::SerializerPlugins::AMS) | singleton(Typelizer::SerializerPlugins::Alba) | singleton(Typelizer::SerializerPlugins::Blueprinter) | singleton(Typelizer::SerializerPlugins::OjSerializers) | singleton(Typelizer::SerializerPlugins::Panko))
+    end
+  end
+end

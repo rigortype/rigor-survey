@@ -1,0 +1,122 @@
+module Parser
+  module Builders
+    class Default
+      def self.modernize: () -> true
+      def nil: (untyped) -> Parser::AST::Node
+      def true: (untyped) -> Parser::AST::Node
+      def false: (untyped) -> Parser::AST::Node
+      def integer: (untyped) -> Parser::AST::Node
+      def float: (untyped) -> Parser::AST::Node
+      def rational: (untyped) -> Parser::AST::Node
+      def complex: (untyped) -> Parser::AST::Node
+      def __LINE__: (untyped) -> Parser::AST::Node
+      def string: (untyped) -> Parser::AST::Node
+      def string_internal: (untyped) -> Parser::AST::Node
+      def character: (untyped) -> Parser::AST::Node
+      def __FILE__: (untyped) -> Parser::AST::Node
+      def symbol: (untyped) -> Parser::AST::Node
+      def symbol_internal: (untyped) -> Parser::AST::Node
+      def xstring_compose: (untyped, untyped, untyped) -> Parser::AST::Node
+      def regexp_options: (untyped) -> Parser::AST::Node
+      def regexp_compose: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def array: (untyped, untyped, untyped) -> Parser::AST::Node
+      def splat: (untyped, ?untyped) -> Parser::AST::Node
+      def words_compose: (untyped, untyped, untyped) -> Parser::AST::Node
+      def symbols_compose: (untyped, untyped, untyped) -> Parser::AST::Node
+      def pair: (untyped, untyped, untyped) -> Parser::AST::Node
+      def pair_keyword: (untyped, untyped) -> Parser::AST::Node
+      def pair_quoted: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def pair_label: (untyped) -> Parser::AST::Node
+      def kwsplat: (untyped, untyped) -> Parser::AST::Node
+      def associate: (untyped, untyped, untyped) -> Parser::AST::Node
+      def range_inclusive: (untyped, untyped, untyped) -> Parser::AST::Node
+      def range_exclusive: (untyped, untyped, untyped) -> Parser::AST::Node
+      def self: (untyped) -> Parser::AST::Node
+      def ident: (untyped) -> Parser::AST::Node
+      def ivar: (untyped) -> Parser::AST::Node
+      def gvar: (untyped) -> Parser::AST::Node
+      def cvar: (untyped) -> Parser::AST::Node
+      def back_ref: (untyped) -> Parser::AST::Node
+      def nth_ref: (untyped) -> Parser::AST::Node
+      def const: (untyped) -> Parser::AST::Node
+      def const_global: (untyped, untyped) -> Parser::AST::Node
+      def const_fetch: (untyped, untyped, untyped) -> Parser::AST::Node
+      def __ENCODING__: (untyped) -> Parser::AST::Node
+      def multi_lhs: (untyped, untyped, untyped) -> Parser::AST::Node
+      def multi_assign: (untyped, untyped, untyped) -> Parser::AST::Node
+      def def_class: (untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_sclass: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_module: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_method: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_endless_method: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_singleton: (untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def def_endless_singleton: (untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def undef_method: (untyped, untyped) -> Parser::AST::Node
+      def alias: (untyped, untyped, untyped) -> Parser::AST::Node
+      def args: (untyped, untyped, untyped, ?untyped) -> Parser::AST::Node
+      def numargs: (untyped) -> Parser::AST::Node
+      def forward_only_args: (untyped, untyped, untyped) -> Parser::AST::Node
+      def forward_arg: (untyped) -> Parser::AST::Node
+      def arg: (untyped) -> Parser::AST::Node
+      def optarg: (untyped, untyped, untyped) -> Parser::AST::Node
+      def restarg: (untyped, ?untyped) -> Parser::AST::Node
+      def kwarg: (untyped) -> Parser::AST::Node
+      def kwoptarg: (untyped, untyped) -> Parser::AST::Node
+      def kwrestarg: (untyped, ?untyped) -> Parser::AST::Node
+      def kwnilarg: (untyped, untyped) -> Parser::AST::Node
+      def shadowarg: (untyped) -> Parser::AST::Node
+      def blockarg: (untyped, untyped) -> Parser::AST::Node
+      def objc_kwarg: (untyped, untyped, untyped) -> Parser::AST::Node
+      def call_type_for_dot: (untyped) -> (:csend | :send)
+      def forwarded_args: (untyped) -> Parser::AST::Node
+      def forwarded_restarg: (untyped) -> Parser::AST::Node
+      def forwarded_kwrestarg: (untyped) -> Parser::AST::Node
+      def call_method: (untyped, untyped, untyped, ?untyped, ?untyped, ?untyped) -> Parser::AST::Node
+      def call_lambda: (untyped) -> Parser::AST::Node
+      def block: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def block_pass: (untyped, untyped) -> Parser::AST::Node
+      def attr_asgn: (untyped, untyped, untyped) -> Parser::AST::Node
+      def index: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def index_asgn: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def binary_op: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_op: (untyped, untyped, untyped) -> Parser::AST::Node
+      def unary_op: (untyped, untyped) -> Parser::AST::Node
+      def not_op: (untyped, ?untyped, ?untyped, ?untyped) -> Parser::AST::Node
+      def logical_op: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def condition: (untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def condition_mod: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def ternary: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def when: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def case: (untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def loop: (untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def loop_mod: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def for: (untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def keyword_cmd: (untyped, untyped, ?untyped, ?untyped, ?untyped) -> Parser::AST::Node
+      def preexe: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def postexe: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def rescue_body: (untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def begin: (untyped, untyped, untyped) -> Parser::AST::Node
+      def begin_keyword: (untyped, untyped, untyped) -> Parser::AST::Node
+      def case_match: (untyped, untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def in_match: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_pattern: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_pattern_p: (untyped, untyped, untyped) -> Parser::AST::Node
+      def in_pattern: (untyped, untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def if_guard: (untyped, untyped) -> Parser::AST::Node
+      def unless_guard: (untyped, untyped) -> Parser::AST::Node
+      def match_var: (untyped) -> Parser::AST::Node
+      def match_hash_var: (untyped) -> Parser::AST::Node
+      def match_rest: (untyped, ?untyped) -> Parser::AST::Node
+      def hash_pattern: (untyped, untyped, untyped) -> Parser::AST::Node
+      def array_pattern: (untyped, untyped, untyped) -> Parser::AST::Node
+      def find_pattern: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_with_trailing_comma: (untyped, untyped) -> Parser::AST::Node
+      def const_pattern: (untyped, untyped, untyped, untyped) -> Parser::AST::Node
+      def pin: (untyped, untyped) -> Parser::AST::Node
+      def match_alt: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_as: (untyped, untyped, untyped) -> Parser::AST::Node
+      def match_nil_pattern: (untyped, untyped) -> Parser::AST::Node
+      def match_pair: (untyped, untyped, untyped) -> Parser::AST::Node
+    end
+  end
+end

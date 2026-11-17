@@ -1,0 +1,9 @@
+module Gitlab
+  module RackAttack
+    module LabkitRateLimit
+      class ClassifiedRequest < ::Rack::Request
+        def labkit_facts: () -> { ip: untyped, requester_id: untyped, requester_type: untyped, runner_id: untyped, aid: untyped, path: untyped, method: untyped, web_or_frontend: false | true, frontend: false | true, protected_path: false | true, deprecated: false | true, runner_jobs: false | true, dependency_proxy: false | true, git_http_non_lfs: false | true, bypass: false | true, setting_unauthenticated_api: false | true, setting_authenticated_api: false | true, setting_unauthenticated_web: false | true, setting_authenticated_web: false | true, setting_unauthenticated_packages: false | true, setting_authenticated_packages: false | true, setting_unauthenticated_files: false | true, setting_authenticated_files: false | true, setting_unauthenticated_deprecated: false | true, setting_authenticated_deprecated: false | true, setting_unauthenticated_git_http: false | true, setting_authenticated_git_http: false | true, setting_authenticated_git_lfs: false | true, setting_authenticated_dependency_proxy: false | true, setting_authenticated_mcp: false | true, setting_protected_paths: false | true }
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Authn
+  module Applications
+    class UpdateService
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

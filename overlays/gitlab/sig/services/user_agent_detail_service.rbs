@@ -1,0 +1,3 @@
+class UserAgentDetailService
+  def initialize: (spammable: untyped, perform_spam_check: untyped, current_user: untyped) -> void
+end

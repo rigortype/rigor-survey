@@ -1,0 +1,7 @@
+module Mutations
+  module MergeRequests
+    class Create < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, **untyped) -> { merge_request: untyped, errors: untyped }
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Autocomplete
+  class DeployKeysWithWriteAccessFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

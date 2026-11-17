@@ -1,0 +1,4 @@
+module SettingsHelper
+  def ui_languages: () -> Array[String | Symbol]
+  def session_device_icon: (untyped) -> ("desktop_mac" | "smartphone" | "tablet")
+end

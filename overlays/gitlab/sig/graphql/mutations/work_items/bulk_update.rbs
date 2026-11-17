@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class BulkUpdate < ::Mutations::BaseMutation
+      def resolve: (ids: untyped, full_path: untyped, **untyped) -> ({ errors: Array[untyped] | [] } | { updated_work_item_count: untyped, errors: Array[untyped] | [] })
+    end
+  end
+end

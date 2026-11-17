@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Evidence
+          def initialize: (data: untyped) -> void
+        end
+      end
+    end
+  end
+end

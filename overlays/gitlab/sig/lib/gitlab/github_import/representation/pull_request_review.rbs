@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class PullRequestReview
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::PullRequestReview
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::PullRequestReview
+        def initialize: ({ review_id: Integer, merge_request_iid: Integer, something_else: String }) -> void
+        def github_identifiers: () -> { merge_request_iid: untyped, review_id: untyped }
+      end
+    end
+  end
+end

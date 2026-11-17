@@ -1,0 +1,7 @@
+module ActiveRecord
+  class FixtureSet
+    class RenderContext
+      def self.create_subclass: () -> Class
+    end
+  end
+end

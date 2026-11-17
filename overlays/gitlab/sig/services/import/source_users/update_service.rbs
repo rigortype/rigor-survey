@@ -1,0 +1,8 @@
+module Import
+  module SourceUsers
+    class UpdateService
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

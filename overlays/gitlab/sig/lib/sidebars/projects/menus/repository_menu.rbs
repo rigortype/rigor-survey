@@ -1,0 +1,12 @@
+module Sidebars
+  module Projects
+    module Menus
+      class RepositoryMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (false | true)
+        def extra_container_html_options: () -> { class: "shortcuts-tree" }
+        def sprite_icon: () -> "doc-text"
+        def serialize_as_menu_item_args: () -> nil
+      end
+    end
+  end
+end

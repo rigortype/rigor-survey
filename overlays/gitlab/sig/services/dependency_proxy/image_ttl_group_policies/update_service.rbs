@@ -1,0 +1,7 @@
+module DependencyProxy
+  module ImageTtlGroupPolicies
+    class UpdateService < ::BaseContainerService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

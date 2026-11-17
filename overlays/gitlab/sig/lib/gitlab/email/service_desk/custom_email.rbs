@@ -1,0 +1,10 @@
+module Gitlab
+  module Email
+    module ServiceDesk
+      module CustomEmail
+        def self.key_from_reply_address: (untyped) -> (String | nil)
+        def self.key_from_settings: (untyped) -> (String | nil)
+      end
+    end
+  end
+end

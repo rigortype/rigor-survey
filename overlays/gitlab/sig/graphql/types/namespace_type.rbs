@@ -1,0 +1,5 @@
+module Types
+  class NamespaceType < ::Types::BaseObject
+    def subscribed_saved_view_limit: () -> 5
+  end
+end

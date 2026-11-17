@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Count
+      class ReltuplesCountStrategy
+        def initialize: (untyped) -> void
+        def count: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

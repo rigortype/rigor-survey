@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    class CronParser
+      def self.parse_natural: (untyped, ?untyped) -> Gitlab::Ci::CronParser
+      def self.parse_natural_with_timestamp: (untyped, untyped) -> String
+      def self.fall_in_months: (untyped, untyped) -> String
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

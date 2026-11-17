@@ -1,0 +1,5 @@
+module Organizations
+  class StartMaintenanceService < ::Organizations::BaseMaintenanceTransitionService
+    def initialize: (untyped, maintenance_reason: untyped) -> void
+  end
+end

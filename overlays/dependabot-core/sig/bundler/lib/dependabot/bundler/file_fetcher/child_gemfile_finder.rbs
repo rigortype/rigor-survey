@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class ChildGemfileFinder
+        def initialize: (gemfile: untyped) -> void
+        def child_gemfile_paths: () -> Array[String]
+      end
+    end
+  end
+end

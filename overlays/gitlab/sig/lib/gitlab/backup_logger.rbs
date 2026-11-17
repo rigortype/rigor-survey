@@ -1,0 +1,7 @@
+module Gitlab
+  class BackupLogger
+    def initialize: (StringIO) -> void
+    def progress: () -> StringIO
+    def json_logger: () -> Gitlab::Backup::JsonLogger
+  end
+end

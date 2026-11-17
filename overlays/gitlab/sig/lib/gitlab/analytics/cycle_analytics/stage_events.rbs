@@ -1,0 +1,12 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        def self.to_enum: () -> Hash[untyped, Integer]
+        def self.pairing_rules: () -> Hash[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::CodeStageStart) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueCreated) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestCreated) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestLastBuildStarted) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestMerged) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::PlanStageStart), Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueDeployedToProduction) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueStageEnd)] | Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueFirstMentionedInCommit)] | Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestCreated)] | Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestFirstDeployedToProduction)] | Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestLastBuildFinished)] | Array[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestMerged)]]
+        def self.enum_mapping: () -> Hash[singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::CodeStageStart) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueCreated) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueDeployedToProduction) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueFirstMentionedInCommit) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueStageEnd) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestCreated) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestFirstDeployedToProduction) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestLastBuildFinished) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestLastBuildStarted) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::MergeRequestMerged) | singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::PlanStageStart), Integer]
+        def self.internal_events: () -> [singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::CodeStageStart), singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::IssueStageEnd), singleton(Gitlab::Analytics::CycleAnalytics::StageEvents::PlanStageStart)]
+      end
+    end
+  end
+end

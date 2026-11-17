@@ -1,0 +1,8 @@
+module Gitlab
+  module Harbor
+    class Query
+      def initialize: (untyped, untyped) -> void
+      def client: () -> Gitlab::Harbor::Client
+    end
+  end
+end

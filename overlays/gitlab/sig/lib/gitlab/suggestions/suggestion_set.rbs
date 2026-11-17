@@ -1,0 +1,9 @@
+module Gitlab
+  module Suggestions
+    class SuggestionSet
+      def initialize: ([untyped, untyped, untyped] | [untyped]) -> void
+      def valid?: () -> (false | true)
+      def suggestions: () -> ([untyped, untyped, untyped] | [untyped])
+    end
+  end
+end

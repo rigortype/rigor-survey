@@ -1,0 +1,8 @@
+module FormHelper
+  def assignees_dropdown_options: (untyped) -> (Hash[untyped, untyped] | { toggle_class: "js-user-search js-assignee-search js-multiselect js-save-user-data", title: untyped, filter: true, dropdown_class: "dropdown-menu-user dropdown-menu-selectable dropdown-menu-assignee", placeholder: untyped, data: { first_user: untyped, null_user: true, current_user: true, project_id: untyped, field_name: String, default_label: untyped, :"max-select" => 1, :"dropdown-header" => untyped, multi_select: true, :"input-meta" => "name", :"always-show-selectbox" => true, current_user_info: untyped, testid: "assignee-ids-dropdown-toggle" } })
+  def reviewers_dropdown_options: (untyped, ?untyped, ?untyped) -> { toggle_class: "js-reviewer-search js-multiselect js-save-user-data", title: "Request review from", filter: true, dropdown_class: "dropdown-menu-user dropdown-menu-selectable dropdown-menu-reviewer", placeholder: untyped, data: Hash[untyped, untyped] }
+  def reviewers_dropdown_options_for_suggested_reviewers: () -> {}
+  def issue_supports_multiple_assignees?: () -> false
+  def merge_request_supports_multiple_assignees?: () -> false
+  def merge_request_supports_multiple_reviewers?: () -> false
+end

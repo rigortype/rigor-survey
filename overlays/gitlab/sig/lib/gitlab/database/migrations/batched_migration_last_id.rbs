@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Migrations
+      class BatchedMigrationLastId
+        def initialize: (untyped, untyped) -> void
+        def store: () -> Integer
+        def read: () -> (Integer | nil)
+      end
+    end
+  end
+end

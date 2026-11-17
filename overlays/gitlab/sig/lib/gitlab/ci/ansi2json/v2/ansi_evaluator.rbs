@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      module V2
+        class AnsiEvaluator
+          def initialize: (?fg: untyped, ?bg: untyped, ?mask: untyped) -> void
+          def apply_commands: (untyped) -> nil
+          def reset!: () -> 0
+          def to_class_string: () -> ("" | String)
+          def to_h: () -> { fg: untyped, bg: untyped, mask: untyped }
+        end
+      end
+    end
+  end
+end

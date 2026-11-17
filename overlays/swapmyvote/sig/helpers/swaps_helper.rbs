@@ -1,0 +1,3 @@
+module SwapsHelper
+  def swap_validity_hours: () -> (48 | Integer)
+end

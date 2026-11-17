@@ -1,0 +1,11 @@
+module Gitlab
+  module Vue3Migration
+    def self.entry_file_for: (untyped) -> String
+    def self.entry_points_lines: () -> Array[String]
+    def self.clear_memoization!: () -> nil
+    def self.load_from_source_files: () -> Hash[untyped, untyped]
+    class ManifestLoadError < ::StandardError
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Ci
+  class UpdateBuildStateService
+    def initialize: (untyped, untyped, ?untyped, ?untyped) -> void
+    class Result < ::Struct[untyped]
+      def status: () -> untyped
+      def backoff: () -> untyped
+      def status=: (untyped) -> untyped
+      def backoff=: (untyped) -> untyped
+      def self.new: (?status: untyped, ?backoff: untyped) -> instance
+      def self.[]: (?status: untyped, ?backoff: untyped) -> instance
+    end
+  end
+end

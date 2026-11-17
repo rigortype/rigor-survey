@@ -1,0 +1,5 @@
+module Ci
+  module PipelineEditorHelper
+    def js_pipeline_editor_data: (untyped) -> Hash[String | Symbol, untyped]
+  end
+end

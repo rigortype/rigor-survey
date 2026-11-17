@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      class RecoveryService
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

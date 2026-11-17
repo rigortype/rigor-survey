@@ -1,0 +1,11 @@
+module Gitlab
+  module X509
+    class Certificate
+      def self.from_strings: (untyped, untyped, ?untyped) -> Gitlab::X509::Certificate
+      def self.from_files: (untyped, untyped, ?untyped) -> Gitlab::X509::Certificate
+      def self.ca_certs_paths: () -> (Array[untyped] | Array[String])
+      def initialize: (untyped, untyped, ?[untyped]) -> void
+      def ca_certs: () -> [untyped]
+    end
+  end
+end

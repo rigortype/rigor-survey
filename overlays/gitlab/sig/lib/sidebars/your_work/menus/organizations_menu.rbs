@@ -1,0 +1,10 @@
+module Sidebars
+  module YourWork
+    module Menus
+      class OrganizationsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "organization"
+        def active_routes: () -> { controller: "organizations/organizations", actions: ["index", "new"] }
+      end
+    end
+  end
+end

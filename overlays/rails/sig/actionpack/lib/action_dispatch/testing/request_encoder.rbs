@@ -1,0 +1,9 @@
+module ActionDispatch
+  class RequestEncoder
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+    def self.register_encoder: (untyped, ?param_encoder: untyped, ?response_parser: untyped, ?content_type: untyped) -> ActionDispatch::RequestEncoder
+    class IdentityEncoder
+      def response_parser: () -> Proc
+    end
+  end
+end

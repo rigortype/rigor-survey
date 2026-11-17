@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Batch
+      class InclusiveCursorIterator
+        def initialize: (scope: untyped, cursor_columns: untyped, start_cursor: untyped) -> void
+      end
+    end
+  end
+end

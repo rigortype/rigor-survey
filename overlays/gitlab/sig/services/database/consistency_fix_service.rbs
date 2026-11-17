@@ -1,0 +1,5 @@
+module Database
+  class ConsistencyFixService
+    def initialize: (source_model: (singleton(Namespace) | singleton(Project) | singleton(User)), target_model: (singleton(Ci::NamespaceMirror) | singleton(Ci::ProjectMirror)), sync_event_class: (singleton(Namespaces::SyncEvent) | singleton(Projects::SyncEvent)), source_sort_key: Symbol, target_sort_key: Symbol) -> void
+  end
+end

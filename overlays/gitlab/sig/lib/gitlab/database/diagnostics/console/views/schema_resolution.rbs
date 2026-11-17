@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        module Views
+          class SchemaResolution < ::Gitlab::Database::Diagnostics::Console::Views::Base
+            def self.title: () -> "Search path"
+          end
+        end
+      end
+    end
+  end
+end

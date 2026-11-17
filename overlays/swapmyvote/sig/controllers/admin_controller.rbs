@@ -1,0 +1,5 @@
+class AdminController < ::ApplicationController
+  def self.admin_user: () -> "swapmyvote"
+  def self.admin_password: () -> ("secret" | String)
+  def verify_mobile: () -> ("de-verified" | "verified" | [String] | nil)
+end

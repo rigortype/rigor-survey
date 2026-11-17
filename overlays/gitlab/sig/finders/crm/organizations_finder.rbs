@@ -1,0 +1,5 @@
+module Crm
+  class OrganizationsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

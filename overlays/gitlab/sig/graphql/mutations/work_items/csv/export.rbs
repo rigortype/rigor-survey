@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module CSV
+      class Export < ::Mutations::BaseMutation
+        def resolve: (untyped) -> { message: String, errors: [] }
+      end
+    end
+  end
+end

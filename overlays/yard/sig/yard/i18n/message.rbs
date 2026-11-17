@@ -1,0 +1,11 @@
+module YARD
+  module I18n
+    class Message
+      def initialize: (untyped) -> void
+      def add_location: (String, Integer) -> Set[untyped]
+      def add_comment: (String) -> (Set[untyped] | nil)
+      def locations: () -> Set[untyped]
+      def comments: () -> Set[untyped]
+    end
+  end
+end

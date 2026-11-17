@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqMiddleware
+    class ServerMetrics
+      def self.metrics: () -> Hash[untyped, untyped]
+      def call: (untyped, untyped, untyped) -> true
+      def metrics: () -> Hash[untyped, untyped]
+      def labels: () -> (Hash[untyped, untyped] | { queue: untyped, worker: untyped, urgency: "", external_dependencies: untyped, feature_category: "", boundary: "", destination_shard_redis: untyped })
+      def job_succeeded: () -> (false | true)
+    end
+  end
+end

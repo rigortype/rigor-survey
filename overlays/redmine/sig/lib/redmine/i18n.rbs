@@ -1,0 +1,15 @@
+module Redmine
+  module I18n
+    def l: (*untyped) -> String
+    def l_or_humanize: (untyped, ?untyped) -> String
+    def ll: (untyped, untyped, ?untyped) -> String
+    def format_time: (untyped, ?untyped, ?untyped) -> (String | nil)
+    def format_hours: (untyped) -> ("" | String | nil)
+    def day_name: (untyped) -> (String | nil)
+    def abbr_day_name: (untyped) -> (String | nil)
+    def day_letter: (untyped) -> String
+    def month_name: (untyped) -> (String | nil)
+    def valid_languages: () -> Array[String | Symbol]
+    def current_language: () -> Symbol
+  end
+end

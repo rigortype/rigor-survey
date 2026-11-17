@@ -1,0 +1,7 @@
+module DesignManagement
+  class DesignUserNotesCountService < ::BaseCountService
+    def initialize: (untyped) -> void
+    def raw?: () -> true
+    def cache_key: () -> ["designs", "notes_count", 1, untyped]
+  end
+end

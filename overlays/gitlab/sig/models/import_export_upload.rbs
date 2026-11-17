@@ -1,0 +1,6 @@
+class ImportExportUpload < ::ApplicationRecord
+  def retrieve_upload: (untyped, untyped) -> (Upload | nil)
+  def export_file_exists?: () -> (false | true)
+  def export_archive_exists?: () -> (false | true)
+  def uploads_sharding_key: () -> { project_id: untyped, namespace_id: untyped }
+end

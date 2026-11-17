@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    module RedisClusterValidator
+      def self.validate: (untyped) -> (nil | { valid: false | true, command_name: untyped, key_count: untyped, allowed: untyped })
+    end
+  end
+end

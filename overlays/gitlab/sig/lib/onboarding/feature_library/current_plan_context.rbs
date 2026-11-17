@@ -1,0 +1,14 @@
+module Onboarding
+  module FeatureLibrary
+    class CurrentPlanContext
+      def initialize: (resource: untyped) -> void
+      def edition: () -> :ce
+      def deployment: () -> :self_managed
+      def current_plan: () -> :free
+      def trial?: () -> false
+      def base_plan: () -> :free
+      def tier_pages: () -> [:premium, :ultimate]
+      def to_h: () -> { edition: :ce, deployment: :self_managed, current_plan: :free, base_plan: :free, trial: false }
+    end
+  end
+end

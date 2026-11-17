@@ -1,0 +1,3 @@
+class ProjectLabel < ::Label
+  def subject_foreign_key: () -> "project_id"
+end

@@ -1,0 +1,5 @@
+module MergeRequests
+  class CodeConflictEvent < ::MergeRequests::BaseCloudEvent
+    def self.build: (merge_request: untyped) -> (MergeRequests::CodeConflictEvent | nil)
+  end
+end

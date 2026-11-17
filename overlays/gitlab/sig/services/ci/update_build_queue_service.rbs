@@ -1,0 +1,5 @@
+module Ci
+  class UpdateBuildQueueService
+    def initialize: (?untyped) -> void
+  end
+end

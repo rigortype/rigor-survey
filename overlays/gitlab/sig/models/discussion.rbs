@@ -1,0 +1,17 @@
+class Discussion
+  def self.discussion_id: (untyped) -> String
+  def self.build_discussion_id: (untyped) -> Array[untyped]
+  def self.base_discussion_id: (untyped) -> [:discussion, untyped, untyped]
+  def self.override_discussion_id: (untyped) -> nil
+  def self.note_class: () -> singleton(DiscussionNote)
+  def self.model_class: () -> singleton(Note)
+  def initialize: ([untyped, untyped, untyped] | [untyped, untyped] | [untyped], ?untyped, ?inverse_relations: untyped) -> void
+  def on_image?: () -> false
+  def diff_discussion?: () -> false
+  def individual_note?: () -> false
+  def expanded?: () -> (false | true)
+  def cache_key: () -> String
+  def to_global_id: (?untyped) -> GlobalID
+  def discussion_class: () -> singleton(Discussion)
+  def can_reply_to_system_note?: () -> (false | true)
+end

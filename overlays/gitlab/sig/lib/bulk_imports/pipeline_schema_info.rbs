@@ -1,0 +1,5 @@
+module BulkImports
+  class PipelineSchemaInfo
+    def initialize: (untyped, untyped) -> void
+  end
+end

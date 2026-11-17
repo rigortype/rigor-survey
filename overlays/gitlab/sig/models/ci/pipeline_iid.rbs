@@ -1,0 +1,5 @@
+module Ci
+  class PipelineIid < ::Ci::ApplicationRecord
+    def readonly?: () -> true
+  end
+end

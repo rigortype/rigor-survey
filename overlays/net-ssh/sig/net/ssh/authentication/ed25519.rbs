@@ -1,0 +1,35 @@
+module Net
+  module SSH
+    module Authentication
+      module ED25519
+        def self.ensure_supported!: () -> nil
+        def self.validate_key_bytes!: (untyped, untyped, untyped) -> nil
+        class OpenSSHPrivateKeyLoader
+          def self.read: (untyped, untyped) -> (Net::SSH::Authentication::ED25519::PrivKey | OpenSSL::PKey::EC | OpenSSL::PKey::RSA)
+          def self.require_bcrypt_pbkdf: () -> (false | true)
+          class DecryptError < ::ArgumentError
+            def initialize: (untyped, ?encrypted_key: untyped) -> void
+          end
+        end
+        class PubKey
+          def initialize: (untyped) -> void
+          def self.read_keyblob: (untyped) -> Net::SSH::Authentication::ED25519::PubKey
+          def to_blob: () -> String
+          def ssh_type: () -> "ssh-ed25519"
+          def ssh_signature_type: () -> "ssh-ed25519"
+          def to_pem: () -> String
+        end
+        class PrivKey
+          def initialize: (untyped) -> void
+          def to_blob: () -> String
+          def ssh_type: () -> "ssh-ed25519"
+          def ssh_signature_type: () -> "ssh-ed25519"
+          def public_key: () -> Net::SSH::Authentication::ED25519::PubKey
+          def self.read: (untyped, untyped) -> (Net::SSH::Authentication::ED25519::PrivKey | OpenSSL::PKey::EC | OpenSSL::PKey::RSA)
+        end
+        class UnsupportedError < ::StandardError
+        end
+      end
+    end
+  end
+end

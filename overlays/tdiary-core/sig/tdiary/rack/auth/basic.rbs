@@ -1,0 +1,11 @@
+module TDiary
+  module Rack
+    class Auth
+      class Basic
+        def initialize: (untyped, ?untyped) -> void
+      end
+      class PasswordFileNotFound < ::StandardError
+      end
+    end
+  end
+end

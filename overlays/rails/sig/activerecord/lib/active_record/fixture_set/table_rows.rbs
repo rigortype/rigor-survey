@@ -1,0 +1,9 @@
+module ActiveRecord
+  class FixtureSet
+    class TableRows
+      def initialize: (untyped, model_class: untyped, fixtures: untyped) -> void
+      def model_metadata: () -> ActiveRecord::FixtureSet::ModelMetadata
+      def tables: () -> Hash
+    end
+  end
+end

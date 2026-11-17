@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class MetricFilterDefinition < ::Gitlab::Database::Aggregation::ClickHouse::FilterDefinition
+          def metric?: () -> true
+          def validate_definition!: (untyped) -> nil
+        end
+      end
+    end
+  end
+end

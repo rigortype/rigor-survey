@@ -1,0 +1,12 @@
+module YARD
+  class Options
+    def self.default_attr: (untyped, untyped) -> Array[Symbol]
+    def update: (untyped) -> YARD::Options
+    def merge: (untyped) -> YARD::Options
+    def to_hash: () -> Hash[untyped, untyped]
+    def inspect: () -> String
+    def ==: (untyped) -> (false | true)
+    def reset_defaults: () -> Array[Module]
+    def tap: () -> YARD::Options
+  end
+end

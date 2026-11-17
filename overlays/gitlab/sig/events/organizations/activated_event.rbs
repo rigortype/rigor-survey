@@ -1,0 +1,6 @@
+module Organizations
+  class ActivatedEvent < ::Gitlab::EventStore::CloudEvent
+    def self.build: (organization: untyped) -> Organizations::ActivatedEvent
+    def data_schema: () -> Hash[String, "object" | ["organization_id"] | false | Hash[String, Hash[String, "integer"]]]
+  end
+end

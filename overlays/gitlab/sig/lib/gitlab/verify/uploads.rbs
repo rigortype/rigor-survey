@@ -1,0 +1,8 @@
+module Gitlab
+  module Verify
+    class Uploads < ::Gitlab::Verify::BatchVerifier
+      def name: () -> "Uploads"
+      def describe: (untyped) -> String
+    end
+  end
+end

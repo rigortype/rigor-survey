@@ -1,0 +1,11 @@
+module Typelizer
+  module OpenAPI
+    def self.schema_for: (untyped, ?openapi_version: untyped) -> (Hash[untyped, untyped] | { type: :object, properties: untyped })
+    def self.ref_schema: (untyped, untyped, openapi_version: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped] | { allOf: [Hash[String, untyped]] } | { oneOf: [Hash[String, untyped], { type: :null }] })
+    def self.union_schema: (untyped, openapi_version: untyped) -> (Hash[untyped, untyped] | { anyOf: untyped } | { type: :string, enum: untyped })
+    def self.union_member_schema: (untyped) -> (Hash[String, String] | { type: :object } | { type: :string, enum: [untyped] } | { type: untyped })
+    def self.apply_metadata: (untyped, untyped) -> (nil | true)
+    def self.object_schema: (untyped, openapi_version: untyped, type_mapping: untyped) -> (Hash[untyped, untyped] | { type: :object, properties: untyped })
+    def self.validate_version!: (untyped) -> nil
+  end
+end

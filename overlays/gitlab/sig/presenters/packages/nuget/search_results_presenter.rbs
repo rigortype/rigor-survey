@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class SearchResultsPresenter
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Import
+  module GitlabProjects
+    class CreateProjectService
+      def initialize: (untyped, params: untyped, ?file_acquisition_strategy: untyped, ?request_channel: Symbol) -> void
+      def request_channel: () -> :ui
+    end
+  end
+end

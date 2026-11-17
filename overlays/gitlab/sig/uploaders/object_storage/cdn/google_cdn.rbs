@@ -1,0 +1,10 @@
+module ObjectStorage
+  module CDN
+    class GoogleCDN
+      def initialize: (untyped) -> void
+      def use_cdn?: (untyped) -> (false | true)
+      def signed_url: (untyped, ?expiry: untyped, ?params: untyped) -> String
+      def options: () -> HashWithIndifferentAccess[untyped, untyped]
+    end
+  end
+end

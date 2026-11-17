@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    class PositionCollection
+      def initialize: ([untyped, untyped, untyped, untyped], ?untyped) -> void
+      def concat: (untyped) -> Gitlab::Diff::PositionCollection
+      def unfoldable: () -> Array[untyped]
+    end
+  end
+end

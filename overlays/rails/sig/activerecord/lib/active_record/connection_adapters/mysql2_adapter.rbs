@@ -1,0 +1,7 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class Mysql2Adapter < ::ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

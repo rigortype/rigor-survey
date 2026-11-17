@@ -1,0 +1,11 @@
+module Arel
+  class TreeManager
+    def initialize: (?untyped) -> void
+    module StatementMethods
+      def take: (untyped) -> Arel::TreeManager::StatementMethods
+      def offset: (untyped) -> Arel::TreeManager::StatementMethods
+      def order: (*untyped) -> Arel::TreeManager::StatementMethods
+      def where: (untyped) -> Arel::TreeManager::StatementMethods
+    end
+  end
+end

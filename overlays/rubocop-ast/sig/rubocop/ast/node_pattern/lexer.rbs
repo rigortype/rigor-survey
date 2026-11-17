@@ -1,0 +1,10 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Lexer < ::RuboCop::AST::NodePattern::LexerRex
+        def initialize: (untyped) -> void
+        def tokens: () -> Array[untyped]
+      end
+    end
+  end
+end

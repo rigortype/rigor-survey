@@ -1,0 +1,6 @@
+module Concurrent
+  class SynchronizedDelegator < ::SimpleDelegator
+    def setup: () -> true
+    def initialize: (untyped) -> void
+  end
+end

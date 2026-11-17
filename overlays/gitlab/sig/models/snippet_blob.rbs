@@ -1,0 +1,4 @@
+class SnippetBlob
+  def initialize: (untyped) -> void
+  def commit_id: () -> nil
+end

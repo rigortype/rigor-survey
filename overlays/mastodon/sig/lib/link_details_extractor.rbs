@@ -1,0 +1,10 @@
+class LinkDetailsExtractor
+  def initialize: (untyped, untyped, nil) -> void
+  def to_preview_card_attributes: () -> { title: untyped, description: untyped, image_remote_url: untyped, image_description: untyped, type: :link | :video, link_type: :article | :unknown, width: untyped, height: untyped, html: "" | ActiveSupport::SafeBuffer, provider_name: untyped, provider_url: untyped, author_name: untyped, author_url: untyped, embed_url: untyped, language: untyped, published_at: untyped }
+  def type: () -> (:link | :video)
+  def link_type: () -> (:article | :unknown)
+  def html: () -> (ActiveSupport::SafeBuffer | nil)
+  class StructuredData
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module MembersHelpers
+      def self.member_access_levels: () -> [10, 15, 20, 25, 30, 40, 50]
+    end
+  end
+end

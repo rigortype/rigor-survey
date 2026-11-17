@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Coverage
+        class Metadata < ::Gitlab::Ci::Badge::Metadata
+          def initialize: (untyped) -> void
+          def title: () -> "coverage report"
+        end
+      end
+    end
+  end
+end

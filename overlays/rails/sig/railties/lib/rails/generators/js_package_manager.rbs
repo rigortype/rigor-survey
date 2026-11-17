@@ -1,0 +1,8 @@
+module Rails
+  module Generators
+    module JsPackageManager
+      def self.detect: (untyped) -> (:aube | :bun | :npm | :pnpm | :yarn)
+      def package_manager: () -> (:aube | :bun | :npm | :pnpm | :yarn)
+    end
+  end
+end

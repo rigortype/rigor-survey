@@ -1,0 +1,10 @@
+module Gitlab
+  module GithubImport
+    module ObjectImporter
+      def increment_object_counter?: (untyped) -> true
+      def object_type: () -> bot
+      def representation_class: () -> bot
+      def importer_class: () -> bot
+    end
+  end
+end

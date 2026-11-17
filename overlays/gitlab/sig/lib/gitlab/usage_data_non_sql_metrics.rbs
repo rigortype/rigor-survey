@@ -1,0 +1,11 @@
+module Gitlab
+  class UsageDataNonSqlMetrics < ::Gitlab::UsageData
+    def self.add_metric: (untyped, ?time_frame: untyped, ?options: untyped) -> Gitlab::Usage::ServicePing::LegacyMetricMetadataDecorator
+    def self.count: (untyped, ?untyped, ?batch: untyped, ?batch_size: untyped, ?start: untyped, ?finish: untyped) -> -3
+    def self.distinct_count: (untyped, ?untyped, ?batch: untyped, ?batch_size: untyped, ?start: untyped, ?finish: untyped) -> -3
+    def self.estimate_batch_distinct_count: (untyped, ?untyped, ?batch_size: untyped, ?start: untyped, ?finish: untyped) -> -3
+    def self.sum: (untyped, untyped, ?batch_size: untyped, ?start: untyped, ?finish: untyped) -> -3
+    def self.histogram: (untyped, untyped, buckets: untyped, ?bucket_size: untyped) -> -3
+    def self.add: (*untyped) -> -3
+  end
+end

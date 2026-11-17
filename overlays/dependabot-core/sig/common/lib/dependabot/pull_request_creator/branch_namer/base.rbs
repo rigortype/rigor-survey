@@ -1,0 +1,9 @@
+module Dependabot
+  class PullRequestCreator
+    class BranchNamer
+      class Base
+        def initialize: (dependencies: untyped, files: untyped, target_branch: untyped, ?separator: untyped, ?prefix: untyped, ?max_length: untyped, ?word_separator: untyped, ?branch_name_case: untyped, ?template: untyped) -> void
+      end
+    end
+  end
+end

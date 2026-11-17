@@ -1,0 +1,7 @@
+module Gitlab
+  module Instrumentation
+    class RateLimitingGates
+      def self.payload: () -> Hash[:rate_limiting_gates, untyped]
+    end
+  end
+end

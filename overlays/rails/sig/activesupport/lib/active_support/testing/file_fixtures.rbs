@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module FileFixtures
+      def file_fixture: (untyped) -> Pathname
+    end
+  end
+end

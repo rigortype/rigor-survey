@@ -1,0 +1,8 @@
+module Ml
+  class FindModelService
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def execute: () -> (Ml::Model | nil)
+    def find_by_model_id: () -> (Ml::Model | nil)
+    def find_by_project_and_name: () -> (Ml::Model | nil)
+  end
+end

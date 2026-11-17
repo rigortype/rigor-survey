@@ -1,0 +1,7 @@
+module Gitlab
+  module HookData
+    class ReleaseBuilder < ::Gitlab::HookData::BaseBuilder
+      def self.safe_hook_attributes: () -> [:id, :created_at, :description, :name, :released_at, :tag]
+    end
+  end
+end

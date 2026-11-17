@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Inputs
+          def initialize: (untyped, untyped) -> void
+          def errors: () -> Array[untyped]
+          def to_hash: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module WorkItems
+  module Widgets
+    class EmailParticipants < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:add_email, :remove_email]
+      def self.quick_action_params: () -> [:emails]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module ErrorTracking
+    class Error
+      def self.declarative_policy_class: () -> "ErrorTracking::BasePolicy"
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class ETL
+  def self.transform: (untyped) -> Hash[untyped, untyped]
+end

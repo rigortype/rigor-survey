@@ -1,0 +1,3 @@
+module TimeHelper
+  def time_in_milliseconds: () -> Integer
+end

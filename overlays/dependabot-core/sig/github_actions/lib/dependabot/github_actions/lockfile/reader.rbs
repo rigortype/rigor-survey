@@ -1,0 +1,10 @@
+module Dependabot
+  module GithubActions
+    module Lockfile
+      class Reader
+        def initialize: (untyped) -> void
+        def self.from_files: (untyped) -> (Dependabot::GithubActions::Lockfile::Reader | nil)
+      end
+    end
+  end
+end

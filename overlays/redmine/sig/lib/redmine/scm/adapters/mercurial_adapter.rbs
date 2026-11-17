@@ -1,0 +1,25 @@
+module Redmine
+  module Scm
+    module Adapters
+      class MercurialAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.sq_bin: () -> String
+        def self.template_path: () -> String
+        def self.template_path_for: (untyped) -> String
+        def info: () -> (Redmine::Scm::Adapters::Info | nil)
+        def tags: () -> Array[String]
+        def tagmap: () -> Hash[untyped, untyped]
+        def branches: () -> Array[untyped]
+        def branchmap: () -> Hash[untyped, untyped]
+        def entries: (?String | nil, ?Integer | String, ?untyped) -> (Redmine::Scm::Adapters::Entries | nil)
+        def revisions: (?nil, ?Integer | String | nil, ?Integer | String | nil, ?{ limit: Integer }) -> Redmine::Scm::Adapters::Revisions
+        def each_revision: (?untyped, ?untyped, ?untyped, ?untyped) -> Redmine::Scm::Adapters::MercurialAdapter
+        def diff: (String | nil, Integer | String, ?Integer | String) -> (Array[untyped] | nil)
+        def annotate: (String, ?Integer | String | nil) -> Redmine::Scm::Adapters::Annotate
+        def valid_name?: (untyped) -> (false | true)
+        class Revision < ::Redmine::Scm::Adapters::Revision
+          def format_identifier: () -> String
+        end
+      end
+    end
+  end
+end

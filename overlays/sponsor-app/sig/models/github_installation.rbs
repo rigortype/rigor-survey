@@ -1,0 +1,5 @@
+class GithubInstallation
+  def initialize: (String, ?branch: String?) -> void
+  def octokit: () -> Octokit::Client
+  def base_branch: () -> String
+end

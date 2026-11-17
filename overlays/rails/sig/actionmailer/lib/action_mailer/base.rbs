@@ -1,0 +1,17 @@
+module ActionMailer
+  class Base < ::AbstractController::Base
+    def self.mail: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionMailer::MessageDelivery
+    def process: (untyped, *untyped, **untyped) -> (ActionMailer::Base::NullMail | nil)
+    def mail: (?Hash[untyped, untyped]) ?{ (ActionMailer::Collector) -> void } -> Mail::Message
+    def self.supports_path?: () -> false
+    class NullMail
+      def body: () -> ""
+      def header: () -> {}
+      def respond_to?: (untyped, ?untyped) -> true
+      def method_missing: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> nil
+    end
+    class LateAttachmentsProxy < ::SimpleDelegator
+      def inline: () -> ActionMailer::Base::LateAttachmentsProxy
+    end
+  end
+end

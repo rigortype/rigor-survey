@@ -1,0 +1,5 @@
+module Gitlab
+  class CodeNavigationPath
+    def initialize: (untyped, untyped) -> void
+  end
+end

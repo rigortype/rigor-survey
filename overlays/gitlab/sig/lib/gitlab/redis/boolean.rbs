@@ -1,0 +1,12 @@
+module Gitlab
+  module Redis
+    class Boolean
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def self.encode: (untyped) -> String
+      def self.false?: (untyped) -> (false | true)
+      def self.bool?: (untyped) -> (false | true)
+      def self.to_string: (untyped) -> ("0" | "1")
+    end
+  end
+end

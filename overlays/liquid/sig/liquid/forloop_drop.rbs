@@ -1,0 +1,9 @@
+module Liquid
+  class ForloopDrop < ::Liquid::Drop
+    def initialize: (untyped, untyped, untyped) -> void
+    def index: () -> Integer
+    def index0: () -> (0 | Integer)
+    def first: () -> (false | true)
+    def last: () -> (false | true)
+  end
+end

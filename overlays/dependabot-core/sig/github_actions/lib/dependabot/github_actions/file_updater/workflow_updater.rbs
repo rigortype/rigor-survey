@@ -1,0 +1,11 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        def initialize: (file: untyped, dependency: untyped, commenter: untyped) -> void
+        def updated_content: () -> String
+        def comment_finder: () -> ::YamlCommentFinder
+      end
+    end
+  end
+end

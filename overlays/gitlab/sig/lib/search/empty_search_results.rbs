@@ -1,0 +1,12 @@
+module Search
+  class EmptySearchResults
+    def initialize: (?error: (String | nil), ?error_type: (nil | singleton(StandardError))) -> void
+    def formatted_count: (*untyped) -> "0"
+    def highlight_map: (*untyped) -> {}
+    def aggregations: (*untyped) -> []
+    def counts: (*untyped) -> {}
+    def server_error?: () -> false
+    def blobs_count: () -> 0
+    def file_count: () -> 0
+  end
+end

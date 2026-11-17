@@ -1,0 +1,8 @@
+module Mail
+  module Encodings
+    class TransferEncoding
+      def self.cost: (untyped) -> bot
+      def self.compatible_input?: (untyped) -> true
+    end
+  end
+end

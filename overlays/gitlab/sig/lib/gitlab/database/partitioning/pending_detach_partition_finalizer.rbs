@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class PendingDetachPartitionFinalizer
+        def finalize: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      end
+    end
+  end
+end

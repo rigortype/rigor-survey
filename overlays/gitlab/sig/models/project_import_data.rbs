@@ -1,0 +1,3 @@
+class ProjectImportData < ::ApplicationRecord
+  def user_mapping_enabled?: () -> (false | true)
+end

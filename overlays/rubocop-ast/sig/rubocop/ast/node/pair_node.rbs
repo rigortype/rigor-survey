@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    class PairNode < ::RuboCop::AST::Node
+      def delimiter: (*untyped, ?with_spacing: untyped) -> (" => " | ": " | ":" | "=>")
+      def inverse_delimiter: (*untyped, ?with_spacing: untyped) -> (" => " | ": " | ":" | "=>")
+    end
+  end
+end

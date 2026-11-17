@@ -1,0 +1,5 @@
+class RedisConnection
+  def self.establish_pool: (untyped) -> ConnectionPool[untyped]
+  def self.pool: () -> ConnectionPool[untyped]
+  def connection: () -> Redis
+end

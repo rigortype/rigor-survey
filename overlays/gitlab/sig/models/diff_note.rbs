@@ -1,0 +1,4 @@
+class DiffNote < ::Note
+  def self.noteable_types: () -> ["MergeRequest", "Commit", "DesignManagement::Design"]
+  def discussion_class: (*untyped) -> singleton(DiffDiscussion)
+end

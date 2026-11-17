@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      class ValidateTask < ::Tasks::Gitlab::Permissions::BaseValidateTask
+        def declarative_policy_permissions: () -> []
+        def violations: () -> { definition: [], excluded: [], schema: {}, action: {}, name: [], file: {}, unknown_permission: [], missing_resource_metadata: [], resource_metadata_schema: {}, empty_resource_directory: [] }
+        def resources: () -> Array[untyped]
+      end
+    end
+  end
+end

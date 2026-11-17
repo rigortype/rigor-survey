@@ -1,0 +1,58 @@
+module ActiveRecord
+  class AdapterError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?connection_pool: untyped) -> void
+  end
+  class ConnectionNotEstablished < ::ActiveRecord::AdapterError
+    def initialize: (?untyped, ?connection_pool: untyped) -> void
+    def set_pool: (untyped) -> ActiveRecord::ConnectionNotEstablished
+  end
+  class ConnectionNotDefined < ::ActiveRecord::ConnectionNotEstablished
+    def initialize: (?untyped, ?connection_name: untyped, ?role: untyped, ?shard: untyped) -> void
+  end
+  class DatabaseConnectionError < ::ActiveRecord::ConnectionNotEstablished
+    def initialize: (?untyped) -> void
+    def self.hostname_error: (untyped) -> ActiveRecord::DatabaseConnectionError
+    def self.username_error: (untyped) -> ActiveRecord::DatabaseConnectionError
+  end
+  class RecordNotFound < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped, ?untyped) -> void
+  end
+  class RecordNotSaved < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class RecordNotDestroyed < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class SoleRecordExceeded < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class StatementInvalid < ::ActiveRecord::AdapterError
+    def initialize: (?untyped, ?sql: untyped, ?binds: untyped, ?connection_pool: untyped) -> void
+  end
+  class MismatchedForeignKey < ::ActiveRecord::StatementInvalid
+    def initialize: (?message: untyped, ?sql: untyped, ?binds: untyped, ?table: untyped, ?foreign_key: untyped, ?target_table: untyped, ?primary_key: untyped, ?primary_key_column: untyped, ?query_parser: untyped, ?connection_pool: untyped) -> void
+  end
+  class SQLWarning < ::ActiveRecord::AdapterError
+    def initialize: (?untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> void
+  end
+  class NoDatabaseError < ::ActiveRecord::StatementInvalid
+    def initialize: (?untyped, ?connection_pool: untyped) -> void
+    def self.db_error: (untyped) -> ActiveRecord::NoDatabaseError
+  end
+  class StaleObjectError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class AttributeAssignmentError < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped, ?untyped) -> void
+  end
+  class MultiparameterAssignmentErrors < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped) -> void
+  end
+  class UnknownPrimaryKey < ::ActiveRecord::ActiveRecordError
+    def initialize: (?untyped, ?untyped) -> void
+  end
+  class ActiveRecordError < ::StandardError
+  end
+  class ShardSwapProhibitedError < ::ArgumentError
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Migrations
+      module Observers
+        class MigrationObserver
+          def initialize: (untyped, untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

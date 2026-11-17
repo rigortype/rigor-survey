@@ -1,0 +1,7 @@
+module Ci
+  module JobArtifacts
+    class DestroyBatchService
+      def initialize: (untyped, ?pick_up_at: ActiveSupport::TimeWithZone, ?skip_projects_on_refresh: untyped, ?jobs_destroyed: untyped) -> void
+    end
+  end
+end

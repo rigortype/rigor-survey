@@ -1,0 +1,14 @@
+module Slack
+  class API
+    def initialize: (untyped) -> void
+    def post: (untyped, untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def add_reaction: (channel: untyped, name: untyped, timestamp: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def post_ephemeral: (channel: untyped, user: untyped, text: untyped, ?thread_ts: untyped, ?blocks: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def post_message: (channel: untyped, text: untyped, ?thread_ts: untyped, ?blocks: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def update_message: (channel: untyped, ts: untyped, text: untyped, ?blocks: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def set_status: (channel: untyped, thread_ts: untyped, status: untyped, ?loading_messages: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def open_view: (trigger_id: untyped, view: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def get_permalink: (channel: untyped, message_ts: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+    def conversation_history: (channel: untyped, limit: untyped, ?latest: untyped) -> (Hash[untyped, untyped] | Hash[String, untyped])
+  end
+end

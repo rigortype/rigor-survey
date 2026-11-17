@@ -1,0 +1,6 @@
+module Gitlab
+  module Loggable
+    def build_structured_payload: (**untyped) -> Hash[String, untyped]
+    def build_structured_payload_labkit: (**untyped) -> Hash[String, untyped]
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class KeyGenerator
+      def initialize: (?hash_digest_class: untyped) -> void
+    end
+  end
+end

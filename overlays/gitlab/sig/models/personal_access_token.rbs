@@ -1,0 +1,5 @@
+class PersonalAccessToken < ::ApplicationRecord
+  def active?: () -> (false | true)
+  def self.scope_for_notification_interval: (untyped, ?min_expires_at: untyped, ?max_expires_at: untyped) -> ActiveRecord::Relation[PersonalAccessToken]
+  def self.max_expiration_lifetime_in_days: () -> (365 | 400)
+end

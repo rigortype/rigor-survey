@@ -1,0 +1,7 @@
+module PagesCore
+  module PageModel
+    module Pathable
+      def full_path: () -> (String | nil)
+    end
+  end
+end

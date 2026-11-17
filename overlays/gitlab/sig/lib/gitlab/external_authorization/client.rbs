@@ -1,0 +1,8 @@
+module Gitlab
+  module ExternalAuthorization
+    class Client
+      def initialize: (untyped, String) -> void
+      def request_access: () -> Gitlab::ExternalAuthorization::Response
+    end
+  end
+end

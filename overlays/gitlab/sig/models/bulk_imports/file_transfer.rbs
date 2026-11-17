@@ -1,0 +1,5 @@
+module BulkImports
+  module FileTransfer
+    def config_for: (untyped, ?offline: untyped) -> (BulkImports::FileTransfer::GroupConfig | BulkImports::FileTransfer::ProjectConfig)
+  end
+end

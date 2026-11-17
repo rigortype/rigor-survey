@@ -1,0 +1,5 @@
+module ContainerRegistry
+  class Event
+    def initialize: (untyped) -> void
+  end
+end

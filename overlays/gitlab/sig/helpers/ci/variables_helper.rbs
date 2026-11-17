@@ -1,0 +1,7 @@
+module Ci
+  module VariablesHelper
+    def ci_variable_maskable_raw_regex: () -> (String | nil)
+    def ci_variables_secrets_manager_cta_in_variables_data: (untyped) -> nil
+    def ci_variable_maskable_regex: () -> String
+  end
+end

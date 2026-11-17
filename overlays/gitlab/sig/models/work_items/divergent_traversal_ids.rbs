@@ -1,0 +1,5 @@
+module WorkItems
+  class DivergentTraversalIds
+    def initialize: (untyped) -> void
+  end
+end

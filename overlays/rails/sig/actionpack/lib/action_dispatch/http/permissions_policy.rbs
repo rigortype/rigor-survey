@@ -1,0 +1,7 @@
+module ActionDispatch
+  class PermissionsPolicy
+    class Middleware
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module ActionView
+  class TestCase < ::ActiveSupport::TestCase
+    module Behavior
+      def protect_against_forgery?: () -> false
+      def rendered_views: () -> ActionView::TestCase::Behavior::RenderedViewsCollection
+      class RenderedViewContent < ::String
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module DesignManagement
+  class Version < ::ApplicationRecord
+    class CouldNotCreateVersion < ::StandardError
+      def initialize: (untyped, untyped, untyped) -> void
+      def message: () -> String
+      def sentry_extra_data: () -> { sha: untyped, issue_id: untyped, design_ids: untyped }
+    end
+  end
+end

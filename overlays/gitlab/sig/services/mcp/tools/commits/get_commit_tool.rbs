@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Commits
+      class GetCommitTool < ::Mcp::Tools::Base::GraphqlTool
+        def build_variables: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

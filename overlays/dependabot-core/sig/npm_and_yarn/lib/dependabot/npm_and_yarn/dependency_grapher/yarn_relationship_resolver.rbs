@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class DependencyGrapher < ::Dependabot::DependencyGraphers::Base
+      class YarnRelationshipResolver
+        def initialize: (untyped) -> void
+        def relationships: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

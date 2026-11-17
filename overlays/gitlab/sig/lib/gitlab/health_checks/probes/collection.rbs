@@ -1,0 +1,10 @@
+module Gitlab
+  module HealthChecks
+    module Probes
+      class Collection
+        def initialize: (*untyped) -> void
+        def execute: () -> Gitlab::HealthChecks::Probes::Status
+      end
+    end
+  end
+end

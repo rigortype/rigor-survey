@@ -1,0 +1,11 @@
+module Arel
+  class UpdateManager < ::Arel::TreeManager
+    def initialize: (?untyped) -> void
+    def table: (untyped) -> Arel::UpdateManager
+    def set: (untyped) -> Arel::UpdateManager
+    def group: (untyped) -> Arel::UpdateManager
+    def having: (untyped) -> Arel::UpdateManager
+    def comment: (untyped) -> Arel::UpdateManager
+    def returning: (untyped) -> Arel::UpdateManager
+  end
+end

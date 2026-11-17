@@ -1,0 +1,5 @@
+module Containers
+  class Queue
+    def initialize: (?untyped) -> void
+  end
+end

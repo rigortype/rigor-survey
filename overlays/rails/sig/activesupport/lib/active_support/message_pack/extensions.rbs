@@ -1,0 +1,19 @@
+module ActiveSupport
+  module MessagePack
+    module Extensions
+      def read_time_with_zone: (untyped) -> ActiveSupport::TimeWithZone
+      def read_duration: (untyped) -> ActiveSupport::Duration
+      def read_range: (untyped) -> Range
+      def read_set: (untyped) -> Set
+      def read_ipaddr: (untyped) -> IPAddr
+      def read_hash_with_indifferent_access: (untyped) -> ActiveSupport::HashWithIndifferentAccess
+      def read_safe_buffer: (untyped) -> ActiveSupport::SafeBuffer
+      def raise_unserializable: (untyped, *untyped) -> bot
+      def raise_invalid_format: (*untyped) -> bot
+    end
+    class UnserializableObjectError < ::StandardError
+    end
+    class MissingClassError < ::StandardError
+    end
+  end
+end

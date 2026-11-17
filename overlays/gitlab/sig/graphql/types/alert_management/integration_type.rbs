@@ -1,0 +1,8 @@
+module Types
+  module AlertManagement
+    module IntegrationType
+      def api_url: () -> nil
+      def resolve_type: (untyped, untyped) -> (singleton(Types::AlertManagement::HttpIntegrationType) | singleton(Types::AlertManagement::PrometheusIntegrationType))
+    end
+  end
+end

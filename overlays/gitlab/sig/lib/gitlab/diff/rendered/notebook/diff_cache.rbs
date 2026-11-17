@@ -1,0 +1,30 @@
+module Gitlab
+  module Diff
+    module Rendered
+      module Notebook
+        class DiffCache
+          def initialize: (project: untyped, old_blob: untyped, new_blob: untyped) -> void
+          def key: () -> String
+          class CachedNotebook < ::Struct[untyped]
+            def as_text: () -> untyped
+            def blocks: () -> untyped
+            def as_text=: (untyped) -> untyped
+            def blocks=: (untyped) -> untyped
+            def self.new: (?as_text: untyped, ?blocks: untyped) -> instance | (?untyped as_text, ?untyped blocks) -> instance
+            def self.[]: (?as_text: untyped, ?blocks: untyped) -> instance | (?untyped as_text, ?untyped blocks) -> instance
+          end
+          class CachedDiff < ::Struct[untyped]
+            def from: () -> untyped
+            def to: () -> untyped
+            def text: () -> untyped
+            def from=: (untyped) -> untyped
+            def to=: (untyped) -> untyped
+            def text=: (untyped) -> untyped
+            def self.new: (?from: untyped, ?to: untyped, ?text: untyped) -> instance | (?untyped from, ?untyped to, ?untyped text) -> instance
+            def self.[]: (?from: untyped, ?to: untyped, ?text: untyped) -> instance | (?untyped from, ?untyped to, ?untyped text) -> instance
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Haml
+  class Compiler
+    class SilentScriptCompiler
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> ([:multi, [:block, untyped, [:multi, [:newline], untyped]]] | [:multi, [:code, untyped], [:newline]])
+    end
+  end
+end

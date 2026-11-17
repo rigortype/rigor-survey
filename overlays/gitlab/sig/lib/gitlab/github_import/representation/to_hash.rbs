@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      module ToHash
+        def to_hash: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

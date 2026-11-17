@@ -1,0 +1,9 @@
+class ExternalIssue
+  def initialize: (untyped, untyped) -> void
+  def title: () -> String
+  def web_url: () -> (String | nil)
+  def ==: (untyped) -> (false | true)
+  def hash: () -> Integer
+  def supports_time_tracking?: () -> false
+  def notes: () -> ActiveRecord::Relation[Note]
+end

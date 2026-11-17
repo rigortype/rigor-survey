@@ -1,0 +1,20 @@
+module Gitlab
+  module Ci
+    module Build
+      module Artifacts
+        class Metadata
+          class Entry
+            def initialize: (untyped, untyped) -> void
+            def file?: () -> (false | true)
+            def blob: () -> (Blob | nil)
+            def parent: () -> (Gitlab::Ci::Build::Artifacts::Metadata::Entry | nil)
+            def blank_node?: () -> (false | true)
+            def path: () -> String
+            def to_s: () -> String
+            def inspect: () -> String
+          end
+        end
+      end
+    end
+  end
+end

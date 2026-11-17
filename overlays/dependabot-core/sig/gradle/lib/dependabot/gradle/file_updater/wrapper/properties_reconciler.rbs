@@ -1,0 +1,12 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      module Wrapper
+        class PropertiesReconciler
+          def self.reconcile: (original_content: untyped, regenerated_content: untyped) -> (String | nil)
+          def initialize: (original_content: untyped, regenerated_content: untyped) -> void
+        end
+      end
+    end
+  end
+end

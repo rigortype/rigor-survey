@@ -1,0 +1,4 @@
+class Node
+  def initialize: (untyped) -> void
+  def next: () -> Array[untyped]
+end

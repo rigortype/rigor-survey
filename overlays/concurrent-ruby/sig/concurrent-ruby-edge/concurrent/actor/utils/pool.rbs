@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Utils
+      class Pool < ::Concurrent::Actor::RestartingContext
+        def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+      end
+    end
+  end
+end

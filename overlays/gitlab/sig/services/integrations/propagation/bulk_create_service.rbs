@@ -1,0 +1,7 @@
+module Integrations
+  module Propagation
+    class BulkCreateService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

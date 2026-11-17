@@ -1,0 +1,3 @@
+class PerfectNumber
+  def self.classify: (untyped) -> ("abundant" | "deficient" | "perfect" | nil)
+end

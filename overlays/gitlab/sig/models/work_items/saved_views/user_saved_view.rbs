@@ -1,0 +1,10 @@
+module WorkItems
+  module SavedViews
+    class UserSavedView < ::ApplicationRecord
+      def self.at_subscription_limit?: (user: untyped, namespace: untyped) -> (false | true)
+      def self.relative_positioning_query_base: (untyped) -> ActiveRecord::Relation[WorkItems::SavedViews::UserSavedView]
+      def self.relative_positioning_parent_column: () -> :user_id
+      def self.user_saved_view_limit: (untyped) -> 5
+    end
+  end
+end

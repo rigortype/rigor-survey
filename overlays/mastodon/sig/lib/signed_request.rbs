@@ -1,0 +1,23 @@
+class SignedRequest
+  def initialize: (untyped) -> void
+  def signature: () -> (SignedRequest::HttpMessageSignature | SignedRequest::HttpSignature)
+  class HttpSignature
+    def initialize: (untyped) -> void
+    def missing_signature_parameters: () -> (["keyId", "signature"] | nil)
+    def algorithm_supported?: () -> (false | true)
+    def verified?: (untyped) -> (false | true)
+    def created_time: () -> (Time | nil)
+    def expires_time: () -> (Time | nil)
+    def verify_signature_strength!: () -> nil
+    def verify_body_digest!: () -> nil
+  end
+  class HttpMessageSignature
+    def initialize: (untyped) -> void
+    def missing_signature_parameters: () -> (["keyid", "created"] | nil)
+    def algorithm_supported?: () -> true
+    def verify_signature_strength!: () -> nil
+    def verify_body_digest!: () -> nil
+    def created_time: () -> Time
+    def expires_time: () -> (Time | nil)
+  end
+end

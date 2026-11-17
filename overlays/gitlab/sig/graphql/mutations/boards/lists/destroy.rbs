@@ -1,0 +1,9 @@
+module Mutations
+  module Boards
+    module Lists
+      class Destroy < ::Mutations::BaseMutation
+        def resolve: (list: untyped) -> { list: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

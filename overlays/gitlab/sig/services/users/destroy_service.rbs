@@ -1,0 +1,5 @@
+module Users
+  class DestroyService
+    def initialize: (untyped) -> void
+  end
+end

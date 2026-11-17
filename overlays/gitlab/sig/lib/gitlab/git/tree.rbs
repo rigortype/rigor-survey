@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class Tree
+      def initialize: (untyped) -> void
+    end
+  end
+end

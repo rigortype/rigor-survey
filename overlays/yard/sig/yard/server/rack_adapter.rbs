@@ -1,0 +1,7 @@
+module YARD
+  module Server
+    class RackMiddleware
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

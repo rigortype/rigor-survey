@@ -1,0 +1,7 @@
+module Typelizer
+  module TypeParser
+    def self.parse_key: (untyped) -> ([untyped, false] | [untyped, true])
+    def self.parse_shape: (untyped, **untyped) -> Hash[untyped, untyped]
+    def self.wrap_type: (untyped, **untyped) -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Gfm
+    class ReferenceRewriter
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

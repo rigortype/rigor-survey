@@ -1,0 +1,9 @@
+module Dependabot
+  module Conda
+    class Requirement < ::Dependabot::Requirement
+      def initialize: (*untyped) -> void
+      def satisfied_by?: (untyped) -> (false | true)
+      def exact?: () -> (false | true)
+    end
+  end
+end

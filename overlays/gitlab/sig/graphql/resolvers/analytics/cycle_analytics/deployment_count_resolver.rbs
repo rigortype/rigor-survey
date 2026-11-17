@@ -1,0 +1,9 @@
+module Resolvers
+  module Analytics
+    module CycleAnalytics
+      class DeploymentCountResolver < ::Resolvers::Analytics::CycleAnalytics::BaseCountResolver
+        def resolve: (**untyped) -> { value: untyped, title: untyped, identifier: "deploys", links: [] }
+      end
+    end
+  end
+end

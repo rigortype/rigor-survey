@@ -1,0 +1,6 @@
+module YARD
+  class Verifier
+    def initialize: (*untyped) -> void
+    def call: (untyped) -> (false | true)
+  end
+end

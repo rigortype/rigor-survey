@@ -1,0 +1,5 @@
+module Achievements
+  class BaseService < ::BaseContainerService
+    def initialize: (namespace: untyped, ?current_user: untyped, ?params: untyped) -> void
+  end
+end

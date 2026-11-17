@@ -1,0 +1,10 @@
+module YARD
+  module CodeObjects
+    module NamespaceMapper
+      def clear_separators: () -> {}
+      def self.on_invalidate: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def self.map: () -> {}
+      def self.rev_map: () -> {}
+    end
+  end
+end

@@ -1,0 +1,6 @@
+class MergeRequest < ::ApplicationRecord
+  class CommitsMetadata < ::ApplicationRecord
+    def self.bulk_find: (untyped, untyped) -> Array[untyped]
+    def self.bulk_find_or_create: (untyped, untyped) -> Hash[untyped, untyped]
+  end
+end

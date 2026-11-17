@@ -1,0 +1,20 @@
+module Dependabot
+  module DependencyAttribution
+    def self.annotate_dependency: (untyped, source_group: untyped, selection_reason: untyped, directory: untyped) -> (Time | nil)
+    def self.get_attribution: (untyped) -> (Dependabot::DependencyAttribution::Attribution | nil)
+    def self.attributed?: (untyped) -> (false | true)
+    def self.telemetry_summary: (untyped) -> Dependabot::DependencyAttribution::TelemetrySummary
+    class SelectionReason < ::T::Enum
+      def to_sym: () -> Symbol
+    end
+    class Attribution < ::T::ImmutableStruct
+      def to_h: () -> { source_group: untyped, selection_reason: untyped, directory: untyped, timestamp: untyped }
+    end
+    class AttributedDependency < ::T::ImmutableStruct
+      def to_h: () -> Hash[untyped, untyped]
+    end
+    class TelemetrySummary < ::T::ImmutableStruct
+      def to_h: () -> { total_dependencies: untyped, attributed_dependencies: untyped, attribution_coverage: untyped, selection_reasons: untyped, source_groups: untyped, directories: untyped }
+    end
+  end
+end

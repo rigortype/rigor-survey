@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module SavedViews
+      class Subscribe < ::Mutations::BaseMutation
+        def resolve: (id: untyped) -> ({ saved_view: untyped, errors: [] } | { saved_view: nil, errors: [untyped] })
+      end
+    end
+  end
+end

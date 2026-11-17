@@ -1,0 +1,13 @@
+module Sidebars
+  module Projects
+    module Menus
+      class ObserveMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (false | true)
+        def sprite_icon: () -> "eye"
+        def active_routes: () -> { controller: "projects/observability" }
+        def extra_container_html_options: () -> { class: "shortcuts-observability" }
+        def serialize_as_menu_item_args: () -> nil
+      end
+    end
+  end
+end

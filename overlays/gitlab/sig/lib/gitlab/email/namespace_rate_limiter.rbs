@@ -1,0 +1,10 @@
+module Gitlab
+  module Email
+    class NamespaceRateLimiter
+      def self.rate_limit_batch_for_project!: (project: untyped, class_name: untyped, hourly_bucket: untyped, daily_bucket: untyped, log_message: untyped, count: untyped, ?feature_flag: untyped, ?overshoot: untyped) -> (false | nil | true)
+      def initialize: (root_namespace: untyped, hourly_bucket: untyped, daily_bucket: untyped, log_message: untyped, ?feature_flag: untyped, ?log_context: Hash[untyped, untyped], ?overshoot: Symbol, ?plan_limits: Proc) -> void
+      def rate_limit_batch!: (untyped) -> (false | nil | true)
+      def log_context: () -> Hash[untyped, untyped]
+    end
+  end
+end

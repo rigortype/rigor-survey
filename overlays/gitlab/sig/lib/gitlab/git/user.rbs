@@ -1,0 +1,10 @@
+module Gitlab
+  module Git
+    class User
+      def self.from_gitlab: (untyped) -> Gitlab::Git::User
+      def self.from_gitaly: (untyped) -> Gitlab::Git::User
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      def ==: (untyped) -> (false | true)
+    end
+  end
+end

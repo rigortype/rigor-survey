@@ -1,0 +1,15 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      class CommitResponseParser
+        def initialize: (source_url: untyped) -> void
+        def github_commit_sha: (untyped) -> String
+        def github_commit_message: (untyped) -> String
+        def sawyer_string: (untyped, untyped, untyped) -> String
+        def gitlab_string: (untyped, untyped, untyped) -> String
+        def object_string: (untyped, untyped, untyped) -> String
+        def raise_bad_response: (untyped, untyped) -> bot
+      end
+    end
+  end
+end

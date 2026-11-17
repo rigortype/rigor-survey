@@ -1,0 +1,8 @@
+module Gitlab
+  module SidekiqSharding
+    class Router
+      def self.get_shard_instance: (untyped) -> [untyped, untyped]
+      def self.migrated_shards: () -> Set[untyped]
+    end
+  end
+end

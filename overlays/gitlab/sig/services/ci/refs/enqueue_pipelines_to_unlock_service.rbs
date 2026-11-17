@@ -1,0 +1,7 @@
+module Ci
+  module Refs
+    class EnqueuePipelinesToUnlockService
+      def execute: (untyped, ?before_pipeline: untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

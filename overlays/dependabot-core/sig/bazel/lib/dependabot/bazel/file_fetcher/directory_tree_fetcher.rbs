@@ -1,0 +1,10 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class DirectoryTreeFetcher
+        def initialize: (fetcher: untyped) -> void
+        def fetch_build_files_for_directories: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

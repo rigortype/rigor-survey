@@ -1,0 +1,5 @@
+class UserSettings
+  def initialize: (untyped) -> void
+  class Error < ::StandardError
+  end
+end

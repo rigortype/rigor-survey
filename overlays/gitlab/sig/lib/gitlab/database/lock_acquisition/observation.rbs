@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class Observation
+        def self.capture: (untyped, ddl_pid: untyped, db_oid: untyped, quoted_backend_start: untyped) -> Gitlab::Database::LockAcquisition::Observation
+        def self.sql: (untyped, untyped, untyped) -> String
+        def self.waiter_count_sql: (untyped, untyped, untyped) -> String
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

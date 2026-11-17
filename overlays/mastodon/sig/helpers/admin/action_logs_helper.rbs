@@ -1,0 +1,5 @@
+module Admin
+  module ActionLogsHelper
+    def chain_multiple_translations: (untyped) -> (String | nil)
+  end
+end

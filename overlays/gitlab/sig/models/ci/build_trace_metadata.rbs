@@ -1,0 +1,6 @@
+module Ci
+  class BuildTraceMetadata < ::Ci::ApplicationRecord
+    def self.find_or_upsert_for!: (untyped, untyped, untyped) -> Ci::BuildTraceMetadata
+    def archival_attempts_message: () -> ("The job can not be archived right now." | "The job is out of archival attempts.")
+  end
+end

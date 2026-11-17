@@ -1,0 +1,11 @@
+module Gitlab
+  module BitbucketServerImport
+    module Importers
+      module PullRequestNotes
+        class BaseNoteDiffImporter < ::Gitlab::BitbucketServerImport::Importers::PullRequestNotes::BaseImporter
+          def build_position: (untyped, untyped) -> Gitlab::Diff::Position
+        end
+      end
+    end
+  end
+end

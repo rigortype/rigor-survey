@@ -1,0 +1,5 @@
+class AnnualReport
+  class TimeSeries < ::AnnualReport::Source
+    def generate: () -> { time_series: [{ month: 12, statuses: untyped, followers: untyped }] }
+  end
+end

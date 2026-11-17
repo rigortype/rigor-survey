@@ -1,0 +1,8 @@
+module Typelizer
+  class Configuration
+    def routes: () -> Typelizer::RouteConfig
+    def reset_writers!: () -> Set[untyped]
+    def writers: () -> Hash[:default, untyped]
+    def global_settings: () -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,6 @@
+module Ci
+  class PendingBuild < ::Ci::ApplicationRecord
+    def self.namespace_transfer_params: (untyped) -> { namespace_traversal_ids: untyped, namespace_id: untyped }
+    def self.args_from_build: (untyped) -> (Hash[untyped, untyped] | { build: untyped, project: untyped, protected: untyped, namespace: untyped, tag_ids: untyped, instance_runners_enabled: untyped })
+  end
+end

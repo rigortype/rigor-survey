@@ -1,0 +1,9 @@
+module Gitlab
+  module HealthChecks
+    module BaseAbstractCheck
+      def available?: () -> true
+      def readiness: () -> bot
+      def metrics: () -> []
+    end
+  end
+end

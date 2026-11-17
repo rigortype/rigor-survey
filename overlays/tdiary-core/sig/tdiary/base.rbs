@@ -1,0 +1,19 @@
+module TDiary
+  class TDiaryCategoryView < ::TDiary::TDiaryBase
+    def initialize: (untyped, untyped, untyped) -> void
+    def last_modified: () -> Time
+  end
+  class TDiarySearch < ::TDiary::TDiaryBase
+    def initialize: (untyped, untyped, untyped) -> void
+    def last_modified: () -> Time
+  end
+  class TDiaryPluginView < ::TDiary::TDiaryBase
+    def initialize: (untyped, untyped, untyped) -> void
+    def last_modified: () -> Time
+  end
+  class TDiaryBase
+    def cookies: () -> Array[untyped]
+    def diaries: () -> Hash[untyped, untyped]
+    def ignore_parser_cache: () -> false
+  end
+end

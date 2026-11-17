@@ -1,0 +1,10 @@
+module Gitlab
+  module Checks
+    module FileSizeCheck
+      class AnyOversizedBlobs
+        def initialize: (project: untyped, changes: [{ newrev: String }], file_size_limit_megabytes: Integer) -> void
+        def file_size_limit_megabytes: () -> 1
+      end
+    end
+  end
+end

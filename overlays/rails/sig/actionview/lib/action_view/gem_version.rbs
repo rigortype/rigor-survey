@@ -1,0 +1,3 @@
+module ActionView
+  def self.gem_version: () -> Gem::Version
+end

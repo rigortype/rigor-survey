@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Testing
+    module TestsWithoutAssertions
+      def after_teardown: () -> nil
+    end
+  end
+end

@@ -1,0 +1,31 @@
+module ActiveRecord
+  class StatementCache
+    def self.query: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::StatementCache::Query
+    def self.partial_query: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::StatementCache::PartialQuery
+    def self.partial_query_collector: () -> ActiveRecord::StatementCache::PartialQueryCollector
+    def self.create: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::StatementCache
+    def initialize: (untyped, untyped, untyped) -> void
+    def self.unsupported_value?: (untyped) -> (nil | true)
+    class Substitute
+      def initialize: (?untyped) -> void
+    end
+    class Query
+      def initialize: (untyped, retryable: untyped) -> void
+    end
+    class PartialQuery < ::ActiveRecord::StatementCache::Query
+      def initialize: (untyped, retryable: untyped) -> void
+    end
+    class PartialQueryCollector
+      def <<: (untyped) -> ActiveRecord::StatementCache::PartialQueryCollector
+      def add_bind: (untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::StatementCache::PartialQueryCollector
+      def add_binds: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::StatementCache::PartialQueryCollector
+      def value: () -> [Array[untyped], Array[untyped]]
+    end
+    class Params
+      def bind: (?untyped) -> ActiveRecord::StatementCache::Substitute
+    end
+    class BindMap
+      def initialize: (untyped) -> void
+    end
+  end
+end

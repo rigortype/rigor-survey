@@ -1,0 +1,10 @@
+module Dependabot
+  module Swift
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PackageResolvedParser
+        def initialize: (untyped) -> void
+        def parse: () -> Array[Dependabot::Dependency]
+      end
+    end
+  end
+end

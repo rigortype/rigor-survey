@@ -1,0 +1,5 @@
+class Bulb
+  def turnOn: () -> true
+  def turnOff: () -> false
+  def IsOn: () -> (false | true)
+end

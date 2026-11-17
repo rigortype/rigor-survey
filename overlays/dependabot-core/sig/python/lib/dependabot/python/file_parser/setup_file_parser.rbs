@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class FileParser < ::Dependabot::FileParsers::Base
+      class SetupFileParser
+        def initialize: (dependency_files: untyped) -> void
+        def dependency_set: () -> Dependabot::FileParsers::Base::DependencySet
+      end
+    end
+  end
+end

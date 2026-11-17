@@ -1,0 +1,12 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      module Defaults
+        def identifier: () -> Symbol
+        def title: () -> bot
+        def value: () -> bot
+        def links: () -> []
+      end
+    end
+  end
+end

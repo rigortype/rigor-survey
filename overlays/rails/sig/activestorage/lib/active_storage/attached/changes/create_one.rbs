@@ -1,0 +1,9 @@
+module ActiveStorage
+  class Attached
+    module Changes
+      class CreateOne
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,15 @@
+class Bst
+  def initialize: (untyped) -> void
+  def insert: (untyped) -> Bst::NODE
+  def each: () ?{ (*untyped) -> untyped } -> (Array[untyped] | Enumerator[untyped, untyped])
+  class NODE < ::Struct[untyped]
+    def data: () -> untyped
+    def left: () -> untyped
+    def right: () -> untyped
+    def data=: (untyped) -> untyped
+    def left=: (untyped) -> untyped
+    def right=: (untyped) -> untyped
+    def self.new: (?data: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped data, ?untyped left, ?untyped right) -> instance
+    def self.[]: (?data: untyped, ?left: untyped, ?right: untyped) -> instance | (?untyped data, ?untyped left, ?untyped right) -> instance
+  end
+end

@@ -1,0 +1,5 @@
+module Mail
+  class Exim < ::Mail::Sendmail
+    def destinations_for: (untyped) -> nil
+  end
+end

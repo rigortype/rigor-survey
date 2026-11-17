@@ -1,0 +1,7 @@
+module Mutations
+  module ContainerExpirationPolicies
+    class Update < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, **untyped) -> { container_expiration_policy: untyped, container_tags_expiration_policy: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

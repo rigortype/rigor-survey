@@ -1,0 +1,9 @@
+module Gitlab
+  module Tracking
+    class ServicePingContext
+      def initialize: (data_source: untyped, ?event: untyped) -> void
+      def to_h: () -> { schema: "iglu:com.gitlab/gitlab_service_ping/jsonschema/1-0-1", data: { data_source: untyped } }
+      def payload: () -> { data_source: untyped }
+    end
+  end
+end

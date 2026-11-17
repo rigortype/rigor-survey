@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        module Concerns
+          module BaseInclude
+            def skip_config_hash_validation?: () -> true
+          end
+        end
+      end
+    end
+  end
+end

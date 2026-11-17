@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventSetOperatorMismatch < ::Gitlab::Database::QueryAnalyzers::Base
+        class Node
+          def self.descendants: (untyped, ?filter: untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+          def self.locate_descendants: (untyped, untyped, ?filter: untyped) -> Array[untyped]
+        end
+      end
+    end
+  end
+end

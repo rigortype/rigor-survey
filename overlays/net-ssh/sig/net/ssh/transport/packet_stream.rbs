@@ -1,0 +1,14 @@
+module Net
+  module SSH
+    module Transport
+      module PacketStream
+        def client_name: () -> ("unknown" | String | nil)
+        def available_for_read?: () -> (false | nil | true)
+        def enqueue_packet: (untyped) -> Net::SSH::Transport::PacketStream
+        def hints: () -> Hash[untyped, untyped]
+        def server: () -> Net::SSH::Transport::State
+        def client: () -> Net::SSH::Transport::State
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module GitalyClient
+    class CircuitBreaker
+      class Metrics
+        def self.track_state_transition: (endpoint: untyped, storage: untyped, from_state: untyped, to_state: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module BuildTraceChunks
+    class Fog
+      def delete_data: (untyped) -> Array[Array[untyped]]
+    end
+  end
+end

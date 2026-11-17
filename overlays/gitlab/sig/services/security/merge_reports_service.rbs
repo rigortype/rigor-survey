@@ -1,0 +1,5 @@
+module Security
+  class MergeReportsService
+    def initialize: (*untyped) -> void
+  end
+end

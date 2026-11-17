@@ -1,0 +1,17 @@
+module Dependabot
+  module NpmAndYarn
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class DependencyFilesBuilder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def package_locks: () -> (Array[Dependabot::DependencyFile] | nil)
+        def yarn_locks: () -> (Array[Dependabot::DependencyFile] | nil)
+        def pnpm_locks: () -> (Array[Dependabot::DependencyFile] | nil)
+        def root_yarn_lock: () -> (Dependabot::DependencyFile | nil)
+        def root_pnpm_lock: () -> (Dependabot::DependencyFile | nil)
+        def shrinkwraps: () -> (Array[Dependabot::DependencyFile] | nil)
+        def lockfiles: () -> Array[untyped]
+        def package_files: () -> (Array[Dependabot::DependencyFile] | nil)
+      end
+    end
+  end
+end

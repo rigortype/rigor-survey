@@ -1,0 +1,9 @@
+module TDiary
+  module CommentManager
+    def each_comment: (?untyped) -> (Array[untyped] | nil)
+    def each_comment_tail: (?untyped) -> Range[untyped]
+    def each_visible_comment: (?untyped) -> (Array[untyped] | nil)
+    def each_visible_trackback: (?untyped) -> (Array[untyped] | nil)
+    def each_visible_trackback_tail: (?untyped) -> Array[untyped]
+  end
+end

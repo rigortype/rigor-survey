@@ -1,0 +1,12 @@
+module Gitlab
+  module Email
+    module Handler
+      class CreateMergeRequestHandler < ::Gitlab::Email::Handler::BaseHandler
+        def self.gem_handler: () -> :create_merge_request
+        def execute: () -> nil
+        def author: () -> (User | nil)
+        def metrics_event: () -> :receive_email_create_merge_request
+      end
+    end
+  end
+end

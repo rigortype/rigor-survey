@@ -1,0 +1,6 @@
+module PersonalAccessTokens
+  class ExpiringWorker
+    def self.batch_size: () -> 100
+    def runtime_limiter: () -> Gitlab::Metrics::RuntimeLimiter
+  end
+end

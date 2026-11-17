@@ -1,0 +1,7 @@
+module Algorithms
+  module Sort
+    def self.heapsort: (untyped) -> Array[untyped]
+    def self.merge: (untyped, untyped) -> Array[untyped]
+    def self.dualpivot_swap: (untyped, untyped, untyped) -> [untyped, untyped]
+  end
+end

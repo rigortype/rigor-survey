@@ -1,0 +1,11 @@
+module Ci
+  module Components
+    module Usages
+      class CreateService
+        def initialize: (untyped, used_by_project: untyped) -> void
+        def execute: () -> ServiceResponse
+        def current_date: () -> Date
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module BackgroundMigration
+      class BatchedMigration < ::Gitlab::Database::SharedModel
+        def prometheus_labels: () -> { migration_id: untyped, migration_identifier: String }
+        def health_context: () -> Gitlab::Database::HealthStatus::Context
+        def to_s: () -> String
+        def finalize_command: () -> String
+      end
+    end
+  end
+end

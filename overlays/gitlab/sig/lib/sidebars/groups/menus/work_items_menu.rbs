@@ -1,0 +1,13 @@
+module Sidebars
+  module Groups
+    module Menus
+      class WorkItemsMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> (nil | true)
+        def sprite_icon: () -> "work-item-issue"
+        def active_routes: () -> { path: ["groups/issues#index", "groups/issues#show", "groups/issues#new", "groups/work_items#index", "groups/work_items#show", "groups/work_items#new"] }
+        def pill_count_field: () -> "openWorkItemsCount"
+        def pill_html_options: () -> { class: "issue_counter" }
+      end
+    end
+  end
+end

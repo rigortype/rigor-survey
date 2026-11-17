@@ -1,0 +1,3 @@
+module ResolvesMergeRequests
+  def early_return: () -> [false, ActiveRecord::Relation[MergeRequest] | nil]
+end

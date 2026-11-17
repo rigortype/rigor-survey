@@ -1,0 +1,8 @@
+module WorkItems
+  module Widgets
+    class CrmContacts < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:add_contacts, :remove_contacts]
+      def self.quick_action_params: () -> [:contact_emails]
+    end
+  end
+end

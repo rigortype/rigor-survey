@@ -1,0 +1,5 @@
+module API
+  class Scope
+    def initialize: (Symbol, ?untyped) -> void
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Delegation
+    def self.delegated_classes: () -> [singleton(ActiveRecord::Relation), singleton(ActiveRecord::Associations::CollectionProxy), singleton(ActiveRecord::AssociationRelation), singleton(ActiveRecord::DisableJoinsAssociationRelation)]
+    class GeneratedRelationMethods < ::Module
+    end
+  end
+end

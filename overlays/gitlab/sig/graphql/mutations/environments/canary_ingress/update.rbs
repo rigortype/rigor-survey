@@ -1,0 +1,9 @@
+module Mutations
+  module Environments
+    module CanaryIngress
+      class Update < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> ({ errors: Array[untyped] } | { errors: [String] })
+      end
+    end
+  end
+end

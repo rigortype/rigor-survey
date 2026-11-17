@@ -1,0 +1,29 @@
+module Redmine
+  class AssetPath
+    def initialize: (Pathname, Array[Pathname], ?String) -> void
+    def update: (transition_map: {}, assets: {}, load_path: nil) -> nil
+    def paths: () -> Array[Pathname]
+    def prefix: () -> "plugin_assets/foo/"
+    class Transition < ::Struct[untyped]
+      def src: () -> untyped
+      def dest: () -> untyped
+      def src=: (untyped) -> untyped
+      def dest=: (untyped) -> untyped
+      def self.new: (?src: untyped, ?dest: untyped) -> instance
+      def self.[]: (?src: untyped, ?dest: untyped) -> instance
+      def path_pair: (untyped, untyped) -> [untyped, Pathname]
+    end
+    class AssetPathMap < ::Struct[untyped]
+      def src: () -> untyped
+      def dest: () -> untyped
+      def logical_src: () -> untyped
+      def logical_dest: () -> untyped
+      def src=: (untyped) -> untyped
+      def dest=: (untyped) -> untyped
+      def logical_src=: (untyped) -> untyped
+      def logical_dest=: (untyped) -> untyped
+      def self.new: (?src: untyped, ?dest: untyped, ?logical_src: untyped, ?logical_dest: untyped) -> instance
+      def self.[]: (?src: untyped, ?dest: untyped, ?logical_src: untyped, ?logical_dest: untyped) -> instance
+    end
+  end
+end

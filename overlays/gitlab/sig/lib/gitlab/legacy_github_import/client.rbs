@@ -1,0 +1,9 @@
+module Gitlab
+  module LegacyGithubImport
+    class Client
+      def initialize: (untyped, ?host: String, ?api_version: String, ?wait_for_rate_limit_reset: untyped, ?hostname: String) -> void
+      def api: () -> ::Octokit::Client
+      def api_version: () -> ("v1" | "v3")
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Kramdown
+  module Parser
+    class Kramdown < ::Kramdown::Parser::Base
+      def parse_blank_line: () -> true
+    end
+  end
+end

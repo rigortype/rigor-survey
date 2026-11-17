@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class ProjectDistribution < ::ApplicationRecord
+      def self.container_type: () -> :project
+    end
+  end
+end

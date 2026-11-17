@@ -1,0 +1,8 @@
+module AbstractController
+  module UrlFor
+    def _routes: () -> bot
+    module ClassMethods
+      def _routes: () -> nil
+    end
+  end
+end

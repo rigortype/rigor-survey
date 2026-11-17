@@ -1,0 +1,23 @@
+module Gitlab
+  class BlamePresenter < ::Gitlab::View::Presenter::Simple
+    def initialize: (untyped, **untyped) -> void
+    class CommitData < ::Struct[untyped]
+      def author_avatar: () -> untyped
+      def age_map_class: () -> untyped
+      def commit_link: () -> untyped
+      def commit_author_link: () -> untyped
+      def project_blame_link: () -> untyped
+      def previous_blame_path: () -> untyped
+      def time_ago_tooltip: () -> untyped
+      def author_avatar=: (untyped) -> untyped
+      def age_map_class=: (untyped) -> untyped
+      def commit_link=: (untyped) -> untyped
+      def commit_author_link=: (untyped) -> untyped
+      def project_blame_link=: (untyped) -> untyped
+      def previous_blame_path=: (untyped) -> untyped
+      def time_ago_tooltip=: (untyped) -> untyped
+      def self.new: (?author_avatar: untyped, ?age_map_class: untyped, ?commit_link: untyped, ?commit_author_link: untyped, ?project_blame_link: untyped, ?previous_blame_path: untyped, ?time_ago_tooltip: untyped) -> instance | (?untyped author_avatar, ?untyped age_map_class, ?untyped commit_link, ?untyped commit_author_link, ?untyped project_blame_link, ?untyped previous_blame_path, ?untyped time_ago_tooltip) -> instance
+      def self.[]: (?author_avatar: untyped, ?age_map_class: untyped, ?commit_link: untyped, ?commit_author_link: untyped, ?project_blame_link: untyped, ?previous_blame_path: untyped, ?time_ago_tooltip: untyped) -> instance | (?untyped author_avatar, ?untyped age_map_class, ?untyped commit_link, ?untyped commit_author_link, ?untyped project_blame_link, ?untyped previous_blame_path, ?untyped time_ago_tooltip) -> instance
+    end
+  end
+end

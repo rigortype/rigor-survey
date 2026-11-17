@@ -1,0 +1,9 @@
+module ActiveJob
+  module Serializers
+    class ActionControllerParametersSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def deserialize: (untyped) -> bot
+      def serialize?: (untyped) -> (false | true)
+      def klass: () -> (nil | singleton(ActionController::Parameters))
+    end
+  end
+end

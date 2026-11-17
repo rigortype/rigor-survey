@@ -1,0 +1,5 @@
+module BulkImports
+  class RelationExportService
+    def initialize: (untyped, untyped, untyped, untyped, ?offline_export_id: untyped) -> void
+  end
+end

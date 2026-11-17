@@ -1,0 +1,7 @@
+module Gitlab
+  module LegacyGithubImport
+    class ProjectCreator
+      def initialize: (untyped, untyped, untyped, untyped, ?type: untyped, **untyped) -> void
+    end
+  end
+end

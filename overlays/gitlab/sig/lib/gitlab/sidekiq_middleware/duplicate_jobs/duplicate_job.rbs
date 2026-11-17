@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module DuplicateJobs
+      class DuplicateJob
+        def initialize: (untyped, untyped) -> void
+        def concurrency_limit_resumed?: () -> (false | true)
+      end
+    end
+  end
+end

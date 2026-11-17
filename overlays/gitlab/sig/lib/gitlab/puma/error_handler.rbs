@@ -1,0 +1,8 @@
+module Gitlab
+  module Puma
+    class ErrorHandler
+      def initialize: (untyped) -> void
+      def execute: (untyped, untyped, untyped) -> [untyped, {}, ["An error has occurred and reported in the system's low-level error handler." | String]]
+    end
+  end
+end

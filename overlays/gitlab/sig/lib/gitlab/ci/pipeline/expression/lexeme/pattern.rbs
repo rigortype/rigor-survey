@@ -1,0 +1,16 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Pattern < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Value
+            def initialize: (::String) -> void
+            def inspect: () -> ::String
+            def self.pattern: () -> Regexp
+            def self.build: (untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::Pattern
+          end
+        end
+      end
+    end
+  end
+end

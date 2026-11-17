@@ -1,0 +1,5 @@
+module Ci
+  class JobsFinder
+    def initialize: (current_user: untyped, ?pipeline: untyped, ?project: untyped, ?runner: untyped, ?params: untyped, ?type: untyped) -> void
+  end
+end

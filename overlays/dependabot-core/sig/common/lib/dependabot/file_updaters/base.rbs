@@ -1,0 +1,8 @@
+module Dependabot
+  module FileUpdaters
+    class Base
+      def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?options: untyped) -> void
+      def notices: () -> []
+    end
+  end
+end

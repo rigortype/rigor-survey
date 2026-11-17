@@ -1,0 +1,11 @@
+module Gitlab
+  module GithubImport
+    module Clients
+      class Proxy
+        def initialize: (untyped) -> void
+        def repos: (untyped, untyped) -> { repos: untyped, page_info: untyped, count: untyped }
+        def client: () -> Gitlab::GithubImport::Client
+      end
+    end
+  end
+end

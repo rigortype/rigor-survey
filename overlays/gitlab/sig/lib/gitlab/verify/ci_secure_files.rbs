@@ -1,0 +1,8 @@
+module Gitlab
+  module Verify
+    class CiSecureFiles < ::Gitlab::Verify::BatchVerifier
+      def name: () -> "CI Secure Files"
+      def describe: (untyped) -> String
+    end
+  end
+end

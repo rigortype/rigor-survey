@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestReport
+        def get_suite: (untyped) -> Gitlab::Ci::Reports::TestSuite
+        def with_attachment!: () -> Gitlab::Ci::Reports::TestReport
+        def test_suites: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

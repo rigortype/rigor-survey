@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      module DatabaseStatements
+        def write_query?: (untyped) -> (false | true)
+        def build_explain_clause: (?untyped) -> ("EXPLAIN" | String)
+        def execute_batch: (untyped, ?untyped, **untyped) -> nil
+      end
+    end
+  end
+end

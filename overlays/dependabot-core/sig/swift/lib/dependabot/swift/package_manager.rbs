@@ -1,0 +1,9 @@
+module Dependabot
+  module Swift
+    class PackageManager < ::Dependabot::Ecosystem::VersionManager
+      def initialize: (untyped) -> void
+      def deprecated?: () -> false
+      def unsupported?: () -> false
+    end
+  end
+end

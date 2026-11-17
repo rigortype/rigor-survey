@@ -1,0 +1,9 @@
+module ActiveModel
+  module Type
+    class ImmutableString < ::ActiveModel::Type::Value
+      def initialize: (**untyped) -> void
+      def type: () -> :string
+      def to_immutable_string: () -> ActiveModel::Type::ImmutableString
+    end
+  end
+end

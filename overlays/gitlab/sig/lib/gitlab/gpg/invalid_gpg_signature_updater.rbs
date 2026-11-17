@@ -1,0 +1,8 @@
+module Gitlab
+  module Gpg
+    class InvalidGpgSignatureUpdater
+      def initialize: (untyped) -> void
+      def run: () -> Array[untyped]
+    end
+  end
+end

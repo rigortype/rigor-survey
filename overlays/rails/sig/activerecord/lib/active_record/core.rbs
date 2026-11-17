@@ -1,0 +1,25 @@
+module ActiveRecord
+  module Core
+    def self.configurations=: (untyped) -> ActiveRecord::DatabaseConfigurations
+    def self.configurations: () -> ActiveRecord::DatabaseConfigurations
+    def self.ractor_connection_handler: () -> (ActiveRecord::ConnectionAdapters::RactorConnectionHandler | nil)
+    def initialize: (?untyped) -> void
+    def init_with: (untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::Core
+    def init_with_attributes: (untyped, ?untyped) -> ActiveRecord::Core
+    def encode_with: (untyped) -> 2
+    def ==: (top) -> bool
+    def freeze: () -> ActiveRecord::Core
+    def frozen?: () -> (false | true)
+    def present?: () -> true
+    def blank?: () -> false
+    def readonly?: () -> (false | nil | true)
+    def readonly!: () -> true
+    def inspect: () -> String
+    def full_inspect: () -> String
+    module ClassMethods
+      def initialize_find_by_cache: () -> Hash[false | true, Concurrent::Map[untyped, untyped]]
+      def arel_table: () -> (Arel::Table | nil)
+      def type_caster: () -> ActiveRecord::TypeCaster::Map
+    end
+  end
+end

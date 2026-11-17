@@ -1,0 +1,7 @@
+module Dependabot
+  module GoModules
+    class ReplaceStubber
+      def initialize: (untyped) -> void
+    end
+  end
+end

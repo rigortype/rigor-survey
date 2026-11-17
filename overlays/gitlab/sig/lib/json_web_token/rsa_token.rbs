@@ -1,0 +1,16 @@
+module JSONWebToken
+  class RSAToken < ::JSONWebToken::Token
+    def initialize: (untyped) -> void
+    def encoded: () -> String
+    def self.encode: (untyped, untyped, untyped) -> String
+    def self.decode: (untyped, untyped, ?verify_expiration: untyped) -> [untyped, Hash[String, untyped]]
+    class CachedKey < ::Struct[untyped]
+      def key: () -> untyped
+      def mtime: () -> untyped
+      def key=: (untyped) -> untyped
+      def mtime=: (untyped) -> untyped
+      def self.new: (?key: untyped, ?mtime: untyped) -> instance | (?untyped key, ?untyped mtime) -> instance
+      def self.[]: (?key: untyped, ?mtime: untyped) -> instance | (?untyped key, ?untyped mtime) -> instance
+    end
+  end
+end

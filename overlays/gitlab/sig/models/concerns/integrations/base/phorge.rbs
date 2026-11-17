@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Phorge
+      def reference_pattern: (*untyped) -> Regexp
+    end
+  end
+end

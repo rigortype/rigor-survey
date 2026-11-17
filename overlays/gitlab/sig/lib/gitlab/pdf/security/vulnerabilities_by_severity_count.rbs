@@ -1,0 +1,11 @@
+module Gitlab
+  module PDF
+    module Security
+      class VulnerabilitiesBySeverityCount
+        def self.render: (untyped, ?data: untyped) -> Array[Symbol]
+        def initialize: (untyped, untyped) -> void
+        def render: () -> Array[Symbol]
+      end
+    end
+  end
+end

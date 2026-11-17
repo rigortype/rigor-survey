@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    class SessionExpireFromInitEnforcer
+      def initialize: (untyped, untyped) -> void
+      def set_login_time: () -> (Integer | nil)
+      def enforce!: () -> nil
+    end
+  end
+end

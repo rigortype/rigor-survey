@@ -1,0 +1,13 @@
+module ActiveSupport
+  class ContinuousIntegration
+    def self.run: (?untyped, ?untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::ContinuousIntegration
+    def run: (untyped, untyped) ?{ (*untyped) -> untyped } -> nil
+    def step: (untyped, *untyped) -> nil
+    def group: (untyped, ?parallel: untyped) ?{ (*untyped) -> untyped } -> nil
+    def failure: (untyped, ?untyped) -> nil
+    def heading: (untyped, ?untyped, ?type: untyped, ?padding: untyped) -> nil
+    def echo: (untyped, type: untyped) -> nil
+    def colorize: (untyped, untyped) -> String
+    def results: () -> Array[untyped]
+  end
+end

@@ -1,0 +1,3 @@
+module PyCall
+  def self?.iterable: (untyped) -> PyCall::IterableWrapper
+end

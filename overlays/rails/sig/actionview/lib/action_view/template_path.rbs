@@ -1,0 +1,9 @@
+module ActionView
+  class TemplatePath
+    def self.virtual: (untyped, untyped, untyped) -> String
+    def self.parse: (untyped) -> ActionView::TemplatePath
+    def self.build: (untyped, untyped, untyped) -> ActionView::TemplatePath
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+    def hash: () -> Integer
+  end
+end

@@ -1,0 +1,8 @@
+class LazySegtree
+  def initialize: (Integer | [Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer] | [Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer] | [Integer, Integer, Integer, Integer, Integer, Integer] | [Integer, Integer, Integer, Integer, Integer] | [Integer] | [[Integer, Integer], [Integer, Integer], [Integer, Integer], [Integer, Integer], [Integer, Integer], [Integer, Integer]] | [], Integer | Proc | [Integer, Integer], Integer | [Integer, Integer], ?Proc, ?Proc, ?Integer | Proc) ?{ (*untyped) -> untyped } -> void
+  def set: (Integer, Integer) -> Integer
+  def apply: (Range[Integer] | Integer, Integer, ?Integer) -> (Integer | nil)
+  def range_apply: (Integer, Integer, Integer) -> (Integer | nil)
+  def d: () -> Array[untyped]
+  def lz: () -> Array[untyped]
+end

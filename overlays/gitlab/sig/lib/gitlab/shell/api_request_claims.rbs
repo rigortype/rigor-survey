@@ -1,0 +1,9 @@
+module Gitlab
+  class Shell
+    class ApiRequestClaims
+      def initialize: (untyped) -> void
+      def verify: (untyped) -> ServiceResponse
+      def client_ip: () -> (String | nil)
+    end
+  end
+end

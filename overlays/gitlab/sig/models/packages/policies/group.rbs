@@ -1,0 +1,7 @@
+module Packages
+  module Policies
+    class Group
+      def initialize: (untyped) -> void
+    end
+  end
+end

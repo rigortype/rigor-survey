@@ -1,0 +1,9 @@
+module Import
+  module Export
+    module Project
+      class CommitNotesBatcher
+        def initialize: (untyped, ?batch_size: Integer) -> void
+      end
+    end
+  end
+end

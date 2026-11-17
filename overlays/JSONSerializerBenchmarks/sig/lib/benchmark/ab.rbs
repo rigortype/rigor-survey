@@ -1,0 +1,6 @@
+module Benchmark
+  class AB
+    def initialize: (untyped) -> void
+    def run!: () -> (Integer | nil)
+  end
+end

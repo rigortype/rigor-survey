@@ -1,0 +1,7 @@
+module Fasp
+  class Provider < ::ApplicationRecord
+    def server_public_key_base64: () -> String
+    def url: (untyped) -> String
+    def delivery_failure_tracker: () -> DeliveryFailureTracker
+  end
+end

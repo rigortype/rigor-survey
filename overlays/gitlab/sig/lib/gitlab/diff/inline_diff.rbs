@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class InlineDiff
+      def initialize: (untyped, untyped, ?offset: untyped) -> void
+      def inline_diffs: () -> ([Array[untyped], Array[untyped]] | nil)
+    end
+  end
+end

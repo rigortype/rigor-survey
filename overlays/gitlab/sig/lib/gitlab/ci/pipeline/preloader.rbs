@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      class Preloader
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

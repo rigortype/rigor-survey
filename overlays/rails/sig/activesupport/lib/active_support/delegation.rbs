@@ -1,0 +1,12 @@
+module ActiveSupport
+  class DelegationError < ::NoMethodError
+    def self.nil_target: (untyped, untyped) -> ActiveSupport::DelegationError
+  end
+  module Delegation
+    def self.generate: (untyped, untyped, ?location: untyped, ?to: untyped, ?prefix: untyped, ?allow_nil: untyped, ?nilable: untyped, ?private: untyped, ?as: untyped, ?signature: untyped) -> Array[untyped]
+    def self.DelegateClass: (untyped) ?{ (*untyped) -> untyped } -> singleton(ActiveSupport::Delegation::ClassDelegator)
+    class ClassDelegator < ::Delegator
+      def initialize: (untyped) -> void
+    end
+  end
+end

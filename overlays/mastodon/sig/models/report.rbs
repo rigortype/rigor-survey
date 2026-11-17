@@ -1,0 +1,4 @@
+class Report < ::ApplicationRecord
+  def object_type: () -> :flag
+  def unresolved?: () -> (false | true)
+end

@@ -1,0 +1,6 @@
+module Clusters
+  class KubernetesNamespace < ::ApplicationRecord
+    def token_name: () -> String
+    def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+  end
+end

@@ -1,0 +1,5 @@
+module Organizations
+  class BaseMaintenanceTransitionService
+    def initialize: (untyped) -> void
+  end
+end

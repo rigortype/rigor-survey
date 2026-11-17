@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class HostList
+        def initialize: (?untyped) -> void
+        def shuffle: () -> 0
+      end
+    end
+  end
+end

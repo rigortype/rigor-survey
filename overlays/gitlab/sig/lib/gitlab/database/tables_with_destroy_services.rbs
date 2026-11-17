@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    module TablesWithDestroyServices
+      def self.scan: () -> Hash[untyped, untyped]
+      def self.root_path: () -> String
+    end
+  end
+end

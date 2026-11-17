@@ -1,0 +1,16 @@
+module Dependabot
+  module GoModules
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def fetch_available_versions: () -> (Array[Dependabot::Package::PackageRelease] | [Dependabot::Package::PackageRelease])
+        def go_mod: () -> (Dependabot::DependencyFile | nil)
+        def package_release: (version: untyped) -> Dependabot::Package::PackageRelease
+        def parse_manifest: () -> Dependabot::GoModules::GoModManifest
+        def version_class: () -> singleton(Dependabot::Version)
+        def resolve_module_versions_from_subpath: (untyped) -> (Array[String] | nil)
+        def package_details: (untyped) -> (Dependabot::Package::PackageDetails | nil)
+      end
+    end
+  end
+end

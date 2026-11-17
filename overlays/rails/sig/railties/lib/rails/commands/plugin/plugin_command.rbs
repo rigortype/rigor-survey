@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    class PluginCommand < ::Rails::Command::Base
+      def self.banner: (*untyped) -> String
+    end
+  end
+end

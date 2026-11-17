@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module Pagination
+      class ClickHouseAggregatedRelation < ::SimpleDelegator
+        def initialize: (untyped, ?context_attributes: { namespace: untyped }) -> void
+        def context_attributes: () -> { namespace: untyped }
+      end
+    end
+  end
+end

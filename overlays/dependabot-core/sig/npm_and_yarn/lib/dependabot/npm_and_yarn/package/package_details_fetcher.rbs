@@ -1,0 +1,13 @@
+module Dependabot
+  module NpmAndYarn
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def fetch: () -> Dependabot::Package::PackageDetails
+        def valid_npm_details?: () -> (false | true)
+        def npm_details: () -> (Dependabot::Package::NpmRegistryPackage | nil)
+        def yanked?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

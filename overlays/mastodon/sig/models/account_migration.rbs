@@ -1,0 +1,3 @@
+class AccountMigration < ::ApplicationRecord
+  def self.cooldown_duration_ago: () -> Float
+end

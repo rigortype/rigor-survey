@@ -1,0 +1,7 @@
+module ActiveModel
+  module Validations
+    class LengthValidator < ::ActiveModel::EachValidator
+      def initialize: (untyped) -> void
+    end
+  end
+end

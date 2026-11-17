@@ -1,0 +1,6 @@
+module WorkItems
+  class CreateAndLinkService
+    def initialize: (project: untyped, ?perform_spam_check: untyped, ?current_user: untyped, ?params: untyped, ?link_params: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

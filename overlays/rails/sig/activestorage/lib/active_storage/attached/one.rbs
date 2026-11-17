@@ -1,0 +1,7 @@
+module ActiveStorage
+  class Attached
+    class One < ::ActiveStorage::Attached
+      def blank?: () -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Onboarding
+  module FeatureLibrary
+    module Catalog
+      def self.explore_pages: (panel: untyped, deployment: untyped) -> Hash[:premium | :ultimate, untyped]
+      def self.explore_page: (untyped, panel: untyped, deployment: untyped) -> Onboarding::FeatureLibrary::Catalog::ExplorePage
+    end
+  end
+end

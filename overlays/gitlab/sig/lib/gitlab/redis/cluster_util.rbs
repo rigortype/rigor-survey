@@ -1,0 +1,8 @@
+module Gitlab
+  module Redis
+    module ClusterUtil
+      def self.cluster?: (untyped) -> (false | true)
+      def self.pipeline_batch_size: () -> (0 | 1000 | Integer | nil)
+    end
+  end
+end

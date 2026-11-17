@@ -1,0 +1,3 @@
+module RendersLdapServers
+  def ldap_servers: () -> Array[untyped]
+end

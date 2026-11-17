@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module MergeRequests
+      class GetMergeRequestNotesService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["list_all_merge_request_notes"]
+        def unlisted?: () -> true
+      end
+    end
+  end
+end

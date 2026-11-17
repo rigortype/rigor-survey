@@ -1,0 +1,6 @@
+module ContainerRegistry
+  class Blob
+    def initialize: (untyped, untyped) -> void
+    def path: () -> String
+  end
+end

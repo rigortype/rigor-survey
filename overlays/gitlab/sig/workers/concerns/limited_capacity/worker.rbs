@@ -1,0 +1,8 @@
+module LimitedCapacity
+  module Worker
+    def perform: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> nil
+    def perform_work: (*untyped) -> bot
+    def remaining_work_count: (*untyped) -> bot
+    def max_running_jobs: () -> bot
+  end
+end

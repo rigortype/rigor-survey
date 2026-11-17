@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    module Formatters
+      class BaseFormatter
+        def initialize: (untyped) -> void
+        def position_type: () -> bot
+      end
+    end
+  end
+end

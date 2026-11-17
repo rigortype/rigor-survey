@@ -1,0 +1,23 @@
+module Gitlab
+  module Git
+    class DiffCollection
+      def self.default_limits: () -> { max_files: untyped, max_lines: untyped }
+      def self.limits: (?untyped) -> Hash[untyped, untyped]
+      def initialize: (untyped, ?untyped) -> void
+      def each: () ?{ (*untyped) -> untyped } -> nil
+      def sort: () ?{ (*untyped) -> untyped } -> Gitlab::Git::DiffCollection
+      def empty?: () -> (false | true)
+      def overflow?: () -> (false | true)
+      def overflow_max_lines?: () -> (false | true)
+      def overflow_max_bytes?: () -> (false | true)
+      def overflow_max_files?: () -> (false | true)
+      def collapsed_safe_lines?: () -> (false | true)
+      def collapsed_safe_files?: () -> (false | true)
+      def collapsed_safe_bytes?: () -> (false | true)
+      def collapsed_safe_limits?: () -> (false | true)
+      def size: () -> Integer
+      def decorate!: () -> Gitlab::Git::DiffCollection
+      def limits: () -> Hash[untyped, untyped]
+    end
+  end
+end

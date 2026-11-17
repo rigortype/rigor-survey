@@ -1,0 +1,9 @@
+module Dependabot
+  module Terraform
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Terraform::Version
+      def to_s: () -> String
+    end
+  end
+end

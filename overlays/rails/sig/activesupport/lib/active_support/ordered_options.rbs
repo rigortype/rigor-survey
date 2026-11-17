@@ -1,0 +1,14 @@
+module ActiveSupport
+  class OrderedOptions < ::Hash
+    def respond_to_missing?: (untyped, untyped) -> true
+    def extractable_options?: () -> true
+    def inspect: () -> String
+  end
+  class InheritableOptions < ::ActiveSupport::OrderedOptions
+    def initialize: (?untyped) -> void
+    def inspect: () -> String
+    def overridden?: (untyped) -> (false | true)
+    def inheritable_copy: () -> ActiveSupport::InheritableOptions
+    def each: () ?{ (*untyped) -> untyped } -> ActiveSupport::InheritableOptions
+  end
+end

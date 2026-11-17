@@ -1,0 +1,6 @@
+module Typelizer
+  class Renderer
+    def initialize: (untyped) -> void
+    def erb: () -> ERB
+  end
+end

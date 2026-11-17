@@ -1,0 +1,9 @@
+module Gitlab
+  module WebHooks
+    module RecursionDetection
+      def self.header: (untyped) -> Hash[untyped, untyped]
+      def self.to_log: (untyped) -> { uuid: untyped, ids: untyped }
+      def self.cache_key_for_hook: (untyped) -> String
+    end
+  end
+end

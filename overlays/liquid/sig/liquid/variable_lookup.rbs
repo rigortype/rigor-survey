@@ -1,0 +1,8 @@
+module Liquid
+  class VariableLookup
+    def self.parse: (untyped, ?untyped, ?untyped) -> Liquid::VariableLookup
+    def initialize: (String, ?untyped, ?untyped) -> void
+    def lookup_command?: (untyped) -> (false | true)
+    def ==: (untyped) -> (false | true)
+  end
+end

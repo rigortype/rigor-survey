@@ -1,0 +1,17 @@
+module Concurrent
+  module Actor
+    class AbstractContext
+      def on_envelope: (untyped) -> bot
+      def behaviour_definition: () -> bot
+      def default_reference_class: () -> singleton(Concurrent::Actor::Reference)
+      def ask: (untyped) -> bot
+      def self.to_spawn_options: (untyped, *untyped) -> (::Hash[untyped, untyped] | { class: singleton(Concurrent::Actor::AbstractContext), name: untyped, args: untyped })
+    end
+    class Context < ::Concurrent::Actor::AbstractContext
+      def behaviour_definition: () -> ::Array[untyped]
+    end
+    class RestartingContext < ::Concurrent::Actor::AbstractContext
+      def behaviour_definition: () -> ::Array[untyped]
+    end
+  end
+end

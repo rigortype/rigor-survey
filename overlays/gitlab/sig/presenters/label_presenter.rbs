@@ -1,0 +1,5 @@
+class LabelPresenter < ::Gitlab::View::Presenter::Delegated
+  def text_color_class: () -> String
+  def can_subscribe_to_label_in_different_levels?: () -> (false | true)
+  def project_label?: () -> (false | true)
+end

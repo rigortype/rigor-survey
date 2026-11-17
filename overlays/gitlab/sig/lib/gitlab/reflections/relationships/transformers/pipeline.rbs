@@ -1,0 +1,11 @@
+module Gitlab
+  module Reflections
+    module Relationships
+      module Transformers
+        class Pipeline
+          def initialize: (*untyped) -> void
+        end
+      end
+    end
+  end
+end

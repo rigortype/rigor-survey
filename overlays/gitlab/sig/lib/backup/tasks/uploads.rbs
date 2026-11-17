@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class Uploads < ::Backup::Tasks::Task
+      def self.id: () -> "uploads"
+      def destination_path: () -> "uploads.tar.gz"
+    end
+  end
+end

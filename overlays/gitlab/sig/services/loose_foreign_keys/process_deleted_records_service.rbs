@@ -1,0 +1,5 @@
+module LooseForeignKeys
+  class ProcessDeletedRecordsService
+    def initialize: (connection: untyped, ?logger: untyped, ?modification_tracker: untyped, ?worker_class: untyped, ?record_store: untyped) -> void
+  end
+end

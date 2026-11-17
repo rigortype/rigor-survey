@@ -1,0 +1,8 @@
+module Security
+  class PolicyAvailability
+    def self.any_available?: (untyped) -> (false | true)
+    class Licensed
+      def initialize: (untyped) -> void
+    end
+  end
+end

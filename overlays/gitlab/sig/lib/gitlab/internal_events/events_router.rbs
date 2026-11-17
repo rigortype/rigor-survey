@@ -1,0 +1,7 @@
+module Gitlab
+  module InternalEvents
+    class EventsRouter
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

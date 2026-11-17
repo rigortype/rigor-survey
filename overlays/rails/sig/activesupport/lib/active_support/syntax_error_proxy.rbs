@@ -1,0 +1,17 @@
+module ActiveSupport
+  class SyntaxErrorProxy
+    class BacktraceLocation < ::Struct[untyped]
+      def path: () -> untyped
+      def lineno: () -> untyped
+      def to_s: () -> untyped
+      def path=: (untyped) -> untyped
+      def lineno=: (untyped) -> untyped
+      def to_s=: (untyped) -> untyped
+      def self.new: (?path: untyped, ?lineno: untyped, ?to_s: untyped) -> instance | (?untyped path, ?untyped lineno, ?untyped to_s) -> instance
+      def self.[]: (?path: untyped, ?lineno: untyped, ?to_s: untyped) -> instance | (?untyped path, ?untyped lineno, ?untyped to_s) -> instance
+    end
+    class BacktraceLocationProxy
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  class SafeRequestPurger
+    def initialize: (resource_key: untyped, resource_ids: untyped) -> void
+  end
+end

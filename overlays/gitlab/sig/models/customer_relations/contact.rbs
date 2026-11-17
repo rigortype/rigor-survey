@@ -1,0 +1,11 @@
+module CustomerRelations
+  class Contact < ::ApplicationRecord
+    def self.reference_prefix: () -> "[contact:"
+    def self.reference_prefix_quoted: () -> "[\"contact:"
+    def self.reference_postfix: () -> "]"
+    def self.search_by_state: (untyped) -> ActiveRecord::Relation[CustomerRelations::Contact]
+    def self.sort_by_field: (untyped, untyped) -> ActiveRecord::Relation[CustomerRelations::Contact]
+    def self.sort_by_organization: (untyped) -> ActiveRecord::Relation[CustomerRelations::Contact]
+    def self.sort_by_name: () -> ActiveRecord::Relation[CustomerRelations::Contact]
+  end
+end

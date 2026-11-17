@@ -1,0 +1,10 @@
+module Arel
+  class InsertManager < ::Arel::TreeManager
+    def initialize: (?untyped) -> void
+    def into: (untyped) -> Arel::InsertManager
+    def insert: (untyped) -> (Arel::InsertManager | nil)
+    def returning: (untyped) -> Arel::InsertManager
+    def create_values: (untyped) -> Arel::Nodes::ValuesList
+    def create_values_list: (untyped) -> Arel::Nodes::ValuesList
+  end
+end

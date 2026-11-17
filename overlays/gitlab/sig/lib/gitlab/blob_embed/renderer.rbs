@@ -1,0 +1,7 @@
+module Gitlab
+  module BlobEmbed
+    class Renderer
+      def initialize: (project: untyped, sha: untyped, path: untyped, from: untyped, to: untyped, ?blob: untyped, ?cross_project: untyped, ?for_email: untyped) -> void
+    end
+  end
+end

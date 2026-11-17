@@ -1,0 +1,6 @@
+module Uploads
+  class Base
+    def initialize: (?logger: untyped) -> void
+    def logger: () -> singleton(Gitlab::AppLogger)
+  end
+end

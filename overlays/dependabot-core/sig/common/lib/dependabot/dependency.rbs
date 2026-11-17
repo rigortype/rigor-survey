@@ -1,0 +1,35 @@
+module Dependabot
+  class Dependency
+    def initialize: (name: untyped, requirements: untyped, package_manager: untyped, ?version: untyped, ?previous_version: untyped, ?previous_requirements: untyped, ?directory: untyped, ?subdependency_metadata: untyped, ?removed: untyped, ?metadata: untyped) -> void
+    def top_level?: () -> (false | true)
+    def numeric_version: () -> (Dependabot::Version | nil)
+    def to_h: () -> Hash[untyped, untyped]
+    def appears_in_lockfile?: () -> (false | true)
+    def subdependency_production_check: () -> (false | true)
+    def humanized_previous_version: () -> (String | nil)
+    def humanized_version: () -> ("removed" | String | nil)
+    def previous_ref: () -> (String | nil)
+    def new_ref: () -> (String | nil)
+    def ref_changed?: () -> (false | true)
+    def all_versions: () -> (Array[untyped] | Array[String])
+    def informational_only?: () -> (false | nil | true)
+    def metadata_string: (untyped) -> (String | nil)
+    def metadata_string_array: (untyped) -> (Array[String] | nil)
+    def metadata_dependencies: (untyped) -> (Array[Object] | nil)
+    def metadata_array: (untyped) -> (Array[Object] | nil)
+    def ==: (untyped) -> (false | true)
+    def hash: () -> Integer
+    def eql?: (untyped) -> (false | true)
+    def specific_requirements: () -> Array[Dependabot::DependencyRequirement]
+    def source_details: (?allowed_types: untyped) -> (RequirementSource | nil)
+    def source_type: () -> ("default" | String)
+    def source_string: (untyped, ?allowed_types: untyped) -> (String | nil)
+    def all_sources: () -> (Array[untyped] | Array[RequirementSource])
+    def requirements_changed?: () -> (false | true)
+    def version: () -> (String | nil)
+    def requirements: () -> Array[Dependabot::DependencyRequirement]
+    def previous_requirements: () -> (Array[Dependabot::DependencyRequirement] | nil)
+    def subdependency_metadata: () -> (Array[Metadata] | nil)
+    def metadata: () -> Metadata
+  end
+end

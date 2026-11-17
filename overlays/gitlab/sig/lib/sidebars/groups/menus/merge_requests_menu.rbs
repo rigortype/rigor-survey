@@ -1,0 +1,13 @@
+module Sidebars
+  module Groups
+    module Menus
+      class MergeRequestsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "merge-request"
+        def has_pill?: () -> true
+        def pill_count_field: () -> "openMergeRequestsCount"
+        def pill_html_options: () -> { class: "merge_counter js-merge-counter" }
+        def active_routes: () -> { path: "groups#merge_requests" }
+      end
+    end
+  end
+end

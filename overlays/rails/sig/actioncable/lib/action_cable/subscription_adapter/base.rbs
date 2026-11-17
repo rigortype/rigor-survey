@@ -1,0 +1,7 @@
+module ActionCable
+  module SubscriptionAdapter
+    class Base
+      def initialize: (untyped) -> void
+    end
+  end
+end

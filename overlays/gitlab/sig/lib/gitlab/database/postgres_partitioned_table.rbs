@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class PostgresPartitionedTable < ::Gitlab::Database::SharedModel
+      def dynamic?: () -> (false | true)
+      def static?: () -> (false | true)
+    end
+  end
+end

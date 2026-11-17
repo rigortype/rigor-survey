@@ -1,0 +1,8 @@
+module Dependabot
+  module Package
+    class NpmLockfileDetails < ::T::ImmutableStruct
+      def self.from_object: (untyped, path: untyped, context: untyped) -> Dependabot::Package::NpmLockfileDetails
+      def self.optional_string: (untyped, untyped, untyped) -> (String | nil)
+    end
+  end
+end

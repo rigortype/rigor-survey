@@ -1,0 +1,7 @@
+module Concurrent
+  module Actor
+    class Root < ::Concurrent::Actor::AbstractContext
+      def behaviour_definition: () -> ::Array[untyped]
+    end
+  end
+end

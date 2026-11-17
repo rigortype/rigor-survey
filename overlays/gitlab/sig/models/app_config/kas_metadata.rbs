@@ -1,0 +1,6 @@
+module AppConfig
+  class KasMetadata
+    def self.declarative_policy_class: () -> "AppConfig::InstanceMetadataPolicy"
+    def enabled: () -> (false | true)
+  end
+end

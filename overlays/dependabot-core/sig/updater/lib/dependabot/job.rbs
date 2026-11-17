@@ -1,0 +1,51 @@
+module Dependabot
+  class Job
+    def self.new_fetch_job: (job_id: untyped, job_definition: untyped, ?repo_contents_path: untyped) -> Dependabot::Job
+    def self.new_update_job: (job_id: untyped, job_definition: untyped, ?repo_contents_path: untyped) -> Dependabot::Job
+    def self.job_attributes: (untyped) -> Hash[untyped, Object]
+    def initialize: (untyped) -> void
+    def clone?: () -> true
+    def update_graph?: () -> (false | true)
+    def repo_contents_path: () -> (String | nil)
+    def repo_private?: () -> (false | nil | true)
+    def repo_owner: () -> String
+    def updating_a_pull_request?: () -> (false | true)
+    def multi_ecosystem_update?: () -> (false | true)
+    def update_subdependencies?: () -> (false | true)
+    def security_updates_only?: () -> (false | true)
+    def vendor_dependencies?: () -> (false | true)
+    def reject_external_code?: () -> (false | true)
+    def allowed_update?: (untyped, ?check_previous_version: untyped) -> (false | true)
+    def vulnerable?: (untyped, untyped) -> (false | true)
+    def current_version_vulnerable?: (untyped) -> (false | true)
+    def previous_version_vulnerable?: (untyped) -> (false | true)
+    def security_fix?: (untyped) -> (false | true)
+    def parse_version_if_valid: (untyped, untyped) -> (Dependabot::Version | nil)
+    def vulnerability?: (untyped, untyped) -> (false | true)
+    def experiments: () -> Hash[Symbol, Object]
+    def commit_message_options: () -> Hash[K, V]
+    def security_advisories_for: (untyped) -> Array[Dependabot::SecurityAdvisory]
+    def ignore_conditions_for: (untyped) -> Array[untyped]
+    def blocked_versions_for?: (untyped) -> (false | true)
+    def allowed_updates: () -> Array[::AllowedUpdate]
+    def credentials: () -> Array[Dependabot::Credential]
+    def dependencies: () -> (Array[String] | nil)
+    def exclude_paths: () -> (Array[String] | nil)
+    def existing_pull_requests: () -> Array[::PullRequest]
+    def existing_group_pull_requests: () -> Array[::ExistingGroupPullRequest]
+    def id: () -> String
+    def command: () -> String
+    def ignore_conditions: () -> Array[::Job::IgnoreCondition]
+    def package_manager: () -> String
+    def requirements_update_strategy: () -> (Dependabot::RequirementsUpdateStrategy | nil)
+    def security_advisories: () -> Array[::SecurityAdvisoryEntry]
+    def security_updates_only: () -> (false | true)
+    def source: () -> Dependabot::Source
+    def token: () -> (String | nil)
+    def vendor_dependencies: () -> (false | true)
+    def dependency_groups: () -> Array[::DependencyGroupDefinition]
+    def dependency_group_to_refresh: () -> (String | nil)
+    def cooldown: () -> Dependabot::Package::ReleaseCooldownOptions
+    def update_config: () -> Dependabot::Config::UpdateConfig
+  end
+end

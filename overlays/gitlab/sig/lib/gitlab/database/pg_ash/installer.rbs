@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module PgAsh
+      class Installer
+        def initialize: (?untyped) -> void
+        def sampling_error: () -> (String | nil)
+        def sampling_warning: () -> (String | nil)
+        def uninstall: () -> (false | true)
+      end
+    end
+  end
+end

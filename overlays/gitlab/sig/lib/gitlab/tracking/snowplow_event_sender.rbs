@@ -1,0 +1,7 @@
+module Gitlab
+  module Tracking
+    class SnowplowEventSender
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Integrations
+  module ChatMessage
+    class IssueMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def activity: () -> { title: String, subtitle: "" | String, text: untyped, image: untyped }
+      def attachment_color: () -> "#C95823"
+    end
+  end
+end

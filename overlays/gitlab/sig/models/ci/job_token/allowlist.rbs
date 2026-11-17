@@ -1,0 +1,9 @@
+module Ci
+  module JobToken
+    class Allowlist
+      def initialize: (untyped, ?direction: untyped) -> void
+      def autopopulated_group_global_ids: () -> Array[untyped]
+      def group_links: () -> ActiveRecord::Relation[Ci::JobToken::GroupScopeLink]
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class CursorBasedRequestContext
+        def initialize: (untyped) -> void
+        def order_by: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

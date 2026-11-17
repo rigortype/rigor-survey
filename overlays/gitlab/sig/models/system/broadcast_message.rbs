@@ -1,0 +1,9 @@
+module System
+  class BroadcastMessage < ::ApplicationRecord
+    def self.cache_expires_in: () -> ActiveSupport::Duration
+    def started?: () -> (false | true)
+    def now?: () -> (false | true)
+    def matches_current_path: (untyped) -> (MatchData | false | nil | true)
+    def flush_redis_cache: () -> Array[String]
+  end
+end

@@ -1,0 +1,16 @@
+module Projects
+  class BranchRulesFinder
+    def initialize: (untyped, custom_rules: untyped, protected_branches: untyped) -> void
+    class Page < ::Struct[untyped]
+      def rules: () -> untyped
+      def end_cursor: () -> untyped
+      def has_next_page: () -> untyped
+      def rules=: (untyped) -> untyped
+      def end_cursor=: (untyped) -> untyped
+      def has_next_page=: (untyped) -> untyped
+      def self.new: (?rules: untyped, ?end_cursor: untyped, ?has_next_page: untyped) -> instance
+      def self.[]: (?rules: untyped, ?end_cursor: untyped, ?has_next_page: untyped) -> instance
+      def initialize: (?rules: untyped, ?end_cursor: untyped, ?has_next_page: untyped) -> void
+    end
+  end
+end

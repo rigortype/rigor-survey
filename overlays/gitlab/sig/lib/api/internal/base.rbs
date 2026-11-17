@@ -1,0 +1,13 @@
+module API
+  module Internal
+    class Base < ::API::Base
+      def shell_operation_actor_scope: (untyped) -> ({ ip: untyped } | { key: untyped } | { user: untyped } | {})
+      def validate_actor: (untyped) -> ("Could not find a user for the given key" | "Could not find the given key" | nil)
+      def two_factor_manual_otp_check: () -> { success: false, message: "Feature is not available" }
+      def two_factor_push_otp_check: () -> { success: false, message: "Feature is not available" }
+      def ssh_certificate_rate_limit_scope: () -> (nil | { ip: String })
+      def ssh_client_ip: () -> (String | nil)
+      def ssh_certificate_error_status: (untyped) -> (:forbidden | :not_found)
+    end
+  end
+end

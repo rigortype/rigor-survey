@@ -1,0 +1,7 @@
+class NamespaceFileUploader < ::FileUploader
+  def self.base_dir: (untyped, ?untyped) -> (String | nil)
+  def self.base_dirs: (untyped) -> Hash[untyped, String]
+  def self.model_path_segment: (untyped) -> String
+  def self.workhorse_local_upload_path: () -> String
+  def store_dir: () -> (String | nil)
+end

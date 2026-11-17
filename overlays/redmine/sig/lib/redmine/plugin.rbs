@@ -1,0 +1,27 @@
+module Redmine
+  class Plugin
+    def self.register: (untyped) ?{ (*untyped) -> untyped } -> Redmine::Plugin
+    def self.clear: () -> {}
+    def initialize: (untyped) -> void
+    def public_directory: () -> String
+    def asset_prefix: () -> String
+    def asset_paths: () -> (Redmine::AssetPath | nil)
+    def requires_redmine: (untyped) -> true
+    def requires_redmine_plugin: (untyped, untyped) -> true
+    def project_module: (untyped) ?{ (*untyped) -> untyped } -> nil
+    def wiki_format_provider: (untyped, *untyped) -> { formatter: untyped, helper: untyped, html_parser: untyped, label: untyped }
+    def migration_directory: () -> String
+    def latest_migration: () -> (Integer | nil)
+    def migrations: () -> Array[Integer]
+    class MigrationContext < ::ActiveRecord::MigrationContext
+      def open: () -> Redmine::Plugin::Migrator
+    end
+    class Migrator < ::ActiveRecord::Migrator
+      def load_migrated: () -> Set[untyped]
+    end
+  end
+  class PluginNotFound < ::StandardError
+  end
+  class PluginRequirementError < ::StandardError
+  end
+end

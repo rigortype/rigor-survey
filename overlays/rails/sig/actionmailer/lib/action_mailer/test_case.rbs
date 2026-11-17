@@ -1,0 +1,5 @@
+module ActionMailer
+  class NonInferrableMailerError < ::StandardError
+    def initialize: (untyped) -> void
+  end
+end

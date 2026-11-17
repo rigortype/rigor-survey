@@ -1,0 +1,12 @@
+module Dependabot
+  class Updater
+    module SecurityUpdateHelpers
+      def security_update_not_possible_error_details: (untyped, ?conflicting_dependencies: untyped) -> { :"dependency-name" => untyped, :"latest-resolvable-version" => untyped, :"lowest-non-vulnerable-version" => untyped, :"conflicting-dependencies" => untyped }
+      def earliest_fixed_version_message: (untyped) -> ("Dependabot could not find an allowed non-vulnerable version" | String)
+      def security_update_not_possible_message: (untyped, untyped, untyped) -> String
+    end
+    module PullRequestHelpers
+      def record_warning_notices: (untyped) -> (Array[Dependabot::Notice] | nil | true)
+    end
+  end
+end

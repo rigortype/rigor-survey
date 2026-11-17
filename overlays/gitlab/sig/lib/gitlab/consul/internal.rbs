@@ -1,0 +1,8 @@
+module Gitlab
+  module Consul
+    class Internal
+      def self.discover_service: (service_name: untyped) -> ([untyped, untyped] | nil)
+      def self.discover_prometheus_server_address: () -> (String | nil)
+    end
+  end
+end

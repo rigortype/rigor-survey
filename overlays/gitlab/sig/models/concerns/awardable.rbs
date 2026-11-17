@@ -1,0 +1,3 @@
+module Awardable
+  def emoji_awardable?: () -> true
+end

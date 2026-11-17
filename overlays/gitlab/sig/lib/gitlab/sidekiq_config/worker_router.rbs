@@ -1,0 +1,20 @@
+module Gitlab
+  module SidekiqConfig
+    class WorkerRouter
+      def self.queue_name_from_worker_name: (untyped) -> String
+      def self.global: () -> Gitlab::SidekiqConfig::WorkerRouter
+      def initialize: (untyped) -> void
+      def stores_with_queue: (untyped) -> Array[untyped]
+      class RuleEvaluator < ::Struct[untyped]
+        def matcher: () -> untyped
+        def queue_name: () -> untyped
+        def store_name: () -> untyped
+        def matcher=: (untyped) -> untyped
+        def queue_name=: (untyped) -> untyped
+        def store_name=: (untyped) -> untyped
+        def self.new: (?matcher: untyped, ?queue_name: untyped, ?store_name: untyped) -> instance | (?untyped matcher, ?untyped queue_name, ?untyped store_name) -> instance
+        def self.[]: (?matcher: untyped, ?queue_name: untyped, ?store_name: untyped) -> instance | (?untyped matcher, ?untyped queue_name, ?untyped store_name) -> instance
+      end
+    end
+  end
+end

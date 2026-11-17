@@ -1,0 +1,27 @@
+module Gitlab
+  module Database
+    class GitlabSchemaInfo < ::Struct[untyped]
+      def name: () -> "gitlab_main"
+      def description: () -> untyped
+      def allow_cross_joins: () -> (["gitlab_shared"] | [])
+      def allow_cross_transactions: () -> (["gitlab_internal"] | [])
+      def allow_cross_foreign_keys: () -> (["gitlab_main_org"] | [])
+      def file_path: () -> untyped
+      def require_sharding_key: () -> untyped
+      def disallow_sequences: () -> untyped
+      def sharding_root_tables: () -> untyped
+      def name=: ("gitlab_main") -> "gitlab_main"
+      def description=: (untyped) -> untyped
+      def allow_cross_joins=: ((["gitlab_shared"] | [])) -> (["gitlab_shared"] | [])
+      def allow_cross_transactions=: ((["gitlab_internal"] | [])) -> (["gitlab_internal"] | [])
+      def allow_cross_foreign_keys=: ((["gitlab_main_org"] | [])) -> (["gitlab_main_org"] | [])
+      def file_path=: (untyped) -> untyped
+      def require_sharding_key=: (untyped) -> untyped
+      def disallow_sequences=: (untyped) -> untyped
+      def sharding_root_tables=: (untyped) -> untyped
+      def self.new: (?name: "gitlab_main", ?description: untyped, ?allow_cross_joins: (["gitlab_shared"] | []), ?allow_cross_transactions: (["gitlab_internal"] | []), ?allow_cross_foreign_keys: (["gitlab_main_org"] | []), ?file_path: untyped, ?require_sharding_key: untyped, ?disallow_sequences: untyped, ?sharding_root_tables: untyped) -> instance
+      def self.[]: (?name: "gitlab_main", ?description: untyped, ?allow_cross_joins: (["gitlab_shared"] | []), ?allow_cross_transactions: (["gitlab_internal"] | []), ?allow_cross_foreign_keys: (["gitlab_main_org"] | []), ?file_path: untyped, ?require_sharding_key: untyped, ?disallow_sequences: untyped, ?sharding_root_tables: untyped) -> instance
+      def initialize: (*untyped) -> void
+    end
+  end
+end

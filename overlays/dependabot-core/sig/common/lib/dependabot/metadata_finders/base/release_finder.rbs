@@ -1,0 +1,15 @@
+module Dependabot
+  module MetadataFinders
+    class Base
+      class GitLabRelease < ::T::ImmutableStruct
+        def self.from_tag: (untyped, source_url: untyped) -> (Dependabot::MetadataFinders::Base::GitLabRelease | nil)
+        def self.time_value: (untyped) -> (Time | nil)
+      end
+      class ReleaseFinder
+        def initialize: (source: untyped, dependency: untyped, credentials: untyped) -> void
+        def releases_url: () -> (String | nil)
+        def releases_text: () -> (String | nil)
+      end
+    end
+  end
+end

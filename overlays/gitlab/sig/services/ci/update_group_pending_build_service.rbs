@@ -1,0 +1,5 @@
+module Ci
+  class UpdateGroupPendingBuildService
+    def initialize: (untyped, untyped) -> void
+  end
+end

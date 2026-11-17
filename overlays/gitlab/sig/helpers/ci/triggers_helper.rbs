@@ -1,0 +1,6 @@
+module Ci
+  module TriggersHelper
+    def builds_trigger_url: (untyped, ?ref: untyped) -> String
+    def integration_trigger_url: (untyped) -> String
+  end
+end

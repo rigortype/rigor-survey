@@ -1,0 +1,5 @@
+module ContainerExpirationPoliciesHelper
+  def cadence_options: () -> Array[Hash[Symbol, untyped]]
+  def keep_n_options: () -> Array[Hash[Symbol, untyped]]
+  def older_than_options: () -> Array[Hash[Symbol, untyped]]
+end

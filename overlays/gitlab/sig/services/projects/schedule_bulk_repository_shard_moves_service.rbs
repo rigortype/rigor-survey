@@ -1,0 +1,5 @@
+module Projects
+  class ScheduleBulkRepositoryShardMovesService
+    def self.schedule_bulk_worker_klass: () -> singleton(Projects::ScheduleBulkRepositoryShardMovesWorker)
+  end
+end

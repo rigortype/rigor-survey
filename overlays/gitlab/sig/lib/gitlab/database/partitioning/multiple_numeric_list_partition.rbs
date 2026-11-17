@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class MultipleNumericListPartition
+        def self.from_sql: (untyped, untyped, untyped, schema: untyped) -> Gitlab::Database::Partitioning::MultipleNumericListPartition
+        def initialize: (untyped, untyped, ?partition_name: String, ?schema: untyped) -> void
+        def to_create_sql: () -> String
+        def to_attach_sql: () -> String
+        def to_detach_sql: (?concurrently: untyped) -> String
+        def hash: () -> Integer
+        def values: () -> Array[untyped]
+      end
+    end
+  end
+end

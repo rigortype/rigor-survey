@@ -1,0 +1,6 @@
+module Sidebars
+  class NilMenuItem < ::Sidebars::MenuItem
+    def initialize: (item_id: (String | Symbol)) -> void
+    def render?: () -> false
+  end
+end

@@ -1,0 +1,9 @@
+module Spree
+  module Emails
+    module Samples
+      class DataRequestConfirmation < ::Spree::Emails::Samples::Base
+        def variables: () -> { kind: untyped, confirmation_url: String, expires_at: untyped }
+      end
+    end
+  end
+end

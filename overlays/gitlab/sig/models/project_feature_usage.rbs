@@ -1,0 +1,3 @@
+class ProjectFeatureUsage < ::ApplicationRecord
+  def self.jira_dvcs_integration_field: (?cloud: untyped) -> ("jira_dvcs_cloud_last_sync_at" | "jira_dvcs_server_last_sync_at")
+end

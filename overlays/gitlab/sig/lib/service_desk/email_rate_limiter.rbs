@@ -1,0 +1,7 @@
+module ServiceDesk
+  class EmailRateLimiter
+    def initialize: (untyped) -> void
+    def rate_limit_batch!: (untyped) -> (false | nil | true)
+    def post_suppression_notice: (untyped) -> (Note | nil)
+  end
+end

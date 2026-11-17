@@ -1,0 +1,9 @@
+module Sidebars
+  module Groups
+    module SuperSidebarMenus
+      class ObservabilityMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "eye"
+      end
+    end
+  end
+end

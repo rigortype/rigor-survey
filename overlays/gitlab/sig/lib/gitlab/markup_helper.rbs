@@ -1,0 +1,8 @@
+module Gitlab
+  module MarkupHelper
+    def gitlab_markdown?: (untyped) -> (false | true)
+    def asciidoc?: (untyped) -> (false | true)
+    def org_mode?: (untyped) -> (false | true)
+    def plain?: (untyped) -> (false | true)
+  end
+end

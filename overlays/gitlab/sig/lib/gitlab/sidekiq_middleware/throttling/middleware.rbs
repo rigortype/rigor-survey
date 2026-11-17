@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      class Middleware
+        def initialize: (untyped) -> void
+        def tracker: () -> Gitlab::SidekiqMiddleware::Throttling::Tracker
+      end
+    end
+  end
+end

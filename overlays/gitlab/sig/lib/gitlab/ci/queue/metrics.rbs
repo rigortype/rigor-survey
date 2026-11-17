@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module Queue
+      class Metrics
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

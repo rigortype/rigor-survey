@@ -1,0 +1,5 @@
+module Achievements
+  class UserAchievement < ::ApplicationRecord
+    def skip_project_check?: () -> true
+  end
+end

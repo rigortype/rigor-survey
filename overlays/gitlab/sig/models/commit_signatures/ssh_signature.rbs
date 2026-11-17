@@ -1,0 +1,5 @@
+module CommitSignatures
+  class SshSignature < ::ApplicationRecord
+    def type: () -> :ssh
+  end
+end

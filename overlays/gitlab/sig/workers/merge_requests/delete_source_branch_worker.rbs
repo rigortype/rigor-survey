@@ -1,0 +1,5 @@
+module MergeRequests
+  class DeleteSourceBranchWorker
+    def self.lease_key: (untyped, untyped) -> String
+  end
+end

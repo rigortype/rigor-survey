@@ -1,0 +1,12 @@
+module Mcp
+  module Tools
+    module Base
+      class GraphqlTool
+        def self.load_graphql: (untyped) -> String
+        def self.read_graphql_file: (untyped) -> String
+        def initialize: (current_user: untyped, params: untyped, access_token: untyped, ?version: untyped) -> void
+        def icons: () -> [{ mimeType: "image/png", src: untyped, theme: "dark" }, { mimeType: "image/png", src: untyped, theme: "light" }]
+      end
+    end
+  end
+end

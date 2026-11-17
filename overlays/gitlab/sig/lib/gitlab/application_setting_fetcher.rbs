@@ -1,0 +1,6 @@
+module Gitlab
+  module ApplicationSettingFetcher
+    def self.clear_in_memory_application_settings!: () -> nil
+    def self.fake_application_settings: (?untyped) -> Gitlab::FakeApplicationSettings
+  end
+end

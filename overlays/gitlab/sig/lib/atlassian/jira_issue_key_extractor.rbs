@@ -1,0 +1,5 @@
+module Atlassian
+  class JiraIssueKeyExtractor
+    def initialize: (*untyped, ?custom_regex: untyped) -> void
+  end
+end

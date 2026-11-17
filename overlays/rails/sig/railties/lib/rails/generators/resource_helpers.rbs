@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    module ResourceHelpers
+      def initialize: (*untyped) -> void
+    end
+  end
+end

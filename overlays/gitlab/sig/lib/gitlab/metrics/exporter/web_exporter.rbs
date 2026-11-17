@@ -1,0 +1,9 @@
+module Gitlab
+  module Metrics
+    module Exporter
+      class WebExporter < ::Gitlab::Metrics::Exporter::BaseExporter
+        def initialize: (**untyped) -> void
+      end
+    end
+  end
+end

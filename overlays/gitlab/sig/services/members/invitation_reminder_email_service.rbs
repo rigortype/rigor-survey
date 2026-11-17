@@ -1,0 +1,5 @@
+module Members
+  class InvitationReminderEmailService
+    def initialize: (untyped) -> void
+  end
+end

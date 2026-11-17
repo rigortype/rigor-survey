@@ -1,0 +1,5 @@
+module ServicePing
+  class PermitDataCategories
+    def execute: () -> Set[untyped]
+  end
+end

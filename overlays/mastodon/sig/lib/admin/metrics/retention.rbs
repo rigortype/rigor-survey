@@ -1,0 +1,10 @@
+module Admin
+  module Metrics
+    class Retention
+      def initialize: (String, String, String) -> void
+      def cache_key: () -> String
+      def cohorts: () -> (false | true)
+      def loaded: () -> (false | true)
+    end
+  end
+end

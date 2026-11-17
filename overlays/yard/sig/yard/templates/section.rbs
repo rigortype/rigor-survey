@@ -1,0 +1,9 @@
+module YARD
+  module Templates
+    class Section < ::Array[untyped]
+      def initialize: (untyped, *untyped) -> void
+      def inspect: () -> String
+      def to_a: () -> (Array[untyped] | [untyped])
+    end
+  end
+end

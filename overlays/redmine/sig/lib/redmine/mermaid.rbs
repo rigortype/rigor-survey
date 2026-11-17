@@ -1,0 +1,10 @@
+module Redmine
+  module Mermaid
+    def self.path: () -> Pathname
+    def self.checksum: () -> "28fca7ae6ebc7ed7bb63bde63136a74bfef14f296a57e403657eeb8b32836073"
+    def self.install: (?source: untyped) -> Pathname
+    def self.verify!: (untyped) -> nil
+    class Error < ::StandardError
+    end
+  end
+end

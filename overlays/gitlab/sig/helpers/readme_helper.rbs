@@ -1,0 +1,3 @@
+module ReadmeHelper
+  def vue_readme_header_additional_data: () -> {}
+end

@@ -1,0 +1,9 @@
+module ActionDispatch
+  module Http
+    class ContentDisposition
+      def self.format: (disposition: untyped, filename: untyped) -> String
+      def initialize: (disposition: untyped, filename: untyped) -> void
+      def to_s: () -> String
+    end
+  end
+end

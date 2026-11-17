@@ -1,0 +1,3 @@
+module HooksHelper
+  def webhook_form_data: (untyped) -> (Hash[untyped, untyped] | { name: untyped, description: untyped, secret_token: untyped, url: untyped, url_variables: untyped, custom_headers: untyped, is_new_hook: untyped, is_system_hook: "false" | "true", triggers: untyped, has_signing_token: untyped, signing_token_docs_path: untyped })
+end

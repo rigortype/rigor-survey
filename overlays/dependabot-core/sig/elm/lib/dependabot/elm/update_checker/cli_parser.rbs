@@ -1,0 +1,9 @@
+module Dependabot
+  module Elm
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class CliParser
+        def self.decode_install_preview: (untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

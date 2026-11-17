@@ -1,0 +1,4 @@
+module Transitionable
+  def enable_transitioning: () -> true
+  def disable_transitioning: () -> false
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module RobotsTxt
+    class Parser
+      def initialize: (untyped) -> void
+      def disallow_rules: () -> Array[untyped]
+      def allow_rules: () -> Array[untyped]
+    end
+  end
+end

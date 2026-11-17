@@ -1,0 +1,12 @@
+module ActionCable
+  module SubscriptionAdapter
+    class Redis < ::ActionCable::SubscriptionAdapter::Base
+      def initialize: (*untyped) -> void
+      def shutdown: () -> nil
+      class Listener < ::ActionCable::SubscriptionAdapter::SubscriberMap::Async
+        def initialize: (untyped, untyped, untyped) -> void
+        def shutdown: () -> nil
+      end
+    end
+  end
+end

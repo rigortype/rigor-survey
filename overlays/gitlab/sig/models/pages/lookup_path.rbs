@@ -1,0 +1,6 @@
+module Pages
+  class LookupPath
+    def initialize: (deployment: untyped, root_namespace_id: untyped, ?domain: untyped, ?trim_prefix: untyped, ?access_control: untyped) -> void
+    def source: () -> (nil | { type: "zip", path: untyped, global_id: untyped, sha256: untyped, file_size: untyped, file_count: untyped })
+  end
+end

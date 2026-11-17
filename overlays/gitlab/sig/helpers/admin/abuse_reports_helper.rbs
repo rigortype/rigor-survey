@@ -1,0 +1,6 @@
+module Admin
+  module AbuseReportsHelper
+    def abuse_reports_list_data: (untyped) -> { abuse_reports_data: String }
+    def abuse_report_data: (untyped) -> { abuse_report_data: untyped, abuse_reports_list_path: untyped }
+  end
+end

@@ -1,0 +1,9 @@
+module Ci
+  class UnlockPipelineService
+    def initialize: (untyped) -> void
+    def execute: () -> Hash[untyped, untyped]
+    def already_leased: () -> (false | true)
+    def already_unlocked: () -> (false | true)
+    def exec_timeout: () -> (false | true)
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class Created < ::Gitlab::Ci::Status::Core
+        def icon: () -> "status_created"
+        def favicon: () -> "favicon_status_created"
+        def details_path: () -> nil
+      end
+    end
+  end
+end

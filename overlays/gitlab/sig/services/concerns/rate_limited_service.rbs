@@ -1,0 +1,11 @@
+module RateLimitedService
+  def self.rate_limit: (key: untyped, opts: untyped, ?rate_limiter: untyped) -> RateLimitedService::RateLimiterScopedAndKeyed
+  class RateLimitedError < ::StandardError
+    def initialize: (key: untyped, rate_limiter: untyped) -> void
+    def headers: () -> {}
+  end
+  class RateLimiterScopedAndKeyed
+    def initialize: (key: untyped, opts: untyped, rate_limiter: untyped) -> void
+    def rate_limit!: (untyped) -> nil
+  end
+end

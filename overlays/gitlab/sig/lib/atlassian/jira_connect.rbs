@@ -1,0 +1,9 @@
+module Atlassian
+  module JiraConnect
+    def self.app_name: () -> String
+    def self.app_key: () -> (String | nil)
+    def self.display_name: () -> ("GitLab" | String)
+    def self.gov_cloud?: (untyped) -> (false | true)
+    def self.host_from_settings: () -> String
+  end
+end

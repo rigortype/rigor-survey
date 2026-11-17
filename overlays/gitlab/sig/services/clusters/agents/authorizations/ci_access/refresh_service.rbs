@@ -1,0 +1,12 @@
+module Clusters
+  module Agents
+    module Authorizations
+      module CiAccess
+        class RefreshService
+          def initialize: (untyped, config: untyped) -> void
+          def execute: () -> true
+        end
+      end
+    end
+  end
+end

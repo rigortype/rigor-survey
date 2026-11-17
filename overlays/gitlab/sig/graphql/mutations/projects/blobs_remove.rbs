@@ -1,0 +1,7 @@
+module Mutations
+  module Projects
+    class BlobsRemove < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, blob_oids: untyped) -> { errors: Array[untyped] | [] }
+    end
+  end
+end

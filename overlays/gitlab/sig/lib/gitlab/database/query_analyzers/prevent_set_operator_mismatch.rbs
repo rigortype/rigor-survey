@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventSetOperatorMismatch < ::Gitlab::Database::QueryAnalyzers::Base
+        def self.requires_detection?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

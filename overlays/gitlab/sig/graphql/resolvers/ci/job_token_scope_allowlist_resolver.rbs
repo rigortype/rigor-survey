@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class JobTokenScopeAllowlistResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> { groups_allowlist: ActiveRecord::Relation[::Ci::JobToken::GroupScopeLink], projects_allowlist: ActiveRecord::Relation[::Ci::JobToken::ProjectScopeLink] }
+    end
+  end
+end

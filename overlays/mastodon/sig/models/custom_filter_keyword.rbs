@@ -1,0 +1,3 @@
+class CustomFilterKeyword < ::ApplicationRecord
+  def to_regex: () -> Regexp
+end

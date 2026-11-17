@@ -1,0 +1,6 @@
+module Resolvers
+  class GroupMergeRequestsResolver < ::Resolvers::MergeRequestsResolver
+    def self.issuable_collection_name: () -> "merge requests"
+    def project: () -> nil
+  end
+end

@@ -1,0 +1,6 @@
+module BlobViewer
+  class DependencyManager < ::BlobViewer::Base
+    def manager_name: () -> bot
+    def manager_url: () -> bot
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  module Config
+    module Entry
+      class Factory
+        def initialize: (untyped) -> void
+        def value: (untyped) -> Gitlab::Config::Entry::Factory
+        def metadata: (untyped) -> Gitlab::Config::Entry::Factory
+        def with: (untyped) -> Gitlab::Config::Entry::Factory
+      end
+    end
+  end
+end

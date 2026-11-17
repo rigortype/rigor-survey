@@ -1,0 +1,11 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class MetricsBasedStageEvent < ::Gitlab::Analytics::CycleAnalytics::StageEvents::StageEvent
+          def column_list: () -> [untyped]
+        end
+      end
+    end
+  end
+end

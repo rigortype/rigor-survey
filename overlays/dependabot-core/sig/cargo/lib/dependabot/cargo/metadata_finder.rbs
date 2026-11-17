@@ -1,0 +1,7 @@
+module Dependabot
+  module Cargo
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def initialize: (dependency: untyped, credentials: untyped) -> void
+    end
+  end
+end

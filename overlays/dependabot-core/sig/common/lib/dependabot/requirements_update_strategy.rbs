@@ -1,0 +1,5 @@
+module Dependabot
+  class RequirementsUpdateStrategy < ::T::Enum
+    def lockfile_only?: () -> (false | true)
+  end
+end

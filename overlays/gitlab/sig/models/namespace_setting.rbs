@@ -1,0 +1,7 @@
+class NamespaceSetting < ::ApplicationRecord
+  def self.declarative_policy_class: () -> "Ci::NamespaceSettingPolicy"
+  def self.allowed_namespace_settings_params: () -> [:emails_enabled, :default_branch_name, :resource_access_token_creation_allowed, :prevent_sharing_groups_outside_hierarchy, :new_user_signups_cap, :setup_for_company, :seat_control, :jobs_to_be_done, :runner_token_expiration_interval, :enabled_git_access_protocol, :subgroup_runner_token_expiration_interval, :project_runner_token_expiration_interval, :default_branch_protection_defaults, :math_rendering_limits_enabled, :lock_math_rendering_limits_enabled, :resource_access_token_notify_inherited, :lock_resource_access_token_notify_inherited, :jwt_ci_cd_job_token_enabled, :require_sha_for_merge, :lock_require_sha_for_merge, :enforce_granular_tokens, :granular_tokens_enforced_after, :ai_custom_instructions]
+  def self.enterprise_bypass_min_date: () -> Time
+  def self.enterprise_bypass_max_date: () -> Time
+  def all_ancestors_have_runner_registration_enabled?: () -> (false | true)
+end

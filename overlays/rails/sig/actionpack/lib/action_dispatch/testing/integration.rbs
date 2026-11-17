@@ -1,0 +1,16 @@
+module ActionDispatch
+  module Integration
+    class Session
+      def initialize: (untyped) -> void
+      def reset!: () -> (nil | true)
+      def request: () -> (ActionDispatch::Request | nil)
+      def response: () -> (ActionDispatch::TestResponse | nil)
+    end
+    module Runner
+      def initialize: (*untyped) ?{ (*untyped) -> untyped } -> void
+      def remove!: () -> nil
+      def open_session: () -> ActionDispatch::Integration::Runner
+      def app: () -> nil
+    end
+  end
+end

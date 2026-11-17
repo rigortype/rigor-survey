@@ -1,0 +1,7 @@
+module Dependabot
+  module Vcpkg
+    class FileParser < ::Dependabot::FileParsers::Base
+      def ecosystem: () -> (::Ecosystem | nil)
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module ActionDispatch
+  class AssertionResponse
+    def initialize: (untyped) -> void
+    def code_and_name: () -> String
+  end
+end

@@ -1,0 +1,5 @@
+module ActionView
+  class ObjectRenderer < ::ActionView::PartialRenderer
+    def initialize: (untyped, untyped) -> void
+  end
+end

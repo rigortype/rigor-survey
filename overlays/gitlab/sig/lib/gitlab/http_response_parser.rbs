@@ -1,0 +1,5 @@
+module Gitlab
+  class HttpResponseParser < ::HTTParty::Parser
+    def json: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+  end
+end

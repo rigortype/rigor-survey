@@ -1,0 +1,19 @@
+class Request
+  def initialize: (Symbol, untyped, **untyped) -> void
+  def on_behalf_of: (untyped, ?sign_with: untyped) -> Request
+  def add_headers: (untyped) -> Request
+  def self.valid_url?: (untyped) -> (false | true)
+  def self.http_client: () -> HTTP::Client
+  def headers: () -> Hash[untyped, untyped]
+  module ClientLimit
+    def truncated_body: (?untyped) -> String
+    def body_with_limit: (?untyped) -> String
+    def require_limit_not_exceeded!: (untyped) -> nil
+  end
+  class Socket < ::TCPSocket
+    def self.check_private_address: (untyped, untyped) -> nil
+  end
+  class ProxySocket < ::Request::Socket
+    def self.check_private_address: (untyped, untyped) -> nil
+  end
+end

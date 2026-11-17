@@ -1,0 +1,5 @@
+module SilentPackageManager
+  class Requirement < ::Dependabot::Requirement
+    def self.requirements_array: (untyped) -> ([SilentPackageManager::Requirement] | [])
+  end
+end

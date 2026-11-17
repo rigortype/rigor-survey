@@ -1,0 +1,10 @@
+module ActiveModel
+  module Attributes
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    def attributes: () -> Hash[String, untyped]
+    def attribute_names: () -> Array[String]
+    module ClassMethods
+      def attribute_names: () -> Array[String]
+    end
+  end
+end

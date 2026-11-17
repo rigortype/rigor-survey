@@ -1,0 +1,9 @@
+module Dependabot
+  module Nix
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_version: () -> (Dependabot::Version | String | nil)
+      def latest_resolvable_version: () -> (Dependabot::Version | String | nil)
+      def latest_resolvable_version_with_no_unlock: () -> (Dependabot::Version | String | nil)
+    end
+  end
+end

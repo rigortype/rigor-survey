@@ -1,0 +1,5 @@
+class TranslationService
+  class LibreTranslate < ::TranslationService
+    def initialize: (String, String) -> void
+  end
+end

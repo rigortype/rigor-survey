@@ -1,0 +1,9 @@
+module RbNaCl
+  module Boxes
+    class Curve25519XSalsa20Poly1305
+      def initialize: (untyped, untyped) -> void
+      def box: (untyped, untyped) -> (String | nil)
+      def open: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

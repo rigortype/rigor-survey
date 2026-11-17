@@ -1,0 +1,12 @@
+module Clusters
+  module Agents
+    module Authorizations
+      module UserAccess
+        class GroupAuthorization < ::ApplicationRecord
+          def self.all_groups_with_membership_cte: () -> Gitlab::SQL::CTE
+          def self.groups_with_direct_membership_cte: (untyped) -> Gitlab::SQL::CTE
+        end
+      end
+    end
+  end
+end

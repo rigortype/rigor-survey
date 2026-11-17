@@ -1,0 +1,7 @@
+module Integrations
+  module Exclusions
+    class DestroyService < ::Integrations::Exclusions::BaseService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

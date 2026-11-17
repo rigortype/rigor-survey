@@ -1,0 +1,11 @@
+module Gitlab
+  module Auth
+    class CurrentUserMode
+      def initialize: (untyped, ?untyped) -> void
+      def enable_admin_mode!: (?password: untyped, ?skip_password_validation: untyped) -> (false | true)
+      def disable_admin_mode!: () -> nil
+      def request_admin_mode!: () -> (Time | nil)
+      def current_session_data: () -> Gitlab::NamespacedSessionStore
+    end
+  end
+end

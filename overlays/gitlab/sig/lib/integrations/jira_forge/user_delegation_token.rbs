@@ -1,0 +1,12 @@
+module Integrations
+  module JiraForge
+    class UserDelegationToken
+      def self.build: (user: untyped, account_id: untyped, cloud_id: untyped) -> Integrations::JiraForge::UserDelegationToken
+      def self.decode: (untyped) -> (Integrations::JiraForge::UserDelegationToken | nil)
+      def initialize: (user_id: untyped, account_id: nil, cloud_id: nil) -> void
+      def to_jwt: () -> String
+      def account_id: () -> nil
+      def cloud_id: () -> nil
+    end
+  end
+end

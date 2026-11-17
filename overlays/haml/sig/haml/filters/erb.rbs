@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Erb < ::Haml::Filters::TiltBase
+      def compile: (untyped) -> [:dynamic, untyped]
+    end
+  end
+end

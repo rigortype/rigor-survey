@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class ProtectedBranchesImporter
+        def importer_class: () -> singleton(Gitlab::GithubImport::Importer::ProtectedBranchImporter)
+        def representation_class: () -> singleton(Gitlab::GithubImport::Representation::ProtectedBranch)
+        def sidekiq_worker_class: () -> singleton(Gitlab::GithubImport::ImportProtectedBranchWorker)
+        def object_type: () -> :protected_branch
+        def collection_method: () -> :protected_branches
+      end
+    end
+  end
+end

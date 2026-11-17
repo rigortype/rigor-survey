@@ -1,0 +1,7 @@
+module Organizations
+  class OrganizationUserDetail < ::ApplicationRecord
+    def reference_prefix: () -> "@"
+    def reference_pattern: () -> Regexp
+    def to_reference: (*untyped) -> String
+  end
+end

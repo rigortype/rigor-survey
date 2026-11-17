@@ -1,0 +1,7 @@
+module Concurrent
+  module Actor
+    module TypeCheck
+      def self.error: (untyped, untyped, untyped) -> bot
+    end
+  end
+end

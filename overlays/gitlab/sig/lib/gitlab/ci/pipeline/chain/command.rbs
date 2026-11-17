@@ -1,0 +1,93 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Chain
+        class Command < ::Struct[untyped]
+          def source: () -> untyped
+          def project: () -> untyped
+          def current_user: () -> untyped
+          def origin_ref: () -> untyped
+          def checkout_sha: () -> untyped
+          def after_sha: () -> untyped
+          def source_sha: () -> untyped
+          def target_sha: () -> untyped
+          def trigger: () -> untyped
+          def schedule: () -> untyped
+          def merge_request: () -> untyped
+          def external_pull_request: () -> untyped
+          def ignore_skip_ci: () -> untyped
+          def save_incompleted: () -> untyped
+          def seeds_block: () -> untyped
+          def variables_attributes: () -> untyped
+          def push_options: () -> untyped
+          def chat_data: () -> untyped
+          def mirror_update: () -> untyped
+          def bridge: () -> untyped
+          def content: () -> untyped
+          def dry_run: () -> untyped
+          def linting: () -> untyped
+          def pipeline_policy_context: () -> untyped
+          def scan_execution_policy_context_block: () -> untyped
+          def pipeline_execution_policy_context_block: () -> untyped
+          def duo_workflow_definition: () -> untyped
+          def trigger_api_request: () -> untyped
+          def suspend_options: () -> untyped
+          def config_content: () -> untyped
+          def yaml_processor_result: () -> untyped
+          def workflow_rules_result: () -> untyped
+          def pipeline_seed: () -> untyped
+          def pipeline_config: () -> untyped
+          def partition_id: () -> untyped
+          def inputs: () -> untyped
+          def gitaly_context: () -> untyped
+          def pipeline_creation_forced_to_continue: () -> untyped
+          def source=: (untyped) -> untyped
+          def project=: (untyped) -> untyped
+          def current_user=: (untyped) -> untyped
+          def origin_ref=: (untyped) -> untyped
+          def checkout_sha=: (untyped) -> untyped
+          def after_sha=: (untyped) -> untyped
+          def before_sha=: ("bbb") -> "bbb"
+          def source_sha=: (untyped) -> untyped
+          def target_sha=: (untyped) -> untyped
+          def trigger=: (untyped) -> untyped
+          def schedule=: (untyped) -> untyped
+          def merge_request=: (untyped) -> untyped
+          def external_pull_request=: (untyped) -> untyped
+          def ignore_skip_ci=: (untyped) -> untyped
+          def save_incompleted=: (untyped) -> untyped
+          def seeds_block=: (untyped) -> untyped
+          def variables_attributes=: (untyped) -> untyped
+          def push_options=: (untyped) -> untyped
+          def chat_data=: (untyped) -> untyped
+          def mirror_update=: (untyped) -> untyped
+          def bridge=: (untyped) -> untyped
+          def content=: (untyped) -> untyped
+          def dry_run=: (untyped) -> untyped
+          def linting=: (untyped) -> untyped
+          def logger=: (untyped) -> untyped
+          def pipeline_policy_context=: (untyped) -> untyped
+          def scan_execution_policy_context_block=: (untyped) -> untyped
+          def pipeline_execution_policy_context_block=: (untyped) -> untyped
+          def duo_workflow_definition=: (untyped) -> untyped
+          def trigger_api_request=: (untyped) -> untyped
+          def suspend_options=: (untyped) -> untyped
+          def config_content=: (untyped) -> untyped
+          def yaml_processor_result=: (untyped) -> untyped
+          def workflow_rules_result=: (untyped) -> untyped
+          def pipeline_seed=: (untyped) -> untyped
+          def pipeline_config=: (untyped) -> untyped
+          def partition_id=: (untyped) -> untyped
+          def inputs=: (untyped) -> untyped
+          def gitaly_context=: (untyped) -> untyped
+          def pipeline_creation_forced_to_continue=: (untyped) -> untyped
+          def self.new: (?source: untyped, ?project: untyped, ?current_user: untyped, ?origin_ref: untyped, ?checkout_sha: untyped, ?after_sha: untyped, ?before_sha: "bbb", ?source_sha: untyped, ?target_sha: untyped, ?trigger: untyped, ?schedule: untyped, ?merge_request: untyped, ?external_pull_request: untyped, ?ignore_skip_ci: untyped, ?save_incompleted: untyped, ?seeds_block: untyped, ?variables_attributes: untyped, ?push_options: untyped, ?chat_data: untyped, ?mirror_update: untyped, ?bridge: untyped, ?content: untyped, ?dry_run: untyped, ?linting: untyped, ?logger: untyped, ?pipeline_policy_context: untyped, ?scan_execution_policy_context_block: untyped, ?pipeline_execution_policy_context_block: untyped, ?duo_workflow_definition: untyped, ?trigger_api_request: untyped, ?suspend_options: untyped, ?config_content: untyped, ?yaml_processor_result: untyped, ?workflow_rules_result: untyped, ?pipeline_seed: untyped, ?pipeline_config: untyped, ?partition_id: untyped, ?inputs: untyped, ?gitaly_context: untyped, ?pipeline_creation_forced_to_continue: untyped) -> instance
+          def self.[]: (?source: untyped, ?project: untyped, ?current_user: untyped, ?origin_ref: untyped, ?checkout_sha: untyped, ?after_sha: untyped, ?before_sha: "bbb", ?source_sha: untyped, ?target_sha: untyped, ?trigger: untyped, ?schedule: untyped, ?merge_request: untyped, ?external_pull_request: untyped, ?ignore_skip_ci: untyped, ?save_incompleted: untyped, ?seeds_block: untyped, ?variables_attributes: untyped, ?push_options: untyped, ?chat_data: untyped, ?mirror_update: untyped, ?bridge: untyped, ?content: untyped, ?dry_run: untyped, ?linting: untyped, ?logger: untyped, ?pipeline_policy_context: untyped, ?scan_execution_policy_context_block: untyped, ?pipeline_execution_policy_context_block: untyped, ?duo_workflow_definition: untyped, ?trigger_api_request: untyped, ?suspend_options: untyped, ?config_content: untyped, ?yaml_processor_result: untyped, ?workflow_rules_result: untyped, ?pipeline_seed: untyped, ?pipeline_config: untyped, ?partition_id: untyped, ?inputs: untyped, ?gitaly_context: untyped, ?pipeline_creation_forced_to_continue: untyped) -> instance
+          def allocate_pipeline_iid?: () -> (false | true)
+          def metrics: () -> singleton(Gitlab::Ci::Pipeline::Metrics)
+          def logger: () -> Gitlab::Ci::Pipeline::Logger
+        end
+      end
+    end
+  end
+end

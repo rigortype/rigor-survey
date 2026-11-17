@@ -1,0 +1,3 @@
+module MailSchedulerQueue
+  def notification_service: () -> NotificationService
+end

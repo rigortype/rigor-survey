@@ -1,0 +1,3 @@
+module Gem
+  def self.source_index: () -> Gem::SourceIndex
+end

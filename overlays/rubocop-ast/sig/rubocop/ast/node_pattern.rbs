@@ -1,0 +1,13 @@
+module RuboCop
+  module AST
+    class NodePattern
+      def self.descend: (untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+      def initialize: (untyped, ?compiler: untyped) -> void
+      def to_s: () -> String
+      def marshal_load: (untyped) -> top
+      def init_with: (untyped) -> top
+      class Invalid < ::StandardError
+      end
+    end
+  end
+end

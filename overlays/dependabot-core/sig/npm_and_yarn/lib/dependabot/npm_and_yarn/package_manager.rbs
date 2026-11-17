@@ -1,0 +1,16 @@
+module Dependabot
+  module NpmAndYarn
+    class PackageManagerDetector
+      def initialize: (untyped, untyped) -> void
+    end
+    class PackageManagerHelper
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def package_manager: () -> ::Ecosystem::VersionManager
+      def language: () -> (Dependabot::NpmAndYarn::Language | ::Ecosystem::VersionManager)
+      def language_requirement: () -> (::Requirement | nil)
+      def find_engine_constraints_as_requirement: (untyped) -> (::Requirement | nil)
+      def detect_version: (untyped) -> (String | nil)
+      def installed_version: (untyped) -> String
+    end
+  end
+end

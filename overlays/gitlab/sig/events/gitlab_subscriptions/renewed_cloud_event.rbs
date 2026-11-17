@@ -1,0 +1,6 @@
+module GitlabSubscriptions
+  class RenewedCloudEvent < ::Gitlab::EventStore::CloudEvent
+    def self.build: (subscription: untyped) -> GitlabSubscriptions::RenewedCloudEvent
+    def data_schema: () -> Hash[String, "object" | ["namespace_id"] | false | Hash[String, Hash[String, "integer"]]]
+  end
+end

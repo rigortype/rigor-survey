@@ -1,0 +1,8 @@
+class MaxFlow
+  def initialize: (Integer) -> void
+  def add_edge: (untyped, untyped, Integer) -> Integer
+  def add_edges: (untyped) -> MaxFlow
+  def []: (Integer) -> [untyped, untyped, untyped, untyped]
+  def edges: () -> Array[[untyped, untyped, untyped, untyped]]
+  def min_cut: (Integer) -> Array[untyped]
+end

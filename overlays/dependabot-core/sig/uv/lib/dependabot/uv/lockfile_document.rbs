@@ -1,0 +1,12 @@
+module Dependabot
+  module Uv
+    class LockfileDocument
+      def self.from_file: (untyped) -> Dependabot::Uv::LockfileDocument
+      def initialize: (data: untyped, context: untyped) -> void
+      def workspace_members: () -> Array[String]
+      def graph_packages: () -> Array[Dependabot::Uv::LockfileDocument::GraphPackage]
+      def each_dependency: () ?{ (*untyped) -> untyped } -> (Array[Object] | nil)
+      def resolution_packages: () -> Array[Dependabot::Uv::LockfileDocument::LockedPackage]
+    end
+  end
+end

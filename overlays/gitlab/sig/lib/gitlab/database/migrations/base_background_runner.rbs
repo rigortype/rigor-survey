@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Migrations
+      class BaseBackgroundRunner
+        def initialize: (result_dir: untyped, connection: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Ml
+  class DestroyExperimentService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

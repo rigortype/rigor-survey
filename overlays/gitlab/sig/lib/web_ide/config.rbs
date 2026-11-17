@@ -1,0 +1,5 @@
+module WebIde
+  class Config
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

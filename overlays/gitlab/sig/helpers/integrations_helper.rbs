@@ -1,0 +1,11 @@
+module IntegrationsHelper
+  def integration_event_field_name: (untyped) -> String
+  def integration_form_data: (untyped, ?project: untyped, ?group: untyped, ?organization: untyped) -> (Hash[untyped, untyped] | { id: untyped, project_id: untyped, group_id: untyped, manual_activation: untyped, activated: untyped, activate_disabled: untyped, type: untyped, merge_request_events: untyped, commit_events: untyped, enable_comments: untyped, comment_detail: untyped, learn_more_path: untyped, about_pricing_url: untyped, trigger_events: untyped, sections: untyped, fields: untyped, inherit_from_id: untyped, integration_level: "group" | "instance" | "organization" | "project", editable: untyped, cancel_path: untyped, can_test: untyped, test_path: untyped, reset_path: untyped, form_path: untyped, redirect_to: untyped })
+  def integration_overrides_data: (untyped, ?project: untyped, ?group: untyped, ?organization: untyped) -> { edit_path: untyped, overrides_path: untyped }
+  def integration_list_data: (untyped, ?group: untyped, ?project: untyped, ?organization: untyped) -> { integrations: untyped }
+  def project_jira_issues_integration?: () -> false
+  def instance_level_integrations?: () -> (false | true)
+  def gitlab_slack_application_data: (untyped) -> { projects: untyped, sign_in_path: untyped, is_signed_in: untyped, slack_link_path: untyped, gitlab_logo_path: untyped, slack_logo_path: untyped }
+  def jira_specific_form_data: (untyped) -> ({ jira_issue_transition_automatic: untyped, jira_issue_transition_id: untyped } | {})
+  def slack_specific_form_data: (untyped) -> ({ upgrade_slack_url: untyped, should_upgrade_slack: untyped } | {})
+end

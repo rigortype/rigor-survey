@@ -1,0 +1,10 @@
+module Sidebars
+  module Groups
+    module SuperSidebarMenus
+      class CodeMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "code"
+        def configure_menu_items: () -> Array[Symbol]
+      end
+    end
+  end
+end

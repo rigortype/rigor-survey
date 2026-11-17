@@ -1,0 +1,16 @@
+class RequestPool
+  def self.current: () -> RequestPool
+  class Reaper
+    def initialize: (untyped, untyped) -> void
+    def run: () -> (Thread | nil)
+  end
+  class Connection
+    def initialize: (untyped) -> void
+    def seconds_idle: () -> Float
+    def last_used_at: () -> (Float | nil)
+    def created_at: () -> Float
+    def in_use: () -> (false | true)
+    def dead: () -> (false | true)
+    def fresh: () -> (false | true)
+  end
+end

@@ -1,0 +1,6 @@
+module RGL
+  class BidirectionalAdjacencyGraph < ::RGL::DirectedAdjacencyGraph
+    def initialize: (?untyped, *untyped) -> void
+    def in_neighbors: (untyped) -> Array[untyped]
+  end
+end

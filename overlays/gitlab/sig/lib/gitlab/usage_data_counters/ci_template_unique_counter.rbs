@@ -1,0 +1,8 @@
+module Gitlab
+  module UsageDataCounters
+    class CiTemplateUniqueCounter
+      def self.ci_templates: (?untyped) -> Array[String]
+      def self.ci_template_event_name: (untyped, untyped) -> String
+    end
+  end
+end

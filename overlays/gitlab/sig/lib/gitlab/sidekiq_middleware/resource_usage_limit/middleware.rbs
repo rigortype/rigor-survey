@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ResourceUsageLimit
+      class Middleware
+        def initialize: (untyped, untyped) -> void
+        def perform: () -> (Array[untyped] | nil)
+      end
+    end
+  end
+end

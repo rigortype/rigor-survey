@@ -1,0 +1,11 @@
+module RbNaCl
+  module Signatures
+    module Ed25519
+      class VerifyKey
+        def verify_attached: (untyped) -> true
+        def to_bytes: () -> String
+        def to_curve25519_public_key: () -> RbNaCl::Boxes::Curve25519XSalsa20Poly1305::PublicKey
+      end
+    end
+  end
+end

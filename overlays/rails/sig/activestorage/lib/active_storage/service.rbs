@@ -1,0 +1,7 @@
+module ActiveStorage
+  class Service
+    def self.build: (configurator: untyped, name: untyped, ?service: untyped, **untyped) -> ActiveStorage::Service
+    def headers_for_direct_upload: (untyped, filename: untyped, content_type: untyped, content_length: untyped, checksum: untyped, ?custom_metadata: untyped) -> {}
+    def inspect: () -> String
+  end
+end

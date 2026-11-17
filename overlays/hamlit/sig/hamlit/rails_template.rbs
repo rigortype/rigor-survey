@@ -1,0 +1,8 @@
+module Hamlit
+  class RailsTemplate
+    def self.options: () -> { generator: untyped, use_html_safe: true, streaming: true, buffer_class: "ActionView::OutputBuffer", disable_capture: true }
+  end
+  module HamlUtil
+    def rails_xss_safe?: () -> true
+  end
+end

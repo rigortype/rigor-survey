@@ -1,0 +1,7 @@
+module Packages
+  module Maven
+    class GroupsAndProjectsPackageFilesFinder
+      def initialize: (path: untyped, ?project_ids: untyped, ?group_ids: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module API
+  module Mcp
+    module Handlers
+      class ListTools
+        def initialize: (untyped) -> void
+        def invoke: (untyped, ?context: untyped, ?allowed_tools: untyped, ?allowed_toolsets: untyped, ?tool_name_prefix: untyped, ?include_named_unlisted: untyped) -> { tools: untyped }
+      end
+    end
+  end
+end

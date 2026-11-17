@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Namespaces
+      class StatePropagationIterator < ::Gitlab::Database::NamespaceEachBatch
+        def initialize: (cursor: untyped, state_filter: untyped, ?on_rewind: untyped) -> void
+      end
+    end
+  end
+end

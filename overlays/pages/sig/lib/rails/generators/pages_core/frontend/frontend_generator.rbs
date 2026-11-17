@@ -1,0 +1,7 @@
+module PagesCore
+  module Generators
+    class FrontendGenerator < ::Rails::Generators::Base
+      def create_css_framework: () -> Array[String]
+    end
+  end
+end

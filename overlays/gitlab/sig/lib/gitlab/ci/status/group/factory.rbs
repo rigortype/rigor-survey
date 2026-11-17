@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Status
+      module Group
+        class Factory < ::Gitlab::Ci::Status::Factory
+          def self.common_helpers: () -> singleton(Gitlab::Ci::Status::Group::Common)
+          def self.extended_statuses: () -> [[singleton(Gitlab::Ci::Status::SuccessWarning)]]
+        end
+      end
+    end
+  end
+end

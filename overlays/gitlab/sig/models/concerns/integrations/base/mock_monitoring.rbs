@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module MockMonitoring
+      def testable?: () -> false
+    end
+  end
+end

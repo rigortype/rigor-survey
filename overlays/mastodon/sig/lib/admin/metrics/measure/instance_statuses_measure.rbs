@@ -1,0 +1,11 @@
+module Admin
+  module Metrics
+    class Measure
+      class InstanceStatusesMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def self.with_params?: () -> true
+        def key: () -> "instance_statuses"
+        def total_in_time_range?: () -> false
+      end
+    end
+  end
+end

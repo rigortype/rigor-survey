@@ -1,0 +1,9 @@
+module Mutations
+  module Integrations
+    module Exclusions
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (integration_name: untyped, ?project_ids: untyped, ?group_ids: untyped) -> { exclusions: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module BulkImports
+  module Projects
+    module Pipelines
+      class ReferencesPipeline
+        def extract: (untyped) -> nil
+      end
+    end
+  end
+end

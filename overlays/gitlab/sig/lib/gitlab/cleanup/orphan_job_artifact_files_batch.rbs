@@ -1,0 +1,10 @@
+module Gitlab
+  module Cleanup
+    class OrphanJobArtifactFilesBatch
+      def initialize: (batch_size: untyped, ?dry_run: untyped, ?logger: untyped) -> void
+      class ArtifactFile
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

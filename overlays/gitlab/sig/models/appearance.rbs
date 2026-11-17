@@ -1,0 +1,3 @@
+class Appearance < ::ApplicationRecord
+  def uploads_sharding_key: () -> {}
+end

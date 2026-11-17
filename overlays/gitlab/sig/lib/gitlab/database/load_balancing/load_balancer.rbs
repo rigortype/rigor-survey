@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class LoadBalancer
+        def initialize: (untyped) -> void
+        def primary_only?: () -> (false | true)
+        def select_up_to_date_host: (untyped) -> (:all | :any | :none)
+        def serialization_failure?: (untyped) -> (false | true)
+        def host_list: () -> Gitlab::Database::LoadBalancing::HostList
+      end
+    end
+  end
+end

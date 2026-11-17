@@ -1,0 +1,6 @@
+module RapidDiffs
+  class CommitPresenter < ::RapidDiffs::BasePresenter
+    def initialize: (untyped, diff_view: untyped, diff_options: untyped, ?request_params: untyped, ?current_user: untyped, ?environment: untyped) -> void
+    def user_permissions: () -> { can_create_note: untyped }
+  end
+end

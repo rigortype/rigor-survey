@@ -1,0 +1,11 @@
+module Sidebars
+  module Admin
+    module Menus
+      class ObservabilityMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "eye"
+        def render?: () -> (false | true)
+        def active_routes: () -> { controller: :o11y_service_settings }
+      end
+    end
+  end
+end

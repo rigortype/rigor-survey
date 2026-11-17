@@ -1,0 +1,7 @@
+module Ci
+  module RetentionPolicies
+    class PipelineDeletionCutoffCache
+      def initialize: (project: untyped) -> void
+    end
+  end
+end

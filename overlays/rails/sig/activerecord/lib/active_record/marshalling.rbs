@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Marshalling
+    module Methods
+      def _marshal_dump_7_1: () -> (Array[untyped] | [untyped, untyped])
+    end
+  end
+end

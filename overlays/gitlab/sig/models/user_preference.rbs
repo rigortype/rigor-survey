@@ -1,0 +1,5 @@
+class UserPreference < ::ApplicationRecord
+  def self.notes_filters: () -> Hash[untyped, 0 | 1 | 2]
+  def self.time_display_formats: () -> Hash[untyped, 0 | 1 | 2]
+  def default_text_editor_enabled=: (untyped) -> ("not_set" | "rich_text_editor")
+end

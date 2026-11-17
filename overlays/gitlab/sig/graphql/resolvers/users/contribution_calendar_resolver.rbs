@@ -1,0 +1,7 @@
+module Resolvers
+  module Users
+    class ContributionCalendarResolver < ::Resolvers::BaseResolver
+      def resolve: () -> (Gitlab::ContributionsCalendar | nil)
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Atlassian
+      class TokenRefresher
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

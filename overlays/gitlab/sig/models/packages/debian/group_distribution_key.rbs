@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class GroupDistributionKey < ::ApplicationRecord
+      def self.container_type: () -> :group
+    end
+  end
+end

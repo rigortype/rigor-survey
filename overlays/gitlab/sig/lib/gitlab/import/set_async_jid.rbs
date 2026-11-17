@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    module SetAsyncJid
+      def self.generate_jid: (untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,55 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class TransactionState
+      def initialize: (?untyped) -> void
+      def rollback!: () -> :rolledback
+      def full_rollback!: () -> :fully_rolledback
+      def invalidate!: () -> :invalidated
+      def commit!: () -> :committed
+      def full_commit!: () -> :fully_committed
+      def nullify!: () -> nil
+    end
+    class TransactionInstrumenter
+      def initialize: (?untyped) -> void
+    end
+    class NullTransaction
+      def closed?: () -> true
+      def open?: () -> false
+      def joinable?: () -> false
+      def isolation: () -> nil
+      def restartable?: () -> false
+      def dirty?: () -> false
+      def invalidated?: () -> false
+      def materialized?: () -> false
+    end
+    class Transaction
+      def initialize: (untyped, ?isolation: untyped, ?joinable: untyped, ?run_commit_callbacks: untyped) -> void
+      def dirty!: () -> true
+      def dirty?: () -> (false | true)
+      def open?: () -> (false | true)
+      def records: () -> (Array[untyped] | nil)
+      def materialized?: () -> (false | true)
+      def full_rollback?: () -> true
+      def state: () -> ActiveRecord::ConnectionAdapters::TransactionState
+      class Callback
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+    class RestartParentTransaction < ::ActiveRecord::ConnectionAdapters::Transaction
+      def initialize: (untyped, untyped, **untyped) -> void
+      def full_rollback?: () -> false
+    end
+    class SavepointTransaction < ::ActiveRecord::ConnectionAdapters::Transaction
+      def initialize: (untyped, untyped, untyped, **untyped) -> void
+      def full_rollback?: () -> false
+    end
+    class TransactionManager
+      def initialize: (untyped) -> void
+      def disable_lazy_transactions!: () -> false
+      def enable_lazy_transactions!: () -> true
+      def lazy_transactions_enabled?: () -> (false | true)
+      def restore_transactions: () -> (false | true)
+      def open_transactions: () -> Integer
+    end
+  end
+end

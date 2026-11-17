@@ -1,0 +1,6 @@
+module Ci
+  class TagsFinder
+    def initialize: (params: ({ search: String } | {})) -> void
+    def execute: () -> ActiveRecord::Relation[Ci::Tag]
+  end
+end

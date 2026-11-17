@@ -1,0 +1,11 @@
+module Gitlab
+  module Auth
+    class Result
+      def initialize: (untyped, untyped, Symbol | nil, [Symbol] | [] | nil, ?{ oauth_access_token: untyped } | { personal_access_token: untyped }) -> void
+      def failed?: () -> (false | true)
+      def type: () -> (:ci | :gitlab_shell | :oauth | :personal_access_token | nil)
+      def authentication_abilities: () -> ([:push_code] | [] | nil)
+      def authentication_context: () -> ({ oauth_access_token: untyped } | { personal_access_token: untyped })
+    end
+  end
+end

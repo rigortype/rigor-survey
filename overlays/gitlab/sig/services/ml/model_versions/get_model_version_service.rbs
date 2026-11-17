@@ -1,0 +1,7 @@
+module Ml
+  module ModelVersions
+    class GetModelVersionService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

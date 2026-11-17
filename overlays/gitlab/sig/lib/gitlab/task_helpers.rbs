@@ -1,0 +1,14 @@
+module Gitlab
+  module TaskHelpers
+    def say: (?untyped) -> nil
+    def invoke_and_time_task: (untyped) -> nil
+    def ask_to_continue: () -> nil
+    def run_command: (untyped) -> ("" | String)
+    def run_command!: (untyped) -> String
+    def uid_for: (untyped) -> Integer
+    def gid_for: (untyped) -> (Integer | String)
+    def checkout_or_clone_version: (version: untyped, repo: untyped, target_dir: untyped, ?clone_opts: untyped, ?checkout_opts: untyped) -> String
+    def clone_repo: (untyped, untyped, ?clone_opts: untyped) -> String
+    def checkout_version: (untyped, untyped, ?checkout_opts: untyped) -> String
+  end
+end

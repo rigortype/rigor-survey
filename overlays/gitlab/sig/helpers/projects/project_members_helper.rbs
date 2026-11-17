@@ -1,0 +1,5 @@
+module Projects
+  module ProjectMembersHelper
+    def project_member_header_subtext: (untyped) -> String
+  end
+end

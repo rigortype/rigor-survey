@@ -1,0 +1,4 @@
+class RateLimiter
+  def initialize: (untyped, ?untyped) -> void
+  def to_headers: (?untyped) -> Hash[String, untyped]
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module MailRoom
+    class Authenticator
+      def self.verification_options: (untyped, untyped) -> (nil | { issuer: untyped, iat_after: Float, key: untyped, algorithm: "HS256" } | { issuer: untyped, iat_after: Float, key: nil, algorithm: "ES256", jwks: untyped })
+      def self.symmetric_options: (untyped) -> { issuer: untyped, iat_after: Float, key: untyped, algorithm: "HS256" }
+      def self.asymmetric_options: (untyped) -> { issuer: untyped, iat_after: Float, key: nil, algorithm: "ES256", jwks: untyped }
+      def self.common_options: () -> { issuer: untyped, iat_after: Float }
+      def self.log_verification_failure: (untyped, untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

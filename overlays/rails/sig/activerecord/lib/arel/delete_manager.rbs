@@ -1,0 +1,10 @@
+module Arel
+  class DeleteManager < ::Arel::TreeManager
+    def initialize: (?untyped) -> void
+    def from: (untyped) -> Arel::DeleteManager
+    def group: (untyped) -> Arel::DeleteManager
+    def having: (untyped) -> Arel::DeleteManager
+    def comment: (untyped) -> Arel::DeleteManager
+    def returning: (untyped) -> Arel::DeleteManager
+  end
+end

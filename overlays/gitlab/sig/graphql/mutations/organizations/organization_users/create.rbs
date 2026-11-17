@@ -1,0 +1,9 @@
+module Mutations
+  module Organizations
+    module OrganizationUsers
+      class Create < ::Mutations::BaseMutation
+        def resolve: (organization_id: untyped, **untyped) -> { organization_user: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class SnippetsResolver < ::Resolvers::BaseResolver
+      def self.complexity_multiplier: (untyped) -> 0
+    end
+  end
+end

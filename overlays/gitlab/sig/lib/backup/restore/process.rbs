@@ -1,0 +1,8 @@
+module Backup
+  module Restore
+    class Process
+      def initialize: (backup_id: untyped, backup_task: untyped, backup_path: untyped, logger: untyped) -> void
+      def execute!: () -> nil
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActionDispatch
+  class RequestId
+    def initialize: (untyped, header: untyped) -> void
+  end
+end

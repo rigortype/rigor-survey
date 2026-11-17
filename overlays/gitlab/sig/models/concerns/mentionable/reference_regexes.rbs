@@ -1,0 +1,6 @@
+module Mentionable
+  module ReferenceRegexes
+    def self.reference_pattern: (untyped, untyped) -> Regexp
+    def self.other_patterns: () -> [untyped, untyped, untyped, untyped, untyped]
+  end
+end

@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    class CaseNode < ::RuboCop::AST::Node
+      def keyword: () -> "case"
+      def each_when: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::CaseNode)
+    end
+  end
+end

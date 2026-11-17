@@ -1,0 +1,5 @@
+module SupplyChain
+  class ArtifactProvenancePublisher < ::SupplyChain::ProvenancePublisher
+    def publish: () -> [Array[untyped], untyped]
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module QuickActions
+    class CommandDefinition
+      def initialize: (untyped, ?untyped) -> void
+      def all_names: () -> Array[untyped]
+      def noop?: () -> (false | true)
+      def to_h: (untyped) -> { name: untyped, aliases: untyped, description: untyped, warning: untyped, icon: untyped, params: untyped }
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Dependabot
+  module Julia
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def self.updated_files_regex: () -> [Regexp, Regexp]
+      def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?options: untyped) -> void
+      def updated_dependency_files: () -> Array[Dependabot::DependencyFile]
+      def updated_files_with_julia_helper: () -> (Array[Dependabot::DependencyFile] | Array[untyped])
+      def update_all_project_files: () -> Array[{ file: Dependabot::DependencyFile, content: String }]
+      def updated_manifest_file: (untyped) -> (Dependabot::DependencyFile | nil)
+      def add_manifest_update_notice: (untyped, untyped) -> Array[Dependabot::Notice]
+      def notices: () -> Array[Dependabot::Notice]
+    end
+  end
+end

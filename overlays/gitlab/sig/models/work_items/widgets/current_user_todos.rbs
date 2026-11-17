@@ -1,0 +1,8 @@
+module WorkItems
+  module Widgets
+    class CurrentUserTodos < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:todo, :done]
+      def self.quick_action_params: () -> [:todo_event]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module TimedOutBuilds
+    class DropTimedOutWorker
+      def perform: () -> Array[singleton(Ci::TimedOutBuilds::DropCancelingWorker) | singleton(Ci::TimedOutBuilds::DropRunningWorker)]
+    end
+  end
+end

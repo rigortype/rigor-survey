@@ -1,0 +1,8 @@
+module Packages
+  module Cargo
+    class PackageFinder
+      def initialize: (untyped, package_name: untyped, package_version: untyped) -> void
+      def execute: () -> ActiveRecord::Relation[Packages::Cargo::Package]
+    end
+  end
+end

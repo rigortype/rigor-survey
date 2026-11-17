@@ -1,0 +1,10 @@
+module Sidebars
+  module Projects
+    module SuperSidebarMenus
+      class ObserveMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "eye"
+        def configure_menu_items: () -> Array[Symbol]
+      end
+    end
+  end
+end

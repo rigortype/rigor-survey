@@ -1,0 +1,7 @@
+module AutoMerge
+  class AvailabilityCheck
+    def self.success: () -> AutoMerge::AvailabilityCheck
+    def self.error: (?unavailable_reason: untyped, ?unsuccessful_check: untyped, ?unsuccessful_check_explanation: untyped) -> AutoMerge::AvailabilityCheck
+    def initialize: (status: Symbol, ?unavailable_reason: untyped, ?unsuccessful_check: untyped, ?unsuccessful_check_explanation: untyped) -> void
+  end
+end

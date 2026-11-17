@@ -1,0 +1,8 @@
+module WorkItems
+  module Callbacks
+    class Hierarchy < ::WorkItems::Callbacks::Base
+      def after_create: () -> nil
+      def after_update: () -> nil
+    end
+  end
+end

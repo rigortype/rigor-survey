@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class ProjectPipelineCountsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> Gitlab::PipelineScopeCounts
+    end
+  end
+end

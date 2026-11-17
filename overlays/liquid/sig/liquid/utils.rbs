@@ -1,0 +1,7 @@
+module Liquid
+  module Utils
+    def self.slice_collection_using_each: (untyped, untyped, untyped) -> (Array[untyped] | [String])
+    def self.array_inspect: (untyped, ?untyped) -> ("[...]" | String)
+    def self.hash_inspect: (untyped, ?untyped) -> ("{...}" | String)
+  end
+end

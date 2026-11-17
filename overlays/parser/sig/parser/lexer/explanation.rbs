@@ -1,0 +1,7 @@
+module Parser
+  module Lexer
+    module Explanation
+      def advance: () -> [untyped, [untyped, untyped]]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module ActiveRecord
+  module AttributeMethods
+    module Query
+      def query_attribute: (untyped) -> (false | true)
+      def _query_attribute: (untyped) -> (false | true)
+    end
+  end
+end

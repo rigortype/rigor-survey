@@ -1,0 +1,7 @@
+module ActionView
+  module Helpers
+    module JavaScriptHelper
+      def javascript_cdata_section: (untyped) -> ActiveSupport::SafeBuffer
+    end
+  end
+end

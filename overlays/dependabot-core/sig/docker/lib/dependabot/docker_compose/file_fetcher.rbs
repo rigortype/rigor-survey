@@ -1,0 +1,12 @@
+module Dependabot
+  module DockerCompose
+    class FileFetcher < ::Dependabot::Shared::SharedFileFetcher
+      def fetch_files: () -> Array[untyped]
+      def self.filename_regex: () -> Regexp
+      def docker_compose_files: () -> (Array[::DependencyFile] | nil)
+      def correctly_encoded_docker_compose_files: () -> Array[Dependabot::DependencyFile]
+      def incorrectly_encoded_docker_compose_files: () -> Array[Dependabot::DependencyFile]
+      def self.required_files_message: () -> "Repo must contain a docker-compose.yaml file."
+    end
+  end
+end

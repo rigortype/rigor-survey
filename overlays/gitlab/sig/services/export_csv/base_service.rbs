@@ -1,0 +1,5 @@
+module ExportCsv
+  class BaseService
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+  end
+end

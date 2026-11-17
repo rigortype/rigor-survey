@@ -1,0 +1,23 @@
+module Gitlab
+  module Ci
+    module Charts
+      class Chart
+        def initialize: (untyped, ?untyped) -> void
+        def labels: () -> Array[untyped]
+      end
+      class YearChart < ::Gitlab::Ci::Charts::Chart
+        def initialize: (*untyped) -> void
+      end
+      class MonthChart < ::Gitlab::Ci::Charts::Chart
+        def initialize: (*untyped) -> void
+      end
+      class WeekChart < ::Gitlab::Ci::Charts::Chart
+        def initialize: (*untyped) -> void
+      end
+      class PipelineTime < ::Gitlab::Ci::Charts::Chart
+        def initialize: (*untyped) -> void
+        def pipeline_times: () -> Array[untyped]
+      end
+    end
+  end
+end

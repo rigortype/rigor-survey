@@ -1,0 +1,3 @@
+module ParseCommitDate
+  def convert_date_to_epoch: (untyped) -> (Integer | nil)
+end

@@ -1,0 +1,9 @@
+module Types
+  module WorkItems
+    module Widgets
+      class ErrorTrackingType < ::Types::BaseObject
+        def status: () -> (:error | :not_found | :retry | :success)
+      end
+    end
+  end
+end

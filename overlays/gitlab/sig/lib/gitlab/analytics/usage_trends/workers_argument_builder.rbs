@@ -1,0 +1,9 @@
+module Gitlab
+  module Analytics
+    module UsageTrends
+      class WorkersArgumentBuilder
+        def initialize: (?measurement_identifiers: untyped, ?recorded_at: untyped) -> void
+      end
+    end
+  end
+end

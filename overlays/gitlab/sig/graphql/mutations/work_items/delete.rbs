@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class Delete < ::Mutations::BaseMutation
+      def resolve: (id: untyped) -> ({ errors: Array[untyped] | [] } | { errors: Array[untyped] | [], project: untyped, namespace: untyped })
+    end
+  end
+end

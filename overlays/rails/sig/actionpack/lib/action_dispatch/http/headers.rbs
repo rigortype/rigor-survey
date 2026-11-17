@@ -1,0 +1,9 @@
+module ActionDispatch
+  module Http
+    class Headers
+      def self.from_hash: (untyped) -> ActionDispatch::Http::Headers
+      def initialize: (untyped) -> void
+      def merge: (untyped) -> ActionDispatch::Http::Headers
+    end
+  end
+end

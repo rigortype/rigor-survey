@@ -1,0 +1,9 @@
+module Dependabot
+  module Composer
+    module NativeHelpers
+      def self.composer_helper_path: (?composer_version: untyped) -> String
+      def self.composer_helpers_dir: () -> String
+      def self.native_helpers_root: () -> String
+    end
+  end
+end

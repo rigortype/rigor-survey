@@ -1,0 +1,5 @@
+module Mutations
+  module Assignable
+    def resolve: (project_path: untyped, iid: untyped, assignee_usernames: untyped, operation_mode: untyped) -> Hash[untyped, untyped]
+  end
+end

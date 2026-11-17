@@ -1,0 +1,7 @@
+module WorkItems
+  module Widgets
+    class LinkedItems < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:relate, :unlink]
+    end
+  end
+end

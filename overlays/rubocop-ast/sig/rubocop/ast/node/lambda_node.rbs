@@ -1,0 +1,12 @@
+module RuboCop
+  module AST
+    class LambdaNode < ::RuboCop::AST::Node
+      def lambda?: () -> true
+      def lambda_literal?: () -> true
+      def attribute_accessor?: () -> false
+      def assignment_method?: () -> false
+      def receiver: () -> nil
+      def method_name: () -> :lambda
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      class Factory
+        def initialize: (untyped, untyped) -> void
+        def self.extended_statuses: () -> []
+        def self.common_helpers: () -> Module
+      end
+    end
+  end
+end

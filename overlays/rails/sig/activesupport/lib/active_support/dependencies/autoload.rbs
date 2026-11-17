@@ -1,0 +1,5 @@
+module ActiveSupport
+  module Autoload
+    def eager_load!: () -> nil
+  end
+end

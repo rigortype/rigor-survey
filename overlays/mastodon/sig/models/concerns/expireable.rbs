@@ -1,0 +1,3 @@
+module Expireable
+  def expires?: () -> (false | true)
+end

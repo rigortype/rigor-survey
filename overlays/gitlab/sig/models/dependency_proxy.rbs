@@ -1,0 +1,3 @@
+module DependencyProxy
+  def self.table_name_prefix: () -> "dependency_proxy_"
+end

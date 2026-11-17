@@ -1,0 +1,10 @@
+module Spree
+  module Emails
+    module Samples
+      class Return < ::Spree::Emails::Samples::Base
+        def self.record_type: () -> "return"
+        def variables: () -> { return: untyped, order: untyped, resend: false }
+      end
+    end
+  end
+end

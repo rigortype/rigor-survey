@@ -1,0 +1,9 @@
+module Dependabot
+  module Clients
+    class BitbucketWithRetries < ::SimpleDelegator
+      def self.for_bitbucket_dot_org: (credentials: untyped) -> Dependabot::Clients::BitbucketWithRetries
+      def initialize: (credentials: untyped, ?max_retries: untyped) -> void
+      def respond_to_missing?: (untyped, ?untyped) -> (false | true)
+    end
+  end
+end

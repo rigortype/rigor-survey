@@ -1,0 +1,10 @@
+module ClickHouse
+  module MigrationSupport
+    class LeaseHeartbeat
+      def initialize: (untyped, ttl: untyped, interval: ActiveSupport::Duration, max_duration: untyped) -> void
+      def call: () -> nil
+      def stop: () -> nil
+      def ensure_held!: () -> nil
+    end
+  end
+end

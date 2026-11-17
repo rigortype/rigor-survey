@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestSuite
+        def initialize: (?untyped) -> void
+        def +: (untyped) -> Gitlab::Ci::Reports::TestSuite
+        def sorted: () -> Gitlab::Ci::Reports::TestSuite
+      end
+    end
+  end
+end

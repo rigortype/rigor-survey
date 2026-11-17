@@ -1,0 +1,10 @@
+class UserSettings
+  module DSL
+    module ClassMethods
+      def setting: (untyped, ?untyped) -> UserSettings::Setting
+      def namespace: (untyped) ?{ (*untyped) -> untyped } -> UserSettings::Namespace
+      def keys: () -> Array[untyped]
+      def definition_for?: (untyped) -> (false | true)
+    end
+  end
+end

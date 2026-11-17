@@ -1,0 +1,5 @@
+module Mail
+  class MimeVersionElement
+    def initialize: (untyped) -> void
+  end
+end

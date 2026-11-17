@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Gzip
+    class Stream < ::StringIO
+      def initialize: (*untyped) -> void
+    end
+  end
+end

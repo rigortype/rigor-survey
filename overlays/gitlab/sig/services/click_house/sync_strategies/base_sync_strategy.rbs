@@ -1,0 +1,7 @@
+module ClickHouse
+  module SyncStrategies
+    class BaseSyncStrategy
+      def execute: () -> (Hash[untyped, untyped] | { status: :disabled } | { status: :skipped })
+    end
+  end
+end

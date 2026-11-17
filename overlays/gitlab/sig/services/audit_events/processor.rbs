@@ -1,0 +1,7 @@
+module AuditEvents
+  class Processor
+    def self.fetch_from_json: (untyped) -> (AuditEvents::GroupAuditEvent | AuditEvents::InstanceAuditEvent | AuditEvents::ProjectAuditEvent | AuditEvents::UserAuditEvent | nil)
+    def self.determine_audit_model_entity: (untyped) -> ([singleton(AuditEvents::GroupAuditEvent) | singleton(AuditEvents::ProjectAuditEvent) | singleton(AuditEvents::UserAuditEvent), untyped] | [singleton(AuditEvents::GroupAuditEvent), Group] | [singleton(AuditEvents::InstanceAuditEvent), :instance] | [singleton(AuditEvents::ProjectAuditEvent), Project] | [singleton(AuditEvents::UserAuditEvent), User])
+    def self.determine_from_entity_type: (untyped) -> ([singleton(AuditEvents::GroupAuditEvent), Group] | [singleton(AuditEvents::InstanceAuditEvent), :instance] | [singleton(AuditEvents::ProjectAuditEvent), Project] | [singleton(AuditEvents::UserAuditEvent), User])
+  end
+end

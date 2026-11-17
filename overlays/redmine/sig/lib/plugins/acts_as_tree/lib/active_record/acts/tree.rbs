@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Acts
+    module Tree
+      module InstanceMethods
+        def ancestors: () -> Array[untyped]
+        def self_and_descendants: (?untyped) -> Array[untyped]
+      end
+    end
+  end
+end

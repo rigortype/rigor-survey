@@ -1,0 +1,5 @@
+module WorkItems
+  module SharedFilterArguments
+    def self.validate_relative_date_conflicts!: (untyped, untyped) -> nil
+  end
+end

@@ -1,0 +1,8 @@
+module PagesCore
+  module Templates
+    class ConfigurationHandler
+      def self.handle_blocks: () -> {}
+      def proxy: (?untyped) ?{ (*untyped) -> untyped } -> PagesCore::Templates::ConfigurationProxy
+    end
+  end
+end

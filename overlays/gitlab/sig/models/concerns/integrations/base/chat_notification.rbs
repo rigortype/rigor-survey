@@ -1,0 +1,13 @@
+module Integrations
+  module Base
+    module ChatNotification
+      def execute: (untyped) -> (false | true)
+      def default_channel_placeholder: () -> bot
+      def webhook_help: () -> bot
+      def configurable_channels?: () -> false
+      def channel_limit_per_event: () -> 10
+      def mask_configurable_channels?: () -> false
+      def sections: () -> [{ type: untyped, title: untyped, description: untyped }, { type: untyped, title: untyped, description: untyped }, { type: untyped, title: untyped, description: untyped }]
+    end
+  end
+end

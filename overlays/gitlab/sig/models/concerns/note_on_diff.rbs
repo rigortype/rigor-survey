@@ -1,0 +1,8 @@
+module NoteOnDiff
+  def diff_note?: () -> true
+  def diff_file: () -> bot
+  def diff_line: () -> bot
+  def original_line_code: () -> bot
+  def active?: (?untyped) -> bot
+  def created_at_diff?: (untyped) -> false
+end

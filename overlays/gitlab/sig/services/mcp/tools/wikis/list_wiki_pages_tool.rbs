@@ -1,0 +1,11 @@
+module Mcp
+  module Tools
+    module Wikis
+      class ListWikiPagesTool < ::Mcp::Tools::Base::GraphqlTool
+        def graphql_operation: () -> (String | nil)
+        def build_variables: () -> Hash[untyped, untyped]
+        def operation_name: () -> ("group" | "project")
+      end
+    end
+  end
+end

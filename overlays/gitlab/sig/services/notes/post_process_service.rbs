@@ -1,0 +1,6 @@
+module Notes
+  class PostProcessService
+    def initialize: (untyped) -> void
+    def execute: () -> (ServiceResponse | nil)
+  end
+end

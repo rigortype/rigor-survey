@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module LockAcquisition
+      class BlockerCensus
+        def self.capture: (untyped, tables: untyped) -> ({ blockers: untyped, privilege_restricted_count: untyped } | { census_error: String })
+        def initialize: (untyped, tables: untyped) -> void
+        def capture: () -> ({ blockers: untyped, privilege_restricted_count: untyped } | { census_error: String })
+      end
+    end
+  end
+end

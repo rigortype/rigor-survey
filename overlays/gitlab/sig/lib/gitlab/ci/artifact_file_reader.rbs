@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class ArtifactFileReader
+      def initialize: (untyped, max_archive_size: untyped) -> void
+    end
+  end
+end

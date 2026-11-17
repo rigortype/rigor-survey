@@ -1,0 +1,8 @@
+module YARD
+  module Server
+    module StaticCaching
+      def check_static_cache: () -> ([200, Hash[String, "text/html"], [String]] | nil)
+      def cache: (untyped) -> (Integer | nil)
+    end
+  end
+end

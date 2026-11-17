@@ -1,0 +1,4 @@
+class RepositoryArchiveCleanUpService
+  def initialize: (?untyped) -> void
+  def execute: () -> (Range[untyped] | nil)
+end

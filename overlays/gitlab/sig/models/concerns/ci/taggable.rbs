@@ -1,0 +1,5 @@
+module Ci
+  module Taggable
+    def tag_list: () -> Gitlab::Ci::Tags::TagList
+  end
+end

@@ -1,0 +1,11 @@
+module ActiveSupport
+  module Messages
+    class RotationCoordinator
+      def initialize: () ?{ (*untyped) -> untyped } -> void
+      def rotate: (**untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::Messages::RotationCoordinator
+      def prepend: (**untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::Messages::RotationCoordinator
+      def rotate_defaults: () -> ActiveSupport::Messages::RotationCoordinator
+      def clear_rotations: () -> ActiveSupport::Messages::RotationCoordinator
+    end
+  end
+end

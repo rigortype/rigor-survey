@@ -1,0 +1,7 @@
+module Ci
+  module ExternalPullRequests
+    class CreatePipelineWorker
+      def perform: (untyped, untyped, untyped) -> (ServiceResponse | nil)
+    end
+  end
+end

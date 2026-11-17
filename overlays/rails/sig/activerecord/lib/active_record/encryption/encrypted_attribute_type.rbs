@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class EncryptedAttributeType < ::ActiveModel::Type::Value
+      def initialize: (scheme: untyped, ?cast_type: untyped, ?previous_type: untyped, ?default: untyped) -> void
+    end
+  end
+end

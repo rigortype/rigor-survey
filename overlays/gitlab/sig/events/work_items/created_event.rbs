@@ -1,0 +1,5 @@
+module WorkItems
+  class CreatedEvent < ::WorkItems::BaseEvent
+    def self.build: (work_item: untyped, current_user: untyped) -> WorkItems::CreatedEvent
+  end
+end

@@ -1,0 +1,3 @@
+class RebaseWorker
+  def perform: (untyped, untyped, ?untyped) -> ServiceResponse
+end

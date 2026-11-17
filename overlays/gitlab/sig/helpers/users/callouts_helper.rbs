@@ -1,0 +1,10 @@
+module Users
+  module CalloutsHelper
+    def show_suggest_popover?: () -> (false | true)
+    def show_unfinished_tag_cleanup_callout?: () -> (false | true)
+    def show_branch_rules_tip?: () -> (false | true)
+    def show_period_in_terraform_state_name_alert_callout?: () -> (false | true)
+    def show_feature_library_shimmer?: () -> (false | true)
+    def show_use_gitlab_locally_homepage_widget?: () -> (false | true)
+  end
+end

@@ -1,0 +1,9 @@
+module Admin
+  module Metrics
+    class Measure
+      class NewUsersMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def key: () -> "new_users"
+      end
+    end
+  end
+end

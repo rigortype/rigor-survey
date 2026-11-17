@@ -1,0 +1,12 @@
+module Gitlab
+  module Template
+    class GitlabCiYmlTemplate < ::Gitlab::Template::BaseTemplate
+      def description: () -> "# This file is a template, and might need editing before it works on your project."
+      def self.extension: () -> ".gitlab-ci.yml"
+      def self.categories: () -> Hash[String, "" | "Pages" | "Verify" | "autodeploy"]
+      def self.include_categories_for_file: () -> Hash[String, Hash[String, "Security"]]
+      def self.additional_excluded_patterns: () -> [Regexp]
+      def self.finder: (?untyped) -> Gitlab::Template::Finders::GlobalTemplateFinder
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      class TypeMetadata
+        def initialize: (untyped, ?oid: untyped, ?fmod: untyped) -> void
+        def as_schema_json: () -> Hash[String, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Verify
+    class RakeTask
+      def self.run!: (untyped) -> nil
+      def initialize: (untyped, untyped) -> void
+      def run!: () -> nil
+      def verbose?: () -> (false | true)
+    end
+  end
+end

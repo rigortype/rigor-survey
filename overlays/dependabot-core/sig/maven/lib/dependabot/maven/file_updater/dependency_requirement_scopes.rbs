@@ -1,0 +1,11 @@
+module Dependabot
+  module Maven
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class DependencyRequirementScopes
+        def initialize: (dependencies: untyped) -> void
+        def wrapper_groups: () -> Hash[untyped, Array[Dependabot::Dependency] | []]
+        def pom_dependency: (untyped) -> (Dependabot::Dependency | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module YARD
+  module CodeObjects
+    class ExtendedMethodObject
+      def scope: () -> :class
+      def initialize: (untyped) -> void
+    end
+  end
+end

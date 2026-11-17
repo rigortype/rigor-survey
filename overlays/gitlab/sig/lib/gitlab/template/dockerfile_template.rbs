@@ -1,0 +1,10 @@
+module Gitlab
+  module Template
+    class DockerfileTemplate < ::Gitlab::Template::BaseTemplate
+      def description: () -> "# This file is a template, and might need editing before it works on your project."
+      def self.extension: () -> ".Dockerfile"
+      def self.categories: () -> Hash[String, ""]
+      def self.finder: (?untyped) -> Gitlab::Template::Finders::GlobalTemplateFinder
+    end
+  end
+end

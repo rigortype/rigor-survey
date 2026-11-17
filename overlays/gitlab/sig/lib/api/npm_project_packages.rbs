@@ -1,0 +1,6 @@
+module API
+  class NpmProjectPackages < ::API::Base
+    def error_reason_to_http_status: (untyped) -> (400 | Integer)
+    def self.authorization_boundary_options: () -> { boundary_type: :project, boundary: Proc }
+  end
+end

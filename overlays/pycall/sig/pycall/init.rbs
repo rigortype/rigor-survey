@@ -1,0 +1,3 @@
+module PyCall
+  def self.init: (?untyped) -> (false | true)
+end

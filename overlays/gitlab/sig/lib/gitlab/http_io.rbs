@@ -1,0 +1,16 @@
+module Gitlab
+  class HttpIO
+    def initialize: (untyped, untyped) -> void
+    def binmode?: () -> true
+    def path: () -> nil
+    def url: () -> String
+    def each_line: () -> nil
+    def read: (?untyped, ?untyped) -> (String | nil)
+    def readline: () -> String
+    def write: (untyped) -> bot
+    def truncate: (untyped) -> bot
+    def flush: () -> bot
+    def present?: () -> true
+    def uri: () -> URI::Generic
+  end
+end

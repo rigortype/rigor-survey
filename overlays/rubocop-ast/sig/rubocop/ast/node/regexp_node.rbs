@@ -1,0 +1,10 @@
+module RuboCop
+  module AST
+    class RegexpNode < ::RuboCop::AST::Node
+      def to_regexp: () -> Regexp
+      def percent_r_literal?: () -> (false | true)
+      def delimiters: () -> [untyped, untyped]
+      def delimiter?: (untyped) -> (false | true)
+    end
+  end
+end

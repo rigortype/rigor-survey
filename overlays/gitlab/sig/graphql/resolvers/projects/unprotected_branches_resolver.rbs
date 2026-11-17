@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class UnprotectedBranchesResolver < ::Resolvers::BaseResolver
+      def resolve: (?search: untyped, ?first: untyped, ?after: untyped) -> Gitlab::Graphql::ExternallyPaginatedArray
+    end
+  end
+end

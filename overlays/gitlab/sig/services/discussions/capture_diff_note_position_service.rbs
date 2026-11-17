@@ -1,0 +1,6 @@
+module Discussions
+  class CaptureDiffNotePositionService
+    def initialize: (untyped, untyped) -> void
+    def tracer: () -> (Gitlab::Diff::PositionTracer | nil)
+  end
+end

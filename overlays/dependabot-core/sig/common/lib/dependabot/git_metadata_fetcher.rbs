@@ -1,0 +1,16 @@
+module Dependabot
+  class GitMetadataFetcher
+    def initialize: (url: untyped, credentials: untyped) -> void
+    def upload_pack: () -> (String | nil)
+    def tags: () -> (Array[::GitRef] | nil)
+    def tags_for_upload_pack: () -> (Array[::GitRef] | nil)
+    def refs_for_upload_pack: () -> (Array[::GitRef] | nil)
+    def ref_names: () -> Array[untyped]
+    def refs_for_tag_with_detail: () -> (Array[::GitTagWithDetail] | nil)
+    def parse_refs_for_tag_with_detail: () -> Array[Dependabot::GitTagWithDetail]
+    def ref_details_for_pinned_ref: (untyped) -> Excon::Response
+    class GitResponse
+      def initialize: (body: untyped, status: untyped) -> void
+    end
+  end
+end

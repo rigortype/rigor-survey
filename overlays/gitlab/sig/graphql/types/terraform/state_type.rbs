@@ -1,0 +1,7 @@
+module Types
+  module Terraform
+    class StateType < ::Types::BaseObject
+      def versions: () -> Gitlab::Graphql::Loaders::Terraform::StateVersionsLoader
+    end
+  end
+end

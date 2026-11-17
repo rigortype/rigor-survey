@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class PreventSetOperatorMismatch < ::Gitlab::Database::QueryAnalyzers::Base
+        class Targets
+          def self.literal_ref_names: (untyped, untyped) -> ([String] | [])
+          def self.fields: (untyped) -> Array[untyped]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Concurrent
+  class AtomicMarkableReference < ::Concurrent::Synchronization::Object
+    def initialize: (?Integer, ?false | true) -> void
+  end
+end

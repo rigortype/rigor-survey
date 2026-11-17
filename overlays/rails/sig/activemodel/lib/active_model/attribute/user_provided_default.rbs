@@ -1,0 +1,11 @@
+module ActiveModel
+  class Attribute
+    def with_user_default: (untyped) -> ActiveModel::Attribute::UserProvidedDefault
+    class UserProvidedDefault < ::ActiveModel::Attribute::FromUser
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def with_type: (untyped) -> ActiveModel::Attribute::UserProvidedDefault
+      def freezable?: () -> false
+      def marshal_dump: () -> (Array[untyped] | [untyped, untyped, untyped, untyped])
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module ProjectAuthorizations
+  class Changes
+    def add: (untyped) -> Array[untyped]
+    def remove_users_in_project: (untyped, untyped) -> { user_ids: untyped, scope: untyped }
+    def remove_projects_for_user: (untyped, untyped) -> { project_ids: untyped, scope: untyped }
+    def apply!: () -> ProjectAuthorizations::Changes
+    def projects_to_remove: () -> { project_ids: untyped, scope: untyped }
+    def users_to_remove_in_project: () -> { user_ids: untyped, scope: untyped }
+    def authorizations_to_add: () -> Array[untyped]
+  end
+end

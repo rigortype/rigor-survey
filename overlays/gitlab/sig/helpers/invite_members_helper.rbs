@@ -1,0 +1,5 @@
+module InviteMembersHelper
+  def invite_accepted_notice: (untyped) -> String
+  def common_invite_group_modal_data: (untyped, untyped) -> Hash[untyped, untyped]
+  def common_invite_modal_dataset: (untyped) -> Hash[untyped, untyped]
+end

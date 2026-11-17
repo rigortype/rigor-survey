@@ -1,0 +1,3 @@
+module AverageMean
+  def self.average_mean: (untyped, *untyped) -> nil
+end

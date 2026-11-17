@@ -1,0 +1,3 @@
+class Items
+  def initialize: (untyped, untyped) -> void
+end

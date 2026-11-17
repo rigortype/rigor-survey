@@ -1,0 +1,8 @@
+module HasRepository
+  def repository_exists?: () -> (false | true)
+  def repository: () -> bot
+  def storage: () -> bot
+  def full_path: () -> bot
+  def lfs_enabled?: () -> false
+  def repository_size_checker: () -> bot
+end

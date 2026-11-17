@@ -1,0 +1,10 @@
+module Packages
+  module Nuget
+    module V2
+      class ServiceIndexPresenter
+        def initialize: (untyped) -> void
+        def xml: () -> Nokogiri::XML::Builder
+      end
+    end
+  end
+end

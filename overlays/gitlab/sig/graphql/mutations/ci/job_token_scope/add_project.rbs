@@ -1,0 +1,9 @@
+module Mutations
+  module Ci
+    module JobTokenScope
+      class AddProject < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, target_project_path: untyped, ?direction: untyped) -> ({ ci_job_token_scope: ::Ci::JobToken::Scope, ci_job_token_scope_allowlist_entry: untyped, errors: [] } | { ci_job_token_scope: nil, ci_job_token_scope_allowlist_entry: nil, errors: [untyped] })
+      end
+    end
+  end
+end

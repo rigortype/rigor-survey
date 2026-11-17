@@ -1,0 +1,7 @@
+module Arel
+  module Nodes
+    class SelectCore < ::Arel::Nodes::Node
+      def initialize: (?untyped) -> void
+    end
+  end
+end

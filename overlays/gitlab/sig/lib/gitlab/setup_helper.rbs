@@ -1,0 +1,17 @@
+module Gitlab
+  module SetupHelper
+    def create_configuration: (untyped, untyped, ?force: untyped, ?options: untyped) -> nil
+    def generate_configuration: (untyped, untyped, ?force: untyped) -> nil
+    module Workhorse
+      def self.get_config_path: (untyped, untyped) -> String
+      def self.compile_into: (untyped) -> top
+      def self.make: () -> ("gmake" | "make")
+    end
+    module Gitaly
+      def self.get_config_path: (untyped, untyped) -> String
+    end
+    module Praefect
+      def self.get_config_path: (untyped, untyped) -> String
+    end
+  end
+end

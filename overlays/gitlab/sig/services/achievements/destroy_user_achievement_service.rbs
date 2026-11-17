@@ -1,0 +1,6 @@
+module Achievements
+  class DestroyUserAchievementService
+    def initialize: (untyped, untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

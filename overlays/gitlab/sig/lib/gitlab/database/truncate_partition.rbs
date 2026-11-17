@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class TruncatePartition
+      def initialize: (untyped, ?target_database: untyped, ?logger: untyped) -> void
+    end
+  end
+end

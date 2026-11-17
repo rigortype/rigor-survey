@@ -1,0 +1,6 @@
+module Terraform
+  class ModulesPresenter < ::Gitlab::View::Presenter::Simple
+    def initialize: (untyped, untyped) -> void
+    def modules: () -> [Hash[untyped, untyped]]
+  end
+end

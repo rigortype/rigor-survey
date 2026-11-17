@@ -1,0 +1,6 @@
+module ChatNames
+  class FindUserService
+    def initialize: (untyped, untyped) -> void
+    def execute: () -> (ChatName | nil)
+  end
+end

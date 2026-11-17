@@ -1,0 +1,7 @@
+module Ci
+  module JobToken
+    class ProjectScopeLink < ::Ci::ApplicationRecord
+      def self.for_source_and_target: (untyped, untyped) -> (Ci::JobToken::ProjectScopeLink | nil)
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        class Token
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

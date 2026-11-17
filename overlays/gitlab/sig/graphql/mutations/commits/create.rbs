@@ -1,0 +1,7 @@
+module Mutations
+  module Commits
+    class Create < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, branch: untyped, message: untyped, **untyped) -> { content: untyped, commit: untyped, commit_pipeline_path: untyped, errors: Array[untyped] }
+    end
+  end
+end

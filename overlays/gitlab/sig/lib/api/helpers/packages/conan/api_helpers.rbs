@@ -1,0 +1,16 @@
+module API
+  module Helpers
+    module Packages
+      module Conan
+        module ApiHelpers
+          def recipe_upload_urls: () -> { upload_urls: untyped }
+          def package_upload_urls: () -> { upload_urls: untyped }
+          def url_options: (untyped) -> { package_name: untyped, package_version: untyped, package_username: untyped, package_channel: untyped, file_name: untyped, recipe_revision: untyped }
+          def recipe: () -> String
+          def token: () -> (Gitlab::ConanToken | nil)
+          def create_package_file_with_type: (untyped, untyped) -> ServiceResponse
+        end
+      end
+    end
+  end
+end

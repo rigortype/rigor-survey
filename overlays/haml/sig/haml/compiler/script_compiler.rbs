@@ -1,0 +1,8 @@
+module Haml
+  class Compiler
+    class ScriptCompiler
+      def initialize: (untyped, untyped) -> void
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> (Array[untyped] | [:multi, [:escape, untyped, [:dynamic, untyped]], [:newline]] | [:multi, [:static, untyped], [:newline]])
+    end
+  end
+end

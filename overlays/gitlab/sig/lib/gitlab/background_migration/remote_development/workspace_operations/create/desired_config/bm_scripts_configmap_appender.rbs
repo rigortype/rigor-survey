@@ -1,0 +1,17 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module WorkspaceOperations
+        module Create
+          module DesiredConfig
+            class BmScriptsConfigmapAppender
+              def self.append: (desired_config_array: untyped, name: untyped, namespace: untyped, labels: untyped, annotations: untyped, devfile_commands: untyped, devfile_events: untyped) -> nil
+              def self.add_devfile_command_scripts_to_configmap_data: (configmap_data: untyped, devfile_commands: untyped, devfile_events: untyped) -> nil
+              def self.add_run_poststart_commands_script_to_configmap_data: (configmap_data: untyped, devfile_commands: untyped, devfile_events: untyped) -> nil
+            end
+          end
+        end
+      end
+    end
+  end
+end

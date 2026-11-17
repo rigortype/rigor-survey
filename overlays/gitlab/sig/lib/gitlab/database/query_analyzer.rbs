@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    class QueryAnalyzer
+      def all_analyzers: () -> Array[untyped]
+      class Parsed
+        def initialize: (untyped, untyped, untyped, untyped, ?untyped, ?type_casted_binds: untyped, ?returned_values: untyped) -> void
+        def cached?: () -> (false | true)
+      end
+    end
+  end
+end

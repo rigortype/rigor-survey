@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Catalog
+      module Bundle
+        class Reader
+          def initialize: (server_fqdn: untyped, full_path: untyped, semver: untyped, component_name: untyped) -> void
+          def available?: () -> (false | true)
+          def bundle: () -> (Gitlab::Ci::Catalog::Bundle::Contents | nil)
+        end
+      end
+    end
+  end
+end

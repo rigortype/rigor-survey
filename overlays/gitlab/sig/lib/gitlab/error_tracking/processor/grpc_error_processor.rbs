@@ -1,0 +1,9 @@
+module Gitlab
+  module ErrorTracking
+    module Processor
+      module GrpcErrorProcessor
+        def self.split_debug_error_string: (untyped) -> ([untyped, untyped] | nil)
+      end
+    end
+  end
+end

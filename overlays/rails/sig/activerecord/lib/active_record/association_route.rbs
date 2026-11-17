@@ -1,0 +1,13 @@
+module ActiveRecord
+  class AssociationLink
+    def self.for: (?reference_class: untyped, **untyped) -> (ActiveRecord::AssociationLink | ActiveRecord::AssociationLink::DeprecatedIdWriter)
+    def initialize: (?reference: untyped, ?reference_key: untyped, ?constraints: untyped, ?fixed_values: untyped, ?reference_class: untyped, ?target_class: untyped) -> void
+  end
+  class AssociationRoute
+    def initialize: (link: untyped) -> void
+    def predicate_accepts_bare_id?: () -> (false | true)
+    class Reverse < ::ActiveRecord::AssociationRoute
+      def origin_fixed_values: () -> {}
+    end
+  end
+end

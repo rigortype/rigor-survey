@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class FullPathModelLoader
+        def initialize: (singleton(Group) | singleton(Namespace) | singleton(::Project), String) -> void
+        def model_class: () -> (singleton(Group) | singleton(Namespace) | singleton(::Project))
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Users
+  module EmailVerification
+    class BaseService
+      def initialize: (attr: untyped, user: untyped) -> void
+    end
+  end
+end

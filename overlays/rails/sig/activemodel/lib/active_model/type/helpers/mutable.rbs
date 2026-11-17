@@ -1,0 +1,9 @@
+module ActiveModel
+  module Type
+    module Helpers
+      module Mutable
+        def mutable?: () -> true
+      end
+    end
+  end
+end

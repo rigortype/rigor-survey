@@ -1,0 +1,5 @@
+module Integrations
+  class SlackEventWorker
+    def self.event?: (untyped) -> (false | true)
+  end
+end

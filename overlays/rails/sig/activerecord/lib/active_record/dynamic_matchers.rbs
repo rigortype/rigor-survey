@@ -1,0 +1,14 @@
+module ActiveRecord
+  module DynamicMatchers
+    class Method
+      def self.make_pattern: (untyped, untyped) -> Regexp
+      def self.body: (untyped, untyped) -> String
+    end
+    class FindBy < ::ActiveRecord::DynamicMatchers::Method
+      def self.finder: () -> "find_by"
+    end
+    class FindByBang < ::ActiveRecord::DynamicMatchers::Method
+      def self.finder: () -> "find_by!"
+    end
+  end
+end

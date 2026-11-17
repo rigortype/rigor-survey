@@ -1,0 +1,12 @@
+module GoogleApi
+  module CloudPlatform
+    class Client < ::GoogleApi::Auth
+      def self.session_key_for_token: () -> :cloud_platform_access_token
+      def self.session_key_for_expires_at: () -> :cloud_platform_expires_at
+      def self.new_session_key_for_redirect_uri: () -> String
+      def self.session_key_for_redirect_uri: (untyped) -> String
+      def scope: () -> "https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/service.management"
+      def validate_token: (untyped) -> (false | true)
+    end
+  end
+end

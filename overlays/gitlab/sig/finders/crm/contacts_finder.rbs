@@ -1,0 +1,5 @@
+module Crm
+  class ContactsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,7 @@
+module Rails
+  module Rack
+    class Logger < ::ActiveSupport::LogSubscriber
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

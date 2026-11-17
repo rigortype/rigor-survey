@@ -1,0 +1,7 @@
+module Gitlab
+  module APIAuthentication
+    class Builder
+      def build: () -> Hash[untyped, []]
+    end
+  end
+end

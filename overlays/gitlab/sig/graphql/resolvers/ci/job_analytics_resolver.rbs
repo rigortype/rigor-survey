@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class JobAnalyticsResolver < ::Resolvers::BaseResolver
+      def resolve: (lookahead: untyped, **untyped) -> Gitlab::Graphql::Pagination::ClickHouseAggregatedRelation
+    end
+  end
+end

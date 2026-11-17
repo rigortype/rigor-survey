@@ -1,0 +1,6 @@
+module BulkImports
+  class CreateService
+    def initialize: (untyped, untyped, untyped, fallback_organization: untyped, ?request_channel: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

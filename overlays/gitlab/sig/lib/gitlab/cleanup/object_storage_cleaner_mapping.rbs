@@ -1,0 +1,8 @@
+module Gitlab
+  module Cleanup
+    module ObjectStorageCleanerMapping
+      def self.buckets: () -> [:artifacts, :ci_secure_files, :uploads]
+      def self.cleaner_class_for: (untyped) -> (nil | singleton(Gitlab::Cleanup::RemoteArtifacts) | singleton(Gitlab::Cleanup::RemoteCiSecureFiles) | singleton(Gitlab::Cleanup::RemoteUploads))
+    end
+  end
+end

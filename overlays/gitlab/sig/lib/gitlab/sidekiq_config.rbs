@@ -1,0 +1,7 @@
+module Gitlab
+  module SidekiqConfig
+    def self.jh_queues_for_sidekiq_queues_yml: () -> []
+    def self.find_workers: (untyped, ee: untyped, jh: untyped) -> Array[Gitlab::SidekiqConfig::Worker]
+    def self.domain_roots: (untyped) -> Array[Pathname]
+  end
+end

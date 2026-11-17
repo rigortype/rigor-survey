@@ -1,0 +1,22 @@
+module ActionController
+  class BadRequest < ::ActionController::ActionControllerError
+    def initialize: (?untyped) -> void
+  end
+  class RoutingError < ::ActionController::ActionControllerError
+    def initialize: (untyped, ?untyped) -> void
+  end
+  class UrlGenerationError < ::ActionController::ActionControllerError
+    def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+  end
+  class MethodNotAllowed < ::ActionController::ActionControllerError
+    def initialize: (*untyped) -> void
+  end
+  class SessionOverflowError < ::ActionController::ActionControllerError
+    def initialize: (?untyped) -> void
+  end
+  class RespondToMismatchError < ::ActionController::ActionControllerError
+    def initialize: (?untyped) -> void
+  end
+  class ActionControllerError < ::StandardError
+  end
+end

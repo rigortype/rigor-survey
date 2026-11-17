@@ -1,0 +1,3 @@
+class ForkTargetsFinder
+  def initialize: (untyped, untyped) -> void
+end

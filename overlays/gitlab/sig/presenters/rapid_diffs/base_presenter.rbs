@@ -1,0 +1,10 @@
+module RapidDiffs
+  class BasePresenter < ::Gitlab::View::Presenter::Delegated
+    def initialize: (singleton(Object), diff_view: untyped, diff_options: untyped, ?current_user: untyped, ?request_params: untyped, ?environment: untyped) -> void
+    def diffs_stream_url: () -> nil
+    def sorted?: () -> false
+    def lazy?: () -> (false | true)
+    def initial_file: () -> (nil | { old_path: untyped, new_path: untyped })
+    def file_by_file_mode?: () -> (false | true)
+  end
+end

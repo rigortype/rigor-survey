@@ -1,0 +1,5 @@
+module ServiceDesk
+  class RefreshProjectKeyAddressSlugsService
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module Organizations
+  module OrganizationUsers
+    class UpdateService
+      def initialize: (untyped, current_user: untyped, ?params: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

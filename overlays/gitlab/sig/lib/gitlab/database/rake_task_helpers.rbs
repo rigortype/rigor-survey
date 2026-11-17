@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class RakeTaskHelpers
+      def self.rails_tasks_for: (untyped) -> Array[untyped]
+    end
+  end
+end

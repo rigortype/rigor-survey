@@ -1,0 +1,6 @@
+module Projects
+  module AlertManagementHelper
+    def alert_management_data: (untyped, untyped) -> Hash[String | Symbol, untyped]
+    def alert_management_detail_data: (untyped, untyped, untyped) -> Hash[String, untyped]
+  end
+end

@@ -1,0 +1,5 @@
+module Issuable
+  class DestroyService < ::IssuableBaseService
+    def initialize: (container: untyped, ?current_user: untyped, ?params: untyped) -> void
+  end
+end

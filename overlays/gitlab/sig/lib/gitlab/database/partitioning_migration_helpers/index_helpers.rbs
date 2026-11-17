@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module PartitioningMigrationHelpers
+      module IndexHelpers
+        def indexes_by_definition_for_table: (untyped, ?schema_name: untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

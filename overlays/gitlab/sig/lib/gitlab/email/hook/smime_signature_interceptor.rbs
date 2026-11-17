@@ -1,0 +1,9 @@
+module Gitlab
+  module Email
+    module Hook
+      class SmimeSignatureInterceptor
+        def self.certificate: () -> Gitlab::X509::Certificate
+      end
+    end
+  end
+end

@@ -1,0 +1,3 @@
+module BulkMailingConcern
+  def push_bulk_mailer: (untyped, untyped, untyped) -> Array[String | nil]
+end

@@ -1,0 +1,11 @@
+module Mutations
+  module Packages
+    module Cleanup
+      module Policy
+        class Update < ::Mutations::BaseMutation
+          def resolve: (project_path: untyped, **untyped) -> { packages_cleanup_policy: untyped, errors: Array[untyped] | [] }
+        end
+      end
+    end
+  end
+end

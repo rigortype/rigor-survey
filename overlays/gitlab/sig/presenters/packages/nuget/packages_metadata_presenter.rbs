@@ -1,0 +1,9 @@
+module Packages
+  module Nuget
+    class PackagesMetadataPresenter
+      def initialize: (ActiveRecord::Relation[Packages::Nuget::Package]) -> void
+      def count: () -> 1
+      def items: () -> [{ json_url: untyped, lower_version: untyped, upper_version: untyped, packages_count: untyped, packages: untyped }]
+    end
+  end
+end

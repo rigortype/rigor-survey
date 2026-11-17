@@ -1,0 +1,16 @@
+module ActiveSupport
+  class TimeZone
+    def self.seconds_to_utc_offset: (untyped, ?untyped) -> String
+    def self.clear: () -> nil
+    def self.zones_map: () -> Hash["Abu Dhabi" | "Adelaide" | "Alaska" | "Alberta" | "Almaty" | "American Samoa" | "Amsterdam" | "Arizona" | "Astana" | "Asuncion" | "Athens" | "Atlantic Time (Canada)" | "Auckland" | "Azores" | "Baghdad" | "Baku" | "Bangkok" | "Beijing" | "Belgrade" | "Berlin" | "Bern" | "Bogota" | "Brasilia" | "Bratislava" | "Brisbane" | "Brussels" | "Bucharest" | "Budapest" | "Buenos Aires" | "Cairo" | "Canberra" | "Cape Verde Is." | "Caracas" | "Casablanca" | "Central America" | "Central Time (US & Canada)" | "Chatham Is." | "Chennai" | "Chihuahua" | "Chongqing" | "Copenhagen" | "Darwin" | "Dhaka" | "Dublin" | "Eastern Time (US & Canada)" | "Edinburgh" | "Ekaterinburg" | "Fiji" | "Georgetown" | "Greenland" | "Guadalajara" | "Guam" | "Hanoi" | "Harare" | "Hawaii" | "Helsinki" | "Hobart" | "Hong Kong" | "Indiana (East)" | "International Date Line West" | "Irkutsk" | "Islamabad" | "Istanbul" | "Jakarta" | "Jerusalem" | "Kabul" | "Kaliningrad" | "Kamchatka" | "Karachi" | "Kathmandu" | "Kolkata" | "Krasnoyarsk" | "Kuala Lumpur" | "Kuwait" | "Kyiv" | "La Paz" | "Lima" | "Lisbon" | "Ljubljana" | "London" | "Madrid" | "Magadan" | "Manitoba" | "Marshall Is." | "Mazatlan" | "Melbourne" | "Mexico City" | "Mid-Atlantic" | "Midway Island" | "Minsk" | "Monrovia" | "Monterrey" | "Montevideo" | "Moscow" | "Mountain Time (US & Canada)" | "Mumbai" | "Muscat" | "Nairobi" | "New Caledonia" | "New Delhi" | "Newfoundland" | "Northwest Territories" | "Novosibirsk" | "Nuku'alofa" | "Osaka" | "Pacific Time (Canada)" | "Pacific Time (US & Canada)" | "Paris" | "Perth" | "Port Moresby" | "Prague" | "Pretoria" | "Puerto Rico" | "Quito" | "Rangoon" | "Riga" | "Riyadh" | "Rome" | "Samara" | "Samoa" | "Santiago" | "Sapporo" | "Sarajevo" | "Saskatchewan" | "Seoul" | "Singapore" | "Skopje" | "Sofia" | "Solomon Is." | "Srednekolymsk" | "Sri Jayawardenepura" | "St. Petersburg" | "Stockholm" | "Sydney" | "Taipei" | "Tallinn" | "Tashkent" | "Tbilisi" | "Tehran" | "Tijuana" | "Tokelau Is." | "Tokyo" | "UTC" | "Ulaanbaatar" | "Urumqi" | "Vienna" | "Vilnius" | "Vladivostok" | "Volgograd" | "Warsaw" | "Wellington" | "West Central Africa" | "Yakutsk" | "Yerevan" | "Zagreb" | "Zurich", untyped]
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def to_s: () -> String
+    def local: (*untyped) -> ActiveSupport::TimeWithZone
+    def iso8601: (untyped) -> ActiveSupport::TimeWithZone
+    def parse: (untyped, ?untyped) -> (ActiveSupport::TimeWithZone | nil)
+    def rfc3339: (untyped) -> ActiveSupport::TimeWithZone
+    def strptime: (untyped, untyped, ?untyped) -> (ActiveSupport::TimeWithZone | nil)
+    def init_with: (untyped) -> top
+    def encode_with: (untyped) -> Hash[String, untyped]
+  end
+end

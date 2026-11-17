@@ -1,0 +1,17 @@
+module Gitlab
+  class LfsToken
+    def initialize: (untyped, untyped) -> void
+    def token: () -> String
+    def type: () -> (:lfs_deploy_token | :lfs_token)
+    def valid_user?: () -> (false | true)
+    def authentication_payload: (untyped) -> { username: untyped, lfs_token: String, repository_http_path: untyped, expires_in: 7200 }
+    def basic_encoding: () -> String
+    module LfsTokenHelper
+      def user?: () -> (false | true)
+    end
+    class HMACToken
+      def initialize: (untyped, untyped) -> void
+      def token: (untyped) -> String
+    end
+  end
+end

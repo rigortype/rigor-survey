@@ -1,0 +1,10 @@
+module Authn
+  module Tokens
+    class RunnerAuthenticationToken
+      def initialize: (untyped, Symbol) -> void
+      def present_with: () -> singleton(API::Entities::Ci::Runner)
+      def revoke!: (untyped) -> ServiceResponse
+      def source: () -> :api_admin_token
+    end
+  end
+end

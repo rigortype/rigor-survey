@@ -1,0 +1,9 @@
+module Gitlab
+  module Import
+    module AdvanceStage
+      def wait_for_jobs: (untyped) -> Hash[untyped, untyped]
+      def find_import_state_jid: (untyped) -> bot
+      def find_import_state: (untyped) -> bot
+    end
+  end
+end

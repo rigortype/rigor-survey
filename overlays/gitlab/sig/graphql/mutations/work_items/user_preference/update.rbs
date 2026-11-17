@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module UserPreference
+      class Update < ::Mutations::BaseMutation
+        def resolve: (namespace_path: untyped, ?work_item_type_id: untyped, **untyped) -> { user_preferences: untyped, errors: untyped }
+      end
+    end
+  end
+end

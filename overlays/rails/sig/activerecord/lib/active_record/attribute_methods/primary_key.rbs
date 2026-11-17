@@ -1,0 +1,7 @@
+module ActiveRecord
+  module AttributeMethods
+    module PrimaryKey
+      def primary_key_values_present?: () -> (false | true)
+    end
+  end
+end

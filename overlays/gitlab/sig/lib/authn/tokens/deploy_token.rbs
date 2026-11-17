@@ -1,0 +1,9 @@
+module Authn
+  module Tokens
+    class DeployToken
+      def initialize: (untyped, Symbol) -> void
+      def present_with: () -> singleton(API::Entities::DeployToken)
+      def source: () -> :api_admin_token
+    end
+  end
+end

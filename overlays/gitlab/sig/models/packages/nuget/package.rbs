@@ -1,0 +1,7 @@
+module Packages
+  module Nuget
+    class Package < ::Packages::Package
+      def self.installable_statuses: () -> [:default, :hidden]
+    end
+  end
+end

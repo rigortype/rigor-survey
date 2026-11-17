@@ -1,0 +1,3 @@
+module BoardsHelper
+  def boards_options_for_select: (untyped) -> Array[untyped]
+end

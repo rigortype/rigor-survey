@@ -1,0 +1,8 @@
+module ActiveStorage
+  class Service
+    class Configurator
+      def initialize: (untyped) -> void
+      def inspect: () -> String
+    end
+  end
+end

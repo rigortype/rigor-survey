@@ -1,0 +1,5 @@
+module Clusters
+  class UpdateService
+    def initialize: (?untyped, ?untyped) -> void
+  end
+end

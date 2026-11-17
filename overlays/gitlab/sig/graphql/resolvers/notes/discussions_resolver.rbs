@@ -1,0 +1,9 @@
+module Resolvers
+  module Notes
+    class DiscussionsResolver < ::Resolvers::BaseResolver
+      def self.calculate_ext_conn_complexity: () -> true
+      def self.complexity_multiplier: (untyped) -> Float
+      def resolve: (**untyped) -> Gitlab::Graphql::ExternallyPaginatedArray
+    end
+  end
+end

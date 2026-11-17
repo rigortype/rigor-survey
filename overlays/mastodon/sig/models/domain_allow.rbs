@@ -1,0 +1,4 @@
+class DomainAllow < ::ApplicationRecord
+  def self.allowed?: (untyped) -> (false | true)
+  def self.rule_for: (untyped) -> (DomainAllow | nil)
+end

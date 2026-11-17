@@ -1,0 +1,5 @@
+module API
+  class MarkdownUploads < ::API::Base
+    def find_uploads: (untyped) -> ActiveRecord::Relation[Upload]
+  end
+end

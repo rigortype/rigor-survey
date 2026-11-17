@@ -1,0 +1,16 @@
+module Parser
+  module Lexer
+    class Literal
+      def initialize: (untyped, untyped, untyped, untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> void
+      def heredoc?: () -> (false | true)
+      def plain_heredoc?: () -> (false | true)
+      def munge_escape?: (untyped) -> (false | true)
+      def start_interp_brace: () -> Integer
+      def end_interp_brace_and_try_closing: () -> (false | true)
+      def extend_string: (untyped, untyped, untyped) -> String
+      def flush_string: () -> (false | nil)
+      def extend_content: () -> false
+      def extend_space: (untyped, untyped) -> (nil | true)
+    end
+  end
+end

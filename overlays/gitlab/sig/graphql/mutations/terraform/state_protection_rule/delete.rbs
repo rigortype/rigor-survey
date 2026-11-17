@@ -1,0 +1,9 @@
+module Mutations
+  module Terraform
+    module StateProtectionRule
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> { terraform_state_protection_rule: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

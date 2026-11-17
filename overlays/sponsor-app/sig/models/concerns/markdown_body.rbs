@@ -1,0 +1,4 @@
+module MarkdownBody
+  def html: () -> ActiveSupport::SafeBuffer
+  def render_html: () -> String
+end

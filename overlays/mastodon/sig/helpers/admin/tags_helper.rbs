@@ -1,0 +1,5 @@
+module Admin
+  module TagsHelper
+    def admin_tags_moderation_options: () -> [[untyped, "reviewed"], [untyped, "review_requested"], [untyped, "unreviewed"], [untyped, "trendable"], [untyped, "not_trendable"], [untyped, "usable"], [untyped, "not_usable"]]
+  end
+end

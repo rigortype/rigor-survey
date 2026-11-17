@@ -1,0 +1,12 @@
+module REST
+  module V1
+    class NotificationPolicySerializer < ::ActiveModel::Serializer[untyped]
+      def summary: () -> { pending_requests_count: untyped, pending_notifications_count: untyped }
+      def filter_not_following: () -> (false | true)
+      def filter_not_followers: () -> (false | true)
+      def filter_new_accounts: () -> (false | true)
+      def filter_private_mentions: () -> (false | true)
+      def filter_bots: () -> (false | true)
+    end
+  end
+end

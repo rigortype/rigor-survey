@@ -1,0 +1,6 @@
+module Concurrent
+  class SerializedExecutionDelegator < ::SimpleDelegator
+    def initialize: (Concurrent::ImmediateExecutor) -> void
+    def post: (*untyped) ?{ (*untyped) -> untyped } -> (false | true)
+  end
+end

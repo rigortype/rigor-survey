@@ -1,0 +1,5 @@
+module Integrations
+  class GroupMentionWorker
+    def perform: (untyped) -> (ServiceResponse | nil)
+  end
+end

@@ -1,0 +1,22 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class DetachEligibility
+        def initialize: (untyped, connection: untyped, ?detach_concurrently: (false | true)) -> void
+        def detachable?: () -> (false | true)
+        def blocker: () -> (Gitlab::Database::Partitioning::DetachEligibility::Blocker | nil)
+        def detach_concurrently: () -> true
+        class Blocker < ::Struct[untyped]
+          def reason: () -> untyped
+          def level: () -> untyped
+          def details: () -> untyped
+          def reason=: (untyped) -> untyped
+          def level=: (untyped) -> untyped
+          def details=: (untyped) -> untyped
+          def self.new: (?reason: untyped, ?level: untyped, ?details: untyped) -> instance
+          def self.[]: (?reason: untyped, ?level: untyped, ?details: untyped) -> instance
+        end
+      end
+    end
+  end
+end

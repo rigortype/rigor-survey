@@ -1,0 +1,8 @@
+module ActionDispatch
+  class Static
+    def initialize: (untyped, untyped, ?index: untyped, ?headers: untyped) -> void
+  end
+  class FileHandler
+    def initialize: (untyped, ?index: untyped, ?headers: untyped, ?precompressed: untyped, ?compressible_content_types: untyped) -> void
+  end
+end

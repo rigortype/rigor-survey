@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Type
+    class DecimalWithoutScale < ::ActiveModel::Type::BigInteger
+      def type: () -> :decimal
+      def type_cast_for_schema: (untyped) -> String
+    end
+  end
+end

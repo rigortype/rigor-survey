@@ -1,0 +1,7 @@
+module BulkImports
+  class ExportService
+    def initialize: (portable: untyped, user: untyped, ?batched: (false | true), ?offline_export_id: untyped) -> void
+    def execute: () -> ServiceResponse
+    def batched: () -> true
+  end
+end

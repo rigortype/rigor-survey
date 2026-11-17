@@ -1,0 +1,8 @@
+module Gitlab
+  module MergeRequests
+    class MessageGenerator
+      def initialize: (merge_request: untyped, current_user: untyped) -> void
+      def self.closes_issue_reference: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

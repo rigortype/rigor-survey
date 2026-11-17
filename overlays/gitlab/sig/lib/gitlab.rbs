@@ -1,0 +1,17 @@
+module Gitlab
+  def self.current_milestone: () -> String
+  def self.pre_release?: () -> (false | true)
+  def self.host_with_port: () -> String
+  def self.dev_url: () -> "https://dev.gitlab.org"
+  def self.community_forum_url: () -> "https://forum.gitlab.com"
+  def self.doc_url: () -> "https://docs.gitlab.com"
+  def self.promo_host: () -> "about.gitlab.com"
+  def self.gl_subdomain?: () -> (false | true)
+  def self.subdomain_regex: () -> Regexp
+  def self.root_domain: () -> "gitlab.com"
+  def self.staging_com_url: () -> "https://staging.gitlab.com"
+  def self.com_url: () -> "https://gitlab.com"
+  def self.http_proxy_env?: () -> (false | true)
+  def self.process_name: () -> ("console" | "sidekiq" | "test" | "web")
+  def self.next_rails?: () -> (false | true)
+end

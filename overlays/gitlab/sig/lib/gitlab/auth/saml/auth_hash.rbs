@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Saml
+      class AuthHash < ::Gitlab::Auth::OAuth::AuthHash
+        def groups: () -> Array[untyped]
+      end
+    end
+  end
+end

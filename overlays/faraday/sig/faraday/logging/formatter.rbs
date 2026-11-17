@@ -1,0 +1,8 @@
+module Faraday
+  module Logging
+    class Formatter
+      def initialize: (logger: untyped, options: untyped) -> void
+      def filter: (untyped, untyped) -> Array[untyped]
+    end
+  end
+end

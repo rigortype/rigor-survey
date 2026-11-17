@@ -1,0 +1,10 @@
+module Concurrent
+  module Concern
+    module Obligation
+      def complete?: () -> (false | true)
+      def incomplete?: () -> (false | true)
+      def wait: (?untyped) -> Concurrent::Concern::Obligation
+      def wait!: (?untyped) -> Concurrent::Concern::Obligation
+    end
+  end
+end

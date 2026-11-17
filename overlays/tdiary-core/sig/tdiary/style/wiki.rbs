@@ -1,0 +1,13 @@
+module TDiary
+  module Style
+    class WikiSection
+      def initialize: (untyped, ?untyped) -> void
+      def to_src: () -> String
+    end
+    class WikiDiary
+      def initialize: (Time, String, String, ?untyped) -> void
+      def style: () -> "Wiki"
+      def append: (String, ?untyped) -> TDiary::Style::WikiDiary
+    end
+  end
+end

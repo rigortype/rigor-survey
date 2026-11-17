@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class RefFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

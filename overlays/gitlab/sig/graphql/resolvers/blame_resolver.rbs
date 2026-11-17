@@ -1,0 +1,5 @@
+module Resolvers
+  class BlameResolver < ::Resolvers::BaseResolver
+    def resolve: (from_line: untyped, to_line: untyped, ignore_revs: untyped) -> Gitlab::Blame
+  end
+end

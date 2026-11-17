@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class RequestAuthenticator
+      def initialize: (untyped) -> void
+      def valid_access_token?: (?scopes: untyped) -> (false | true)
+    end
+  end
+end

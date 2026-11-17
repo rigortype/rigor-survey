@@ -1,0 +1,10 @@
+module Authn
+  module Tokens
+    module Concerns
+      module DoorkeeperCompatible
+        def active?: () -> (false | true)
+        def application: () -> nil
+      end
+    end
+  end
+end

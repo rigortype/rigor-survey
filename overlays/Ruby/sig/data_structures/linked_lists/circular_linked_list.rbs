@@ -1,0 +1,9 @@
+class Node
+  def initialize: (untyped) -> void
+end
+
+class CircularList
+  def insert_tail: (untyped) -> Node
+  def print_list: () -> nil
+  def is_empty: () -> (false | true)
+end

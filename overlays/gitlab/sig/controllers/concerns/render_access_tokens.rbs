@@ -1,0 +1,3 @@
+module RenderAccessTokens
+  def active_access_tokens: () -> [untyped, untyped]
+end

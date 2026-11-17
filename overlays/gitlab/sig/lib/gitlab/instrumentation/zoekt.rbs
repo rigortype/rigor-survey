@@ -1,0 +1,8 @@
+module Gitlab
+  module Instrumentation
+    class Zoekt
+      def self.detail_store: () -> Array[untyped]
+      def self.add_call_details: (duration: untyped, method: untyped, path: untyped, ?params: untyped, ?body: untyped) -> (Array[untyped] | nil)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Ml
+  class Experiment < ::ApplicationRecord
+    def stop_destroy: () -> nil
+    def self.by_project_id_and_iid: (untyped, untyped) -> (Ml::Experiment | nil)
+    def self.by_project_id_and_name: (untyped, untyped) -> (Ml::Experiment | nil)
+  end
+end

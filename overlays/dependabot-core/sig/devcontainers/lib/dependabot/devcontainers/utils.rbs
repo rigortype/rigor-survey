@@ -1,0 +1,9 @@
+module Dependabot
+  module Devcontainers
+    module Utils
+      def self.expected_config_basename: (untyped) -> (".devcontainer.json" | "devcontainer.json")
+      def self.root_directory?: (untyped) -> (false | true)
+      def self.expected_lockfile_name: (untyped) -> (".devcontainer-lock.json" | "devcontainer-lock.json")
+    end
+  end
+end

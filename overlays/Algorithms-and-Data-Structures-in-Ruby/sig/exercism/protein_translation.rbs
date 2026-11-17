@@ -1,0 +1,6 @@
+class Translation
+  def self.of_rna: (untyped) -> Array[untyped]
+end
+
+class InvalidCodonError < ::StandardError
+end

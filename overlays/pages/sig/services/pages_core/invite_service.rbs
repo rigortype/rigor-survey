@@ -1,0 +1,5 @@
+module PagesCore
+  class InviteService
+    def initialize: (untyped, user: untyped, host: untyped, ?protocol: untyped) -> void
+  end
+end

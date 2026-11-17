@@ -1,0 +1,10 @@
+module BulkImports
+  module Projects
+    module Pipelines
+      class RepositoryBundlePipeline
+        def extract: (untyped) -> BulkImports::Pipeline::ExtractedData
+        def after_run: (untyped) -> top
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module NamespaceSettings
+  class AssignAttributesService
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

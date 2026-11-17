@@ -1,0 +1,5 @@
+module RGL
+  module Graph
+    def condensation_graph: () -> RGL::ImplicitGraph
+  end
+end

@@ -1,0 +1,5 @@
+module BlobViewer
+  class Changelog < ::BlobViewer::Base
+    def render_error: () -> (:no_tags | nil)
+  end
+end

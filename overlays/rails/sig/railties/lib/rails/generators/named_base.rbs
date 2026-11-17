@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    class NamedBase < ::Rails::Generators::Base
+      def initialize: (untyped, *untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,38 @@
+module Typelizer
+  class Property < ::Struct[untyped]
+    def name: () -> ("active" | "age" | "author" | "big_id" | "bio" | "born_on" | "count" | "created-at" | "created_at" | "data" | "field" | "flag" | "item" | "items" | "metadata" | "name" | "old_field" | "partial_user" | "post" | "price" | "role" | "roles" | "score" | "sections" | "settings" | "status" | "tags" | "title" | "token" | "user_name" | "value")
+    def type: () -> untyped
+    def optional: () -> true
+    def nullable: () -> true
+    def multi: () -> true
+    def column_name: () -> untyped
+    def column_type: () -> (:bigint | :binary | :boolean | :date | :datetime | :decimal | :float | :integer | :json | :jsonb | :string | :text | :uuid)
+    def comment: () -> ("Polymorphic item" | "Post author" | "User roles" | "User's full name" | false)
+    def enum: () -> (["admin", "user", "guest"] | ["admin", "user", nil] | ["admin", "user"] | ["draft", "published"] | ["guest", "admin"] | ["guest", "member", "admin"] | ["it's", "a\\b"] | ["pending-review", "ok"] | ["zebra", "apple", "banana"])
+    def enum_type_name: () -> ("Order" | "Status" | "UserRole")
+    def deprecated: () -> true
+    def with_traits: () -> untyped
+    def name=: (("active" | "age" | "author" | "big_id" | "bio" | "born_on" | "count" | "created-at" | "created_at" | "data" | "field" | "flag" | "item" | "items" | "metadata" | "name" | "old_field" | "partial_user" | "post" | "price" | "role" | "roles" | "score" | "sections" | "settings" | "status" | "tags" | "title" | "token" | "user_name" | "value")) -> ("active" | "age" | "author" | "big_id" | "bio" | "born_on" | "count" | "created-at" | "created_at" | "data" | "field" | "flag" | "item" | "items" | "metadata" | "name" | "old_field" | "partial_user" | "post" | "price" | "role" | "roles" | "score" | "sections" | "settings" | "status" | "tags" | "title" | "token" | "user_name" | "value")
+    def type=: (untyped) -> untyped
+    def optional=: (true) -> true
+    def nullable=: (true) -> true
+    def multi=: (true) -> true
+    def column_name=: (untyped) -> untyped
+    def column_type=: ((:bigint | :binary | :boolean | :date | :datetime | :decimal | :float | :integer | :json | :jsonb | :string | :text | :uuid)) -> (:bigint | :binary | :boolean | :date | :datetime | :decimal | :float | :integer | :json | :jsonb | :string | :text | :uuid)
+    def comment=: (("Polymorphic item" | "Post author" | "User roles" | "User's full name" | false)) -> ("Polymorphic item" | "Post author" | "User roles" | "User's full name" | false)
+    def enum=: ((["admin", "user", "guest"] | ["admin", "user", nil] | ["admin", "user"] | ["draft", "published"] | ["guest", "admin"] | ["guest", "member", "admin"] | ["it's", "a\\b"] | ["pending-review", "ok"] | ["zebra", "apple", "banana"])) -> (["admin", "user", "guest"] | ["admin", "user", nil] | ["admin", "user"] | ["draft", "published"] | ["guest", "admin"] | ["guest", "member", "admin"] | ["it's", "a\\b"] | ["pending-review", "ok"] | ["zebra", "apple", "banana"])
+    def enum_type_name=: (("Order" | "Status" | "UserRole")) -> ("Order" | "Status" | "UserRole")
+    def deprecated=: (true) -> true
+    def with_traits=: (untyped) -> untyped
+    def self.new: (?name: ("active" | "age" | "author" | "big_id" | "bio" | "born_on" | "count" | "created-at" | "created_at" | "data" | "field" | "flag" | "item" | "items" | "metadata" | "name" | "old_field" | "partial_user" | "post" | "price" | "role" | "roles" | "score" | "sections" | "settings" | "status" | "tags" | "title" | "token" | "user_name" | "value"), ?type: untyped, ?optional: true, ?nullable: true, ?multi: true, ?column_name: untyped, ?column_type: (:bigint | :binary | :boolean | :date | :datetime | :decimal | :float | :integer | :json | :jsonb | :string | :text | :uuid), ?comment: ("Polymorphic item" | "Post author" | "User roles" | "User's full name" | false), ?enum: (["admin", "user", "guest"] | ["admin", "user", nil] | ["admin", "user"] | ["draft", "published"] | ["guest", "admin"] | ["guest", "member", "admin"] | ["it's", "a\\b"] | ["pending-review", "ok"] | ["zebra", "apple", "banana"]), ?enum_type_name: ("Order" | "Status" | "UserRole"), ?deprecated: true, ?with_traits: untyped) -> instance
+    def self.[]: (?name: ("active" | "age" | "author" | "big_id" | "bio" | "born_on" | "count" | "created-at" | "created_at" | "data" | "field" | "flag" | "item" | "items" | "metadata" | "name" | "old_field" | "partial_user" | "post" | "price" | "role" | "roles" | "score" | "sections" | "settings" | "status" | "tags" | "title" | "token" | "user_name" | "value"), ?type: untyped, ?optional: true, ?nullable: true, ?multi: true, ?column_name: untyped, ?column_type: (:bigint | :binary | :boolean | :date | :datetime | :decimal | :float | :integer | :json | :jsonb | :string | :text | :uuid), ?comment: ("Polymorphic item" | "Post author" | "User roles" | "User's full name" | false), ?enum: (["admin", "user", "guest"] | ["admin", "user", nil] | ["admin", "user"] | ["draft", "published"] | ["guest", "admin"] | ["guest", "member", "admin"] | ["it's", "a\\b"] | ["pending-review", "ok"] | ["zebra", "apple", "banana"]), ?enum_type_name: ("Order" | "Status" | "UserRole"), ?deprecated: true, ?with_traits: untyped) -> instance
+    def with: (**untyped) -> Typelizer::Property
+    def inspect: () -> String
+    def eql?: (untyped) -> (false | true)
+    def to_s: () -> String
+    def render: (?sort_order: untyped, ?prefer_double_quotes: untyped) -> String
+    def fingerprint: () -> String
+    def enum_definition: (?sort_order: untyped, ?prefer_double_quotes: untyped) -> (String | nil)
+    def enum_runtime_definition: (?sort_order: untyped, ?prefer_double_quotes: untyped) -> (String | nil)
+  end
+end

@@ -1,0 +1,19 @@
+module Concurrent
+  module Edge
+    class LockFreeLinkedSet
+      class Node < ::Concurrent::Synchronization::Object
+        def initialize: (?untyped, ?untyped) -> void
+        def successor_reference: () -> Concurrent::AtomicMarkableReference
+        def last?: () -> (false | true)
+        def key_for: (untyped) -> Integer
+      end
+      class Tail < ::Concurrent::Edge::LockFreeLinkedSet::Node
+        def initialize: (?untyped, ?untyped) -> void
+        def <=>: (untyped) -> 1
+      end
+      class Head < ::Concurrent::Edge::LockFreeLinkedSet::Node
+        def <=>: (untyped) -> -1
+      end
+    end
+  end
+end

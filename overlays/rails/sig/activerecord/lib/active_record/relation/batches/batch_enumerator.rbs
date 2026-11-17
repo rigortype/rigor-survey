@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Batches
+    class BatchEnumerator
+      def initialize: (?of: untyped, ?start: untyped, ?finish: untyped, relation: untyped, cursor: untyped, ?order: untyped, ?use_ranges: untyped) -> void
+    end
+  end
+end

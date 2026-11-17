@@ -1,0 +1,9 @@
+module Gitlab
+  module Tracking
+    module Destinations
+      class SnowplowContextValidator
+        def validate!: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

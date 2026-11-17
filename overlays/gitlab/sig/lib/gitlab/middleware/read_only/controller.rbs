@@ -1,0 +1,9 @@
+module Gitlab
+  module Middleware
+    class ReadOnly
+      class Controller
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

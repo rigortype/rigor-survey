@@ -1,0 +1,7 @@
+module Issuable
+  module Callbacks
+    class Milestone < ::Issuable::Callbacks::Base
+      def after_save_commit: () -> (Array[untyped] | nil)
+    end
+  end
+end

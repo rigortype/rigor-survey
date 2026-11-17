@@ -1,0 +1,5 @@
+module MergeRequests
+  class PipelineCreationCompletedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["merge_request_id", "project_id"] | Hash[String, Hash[String, "integer"] | Hash[String, ["integer", "null"]]]]
+  end
+end

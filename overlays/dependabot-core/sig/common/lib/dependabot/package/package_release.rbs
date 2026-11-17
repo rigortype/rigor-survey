@@ -1,0 +1,9 @@
+module Dependabot
+  module Package
+    class PackageRelease
+      def initialize: (version: untyped, ?released_at: untyped, ?latest: untyped, ?yanked: untyped, ?yanked_reason: untyped, ?downloads: untyped, ?url: untyped, ?package_type: untyped, ?language: untyped, ?tag: untyped, ?details: untyped) -> void
+      def ==: (untyped) -> (false | true)
+      def to_s: () -> String
+    end
+  end
+end

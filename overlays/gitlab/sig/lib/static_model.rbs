@@ -1,0 +1,5 @@
+module StaticModel
+  def new_record?: () -> false
+  def persisted?: () -> false
+  def destroyed?: () -> false
+end

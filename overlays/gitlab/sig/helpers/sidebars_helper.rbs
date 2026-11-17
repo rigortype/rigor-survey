@@ -1,0 +1,16 @@
+module SidebarsHelper
+  def organization_sidebar_context: (untyped, untyped, **untyped) -> Sidebars::Context
+  def project_sidebar_context: (untyped, untyped, untyped, ?ref_type: untyped, **untyped) -> Sidebars::Projects::Context
+  def group_sidebar_context: (untyped, untyped, **untyped) -> Sidebars::Groups::Context
+  def your_work_sidebar_context: (untyped, **untyped) -> Sidebars::Context
+  def super_sidebar_context: (untyped, group: untyped, project: untyped, panel: untyped, panel_type: untyped) -> Hash[untyped, untyped]
+  def super_sidebar_shared_context: (panel: untyped, panel_type: untyped) -> Hash[untyped, untyped]
+  def super_sidebar_logged_out_context: (panel: untyped, panel_type: untyped) -> Hash[untyped, untyped]
+  def super_sidebar_logged_in_context: (untyped, group: untyped, project: untyped, panel: untyped, panel_type: untyped) -> Hash[untyped, untyped]
+  def super_sidebar_instance_version_data: () -> ({ gitlab_version: untyped, gitlab_version_check: untyped } | {})
+  def super_sidebar_whats_new_data: () -> ({ whats_new_most_recent_release_items_count: untyped, whats_new_version_digest: untyped, whats_new_read_articles: untyped } | {})
+  def work_items_modal_data: (untyped, untyped) -> (nil | { full_path: untyped })
+  def super_sidebar_nav_panel: (?nav: untyped, ?project: untyped, ?user: untyped, ?group: untyped, ?current_ref: untyped, ?ref_type: untyped, ?viewed_user: untyped, ?organization: untyped) -> (Sidebars::Admin::Organizations::Panel | Sidebars::Admin::Panel | Sidebars::Explore::Panel | Sidebars::Groups::SuperSidebarPanel | Sidebars::Organizations::SuperSidebarPanel | Sidebars::Projects::SuperSidebarPanel | Sidebars::Search::Panel | Sidebars::UserProfile::Panel | Sidebars::UserSettings::Panel | Sidebars::YourWork::Panel)
+  def command_palette_data: (?project: untyped, ?current_ref: untyped) -> ({ project_files_url: untyped, project_blob_url: untyped } | {})
+  def compare_plans_url: (*untyped) -> String
+end

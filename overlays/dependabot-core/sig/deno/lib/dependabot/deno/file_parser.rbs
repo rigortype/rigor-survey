@@ -1,0 +1,7 @@
+module Dependabot
+  module Deno
+    class FileParser < ::Dependabot::FileParsers::Base
+      def parse: () -> Array[untyped]
+    end
+  end
+end

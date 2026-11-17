@@ -1,0 +1,14 @@
+module Dependabot
+  module Pub
+    module JsonValueParser
+      def self.parse: (untyped, untyped) -> Object
+      def self.object: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.optional_object: (untyped, untyped) -> (ObjectHash | nil)
+      def self.array: (untyped, untyped) -> Array[Object]
+      def self.string: (untyped, untyped) -> String
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      class InvalidValue < ::TypeError
+      end
+    end
+  end
+end

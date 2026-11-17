@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module PgAsh
+      class QueryTextRedactor
+        def initialize: (untyped, limit: untyped) -> void
+      end
+    end
+  end
+end

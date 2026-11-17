@@ -1,0 +1,7 @@
+module Resolvers
+  module DataTransfer
+    class GroupDataTransferResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> ({ egress_nodes: untyped } | { egress_nodes: [] })
+    end
+  end
+end

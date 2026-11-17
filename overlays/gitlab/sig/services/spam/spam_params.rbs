@@ -1,0 +1,7 @@
+module Spam
+  class SpamParams
+    def self.new_from_request: (request: untyped) -> Spam::SpamParams
+    def initialize: (captcha_response: untyped, spam_log_id: untyped, ip_address: untyped, user_agent: untyped, referer: untyped) -> void
+    def self.normalize_grape_request_headers: (request: untyped) -> Array[String]
+  end
+end

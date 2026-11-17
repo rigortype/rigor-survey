@@ -1,0 +1,26 @@
+module TDiary
+  module Style
+    module BaseSection
+      def html4: (untyped, untyped, untyped) -> String
+      def chtml: (untyped, untyped, untyped) -> String
+      def categories_to_string: () -> (String | nil)
+    end
+    module BaseDiary
+      def init_diary: () -> true
+      def set_title: (untyped) -> Time
+      def each_section: () -> Array[untyped]
+      def eval_rhtml: (untyped, ?untyped) -> String
+      def to_src: () -> String
+      def to_html: (?untyped, ?untyped) -> String
+      def to_html4: (untyped) -> String
+      def to_chtml: (untyped) -> String
+      def to_s: () -> String
+    end
+    module CategorizableDiary
+      def categorizable?: () -> true
+    end
+    module UncategorizableDiary
+      def categorizable?: () -> false
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module ActionView
+  class Resolver
+    class PathParser
+      def build_path_regex: () -> Regexp
+      def path_regex: () -> Regexp
+      def parse: (untyped) -> ActionView::Resolver::PathParser::ParsedPath
+      class ParsedPath < ::Struct[untyped]
+        def path: () -> untyped
+        def details: () -> untyped
+        def path=: (untyped) -> untyped
+        def details=: (untyped) -> untyped
+        def self.new: (?path: untyped, ?details: untyped) -> instance | (?untyped path, ?untyped details) -> instance
+        def self.[]: (?path: untyped, ?details: untyped) -> instance | (?untyped path, ?untyped details) -> instance
+      end
+    end
+  end
+  class FileSystemResolver < ::ActionView::Resolver
+    def initialize: (untyped) -> void
+    def path: () -> String
+  end
+end

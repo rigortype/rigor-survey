@@ -1,0 +1,9 @@
+module Gitlab
+  module Checks
+    class ChangesAccess
+      def initialize: (untyped, user_access: untyped, project: untyped, protocol: untyped, logger: untyped, push_options: untyped, gitaly_context: untyped) -> void
+      def validate!: () -> (nil | true)
+      def commits_for: (untyped, untyped) -> Array[untyped]
+    end
+  end
+end

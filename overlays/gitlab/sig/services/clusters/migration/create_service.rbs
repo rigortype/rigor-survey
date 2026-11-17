@@ -1,0 +1,8 @@
+module Clusters
+  module Migration
+    class CreateService
+      def initialize: (untyped, current_user: untyped, configuration_project_id: untyped, agent_name: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

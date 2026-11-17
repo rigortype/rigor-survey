@@ -1,0 +1,8 @@
+module VsCode
+  module Settings
+    class SettingsFinder
+      def initialize: (current_user: untyped, setting_types: ([String, String] | [String] | nil), ?settings_context_hash: String) -> void
+      def execute: () -> ActiveRecord::Relation[VsCode::Settings::VsCodeSetting]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Integrations
+  module Base
+    module PipelinesEmail
+      def initialize_properties: () -> (nil | true)
+      def test: (untyped) -> ({ success: false, result: StandardError } | { success: true, result: untyped })
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module DiffViewer
+  module Static
+    def render_error: () -> nil
+  end
+end

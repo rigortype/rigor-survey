@@ -1,0 +1,5 @@
+module ActivityPub
+  class RefetchAndVerifyQuoteWorker
+    def perform: (untyped, untyped, ?untyped) -> (String | nil | true)
+  end
+end

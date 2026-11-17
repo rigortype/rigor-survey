@@ -1,0 +1,3 @@
+class UserAgentDetail < ::ApplicationRecord
+  def submittable?: () -> (false | true)
+end

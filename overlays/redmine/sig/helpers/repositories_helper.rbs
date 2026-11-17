@@ -1,0 +1,5 @@
+module RepositoriesHelper
+  def render_changeset_changes: () -> ("" | String)
+  def render_changes_tree: (untyped) -> ("" | String)
+  def index_commits: (untyped, untyped) -> nil
+end

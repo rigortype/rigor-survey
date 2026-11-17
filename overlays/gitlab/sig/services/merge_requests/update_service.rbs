@@ -1,0 +1,6 @@
+module MergeRequests
+  class UpdateService < ::MergeRequests::BaseService
+    def initialize: (project: untyped, ?current_user: untyped, ?params: untyped) -> void
+    def after_update: (untyped, untyped) -> true
+  end
+end

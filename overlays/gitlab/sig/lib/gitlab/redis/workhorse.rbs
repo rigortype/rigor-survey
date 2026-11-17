@@ -1,0 +1,7 @@
+module Gitlab
+  module Redis
+    class Workhorse < ::Gitlab::Redis::Wrapper
+      def self.config_fallback: () -> singleton(Gitlab::Redis::SharedState)
+    end
+  end
+end

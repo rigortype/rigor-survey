@@ -1,0 +1,9 @@
+module ActiveRecord
+  class InternalMetadata
+    def initialize: (untyped) -> void
+    def primary_key: () -> "key"
+    def value_key: () -> "value"
+    def table_name: () -> String
+    def arel_table: () -> Arel::Table
+  end
+end

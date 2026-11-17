@@ -1,0 +1,12 @@
+module ActiveRecord
+  module Type
+    class Registration
+      def initialize: (untyped, untyped, ?adapter: untyped, ?override: untyped) -> void
+    end
+    class DecorationRegistration < ::ActiveRecord::Type::Registration
+      def initialize: (untyped, untyped, ?adapter: untyped) -> void
+    end
+  end
+  class TypeConflictError < ::StandardError
+  end
+end

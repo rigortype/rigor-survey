@@ -1,0 +1,13 @@
+module Gitlab
+  module BitbucketImport
+    module Markdown
+      class Attachment
+        def self.from_markdown: (untyped) -> (Gitlab::BitbucketImport::Markdown::Attachment | nil)
+        def self.from_markdown_image: (untyped) -> (Gitlab::BitbucketImport::Markdown::Attachment | nil)
+        def self.from_inline_html: (untyped) -> (Gitlab::BitbucketImport::Markdown::Attachment | nil)
+        def initialize: (untyped, untyped) -> void
+        def inspect: () -> String
+      end
+    end
+  end
+end

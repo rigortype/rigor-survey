@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class AgentPlanContent < ::Backup::Tasks::Task
+      def self.id: () -> "agent_plan_content"
+      def destination_path: () -> "agent_plan_content.tar.gz"
+    end
+  end
+end

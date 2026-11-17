@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class RepositoryImporter
+        def initialize: (untyped, untyped) -> void
+        def execute: () -> true
+        def import_repository: () -> true
+        def import_wiki_repository: () -> true
+        def wiki_formatter: () -> Gitlab::LegacyGithubImport::WikiFormatter
+      end
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module ActiveRecord
+  class FixtureSet
+    def self.context_class: () -> singleton(Object)
+    def self.read_and_insert: (untyped, untyped, untyped, untyped) -> Hash[untyped, untyped]
+    def initialize: (untyped, untyped, untyped, untyped, ?untyped) -> void
+    def fixtures: () -> Hash[untyped, ActiveRecord::Fixture]
+  end
+  class Fixture
+    def initialize: (untyped, untyped) -> void
+    class FixtureError < ::StandardError
+    end
+  end
+end

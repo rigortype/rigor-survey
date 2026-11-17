@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestSuiteSummary
+        def initialize: ([untyped, untyped]) -> void
+        def to_h: () -> { time: untyped, count: untyped, success: untyped, failed: untyped, skipped: untyped, error: untyped, suite_error: untyped }
+      end
+    end
+  end
+end

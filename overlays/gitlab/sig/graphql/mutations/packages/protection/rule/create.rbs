@@ -1,0 +1,11 @@
+module Mutations
+  module Packages
+    module Protection
+      module Rule
+        class Create < ::Mutations::BaseMutation
+          def resolve: (project_path: untyped, **untyped) -> { package_protection_rule: untyped, errors: Array[untyped] | [] }
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  class Source
+    def self.host_url: () -> "https://gitlab.com"
+    def self.group: () -> "gitlab-org"
+    def self.project: () -> "gitlab-foss"
+    def self.url_helpers: () -> singleton(ActionDispatch::Routing::RouteSet::RouteSet_AnonymousModule)
+  end
+end

@@ -1,0 +1,7 @@
+module Ci
+  module Inputs
+    class BooleanInput < ::Ci::Inputs::BaseInput
+      def self.type_name: () -> "boolean"
+    end
+  end
+end

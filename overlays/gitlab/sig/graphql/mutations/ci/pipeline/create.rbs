@@ -1,0 +1,9 @@
+module Mutations
+  module Ci
+    module Pipeline
+      class Create < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, ref: untyped, ?async: untyped, ?variables: untyped, ?inputs: untyped, ?merge_request_iid: untyped) -> ({ pipeline: untyped, errors: [] } | { pipeline: nil, errors: [untyped] } | { request_id: untyped, errors: [] })
+      end
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module RuboCop
+  module AST
+    class IfNode < ::RuboCop::AST::Node
+      def else?: () -> (false | true)
+      def ternary?: () -> (false | true)
+      def inverse_keyword: () -> ("" | "if" | "unless")
+      def nested_conditional?: () -> (false | true)
+      def node_parts: () -> [untyped, untyped, untyped]
+      def branches: () -> (Array[untyped] | [untyped, untyped] | [untyped])
+      def each_branch: () ?{ (*untyped) -> untyped } -> (Array[untyped] | Enumerator[untyped, untyped])
+    end
+  end
+end

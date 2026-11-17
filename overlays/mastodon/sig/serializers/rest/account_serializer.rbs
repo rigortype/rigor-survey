@@ -1,0 +1,19 @@
+module REST
+  class AccountSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def avatar_description: () -> ("" | String)
+    def header_description: () -> ("" | String)
+    def created_at: () -> Hash[String, Integer | String]
+    def display_name: () -> ("" | String)
+    def locked: () -> (false | true)
+    def discoverable: () -> (false | true)
+    def indexable: () -> (false | true)
+    def moved_to_account: () -> (REST::AccountSerializer::AccountDecorator | nil)
+    def memorial: () -> (false | true)
+    def roles: () -> Array[untyped]
+    def feature_approval: () -> { automatic: untyped, manual: untyped, current_user: :automatic | :denied | :manual | :missing | :unknown }
+    class AccountDecorator < ::SimpleDelegator
+      def moved?: () -> false
+    end
+  end
+end

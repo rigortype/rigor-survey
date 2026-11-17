@@ -1,0 +1,5 @@
+module Trends
+  class StatusFilter
+    def initialize: (untyped) -> void
+  end
+end

@@ -1,0 +1,9 @@
+module Analytics
+  module Glql
+    class QueryService
+      def initialize: (current_user: untyped, original_query: untyped, ?request: untyped, ?current_organization: nil) -> void
+      def current_organization: () -> nil
+      def graphql_context: () -> Hash[untyped, untyped]
+    end
+  end
+end

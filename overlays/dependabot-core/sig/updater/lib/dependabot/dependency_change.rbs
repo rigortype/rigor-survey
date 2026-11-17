@@ -1,0 +1,16 @@
+module Dependabot
+  class DependencyChange
+    def initialize: (job: untyped, updated_dependencies: untyped, updated_dependency_files: untyped, ?dependency_group: untyped, ?notices: untyped) -> void
+    def humanized: () -> String
+    def updated_dependency_files_hash: () -> Array[untyped]
+    def grouped_update?: () -> (false | true)
+    def should_replace_existing_pr?: () -> (false | true)
+    def merge_changes!: (untyped) -> (Array[Dependabot::Notice] | nil)
+    def all_have_previous_version?: () -> (false | true)
+    def check_dependencies_have_previous_version: () -> nil
+    def matches_existing_pr?: () -> (false | true)
+    class InvalidUpdatedDependencies < ::Dependabot::DependabotError
+      def initialize: (deps_no_previous_version: untyped, deps_no_change: untyped) -> void
+    end
+  end
+end

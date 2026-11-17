@@ -1,0 +1,6 @@
+module WikiHelper
+  def wiki_attachment_upload_url: () -> String
+  def wiki_404_messages: () -> { writable: { title: untyped, body: untyped }, readonly: { title: untyped, body: untyped } }
+  def wiki_empty_state_messages: (untyped) -> { writable: { title: untyped, body: untyped }, readonly: { title: untyped, body: untyped } }
+  def wiki_page_tracking_context: (untyped) -> Hash[String, untyped]
+end

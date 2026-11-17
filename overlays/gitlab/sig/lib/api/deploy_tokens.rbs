@@ -1,0 +1,5 @@
+module API
+  class DeployTokens < ::API::Base
+    def scope_params: () -> Hashie::Mash
+  end
+end

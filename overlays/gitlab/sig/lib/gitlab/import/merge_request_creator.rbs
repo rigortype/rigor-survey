@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    class MergeRequestCreator
+      def initialize: (untyped) -> void
+    end
+  end
+end

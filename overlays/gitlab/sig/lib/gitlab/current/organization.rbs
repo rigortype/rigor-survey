@@ -1,0 +1,8 @@
+module Gitlab
+  module Current
+    class Organization
+      def initialize: (?params: untyped, ?user: untyped, ?rack_env: untyped) -> void
+      def organization_path_mismatch?: () -> (false | true)
+    end
+  end
+end

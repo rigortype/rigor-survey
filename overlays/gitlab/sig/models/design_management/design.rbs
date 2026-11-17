@@ -1,0 +1,11 @@
+module DesignManagement
+  class Design < ::ApplicationRecord
+    def self.relative_positioning_parent_column: () -> :issue_id
+    def status: () -> (:current | :deleted | :new)
+    def to_reference: (?untyped, ?full: untyped) -> String
+    def self.build_full_path: (untyped, untyped) -> String
+    def self.to_ability_name: () -> "design"
+    def full_path: () -> String
+    def clear_version_cache: () -> Array[Symbol]
+  end
+end

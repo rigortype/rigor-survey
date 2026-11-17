@@ -1,0 +1,5 @@
+module PagesCore
+  class DestroyInviteService
+    def initialize: (invite: untyped) -> void
+  end
+end

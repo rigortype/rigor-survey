@@ -1,0 +1,3 @@
+class PassRedemptionsController < ::ApplicationController
+  def index: () -> void
+end

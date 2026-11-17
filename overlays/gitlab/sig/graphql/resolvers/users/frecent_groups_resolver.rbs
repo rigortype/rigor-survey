@@ -1,0 +1,7 @@
+module Resolvers
+  module Users
+    class FrecentGroupsResolver < ::Resolvers::BaseResolver
+      def resolve: (?scope_to_organization: untyped) -> (Group | nil)
+    end
+  end
+end

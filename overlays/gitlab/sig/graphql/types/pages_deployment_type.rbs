@@ -1,0 +1,5 @@
+module Types
+  class PagesDeploymentType < ::Types::BaseObject
+    def project: () -> Project
+  end
+end

@@ -1,0 +1,18 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class StageEvent
+          def initialize: ({}) -> void
+          def html_description: (?untyped) -> bot
+          def self.identifier: () -> bot
+          def object_type: () -> bot
+          def hash_code: () -> String
+          def column_list: () -> bot
+          def self.label_based?: () -> false
+          def params: () -> {}
+        end
+      end
+    end
+  end
+end

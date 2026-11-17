@@ -1,0 +1,5 @@
+module Integrations
+  class ActivityPubConstraint
+    def matches?: (untyped) -> (false | true)
+  end
+end

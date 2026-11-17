@@ -1,0 +1,13 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class IssueDeployedToProduction < ::Gitlab::Analytics::CycleAnalytics::StageEvents::StageEvent
+          def self.identifier: () -> :issue_deployed_to_production
+          def object_type: () -> singleton(Issue)
+          def column_list: () -> [untyped]
+        end
+      end
+    end
+  end
+end

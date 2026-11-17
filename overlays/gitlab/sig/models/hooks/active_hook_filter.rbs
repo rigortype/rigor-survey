@@ -1,0 +1,3 @@
+class ActiveHookFilter
+  def initialize: (untyped) -> void
+end

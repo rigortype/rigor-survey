@@ -1,0 +1,6 @@
+module Organizations
+  module Release
+    def self.enabled?: (untyped, untyped) -> (false | true)
+    def self.stage_keys_to_check: (untyped) -> (Array[untyped] | [untyped])
+  end
+end

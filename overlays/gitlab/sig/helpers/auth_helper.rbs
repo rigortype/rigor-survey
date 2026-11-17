@@ -1,0 +1,15 @@
+module AuthHelper
+  def provider_has_builtin_icon?: (untyped) -> (false | true)
+  def test_id_for_provider: (untyped) -> ("github-login-button" | "gitlab-oauth-login-button" | "oidc-login-button" | "saml-login-button" | nil)
+  def form_based_provider_priority: () -> ["crowd", Regexp]
+  def form_based_provider?: (untyped) -> (false | true)
+  def step_up_auth_params: (untyped, untyped) -> Hash[untyped, untyped]
+  def delete_otp_authenticator_data: (untyped) -> { button_text: untyped, icon: "remove", messages: [untyped, untyped] | [untyped], path: untyped, password_required: untyped }
+  def delete_passkey_data: (untyped, untyped, untyped) -> { modal_title: untyped, button_text: untyped, icon: "remove", messages: [untyped, untyped] | [untyped], path: untyped, password_required: untyped }
+  def delete_webauthn_device_data: (untyped, untyped) -> { button_text: untyped, icon: "remove", messages: [untyped, untyped] | [untyped], path: untyped, password_required: untyped }
+  def disable_two_factor_authentication_data: (untyped, untyped) -> { button_text: untyped, messages: [untyped, untyped] | [untyped], modal_title: untyped, path: untyped, password_required: untyped }
+  def codes_two_factor_authentication_data: (untyped) -> { button_text: untyped, messages: [untyped, untyped] | [untyped], method: "post", path: untyped, password_required: untyped, size: "small", variant: "default" }
+  def admin_service_accounts_data: (?untyped) -> { base_path: untyped, service_accounts: { enabled: "true", path: untyped, edit_path: untyped, docs_path: untyped, delete_path: untyped }, access_token: Hash[untyped, untyped] }
+  def groups_service_accounts_data: (untyped, ?untyped) -> { base_path: untyped, service_accounts: { enabled: untyped, path: untyped, edit_path: untyped, docs_path: untyped, delete_path: untyped }, access_token: Hash[untyped, untyped] }
+  def projects_service_accounts_data: (untyped, ?untyped) -> { base_path: untyped, service_accounts: { enabled: untyped, path: untyped, edit_path: untyped, docs_path: untyped, delete_path: untyped }, access_token: Hash[untyped, untyped] }
+end

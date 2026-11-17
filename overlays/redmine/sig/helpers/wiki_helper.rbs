@@ -1,0 +1,3 @@
+module WikiHelper
+  def wiki_page_options_for_select: (untyped, ?untyped, ?untyped, ?untyped) -> String
+end

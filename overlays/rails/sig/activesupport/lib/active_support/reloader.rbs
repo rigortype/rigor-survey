@@ -1,0 +1,7 @@
+module ActiveSupport
+  class Reloader < ::ActiveSupport::ExecutionWrapper
+    def self.reloaded!: () -> false
+    def require_unload_lock!: () -> (nil | true)
+    def complete!: () -> false
+  end
+end

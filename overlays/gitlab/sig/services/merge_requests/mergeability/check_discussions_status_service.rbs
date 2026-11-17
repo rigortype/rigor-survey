@@ -1,0 +1,8 @@
+module MergeRequests
+  module Mergeability
+    class CheckDiscussionsStatusService < ::MergeRequests::Mergeability::CheckBaseService
+      def execute: () -> Gitlab::MergeRequests::Mergeability::CheckResult
+      def cacheable?: () -> false
+    end
+  end
+end

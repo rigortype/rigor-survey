@@ -1,0 +1,5 @@
+module API
+  class SystemHooks < ::API::Base
+    def hook_authorization_subject: () -> :global
+  end
+end

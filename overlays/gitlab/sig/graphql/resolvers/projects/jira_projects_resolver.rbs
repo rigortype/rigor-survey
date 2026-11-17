@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class JiraProjectsResolver < ::Resolvers::BaseResolver
+      def resolve: (?name: untyped, **untyped) -> Gitlab::Graphql::Pagination::ArrayConnection
+    end
+  end
+end

@@ -1,0 +1,16 @@
+module Gitlab
+  module Graphql
+    module DeprecationsBase
+      class NameDeprecation < ::Struct[untyped]
+        def old_name: () -> untyped
+        def new_name: () -> untyped
+        def milestone: () -> untyped
+        def old_name=: (untyped) -> untyped
+        def new_name=: (untyped) -> untyped
+        def milestone=: (untyped) -> untyped
+        def self.new: (?old_name: untyped, ?new_name: untyped, ?milestone: untyped) -> instance
+        def self.[]: (?old_name: untyped, ?new_name: untyped, ?milestone: untyped) -> instance
+      end
+    end
+  end
+end

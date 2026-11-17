@@ -1,0 +1,10 @@
+module Gitlab
+  module CycleAnalytics
+    module Summary
+      class Commit < ::Gitlab::CycleAnalytics::Summary::Base
+        def identifier: () -> :commits
+        def value: () -> (Gitlab::CycleAnalytics::Summary::Value::None | Gitlab::CycleAnalytics::Summary::Value::PrettyNumeric)
+      end
+    end
+  end
+end

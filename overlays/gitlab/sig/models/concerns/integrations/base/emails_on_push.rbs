@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module EmailsOnPush
+      def initialize_properties: () -> ("all" | nil)
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module Cargo
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class FilePreparer
+        def initialize: (dependency_files: untyped, dependency: untyped, ?unlock_requirement: untyped, ?replacement_git_pin: untyped, ?latest_allowable_version: untyped) -> void
+        def prepared_dependency_files: () -> Array[untyped]
+      end
+    end
+  end
+end

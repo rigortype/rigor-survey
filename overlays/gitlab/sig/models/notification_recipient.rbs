@@ -1,0 +1,6 @@
+class NotificationRecipient
+  def initialize: (untyped, Symbol, ?untyped) -> void
+  def notification_setting_sources: () -> [untyped, untyped, nil]
+  def own_activity?: () -> (false | true)
+  def type: () -> (:custom | :mention | :participating | :watch)
+end

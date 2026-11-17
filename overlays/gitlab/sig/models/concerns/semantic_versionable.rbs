@@ -1,0 +1,3 @@
+module SemanticVersionable
+  def semver: () -> (Packages::SemVer | nil)
+end

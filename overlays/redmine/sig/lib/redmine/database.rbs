@@ -1,0 +1,10 @@
+module Redmine
+  module Database
+    def self.postgresql?: () -> (false | true)
+    def self.mysql?: () -> (false | true)
+    def self.sqlserver?: () -> (false | true)
+    def self.like: (untyped, untyped, ?untyped) -> String
+    def self.timestamp_to_date: (untyped, untyped) -> (String | nil)
+    def self.reset: () -> nil
+  end
+end

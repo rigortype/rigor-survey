@@ -1,0 +1,7 @@
+module Gitlab
+  module RelativePositioning
+    class Gap
+      def initialize: (untyped, untyped, ?ideal_distance: untyped) -> void
+    end
+  end
+end

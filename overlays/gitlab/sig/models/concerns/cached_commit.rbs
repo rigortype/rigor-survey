@@ -1,0 +1,5 @@
+module CachedCommit
+  def parent_ids: () -> []
+  def referenced_by: () -> []
+  def extended_trailers: () -> {}
+end

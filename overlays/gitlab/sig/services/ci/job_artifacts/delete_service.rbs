@@ -1,0 +1,8 @@
+module Ci
+  module JobArtifacts
+    class DeleteService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

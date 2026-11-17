@@ -1,0 +1,16 @@
+module Ox
+  class Element < ::Ox::Node
+    def initialize: (untyped) -> void
+    def nodes: () -> Array[untyped]
+    def <<: (untyped) -> Ox::Element
+    def prepend_child: (Integer | Ox::Element) -> Ox::Element
+    def eql?: (untyped) -> (false | true)
+    def text: () -> (String | nil)
+    def replace_text: (untyped) -> Array[untyped]
+    def attr_match: (untyped) -> (false | true)
+    def locate: (String) -> (Array[untyped] | [Ox::Element])
+    def remove_children: (*untyped) -> Ox::Element
+    def remove_children_by_path: (untyped) -> Ox::Element
+    def respond_to?: (untyped, ?untyped) -> (false | true)
+  end
+end

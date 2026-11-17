@@ -1,0 +1,10 @@
+module Parser
+  module Source
+    class Map
+      class Index < ::Parser::Source::Map
+        def initialize: (untyped, untyped, untyped) -> void
+        def with_operator: (untyped) -> Parser::Source::Map::Index
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module SessionsHelper
+  def session_expire_modal_data: () -> { session_timeout: untyped, sign_in_url: untyped }
+  def verification_data: (untyped) -> { username: untyped, obfuscated_email: untyped, verify_path: untyped, resend_path: untyped, skip_path: untyped, show_resend_after: untyped }
+  def passkey_authentication_data: (untyped) -> { path: untyped, remember_me: untyped }
+  def two_factor_authentication_app_data: (user: untyped, params: untyped, ?admin_mode: untyped) -> (Hash[untyped, untyped] | { path: untyped, admin_mode: untyped, active_method: untyped, remember_me: untyped, remember_me_enabled: untyped, totp_enabled: untyped, webauthn_enabled: untyped, email_enabled: untyped })
+  def show_passkey_immediately?: () -> true
+  def sign_in_form_app_data: () -> String
+end

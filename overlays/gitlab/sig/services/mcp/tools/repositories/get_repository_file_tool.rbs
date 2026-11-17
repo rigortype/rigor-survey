@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Repositories
+      class GetRepositoryFileTool < ::Mcp::Tools::Base::GraphqlTool
+        def self.build_query: () -> String
+        def build_variables: () -> { projectPath: untyped, ref: untyped, filePaths: [untyped], refType: untyped }
+      end
+    end
+  end
+end

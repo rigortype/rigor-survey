@@ -1,0 +1,8 @@
+module API
+  module Helpers
+    module Authentication
+      def access_token_from_namespace_inheritable: () -> (OauthAccessToken | PersonalAccessToken | nil)
+      def ci_build_from_namespace_inheritable: () -> (::Ci::Build | nil)
+    end
+  end
+end

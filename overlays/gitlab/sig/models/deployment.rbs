@@ -1,0 +1,7 @@
+class Deployment < ::ApplicationRecord
+  def self.last_for_environment: (untyped) -> Deployment
+  def self.jobs: (?untyped) -> ActiveRecord::Relation[Ci::Processable]
+  def last?: () -> (false | true)
+  def ref_path: () -> String
+  def self.last_deployment_group_associations: () -> { deployable: { pipeline: { manual_actions: [] } } }
+end

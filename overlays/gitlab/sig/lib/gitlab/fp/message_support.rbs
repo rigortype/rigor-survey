@@ -1,0 +1,7 @@
+module Gitlab
+  module Fp
+    module MessageSupport
+      def generate_error_response_from_message: (message: untyped, reason: untyped) -> { status: :error, message: untyped, reason: untyped }
+    end
+  end
+end

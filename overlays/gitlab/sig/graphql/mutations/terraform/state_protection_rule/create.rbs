@@ -1,0 +1,9 @@
+module Mutations
+  module Terraform
+    module StateProtectionRule
+      class Create < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, **untyped) -> { terraform_state_protection_rule: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

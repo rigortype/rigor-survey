@@ -1,0 +1,7 @@
+module MergeRequests
+  class BaseCloudEvent < ::Gitlab::EventStore::CloudEvent
+    def self.build_for_merge_request: (merge_request: untyped, current_user: untyped, ?extra_event_data: untyped) -> MergeRequests::BaseCloudEvent
+    def self.merge_request_event_data: (untyped) -> { merge_request_id: untyped, merge_request_iid: untyped, project_id: untyped }
+    def data_schema: () -> Hash[String, "object" | Array[untyped] | Hash[String, Hash[String, "integer"]]]
+  end
+end

@@ -1,0 +1,7 @@
+module Packages
+  module Rpm
+    class RepositoryFileUploader < ::GitlabUploader
+      def store_dir: () -> Gitlab::HashedPath
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Chat
+    module Responder
+      class Mattermost < ::Gitlab::Chat::Responder::Base
+        def scheduled_output: () -> { response_type: :ephemeral, text: String }
+      end
+    end
+  end
+end

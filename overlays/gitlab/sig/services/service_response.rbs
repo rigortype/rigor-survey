@@ -1,0 +1,11 @@
+class ServiceResponse
+  def self.success: (?message: untyped, ?payload: untyped, ?http_status: untyped) -> ServiceResponse
+  def self.error: (message: untyped, ?payload: untyped, ?http_status: untyped, ?reason: untyped) -> ServiceResponse
+  def self.from_legacy_hash: (untyped) -> ServiceResponse
+  def initialize: (status: Symbol, ?message: untyped, ?payload: { http_status: untyped }, ?http_status: untyped, ?reason: untyped) -> void
+  def log_and_raise_exception: (?as: untyped, **untyped) -> ServiceResponse
+  def track_exception: (?as: untyped, **untyped) -> ServiceResponse
+  def track_and_raise_exception: (?as: untyped, **untyped) -> ServiceResponse
+  def errors: () -> Array[untyped]
+  def cause: () -> ActiveSupport::StringInquirer
+end

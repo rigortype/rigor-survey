@@ -1,0 +1,5 @@
+module Chaos
+  class DbSpinWorker
+    def perform: (untyped, untyped) -> nil
+  end
+end

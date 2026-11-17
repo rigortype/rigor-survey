@@ -1,0 +1,16 @@
+module Import
+  class ReassignPlaceholderThrottling
+    def initialize: (untyped) -> void
+    def db_table_unavailable?: (untyped) -> (false | true)
+    def db_health_check!: () -> nil
+    def unavailable_tables: () -> Array[untyped]
+    class DatabaseHealthStatusChecker < ::Struct[untyped]
+      def id: () -> untyped
+      def job_class_name: () -> untyped
+      def id=: (untyped) -> untyped
+      def job_class_name=: (untyped) -> untyped
+      def self.new: (?id: untyped, ?job_class_name: untyped) -> instance | (?untyped id, ?untyped job_class_name) -> instance
+      def self.[]: (?id: untyped, ?job_class_name: untyped) -> instance | (?untyped id, ?untyped job_class_name) -> instance
+    end
+  end
+end

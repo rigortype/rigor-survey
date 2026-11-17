@@ -1,0 +1,9 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      class EventReporter
+        def initialize: (?logger: untyped) -> void
+      end
+    end
+  end
+end

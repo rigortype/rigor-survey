@@ -1,0 +1,3 @@
+class ParallelLetterFrequency
+  def self.count: (untyped) -> (Hash[untyped, untyped] | Hash[untyped, Integer])
+end

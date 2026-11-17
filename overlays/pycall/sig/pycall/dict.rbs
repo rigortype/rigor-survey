@@ -1,0 +1,5 @@
+module PyCall
+  class Dict
+    def each: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, PyCall::Dict] | PyCall::Dict)
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module Count
+      def self.validate_organization_scope!: (untyped, untyped) -> nil
+    end
+  end
+end

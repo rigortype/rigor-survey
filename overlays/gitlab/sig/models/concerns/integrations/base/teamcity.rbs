@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Teamcity
+      def calculate_reactive_cache: (untyped, untyped) -> { build_page: untyped, commit_status: "failed" | "pending" | "success" | :error }
+    end
+  end
+end

@@ -1,0 +1,19 @@
+module Dependabot
+  module Clients
+    class CodeCommit
+      def self.for_source: (source: untyped, credentials: untyped) -> Dependabot::Clients::CodeCommit
+      def initialize: (untyped, untyped) -> void
+      def fetch_repo_contents: (untyped, ?untyped, ?untyped) -> Seahorse::Client::Response
+      def branch: (untyped) -> Seahorse::Client::Response
+      def fetch_commits: (untyped, untyped, untyped) -> Array[untyped]
+      def commits: (untyped, ?untyped) -> Seahorse::Client::Response
+      def pull_requests: (untyped, untyped, untyped) -> Array[untyped]
+      def create_branch: (untyped, untyped, untyped) -> Seahorse::Client::Response
+      def create_commit: (untyped, untyped, untyped, untyped, untyped) -> Seahorse::Client::Response
+      def create_pull_request: (untyped, untyped, untyped, untyped) -> Seahorse::Client::Response
+      def cc_client: () -> Aws::CodeCommit::Client
+      class NotFound < ::StandardError
+      end
+    end
+  end
+end

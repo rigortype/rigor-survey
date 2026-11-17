@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class CandidateCache
+        class Store
+          def initialize: (prefix: untyped, ttl: untyped, max_size: untyped, ?redis: untyped) -> void
+        end
+      end
+    end
+  end
+end

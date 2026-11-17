@@ -1,0 +1,24 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module MySQL
+      class AddIndex < ::Data
+        def index: () -> untyped
+        def self.new: (index: untyped) -> instance | (untyped index) -> instance
+        def self.[]: (index: untyped) -> instance | (untyped index) -> instance
+      end
+      class DropIndex < ::Data
+        def name: () -> untyped
+        def self.new: (name: untyped) -> instance | (untyped name) -> instance
+        def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+      end
+      class IndexDefinition < ::ActiveRecord::ConnectionAdapters::IndexDefinition
+        def initialize: (*untyped, ?enabled: untyped, **untyped) -> void
+        def disabled?: () -> (false | true)
+        def init_from_schema_json: (untyped, untyped) -> (false | true)
+      end
+      class TableDefinition < ::ActiveRecord::ConnectionAdapters::TableDefinition
+        def initialize: (untyped, untyped, ?charset: untyped, ?collation: untyped, **untyped) -> void
+      end
+    end
+  end
+end

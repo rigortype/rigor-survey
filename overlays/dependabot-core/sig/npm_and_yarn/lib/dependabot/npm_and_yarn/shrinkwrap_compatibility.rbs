@@ -1,0 +1,8 @@
+module Dependabot
+  module NpmAndYarn
+    module ShrinkwrapCompatibility
+      def self.ensure_pin_supported!: (untyped) -> nil
+      def self.raise_unsupported!: () -> bot
+    end
+  end
+end

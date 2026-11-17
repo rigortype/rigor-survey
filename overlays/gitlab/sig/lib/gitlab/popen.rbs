@@ -1,0 +1,20 @@
+module Gitlab
+  module Popen
+    def popen: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> [String, untyped]
+    def popen_with_detail: (untyped, ?untyped, ?untyped) -> Gitlab::Popen::Result
+    class Result < ::Struct[untyped]
+      def cmd: () -> untyped
+      def stdout: () -> untyped
+      def stderr: () -> untyped
+      def status: () -> untyped
+      def duration: () -> untyped
+      def cmd=: (untyped) -> untyped
+      def stdout=: (untyped) -> untyped
+      def stderr=: (untyped) -> untyped
+      def status=: (untyped) -> untyped
+      def duration=: (untyped) -> untyped
+      def self.new: (?cmd: untyped, ?stdout: untyped, ?stderr: untyped, ?status: untyped, ?duration: untyped) -> instance | (?untyped cmd, ?untyped stdout, ?untyped stderr, ?untyped status, ?untyped duration) -> instance
+      def self.[]: (?cmd: untyped, ?stdout: untyped, ?stderr: untyped, ?status: untyped, ?duration: untyped) -> instance | (?untyped cmd, ?untyped stdout, ?untyped stderr, ?untyped status, ?untyped duration) -> instance
+    end
+  end
+end

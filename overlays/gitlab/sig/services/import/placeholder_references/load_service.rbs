@@ -1,0 +1,8 @@
+module Import
+  module PlaceholderReferences
+    class LoadService < ::Import::PlaceholderReferences::BaseService
+      def initialize: (import_source: untyped, import_uid: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

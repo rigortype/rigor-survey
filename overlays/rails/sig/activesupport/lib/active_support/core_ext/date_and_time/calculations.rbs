@@ -1,0 +1,10 @@
+module DateAndTime
+  module Calculations
+    def on_weekday?: () -> (false | true)
+    def all_day: () -> Range
+    def all_week: (?untyped) -> Range
+    def all_month: () -> Range
+    def all_quarter: () -> Range
+    def all_year: () -> Range
+  end
+end

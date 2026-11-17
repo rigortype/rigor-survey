@@ -1,0 +1,12 @@
+module Dependabot
+  module Gradle
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class SettingsFileParser
+        def initialize: (settings_file: untyped) -> void
+        def included_build_paths: () -> Array[untyped]
+        def subproject_paths: () -> Array[String | nil]
+        def subproject_path_to_name_map: () -> Hash[untyped, String]
+      end
+    end
+  end
+end

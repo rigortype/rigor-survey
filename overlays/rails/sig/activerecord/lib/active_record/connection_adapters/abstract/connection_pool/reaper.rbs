@@ -1,0 +1,10 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class ConnectionPool
+      class Reaper
+        def initialize: (untyped, untyped) -> void
+        def self.spawn_thread: (untyped) -> Thread
+      end
+    end
+  end
+end

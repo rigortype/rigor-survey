@@ -1,0 +1,8 @@
+module Gitlab
+  class ExclusiveLease
+    def self.redis_shared_state_key: (untyped) -> String
+    def initialize: (untyped, timeout: untyped, ?uuid: untyped) -> void
+    def report_lock_attempt_inside_transaction: () -> nil
+    def waiting?: () -> (false | true)
+  end
+end

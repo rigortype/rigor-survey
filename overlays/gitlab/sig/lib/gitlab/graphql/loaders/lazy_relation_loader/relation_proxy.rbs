@@ -1,0 +1,11 @@
+module Gitlab
+  module Graphql
+    module Loaders
+      class LazyRelationLoader
+        class RelationProxy
+          def initialize: (untyped, untyped) -> void
+        end
+      end
+    end
+  end
+end

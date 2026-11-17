@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class DateBucketDimension < ::Gitlab::Database::Aggregation::ClickHouse::DimensionDefinition
+          def initialize: (*untyped, ?parameters: { granularity: { type: Symbol, in: [String] } }, **untyped) -> void
+        end
+      end
+    end
+  end
+end

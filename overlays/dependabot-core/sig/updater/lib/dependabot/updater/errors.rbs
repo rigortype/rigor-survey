@@ -1,0 +1,7 @@
+module Dependabot
+  class Updater
+    class SubprocessFailed < ::StandardError
+      def initialize: (untyped, sentry_context: untyped) -> void
+    end
+  end
+end

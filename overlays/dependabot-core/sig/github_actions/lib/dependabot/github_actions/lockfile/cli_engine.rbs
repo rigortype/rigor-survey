@@ -1,0 +1,10 @@
+module Dependabot
+  module GithubActions
+    module Lockfile
+      class CliEngine
+        def initialize: (untyped, ?hostname: untyped) -> void
+        def self.binary_path: () -> ("gh-actions-lock" | String)
+      end
+    end
+  end
+end

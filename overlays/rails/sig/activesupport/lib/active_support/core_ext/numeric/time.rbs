@@ -1,0 +1,8 @@
+class Numeric
+  def seconds: () -> ActiveSupport::Duration
+  def minutes: () -> ActiveSupport::Duration
+  def hours: () -> ActiveSupport::Duration
+  def days: () -> ActiveSupport::Duration
+  def weeks: () -> ActiveSupport::Duration
+  def fortnights: () -> ActiveSupport::Duration
+end

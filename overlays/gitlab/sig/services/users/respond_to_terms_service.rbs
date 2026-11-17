@@ -1,0 +1,5 @@
+module Users
+  class RespondToTermsService
+    def initialize: (untyped, untyped) -> void
+  end
+end

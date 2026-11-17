@@ -1,0 +1,3 @@
+class Pathname
+  def present?: () -> (false | true)
+end

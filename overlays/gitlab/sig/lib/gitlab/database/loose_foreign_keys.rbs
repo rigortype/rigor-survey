@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module LooseForeignKeys
+      def self.build_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::ForeignKeyDefinition[untyped]
+    end
+  end
+end

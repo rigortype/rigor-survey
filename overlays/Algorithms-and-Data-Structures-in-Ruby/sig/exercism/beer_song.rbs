@@ -1,0 +1,4 @@
+module BeerSong
+  def self.recite: (untyped, untyped) -> String
+  def self.verse: (untyped) -> String
+end

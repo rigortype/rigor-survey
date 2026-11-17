@@ -1,0 +1,5 @@
+module Scheduler
+  class VacuumScheduler
+    def perform: () -> Array[Vacuum::AccessTokensVacuum | Vacuum::BackupsVacuum | Vacuum::FeedsVacuum | Vacuum::ImportsVacuum | Vacuum::MediaAttachmentsVacuum | Vacuum::PreviewCardsVacuum | Vacuum::StatusesVacuum]
+  end
+end

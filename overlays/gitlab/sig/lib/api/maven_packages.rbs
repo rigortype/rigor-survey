@@ -1,0 +1,6 @@
+module API
+  class MavenPackages < ::API::Base
+    def maven_upload_authorize_params: () -> { has_length: true, maximum_size: untyped, use_final_store_path: false | true, final_store_path_config: { root_hash: untyped } }
+    def maven_checksum_format?: (untyped) -> (false | true)
+  end
+end

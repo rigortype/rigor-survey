@@ -1,0 +1,11 @@
+module YARD
+  module Templates
+    module Helpers
+      module FilterHelper
+        def is_namespace?: (untyped) -> (false | true)
+        def is_class?: (untyped) -> (false | true)
+        def is_module?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

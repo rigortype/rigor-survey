@@ -1,0 +1,9 @@
+module API
+  module Mcp
+    module Handlers
+      class InitializeRequest < ::API::Mcp::Handlers::Base
+        def invoke: () -> { protocolVersion: untyped, capabilities: { tools: { listChanged: false } }, serverInfo: { name: "Official GitLab MCP Server", version: untyped } }
+      end
+    end
+  end
+end

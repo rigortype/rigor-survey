@@ -1,0 +1,9 @@
+module Rails
+  class Application < ::Rails::Engine
+    module Finisher
+      class MonitorHook
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module Ml
+    class CandidateFinder
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

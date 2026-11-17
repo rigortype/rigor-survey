@@ -1,0 +1,7 @@
+module Mutations
+  module Snippets
+    class Create < ::Mutations::BaseMutation
+      def resolve: (?project_path: untyped, **untyped) -> { snippet: untyped, errors: untyped }
+    end
+  end
+end

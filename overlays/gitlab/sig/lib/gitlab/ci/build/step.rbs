@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Build
+      class Step
+        def self.from_commands: (untyped) -> Gitlab::Ci::Build::Step
+        def self.from_release: (untyped) -> (Gitlab::Ci::Build::Step | nil)
+        def self.from_after_script: (untyped) -> (Gitlab::Ci::Build::Step | nil)
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

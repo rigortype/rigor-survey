@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class ReplaceTable
+        def initialize: (untyped, untyped, untyped, untyped, untyped, ?rename_partitions: (false | true)) -> void
+        def original_primary_key: () -> String
+        def replacement_primary_key: () -> String
+        def replaced_primary_key: () -> String
+        def rename_partitions: () -> false
+      end
+    end
+  end
+end

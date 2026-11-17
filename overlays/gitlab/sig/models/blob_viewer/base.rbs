@@ -1,0 +1,10 @@
+module BlobViewer
+  class Base
+    def initialize: (untyped) -> void
+    def self.partial_path: () -> String
+    def self.loading_partial_path: () -> String
+    def self.text?: () -> (false | true)
+    def self.can_render?: (untyped, ?verify_binary: untyped) -> (false | true)
+    def render_error: () -> (:collapsed | :too_large | nil)
+  end
+end

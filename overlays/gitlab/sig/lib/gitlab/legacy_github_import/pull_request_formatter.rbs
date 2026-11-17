@@ -1,0 +1,15 @@
+module Gitlab
+  module LegacyGithubImport
+    class PullRequestFormatter < ::Gitlab::LegacyGithubImport::IssuableFormatter
+      def attributes: () -> { iid: untyped, title: untyped, description: untyped, source_project: untyped, source_branch: untyped, source_branch_sha: untyped, target_project: untyped, target_branch: untyped, target_branch_sha: untyped, state: untyped, milestone: untyped, author_id: untyped, assignee_id: untyped, created_at: untyped, updated_at: untyped, imported_from: :gitea | :github | :none }
+      def project_association: () -> :merge_requests
+      def source_branch: () -> Gitlab::LegacyGithubImport::BranchFormatter
+      def source_branch_name_prefixed: () -> String
+      def target_branch: () -> Gitlab::LegacyGithubImport::BranchFormatter
+      def target_branch_name_prefixed: () -> String
+      def project_assignee_association: () -> :merge_request_assignees
+      def contributing_user_formatters: () -> { author_id: untyped }
+      def contributing_assignee_formatters: () -> { user_id: untyped }
+    end
+  end
+end

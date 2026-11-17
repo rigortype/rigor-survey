@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Methods
+      class MetricOptions
+        def initialize: (?untyped) -> void
+        def evaluate: () ?{ (*untyped) -> untyped } -> Gitlab::Metrics::Methods::MetricOptions
+      end
+    end
+  end
+end

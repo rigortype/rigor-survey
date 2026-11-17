@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    module GlqlSlis
+      def self.labels: (endpoint_id: untyped, error_type: untyped, duo_agent: untyped) -> { endpoint_id: untyped, feature_category: "glql", query_urgency: untyped, error_type: untyped, client: "duo_agent" | "other" }
+    end
+  end
+end

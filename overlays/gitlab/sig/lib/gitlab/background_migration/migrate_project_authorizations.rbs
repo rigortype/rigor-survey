@@ -1,0 +1,7 @@
+module Gitlab
+  module BackgroundMigration
+    class MigrateProjectAuthorizations < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      def insert_query: (untyped) -> String
+    end
+  end
+end

@@ -1,0 +1,22 @@
+module ActionView
+  class PartialIteration
+    def initialize: (untyped) -> void
+    def index: () -> (0 | Integer)
+  end
+  class CollectionRenderer < ::ActionView::PartialRenderer
+    class CollectionIterator
+      def initialize: (untyped) -> void
+    end
+    class SameCollectionIterator < ::ActionView::CollectionRenderer::CollectionIterator
+      def initialize: (untyped, untyped, untyped) -> void
+      def from_collection: (untyped) -> ActionView::CollectionRenderer::SameCollectionIterator
+    end
+    class PreloadCollectionIterator < ::ActionView::CollectionRenderer::SameCollectionIterator
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def from_collection: (untyped) -> ActionView::CollectionRenderer::PreloadCollectionIterator
+    end
+    class MixedCollectionIterator < ::ActionView::CollectionRenderer::CollectionIterator
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

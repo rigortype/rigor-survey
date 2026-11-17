@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PnpmWorkspaceUpdater
+        def initialize: (workspace_file: untyped, dependencies: untyped) -> void
+        def updated_pnpm_workspace: () -> Dependabot::DependencyFile
+      end
+    end
+  end
+end

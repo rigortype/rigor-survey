@@ -1,0 +1,12 @@
+module ActiveSupport
+  module Cache
+    class Entry
+      def self.unpack: (untyped) -> ActiveSupport::Cache::Entry
+      def initialize: (untyped, ?compressed: untyped, ?version: untyped, ?expires_in: untyped, ?expires_at: untyped, **untyped) -> void
+      def compressed?: () -> (String | nil)
+      def compressed: (untyped) -> ActiveSupport::Cache::Entry
+      def local?: () -> false
+      def pack: () -> (Array[untyped] | [untyped, untyped, untyped])
+    end
+  end
+end

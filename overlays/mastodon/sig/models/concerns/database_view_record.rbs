@@ -1,0 +1,3 @@
+module DatabaseViewRecord
+  def readonly?: () -> true
+end

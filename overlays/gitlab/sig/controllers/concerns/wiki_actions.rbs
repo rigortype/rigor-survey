@@ -1,0 +1,3 @@
+module WikiActions
+  def handle_create_form: () -> nil
+end

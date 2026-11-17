@@ -1,0 +1,12 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class PathConverter
+        def self.label_to_path: (untyped, ?context_dir: untyped) -> String
+        def self.should_filter_path?: (untyped) -> (false | true)
+        def self.normalize_path: (untyped) -> String
+        def self.convert_absolute_label_to_path: (untyped) -> String
+      end
+    end
+  end
+end

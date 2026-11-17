@@ -1,0 +1,8 @@
+module Dependabot
+  class BaseCommand
+    def api_client: () -> (Dependabot::ApiClient | nil)
+    def service: () -> (Dependabot::Service | nil)
+  end
+  class RunFailure < ::StandardError
+  end
+end

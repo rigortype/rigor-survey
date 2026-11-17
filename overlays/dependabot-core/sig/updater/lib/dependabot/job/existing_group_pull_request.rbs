@@ -1,0 +1,13 @@
+module Dependabot
+  class Job
+    class ExistingGroupPullRequest < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::ExistingGroupPullRequest
+      def self.parsed_dependencies: (untyped) -> (Array[Dependabot::Job::ExistingGroupPullRequest::Dependency] | nil)
+      def self.string_hash: (untyped) -> (Hash[untyped, Object] | nil)
+      class Dependency < ::T::ImmutableStruct
+        def self.from_hash: (untyped) -> Dependabot::Job::ExistingGroupPullRequest::Dependency
+        def to_h: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

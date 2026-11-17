@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Migrations
+      module Conversions
+        class BigintConverter
+          def initialize: (untyped, untyped, untyped) -> void
+          def cleanup: () -> top
+          def columns: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

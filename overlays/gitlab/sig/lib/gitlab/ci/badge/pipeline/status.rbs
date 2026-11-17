@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Pipeline
+        class Status < ::Gitlab::Ci::Badge::Base
+          def initialize: (untyped, untyped, ?opts: untyped) -> void
+          def entity: () -> "pipeline"
+          def metadata: () -> Gitlab::Ci::Badge::Pipeline::Metadata
+          def template: () -> Gitlab::Ci::Badge::Pipeline::Template
+          def customization: () -> { key_width: untyped, key_text: untyped }
+        end
+      end
+    end
+  end
+end

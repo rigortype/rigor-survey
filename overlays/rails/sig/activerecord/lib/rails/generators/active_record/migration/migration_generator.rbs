@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Generators
+    class MigrationGenerator < ::ActiveRecord::Generators::Base
+      def migration_action: () -> ("join" | String | nil)
+    end
+  end
+end

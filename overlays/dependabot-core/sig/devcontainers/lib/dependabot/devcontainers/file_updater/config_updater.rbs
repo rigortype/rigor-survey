@@ -1,0 +1,9 @@
+module Dependabot
+  module Devcontainers
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class ConfigUpdater
+        def initialize: (feature: untyped, requirement: untyped, version: untyped, manifest: untyped, repo_contents_path: untyped, credentials: untyped) -> void
+      end
+    end
+  end
+end

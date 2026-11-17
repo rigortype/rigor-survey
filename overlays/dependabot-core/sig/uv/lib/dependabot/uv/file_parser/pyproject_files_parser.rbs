@@ -1,0 +1,9 @@
+module Dependabot
+  module Uv
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PyprojectFilesParser
+        def initialize: (dependency_files: untyped) -> void
+      end
+    end
+  end
+end

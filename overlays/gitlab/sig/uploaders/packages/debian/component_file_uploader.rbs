@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class ComponentFileUploader < ::GitlabUploader
+      def store_dir: () -> Gitlab::HashedPath
+    end
+  end
+end

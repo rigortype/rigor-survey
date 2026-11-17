@@ -1,0 +1,3 @@
+class UserDetail < ::ApplicationRecord
+  def banzai_render_context: (untyped) -> { pipeline: :user_bio, project: nil }
+end

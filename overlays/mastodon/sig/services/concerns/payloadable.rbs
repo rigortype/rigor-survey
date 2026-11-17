@@ -1,0 +1,3 @@
+module Payloadable
+  def signing_enabled?: () -> (false | true)
+end

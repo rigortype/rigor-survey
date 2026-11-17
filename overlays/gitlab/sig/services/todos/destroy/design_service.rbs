@@ -1,0 +1,8 @@
+module Todos
+  module Destroy
+    class DesignService
+      def initialize: ([untyped, untyped, untyped]) -> void
+      def design_ids: () -> [untyped, untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Gitlab
+  module Diff
+    class Position
+      def initialize: (?untyped) -> void
+      def init_with: (untyped) -> Gitlab::Diff::Position
+      def inspect: () -> String
+      def unchanged?: () -> (false | true)
+      def paths: () -> Array[untyped]
+      def diff_refs: () -> Gitlab::Diff::DiffRefs
+      def diff_options: () -> { paths: Array[untyped], expanded: true, include_stats: false, ignore_whitespace_change: untyped }
+      def file_hash: () -> String
+    end
+  end
+end

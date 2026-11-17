@@ -1,0 +1,9 @@
+module Gitlab
+  class JobWaiter
+    def self.key?: (untyped) -> (Integer | false | nil)
+    def self.generate_key: () -> String
+    def initialize: (?Integer, ?String) -> void
+    def key: () -> ("123" | "234" | "345" | "456" | "some-job-key")
+    def finished: () -> Array[untyped]
+  end
+end

@@ -1,0 +1,5 @@
+module Gitlab
+  class AbstractMethodError < ::Exception
+    def initialize: (?untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module ActivityPub
+  class CollectionSerializer < ::BaseSerializer
+    def represent: (untyped, ?untyped) -> HashWithIndifferentAccess[untyped, untyped]
+  end
+end

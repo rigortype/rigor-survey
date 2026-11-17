@@ -1,0 +1,8 @@
+module Gitlab
+  module BitbucketImport
+    class MarkdownText
+      def self.fetch_attachments: (untyped) -> Array[untyped]
+      def self.extract_attachment: (untyped) -> (Gitlab::BitbucketImport::Markdown::Attachment | nil)
+    end
+  end
+end

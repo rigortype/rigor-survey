@@ -1,0 +1,9 @@
+module Dependabot
+  module Package
+    class CooldownDateTracker
+      def initialize: (dependency: untyped, ignored_versions: untyped) -> void
+      def filter_prefiltered: () ?{ (*untyped) -> untyped } -> Array[Dependabot::Package::PackageRelease]
+      def active: () -> (false | true)
+    end
+  end
+end

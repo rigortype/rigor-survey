@@ -1,0 +1,3 @@
+class UsersFinder
+  def initialize: (untyped, ?untyped) -> void
+end

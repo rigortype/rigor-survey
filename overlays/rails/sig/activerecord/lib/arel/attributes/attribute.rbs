@@ -1,0 +1,12 @@
+module Arel
+  module Attributes
+    class Attribute < ::Struct[untyped]
+      def relation: () -> untyped
+      def name: () -> untyped
+      def relation=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def self.new: (?relation: untyped, ?name: untyped) -> instance | (?untyped relation, ?untyped name) -> instance
+      def self.[]: (?relation: untyped, ?name: untyped) -> instance | (?untyped relation, ?untyped name) -> instance
+    end
+  end
+end

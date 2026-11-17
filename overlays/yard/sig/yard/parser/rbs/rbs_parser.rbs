@@ -1,0 +1,12 @@
+module YARD
+  module Parser
+    module RBS
+      class RbsParser < ::YARD::Parser::Base
+        def initialize: (untyped, untyped) -> void
+        def parse: () -> YARD::Parser::RBS::RbsParser
+        def tokenize: () -> bot
+        def enumerator: () -> (Array[untyped] | nil)
+      end
+    end
+  end
+end

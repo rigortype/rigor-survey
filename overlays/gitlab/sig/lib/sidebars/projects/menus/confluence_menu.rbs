@@ -1,0 +1,11 @@
+module Sidebars
+  module Projects
+    module Menus
+      class ConfluenceMenu < ::Sidebars::Menu
+        def extra_container_html_options: () -> { class: "shortcuts-confluence" }
+        def image_path: () -> "confluence.svg"
+        def active_routes: () -> { controller: :confluences }
+      end
+    end
+  end
+end

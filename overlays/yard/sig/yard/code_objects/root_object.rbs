@@ -1,0 +1,11 @@
+module YARD
+  module CodeObjects
+    class RootObject < ::YARD::CodeObjects::ModuleObject
+      def path: () -> ("" | String)
+      def inspect: () -> "#<yardoc root>"
+      def root?: () -> true
+      def title: () -> "Top Level Namespace"
+      def hash: () -> Integer
+    end
+  end
+end

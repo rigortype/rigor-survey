@@ -1,0 +1,9 @@
+module SystemCheck
+  module RakeTask
+    module RakeTaskHelpers
+      def run_checks!: () -> nil
+      def name: () -> bot
+      def checks: () -> bot
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Utils
+    module UsageData
+      def redis_usage_data: (?untyped) ?{ (*untyped) -> untyped } -> Gitlab::Usage::ServicePing::LegacyMetricMetadataDecorator
+      def measure_duration: () -> [untyped, Float]
+      def metrics_collection_metadata: (untyped, ?untyped) -> Array[untyped]
+    end
+  end
+end

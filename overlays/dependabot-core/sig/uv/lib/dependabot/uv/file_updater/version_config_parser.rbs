@@ -1,0 +1,10 @@
+module Dependabot
+  module Uv
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class VersionConfigParser
+        def initialize: (pyproject_content: untyped, ?base_path: untyped, ?repo_root: untyped) -> void
+        def parse: () -> Dependabot::Uv::FileUpdater::VersionConfigParser::VersionConfig
+      end
+    end
+  end
+end

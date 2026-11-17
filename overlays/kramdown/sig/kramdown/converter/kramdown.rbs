@@ -1,0 +1,41 @@
+module Kramdown
+  module Converter
+    class Kramdown < ::Kramdown::Converter::Base
+      def initialize: (untyped, untyped) -> void
+      def inner: (untyped, ?untyped) -> String
+      def convert_blank: (untyped, untyped) -> ""
+      def convert_p: (untyped, untyped) -> String
+      def convert_blockquote: (untyped, untyped) -> String
+      def convert_header: (untyped, untyped) -> String
+      def convert_hr: (untyped, untyped) -> "* * *\n"
+      def convert_ul: (untyped, untyped) -> String
+      def convert_li: (untyped, untyped) -> String
+      def convert_dd: (untyped, untyped) -> String
+      def convert_dt: (untyped, untyped) -> String
+      def convert_html_element: (untyped, untyped) -> String
+      def convert_table: (untyped, untyped) -> String
+      def convert_thead: (untyped, untyped) -> String
+      def convert_tbody: (untyped, untyped) -> String
+      def convert_tfoot: (untyped, untyped) -> String
+      def convert_tr: (untyped, untyped) -> String
+      def convert_td: (untyped, untyped) -> String
+      def convert_comment: (untyped, untyped) -> String
+      def convert_br: (untyped, untyped) -> ("  \n" | "<br />")
+      def convert_a: (untyped, untyped) -> String
+      def convert_img: (untyped, untyped) -> String
+      def convert_codespan: (untyped, untyped) -> String
+      def convert_footnote: (untyped, untyped) -> String
+      def convert_em: (untyped, untyped) -> String
+      def convert_strong: (untyped, untyped) -> String
+      def convert_typographic_sym: (untyped, untyped) -> (" >>" | "--" | "---" | "..." | "<< " | "<<" | ">>" | nil)
+      def convert_smart_quote: (untyped, untyped) -> ("'" | "\"")
+      def convert_math: (untyped, untyped) -> String
+      def convert_root: (untyped, untyped) -> String
+      def create_link_defs: () -> String
+      def create_footnote_defs: () -> String
+      def create_abbrev_defs: () -> ("" | String)
+      def ial_for_element: (untyped) -> (String | nil)
+      def parse_title: (untyped) -> ("" | String)
+    end
+  end
+end

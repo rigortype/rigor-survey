@@ -1,0 +1,10 @@
+module Import
+  module Offline
+    module Imports
+      class CreateService
+        def initialize: (untyped, untyped, current_user: untyped, fallback_organization: untyped, ?request_channel: Symbol) -> void
+        def request_channel: () -> :congregate
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class CiCatalogBundles < ::Backup::Tasks::Task
+      def self.id: () -> "ci_catalog_bundles"
+      def destination_path: () -> "ci_catalog_bundles.tar.gz"
+    end
+  end
+end

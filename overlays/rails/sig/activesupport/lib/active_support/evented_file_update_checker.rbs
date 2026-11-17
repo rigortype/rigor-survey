@@ -1,0 +1,11 @@
+module ActiveSupport
+  class EventedFileUpdateChecker
+    def initialize: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> void
+    def inspect: () -> String
+    def execute_if_updated: () -> (nil | true)
+    class Core
+      def initialize: (untyped, untyped) -> void
+      def finalizer: () -> Proc
+    end
+  end
+end

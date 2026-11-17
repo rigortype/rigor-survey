@@ -1,0 +1,5 @@
+module Gitlab
+  class RepositorySetCache < ::Gitlab::SetCache
+    def initialize: (untyped, ?extra_namespace: untyped, ?expires_in: untyped) -> void
+  end
+end

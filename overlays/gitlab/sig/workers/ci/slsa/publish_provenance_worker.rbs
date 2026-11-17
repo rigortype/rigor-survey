@@ -1,0 +1,7 @@
+module Ci
+  module Slsa
+    class PublishProvenanceWorker
+      def perform: (untyped) -> ServiceResponse
+    end
+  end
+end

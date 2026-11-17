@@ -1,0 +1,6 @@
+module SwapMyVote
+  class MessageBird
+    def self.fake_otp: () -> (String | nil)
+    def self.fake_verify_token: (untyped) -> true
+  end
+end

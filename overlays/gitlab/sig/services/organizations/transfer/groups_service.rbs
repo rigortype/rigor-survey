@@ -1,0 +1,10 @@
+module Organizations
+  module Transfer
+    class GroupsService
+      def initialize: (group: untyped, new_organization: untyped, current_user: untyped, ?force: (false | true)) -> void
+      def async_execute: () -> ServiceResponse
+      def execute: () -> ServiceResponse
+      def force: () -> true
+    end
+  end
+end

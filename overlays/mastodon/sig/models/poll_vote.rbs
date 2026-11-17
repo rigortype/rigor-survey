@@ -1,0 +1,3 @@
+class PollVote < ::ApplicationRecord
+  def object_type: () -> :vote
+end

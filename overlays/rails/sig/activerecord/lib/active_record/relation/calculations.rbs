@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Calculations
+    class ColumnAliasTracker
+      def initialize: (untyped) -> void
+    end
+  end
+end

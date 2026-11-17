@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class SimpleOrderBuilder
+        def self.build: (untyped) -> ([untyped, false] | [untyped, true])
+        def initialize: (scope: untyped) -> void
+        def build_order: () -> ([untyped, true] | [nil, false])
+        def build: () -> ([untyped, false] | [untyped, true])
+      end
+    end
+  end
+end

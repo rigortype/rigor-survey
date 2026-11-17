@@ -1,0 +1,3 @@
+class ImportsController < ::ApplicationController
+  def current_menu: (untyped) -> (:application_menu | nil)
+end

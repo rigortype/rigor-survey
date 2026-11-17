@@ -1,0 +1,16 @@
+module Gitlab
+  module WikiPages
+    class FrontMatterParser
+      def initialize: (untyped) -> void
+      def parse: () -> Gitlab::WikiPages::FrontMatterParser::Result
+      class Result
+        def initialize: (content: untyped, ?front_matter: untyped, ?reason: untyped, ?error: untyped) -> void
+      end
+      class Block
+        def initialize: (?untyped, ?untyped, ?untyped) -> void
+        def data: () -> (Array[untyped] | Float | Hash[Symbol, untyped] | Integer | String | false | nil | true)
+        def valid?: () -> (false | true)
+      end
+    end
+  end
+end

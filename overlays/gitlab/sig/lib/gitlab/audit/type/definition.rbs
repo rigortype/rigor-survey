@@ -1,0 +1,14 @@
+module Gitlab
+  module Audit
+    module Type
+      class Definition
+        def self.declarative_policy_class: () -> "AuditEvents::DefinitionPolicy"
+        def initialize: (untyped, ?untyped) -> void
+        def self.paths: () -> [untyped]
+        def self.load_all_from_path!: (untyped, untyped) -> Array[String]
+        def self.load_from_file: (untyped) -> Gitlab::Audit::Type::Definition
+        def attributes: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

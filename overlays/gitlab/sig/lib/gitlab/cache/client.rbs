@@ -1,0 +1,7 @@
+module Gitlab
+  module Cache
+    class Client
+      def initialize: (untyped, ?backend: untyped) -> void
+    end
+  end
+end

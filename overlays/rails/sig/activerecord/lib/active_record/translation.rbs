@@ -1,0 +1,6 @@
+module ActiveRecord
+  module Translation
+    def lookup_ancestors: () -> (Array[untyped] | [ActiveRecord::Translation])
+    def i18n_scope: () -> :activerecord
+  end
+end

@@ -1,0 +1,5 @@
+module ServicePing
+  module ServicePingSettings
+    def license_operational_metric_enabled?: () -> false
+  end
+end

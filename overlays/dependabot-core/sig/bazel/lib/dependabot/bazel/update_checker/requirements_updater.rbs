@@ -1,0 +1,11 @@
+module Dependabot
+  module Bazel
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, latest_version: untyped) -> void
+        def updated_requirements: () -> Array[::DependencyRequirement]
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+      end
+    end
+  end
+end

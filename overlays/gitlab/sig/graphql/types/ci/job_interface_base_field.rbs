@@ -1,0 +1,7 @@
+module Types
+  module Ci
+    class JobInterfaceBaseField < ::Types::BaseField
+      def initialize: (**untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

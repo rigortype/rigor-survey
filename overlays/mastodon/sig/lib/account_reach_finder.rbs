@@ -1,0 +1,3 @@
+class AccountReachFinder
+  def initialize: (untyped) -> void
+end

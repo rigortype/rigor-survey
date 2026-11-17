@@ -1,0 +1,8 @@
+module Dependabot
+  module Docker
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::Docker::Requirement]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

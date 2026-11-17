@@ -1,0 +1,9 @@
+module Gitlab
+  module EventStore
+    module Subscriptions
+      class BaseSubscriptions
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

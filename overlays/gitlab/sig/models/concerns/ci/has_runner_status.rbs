@@ -1,0 +1,5 @@
+module Ci
+  module HasRunnerStatus
+    def status: () -> (:never_contacted | :offline | :online | :stale)
+  end
+end

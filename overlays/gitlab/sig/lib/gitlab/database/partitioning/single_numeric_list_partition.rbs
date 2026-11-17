@@ -1,0 +1,17 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class SingleNumericListPartition
+        def self.from_sql: (untyped, untyped, untyped) -> Gitlab::Database::Partitioning::SingleNumericListPartition
+        def self.from_export_definition: (untyped, untyped, untyped) -> Gitlab::Database::Partitioning::SingleNumericListPartition
+        def initialize: (untyped, Integer, ?partition_name: untyped) -> void
+        def to_create_sql: () -> String
+        def to_attach_sql: () -> String
+        def to_detach_sql: (?concurrently: untyped) -> String
+        def hash: () -> Integer
+        def export_definition: () -> { partition_name: untyped, values: [untyped] }
+        def value: () -> (1 | 10 | 11 | 2 | 9)
+      end
+    end
+  end
+end

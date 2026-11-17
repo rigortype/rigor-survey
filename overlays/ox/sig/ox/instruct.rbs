@@ -1,0 +1,6 @@
+module Ox
+  class Instruct < ::Ox::Node
+    def initialize: (String) -> void
+    def eql?: (untyped) -> (false | true)
+  end
+end

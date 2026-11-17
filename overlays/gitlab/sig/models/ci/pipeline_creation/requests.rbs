@@ -1,0 +1,14 @@
+module Ci
+  module PipelineCreation
+    class Requests
+      def self.start_for_project: (untyped) -> Hash[String, Float | String]
+      def self.start_for_merge_request: (untyped, ?user_initiated: untyped) -> Hash[String, untyped]
+      def self.start_for_ref: (untyped, untyped) -> Hash[String, Float | String]
+      def self.request_key: (untyped, untyped) -> String
+      def self.merge_request_key: (untyped) -> String
+      def self.ref_key: (untyped, untyped) -> String
+      def self.merge_request_from_key: (untyped) -> (MergeRequest | nil)
+      def self.generate_id: () -> String
+    end
+  end
+end

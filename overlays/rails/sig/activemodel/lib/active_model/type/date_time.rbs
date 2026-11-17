@@ -1,0 +1,8 @@
+module ActiveModel
+  module Type
+    class DateTime < ::ActiveModel::Type::Value
+      def type: () -> :datetime
+      def mutable?: () -> true
+    end
+  end
+end

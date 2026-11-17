@@ -1,0 +1,6 @@
+module MergeRequests
+  class SquashService
+    def initialize: (merge_request: untyped, current_user: untyped, commit_message: untyped) -> void
+    def execute: () -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,47 @@
+class String
+  def to_liquid: () -> String
+end
+
+class Symbol
+  def to_liquid: () -> String
+end
+
+class Array[unchecked out E]
+  def to_liquid: () -> Array[untyped]
+end
+
+class Hash[unchecked out K, unchecked out V]
+  def to_liquid: () -> Hash[untyped, untyped]
+end
+
+class Numeric
+  def to_liquid: () -> Numeric
+end
+
+class Range[out E]
+  def to_liquid: () -> Range[untyped]
+end
+
+class Time
+  def to_liquid: () -> Time
+end
+
+class DateTime < ::Date
+  def to_liquid: () -> DateTime
+end
+
+class Date
+  def to_liquid: () -> Date
+end
+
+class TrueClass
+  def to_liquid: () -> TrueClass
+end
+
+class FalseClass
+  def to_liquid: () -> FalseClass
+end
+
+class NilClass
+  def to_liquid: () -> NilClass
+end

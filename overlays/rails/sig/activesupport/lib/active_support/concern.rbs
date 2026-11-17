@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Concern
+    def included: (?untyped) ?{ (Module) [self: untyped] -> void } -> void
+    def prepended: (?untyped) ?{ (Module) [self: untyped] -> void } -> void
+    def class_methods: () { (Module) [self: untyped] -> void } -> void
+  end
+end

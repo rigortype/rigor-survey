@@ -1,0 +1,5 @@
+module MergeRequests
+  class MergeRequestPreparedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["project_id", "user_id", "oldrev", "newrev", "ref"] | Hash[String, Hash[String, "integer"] | Hash[String, "string"]]]
+  end
+end

@@ -1,0 +1,6 @@
+class ExpenseReportsController < ::ApplicationController
+  def create: () -> void
+  def show: () -> void
+  def update: () -> void
+  def calculate: () -> void
+end

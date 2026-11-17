@@ -1,0 +1,7 @@
+module Resolvers
+  module Ci
+    class PipelineAnalyticsResolver < ::Resolvers::BaseResolver
+      def resolve: (lookahead: untyped, ?source: untyped, ?ref: untyped, ?from_time: untyped, ?to_time: untyped, ?subgroup_full_paths: untyped, ?name_search: untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

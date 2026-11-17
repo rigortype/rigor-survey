@@ -1,0 +1,13 @@
+module Dependabot
+  module GithubActions
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class WorkflowUpdater
+        class SourceCommentLocator
+          def initialize: (workflow_file: untyped, comment_finder: untyped, metadata_builder: untyped) -> void
+          def for_declaration: (untyped) -> (::LocatedComment | nil)
+          def for_sequence: (untyped) -> (::LocatedComment | nil)
+        end
+      end
+    end
+  end
+end

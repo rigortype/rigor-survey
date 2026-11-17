@@ -1,0 +1,5 @@
+module Namespaces
+  class UnlinkProjectForksService
+    def initialize: (untyped, untyped) -> void
+  end
+end

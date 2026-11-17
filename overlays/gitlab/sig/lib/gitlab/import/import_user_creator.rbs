@@ -1,0 +1,7 @@
+module Gitlab
+  module Import
+    class ImportUserCreator
+      def initialize: (portable: untyped) -> void
+    end
+  end
+end

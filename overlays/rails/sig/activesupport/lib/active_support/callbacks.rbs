@@ -1,0 +1,90 @@
+module ActiveSupport
+  module Callbacks
+    module Filters
+      class Environment < ::Struct[untyped]
+        def target: () -> untyped
+        def halted: () -> untyped
+        def value: () -> untyped
+        def target=: (untyped) -> untyped
+        def halted=: (untyped) -> untyped
+        def value=: (untyped) -> untyped
+        def self.new: (?target: untyped, ?halted: untyped, ?value: untyped) -> instance | (?untyped target, ?untyped halted, ?untyped value) -> instance
+        def self.[]: (?target: untyped, ?halted: untyped, ?value: untyped) -> instance | (?untyped target, ?untyped halted, ?untyped value) -> instance
+      end
+      class Before
+        def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      end
+      class After
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+      class Around
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+    module Conditionals
+      class Value
+        def initialize: () ?{ (*untyped) -> untyped } -> void
+      end
+    end
+    class Callback
+      def self.build: (untyped, untyped, untyped, untyped) -> ActiveSupport::Callbacks::Callback
+      def initialize: (untyped, untyped, untyped, untyped, untyped) -> void
+      def merge_conditional_options: (untyped, if_option: untyped, unless_option: untyped) -> ActiveSupport::Callbacks::Callback
+      def compiled: () -> (ActiveSupport::Callbacks::Filters::After | ActiveSupport::Callbacks::Filters::Around | ActiveSupport::Callbacks::Filters::Before | nil)
+      def freeze: () -> ActiveSupport::Callbacks::Callback
+    end
+    module CallTemplate
+      class MethodCall
+        def initialize: (untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, untyped]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+      class ObjectCall
+        def initialize: (untyped, untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, untyped, untyped]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+      class InstanceExec0
+        def initialize: (untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, :instance_exec]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+      class InstanceExec1
+        def initialize: (untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, :instance_exec, untyped]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+      class InstanceExec2
+        def initialize: (untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, :instance_exec, untyped, untyped]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+      class ProcCall
+        def initialize: (untyped) -> void
+        def expand: (untyped, untyped, untyped) -> [untyped, untyped, :call, untyped, untyped]
+        def make_lambda: () -> Proc
+        def inverted_lambda: () -> Proc
+      end
+    end
+    class CallbackSequence
+      def initialize: (?untyped, ?untyped, ?untyped) -> void
+      def before: (untyped) -> ActiveSupport::Callbacks::CallbackSequence
+      def after: (untyped) -> ActiveSupport::Callbacks::CallbackSequence
+      def around: (untyped, untyped) -> ActiveSupport::Callbacks::CallbackSequence
+      def final?: () -> (false | true)
+    end
+    class CallbackChain
+      def initialize: (untyped, untyped) -> void
+      def clear: () -> ActiveSupport::Callbacks::CallbackChain
+      def initialize_copy: (untyped) -> Mutex
+    end
+    module ClassMethods
+      def normalize_callback_params: (untyped, untyped) -> [untyped, untyped, untyped]
+    end
+  end
+end

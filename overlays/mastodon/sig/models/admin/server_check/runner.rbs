@@ -1,0 +1,10 @@
+module Admin
+  class ServerCheck < ::ApplicationRecord
+    module Runner
+      def async?: () -> true
+      def sync?: () -> (false | true)
+      def authorized?: (untyped) -> bot
+      def run: () -> bot
+    end
+  end
+end

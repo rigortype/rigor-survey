@@ -1,0 +1,7 @@
+module Gitlab
+  module DependencyLinker
+    class BaseLinker
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

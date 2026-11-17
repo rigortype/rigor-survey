@@ -1,0 +1,5 @@
+module Ci
+  module HasRef
+    def branch?: () -> (false | true)
+  end
+end

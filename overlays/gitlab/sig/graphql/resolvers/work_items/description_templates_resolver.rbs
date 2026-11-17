@@ -1,0 +1,7 @@
+module Resolvers
+  module WorkItems
+    class DescriptionTemplatesResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> (Array[untyped] | nil)
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module HealthChecks
+    class DbCheck
+      def self.metric_prefix: () -> "db_ping"
+    end
+  end
+end

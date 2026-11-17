@@ -1,0 +1,7 @@
+module Dependabot
+  module RustToolchain
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

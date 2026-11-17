@@ -1,0 +1,11 @@
+module Import
+  module BulkImports
+    module Common
+      module Transformers
+        class SourceUserMemberAttributesTransformer
+          def transform: (untyped, untyped) -> (nil | { source_user: untyped, access_level: untyped, expires_at: untyped, group: untyped, project: untyped } | { user_id: untyped, access_level: untyped, created_at: untyped, updated_at: untyped, expires_at: untyped, created_by_id: untyped })
+        end
+      end
+    end
+  end
+end

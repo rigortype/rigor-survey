@@ -1,0 +1,6 @@
+module Members
+  module Enumerable
+    def map_member_user: (?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+    def pluck_member_user: (*untyped, ?filters: untyped) -> Array[untyped]
+  end
+end

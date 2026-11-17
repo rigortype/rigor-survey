@@ -1,0 +1,6 @@
+module Issues
+  class UpdateService < ::Issues::BaseService
+    def initialize: (container: untyped, ?current_user: untyped, ?params: untyped, ?perform_spam_check: untyped) -> void
+    def change_work_item_type: (untyped) -> (WorkItems::TypesFramework::NamespacedType | nil)
+  end
+end

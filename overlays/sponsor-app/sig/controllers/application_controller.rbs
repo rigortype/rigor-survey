@@ -1,0 +1,9 @@
+class ApplicationController < ::ActionController::Base
+  def current_staff_maybe: () -> Staff?
+  def current_staff: () -> Staff
+  def current_sponsorship_maybe: () -> Sponsorship?
+  def current_sponsorship: () -> Sponsorship
+  def current_conference_maybe: () -> Conference?
+  def current_conference: () -> Conference
+  def current_available_sponsorships: () -> Sponsorship::PrivateRelation?
+end

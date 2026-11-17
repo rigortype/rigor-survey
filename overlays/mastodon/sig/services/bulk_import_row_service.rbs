@@ -1,0 +1,4 @@
+class BulkImportRowService
+  def call: (untyped) -> (false | true)
+  def stoplight_fallback: () -> Proc
+end

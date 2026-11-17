@@ -1,0 +1,5 @@
+module Deployments
+  class UpdateEnvironmentService
+    def initialize: (untyped) -> void
+  end
+end

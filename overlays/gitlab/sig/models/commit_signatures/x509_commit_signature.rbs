@@ -1,0 +1,6 @@
+module CommitSignatures
+  class X509CommitSignature < ::ApplicationRecord
+    def type: () -> :x509
+    def x509_commit: () -> (Gitlab::X509::Commit | nil)
+  end
+end

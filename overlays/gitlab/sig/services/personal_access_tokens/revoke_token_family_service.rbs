@@ -1,0 +1,6 @@
+module PersonalAccessTokens
+  class RevokeTokenFamilyService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

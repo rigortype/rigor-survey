@@ -1,0 +1,11 @@
+module RuboCop
+  module AST
+    module Descendence
+      def each_child_node: (*untyped) -> (Enumerator[untyped, untyped] | RuboCop::AST::Descendence)
+      def child_nodes: () -> Array[untyped]
+      def each_descendant: (*untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::Descendence)
+      def any_descendant?: (*untyped) -> (false | true)
+      def each_node: (*untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::Descendence)
+    end
+  end
+end

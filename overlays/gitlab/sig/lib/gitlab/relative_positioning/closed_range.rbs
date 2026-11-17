@@ -1,0 +1,7 @@
+module Gitlab
+  module RelativePositioning
+    class ClosedRange < ::Gitlab::RelativePositioning::Range
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

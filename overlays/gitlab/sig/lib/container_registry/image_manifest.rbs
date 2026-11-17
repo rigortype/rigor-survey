@@ -1,0 +1,5 @@
+module ContainerRegistry
+  class ImageManifest
+    def initialize: (tag: untyped, digest: untyped, media_type: untyped, size: untyped) -> void
+  end
+end

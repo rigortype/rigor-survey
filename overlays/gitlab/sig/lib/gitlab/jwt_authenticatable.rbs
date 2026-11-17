@@ -1,0 +1,9 @@
+module Gitlab
+  module JwtAuthenticatable
+    module ClassMethods
+      def decode_jwt: (untyped, ?untyped, ?algorithm: untyped, ?issuer: untyped, ?iat_after: untyped, ?iat_leeway: untyped, ?audience: untyped, ?jwks: untyped) -> [untyped, Hash[String, untyped]]
+      def read_secret: (untyped) -> String
+      def write_secret: (?untyped) -> Integer
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Arel
+  module Nodes
+    class Node
+      def or: (untyped) -> Arel::Nodes::Grouping
+      def and: (untyped) -> Arel::Nodes::Nary
+    end
+  end
+end

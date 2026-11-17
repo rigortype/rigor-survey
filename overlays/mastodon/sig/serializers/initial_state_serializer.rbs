@@ -1,0 +1,5 @@
+class InitialStateSerializer < ::ActiveModel::Serializer[untyped]
+  def compose: () -> Hash[untyped, untyped]
+  def accounts: () -> Hash[untyped, untyped]
+  def media_attachments: () -> { accept_content_types: untyped }
+end

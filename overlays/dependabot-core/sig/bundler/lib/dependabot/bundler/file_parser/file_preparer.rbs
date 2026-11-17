@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileParser < ::Dependabot::FileParsers::Base
+      class FilePreparer
+        def initialize: (dependency_files: untyped) -> void
+        def prepared_dependency_files: () -> Array[untyped]
+      end
+    end
+  end
+end

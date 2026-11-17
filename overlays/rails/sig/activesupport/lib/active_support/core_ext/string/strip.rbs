@@ -1,0 +1,3 @@
+class String
+  def strip_heredoc: () -> String
+end

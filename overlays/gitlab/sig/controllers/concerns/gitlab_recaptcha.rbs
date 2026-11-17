@@ -1,0 +1,3 @@
+module GitlabRecaptcha
+  def load_recaptcha: () -> (false | nil | true)
+end

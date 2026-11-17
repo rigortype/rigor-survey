@@ -1,0 +1,10 @@
+module Ci
+  module Catalog
+    module Resources
+      class Component < ::ApplicationRecord
+        def include_path: () -> String
+        def ordered_inputs: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module PgAsh
+      class Sampler
+        def initialize: (?untyped) -> void
+        def execute: () ?{ (*untyped) -> untyped } -> nil
+      end
+    end
+  end
+end

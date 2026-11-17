@@ -1,0 +1,13 @@
+module Dependabot
+  module Gradle
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class MultiDependencyUpdater
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, target_version_details: untyped, ignored_versions: untyped, ?raise_on_ignored: untyped) -> void
+        def update_possible?: () -> (false | true)
+        def updated_dependencies: () -> Array[Dependabot::Dependency]
+        def target_version: () -> (Dependabot::Gradle::Version | nil)
+        def source_url: () -> (String | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  module GitSubmodules
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def version_list: () -> (Array[Dependabot::Package::PackageRelease] | nil)
+      end
+    end
+  end
+end

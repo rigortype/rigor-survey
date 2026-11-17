@@ -1,0 +1,6 @@
+module Terrapin
+  module MultiPipeExtensions
+    def pipe_options: () -> Hash[:err | :out | IO, :close | IO]
+    def read: () -> nil
+  end
+end

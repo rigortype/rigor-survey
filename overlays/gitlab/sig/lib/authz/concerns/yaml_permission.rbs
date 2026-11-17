@@ -1,0 +1,9 @@
+module Authz
+  module Concerns
+    module YamlPermission
+      def initialize: (untyped, untyped) -> void
+      def action: () -> String
+      def resource: () -> (String | nil)
+    end
+  end
+end

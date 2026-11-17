@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module Irker
+      def settings: () -> Hash[String, untyped]
+    end
+  end
+end

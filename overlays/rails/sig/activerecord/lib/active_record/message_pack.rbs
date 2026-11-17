@@ -1,0 +1,13 @@
+module ActiveRecord
+  module MessagePack
+    def self.dump: (untyped) -> [1, untyped, untyped]
+    class Encoder
+      def build_entry: (untyped) -> [untyped, untyped, untyped]
+      def entries: () -> Array[untyped]
+    end
+    class Decoder
+      def initialize: (untyped) -> void
+      def resolve_cached_associations: (untyped, untyped) -> nil
+    end
+  end
+end

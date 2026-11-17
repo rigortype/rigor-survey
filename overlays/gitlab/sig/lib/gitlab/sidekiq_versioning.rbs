@@ -1,0 +1,5 @@
+module Gitlab
+  module SidekiqVersioning
+    def self.install!: () -> (Sidekiq::RedisClientAdapter | nil)
+  end
+end

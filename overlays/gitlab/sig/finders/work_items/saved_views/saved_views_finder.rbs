@@ -1,0 +1,7 @@
+module WorkItems
+  module SavedViews
+    class SavedViewsFinder
+      def initialize: (user: untyped, namespace: untyped, ?params: untyped) -> void
+    end
+  end
+end

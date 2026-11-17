@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileParser < ::Dependabot::FileParsers::Base
+      class GemfileDeclarationFinder
+        def initialize: (gemfile: untyped) -> void
+        def gemfile_includes_dependency?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

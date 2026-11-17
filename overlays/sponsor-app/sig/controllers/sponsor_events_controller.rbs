@@ -1,0 +1,8 @@
+class SponsorEventsController < ::ApplicationController
+  def new: () -> void
+  def create: () -> void
+  def show: () -> void
+  def edit: () -> void
+  def update: () -> void
+  def destroy: () -> void
+end

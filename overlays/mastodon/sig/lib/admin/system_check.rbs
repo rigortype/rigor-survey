@@ -1,0 +1,5 @@
+module Admin
+  class SystemCheck
+    def self.perform: (untyped) -> Array[untyped]
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      def configuration: () -> Gitlab::Memory::Watchdog::Configuration
+    end
+  end
+end

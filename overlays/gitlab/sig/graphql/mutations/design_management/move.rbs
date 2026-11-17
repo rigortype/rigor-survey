@@ -1,0 +1,7 @@
+module Mutations
+  module DesignManagement
+    class Move < ::Mutations::BaseMutation
+      def resolve: (**untyped) -> { design_collection: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

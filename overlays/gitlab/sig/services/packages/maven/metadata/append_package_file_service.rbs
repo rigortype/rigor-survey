@@ -1,0 +1,10 @@
+module Packages
+  module Maven
+    module Metadata
+      class AppendPackageFileService
+        def initialize: (package: untyped, metadata_content: untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

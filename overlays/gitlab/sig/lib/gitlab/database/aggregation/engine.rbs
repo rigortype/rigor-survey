@@ -1,0 +1,16 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class Engine
+        def self.name: () -> String
+        def self.metrics_mapping: () -> bot
+        def self.filters_mapping: () -> bot
+        def self.dimensions_mapping: () -> bot
+        def self.build: () ?{ (*untyped) -> untyped } -> singleton(Gitlab::Database::Aggregation::Engine)
+        def initialize: (context: {}) -> void
+        def execute: (untyped) -> ServiceResponse
+        def context: () -> {}
+      end
+    end
+  end
+end

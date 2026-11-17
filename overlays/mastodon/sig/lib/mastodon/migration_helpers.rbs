@@ -1,0 +1,12 @@
+module Mastodon
+  module MigrationHelpers
+    def concurrent_foreign_key_name: (untyped, untyped, untyped) -> String
+    def rename_trigger_name: (untyped, untyped, untyped) -> String
+    def check_trigger_permissions!: (untyped) -> nil
+    class CorruptionError < ::StandardError
+      def initialize: (untyped) -> void
+      def cause: () -> nil
+      def backtrace: () -> []
+    end
+  end
+end

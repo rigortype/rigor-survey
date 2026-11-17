@@ -1,0 +1,7 @@
+module Hamlit
+  class Compiler
+    class CommentCompiler
+      def compile: (untyped) ?{ (*untyped) -> untyped } -> ([:html, :comment, untyped] | [:html, :comment, [:static, String]] | [:html, :condcomment, untyped, untyped, untyped])
+    end
+  end
+end

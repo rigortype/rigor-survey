@@ -1,0 +1,8 @@
+module Authn
+  module IamService
+    class UserinfoClaimsBuilder
+      def initialize: (untyped) -> void
+      def claims: () -> Hash[:auth_time | :email | :email_verified | :family_name | :given_name | :groups_direct | :name | :nickname | :picture | :preferred_username | :profile | :sub | :website, untyped]
+    end
+  end
+end

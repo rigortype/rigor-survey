@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module Packages
+      module DependencyProxyHelpers
+        def registry_url: (untyped, untyped) -> (String | nil)
+      end
+    end
+  end
+end

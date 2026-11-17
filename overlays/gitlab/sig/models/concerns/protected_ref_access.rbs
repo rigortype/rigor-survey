@@ -1,0 +1,4 @@
+module ProtectedRefAccess
+  def type: () -> :role
+  def role?: () -> true
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Devcontainers
+    class FileParser < ::Dependabot::FileParsers::Base
+      def parse: () -> Array[::Dependency]
+      def ecosystem: () -> (Dependabot::Ecosystem | nil)
+    end
+  end
+end

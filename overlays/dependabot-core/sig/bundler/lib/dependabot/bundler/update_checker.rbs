@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def lowest_security_fix_version: () -> (Dependabot::Bundler::Version | nil)
+      def lowest_resolvable_security_fix_version: () -> (Dependabot::Bundler::Version | nil)
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+      def conflicting_dependencies: () -> Array[Dependabot::UpdateCheckers::Conflict]
+    end
+  end
+end

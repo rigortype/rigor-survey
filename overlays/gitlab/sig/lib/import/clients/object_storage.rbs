@@ -1,0 +1,8 @@
+module Import
+  module Clients
+    class ObjectStorage
+      def initialize: (provider: untyped, bucket: untyped, credentials: untyped) -> void
+      def adapter: () -> (Import::Clients::ObjectStorage::Adapters::Aws | Import::Clients::ObjectStorage::Adapters::Gcs | Import::Clients::ObjectStorage::Adapters::GcsHmac)
+    end
+  end
+end

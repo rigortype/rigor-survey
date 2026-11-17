@@ -1,0 +1,12 @@
+module Gitlab
+  module LegacyGithubImport
+    class Importer
+      def self.refmap: () -> [:heads, :tags, "+refs/pull/*/head:refs/merge-requests/*/head"]
+      def initialize: (untyped) -> void
+      def client: () -> Gitlab::LegacyGithubImport::Client
+      def source_user_mapper: () -> Gitlab::Import::SourceUserMapper
+      def execute: () -> true
+      def errors: () -> Array[untyped]
+    end
+  end
+end

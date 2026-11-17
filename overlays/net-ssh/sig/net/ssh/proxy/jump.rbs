@@ -1,0 +1,11 @@
+module Net
+  module SSH
+    module Proxy
+      class Jump < ::Net::SSH::Proxy::Command
+        def initialize: (String, ?options: (Hash[String, String] | Hash[String, String | [String, String]] | Hash[String, [String, nil] | [nil]] | Hash[String, String | []] | Hash[String, nil] | Hash[String | Symbol, Integer | String])) -> void
+        def build_proxy_command_equivalent: (?untyped) -> String
+        def jump_proxies: () -> ("" | "a@[::1]:2222,b@[fe80::1]:2200,[::2]" | "a@h1:2222,b@h2:2200,h3" | "bob@jump:2222" | "jump#x" | "jump,u$(id)@proxy2" | "jump/" | "jump/path" | "jump?x" | "jumphost" | "proxy" | "proxy1," | "proxy1,,proxy3" | "proxy1,jump#x" | "proxy1,jump/path" | "proxy1,jump?x" | "proxy1,user2@proxy2;id" | "proxy1,user:secret@jump" | "sally@proxy" | "u$(id)@jump" | "user1@proxy1,user2@proxy2,user3@proxy3" | "user:secret@jump" | "user@" | "user@jump;id" | "user@jumphost" | String)
+      end
+    end
+  end
+end

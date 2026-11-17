@@ -1,0 +1,23 @@
+module Onboarding
+  module FeatureLibrary
+    module Catalog
+      class Capability < ::Data
+        def id: () -> untyped
+        def panel: () -> untyped
+        def tier: () -> untyped
+        def licensed_features: () -> untyped
+        def title: () -> untyped
+        def description: () -> untyped
+        def description_variables: () -> untyped
+        def icon: () -> untyped
+        def docs_path: () -> untyped
+        def shown_on_deployments: () -> untyped
+        def pages: () -> untyped
+        def supersedes_nav_items: () -> untyped
+        def self.new: (id: untyped, panel: untyped, tier: untyped, licensed_features: untyped, title: untyped, description: untyped, description_variables: untyped, icon: untyped, docs_path: untyped, shown_on_deployments: untyped, pages: untyped, supersedes_nav_items: untyped) -> instance | (untyped id, untyped panel, untyped tier, untyped licensed_features, untyped title, untyped description, untyped description_variables, untyped icon, untyped docs_path, untyped shown_on_deployments, untyped pages, untyped supersedes_nav_items) -> instance
+        def self.[]: (id: untyped, panel: untyped, tier: untyped, licensed_features: untyped, title: untyped, description: untyped, description_variables: untyped, icon: untyped, docs_path: untyped, shown_on_deployments: untyped, pages: untyped, supersedes_nav_items: untyped) -> instance | (untyped id, untyped panel, untyped tier, untyped licensed_features, untyped title, untyped description, untyped description_variables, untyped icon, untyped docs_path, untyped shown_on_deployments, untyped pages, untyped supersedes_nav_items) -> instance
+        def initialize: (?licensed_features: untyped, ?description_variables: untyped, ?shown_on_deployments: untyped, ?pages: untyped, ?supersedes_nav_items: untyped, **untyped) -> void
+      end
+    end
+  end
+end

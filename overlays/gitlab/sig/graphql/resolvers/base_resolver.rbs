@@ -1,0 +1,17 @@
+module Resolvers
+  class BaseResolver < ::GraphQL::Schema::Resolver
+    def self.requires_argument!: () -> true
+    def self.requires_argument?: () -> (false | true)
+    def self.calls_gitaly!: () -> true
+    def self.calls_gitaly?: () -> (false | true)
+    def self.calculate_ext_conn_complexity: () -> false
+    def self.as_single: () -> []
+    def self.single_definition_blocks: () -> Array[untyped]
+    def self.last: () -> Class
+    def self.complexity: () -> nil
+    def self.complexity_multiplier: (untyped) -> (0 | Float)
+    def self.authorization: () -> Gitlab::Graphql::Authorize::ObjectAuthorization
+    def offset_pagination: (untyped) -> Gitlab::Graphql::Pagination::OffsetPaginatedRelation
+    def single?: () -> false
+  end
+end

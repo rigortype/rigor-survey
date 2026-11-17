@@ -1,0 +1,7 @@
+class Node
+  def initialize: (untyped) -> void
+end
+
+class DisjointSets
+  def make_set: (untyped) -> Node
+end

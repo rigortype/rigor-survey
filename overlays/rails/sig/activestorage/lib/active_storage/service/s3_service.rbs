@@ -1,0 +1,8 @@
+module ActiveStorage
+  class Service
+    class S3Service < ::ActiveStorage::Service
+      def initialize: (bucket: untyped, ?upload: untyped, ?public: untyped, ?default_digest_type: untyped, **untyped) -> void
+      def headers_for_direct_upload: (untyped, content_type: untyped, checksum: untyped, ?filename: untyped, ?disposition: untyped, ?custom_metadata: untyped, **untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

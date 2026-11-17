@@ -1,0 +1,13 @@
+module Dependabot
+  module Bun
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class VersionResolver
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, latest_allowable_version: untyped, latest_version_finder: untyped, repo_contents_path: untyped, ?dependency_group: untyped, ?raise_on_ignored: untyped, ?update_cooldown: untyped) -> void
+        def latest_resolvable_version: () -> (Gem::Version | String | nil)
+        def latest_version_resolvable_with_full_unlock?: () -> (false | true)
+        def latest_resolvable_previous_version: (untyped) -> (String | nil)
+        def dependency_updates_from_full_unlock: () -> (Array[untyped] | Array[Hash[String, String | nil]] | Array[{ dependency: Dependabot::Dependency, version: Gem::Version | String | nil, previous_version: Gem::Version | String | nil } | { dependency: untyped, version: untyped, previous_version: String | nil }] | nil)
+      end
+    end
+  end
+end

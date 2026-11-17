@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module BackgroundOperation
+      module Observable
+        def prometheus_labels: () -> { migration_id: String, migration_identifier: String }
+      end
+    end
+  end
+end

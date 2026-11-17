@@ -1,0 +1,12 @@
+module ActionView
+  module Helpers
+    module CacheHelper
+      def cache: (?untyped, ?untyped) ?{ (*untyped) -> untyped } -> nil
+      def uncacheable!: () -> nil
+      def cache_if: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> nil
+      def cache_unless: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> nil
+      class UncacheableFragmentError < ::StandardError
+      end
+    end
+  end
+end

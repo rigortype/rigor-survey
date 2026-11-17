@@ -1,0 +1,7 @@
+module Api
+  module V1
+    class ProfilesController < ::Api::BaseController
+      def account_params: () -> ActionController::Parameters
+    end
+  end
+end

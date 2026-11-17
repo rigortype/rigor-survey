@@ -1,0 +1,19 @@
+module Typelizer
+  class RouteConfig < ::Struct[untyped]
+    def enabled: () -> untyped
+    def include: () -> untyped
+    def exclude: () -> untyped
+    def camel_case: () -> untyped
+    def format: () -> untyped
+    def enabled=: (untyped) -> untyped
+    def output_dir=: (untyped) -> untyped
+    def include=: (untyped) -> untyped
+    def exclude=: (untyped) -> untyped
+    def camel_case=: (untyped) -> untyped
+    def format=: (untyped) -> untyped
+    def self.new: (?enabled: untyped, ?output_dir: untyped, ?include: untyped, ?exclude: untyped, ?camel_case: untyped, ?format: untyped) -> instance
+    def self.[]: (?enabled: untyped, ?output_dir: untyped, ?include: untyped, ?exclude: untyped, ?camel_case: untyped, ?format: untyped) -> instance
+    def self.defaults: () -> { enabled: false, output_dir: nil, include: nil, exclude: nil, camel_case: true, format: :ts }
+    def file_ext: () -> ("js" | "ts")
+  end
+end

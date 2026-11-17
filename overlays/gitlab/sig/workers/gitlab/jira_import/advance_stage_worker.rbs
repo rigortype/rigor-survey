@@ -1,0 +1,7 @@
+module Gitlab
+  module JiraImport
+    class AdvanceStageWorker
+      def find_import_state: (untyped) -> JiraImportState
+    end
+  end
+end

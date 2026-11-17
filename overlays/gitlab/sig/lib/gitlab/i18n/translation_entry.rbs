@@ -1,0 +1,11 @@
+module Gitlab
+  module I18n
+    class TranslationEntry
+      def initialize: (entry_data: untyped, nplurals: untyped) -> void
+      def msgid_has_multiple_lines?: () -> (false | true)
+      def plural_id_has_multiple_lines?: () -> (false | true)
+      def msgid_namespace_contains_whitespace?: () -> (false | true)
+      def msgid_contains_multiple_namespace_pipes?: () -> (false | true)
+    end
+  end
+end

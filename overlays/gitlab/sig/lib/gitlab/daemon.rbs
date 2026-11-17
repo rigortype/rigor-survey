@@ -1,0 +1,11 @@
+module Gitlab
+  class Daemon
+    def self.initialize_instance: (*untyped, ?recreate: untyped, **untyped) -> Gitlab::Daemon
+    def self.instance: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> Gitlab::Daemon
+    def thread?: () -> (false | true)
+    def initialize: (**untyped) -> void
+    def thread_name: () -> String
+    def stop: () -> nil
+    def thread: () -> (Thread | nil)
+  end
+end

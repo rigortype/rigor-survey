@@ -1,0 +1,10 @@
+module Dependabot
+  module RustToolchain
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::RustToolchain::Requirement]
+      def self.parse: (untyped) -> (["=", Dependabot::RustToolchain::Version] | [untyped, Dependabot::RustToolchain::Version])
+      def initialize: (*untyped) -> void
+      def satisfied_by?: (untyped) -> (false | true)
+    end
+  end
+end

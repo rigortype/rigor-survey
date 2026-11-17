@@ -1,0 +1,7 @@
+module Dependabot
+  module Uv
+    module RequirementSuffixHelper
+      def self.split: (untyped) -> [untyped, "" | String]
+    end
+  end
+end

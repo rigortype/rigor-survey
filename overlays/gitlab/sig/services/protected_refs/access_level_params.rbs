@@ -1,0 +1,6 @@
+module ProtectedRefs
+  class AccessLevelParams
+    def initialize: (untyped, untyped, ?with_defaults: (false | true)) -> void
+    def access_levels: () -> Array[untyped]
+  end
+end

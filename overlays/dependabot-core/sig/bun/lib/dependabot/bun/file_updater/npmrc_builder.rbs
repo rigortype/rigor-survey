@@ -1,0 +1,10 @@
+module Dependabot
+  module Bun
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class NpmrcBuilder
+        def initialize: (dependency_files: untyped, credentials: untyped, ?dependencies: untyped) -> void
+        def npmrc_content: () -> ("" | String)
+      end
+    end
+  end
+end

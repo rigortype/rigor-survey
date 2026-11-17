@@ -1,0 +1,7 @@
+module Users
+  module SupportPin
+    class UpdateService < ::Users::SupportPin::BaseService
+      def execute: () -> ({ status: :error, message: "Failed to create support PIN" } | { status: :success, pin: untyped, expires_at: untyped })
+    end
+  end
+end

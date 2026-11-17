@@ -1,0 +1,6 @@
+class Setting < ::ApplicationRecord
+  def self.cache_prefix_by_startup: () -> String
+  def self.cache_key: (untyped) -> String
+  def value: () -> (ActiveSupport::HashWithIndifferentAccess[untyped, untyped] | Array[untyped] | Float | Hash[String, untyped] | Integer | String | Symbol | false | nil | true)
+  def cache_key: () -> String
+end

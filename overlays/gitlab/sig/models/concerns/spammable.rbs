@@ -1,0 +1,7 @@
+module Spammable
+  def spam: () -> (false | true)
+  def needs_recaptcha!: () -> true
+  def supports_recaptcha?: () -> false
+  def spam!: () -> true
+  def clear_spam_flags!: () -> false
+end

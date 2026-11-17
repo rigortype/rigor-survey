@@ -1,0 +1,13 @@
+module ActiveJob
+  class UnknownJobClassError < ::NameError
+    def initialize: (untyped) -> void
+  end
+  module Core
+    def initialize: (*untyped, **untyped) -> void
+    def serialize: () -> Hash[String, untyped]
+    def set: (?untyped) -> ActiveJob::Core
+    module ClassMethods
+      def set: (?untyped) -> ActiveJob::ConfiguredJob
+    end
+  end
+end

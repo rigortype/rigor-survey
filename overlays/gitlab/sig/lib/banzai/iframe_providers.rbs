@@ -1,0 +1,18 @@
+module Banzai
+  module IframeProviders
+    def self.match: (untyped) -> (Banzai::IframeProviders::Match | nil)
+    def self.known_providers: () -> Array[Banzai::IframeProviders::Provider]
+    def self.reset!: () -> nil
+    def self.load_config!: () -> (Array[untyped] | Float | Hash[String, untyped] | Integer | String | false | nil | true)
+    def self.load_providers: () -> Array[Banzai::IframeProviders::Provider]
+    def self.load_providers!: () -> Array[Banzai::IframeProviders::Provider]
+    class Match < ::Struct[untyped]
+      def url: () -> untyped
+      def provider: () -> untyped
+      def url=: (untyped) -> untyped
+      def provider=: (untyped) -> untyped
+      def self.new: (?url: untyped, ?provider: untyped) -> instance
+      def self.[]: (?url: untyped, ?provider: untyped) -> instance
+    end
+  end
+end

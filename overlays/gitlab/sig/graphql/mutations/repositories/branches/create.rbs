@@ -1,0 +1,9 @@
+module Mutations
+  module Repositories
+    module Branches
+      class Create < ::Mutations::BaseMutation
+        def resolve: (project_path: untyped, name: untyped, ref: untyped) -> { branch: untyped, errors: Array[untyped] }
+      end
+    end
+  end
+end

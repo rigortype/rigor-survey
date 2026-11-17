@@ -1,0 +1,4 @@
+class AccessTokenValidationService
+  def initialize: (untyped, ?request: untyped) -> void
+  def validate: (?scopes: [Symbol]) -> (:expired | :impersonation_disabled | :insufficient_scope | :revoked | :valid)
+end

@@ -1,0 +1,8 @@
+module Integrations
+  module Base
+    module Monitoring
+      def can_query?: () -> bot
+      def query: (untyped, *untyped) -> bot
+    end
+  end
+end

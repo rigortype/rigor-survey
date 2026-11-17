@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Status
+      module Build
+        class Canceled < ::Gitlab::Ci::Status::Extended
+          def illustration: () -> { image: "illustrations/empty-state/empty-job-canceled-md.svg", size: "", title: untyped }
+        end
+      end
+    end
+  end
+end

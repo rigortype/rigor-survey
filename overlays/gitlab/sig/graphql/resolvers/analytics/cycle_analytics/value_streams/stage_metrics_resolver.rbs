@@ -1,0 +1,11 @@
+module Resolvers
+  module Analytics
+    module CycleAnalytics
+      module ValueStreams
+        class StageMetricsResolver < ::Resolvers::BaseResolver
+          def resolve: (**untyped) -> Gitlab::Analytics::CycleAnalytics::DataCollector
+        end
+      end
+    end
+  end
+end

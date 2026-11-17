@@ -1,0 +1,9 @@
+module Mail
+  class Address
+    def initialize: (?untyped) -> void
+    def to_s: () -> String
+    def inspect: () -> String
+    def encoded: () -> String
+    def decoded: () -> String
+  end
+end

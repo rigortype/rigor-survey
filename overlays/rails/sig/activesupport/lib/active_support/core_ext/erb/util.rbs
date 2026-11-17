@@ -1,0 +1,5 @@
+class ERB
+  module Util
+    def self.tokenize: (untyped) -> (Array[[:CLOSE, untyped] | [:CODE, untyped] | [:OPEN, untyped] | [:TEXT, untyped]] | [[:PLAIN, untyped]])
+  end
+end

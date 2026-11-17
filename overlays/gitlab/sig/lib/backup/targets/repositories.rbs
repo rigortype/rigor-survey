@@ -1,0 +1,9 @@
+module Backup
+  module Targets
+    class Repositories < ::Backup::Targets::Target
+      def initialize: (untyped, strategy: untyped, options: untyped, ?storages: untyped, ?paths: untyped, ?skip_paths: untyped) -> void
+      def asynchronous?: () -> false
+      def logger: () -> Gitlab::BackupLogger
+    end
+  end
+end

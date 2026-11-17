@@ -1,0 +1,5 @@
+module Redmine
+  module AccessKeys
+    def self.key_for: (untyped) -> ("4" | "7" | "e" | "f" | "n" | "p" | nil)
+  end
+end

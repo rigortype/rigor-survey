@@ -1,0 +1,5 @@
+class MaxHeap
+  def initialize: (?untyped) -> void
+  def insert: (untyped) -> nil
+  def arr: () -> Array[untyped]
+end

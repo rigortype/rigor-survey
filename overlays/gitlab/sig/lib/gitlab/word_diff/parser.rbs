@@ -1,0 +1,8 @@
+module Gitlab
+  module WordDiff
+    class Parser
+      def parse: (untyped, ?diff_file: untyped) -> (Enumerator[untyped, untyped] | [])
+      def counter: () -> Gitlab::WordDiff::PositionsCounter
+    end
+  end
+end

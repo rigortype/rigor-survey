@@ -1,0 +1,8 @@
+module Gitlab
+  module Git
+    class Ref
+      def initialize: (untyped, String, untyped, nil) -> void
+      def dereferenced_target: () -> nil
+    end
+  end
+end

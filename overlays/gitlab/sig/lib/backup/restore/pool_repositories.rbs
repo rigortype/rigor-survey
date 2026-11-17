@@ -1,0 +1,16 @@
+module Backup
+  module Restore
+    module PoolRepositories
+      class Result < ::Struct[untyped]
+        def disk_path: () -> untyped
+        def status: () -> untyped
+        def error_message: () -> untyped
+        def disk_path=: (untyped) -> untyped
+        def status=: (untyped) -> untyped
+        def error_message=: (untyped) -> untyped
+        def self.new: (?disk_path: untyped, ?status: untyped, ?error_message: untyped) -> instance
+        def self.[]: (?disk_path: untyped, ?status: untyped, ?error_message: untyped) -> instance
+      end
+    end
+  end
+end

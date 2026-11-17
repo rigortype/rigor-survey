@@ -1,0 +1,11 @@
+module Onboarding
+  module FeatureLibrary
+    class UpgradeCta
+      def initialize: (user: nil, resource: nil, plan: Symbol, ?base_plan: untyped) -> void
+      def build: () -> nil
+      def user: () -> nil
+      def resource: () -> nil
+      def plan: () -> (:premium | :ultimate)
+    end
+  end
+end

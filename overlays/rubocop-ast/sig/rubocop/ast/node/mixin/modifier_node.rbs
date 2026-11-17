@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module ModifierNode
+      def modifier_form?: () -> (false | true)
+    end
+  end
+end

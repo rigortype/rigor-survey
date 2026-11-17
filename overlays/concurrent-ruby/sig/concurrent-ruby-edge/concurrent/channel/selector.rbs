@@ -1,0 +1,10 @@
+module Concurrent
+  class Channel
+    class Selector
+      def take: (untyped) ?{ (*untyped) -> untyped } -> ::Array[untyped]
+      def put: (untyped, untyped) ?{ (*untyped) -> untyped } -> ::Array[untyped]
+      def after: (untyped) ?{ (*untyped) -> untyped } -> ::Array[untyped]
+      def default: () ?{ (*untyped) -> untyped } -> ::Array[untyped]
+    end
+  end
+end

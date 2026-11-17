@@ -1,0 +1,8 @@
+module ActiveSupport
+  class OrderedHash < ::Hash
+    def select: (*untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::OrderedHash
+    def reject: (*untyped) ?{ (*untyped) -> untyped } -> ActiveSupport::OrderedHash
+    def nested_under_indifferent_access: () -> ActiveSupport::OrderedHash
+    def extractable_options?: () -> true
+  end
+end

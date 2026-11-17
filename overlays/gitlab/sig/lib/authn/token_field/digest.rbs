@@ -1,0 +1,8 @@
+module Authn
+  module TokenField
+    class Digest < ::Authn::TokenField::Base
+      def encode: (untyped) -> String
+      def set_token: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Types
+  class ProjectType < ::Types::BaseObject
+    def statistics_details_paths: () -> { repository: untyped, wiki: untyped, build_artifacts: untyped, packages: untyped, snippets: untyped, container_registry: untyped }
+    def grafana_integration: () -> nil
+  end
+end

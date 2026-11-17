@@ -1,0 +1,7 @@
+module Preloaders
+  module Projects
+    class NotesPreloader
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

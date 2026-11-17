@@ -1,0 +1,10 @@
+module Spree
+  module Emails
+    module Samples
+      class OrderGroup < ::Spree::Emails::Samples::Base
+        def self.record_type: () -> "order_group"
+        def variables: () -> { order_group: untyped, resend: false }
+      end
+    end
+  end
+end

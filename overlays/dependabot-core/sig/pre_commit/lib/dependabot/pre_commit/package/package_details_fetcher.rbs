@@ -1,0 +1,12 @@
+module Dependabot
+  module PreCommit
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, credentials: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped) -> void
+        def release_list_for_git_dependency: () -> (Dependabot::Version | String | nil)
+        def version_tag_release: () -> (Dependabot::Version | nil)
+        def commit_sha_release: () -> (Dependabot::Version | String | nil)
+      end
+    end
+  end
+end

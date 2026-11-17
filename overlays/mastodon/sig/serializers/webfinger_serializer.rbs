@@ -1,0 +1,4 @@
+class WebfingerSerializer < ::ActiveModel::Serializer[untyped]
+  def aliases: () -> ([untyped, untyped] | [untyped])
+  def links: () -> Array[Hash[Symbol, untyped] | Hash[Symbol, String]]
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Metrics
+    class MethodCall
+      def initialize: (String, Symbol, String, untyped) -> void
+      def call_count: () -> (0 | Integer)
+      def labels: () -> { module: untyped, method: untyped }
+    end
+  end
+end

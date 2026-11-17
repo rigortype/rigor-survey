@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    class CreateDistributionService
+      def initialize: (untyped, untyped, untyped) -> void
+      def errors: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Feature
+  class Gitaly
+    def self.user_actor: (?untyped) -> (Feature::Gitaly::ActorWrapper | nil)
+    def self.project_actor: (untyped) -> (Feature::Gitaly::ActorWrapper | nil)
+    def self.group_actor: (untyped) -> (Feature::Gitaly::ActorWrapper | nil)
+    def self.actor_wrapper: (untyped, untyped) -> Feature::Gitaly::ActorWrapper
+    class ActorWrapper
+      def initialize: (singleton(Group), untyped) -> void
+      def flipper_id: () -> String
+    end
+  end
+end

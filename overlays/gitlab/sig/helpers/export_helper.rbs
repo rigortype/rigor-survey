@@ -1,0 +1,4 @@
+module ExportHelper
+  def project_export_descriptions: () -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+  def group_export_descriptions: () -> [untyped, untyped, untyped, untyped, untyped]
+end

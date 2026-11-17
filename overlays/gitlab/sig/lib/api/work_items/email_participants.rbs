@@ -1,0 +1,7 @@
+module API
+  module WorkItems
+    class EmailParticipants < ::API::Base
+      def filter_field_keys: (untyped) -> Array[untyped]
+    end
+  end
+end

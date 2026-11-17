@@ -1,0 +1,11 @@
+module Admin
+  class SystemCheck
+    class Message
+      def initialize: (Symbol, ?Symbol, ?Symbol, ?critical: Symbol) -> void
+      def key: () -> :key_value
+      def value: () -> :value_value
+      def action: () -> :action_value
+      def critical: () -> :critical_value
+    end
+  end
+end

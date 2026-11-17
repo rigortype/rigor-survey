@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Projects
+      class GetProjectTool < ::Mcp::Tools::Base::GraphqlTool
+        def build_variables: () -> { fullPath: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class WebfingerResource
+  def initialize: (untyped) -> void
+  class InvalidRequest < ::StandardError
+  end
+end

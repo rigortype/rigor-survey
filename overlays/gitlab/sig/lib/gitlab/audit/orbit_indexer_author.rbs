@@ -1,0 +1,7 @@
+module Gitlab
+  module Audit
+    class OrbitIndexerAuthor < ::Gitlab::Audit::NullAuthor
+      def initialize: (?name: untyped) -> void
+    end
+  end
+end

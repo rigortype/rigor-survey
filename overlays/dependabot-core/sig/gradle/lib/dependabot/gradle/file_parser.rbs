@@ -1,0 +1,9 @@
+module Dependabot
+  module Gradle
+    class FileParser < ::Dependabot::FileParsers::Base
+      def self.slashy_string_start?: (untyped, untyped) -> (false | true)
+      def self.mask_region!: (untyped, untyped, untyped, untyped) -> Range[untyped]
+      def ecosystem: () -> (::Ecosystem | nil)
+    end
+  end
+end

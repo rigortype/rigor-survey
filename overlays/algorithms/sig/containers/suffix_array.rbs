@@ -1,0 +1,6 @@
+module Containers
+  class SuffixArray
+    def initialize: (Integer | String) -> void
+    def has_substring?: (Integer | String | nil) -> (false | true)
+  end
+end

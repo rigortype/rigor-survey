@@ -1,0 +1,3 @@
+class JoinedGroupsFinder
+  def initialize: (untyped) -> void
+end

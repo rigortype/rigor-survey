@@ -1,0 +1,9 @@
+module Mutations
+  module Namespace
+    module PackageSettings
+      class Update < ::Mutations::BaseMutation
+        def resolve: (namespace_path: untyped, **untyped) -> { package_settings: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module MergeRequests
+  class StackFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

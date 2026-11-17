@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Encryption
+    class MessageSerializer
+      def load: (untyped) -> ActiveRecord::Encryption::Message
+      def binary?: () -> false
+    end
+  end
+end

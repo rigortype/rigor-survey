@@ -1,0 +1,10 @@
+module Gitlab
+  module Tracking
+    class StandardContext
+      def initialize: (?namespace: untyped, ?project_id: untyped, ?user: untyped, ?feature_enabled_by_namespace_ids: untyped, **untyped) -> void
+      def environment: () -> ("development" | "org" | "production" | "self-managed" | "staging")
+      def source: () -> "gitlab-rails"
+      def to_h: () -> Hash[untyped, untyped]
+    end
+  end
+end

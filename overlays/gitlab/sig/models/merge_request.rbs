@@ -1,0 +1,58 @@
+class MergeRequest < ::ApplicationRecord
+  def suggested_reviewer_users: () -> ActiveRecord::Relation[User]
+  def check_state?: (untyped) -> (false | true)
+  def merge_status_inputs: () -> [untyped, untyped]
+  def self.reference_prefix: () -> "!"
+  def self.order_by_metric_column: (untyped, untyped) -> Gitlab::Pagination::Keyset::Order
+  def diff_head_pipeline_success?: () -> (false | true)
+  def self.reference_pattern: () -> Regexp
+  def self.project_foreign_key: () -> "target_project_id"
+  def self.draft?: (untyped) -> (false | true)
+  def self.participant_includes: () -> Array[untyped]
+  def to_reference: (?untyped, ?full: untyped) -> String
+  def supports_suggestion?: () -> true
+  def merge_participants: () -> Array[untyped]
+  def note_positions_for_paths: (untyped, ?untyped) -> Gitlab::Diff::PositionCollection
+  def preloads_discussion_diff_highlighting?: () -> true
+  def repository_diff_refs: () -> Gitlab::Diff::DiffRefs
+  def conflicting_mr_message: (untyped) -> String
+  def source_project_missing?: () -> (false | true)
+  def version_params_for: (untyped) -> (nil | { diff_id: untyped } | { diff_id: untyped, start_sha: untyped })
+  def draft?: () -> (false | true)
+  def draft_title: () -> String
+  def skipped_auto_merge_checks: (?untyped) -> { skip_ci_check: untyped, skip_approved_check: untyped, skip_conflict_check: untyped, skip_draft_check: untyped, skip_blocked_check: untyped, skip_discussions_check: untyped, skip_external_status_check: untyped, skip_requested_changes_check: untyped, skip_locked_paths_check: untyped, skip_jira_check: untyped, skip_locked_lfs_files_check: untyped, skip_security_policy_check: untyped, skip_security_policy_pipeline_check: untyped, skip_merge_time_check: untyped, skip_merge_request_title_check: untyped, skip_commits_check: untyped }
+  def self.mergeable_state_checks: (?order: untyped) -> ([singleton(MergeRequests::Mergeability::CheckOpenStatusService), singleton(MergeRequests::Mergeability::CheckDraftStatusService), singleton(MergeRequests::Mergeability::CheckDiscussionsStatusService), singleton(MergeRequests::Mergeability::CheckCiStatusService), singleton(MergeRequests::Mergeability::CheckMergeTimeService), singleton(MergeRequests::Mergeability::CheckLfsFileLocksService), singleton(MergeRequests::Mergeability::CheckCommitsStatusService)] | [singleton(MergeRequests::Mergeability::CheckOpenStatusService), singleton(MergeRequests::Mergeability::CheckDraftStatusService), singleton(MergeRequests::Mergeability::CheckMergeTimeService), singleton(MergeRequests::Mergeability::CheckLfsFileLocksService), singleton(MergeRequests::Mergeability::CheckDiscussionsStatusService), singleton(MergeRequests::Mergeability::CheckCiStatusService), singleton(MergeRequests::Mergeability::CheckCommitsStatusService)])
+  def self.mergeable_state_checks_by_tier: () -> { trivial: [singleton(MergeRequests::Mergeability::CheckOpenStatusService), singleton(MergeRequests::Mergeability::CheckDraftStatusService)], light: [singleton(MergeRequests::Mergeability::CheckMergeTimeService)], heavy: [singleton(MergeRequests::Mergeability::CheckLfsFileLocksService), singleton(MergeRequests::Mergeability::CheckDiscussionsStatusService), singleton(MergeRequests::Mergeability::CheckCiStatusService), singleton(MergeRequests::Mergeability::CheckCommitsStatusService)] }
+  def self.likely_to_fail_first_checks_by_group: () -> { likely_light: [singleton(MergeRequests::Mergeability::CheckOpenStatusService), singleton(MergeRequests::Mergeability::CheckDraftStatusService), singleton(MergeRequests::Mergeability::CheckDiscussionsStatusService)], likely_heavy: [singleton(MergeRequests::Mergeability::CheckCiStatusService)], light: [singleton(MergeRequests::Mergeability::CheckMergeTimeService)], heavy: [singleton(MergeRequests::Mergeability::CheckLfsFileLocksService), singleton(MergeRequests::Mergeability::CheckCommitsStatusService)] }
+  def self.mergeable_git_state_checks: () -> [singleton(MergeRequests::Mergeability::CheckRebaseStatusService), singleton(MergeRequests::Mergeability::CheckConflictStatusService)]
+  def self.all_mergeability_checks: () -> Array[untyped]
+  def preload_branches: () -> nil
+  def has_ci?: () -> (false | true)
+  def branch_missing?: () -> (false | true)
+  def read_only_target_project?: () -> false
+  def ref_path: () -> String
+  def merge_ref_path: () -> String
+  def train_ref_path: () -> String
+  def rebase_on_merge_path: () -> String
+  def refs_to_cleanup: (?only: untyped) -> Array[untyped]
+  def self.merge_train_ref?: (untyped) -> (false | true)
+  def has_test_reports?: () -> (false | true)
+  def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+  def has_coverage_reports_for?: (untyped) -> (false | true)
+  def has_terraform_reports?: () -> (false | true)
+  def has_codequality_reports_for?: (untyped) -> (false | true)
+  def agentic_sast_reports?: () -> false
+  def can_be_reverted?: (untyped) -> (false | true)
+  def has_no_commits?: () -> (false | true)
+  def discussions_rendered_on_frontend?: () -> true
+  def real_time_notes_enabled?: () -> true
+  def allows_reviewers?: () -> true
+  def supports_assignee?: () -> true
+  def enabled_reports: () -> { sast: untyped, secret_detection: untyped }
+  def merge_blocked_by_other_mrs?: () -> false
+  def execute_merge_checks: (untyped, ?params: untyped, ?execute_all: untyped, ?use_cache: untyped) -> ServiceResponse
+  def can_suggest_reviewers?: () -> false
+  def temporarily_unapproved?: () -> false
+  def merge_exclusive_lease: () -> Gitlab::ExclusiveLease
+  def log_approval_deletion_on_merged_or_locked_mr: (source: untyped, current_user: untyped, ?cause: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+end

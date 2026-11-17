@@ -1,0 +1,12 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module ClickHouse
+        class FilterDefinition < ::Gitlab::Database::Aggregation::ClickHouse::PartDefinition
+          def initialize: (Symbol, Symbol, ?untyped, **untyped) -> void
+          def metric?: () -> false
+        end
+      end
+    end
+  end
+end

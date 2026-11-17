@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module LinkedItems
+      class Base < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> { work_item: untyped, errors: Array[untyped] | [], message: untyped }
+      end
+    end
+  end
+end

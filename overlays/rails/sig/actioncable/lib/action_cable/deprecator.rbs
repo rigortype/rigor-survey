@@ -1,0 +1,3 @@
+module ActionCable
+  def self.deprecator: () -> ActiveSupport::Deprecation
+end

@@ -1,0 +1,5 @@
+module Mail
+  class Address
+    def self.wrap: (untyped) -> Mail::Address
+  end
+end

@@ -1,0 +1,3 @@
+module ResolvesGroup
+  def group_resolver: () -> Resolvers::GroupResolver
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module Pub
+    module Helpers
+      def self.pub_helpers_path: () -> String
+      def self.run_infer_sdk_versions: (untyped, ?url: untyped) -> (Dependabot::Pub::Helpers::SdkVersions | nil)
+    end
+  end
+end

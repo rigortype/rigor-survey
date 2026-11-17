@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Interpolator
+          def initialize: (untyped, untyped, untyped, untyped) -> void
+          def valid?: () -> (false | true)
+          def error_message: () -> String
+          def interpolated?: () -> (false | true)
+          def errors: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

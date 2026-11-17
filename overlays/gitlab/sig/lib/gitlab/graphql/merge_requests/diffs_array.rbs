@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    module MergeRequests
+      class DiffsArray < ::Gitlab::Graphql::ExternallyPaginatedArray
+        def initialize: (*untyped, ?overflow: (false | true), **untyped) -> void
+        def overflow: () -> true
+      end
+    end
+  end
+end

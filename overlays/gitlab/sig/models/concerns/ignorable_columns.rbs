@@ -1,0 +1,13 @@
+module IgnorableColumns
+  class ColumnIgnore < ::Struct[untyped]
+    def remove_after: () -> untyped
+    def remove_with: () -> untyped
+    def remove_never: () -> untyped
+    def remove_after=: (untyped) -> untyped
+    def remove_with=: (untyped) -> untyped
+    def remove_never=: (untyped) -> untyped
+    def self.new: (?remove_after: untyped, ?remove_with: untyped, ?remove_never: untyped) -> instance | (?untyped remove_after, ?untyped remove_with, ?untyped remove_never) -> instance
+    def self.[]: (?remove_after: untyped, ?remove_with: untyped, ?remove_never: untyped) -> instance | (?untyped remove_after, ?untyped remove_with, ?untyped remove_never) -> instance
+    def safe_to_remove?: () -> (false | true)
+  end
+end

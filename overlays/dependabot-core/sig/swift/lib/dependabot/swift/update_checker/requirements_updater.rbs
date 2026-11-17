@@ -1,0 +1,12 @@
+module Dependabot
+  module Swift
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, target_version: untyped, ?xcode_mode: untyped, ?target_commit_sha: untyped) -> void
+        def updated_requirements: () -> (Array[Dependabot::DependencyRequirement] | Array[::DependencyRequirement])
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+        def target_version: () -> Dependabot::Version
+      end
+    end
+  end
+end

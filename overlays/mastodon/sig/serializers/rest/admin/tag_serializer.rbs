@@ -1,0 +1,8 @@
+module REST
+  module Admin
+    class TagSerializer < ::REST::TagSerializer
+      def id: () -> String
+      def requires_review: () -> (false | true)
+    end
+  end
+end

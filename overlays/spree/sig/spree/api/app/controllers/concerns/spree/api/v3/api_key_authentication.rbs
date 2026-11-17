@@ -1,0 +1,10 @@
+module Spree
+  module Api
+    module V3
+      module ApiKeyAuthentication
+        def authenticate_api_key!: () -> (false | true)
+        def authenticate_secret_key!: () -> (false | true)
+      end
+    end
+  end
+end

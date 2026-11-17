@@ -1,0 +1,4 @@
+class ProjectCiCdSetting < ::ApplicationRecord
+  def pipeline_override_role_privileged?: () -> (false | true)
+  def restrict_user_defined_variables=: (untyped) -> ("developer" | "maintainer" | nil)
+end

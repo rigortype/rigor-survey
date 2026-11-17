@@ -1,0 +1,7 @@
+module API
+  module Admin
+    class InstanceClusters < ::API::Base
+      def clusterable_instance: () -> ::Clusters::Instance
+    end
+  end
+end

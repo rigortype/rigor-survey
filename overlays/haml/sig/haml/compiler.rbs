@@ -1,0 +1,5 @@
+module Haml
+  class Compiler
+    def initialize: (?untyped) -> void
+  end
+end

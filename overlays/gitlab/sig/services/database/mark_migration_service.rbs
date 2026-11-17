@@ -1,0 +1,6 @@
+module Database
+  class MarkMigrationService < ::Database::BaseMigrationService
+    def initialize: (connection: untyped, version: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  module Cargo
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::Cargo::Requirement]
+      def self.parse_dep_string: (untyped) -> (nil | { name: untyped, normalised_name: untyped, version: String | nil, requirement: untyped, extras: "cli" | nil })
+      def initialize: (*untyped) -> void
+    end
+  end
+end

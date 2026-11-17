@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    class ConsistencyChecker
+      def initialize: (source_model: singleton(Namespace), target_model: singleton(::Ci::NamespaceMirror), source_columns: [String, String], target_columns: [String, String]) -> void
+      def execute: (start_id: untyped) -> Hash[untyped, untyped]
+      def source_model: () -> singleton(Namespace)
+      def target_model: () -> singleton(::Ci::NamespaceMirror)
+      def source_columns: () -> ["id", "traversal_ids"]
+      def target_columns: () -> ["namespace_id", "traversal_ids"]
+      def result: () -> { matches: 0, mismatches: 0, batches: 0, mismatches_details: [] }
+    end
+  end
+end

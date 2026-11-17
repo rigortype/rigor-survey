@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module CurrentOrganizationHelpers
+      def safe_find_organization_actor_from_sources: () -> (DeployToken | User | nil)
+    end
+  end
+end

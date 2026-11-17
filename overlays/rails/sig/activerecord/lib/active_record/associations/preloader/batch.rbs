@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Associations
+    class Preloader
+      class Batch
+        def initialize: (untyped, available_records: untyped) -> void
+        def call: () -> nil
+      end
+    end
+  end
+end

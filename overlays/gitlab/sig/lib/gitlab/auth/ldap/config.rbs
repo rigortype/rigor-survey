@@ -1,0 +1,18 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class Config
+        def self.available_servers: () -> Array[untyped]
+        def self._available_servers: () -> Array[untyped]
+        def self.available_providers: () -> Array[untyped]
+        def self.invalid_provider: (untyped) -> bot
+        def initialize: (untyped) -> void
+        def adapter_options: () -> (Hash[untyped, untyped] | { host: untyped, port: untyped, hosts: untyped, encryption: nil | { method: :simple_tls | :start_tls, tls_options: untyped }, instrumentation_service: singleton(ActiveSupport::Notifications) })
+        def omniauth_options: () -> (Hash[untyped, untyped] | { host: untyped, port: untyped, hosts: untyped, base: untyped, encryption: untyped, filter: untyped, name_proc: Proc, disable_verify_certificates: false | true, tls_options: untyped })
+        def attributes: () -> Hash[untyped, untyped]
+        def name_proc: () -> Proc
+        def default_attributes: () -> Hash[String, "cn" | "givenName" | "sn" | Array["sAMAccountName" | "uid" | "userid" | String] | ["mail", "email", "userPrincipalName"]]
+      end
+    end
+  end
+end

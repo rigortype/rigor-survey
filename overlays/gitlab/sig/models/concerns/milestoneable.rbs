@@ -1,0 +1,3 @@
+module Milestoneable
+  def supports_milestone?: () -> (false | true)
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module DiscussionsDiff
+    class FileCollection
+      def initialize: ([untyped, untyped]) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module Members
+    class EffectiveAccessLevelPerUserFinder < ::Projects::Members::EffectiveAccessLevelFinder
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,18 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      module WorkspaceOperations
+        module Create
+          module DesiredConfig
+            class BmDevfileResourceModifier
+              def self.set_security_context: (desired_config_array: untyped, allow_privilege_escalation: untyped) -> nil
+              def self.patch_default_resources: (desired_config_array: untyped, default_resources_per_workspace_container: untyped) -> nil
+              def self.inject_secrets: (desired_config_array: untyped, env_secret_name: untyped, file_secret_name: untyped) -> nil
+              def self.set_service_account: (desired_config_array: untyped, service_account_name: untyped) -> nil
+            end
+          end
+        end
+      end
+    end
+  end
+end

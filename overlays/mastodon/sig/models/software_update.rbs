@@ -1,0 +1,5 @@
+class SoftwareUpdate < ::ApplicationRecord
+  def gem_version: () -> Gem::Version
+  def pending?: () -> (false | true)
+  def self.by_version: () -> Array[untyped]
+end

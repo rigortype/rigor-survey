@@ -1,0 +1,7 @@
+module Mutations
+  module Wikis
+    class WikiPageSubscribe < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { wiki_page: untyped, errors: [] }
+    end
+  end
+end

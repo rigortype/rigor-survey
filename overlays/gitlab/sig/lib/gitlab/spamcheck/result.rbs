@@ -1,0 +1,7 @@
+module Gitlab
+  module Spamcheck
+    class Result
+      def initialize: (untyped) -> void
+    end
+  end
+end

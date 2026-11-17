@@ -1,0 +1,14 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      class Configuration
+        def monitors: () -> (Gitlab::Memory::Watchdog::Configuration::MonitorStack | nil)
+        class MonitorStack
+          def push: (untyped, *untyped, **untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+          def call_each: () -> Array[untyped]
+          def empty?: () -> (false | true)
+        end
+      end
+    end
+  end
+end

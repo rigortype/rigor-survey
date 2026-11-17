@@ -1,0 +1,7 @@
+module Mail
+  class Sendmail
+    def initialize: (untyped) -> void
+    class DeliveryError < ::StandardError
+    end
+  end
+end

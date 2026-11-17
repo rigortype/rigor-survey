@@ -1,0 +1,5 @@
+class UserPolicy < ::Policy
+  def index?: () -> true
+  def deactivated?: () -> true
+  def login?: () -> true
+end

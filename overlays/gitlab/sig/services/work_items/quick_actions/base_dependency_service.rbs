@@ -1,0 +1,7 @@
+module WorkItems
+  module QuickActions
+    class BaseDependencyService
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+    end
+  end
+end

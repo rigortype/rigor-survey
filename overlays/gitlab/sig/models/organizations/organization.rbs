@@ -1,0 +1,9 @@
+module Organizations
+  class Organization < ::ApplicationRecord
+    def self.default_organization: () -> (Organizations::Organization | nil)
+    def visibility_level_field: () -> :visibility_level
+    def scoped_paths?: () -> (false | true)
+    def inspect: () -> String
+    def full_path: () -> ("" | String)
+  end
+end

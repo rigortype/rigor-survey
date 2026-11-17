@@ -1,0 +1,9 @@
+module Dependabot
+  class Updater
+    class DependencyGroupChangeBatch
+      def initialize: (initial_dependency_files: untyped) -> void
+      def updated_dependencies: () -> Array[Dependabot::Dependency]
+      def notices: () -> Array[Dependabot::Notice]
+    end
+  end
+end

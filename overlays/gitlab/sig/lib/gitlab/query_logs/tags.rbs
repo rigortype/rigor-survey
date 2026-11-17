@@ -1,0 +1,9 @@
+module Gitlab
+  module QueryLogs
+    module Tags
+      def self.console_hostname: (untyped) -> (String | nil)
+      def self.console_username: (untyped) -> (String | nil)
+      def self.line: (untyped) -> (String | nil)
+    end
+  end
+end

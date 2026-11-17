@@ -1,0 +1,50 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      class ValidateConstraint < ::Data
+        def name: () -> untyped
+        def self.new: (name: untyped) -> instance | (untyped name) -> instance
+        def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+      end
+      class AddExclusionConstraint < ::Data
+        def exclusion_constraint: () -> untyped
+        def self.new: (exclusion_constraint: untyped) -> instance | (untyped exclusion_constraint) -> instance
+        def self.[]: (exclusion_constraint: untyped) -> instance | (untyped exclusion_constraint) -> instance
+      end
+      class AddUniqueConstraint < ::Data
+        def unique_constraint: () -> untyped
+        def self.new: (unique_constraint: untyped) -> instance | (untyped unique_constraint) -> instance
+        def self.[]: (unique_constraint: untyped) -> instance | (untyped unique_constraint) -> instance
+      end
+      class ExclusionConstraintDefinition < ::Struct[untyped]
+        def table_name: () -> untyped
+        def expression: () -> untyped
+        def options: () -> untyped
+        def table_name=: (untyped) -> untyped
+        def expression=: (untyped) -> untyped
+        def options=: (untyped) -> untyped
+        def self.new: (?table_name: untyped, ?expression: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped expression, ?untyped options) -> instance
+        def self.[]: (?table_name: untyped, ?expression: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped expression, ?untyped options) -> instance
+        def export_name_on_schema_dump?: () -> (false | nil | true)
+      end
+      class UniqueConstraintDefinition < ::Struct[untyped]
+        def table_name: () -> untyped
+        def column: () -> untyped
+        def options: () -> untyped
+        def table_name=: (untyped) -> untyped
+        def column=: (untyped) -> untyped
+        def options=: (untyped) -> untyped
+        def self.new: (?table_name: untyped, ?column: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped column, ?untyped options) -> instance
+        def self.[]: (?table_name: untyped, ?column: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped column, ?untyped options) -> instance
+        def export_name_on_schema_dump?: () -> (false | nil | true)
+      end
+      class TableDefinition < ::ActiveRecord::ConnectionAdapters::TableDefinition
+        def initialize: (*untyped, **untyped) -> void
+        def new_exclusion_constraint_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::ExclusionConstraintDefinition
+        def new_unique_constraint_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::UniqueConstraintDefinition
+        def exclusion_constraints: () -> Array[untyped]
+        def unique_constraints: () -> Array[untyped]
+      end
+    end
+  end
+end

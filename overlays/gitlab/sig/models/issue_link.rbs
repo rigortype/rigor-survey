@@ -1,0 +1,3 @@
+class IssueLink < ::ApplicationRecord
+  def self.issuable_type: () -> :issue
+end

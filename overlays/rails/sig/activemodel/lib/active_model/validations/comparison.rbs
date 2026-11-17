@@ -1,0 +1,7 @@
+module ActiveModel
+  module Validations
+    class ComparisonValidator < ::ActiveModel::EachValidator
+      def check_validity!: () -> nil
+    end
+  end
+end

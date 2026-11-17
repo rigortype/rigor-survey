@@ -1,0 +1,5 @@
+module DataTransfer
+  class ProjectDataTransferFinder
+    def initialize: (project: untyped, from: untyped, to: untyped, user: untyped) -> void
+  end
+end

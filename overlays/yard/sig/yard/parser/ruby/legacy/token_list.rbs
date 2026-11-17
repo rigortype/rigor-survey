@@ -1,0 +1,13 @@
+module YARD
+  module Parser
+    module Ruby
+      module Legacy
+        class TokenList < ::Array[untyped]
+          def initialize: (?untyped) -> void
+          def push: (*untyped) -> YARD::Parser::Ruby::Legacy::TokenList
+          def squeeze: (?untyped) -> YARD::Parser::Ruby::Legacy::TokenList
+        end
+      end
+    end
+  end
+end

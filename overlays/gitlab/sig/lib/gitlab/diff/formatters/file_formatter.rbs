@@ -1,0 +1,11 @@
+module Gitlab
+  module Diff
+    module Formatters
+      class FileFormatter < ::Gitlab::Diff::Formatters::BaseFormatter
+        def initialize: (untyped) -> void
+        def position_type: () -> "file"
+        def complete?: () -> (false | true)
+      end
+    end
+  end
+end

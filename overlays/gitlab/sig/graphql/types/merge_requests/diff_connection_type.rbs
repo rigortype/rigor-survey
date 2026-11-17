@@ -1,0 +1,7 @@
+module Types
+  module MergeRequests
+    class DiffConnectionType < ::GraphQL::Types::Relay::BaseConnection
+      def overflow: () -> (false | true)
+    end
+  end
+end

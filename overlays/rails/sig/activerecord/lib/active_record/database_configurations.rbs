@@ -1,0 +1,7 @@
+module ActiveRecord
+  class DatabaseConfigurations
+    def initialize: (?untyped) -> void
+    class InvalidConfigurationError < ::StandardError
+    end
+  end
+end

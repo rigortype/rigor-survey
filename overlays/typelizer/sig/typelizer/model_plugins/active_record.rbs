@@ -1,0 +1,7 @@
+module Typelizer
+  module ModelPlugins
+    class ActiveRecord
+      def initialize: (model_class: untyped, config: untyped) -> void
+    end
+  end
+end

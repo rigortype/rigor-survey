@@ -1,0 +1,7 @@
+module Gitlab
+  module Middleware
+    class DuoWorkflowId
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,27 @@
+module Dependabot
+  module SharedHelpers
+    def self.escape_command: (untyped) -> String
+    def self.prepare_command: (untyped, allow_unsafe_shell_command: untyped) -> ([Array[untyped], String] | [[untyped], untyped])
+    def self.parse_helper_response: (untyped) -> HelperResponse
+    def self.parse_helper_error: (untyped) -> [String, String | nil, Array[String] | nil]
+    def self.check_out_of_memory_error: (untyped, untyped, untyped) -> nil
+    def self.excon_middleware: () -> Array[untyped]
+    def self.excon_headers: (?untyped) -> Hash[untyped, untyped]
+    def self.excon_defaults: (?untyped) -> Hash[untyped, untyped]
+    def self.credential_helper_path: () -> String
+    def self.configure_git_to_use_https_with_credentials: (untyped, untyped, untyped, untyped) -> Integer
+    def self.git_store_content: (untyped) -> String
+    def self.authenticated_git_url: (username: untyped, password: untyped, host: untyped) -> String
+    def self.configure_git_to_use_https: (untyped) -> String
+    def self.reset_git_repo: (untyped) -> String
+    def self.find_safe_directories: () -> Array[String]
+    def self.check_out_of_disk_memory_error: (untyped, untyped) -> nil
+    def self.helper_subprocess_bash_command: (command: untyped, stdin_data: untyped, env: untyped) -> String
+    def self.sanitize_env_for_logging: (untyped) -> (Hash[untyped, untyped] | nil)
+    class HelperSubprocessFailed < ::Dependabot::DependabotError
+      def initialize: (message: untyped, error_context: untyped, ?error_class: untyped, ?trace: untyped) -> void
+      def sentry_context: () -> { fingerprint: [String | nil], extra: untyped }
+      def error_class: () -> String
+    end
+  end
+end

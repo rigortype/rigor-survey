@@ -1,0 +1,5 @@
+module Users
+  class GroupVisit < ::ApplicationRecord
+    def self.frecent_groups: (user_id: untyped, ?organization_id: untyped) -> Group
+  end
+end

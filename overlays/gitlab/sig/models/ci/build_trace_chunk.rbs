@@ -1,0 +1,9 @@
+module Ci
+  class BuildTraceChunk < ::Ci::ApplicationRecord
+    def self.persistable_store: () -> (:database | :fog)
+    def self.begin_fast_destroy: () -> Hash[untyped, untyped]
+    def range: () -> Range[untyped]
+    def flushed?: () -> (false | true)
+    def live?: () -> (false | true)
+  end
+end

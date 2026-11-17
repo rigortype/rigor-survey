@@ -1,0 +1,22 @@
+module ActionController
+  module ParamsWrapper
+    class Options < ::Struct[untyped]
+      def format: () -> untyped
+      def exclude: () -> untyped
+      def klass: () -> untyped
+      def name=: (untyped) -> untyped
+      def format=: (untyped) -> untyped
+      def include=: (untyped) -> untyped
+      def exclude=: (untyped) -> untyped
+      def klass=: (untyped) -> untyped
+      def model=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?format: untyped, ?include: untyped, ?exclude: untyped, ?klass: untyped, ?model: untyped) -> instance | (?untyped name, ?untyped format, ?untyped include, ?untyped exclude, ?untyped klass, ?untyped model) -> instance
+      def self.[]: (?name: untyped, ?format: untyped, ?include: untyped, ?exclude: untyped, ?klass: untyped, ?model: untyped) -> instance | (?untyped name, ?untyped format, ?untyped include, ?untyped exclude, ?untyped klass, ?untyped model) -> instance
+      def self.from_hash: (untyped) -> ActionController::ParamsWrapper::Options
+      def initialize: (untyped, untyped, untyped, untyped, untyped, untyped) -> void
+    end
+    module ClassMethods
+      def wrap_parameters: (untyped, ?untyped) -> ActionController::ParamsWrapper::Options
+    end
+  end
+end

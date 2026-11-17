@@ -1,0 +1,7 @@
+module Import
+  module PlaceholderReferences
+    class BaseService
+      def initialize: (import_source: untyped, import_uid: untyped) -> void
+    end
+  end
+end

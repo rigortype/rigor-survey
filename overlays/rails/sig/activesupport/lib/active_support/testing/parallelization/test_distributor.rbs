@@ -1,0 +1,21 @@
+module ActiveSupport
+  module Testing
+    class Parallelization
+      class TestDistributor
+        def add_test: (untyped) -> bot
+      end
+      class SharedQueueDistributor < ::ActiveSupport::Testing::Parallelization::TestDistributor
+        def add_test: (untyped) -> top
+        def interrupt: () -> top
+        def pending?: () -> (false | true)
+        def close: () -> Queue[untyped]
+      end
+      class RoundRobinDistributor < ::ActiveSupport::Testing::Parallelization::TestDistributor
+        def initialize: (worker_count: untyped) -> void
+        def add_test: (untyped) -> (ConditionVariable | nil)
+        def interrupt: () -> ConditionVariable
+        def close: () -> ConditionVariable
+      end
+    end
+  end
+end

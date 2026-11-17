@@ -1,0 +1,14 @@
+module Arel
+  module Math
+    def *: (untyped) -> Arel::Nodes::Multiplication
+    def +: (untyped) -> Arel::Nodes::Grouping
+    def -: (untyped) -> Arel::Nodes::Grouping
+    def /: (untyped) -> Arel::Nodes::Division
+    def &: (untyped) -> Arel::Nodes::Grouping
+    def |: (untyped) -> Arel::Nodes::Grouping
+    def ^: (untyped) -> Arel::Nodes::Grouping
+    def <<: (untyped) -> Arel::Nodes::Grouping
+    def >>: (untyped) -> Arel::Nodes::Grouping
+    def ~: () -> Arel::Nodes::BitwiseNot
+  end
+end

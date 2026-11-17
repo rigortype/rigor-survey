@@ -1,0 +1,14 @@
+module Organizations
+  module Release
+    class Flag < ::Struct[untyped]
+      def name: () -> untyped
+      def description: () -> untyped
+      def stage: () -> untyped
+      def name=: (untyped) -> untyped
+      def description=: (untyped) -> untyped
+      def stage=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?description: untyped, ?stage: untyped) -> instance
+      def self.[]: (?name: untyped, ?description: untyped, ?stage: untyped) -> instance
+    end
+  end
+end

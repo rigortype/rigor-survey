@@ -1,0 +1,11 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class Column
+      def initialize: (untyped, untyped, untyped, ?untyped, ?untyped, ?untyped, ?collation: untyped, ?comment: untyped, **untyped) -> void
+      def as_schema_json: () -> Hash[untyped, untyped]
+    end
+    class NullColumn < ::ActiveRecord::ConnectionAdapters::Column
+      def initialize: (untyped, **untyped) -> void
+    end
+  end
+end

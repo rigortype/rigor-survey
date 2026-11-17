@@ -1,0 +1,5 @@
+module Keys
+  class ExpiryNotificationService < ::Keys::BaseService
+    def initialize: (untyped, untyped) -> void
+  end
+end

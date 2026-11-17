@@ -1,0 +1,7 @@
+module REST
+  class StatusEditSerializer < ::ActiveModel::Serializer[untyped]
+    def content: () -> String
+    def poll: () -> { options: Array[{ title: String }] }
+    def quote: () -> (Quote | nil)
+  end
+end

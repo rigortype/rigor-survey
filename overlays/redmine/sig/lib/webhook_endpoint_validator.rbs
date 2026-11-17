@@ -1,0 +1,8 @@
+class WebhookEndpointValidator < ::ActiveModel::EachValidator
+  def self.ips_for_uri: (untyped) -> Array[untyped]
+  def self.safe_webhook_uri?: (untyped) -> (false | true)
+  def self.valid_scheme?: (untyped) -> (false | true)
+  def self.blocked_hosts: () -> { ips: untyped, host: Regexp | nil }
+  def self.valid_host?: (untyped) -> (false | true)
+  def self.valid_ips: (untyped) -> (Array[untyped] | false | nil)
+end

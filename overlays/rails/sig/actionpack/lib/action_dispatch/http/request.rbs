@@ -1,0 +1,20 @@
+module ActionDispatch
+  class Request
+    def self.empty: () -> ActionDispatch::Request
+    def initialize: (untyped) -> void
+    def rack_request: () -> Rack::Request
+    def key?: (String | Symbol) -> bool
+    def headers: () -> ActionDispatch::Http::Headers
+    def original_fullpath: () -> String
+    def fullpath: () -> String
+    def original_url: () -> String
+    def media_type: () -> String?
+    def content_length: () -> Integer
+    def ip: () -> String?
+    def remote_ip: () -> String
+    def request_id: () -> String?
+    def unsafe_method?: () -> (false | true)
+    def local?: () -> bool
+    def inspect: () -> String
+  end
+end

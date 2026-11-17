@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      class Metadata
+        def initialize: (untyped) -> void
+        def to_markdown: () -> String
+        def to_asciidoc: () -> String
+        def title: () -> bot
+      end
+    end
+  end
+end

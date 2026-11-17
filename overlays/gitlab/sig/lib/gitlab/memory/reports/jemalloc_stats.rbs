@@ -1,0 +1,9 @@
+module Gitlab
+  module Memory
+    module Reports
+      class JemallocStats
+        def name: () -> "jemalloc_stats"
+      end
+    end
+  end
+end

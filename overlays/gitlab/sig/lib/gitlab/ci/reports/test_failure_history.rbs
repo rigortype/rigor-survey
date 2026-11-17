@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Reports
+      class TestFailureHistory
+        def initialize: ([untyped, untyped], untyped) -> void
+        def failed_junit_tests: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

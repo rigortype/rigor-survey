@@ -1,0 +1,4 @@
+class PendingTodosFinder
+  def initialize: (?untyped) -> void
+  def execute: () -> ActiveRecord::Relation[Todo]
+end

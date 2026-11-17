@@ -1,0 +1,15 @@
+module Dependabot
+  class DependencyFile
+    def initialize: (name: untyped, content: untyped, ?directory: untyped, ?type: untyped, ?support_file: untyped, ?vendored_file: untyped, ?symlink_target: untyped, ?content_encoding: untyped, ?deleted: untyped, ?operation: untyped, ?mode: untyped) -> void
+    def to_h: () -> (Hash[untyped, untyped] | Hash[String, String | false | nil | true])
+    def path: () -> String
+    def realpath: () -> String
+    def hash: () -> Integer
+    def eql?: (untyped) -> (false | true)
+    def deleted=: (untyped) -> ("delete" | "update")
+    def deleted?: () -> (false | true)
+    def binary?: () -> (false | true)
+    def decoded_content: () -> (String | String | nil)
+    def blob_oid: (?algorithm: untyped) -> (String | nil)
+  end
+end

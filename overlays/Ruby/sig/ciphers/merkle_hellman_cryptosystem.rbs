@@ -1,0 +1,4 @@
+class MerkleHellman
+  def initialize: (untyped) -> void
+  def decrypt: (untyped) -> String
+end

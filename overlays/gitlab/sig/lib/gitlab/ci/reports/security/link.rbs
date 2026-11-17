@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Link
+          def initialize: (?name: String, ?url: String) -> void
+          def to_hash: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

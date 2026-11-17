@@ -1,0 +1,6 @@
+class ContentRetentionPolicy
+  def self.current: () -> ContentRetentionPolicy
+  def media_cache_retention_period: () -> (ActiveSupport::Duration | nil)
+  def content_cache_retention_period: () -> (ActiveSupport::Duration | nil)
+  def backups_retention_period: () -> (ActiveSupport::Duration | nil)
+end

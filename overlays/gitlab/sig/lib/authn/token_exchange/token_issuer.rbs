@@ -1,0 +1,9 @@
+module Authn
+  module TokenExchange
+    class TokenIssuer
+      def self.available?: () -> false
+      def initialize: (audiences: [String], user: untyped, organization: untyped, ?ttl: untyped, ?scopes: untyped, ?identities: untyped, ?routing: untyped) -> void
+      def token: () -> String
+    end
+  end
+end

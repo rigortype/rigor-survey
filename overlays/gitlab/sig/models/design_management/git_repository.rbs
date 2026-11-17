@@ -1,0 +1,5 @@
+module DesignManagement
+  class GitRepository < ::Repository
+    def info_attributes: () -> Gitlab::Git::AttributesParser
+  end
+end

@@ -1,0 +1,6 @@
+class SessionsController < ::ApplicationController
+  def new: () -> void
+  def create: () -> void
+  def claim: () -> void
+  def destroy: () -> void
+end

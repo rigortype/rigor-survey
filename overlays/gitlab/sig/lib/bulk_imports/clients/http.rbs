@@ -1,0 +1,11 @@
+module BulkImports
+  module Clients
+    class HTTP
+      def initialize: (url: untyped, token: untyped, ?page: untyped, ?per_page: untyped, ?api_version: untyped) -> void
+      def each_page: (untyped, untyped, ?untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | nil)
+      def options: () -> { headers: Hash[String, "application/json"], query: { private_token: untyped } }
+      def validate_import_scopes!: () -> true
+      def validate_instance_version!: () -> true
+    end
+  end
+end

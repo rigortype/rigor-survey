@@ -1,0 +1,17 @@
+module Dependabot
+  module Helm
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_semver: () -> String
+      def segments: () -> Array[untyped]
+      def to_s: () -> (String | nil)
+      def <=>: (untyped) -> (Integer | nil)
+      def sort_criteria: () -> Array[untyped]
+      def release_part: () -> Dependabot::Version
+    end
+    class ImageTag < ::Dependabot::Helm::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+    end
+  end
+end

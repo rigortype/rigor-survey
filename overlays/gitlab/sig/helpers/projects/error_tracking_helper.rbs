@@ -1,0 +1,6 @@
+module Projects
+  module ErrorTrackingHelper
+    def error_tracking_data: (untyped, untyped) -> Hash[String, untyped]
+    def error_details_data: (untyped, untyped) -> Hash[String, untyped]
+  end
+end

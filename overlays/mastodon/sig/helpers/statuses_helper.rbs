@@ -1,0 +1,8 @@
+module StatusesHelper
+  def media_summary: (untyped) -> (String | nil)
+  def status_text_summary: (untyped) -> (String | nil)
+  def status_classnames: (untyped, untyped) -> ("status--has-quote" | "status--is-quote" | nil)
+  def status_description: (untyped) -> String
+  def preview_card_aspect_ratio_classname: (untyped) -> ("status-card__image--large" | "status-card__image--normal" | "status-card__image--video")
+  def visibility_icon: (untyped) -> ("alternate_email" | "globe" | "lock" | "lock_open" | nil)
+end

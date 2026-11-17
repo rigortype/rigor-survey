@@ -1,0 +1,10 @@
+module ActionView
+  class Template
+    module Handlers
+      class ERB
+        def supports_streaming?: () -> true
+        def handles_encoding?: () -> true
+      end
+    end
+  end
+end

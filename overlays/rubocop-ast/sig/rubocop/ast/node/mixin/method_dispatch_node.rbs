@@ -1,0 +1,9 @@
+module RuboCop
+  module AST
+    module MethodDispatchNode
+      def arithmetic_operation?: () -> (false | true)
+      def def_modifier?: (?untyped) -> (false | true)
+      def def_modifier: (?untyped) -> (::AST::Node | nil)
+    end
+  end
+end

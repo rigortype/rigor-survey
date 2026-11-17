@@ -1,0 +1,7 @@
+module Gitlab
+  class IssuablesCountForState
+    def self.declarative_policy_class: () -> "IssuablePolicy"
+    def initialize: (untyped, ?untyped, ?fast_fail: untyped, ?store_in_redis_cache: (false | true)) -> void
+    def fast_fail?: () -> (false | true)
+  end
+end

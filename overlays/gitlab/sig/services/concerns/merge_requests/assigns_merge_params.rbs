@@ -1,0 +1,5 @@
+module MergeRequests
+  module AssignsMergeParams
+    def self.included: (untyped) -> nil
+  end
+end

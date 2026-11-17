@@ -1,0 +1,3 @@
+class Tree
+  def initialize: (untyped, String, ?untyped, ?recursive: untyped, ?skip_flat_paths: untyped, ?pagination_params: untyped, ?ref_type: untyped, ?rescue_not_found: untyped, ?with_last_commit: untyped) -> void
+end

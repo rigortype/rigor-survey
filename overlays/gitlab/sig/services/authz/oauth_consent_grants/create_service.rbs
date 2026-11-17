@@ -1,0 +1,9 @@
+module Authz
+  module OauthConsentGrants
+    class CreateService
+      def initialize: (user: untyped, application: untyped, ?source: untyped, ?ip_address: String) -> void
+      def execute: () -> ServiceResponse
+      def ip_address: () -> "127.0.0.1"
+    end
+  end
+end

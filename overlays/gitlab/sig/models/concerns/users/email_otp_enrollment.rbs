@@ -1,0 +1,7 @@
+module Users
+  module EmailOtpEnrollment
+    def can_modify_email_otp_enrollment?: () -> (false | true)
+    def email_otp_enrollment_restriction: () -> (:email_otp_required | :feature_disabled | :future_enforcement | :uses_external_authenticator | Symbol | nil)
+    def set_email_otp_required_after_based_on_restrictions: (?save: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+  end
+end

@@ -1,0 +1,9 @@
+module Mutations
+  module Users
+    module PersonalAccessTokens
+      class Rotate < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> ({ errors: [untyped] } | { token: untyped, errors: [] })
+      end
+    end
+  end
+end

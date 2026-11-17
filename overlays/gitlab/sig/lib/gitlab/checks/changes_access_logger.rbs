@@ -1,0 +1,7 @@
+module Gitlab
+  module Checks
+    class ChangesAccessLogger
+      def initialize: (project: untyped, ?destination: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Concurrent
+  module Collection
+    class NonConcurrentMapBackend
+      def initialize: (?untyped) ?{ (*untyped) -> untyped } -> void
+      def each_pair: () -> Concurrent::Collection::NonConcurrentMapBackend
+    end
+  end
+end

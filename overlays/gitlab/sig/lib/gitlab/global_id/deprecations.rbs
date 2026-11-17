@@ -1,0 +1,7 @@
+module Gitlab
+  module GlobalId
+    module Deprecations
+      def self.map_graphql_name: (untyped) -> String
+    end
+  end
+end

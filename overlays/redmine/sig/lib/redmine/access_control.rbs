@@ -1,0 +1,13 @@
+module Redmine
+  module AccessControl
+    class Mapper
+      def permission: (untyped, untyped, ?untyped) -> Array[untyped]
+      def project_module: (untyped, ?untyped) -> nil
+      def mapped_permissions: () -> (Array[untyped] | nil)
+    end
+    class Permission
+      def initialize: (untyped, untyped, untyped) -> void
+      def actions: () -> Array[untyped]
+    end
+  end
+end

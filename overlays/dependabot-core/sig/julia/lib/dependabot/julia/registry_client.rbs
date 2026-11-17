@@ -1,0 +1,20 @@
+module Dependabot
+  module Julia
+    class RegistryClient
+      def initialize: (credentials: untyped, ?custom_registries: untyped) -> void
+      def fetch_latest_version: (untyped, ?untyped) -> (Gem::Version | nil)
+      def fetch_latest_version_with_custom_registries: (untyped, ?untyped) -> (Gem::Version | nil)
+      def fetch_package_metadata: (untyped, untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::PackageMetadata)
+      def parse_project: (project_path: untyped, ?manifest_path: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Project)
+      def parse_manifest: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Manifest)
+      def find_environment_files: (untyped) -> (Dependabot::Julia::RegistryClient::Result::EnvironmentFiles | Dependabot::Julia::RegistryClient::Result::Failure)
+      def find_workspace_project_files: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::WorkspaceFiles)
+      def find_package_source_url: (untyped, ?untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Source)
+      def update_manifest: (project_path: untyped, updates: untyped, ?manifest_path: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ManifestUpdate)
+      def fetch_version_release_date: (untyped, untyped, ?untyped) -> (Time | nil)
+      def batch_fetch_package_info: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::PackageInfoBatch)
+      def batch_fetch_version_release_dates: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ReleaseDatesBatch)
+      def batch_fetch_available_versions: (untyped) -> (Dependabot::Julia::RegistryClient::Result::AvailableVersionsBatch | Dependabot::Julia::RegistryClient::Result::Failure)
+    end
+  end
+end

@@ -1,0 +1,3 @@
+module Mail
+  def self.from_source: (untyped) -> Mail
+end

@@ -1,0 +1,17 @@
+module Sidebars
+  class MenuItem
+    def initialize: (title: String, link: untyped, active_routes: ([] | { controller: String } | { path: String } | { path: [String, String] } | {}), ?item_id: (String | Symbol), ?container_html_options: untyped, ?sprite_icon: untyped, ?sprite_icon_html_options: untyped, ?has_pill: (false | true), ?pill_count_dynamic: untyped, ?pill_count: Integer, ?pill_count_field: untyped, ?super_sidebar_parent: untyped, ?avatar: String, ?entity_id: Integer, ?description: untyped, ?tier: untyped, ?library_icon: untyped, ?badge: untyped) -> void
+    def serialize_for_super_sidebar: () -> Hash[untyped, untyped]
+    def pill_attributes: () -> ({ pill_count: untyped, pill_count_field: untyped, pill_count_dynamic: untyped } | {})
+    def feature_library_attributes: () -> { description: untyped, tier: untyped, library_icon: untyped }
+    def badge_attributes: () -> ({ badge: untyped } | {})
+    def title: () -> ("Existing item" | "Is active" | "Not active" | "Test Item" | "foo" | "foo1" | "foo2" | "foo3" | "target")
+    def active_routes: () -> ([] | { controller: "barc" } | { controller: "foo2" } | { controller: "fooc" } | { path: "bar" } | { path: ["bar", "test"] } | {})
+    def item_id: () -> ("id1" | "id2" | :exists | :foo | :foo1 | :foo2 | :foo3 | :new_element)
+    def container_html_options: () -> Hash[untyped, untyped]
+    def has_pill: () -> true
+    def pill_count: () -> 10
+    def avatar: () -> "/avatar.png"
+    def entity_id: () -> 123
+  end
+end

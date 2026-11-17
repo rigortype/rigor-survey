@@ -1,0 +1,10 @@
+module Gitlab
+  module Repositories
+    class SnippetRepository < ::Gitlab::Repositories::RepoType
+      def name: () -> :snippet
+      def access_checker_class: () -> singleton(Gitlab::GitAccessSnippet)
+      def guest_read_ability: () -> :read_snippet
+      def container_class: () -> singleton(Snippet)
+    end
+  end
+end

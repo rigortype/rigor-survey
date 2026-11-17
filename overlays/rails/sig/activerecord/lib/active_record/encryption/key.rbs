@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Encryption
+    class Key
+      def initialize: (untyped) -> void
+      def self.derive_from: (untyped) -> ActiveRecord::Encryption::Key
+      def public_tags: () -> ActiveRecord::Encryption::Properties
+    end
+  end
+end

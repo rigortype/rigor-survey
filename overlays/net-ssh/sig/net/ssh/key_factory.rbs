@@ -1,0 +1,32 @@
+module Net
+  module SSH
+    class KeyFactory
+      class KeyType
+        def self.error_classes: () -> bot
+      end
+      class OpenSSHPrivateKeyType < ::Net::SSH::KeyFactory::KeyType
+        def self.read: (untyped, untyped) -> (Net::SSH::Authentication::ED25519::PrivKey | OpenSSL::PKey::EC | OpenSSL::PKey::RSA)
+        def self.error_classes: () -> [singleton(Net::SSH::Authentication::ED25519::OpenSSHPrivateKeyLoader::DecryptError)]
+      end
+      class OpenSSLKeyTypeBase < ::Net::SSH::KeyFactory::KeyType
+        def self.open_ssl_class: () -> bot
+      end
+      class OpenSSLPKeyType < ::Net::SSH::KeyFactory::OpenSSLKeyTypeBase
+        def self.open_ssl_class: () -> singleton(OpenSSL::PKey)
+        def self.error_classes: () -> [singleton(ArgumentError), untyped]
+      end
+      class OpenSSLDSAKeyType < ::Net::SSH::KeyFactory::OpenSSLKeyTypeBase
+        def self.open_ssl_class: () -> singleton(OpenSSL::PKey::DSA)
+        def self.error_classes: () -> [untyped]
+      end
+      class OpenSSLRSAKeyType < ::Net::SSH::KeyFactory::OpenSSLKeyTypeBase
+        def self.open_ssl_class: () -> singleton(OpenSSL::PKey::RSA)
+        def self.error_classes: () -> [untyped]
+      end
+      class OpenSSLECKeyType < ::Net::SSH::KeyFactory::OpenSSLKeyTypeBase
+        def self.open_ssl_class: () -> singleton(OpenSSL::PKey::EC)
+        def self.error_classes: () -> [untyped]
+      end
+    end
+  end
+end

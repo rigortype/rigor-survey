@@ -1,0 +1,7 @@
+module Rails
+  class Autoloaders
+    def zeitwerk_enabled?: () -> true
+    def main: () -> Zeitwerk::Loader
+    def once: () -> Zeitwerk::Loader
+  end
+end

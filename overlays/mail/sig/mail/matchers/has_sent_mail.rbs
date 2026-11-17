@@ -1,0 +1,25 @@
+module Mail
+  module Matchers
+    def have_sent_email: () -> Mail::Matchers::HasSentEmailMatcher
+    class HasSentEmailMatcher
+      def initialize: (untyped) -> void
+      def matches?: (untyped) -> (false | true)
+      def from: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def to: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def cc: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def bcc: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def with_attachments: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def with_no_attachments: () -> Mail::Matchers::HasSentEmailMatcher
+      def with_any_attachments: () -> Mail::Matchers::HasSentEmailMatcher
+      def with_subject: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def matching_subject: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def with_body: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def matching_body: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def with_html: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def with_text: (untyped) -> Mail::Matchers::HasSentEmailMatcher
+      def description: () -> "send a matching email"
+      def failure_message: () -> String
+      def failure_message_when_negated: () -> String
+    end
+  end
+end

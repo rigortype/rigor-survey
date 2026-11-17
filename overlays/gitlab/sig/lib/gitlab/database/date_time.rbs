@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    module DateTime
+      def subtract_datetimes_diff: (untyped, untyped, untyped) -> Arel::Nodes::Subtraction
+    end
+  end
+end

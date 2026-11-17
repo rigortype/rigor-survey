@@ -1,0 +1,12 @@
+module Dependabot
+  class PullRequestCreator
+    class MessageBuilder
+      class TitleBuilder
+        def initialize: (base_title: untyped, ?prefixer: untyped, ?commit_message_options: untyped, ?dependencies: untyped) -> void
+        def self.multi_ecosystem_base_title: (group_name: untyped, update_count: untyped) -> String
+        def build: () -> String
+        def commit_message_options: () -> (::CommitMessageOptions | nil)
+      end
+    end
+  end
+end

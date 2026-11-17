@@ -1,0 +1,9 @@
+module Admin
+  class SystemCheck
+    class BaseCheck
+      def initialize: (untyped) -> void
+      def skip?: () -> false
+      def message: () -> bot
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module Saml
+      class OriginValidator
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

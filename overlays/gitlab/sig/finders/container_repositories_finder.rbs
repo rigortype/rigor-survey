@@ -1,0 +1,3 @@
+class ContainerRepositoriesFinder
+  def initialize: (user: untyped, subject: untyped, ?params: untyped) -> void
+end

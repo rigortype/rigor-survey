@@ -1,0 +1,5 @@
+module ActionDispatch
+  class DebugLocks
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

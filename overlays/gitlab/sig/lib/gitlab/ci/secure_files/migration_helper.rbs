@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module SecureFiles
+      class MigrationHelper
+        def self.batch_size: () -> Integer
+      end
+    end
+  end
+end

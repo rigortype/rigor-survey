@@ -1,0 +1,6 @@
+module Repositories
+  class ChangelogCommitsFinder
+    def initialize: (project: untyped, from: String, to: String, ?per_page: Integer) -> void
+    def each_page: (untyped) -> (Enumerator[untyped, untyped] | nil)
+  end
+end

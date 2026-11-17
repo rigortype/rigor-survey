@@ -1,0 +1,53 @@
+module ActionDispatch
+  module Journey
+    class Route
+      def initialize: (name: untyped, ?app: untyped, path: untyped, ?constraints: untyped, ?required_defaults: untyped, ?defaults: untyped, ?via: untyped, ?precedence: untyped, ?scope_options: untyped, ?internal: untyped, ?source_location: untyped) -> void
+      def eager_load!: () -> nil
+      module VerbMatchers
+        class DELETE
+          def self.verb: () -> "DELETE"
+        end
+        class GET
+          def self.verb: () -> "GET"
+        end
+        class HEAD
+          def self.verb: () -> "HEAD"
+        end
+        class OPTIONS
+          def self.verb: () -> "OPTIONS"
+        end
+        class LINK
+          def self.verb: () -> "LINK"
+        end
+        class PATCH
+          def self.verb: () -> "PATCH"
+        end
+        class POST
+          def self.verb: () -> "POST"
+        end
+        class PUT
+          def self.verb: () -> "PUT"
+        end
+        class QUERY
+          def self.verb: () -> "QUERY"
+        end
+        class TRACE
+          def self.verb: () -> "TRACE"
+        end
+        class UNLINK
+          def self.verb: () -> "UNLINK"
+        end
+        class Unknown
+          def initialize: (untyped) -> void
+        end
+        class All
+          def self.call: (untyped) -> true
+          def self.verb: () -> ""
+        end
+        class Or
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module Dependabot
+  module Sbt
+    module Package
+      class PackageDetailsFetcher < ::Dependabot::Maven::Shared::SharedPackageDetailsFetcher
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped) -> void
+        def fetch: () -> Dependabot::Package::PackageDetails
+        def releases: () -> Array[Dependabot::Package::PackageRelease]
+        def repositories: () -> (Array[Hash[untyped, untyped]] | Array[Hash[String, untyped]])
+        def dependency_files_url: (untyped, untyped) -> String
+        def dependency_parts: () -> [String, String]
+      end
+    end
+  end
+end

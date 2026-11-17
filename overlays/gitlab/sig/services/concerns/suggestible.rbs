@@ -1,0 +1,5 @@
+module Suggestible
+  def diff_file: () -> bot
+  def diff_file_for_highlight: () -> bot
+  def target_line: () -> bot
+end

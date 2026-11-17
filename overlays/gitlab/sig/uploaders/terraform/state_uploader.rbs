@@ -1,0 +1,8 @@
+module Terraform
+  class StateUploader < ::GitlabUploader
+    def filename: () -> String
+    def self.direct_upload_enabled?: () -> false
+    def self.proxy_download_enabled?: () -> true
+    def self.default_store: () -> (1 | 2)
+  end
+end

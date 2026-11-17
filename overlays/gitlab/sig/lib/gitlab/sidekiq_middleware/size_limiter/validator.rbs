@@ -1,0 +1,9 @@
+module Gitlab
+  module SidekiqMiddleware
+    module SizeLimiter
+      class Validator
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

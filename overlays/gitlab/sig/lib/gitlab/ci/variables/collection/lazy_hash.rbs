@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Collection
+        class LazyHash
+          def initialize: (untyped) -> void
+          def with_indifferent_access: () -> Gitlab::Ci::Variables::Collection::LazyHash
+          def key?: (untyped) -> bot
+          def to_hash: () -> bot
+        end
+      end
+    end
+  end
+end

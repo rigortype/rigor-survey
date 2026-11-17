@@ -1,0 +1,15 @@
+module ActiveSupport
+  module Testing
+    module EventReporterAssertions
+      module EventCollector
+        def self.emit: (untyped) -> true
+        def self.record: () -> []
+        class Event
+          def initialize: (untyped) -> void
+          def inspect: () -> String
+          def matches?: (untyped, untyped, untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

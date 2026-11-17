@@ -1,0 +1,12 @@
+module Gitlab
+  module Git
+    module Finders
+      class RefsFinder
+        def initialize: (untyped, ref_type: Symbol, ?search: String, ?sort_by: untyped, ?per_page: untyped, ?page_token: untyped, ?ref_names: untyped, ?max_per_page: untyped, ?ignore_case: (false | true), ?exclude_ref_names: untyped) -> void
+        def search: () -> "FEATURE*"
+        def ref_type: () -> :branches
+        def ignore_case: () -> false
+      end
+    end
+  end
+end

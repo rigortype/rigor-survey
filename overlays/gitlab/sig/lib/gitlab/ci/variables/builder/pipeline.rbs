@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Builder
+        class Pipeline
+          def initialize: (untyped) -> void
+          def predefined_variables: () -> Gitlab::Ci::Variables::Collection
+        end
+      end
+    end
+  end
+end

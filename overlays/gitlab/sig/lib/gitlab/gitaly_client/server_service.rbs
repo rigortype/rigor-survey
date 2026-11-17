@@ -1,0 +1,7 @@
+module Gitlab
+  module GitalyClient
+    class ServerService
+      def initialize: (untyped) -> void
+    end
+  end
+end

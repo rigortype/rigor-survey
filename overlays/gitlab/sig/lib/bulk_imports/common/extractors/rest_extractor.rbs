@@ -1,0 +1,10 @@
+module BulkImports
+  module Common
+    module Extractors
+      class RestExtractor
+        def initialize: (?untyped) -> void
+        def extract: (untyped) -> BulkImports::Pipeline::ExtractedData
+      end
+    end
+  end
+end

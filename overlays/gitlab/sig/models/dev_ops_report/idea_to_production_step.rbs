@@ -1,0 +1,5 @@
+module DevOpsReport
+  class IdeaToProductionStep
+    def initialize: (metric: untyped, title: untyped, features: untyped) -> void
+  end
+end

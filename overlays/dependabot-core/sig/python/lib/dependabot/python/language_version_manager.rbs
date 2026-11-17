@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class LanguageVersionManager
+      def initialize: (python_requirement_parser: untyped) -> void
+      def python_major_minor: () -> (String | nil)
+      def python_version: () -> (String | nil)
+      def python_version_matching_imputed_requirements: () -> (String | nil)
+    end
+  end
+end

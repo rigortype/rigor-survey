@@ -1,0 +1,10 @@
+module Gitlab
+  module Graphql
+    class ExternallyPaginatedArray < ::Array[untyped]
+      def initialize: (String | nil, String | nil, *untyped, ?has_next_page: (false | true), ?has_previous_page: untyped, ?total_count: untyped) -> void
+      def start_cursor: () -> ("prev" | nil)
+      def end_cursor: () -> ("next" | nil)
+      def has_next_page: () -> true
+    end
+  end
+end

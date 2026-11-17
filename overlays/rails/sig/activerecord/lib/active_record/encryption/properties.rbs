@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Encryption
+    class Properties
+      def initialize: (?untyped) -> void
+      def validate_value_type: (untyped) -> nil
+      def data: () -> Hash[untyped, untyped]
+    end
+  end
+end

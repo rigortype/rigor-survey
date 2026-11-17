@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Associations
+    class BelongsToAssociation < ::ActiveRecord::Associations::SingularAssociation
+      def initialize: (untyped, untyped) -> void
+      def reset: () -> false
+      def updated?: () -> (false | nil | true)
+    end
+  end
+end

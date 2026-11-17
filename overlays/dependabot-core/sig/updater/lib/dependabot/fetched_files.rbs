@@ -1,0 +1,5 @@
+module Dependabot
+  class FetchedFiles
+    def initialize: (dependency_files: untyped, base_commit_sha: untyped, ?directory_fetch_errors: untyped) -> void
+  end
+end

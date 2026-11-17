@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module NegatableArguments
+      class TypeDefiner
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

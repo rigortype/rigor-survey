@@ -1,0 +1,5 @@
+module JiraConnect
+  class SyncMergeRequestWorker
+    def perform: (untyped, untyped) -> (Array[untyped] | nil)
+  end
+end

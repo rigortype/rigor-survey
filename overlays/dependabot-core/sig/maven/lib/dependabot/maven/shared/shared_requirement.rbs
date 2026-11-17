@@ -1,0 +1,9 @@
+module Dependabot
+  module Maven
+    module Shared
+      class SharedRequirement < ::Dependabot::Requirement
+        def initialize: (*untyped) -> void
+      end
+    end
+  end
+end

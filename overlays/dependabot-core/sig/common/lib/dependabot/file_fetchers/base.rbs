@@ -1,0 +1,14 @@
+module Dependabot
+  module FileFetchers
+    class Base
+      def self.required_files_message: () -> "Required files are missing from configured directory"
+      def initialize: (source: untyped, credentials: untyped, ?repo_contents_path: untyped, ?options: untyped, ?update_config: untyped) -> void
+      def repo: () -> String
+      def directory: () -> String
+      def target_branch: () -> (String | nil)
+      def allow_beta_ecosystems?: () -> (false | true)
+      def commit: () -> (String | String | nil | nil)
+      def clone_repo_contents: () -> (String | nil)
+    end
+  end
+end

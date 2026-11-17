@@ -1,0 +1,5 @@
+module REST
+  class PreviewCardSerializer < ::ActiveModel::Serializer[untyped]
+    def current_user?: () -> (false | true)
+  end
+end

@@ -1,0 +1,9 @@
+module WorkItems
+  module DataSync
+    module Widgets
+      class Notes < ::WorkItems::DataSync::Widgets::Base
+        def after_create: () -> (ServiceResponse | nil)
+      end
+    end
+  end
+end

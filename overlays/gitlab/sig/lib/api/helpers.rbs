@@ -1,0 +1,11 @@
+module API
+  module Helpers
+    def find_project_scopes: () -> ActiveRecord::Relation[Project]
+    def read_project_ability: () -> :read_project
+    def find_pipeline: (untyped) -> (::Ci::Pipeline | nil)
+    def namespace_path_boundary: () -> (Group | Project | nil)
+    def import_target_boundary: (untyped) -> (:user | Group | nil)
+    def order_options_with_tie_breaker: (?override_created_at: untyped) -> Hash[untyped, untyped]
+    def redirect!: (untyped) -> bot
+  end
+end

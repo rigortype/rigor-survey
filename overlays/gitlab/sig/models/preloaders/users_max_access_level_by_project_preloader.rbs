@@ -1,0 +1,5 @@
+module Preloaders
+  class UsersMaxAccessLevelByProjectPreloader
+    def initialize: (project_users: untyped) -> void
+  end
+end

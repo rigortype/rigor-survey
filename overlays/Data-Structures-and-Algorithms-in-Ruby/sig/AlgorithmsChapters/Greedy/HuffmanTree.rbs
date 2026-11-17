@@ -1,0 +1,17 @@
+class Heap
+  def initialize: (?untyped) -> void
+  def set: (untyped) -> nil
+  def percolateDown: (untyped) -> nil
+  def percolateUp: (untyped) -> nil
+  def add: (untyped) -> nil
+  def display: () -> nil
+end
+
+class HuffmanTree
+  def initialize: (untyped, untyped) -> void
+  def printUtil: (untyped, untyped) -> nil
+  def display: () -> nil
+  class Node
+    def initialize: (untyped, untyped, untyped, untyped) -> void
+  end
+end

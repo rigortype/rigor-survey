@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Validations
+    class UniquenessValidator < ::ActiveModel::EachValidator
+      def initialize: (untyped) -> void
+    end
+  end
+end

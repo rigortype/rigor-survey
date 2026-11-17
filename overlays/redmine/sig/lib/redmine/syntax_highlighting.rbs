@@ -1,0 +1,8 @@
+module Redmine
+  module SyntaxHighlighting
+    module Rouge
+      def self.language_supported?: (untyped) -> (false | true)
+      def self.filename_supported?: (untyped) -> (false | true)
+    end
+  end
+end

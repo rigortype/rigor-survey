@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    module TraceContext
+      def self.trace_id_for: (untyped) -> String
+      def self.span_id_for_bridge: (untyped) -> String
+      def self.build_traceparent: (untyped, untyped, ?untyped) -> String
+    end
+  end
+end

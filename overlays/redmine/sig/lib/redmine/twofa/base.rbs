@@ -1,0 +1,18 @@
+module Redmine
+  module Twofa
+    class Base
+      def initialize: (untyped) -> void
+      def confirm_pairing!: (untyped) -> (false | true)
+      def deliver_twofa_paired: () -> Array[untyped]
+      def destroy_pairing!: (untyped) -> (false | true)
+      def deliver_twofa_unpaired: () -> Array[untyped]
+      def send_code: (?controller: untyped, ?action: untyped) -> false
+      def verify!: (untyped) -> (false | true)
+      def verify_otp!: (untyped) -> bot
+      def verify_backup_code!: (untyped) -> (false | true)
+      def init_backup_codes!: () -> Array[untyped]
+      def backup_codes: () -> ActiveRecord::Relation[Token]
+      def otp_confirm_view_variables: () -> { scheme_name: untyped, resendable: false }
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Usage
+    module Metrics
+      module Instrumentations
+        class BaseMetric
+          def metric_definition: () -> Gitlab::Usage::MetricDefinition
+        end
+      end
+    end
+  end
+end

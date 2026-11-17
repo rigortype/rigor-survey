@@ -1,0 +1,19 @@
+module Hamlit
+  module HamlHelpers
+    def init_haml_helpers: () -> nil
+    def html_attrs: (?untyped) -> ({ lang: untyped } | Hash[String | Symbol, untyped])
+    def surround: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> String
+    def precede: (untyped) ?{ (*untyped) -> untyped } -> String
+    def succeed: (untyped) ?{ (*untyped) -> untyped } -> String
+    def haml_concat: (?untyped) -> Hamlit::HamlHelpers::ErrorReturn
+    def haml_indent: () -> String
+    def haml_tag: (untyped, *untyped) ?{ (*untyped) -> untyped } -> Hamlit::HamlHelpers::ErrorReturn
+    def haml_tag_if: (untyped, *untyped) -> Hamlit::HamlHelpers::ErrorReturn
+    def html_escape: (untyped) -> String
+    class ErrorReturn
+      def initialize: (untyped) -> void
+      def to_s: () -> bot
+      def inspect: () -> String
+    end
+  end
+end

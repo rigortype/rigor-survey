@@ -1,0 +1,7 @@
+module Dependabot
+  class PullRequestCreator
+    class Message
+      def initialize: (?commit_message: untyped, ?pr_name: untyped, ?pr_message: untyped) -> void
+    end
+  end
+end

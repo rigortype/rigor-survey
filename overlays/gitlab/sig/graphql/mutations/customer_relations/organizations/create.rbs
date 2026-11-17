@@ -1,0 +1,9 @@
+module Mutations
+  module CustomerRelations
+    module Organizations
+      class Create < ::Mutations::BaseMutation
+        def resolve: (untyped) -> { organization: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

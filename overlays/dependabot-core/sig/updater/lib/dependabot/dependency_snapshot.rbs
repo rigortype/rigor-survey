@@ -1,0 +1,20 @@
+module Dependabot
+  class DependencySnapshot
+    def self.create_from_job_definition: (job: untyped, fetched_files: untyped) -> Dependabot::DependencySnapshot
+    def all_dependencies: () -> Array[Dependabot::Dependency]
+    def dependencies: () -> Array[Dependabot::Dependency]
+    def ecosystem: () -> (Dependabot::Ecosystem | nil)
+    def notices: () -> Array[Dependabot::Notice]
+    def allowed_dependencies: () -> Array[Dependabot::Dependency]
+    def job_dependencies: () -> Array[Dependabot::Dependency]
+    def job_group: () -> (Dependabot::DependencyGroup | nil)
+    def mark_group_handled: (untyped, ?untyped, ?defer_update_types: untyped) -> Array[String]
+    def groups_deferred_by_semver_rules: (untyped) -> Array[Dependabot::DependencyGroup]
+    def add_handled_dependencies: (untyped) -> (Set[untyped] | nil)
+    def handled_dependencies: () -> Set[String]
+    def all_handled_dependencies: () -> Set[untyped]
+    def current_directory=: (untyped) -> (Set[untyped] | nil)
+    def groups: () -> Array[Dependabot::DependencyGroup]
+    def ungrouped_dependencies: () -> Array[Dependabot::Dependency]
+  end
+end

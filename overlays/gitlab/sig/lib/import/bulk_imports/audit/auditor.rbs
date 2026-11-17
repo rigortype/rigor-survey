@@ -1,0 +1,9 @@
+module Import
+  module BulkImports
+    module Audit
+      class Auditor
+        def initialize: (event_name: untyped, event_message: untyped, current_user: untyped, scope: untyped) -> void
+      end
+    end
+  end
+end

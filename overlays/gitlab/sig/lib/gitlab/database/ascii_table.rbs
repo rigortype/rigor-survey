@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    class AsciiTable
+      def initialize: ([[Integer, nil]] | [[String, String], [String, String]] | [[String, String]] | [], ?headers: ([String, String] | [Symbol, Symbol] | []), ?gap: String, ?rule_gap: String) -> void
+      def lines: () -> Array[untyped]
+      def gap: () -> (" | ")
+    end
+  end
+end

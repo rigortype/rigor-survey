@@ -1,0 +1,7 @@
+module Scheduler
+  module Trends
+    class RefreshScheduler
+      def perform: () -> Array[untyped]
+    end
+  end
+end

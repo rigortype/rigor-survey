@@ -1,0 +1,7 @@
+module Mutations
+  module Ci
+    class ProjectCiCdSettingsUpdate < ::Mutations::BaseMutation
+      def resolve: (full_path: untyped, **untyped) -> ({ ci_cd_settings: untyped, errors: untyped } | { ci_cd_settings: untyped, errors: [untyped] })
+    end
+  end
+end

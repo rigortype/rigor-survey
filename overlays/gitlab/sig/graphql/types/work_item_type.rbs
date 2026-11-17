@@ -1,0 +1,5 @@
+module Types
+  class WorkItemType < ::Types::BaseObject
+    def show_plan_upgrade_promotion: () -> (false | true)
+  end
+end

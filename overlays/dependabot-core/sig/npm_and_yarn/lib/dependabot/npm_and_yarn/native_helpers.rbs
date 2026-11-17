@@ -1,0 +1,15 @@
+module Dependabot
+  module NpmAndYarn
+    module NativeHelpers
+      def self.helper_path: () -> String
+      def self.native_helpers_root: () -> String
+      def self.run_npm8_subdependency_update_command: (untyped, ?min_release_age_arg: untyped) -> String
+      def self.run_npm_audit_fix_command: (?min_release_age_arg: untyped) -> String
+      def self.pnpm_audit_fix_command: () -> [String, String]
+      def self.run_pnpm_audit_fix_command: () -> String
+      def self.pnpm_deep_update_command: (untyped, ?recursive: untyped) -> [String, String]
+      def self.run_pnpm_deep_update_command: (untyped, ?recursive: untyped) -> String
+      def self.run_yarn_audit_fix_command: (?env: untyped) -> String
+    end
+  end
+end

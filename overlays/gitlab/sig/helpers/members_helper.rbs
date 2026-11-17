@@ -1,0 +1,3 @@
+module MembersHelper
+  def remove_member_message: (untyped, ?user: untyped) -> String
+end

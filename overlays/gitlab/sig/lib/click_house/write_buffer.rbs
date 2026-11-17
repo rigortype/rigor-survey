@@ -1,0 +1,6 @@
+module ClickHouse
+  module WriteBuffer
+    def self.pop: (untyped, untyped) -> Array[untyped]
+    def self.buffer_key: (untyped) -> String
+  end
+end

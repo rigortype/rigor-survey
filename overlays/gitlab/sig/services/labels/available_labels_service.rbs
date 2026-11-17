@@ -1,0 +1,8 @@
+module Labels
+  class AvailableLabelsService
+    def initialize: (untyped, untyped, {}) -> void
+    def filter_labels_ids_in_param: (Symbol) -> Array[untyped]
+    def filter_assignable_label_ids: ([]) -> Array[untyped]
+    def params: () -> {}
+  end
+end

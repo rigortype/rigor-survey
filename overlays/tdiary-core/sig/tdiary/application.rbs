@@ -1,0 +1,6 @@
+module TDiary
+  class Application
+    def initialize: (?untyped) -> void
+    def assets_paths: () -> Array[untyped]
+  end
+end

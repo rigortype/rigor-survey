@@ -1,0 +1,8 @@
+module Sidebars
+  class Menu
+    def initialize: (untyped) -> void
+    def all_active_routes: () -> Hash[untyped, untyped]
+    def has_items?: () -> (false | true)
+    def pick_into_super_sidebar?: () -> false
+  end
+end

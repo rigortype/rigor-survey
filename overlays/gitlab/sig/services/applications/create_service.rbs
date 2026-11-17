@@ -1,0 +1,7 @@
+module Applications
+  class CreateService
+    def initialize: (untyped, untyped, untyped, ?access_token: untyped) -> void
+    def execute: () -> (Authn::OauthApplication | nil)
+    def declaration: () -> ServiceResponse
+  end
+end

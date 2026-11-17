@@ -1,0 +1,19 @@
+module Dependabot
+  module Maven
+    class FileParser < ::Dependabot::FileParsers::Base
+      class WrapperMojo
+        def self.resolve_dependencies: (untyped, ?script_files: untyped) -> Array[untyped]
+        def self.build_distribution_dependency: (untyped, untyped, untyped, untyped) -> Dependabot::Dependency
+        def self.build_distribution_requirements: (untyped, untyped, untyped, untyped) -> Array[Dependabot::DependencyRequirement]
+        def self.build_wrapper_url_requirement: (untyped, untyped) -> ([::DependencyRequirement] | [])
+        def self.build_wrapper_dependency: (untyped, untyped, untyped, untyped, untyped) -> Dependabot::Dependency
+        def self.resolve_distribution_type: (untyped, untyped) -> ("bin" | "only-script" | String)
+        def self.load_properties: (untyped, ?script_files: untyped) -> (Dependabot::Maven::FileParser::WrapperMojo::WrapperProperties | NilClass)
+        def self.skip_wrapper: (untyped) -> nil
+        def self.apache_wrapper_url?: (untyped) -> (false | true)
+        def self.get_property_value: (untyped, untyped) -> (String | nil)
+        def self.resolve_wrapper_version: (untyped, untyped, untyped) -> (String | nil)
+      end
+    end
+  end
+end

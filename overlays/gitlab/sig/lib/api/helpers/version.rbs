@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    class Version
+      def initialize: (String) -> void
+      def root_path: () -> String
+      def root_url: () -> String
+    end
+  end
+end

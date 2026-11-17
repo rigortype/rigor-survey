@@ -1,0 +1,8 @@
+module Hamlit
+  class AttributeParser
+    def self.parse: (untyped) -> (Hash[untyped, untyped] | nil)
+    def parse: (untyped) -> (Hash[untyped, untyped] | nil)
+    class ParseSkip < ::StandardError
+    end
+  end
+end

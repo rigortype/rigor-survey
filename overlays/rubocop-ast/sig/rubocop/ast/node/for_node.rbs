@@ -1,0 +1,8 @@
+module RuboCop
+  module AST
+    class ForNode < ::RuboCop::AST::Node
+      def keyword: () -> "for"
+      def void_context?: () -> true
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module PyCall
+  class Slice
+    def self.all: () -> PyCall::Slice
+  end
+end

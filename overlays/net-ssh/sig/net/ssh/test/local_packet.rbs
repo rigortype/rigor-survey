@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Test
+      class LocalPacket < ::Net::SSH::Test::Packet
+        def initialize: (untyped, *untyped) ?{ (*untyped) -> untyped } -> void
+        def local?: () -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module WorkItems
+  class UpdateService < ::Issues::UpdateService
+    def initialize: (container: untyped, ?current_user: untyped, ?params: untyped, ?perform_spam_check: untyped, ?widget_params: untyped) -> void
+  end
+end

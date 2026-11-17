@@ -1,0 +1,5 @@
+module Members
+  class MembersWithParents
+    def initialize: (untyped) -> void
+  end
+end

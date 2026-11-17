@@ -1,0 +1,8 @@
+module ActiveJob
+  module Serializers
+    class RangeSerializer < ::ActiveJob::Serializers::ObjectSerializer
+      def deserialize: (untyped) -> Range
+      def klass: () -> singleton(Range)
+    end
+  end
+end

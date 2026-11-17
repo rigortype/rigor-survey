@@ -1,0 +1,11 @@
+module Dependabot
+  module Bun
+    module Helpers
+      def self.bun_version_numeric: (untyped) -> 1
+      def self.node_version: () -> (String | nil)
+      def self.run_node_command: (untyped, ?fingerprint: untyped) -> String
+      def self.bun_version: () -> (String | nil)
+      def self.run_bun_command: (untyped, ?fingerprint: untyped) -> String
+    end
+  end
+end

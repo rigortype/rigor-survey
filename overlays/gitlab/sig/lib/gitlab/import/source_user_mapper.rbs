@@ -1,0 +1,8 @@
+module Gitlab
+  module Import
+    class SourceUserMapper
+      def initialize: (namespace: untyped, import_type: untyped, source_hostname: untyped) -> void
+      def source_hostname: () -> (String | nil)
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Resolvers
+  class MergeRequestResolver
+    def no_results_possible?: (untyped) -> (false | true)
+  end
+end

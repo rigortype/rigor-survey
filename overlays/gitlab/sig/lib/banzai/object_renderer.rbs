@@ -1,0 +1,6 @@
+module Banzai
+  class ObjectRenderer
+    def initialize: (?default_project: untyped, ?user: untyped, ?redaction_context: { custom_value: String }) -> void
+    def context: () -> Banzai::RenderContext
+  end
+end

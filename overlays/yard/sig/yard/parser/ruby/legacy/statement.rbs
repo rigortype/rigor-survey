@@ -1,0 +1,15 @@
+module YARD
+  module Parser
+    module Ruby
+      module Legacy
+        class Statement
+          def initialize: (untyped, ?untyped, ?untyped) -> void
+          def first_line: () -> (String | nil)
+          def inspect: () -> String
+          def show: () -> String
+          def line_range: () -> Range[untyped]
+        end
+      end
+    end
+  end
+end

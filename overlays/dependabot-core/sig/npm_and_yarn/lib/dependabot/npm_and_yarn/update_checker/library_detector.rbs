@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LibraryDetector
+        def initialize: (package_json_file: untyped, credentials: untyped, dependency_files: untyped) -> void
+        def library?: () -> (false | true)
+      end
+    end
+  end
+end

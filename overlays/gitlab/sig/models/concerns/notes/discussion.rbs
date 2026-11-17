@@ -1,0 +1,7 @@
+module Notes
+  module Discussion
+    def to_discussion: (?untyped) -> (IndividualNoteDiscussion | OutOfContextDiscussion)
+    def part_of_discussion?: () -> (false | true)
+    def discussion_class: (?untyped) -> (singleton(IndividualNoteDiscussion) | singleton(OutOfContextDiscussion))
+  end
+end

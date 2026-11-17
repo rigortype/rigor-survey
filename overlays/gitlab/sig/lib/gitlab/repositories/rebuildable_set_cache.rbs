@@ -1,0 +1,12 @@
+module Gitlab
+  module Repositories
+    class RebuildableSetCache < ::Gitlab::SetCache
+      def initialize: (untyped, ?extra_namespace: String, ?expires_in: untyped) -> void
+      def pending_key: (untyped) -> String
+      def rebuild_flag_key: (untyped) -> String
+      def trust_key: (untyped) -> String
+      def try_include?: (untyped, untyped) -> ([untyped, untyped] | [false, false])
+      def namespace: () -> String
+    end
+  end
+end

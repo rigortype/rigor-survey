@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Multiplex
+      class ControlPath
+        def initialize: (host_arg: untyped, host: untyped, port: untyped, remote_user: untyped, ?jump_host: untyped, ?host_key_alias: untyped) -> void
+        def tokens: () -> Hash[String, untyped]
+      end
+    end
+  end
+end

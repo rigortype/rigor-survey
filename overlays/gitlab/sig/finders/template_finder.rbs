@@ -1,0 +1,4 @@
+class TemplateFinder
+  def self.build: (untyped, untyped, ?untyped) -> (LicenseTemplateFinder | TemplateFinder | nil)
+  def initialize: (untyped, untyped, ?untyped) -> void
+end

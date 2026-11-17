@@ -1,0 +1,13 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      module Paginators
+        class Azure < ::Gitlab::Cleanup::OrphanJobArtifactFinalObjects::Paginators::BasePaginator
+          def page_marker_filter_key: () -> :marker
+          def max_results_filter_key: () -> :max_results
+          def last_page?: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

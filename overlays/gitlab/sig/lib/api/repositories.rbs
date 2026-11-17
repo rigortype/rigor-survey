@@ -1,0 +1,5 @@
+module API
+  class Repositories < ::API::Base
+    def compare_cache_key: (untyped, untyped, untyped, untyped) -> [untyped, untyped, untyped, :repository_compare, untyped, untyped, untyped]
+  end
+end

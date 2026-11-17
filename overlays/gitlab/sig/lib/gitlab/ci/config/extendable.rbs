@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class Config
+      class Extendable
+        def initialize: (Integer) -> void
+      end
+    end
+  end
+end

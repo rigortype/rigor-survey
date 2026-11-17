@@ -1,0 +1,5 @@
+module Users
+  class ProjectVisit < ::ApplicationRecord
+    def self.frecent_projects: (user_id: untyped) -> Project
+  end
+end

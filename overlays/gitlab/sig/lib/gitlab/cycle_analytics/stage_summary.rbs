@@ -1,0 +1,8 @@
+module Gitlab
+  module CycleAnalytics
+    class StageSummary
+      def initialize: (untyped, options: untyped, current_user: untyped) -> void
+      def data: () -> Array[untyped]
+    end
+  end
+end

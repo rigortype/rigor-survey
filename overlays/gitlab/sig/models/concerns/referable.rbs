@@ -1,0 +1,4 @@
+module Referable
+  def to_reference: (?untyped, full: untyped) -> ""
+  def referable_inspect: () -> String
+end

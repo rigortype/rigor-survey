@@ -1,0 +1,13 @@
+module Gitlab
+  module Memory
+    class Watchdog
+      class Configurator
+        def self.configure_for_puma: () -> Proc
+        def self.configure_for_sidekiq: () -> Proc
+        def self.configure_monitors_for_puma: () -> Proc
+        def self.sidekiq_sleep_time: () -> (2 | Integer | nil)
+        def self.configure_monitors_for_sidekiq: () -> Proc
+      end
+    end
+  end
+end

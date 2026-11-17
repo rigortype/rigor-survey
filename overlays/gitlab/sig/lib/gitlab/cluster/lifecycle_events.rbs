@@ -1,0 +1,11 @@
+module Gitlab
+  module Cluster
+    class LifecycleEvents
+      def self.on_before_fork: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def self.on_before_blackout_period: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def self.on_before_graceful_shutdown: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def self.on_before_master_restart: () ?{ (*untyped) -> untyped } -> Array[untyped]
+      def self.on_worker_stop: () ?{ (*untyped) -> untyped } -> Array[untyped]
+    end
+  end
+end

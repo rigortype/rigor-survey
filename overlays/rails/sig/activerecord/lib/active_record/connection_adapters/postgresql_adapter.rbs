@@ -1,0 +1,51 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class PostgreSQLAdapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+      def self.ractor_connection_proxy_class: () -> singleton(ActiveRecord::ConnectionAdapters::RactorConnectionHandler::PostgreSQLProxyAdapter)
+      def supports_bulk_alter?: () -> true
+      def supports_index_sort_order?: () -> true
+      def supports_partial_index?: () -> true
+      def supports_expression_index?: () -> true
+      def supports_transaction_isolation?: () -> true
+      def supports_foreign_keys?: () -> true
+      def supports_check_constraints?: () -> true
+      def supports_exclusion_constraints?: () -> true
+      def supports_unique_constraints?: () -> true
+      def supports_validate_constraints?: () -> true
+      def supports_deferrable_constraints?: () -> true
+      def supports_views?: () -> true
+      def supports_json?: () -> true
+      def supports_comments?: () -> true
+      def supports_savepoints?: () -> true
+      def supports_insert_returning?: () -> true
+      def supports_insert_on_conflict?: () -> true
+      def index_algorithms: () -> { concurrently: "CONCURRENTLY" }
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      def connected?: () -> (false | true)
+      def active?: () -> (false | true)
+      def clear_cache!: (?new_connection: untyped) -> nil
+      def discard!: () -> nil
+      def set_standard_conforming_strings: () -> nil
+      def supports_ddl_transactions?: () -> true
+      def supports_advisory_locks?: () -> true
+      def supports_explain?: () -> true
+      def supports_extensions?: () -> true
+      def supports_materialized_views?: () -> true
+      def supports_foreign_tables?: () -> true
+      def supports_pgcrypto_uuid?: () -> true
+      def supports_common_table_expressions?: () -> true
+      def supports_lazy_transactions?: () -> true
+      def session_auth=: (untyped) -> nil
+      def check_version: () -> nil
+      def self.clear_type_mapping_callbacks!: () -> ([] | nil)
+      def type_map: () -> (ActiveRecord::Type::HashLookupTypeMap | nil)
+      class ErrorResultSnapshot
+        def initialize: (untyped) -> void
+      end
+      class StatementPool < ::ActiveRecord::ConnectionAdapters::StatementPool
+        def initialize: (untyped, untyped) -> void
+        def next_key: () -> String
+      end
+    end
+  end
+end

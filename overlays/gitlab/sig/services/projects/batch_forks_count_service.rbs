@@ -1,0 +1,5 @@
+module Projects
+  class BatchForksCountService < ::Projects::BatchCountService
+    def count_service: () -> singleton(Projects::ForksCountService)
+  end
+end

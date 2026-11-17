@@ -1,0 +1,8 @@
+module RbNaCl
+  module PasswordHash
+    class SCrypt
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def digest: (untyped, untyped) -> String
+    end
+  end
+end

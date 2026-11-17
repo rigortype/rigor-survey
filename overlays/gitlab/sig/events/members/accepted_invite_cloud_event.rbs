@@ -1,0 +1,5 @@
+module Members
+  class AcceptedInviteCloudEvent < ::Members::BaseEvent
+    def self.build: (source: untyped, current_user: untyped, user_id: untyped, member_id: untyped) -> Members::AcceptedInviteCloudEvent
+  end
+end

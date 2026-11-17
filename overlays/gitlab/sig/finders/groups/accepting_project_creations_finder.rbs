@@ -1,0 +1,5 @@
+module Groups
+  class AcceptingProjectCreationsFinder
+    def initialize: (untyped) -> void
+  end
+end

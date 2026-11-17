@@ -1,0 +1,3 @@
+class SessionTokenMailer < ::ApplicationMailer
+  def notify: () -> void
+end

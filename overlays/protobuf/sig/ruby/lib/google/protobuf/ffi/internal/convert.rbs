@@ -1,0 +1,13 @@
+module Google
+  module Protobuf
+    module Internal
+      module Convert
+        def convert_ruby_to_upb: (untyped, untyped, untyped, untyped) -> Google::Protobuf::FFI::MessageValue
+        def to_h_internal: (untyped, untyped, ?untyped) -> (Hash[untyped, untyped] | nil)
+        def map_create_hash: (untyped, untyped, ?untyped) -> Hash[untyped, untyped]
+        def repeated_field_create_array: (untyped, untyped, untyped, ?untyped) -> Array[untyped]
+        def message_value_deep_copy: (untyped, untyped, untyped, untyped) -> Google::Protobuf::FFI::MessageValue
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module YARD
+  module Templates
+    module Engine
+      def self.template_module_name: (untyped) -> String
+    end
+  end
+end

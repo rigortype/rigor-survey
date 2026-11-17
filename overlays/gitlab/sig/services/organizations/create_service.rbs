@@ -1,0 +1,5 @@
+module Organizations
+  class CreateService < ::Organizations::BaseService
+    def execute: (?skip_authorization: (false | true)) -> ServiceResponse
+  end
+end

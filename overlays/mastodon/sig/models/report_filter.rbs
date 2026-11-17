@@ -1,0 +1,4 @@
+class ReportFilter
+  def initialize: ({}) -> void
+  def params: () -> {}
+end

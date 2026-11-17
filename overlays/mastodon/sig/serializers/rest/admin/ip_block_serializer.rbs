@@ -1,0 +1,8 @@
+module REST
+  module Admin
+    class IpBlockSerializer < ::ActiveModel::Serializer[untyped]
+      def id: () -> String
+      def ip: () -> String
+    end
+  end
+end

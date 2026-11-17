@@ -1,0 +1,7 @@
+module Gitlab
+  module Kubernetes
+    class Namespace
+      def initialize: (untyped, untyped, ?labels: untyped) -> void
+    end
+  end
+end

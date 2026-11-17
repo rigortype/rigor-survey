@@ -1,0 +1,6 @@
+class ProjectFeature < ::ApplicationRecord
+  def self.required_minimum_access_level: (untyped) -> (10 | 20)
+  def self.required_minimum_access_level_for_private_project: (untyped) -> (10 | 15 | 20)
+  def self.with_feature_available_for_user: (untyped, untyped) -> ActiveRecord::Relation[ProjectFeature]
+  def private_pages?: () -> (false | true)
+end

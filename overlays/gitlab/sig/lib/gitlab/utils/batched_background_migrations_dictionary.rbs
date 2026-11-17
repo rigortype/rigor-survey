@@ -1,0 +1,8 @@
+module Gitlab
+  module Utils
+    class BatchedBackgroundMigrationsDictionary
+      def self.entry: (untyped) -> (Gitlab::Utils::BatchedBackgroundMigrationsDictionary | nil)
+      def initialize: (untyped) -> void
+    end
+  end
+end

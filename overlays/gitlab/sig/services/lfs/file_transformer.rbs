@@ -1,0 +1,9 @@
+module Lfs
+  class FileTransformer
+    def initialize: (untyped, untyped, untyped, ?start_branch_name: untyped) -> void
+    def new_file: (untyped, untyped, ?encoding: untyped, ?detect_content_type: untyped) -> Lfs::FileTransformer::Result
+    class Result
+      def initialize: (content: untyped, encoding: untyped) -> void
+    end
+  end
+end

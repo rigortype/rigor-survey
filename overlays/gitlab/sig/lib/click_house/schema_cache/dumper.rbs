@@ -1,0 +1,7 @@
+module ClickHouse
+  module SchemaCache
+    class Dumper
+      def initialize: (connection: untyped, database: Symbol) -> void
+    end
+  end
+end

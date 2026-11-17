@@ -1,0 +1,10 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class ExportTask < ::Gitlab::ImportExport::Project::BaseTask
+        def initialize: (*untyped) -> void
+        def export: () -> (false | true)
+      end
+    end
+  end
+end

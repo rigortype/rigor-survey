@@ -1,0 +1,9 @@
+module Liquid
+  class ParseContext
+    def initialize: (?untyped) -> void
+    def new_block_body: () -> Liquid::BlockBody
+    def new_parser: (String) -> Liquid::Parser
+    def new_tokenizer: (untyped, ?start_line_number: untyped, ?for_liquid_tag: untyped) -> Liquid::Tokenizer
+    def warnings: () -> Array[untyped]
+  end
+end

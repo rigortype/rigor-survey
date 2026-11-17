@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    class Config
+      class Normalizer
+        def initialize: (untyped) -> void
+        def errors: () -> Array[untyped]
+      end
+    end
+  end
+end

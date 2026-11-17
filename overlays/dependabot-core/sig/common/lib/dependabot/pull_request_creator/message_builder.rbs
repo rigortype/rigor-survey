@@ -1,0 +1,11 @@
+module Dependabot
+  class PullRequestCreator
+    class MessageBuilder
+      def initialize: (source: untyped, dependencies: untyped, files: untyped, credentials: untyped, ?pr_message_header: untyped, ?pr_message_footer: untyped, ?commit_message_options: untyped, ?vulnerabilities_fixed: untyped, ?github_redirection_service: untyped, ?dependency_group: untyped, ?pr_message_max_length: untyped, ?pr_message_encoding: untyped, ?ignore_conditions: untyped, ?notices: untyped) -> void
+      def pr_name: () -> String
+      def pr_message: () -> String
+      def commit_message: () -> String
+      def message: () -> Dependabot::PullRequestCreator::Message
+    end
+  end
+end

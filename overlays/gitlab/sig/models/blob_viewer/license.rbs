@@ -1,0 +1,5 @@
+module BlobViewer
+  class License < ::BlobViewer::Base
+    def render_error: () -> (:unknown_license | nil)
+  end
+end

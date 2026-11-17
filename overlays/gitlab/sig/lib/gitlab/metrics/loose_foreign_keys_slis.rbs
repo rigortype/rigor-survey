@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    module LooseForeignKeysSlis
+      def self.labels: (untyped) -> { db_config_name: untyped, feature_category: :database }
+    end
+  end
+end

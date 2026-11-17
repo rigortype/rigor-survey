@@ -1,0 +1,6 @@
+module Groups
+  class CountService < ::BaseCountService
+    def initialize: (untyped, ?untyped) -> void
+    def cache_key: (?untyped) -> ["groups", String, 1, untyped, untyped]
+  end
+end

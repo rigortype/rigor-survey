@@ -1,0 +1,36 @@
+module ActiveSupport
+  class Duration
+    def self.parse: (untyped) -> ActiveSupport::Duration
+    def self.===: (untyped) -> (false | true)
+    def self.seconds: (untyped) -> ActiveSupport::Duration
+    def self.minutes: (untyped) -> ActiveSupport::Duration
+    def self.hours: (untyped) -> ActiveSupport::Duration
+    def self.days: (untyped) -> ActiveSupport::Duration
+    def self.weeks: (untyped) -> ActiveSupport::Duration
+    def self.months: (untyped) -> ActiveSupport::Duration
+    def self.years: (untyped) -> ActiveSupport::Duration
+    def self.build: (untyped) -> ActiveSupport::Duration
+    def initialize: (untyped, untyped, ?untyped) -> void
+    def coerce: (untyped) -> [ActiveSupport::Duration::Scalar, ActiveSupport::Duration]
+    def +: (untyped) -> ActiveSupport::Duration
+    def -: (untyped) -> ActiveSupport::Duration
+    def *: (untyped) -> ActiveSupport::Duration
+    def %: (untyped) -> ActiveSupport::Duration
+    def -@: () -> ActiveSupport::Duration
+    def +@: () -> ActiveSupport::Duration
+    def hash: () -> Integer
+    def init_with: (untyped) -> top
+    def encode_with: (untyped) -> Hash[String, untyped]
+    def iso8601: (?precision: untyped) -> ("P" | "PT0S" | String)
+    class Scalar < ::Numeric
+      def initialize: (untyped) -> void
+      def coerce: (untyped) -> [ActiveSupport::Duration::Scalar, ActiveSupport::Duration::Scalar]
+      def -@: () -> ActiveSupport::Duration::Scalar
+      def +: (untyped) -> (ActiveSupport::Duration | ActiveSupport::Duration::Scalar)
+      def -: (untyped) -> (ActiveSupport::Duration | ActiveSupport::Duration::Scalar)
+      def *: (untyped) -> (ActiveSupport::Duration | ActiveSupport::Duration::Scalar)
+      def %: (untyped) -> (ActiveSupport::Duration | ActiveSupport::Duration::Scalar)
+      def variable?: () -> false
+    end
+  end
+end

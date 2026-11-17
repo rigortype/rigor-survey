@@ -1,0 +1,15 @@
+module ActiveSupport
+  module Messages
+    module SerializerWithFallback
+      module MarshalWithFallback
+        def format: () -> :marshal
+      end
+      module JsonWithFallback
+        def format: () -> :json
+      end
+      module MessagePackWithFallback
+        def format: () -> :message_pack
+      end
+    end
+  end
+end

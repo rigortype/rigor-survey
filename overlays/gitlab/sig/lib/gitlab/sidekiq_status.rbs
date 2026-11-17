@@ -1,0 +1,6 @@
+module Gitlab
+  module SidekiqStatus
+    def self.completed_jids: (untyped) -> Array[untyped]
+    def self.key_for: (untyped) -> String
+  end
+end

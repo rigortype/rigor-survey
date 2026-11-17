@@ -1,0 +1,37 @@
+module Kramdown
+  module Converter
+    class Html < ::Kramdown::Converter::Base
+      def initialize: (untyped, untyped) -> void
+      def inner: (untyped, untyped) -> String
+      def convert_blank: (untyped, untyped) -> "\n"
+      def convert_p: (untyped, untyped) -> String
+      def convert_standalone_image: (untyped, untyped) -> String
+      def convert_codeblock: (untyped, untyped) -> String
+      def convert_blockquote: (untyped, untyped) -> String
+      def convert_header: (untyped, untyped) -> String
+      def convert_hr: (untyped, untyped) -> String
+      def convert_ul: (untyped, untyped) -> String
+      def convert_dl: (untyped, untyped) -> String
+      def convert_li: (untyped, untyped) -> String
+      def convert_dt: (untyped, untyped) -> String
+      def convert_html_element: (untyped, untyped) -> String
+      def convert_table: (untyped, untyped) -> String
+      def convert_td: (untyped, untyped) -> String
+      def convert_comment: (untyped, untyped) -> String
+      def convert_br: (untyped, untyped) -> "<br />"
+      def convert_a: (untyped, untyped) -> String
+      def convert_img: (untyped, untyped) -> String
+      def convert_codespan: (untyped, untyped) -> String
+      def convert_footnote: (untyped, untyped) -> String
+      def convert_em: (untyped, untyped) -> String
+      def convert_abbreviation: (untyped, untyped) -> String
+      def convert_root: (untyped, untyped) -> String
+      def format_as_span_html: (untyped, untyped, untyped) -> String
+      def format_as_block_html: (untyped, untyped, untyped, untyped) -> String
+      def format_as_indented_block_html: (untyped, untyped, untyped, untyped) -> String
+      def generate_toc_tree: (untyped, untyped, untyped) -> ::Kramdown::Element
+      def obfuscate: (untyped) -> String
+      def footnote_content: () -> ("" | String)
+    end
+  end
+end

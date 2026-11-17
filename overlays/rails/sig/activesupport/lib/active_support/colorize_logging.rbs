@@ -1,0 +1,5 @@
+module ActiveSupport
+  module ColorizeLogging
+    def mode_from: (untyped) -> String
+  end
+end

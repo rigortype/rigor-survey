@@ -1,0 +1,11 @@
+module Gitlab
+  module Issues
+    module Rebalancing
+      class State
+        def initialize: (untyped) -> void
+        def self.fetch_rebalancing_groups_and_projects: () -> [Array[untyped], Array[untyped]]
+        def self.recently_finished_key: (untyped, untyped) -> String
+      end
+    end
+  end
+end

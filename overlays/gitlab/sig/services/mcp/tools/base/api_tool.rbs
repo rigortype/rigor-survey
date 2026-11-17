@@ -1,0 +1,12 @@
+module Mcp
+  module Tools
+    module Base
+      class ApiTool
+        def initialize: (name: untyped, route: untyped) -> void
+        def input_schema: () -> ({ type: "object", properties: untyped, required: untyped } | { type: "object", properties: untyped, required: untyped, additionalProperties: false })
+        def icons: () -> [{ mimeType: "image/png", src: untyped, theme: "dark" }, { mimeType: "image/png", src: untyped, theme: "light" }]
+        def available?: (untyped) -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module API
+  module MilestoneResponses
+    def build_finder_params: (untyped, untyped) -> ({ milestone_title: untyped, sort: "label_priority", group_id: Integer } | { milestone_title: untyped, sort: "label_priority", project_id: untyped })
+    def get_finder_and_entity: (untyped) -> ([singleton(IssuesFinder), singleton(::API::Entities::IssueBasic)] | [singleton(MergeRequestsFinder), singleton(::API::Entities::MergeRequestBasic)])
+  end
+end

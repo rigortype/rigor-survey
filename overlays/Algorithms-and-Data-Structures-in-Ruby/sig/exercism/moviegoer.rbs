@@ -1,0 +1,8 @@
+class Moviegoer
+  def initialize: (untyped, ?member: untyped) -> void
+  def ticket_price: () -> (10 | 15)
+  def claim_free_popcorn!: () -> "🍿"
+end
+
+class NotMovieClubMemberError < ::RuntimeError
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module LegacyGithubImport
+    class IssueFormatter < ::Gitlab::LegacyGithubImport::IssuableFormatter
+      def attributes: () -> { iid: untyped, project: untyped, milestone: untyped, title: untyped, description: untyped, state: "closed" | "opened", author_id: untyped, assignee_ids: untyped, created_at: untyped, updated_at: untyped, imported_from: :gitea | :github | :none }
+      def project_association: () -> :issues
+      def project_assignee_association: () -> :issue_assignees
+      def contributing_user_formatters: () -> { author_id: untyped }
+      def contributing_assignee_formatters: () -> { user_id: untyped }
+    end
+  end
+end

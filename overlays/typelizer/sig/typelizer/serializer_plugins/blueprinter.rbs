@@ -1,0 +1,7 @@
+module Typelizer
+  module SerializerPlugins
+    class Blueprinter < ::Typelizer::SerializerPlugins::Base
+      def trait_properties: (untyped) -> [untyped, untyped]
+    end
+  end
+end

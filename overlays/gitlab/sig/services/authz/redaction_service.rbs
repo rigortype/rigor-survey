@@ -1,0 +1,8 @@
+module Authz
+  class RedactionService
+    def self.supported_types: () -> ["issue", "merge_request", "project", "milestone", "snippet", "user", "group", "work_item"]
+    def initialize: (user: untyped, resources_by_type: untyped, source: String, ?logger: untyped, ?metrics_observer: Proc) -> void
+    def source: () -> ("knowledge_graph" | "test")
+    def metrics_observer: () -> Proc
+  end
+end

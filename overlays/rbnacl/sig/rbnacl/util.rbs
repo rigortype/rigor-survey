@@ -1,0 +1,14 @@
+module RbNaCl
+  module Util
+    def self?.zeros: (?untyped) -> String
+    def self?.check_length: (untyped, untyped, untyped) -> true
+    def self?.check_string_validation: (untyped) -> nil
+    def self?.verify64: (untyped, untyped) -> (Integer | false)
+    def self?.verify64!: (untyped, untyped) -> Integer
+    def self?.verify32: (untyped, untyped) -> (Integer | false)
+    def self?.verify32!: (untyped, untyped) -> Integer
+    def self?.verify16: (untyped, untyped) -> (Integer | false)
+    def self?.verify16!: (untyped, untyped) -> Integer
+    def self?.hex2bin: (untyped) -> String
+  end
+end

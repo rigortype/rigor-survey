@@ -1,0 +1,6 @@
+module PyCall
+  class Set
+    def initialize: (untyped) -> void
+    def include?: (untyped) -> (false | true)
+  end
+end

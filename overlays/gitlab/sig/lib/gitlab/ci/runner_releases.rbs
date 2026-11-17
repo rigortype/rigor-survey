@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    class RunnerReleases
+      def reset_backoff!: () -> 0
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Not < ::Gitlab::Ci::Pipeline::Expression::Lexeme::UnaryOperator
+            def self.build: (untyped, untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::Not
+            def self.precedence: () -> 1
+            def evaluate: (?untyped) -> (false | true)
+          end
+        end
+      end
+    end
+  end
+end

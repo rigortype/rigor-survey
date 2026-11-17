@@ -1,0 +1,8 @@
+module Gitlab
+  module WebHooks
+    module DuoFlowCallback
+      def self.available?: (untyped) -> false
+      def self.duo_agent_platform_available?: (untyped) -> false
+    end
+  end
+end

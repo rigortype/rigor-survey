@@ -1,0 +1,12 @@
+module BlobLike
+  def id: () -> bot
+  def name: () -> bot
+  def path: () -> bot
+  def size: () -> 0
+  def data: () -> nil
+  def mode: () -> nil
+  def binary_in_repo?: () -> false
+  def truncated?: () -> false
+  def external_storage: () -> nil
+  def external_size: () -> nil
+end

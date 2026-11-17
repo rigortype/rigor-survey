@@ -1,0 +1,7 @@
+module Members
+  class GroupLinksCollection < ::SimpleDelegator
+    def initialize: ([untyped, untyped] | [untyped] | [], ?page: Integer, ?total_count: Integer, ?per_page: Integer) -> void
+    def project_links: () -> Array[String]
+    def group_links: () -> Array[String]
+  end
+end

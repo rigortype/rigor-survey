@@ -1,0 +1,4 @@
+module IdeHelper
+  def ide_data: (project: untyped, fork_info: untyped, workbench_secret: untyped, params: untyped) -> Hash[untyped, untyped]
+  def show_web_ide_oauth_callback_mismatch_callout?: () -> (false | true)
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    class RetentionPolicy
+      def self.eligible_tables: () -> Array[untyped]
+      def self.from_file: (untyped) -> Gitlab::Database::RetentionPolicy
+      def initialize: (String, nil) -> void
+      def validation_errors: () -> Array[untyped]
+      def table_name: () -> "some_table"
+    end
+  end
+end

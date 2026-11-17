@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class PreventCrossCellSessionOverwrite
+      def self.allow_overwrite!: (untyped) -> nil
+      def initialize: (untyped, ?session_cookie_token_prefix: untyped) -> void
+    end
+  end
+end

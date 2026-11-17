@@ -1,0 +1,8 @@
+class LicenseTemplate
+  def initialize: (key: String, name: String, project: nil, category: Symbol, content: untyped, ?nickname: untyped, ?url: untyped, ?meta: untyped) -> void
+  def resolve!: (?project_name: untyped, ?fullname: untyped, ?year: untyped) -> LicenseTemplate
+  def key: () -> "foo"
+  def name: () -> "foo"
+  def project: () -> nil
+  def category: () -> :Other
+end

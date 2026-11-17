@@ -1,0 +1,14 @@
+module Gitlab
+  module Git
+    class Diff
+      def self.binary_message: (untyped, untyped) -> String
+      def self.collect_patch_overage?: () -> (false | true)
+      def initialize: (untyped, ?expanded: untyped, ?replace_invalid_utf8_chars: untyped, ?generated: (false | true), ?skip_charset_detection: (false | true)) -> void
+      def to_hash: () -> Hash[:a_mode | :b_mode | :deleted_file | :diff | :encoded_file_path | :generated | :new_file | :new_path | :old_path | :renamed_file | :too_large, untyped]
+      def prune!: () -> 0
+      def too_large!: () -> true
+      def collapse!: () -> true
+      def had_binary_notice?: () -> (false | true)
+    end
+  end
+end

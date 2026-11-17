@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Pipeline
+        class Metadata < ::Gitlab::Ci::Badge::Metadata
+          def initialize: (untyped) -> void
+          def title: () -> "pipeline status"
+        end
+      end
+    end
+  end
+end

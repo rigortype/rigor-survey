@@ -1,0 +1,7 @@
+module Gitlab
+  module Diff
+    class CollectionUnfolder
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

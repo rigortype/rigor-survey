@@ -1,0 +1,11 @@
+module Dependabot
+  class Updater
+    module UpdateTypeHelper
+      def version_class_for: (untyped) -> singleton(Dependabot::Version)
+      def build_versions: (untyped, untyped, untyped) -> ([untyped, untyped] | nil)
+      def classify_semver_update: (untyped, untyped) -> ("major" | "minor" | "patch" | nil)
+      def semver_parts: (untyped) -> (Dependabot::Updater::UpdateTypeHelper::SemverParts | nil)
+      def update_type_for_dependency: (untyped) -> (String | nil)
+    end
+  end
+end

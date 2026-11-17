@@ -1,0 +1,5 @@
+module Webhooks
+  class EventPresenter < ::ActiveModelSerializers::Model
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module API
+  class Glql < ::API::Base
+    def get_compile_context: (?fields: untyped, ?dimensions: untyped, ?metrics: untyped, ?user: untyped, ?mode: untyped, ?sort: untyped, ?project: untyped, ?group: untyped) -> Hash[untyped, untyped]
+    def parse_glql_yaml: (untyped) -> { config: Float | Hash[String, untyped] | Integer | String | false | Array[untyped] | true | {}, query: untyped }
+    def compile_glql: (untyped) -> [untyped, untyped]
+    def execute_glql_query: (untyped, untyped) -> ({ data: untyped, errors: untyped, complexity_score: untyped, duration_s: untyped, timeout_occurred: false, rate_limited: false } | { data: nil, errors: [{ message: "Query timed out" }], complexity_score: untyped, duration_s: untyped, timeout_occurred: true, rate_limited: false } | { data: nil, errors: [{ message: String }], complexity_score: untyped, duration_s: untyped, timeout_occurred: false, rate_limited: false, exception: StandardError } | { data: nil, errors: [{ message: String }], complexity_score: nil, duration_s: untyped, timeout_occurred: false, rate_limited: true })
+  end
+end

@@ -1,0 +1,3 @@
+module IconsHelper
+  def file_type_icon_class: (untyped, untyped, untyped) -> ("archive" | "doc-chart" | "doc-compressed" | "doc-image" | "doc-text" | "document" | "folder" | "live-preview" | "share" | "volume-up")
+end

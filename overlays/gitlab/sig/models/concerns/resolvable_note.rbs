@@ -1,0 +1,4 @@
+module ResolvableNote
+  def resolve_without_save: (untyped, ?resolved_by_push: untyped) -> (false | true)
+  def unresolve_without_save: () -> (false | true)
+end

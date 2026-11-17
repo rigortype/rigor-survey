@@ -1,0 +1,9 @@
+module Dependabot
+  module Uv
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockFileErrorHandler
+        def handle_uv_error: (untyped) -> bot
+      end
+    end
+  end
+end

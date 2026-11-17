@@ -1,0 +1,9 @@
+module Google
+  module Protobuf
+    class FileDescriptor
+      def initialize: (untyped, untyped) -> void
+      def to_s: () -> String
+      def inspect: () -> String
+    end
+  end
+end

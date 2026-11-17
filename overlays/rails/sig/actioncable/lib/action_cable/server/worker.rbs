@@ -1,0 +1,7 @@
+module ActionCable
+  module Server
+    class Worker
+      def initialize: (?max_size: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module ActiveSupport
+  class LogSubscriber < ::ActiveSupport::Subscriber
+    module TestHelper
+      def setup: () -> (ActiveSupport::Notifications::Fanout | nil)
+      class MockLogger
+        def initialize: (?untyped) -> void
+        def flush_count: () -> (0 | Integer)
+      end
+    end
+  end
+end

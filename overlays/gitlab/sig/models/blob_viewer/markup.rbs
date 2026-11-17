@@ -1,0 +1,5 @@
+module BlobViewer
+  class Markup < ::BlobViewer::Base
+    def banzai_render_context: () -> Hash[untyped, untyped]
+  end
+end

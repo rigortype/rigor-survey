@@ -1,0 +1,3 @@
+class AddressableUrlValidator < ::ActiveModel::EachValidator
+  def initialize: (untyped) -> void
+end

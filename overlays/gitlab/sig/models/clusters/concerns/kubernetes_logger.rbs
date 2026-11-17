@@ -1,0 +1,7 @@
+module Clusters
+  module Concerns
+    module KubernetesLogger
+      def logger: () -> Gitlab::Kubernetes::Logger
+    end
+  end
+end

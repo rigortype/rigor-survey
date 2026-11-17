@@ -1,0 +1,13 @@
+module Gitlab
+  module GitalyClient
+    class BlobService
+      def initialize: (untyped) -> void
+      def get_blob: (oid: untyped, limit: untyped) -> (Gitlab::Git::Blob | nil)
+      def list_all_blobs: (?limit: untyped, ?bytes_limit: untyped, ?dynamic_timeout: untyped, ?ignore_alternate_object_directories: untyped) -> Gitlab::GitalyClient::BlobsStitcher
+      def list_oversized_blobs: (?file_size_limit_megabytes: untyped, ?limit: untyped, ?bytes_limit: untyped, ?dynamic_timeout: untyped, ?ignore_alternate_object_directories: untyped) -> Gitlab::GitalyClient::BlobsStitcher
+      def list_blobs: (untyped, ?limit: untyped, ?bytes_limit: untyped, ?with_paths: untyped, ?dynamic_timeout: untyped) -> Gitlab::GitalyClient::BlobsStitcher
+      def get_blobs: (untyped, ?untyped) -> (Gitlab::GitalyClient::BlobsStitcher | [])
+      def get_blob_types: (untyped, ?untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

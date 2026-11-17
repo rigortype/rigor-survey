@@ -1,0 +1,51 @@
+module Gitlab
+  module Regex
+    def project_name_regex: () -> Regexp
+    def project_name_regex_message: () -> String
+    def oci_repository_path_regex: () -> Regexp
+    def oci_repository_path_regex_message: () -> "can only include non-accented letters, digits, '_', '-' and '.'. It must not start with '-', '_', or '.', nor end with '-', '_', '.', '.git', or '.atom'."
+    def group_name_regex: () -> Regexp
+    def group_name_regex_chars: () -> Regexp
+    def group_name_regex_message: () -> String
+    def container_registry_tag_regex: () -> Regexp
+    def environment_name_regex_chars: () -> "a-zA-Z0-9_/\\$\\{\\}\\. \\-"
+    def environment_name_regex_chars_without_slash: () -> "a-zA-Z0-9_\\$\\{\\}\\. -"
+    def environment_name_regex: () -> Regexp
+    def environment_name_regex_message: () -> "can contain only letters, digits, '-', '_', '/', '$', '{', '}', '.', and spaces, but it cannot start or end with '/'"
+    def environment_scope_regex_chars: () -> String
+    def environment_scope_regex: () -> Regexp
+    def environment_scope_regex_message: () -> "can contain only letters, digits, '-', '_', '/', '$', '{', '}', '.', '*' and spaces"
+    def cluster_agent_name_regex: () -> Regexp
+    def cluster_agent_name_regex_message: () -> "can contain only lowercase letters, digits, and '-', but cannot start or end with '-'"
+    def kubernetes_namespace_regex: () -> Regexp
+    def kubernetes_namespace_regex_message: () -> String
+    def kubernetes_dns_subdomain_regex: () -> Regexp
+    def environment_slug_regex: () -> Regexp
+    def environment_slug_regex_message: () -> String
+    def logs_section_prefix_regex: () -> Regexp
+    def logs_section_options_regex: () -> Regexp
+    def logs_section_suffix_regex: () -> Regexp
+    def build_trace_section_regex: () -> Regexp
+    def markdown_code_or_html_blocks_untrusted: () -> String
+    def markdown_code_or_html_comments_untrusted: () -> String
+    def markdown_code_or_html_blocks_or_html_comments_untrusted: () -> String
+    def jira_issue_key_regex: (?expression_escape: untyped) -> Regexp
+    def jira_issue_key_project_key_extraction_regex: () -> Regexp
+    def jira_transition_id_regex: () -> Regexp
+    def breakline_regex: () -> Regexp
+    def aws_account_id_regex: () -> Regexp
+    def aws_account_id_message: () -> "must be a 12-digit number"
+    def aws_arn_regex: () -> Regexp
+    def aws_arn_regex_message: () -> "must be a valid Amazon Resource Name"
+    def utc_date_regex: () -> Regexp
+    def issue: (?untyped) -> Regexp
+    def work_item: (?untyped) -> Regexp
+    def base64_regex: () -> Regexp
+    def feature_flag_regex: () -> Regexp
+    def sep_by_1: (untyped, untyped) -> Regexp
+    def x509_subject_key_identifier_regex: () -> Regexp
+    def ml_model_version_name_regex: () -> Regexp
+    def rubygems_gemspec_file_name_regex: () -> Regexp
+    def ml_model_file_name_regex: () -> Regexp
+  end
+end

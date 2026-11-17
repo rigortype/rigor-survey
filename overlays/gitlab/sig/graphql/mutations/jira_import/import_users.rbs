@@ -1,0 +1,7 @@
+module Mutations
+  module JiraImport
+    class ImportUsers < ::Mutations::BaseMutation
+      def resolve: (project_path: untyped, ?start_at: untyped) -> { jira_users: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module RGL
+  module MutableGraph
+    def add_vertex: (untyped) -> bot
+    def add_edge: (untyped, untyped) -> bot
+    def remove_vertex: (untyped) -> bot
+    def remove_edge: (untyped, untyped) -> bot
+  end
+end

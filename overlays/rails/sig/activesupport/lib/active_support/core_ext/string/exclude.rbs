@@ -1,0 +1,3 @@
+class String
+  def exclude?: (String) -> bool
+end

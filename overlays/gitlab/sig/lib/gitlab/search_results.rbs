@@ -1,0 +1,13 @@
+module Gitlab
+  class SearchResults
+    def initialize: (untyped, untyped, ?untyped, ?order_by: untyped, ?sort: untyped, ?default_project_filter: untyped, ?filters: untyped) -> void
+    def count_limit: () -> 100
+    def highlight_map: (*untyped) -> {}
+    def aggregations: (*untyped) -> []
+    def counts: (*untyped) -> {}
+    def failed?: (*untyped) -> false
+    def server_error?: () -> false
+    def error_type: (*untyped) -> nil
+    def error: (*untyped) -> nil
+  end
+end

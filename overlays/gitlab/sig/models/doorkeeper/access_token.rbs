@@ -1,0 +1,5 @@
+module Doorkeeper
+  class AccessToken < ::ApplicationRecord
+    def self.sticking_namespace: () -> :oauth_token
+  end
+end

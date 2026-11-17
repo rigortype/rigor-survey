@@ -1,0 +1,10 @@
+module Dependabot
+  module Bundler
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class GemspecFinder
+        def initialize: (gemfile: untyped) -> void
+        def gemspec_directories: () -> Array[Pathname]
+      end
+    end
+  end
+end

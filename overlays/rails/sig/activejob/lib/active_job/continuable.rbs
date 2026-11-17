@@ -1,0 +1,8 @@
+module ActiveJob
+  module Continuable
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    def step: (Symbol, ?start: untyped, ?isolated: bool) ?{ (ActiveJob::Continuation::Step) -> void } -> void
+    def checkpoint!: () -> nil
+    def interrupt!: (reason: untyped) -> bot
+  end
+end

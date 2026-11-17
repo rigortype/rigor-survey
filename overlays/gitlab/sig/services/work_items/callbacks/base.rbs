@@ -1,0 +1,8 @@
+module WorkItems
+  module Callbacks
+    class Base < ::Issuable::Callbacks::Base
+      def raise_error: (untyped) -> bot
+      def log_error: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    end
+  end
+end

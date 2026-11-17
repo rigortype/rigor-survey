@@ -1,0 +1,10 @@
+module Dependabot
+  module PreCommit
+    module AdditionalDependencyCheckers
+      class Base
+        def initialize: (source: untyped, credentials: untyped, requirements: untyped, current_version: untyped, ?cooldown_options: untyped) -> void
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  class Migration
+    class CommandRecorder
+      def initialize: (?untyped) -> void
+    end
+  end
+end

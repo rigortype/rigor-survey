@@ -1,0 +1,16 @@
+module Parser
+  module Source
+    class Comment
+      def self.associate: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.associate_locations: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.associate_by_identity: (untyped, untyped) -> Hash[untyped, untyped]
+      def initialize: (untyped) -> void
+      def type: () -> (:document | :inline | nil)
+      def inline?: () -> (false | true)
+      def document?: () -> (false | true)
+      def ==: (untyped) -> (false | true)
+      def inspect: () -> String
+      def location: () -> Parser::Source::Map
+    end
+  end
+end

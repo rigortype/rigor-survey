@@ -1,0 +1,5 @@
+module LooseForeignKeys
+  class PartitionCleanerService < ::LooseForeignKeys::CleanerService
+    def execute: () -> { affected_rows: untyped, table: untyped }
+  end
+end

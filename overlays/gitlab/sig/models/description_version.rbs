@@ -1,0 +1,3 @@
+class DescriptionVersion < ::ApplicationRecord
+  def self.issuable_attrs: () -> [:issue, :merge_request]
+end

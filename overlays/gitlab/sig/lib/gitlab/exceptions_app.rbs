@@ -1,0 +1,5 @@
+module Gitlab
+  class ExceptionsApp < ::ActionDispatch::PublicExceptions
+    def call: (untyped) -> [untyped, untyped, untyped]
+  end
+end

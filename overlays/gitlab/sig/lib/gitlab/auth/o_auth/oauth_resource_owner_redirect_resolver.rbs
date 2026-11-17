@@ -1,0 +1,9 @@
+module Gitlab
+  module Auth
+    module OAuth
+      class OauthResourceOwnerRedirectResolver
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

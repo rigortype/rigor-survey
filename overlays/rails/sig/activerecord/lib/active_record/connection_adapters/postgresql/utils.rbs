@@ -1,0 +1,12 @@
+module ActiveRecord
+  module ConnectionAdapters
+    module PostgreSQL
+      class Name
+        def initialize: (untyped, untyped) -> void
+      end
+      module Utils
+        def extract_schema_qualified_name: (untyped) -> ActiveRecord::ConnectionAdapters::PostgreSQL::Name
+      end
+    end
+  end
+end

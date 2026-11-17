@@ -1,0 +1,3 @@
+module ActionMailer
+  def self.gem_version: () -> Gem::Version
+end

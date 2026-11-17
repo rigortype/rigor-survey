@@ -1,0 +1,7 @@
+module Gitlab
+  module Checks
+    class ForcePush
+      def self.force_push?: (untyped, untyped, untyped) -> (false | true)
+    end
+  end
+end

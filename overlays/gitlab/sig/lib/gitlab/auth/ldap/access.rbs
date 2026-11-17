@@ -1,0 +1,10 @@
+module Gitlab
+  module Auth
+    module Ldap
+      class Access
+        def initialize: (untyped, ?untyped) -> void
+        def allowed?: () -> (false | true)
+      end
+    end
+  end
+end

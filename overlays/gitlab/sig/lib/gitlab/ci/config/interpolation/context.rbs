@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    class Config
+      module Interpolation
+        class Context
+          def initialize: (untyped, variables: untyped) -> void
+          def valid?: () -> true
+          def errors: () -> []
+          def self.fabricate: (untyped, ?variables: untyped) -> Gitlab::Ci::Config::Interpolation::Context
+        end
+      end
+    end
+  end
+end

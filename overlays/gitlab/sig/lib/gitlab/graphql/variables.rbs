@@ -1,0 +1,7 @@
+module Gitlab
+  module Graphql
+    class Variables
+      def initialize: (untyped, ?{ parse_limits: untyped }) -> void
+    end
+  end
+end

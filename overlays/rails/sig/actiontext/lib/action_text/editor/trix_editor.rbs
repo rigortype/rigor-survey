@@ -1,0 +1,7 @@
+module ActionText
+  class Editor
+    class TrixEditor < ::ActionText::Editor
+      def editor_tag: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ActionText::Editor::TrixEditor::Tag
+    end
+  end
+end

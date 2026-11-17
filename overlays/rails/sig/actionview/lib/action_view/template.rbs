@@ -1,0 +1,8 @@
+module ActionView
+  class Template
+    def initialize: (untyped, untyped, untyped, locals: untyped, ?format: untyped, ?variant: untyped, ?virtual_path: untyped) -> void
+    def inspect: () -> String
+    def marshal_dump: () -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+    def marshal_load: (untyped) -> Mutex
+  end
+end

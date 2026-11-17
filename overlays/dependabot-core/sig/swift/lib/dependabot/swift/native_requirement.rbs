@@ -1,0 +1,14 @@
+module Dependabot
+  module Swift
+    class NativeRequirement
+      def self.requirement_string_metadata: (untyped, untyped) -> Hash["requirement_string" | :requirement_string, untyped]
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def update_if_needed: (untyped) -> (String | nil)
+      def update: (untyped) -> (String | nil)
+      def min: () -> String
+      def max: () -> String
+      def requirement: () -> ::Requirement
+    end
+  end
+end

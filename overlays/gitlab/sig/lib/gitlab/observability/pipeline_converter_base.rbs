@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    class PipelineConverterBase
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Repositories
+    class WikiRepository < ::Gitlab::Repositories::RepoType
+      def name: () -> :wiki
+      def suffix: () -> :wiki
+      def access_checker_class: () -> singleton(Gitlab::GitAccessWiki)
+      def guest_read_ability: () -> :download_wiki_code
+      def container_class: () -> singleton(ProjectWiki)
+    end
+  end
+end

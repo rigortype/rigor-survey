@@ -1,0 +1,6 @@
+module Typelizer
+  module Listen
+    def self.relative_path: (untyped) -> String
+    def self.compute_changes: (untyped, untyped, untyped, untyped) -> Hash[:added | :changed | :removed, untyped]
+  end
+end

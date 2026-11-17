@@ -1,0 +1,38 @@
+class Repository
+  def initialize: (untyped, untyped, shard: untyped, ?disk_path: untyped, ?repo_type: untyped) -> void
+  def hash: () -> Integer
+  def raw_repository: () -> (Gitlab::Git::Repository | nil)
+  def path_to_repo: () -> String
+  def inspect: () -> String
+  def commit: (?untyped) -> (Commit | nil)
+  def commits: (?untyped, ?untyped) -> CommitCollection
+  def find_commits_by_message: (untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> (CommitCollection | [])
+  def list_commits: (ref: untyped, ?query: untyped, ?author: untyped, ?path: untyped, ?committed_before: untyped, ?committed_after: untyped, ?pagination_params: untyped, ?literal_pathspec: untyped, ?first_parent: untyped, ?order: untyped, ?follow: untyped, ?trailers: untyped) -> Repositories::CommitCollectionWithNextCursor
+  def has_ambiguous_refs?: () -> (false | true)
+  def rm_branch: (untyped, untyped, ?target_sha: untyped) -> true
+  def rm_tag: (untyped, untyped) -> true
+  def ref_exists?: (untyped) -> (false | true)
+  def keep_around: (*untyped, source: untyped) -> Array[untyped]
+  def cached_methods: () -> [:size, :recent_objects_size, :commit_count, :readme_path, :contribution_guide, :changelog, :license_blob, :license_gitaly, :gitignore, :branch_names, :tag_names, :branch_count, :tag_count, :avatar, :exists?, :root_ref, :merged_branch_names, :has_visible_content?, :issue_template_names_hash, :merge_request_template_names_hash, :xcode_project?, :has_ambiguous_refs?]
+  def expire_tags_cache: () -> nil
+  def expire_branches_cache: () -> nil
+  def refresh_method_caches: (untyped) -> (Array[untyped] | nil)
+  def expire_caches_for_tags: () -> nil
+  def after_remove_tag: () -> nil
+  def blob_at: (untyped, untyped, ?limit: untyped) -> (Blob | nil)
+  def empty?: () -> (false | true)
+  def head_tree: (?skip_flat_paths: untyped) -> (Tree | nil)
+  def blob_at_branch: (untyped, untyped) -> (Blob | nil)
+  def last_commit_for_path: (untyped, untyped, ?literal_pathspec: untyped) -> (Commit | nil)
+  def contributors: (?ref: untyped, ?order_by: untyped, ?sort: untyped) -> Array[Gitlab::Contributor]
+  def create_file_actions: (untyped, untyped, ?execute_filemode: untyped) -> (Array[untyped] | [{ action: :create, file_path: untyped, content: untyped }])
+  def update_file_actions: (untyped, untyped, ?previous_path: untyped, ?execute_filemode: untyped) -> (Array[untyped] | [{ action: :move | :update, file_path: untyped, content: untyped, previous_path: untyped }])
+  def move_dir_files_actions: (untyped, untyped, ?branch_name: untyped) -> Array[{ action: :move, file_path: String, previous_path: untyped, infer_content: true }]
+  def initial_commit: (?untyped) -> (Commit | nil)
+  def submodule_links: () -> Gitlab::SubmoduleLinks
+  def create_if_not_exists: (?untyped) -> (nil | true)
+  def cache: () -> Gitlab::RepositoryCache
+  def object_pool: () -> (Gitlab::Git::ObjectPool | nil)
+  def ignore_revs_file_blob: () -> (Blob | nil)
+  def ignore_revs_file_revision: () -> String
+end

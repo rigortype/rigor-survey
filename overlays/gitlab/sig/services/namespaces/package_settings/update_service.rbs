@@ -1,0 +1,7 @@
+module Namespaces
+  module PackageSettings
+    class UpdateService < ::BaseContainerService
+      def execute: () -> ServiceResponse
+    end
+  end
+end

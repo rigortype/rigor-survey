@@ -1,0 +1,5 @@
+module API
+  class ComposerPackages < ::API::Base
+    def presenter: () -> Packages::Composer::PackagesPresenter
+  end
+end

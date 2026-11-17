@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Count
+      class TablesampleCountStrategy < ::Gitlab::Database::Count::ReltuplesCountStrategy
+        def count: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

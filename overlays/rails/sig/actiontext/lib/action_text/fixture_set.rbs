@@ -1,0 +1,5 @@
+module ActionText
+  class FixtureSet
+    def self.attachment: (untyped, untyped, ?column_type: untyped) -> String
+  end
+end

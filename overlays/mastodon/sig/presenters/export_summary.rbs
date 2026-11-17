@@ -1,0 +1,4 @@
+class ExportSummary
+  def initialize: (untyped) -> void
+  def counts: () -> { blocks: untyped, bookmarks: untyped, custom_filters: untyped, domain_blocks: untyped, owned_lists: untyped, muting: untyped, storage: untyped }
+end

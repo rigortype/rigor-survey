@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    module Actions
+      def require_application!: () -> (false | nil | true)
+    end
+  end
+end

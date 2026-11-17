@@ -1,0 +1,5 @@
+module StartupjsHelper
+  def page_startup_graphql_calls: () -> (Array[untyped] | nil)
+  def page_startup_graphql_headers: () -> Hash[String, untyped]
+  def add_page_startup_graphql_call: (untyped, ?untyped) -> (Array[untyped] | nil)
+end

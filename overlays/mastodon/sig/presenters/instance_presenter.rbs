@@ -1,0 +1,5 @@
+class InstancePresenter < ::ActiveModelSerializers::Model
+  def contact: () -> InstancePresenter::ContactPresenter
+  def languages: () -> [Symbol]
+  def version: () -> String
+end

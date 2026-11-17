@@ -1,0 +1,8 @@
+module Gitlab
+  module CycleAnalytics
+    class Permissions
+      def initialize: (user: untyped, project: untyped) -> void
+      def get: () -> Hash[untyped, untyped]
+    end
+  end
+end

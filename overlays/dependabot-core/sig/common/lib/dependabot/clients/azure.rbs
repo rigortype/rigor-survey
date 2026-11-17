@@ -1,0 +1,37 @@
+module Dependabot
+  module Clients
+    class Azure
+      def self.for_source: (source: untyped, credentials: untyped) -> Dependabot::Clients::Azure
+      def initialize: (untyped, untyped, ?max_retries: untyped) -> void
+      def fetch_commit: (untyped, untyped) -> String
+      def fetch_default_branch: (untyped) -> String
+      def fetch_repo_contents: (?untyped, ?untyped) -> Array[JsonObject]
+      def fetch_repo_contents_treeroot: (?untyped, ?untyped) -> String
+      def fetch_file_contents: (untyped, untyped) -> String
+      def commits: (?untyped) -> Array[JsonObject]
+      def branch: (untyped) -> (JsonObject | nil)
+      def pull_requests: (untyped, untyped) -> Array[JsonObject]
+      def create_commit: (untyped, untyped, untyped, untyped, untyped) -> Excon::Response
+      def create_pull_request: (untyped, untyped, untyped, untyped, untyped, ?untyped, ?untyped, ?untyped) -> Excon::Response
+      def autocomplete_pull_request: (untyped, untyped, untyped, ?untyped, ?untyped, ?untyped, ?untyped, ?untyped) -> JsonObject
+      def pull_request: (untyped) -> JsonObject
+      def update_ref: (untyped, untyped, untyped) -> JsonObject
+      def compare: (untyped, untyped, untyped) -> Array[JsonObject]
+      def auth_header: () -> Hash[String, String]
+      class NotFound < ::StandardError
+      end
+      class InternalServerError < ::StandardError
+      end
+      class ServiceNotAvailable < ::StandardError
+      end
+      class BadGateway < ::StandardError
+      end
+      class Unauthorized < ::StandardError
+      end
+      class Forbidden < ::StandardError
+      end
+      class TagsCreationForbidden < ::StandardError
+      end
+    end
+  end
+end

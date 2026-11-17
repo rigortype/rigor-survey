@@ -1,0 +1,12 @@
+module Mcp
+  module Tools
+    module MergeRequests
+      class GetMergeRequestConflictsService < ::Mcp::Tools::Base::CustomService
+        def unlisted?: () -> true
+        def auth_ability: () -> :read_merge_request
+        def granular_permissions: () -> [:read_merge_request]
+        def authorize!: (untyped) -> nil
+      end
+    end
+  end
+end

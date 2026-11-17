@@ -1,0 +1,7 @@
+module Ci
+  module RetentionPolicies
+    class ProjectsCleanupQueue
+      def max_size: () -> 2500
+    end
+  end
+end

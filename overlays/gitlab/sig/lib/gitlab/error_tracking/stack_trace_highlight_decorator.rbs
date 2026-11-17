@@ -1,0 +1,7 @@
+module Gitlab
+  module ErrorTracking
+    module StackTraceHighlightDecorator
+      def decorate: (untyped) -> Gitlab::ErrorTracking::ErrorEvent
+    end
+  end
+end

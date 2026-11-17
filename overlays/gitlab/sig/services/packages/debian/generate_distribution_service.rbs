@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class GenerateDistributionService
+      def initialize: (untyped) -> void
+    end
+  end
+end

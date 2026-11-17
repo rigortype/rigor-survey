@@ -1,0 +1,11 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        class OrderByColumnData < ::Gitlab::Pagination::Keyset::InOperatorOptimization::ColumnData
+          def initialize: (untyped, String, untyped) -> void
+        end
+      end
+    end
+  end
+end

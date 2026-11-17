@@ -1,0 +1,7 @@
+module Analytics
+  module CycleAnalytics
+    class ValueStream < ::ApplicationRecord
+      def self.build_default_value_stream: (untyped) -> Analytics::CycleAnalytics::ValueStream
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module GithubImport
+    class RateLimitError < ::StandardError
+      def initialize: (?String, ?Integer) -> void
+      def reset_in: () -> (120 | 20 | 60)
+    end
+  end
+end

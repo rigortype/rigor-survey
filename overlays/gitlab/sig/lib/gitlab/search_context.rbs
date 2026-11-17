@@ -1,0 +1,15 @@
+module Gitlab
+  class SearchContext
+    class Builder
+      def initialize: (untyped) -> void
+      def with_snippet: (untyped) -> Gitlab::SearchContext::Builder
+      def with_project: (untyped) -> Gitlab::SearchContext::Builder
+      def with_group: (untyped) -> Gitlab::SearchContext::Builder
+      def with_ref: (untyped) -> Gitlab::SearchContext::Builder
+      def build!: () -> Gitlab::SearchContext
+    end
+    module ControllerConcern
+      def search_context: () -> Gitlab::SearchContext
+    end
+  end
+end

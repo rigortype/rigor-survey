@@ -1,0 +1,7 @@
+module Mutations
+  module Todos
+    class MarkAllDone < ::Mutations::BaseMutation
+      def resolve: (**untyped) -> { todos: ActiveRecord::Relation[Todo], errors: [] }
+    end
+  end
+end

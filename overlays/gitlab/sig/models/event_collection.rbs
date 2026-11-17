@@ -1,0 +1,3 @@
+class EventCollection
+  def initialize: (untyped, ?limit: Integer, ?offset: Integer, ?filter: untyped, ?groups: untyped, ?preserve_projects_order: (false | true), ?transfer_options: ({ ancestor_group_ids: untyped } | { current_group_id: untyped } | { exclude_transferred_events: false | true })) -> void
+end

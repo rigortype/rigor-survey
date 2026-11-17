@@ -1,0 +1,8 @@
+module Dependabot
+  module Hex
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a mix.exs."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class GitlabServicePingWorker
+  def usage_data: (untyped) -> (Hash[untyped, untyped] | NilClass | nil)
+end

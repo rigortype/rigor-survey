@@ -1,0 +1,9 @@
+module Dependabot
+  module Docker
+    class FileUpdater < ::Dependabot::Shared::SharedFileUpdater
+      def file_type: () -> "Dockerfile or Containerfile"
+      def yaml_file_pattern: () -> Regexp
+      def container_image_regex: () -> Regexp
+    end
+  end
+end

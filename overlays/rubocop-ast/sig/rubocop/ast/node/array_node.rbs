@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class ArrayNode < ::RuboCop::AST::Node
+      def each_value: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::ArrayNode)
+    end
+  end
+end

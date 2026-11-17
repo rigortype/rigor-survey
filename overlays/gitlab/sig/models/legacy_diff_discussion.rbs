@@ -1,0 +1,8 @@
+class LegacyDiffDiscussion < ::Discussion
+  def self.note_class: () -> singleton(LegacyDiffNote)
+  def legacy_diff_discussion?: () -> true
+  def on_image?: () -> false
+  def on_text?: () -> true
+  def collapsed?: () -> (false | true)
+  def merge_request_version_params: () -> (nil | {})
+end

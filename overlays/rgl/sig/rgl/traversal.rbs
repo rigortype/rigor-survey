@@ -1,0 +1,14 @@
+module RGL
+  class BFSIterator
+    def initialize: (untyped, ?untyped) -> void
+    def at_beginning?: () -> (false | true)
+    def at_end?: () -> (false | true)
+    def set_to_begin: () -> RGL::BFSIterator
+  end
+  module Graph
+    def bfs_iterator: (?untyped) -> RGL::BFSIterator
+    def bfs_search_tree_from: (untyped) -> RGL::DirectedAdjacencyGraph
+    def dfs_iterator: (?untyped) -> RGL::DFSIterator
+    def depth_first_search: (?untyped) ?{ (*untyped) -> untyped } -> bot
+  end
+end

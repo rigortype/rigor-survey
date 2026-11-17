@@ -1,0 +1,5 @@
+module Members
+  class InvitedPrivateGroupAccessibilityAssigner
+    def initialize: (untyped, source: untyped, current_user: untyped) -> void
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class SyncSequencesWithTableData
+      def initialize: (?logger: untyped, ?only_sequences: untyped) -> void
+      def execute: () -> nil
+    end
+  end
+end

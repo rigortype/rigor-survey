@@ -1,0 +1,9 @@
+module PagesCore
+  module Templates
+    module ControllerActions
+      module ClassMethods
+        def template_actions: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

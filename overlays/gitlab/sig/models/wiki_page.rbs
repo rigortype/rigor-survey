@@ -1,0 +1,21 @@
+class WikiPage
+  def self.primary_key: () -> "slug"
+  def self.model_name: () -> ActiveModel::Name
+  def self.extensible_reference_prefix: () -> "[wiki_page:"
+  def self.reference_prefix: () -> ":"
+  def self.reference_postfix: () -> "]"
+  def self.reference_pattern: () -> Regexp
+  def self.namespace_reference_pattern: () -> Regexp
+  def to_reference: (?untyped, **untyped) -> (String | nil)
+  def to_key: () -> [:slug]
+  def initialize: (untyped, ?untyped) -> void
+  def sluggified_title: () -> String
+  def as_version_of: (untyped) -> WikiPage
+  def latest?: () -> (false | true)
+  def create: (?untyped) -> (false | true)
+  def update: (?untyped) -> (false | true)
+  def delete: () -> (false | true)
+  def to_partial_path: () -> "shared/wikis/wiki_page"
+  def to_ability_name: () -> "wiki_page"
+  def diffs: (?untyped, ?previous_path: untyped) -> Gitlab::Diff::FileCollection::WikiPage
+end

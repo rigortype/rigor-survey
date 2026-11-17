@@ -1,0 +1,14 @@
+module Gitlab
+  module MobilePush
+    class SummaryPayload
+      def initialize: (untyped) -> void
+      def title: () -> nil
+      def subtitle: () -> nil
+      def body: () -> "You have new to-dos"
+      def thread_id: () -> nil
+      def collapse_id: () -> String
+      def mutable_content?: () -> false
+      def gitlab_data: () -> { version: 1, type: "summary", user_id: untyped }
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Import
+  module Offline
+    module Projects
+      module Pipelines
+        class SnippetsRepositoryPipeline
+          def extract: (untyped) -> ::BulkImports::Pipeline::ExtractedData
+          def after_run: (untyped) -> top
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Arel
+  module Nodes
+    class HomogeneousIn < ::Arel::Nodes::Node
+      def initialize: (untyped, untyped, untyped) -> void
+      def invert: () -> Arel::Nodes::HomogeneousIn
+      def proc_for_binds: () -> Proc
+    end
+  end
+end

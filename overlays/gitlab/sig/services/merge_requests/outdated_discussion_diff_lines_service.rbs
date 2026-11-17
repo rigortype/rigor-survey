@@ -1,0 +1,6 @@
+module MergeRequests
+  class OutdatedDiscussionDiffLinesService
+    def initialize: (project: untyped, note: untyped) -> void
+    def execute: () -> Array[untyped]
+  end
+end

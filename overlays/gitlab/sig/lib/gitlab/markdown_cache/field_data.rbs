@@ -1,0 +1,9 @@
+module Gitlab
+  module MarkdownCache
+    class FieldData
+      def markdown_fields: () -> Array[untyped]
+      def html_field: (untyped) -> String
+      def html_fields_whitelisted: () -> Array[String]
+    end
+  end
+end

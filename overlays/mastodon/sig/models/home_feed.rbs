@@ -1,0 +1,5 @@
+class HomeFeed < ::Feed
+  def initialize: (untyped, ?{ exclude_direct: false | true } | { exclude_direct: false | true, exclude_reblogs: false | true } | { exclude_reblogs: false | true }) -> void
+  def async_refresh: () -> AsyncRefresh
+  def regeneration_in_progress!: () -> (AsyncRefresh | nil | true)
+end

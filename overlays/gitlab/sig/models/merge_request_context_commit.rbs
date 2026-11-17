@@ -1,0 +1,3 @@
+class MergeRequestContextCommit < ::ApplicationRecord
+  def to_commit: () -> Commit
+end

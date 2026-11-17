@@ -1,0 +1,6 @@
+module Gitlab
+  class MarkerRange < ::Range[untyped]
+    def initialize: (untyped, untyped, ?exclude_end: (false | true), ?mode: untyped) -> void
+    def to_range: () -> Range[untyped]
+  end
+end

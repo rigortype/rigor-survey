@@ -1,0 +1,7 @@
+module Subscriptions
+  module WorkItems
+    class SavedViewUpdated < ::Subscriptions::BaseSubscription
+      def authorized?: (saved_view_id: untyped) -> true
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Filters
+  class StatusesController < ::ApplicationController
+    def index: () -> Form::StatusFilterBatchAction
+  end
+end

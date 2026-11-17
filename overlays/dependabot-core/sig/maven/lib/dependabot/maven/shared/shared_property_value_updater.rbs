@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    module Shared
+      class SharedPropertyValueUpdater
+        def initialize: (dependency_files: untyped) -> void
+        def update_files_for_property_change: (property_name: untyped, callsite_buildfile: untyped, previous_value: untyped, updated_value: untyped) -> Array[::DependencyFile]
+      end
+    end
+  end
+end

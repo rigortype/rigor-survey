@@ -1,0 +1,5 @@
+module ActivityPub
+  class Dereferencer
+    def initialize: (untyped, ?permitted_origin: untyped, ?signature_actor: untyped) -> void
+  end
+end

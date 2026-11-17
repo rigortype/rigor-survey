@@ -1,0 +1,9 @@
+module Dependabot
+  module Composer
+    module DocumentValueParser
+      def self.object_hash: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.string: (untyped, untyped) -> String
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

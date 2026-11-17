@@ -1,0 +1,8 @@
+module Admin
+  class ExpenseReportsController < ::Admin::ApplicationController
+    def index: () -> void
+    def show: () -> void
+    def update: () -> void
+    def calculate: () -> void
+  end
+end

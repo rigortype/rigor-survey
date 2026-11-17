@@ -1,0 +1,10 @@
+module Routing
+  module OrganizationsHelper
+    class MappedHelpers
+      def self.install: () -> (nil | true)
+      def self.find_route_pairs: () -> Hash[untyped, untyped]
+      def self.build_route_pairs: (untyped, untyped) -> Hash[untyped, untyped]
+      def self.build_override_module: (untyped) -> Module
+    end
+  end
+end

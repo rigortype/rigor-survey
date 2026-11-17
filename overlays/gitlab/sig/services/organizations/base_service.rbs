@@ -1,0 +1,5 @@
+module Organizations
+  class BaseService
+    def initialize: (?current_user: untyped, ?params: untyped) -> void
+  end
+end

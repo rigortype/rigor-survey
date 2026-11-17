@@ -1,0 +1,5 @@
+module BatchedBackgroundMigration
+  class BatchedBackgroundMigrationGenerator < ::ActiveRecord::Generators::Base
+    def validate!: () -> nil
+  end
+end

@@ -1,0 +1,5 @@
+module NodeInfo
+  class DiscoverySerializer < ::ActiveModel::Serializer[untyped]
+    def links: () -> [{ rel: "http://nodeinfo.diaspora.software/ns/schema/2.0", href: untyped }]
+  end
+end

@@ -1,0 +1,11 @@
+module Sidebars
+  module Groups
+    module Menus
+      class CustomerRelationsMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> true
+        def sprite_icon: () -> "users"
+        def serialize_as_menu_item_args: () -> nil
+      end
+    end
+  end
+end

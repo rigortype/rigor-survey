@@ -1,0 +1,9 @@
+module Gitlab
+  module SlashCommands
+    module Presenters
+      class Help < ::Gitlab::SlashCommands::Presenters::Base
+        def initialize: (untyped, untyped, ?untyped) -> void
+      end
+    end
+  end
+end

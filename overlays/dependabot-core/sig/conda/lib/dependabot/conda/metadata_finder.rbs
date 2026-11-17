@@ -1,0 +1,7 @@
+module Dependabot
+  module Conda
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def homepage_url: () -> (String | nil)
+    end
+  end
+end

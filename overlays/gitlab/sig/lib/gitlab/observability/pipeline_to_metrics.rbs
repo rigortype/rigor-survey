@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    class PipelineToMetrics < ::Gitlab::Observability::PipelineConverterBase
+      def convert: () -> ({ resourceMetrics: [] } | { resourceMetrics: [{ resource: { attributes: Array[Hash[Symbol, Hash[Symbol, untyped] | String] | Hash[Symbol, Hash[Symbol, String] | String]] }, scopeMetrics: [{ scope: { name: "gitlab-ci-metrics", version: "1.0.0" }, metrics: Array[untyped] }] }] })
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class ModerationSuggestion < ::ApplicationRecord
+  def to_domain_allow: () -> DomainAllow
+  def to_domain_block: () -> DomainBlock
+end

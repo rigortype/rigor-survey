@@ -1,0 +1,3 @@
+class PublicUrlValidator < ::AddressableUrlValidator
+  def initialize: (untyped) -> void
+end

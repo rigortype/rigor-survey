@@ -1,0 +1,11 @@
+module Gitlab
+  module Template
+    module Finders
+      class BaseTemplateFinder
+        def initialize: (untyped) -> void
+        def find: () -> bot
+        def self.filter_regex: (untyped) -> Regexp
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class AbstractPathValidator < ::ActiveModel::EachValidator
+  def self.format_error_message: () -> bot
+  def self.valid_path?: (untyped) -> (Integer | nil)
+  def build_full_path_to_validate_against_reserved_names?: () -> true
+end

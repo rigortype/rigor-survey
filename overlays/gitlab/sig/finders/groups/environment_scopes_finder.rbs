@@ -1,0 +1,11 @@
+module Groups
+  class EnvironmentScopesFinder
+    def initialize: (group: untyped, ?params: untyped) -> void
+    class EnvironmentScope < ::Struct[untyped]
+      def name: () -> untyped
+      def name=: (untyped) -> untyped
+      def self.new: (?name: untyped) -> instance | (?untyped name) -> instance
+      def self.[]: (?name: untyped) -> instance | (?untyped name) -> instance
+    end
+  end
+end

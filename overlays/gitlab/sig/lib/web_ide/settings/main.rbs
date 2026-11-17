@@ -1,0 +1,7 @@
+module WebIde
+  module Settings
+    class Main
+      def self.get_settings: (untyped) -> ({ settings: untyped, status: :success } | { status: :error, message: untyped, reason: :internal_server_error })
+    end
+  end
+end

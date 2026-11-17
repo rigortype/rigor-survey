@@ -1,0 +1,5 @@
+module API
+  class Geo < ::API::Base
+    def geo_proxy_response: () -> { geo_enabled: false }
+  end
+end

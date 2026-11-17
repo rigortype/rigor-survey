@@ -1,0 +1,7 @@
+module Packages
+  class Dependency < ::ApplicationRecord
+    def self.ids_for_package_project_id_names_and_version_patterns: (untyped, ?untyped, ?untyped, ?untyped) -> Array[untyped]
+    def self.for_package_project_id_names_and_version_patterns: (untyped, ?untyped, ?untyped, ?untyped) -> ActiveRecord::Relation[Packages::Dependency]
+    def self.orphaned: () -> ActiveRecord::Relation[Packages::Dependency]
+  end
+end

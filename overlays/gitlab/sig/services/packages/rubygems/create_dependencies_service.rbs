@@ -1,0 +1,7 @@
+module Packages
+  module Rubygems
+    class CreateDependenciesService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

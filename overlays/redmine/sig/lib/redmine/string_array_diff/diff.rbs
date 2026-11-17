@@ -1,0 +1,16 @@
+module Redmine
+  module StringArrayDiff
+    class Diff
+      def lcs: (untyped, untyped) -> Array[untyped]
+      def makediff: (untyped, untyped) -> 1
+      def compactdiffs: () -> Array[untyped]
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+      def match: (untyped, untyped) -> []
+      def discarda: (untyped, untyped) -> Array[untyped]
+      def discardb: (untyped, untyped) -> Array[untyped]
+      def compact: () -> Redmine::StringArrayDiff::Diff
+      def compact!: () -> Array[untyped]
+      def inspect: () -> String
+    end
+  end
+end

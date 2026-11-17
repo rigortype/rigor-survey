@@ -1,0 +1,8 @@
+module Import
+  module Github
+    class AppApiClient
+      def initialize: (?configuration: untyped, ?jwt_service: untyped) -> void
+      def inspect: () -> String
+    end
+  end
+end

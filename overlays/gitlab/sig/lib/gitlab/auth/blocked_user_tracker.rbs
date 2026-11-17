@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    class BlockedUserTracker
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

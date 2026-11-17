@@ -1,0 +1,6 @@
+class OEmbedSerializer < ::ActiveModel::Serializer[untyped]
+  def type: () -> "rich"
+  def version: () -> "1.0"
+  def cache_age: () -> 86400
+  def html: () -> String
+end

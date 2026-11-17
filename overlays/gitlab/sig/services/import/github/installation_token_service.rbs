@@ -1,0 +1,14 @@
+module Import
+  module Github
+    class InstallationTokenService
+      def initialize: (untyped, ?configuration: untyped, ?jwt_service: untyped) -> void
+      def execute: (?repository_id: untyped, ?force_refresh: untyped) -> Import::Github::InstallationTokenService::Token
+      class Token
+        def initialize: (value: String, expires_at: ActiveSupport::TimeWithZone) -> void
+        def inspect: () -> String
+        def value: () -> "installation-secret"
+        def expires_at: () -> ActiveSupport::TimeWithZone
+      end
+    end
+  end
+end

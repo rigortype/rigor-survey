@@ -1,0 +1,5 @@
+module Gitlab
+  class Highlight
+    def initialize: (untyped, untyped, ?language: String) -> void
+  end
+end

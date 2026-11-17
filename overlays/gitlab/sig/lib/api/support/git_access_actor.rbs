@@ -1,0 +1,10 @@
+module API
+  module Support
+    class GitAccessActor
+      def initialize: (?user: untyped, ?key: untyped, ?deploy_token: untyped) -> void
+      def self.from_params: (untyped) -> ::API::Support::GitAccessActor
+      def self.from_identifier: (untyped) -> ::API::Support::GitAccessActor
+      def key_details: () -> ({ gl_key_type: untyped, gl_key_id: untyped } | {})
+    end
+  end
+end

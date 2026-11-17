@@ -1,0 +1,8 @@
+module Gitlab
+  module Middleware
+    class SidekiqShardAwarenessValidation
+      def initialize: (untyped) -> void
+      def relative_url: () -> String
+    end
+  end
+end

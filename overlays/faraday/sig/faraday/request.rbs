@@ -1,0 +1,17 @@
+module Faraday
+  class Request < ::Struct[untyped]
+    def http_method: () -> untyped
+    def path: () -> untyped
+    def params: () -> untyped
+    def headers: () -> untyped
+    def body: () -> untyped
+    def options: () -> untyped
+    def http_method=: (untyped) -> untyped
+    def path=: (untyped) -> untyped
+    def body=: (untyped) -> untyped
+    def options=: (untyped) -> untyped
+    def self.new: (?http_method: untyped, ?path: untyped, ?params: untyped, ?headers: untyped, ?body: untyped, ?options: untyped) -> instance | (?untyped http_method, ?untyped path, ?untyped params, ?untyped headers, ?untyped body, ?untyped options) -> instance
+    def self.[]: (?http_method: untyped, ?path: untyped, ?params: untyped, ?headers: untyped, ?body: untyped, ?options: untyped) -> instance | (?untyped http_method, ?untyped path, ?untyped params, ?untyped headers, ?untyped body, ?untyped options) -> instance
+    def marshal_dump: () -> { http_method: untyped, body: untyped, headers: untyped, path: untyped, params: untyped, options: untyped }
+  end
+end

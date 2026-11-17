@@ -1,0 +1,12 @@
+module ActionDispatch
+  module Session
+    class CookieStore < ::ActionDispatch::Session::AbstractSecureStore
+      def initialize: (untyped, ?untyped) -> void
+      def delete_session: (untyped, untyped, untyped) -> (Rack::Session::SessionId | nil)
+      def load_session: (untyped) -> [Rack::Session::SessionId, untyped]
+      class SessionId
+        def initialize: (untyped, ?untyped) -> void
+      end
+    end
+  end
+end

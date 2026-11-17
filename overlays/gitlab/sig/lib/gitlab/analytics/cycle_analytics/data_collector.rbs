@@ -1,0 +1,9 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      class DataCollector
+        def initialize: (stage: untyped, ?params: untyped) -> void
+      end
+    end
+  end
+end

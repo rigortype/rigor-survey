@@ -1,0 +1,7 @@
+module Organizations
+  class HardDeleteService
+    def initialize: (untyped, current_user: untyped) -> void
+    def async_execute: () -> ServiceResponse
+    def execute: () -> ServiceResponse
+  end
+end

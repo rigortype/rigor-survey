@@ -1,0 +1,10 @@
+module Gitlab
+  module Cleanup
+    module OrphanJobArtifactFinalObjects
+      class BatchFromStorage
+        def initialize: (untyped, ?bucket_prefix: untyped) -> void
+        def orphan_objects: () -> Array[untyped]
+      end
+    end
+  end
+end

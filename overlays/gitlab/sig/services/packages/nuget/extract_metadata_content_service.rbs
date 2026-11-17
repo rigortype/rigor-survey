@@ -1,0 +1,9 @@
+module Packages
+  module Nuget
+    class ExtractMetadataContentService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+      def doc: () -> Nokogiri::XML::Document
+    end
+  end
+end

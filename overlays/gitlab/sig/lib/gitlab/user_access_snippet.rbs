@@ -1,0 +1,8 @@
+module Gitlab
+  class UserAccessSnippet < ::Gitlab::UserAccess
+    def initialize: (untyped, ?snippet: untyped) -> void
+    def can_create_tag?: (untyped) -> false
+    def can_delete_branch?: (untyped) -> false
+    def can_merge_to_branch?: (untyped) -> false
+  end
+end

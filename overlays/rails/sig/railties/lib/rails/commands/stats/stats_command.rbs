@@ -1,0 +1,7 @@
+module Rails
+  module Command
+    class StatsCommand < ::Rails::Command::Base
+      def perform: () -> String
+    end
+  end
+end

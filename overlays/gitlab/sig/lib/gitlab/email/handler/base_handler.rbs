@@ -1,0 +1,13 @@
+module Gitlab
+  module Email
+    module Handler
+      class BaseHandler
+        def self.gem_handler: () -> nil
+        def initialize: (Mail::Message, String) -> void
+        def metrics_event: () -> bot
+        def mail: () -> Mail::Message
+        def mail_key: () -> "mail_key"
+      end
+    end
+  end
+end

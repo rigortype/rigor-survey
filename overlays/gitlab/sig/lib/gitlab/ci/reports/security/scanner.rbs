@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Scanner
+          def initialize: (external_id: untyped, name: untyped, vendor: untyped, version: untyped, ?primary_identifiers: untyped) -> void
+          def to_hash: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

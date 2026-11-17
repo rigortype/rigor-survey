@@ -1,0 +1,6 @@
+class ProjectTeam
+  def initialize: (untyped) -> void
+  def truncate: () -> (false | true)
+  def human_max_access: (untyped) -> ("Developer" | "Guest" | "Maintainer" | "Owner" | "Planner" | "Reporter" | "Security Manager" | nil)
+  def purge_member_access_cache_for_user_id: (untyped) -> nil
+end

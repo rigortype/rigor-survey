@@ -1,0 +1,8 @@
+module Namespaces
+  class UserNamespace < ::Namespace
+    def self.sti_name: () -> "User"
+    def owners: () -> Array[untyped]
+    def max_member_access_for_user: (untyped, ?only_concrete_membership: untyped) -> (0 | 50)
+    def crm_group: () -> nil
+  end
+end

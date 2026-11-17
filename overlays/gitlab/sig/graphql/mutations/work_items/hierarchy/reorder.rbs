@@ -1,0 +1,9 @@
+module Mutations
+  module WorkItems
+    module Hierarchy
+      class Reorder < ::Mutations::BaseMutation
+        def resolve: (**untyped) -> { work_item: untyped, adjacent_work_item: untyped, parent_work_item: untyped, errors: Array[untyped] | [] }
+      end
+    end
+  end
+end

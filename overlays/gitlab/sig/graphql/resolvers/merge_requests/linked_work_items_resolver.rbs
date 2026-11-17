@@ -1,0 +1,7 @@
+module Resolvers
+  module MergeRequests
+    class LinkedWorkItemsResolver < ::Resolvers::BaseResolver
+      def resolve: (?types: untyped) -> Array[untyped]
+    end
+  end
+end

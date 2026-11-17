@@ -1,0 +1,3 @@
+class LfsObjectUploader < ::GitlabUploader
+  def store_dir: () -> String
+end

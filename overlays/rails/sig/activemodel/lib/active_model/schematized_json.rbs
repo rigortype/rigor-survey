@@ -1,0 +1,7 @@
+module ActiveModel
+  module SchematizedJson
+    class DataAccessor
+      def initialize: (untyped, data: untyped) -> void
+    end
+  end
+end

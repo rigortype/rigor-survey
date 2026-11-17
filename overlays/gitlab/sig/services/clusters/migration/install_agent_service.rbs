@@ -1,0 +1,7 @@
+module Clusters
+  module Migration
+    class InstallAgentService
+      def initialize: (untyped) -> void
+    end
+  end
+end

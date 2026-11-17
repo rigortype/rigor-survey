@@ -1,0 +1,9 @@
+module Import
+  module Offline
+    module Imports
+      class ScheduleImportWorker
+        def perform: (untyped, untyped, ?Hash[String, String]) -> (ServiceResponse | nil)
+      end
+    end
+  end
+end

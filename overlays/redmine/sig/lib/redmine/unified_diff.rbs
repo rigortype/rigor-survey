@@ -1,0 +1,6 @@
+module Redmine
+  class UnifiedDiff < ::Array[untyped]
+    def initialize: (String, ?untyped) -> void
+    def truncated?: () -> (false | true)
+  end
+end

@@ -1,0 +1,5 @@
+module Clusters
+  class BuildKubernetesNamespaceService
+    def initialize: (untyped, environment: untyped) -> void
+  end
+end

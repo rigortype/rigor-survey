@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class NamespaceEachBatch
+      def initialize: (namespace_class: untyped, cursor: untyped) -> void
+      def cursor: () -> { current_id: untyped, depth: untyped }
+    end
+  end
+end

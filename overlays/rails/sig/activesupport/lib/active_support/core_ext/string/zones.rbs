@@ -1,0 +1,3 @@
+class String
+  def in_time_zone: () -> (ActiveSupport::TimeWithZone | Time)? | (ActiveSupport::TimeZone | String) -> ActiveSupport::TimeWithZone? | (false?) -> Time?
+end

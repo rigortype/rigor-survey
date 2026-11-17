@@ -1,0 +1,7 @@
+module Groups
+  module ProjectsRequiringAuthorizationsRefresh
+    class Base
+      def initialize: (untyped) -> void
+    end
+  end
+end

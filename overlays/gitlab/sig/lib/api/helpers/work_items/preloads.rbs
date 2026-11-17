@@ -1,0 +1,10 @@
+module API
+  module Helpers
+    module WorkItems
+      module Preloads
+        def count_preloads_for: (untyped, untyped, untyped) -> Hash[untyped, untyped]
+        def preload_notifications_subscriptions: (untyped, untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Packages
+  module Go
+    class Module
+      def initialize: (untyped, untyped, untyped) -> void
+      def path_valid?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Marcel
+  class MimeType
+    def self.parse_media_type: (untyped) -> (String | nil)
+  end
+end

@@ -1,0 +1,9 @@
+module ActiveModel
+  module Attributes
+    module Normalization
+      class NormalizedValueType
+        def initialize: (cast_type: untyped, normalizer: untyped, normalize_nil: untyped) -> void
+      end
+    end
+  end
+end

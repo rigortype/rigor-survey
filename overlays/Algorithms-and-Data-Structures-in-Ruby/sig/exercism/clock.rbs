@@ -1,0 +1,6 @@
+class Clock
+  def initialize: (?hour: untyped, ?minute: untyped) -> void
+  def to_s: () -> String
+  def +: (untyped) -> Clock
+  def -: (untyped) -> Clock
+end

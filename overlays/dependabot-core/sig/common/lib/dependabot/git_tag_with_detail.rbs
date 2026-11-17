@@ -1,0 +1,7 @@
+module Dependabot
+  class GitTagWithDetail
+    def initialize: (tag: untyped, ?release_date: untyped) -> void
+    def ==: (untyped) -> (false | true)
+    def to_h: () -> Hash[untyped, untyped]
+  end
+end

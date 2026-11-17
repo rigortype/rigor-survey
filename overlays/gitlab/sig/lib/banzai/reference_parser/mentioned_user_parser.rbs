@@ -1,0 +1,7 @@
+module Banzai
+  module ReferenceParser
+    class MentionedUserParser < ::Banzai::ReferenceParser::BaseParser
+      def can_read_reference?: (untyped, untyped, untyped) -> true
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class BaseContainerService
+  def project_container?: () -> (false | true)
+  def group_container?: () -> (false | true)
+  def namespace_container?: () -> (false | true)
+end

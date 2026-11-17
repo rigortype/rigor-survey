@@ -1,0 +1,11 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class IncludeExtractor
+        def initialize: (module_file: untyped, fetcher: untyped) -> void
+        def fetch_included_files: () -> [Array[untyped], Set[untyped]]
+        def visited_files: () -> Set[untyped]
+      end
+    end
+  end
+end

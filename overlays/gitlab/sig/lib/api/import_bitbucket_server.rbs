@@ -1,0 +1,5 @@
+module API
+  class ImportBitbucketServer < ::API::Base
+    def credentials: () -> { base_uri: untyped, user: untyped, password: untyped }
+  end
+end

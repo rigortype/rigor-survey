@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module Aggregation
+      module Authorization
+        def authorization_required?: () -> (false | true)
+      end
+    end
+  end
+end

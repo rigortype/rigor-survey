@@ -1,0 +1,5 @@
+module Ci
+  class BuildTrace
+    def initialize: (build: untyped, stream: untyped, state: untyped) -> void
+  end
+end

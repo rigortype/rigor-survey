@@ -1,0 +1,7 @@
+module ActionController
+  module Helpers
+    module ClassMethods
+      def helpers: () -> ActionView::Base
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      class BulkByIdLookup
+        def initialize: ([untyped, untyped] | [untyped] | [] | [nil, untyped, nil], ?fallback: (false | true)) -> void
+        def ids: () -> Array[untyped]
+        def fallback: () -> false
+      end
+    end
+  end
+end

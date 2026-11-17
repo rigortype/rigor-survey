@@ -1,0 +1,8 @@
+module Sidebars
+  class Panel
+    def initialize: (untyped) -> void
+    def add_menu: (untyped) -> (Array[untyped] | nil)
+    def insert_menu_before: (untyped, untyped) -> (Array[untyped] | nil)
+    def insert_menu_after: (untyped, untyped) -> (Array[untyped] | nil)
+  end
+end

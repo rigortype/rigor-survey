@@ -1,0 +1,6 @@
+module BulkImports
+  class UserContributionsExportMapper
+    def initialize: (untyped, ?offline_export_id: untyped) -> void
+    def get_contributing_users: () -> ActiveRecord::Relation[User]
+  end
+end

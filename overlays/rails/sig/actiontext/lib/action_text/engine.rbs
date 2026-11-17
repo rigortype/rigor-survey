@@ -1,0 +1,7 @@
+module ActionText
+  class Engine < ::Rails::Engine
+    def attachable_plain_text_representation: (?untyped) -> String
+    def attachable_markdown_representation: (?untyped, ?attachment_links: untyped) -> String
+    def to_editor_content_attachment_partial_path: () -> nil
+  end
+end

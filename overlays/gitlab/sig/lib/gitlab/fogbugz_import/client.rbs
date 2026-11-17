@@ -1,0 +1,10 @@
+module Gitlab
+  module FogbugzImport
+    class Client
+      def initialize: (?untyped) -> void
+      def valid?: () -> (false | true)
+      def user_map: () -> Hash[untyped, { name: untyped, email: untyped }]
+      def api: () -> Gitlab::FogbugzImport::Interface
+    end
+  end
+end

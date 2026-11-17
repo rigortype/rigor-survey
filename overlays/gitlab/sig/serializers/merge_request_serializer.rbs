@@ -1,0 +1,3 @@
+class MergeRequestSerializer < ::BaseSerializer
+  def identified_entity: (untyped) -> (singleton(IssuableSidebarBasicEntity) | singleton(MergeRequestBasicEntity) | singleton(MergeRequestNoteableEntity) | singleton(MergeRequestPollCachedWidgetEntity) | singleton(MergeRequestPollWidgetEntity) | singleton(MergeRequestSidebarExtrasEntity) | singleton(MergeRequestWidgetEntity))
+end

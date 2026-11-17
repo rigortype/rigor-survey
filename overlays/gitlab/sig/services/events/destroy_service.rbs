@@ -1,0 +1,6 @@
+module Events
+  class DestroyService
+    def initialize: (untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

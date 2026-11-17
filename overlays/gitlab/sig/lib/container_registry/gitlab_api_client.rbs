@@ -1,0 +1,9 @@
+module ContainerRegistry
+  class GitlabApiClient < ::ContainerRegistry::BaseClient
+    def tags: (untyped, ?page_size: untyped, ?last: untyped, ?before: untyped, ?name: untyped, ?sort: untyped, ?referrers: untyped, ?referrer_type: untyped) -> ({ pagination: untyped, response_body: untyped } | {})
+    def sub_repositories_with_tag: (untyped, ?page_size: untyped, ?last: untyped) -> ({ pagination: untyped, response_body: untyped } | {})
+    def rename_base_repository_path: (untyped, name: untyped, ?dry_run: untyped) -> (:accepted | :bad_request | :error | :name_taken | :not_found | :ok | :rename_not_supported | :too_many_subrepositories | :unauthorized)
+    def move_repository_to_namespace: (untyped, namespace: untyped, ?dry_run: untyped) -> (:accepted | :bad_request | :error | :name_taken | :not_found | :ok | :rename_not_supported | :too_many_subrepositories | :unauthorized)
+    def statistics: () -> ({ features: untyped, version: untyped, db_enabled: untyped } | {})
+  end
+end

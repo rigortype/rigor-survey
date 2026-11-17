@@ -1,0 +1,8 @@
+module Gitlab
+  module Auth
+    class Activity
+      def initialize: (untyped) -> void
+      def self.each_counter: () -> Hash[Symbol, String]
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module TDiary
+  class Dispatcher
+    def initialize: (untyped) -> void
+    def self.index: () -> TDiary::Dispatcher
+    def self.update: () -> TDiary::Dispatcher
+  end
+end

@@ -1,0 +1,7 @@
+module Resolvers
+  module Projects
+    class DeployKeyResolver < ::Resolvers::BaseResolver
+      def preloads: () -> { user: [:user] }
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Migrations
+      module BatchedBackgroundMigrationHelpers
+        def queue_batched_background_migration: (untyped, untyped, untyped, *untyped, ?job_interval: untyped, ?batch_min_value: untyped, ?batch_max_value: untyped, ?batch_class_name: untyped, ?batch_size: untyped, ?pause_ms: untyped, ?max_batch_size: untyped, ?sub_batch_size: untyped, ?gitlab_schema: untyped, ?min_cursor: untyped, ?max_cursor: untyped) -> (Gitlab::Database::BackgroundMigration::BatchedMigration | nil)
+        def ensure_batched_background_migration_is_finished: (job_class_name: untyped, table_name: untyped, column_name: untyped, job_arguments: untyped, ?finalize: untyped, ?skip_early_finalization_validation: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module MergeRequests
+  class BaseService < ::IssuableBaseService
+    def inspect: () -> String
+    def merge_request_activity_counter: () -> singleton(Gitlab::UsageDataCounters::MergeRequestActivityUniqueCounter)
+    def self.constructor_container_arg: (untyped) -> { project: untyped }
+  end
+end

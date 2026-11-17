@@ -1,0 +1,8 @@
+module Authn
+  module IamService
+    class RejectConsentChallengeService
+      def initialize: (challenge: untyped, user: untyped, client_id: untyped, client_name: untyped, requested_scopes: untyped, client_scopes: untyped, ?ip_address: untyped, ?user_agent: untyped, ?client: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

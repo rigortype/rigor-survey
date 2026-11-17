@@ -1,0 +1,8 @@
+module Gitlab
+  class GlRepository
+    def self.types: () -> Hash[untyped, untyped]
+    def self.parse: (untyped) -> [untyped, untyped, untyped]
+    def self.default_type: () -> Gitlab::Repositories::ProjectRepository
+    def types: () -> Hash[untyped, untyped]
+  end
+end

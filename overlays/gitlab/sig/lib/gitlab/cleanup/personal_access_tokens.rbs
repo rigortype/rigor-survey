@@ -1,0 +1,8 @@
+module Gitlab
+  module Cleanup
+    class PersonalAccessTokens
+      def initialize: (group_full_path: untyped, ?cut_off_date: untyped, ?logger: untyped) -> void
+      def revocation_time: () -> Time
+    end
+  end
+end

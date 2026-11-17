@@ -1,0 +1,3 @@
+class NamespacePathValidator < ::AbstractPathValidator
+  def self.format_error_message: () -> String
+end

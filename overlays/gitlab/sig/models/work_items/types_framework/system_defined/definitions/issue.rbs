@@ -1,0 +1,17 @@
+module WorkItems
+  module TypesFramework
+    module SystemDefined
+      module Definitions
+        module Issue
+          def self.widgets: () -> ["agent_plan", "ai_session", "assignees", "award_emoji", "crm_contacts", "current_user_todos", "custom_fields", "decision_log", "description", "designs", "development", "email_participants", "error_tracking", "health_status", "hierarchy", "iteration", "labels", "linked_items", "milestone", "notes", "notifications", "participants", "start_and_due_date", "time_tracking", "vulnerabilities", "linked_resources", "weight", "status"]
+          def self.widget_options: () -> {}
+          def self.configuration: () -> { id: 1, name: "Issue", base_type: "issue", icon_name: "work-item-issue" }
+          def self.allowed_child_types: () -> [{ type: :task, maximum_depth: 1 }]
+          def self.licenses_for_parent: () -> Hash[String, :epics]
+          def self.supports_move_action?: () -> true
+          def self.filterable_board_view?: () -> true
+        end
+      end
+    end
+  end
+end

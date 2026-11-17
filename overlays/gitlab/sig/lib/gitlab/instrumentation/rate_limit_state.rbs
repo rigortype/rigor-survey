@@ -1,0 +1,10 @@
+module Gitlab
+  module Instrumentation
+    class RateLimitState
+      def self.payload: () -> Hash[:rate_limit_state, untyped]
+      def self.entry: (untyped, untyped, untyped) -> String
+      def self.result_for: (untyped) -> ("allow" | "banned" | "block" | "log")
+      def self.state: () -> Array[untyped]
+    end
+  end
+end

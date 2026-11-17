@@ -1,0 +1,12 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, security_advisories: untyped, ?cooldown_options: untyped, ?raise_on_ignored: untyped, ?options: untyped) -> void
+        def package_details: () -> (Dependabot::Package::PackageDetails | nil)
+        def latest_version_details: () -> (Dependabot::Bundler::UpdateChecker::VersionDetails | ::VersionDetails | nil)
+        def cooldown_enabled?: () -> true
+      end
+    end
+  end
+end

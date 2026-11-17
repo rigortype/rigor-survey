@@ -1,0 +1,8 @@
+class DraftNote < ::ApplicationRecord
+  def noteable_type: () -> "MergeRequest"
+  def for_commit?: () -> false
+  def importing?: () -> false
+  def resolvable?: () -> false
+  def emoji_awardable?: () -> false
+  def references: () -> { users: untyped, commands: untyped }
+end

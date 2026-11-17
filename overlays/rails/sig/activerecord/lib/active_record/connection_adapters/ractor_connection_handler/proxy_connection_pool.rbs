@@ -1,0 +1,30 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class ProxyConnectionPool
+        def initialize: (untyped) -> void
+        def inspect: () -> String
+        def migration_context: () -> ActiveRecord::MigrationContext
+        def schema_migration: () -> ActiveRecord::SchemaMigration
+        def internal_metadata: () -> ActiveRecord::InternalMetadata
+        def permanent_lease?: () -> (false | true)
+        def release_connection: (?untyped) -> (false | true)
+        def pin_connection!: (untyped) -> true
+        def discarded?: () -> false
+        def disconnect!: () -> (false | true)
+        def enable_query_cache!: () -> true
+        def disable_query_cache!: () -> true
+        def build_query_cache: () -> ActiveRecord::ConnectionAdapters::QueryCache::Store
+        def key: () -> [untyped, untyped, untyped, untyped]
+        class Lease < ::Struct[untyped]
+          def connection: () -> untyped
+          def sticky: () -> untyped
+          def connection=: (untyped) -> untyped
+          def sticky=: (untyped) -> untyped
+          def self.new: (?connection: untyped, ?sticky: untyped) -> instance | (?untyped connection, ?untyped sticky) -> instance
+          def self.[]: (?connection: untyped, ?sticky: untyped) -> instance | (?untyped connection, ?untyped sticky) -> instance
+        end
+      end
+    end
+  end
+end

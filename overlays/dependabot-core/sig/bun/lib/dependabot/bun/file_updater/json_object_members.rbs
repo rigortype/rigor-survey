@@ -1,0 +1,13 @@
+module Dependabot
+  module Bun
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class JsonObjectMembers
+        def self.objects: (untyped, untyped) -> Hash[String, Range[Integer]]
+        def self.strings: (untyped, untyped) -> Hash[String, Range[Integer]]
+        def initialize: (untyped, untyped) -> void
+        def objects: () -> Hash[String, Range[Integer]]
+        def strings: () -> Hash[String, Range[Integer]]
+      end
+    end
+  end
+end

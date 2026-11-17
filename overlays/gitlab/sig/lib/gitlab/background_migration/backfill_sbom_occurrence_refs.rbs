@@ -1,0 +1,21 @@
+module Gitlab
+  module BackgroundMigration
+    class BackfillSbomOccurrenceRefs < ::Gitlab::BackgroundMigration::BatchedMigrationJob
+      class Repository
+        def initialize: (untyped, untyped, shard: untyped, disk_path: untyped) -> void
+      end
+      module Storage
+        class Hashed
+          def initialize: (untyped) -> void
+          def disk_path: () -> (String | nil)
+        end
+        class LegacyProject
+          def initialize: (untyped) -> void
+        end
+      end
+      class Project < ::ApplicationRecord
+        def repository: () -> Gitlab::BackgroundMigration::BackfillSbomOccurrenceRefs::Repository
+      end
+    end
+  end
+end

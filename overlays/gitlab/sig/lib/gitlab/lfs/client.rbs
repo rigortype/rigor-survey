@@ -1,0 +1,26 @@
+module Gitlab
+  module Lfs
+    class Client
+      def initialize: (untyped, credentials: untyped) -> void
+      def upload!: (untyped, untyped, authenticated: untyped) -> nil
+      def verify!: (untyped, untyped, authenticated: untyped) -> nil
+      class HttpError < ::StandardError
+        def initialize: (http_response: untyped) -> void
+        def http_error: () -> String
+      end
+      class BatchSubmitError < ::Gitlab::Lfs::Client::HttpError
+        def message: () -> String
+      end
+      class UnsupportedTransferError < ::StandardError
+        def initialize: (?untyped) -> void
+        def message: () -> String
+      end
+      class ObjectUploadError < ::Gitlab::Lfs::Client::HttpError
+        def message: () -> String
+      end
+      class ObjectVerifyError < ::Gitlab::Lfs::Client::HttpError
+        def message: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Dependabot
+  module PreCommit
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder < ::Dependabot::Package::PackageLatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ignored_versions: untyped, raise_on_ignored: untyped, ?options: untyped, ?cooldown_options: untyped) -> void
+        def latest_release_version: () -> (Dependabot::Version | String | nil)
+      end
+    end
+  end
+end

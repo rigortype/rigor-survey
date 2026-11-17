@@ -1,0 +1,11 @@
+module Gitlab
+  module ImportExport
+    module Group
+      class RelationTreeRestorer
+        def initialize: (user: untyped, shared: untyped, relation_reader: untyped, members_mapper: untyped, object_builder: singleton(Gitlab::ImportExport::Group::ObjectBuilder), relation_factory: singleton(Gitlab::ImportExport::Group::RelationFactory), reader: untyped, importable: untyped, importable_attributes: untyped, importable_path: untyped, ?skip_on_duplicate_iid: untyped) -> void
+        def restore: () -> (false | true)
+        def relation_factory: () -> singleton(Gitlab::ImportExport::Group::RelationFactory)
+      end
+    end
+  end
+end

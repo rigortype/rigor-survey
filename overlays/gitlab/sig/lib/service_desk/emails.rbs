@@ -1,0 +1,7 @@
+module ServiceDesk
+  class Emails
+    def initialize: (untyped) -> void
+    def all_addresses: () -> Array[untyped]
+    def default_subaddress_part: () -> String
+  end
+end

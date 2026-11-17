@@ -1,0 +1,7 @@
+module JiraConnectInstallations
+  class ProxyLifecycleEventService
+    def self.execute: (untyped, untyped, untyped) -> ServiceResponse
+    def initialize: (untyped, untyped, String) -> void
+    def execute: () -> ServiceResponse
+  end
+end

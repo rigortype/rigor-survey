@@ -1,0 +1,5 @@
+module PagesCore
+  class HtmlFormatter
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

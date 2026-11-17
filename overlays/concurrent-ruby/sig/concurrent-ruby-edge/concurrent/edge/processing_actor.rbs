@@ -1,0 +1,9 @@
+module Concurrent
+  class ProcessingActor < ::Concurrent::Synchronization::Object
+    def self.act: (*untyped) ?{ (*untyped) -> untyped } -> Concurrent::ProcessingActor
+    def self.act_listening: (untyped, *untyped) ?{ (*untyped) -> untyped } -> Concurrent::ProcessingActor
+    def tell!: (untyped) -> Concurrent::ProcessingActor
+    def to_s: () -> String
+    def to_ary: () -> [untyped, untyped]
+  end
+end

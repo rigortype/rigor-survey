@@ -1,0 +1,9 @@
+module Gitlab
+  module Chat
+    module Responder
+      class Slack < ::Gitlab::Chat::Responder::Base
+        def scheduled_output: () -> { text: "" }
+      end
+    end
+  end
+end

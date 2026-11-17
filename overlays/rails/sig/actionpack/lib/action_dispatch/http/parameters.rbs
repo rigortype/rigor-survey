@@ -1,0 +1,11 @@
+module ActionDispatch
+  module Http
+    module Parameters
+      def parameters: () -> ActiveSupport::HashWithIndifferentAccess
+      def path_parameters: () -> Hash[untyped, untyped]
+      class ParseError < ::StandardError
+        def initialize: (?untyped) -> void
+      end
+    end
+  end
+end

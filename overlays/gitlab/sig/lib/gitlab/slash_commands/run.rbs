@@ -1,0 +1,8 @@
+module Gitlab
+  module SlashCommands
+    class Run < ::Gitlab::SlashCommands::BaseCommand
+      def self.match: (untyped) -> (MatchData | nil)
+      def self.help_message: () -> "run <command> <arguments>"
+    end
+  end
+end

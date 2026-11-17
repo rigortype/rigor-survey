@@ -1,0 +1,9 @@
+module API
+  module Helpers
+    module Authz
+      module GranularScopesHelpers
+        def granular_scopes_options_for: (untyped) -> ({ with_granular_scopes: true, project_ids_by_namespace_id: untyped } | {})
+      end
+    end
+  end
+end

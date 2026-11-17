@@ -1,0 +1,8 @@
+module Gitlab
+  module Redis
+    class FeatureFlag < ::Gitlab::Redis::Wrapper
+      def self.config_fallback: () -> singleton(Gitlab::Redis::Cache)
+      def self.cache_store: () -> Gitlab::Redis::FeatureFlag::FeatureFlagStore
+    end
+  end
+end

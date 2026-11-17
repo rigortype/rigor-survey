@@ -1,0 +1,7 @@
+module SystemCheck
+  module App
+    class HashedStorageEnabledCheck < ::SystemCheck::BaseCheck
+      def show_error: () -> Array[String]
+    end
+  end
+end

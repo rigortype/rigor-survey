@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class SendNode < ::RuboCop::AST::Node
+      def send_type?: () -> true
+    end
+  end
+end

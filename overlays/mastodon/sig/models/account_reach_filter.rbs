@@ -1,0 +1,5 @@
+class AccountReachFilter < ::ApplicationRecord
+  class BloomFilterSerializer
+    def self.dump: (untyped) -> (String | nil)
+  end
+end

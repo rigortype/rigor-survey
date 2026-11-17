@@ -1,0 +1,14 @@
+class Item < ::Struct[untyped]
+  def name: () -> untyped
+  def sell_in: () -> untyped
+  def quality: () -> untyped
+  def name=: (untyped) -> untyped
+  def sell_in=: (untyped) -> untyped
+  def quality=: (untyped) -> untyped
+  def self.new: (?name: untyped, ?sell_in: untyped, ?quality: untyped) -> instance | (?untyped name, ?untyped sell_in, ?untyped quality) -> instance
+  def self.[]: (?name: untyped, ?sell_in: untyped, ?quality: untyped) -> instance | (?untyped name, ?untyped sell_in, ?untyped quality) -> instance
+end
+
+class GildedRose
+  def initialize: (untyped) -> void
+end

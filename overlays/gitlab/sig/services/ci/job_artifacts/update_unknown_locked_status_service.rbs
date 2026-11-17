@@ -1,0 +1,7 @@
+module Ci
+  module JobArtifacts
+    class UpdateUnknownLockedStatusService
+      def execute: () -> { removed: untyped, locked: untyped }
+    end
+  end
+end

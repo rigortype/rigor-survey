@@ -1,0 +1,6 @@
+module CustomFieldsHelper
+  def custom_field_type_options: () -> [[untyped, "IssueCustomField"], [untyped, "TimeEntryCustomField"], [untyped, "ProjectCustomField"], [untyped, "VersionCustomField"], [untyped, "DocumentCustomField"], [untyped, "UserCustomField"], [untyped, "GroupCustomField"], [untyped, "TimeEntryActivityCustomField"], [untyped, "IssuePriorityCustomField"], [untyped, "DocumentCategoryCustomField"]]
+  def custom_field_tag_name: (untyped, untyped) -> String
+  def custom_field_tag_id: (untyped, untyped) -> String
+  def select_type_radio_buttons: (untyped) -> String
+end

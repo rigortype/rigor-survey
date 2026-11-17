@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module Base
+      module IconConfig
+        def self.gitlab_icons: () -> [{ mimeType: "image/png", src: untyped, theme: "dark" }, { mimeType: "image/png", src: untyped, theme: "light" }]
+      end
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class ProtectableDropdown
+  def initialize: (untyped, untyped, ?ref_names: untyped) -> void
+  def paginated_protectable_ref_names: (limit: untyped, ?page_token: untyped, ?search: untyped) -> ({ names: untyped, next_cursor: untyped } | { names: [], next_cursor: nil })
+end

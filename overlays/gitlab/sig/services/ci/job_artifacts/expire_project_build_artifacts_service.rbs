@@ -1,0 +1,7 @@
+module Ci
+  module JobArtifacts
+    class ExpireProjectBuildArtifactsService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

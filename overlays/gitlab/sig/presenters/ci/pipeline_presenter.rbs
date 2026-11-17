@@ -1,0 +1,8 @@
+module Ci
+  class PipelinePresenter < ::Gitlab::View::Presenter::Delegated
+    def self.failure_reasons: () -> { unknown_failure: "The reason for the pipeline failure is unknown.", config_error: "The pipeline failed due to an error on the CI/CD configuration file.", external_validation_failure: "The external pipeline validation failed.", user_not_verified: "The pipeline failed due to the user not being verified.", size_limit_exceeded: "The pipeline size limit was exceeded.", job_activity_limit_exceeded: "The pipeline job activity limit was exceeded.", deployments_limit_exceeded: "The pipeline deployments limit was exceeded.", project_deleted: "The project associated with this pipeline was deleted.", filtered_by_rules: untyped, filtered_by_workflow_rules: untyped, composite_identity_forbidden: String, pipeline_ref_creation_failure: "Failed to create pipeline ref.", filtered_by_no_pipeline: "The pipeline did not run. The commit was pushed with the `ci.no_pipeline` option.", gitaly_unavailable: "The pipeline failed because Gitaly was temporarily unavailable. Please try again.", seed_timeout: "Pipeline creation timed out while evaluating rules." }
+    def status_title: () -> (String | nil)
+    def localized_names: () -> { merge_train: untyped, merged_result: untyped, detached: untyped }
+    def coverage: () -> (String | nil)
+  end
+end

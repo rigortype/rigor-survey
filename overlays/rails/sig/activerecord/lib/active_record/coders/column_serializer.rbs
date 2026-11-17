@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Coders
+    class ColumnSerializer
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def assert_valid_value: (untyped, action: untyped) -> nil
+    end
+  end
+end

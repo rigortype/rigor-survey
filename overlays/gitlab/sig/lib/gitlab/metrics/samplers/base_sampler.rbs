@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Samplers
+      class BaseSampler < ::Gitlab::Daemon
+        def initialize: (?interval: untyped, ?logger: untyped, ?warmup: untyped, **untyped) -> void
+        def running: () -> (false | true)
+      end
+    end
+  end
+end

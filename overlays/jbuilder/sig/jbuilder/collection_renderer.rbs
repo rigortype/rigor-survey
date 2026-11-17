@@ -1,0 +1,10 @@
+class Jbuilder
+  class CollectionRenderer < ::ActionView::CollectionRenderer
+    def initialize: (untyped, untyped) ?{ (*untyped) -> untyped } -> void
+    class ScopedIterator < ::SimpleDelegator
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+  class EnumerableCompat < ::SimpleDelegator
+  end
+end

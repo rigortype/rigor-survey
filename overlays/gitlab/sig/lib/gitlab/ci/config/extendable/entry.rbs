@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class Config
+      class Extendable
+        class Entry
+          def initialize: (Symbol, Integer | { job: { script: String } }, ?untyped) -> void
+          def key: () -> (:job | :test)
+        end
+      end
+    end
+  end
+end

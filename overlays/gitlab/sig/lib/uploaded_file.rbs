@@ -1,0 +1,7 @@
+class UploadedFile
+  def initialize: (untyped, **untyped) -> void
+  def self.from_params: (untyped, untyped) -> (UploadedFile | nil)
+  def path: () -> String
+  def close: () -> nil
+  def tempfile: () -> File
+end

@@ -1,0 +1,7 @@
+module Api
+  module V1
+    class ElectionPresenter
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Projects
+  module Members
+    class EffectiveAccessLevelFinder
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,21 @@
+module ActiveModel
+  class ReadOnlyAttributeSet
+    def initialize: (untyped) -> void
+    def writable: () -> ActiveModel::AttributeSet
+    def map: () ?{ (*untyped) -> untyped } -> ActiveModel::ReadOnlyAttributeSet
+    def deep_dup: () -> ActiveModel::ReadOnlyAttributeSet
+    def read_only?: () -> true
+  end
+  class AttributeSet
+    def initialize: (untyped) -> void
+    def read_only: () -> ActiveModel::ReadOnlyAttributeSet
+    def deep_dup: () -> ActiveModel::AttributeSet
+    def map: () ?{ (*untyped) -> untyped } -> ActiveModel::AttributeSet
+    def read_only?: () -> false
+  end
+  class LazyAttributeSet < ::ActiveModel::AttributeSet
+    def initialize: (untyped, untyped, untyped, untyped, untyped, untyped) -> void
+    def deep_dup: () -> ActiveModel::LazyAttributeSet
+    def map: () ?{ (*untyped) -> untyped } -> ActiveModel::LazyAttributeSet
+  end
+end

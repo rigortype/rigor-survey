@@ -1,0 +1,8 @@
+module Arel
+  module Nodes
+    class BindParam < ::Arel::Nodes::Node
+      def initialize: (untyped) -> void
+      def nil?: () -> (false | true)
+    end
+  end
+end

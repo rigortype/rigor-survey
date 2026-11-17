@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Reports
+      class CoverageReport
+        def empty?: () -> (false | true)
+        def pick: (untyped) -> { files: untyped }
+        def files: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

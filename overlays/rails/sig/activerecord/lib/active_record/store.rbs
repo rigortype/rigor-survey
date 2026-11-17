@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Store
+    class IndifferentCoder
+      def initialize: (untyped, untyped) -> void
+      def load: (untyped) -> ActiveSupport::HashWithIndifferentAccess
+      def self.as_indifferent_hash: (untyped) -> ActiveSupport::HashWithIndifferentAccess
+    end
+  end
+end

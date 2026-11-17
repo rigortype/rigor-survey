@@ -1,0 +1,5 @@
+module Hamlit
+  module FescapeDispathcer
+    def on_fescape: (untyped, untyped) -> [:fescape, untyped, untyped]
+  end
+end

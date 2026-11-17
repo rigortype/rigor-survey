@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    class ObjectCounter
+      def self.cashed_summary: (untyped) -> Hash["fetched" | "imported", untyped]
+      def self.counter_list_key: (untyped, untyped) -> String
+      def self.validate_operation!: (untyped) -> nil
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Rails
+  module Generators
+    class Base < ::Thor::Group
+      def self.exit_on_failure?: () -> false
+      def self.base_root: () -> (nil | String)
+      def self.default_generator_root: () -> (nil | String)
+    end
+  end
+end

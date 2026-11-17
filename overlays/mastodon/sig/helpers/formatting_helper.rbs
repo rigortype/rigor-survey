@@ -1,0 +1,6 @@
+module FormattingHelper
+  def html_aware_format: (untyped, untyped, ?untyped) -> String
+  def linkify: (untyped, ?untyped) -> String
+  def status_content_format: (untyped) -> String
+  def account_bio_format: (untyped) -> String
+end

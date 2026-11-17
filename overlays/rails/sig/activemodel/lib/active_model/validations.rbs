@@ -1,0 +1,9 @@
+module ActiveModel
+  module Validations
+    def errors: () -> ActiveModel::Errors
+    def invalid?: (?untyped) -> (false | true)
+  end
+  class ValidationError < ::StandardError
+    def initialize: (untyped) -> void
+  end
+end

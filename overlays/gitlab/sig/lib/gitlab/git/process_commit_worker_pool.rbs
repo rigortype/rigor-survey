@@ -1,0 +1,8 @@
+module Gitlab
+  module Git
+    class ProcessCommitWorkerPool
+      def initialize: (?jobs_enqueued: untyped) -> void
+      def try_schedule_commit: (untyped, default: untyped) -> (false | true)
+    end
+  end
+end

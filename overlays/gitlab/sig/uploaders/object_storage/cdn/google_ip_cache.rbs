@@ -1,0 +1,9 @@
+module ObjectStorage
+  module CDN
+    class GoogleIpCache
+      def self.update!: (untyped) -> Array[untyped]
+      def self.ready?: () -> (false | true)
+      def self.caches: () -> [untyped, untyped]
+    end
+  end
+end

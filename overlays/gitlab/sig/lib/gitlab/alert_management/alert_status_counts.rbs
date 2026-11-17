@@ -1,0 +1,8 @@
+module Gitlab
+  module AlertManagement
+    class AlertStatusCounts
+      def self.declarative_policy_class: () -> "AlertManagement::AlertPolicy"
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

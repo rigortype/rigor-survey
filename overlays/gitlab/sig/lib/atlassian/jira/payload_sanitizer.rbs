@@ -1,0 +1,7 @@
+module Atlassian
+  module Jira
+    class PayloadSanitizer
+      def initialize: (untyped) -> void
+    end
+  end
+end

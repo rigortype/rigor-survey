@@ -1,0 +1,3 @@
+class EntityCache
+  def to_key: (untyped, *untyped) -> String
+end

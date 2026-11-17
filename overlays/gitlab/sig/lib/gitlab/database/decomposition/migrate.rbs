@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Decomposition
+      class Migrate
+        def initialize: (?backup_base_location: untyped) -> void
+        def process!: () -> top
+        def backup_location: () -> String
+      end
+    end
+  end
+end

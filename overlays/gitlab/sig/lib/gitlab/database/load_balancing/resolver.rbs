@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class Resolver
+        def initialize: (String) -> void
+        def resolve: () -> Gitlab::Database::LoadBalancing::Resolver::Response
+      end
+    end
+  end
+end

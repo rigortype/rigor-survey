@@ -1,0 +1,8 @@
+module Gitlab
+  module RepoPath
+    def self.parse: (untyped) -> ([untyped, untyped, untyped, untyped] | [nil, nil, untyped, nil])
+    def self.find_container: (untyped, untyped) -> ([untyped, untyped] | [Snippet | nil, untyped])
+    def self.find_snippet: (untyped) -> (Snippet | nil)
+    def self.extract_snippet_info: (untyped) -> [untyped, String | nil]
+  end
+end

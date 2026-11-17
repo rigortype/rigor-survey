@@ -1,0 +1,5 @@
+module PyCall
+  module Import
+    def pyimport: (untyped, ?as: untyped) -> Symbol
+  end
+end

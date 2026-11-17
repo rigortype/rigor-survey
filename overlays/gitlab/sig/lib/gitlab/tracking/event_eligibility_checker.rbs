@@ -1,0 +1,9 @@
+module Gitlab
+  module Tracking
+    class EventEligibilityChecker
+      def self.only_send_duo_events?: () -> (false | true)
+      def self.send_frontend_events?: () -> (false | true)
+      def self.internal_duo_events: () -> []
+    end
+  end
+end

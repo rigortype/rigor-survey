@@ -1,0 +1,11 @@
+module Ci
+  module Catalog
+    module Resources
+      module Components
+        class LastUsage < ::ApplicationRecord
+          def self.by_project_ids: (untyped) -> Hash[untyped, Array[untyped]]
+        end
+      end
+    end
+  end
+end

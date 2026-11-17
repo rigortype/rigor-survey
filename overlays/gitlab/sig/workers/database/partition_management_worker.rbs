@@ -1,0 +1,5 @@
+module Database
+  class PartitionManagementWorker
+    def perform: () -> (:disallow_database_ddl_feature_flags | :partition_manager_sync_partitions | Array[singleton(Gitlab::AppJsonLogger)])
+  end
+end

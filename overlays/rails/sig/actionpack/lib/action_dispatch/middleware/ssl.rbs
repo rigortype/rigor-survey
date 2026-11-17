@@ -1,0 +1,6 @@
+module ActionDispatch
+  class SSL
+    def self.default_hsts_options: () -> { expires: 63072000, subdomains: true, preload: false }
+    def initialize: (untyped, ?redirect: untyped, ?hsts: untyped, ?secure_cookies: untyped, ?ssl_default_redirect_status: untyped) -> void
+  end
+end

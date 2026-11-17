@@ -1,0 +1,3 @@
+class MergeRequestMetricsService
+  def initialize: (untyped) -> void
+end

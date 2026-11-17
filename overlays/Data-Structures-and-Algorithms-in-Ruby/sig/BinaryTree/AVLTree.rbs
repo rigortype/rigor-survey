@@ -1,0 +1,7 @@
+class AVLTree
+  def printTree: () -> nil
+  def printTreeUtil: (untyped, untyped, untyped) -> nil
+  class Node
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

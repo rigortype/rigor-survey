@@ -1,0 +1,8 @@
+module Hamlit
+  class Compiler
+    class DoctypeCompiler
+      def initialize: (?untyped) -> void
+      def compile: (untyped) -> ([:html, :doctype, :html] | [:html, :doctype, untyped] | [:multi] | [:static, "<?xml version='1.0' encoding='utf-8' ?>\n"])
+    end
+  end
+end

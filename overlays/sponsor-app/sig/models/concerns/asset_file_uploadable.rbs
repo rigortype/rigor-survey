@@ -1,0 +1,28 @@
+module AssetFileUploadable
+  def object_key: () -> String
+  def make_session: () -> { url: String, fields: Hash[String, String], max_size: Integer, id: Integer }
+  def download_url: (?disposition: Symbol) -> String
+  def get_object: (**untyped) -> untyped
+  def put_object: (**untyped) -> untyped
+  def upload_url_and_fields: () -> { url: String, fields: Hash[String, String], max_size: Integer }
+  def update_object_header: () -> self
+  def s3_client: () -> Aws::S3::Client
+  def asset_file_region: () -> String?
+  def asset_file_bucket: () -> String?
+  def asset_file_global_prefix: () -> String?
+  def asset_file_role: () -> String?
+  def self.config: () -> untyped
+  module ClassMethods
+    def asset_file_region: () -> String?
+    def asset_file_bucket: () -> String?
+    def asset_file_global_prefix: () -> String?
+    def asset_file_role: () -> String?
+  end
+  class Session
+    def initialize: (AssetFileUploadable) -> void
+    def sts: () -> Aws::STS::Client
+    def iam_policy: () -> Hash[Symbol, untyped]
+    def role_session: () -> untyped
+    def credentials: () -> Aws::Credentials
+  end
+end

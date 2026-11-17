@@ -1,0 +1,8 @@
+module Operations
+  class FeatureFlagsClient < ::ApplicationRecord
+    def self.prefix_for_feature_flags_client_token: () -> ("glffct-" | String)
+    def unleash_api_version: () -> 1
+    def unleash_api_cache_key: () -> String
+    def prefix_for_feature_flags_client_token: () -> ("glffct-" | String)
+  end
+end

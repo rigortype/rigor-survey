@@ -1,0 +1,13 @@
+module Dependabot
+  module Nuget
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Nuget::Version
+      def to_s: () -> String
+      def inspect: () -> String
+      def <=>: (untyped) -> Integer
+      def compare_release: (untyped) -> (Integer | nil)
+      def compare_prerelease_part: (untyped) -> (-1 | 0 | 1 | Integer)
+    end
+  end
+end

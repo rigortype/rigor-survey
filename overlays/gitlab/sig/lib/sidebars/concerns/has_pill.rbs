@@ -1,0 +1,8 @@
+module Sidebars
+  module Concerns
+    module HasPill
+      def has_pill?: () -> false
+      def pill_html_options: () -> {}
+    end
+  end
+end

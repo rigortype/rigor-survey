@@ -1,0 +1,8 @@
+module Ci
+  module Runners
+    class ResetAuthenticationTokenService
+      def initialize: (runner: untyped, ?current_user: untyped, ?source: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

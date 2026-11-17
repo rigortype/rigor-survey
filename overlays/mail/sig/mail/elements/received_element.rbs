@@ -1,0 +1,7 @@
+module Mail
+  class ReceivedElement
+    def initialize: (String | nil) -> void
+    def to_s: (*untyped) -> String
+    def date_time: () -> (DateTime | nil)
+  end
+end

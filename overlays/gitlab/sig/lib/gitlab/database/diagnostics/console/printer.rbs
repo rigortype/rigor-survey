@@ -1,0 +1,14 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        class Printer
+          def initialize: (?output: untyped) -> void
+          def finding: (untyped, untyped) -> (Array[untyped] | Array[String])
+          def detail: (untyped) -> (Array[untyped] | Array[String])
+          def table: (untyped, untyped) -> Array[untyped]
+        end
+      end
+    end
+  end
+end

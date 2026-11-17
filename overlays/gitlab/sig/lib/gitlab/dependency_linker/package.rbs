@@ -1,0 +1,7 @@
+module Gitlab
+  module DependencyLinker
+    class Package
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

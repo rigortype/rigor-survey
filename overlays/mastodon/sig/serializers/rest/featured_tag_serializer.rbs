@@ -1,0 +1,7 @@
+module REST
+  class FeaturedTagSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def statuses_count: () -> String
+    def last_status_at: () -> String
+  end
+end

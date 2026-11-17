@@ -1,0 +1,5 @@
+module Ci
+  class TrackAiPipelineResultsViewedService
+    def initialize: (untyped) -> void
+  end
+end

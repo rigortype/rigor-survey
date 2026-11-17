@@ -1,0 +1,10 @@
+module Analytics
+  module CycleAnalytics
+    module ValueStreams
+      class ListService
+        def initialize: (parent: untyped, current_user: untyped, ?params: untyped) -> void
+        def execute: () -> ServiceResponse
+      end
+    end
+  end
+end

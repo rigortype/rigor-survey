@@ -1,0 +1,9 @@
+module Dependabot
+  module Bundler
+    class UpdateChecker < ::UpdateCheckers::Base
+      class CooldownOptionsBuilder
+        def initialize: (dependency_files: untyped, security_advisories: untyped) -> void
+      end
+    end
+  end
+end

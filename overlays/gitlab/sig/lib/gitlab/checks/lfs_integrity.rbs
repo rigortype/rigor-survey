@@ -1,0 +1,7 @@
+module Gitlab
+  module Checks
+    class LfsIntegrity
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

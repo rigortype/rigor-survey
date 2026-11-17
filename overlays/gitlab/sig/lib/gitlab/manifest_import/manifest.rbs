@@ -1,0 +1,10 @@
+module Gitlab
+  module ManifestImport
+    class Manifest
+      def initialize: (untyped) -> void
+      def valid?: () -> (false | true)
+      def parsed_xml: () -> Nokogiri::XML::Document
+      def errors: () -> Array[untyped]
+    end
+  end
+end

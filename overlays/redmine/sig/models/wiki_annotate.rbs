@@ -1,0 +1,3 @@
+class WikiAnnotate
+  def initialize: (untyped) -> void
+end

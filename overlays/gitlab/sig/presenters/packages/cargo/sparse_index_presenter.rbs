@@ -1,0 +1,7 @@
+module Packages
+  module Cargo
+    class SparseIndexPresenter
+      def initialize: (untyped) -> void
+    end
+  end
+end

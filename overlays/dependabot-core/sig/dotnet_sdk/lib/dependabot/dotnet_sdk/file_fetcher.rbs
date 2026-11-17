@@ -1,0 +1,8 @@
+module Dependabot
+  module DotnetSdk
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a global.json file."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module RapidDiffs
+    class ServerTimings
+      def to_html_attributes: () -> String
+      def to_server_timing_header: () -> String
+    end
+  end
+end

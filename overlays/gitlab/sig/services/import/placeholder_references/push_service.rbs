@@ -1,0 +1,10 @@
+module Import
+  module PlaceholderReferences
+    class PushService < ::Import::PlaceholderReferences::BaseService
+      def self.from_record: (import_source: untyped, import_uid: untyped, source_user: untyped, record: untyped, user_reference_column: untyped) -> Import::PlaceholderReferences::PushService
+      def initialize: (import_source: untyped, import_uid: untyped, source_user_id: Integer, source_user_namespace_id: Integer, model: untyped, user_reference_column: String, ?numeric_key: untyped, ?composite_key: untyped) -> void
+      def execute: () -> ServiceResponse
+      def reference: () -> Import::SourceUserPlaceholderReference
+    end
+  end
+end

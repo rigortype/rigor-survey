@@ -1,0 +1,4 @@
+module Reviewable
+  def requires_review?: () -> (false | true)
+  def requires_review_notification?: () -> (false | true)
+end

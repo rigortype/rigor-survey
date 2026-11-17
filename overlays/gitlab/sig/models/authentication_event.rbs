@@ -1,0 +1,3 @@
+class AuthenticationEvent < ::ApplicationRecord
+  def self.providers: () -> Array[untyped]
+end

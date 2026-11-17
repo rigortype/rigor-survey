@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketImport
+    class ImportLfsObjectWorker
+      def importer_class: () -> singleton(Gitlab::BitbucketImport::Importers::LfsObjectImporter)
+    end
+  end
+end

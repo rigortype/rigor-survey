@@ -1,0 +1,25 @@
+module ActionView
+  class OutputBuffer
+    def initialize: (?untyped) -> void
+    def html_safe?: () -> true
+    def <<: (untyped) -> ActionView::OutputBuffer
+    def safe_concat: (untyped) -> ActionView::OutputBuffer
+    def safe_expr_append=: (untyped) -> ActionView::OutputBuffer
+    def raw: () -> ActionView::RawOutputBuffer
+  end
+  class RawOutputBuffer
+    def initialize: (untyped) -> void
+    def raw: () -> ActionView::RawOutputBuffer
+  end
+  class StreamingBuffer
+    def initialize: (untyped) -> void
+    def capture: () -> ActiveSupport::SafeBuffer
+    def html_safe?: () -> true
+    def html_safe: () -> ActionView::StreamingBuffer
+    def raw: () -> ActionView::RawStreamingBuffer
+  end
+  class RawStreamingBuffer
+    def initialize: (untyped) -> void
+    def raw: () -> ActionView::RawStreamingBuffer
+  end
+end

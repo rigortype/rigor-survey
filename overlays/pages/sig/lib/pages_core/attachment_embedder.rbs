@@ -1,0 +1,6 @@
+module PagesCore
+  class AttachmentEmbedder
+    def initialize: (untyped) -> void
+    def embed_attachment: (untyped) -> ActiveSupport::SafeBuffer
+  end
+end

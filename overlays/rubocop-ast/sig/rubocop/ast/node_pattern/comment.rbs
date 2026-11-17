@@ -1,0 +1,12 @@
+module RuboCop
+  module AST
+    class NodePattern
+      class Comment
+        def initialize: (untyped) -> void
+        def ==: (untyped) -> (false | true)
+        def inspect: () -> String
+        def location: () -> ::Parser::Source::Map
+      end
+    end
+  end
+end

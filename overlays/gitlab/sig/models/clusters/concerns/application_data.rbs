@@ -1,0 +1,9 @@
+module Clusters
+  module Concerns
+    module ApplicationData
+      def repository: () -> nil
+      def values: () -> String
+      def files: () -> { :"values.yaml" => String }
+    end
+  end
+end

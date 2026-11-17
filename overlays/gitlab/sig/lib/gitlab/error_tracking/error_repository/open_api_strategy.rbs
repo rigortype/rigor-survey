@@ -1,0 +1,15 @@
+module Gitlab
+  module ErrorTracking
+    class ErrorRepository
+      class OpenApiStrategy
+        def initialize: (untyped) -> void
+        def report_error: (name: untyped, description: untyped, actor: untyped, platform: untyped, environment: untyped, level: untyped, occurred_at: untyped, payload: untyped) -> bot
+        def find_error: (untyped) -> (Gitlab::ErrorTracking::DetailedError | nil)
+        def list_errors: (filters: untyped, query: untyped, sort: untyped, limit: untyped, cursor: untyped) -> ([untyped, Gitlab::ErrorTracking::ErrorRepository::Pagination] | [[], Gitlab::ErrorTracking::ErrorRepository::Pagination])
+        def last_event_for: (untyped) -> (Gitlab::ErrorTracking::ErrorEvent | nil)
+        def update_error: (untyped, **untyped) -> (false | true)
+        def dsn_url: (untyped) -> String
+      end
+    end
+  end
+end

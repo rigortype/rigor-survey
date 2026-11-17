@@ -1,0 +1,3 @@
+class ForkNetwork < ::ApplicationRecord
+  def merge_requests: () -> ActiveRecord::Relation[MergeRequest]
+end

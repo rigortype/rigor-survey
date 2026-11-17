@@ -1,0 +1,8 @@
+module Dependabot
+  module GoModules
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a go.mod or go.work."
+      def ecosystem_versions: () -> { package_managers: Hash[String, "unknown" | String] }
+    end
+  end
+end

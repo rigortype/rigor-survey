@@ -1,0 +1,8 @@
+module Gitlab
+  module GitalyClient
+    class DiffBlobsStitcher
+      def initialize: ([untyped, untyped, untyped]) -> void
+      def rpc_response: () -> [untyped, untyped, untyped]
+    end
+  end
+end

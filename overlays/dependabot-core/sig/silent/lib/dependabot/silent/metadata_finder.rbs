@@ -1,0 +1,7 @@
+module Dependabot
+  module Silent
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def homepage_url: () -> ""
+    end
+  end
+end

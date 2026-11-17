@@ -1,0 +1,9 @@
+module Gitlab
+  module Pages
+    class UrlBuilder
+      def initialize: (untyped, ?untyped) -> void
+      def pages_url: () -> String
+      def artifact_url: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

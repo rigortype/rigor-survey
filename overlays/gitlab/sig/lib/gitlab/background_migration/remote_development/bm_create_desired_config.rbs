@@ -1,0 +1,9 @@
+module Gitlab
+  module BackgroundMigration
+    module RemoteDevelopment
+      class BmCreateDesiredConfig
+        def self.logger: () -> Gitlab::BackgroundMigration::Logger
+      end
+    end
+  end
+end

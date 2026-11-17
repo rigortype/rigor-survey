@@ -1,0 +1,6 @@
+module ActiveSupport
+  class Deprecation
+    def self._instance: () -> ActiveSupport::Deprecation
+    def initialize: (?untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module Concurrent
+  class DaemonThreadFactory
+    def initialize: (?untyped) -> void
+  end
+end

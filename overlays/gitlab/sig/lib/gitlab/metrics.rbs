@@ -1,0 +1,7 @@
+module Gitlab
+  module Metrics
+    def self.series_prefix: () -> ("rails_" | "sidekiq_")
+    def self.settings: () -> { method_call_threshold: untyped }
+    def self.preload_sli_modules!: () -> Array[String]
+  end
+end

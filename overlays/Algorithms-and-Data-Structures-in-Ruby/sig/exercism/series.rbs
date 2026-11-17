@@ -1,0 +1,4 @@
+class Series
+  def initialize: (untyped) -> void
+  def slices: (untyped) -> Array[untyped]
+end

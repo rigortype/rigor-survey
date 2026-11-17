@@ -1,0 +1,6 @@
+module Ox
+  class Document < ::Ox::Element
+    def initialize: (?untyped) -> void
+    def root: () -> (Ox::Element | nil)
+  end
+end

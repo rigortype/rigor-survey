@@ -1,0 +1,8 @@
+module ActiveSupport
+  class MessageEncryptor < ::ActiveSupport::Messages::Codec
+    def self.default_cipher: () -> ("aes-256-cbc" | "aes-256-gcm")
+    def initialize: (untyped, ?untyped, **untyped) -> void
+    class InvalidMessage < ::StandardError
+    end
+  end
+end

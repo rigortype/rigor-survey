@@ -1,0 +1,11 @@
+module Dependabot
+  module Terraform
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, credentials: untyped, git_commit_checker: untyped) -> void
+        def fetch_tag_and_release_date_from_provider: () -> (Array[untyped] | Array[::GitTagWithDetail])
+        def fetch_tag_and_release_date_from_module: () -> (Array[untyped] | Array[::GitTagWithDetail])
+      end
+    end
+  end
+end

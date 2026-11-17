@@ -1,0 +1,3 @@
+class EnvironmentStatus
+  def initialize: (untyped, untyped, untyped, untyped) -> void
+end

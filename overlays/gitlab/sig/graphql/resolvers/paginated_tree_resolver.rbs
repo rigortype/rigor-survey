@@ -1,0 +1,5 @@
+module Resolvers
+  class PaginatedTreeResolver < ::Resolvers::BaseResolver
+    def resolve: (**untyped) -> (Gitlab::Graphql::ExternallyPaginatedArray | nil)
+  end
+end

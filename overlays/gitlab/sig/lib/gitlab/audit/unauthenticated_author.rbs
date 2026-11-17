@@ -1,0 +1,7 @@
+module Gitlab
+  module Audit
+    class UnauthenticatedAuthor < ::Gitlab::Audit::NullAuthor
+      def initialize: (?name: String) -> void
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class SnippetInputActionCollection
+  def initialize: (?untyped, ?allowed_actions: Symbol) -> void
+end

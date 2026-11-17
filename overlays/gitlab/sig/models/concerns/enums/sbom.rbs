@@ -1,0 +1,7 @@
+module Enums
+  class Sbom
+    def self.dependency_scanning_purl_type?: (untyped) -> (false | true)
+    def self.container_scanning_purl_type?: (untyped) -> (false | true)
+    def self.use_namespaced_name?: (untyped) -> (false | true)
+  end
+end

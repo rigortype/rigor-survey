@@ -1,0 +1,5 @@
+module Typelizer
+  class SerializerConfigLayer
+    def initialize: (untyped) -> void
+  end
+end

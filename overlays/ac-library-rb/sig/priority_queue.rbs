@@ -1,0 +1,9 @@
+class PriorityQueue
+  def initialize: (?[Integer, Integer, Integer]) ?{ (*untyped) -> untyped } -> void
+  def self.max: (untyped) -> PriorityQueue
+  def self.min: (untyped) -> PriorityQueue
+  def self.[]: (*untyped) ?{ (*untyped) -> untyped } -> PriorityQueue
+  def push: (Integer) -> PriorityQueue
+  def to_s: () -> String
+  def heap: () -> [2, 7, 8]
+end

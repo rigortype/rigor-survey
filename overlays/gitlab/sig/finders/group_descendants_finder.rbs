@@ -1,0 +1,3 @@
+class GroupDescendantsFinder
+  def initialize: (parent_group: untyped, ?current_user: untyped, ?params: untyped) -> void
+end

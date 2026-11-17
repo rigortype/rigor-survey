@@ -1,0 +1,8 @@
+module Rails
+  class Engine < ::Rails::Railtie
+    class LazyRouteSet < ::ActionDispatch::Routing::RouteSet
+      def initialize: (?untyped) -> void
+      def mounted_helpers: () -> singleton(Rails::Engine::LazyRouteSet::MountedHelpers)
+    end
+  end
+end

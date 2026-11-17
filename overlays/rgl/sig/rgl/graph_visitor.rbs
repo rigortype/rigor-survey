@@ -1,0 +1,10 @@
+module RGL
+  module GraphVisitor
+    def initialize: (untyped) -> void
+    def reset: () -> Hash[untyped, Symbol]
+    def finished_vertex?: (untyped) -> (false | true)
+    def follow_edge?: (untyped, untyped) -> (false | true)
+    def attach_distance_map: (?untyped) -> RGL::GraphVisitor
+    def color_map: () -> (Hash[untyped, Symbol] | nil)
+  end
+end

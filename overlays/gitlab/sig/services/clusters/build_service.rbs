@@ -1,0 +1,6 @@
+module Clusters
+  class BuildService
+    def initialize: (untyped) -> void
+    def execute: () -> Clusters::Cluster
+  end
+end

@@ -1,0 +1,7 @@
+module Authn
+  module OauthApplications
+    class RevokeNonGranularTokensWorker
+      def perform: (untyped, untyped) -> (Array[singleton(OauthAccessGrant) | singleton(OauthAccessToken)] | nil)
+    end
+  end
+end

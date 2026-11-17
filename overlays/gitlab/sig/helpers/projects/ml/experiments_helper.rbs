@@ -1,0 +1,9 @@
+module Projects
+  module Ml
+    module ExperimentsHelper
+      def page_info: (untyped) -> { has_next_page: untyped, has_previous_page: untyped, start_cursor: untyped, end_cursor: untyped }
+      def job_info: (untyped, untyped) -> (nil | { path: untyped, name: untyped })
+      def user_info: (untyped, untyped) -> (nil | { username: untyped, path: untyped })
+    end
+  end
+end

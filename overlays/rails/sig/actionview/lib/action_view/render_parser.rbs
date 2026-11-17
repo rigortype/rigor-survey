@@ -1,0 +1,6 @@
+module ActionView
+  class RenderParser
+    def initialize: (untyped, untyped) -> void
+    def render_calls: () -> Array[untyped]
+  end
+end

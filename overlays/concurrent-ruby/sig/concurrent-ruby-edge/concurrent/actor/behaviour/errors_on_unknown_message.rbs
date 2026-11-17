@@ -1,0 +1,9 @@
+module Concurrent
+  module Actor
+    module Behaviour
+      class ErrorsOnUnknownMessage < ::Concurrent::Actor::Behaviour::Abstract
+        def on_envelope: (untyped) -> bot
+      end
+    end
+  end
+end

@@ -1,0 +1,14 @@
+module WorkItems
+  module TypesFramework
+    module SystemDefined
+      class Type
+        def self.fixed_items: () -> [{ id: 1, name: "Issue", base_type: "issue", icon_name: "work-item-issue" }, { id: 2, name: "Incident", base_type: "incident", icon_name: "work-item-incident" }, { id: 5, name: "Task", base_type: "task", icon_name: "work-item-task" }, { id: 9, name: "Ticket", base_type: "ticket", icon_name: "work-item-ticket" }]
+        def allowed_child_types_by_name: (?resource_parent: untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+        def allowed_parent_types_by_name: (?resource_parent: untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+        def allowed_child_types: (?authorize: untyped, ?resource_parent: untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+        def allowed_parent_types: (?authorize: untyped, ?resource_parent: untyped) -> Array[WorkItems::TypesFramework::NamespacedType]
+        def enabled?: () -> true
+      end
+    end
+  end
+end

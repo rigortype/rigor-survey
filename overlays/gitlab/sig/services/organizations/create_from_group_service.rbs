@@ -1,0 +1,6 @@
+module Organizations
+  class CreateFromGroupService
+    def initialize: (group: untyped, ?current_user: untyped, ?skip_authorization: untyped, ?params: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

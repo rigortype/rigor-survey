@@ -1,0 +1,6 @@
+module Users
+  class LastPushEventService
+    def initialize: (untyped) -> void
+    def cache_last_push_event: (untyped) -> (Array[untyped] | Array[String])
+  end
+end

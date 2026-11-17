@@ -1,0 +1,6 @@
+module Autocomplete
+  class ProjectFinder
+    def initialize: (?untyped, ?untyped) -> void
+    def execute: () -> (Project | nil)
+  end
+end

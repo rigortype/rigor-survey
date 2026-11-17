@@ -1,0 +1,12 @@
+module Import
+  module Offline
+    module Groups
+      module Pipelines
+        class ProjectEntitiesPipeline
+          def extract: (untyped) -> ::BulkImports::Pipeline::ExtractedData
+          def transform: (untyped, untyped) -> { source_type: :project_entity, source_full_path: untyped, destination_name: untyped, destination_namespace: untyped, parent_id: untyped }
+        end
+      end
+    end
+  end
+end

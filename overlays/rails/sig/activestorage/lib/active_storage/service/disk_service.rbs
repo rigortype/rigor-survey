@@ -1,0 +1,10 @@
+module ActiveStorage
+  class Service
+    class DiskService < ::ActiveStorage::Service
+      def initialize: (root: untyped, ?public: untyped, **untyped) -> void
+      def upload: (untyped, untyped, ?checksum: untyped, **untyped) -> nil
+      def headers_for_direct_upload: (untyped, content_type: untyped, **untyped) -> Hash[String, untyped]
+      def path_for: (untyped) -> String
+    end
+  end
+end

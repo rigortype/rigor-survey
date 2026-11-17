@@ -1,0 +1,13 @@
+module Faraday
+  module Utils
+    class Headers < ::Hash[untyped, untyped]
+      def self.from: (untyped) -> Faraday::Utils::Headers
+      def initialize: (?untyped) -> void
+      def initialize_names: () -> {}
+      def merge!: (untyped) -> Faraday::Utils::Headers
+      def merge: (untyped) -> Faraday::Utils::Headers
+      def replace: (untyped) -> Faraday::Utils::Headers
+      def to_hash: () -> Hash[untyped, untyped]
+    end
+  end
+end

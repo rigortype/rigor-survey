@@ -1,0 +1,7 @@
+module ActiveSupport
+  module Dependencies
+    class Interlock
+      def start_unloading: () -> true
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module WorkItems
+  class BaseEvent < ::Gitlab::EventStore::CloudEvent
+    def self.build_for_work_item: (work_item: untyped, current_user: untyped, ?extra_event_data: untyped) -> WorkItems::BaseEvent
+    def self.work_item_event_data: (untyped) -> { work_item_id: untyped, work_item_iid: untyped, namespace_id: untyped, project_id: untyped, work_item_type: untyped, work_item_type_id: untyped, confidential: untyped }
+    def data_schema: () -> Hash[String, "object" | ["work_item_id", "work_item_iid", "namespace_id", "work_item_type", "confidential"] | Hash[String, Hash[String, "boolean"] | Hash[String, "integer"] | Hash[String, "string"] | Hash[String, ["integer", "null"]]]]
+  end
+end

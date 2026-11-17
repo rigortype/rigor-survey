@@ -1,0 +1,5 @@
+module Gitlab
+  module ShellAdapter
+    def gitlab_shell: () -> Gitlab::Shell
+  end
+end

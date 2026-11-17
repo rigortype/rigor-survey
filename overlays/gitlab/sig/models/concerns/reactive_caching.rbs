@@ -1,0 +1,3 @@
+module ReactiveCaching
+  def calculate_reactive_cache: (*untyped) -> bot
+end

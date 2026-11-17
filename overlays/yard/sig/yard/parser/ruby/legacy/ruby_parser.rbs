@@ -1,0 +1,14 @@
+module YARD
+  module Parser
+    module Ruby
+      module Legacy
+        class RubyParser < ::YARD::Parser::Base
+          def initialize: (untyped, untyped) -> void
+          def parse: () -> YARD::Parser::Ruby::Legacy::RubyParser
+          def tokenize: () -> YARD::Parser::Ruby::Legacy::TokenList
+          def enumerator: () -> (YARD::Parser::Ruby::Legacy::StatementList | nil)
+        end
+      end
+    end
+  end
+end

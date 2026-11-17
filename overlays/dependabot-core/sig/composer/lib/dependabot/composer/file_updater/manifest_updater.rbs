@@ -1,0 +1,10 @@
+module Dependabot
+  module Composer
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class ManifestUpdater
+        def initialize: (dependencies: untyped, manifest: untyped) -> void
+        def updated_manifest_content: () -> (NilClass | String | nil)
+      end
+    end
+  end
+end

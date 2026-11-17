@@ -1,0 +1,11 @@
+module Gitlab
+  module WorkItems
+    module Instrumentation
+      class EventMappings
+        def self.events_for: (work_item: untyped, old_associations: untyped) -> Array[untyped]
+        def initialize: (untyped, untyped) -> void
+        def events_to_track: () -> Array[untyped]
+      end
+    end
+  end
+end

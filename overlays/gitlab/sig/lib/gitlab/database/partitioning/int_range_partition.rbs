@@ -1,0 +1,16 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class IntRangePartition
+        def self.from_sql: (untyped, untyped, untyped) -> Gitlab::Database::Partitioning::IntRangePartition
+        def self.from_export_definition: (untyped, untyped, untyped) -> Gitlab::Database::Partitioning::IntRangePartition
+        def initialize: (untyped, untyped, untyped, ?partition_name: untyped) -> void
+        def to_create_sql: () -> String
+        def to_attach_sql: () -> String
+        def hash: () -> Integer
+        def <=>: (untyped) -> (Integer | nil)
+        def export_definition: () -> { partition_name: untyped, from: untyped, to: untyped }
+      end
+    end
+  end
+end

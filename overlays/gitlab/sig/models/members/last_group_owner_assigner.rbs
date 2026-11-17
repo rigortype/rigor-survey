@@ -1,0 +1,4 @@
+class LastGroupOwnerAssigner
+  def initialize: (untyped, [untyped, untyped] | [untyped]) -> void
+  def members: () -> ([untyped, untyped] | [untyped])
+end

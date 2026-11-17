@@ -1,0 +1,3 @@
+class Module
+  def class_name: () -> (String | nil)
+end

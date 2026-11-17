@@ -1,0 +1,17 @@
+module Gitlab
+  module ColorModes
+    def self.available_modes: () -> [Gitlab::ColorModes::Mode, Gitlab::ColorModes::Mode, Gitlab::ColorModes::Mode]
+    def self.each: () ?{ (*untyped) -> untyped } -> Array[Gitlab::ColorModes::Mode]
+    def self.valid_ids: () -> [untyped, untyped, untyped]
+    class Mode < ::Struct[untyped]
+      def id: () -> untyped
+      def name: () -> untyped
+      def css_class: () -> untyped
+      def id=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def css_class=: (untyped) -> untyped
+      def self.new: (?id: untyped, ?name: untyped, ?css_class: untyped) -> instance | (?untyped id, ?untyped name, ?untyped css_class) -> instance
+      def self.[]: (?id: untyped, ?name: untyped, ?css_class: untyped) -> instance | (?untyped id, ?untyped name, ?untyped css_class) -> instance
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module Mail
+  class ContentTypeElement
+    def initialize: (untyped) -> void
+  end
+end

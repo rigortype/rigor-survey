@@ -1,0 +1,4 @@
+class UserCustomAttribute < ::ApplicationRecord
+  def self.declarative_policy_class: () -> "Users::CustomAttributePolicy"
+  def self.blocked_users: () -> ActiveRecord::Relation[UserCustomAttribute]
+end

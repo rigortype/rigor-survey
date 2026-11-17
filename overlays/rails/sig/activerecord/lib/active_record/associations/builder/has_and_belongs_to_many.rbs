@@ -1,0 +1,10 @@
+module ActiveRecord
+  module Associations
+    module Builder
+      class HasAndBelongsToMany
+        def initialize: (untyped, untyped, untyped) -> void
+        def through_model: () -> singleton(ActiveRecord::Base)
+      end
+    end
+  end
+end

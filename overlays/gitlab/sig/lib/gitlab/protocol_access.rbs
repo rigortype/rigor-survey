@@ -1,0 +1,5 @@
+module Gitlab
+  module ProtocolAccess
+    def self.allowed?: (untyped, ?project: untyped) -> (false | true)
+  end
+end

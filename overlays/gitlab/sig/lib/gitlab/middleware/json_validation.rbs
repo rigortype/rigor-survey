@@ -1,0 +1,7 @@
+module Gitlab
+  module Middleware
+    class JsonValidation
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

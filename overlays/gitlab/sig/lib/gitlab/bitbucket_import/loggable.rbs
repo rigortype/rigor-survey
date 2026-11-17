@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketImport
+    module Loggable
+      def metrics: () -> Gitlab::Import::Metrics
+    end
+  end
+end

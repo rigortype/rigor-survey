@@ -1,0 +1,5 @@
+module Hamlit
+  class Identity
+    def generate: () -> String
+  end
+end

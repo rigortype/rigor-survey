@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Yaml
+        class Loader
+          def initialize: (untyped, ?inputs: untyped, ?context: untyped, ?external_context: untyped, ?filename: untyped) -> void
+          def load: () -> Gitlab::Ci::Config::Yaml::Result
+          def load_uninterpolated_yaml: () -> Gitlab::Ci::Config::Yaml::Result
+        end
+      end
+    end
+  end
+end

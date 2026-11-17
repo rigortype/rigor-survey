@@ -1,0 +1,13 @@
+module WorkItems
+  module Widgets
+    class Base
+      def self.type: () -> Symbol
+      def self.api_symbol: () -> Symbol
+      def self.quick_action_commands: () -> []
+      def self.sorting_keys: () -> {}
+      def self.required_user_ability: () -> nil
+      def initialize: (untyped, ?widget_definition: untyped) -> void
+      def type: () -> Symbol
+    end
+  end
+end

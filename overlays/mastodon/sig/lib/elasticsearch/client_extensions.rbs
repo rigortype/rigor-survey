@@ -1,0 +1,5 @@
+module Elasticsearch
+  module ClientExtensions
+    def initialize: (?untyped) ?{ (*untyped) -> untyped } -> void
+  end
+end

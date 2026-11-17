@@ -1,0 +1,7 @@
+module Ci
+  module Inputs
+    class RulesEvaluator
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

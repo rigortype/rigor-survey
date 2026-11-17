@@ -1,0 +1,10 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class DownloaderConfigFetcher
+        def initialize: (fetcher: untyped) -> void
+        def fetch_downloader_config_files: () -> Array[untyped]
+      end
+    end
+  end
+end

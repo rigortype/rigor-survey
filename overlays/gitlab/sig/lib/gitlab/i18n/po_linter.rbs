@@ -1,0 +1,17 @@
+module Gitlab
+  module I18n
+    class PoLinter
+      def initialize: (po_path: untyped, ?locale: untyped) -> void
+      def errors: () -> (Hash[untyped, untyped] | Hash[String, [untyped]])
+      def validate_po: () -> (Hash[untyped, untyped] | Hash[String, [untyped]])
+      def validate_entries: () -> Hash[untyped, untyped]
+      def validate_entry: (untyped) -> Array[untyped]
+      def numbers_covering_all_plurals: () -> Array[Integer]
+      def calculate_numbers_covering_all_plurals: () -> Array[Integer]
+      def random_number: () -> Integer
+      def random_string: () -> String
+      def unnamed_variable?: (untyped) -> (false | true)
+      def metadata_entry: () -> Gitlab::I18n::MetadataEntry
+    end
+  end
+end

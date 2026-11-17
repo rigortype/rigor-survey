@@ -1,0 +1,9 @@
+module Dependabot
+  module NpmAndYarn
+    class MetadataFinder < ::Dependabot::MetadataFinders::Base
+      def maintainer_changes: () -> (String | nil)
+      def attestation_changes: () -> (String | nil)
+      def install_script_changes: () -> (String | nil)
+    end
+  end
+end

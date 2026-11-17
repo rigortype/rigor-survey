@@ -1,0 +1,3 @@
+module ActionMailer
+  def self.deprecator: () -> ActiveSupport::Deprecation
+end

@@ -1,0 +1,8 @@
+module Ci
+  module Runners
+    class ProcessRunnerVersionUpdateService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

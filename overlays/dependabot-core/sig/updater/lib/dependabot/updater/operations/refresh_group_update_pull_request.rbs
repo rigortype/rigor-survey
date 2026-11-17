@@ -1,0 +1,11 @@
+module Dependabot
+  class Updater
+    module Operations
+      class RefreshGroupUpdatePullRequest
+        def self.tag_name: () -> :update_version_group_pr
+        def initialize: (service: untyped, job: untyped, dependency_snapshot: untyped, error_handler: untyped) -> void
+        def group: () -> (Dependabot::DependencyGroup | nil)
+      end
+    end
+  end
+end

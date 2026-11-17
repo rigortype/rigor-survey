@@ -1,0 +1,8 @@
+module Dependabot
+  module NpmAndYarn
+    class Utils
+      def self.extract_node_versions: (untyped) -> ({ current_version: untyped, required_version: untyped } | {})
+      def self.sanitize_resolvability_message: (untyped, untyped, untyped) -> String
+    end
+  end
+end

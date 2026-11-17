@@ -1,0 +1,13 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Assignable
+        class ValidateTask < ::Tasks::Gitlab::Permissions::BaseValidateTask
+          def violations: () -> { schema: {}, name: [], action: {}, boundary_in_name: {}, invalid_assignable_when: {}, duplicate_name: [], duplicate_raw_permission: {}, file: {}, name_path_mismatch: {}, resource_metadata_schema: {}, category_metadata_schema: {}, empty_resource_directory: [], empty_category_directory: [], granular_access_token_unused: [], assignable_when_mismatch: [] }
+          def resources: () -> Array[untyped]
+          def categories: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

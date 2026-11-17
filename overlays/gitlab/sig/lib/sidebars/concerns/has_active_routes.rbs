@@ -1,0 +1,7 @@
+module Sidebars
+  module Concerns
+    module HasActiveRoutes
+      def active_routes: () -> {}
+    end
+  end
+end

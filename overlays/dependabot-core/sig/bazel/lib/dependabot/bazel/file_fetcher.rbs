@@ -1,0 +1,9 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a WORKSPACE, WORKSPACE.bazel, or MODULE.bazel file."
+      def fetch_files: () -> Array[untyped]
+      def ecosystem_versions: () -> { package_managers: Hash[String, "unknown" | String] }
+    end
+  end
+end

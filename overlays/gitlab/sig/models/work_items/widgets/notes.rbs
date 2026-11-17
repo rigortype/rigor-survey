@@ -1,0 +1,8 @@
+module WorkItems
+  module Widgets
+    class Notes < ::WorkItems::Widgets::Base
+      def self.quick_action_commands: () -> [:lock, :unlock, :internal_note]
+      def self.quick_action_params: () -> [:discussion_locked]
+    end
+  end
+end

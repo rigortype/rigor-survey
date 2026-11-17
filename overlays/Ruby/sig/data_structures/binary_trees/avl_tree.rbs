@@ -1,0 +1,14 @@
+class AvlTreeNode
+  def initialize: (untyped, ?untyped) -> void
+end
+
+class AvlTree
+  def initialize: (?untyped) -> void
+  def insert_key: (untyped) -> nil
+  def contains_key?: (untyped) -> (false | true)
+  def delete_key: (untyped) -> (Integer | nil)
+  def traverse_preorder: (untyped, ?untyped) -> nil
+  def traverse_inorder: (untyped, ?untyped) -> nil
+  def to_array: (?untyped) -> Array[untyped]
+  def size: () -> (0 | Integer)
+end

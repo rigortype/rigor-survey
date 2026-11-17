@@ -1,0 +1,5 @@
+module DashboardHelper
+  def has_start_trial?: () -> false
+  def user_groups_requiring_reauth: () -> []
+  def user_roles_mapping: () -> { planner: "Planner", reporter: "Reporter", security_manager: "Security Manager", developer: "Developer", maintainer: "Maintainer", owner: "Owner", guest: "Guest" }
+end

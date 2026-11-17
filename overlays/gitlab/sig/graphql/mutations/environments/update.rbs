@@ -1,0 +1,7 @@
+module Mutations
+  module Environments
+    class Update < ::Mutations::BaseMutation
+      def resolve: (id: untyped, **untyped) -> { environment: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

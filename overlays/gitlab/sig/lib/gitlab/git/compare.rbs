@@ -1,0 +1,10 @@
+module Gitlab
+  module Git
+    class Compare
+      def initialize: (untyped, untyped, untyped, ?straight: (false | true)) -> void
+      def head: () -> (Gitlab::Git::Commit | nil)
+      def base: () -> (Gitlab::Git::Commit | nil)
+      def straight: () -> (false | true)
+    end
+  end
+end

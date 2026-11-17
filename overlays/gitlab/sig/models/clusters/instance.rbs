@@ -1,0 +1,5 @@
+module Clusters
+  class Instance
+    def flipper_id: () -> String
+  end
+end

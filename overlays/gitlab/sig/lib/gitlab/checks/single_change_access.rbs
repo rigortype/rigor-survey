@@ -1,0 +1,8 @@
+module Gitlab
+  module Checks
+    class SingleChangeAccess
+      def initialize: (untyped, user_access: untyped, project: untyped, protocol: untyped, logger: untyped, ?commits: untyped, ?gitaly_context: untyped, ?push_options: Gitlab::PushOptions, ?changes_access_logger: untyped) -> void
+      def validate!: () -> true
+    end
+  end
+end

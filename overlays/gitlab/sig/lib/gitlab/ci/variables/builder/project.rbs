@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Builder
+        class Project
+          def initialize: (untyped) -> void
+          def secret_variables: (environment: untyped, ?protected_ref: untyped, ?only: untyped) -> Gitlab::Ci::Variables::Collection
+        end
+      end
+    end
+  end
+end

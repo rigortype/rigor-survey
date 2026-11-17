@@ -1,0 +1,7 @@
+module Faraday
+  class Response
+    class Json < ::Faraday::Middleware
+      def initialize: (?untyped, ?parser_options: untyped, ?content_type: untyped, ?preserve_raw: untyped) -> void
+    end
+  end
+end

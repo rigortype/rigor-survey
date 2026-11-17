@@ -1,0 +1,7 @@
+module Resolvers
+  module ErrorTracking
+    class SentryErrorsResolver < ::Resolvers::BaseResolver
+      def resolve: (**untyped) -> (Gitlab::Graphql::ExternallyPaginatedArray | nil)
+    end
+  end
+end

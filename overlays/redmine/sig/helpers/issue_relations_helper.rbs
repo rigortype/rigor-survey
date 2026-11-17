@@ -1,0 +1,3 @@
+module IssueRelationsHelper
+  def relation_error_messages: (untyped) -> Array[untyped]
+end

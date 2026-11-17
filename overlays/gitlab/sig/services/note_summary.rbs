@@ -1,0 +1,6 @@
+class NoteSummary
+  def initialize: (untyped, untyped, untyped, String, ?action: String, ?commit_count: Integer, ?created_at: untyped) -> void
+  def set_commit_params: () -> nil
+  def note: () -> { noteable: untyped, created_at: untyped, project: untyped, author: untyped, note: untyped }
+  def metadata: () -> Hash[untyped, untyped]
+end

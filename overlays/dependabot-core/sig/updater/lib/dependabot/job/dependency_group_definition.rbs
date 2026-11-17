@@ -1,0 +1,10 @@
+module Dependabot
+  class Job
+    class DependencyGroupDefinition < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::DependencyGroupDefinition
+      def to_h: () -> Hash[untyped, untyped]
+      def self.string_hash: (untyped) -> (Hash[untyped, untyped] | nil)
+      def self.rule_value: (untyped) -> (Array[String] | String | nil)
+    end
+  end
+end

@@ -1,0 +1,23 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class RactorConnectionHandler
+      class AbstractProxyAdapter < ::ActiveRecord::ConnectionAdapters::AbstractAdapter
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+        def connected?: () -> (false | true)
+        def active?: () -> (false | true)
+        def verify!: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def connect!: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def reconnect!: (?restore_transactions: untyped) -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def reset!: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter
+        def holds_main_connection?: () -> (false | true)
+        def valid_type?: (untyped) -> (false | true)
+        def schema_creation: () -> ActiveRecord::ConnectionAdapters::RactorConnectionHandler::AbstractProxyAdapter::SchemaCreationProxy
+        def remote_schema_creation_accept: (untyped) -> bot
+        def build_insert_sql: (untyped) -> bot
+        def execute: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> ActiveRecord::Result
+        def restart_parent_transactions?: () -> false
+        def savepoint_errors_invalidate_transactions?: () -> false
+      end
+    end
+  end
+end

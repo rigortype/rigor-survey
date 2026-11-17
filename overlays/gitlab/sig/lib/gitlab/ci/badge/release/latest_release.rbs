@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Badge
+      module Release
+        class LatestRelease < ::Gitlab::Ci::Badge::Base
+          def initialize: (untyped, untyped, ?opts: ({ key_text: String } | { key_width: Integer } | { value_width: Integer } | { value_width: String })) -> void
+          def entity: () -> "Latest Release"
+          def metadata: () -> Gitlab::Ci::Badge::Release::Metadata
+          def template: () -> Gitlab::Ci::Badge::Release::Template
+          def customization: () -> { key_width: untyped, key_text: untyped, value_width: untyped }
+        end
+      end
+    end
+  end
+end

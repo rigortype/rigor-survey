@@ -1,0 +1,8 @@
+module SystemCheck
+  module App
+    class MigrationsAreUpCheck < ::SystemCheck::BaseCheck
+      def check?: () -> (false | true)
+      def show_error: () -> nil
+    end
+  end
+end

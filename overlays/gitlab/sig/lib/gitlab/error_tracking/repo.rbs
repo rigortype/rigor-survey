@@ -1,0 +1,7 @@
+module Gitlab
+  module ErrorTracking
+    class Repo
+      def initialize: (status: String, integration_id: Integer, project_id: untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Git
+    class WikiFile
+      def initialize: (untyped) -> void
+      def name: () -> String
+    end
+  end
+end

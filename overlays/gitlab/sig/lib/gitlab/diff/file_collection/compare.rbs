@@ -1,0 +1,10 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class Compare < ::Gitlab::Diff::FileCollection::Base
+        def initialize: (untyped, project: untyped, diff_options: untyped, ?diff_refs: untyped) -> void
+        def cache_key: () -> ["compare", untyped, untyped]
+      end
+    end
+  end
+end

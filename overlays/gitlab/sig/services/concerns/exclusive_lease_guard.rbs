@@ -1,0 +1,8 @@
+module ExclusiveLeaseGuard
+  def exclusive_lease: () -> Gitlab::ExclusiveLease
+  def lease_key: () -> String
+  def lease_timeout: () -> bot
+  def lease_release?: () -> true
+  def lease_taken_message: () -> "Cannot obtain an exclusive lease. There must be another instance already in execution."
+  def lease_taken_log_level: () -> :error
+end

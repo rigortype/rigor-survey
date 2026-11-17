@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Build
+      module Context
+        class Global < ::Gitlab::Ci::Build::Context::Base
+          def initialize: (untyped, yaml_variables: untyped, logger: untyped) -> void
+        end
+      end
+    end
+  end
+end

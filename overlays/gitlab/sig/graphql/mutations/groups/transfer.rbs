@@ -1,0 +1,7 @@
+module Mutations
+  module Groups
+    class Transfer < ::Mutations::BaseMutation
+      def resolve: (id: untyped, ?target_id: untyped) -> ({ group: untyped, errors: [untyped] } | { group: untyped, errors: [] })
+    end
+  end
+end

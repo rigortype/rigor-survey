@@ -1,0 +1,15 @@
+module SettingsHelper
+  def administration_settings_tabs: () -> [{ name: "general", partial: "settings/general", label: :label_general }, { name: "display", partial: "settings/display", label: :label_display }, { name: "authentication", partial: "settings/authentication", label: :label_authentication }, { name: "integrations", partial: "settings/api", label: :label_integrations }, { name: "projects", partial: "settings/projects", label: :label_project_plural }, { name: "users", partial: "settings/users", label: :label_user_plural }, { name: "issues", partial: "settings/issues", label: :label_issue_tracking }, { name: "timelog", partial: "settings/timelog", label: :label_time_tracking }, { name: "attachments", partial: "settings/attachments", label: :label_attachment_plural }, { name: "notifications", partial: "settings/notifications", label: :field_mail_notification }, { name: "mail_handler", partial: "settings/mail_handler", label: :label_incoming_emails }, { name: "repositories", partial: "settings/repositories", label: :label_repository_plural }]
+  def session_lifetime_options: () -> [[untyped, 0], [untyped, "240"], [untyped, "480"], [untyped, "720"], [untyped, "1440"], [untyped, "10080"], [untyped, "43200"], [untyped, "86400"], [untyped, "525600"]]
+  def session_timeout_options: () -> [[untyped, 0], [untyped, "60"], [untyped, "120"], [untyped, "240"], [untyped, "480"], [untyped, "720"], [untyped, "1440"], [untyped, "2880"]]
+  def link_copied_issue_options: () -> [[untyped, "yes"], [untyped, "no"], [untyped, "ask"]]
+  def copy_attachments_on_issue_copy_options: () -> [[untyped, "yes"], [untyped, "no"], [untyped, "ask"]]
+  def default_global_issue_query_options: () -> Array[untyped]
+  def default_global_project_query_options: () -> Array[untyped]
+  def cross_project_subtasks_options: () -> [[untyped, ""], [untyped, "system"], [untyped, "tree"], [untyped, "hierarchy"], [untyped, "descendants"]]
+  def assignee_dropdown_display_format_options: () -> [[untyped, "users_then_groups"], [untyped, "groups_then_users"], [untyped, "users_by_group"]]
+  def parent_issue_dates_options: () -> [[untyped, "derived"], [untyped, "independent"]]
+  def parent_issue_priority_options: () -> [[untyped, "derived"], [untyped, "independent"]]
+  def parent_issue_done_ratio_options: () -> [[untyped, "derived"], [untyped, "independent"]]
+  def gravatar_default_setting_options: () -> [["Initials", "initials"], ["Color", "color"], ["Mystery man", "mm"], ["Identicons", "identicon"], ["Monster ids", "monsterid"], ["Wavatars", "wavatar"], ["Retro", "retro"], ["Robohash", "robohash"]]
+end

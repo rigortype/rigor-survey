@@ -1,0 +1,11 @@
+module Net
+  module SSH
+    module Proxy
+      class Command
+        def initialize: (String) -> void
+        def close_on_error: (untyped) -> Thread
+        def command_line_template: () -> ("/bin/nc localhost 22" | "/usr/bin/pv --rate-limit 100k | /bin/nc localhost 22" | "connect %r@%h:%p" | "nc -l %r %h %p" | "sleep 10" | "sleep 2 && ssh -W %h:%p -o \"PreferredAuthentications none\" user@localhost" | String)
+      end
+    end
+  end
+end

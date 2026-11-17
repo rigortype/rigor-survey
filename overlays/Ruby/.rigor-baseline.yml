@@ -1,0 +1,27 @@
+---
+version: 1
+ignored:
+- file: data_structures/arrays/two_sum.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: data_structures/binary_trees/inorder_traversal.rb
+  rule: call.unresolved-toplevel
+  count: 3
+- file: data_structures/binary_trees/postorder_traversal.rb
+  rule: call.unresolved-toplevel
+  count: 3
+- file: data_structures/binary_trees/preorder_traversal.rb
+  rule: call.unresolved-toplevel
+  count: 3
+- file: data_structures/graphs/topological_sort_test.rb
+  rule: call.possible-nil-receiver
+  count: 18
+- file: dynamic_programming/pascal_triangle_ii.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: searches/recursive_linear_search.rb
+  rule: call.unresolved-toplevel
+  count: 1
+- file: ".rigor.yml"
+  rule: rbs.coverage.definition-build-failed
+  count: 1

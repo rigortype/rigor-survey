@@ -1,0 +1,11 @@
+module API
+  class Search < ::API::Base
+    def scope_preload_method: () -> { merge_requests: :with_api_entity_associations, projects: :with_api_entity_associations, issues: :with_api_entity_associations, work_items: :with_api_entity_associations, milestones: :with_api_entity_associations, commits: :with_api_commit_entity_associations }
+    def search_params: () -> Hash[untyped, untyped]
+    def negated_search_params: () -> Hash[untyped, untyped]
+    def project_scope_allowed?: () -> (false | true)
+    def snippets?: () -> ("false" | "true")
+    def entity: () -> (nil | singleton(::API::Entities::BasicGroupDetails) | singleton(::API::Entities::BasicProjectDetails) | singleton(::API::Entities::Blob) | singleton(::API::Entities::CommitDetail) | singleton(::API::Entities::IssueBasic) | singleton(::API::Entities::MergeRequestBasic) | singleton(::API::Entities::Milestone) | singleton(::API::Entities::Note) | singleton(::API::Entities::Snippet) | singleton(::API::Entities::UserBasic) | singleton(::API::Entities::WorkItem))
+    def set_global_search_log_information: (untyped) -> (Float | nil)
+  end
+end

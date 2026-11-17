@@ -1,0 +1,11 @@
+module Gitlab
+  module Counters
+    class BufferedCounter
+      def initialize: (untyped, untyped) -> void
+      def key: () -> String
+      def flushed_key: () -> String
+      def refresh_indicator_key: () -> String
+      def refresh_key: () -> String
+    end
+  end
+end

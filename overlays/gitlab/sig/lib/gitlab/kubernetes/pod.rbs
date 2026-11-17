@@ -1,0 +1,8 @@
+module Gitlab
+  module Kubernetes
+    class Pod
+      def initialize: (?untyped) -> void
+      def order: () -> (0 | 1)
+    end
+  end
+end

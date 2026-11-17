@@ -1,0 +1,12 @@
+class SentryErrorPresenter < ::Gitlab::View::Presenter::Delegated
+  def first_seen: () -> DateTime
+  def last_seen: () -> DateTime
+  class FrequencyStruct < ::Struct[untyped]
+    def time: () -> untyped
+    def frequency_count: () -> untyped
+    def time=: (untyped) -> untyped
+    def frequency_count=: (untyped) -> untyped
+    def self.new: (?time: untyped, ?frequency_count: untyped) -> instance
+    def self.[]: (?time: untyped, ?frequency_count: untyped) -> instance
+  end
+end

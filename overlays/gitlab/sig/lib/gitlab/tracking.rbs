@@ -1,0 +1,7 @@
+module Gitlab
+  module Tracking
+    def self.tracker: () -> (Gitlab::Tracking::Destinations::Snowplow | Gitlab::Tracking::Destinations::SnowplowMicro)
+    def self.billing_tracker: () -> (Gitlab::Tracking::Destinations::Snowplow | Gitlab::Tracking::Destinations::SnowplowMicro)
+    def self.reset_tracker?: () -> (false | true)
+  end
+end

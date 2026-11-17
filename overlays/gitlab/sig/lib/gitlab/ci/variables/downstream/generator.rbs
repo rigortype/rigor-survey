@@ -1,0 +1,19 @@
+module Gitlab
+  module Ci
+    module Variables
+      module Downstream
+        class Generator
+          def initialize: (untyped) -> void
+          class Context < ::Struct[untyped]
+            def all_bridge_variables: () -> untyped
+            def expand_file_refs: () -> untyped
+            def all_bridge_variables=: (untyped) -> untyped
+            def expand_file_refs=: (untyped) -> untyped
+            def self.new: (?all_bridge_variables: untyped, ?expand_file_refs: untyped) -> instance
+            def self.[]: (?all_bridge_variables: untyped, ?expand_file_refs: untyped) -> instance
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Dependabot
+  module NpmAndYarn
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PnpmLock
+        def initialize: (untyped, ?dealias_packages: untyped) -> void
+        def dependencies: () -> Dependabot::FileParsers::Base::DependencySet
+        def details: (untyped, untyped, untyped) -> (Dependabot::Package::NpmLockfileDetails | nil)
+        class Record < ::T::ImmutableStruct
+          def self.from_object: (untyped, path: untyped, index: untyped) -> Dependabot::NpmAndYarn::FileParser::PnpmLock::Record
+          def self.string: (untyped, untyped, untyped) -> String
+          def self.boolean: (untyped, untyped, untyped) -> (FalseClass | TrueClass)
+          def self.strings: (untyped, untyped, untyped) -> Array[String]
+        end
+      end
+    end
+  end
+end

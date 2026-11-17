@@ -1,0 +1,8 @@
+module Import
+  module SourceUsers
+    class GenerateErrorCsvService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

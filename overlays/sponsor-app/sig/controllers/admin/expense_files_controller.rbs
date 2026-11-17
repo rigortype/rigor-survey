@@ -1,0 +1,9 @@
+module Admin
+  class ExpenseFilesController < ::Admin::ApplicationController
+    def create: () -> void
+    def show: () -> void
+    def update: () -> void
+    def destroy: () -> void
+    def initiate_update: () -> void
+  end
+end

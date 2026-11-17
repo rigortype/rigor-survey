@@ -1,0 +1,10 @@
+module Gitlab
+  class Chaos
+    def self.leak_mem: (untyped, untyped) -> Integer
+    def self.cpu_spin: (untyped) -> nil
+    def self.db_spin: (untyped, untyped) -> nil
+    def self.sleep: (untyped) -> Integer
+    def self.kill: (untyped) -> Integer
+    def self.run_gc: () -> Hash[Symbol, untyped]
+  end
+end

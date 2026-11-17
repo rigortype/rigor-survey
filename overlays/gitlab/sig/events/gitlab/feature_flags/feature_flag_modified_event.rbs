@@ -1,0 +1,7 @@
+module Gitlab
+  module FeatureFlags
+    class FeatureFlagModifiedEvent < ::Gitlab::EventStore::Event
+      def schema: () -> Hash[String, "object" | ["feature_key", "operation", "state"] | Hash[String, Hash[String, "string"] | Hash[String, ["string", "null"]]]]
+    end
+  end
+end

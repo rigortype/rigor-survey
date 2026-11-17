@@ -1,0 +1,5 @@
+module ResourceEvents
+  class BaseSyntheticNotesBuilderService
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

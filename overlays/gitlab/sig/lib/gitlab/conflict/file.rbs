@@ -1,0 +1,13 @@
+module Gitlab
+  module Conflict
+    class File
+      def initialize: (untyped, merge_request: untyped) -> void
+      def line_code: (untyped) -> String
+      def create_match_line: (untyped) -> Gitlab::Diff::Line
+      def create_separator_line: (untyped, untyped) -> Gitlab::Diff::Line
+      def update_match_line_text: (untyped, untyped) -> (String | nil)
+      def as_json: (?untyped) -> Hash[Symbol, untyped]
+      def conflict_type: (?when_renamed: untyped) -> (:both_added | :both_modified | :modified_source_removed_target | :modified_target_removed_source | :removed_source_renamed_target | :removed_target_renamed_source | :renamed_same_file)
+    end
+  end
+end

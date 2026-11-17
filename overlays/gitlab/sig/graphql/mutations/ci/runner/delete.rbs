@@ -1,0 +1,9 @@
+module Mutations
+  module Ci
+    module Runner
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (id: untyped, **untyped) -> { errors: untyped }
+      end
+    end
+  end
+end

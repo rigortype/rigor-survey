@@ -1,0 +1,5 @@
+module AuditEvents
+  class UserAuditEvent < ::ApplicationRecord
+    def entity_type: () -> "User"
+  end
+end

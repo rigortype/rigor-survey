@@ -1,0 +1,6 @@
+module Search
+  class ProjectService
+    def initialize: (untyped, untyped, untyped) -> void
+    def execute: () -> Gitlab::ProjectSearchResults
+  end
+end

@@ -1,0 +1,5 @@
+module Ml
+  class ModelVersion < ::ApplicationRecord
+    def self.by_project_id_and_id: (untyped, untyped) -> (Ml::ModelVersion | nil)
+  end
+end

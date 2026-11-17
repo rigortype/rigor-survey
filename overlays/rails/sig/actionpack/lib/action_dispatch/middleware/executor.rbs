@@ -1,0 +1,5 @@
+module ActionDispatch
+  class Executor
+    def initialize: (untyped, untyped) -> void
+  end
+end

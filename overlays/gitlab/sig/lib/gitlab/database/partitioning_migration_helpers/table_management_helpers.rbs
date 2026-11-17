@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module PartitioningMigrationHelpers
+      module TableManagementHelpers
+        def prepare_constraint_for_list_partitioning: (table_name: untyped, partitioning_column: untyped, parent_table_name: untyped, initial_partitioning_value: untyped, ?async: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+        def revert_converting_table_to_first_list_partition: (table_name: untyped, partitioning_column: untyped, parent_table_name: untyped, initial_partitioning_value: untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+      end
+    end
+  end
+end

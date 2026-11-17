@@ -1,0 +1,3 @@
+class UsernameBlock < ::ApplicationRecord
+  def comparison: () -> ("contains" | "equals")
+end

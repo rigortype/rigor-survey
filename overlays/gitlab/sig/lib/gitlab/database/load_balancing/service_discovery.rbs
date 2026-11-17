@@ -1,0 +1,22 @@
+module Gitlab
+  module Database
+    module LoadBalancing
+      class ServiceDiscovery
+        def initialize: (untyped, nameserver: String, port: Integer, record: String, ?record_type: untyped, ?interval: untyped, ?disconnect_timeout: Integer, ?use_tcp: untyped, ?max_replica_pools: untyped) -> void
+        def start: () -> Thread
+        def addresses_from_dns: () -> [untyped, untyped]
+        def log_refresh_thread_interruption: () -> (nil | true)
+        def record: () -> "foo"
+        def disconnect_timeout: () -> 1
+        class Address < ::Struct[untyped]
+          def hostname: () -> untyped
+          def port: () -> untyped
+          def hostname=: (untyped) -> untyped
+          def port=: (untyped) -> untyped
+          def self.new: (?hostname: untyped, ?port: untyped) -> instance | (?untyped hostname, ?untyped port) -> instance
+          def self.[]: (?hostname: untyped, ?port: untyped) -> instance | (?untyped hostname, ?untyped port) -> instance
+        end
+      end
+    end
+  end
+end

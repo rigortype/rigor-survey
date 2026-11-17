@@ -1,0 +1,7 @@
+module MergeRequests
+  module Mergeability
+    class DetailedMergeStatusService
+      def initialize: (merge_request: untyped, ?precomputed_results: untyped, ?batched_branch_heads: (false | true)) -> void
+    end
+  end
+end

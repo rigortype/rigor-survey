@@ -1,0 +1,11 @@
+module WebIde
+  class ExtensionMarketplacePreset
+    def self.all: () -> [untyped]
+    def self.open_vsx: () -> WebIde::ExtensionMarketplacePreset
+    def initialize: (String, String, service_url: String, item_url: String, resource_url_template: String) -> void
+    def to_h: () -> { key: untyped, name: untyped, values: untyped }
+    def key: () -> "test_key"
+    def name: () -> "Test Key"
+    def values: () -> { service_url: untyped, item_url: untyped, resource_url_template: untyped }
+  end
+end

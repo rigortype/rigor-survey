@@ -1,0 +1,11 @@
+module Mail
+  class PartsList
+    def initialize: (*untyped) -> void
+    def attachments: () -> Mail::AttachmentsList
+    def map!: () -> bot
+    def collect!: () -> bot
+    def sort: () -> Mail::PartsList
+    def sort!: (Array[untyped] | [String]) -> Array[untyped]
+    def parts: () -> Array[untyped]
+  end
+end

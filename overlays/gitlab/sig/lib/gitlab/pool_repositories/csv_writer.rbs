@@ -1,0 +1,10 @@
+module Gitlab
+  module PoolRepositories
+    class CsvWriter
+      def initialize: (untyped, ?columns: untyped) -> void
+      def write_row: (untyped) -> IO
+      def flush: () -> (IO | nil)
+      def close: () -> nil
+    end
+  end
+end

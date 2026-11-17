@@ -1,0 +1,7 @@
+module Gitlab
+  module Repositories
+    class RefCacheUpdateService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class ProcessSponsorshipEditJob < ::ApplicationJob
+  def perform: (SponsorshipEditingHistory) -> void
+end

@@ -1,0 +1,6 @@
+module BlobViewer
+  class PackageJson < ::BlobViewer::DependencyManager
+    def manager_name: () -> ("npm" | "yarn")
+    def manager_url: () -> ("https://www.npmjs.com/" | "https://yarnpkg.com/")
+  end
+end

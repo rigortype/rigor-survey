@@ -1,0 +1,3 @@
+module BulkMemberAccessLoad
+  def max_member_access_for_resource_key: (untyped) -> String
+end

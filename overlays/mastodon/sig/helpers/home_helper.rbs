@@ -1,0 +1,4 @@
+module HomeHelper
+  def default_props: () -> { locale: Symbol }
+  def field_verified_class: (untyped) -> ("emojify" | "verified")
+end

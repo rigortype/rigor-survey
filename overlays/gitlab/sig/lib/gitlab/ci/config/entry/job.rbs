@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Job < ::Gitlab::Config::Entry::Node
+          def self.matching?: (untyped, untyped) -> (false | true)
+          def self.visible?: () -> true
+          def self.allowed_keys: () -> [:tags, :script, :image, :services, :start_in, :artifacts, :cache, :dependencies, :before_script, :after_script, :hooks, :coverage, :retry, :parallel, :timeout, :inputs, :release, :id_tokens, :publish, :pages, :manual_confirmation, :run]
+        end
+      end
+    end
+  end
+end

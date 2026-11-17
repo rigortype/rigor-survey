@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module Partitioning
+      class PartitionImporter
+        def initialize: (connection: untyped) -> void
+        def import: (untyped, ?dry_run: untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

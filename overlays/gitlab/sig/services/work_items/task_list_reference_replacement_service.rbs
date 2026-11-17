@@ -1,0 +1,6 @@
+module WorkItems
+  class TaskListReferenceReplacementService
+    def initialize: (work_item: untyped, current_user: untyped, work_item_reference: untyped, line_number_start: untyped, line_number_end: untyped, title: untyped, lock_version: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

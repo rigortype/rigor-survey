@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Report
+          def initialize: (untyped, untyped, untyped) -> void
+          def clone_as_blank: () -> Gitlab::Ci::Reports::Security::Report
+          def replace_with!: (untyped) -> Array[Symbol]
+          def merge!: (untyped) -> Array[Symbol]
+        end
+      end
+    end
+  end
+end

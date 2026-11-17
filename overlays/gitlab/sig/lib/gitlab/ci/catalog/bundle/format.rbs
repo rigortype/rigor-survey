@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    module Catalog
+      module Bundle
+        class Format
+          def self.load: (untyped) -> Gitlab::Ci::Catalog::Bundle::Contents
+        end
+      end
+    end
+  end
+end

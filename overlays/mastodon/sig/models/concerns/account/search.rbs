@@ -1,0 +1,6 @@
+class Account < ::ApplicationRecord
+  module Search
+    def searchable_text: () -> (String | nil)
+    def searchable_properties: () -> Array[untyped]
+  end
+end

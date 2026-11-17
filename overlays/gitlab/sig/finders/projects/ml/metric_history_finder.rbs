@@ -1,0 +1,8 @@
+module Projects
+  module Ml
+    class MetricHistoryFinder
+      def initialize: (untyped, untyped) -> void
+      def execute: () -> ActiveRecord::Relation[::Ml::CandidateMetric]
+    end
+  end
+end

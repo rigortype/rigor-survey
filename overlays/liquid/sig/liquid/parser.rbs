@@ -1,0 +1,7 @@
+module Liquid
+  class Parser
+    def initialize: (StringScanner) -> void
+    def argument: () -> String
+    def variable_lookups: () -> String
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module CycleAnalytics
+    class Updater
+      def initialize: (untyped, from: untyped, to: untyped, klass: untyped) -> void
+    end
+  end
+end

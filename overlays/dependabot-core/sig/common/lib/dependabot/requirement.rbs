@@ -1,0 +1,10 @@
+module Dependabot
+  class Requirement < ::Gem::Requirement
+    def constraints: () -> Array[String]
+    def min_version: () -> (Dependabot::Version | nil)
+    def max_version: () -> (Dependabot::Version | nil)
+    def handle_min_operator: (untyped, untyped) -> (Dependabot::Version | nil)
+    def handle_max_operator: (untyped, untyped) -> (Dependabot::Version | nil)
+    def handle_tilde_pessimistic_max: (untyped) -> Dependabot::Version
+  end
+end

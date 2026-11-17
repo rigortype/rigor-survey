@@ -1,0 +1,5 @@
+module Liquid
+  class TemplateFactory
+    def for: (String) -> Liquid::Template
+  end
+end

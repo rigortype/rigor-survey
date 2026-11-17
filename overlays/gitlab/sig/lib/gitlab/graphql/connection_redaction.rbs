@@ -1,0 +1,9 @@
+module Gitlab
+  module Graphql
+    module ConnectionRedaction
+      class RedactionState
+        def redactor=: (untyped) -> nil
+      end
+    end
+  end
+end

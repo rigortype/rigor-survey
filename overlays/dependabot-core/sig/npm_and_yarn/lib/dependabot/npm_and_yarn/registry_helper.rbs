@@ -1,0 +1,10 @@
+module Dependabot
+  module NpmAndYarn
+    class RegistryHelper
+      def self.build_integrity_keys: (untyped, untyped) -> (String | nil)
+      def self.valid_signing_keys?: (untyped) -> (false | true)
+      def initialize: (untyped, untyped) -> void
+      def find_corepack_env_variables: () -> Hash[untyped, untyped]
+    end
+  end
+end

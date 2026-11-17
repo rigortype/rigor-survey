@@ -1,0 +1,5 @@
+module Ci
+  class PipelinesForMergeRequestFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

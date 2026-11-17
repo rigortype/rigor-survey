@@ -1,0 +1,7 @@
+module ActivityPub
+  class Activity
+    class Move < ::ActivityPub::Activity
+      def perform: () -> (String | nil)
+    end
+  end
+end

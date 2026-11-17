@@ -1,0 +1,5 @@
+module Pages
+  class DeploymentsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module API
+  class GoProxy < ::API::Base
+    def find_module: () -> (Packages::Go::Module | nil)
+  end
+end

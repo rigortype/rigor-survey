@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Type
+    class Json < ::ActiveModel::Type::Value
+      def type: () -> :json
+      def accessor: () -> singleton(ActiveRecord::Store::StringKeyedHashAccessor)
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module GoogleCloud
+  class CreateCloudsqlInstanceWorker
+    def perform: (untyped, untyped, ?untyped) -> nil
+  end
+end

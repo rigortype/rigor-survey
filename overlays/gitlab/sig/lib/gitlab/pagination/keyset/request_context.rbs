@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class RequestContext
+        def initialize: (untyped) -> void
+        def page: () -> Gitlab::Pagination::Keyset::Page
+      end
+    end
+  end
+end

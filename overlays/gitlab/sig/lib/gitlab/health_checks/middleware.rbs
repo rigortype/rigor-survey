@@ -1,0 +1,7 @@
+module Gitlab
+  module HealthChecks
+    class Middleware
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

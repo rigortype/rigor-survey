@@ -1,0 +1,11 @@
+module Authz
+  class JobArtifactAccess < ::Data
+    def project: () -> untyped
+    def accessibility: () -> untyped
+    def file_type: () -> ("junit" | :junit)
+    def self.new: (project: untyped, accessibility: untyped, file_type: ("junit" | :junit)) -> instance | (untyped project, untyped accessibility, ("junit" | :junit) file_type) -> instance
+    def self.[]: (project: untyped, accessibility: untyped, file_type: ("junit" | :junit)) -> instance | (untyped project, untyped accessibility, ("junit" | :junit) file_type) -> instance
+    def self.for: (untyped) -> Authz::JobArtifactAccess
+    def initialize: (project: untyped, accessibility: untyped, file_type: (String | Symbol)) -> void
+  end
+end

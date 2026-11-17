@@ -1,0 +1,5 @@
+module Ci
+  class RunnerPresenter < ::Gitlab::View::Presenter::Delegated
+    def paused: () -> (false | true)
+  end
+end

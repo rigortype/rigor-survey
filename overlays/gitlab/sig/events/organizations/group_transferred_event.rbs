@@ -1,0 +1,5 @@
+module Organizations
+  class GroupTransferredEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["group_id", "old_organization_id", "new_organization_id"] | Hash[String, Hash[String, "integer"]]]
+  end
+end

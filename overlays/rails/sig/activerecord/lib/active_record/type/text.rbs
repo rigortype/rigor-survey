@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Type
+    class Text < ::ActiveModel::Type::String
+      def type: () -> :text
+    end
+  end
+end

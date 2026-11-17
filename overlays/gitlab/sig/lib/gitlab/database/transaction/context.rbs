@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Transaction
+      class Context
+        def track_sql: (untyped) -> Array[untyped]
+        def track_backtrace: (untyped) -> Array[untyped]
+        def context: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

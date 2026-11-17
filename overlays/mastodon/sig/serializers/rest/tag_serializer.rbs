@@ -1,0 +1,7 @@
+module REST
+  class TagSerializer < ::ActiveModel::Serializer[untyped]
+    def id: () -> String
+    def name: () -> String
+    def current_user?: () -> (false | true)
+  end
+end

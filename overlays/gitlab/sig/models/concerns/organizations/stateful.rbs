@@ -1,0 +1,5 @@
+module Organizations
+  module Stateful
+    def maintenance_time_bounded?: () -> (false | true)
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class AttributesParser
+      def initialize: (?untyped) -> void
+      def patterns: () -> Hash[untyped, untyped]
+      def parse_attributes: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

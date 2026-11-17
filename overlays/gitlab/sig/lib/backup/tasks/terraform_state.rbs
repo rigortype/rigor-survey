@@ -1,0 +1,8 @@
+module Backup
+  module Tasks
+    class TerraformState < ::Backup::Tasks::Task
+      def self.id: () -> "terraform_state"
+      def destination_path: () -> "terraform_state.tar.gz"
+    end
+  end
+end

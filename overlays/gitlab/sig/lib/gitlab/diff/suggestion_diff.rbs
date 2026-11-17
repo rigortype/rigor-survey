@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class SuggestionDiff
+      def initialize: (untyped) -> void
+      def diff_lines: () -> Array[untyped]
+    end
+  end
+end

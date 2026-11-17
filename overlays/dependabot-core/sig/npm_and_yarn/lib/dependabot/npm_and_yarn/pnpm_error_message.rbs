@@ -1,0 +1,9 @@
+module Dependabot
+  module NpmAndYarn
+    module PnpmErrorMessage
+      def self.unwrap: (untyped) -> Array[untyped]
+      def self.classify: (untyped, untyped) -> ([:break, ""] | [:start, String] | [:text, untyped])
+      def self.join_wrapped: (untyped, untyped, untyped) -> String
+    end
+  end
+end

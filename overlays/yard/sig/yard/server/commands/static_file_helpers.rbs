@@ -1,0 +1,10 @@
+module YARD
+  module Server
+    module Commands
+      module StaticFileHelpers
+        def favicon?: () -> nil
+        def static_template_file?: () -> nil
+      end
+    end
+  end
+end

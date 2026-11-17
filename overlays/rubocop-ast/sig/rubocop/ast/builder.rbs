@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    module BuilderExtensions
+      def self.included: (untyped) -> true
+    end
+  end
+end

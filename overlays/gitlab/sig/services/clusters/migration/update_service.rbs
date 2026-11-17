@@ -1,0 +1,8 @@
+module Clusters
+  module Migration
+    class UpdateService
+      def initialize: (untyped, clusterable: untyped, current_user: untyped, issue_url: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

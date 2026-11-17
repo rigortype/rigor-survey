@@ -1,0 +1,7 @@
+module Integrations
+  module Base
+    module SlackNotification
+      def configurable_channels?: () -> true
+    end
+  end
+end

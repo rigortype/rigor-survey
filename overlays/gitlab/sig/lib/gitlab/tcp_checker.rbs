@@ -1,0 +1,8 @@
+module Gitlab
+  class TcpChecker
+    def initialize: (untyped, untyped, ?untyped, ?untyped) -> void
+    def local: () -> String
+    def remote: () -> String
+    def check: (?timeout: untyped) -> (false | true)
+  end
+end

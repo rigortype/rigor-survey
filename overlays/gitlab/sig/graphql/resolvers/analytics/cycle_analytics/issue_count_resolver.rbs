@@ -1,0 +1,9 @@
+module Resolvers
+  module Analytics
+    module CycleAnalytics
+      class IssueCountResolver < ::Resolvers::Analytics::CycleAnalytics::BaseIssueResolver
+        def resolve: (**untyped) -> { value: untyped, title: untyped, identifier: "issues", links: [] }
+      end
+    end
+  end
+end

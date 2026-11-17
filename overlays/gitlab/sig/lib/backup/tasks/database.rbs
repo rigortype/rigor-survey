@@ -1,0 +1,11 @@
+module Backup
+  module Tasks
+    class Database < ::Backup::Tasks::Task
+      def self.id: () -> "db"
+      def destination_path: () -> "db"
+      def cleanup_path: () -> "db"
+      def pre_restore_warning: () -> (String | nil)
+      def post_restore_warning: () -> (String | nil)
+    end
+  end
+end

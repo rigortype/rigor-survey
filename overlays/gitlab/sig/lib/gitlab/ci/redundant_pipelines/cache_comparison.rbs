@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module RedundantPipelines
+      class CacheComparison
+        def self.for: (untyped) -> Gitlab::Ci::RedundantPipelines::CacheComparison
+        def initialize: (cache: untyped) -> void
+        def canceled: (untyped) -> Array[untyped]
+        def canceled_conservatively: (untyped) -> Array[untyped]
+        def kept_as_protected: (untyped) -> Array[untyped]
+        def log_fields: () -> { cache_missed_count: untyped, cache_missed_ids: untyped, cache_would_cancel_count: untyped, cache_would_cancel_ids: untyped, cache_would_cancel_never_started_count: untyped, cache_would_cancel_never_started_ids: untyped, cache_would_keep_count: untyped, cache_would_keep_ids: untyped }
+      end
+    end
+  end
+end

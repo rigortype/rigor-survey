@@ -1,0 +1,7 @@
+module Dependabot
+  class Updater
+    class SemverGroupingRules
+      def initialize: (job: untyped) -> void
+    end
+  end
+end

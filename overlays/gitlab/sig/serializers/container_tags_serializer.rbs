@@ -1,0 +1,4 @@
+class ContainerTagsSerializer < ::BaseSerializer
+  def with_pagination: (untyped, untyped) -> ContainerTagsSerializer
+  def paginated?: () -> (false | true)
+end

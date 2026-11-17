@@ -1,0 +1,5 @@
+module Import
+  class ImportRecordPreparer
+    def initialize: (untyped) -> void
+  end
+end

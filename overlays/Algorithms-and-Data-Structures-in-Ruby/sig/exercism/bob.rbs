@@ -1,0 +1,3 @@
+class Bob
+  def self.hey: (untyped) -> ("Calm down, I know what I'm doing!" | "Fine. Be that way!" | "Sure." | "Whatever." | "Whoa, chill out!")
+end

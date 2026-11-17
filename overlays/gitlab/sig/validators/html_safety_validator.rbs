@@ -1,0 +1,3 @@
+class HtmlSafetyValidator < ::ActiveModel::EachValidator
+  def self.error_message: () -> String
+end

@@ -1,0 +1,5 @@
+module Members
+  class InviteUsersFinder < ::UsersFinder
+    def initialize: (untyped, untyped, ?search: untyped) -> void
+  end
+end

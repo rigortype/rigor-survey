@@ -1,0 +1,9 @@
+module API
+  module TimeTrackingEndpoints
+    def issuable_name: () -> ("issue" | "merge_request")
+    def issuable_key: () -> Symbol
+    def admin_issuable_key: () -> Symbol
+    def read_issuable_key: () -> Symbol
+    def update_service: () -> (singleton(::Issues::UpdateService) | singleton(::MergeRequests::UpdateService))
+  end
+end

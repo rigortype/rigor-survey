@@ -1,0 +1,8 @@
+module Gitlab
+  module SlashCommands
+    class Deploy < ::Gitlab::SlashCommands::BaseCommand
+      def self.match: (untyped) -> (nil | { from: untyped, to: untyped })
+      def self.help_message: () -> "deploy <environment> to <target-environment>"
+    end
+  end
+end

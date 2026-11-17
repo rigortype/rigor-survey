@@ -1,0 +1,5 @@
+module TDiary
+  class Request < ::Rack::Request
+    def cgi_compat: () -> (RackCGI | TDiary::CGICompat)
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Search
+    class FoundWikiPage < ::SimpleDelegator
+      def self.declarative_policy_class: () -> "WikiPagePolicy"
+      def initialize: (untyped) -> void
+      def to_ability_name: () -> "wiki_page"
+    end
+  end
+end

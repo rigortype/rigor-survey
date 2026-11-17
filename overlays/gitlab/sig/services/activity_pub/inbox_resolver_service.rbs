@@ -1,0 +1,5 @@
+module ActivityPub
+  class InboxResolverService
+    def initialize: (untyped) -> void
+  end
+end

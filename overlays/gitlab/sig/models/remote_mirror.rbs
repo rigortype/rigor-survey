@@ -1,0 +1,7 @@
+class RemoteMirror < ::ApplicationRecord
+  def options_for_update: () -> (Hash[untyped, untyped] | { keep_divergent_refs: untyped })
+  def enabled: () -> (false | true)
+  def disabled?: () -> (false | true)
+  def backoff_delay: () -> ActiveSupport::Duration
+  def max_runtime: () -> ActiveSupport::Duration
+end

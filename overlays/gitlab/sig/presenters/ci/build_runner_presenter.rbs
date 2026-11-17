@@ -1,0 +1,30 @@
+module Ci
+  class BuildRunnerPresenter < ::SimpleDelegator
+    def artifacts: () -> (Array[untyped] | nil)
+    def ref_type: () -> ("branch" | "tag")
+    def refspecs: () -> Array[untyped]
+    def suspend_options: () -> (Hash[untyped, untyped] | nil)
+    class BuildArtifact < ::Struct[untyped]
+      def name: () -> untyped
+      def untracked: () -> untyped
+      def paths: () -> untyped
+      def exclude: () -> untyped
+      def when: () -> untyped
+      def expire_in: () -> untyped
+      def artifact_type: () -> untyped
+      def artifact_format: () -> untyped
+      def name=: (untyped) -> untyped
+      def untracked=: (untyped) -> untyped
+      def paths=: (untyped) -> untyped
+      def exclude=: (untyped) -> untyped
+      def when=: (untyped) -> untyped
+      def expire_in=: (untyped) -> untyped
+      def artifact_type=: (untyped) -> untyped
+      def artifact_format=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?untracked: untyped, ?paths: untyped, ?exclude: untyped, ?when: untyped, ?expire_in: untyped, ?artifact_type: untyped, ?artifact_format: untyped) -> instance
+      def self.[]: (?name: untyped, ?untracked: untyped, ?paths: untyped, ?exclude: untyped, ?when: untyped, ?expire_in: untyped, ?artifact_type: untyped, ?artifact_format: untyped) -> instance
+      def self.for_archive: (untyped) -> Ci::BuildRunnerPresenter::BuildArtifact
+      def self.for_report: (untyped, untyped) -> Ci::BuildRunnerPresenter::BuildArtifact
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module QueryLimiting
+    class Transaction
+      def self.default_threshold: () -> 100
+      def self.threshold: () -> 100
+      def self.run: () -> [Gitlab::QueryLimiting::Transaction, untyped]
+      def act_upon_results: () -> nil
+      def ignorable?: (untyped) -> (false | true)
+      def executed_sql: (untyped) -> (Array[untyped] | nil)
+      def error_message: () -> String
+    end
+  end
+end

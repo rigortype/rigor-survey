@@ -1,0 +1,3 @@
+class String
+  def is_utf8?: () -> bool
+end

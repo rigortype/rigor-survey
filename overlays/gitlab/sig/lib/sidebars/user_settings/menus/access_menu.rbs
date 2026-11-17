@@ -1,0 +1,10 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class AccessMenu < ::Sidebars::Menu
+        def configure_menu_items: () -> true
+        def sprite_icon: () -> "key"
+      end
+    end
+  end
+end

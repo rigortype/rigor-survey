@@ -1,0 +1,4 @@
+class ListOps
+  def self.mapper: (untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+  def self.filterer: (untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+end

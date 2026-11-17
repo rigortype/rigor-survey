@@ -1,0 +1,7 @@
+module RapidDiffs
+  module StreamingResource
+    def request: () -> RapidDiffs::StreamingResource::Request
+    class Request < ::SimpleDelegator
+    end
+  end
+end

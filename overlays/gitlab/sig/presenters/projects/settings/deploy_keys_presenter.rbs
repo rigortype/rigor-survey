@@ -1,0 +1,9 @@
+module Projects
+  module Settings
+    class DeployKeysPresenter < ::Gitlab::View::Presenter::Simple
+      def new_key: () -> DeployKey
+      def as_json: () -> { enabled_keys: untyped, available_project_keys: untyped, public_keys: untyped }
+      def form_partial_path: () -> "shared/deploy_keys/project_group_form"
+    end
+  end
+end

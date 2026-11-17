@@ -1,0 +1,3 @@
+class NoteDiffFile < ::ApplicationRecord
+  def raw_diff_file: () -> (Gitlab::Diff::File | nil)
+end

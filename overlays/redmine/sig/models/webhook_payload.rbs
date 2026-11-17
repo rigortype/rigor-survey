@@ -1,0 +1,14 @@
+class WebhookPayload
+  def initialize: (String, untyped, untyped) -> void
+  def self.register_model: (untyped, untyped) -> Array[untyped]
+  def self.events: () -> {}
+  class ApiRenderer
+    def initialize: (untyped, untyped, ?untyped) -> void
+    class DummyRequest < ::Struct[untyped]
+      def params: () -> untyped
+      def params=: (untyped) -> untyped
+      def self.new: (?params: untyped) -> instance | (?untyped params) -> instance
+      def self.[]: (?params: untyped) -> instance | (?untyped params) -> instance
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActiveSupport
+  module JSON
+    def self.parse_error: () -> singleton(::JSON::ParserError)
+  end
+end

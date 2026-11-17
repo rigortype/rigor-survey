@@ -1,0 +1,6 @@
+module Wikis
+  class PageHistory
+    def initialize: (untyped) -> void
+    def slug_at: (untyped) -> (String | nil)
+  end
+end

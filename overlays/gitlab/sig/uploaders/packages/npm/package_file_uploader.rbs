@@ -1,0 +1,7 @@
+module Packages
+  module Npm
+    class PackageFileUploader < ::Packages::PackageFileUploader
+      def self.direct_upload_enabled?: () -> false
+    end
+  end
+end

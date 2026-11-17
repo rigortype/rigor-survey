@@ -1,0 +1,9 @@
+module Dependabot
+  module GoModules
+    class FileParser < ::Dependabot::FileParsers::Base
+      def initialize: (dependency_files: untyped, ?source: untyped, ?repo_contents_path: untyped, ?credentials: untyped, ?reject_external_code: untyped, ?options: untyped) -> void
+      def parse: () -> Array[::Dependency]
+      def ecosystem: () -> (Dependabot::Ecosystem | nil)
+    end
+  end
+end

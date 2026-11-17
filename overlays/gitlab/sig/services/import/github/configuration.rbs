@@ -1,0 +1,11 @@
+module Import
+  module Github
+    class Configuration
+      def app_id: () -> (String | nil)
+      def private_key: () -> (String | nil)
+      def webhook_secret: () -> (String | nil)
+      def configured?: () -> (false | true)
+      def inspect: () -> String
+    end
+  end
+end

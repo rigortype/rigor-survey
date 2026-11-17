@@ -1,0 +1,8 @@
+module Projects
+  module ImportExport
+    class ParallelExportService
+      def initialize: (untyped, untyped, untyped) -> void
+      def logger: () -> Gitlab::Export::Logger
+    end
+  end
+end

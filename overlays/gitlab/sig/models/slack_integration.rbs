@@ -1,0 +1,6 @@
+class SlackIntegration < ::ApplicationRecord
+  def self.organization_alias: (untyped) -> String
+  def self.scopes_for: (duo_enabled: untyped) -> ([untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped] | [untyped, untyped, untyped, untyped, untyped, untyped, untyped] | [untyped, untyped, untyped])
+  def upgrade_needed?: () -> (false | true)
+  def all_features_supported?: () -> (false | true)
+end

@@ -1,0 +1,9 @@
+module Dependabot
+  class SecurityAdvisory
+    def initialize: (dependency_name: untyped, package_manager: untyped, ?vulnerable_versions: untyped, ?safe_versions: untyped) -> void
+    def vulnerable?: (untyped) -> (false | true)
+    def fixed_by?: (untyped) -> (false | true)
+    def affects_version?: (untyped) -> (false | true)
+    def vulnerable_version_strings: () -> Array[Dependabot::Requirement | String]
+  end
+end

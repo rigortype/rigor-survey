@@ -1,0 +1,7 @@
+module Ci
+  module PipelineCreation
+    class StartPipelineService
+      def initialize: (untyped) -> void
+    end
+  end
+end

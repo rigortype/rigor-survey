@@ -1,0 +1,8 @@
+module Gitlab
+  module Graphql
+    class UxSliByOperationName
+      def self.operation_ux_sli_map: () -> {}
+      def initialize: (untyped) -> void
+    end
+  end
+end

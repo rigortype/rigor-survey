@@ -1,0 +1,13 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      module StageEvents
+        class CodeStageStart < ::Gitlab::Analytics::CycleAnalytics::StageEvents::StageEvent
+          def self.identifier: () -> :code_stage_start
+          def object_type: () -> singleton(MergeRequest)
+          def column_list: () -> [untyped, untyped]
+        end
+      end
+    end
+  end
+end

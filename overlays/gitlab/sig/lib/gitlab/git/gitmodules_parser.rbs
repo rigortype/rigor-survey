@@ -1,0 +1,12 @@
+module Gitlab
+  module Git
+    class GitmodulesParser
+      def initialize: (String) -> void
+      def parse: () -> Hash[untyped, untyped]
+      class State
+        def section_started?: () -> (false | true)
+        def submodules_by_name: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

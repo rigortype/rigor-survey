@@ -1,0 +1,9 @@
+module Rails
+  module Generators
+    module Testing
+      module Behavior
+        def create_generated_attribute: (untyped, ?untyped, ?untyped) -> Rails::Generators::GeneratedAttribute
+      end
+    end
+  end
+end

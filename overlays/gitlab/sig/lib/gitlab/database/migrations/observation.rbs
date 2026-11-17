@@ -1,0 +1,26 @@
+module Gitlab
+  module Database
+    module Migrations
+      class Observation < ::Struct[untyped]
+        def version: () -> untyped
+        def name: () -> untyped
+        def walltime: () -> untyped
+        def success: () -> untyped
+        def total_database_size_change: () -> untyped
+        def error_message: () -> untyped
+        def meta: () -> untyped
+        def query_statistics: () -> untyped
+        def version=: (untyped) -> untyped
+        def name=: (untyped) -> untyped
+        def walltime=: (untyped) -> untyped
+        def success=: (untyped) -> untyped
+        def total_database_size_change=: (untyped) -> untyped
+        def error_message=: (untyped) -> untyped
+        def meta=: (untyped) -> untyped
+        def query_statistics=: (untyped) -> untyped
+        def self.new: (?version: untyped, ?name: untyped, ?walltime: untyped, ?success: untyped, ?total_database_size_change: untyped, ?error_message: untyped, ?meta: untyped, ?query_statistics: untyped) -> instance
+        def self.[]: (?version: untyped, ?name: untyped, ?walltime: untyped, ?success: untyped, ?total_database_size_change: untyped, ?error_message: untyped, ?meta: untyped, ?query_statistics: untyped) -> instance
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module Gitlab
+  module Patch
+    module GlobalId
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

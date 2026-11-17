@@ -1,0 +1,11 @@
+module Projects
+  class OpenWorkItemsCountService < ::Projects::CountService
+    def initialize: (untyped, ?untyped) -> void
+    def cache_key_name: () -> ("public_open_work_items_count" | "total_open_work_items_count")
+    def public_only?: () -> (false | true)
+    def public_count_cache_key: () -> ["projects", "count_service", 1, untyped, "public_open_work_items_count"]
+    def total_count_cache_key: () -> ["projects", "count_service", 1, untyped, "total_open_work_items_count"]
+    def delete_cache: () -> Array[Array[untyped]]
+    def self.base_query: () -> ActiveRecord::Relation[WorkItem]
+  end
+end

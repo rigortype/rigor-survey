@@ -1,0 +1,12 @@
+module Redmine
+  module Scm
+    module Adapters
+      class FilesystemAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.client_available: () -> true
+        def initialize: (String, ?nil, ?nil, ?nil, ?String) -> void
+        def info: () -> (Redmine::Scm::Adapters::Info | nil)
+        def cat: (String, ?Integer) -> String
+      end
+    end
+  end
+end

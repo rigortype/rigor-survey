@@ -1,0 +1,8 @@
+module PyCall
+  class List
+    def each: () ?{ (*untyped) -> untyped } -> (Enumerator[untyped, PyCall::List] | PyCall::List)
+    def sort: () -> PyCall::List
+    def sort!: () -> PyCall::List
+    def to_a: () -> Array[untyped]
+  end
+end

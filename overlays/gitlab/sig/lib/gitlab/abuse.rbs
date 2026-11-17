@@ -1,0 +1,5 @@
+module Gitlab
+  module Abuse
+    def self.confidence: (untyped) -> Float
+  end
+end

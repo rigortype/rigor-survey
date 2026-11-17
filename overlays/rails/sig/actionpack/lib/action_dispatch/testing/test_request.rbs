@@ -1,0 +1,7 @@
+module ActionDispatch
+  class TestRequest < ::ActionDispatch::Request
+    def self.create: (?untyped) -> ActionDispatch::TestRequest
+    def host=: (untyped) -> nil
+    def port=: (untyped) -> nil
+  end
+end

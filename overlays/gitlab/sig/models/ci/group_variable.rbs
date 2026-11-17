@@ -1,0 +1,5 @@
+module Ci
+  class GroupVariable < ::Ci::ApplicationRecord
+    def self.sort_by_attribute: (untyped) -> (ActiveRecord::Relation[Ci::GroupVariable] | nil)
+  end
+end

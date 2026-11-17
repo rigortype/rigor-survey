@@ -1,0 +1,3 @@
+class MergeRequestsFinder < ::IssuableFinder
+  def klass: () -> singleton(MergeRequest)
+end

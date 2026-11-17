@@ -1,0 +1,33 @@
+module Dependabot
+  module Python
+    class FileParser < ::Dependabot::FileParsers::Base
+      module PyprojectValueParser
+        def self.object_hash: (untyped, untyped) -> ObjectHash
+        def self.array: (untyped, untyped) -> Array[Object]
+        def self.string: (untyped, untyped) -> String
+        def self.optional_string: (untyped, untyped) -> (String | nil)
+        def self.string_array: (untyped, untyped) -> Array[Object]
+        def self.poetry_requirements: (untyped, untyped) -> Array[ObjectHash | String]
+      end
+      class PyprojectDocument
+        def initialize: (untyped) -> void
+        def self.from_file: (untyped) -> ::PyprojectDocument
+        def self.from_content: (untyped) -> Dependabot::Python::FileParser::PyprojectDocument
+        def poetry?: () -> (false | true)
+        def project?: () -> (false | true)
+        def poetry_metadata: () -> (::ProjectMetadata | nil)
+        def project_metadata: () -> (::ProjectMetadata | nil)
+        def build_system_metadata: () -> (::ProjectMetadata | nil)
+        def pep621?: () -> (false | true)
+        def poetry_groups: () -> Hash[untyped, untyped]
+        def dynamic_fields: () -> Array[Object]
+        def pip_dependencies: () -> Array[untyped]
+        def pip_constraint_paths: () -> (Array[untyped] | [String])
+        def poetry_source: (untyped) -> (::PoetrySource | nil)
+        def unresolvable_uv_source_entry?: (untyped) -> (false | true)
+        def uv_git_tag_sources: () -> Hash[untyped, untyped]
+        def workspace_globs: (untyped) -> Array[Object]
+      end
+    end
+  end
+end

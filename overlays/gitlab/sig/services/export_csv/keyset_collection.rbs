@@ -1,0 +1,6 @@
+module ExportCsv
+  class KeysetCollection
+    def initialize: (untyped, ?associations_to_preload: [Symbol], ?on_batch_loaded: Proc) -> void
+    def associations_to_preload: () -> [:author]
+  end
+end

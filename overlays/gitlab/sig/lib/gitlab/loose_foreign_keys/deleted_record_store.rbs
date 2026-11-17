@@ -1,0 +1,9 @@
+module Gitlab
+  module LooseForeignKeys
+    class DeletedRecordStore
+      def self.load_batch_for_table: (untyped, untyped) -> Array[untyped]
+      def self.count_per_model: (untyped) -> Hash[untyped, untyped]
+      def self.metrics: () -> singleton(Gitlab::Metrics::LooseForeignKeysDeletedRecordStore)
+    end
+  end
+end

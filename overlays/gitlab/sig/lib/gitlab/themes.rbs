@@ -1,0 +1,24 @@
+module Gitlab
+  module Themes
+    def available_themes: () -> [Gitlab::Themes::Theme, Gitlab::Themes::Theme, Gitlab::Themes::Theme, Gitlab::Themes::Theme, Gitlab::Themes::Theme, Gitlab::Themes::Theme]
+    def body_classes: () -> String
+    def map_deprecated_themes: () -> Hash[Integer, 1 | 4 | 5 | 9]
+    def count: () -> 6
+    def each: () ?{ (*untyped) -> untyped } -> Array[Gitlab::Themes::Theme]
+    def self.valid_ids: () -> [untyped, untyped, untyped, untyped, untyped, untyped, 6, 7, 8, 10, 11]
+    class Theme < ::Struct[untyped]
+      def id: () -> untyped
+      def name: () -> untyped
+      def css_class: () -> untyped
+      def primary_color: () -> untyped
+      def primary_color_dark: () -> untyped
+      def id=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def css_class=: (untyped) -> untyped
+      def primary_color=: (untyped) -> untyped
+      def primary_color_dark=: (untyped) -> untyped
+      def self.new: (?id: untyped, ?name: untyped, ?css_class: untyped, ?primary_color: untyped, ?primary_color_dark: untyped) -> instance | (?untyped id, ?untyped name, ?untyped css_class, ?untyped primary_color, ?untyped primary_color_dark) -> instance
+      def self.[]: (?id: untyped, ?name: untyped, ?css_class: untyped, ?primary_color: untyped, ?primary_color_dark: untyped) -> instance | (?untyped id, ?untyped name, ?untyped css_class, ?untyped primary_color, ?untyped primary_color_dark) -> instance
+    end
+  end
+end

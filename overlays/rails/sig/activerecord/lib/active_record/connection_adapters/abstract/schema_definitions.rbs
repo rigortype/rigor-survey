@@ -1,0 +1,148 @@
+module ActiveRecord
+  module ConnectionAdapters
+    class AddForeignKey < ::Data
+      def foreign_key: () -> untyped
+      def self.new: (foreign_key: untyped) -> instance | (untyped foreign_key) -> instance
+      def self.[]: (foreign_key: untyped) -> instance | (untyped foreign_key) -> instance
+    end
+    class DropForeignKey < ::Data
+      def name: () -> untyped
+      def self.new: (name: untyped) -> instance | (untyped name) -> instance
+      def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+    end
+    class AddCheckConstraint < ::Data
+      def check_constraint: () -> untyped
+      def self.new: (check_constraint: untyped) -> instance | (untyped check_constraint) -> instance
+      def self.[]: (check_constraint: untyped) -> instance | (untyped check_constraint) -> instance
+    end
+    class DropCheckConstraint < ::Data
+      def name: () -> untyped
+      def self.new: (name: untyped) -> instance | (untyped name) -> instance
+      def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+    end
+    class DropConstraint < ::Data
+      def name: () -> untyped
+      def self.new: (name: untyped) -> instance | (untyped name) -> instance
+      def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+    end
+    class DropColumn < ::Data
+      def name: () -> untyped
+      def self.new: (name: untyped) -> instance | (untyped name) -> instance
+      def self.[]: (name: untyped) -> instance | (untyped name) -> instance
+    end
+    class RenameColumn < ::Data
+      def from_name: () -> untyped
+      def to_name: () -> untyped
+      def self.new: (from_name: untyped, to_name: untyped) -> instance | (untyped from_name, untyped to_name) -> instance
+      def self.[]: (from_name: untyped, to_name: untyped) -> instance | (untyped from_name, untyped to_name) -> instance
+    end
+    class ChangeColumnNull < ::Data
+      def name: () -> untyped
+      def null: () -> untyped
+      def self.new: (name: untyped, null: untyped) -> instance | (untyped name, untyped null) -> instance
+      def self.[]: (name: untyped, null: untyped) -> instance | (untyped name, untyped null) -> instance
+    end
+    class ColumnDefinition < ::Struct[untyped]
+      def name: () -> untyped
+      def type: () -> untyped
+      def options: () -> untyped
+      def sql_type: () -> untyped
+      def cast_type: () -> untyped
+      def name=: (untyped) -> untyped
+      def type=: (untyped) -> untyped
+      def options=: (untyped) -> untyped
+      def sql_type=: (untyped) -> untyped
+      def cast_type=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?type: untyped, ?options: untyped, ?sql_type: untyped, ?cast_type: untyped) -> instance | (?untyped name, ?untyped type, ?untyped options, ?untyped sql_type, ?untyped cast_type) -> instance
+      def self.[]: (?name: untyped, ?type: untyped, ?options: untyped, ?sql_type: untyped, ?cast_type: untyped) -> instance | (?untyped name, ?untyped type, ?untyped options, ?untyped sql_type, ?untyped cast_type) -> instance
+    end
+    class AddColumnDefinition < ::Struct[untyped]
+      def column: () -> untyped
+      def column=: (untyped) -> untyped
+      def self.new: (?column: untyped) -> instance | (?untyped column) -> instance
+      def self.[]: (?column: untyped) -> instance | (?untyped column) -> instance
+    end
+    class ChangeColumnDefinition < ::Struct[untyped]
+      def column: () -> untyped
+      def name: () -> untyped
+      def column=: (untyped) -> untyped
+      def name=: (untyped) -> untyped
+      def self.new: (?column: untyped, ?name: untyped) -> instance | (?untyped column, ?untyped name) -> instance
+      def self.[]: (?column: untyped, ?name: untyped) -> instance | (?untyped column, ?untyped name) -> instance
+    end
+    class ChangeColumnDefaultDefinition < ::Struct[untyped]
+      def column: () -> untyped
+      def default: () -> untyped
+      def column=: (untyped) -> untyped
+      def default=: (untyped) -> untyped
+      def self.new: (?column: untyped, ?default: untyped) -> instance | (?untyped column, ?untyped default) -> instance
+      def self.[]: (?column: untyped, ?default: untyped) -> instance | (?untyped column, ?untyped default) -> instance
+    end
+    class CreateIndexDefinition < ::Struct[untyped]
+      def index: () -> untyped
+      def algorithm: () -> untyped
+      def if_not_exists: () -> untyped
+      def lock: () -> untyped
+      def index=: (untyped) -> untyped
+      def algorithm=: (untyped) -> untyped
+      def if_not_exists=: (untyped) -> untyped
+      def lock=: (untyped) -> untyped
+      def self.new: (?index: untyped, ?algorithm: untyped, ?if_not_exists: untyped, ?lock: untyped) -> instance | (?untyped index, ?untyped algorithm, ?untyped if_not_exists, ?untyped lock) -> instance
+      def self.[]: (?index: untyped, ?algorithm: untyped, ?if_not_exists: untyped, ?lock: untyped) -> instance | (?untyped index, ?untyped algorithm, ?untyped if_not_exists, ?untyped lock) -> instance
+    end
+    class PrimaryKeyDefinition < ::Struct[untyped]
+      def name: () -> untyped
+      def name=: (untyped) -> untyped
+      def self.new: (?name: untyped) -> instance | (?untyped name) -> instance
+      def self.[]: (?name: untyped) -> instance | (?untyped name) -> instance
+    end
+    class ForeignKeyDefinition < ::Struct[untyped]
+      def from_table: () -> untyped
+      def to_table: () -> untyped
+      def options: () -> untyped
+      def from_table=: (untyped) -> untyped
+      def to_table=: (untyped) -> untyped
+      def options=: (untyped) -> untyped
+      def self.new: (?from_table: untyped, ?to_table: untyped, ?options: untyped) -> instance | (?untyped from_table, ?untyped to_table, ?untyped options) -> instance
+      def self.[]: (?from_table: untyped, ?to_table: untyped, ?options: untyped) -> instance | (?untyped from_table, ?untyped to_table, ?untyped options) -> instance
+      def export_name_on_schema_dump?: () -> (false | nil | true)
+    end
+    class CheckConstraintDefinition < ::Struct[untyped]
+      def table_name: () -> untyped
+      def expression: () -> untyped
+      def options: () -> untyped
+      def table_name=: (untyped) -> untyped
+      def expression=: (untyped) -> untyped
+      def options=: (untyped) -> untyped
+      def self.new: (?table_name: untyped, ?expression: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped expression, ?untyped options) -> instance
+      def self.[]: (?table_name: untyped, ?expression: untyped, ?options: untyped) -> instance | (?untyped table_name, ?untyped expression, ?untyped options) -> instance
+      def export_name_on_schema_dump?: () -> (false | nil | true)
+    end
+    class IndexDefinition
+      def initialize: (untyped, untyped, ?untyped, ?untyped, ?lengths: untyped, ?orders: untyped, ?opclasses: untyped, ?where: untyped, ?type: untyped, ?using: untyped, ?include: untyped, ?nulls_not_distinct: untyped, ?comment: untyped, ?valid: untyped) -> void
+      def column_options: () -> { length: untyped, order: untyped, opclass: untyped }
+      def init_from_schema_json: (untyped, untyped) -> (false | true)
+    end
+    class ReferenceDefinition
+      def initialize: (untyped, ?polymorphic: untyped, ?index: untyped, ?foreign_key: untyped, ?type: untyped, **untyped) -> void
+    end
+    class TableDefinition
+      def initialize: (untyped, untyped, ?temporary: untyped, ?if_not_exists: untyped, ?options: untyped, ?as: untyped, ?comment: untyped, **untyped) -> void
+      def primary_keys: (?untyped) -> (ActiveRecord::ConnectionAdapters::PrimaryKeyDefinition | nil)
+      def column: (untyped, untyped, ?index: untyped, **untyped) -> ActiveRecord::ConnectionAdapters::TableDefinition
+      def new_foreign_key_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::ForeignKeyDefinition
+      def new_check_constraint_definition: (untyped, untyped) -> ActiveRecord::ConnectionAdapters::CheckConstraintDefinition
+      def indexes: () -> Array[untyped]
+      def foreign_keys: () -> Array[untyped]
+      def check_constraints: () -> Array[untyped]
+    end
+    class AlterTable
+      def initialize: (untyped) -> void
+      def operations: () -> Array[untyped]
+      def deferred_operations: () -> Array[untyped]
+    end
+    class Table
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

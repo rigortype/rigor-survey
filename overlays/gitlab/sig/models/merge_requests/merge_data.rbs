@@ -1,0 +1,5 @@
+module MergeRequests
+  class MergeData < ::ApplicationRecord
+    def check_state?: (untyped) -> (false | true)
+  end
+end

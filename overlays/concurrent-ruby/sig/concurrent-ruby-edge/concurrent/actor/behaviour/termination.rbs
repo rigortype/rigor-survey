@@ -1,0 +1,10 @@
+module Concurrent
+  module Actor
+    module Behaviour
+      class Termination < ::Concurrent::Actor::Behaviour::Abstract
+        def initialize: (untyped, untyped, untyped, ?untyped, ?untyped) -> void
+        def trapping=: (untyped) -> (false | true)
+      end
+    end
+  end
+end

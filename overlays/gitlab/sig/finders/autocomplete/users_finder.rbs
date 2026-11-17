@@ -1,0 +1,5 @@
+module Autocomplete
+  class UsersFinder
+    def initialize: (params: untyped, current_user: untyped, project: untyped, group: untyped) -> void
+  end
+end

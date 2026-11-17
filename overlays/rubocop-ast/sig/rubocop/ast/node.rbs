@@ -1,0 +1,34 @@
+module RuboCop
+  module AST
+    class Node < ::Parser::AST::Node
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+      def send_type?: () -> false
+      def parent?: () -> (false | true)
+      def root?: () -> (false | true)
+      def complete?: () -> (false | true)
+      def each_ancestor: (*untyped) ?{ (*untyped) -> untyped } -> (Enumerator[untyped, untyped] | RuboCop::AST::Node)
+      def truthy_literal?: () -> (false | true)
+      def falsey_literal?: () -> (false | true)
+      def mutable_literal?: () -> (false | true)
+      def variable?: () -> (false | true)
+      def reference?: () -> (false | true)
+      def equals_asgn?: () -> (false | true)
+      def shorthand_asgn?: () -> (false | true)
+      def basic_conditional?: () -> (false | true)
+      def post_condition_loop?: () -> (false | true)
+      def special_keyword?: () -> (false | true)
+      def operator_keyword?: () -> (false | true)
+      def call_type?: () -> (false | true)
+      def any_def_type?: () -> (false | true)
+      def argument_type?: () -> (false | true)
+      def boolean_type?: () -> (false | true)
+      def numeric_type?: () -> (false | true)
+      def range_type?: () -> (false | true)
+      def any_block_type?: () -> (false | true)
+      def any_match_pattern_type?: () -> (false | true)
+      def any_str_type?: () -> (false | true)
+      def any_sym_type?: () -> (false | true)
+      def loc?: (untyped) -> (false | true)
+    end
+  end
+end

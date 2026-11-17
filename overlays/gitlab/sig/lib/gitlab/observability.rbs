@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    def observability_url: () -> ("https://observe.gitlab.com" | "https://observe.staging.gitlab.com" | String | nil)
+    def observability_ingest_url: () -> ("https://observe.gitlab.com" | "https://observe.staging.gitlab.com" | String | nil)
+    def alerts_url: () -> String
+  end
+end

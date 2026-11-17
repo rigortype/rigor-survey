@@ -1,0 +1,7 @@
+module Redmine
+  module Twofa
+    class Totp < ::Redmine::Twofa::Base
+      def verify_otp!: (untyped) -> (false | true)
+    end
+  end
+end

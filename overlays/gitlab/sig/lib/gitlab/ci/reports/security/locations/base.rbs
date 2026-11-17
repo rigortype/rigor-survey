@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        module Locations
+          class Base
+            def fingerprint_path: () -> bot
+          end
+        end
+      end
+    end
+  end
+end

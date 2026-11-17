@@ -1,0 +1,4 @@
+class UserSyncedAttributesMetadata < ::ApplicationRecord
+  def read_only_attributes: () -> Array[:email | :job_title | :location | :name | :organization]
+  def self.syncable_attributes: (?untyped) -> ([:email, :location, :organization, :job_title] | [:name, :email, :location, :organization, :job_title])
+end

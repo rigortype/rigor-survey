@@ -1,0 +1,10 @@
+module Gitlab
+  module Database
+    module SchemaValidation
+      class InconsistencyFilter
+        def initialize: (?untyped) -> void
+        def to_proc: () -> Proc
+      end
+    end
+  end
+end

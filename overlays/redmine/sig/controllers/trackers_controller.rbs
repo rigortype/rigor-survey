@@ -1,0 +1,5 @@
+class TrackersController < ::ApplicationController
+  def new: () -> ActiveRecord::Relation[Project]
+  def edit: () -> ActiveRecord::Relation[Project]
+  def fields: () -> (ActiveRecord::Relation[IssueCustomField] | nil)
+end

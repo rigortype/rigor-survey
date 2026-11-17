@@ -1,0 +1,16 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Routes
+        class DocsTask
+          def check_docs: () -> nil
+          def compile_docs: () -> nil
+          def allowed_endpoints: () -> String
+          def skipped_endpoints: () -> String
+          def public_endpoints: () -> String
+          def publicly_accessible_endpoints: () -> String
+        end
+      end
+    end
+  end
+end

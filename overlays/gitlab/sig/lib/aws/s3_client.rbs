@@ -1,0 +1,5 @@
+module Aws
+  class S3Client
+    def initialize: (untyped, untyped, untyped) -> void
+  end
+end

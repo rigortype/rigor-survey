@@ -1,0 +1,7 @@
+module Gitlab
+  module Chat
+    class Output
+      def initialize: (untyped) -> void
+    end
+  end
+end

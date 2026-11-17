@@ -1,0 +1,10 @@
+module AtomicInternalId
+  def self.scope_attrs: (untyped) -> (Hash[untyped, untyped] | nil)
+  def internal_id_scope_attrs: (untyped) -> (Hash[untyped, untyped] | nil)
+  def self.project_init: (untyped, ?untyped) -> Proc
+  def self.group_init: (untyped, ?untyped) -> Proc
+  def self.namespace_init: (untyped, ?untyped) -> Proc
+  class Supply
+    def initialize: (untyped) -> void
+  end
+end

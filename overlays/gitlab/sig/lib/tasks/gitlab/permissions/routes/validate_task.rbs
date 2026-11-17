@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module Routes
+        class ValidateTask < ::Tasks::Gitlab::Permissions::BaseValidateTask
+          def violations: () -> { undefined_permission: [], missing_boundary: [], missing_assignable: [], boundary_mismatch: [], missing_authorization: [], invalid_skip_reason: [], invalid_condition: [] }
+        end
+      end
+    end
+  end
+end

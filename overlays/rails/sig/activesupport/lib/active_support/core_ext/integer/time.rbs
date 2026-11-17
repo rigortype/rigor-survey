@@ -1,0 +1,4 @@
+class Integer
+  def months: () -> ActiveSupport::Duration
+  def years: () -> ActiveSupport::Duration
+end

@@ -1,0 +1,13 @@
+module Parser
+  module Source
+    class TreeRewriter
+      class Action
+        def initialize: (untyped, untyped, ?insert_before: untyped, ?replacement: untyped, ?insert_after: untyped, ?children: untyped) -> void
+        def ordered_replacements: () -> Array[untyped]
+        def nested_actions: () -> Array[untyped]
+        def contract: () -> Parser::Source::TreeRewriter::Action
+        def moved: (untyped, untyped) -> Parser::Source::TreeRewriter::Action
+      end
+    end
+  end
+end

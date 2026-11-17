@@ -1,0 +1,31 @@
+module Dependabot
+  class Job
+    class Definition < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::Definition
+      def self.parsed_allowed_updates: (untyped) -> Array[Dependabot::Job::AllowedUpdate]
+      def self.parsed_commit_message_options: (untyped) -> (Hash[String, Object] | nil)
+      def self.parsed_credentials: (untyped) -> Array[Dependabot::Credential]
+      def self.parsed_existing_group_pull_requests: (untyped) -> Array[Dependabot::Job::ExistingGroupPullRequest]
+      def self.parsed_ignore_conditions: (untyped) -> Array[Dependabot::Job::IgnoreCondition]
+      def self.parsed_requirements_update_strategy: (untyped) -> (String | nil)
+      def self.parsed_security_advisories: (untyped) -> Array[Dependabot::Job::SecurityAdvisoryEntry]
+      def self.parsed_source: (untyped) -> Dependabot::Job::SourceDefinition
+      def self.parsed_dependency_groups: (untyped) -> Array[Dependabot::Job::DependencyGroupDefinition]
+      def self.parsed_dependency_group_to_refresh: (untyped) -> (String | nil)
+      def self.parsed_blocked_versions: (untyped) -> Array[Dependabot::Job::BlockedVersion]
+      def self.parsed_cooldown: (untyped) -> (Dependabot::Job::CooldownDefinition | nil)
+      def self.required_string: (untyped, untyped) -> String
+      def self.string_with_default: (untyped, untyped, untyped) -> String
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      def self.required_boolean: (untyped, untyped) -> (false | true)
+      def self.boolean_with_default: (untyped, untyped, untyped) -> (false | true)
+      def self.optional_boolean: (untyped, untyped) -> (false | nil | true)
+      def self.optional_string_array: (untyped, untyped) -> (Array[String] | nil)
+      def self.optional_string_hash: (untyped, untyped) -> (Hash[String, Object] | nil)
+      def self.required_string_hash: (untyped, untyped) -> Hash[untyped, Object]
+      def self.strict_hash_array: (untyped, untyped) -> Array[Hash[String, Object]]
+      def self.tolerant_hash_array: (untyped, untyped) -> Array[Hash[String, Object]]
+      def self.credentials_from: (untyped) -> Array[Dependabot::Credential]
+    end
+  end
+end

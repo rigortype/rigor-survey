@@ -1,0 +1,5 @@
+module AuditEvents
+  class ProjectAuditEvent < ::ApplicationRecord
+    def entity_type: () -> "Project"
+  end
+end

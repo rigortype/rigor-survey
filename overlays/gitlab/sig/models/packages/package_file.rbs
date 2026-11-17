@@ -1,0 +1,5 @@
+module Packages
+  class PackageFile < ::ApplicationRecord
+    def self.installable_statuses: () -> [:default]
+  end
+end

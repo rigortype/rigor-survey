@@ -1,0 +1,8 @@
+module Gitlab
+  module Instrumentation
+    class Authz
+      def self.record_project_access_source: (untyped) -> nil
+      def self.payload: () -> Hash[untyped, untyped]
+    end
+  end
+end

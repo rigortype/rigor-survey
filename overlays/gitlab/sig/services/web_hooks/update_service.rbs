@@ -1,0 +1,6 @@
+module WebHooks
+  class UpdateService
+    def initialize: (untyped) -> void
+    def execute: (untyped, untyped) -> ServiceResponse
+  end
+end

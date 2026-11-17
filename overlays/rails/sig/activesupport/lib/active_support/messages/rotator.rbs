@@ -1,0 +1,10 @@
+module ActiveSupport
+  module Messages
+    module Rotator
+      def initialize: (*untyped, ?on_rotation: untyped, **untyped) -> void
+      def rotate: (*untyped, **untyped) -> ActiveSupport::Messages::Rotator
+      def on_rotation: () ?{ (*untyped) -> untyped } -> ActiveSupport::Messages::Rotator
+      def fall_back_to: (untyped) -> ActiveSupport::Messages::Rotator
+    end
+  end
+end

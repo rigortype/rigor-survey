@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Subscribers
+      class RackAttack < ::ActiveSupport::Subscriber
+        def self.payload: () -> Hash[untyped, untyped]
+        def self.parameter_filter: () -> ActiveSupport::ParameterFilter
+      end
+    end
+  end
+end

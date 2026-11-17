@@ -1,0 +1,9 @@
+module Net
+  module SSH
+    module Transport
+      module OpenSSLCipherExtensions
+        def implicit_mac?: () -> false
+      end
+    end
+  end
+end

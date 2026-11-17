@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module Status
+      class Composite
+        def initialize: (untyped, ?with_allow_failure: untyped, ?dag: untyped, ?project: untyped) -> void
+        def warnings?: () -> (false | true)
+      end
+    end
+  end
+end

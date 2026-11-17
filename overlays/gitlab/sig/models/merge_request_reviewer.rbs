@@ -1,0 +1,3 @@
+class MergeRequestReviewer < ::ApplicationRecord
+  def cache_key: () -> [untyped, untyped, untyped, untyped]
+end

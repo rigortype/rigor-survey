@@ -1,0 +1,4 @@
+class IssueStatusesController < ::ApplicationController
+  def new: () -> IssueStatus
+  def edit: () -> IssueStatus
+end

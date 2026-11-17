@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Stages < ::Gitlab::Config::Entry::Node
+          def self.default: () -> Array[untyped]
+        end
+      end
+    end
+  end
+end

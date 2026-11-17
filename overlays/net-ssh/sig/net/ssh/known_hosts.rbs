@@ -1,0 +1,28 @@
+module Net
+  module SSH
+    module HostKeyEntries
+      class PubKey
+        def initialize: (untyped, ?comment: untyped) -> void
+        def ssh_types: () -> [untyped]
+        def respond_to_missing?: (untyped, ?untyped) -> false
+      end
+      class CertAuthority
+        def ssh_types: () -> ["ecdsa-sha2-nistp256-cert-v01@openssh.com", "ecdsa-sha2-nistp384-cert-v01@openssh.com", "ecdsa-sha2-nistp521-cert-v01@openssh.com", "ssh-ed25519-cert-v01@openssh.com", "ssh-rsa-cert-v01@openssh.com", "ssh-rsa-cert-v00@openssh.com"]
+        def initialize: (untyped, ?comment: untyped) -> void
+        def matches_validity?: (OpenStruct) -> (false | true)
+      end
+    end
+    class HostKeys
+      def initialize: ([Net::SSH::HostKeyEntries::CertAuthority] | [], untyped, nil | singleton(Net::SSH::KnownHosts), ?{}) -> void
+    end
+    class KnownHosts
+      def self.search_for: (untyped, ?untyped) -> Net::SSH::HostKeys
+      def self.hostfiles: (untyped, ?untyped) -> Array[untyped]
+      def self.add: (String, OpenSSL::PKey::RSA, ?untyped) -> (Array[untyped] | nil)
+      def initialize: (untyped) -> void
+      def keys_for: (String, ?untyped) -> Array[untyped]
+      def known_host_hash?: (untyped, untyped) -> (false | true)
+      def add: (String, OpenSSL::PKey::RSA) -> nil
+    end
+  end
+end

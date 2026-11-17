@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Pages
+      class GetPagesContentService < ::Mcp::Tools::Base::CustomService
+        def resolve_governance_containers: (untyped) -> Array[untyped]
+        def authorization_error_message: () -> "Pages site not found or inaccessible"
+      end
+    end
+  end
+end

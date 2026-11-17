@@ -1,0 +1,9 @@
+module Import
+  module Offline
+    module Exports
+      class ProcessService
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

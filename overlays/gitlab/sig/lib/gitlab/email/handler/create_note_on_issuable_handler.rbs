@@ -1,0 +1,11 @@
+module Gitlab
+  module Email
+    module Handler
+      class CreateNoteOnIssuableHandler < ::Gitlab::Email::Handler::BaseHandler
+        def self.gem_handler: () -> :create_note_on_issuable
+        def execute: () -> nil
+        def metrics_event: () -> :receive_email_create_note_issuable
+      end
+    end
+  end
+end

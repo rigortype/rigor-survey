@@ -1,0 +1,7 @@
+module Ci
+  class BuildCancelService
+    def initialize: (untyped, untyped, ?false | true) -> void
+    def execute: () -> ServiceResponse
+    def force: () -> true
+  end
+end

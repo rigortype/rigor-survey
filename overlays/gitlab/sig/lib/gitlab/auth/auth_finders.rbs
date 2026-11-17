@@ -1,0 +1,7 @@
+module Gitlab
+  module Auth
+    module AuthFinders
+      def self.path_dependent_feed_token_regex: () -> Regexp
+    end
+  end
+end

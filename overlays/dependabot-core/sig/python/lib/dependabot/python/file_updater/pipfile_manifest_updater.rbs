@@ -1,0 +1,9 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class PipfileManifestUpdater
+        def initialize: (dependencies: untyped, manifest: untyped) -> void
+      end
+    end
+  end
+end

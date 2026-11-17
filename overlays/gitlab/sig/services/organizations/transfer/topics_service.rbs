@@ -1,0 +1,7 @@
+module Organizations
+  module Transfer
+    class TopicsService
+      def initialize: (group: untyped, old_organization: untyped, new_organization: untyped) -> void
+    end
+  end
+end

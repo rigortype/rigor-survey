@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Associations
+    class Preloader
+      class ThroughAssociation < ::ActiveRecord::Associations::Preloader::Association
+        def records_by_owner: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

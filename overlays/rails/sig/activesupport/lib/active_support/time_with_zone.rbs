@@ -1,0 +1,17 @@
+module ActiveSupport
+  class TimeWithZone
+    def initialize: (untyped, untyped, ?untyped, ?untyped) -> void
+    def inspect: () -> String
+    def init_with: (untyped) -> nil
+    def encode_with: (untyped) -> Hash[String, untyped]
+    def hash: () -> Integer
+    def change: (untyped) -> ActiveSupport::TimeWithZone
+    def to_a: () -> [untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped]
+    def acts_like_time?: () -> true
+    def blank?: () -> false
+    def present?: () -> true
+    def marshal_dump: () -> [untyped, untyped, untyped]
+    def marshal_load: (untyped) -> nil
+    def respond_to_missing?: (untyped, untyped) -> (false | true)
+  end
+end

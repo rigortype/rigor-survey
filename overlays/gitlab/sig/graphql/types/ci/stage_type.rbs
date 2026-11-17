@@ -1,0 +1,7 @@
+module Types
+  module Ci
+    class StageType < ::Types::BaseObject
+      def jobs: () -> Gitlab::Graphql::Pagination::ArrayConnection
+    end
+  end
+end

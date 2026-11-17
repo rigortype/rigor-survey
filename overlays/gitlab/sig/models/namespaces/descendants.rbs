@@ -1,0 +1,5 @@
+module Namespaces
+  class Descendants < ::ApplicationRecord
+    def self.handle_outdated_at: (untyped) -> ("outdated_at = EXCLUDED.outdated_at," | String)
+  end
+end

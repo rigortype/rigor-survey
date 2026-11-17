@@ -1,0 +1,6 @@
+module Milestones
+  class MergeRequestsCountService < ::BaseCountService
+    def initialize: (untyped) -> void
+    def cache_key: () -> String
+  end
+end

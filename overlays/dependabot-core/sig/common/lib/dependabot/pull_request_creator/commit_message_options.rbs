@@ -1,0 +1,11 @@
+module Dependabot
+  class PullRequestCreator
+    class CommitMessageOptions
+      def initialize: (?prefix: untyped, ?prefix_development: untyped, ?include_scope: untyped) -> void
+      def self.from_hash: (untyped) -> Dependabot::PullRequestCreator::CommitMessageOptions
+      def self.coerce_string: (untyped) -> (String | nil)
+      def prefix?: () -> (false | true)
+      def prefix_development?: () -> (false | true)
+    end
+  end
+end

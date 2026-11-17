@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        module Processable
+          def value: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,28 @@
+module ActiveModel
+  class Errors
+    def initialize: (untyped) -> void
+    def import: (ActiveModel::Error, ?untyped) -> Array[ActiveModel::Error]
+    def merge!: (untyped) -> Array[ActiveModel::Error]
+    def where: (Symbol | String, ?untyped, **untyped) -> Array[ActiveModel::Error]
+    def include?: (Symbol | String) -> bool
+    def delete: (Symbol | String, ?untyped, **untyped) -> Array[untyped]?
+    def []: (Symbol | String) -> Array[untyped]
+    def attribute_names: () -> Array[Symbol | String]
+    def as_json: (?untyped) -> Hash[untyped, untyped]
+    def to_hash: (?untyped) -> Hash[Symbol | String, Array[untyped]]
+    def messages: () -> Hash[Symbol | String, Array[untyped]]
+    def details: () -> Hash[Symbol | String, Array[Hash[Symbol, untyped]]]
+    def group_by_attribute: () -> Hash[Symbol | String, Array[ActiveModel::Error]]
+    def add: (Symbol | String, ?untyped, **untyped) -> ActiveModel::Error
+    def added?: (Symbol | String, ?untyped, ?untyped) -> bool
+    def of_kind?: (Symbol | String, ?untyped) -> bool
+    def full_messages: () -> Array[untyped]
+    def full_messages_for: (Symbol | String, ?untyped) -> Array[untyped]
+    def messages_for: (Symbol | String, ?untyped) -> Array[untyped]
+    def full_message: (Symbol | String, String) -> String
+    def generate_message: (Symbol | String, ?untyped, ?untyped) -> untyped
+  end
+  class UnknownAttributeError < ::NoMethodError
+    def initialize: (untyped, untyped) -> void
+  end
+end

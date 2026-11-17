@@ -1,0 +1,5 @@
+module Terraform
+  class StatesFinder
+    def initialize: (untyped, untyped, ?params: untyped) -> void
+  end
+end

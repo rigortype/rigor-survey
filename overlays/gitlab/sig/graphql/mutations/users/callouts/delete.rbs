@@ -1,0 +1,9 @@
+module Mutations
+  module Users
+    module Callouts
+      class Delete < ::Mutations::BaseMutation
+        def resolve: (feature_name: untyped) -> ({ user_callout: untyped, errors: untyped } | { user_callout: nil, errors: [] })
+      end
+    end
+  end
+end

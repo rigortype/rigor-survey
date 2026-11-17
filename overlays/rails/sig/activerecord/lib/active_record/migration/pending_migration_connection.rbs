@@ -1,0 +1,6 @@
+module ActiveRecord
+  class PendingMigrationConnection
+    def self.primary_class?: () -> false
+    def self.current_preventing_writes: () -> false
+  end
+end

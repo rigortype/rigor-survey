@@ -1,0 +1,13 @@
+module Gitlab
+  module Webpack
+    class FileLoader
+      def self.load: (untyped) -> String
+      def self.load_from_dev_server: (untyped) -> String
+      def self.load_from_static: (untyped) -> String
+      def self.dev_server_path: (untyped) -> String
+      class BaseError < ::StandardError
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

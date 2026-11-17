@@ -1,0 +1,6 @@
+module Resolvers
+  class MergeRequestsResolver < ::Resolvers::BaseResolver
+    def self.single: () -> singleton(Resolvers::MergeRequestResolver)
+    def self.project_associations: () -> [:namespace, :organization, :project_feature, :project_namespace]
+  end
+end

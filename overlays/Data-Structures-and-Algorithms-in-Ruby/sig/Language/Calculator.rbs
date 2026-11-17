@@ -1,0 +1,4 @@
+class Calculator
+  def initialize: (?untyped) -> void
+  def reset: () -> 0
+end

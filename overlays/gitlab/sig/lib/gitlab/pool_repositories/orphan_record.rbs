@@ -1,0 +1,9 @@
+module Gitlab
+  module PoolRepositories
+    class OrphanRecord
+      def self.from_pool: (untyped, untyped, ?untyped) -> { pool_id: untyped, disk_path: untyped, relative_path: untyped, source_project_id: untyped, state: untyped, reason_codes: untyped, reasons: untyped, member_projects_count: untyped, shard_name: untyped }
+      def self.from_gitaly: (untyped, untyped) -> { pool_id: "N/A", disk_path: untyped, relative_path: String, source_project_id: nil, state: "unknown", reason_codes: "pool_on_gitaly_missing_db", reasons: "Pool exists on Gitaly but missing from Rails DB", member_projects_count: 0, shard_name: untyped }
+      def self.validate_reasons: (untyped) -> (Array[singleton(Gitlab::AppJsonLogger)] | nil)
+    end
+  end
+end

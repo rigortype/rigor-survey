@@ -1,0 +1,4 @@
+module CycleAnalyticsParams
+  def cycle_analytics_group_params: () -> (ActionController::Parameters | {})
+  def options: (untyped) -> Hash[untyped, untyped]
+end

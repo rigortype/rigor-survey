@@ -1,0 +1,9 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      class Average
+        def initialize: (stage: untyped, query: untyped, ?params: untyped) -> void
+      end
+    end
+  end
+end

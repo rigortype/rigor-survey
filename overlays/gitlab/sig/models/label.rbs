@@ -1,0 +1,7 @@
+class Label < ::ApplicationRecord
+  def self.optionally_subscribed_by: (untyped) -> ActiveRecord::Relation[Label]
+  def self.reference_prefix: () -> "~"
+  def self.reference_pattern: () -> Regexp
+  def self.link_reference_pattern: () -> nil
+  def hook_attrs: () -> { id: untyped, title: untyped, color: untyped, project_id: untyped, created_at: untyped, updated_at: untyped, template: untyped, description: untyped, type: untyped, group_id: untyped }
+end

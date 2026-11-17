@@ -1,0 +1,6 @@
+module ActiveSupport
+  class CurrentAttributes
+    def self.instance: () -> ActiveSupport::CurrentAttributes
+    def self.method_added: (untyped) -> (Array[untyped] | nil)
+  end
+end

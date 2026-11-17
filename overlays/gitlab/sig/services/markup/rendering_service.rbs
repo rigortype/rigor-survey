@@ -1,0 +1,5 @@
+module Markup
+  class RenderingService
+    def initialize: (untyped, ?file_name: untyped, ?context: untyped, ?postprocess_context: untyped) -> void
+  end
+end

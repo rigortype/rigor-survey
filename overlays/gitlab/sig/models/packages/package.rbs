@@ -1,0 +1,10 @@
+module Packages
+  class Package < ::ApplicationRecord
+    def self.inheritance_column: () -> "package_type"
+    def self.inheritance_column_to_class_map: () -> { ml_model: "Packages::MlModel::Package", golang: "Packages::Go::Package", rubygems: "Packages::Rubygems::Package", conan: "Packages::Conan::Package", rpm: "Packages::Rpm::Package", debian: "Packages::Debian::Package", composer: "Packages::Composer::Sti::Package", helm: "Packages::Helm::Package", generic: "Packages::Generic::Package", pypi: "Packages::Pypi::Package", terraform_module: "Packages::TerraformModule::Package", nuget: "Packages::Nuget::Package", npm: "Packages::Npm::Package", maven: "Packages::Maven::Package", cargo: "Packages::Cargo::Package" }
+    def self.by_name_and_version!: (untyped, untyped) -> Packages::Package
+    def self.sort_by_attribute: (untyped) -> ActiveRecord::Relation[Packages::Package]
+    def self.installable_statuses: () -> [:default, :hidden, :deprecated]
+    def detailed_info?: () -> (false | true)
+  end
+end

@@ -1,0 +1,8 @@
+module WorkItems
+  module ClosingMergeRequests
+    class CreateService
+      def initialize: (current_user: untyped, work_item: untyped, merge_request_reference: untyped, ?namespace_path: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

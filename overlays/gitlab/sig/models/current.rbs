@@ -1,0 +1,8 @@
+class Current < ::ActiveSupport::CurrentAttributes
+  class OrganizationNotAssignedError < ::RuntimeError
+    def message: () -> "Assign an organization to Current.organization before calling it."
+  end
+  class OrganizationAlreadyAssignedError < ::RuntimeError
+    def message: () -> "Current.organization has already been set in the current thread and should not be set again."
+  end
+end

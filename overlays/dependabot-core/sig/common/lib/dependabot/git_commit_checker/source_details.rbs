@@ -1,0 +1,8 @@
+module Dependabot
+  class GitCommitChecker
+    class SourceDetails < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::GitCommitChecker::SourceDetails
+      def self.string_value: (untyped, untyped) -> (String | nil)
+    end
+  end
+end

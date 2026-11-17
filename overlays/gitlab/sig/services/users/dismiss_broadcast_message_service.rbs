@@ -1,0 +1,6 @@
+module Users
+  class DismissBroadcastMessageService
+    def initialize: (current_user: untyped, ?params: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

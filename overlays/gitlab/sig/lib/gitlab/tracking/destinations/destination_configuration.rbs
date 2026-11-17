@@ -1,0 +1,17 @@
+module Gitlab
+  module Tracking
+    module Destinations
+      class DestinationConfiguration
+        def self.snowplow_configuration: () -> Gitlab::Tracking::Destinations::DestinationConfiguration
+        def self.snowplow_micro_configuration: () -> Gitlab::Tracking::Destinations::DestinationConfiguration
+        def self.billing_configuration: () -> Gitlab::Tracking::Destinations::DestinationConfiguration
+        def self.staging_customer_portal?: () -> (false | true)
+        def self.snowplow_micro_uri: () -> URI::Generic
+        def self.snowplow_uri: () -> URI::Generic
+        def self.billing_uri: () -> URI::Generic
+        def initialize: (untyped, ?app_id_suffix: String, ?billing: untyped) -> void
+        def app_id_suffix: () -> "_billing"
+      end
+    end
+  end
+end

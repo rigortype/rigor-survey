@@ -1,0 +1,13 @@
+module Dependabot
+  module Gradle
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class LockfileUpdater
+        def initialize: (dependency_files: untyped, ?repo_contents_path: untyped) -> void
+        def update_lockfiles: (untyped, ?build_files: untyped) -> (Array[Dependabot::DependencyFile] | Array[untyped])
+        def determine_root_dir: (build_file: untyped) -> String
+        def normalized_directory_path: (untyped) -> ("/" | String)
+        def lockfiles_for_root: (untyped) -> Array[Dependabot::DependencyFile]
+      end
+    end
+  end
+end

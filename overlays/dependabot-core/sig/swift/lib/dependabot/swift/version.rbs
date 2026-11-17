@@ -1,0 +1,18 @@
+module Dependabot
+  module Swift
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def to_semver: () -> String
+      def bump: () -> Gem::Version
+      def ignored_minor_versions: () -> [String]
+      def ignored_major_versions: () -> [String]
+      def eql?: (untyped) -> (false | true)
+      def hash: () -> Integer
+      def ==: (untyped) -> (false | true)
+      def <=>: (untyped) -> (Integer | nil)
+      def prerelease_suffix: () -> (String | nil)
+      def release_core: () -> Gem::Version
+    end
+  end
+end

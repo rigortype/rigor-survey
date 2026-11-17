@@ -1,0 +1,9 @@
+module PagesCore
+  module FrontendBuild
+    def self.path: (untyped) -> Pathname
+    def self.require!: (untyped) -> nil
+    def self.missing_message: (untyped) -> String
+    class MissingBuildError < ::StandardError
+    end
+  end
+end

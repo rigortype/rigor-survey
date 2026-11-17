@@ -1,0 +1,8 @@
+module ActionDispatch
+  module Session
+    class CacheStore < ::ActionDispatch::Session::AbstractSecureStore
+      def initialize: (untyped, ?untyped) -> void
+      def find_session: (untyped, untyped) -> [untyped, untyped]
+    end
+  end
+end

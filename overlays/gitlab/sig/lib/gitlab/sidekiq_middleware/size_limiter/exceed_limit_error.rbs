@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module SizeLimiter
+      class ExceedLimitError < ::StandardError
+        def initialize: (untyped, untyped, untyped) -> void
+        def sentry_extra_data: () -> { worker_class: untyped, size: untyped, size_limit: untyped }
+      end
+    end
+  end
+end

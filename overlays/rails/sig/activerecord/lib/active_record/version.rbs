@@ -1,0 +1,3 @@
+module ActiveRecord
+  def self.version: () -> Gem::Version
+end

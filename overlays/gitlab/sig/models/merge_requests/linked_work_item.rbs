@@ -1,0 +1,6 @@
+module MergeRequests
+  class LinkedWorkItem
+    def initialize: (link_type: String, ?work_item: untyped, ?external_issue: untyped) -> void
+    def link_type: () -> ("closes" | "mentioned")
+  end
+end

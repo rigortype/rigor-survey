@@ -1,0 +1,7 @@
+module Rails
+  module Generators
+    class AppGenerator < ::Rails::Generators::AppBase
+      def self.exit_on_failure?: () -> true
+    end
+  end
+end

@@ -1,0 +1,6 @@
+class AnnualReport
+  class Source
+    def initialize: (untyped, untyped) -> void
+    def generate: () -> bot
+  end
+end

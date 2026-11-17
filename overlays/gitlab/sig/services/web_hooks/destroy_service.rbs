@@ -1,0 +1,6 @@
+module WebHooks
+  class DestroyService
+    def initialize: (untyped) -> void
+    def execute: (untyped) -> ServiceResponse
+  end
+end

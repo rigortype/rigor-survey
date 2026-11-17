@@ -1,0 +1,10 @@
+module Dependabot
+  module Maven
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PropertyValueFinder
+        def initialize: (dependency_files: untyped, ?credentials: untyped) -> void
+        def property_details: (property_name: untyped, callsite_pom: untyped, ?seen_properties: untyped) -> (PropertyDetails | nil | { file: untyped, node: untyped, value: untyped })
+      end
+    end
+  end
+end

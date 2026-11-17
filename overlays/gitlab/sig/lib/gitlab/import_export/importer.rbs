@@ -1,0 +1,8 @@
+module Gitlab
+  module ImportExport
+    class Importer
+      def self.imports_repository?: () -> true
+      def initialize: (untyped) -> void
+    end
+  end
+end

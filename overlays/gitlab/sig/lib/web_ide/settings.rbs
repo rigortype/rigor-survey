@@ -1,0 +1,5 @@
+module WebIde
+  module Settings
+    def self.settings_main_class: () -> singleton(WebIde::Settings::Main)
+  end
+end

@@ -1,0 +1,5 @@
+module Projects
+  class BatchOpenMergeRequestsCountService < ::Projects::BatchCountService
+    def count_service: () -> singleton(Projects::OpenMergeRequestsCountService)
+  end
+end

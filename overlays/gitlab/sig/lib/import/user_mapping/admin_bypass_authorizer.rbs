@@ -1,0 +1,7 @@
+module Import
+  module UserMapping
+    class AdminBypassAuthorizer
+      def initialize: (untyped) -> void
+    end
+  end
+end

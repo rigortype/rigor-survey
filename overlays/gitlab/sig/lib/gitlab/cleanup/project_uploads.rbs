@@ -1,0 +1,13 @@
+module Gitlab
+  module Cleanup
+    class ProjectUploads
+      def initialize: (?logger: untyped) -> void
+      def run!: (?dry_run: untyped) -> nil
+      class ProjectUploadPath
+        def initialize: (untyped, untyped) -> void
+        def self.from_path: (untyped) -> Gitlab::Cleanup::ProjectUploads::ProjectUploadPath
+        def orphan?: () -> (false | true)
+      end
+    end
+  end
+end

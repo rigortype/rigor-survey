@@ -1,0 +1,8 @@
+module Gitlab
+  module Diff
+    class PairSelector
+      def initialize: (untyped) -> void
+      def each: () -> String
+    end
+  end
+end

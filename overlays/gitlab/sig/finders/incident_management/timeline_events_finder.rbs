@@ -1,0 +1,5 @@
+module IncidentManagement
+  class TimelineEventsFinder
+    def initialize: (untyped, untyped, ?untyped) -> void
+  end
+end

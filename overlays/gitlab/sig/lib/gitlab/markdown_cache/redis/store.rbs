@@ -1,0 +1,11 @@
+module Gitlab
+  module MarkdownCache
+    module Redis
+      class Store
+        def self.bulk_read: (untyped) -> Hash[untyped, untyped]
+        def initialize: (untyped) -> void
+        def loaded?: () -> (false | true)
+      end
+    end
+  end
+end

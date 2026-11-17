@@ -1,0 +1,6 @@
+module WorkItems
+  class BulkUpdateService
+    def initialize: (parent: untyped, current_user: untyped, work_item_ids: untyped, ?attributes: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

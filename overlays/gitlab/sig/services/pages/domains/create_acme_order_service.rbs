@@ -1,0 +1,8 @@
+module Pages
+  module Domains
+    class CreateAcmeOrderService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

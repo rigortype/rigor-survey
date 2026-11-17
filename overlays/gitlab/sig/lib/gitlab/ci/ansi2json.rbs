@@ -1,0 +1,7 @@
+module Gitlab
+  module Ci
+    module Ansi2json
+      def self.convert: (untyped, ?untyped) -> Gitlab::Ci::Ansi2json::Result
+    end
+  end
+end

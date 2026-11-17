@@ -1,0 +1,9 @@
+module Gitlab
+  module GithubImport
+    module BulkImporting
+      def initialize: (untyped, untyped) -> void
+      def build_database_rows: (untyped) -> [Array[untyped], Array[untyped]]
+      def object_type: () -> bot
+    end
+  end
+end

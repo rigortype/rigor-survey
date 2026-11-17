@@ -1,0 +1,7 @@
+module Operations
+  module FeatureFlags
+    class Strategy < ::ApplicationRecord
+      def user_list_id=: (untyped) -> Operations::FeatureFlags::UserList
+    end
+  end
+end

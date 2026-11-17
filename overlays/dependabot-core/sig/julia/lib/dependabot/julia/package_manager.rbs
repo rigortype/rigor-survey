@@ -1,0 +1,8 @@
+module Dependabot
+  module Julia
+    class PackageManager < ::Dependabot::Ecosystem::VersionManager
+      def self.detected_version: () -> ("1.10" | String | nil)
+      def ecosystem: () -> { package_manager: "julia", version: untyped }
+    end
+  end
+end

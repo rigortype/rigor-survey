@@ -1,0 +1,7 @@
+module ActiveSupport
+  module NumberHelper
+    class RoundingHelper
+      def initialize: (untyped) -> void
+    end
+  end
+end

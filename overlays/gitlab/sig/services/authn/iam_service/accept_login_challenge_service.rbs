@@ -1,0 +1,8 @@
+module Authn
+  module IamService
+    class AcceptLoginChallengeService
+      def initialize: (challenge: untyped, user: untyped, ?client: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

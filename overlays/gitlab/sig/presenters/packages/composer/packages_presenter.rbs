@@ -1,0 +1,9 @@
+module Packages
+  module Composer
+    class PackagesPresenter
+      def initialize: (untyped, untyped, ?untyped) -> void
+      def root: () -> (Hash[untyped, untyped] | Hash[String, untyped])
+      def provider: () -> Hash[String, Hash[untyped, untyped]]
+    end
+  end
+end

@@ -1,0 +1,13 @@
+module Tasks
+  module Gitlab
+    module Permissions
+      module MarkdownTable
+        def markdown_row: (untyped) -> String
+        def build_table: (untyped) -> String
+        def build_section: (untyped, untyped, untyped) -> String
+        def build_category_sections: (untyped) -> String
+        def build_category_section: (untyped, untyped) -> String
+      end
+    end
+  end
+end

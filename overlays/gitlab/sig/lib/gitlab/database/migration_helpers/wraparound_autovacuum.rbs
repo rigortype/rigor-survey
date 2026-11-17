@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module MigrationHelpers
+      module WraparoundAutovacuum
+        def can_execute_on?: (*untyped) -> (false | true)
+      end
+    end
+  end
+end

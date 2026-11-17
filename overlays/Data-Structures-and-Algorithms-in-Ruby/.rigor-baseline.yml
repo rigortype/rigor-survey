@@ -1,0 +1,30 @@
+---
+version: 1
+ignored:
+- file: BinaryTree/SegmentTree.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: BinaryTree/rangeMaxST.rb
+  rule: flow.dead-assignment
+  count: 1
+- file: Graph/Graph.rb
+  rule: call.undefined-method
+  count: 2
+- file: IntroductoryChapters/Fibo.rb
+  rule: call.unresolved-toplevel
+  count: 1
+- file: Language/ForDemo.rb
+  rule: flow.always-truthy-condition
+  count: 5
+- file: Queue/QueueLL.rb
+  rule: call.undefined-method
+  count: 1
+- file: String/StringClass.rb
+  rule: call.undefined-method
+  count: 6
+- file: String/StringClass.rb
+  rule: flow.dead-assignment
+  count: 2
+- file: ".rigor.yml"
+  rule: rbs.coverage.definition-build-failed
+  count: 1

@@ -1,0 +1,11 @@
+module Gitlab
+  module Database
+    module Capture
+      module StorageConnectors
+        class Gcs
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

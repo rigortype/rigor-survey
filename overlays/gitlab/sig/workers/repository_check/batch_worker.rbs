@@ -1,0 +1,6 @@
+module RepositoryCheck
+  class BatchWorker
+    def lease_timeout: () -> ActiveSupport::Duration
+    def lease_key: () -> String
+  end
+end

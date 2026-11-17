@@ -1,0 +1,5 @@
+module BlobViewer
+  module Static
+    def render_error: () -> nil
+  end
+end

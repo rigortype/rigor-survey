@@ -1,0 +1,7 @@
+module Namespaces
+  module Preloaders
+    class ProjectRootAncestorPreloader
+      def initialize: (untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

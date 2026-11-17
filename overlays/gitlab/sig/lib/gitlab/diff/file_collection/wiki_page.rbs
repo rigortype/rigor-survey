@@ -1,0 +1,9 @@
+module Gitlab
+  module Diff
+    module FileCollection
+      class WikiPage < ::Gitlab::Diff::FileCollection::Base
+        def initialize: (untyped, diff_options: untyped, ?previous_path: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Mail
+  module Parsers
+    module MimeVersionParser
+      def self.parse: (untyped) -> Mail::Parsers::MimeVersionParser::MimeVersionStruct
+      class MimeVersionStruct < ::Struct[untyped]
+        def major: () -> untyped
+        def minor: () -> untyped
+        def error: () -> untyped
+        def major=: (untyped) -> untyped
+        def minor=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?major: untyped, ?minor: untyped, ?error: untyped) -> instance | (?untyped major, ?untyped minor, ?untyped error) -> instance
+        def self.[]: (?major: untyped, ?minor: untyped, ?error: untyped) -> instance | (?untyped major, ?untyped minor, ?untyped error) -> instance
+      end
+    end
+  end
+end

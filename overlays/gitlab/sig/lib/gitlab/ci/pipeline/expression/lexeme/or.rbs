@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Or < ::Gitlab::Ci::Pipeline::Expression::Lexeme::LogicalOperator
+            def self.build: (untyped, untyped, untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::Or
+            def self.precedence: () -> 12
+          end
+        end
+      end
+    end
+  end
+end

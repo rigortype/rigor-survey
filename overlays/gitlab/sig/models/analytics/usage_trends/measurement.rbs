@@ -1,0 +1,8 @@
+module Analytics
+  module UsageTrends
+    class Measurement < ::ApplicationRecord
+      def self.identifier_query_mapping: () -> Hash[untyped, Proc]
+      def self.identifier_min_max_queries: () -> Hash[untyped, { minimum_query: Proc, maximum_query: Proc }]
+    end
+  end
+end

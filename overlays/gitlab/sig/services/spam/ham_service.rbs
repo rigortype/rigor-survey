@@ -1,0 +1,5 @@
+module Spam
+  class HamService
+    def initialize: (untyped) -> void
+  end
+end

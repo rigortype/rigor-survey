@@ -1,0 +1,6 @@
+module Issues
+  class ConvertToTicketService < ::BaseContainerService
+    def initialize: (target: untyped, current_user: untyped, email: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

@@ -1,0 +1,80 @@
+module Dependabot
+  module Julia
+    class RegistryClient
+      module Result
+        def self.failure_from: (untyped, untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | nil)
+        module ValueParser
+          def self.object_hash: (untyped, untyped) -> ObjectHash
+          def self.string: (untyped, untyped, untyped) -> String
+          def self.nilable_string: (untyped, untyped, untyped) -> (String | nil)
+          def self.optional_string: (untyped, untyped, untyped) -> (String | nil)
+          def self.optional_boolean: (untyped, untyped, untyped) -> (false | true)
+          def self.optional_string_array: (untyped, untyped, untyped) -> Array[String]
+          def self.string_value: (untyped, untyped) -> String
+          def self.optional_string_value: (untyped, untyped) -> (String | nil)
+          def self.string_array: (untyped, untyped) -> Array[String]
+          def self.object_array: (untyped, untyped) -> Array[ObjectHash]
+          def self.string_map: (untyped, untyped) -> Hash[untyped, untyped]
+        end
+        class Version < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Version)
+          def self.from_batch_value: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Version | ::Failure | ::Version)
+        end
+        class PackageMetadata < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::PackageMetadata)
+        end
+        class ProjectDependency < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> Dependabot::Julia::RegistryClient::Result::ProjectDependency
+        end
+        class Project < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Project)
+          def self.parse_dependencies: (untyped, untyped, untyped) -> Array[Dependabot::Julia::RegistryClient::Result::ProjectDependency]
+        end
+        class ManifestDependency < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> Dependabot::Julia::RegistryClient::Result::ManifestDependency
+        end
+        class Manifest < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Manifest)
+        end
+        class EnvironmentFiles < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::EnvironmentFiles | Dependabot::Julia::RegistryClient::Result::Failure)
+        end
+        class WorkspaceFiles < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::WorkspaceFiles)
+        end
+        class Source < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::Source)
+        end
+        class ManifestUpdate < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ManifestUpdate)
+        end
+        class AvailableVersions < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::AvailableVersions | Dependabot::Julia::RegistryClient::Result::Failure)
+          def self.from_batch_value: (untyped, context: untyped) -> (::AvailableVersions | Dependabot::Julia::RegistryClient::Result::AvailableVersions | ::Failure)
+        end
+        class ReleaseDate < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ReleaseDate)
+          def self.from_batch_value: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::ReleaseDate | ::Failure | ::ReleaseDate)
+        end
+        class PackageInfo < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::PackageInfo)
+        end
+        class PackageInfoBatch < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::PackageInfoBatch)
+        end
+        class ReleaseDates < ::T::ImmutableStruct
+          def self.from_object: (untyped, context: untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ReleaseDates)
+        end
+        class ReleaseDatesBatch < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::Failure | Dependabot::Julia::RegistryClient::Result::ReleaseDatesBatch)
+        end
+        class AvailableVersionsBatch < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> (Dependabot::Julia::RegistryClient::Result::AvailableVersionsBatch | Dependabot::Julia::RegistryClient::Result::Failure)
+        end
+        class PackageVersionsRequest < ::T::ImmutableStruct
+          def to_h: () -> Hash[Symbol, Object]
+        end
+      end
+    end
+  end
+end

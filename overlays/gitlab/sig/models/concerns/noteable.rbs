@@ -1,0 +1,16 @@
+module Noteable
+  def supports_discussions?: () -> (false | true)
+  def supports_replying_to_system_notes?: () -> false
+  def supports_suggestion?: () -> false
+  def discussions_rendered_on_frontend?: () -> false
+  def preloads_discussion_diff_highlighting?: () -> false
+  def lockable?: () -> (false | true)
+  def real_time_notes_enabled?: () -> false
+  def commenters: (?user: untyped) -> ActiveRecord::Relation[User]
+  class NoteableMeta < ::Struct[untyped]
+    def user_notes_count: () -> untyped
+    def user_notes_count=: (untyped) -> untyped
+    def self.new: (?user_notes_count: untyped) -> instance | (?untyped user_notes_count) -> instance
+    def self.[]: (?user_notes_count: untyped) -> instance | (?untyped user_notes_count) -> instance
+  end
+end

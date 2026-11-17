@@ -1,0 +1,8 @@
+module BulkImports
+  class BatchedRelationExportService
+    def self.cache_key: (untyped, untyped) -> String
+    def self.batch_size_cache_key: (untyped) -> String
+    def initialize: (untyped, untyped, untyped, untyped, ?offline_export_id: untyped) -> void
+    def config: () -> (BulkImports::FileTransfer::GroupConfig | BulkImports::FileTransfer::ProjectConfig)
+  end
+end

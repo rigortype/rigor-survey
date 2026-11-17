@@ -1,0 +1,8 @@
+module Packages
+  module Debian
+    class GroupDistribution < ::ApplicationRecord
+      def self.container_type: () -> :group
+      def packages: () -> ActiveRecord::Relation[Packages::Debian::Package]
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Memory
+    class Reporter
+      def initialize: (?reports_path: untyped, ?logger: untyped) -> void
+      def run_report: (untyped) -> (false | true)
+    end
+  end
+end

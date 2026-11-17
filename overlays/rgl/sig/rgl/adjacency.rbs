@@ -1,0 +1,15 @@
+module RGL
+  class DirectedAdjacencyGraph
+    def self.[]: (*untyped) -> RGL::DirectedAdjacencyGraph
+    def initialize: (?untyped, *untyped) -> void
+    def directed?: () -> true
+  end
+  class AdjacencyGraph < ::RGL::DirectedAdjacencyGraph
+    def directed?: () -> false
+  end
+  module Graph
+    def to_adjacency: () -> (RGL::AdjacencyGraph | RGL::DirectedAdjacencyGraph)
+    def reverse: () -> (RGL::DirectedAdjacencyGraph | RGL::Graph)
+    def to_undirected: () -> (RGL::AdjacencyGraph | RGL::Graph)
+  end
+end

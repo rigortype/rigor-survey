@@ -1,0 +1,13 @@
+module Gitlab
+  module Regex
+    module Packages
+      module Protection
+        module Rules
+          def self.protection_rules_npm_package_name_pattern_regex: () -> Regexp
+          def self.protection_rules_pypi_package_name_pattern_regex: () -> Regexp
+          def self.protection_rules_terraform_module_package_name_pattern_regex: () -> Regexp
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module DotnetSdk
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::DotnetSdk::Requirement]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Clusters
+  module Agents
+    class CreateActivityEventService
+      def initialize: (untyped, **untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

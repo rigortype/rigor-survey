@@ -1,0 +1,12 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ConcurrencyLimit
+      class QueueManager
+        def initialize: (worker_name: untyped, prefix: untyped) -> void
+        def drop_jobs!: (untyped, timeout: untyped) -> ({ completed: untyped, deleted_jobs: untyped } | { completed: false, deleted_jobs: untyped } | { completed: true, deleted_jobs: 0 })
+        def redis_key: () -> String
+        def metadata_key: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module RustToolchain
+    class ChannelParser
+      def initialize: (untyped) -> void
+      def parse: () -> (Dependabot::RustToolchain::Channel | nil)
+    end
+  end
+end

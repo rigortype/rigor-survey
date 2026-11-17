@@ -1,0 +1,9 @@
+module Ci
+  module HasStatus
+    def started?: () -> (false | true)
+    def active?: () -> (false | true)
+    def complete?: () -> (false | true)
+    def incomplete?: () -> (false | true)
+    def blocked?: () -> (false | true)
+  end
+end

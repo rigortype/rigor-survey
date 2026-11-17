@@ -1,0 +1,6 @@
+module Ci
+  class TrackFailedBuildService
+    def initialize: (build: untyped, exit_code: untyped, failure_reason: untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

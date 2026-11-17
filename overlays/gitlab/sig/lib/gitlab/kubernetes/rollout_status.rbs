@@ -1,0 +1,9 @@
+module Gitlab
+  module Kubernetes
+    class RolloutStatus
+      def self.from_deployments: (*untyped, ?pods_attrs: untyped, ?ingresses: untyped) -> Gitlab::Kubernetes::RolloutStatus
+      def self.loading: () -> Gitlab::Kubernetes::RolloutStatus
+      def initialize: (untyped, ?pods: untyped, ?ingresses: untyped, ?status: untyped) -> void
+    end
+  end
+end

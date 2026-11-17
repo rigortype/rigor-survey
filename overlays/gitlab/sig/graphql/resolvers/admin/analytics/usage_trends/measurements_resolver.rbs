@@ -1,0 +1,11 @@
+module Resolvers
+  module Admin
+    module Analytics
+      module UsageTrends
+        class MeasurementsResolver < ::Resolvers::BaseResolver
+          def resolve: (identifier: untyped, ?recorded_before: untyped, ?recorded_after: untyped) -> ActiveRecord::Relation[::Analytics::UsageTrends::Measurement]
+        end
+      end
+    end
+  end
+end

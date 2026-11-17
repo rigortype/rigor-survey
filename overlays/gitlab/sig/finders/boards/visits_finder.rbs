@@ -1,0 +1,5 @@
+module Boards
+  class VisitsFinder
+    def initialize: (untyped, untyped) -> void
+  end
+end

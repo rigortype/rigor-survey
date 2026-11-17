@@ -1,0 +1,12 @@
+module Gitlab
+  module SidekiqMiddleware
+    class Client
+      def self.middlewares: () -> [singleton(Gitlab::SidekiqMiddleware::ConcurrencyLimit::Resume), singleton(Gitlab::SidekiqMiddleware::WorkerContext::Client), untyped, singleton(Gitlab::Database::LoadBalancing::SidekiqClientMiddleware), singleton(Gitlab::SidekiqMiddleware::PauseControl::Client), singleton(Gitlab::SidekiqMiddleware::DuplicateJobs::Client), singleton(Gitlab::SidekiqMiddleware::ConcurrencyLimit::Client), singleton(Gitlab::SidekiqStatus::ClientMiddleware), singleton(Gitlab::SidekiqMiddleware::AdminMode::Client), singleton(Gitlab::SidekiqMiddleware::SizeLimiter::Client), singleton(Gitlab::SidekiqMiddleware::ClientMetrics), singleton(Gitlab::SidekiqMiddleware::Identity::Passthrough)]
+      def self.configurator: () -> Proc
+    end
+    class Server
+      def self.middlewares: (?metrics: untyped, ?arguments_logger: untyped, ?skip_jobs: untyped) -> Array[untyped]
+      def self.configurator: (?metrics: untyped, ?arguments_logger: untyped, ?skip_jobs: untyped) -> Proc
+    end
+  end
+end

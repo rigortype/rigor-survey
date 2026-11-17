@@ -1,0 +1,20 @@
+module ActionDispatch
+  module Http
+    module Cache
+      module Request
+        def cache_control_directives: () -> ActionDispatch::Http::Cache::Request::CacheControlDirectives
+        class CacheControlDirectives
+          def initialize: (untyped) -> void
+          def only_if_cached?: () -> (false | true)
+          def no_cache?: () -> (false | true)
+          def no_store?: () -> (false | true)
+          def no_transform?: () -> (false | true)
+          def max_stale?: () -> (false | true)
+        end
+      end
+      module Response
+        def cache_control: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

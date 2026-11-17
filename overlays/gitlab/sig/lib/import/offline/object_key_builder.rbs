@@ -1,0 +1,11 @@
+module Import
+  module Offline
+    class ObjectKeyBuilder
+      def initialize: (untyped) -> void
+      def metadata_object_key: () -> String
+      def upload_object_key: (portable: untyped, relation: untyped, extension: untyped, ?batch_number: untyped) -> String
+      def download_object_key: (relation: untyped, extension: untyped, entity_source_full_path: untyped, ?batch_number: untyped) -> String
+      def batched_object_key_prefix: (relation: untyped, entity_prefix: untyped) -> String
+    end
+  end
+end

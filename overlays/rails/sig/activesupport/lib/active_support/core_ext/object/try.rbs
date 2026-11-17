@@ -1,0 +1,4 @@
+class NilClass
+  def try: (*untyped) ?{ (*untyped) -> untyped } -> nil
+  def try!: (*untyped) ?{ (*untyped) -> untyped } -> nil
+end

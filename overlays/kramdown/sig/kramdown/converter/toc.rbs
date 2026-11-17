@@ -1,0 +1,8 @@
+module Kramdown
+  module Converter
+    class Toc < ::Kramdown::Converter::Base
+      def initialize: (untyped, untyped) -> void
+      def convert: (untyped) -> ::Kramdown::Element
+    end
+  end
+end

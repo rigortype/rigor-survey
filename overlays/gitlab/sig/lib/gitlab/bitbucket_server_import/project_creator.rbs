@@ -1,0 +1,7 @@
+module Gitlab
+  module BitbucketServerImport
+    class ProjectCreator
+      def initialize: (untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

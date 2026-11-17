@@ -1,0 +1,3 @@
+class AnnouncementFilter
+  def initialize: (untyped) -> void
+end

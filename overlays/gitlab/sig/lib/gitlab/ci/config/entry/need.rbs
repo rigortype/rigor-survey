@@ -1,0 +1,24 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Need < ::Gitlab::Config::Entry::Simplifiable
+          class JobString < ::Gitlab::Config::Entry::Node
+            def type: () -> :job
+            def value: () -> { name: untyped, artifacts: true, optional: false }
+          end
+          class JobHash < ::Gitlab::Config::Entry::Node
+            def type: () -> :job
+            def value: () -> (Hash[untyped, untyped] | { name: untyped, artifacts: untyped, optional: false | true })
+          end
+          class CrossPipelineDependency < ::Gitlab::Config::Entry::Node
+            def type: () -> :cross_dependency
+          end
+          class UnknownStrategy < ::Gitlab::Config::Entry::Node
+            def errors: () -> [String]
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module BillingEvents
+    class Client
+      def local_persistence_enabled?: () -> false
+      def emission_enabled?: () -> true
+    end
+  end
+end

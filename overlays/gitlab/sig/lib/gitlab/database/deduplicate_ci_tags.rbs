@@ -1,0 +1,7 @@
+module Gitlab
+  module Database
+    class DeduplicateCiTags
+      def initialize: (logger: untyped, dry_run: untyped) -> void
+    end
+  end
+end

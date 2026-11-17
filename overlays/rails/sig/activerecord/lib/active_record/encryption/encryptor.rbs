@@ -1,0 +1,8 @@
+module ActiveRecord
+  module Encryption
+    class Encryptor
+      def initialize: (?compress: untyped, ?compressor: untyped) -> void
+      def encrypted?: (untyped) -> (false | true)
+    end
+  end
+end

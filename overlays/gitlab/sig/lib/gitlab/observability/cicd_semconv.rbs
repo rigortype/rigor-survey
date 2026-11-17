@@ -1,0 +1,12 @@
+module Gitlab
+  module Observability
+    module CicdSemconv
+      def map_task_run_result: (untyped) -> ("cancellation" | "failure" | "skip" | "success" | nil)
+      def map_task_run_state: (untyped) -> ("executing" | "pending" | nil)
+      def map_pipeline_result: (untyped) -> ("cancellation" | "failure" | "skip" | "success" | nil)
+      def map_pipeline_run_state: (untyped) -> ("executing" | "pending" | nil)
+      def map_worker_state: (untyped) -> ("available" | "offline")
+      def map_mr_state: (untyped) -> ("closed" | "merged" | "open" | "wip" | nil)
+    end
+  end
+end

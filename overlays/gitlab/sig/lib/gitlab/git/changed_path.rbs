@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class ChangedPath
+      def self.from_diff: (untyped) -> Gitlab::Git::ChangedPath
+      def initialize: (status: untyped, path: untyped, old_mode: untyped, new_mode: untyped, ?new_blob_id: untyped, ?old_blob_id: untyped, ?old_path: String, ?commit_id: untyped) -> void
+      def submodule_change?: () -> (false | true)
+    end
+  end
+end

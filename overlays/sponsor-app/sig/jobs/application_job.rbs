@@ -1,0 +1,3 @@
+class ApplicationJob < ::ActiveJob::Base
+  def default_url_options: () -> { host: String?, protocol: String }
+end

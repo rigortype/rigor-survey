@@ -1,0 +1,6 @@
+module Authn
+  class AgnosticTokenIdentifier
+    def self.token_type: (untyped) -> (nil | singleton(Authn::Tokens::CiJobToken) | singleton(Authn::Tokens::CiTriggerToken) | singleton(Authn::Tokens::ClusterAgentToken) | singleton(Authn::Tokens::DeployToken) | singleton(Authn::Tokens::FeatureFlagsClientToken) | singleton(Authn::Tokens::FeedToken) | singleton(Authn::Tokens::GitlabSession) | singleton(Authn::Tokens::IncomingEmailToken) | singleton(Authn::Tokens::OauthApplicationSecret) | singleton(Authn::Tokens::PersonalAccessToken) | singleton(Authn::Tokens::RunnerAuthenticationToken) | singleton(Authn::Tokens::RunnerRegistrationToken))
+    def self.token_types: () -> [singleton(Authn::Tokens::DeployToken), singleton(Authn::Tokens::FeedToken), singleton(Authn::Tokens::PersonalAccessToken), singleton(Authn::Tokens::OauthApplicationSecret), singleton(Authn::Tokens::ClusterAgentToken), singleton(Authn::Tokens::RunnerAuthenticationToken), singleton(Authn::Tokens::RunnerRegistrationToken), singleton(Authn::Tokens::CiTriggerToken), singleton(Authn::Tokens::CiJobToken), singleton(Authn::Tokens::FeatureFlagsClientToken), singleton(Authn::Tokens::GitlabSession), singleton(Authn::Tokens::IncomingEmailToken)]
+  end
+end

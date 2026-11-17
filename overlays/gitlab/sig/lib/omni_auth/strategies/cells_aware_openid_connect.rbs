@@ -1,0 +1,8 @@
+module OmniAuth
+  module Strategies
+    class CellsAwareOpenidConnect < ::OpenIDConnect
+      def request_phase: () -> [untyped, untyped, untyped]
+      def call_app!: (?untyped) -> [untyped, untyped, untyped]
+    end
+  end
+end

@@ -1,0 +1,4 @@
+class EventFilter
+  def initialize: (untyped) -> void
+  def in_operator_query_builder_params: (untyped) -> { array_scope: untyped, array_mapping_scope: Proc, scope: untyped, finder_query: Proc }
+end

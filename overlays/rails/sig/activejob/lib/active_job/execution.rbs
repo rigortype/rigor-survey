@@ -1,0 +1,5 @@
+module ActiveJob
+  module Execution
+    def perform: (*untyped) -> bot
+  end
+end

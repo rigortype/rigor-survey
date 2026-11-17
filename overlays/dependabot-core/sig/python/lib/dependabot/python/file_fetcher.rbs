@@ -1,0 +1,8 @@
+module Dependabot
+  module Python
+    class FileFetcher < ::Dependabot::Python::SharedFileFetcher
+      def self.ecosystem_specific_required_files: () -> ["Pipfile", "setup.py", "setup.cfg"]
+      def self.required_files_message: () -> String
+    end
+  end
+end

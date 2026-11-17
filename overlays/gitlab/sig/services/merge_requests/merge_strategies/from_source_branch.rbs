@@ -1,0 +1,8 @@
+module MergeRequests
+  module MergeStrategies
+    class FromSourceBranch
+      def initialize: (untyped, untyped, ?merge_params: untyped, ?options: untyped) -> void
+      def validate!: () -> nil
+    end
+  end
+end

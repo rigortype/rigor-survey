@@ -1,0 +1,20 @@
+module Gitlab
+  module Config
+    module Entry
+      module Validators
+        class ArrayOfStringsValidator < ::ActiveModel::EachValidator
+          def self.validate: (untyped) -> (false | true)
+        end
+        class StringValidator < ::ActiveModel::EachValidator
+          def self.validate: (untyped) -> (false | true)
+        end
+        class AlphanumericValidator < ::ActiveModel::EachValidator
+          def self.validate: (untyped) -> (false | true)
+        end
+        class ScalarValidator < ::ActiveModel::EachValidator
+          def self.validate: (untyped) -> (false | true)
+        end
+      end
+    end
+  end
+end

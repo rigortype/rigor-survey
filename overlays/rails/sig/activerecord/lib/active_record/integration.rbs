@@ -1,0 +1,6 @@
+module ActiveRecord
+  module Integration
+    def cache_key: () -> String
+    def cache_key_with_version: () -> String
+  end
+end

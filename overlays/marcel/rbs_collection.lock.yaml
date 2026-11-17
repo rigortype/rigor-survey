@@ -1,0 +1,128 @@
+---
+path: ".gem_rbs_collection"
+gems:
+- name: cgi
+  version: '0.5'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: delegate
+  version: '0'
+  source:
+    type: stdlib
+- name: erb
+  version: '0'
+  source:
+    type: stdlib
+- name: fileutils
+  version: '0'
+  source:
+    type: stdlib
+- name: io-console
+  version: '0'
+  source:
+    type: stdlib
+- name: json
+  version: '0'
+  source:
+    type: stdlib
+- name: logger
+  version: '1.7'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: minitest
+  version: '5.25'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: monitor
+  version: '0'
+  source:
+    type: stdlib
+- name: nokogiri
+  version: '1.11'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: optparse
+  version: '0'
+  source:
+    type: stdlib
+- name: pp
+  version: '0'
+  source:
+    type: stdlib
+- name: prettyprint
+  version: '0'
+  source:
+    type: stdlib
+- name: prism
+  version: 1.9.0
+  source:
+    type: rubygems
+- name: racc
+  version: '1.8'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rack
+  version: '2.2'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rake
+  version: '13.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9e17daa08b1710667699a208981cffd21dbf15f6
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rbs
+  version: 4.2.0
+  source:
+    type: rubygems
+- name: rdoc
+  version: '0'
+  source:
+    type: stdlib
+- name: stringio
+  version: '0'
+  source:
+    type: stdlib
+- name: tempfile
+  version: '0'
+  source:
+    type: stdlib
+- name: tmpdir
+  version: '0'
+  source:
+    type: stdlib
+- name: tsort
+  version: '0'
+  source:
+    type: stdlib
+- name: uri
+  version: '0'
+  source:
+    type: stdlib
+gemfile_lock_path: Gemfile.lock

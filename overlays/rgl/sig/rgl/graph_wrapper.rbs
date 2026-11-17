@@ -1,0 +1,5 @@
+module RGL
+  module GraphWrapper
+    def initialize: (untyped) -> void
+  end
+end

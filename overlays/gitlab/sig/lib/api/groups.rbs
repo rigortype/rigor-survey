@@ -1,0 +1,11 @@
+module API
+  class Groups < ::API::Base
+    def groups_finder: (untyped) -> (GroupsFinder | ::Namespaces::GroupsFinder)
+    def allowable_find_params: () -> [:all_available, :custom_attributes, :owned, :min_access_level, :include_parent_descendants, :search, :visibility, :archived, :active, :marked_for_deletion_on]
+    def create_group: () -> ServiceResponse
+    def immediately_delete_subgroup_error: (untyped) -> ("Group must be marked for deletion first." | "`full_path` is incorrect. You must enter the complete path for the subgroup." | "`permanently_remove` option is only available for subgroups." | nil)
+    def group_delete_rate_limit_key: () -> (:group_delete_api | :group_permanent_delete_api)
+    def group_without_similarity_options: () -> Hash[untyped, untyped]
+    def check_query_limit: () -> 110
+  end
+end

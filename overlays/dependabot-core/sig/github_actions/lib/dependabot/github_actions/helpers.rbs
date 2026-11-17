@@ -1,0 +1,11 @@
+module Dependabot
+  module GithubActions
+    module Helpers
+      class Githelper
+        def initialize: (dependency: untyped, credentials: untyped, ?ignored_versions: untyped, ?raise_on_ignored: untyped, ?consider_version_branches_pinned: untyped, ?dependency_source_details: untyped, ?git_metadata_fetcher: untyped) -> void
+        def git_commit_checker: () -> (Dependabot::GitCommitChecker | nil)
+        def git_commit_checker_for: (untyped) -> Dependabot::GitCommitChecker
+      end
+    end
+  end
+end

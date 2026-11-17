@@ -1,0 +1,10 @@
+module Concurrent
+  module ThreadSafe
+    module Util
+      class PowerOfTwoTuple < ::Concurrent::Tuple
+        def initialize: (untyped) -> void
+        def next_in_size_table: () -> Concurrent::ThreadSafe::Util::PowerOfTwoTuple
+      end
+    end
+  end
+end

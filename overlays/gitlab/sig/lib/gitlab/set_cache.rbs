@@ -1,0 +1,5 @@
+module Gitlab
+  class SetCache
+    def initialize: (?expires_in: untyped) -> void
+  end
+end

@@ -1,0 +1,10 @@
+module Admin
+  module Metrics
+    class Dimension
+      class InstanceLanguagesDimension < ::Admin::Metrics::Dimension::BaseDimension
+        def self.with_params?: () -> true
+        def key: () -> "instance_languages"
+      end
+    end
+  end
+end

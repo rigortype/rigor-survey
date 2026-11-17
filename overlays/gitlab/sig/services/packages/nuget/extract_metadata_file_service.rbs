@@ -1,0 +1,8 @@
+module Packages
+  module Nuget
+    class ExtractMetadataFileService
+      def initialize: (untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Slack
+  module BlockKit
+    class AppHomeOpened
+      def initialize: (untyped, untyped, untyped, untyped) -> void
+      def build: () -> { type: "home", blocks: [untyped, untyped, untyped, untyped, untyped, untyped, untyped, untyped] }
+    end
+  end
+end

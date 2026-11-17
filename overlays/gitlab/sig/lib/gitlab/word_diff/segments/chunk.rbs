@@ -1,0 +1,10 @@
+module Gitlab
+  module WordDiff
+    module Segments
+      class Chunk
+        def initialize: (untyped) -> void
+        def length: () -> Integer
+      end
+    end
+  end
+end

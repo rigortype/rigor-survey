@@ -1,0 +1,8 @@
+module Analytics
+  module Glql
+    class ParserService
+      def initialize: (glql_yaml: untyped) -> void
+      def execute: () -> { config: Float | Hash[String, untyped] | Integer | String | false | Array[untyped] | true | {}, query: untyped }
+    end
+  end
+end

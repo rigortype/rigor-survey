@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module CustomAttributes
+      def with_custom_attributes: (untyped, ?untyped) -> [untyped, untyped]
+    end
+  end
+end

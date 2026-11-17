@@ -1,0 +1,14 @@
+module Dependabot
+  module Pub
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class LatestVersionFinder
+        def initialize: (dependency: untyped, dependency_files: untyped, credentials: untyped, ?ignored_versions: untyped, ?security_advisories: untyped, ?options: untyped, ?cooldown_options: untyped) -> void
+        def current_report: () -> (::DependencyServicesResult::ReportEntry | nil)
+        def latest_version: () -> (String | nil)
+        def latest_resolvable_version: () -> (String | nil)
+        def latest_resolvable_version_with_no_unlock: () -> (String | nil)
+        def latest_version_resolvable_with_full_unlock: () -> (String | nil)
+      end
+    end
+  end
+end

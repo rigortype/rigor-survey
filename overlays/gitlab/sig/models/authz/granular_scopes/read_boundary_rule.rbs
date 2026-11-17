@@ -1,0 +1,7 @@
+module Authz
+  module GranularScopes
+    class ReadBoundaryRule
+      def initialize: (untyped) -> void
+    end
+  end
+end

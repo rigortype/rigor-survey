@@ -1,0 +1,5 @@
+module Parser
+  class SyntaxError < ::StandardError
+    def initialize: (untyped) -> void
+  end
+end

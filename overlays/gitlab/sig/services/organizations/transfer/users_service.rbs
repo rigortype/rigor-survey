@@ -1,0 +1,12 @@
+module Organizations
+  module Transfer
+    class UsersService
+      def self.skipped_transfer_models: () -> ["AbuseReport", "Ai::Catalog::ItemConsumer", "Ai::Catalog::ItemStar", "Ai::Catalog::ItemVersion", "AntiAbuse::Event", "Analytics::CustomDashboards::DashboardVersion", "Authz::AdminRole", "Authz::GranularScope", "Authz::OauthApplicationGranularScope", "Authz::OauthConsentGrantGranularScope", "Authz::PersonalAccessTokenGranularScope", "BulkImports::Export", "Cd::VersionSet", "Clusters::Cluster", "Dependencies::DependencyListExport", "Doorkeeper::AccessToken", "GitlabSubscriptions::AddOnPurchase", "GitlabSubscriptions::SeatAssignment", "GitlabSubscriptions::UserAddOnAssignment", "Govern::PolicyEvaluation", "Group", "ImportFailure", "Import::Sync::Repository", "MemberRole", "Organizations::OrganizationUser", "Project", "ProjectSnippet", "ResourceEvents::AbuseReportEvent", "Snippet", "User", "Vulnerabilities::Export", "Workforce::Person"]
+      def initialize: (users: untyped, new_organization: untyped) -> void
+      def async_execute: () -> ServiceResponse
+      def execute: () -> ServiceResponse
+      def prepare_bots: () -> (Hash[untyped, untyped] | nil)
+      def can_transfer_users?: () -> (false | true)
+    end
+  end
+end

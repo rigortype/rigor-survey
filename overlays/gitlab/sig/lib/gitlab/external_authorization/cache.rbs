@@ -1,0 +1,8 @@
+module Gitlab
+  module ExternalAuthorization
+    class Cache
+      def initialize: (untyped, String) -> void
+      def load: () -> [untyped, untyped, Time | nil]
+    end
+  end
+end

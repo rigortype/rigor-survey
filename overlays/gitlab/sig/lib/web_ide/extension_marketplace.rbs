@@ -1,0 +1,5 @@
+module WebIde
+  module ExtensionMarketplace
+    def self.origin_matches_extension_host_regexp: () -> Regexp
+  end
+end

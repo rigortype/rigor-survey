@@ -1,0 +1,7 @@
+module PagesCore
+  module Admin
+    module LabelledFieldHelper
+      def image_upload_field: (untyped, untyped, ?untyped, ?untyped) -> String
+    end
+  end
+end

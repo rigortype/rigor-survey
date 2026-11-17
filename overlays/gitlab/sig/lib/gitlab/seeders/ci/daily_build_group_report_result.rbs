@@ -1,0 +1,10 @@
+module Gitlab
+  module Seeders
+    module Ci
+      class DailyBuildGroupReportResult
+        def initialize: (untyped) -> void
+        def seed: () -> Integer
+      end
+    end
+  end
+end

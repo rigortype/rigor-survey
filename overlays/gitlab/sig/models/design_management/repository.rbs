@@ -1,0 +1,5 @@
+module DesignManagement
+  class Repository < ::ApplicationRecord
+    def repository: () -> DesignManagement::GitRepository
+  end
+end

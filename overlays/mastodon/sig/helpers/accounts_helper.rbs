@@ -1,0 +1,4 @@
+module AccountsHelper
+  def acct: (untyped) -> String
+  def account_description: (untyped) -> String
+end

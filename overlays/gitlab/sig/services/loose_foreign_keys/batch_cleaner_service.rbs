@@ -1,0 +1,6 @@
+module LooseForeignKeys
+  class BatchCleanerService
+    def initialize: (parent_table: untyped, loose_foreign_key_definitions: untyped, deleted_parent_records: untyped, connection: untyped, ?logger: untyped, ?modification_tracker: untyped, ?record_store: singleton(Gitlab::LooseForeignKeys::DeletedRecordStore)) -> void
+    def record_store: () -> singleton(Gitlab::LooseForeignKeys::DeletedRecordStore)
+  end
+end

@@ -1,0 +1,13 @@
+module Dependabot
+  class Job
+    class SourceDefinition < ::T::ImmutableStruct
+      def self.from_hash: (untyped) -> Dependabot::Job::SourceDefinition
+      def to_source: () -> Dependabot::Source
+      def self.required_string: (untyped, untyped) -> String
+      def self.optional_string: (untyped) -> (String | nil)
+      def self.normalized_directory: (untyped) -> (String | nil)
+      def self.normalized_directories: (untyped) -> (Array[String] | nil)
+      def self.normalize_path: (untyped) -> String
+    end
+  end
+end

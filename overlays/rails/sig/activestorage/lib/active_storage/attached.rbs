@@ -1,0 +1,5 @@
+module ActiveStorage
+  class Attached
+    def initialize: (untyped, untyped) -> void
+  end
+end

@@ -1,0 +1,5 @@
+module Clusters
+  class AgentsFinder
+    def initialize: (untyped, untyped, ?params: untyped) -> void
+  end
+end

@@ -1,0 +1,9 @@
+module ActiveRecord
+  module Encryption
+    class ReadOnlyNullEncryptor
+      def encrypt: (untyped, ?key_provider: untyped, ?cipher_options: untyped) -> bot
+      def encrypted?: (untyped) -> false
+      def binary?: () -> false
+    end
+  end
+end

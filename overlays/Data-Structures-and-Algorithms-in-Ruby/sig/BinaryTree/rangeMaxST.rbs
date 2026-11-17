@@ -1,0 +1,3 @@
+class RangeMaxST
+  def initialize: (untyped) -> void
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module ReleaseAssetLinks
+    class Delete < ::Mutations::BaseMutation
+      def resolve: (id: untyped) -> ({ link: untyped, errors: [] } | { link: nil, errors: untyped })
+    end
+  end
+end

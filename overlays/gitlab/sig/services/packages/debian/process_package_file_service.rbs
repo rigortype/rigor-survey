@@ -1,0 +1,7 @@
+module Packages
+  module Debian
+    class ProcessPackageFileService
+      def initialize: (untyped, untyped, untyped) -> void
+    end
+  end
+end

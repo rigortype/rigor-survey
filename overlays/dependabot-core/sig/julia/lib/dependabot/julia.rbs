@@ -1,0 +1,12 @@
+module Dependabot
+  module Julia
+    def self.package_ecosystem: () -> "julia"
+    def self.file_fetcher_class: () -> singleton(Dependabot::Julia::FileFetcher)
+    def self.file_parser_class: () -> singleton(Dependabot::Julia::FileParser)
+    def self.update_checker_class: () -> singleton(Dependabot::Julia::UpdateChecker)
+    def self.file_updater_class: () -> singleton(Dependabot::Julia::FileUpdater)
+    def self.metadata_finder_class: () -> singleton(Dependabot::Julia::MetadataFinder)
+    def self.dependency_class: () -> singleton(Dependabot::Julia::Dependency)
+    def self.package_manager_class: () -> singleton(Dependabot::Julia::PackageManager)
+  end
+end

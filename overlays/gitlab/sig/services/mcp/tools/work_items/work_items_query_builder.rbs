@@ -1,0 +1,16 @@
+module Mcp
+  module Tools
+    module WorkItems
+      class WorkItemsQueryBuilder
+        def self.filter_definitions: () -> [{ key: "assigneeUsernames", type: "[String!]" }, { key: "assigneeWildcardId", type: "AssigneeWildcardId" }, { key: "authorUsername", type: "String" }, { key: "confidential", type: "Boolean" }, { key: "hierarchyFilters", type: "HierarchyFilterInput" }, { key: "labelName", type: "[String!]" }, { key: "milestoneTitle", type: "[String!]" }, { key: "milestoneWildcardId", type: "MilestoneWildcardId" }, { key: "myReactionEmoji", type: "String" }, { key: "types", type: "[IssueType!]" }, { key: "state", type: "IssuableState" }, { key: "search", type: "String" }, { key: "in", type: "[IssuableSearchableField!]" }, { key: "closedAfter", type: "Time" }, { key: "closedBefore", type: "Time" }, { key: "createdAfter", type: "Time" }, { key: "createdBefore", type: "Time" }, { key: "dueAfter", type: "Time" }, { key: "dueBefore", type: "Time" }, { key: "updatedAfter", type: "Time" }, { key: "updatedBefore", type: "Time" }, { key: "relativeDateFilters", type: "WorkItemRelativeDateFiltersInput" }, { key: "subscribed", type: "SubscriptionStatus" }, { key: "releaseTag", type: "[String!]" }, { key: "releaseTagWildcardId", type: "ReleaseTagWildcardId" }, { key: "crmContactId", type: "String" }, { key: "crmOrganizationId", type: "String" }, { key: "not", type: "NegatedWorkItemFilterInput" }, { key: "or", type: "UnionedWorkItemFilterInput" }]
+        def self.widget_fragments: () -> [String, String, String, String, String]
+        def self.build_query: (?projection: untyped) -> String
+        def self.build_variables: (full_path: untyped, filters: untyped, ?sort: untyped, ?first: untyped, ?after: untyped) -> [Hash[untyped, untyped], untyped]
+        def self.node_selection: (untyped) -> String
+        def self.compact_node_selection: () -> String
+        def self.full_node_selection: () -> String
+        def self.apply_nested_transforms: (untyped, untyped) -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

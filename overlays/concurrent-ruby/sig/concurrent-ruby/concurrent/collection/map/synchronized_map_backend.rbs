@@ -1,0 +1,7 @@
+module Concurrent
+  module Collection
+    class SynchronizedMapBackend < ::Concurrent::Collection::NonConcurrentMapBackend
+      def initialize: (*untyped) ?{ (*untyped) -> untyped } -> void
+    end
+  end
+end

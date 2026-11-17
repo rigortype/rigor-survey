@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Test
+      class Script
+        def opens_channel: (?untyped) -> Net::SSH::Test::Channel
+        def events: () -> Array[untyped]
+      end
+    end
+  end
+end

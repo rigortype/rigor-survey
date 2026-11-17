@@ -1,0 +1,5 @@
+module Rails
+  class DBConsole
+    def initialize: (?untyped) -> void
+  end
+end

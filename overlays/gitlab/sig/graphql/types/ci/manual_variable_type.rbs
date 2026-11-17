@@ -1,0 +1,7 @@
+module Types
+  module Ci
+    class ManualVariableType < ::Types::BaseObject
+      def environment_scope: () -> nil
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module RbNaCl
+  module KeyComparator
+    def <=>: (untyped) -> (-1 | 0 | 1 | nil)
+    def ==: (untyped) -> (Integer | false)
+  end
+end

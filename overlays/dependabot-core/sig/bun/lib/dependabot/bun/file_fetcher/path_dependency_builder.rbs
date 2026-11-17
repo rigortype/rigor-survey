@@ -1,0 +1,10 @@
+module Dependabot
+  module Bun
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class PathDependencyBuilder
+        def initialize: (dependency_name: untyped, path: untyped, directory: untyped, package_lock: untyped, yarn_lock: untyped) -> void
+        def dependency_file: () -> Dependabot::DependencyFile
+      end
+    end
+  end
+end

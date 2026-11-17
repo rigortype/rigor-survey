@@ -1,0 +1,4 @@
+class CustomUniquenessValidator < ::ActiveModel::EachValidator
+  def initialize: (untyped) -> void
+  def check_validity!: () -> nil
+end

@@ -1,0 +1,20 @@
+module Gitlab
+  module RackAttack
+    def self.throttle_definitions: () -> Hash[untyped, untyped]
+    def self.throttle_definitions_authenticated_dependency_proxy: () -> Hash[String, Gitlab::RackAttack::ThrottleDefinition]
+    def self.throttle_definitions_authenticated_mcp: () -> Hash[String, Gitlab::RackAttack::ThrottleDefinition]
+    def self.throttle_definitions_unauthenticated_git_http: () -> Hash[String, Gitlab::RackAttack::ThrottleDefinition]
+    def self.throttle_definitions_authenticated_git_http: () -> Hash[String, Gitlab::RackAttack::ThrottleDefinition]
+    def self.all_throttle_definitions: () -> Hash[untyped, untyped]
+    def self.regular_throttle_definitions: () -> Hash[String, Gitlab::RackAttack::ThrottleDefinition]
+    def self.track?: (untyped) -> (false | true)
+    class ThrottleDefinition < ::Struct[untyped]
+      def options: () -> untyped
+      def request_identifier: () -> untyped
+      def options=: (untyped) -> untyped
+      def request_identifier=: (untyped) -> untyped
+      def self.new: (?options: untyped, ?request_identifier: untyped) -> instance | (?untyped options, ?untyped request_identifier) -> instance
+      def self.[]: (?options: untyped, ?request_identifier: untyped) -> instance | (?untyped options, ?untyped request_identifier) -> instance
+    end
+  end
+end

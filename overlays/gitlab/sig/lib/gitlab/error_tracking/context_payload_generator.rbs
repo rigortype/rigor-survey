@@ -1,0 +1,8 @@
+module Gitlab
+  module ErrorTracking
+    class ContextPayloadGenerator
+      def self.generate: (untyped, ?untyped, ?untyped) -> { extra: untyped, tags: untyped, user: { username: untyped } }
+      def generate: (untyped, ?untyped, ?untyped) -> { extra: untyped, tags: untyped, user: { username: untyped } }
+    end
+  end
+end

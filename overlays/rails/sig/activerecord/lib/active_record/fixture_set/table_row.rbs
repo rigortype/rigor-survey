@@ -1,0 +1,13 @@
+module ActiveRecord
+  class FixtureSet
+    class TableRow
+      def initialize: (untyped, table_rows: untyped, label: untyped, now: untyped) -> void
+      class ReflectionProxy
+        def initialize: (untyped) -> void
+      end
+      class PrimaryKeyError < ::StandardError
+        def initialize: (untyped, untyped, untyped) -> void
+      end
+    end
+  end
+end

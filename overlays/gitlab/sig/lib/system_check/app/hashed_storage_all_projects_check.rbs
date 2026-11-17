@@ -1,0 +1,8 @@
+module SystemCheck
+  module App
+    class HashedStorageAllProjectsCheck < ::SystemCheck::BaseCheck
+      def check?: () -> (false | true)
+      def show_error: () -> Array[String]
+    end
+  end
+end

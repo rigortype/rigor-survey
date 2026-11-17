@@ -1,0 +1,6 @@
+module Clusters
+  class KubernetesNamespaceFinder
+    def initialize: (untyped, project: untyped, environment_name: String, ?allow_blank_token: untyped) -> void
+    def environment_name: () -> "production"
+  end
+end

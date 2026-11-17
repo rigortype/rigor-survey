@@ -1,0 +1,11 @@
+module Marcel
+  class Magic
+    module Zip
+      def self.discriminating_parts: (untyped) -> (Array[untyped] | nil)
+      def self.parse_eocd: (untyped, untyped, untyped) -> ([untyped, untyped, untyped] | nil)
+      def self.parse_zip64_eocd: (untyped, untyped, untyped) -> ([untyped, untyped, untyped] | nil)
+      def self.read_parts: (untyped, untyped, untyped, untyped) -> (Array[untyped] | nil)
+      def self.complete?: (untyped) -> (false | true)
+    end
+  end
+end

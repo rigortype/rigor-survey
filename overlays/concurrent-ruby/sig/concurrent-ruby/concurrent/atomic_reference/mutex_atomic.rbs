@@ -1,0 +1,5 @@
+module Concurrent
+  class MutexAtomicReference
+    def initialize: (?untyped) -> void
+  end
+end

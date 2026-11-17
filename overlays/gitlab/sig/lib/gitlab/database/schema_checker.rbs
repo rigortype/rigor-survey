@@ -1,0 +1,8 @@
+module Gitlab
+  module Database
+    class SchemaChecker
+      def initialize: (database_name: untyped) -> void
+      def validators: () -> { missing_tables: untyped, missing_indexes: untyped, missing_foreign_keys: untyped, missing_sequences: untyped, wrong_sequence_owners: untyped }
+    end
+  end
+end

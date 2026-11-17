@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      class Source
+        def initialize: (project: untyped, sha: untyped, ?custom_content: untyped, ?pipeline_source: untyped, ?pipeline_source_bridge: untyped, ?triggered_for_branch: untyped, ?ref: untyped, ?inputs: untyped) -> void
+        def internal_include_prepended?: () -> false
+        def source: () -> bot
+        def url: () -> nil
+      end
+    end
+  end
+end

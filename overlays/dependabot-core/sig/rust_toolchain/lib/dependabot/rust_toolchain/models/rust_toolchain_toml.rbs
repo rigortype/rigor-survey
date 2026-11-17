@@ -1,0 +1,9 @@
+module Dependabot
+  module RustToolchain
+    module Models
+      class RustToolchainToml < ::T::ImmutableStruct
+        def self.from_toml: (untyped) -> Dependabot::RustToolchain::Models::RustToolchainToml
+      end
+    end
+  end
+end

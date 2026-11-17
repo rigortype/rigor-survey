@@ -1,0 +1,3 @@
+class Numeric
+  def to_json_c14n: () -> ("0" | String)
+end

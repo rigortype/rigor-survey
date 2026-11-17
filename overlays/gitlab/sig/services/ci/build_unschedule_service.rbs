@@ -1,0 +1,6 @@
+module Ci
+  class BuildUnscheduleService
+    def initialize: (untyped, untyped) -> void
+    def execute: () -> ServiceResponse
+  end
+end

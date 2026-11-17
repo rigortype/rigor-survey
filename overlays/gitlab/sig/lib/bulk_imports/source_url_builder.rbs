@@ -1,0 +1,6 @@
+module BulkImports
+  class SourceUrlBuilder
+    def initialize: (untyped, untyped) -> void
+    def url: () -> (String | nil)
+  end
+end

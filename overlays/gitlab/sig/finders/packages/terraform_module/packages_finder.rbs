@@ -1,0 +1,8 @@
+module Packages
+  module TerraformModule
+    class PackagesFinder
+      def initialize: (untyped, ?untyped) -> void
+      def execute: () -> ActiveRecord::Relation[Packages::TerraformModule::Package]
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Projects
+  class OpenMergeRequestsCountService < ::Projects::CountService
+    def cache_key_name: () -> "open_merge_requests_count"
+    def self.query: (untyped) -> ActiveRecord::Relation[MergeRequest]
+  end
+end

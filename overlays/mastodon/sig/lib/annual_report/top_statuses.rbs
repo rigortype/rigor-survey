@@ -1,0 +1,5 @@
+class AnnualReport
+  class TopStatuses < ::AnnualReport::Source
+    def generate: () -> { top_statuses: { by_reblogs: untyped, by_favourites: nil, by_replies: nil } }
+  end
+end

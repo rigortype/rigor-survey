@@ -1,0 +1,11 @@
+module WorkItems
+  module TypesFramework
+    module SystemDefined
+      class WidgetDefinition
+        def self.widget_types: () -> ["assignees", "award_emoji", "crm_contacts", "current_user_todos", "description", "designs", "development", "email_participants", "error_tracking", "escalation_status", "hierarchy", "labels", "linked_items", "linked_resources", "milestone", "notes", "notifications", "participants", "requester", "severity", "start_and_due_date", "time_tracking"]
+        def self.available_widgets: () -> Array[untyped]
+        def licensed?: (untyped) -> true
+      end
+    end
+  end
+end

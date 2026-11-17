@@ -1,0 +1,14 @@
+module Gitlab
+  module Ci
+    module Build
+      module Status
+        class Reason
+          def initialize: (untyped, Symbol, ?Integer) -> void
+          def self.fabricate: (untyped, untyped) -> Gitlab::Ci::Build::Status::Reason
+          def failure_reason: () -> :script_failure
+          def exit_code: () -> 11
+        end
+      end
+    end
+  end
+end

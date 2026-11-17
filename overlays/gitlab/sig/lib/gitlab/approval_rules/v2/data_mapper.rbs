@@ -1,0 +1,9 @@
+module Gitlab
+  module ApprovalRules
+    module V2
+      class DataMapper
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

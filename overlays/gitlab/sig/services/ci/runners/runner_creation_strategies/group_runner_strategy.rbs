@@ -1,0 +1,9 @@
+module Ci
+  module Runners
+    module RunnerCreationStrategies
+      class GroupRunnerStrategy
+        def initialize: (user: untyped, params: untyped) -> void
+      end
+    end
+  end
+end

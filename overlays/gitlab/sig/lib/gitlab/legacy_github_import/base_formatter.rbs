@@ -1,0 +1,11 @@
+module Gitlab
+  module LegacyGithubImport
+    class BaseFormatter
+      def initialize: (untyped, untyped, ?untyped, ?untyped) -> void
+      def push_placeholder_reference: (untyped, untyped, untyped) -> (ServiceResponse | nil)
+      def imported_from: () -> (:gitea | :github | :none)
+      def contributing_user_formatters: () -> bot
+      def formatter: () -> Gitlab::ImportFormatter
+    end
+  end
+end

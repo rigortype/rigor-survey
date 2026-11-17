@@ -1,0 +1,7 @@
+module Mutations
+  module WorkItems
+    class Create < ::Mutations::BaseMutation
+      def resolve: (?project_path: untyped, ?namespace_path: untyped, **untyped) -> { work_item: untyped, errors: Array[untyped] | [] }
+    end
+  end
+end

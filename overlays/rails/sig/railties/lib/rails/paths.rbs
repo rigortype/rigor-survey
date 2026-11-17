@@ -1,0 +1,26 @@
+module Rails
+  module Paths
+    class Root
+      def initialize: (untyped) -> void
+      def []=: (untyped, untyped) -> Rails::Paths::Path
+      def add: (untyped, ?untyped) -> Rails::Paths::Path
+    end
+    class Path
+      def initialize: (untyped, untyped, untyped, ?untyped) -> void
+      def absolute_current: () -> String
+      def autoload_once!: () -> true
+      def skip_autoload_once!: () -> false
+      def autoload_once?: () -> (false | nil | true)
+      def eager_load!: () -> true
+      def skip_eager_load!: () -> false
+      def eager_load?: () -> (false | nil | true)
+      def autoload!: () -> true
+      def skip_autoload!: () -> false
+      def autoload?: () -> (false | nil | true)
+      def load_path!: () -> true
+      def skip_load_path!: () -> false
+      def load_path?: () -> (false | nil | true)
+      def expanded: () -> Array[untyped]
+    end
+  end
+end

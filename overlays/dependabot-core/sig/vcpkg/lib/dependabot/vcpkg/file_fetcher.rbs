@@ -1,0 +1,8 @@
+module Dependabot
+  module Vcpkg
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      def self.required_files_message: () -> "Repo must contain a vcpkg.json or vcpkg-configuration.json file."
+      def fetch_files: () -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

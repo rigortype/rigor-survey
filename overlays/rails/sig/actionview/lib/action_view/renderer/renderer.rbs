@@ -1,0 +1,7 @@
+module ActionView
+  class Renderer
+    def initialize: (untyped) -> void
+    def render_body: (untyped, untyped) -> (ActionView::StreamingTemplateRenderer::Body | [untyped])
+    def cache_hits: () -> Hash[untyped, untyped]
+  end
+end

@@ -1,0 +1,3 @@
+class String
+  def shell_split: () -> Array[String]
+end

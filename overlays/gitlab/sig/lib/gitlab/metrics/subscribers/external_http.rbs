@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Subscribers
+      class ExternalHttp < ::ActiveSupport::Subscriber
+        def self.detail_store: () -> Array[untyped]
+        def self.payload: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

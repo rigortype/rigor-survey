@@ -1,0 +1,8 @@
+class DomainBlock < ::ApplicationRecord
+  def policies: () -> (Array[untyped] | [:suspend])
+  def self.suspend?: (untyped) -> (false | true)
+  def self.silence?: (untyped) -> (false | true)
+  def self.reject_media?: (untyped) -> (false | true)
+  def self.reject_reports?: (untyped) -> (false | true)
+  def domain_digest: () -> String
+end

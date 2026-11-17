@@ -1,0 +1,8 @@
+module Gitlab
+  module SlashCommands
+    class Command < ::Gitlab::SlashCommands::BaseCommand
+      def self.commands: () -> (Array[untyped] | [singleton(Gitlab::SlashCommands::IssueShow), singleton(Gitlab::SlashCommands::IssueNew), singleton(Gitlab::SlashCommands::IssueSearch), singleton(Gitlab::SlashCommands::IssueMove), singleton(Gitlab::SlashCommands::IssueClose), singleton(Gitlab::SlashCommands::IssueComment), singleton(Gitlab::SlashCommands::Deploy), singleton(Gitlab::SlashCommands::Run)])
+      def match_command: () -> [untyped, untyped]
+    end
+  end
+end

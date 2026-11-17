@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Middleware
+    class DatabaseSelector
+      def initialize: (untyped, ?untyped, ?untyped, ?untyped) -> void
+    end
+  end
+end

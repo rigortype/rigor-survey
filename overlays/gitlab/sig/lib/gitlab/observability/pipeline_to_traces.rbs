@@ -1,0 +1,7 @@
+module Gitlab
+  module Observability
+    class PipelineToTraces < ::Gitlab::Observability::PipelineConverterBase
+      def convert: () -> ({ resourceSpans: [] } | { resourceSpans: [{ resource: { attributes: Array[Hash[Symbol, Hash[Symbol, untyped] | String] | Hash[Symbol, Hash[Symbol, String] | String]] }, scopeSpans: [{ scope: { name: "gitlab-ci-pipeline", version: "1.0.0" }, spans: Array[untyped] }] }] })
+    end
+  end
+end

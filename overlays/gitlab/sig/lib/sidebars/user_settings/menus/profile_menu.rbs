@@ -1,0 +1,10 @@
+module Sidebars
+  module UserSettings
+    module Menus
+      class ProfileMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "profile"
+        def active_routes: () -> { path: "user_settings/profiles#show" }
+      end
+    end
+  end
+end

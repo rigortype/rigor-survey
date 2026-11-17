@@ -1,0 +1,8 @@
+module Clusters
+  module Providers
+    class Aws < ::ApplicationRecord
+      def has_rbac_enabled?: () -> true
+      def knative_pre_installed?: () -> false
+    end
+  end
+end

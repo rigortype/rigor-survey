@@ -1,0 +1,7 @@
+module WebHooks
+  module HasWebHooks
+    def web_hook_failure_redis_key: () -> String
+    def last_failure_redis_key: () -> String
+    def last_webhook_failure: () -> (DateTime | nil)
+  end
+end

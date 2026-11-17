@@ -1,0 +1,7 @@
+module Namespaces
+  class RandomizedSuffixPath
+    def initialize: (untyped) -> void
+    def call: (untyped) -> String
+    def to_s: () -> String
+  end
+end

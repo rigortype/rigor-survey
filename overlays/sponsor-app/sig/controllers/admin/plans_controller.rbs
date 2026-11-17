@@ -1,0 +1,9 @@
+module Admin
+  class PlansController < ::Admin::ApplicationController
+    def index: () -> void
+    def new: () -> void
+    def edit: () -> void
+    def create: () -> void
+    def update: () -> void
+  end
+end

@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Reports
+      module Security
+        class Reports
+          def initialize: (untyped) -> void
+          def get_report: (untyped, untyped) -> Gitlab::Ci::Reports::Security::Report
+          def reports: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

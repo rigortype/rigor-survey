@@ -1,0 +1,5 @@
+module Ci
+  class DeleteObjectsWorker
+    def max_running_jobs: () -> 50
+  end
+end

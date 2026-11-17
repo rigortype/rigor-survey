@@ -1,0 +1,18 @@
+module Gitlab
+  module Auth
+    class AuthFailure < ::Struct[untyped]
+      def reason: () -> untyped
+      def token_id: () -> untyped
+      def requested_scopes: () -> untyped
+      def token_type: () -> untyped
+      def auth_header_type: () -> untyped
+      def reason=: (untyped) -> untyped
+      def token_id=: (untyped) -> untyped
+      def requested_scopes=: (untyped) -> untyped
+      def token_type=: (untyped) -> untyped
+      def auth_header_type=: (untyped) -> untyped
+      def self.new: (?reason: untyped, ?token_id: untyped, ?requested_scopes: untyped, ?token_type: untyped, ?auth_header_type: untyped) -> instance
+      def self.[]: (?reason: untyped, ?token_id: untyped, ?requested_scopes: untyped, ?token_type: untyped, ?auth_header_type: untyped) -> instance
+    end
+  end
+end

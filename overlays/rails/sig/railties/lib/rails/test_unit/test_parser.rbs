@@ -1,0 +1,8 @@
+module Rails
+  module TestUnit
+    module TestParser
+      def self.definition_for: (untyped) -> ([untyped, Range] | nil)
+      def self.ranges: (untyped) -> Hash[untyped, untyped]
+    end
+  end
+end

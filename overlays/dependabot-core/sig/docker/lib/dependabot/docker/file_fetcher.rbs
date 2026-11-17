@@ -1,0 +1,9 @@
+module Dependabot
+  module Docker
+    class FileFetcher < ::Dependabot::Shared::SharedFileFetcher
+      def self.filename_regex: () -> Regexp
+      def self.required_files_message: () -> "Repo must contain a Dockerfile, Containerfile, or Kubernetes YAML files."
+      def fetch_files: () -> Array[untyped]
+    end
+  end
+end

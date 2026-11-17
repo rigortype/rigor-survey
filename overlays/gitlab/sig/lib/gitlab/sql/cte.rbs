@@ -1,0 +1,10 @@
+module Gitlab
+  module SQL
+    class CTE
+      def initialize: (Symbol, untyped, ?materialized: (false | true)) -> void
+      def to_arel: () -> Gitlab::Database::AsWithMaterialized
+      def alias_to: (untyped) -> Arel::Nodes::As
+      def table: () -> Arel::Table
+    end
+  end
+end

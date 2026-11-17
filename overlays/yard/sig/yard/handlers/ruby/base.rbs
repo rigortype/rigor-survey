@@ -1,0 +1,20 @@
+module YARD
+  module Handlers
+    module Ruby
+      class HandlesExtension
+        def initialize: (untyped) -> void
+        def matches?: (untyped) -> bot
+      end
+      class MethodCallWrapper < ::YARD::Handlers::Ruby::HandlesExtension
+        def matches?: (untyped) -> (false | true)
+      end
+      class TestNodeWrapper < ::YARD::Handlers::Ruby::HandlesExtension
+        def matches?: (untyped) -> (false | true)
+      end
+      class Base < ::YARD::Handlers::Base
+        def self.method_call: (?untyped) -> YARD::Handlers::Ruby::MethodCallWrapper
+        def self.meta_type: (untyped) -> YARD::Handlers::Ruby::TestNodeWrapper
+      end
+    end
+  end
+end

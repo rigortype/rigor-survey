@@ -1,0 +1,6 @@
+paths:
+  - app
+plugins:
+  - rigor-sorbet
+cache:
+  path: tmp/.rigor/cache

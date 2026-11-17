@@ -1,0 +1,7 @@
+module BulkImports
+  module FileTransfer
+    class GroupConfig < ::BulkImports::FileTransfer::BaseConfig
+      def skipped_relations: () -> (["members"] | [])
+    end
+  end
+end

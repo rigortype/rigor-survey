@@ -1,0 +1,5 @@
+class MergeRequest < ::ApplicationRecord
+  class MetricsFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

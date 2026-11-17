@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Variables
+      class Collection
+        class LazyItem
+          def initialize: (key: untyped, value_proc: untyped, ?public: untyped, ?file: (false | true), ?masked: (false | true), ?raw: (false | true)) -> void
+          def depends_on: () -> nil
+          def to_s: () -> String
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+class User < ::ApplicationRecord
+  module Confirmation
+    def unconfirmed?: () -> (false | true)
+  end
+end

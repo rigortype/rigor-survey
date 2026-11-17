@@ -1,0 +1,12 @@
+module ActionView
+  module Helpers
+    module AtomFeedHelper
+      class AtomBuilder
+        def initialize: (untyped) -> void
+      end
+      class AtomFeedBuilder < ::ActionView::Helpers::AtomFeedHelper::AtomBuilder
+        def initialize: (untyped, untyped, ?untyped) -> void
+      end
+    end
+  end
+end

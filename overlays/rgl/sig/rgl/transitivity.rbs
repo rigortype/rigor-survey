@@ -1,0 +1,6 @@
+module RGL
+  module Graph
+    def transitive_closure: () -> RGL::DirectedAdjacencyGraph
+    def transitive_reduction: () -> RGL::DirectedAdjacencyGraph
+  end
+end

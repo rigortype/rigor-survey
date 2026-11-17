@@ -1,0 +1,55 @@
+module Rails
+  module Generators
+    class Database
+      def self.build: (untyped) -> (Rails::Generators::Database::MariaDBMySQL2 | Rails::Generators::Database::MariaDBTrilogy | Rails::Generators::Database::MySQL2 | Rails::Generators::Database::Null | Rails::Generators::Database::PostgreSQL | Rails::Generators::Database::SQLite3 | Rails::Generators::Database::Trilogy)
+      def self.all: () -> [Rails::Generators::Database::MySQL2, Rails::Generators::Database::PostgreSQL, Rails::Generators::Database::SQLite3, Rails::Generators::Database::MariaDBMySQL2, Rails::Generators::Database::MariaDBTrilogy]
+      def gem: () -> bot
+      def feature: () -> (Hash[bot, {}] | nil)
+      module MySQL
+        def name: () -> "mysql"
+        def port: () -> 3306
+        def service: () -> Hash[String, "mysql:9.7" | "unless-stopped" | ["default"] | ["mysql-data:/var/lib/mysql"] | Hash[String, "%" | "true"]]
+        def host: () -> "127.0.0.1"
+      end
+      module MariaDB
+        def name: () -> "mariadb"
+        def port: () -> 3306
+        def service: () -> Hash[String, "mariadb:10.5" | "unless-stopped" | ["default"] | ["mariadb-data:/var/lib/mysql"] | Hash[String, "true"]]
+      end
+      class MySQL2 < ::Rails::Generators::Database
+        def template: () -> "config/databases/mysql.yml"
+        def gem: () -> ["mysql2", ["~> 0.5"]]
+        def base_package: () -> "default-mysql-client"
+        def build_package: () -> "default-libmysqlclient-dev"
+        def feature_name: () -> "ghcr.io/rails/devcontainer/features/mysql-client"
+      end
+      class PostgreSQL < ::Rails::Generators::Database
+        def name: () -> "postgres"
+        def template: () -> "config/databases/postgresql.yml"
+        def service: () -> Hash[String, "postgres:18" | "unless-stopped" | ["default"] | ["postgres-data:/var/lib/postgresql"] | Hash[String, "postgres"]]
+        def port: () -> 5432
+        def gem: () -> ["pg", ["~> 1.1"]]
+        def base_package: () -> "postgresql-client"
+        def build_package: () -> "libpq-dev"
+        def feature_name: () -> "ghcr.io/rails/devcontainer/features/postgres-client"
+      end
+      class Trilogy < ::Rails::Generators::Database
+        def template: () -> "config/databases/trilogy.yml"
+        def gem: () -> ["trilogy", ["~> 2.7"]]
+        def base_package: () -> "default-mysql-client"
+        def build_package: () -> nil
+        def feature_name: () -> nil
+      end
+      class SQLite3 < ::Rails::Generators::Database
+        def name: () -> "sqlite3"
+        def template: () -> "config/databases/sqlite3.yml"
+        def service: () -> nil
+        def port: () -> nil
+        def gem: () -> ["sqlite3", [">= 2.1"]]
+        def base_package: () -> "sqlite3"
+        def build_package: () -> nil
+        def feature_name: () -> "ghcr.io/rails/devcontainer/features/sqlite3"
+      end
+    end
+  end
+end

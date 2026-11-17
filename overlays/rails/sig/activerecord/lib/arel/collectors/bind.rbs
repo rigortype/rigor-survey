@@ -1,0 +1,10 @@
+module Arel
+  module Collectors
+    class Bind
+      def <<: (untyped) -> Arel::Collectors::Bind
+      def add_bind: (untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::Bind
+      def add_binds: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Arel::Collectors::Bind
+      def value: () -> Array[untyped]
+    end
+  end
+end

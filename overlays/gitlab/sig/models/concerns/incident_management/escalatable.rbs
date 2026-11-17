@@ -1,0 +1,5 @@
+module IncidentManagement
+  module Escalatable
+    def self.open_status?: (untyped) -> (false | true)
+  end
+end

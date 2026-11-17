@@ -1,0 +1,3 @@
+module Avatarable
+  def uncached_avatar_path: (?only_path: untyped, ?size: untyped) -> (String | nil)
+end

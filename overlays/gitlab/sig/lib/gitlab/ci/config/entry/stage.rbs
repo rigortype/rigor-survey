@@ -1,0 +1,11 @@
+module Gitlab
+  module Ci
+    class Config
+      module Entry
+        class Stage < ::Gitlab::Config::Entry::Node
+          def self.default: () -> "test"
+        end
+      end
+    end
+  end
+end

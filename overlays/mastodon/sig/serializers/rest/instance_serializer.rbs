@@ -1,0 +1,10 @@
+module REST
+  class InstanceSerializer < ::ActiveModel::Serializer[untyped]
+    def thumbnail: () -> ({ url: untyped, blurhash: untyped, versions: { :"@1x" => untyped, :"@2x" => untyped }, description: untyped } | { url: untyped, description: String })
+    def usage: () -> { users: { active_month: untyped } }
+    def configuration: () -> { urls: { streaming: untyped, status: untyped, about: untyped, privacy_policy: untyped, terms_of_service: untyped }, vapid: { public_key: untyped }, accounts: { max_display_name_length: 40, max_note_length: 500, max_avatar_description_length: 150, max_header_description_length: 150, max_featured_tags: 10, max_pinned_statuses: 5, max_profile_fields: 4, profile_field_name_limit: 255, profile_field_value_limit: 255 }, statuses: { max_characters: 500, max_media_attachments: 4, characters_reserved_per_url: 23 }, media_attachments: { description_limit: 10000, image_matrix_limit: 33177600, image_size_limit: untyped, supported_mime_types: untyped, video_frame_rate_limit: 120, video_matrix_limit: 8294400, video_size_limit: untyped }, polls: { max_options: 4, max_characters_per_option: 50, min_expiration: untyped, max_expiration: untyped }, translation: { enabled: untyped }, timelines_access: { live_feeds: { local: untyped, remote: untyped }, hashtag_feeds: { local: untyped, remote: untyped }, trending_link_feeds: { local: untyped, remote: untyped } }, limited_federation: untyped }
+    def registrations: () -> { enabled: untyped, approval_required: untyped, reason_required: untyped, message: untyped, min_age: untyped, url: String | nil, oauth: true }
+    def api_versions: () -> { mastodon: 12 }
+    def wrapstodon: () -> (Integer | nil)
+  end
+end

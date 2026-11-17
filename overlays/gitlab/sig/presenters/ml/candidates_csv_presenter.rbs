@@ -1,0 +1,5 @@
+module Ml
+  class CandidatesCsvPresenter
+    def initialize: (untyped, project: untyped) -> void
+  end
+end

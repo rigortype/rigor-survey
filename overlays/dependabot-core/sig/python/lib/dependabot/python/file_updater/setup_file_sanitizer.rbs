@@ -1,0 +1,10 @@
+module Dependabot
+  module Python
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      class SetupFileSanitizer
+        def initialize: (setup_file: untyped, setup_cfg: untyped) -> void
+        def sanitized_content: () -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Dependabot
+  module GoModules
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def initialize: (dependencies: untyped, dependency_files: untyped, credentials: untyped, ?repo_contents_path: untyped, ?options: untyped) -> void
+      def updated_dependency_files: () -> Array[Dependabot::DependencyFile]
+    end
+  end
+end

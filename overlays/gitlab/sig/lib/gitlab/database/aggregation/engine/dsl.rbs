@@ -1,0 +1,15 @@
+module Gitlab
+  module Database
+    module Aggregation
+      class Engine
+        module Dsl
+          def transients: () -> Hash[untyped, untyped]
+          def filters: () ?{ (*untyped) -> untyped } -> (Array[untyped] | nil)
+          def dimensions: () ?{ (*untyped) -> untyped } -> (Array[untyped] | nil)
+          def metrics: () ?{ (*untyped) -> untyped } -> (Array[untyped] | nil)
+          def measurements: () -> Hash[untyped, untyped]
+        end
+      end
+    end
+  end
+end

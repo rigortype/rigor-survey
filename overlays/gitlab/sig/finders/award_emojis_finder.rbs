@@ -1,0 +1,4 @@
+class AwardEmojisFinder
+  def initialize: (untyped, ?{ awarded_by: Float } | { awarded_by: untyped } | { awarded_by: String } | { name: untyped } | { name: String }) -> void
+  def params: () -> ({ awarded_by: "not-an-id" } | { awarded_by: Float } | { awarded_by: untyped } | { name: "8ball" } | { name: untyped })
+end

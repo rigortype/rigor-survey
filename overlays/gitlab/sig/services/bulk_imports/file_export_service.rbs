@@ -1,0 +1,9 @@
+module BulkImports
+  class FileExportService
+    def initialize: (untyped, String | nil, untyped) -> void
+    def execute: (?untyped) -> (false | true)
+    def export_batch: (untyped) -> (false | true)
+    def exported_filename: () -> String
+    def export_path: () -> (String | nil)
+  end
+end

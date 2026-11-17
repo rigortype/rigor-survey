@@ -1,0 +1,17 @@
+module Redmine
+  module Scm
+    module Adapters
+      class CvsAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.sq_bin: () -> String
+        def initialize: (String, ?untyped, ?nil, ?nil, ?String) -> void
+        def info: () -> Redmine::Scm::Adapters::Info
+        def diff: (untyped, untyped, ?untyped) -> (Array[untyped] | nil)
+        def annotate: (untyped, ?untyped) -> Redmine::Scm::Adapters::Annotate
+      end
+      class CvsRevisionHelper
+        def initialize: (untyped) -> void
+        def isBranchRevision: () -> (false | true)
+      end
+    end
+  end
+end

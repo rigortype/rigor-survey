@@ -1,0 +1,11 @@
+module Gitlab
+  module BitbucketImport
+    module ParallelScheduling
+      def initialize: (untyped) -> void
+      def already_enqueued_cache_key: () -> String
+      def job_waiter_cache_key: () -> String
+      def job_waiter_remaining_cache_key: () -> String
+      def page_keyset: () -> Gitlab::Import::PageKeyset
+    end
+  end
+end

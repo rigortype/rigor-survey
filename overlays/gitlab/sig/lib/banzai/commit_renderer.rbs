@@ -1,0 +1,5 @@
+module Banzai
+  module CommitRenderer
+    def self.render: (untyped, untyped, ?untyped) -> Array[Symbol]
+  end
+end

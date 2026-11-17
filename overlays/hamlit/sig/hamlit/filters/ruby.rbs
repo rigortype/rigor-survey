@@ -1,0 +1,7 @@
+module Hamlit
+  class Filters
+    class Ruby < ::Hamlit::Filters::Base
+      def compile: (untyped) -> [:code, untyped]
+    end
+  end
+end

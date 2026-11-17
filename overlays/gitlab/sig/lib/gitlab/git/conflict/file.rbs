@@ -1,0 +1,11 @@
+module Gitlab
+  module Git
+    module Conflict
+      class File
+        def initialize: (untyped, untyped, untyped, untyped) -> void
+        def lines: () -> (Array[untyped] | nil)
+        def line_code: (untyped) -> String
+      end
+    end
+  end
+end

@@ -1,0 +1,12 @@
+module Gitlab
+  class ConanToken
+    def self.from_personal_access_token: (untyped, untyped) -> (Gitlab::ConanToken | nil)
+    def self.from_job: (untyped) -> (Gitlab::ConanToken | nil)
+    def self.from_deploy_token: (untyped) -> Gitlab::ConanToken
+    def self.try_decode: (untyped, untyped) -> (Gitlab::ConanToken | nil)
+    def initialize: (access_token_id: Integer, user_id: Integer, ?expire_at: untyped) -> void
+    def to_jwt: () -> String
+    def access_token_id: () -> 123
+    def user_id: () -> 456
+  end
+end

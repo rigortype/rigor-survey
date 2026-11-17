@@ -1,0 +1,6 @@
+module TestHooks
+  class BaseService
+    def initialize: (untyped, untyped, untyped) -> void
+    def error: (untyped) -> ServiceResponse
+  end
+end

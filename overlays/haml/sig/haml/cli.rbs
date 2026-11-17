@@ -1,0 +1,7 @@
+module Haml
+  class CLI < ::Thor
+    def render: (untyped) -> nil
+    def compile: (untyped) -> nil
+    def version: () -> nil
+  end
+end

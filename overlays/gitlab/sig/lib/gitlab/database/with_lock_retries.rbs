@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    class WithLockRetries
+      def initialize: (connection: untyped, ?logger: untyped, ?allow_savepoints: untyped, ?timing_configuration: untyped, ?klass: untyped, ?env: untyped) -> void
+      def current_iteration: () -> (1 | Integer)
+      def log_params: () -> Hash[untyped, untyped]
+    end
+  end
+end

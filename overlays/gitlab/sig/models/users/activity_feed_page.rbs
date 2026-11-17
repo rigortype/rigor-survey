@@ -1,0 +1,5 @@
+module Users
+  class ActivityFeedPage
+    def initialize: (untyped, feed_limit: untyped, probe_limit: untyped, viewer: untyped, target_user: untyped) -> void
+  end
+end

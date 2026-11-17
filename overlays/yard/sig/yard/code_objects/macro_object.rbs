@@ -1,0 +1,10 @@
+module YARD
+  module CodeObjects
+    class MacroObject < ::YARD::CodeObjects::Base
+      def self.create: (untyped, untyped, ?untyped) -> YARD::CodeObjects::MacroObject
+      def attached?: () -> (false | true)
+      def path: () -> String
+      def sep: () -> "."
+    end
+  end
+end

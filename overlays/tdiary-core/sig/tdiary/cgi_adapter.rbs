@@ -1,0 +1,18 @@
+module TDiary
+  class CGIAdapter
+    def self.url_scheme: (untyped) -> ("http" | "https")
+    def self.write_error: (untyped, untyped) -> Array[String]
+    class PlainCGIRequest < ::Struct[untyped]
+      def env: () -> untyped
+      def in: () -> untyped
+      def out: () -> untyped
+      def err: () -> untyped
+      def env=: (untyped) -> untyped
+      def in=: (untyped) -> untyped
+      def out=: (untyped) -> untyped
+      def err=: (untyped) -> untyped
+      def self.new: (?env: untyped, ?in: untyped, ?out: untyped, ?err: untyped) -> instance | (?untyped env, ?untyped in, ?untyped out, ?untyped err) -> instance
+      def self.[]: (?env: untyped, ?in: untyped, ?out: untyped, ?err: untyped) -> instance | (?untyped env, ?untyped in, ?untyped out, ?untyped err) -> instance
+    end
+  end
+end

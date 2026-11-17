@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ConcurrencyLimit
+      class ConcurrencyLimitService
+        def initialize: (untyped) -> void
+        def self.drop_matching_jobs!: (untyped, untyped, ?timeout: untyped) -> ({ completed: untyped, deleted_jobs: untyped } | { completed: true, deleted_jobs: 0 })
+      end
+    end
+  end
+end

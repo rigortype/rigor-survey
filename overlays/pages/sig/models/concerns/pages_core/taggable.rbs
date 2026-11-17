@@ -1,0 +1,7 @@
+module PagesCore
+  module Taggable
+    def serialized_tags=: (untyped) -> Array[untyped]
+    def tag_with: (*untyped) -> Array[untyped]
+    def tag_list=: (untyped) -> Array[untyped]
+  end
+end

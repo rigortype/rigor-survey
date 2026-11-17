@@ -1,0 +1,8 @@
+module Ci
+  module PipelineProcessing
+    class AtomicProcessingService
+      def initialize: (untyped) -> void
+      def collection: () -> Ci::PipelineProcessing::AtomicProcessingService::StatusCollection
+    end
+  end
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module Graphql
+    module Deprecations
+      def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+      def visible?: (untyped) -> (false | true)
+    end
+  end
+end

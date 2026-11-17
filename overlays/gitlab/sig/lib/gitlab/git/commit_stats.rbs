@@ -1,0 +1,7 @@
+module Gitlab
+  module Git
+    class CommitStats
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

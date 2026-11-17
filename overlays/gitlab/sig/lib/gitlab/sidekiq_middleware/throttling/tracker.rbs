@@ -1,0 +1,10 @@
+module Gitlab
+  module SidekiqMiddleware
+    module Throttling
+      class Tracker
+        def self.lookup_key: () -> "sidekiq:throttling:worker:lookup:throttled"
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module I18n
+    module Pluralization
+      module FastGettextClassMethods
+        def pluralisation_rule: () -> singleton(Gitlab::I18n::Pluralization)
+      end
+    end
+  end
+end

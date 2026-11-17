@@ -1,0 +1,8 @@
+module Ci
+  class SecureFile < ::Ci::ApplicationRecord
+    def checksum_algorithm: () -> "sha256"
+    def file_extension: () -> (String | nil)
+    def metadata_parsable?: () -> (false | true)
+    def metadata_parser: () -> (Gitlab::Ci::SecureFiles::Cer | Gitlab::Ci::SecureFiles::MobileProvision | Gitlab::Ci::SecureFiles::P12 | nil)
+  end
+end

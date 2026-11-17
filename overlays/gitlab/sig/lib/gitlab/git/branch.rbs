@@ -1,0 +1,11 @@
+module Gitlab
+  module Git
+    class Branch < ::Gitlab::Git::Ref
+      def self.from_ref: (untyped, untyped, ?commit: untyped) -> Gitlab::Git::Branch
+      def stale?: () -> (false | true)
+      def state: () -> (:active | :stale)
+      def cache_key: () -> String
+      def project: () -> (Project | nil)
+    end
+  end
+end

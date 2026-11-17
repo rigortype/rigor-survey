@@ -1,0 +1,5 @@
+module Packages
+  class PackageFilesFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

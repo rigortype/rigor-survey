@@ -1,0 +1,5 @@
+module API
+  class CargoProjectPackages < ::API::Base
+    def cargo_registry_url: () -> URI::Generic
+  end
+end

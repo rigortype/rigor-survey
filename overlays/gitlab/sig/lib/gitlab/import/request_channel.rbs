@@ -1,0 +1,8 @@
+module Gitlab
+  module Import
+    module RequestChannel
+      def self.detect: (untyped) -> (:api | :congregate)
+      def self.congregate?: (untyped) -> (false | true)
+    end
+  end
+end

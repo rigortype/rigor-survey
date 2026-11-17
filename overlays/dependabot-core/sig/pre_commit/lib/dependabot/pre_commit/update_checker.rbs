@@ -1,0 +1,8 @@
+module Dependabot
+  module PreCommit
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_version: () -> (Gem::Version | String | nil)
+      def latest_resolvable_version: () -> (Gem::Version | String | nil)
+    end
+  end
+end

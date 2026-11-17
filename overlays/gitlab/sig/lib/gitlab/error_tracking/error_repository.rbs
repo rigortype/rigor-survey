@@ -1,0 +1,17 @@
+module Gitlab
+  module ErrorTracking
+    class ErrorRepository
+      def self.build: (untyped) -> Gitlab::ErrorTracking::ErrorRepository
+      def initialize: (untyped) -> void
+      def report_error: (name: untyped, description: untyped, actor: untyped, platform: untyped, environment: untyped, level: untyped, ?occurred_at: untyped, ?payload: untyped) -> nil
+      class Pagination < ::Struct[untyped]
+        def next: () -> untyped
+        def prev: () -> untyped
+        def next=: (untyped) -> untyped
+        def prev=: (untyped) -> untyped
+        def self.new: (?next: untyped, ?prev: untyped) -> instance | (?untyped next, ?untyped prev) -> instance
+        def self.[]: (?next: untyped, ?prev: untyped) -> instance | (?untyped next, ?untyped prev) -> instance
+      end
+    end
+  end
+end

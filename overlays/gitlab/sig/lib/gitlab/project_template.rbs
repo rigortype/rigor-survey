@@ -1,0 +1,17 @@
+module Gitlab
+  class ProjectTemplate
+    def initialize: (String, String, String, String | nil, ?untyped) -> void
+    def archive_filename: () -> String
+    def clone_url: () -> String
+    def project_host: () -> (String | nil)
+    def project_path: () -> String
+    def uri_encoded_project_path: () -> String
+    def self.localized_templates_table: () -> [Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate]
+    def self.all: () -> [Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate, Gitlab::ProjectTemplate]
+    def self.find: (untyped) -> (Gitlab::ProjectTemplate | nil)
+    def title: () -> ("Phoenix Framework" | "title")
+    def name: () -> ("name" | "phoenix")
+    def description: () -> ("Phoenix description" | "description")
+    def preview: () -> ("https://gitlab.com/some/project/path" | "link-to-template" | nil)
+  end
+end

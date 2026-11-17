@@ -1,0 +1,7 @@
+module VsCode
+  module Settings
+    class CreateOrUpdateService
+      def initialize: (current_user: untyped, ?params: untyped) -> void
+    end
+  end
+end

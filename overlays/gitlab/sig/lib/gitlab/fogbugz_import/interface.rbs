@@ -1,0 +1,7 @@
+module Gitlab
+  module FogbugzImport
+    class Interface
+      def initialize: (?untyped) -> void
+    end
+  end
+end

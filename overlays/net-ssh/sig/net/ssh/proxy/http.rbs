@@ -1,0 +1,11 @@
+module Net
+  module SSH
+    module Proxy
+      class HTTP
+        def initialize: (String, ?untyped, ?untyped) -> void
+        def open: (untyped, untyped, untyped) -> Socket
+        def proxy_host: () -> ("" | "localhost")
+      end
+    end
+  end
+end

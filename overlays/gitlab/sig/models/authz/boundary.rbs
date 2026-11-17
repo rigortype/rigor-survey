@@ -1,0 +1,29 @@
+module Authz
+  class Boundary
+    def self.for: (untyped) -> (Authz::Boundary::GroupBoundary | Authz::Boundary::NilBoundary | Authz::Boundary::PersonalProjectsBoundary | Authz::Boundary::ProjectBoundary | nil)
+    def self.strategy_for_type: (untyped) -> (nil | singleton(Authz::Boundary::GroupBoundary) | singleton(Authz::Boundary::ProjectBoundary))
+    class Base
+      def self.declarative_policy_class: () -> "Authz::BoundaryPolicy"
+      def initialize: (untyped) -> void
+    end
+    class GroupBoundary < ::Authz::Boundary::Base
+      def self.record_class: () -> singleton(Group)
+      def self.namespace_association: () -> nil
+      def access: () -> :selected_memberships
+      def type_label: () -> "group"
+    end
+    class ProjectBoundary < ::Authz::Boundary::Base
+      def self.record_class: () -> singleton(Project)
+      def self.namespace_association: () -> :project_namespace
+      def access: () -> :selected_memberships
+      def type_label: () -> "project"
+    end
+    class PersonalProjectsBoundary < ::Authz::Boundary::Base
+      def access: () -> :personal_projects
+    end
+    class NilBoundary < ::Authz::Boundary::Base
+      def namespace: () -> nil
+      def path: () -> nil
+    end
+  end
+end

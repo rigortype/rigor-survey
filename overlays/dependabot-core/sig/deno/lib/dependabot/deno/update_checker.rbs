@@ -1,0 +1,7 @@
+module Dependabot
+  module Deno
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      def latest_resolvable_version: () -> (Gem::Version | String | nil)
+    end
+  end
+end

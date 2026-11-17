@@ -1,0 +1,14 @@
+module ActiveSupport
+  module Inflector
+    class Inflections
+      def self.instance: (?untyped) -> ActiveSupport::Inflector::Inflections
+      def initialize_dup: (untyped) -> Regexp
+      def acronym: (untyped) -> Regexp
+      class Uncountables
+        def delete: (untyped) -> nil
+        def <<: (untyped) -> ActiveSupport::Inflector::Inflections::Uncountables
+        def add: (untyped) -> ActiveSupport::Inflector::Inflections::Uncountables
+      end
+    end
+  end
+end

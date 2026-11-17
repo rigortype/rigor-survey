@@ -1,0 +1,7 @@
+module Groups
+  module ProjectsRequiringAuthorizationsRefresh
+    class OnDirectMembershipFinder < ::Groups::ProjectsRequiringAuthorizationsRefresh::Base
+      def execute: () -> Array[untyped]
+    end
+  end
+end

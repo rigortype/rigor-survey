@@ -1,0 +1,8 @@
+module Gitlab
+  module DatabaseImporters
+    module AdminOrganizationImporter
+      def self.default_username_for: (untyped) -> ("root" | String)
+      def self.cell_suffix: () -> String
+    end
+  end
+end

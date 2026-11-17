@@ -1,0 +1,3 @@
+class SponsorshipWelcomeJob < ::ApplicationJob
+  def perform: (Sponsorship) -> void
+end

@@ -1,0 +1,7 @@
+module ActiveRecord
+  class PredicateBuilder
+    class ComparisonAttribute < ::Arel::Attributes::Attribute
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

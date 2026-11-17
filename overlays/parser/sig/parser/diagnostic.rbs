@@ -1,0 +1,9 @@
+module Parser
+  class Diagnostic
+    def initialize: (Symbol, Symbol, Parser::Source::Range | nil | { character: String } | { token: String } | {}, Range[Integer] | Parser::Source::Range | [Parser::Source::Range | nil] | nil, ?[Parser::Source::Range, Parser::Source::Range]) -> void
+    def render: () -> ([String, String, String, String, String] | [String, String, String])
+    def level: () -> (:error | :fatal | :foobar | :warning)
+    def reason: () -> (:escape_eof | :invalid_escape | :unexpected | :unexpected_token)
+    def location: () -> (Range[Integer] | Parser::Source::Range | [Parser::Source::Range | nil] | nil)
+  end
+end

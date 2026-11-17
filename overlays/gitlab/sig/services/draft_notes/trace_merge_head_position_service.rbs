@@ -1,0 +1,6 @@
+module DraftNotes
+  class TraceMergeHeadPositionService
+    def initialize: (untyped, untyped) -> void
+    def drafts: () -> Array[untyped]
+  end
+end

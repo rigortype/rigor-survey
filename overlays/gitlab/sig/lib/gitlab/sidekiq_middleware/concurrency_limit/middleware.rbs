@@ -1,0 +1,11 @@
+module Gitlab
+  module SidekiqMiddleware
+    module ConcurrencyLimit
+      class Middleware
+        def initialize: (String, Hash[String, []]) -> void
+        def job: () -> Hash[String, []]
+        def worker: () -> "UnknownWorker"
+      end
+    end
+  end
+end

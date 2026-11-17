@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Encryption
+    class DeterministicKeyProvider < ::ActiveRecord::Encryption::DerivedSecretKeyProvider
+      def initialize: (untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Verifiers
+      class Never
+        def verify: (untyped) -> true
+        def verify_signature: () ?{ (*untyped) -> untyped } -> true
+      end
+    end
+  end
+end

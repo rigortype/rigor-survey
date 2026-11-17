@@ -1,0 +1,7 @@
+module AuditEvents
+  module GoogleCloud
+    class Authentication
+      def initialize: (scope: untyped) -> void
+    end
+  end
+end

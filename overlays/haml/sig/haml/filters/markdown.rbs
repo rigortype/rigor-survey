@@ -1,0 +1,7 @@
+module Haml
+  class Filters
+    class Markdown < ::Haml::Filters::TiltBase
+      def compile: (untyped) -> (Array[untyped] | [:dynamic, String])
+    end
+  end
+end

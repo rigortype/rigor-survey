@@ -1,0 +1,19 @@
+module ActionCable
+  module Server
+    class ThreadedExecutor
+      def initialize: (?max_size: untyped, ?name: untyped) -> void
+      def timer: (untyped) ?{ (*untyped) -> untyped } -> Concurrent::TimerTask[untyped]
+    end
+    class Base
+      def initialize: (?config: untyped) -> void
+      def restart: () -> nil
+      def remote_connections: () -> ActionCable::RemoteConnections
+      def event_loop: () -> ActionCable::Server::StreamEventLoop
+      def worker_pool: () -> ActionCable::Server::Worker
+      def executor: () -> ActionCable::Server::ThreadedExecutor
+      def new_tagged_logger: (?untyped) ?{ (*untyped) -> untyped } -> ActionCable::Server::TaggedLoggerProxy
+      def allow_request_origin?: (untyped) -> (false | true)
+      def mutex: () -> Monitor
+    end
+  end
+end

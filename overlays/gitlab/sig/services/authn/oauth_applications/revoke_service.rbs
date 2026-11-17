@@ -1,0 +1,8 @@
+module Authn
+  module OauthApplications
+    class RevokeService
+      def initialize: (current_user: untyped, application_id: untyped, ?client: untyped) -> void
+      def execute: () -> ServiceResponse
+    end
+  end
+end

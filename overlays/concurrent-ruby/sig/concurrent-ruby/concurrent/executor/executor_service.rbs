@@ -1,0 +1,8 @@
+module Concurrent
+  module ExecutorService
+    def post: (*untyped) ?{ (*untyped) -> untyped } -> bot
+    def <<: (untyped) -> Concurrent::ExecutorService
+    def can_overflow?: () -> false
+    def serialized?: () -> false
+  end
+end

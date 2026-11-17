@@ -1,0 +1,5 @@
+module Ci
+  class PipelineCreatedEvent < ::Gitlab::EventStore::Event
+    def schema: () -> Hash[String, "object" | ["pipeline_id", "partition_id"] | Hash[String, Hash[String, "integer"] | Hash[String, "object" | ["key", "id"] | Hash[String, Hash[String, "string"]]]]]
+  end
+end

@@ -1,0 +1,7 @@
+module Faraday
+  class Request < ::Struct[untyped]
+    class Instrumentation < ::Faraday::Middleware
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

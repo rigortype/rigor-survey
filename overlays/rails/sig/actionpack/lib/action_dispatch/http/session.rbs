@@ -1,0 +1,14 @@
+module ActionDispatch
+  module Http
+    class Session
+      def self.create: (untyped, untyped, untyped) -> ActionDispatch::Http::Session
+      def self.disabled: (untyped) -> ActionDispatch::Http::Session
+      def initialize: (untyped, untyped, ?enabled: untyped) -> void
+      def destroy: () -> (nil | true)
+      def loaded?: () -> (false | true)
+      class Options
+        def initialize: (untyped, untyped) -> void
+      end
+    end
+  end
+end

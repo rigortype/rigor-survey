@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Locking
+    module Pessimistic
+      def lock!: (?untyped) -> ActiveRecord::Locking::Pessimistic
+    end
+  end
+end

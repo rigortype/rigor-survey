@@ -1,0 +1,5 @@
+module REST
+  class SuggestionSerializer < ::ActiveModel::Serializer[untyped]
+    def source: () -> ("global" | "past_interactions" | "staff" | nil)
+  end
+end

@@ -1,0 +1,8 @@
+module API
+  module Internal
+    class Gitaly < ::API::Base
+      def member_hash: (untyped, is_upstream: untyped) -> { relative_path: String, public: untyped, is_upstream: untyped }
+      def members_for_pool: (untyped) -> Array[untyped]
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Email
+    class Receiver
+      def initialize: (untyped) -> void
+      def mail_metadata: () -> { mail_uid: untyped, from_address: untyped, to_address: untyped, mail_key: untyped, references: untyped, delivered_to: untyped, x_delivered_to: untyped, envelope_to: untyped, x_envelope_to: untyped, x_original_to: untyped, x_forwarded_to: untyped, cc_address: untyped, received_recipients: untyped, meta: { client_id: String, project: untyped } }
+      def mail: () -> Mail::Message
+    end
+  end
+end

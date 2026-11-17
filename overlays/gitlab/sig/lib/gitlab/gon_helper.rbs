@@ -1,0 +1,5 @@
+module Gitlab
+  module GonHelper
+    def default_avatar_url: () -> String
+  end
+end

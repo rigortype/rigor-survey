@@ -1,0 +1,16 @@
+module TDiary
+  module Style
+    class TdiarySection
+      def initialize: (untyped, ?untyped) -> void
+      def to_src: () -> String
+      def to_s: () -> String
+    end
+    class TdiaryDiary
+      def initialize: (Time, String, String, ?untyped) -> void
+      def style: () -> "tDiary"
+      def append: (String, ?untyped) -> TDiary::Style::TdiaryDiary
+      def to_html4: (untyped) -> String
+      def to_chtml: (untyped) -> String
+    end
+  end
+end

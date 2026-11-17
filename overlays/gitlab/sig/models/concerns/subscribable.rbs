@@ -1,0 +1,4 @@
+module Subscribable
+  def subscribed_without_subscriptions?: (untyped, untyped) -> false
+  def subscribers: (untyped) -> ActiveRecord::Relation[User]
+end

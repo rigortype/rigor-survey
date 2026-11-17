@@ -1,0 +1,8 @@
+module ActionController
+  module Instrumentation
+    def initialize: (*untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    module ClassMethods
+      def log_process_action: (untyped) -> Array[untyped]
+    end
+  end
+end

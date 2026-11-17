@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    module Build
+      class Rules
+        class Rule
+          class Clause
+            class If < ::Gitlab::Ci::Build::Rules::Rule::Clause
+              def initialize: (untyped) -> void
+            end
+          end
+        end
+      end
+    end
+  end
+end

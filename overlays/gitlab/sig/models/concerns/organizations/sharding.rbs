@@ -1,0 +1,5 @@
+module Organizations
+  module Sharding
+    def self.skip_isolation_check?: () -> (false | true)
+  end
+end

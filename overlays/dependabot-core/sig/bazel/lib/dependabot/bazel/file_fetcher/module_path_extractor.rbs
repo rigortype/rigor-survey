@@ -1,0 +1,10 @@
+module Dependabot
+  module Bazel
+    class FileFetcher < ::Dependabot::FileFetchers::Base
+      class ModulePathExtractor
+        def initialize: (module_file: untyped) -> void
+        def extract_paths: () -> [Array[String], Array[String]]
+      end
+    end
+  end
+end

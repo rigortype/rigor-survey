@@ -1,0 +1,7 @@
+module PagesCore
+  class Sitemap
+    def initialize: () ?{ (*untyped) -> untyped } -> void
+    def self.sitemaps: () -> []
+    def entries: () -> Hash[untyped, untyped]
+  end
+end

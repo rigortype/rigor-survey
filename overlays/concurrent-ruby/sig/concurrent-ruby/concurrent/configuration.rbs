@@ -1,0 +1,5 @@
+module Concurrent
+  def self.global_immediate_executor: () -> Concurrent::ImmediateExecutor
+  def self.new_fast_executor: (?untyped) -> Concurrent::FixedThreadPool
+  def self.new_io_executor: (?untyped) -> Concurrent::CachedThreadPool
+end

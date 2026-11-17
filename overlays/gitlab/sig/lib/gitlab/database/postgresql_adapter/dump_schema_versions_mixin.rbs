@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module PostgresqlAdapter
+      module DumpSchemaVersionsMixin
+        def dump_schema_information: () -> nil
+      end
+    end
+  end
+end

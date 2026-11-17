@@ -1,0 +1,5 @@
+module Integrations
+  module HasDataFields
+    def data_fields: () -> bot
+  end
+end

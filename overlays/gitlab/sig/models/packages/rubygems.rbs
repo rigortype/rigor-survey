@@ -1,0 +1,5 @@
+module Packages
+  module Rubygems
+    def self.table_name_prefix: () -> "packages_rubygems_"
+  end
+end

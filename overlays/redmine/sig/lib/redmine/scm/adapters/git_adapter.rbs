@@ -1,0 +1,16 @@
+module Redmine
+  module Scm
+    module Adapters
+      class GitAdapter < ::Redmine::Scm::Adapters::AbstractAdapter
+        def self.sq_bin: () -> String
+        def self.client_available: () -> (false | true)
+        def info: () -> (Redmine::Scm::Adapters::Info | nil)
+        def branches: () -> (Array[untyped] | nil)
+        def lastrev: (String, String) -> (Redmine::Scm::Adapters::GitAdapter::Revision | nil)
+        def diff: (String | nil, String, ?String) -> (Array[untyped] | nil)
+        def annotate: (String, ?String) -> (Redmine::Scm::Adapters::Annotate | nil)
+        def valid_name?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

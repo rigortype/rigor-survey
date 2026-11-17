@@ -1,0 +1,6 @@
+module ActiveRecord
+  class FilterAttributeHandler
+    def initialize: (untyped) -> void
+    def enable: () -> false
+  end
+end

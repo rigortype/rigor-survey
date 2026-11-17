@@ -1,0 +1,10 @@
+module Dependabot
+  module Gradle
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def to_s: () -> String
+      def prerelease?: () -> (false | true)
+      def <=>: (untyped) -> (0 | Integer)
+    end
+  end
+end

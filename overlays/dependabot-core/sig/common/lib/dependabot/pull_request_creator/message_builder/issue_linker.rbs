@@ -1,0 +1,9 @@
+module Dependabot
+  class PullRequestCreator
+    class MessageBuilder
+      class IssueLinker
+        def initialize: (source_url: untyped) -> void
+      end
+    end
+  end
+end

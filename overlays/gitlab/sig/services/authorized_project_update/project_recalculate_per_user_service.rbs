@@ -1,0 +1,5 @@
+module AuthorizedProjectUpdate
+  class ProjectRecalculatePerUserService < ::AuthorizedProjectUpdate::ProjectRecalculateService
+    def initialize: (untyped, untyped) -> void
+  end
+end

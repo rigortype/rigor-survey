@@ -1,0 +1,8 @@
+module PagesCore
+  module Generators
+    class InstallGenerator < ::Rails::Generators::Base
+      def default_app_name: () -> (String | nil)
+      def read_configuration!: () -> nil
+    end
+  end
+end

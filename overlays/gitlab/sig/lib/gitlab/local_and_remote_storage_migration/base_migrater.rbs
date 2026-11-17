@@ -1,0 +1,7 @@
+module Gitlab
+  module LocalAndRemoteStorageMigration
+    class BaseMigrater
+      def initialize: (?untyped) -> void
+    end
+  end
+end

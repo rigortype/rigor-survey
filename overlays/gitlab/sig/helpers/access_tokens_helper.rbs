@@ -1,0 +1,8 @@
+module AccessTokensHelper
+  def show_group_access_tokens_premium_offer?: (untyped) -> false
+  def scope_description: (untyped) -> ([:doorkeeper, :group_access_token_scope_desc] | [:doorkeeper, :project_access_token_scope_desc] | [:doorkeeper, :scope_desc])
+  def tokens_app_data: () -> String
+  def personal_access_token_data: (untyped, ?untyped) -> { access_token: Hash[untyped, untyped] }
+  def expires_at_field_data: () -> { min_date: String, max_date: untyped, max_expiration_days: 365 | 400 | nil, pat_expiration_required: untyped }
+  def show_project_access_token_upgrade_card?: (untyped) -> false
+end

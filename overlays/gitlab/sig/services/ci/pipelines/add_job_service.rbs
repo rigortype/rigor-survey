@@ -1,0 +1,8 @@
+module Ci
+  module Pipelines
+    class AddJobService
+      def initialize: (untyped) -> void
+      def execute!: (untyped) ?{ (*untyped) -> untyped } -> ServiceResponse
+    end
+  end
+end

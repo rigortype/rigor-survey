@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    module CursorBasedKeyset
+      def self.available_for_type?: (untyped) -> (false | true)
+      def self.available?: (untyped, untyped) -> (false | true)
+      def self.enforced_for_type?: (untyped, untyped, untyped) -> (false | true)
+      def self.order_satisfied?: (untyped, untyped) -> (false | true)
+    end
+  end
+end

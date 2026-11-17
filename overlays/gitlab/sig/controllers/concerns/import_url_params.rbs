@@ -1,0 +1,3 @@
+module ImportUrlParams
+  def import_url_params: () -> ({ import_url: untyped, import_type: "git" } | {})
+end

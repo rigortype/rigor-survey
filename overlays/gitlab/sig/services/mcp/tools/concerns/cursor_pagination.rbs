@@ -1,0 +1,10 @@
+module Mcp
+  module Tools
+    module Concerns
+      module CursorPagination
+        def self.param_schema: (untyped, untyped, untyped, untyped, untyped) -> ({ type: "integer", description: String, minimum: 1, maximum: 100 } | { type: "string", description: String })
+        def self.page_size?: (untyped) -> (false | true)
+      end
+    end
+  end
+end

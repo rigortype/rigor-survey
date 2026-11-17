@@ -1,0 +1,4 @@
+class Array[unchecked out E]
+  def to_fenwick_tree: () -> FenwickTree
+  def to_priority_queue: () -> PriorityQueue
+end

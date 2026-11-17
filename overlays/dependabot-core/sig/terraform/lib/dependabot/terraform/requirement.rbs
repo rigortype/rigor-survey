@@ -1,0 +1,8 @@
+module Dependabot
+  module Terraform
+    class Requirement < ::Dependabot::Requirement
+      def self.requirements_array: (untyped) -> [Dependabot::Terraform::Requirement]
+      def initialize: (*untyped) -> void
+    end
+  end
+end

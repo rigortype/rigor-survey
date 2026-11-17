@@ -1,0 +1,5 @@
+module PagesCore
+  class PagesPlugin < ::PagesCore::Plugin
+    def self.configure_localizations!: () -> true
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Access
+    class DefaultBranchProtection
+      def initialize: (untyped) -> void
+      def code_owner_approval_required?: () -> (false | true)
+      def allow_force_push?: () -> (false | true)
+      def can_initial_push?: (untyped) -> (false | true)
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Multiplex
+      class Client
+        def initialize: (untyped, timeout: untyped, ?logger: untyped) -> void
+        def connect_proxy: () -> (Socket | nil)
+      end
+    end
+  end
+end

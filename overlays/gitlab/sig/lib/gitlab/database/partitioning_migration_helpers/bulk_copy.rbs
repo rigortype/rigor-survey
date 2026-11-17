@@ -1,0 +1,9 @@
+module Gitlab
+  module Database
+    module PartitioningMigrationHelpers
+      class BulkCopy
+        def initialize: (untyped, untyped, untyped, connection: untyped) -> void
+      end
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module ActiveStorage
+  module Transformers
+    class Transformer
+      def initialize: (untyped) -> void
+    end
+  end
+end

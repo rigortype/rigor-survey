@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module Presentable
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

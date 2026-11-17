@@ -1,0 +1,17 @@
+module Gitlab
+  class LanguageDetection
+    def initialize: (untyped, untyped) -> void
+    class DetectedLanguage < ::Struct[untyped]
+      def name: () -> untyped
+      def share: () -> untyped
+      def color: () -> untyped
+      def language_id: () -> untyped
+      def name=: (untyped) -> untyped
+      def share=: (untyped) -> untyped
+      def color=: (untyped) -> untyped
+      def language_id=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?share: untyped, ?color: untyped, ?language_id: untyped) -> instance
+      def self.[]: (?name: untyped, ?share: untyped, ?color: untyped, ?language_id: untyped) -> instance
+    end
+  end
+end

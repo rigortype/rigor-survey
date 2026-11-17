@@ -1,0 +1,12 @@
+module Net
+  module SSH
+    module Transport
+      class OpenSSLAESCTR < ::SimpleDelegator
+        def initialize: (untyped) -> void
+        def block_size: () -> 16
+        def self.block_size: () -> 16
+        def reset: () -> true
+      end
+    end
+  end
+end

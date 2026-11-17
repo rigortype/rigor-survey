@@ -1,0 +1,5 @@
+module DependencyProxy
+  class GroupSetting < ::ApplicationRecord
+    def authorization_header: () -> ({ Authorization: String } | {})
+  end
+end

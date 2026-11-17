@@ -1,0 +1,3 @@
+class FollowRecommendation < ::ApplicationRecord
+  def self.readonly?: () -> true
+end

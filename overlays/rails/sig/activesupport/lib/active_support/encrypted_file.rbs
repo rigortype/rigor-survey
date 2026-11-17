@@ -1,0 +1,14 @@
+module ActiveSupport
+  class EncryptedFile
+    def initialize: (content_path: untyped, key_path: untyped, env_key: untyped, raise_if_missing_key: untyped) -> void
+    def key_path: () -> Pathname
+    class MissingContentError < ::RuntimeError
+      def initialize: (untyped) -> void
+    end
+    class MissingKeyError < ::RuntimeError
+      def initialize: (key_path: untyped, env_key: untyped) -> void
+    end
+    class InvalidKeyLengthError < ::RuntimeError
+    end
+  end
+end

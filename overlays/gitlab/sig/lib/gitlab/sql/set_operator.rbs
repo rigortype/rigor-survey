@@ -1,0 +1,9 @@
+module Gitlab
+  module SQL
+    class SetOperator
+      def self.operator_keyword: () -> bot
+      def initialize: (untyped, ?remove_duplicates: untyped, ?remove_order: untyped) -> void
+      def operator_keyword_fragment: () -> String
+    end
+  end
+end

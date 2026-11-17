@@ -1,0 +1,12 @@
+module Faraday
+  class RackBuilder
+    def initialize: () ?{ (*untyped) -> untyped } -> void
+    def initialize_dup: (untyped) -> nil
+    def locked?: () -> (false | true)
+    class Handler
+      def initialize: (singleton(Apple), *untyped, **untyped) ?{ (*untyped) -> untyped } -> void
+    end
+    class StackLocked < ::RuntimeError
+    end
+  end
+end

@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    class WorkItemsFilterParams
+      def initialize: (untyped, ?resource_parent: untyped) -> void
+    end
+  end
+end

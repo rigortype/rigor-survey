@@ -1,0 +1,6 @@
+module ConnectionPool[T]
+  class SharedConnectionPool < ::ConnectionPool[untyped]
+    def initialize: (**untyped) ?{ (*untyped) -> untyped } -> void
+    def checkin: (untyped) -> nil
+  end
+end

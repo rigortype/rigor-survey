@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      module PullRequests
+        class ReviewRequestImporter
+          def initialize: (untyped, untyped, untyped) -> void
+          def user_finder: () -> Gitlab::GithubImport::UserFinder
+        end
+      end
+    end
+  end
+end

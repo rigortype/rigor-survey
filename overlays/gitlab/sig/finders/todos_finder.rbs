@@ -1,0 +1,4 @@
+class TodosFinder
+  def self.todo_types: () -> Set[untyped]
+  def initialize: (users: untyped, **untyped) -> void
+end

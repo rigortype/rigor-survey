@@ -1,0 +1,7 @@
+module Packages
+  module Cleanup
+    class ExecutePolicyWorker
+      def perform_work: () -> (Array[Symbol] | nil)
+    end
+  end
+end

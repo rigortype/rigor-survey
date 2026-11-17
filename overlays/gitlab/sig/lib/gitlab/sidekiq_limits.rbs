@@ -1,0 +1,24 @@
+module Gitlab
+  module SidekiqLimits
+    def self.limits_for: (untyped) -> Array[untyped]
+    def self.match_rule: (untyped, untyped) -> ([untyped, untyped] | nil)
+    def self.limits_from_application_setting: () -> (Hash[untyped, { resource_key: untyped, metadata: untyped, scopes: untyped, rules: untyped }] | nil)
+    def self.raw_limits: () -> (Hash[untyped, { resource_key: untyped, metadata: untyped, scopes: untyped, rules: untyped }] | { main_db_duration_limit_per_worker: { resource_key: :db_main_duration_s, metadata: { db_config_name: "main" }, scopes: ["worker_name"], rules: [{ selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 100000, interval: 60 }, { selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 20000, interval: 60 }] }, ci_db_duration_limit_per_worker: { resource_key: :db_ci_duration_s, metadata: { db_config_name: "ci" }, scopes: ["worker_name"], rules: [{ selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 100000, interval: 60 }, { selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 20000, interval: 60 }] }, sec_db_duration_limit_per_worker: { resource_key: :db_sec_duration_s, metadata: { db_config_name: "sec" }, scopes: ["worker_name"], rules: [{ selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 100000, interval: 60 }, { selector: Gitlab::SidekiqConfig::WorkerMatcher, threshold: 20000, interval: 60 }] } })
+    class Limit < ::Struct[untyped]
+      def name: () -> untyped
+      def resource_key: () -> untyped
+      def scopes: () -> untyped
+      def metadata: () -> untyped
+      def threshold: () -> untyped
+      def interval: () -> untyped
+      def name=: (untyped) -> untyped
+      def resource_key=: (untyped) -> untyped
+      def scopes=: (untyped) -> untyped
+      def metadata=: (untyped) -> untyped
+      def threshold=: (untyped) -> untyped
+      def interval=: (untyped) -> untyped
+      def self.new: (?name: untyped, ?resource_key: untyped, ?scopes: untyped, ?metadata: untyped, ?threshold: untyped, ?interval: untyped) -> instance | (?untyped name, ?untyped resource_key, ?untyped scopes, ?untyped metadata, ?untyped threshold, ?untyped interval) -> instance
+      def self.[]: (?name: untyped, ?resource_key: untyped, ?scopes: untyped, ?metadata: untyped, ?threshold: untyped, ?interval: untyped) -> instance | (?untyped name, ?untyped resource_key, ?untyped scopes, ?untyped metadata, ?untyped threshold, ?untyped interval) -> instance
+    end
+  end
+end

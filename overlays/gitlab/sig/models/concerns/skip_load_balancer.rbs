@@ -1,0 +1,3 @@
+module SkipLoadBalancer
+  def self.extended: (untyped) -> false
+end

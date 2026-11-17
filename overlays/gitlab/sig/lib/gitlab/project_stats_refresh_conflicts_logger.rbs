@@ -1,0 +1,7 @@
+module Gitlab
+  class ProjectStatsRefreshConflictsLogger
+    def self.warn_artifact_deletion_during_stats_refresh: (project_id: untyped, method: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    def self.warn_request_rejected_during_stats_refresh: (untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+    def self.warn_skipped_artifact_deletion_during_stats_refresh: (project_ids: untyped, method: untyped) -> Array[singleton(Gitlab::AppJsonLogger)]
+  end
+end

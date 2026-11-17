@@ -1,0 +1,10 @@
+module Gitlab
+  module Ci
+    module SecureFiles
+      class P12
+        def initialize: (untyped, ?String) -> void
+        def metadata: () -> ({ issuer: untyped, subject: untyped, id: untyped, expires_at: untyped } | {})
+      end
+    end
+  end
+end

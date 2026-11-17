@@ -1,0 +1,7 @@
+module Gitlab
+  class FakeApplicationSettings
+    def initialize: (?untyped) -> void
+    def method_missing: (*untyped) -> nil
+    def respond_to_missing?: (*untyped) -> true
+  end
+end

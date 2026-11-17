@@ -1,0 +1,9 @@
+module Types
+  module PermissionTypes
+    class BasePermissionType < ::Types::BaseObject
+      def self.permission_field: (untyped, **untyped) ?{ (*untyped) -> untyped } -> GraphQL::Schema::Field
+      def self.define_field_resolver_method: (untyped) -> (Symbol | nil)
+      def self.resolving_keywords?: (untyped) -> (false | true)
+    end
+  end
+end

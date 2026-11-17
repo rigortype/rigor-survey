@@ -1,0 +1,9 @@
+module Concurrent
+  module Edge
+    class LockFreeLinkedSet
+      def initialize: (?Integer, ?false | true) -> void
+      def <<: (untyped) -> Concurrent::Edge::LockFreeLinkedSet
+      def each: () -> (Concurrent::Edge::LockFreeLinkedSet | Enumerator[untyped, Concurrent::Edge::LockFreeLinkedSet])
+    end
+  end
+end

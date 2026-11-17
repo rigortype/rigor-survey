@@ -1,0 +1,7 @@
+module RuboCop
+  module AST
+    class EnsureNode < ::RuboCop::AST::Node
+      def void_context?: () -> true
+    end
+  end
+end

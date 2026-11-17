@@ -1,0 +1,3 @@
+module UpdateRepositoryStorageMethods
+  def initialize: (untyped) -> void
+end

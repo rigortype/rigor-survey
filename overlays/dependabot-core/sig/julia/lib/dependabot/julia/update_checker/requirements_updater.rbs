@@ -1,0 +1,10 @@
+module Dependabot
+  module Julia
+    class RequirementsUpdater
+      def initialize: (requirements: untyped, target_version: untyped, update_strategy: untyped, ?stdlib_versions: untyped) -> void
+      def updated_requirements: () -> Array[Dependabot::DependencyRequirement]
+      def requirements: () -> Array[Dependabot::DependencyRequirement]
+      def update_strategy: () -> Symbol
+    end
+  end
+end

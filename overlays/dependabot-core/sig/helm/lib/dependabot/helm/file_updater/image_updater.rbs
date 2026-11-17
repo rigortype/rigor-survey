@@ -1,0 +1,10 @@
+module Dependabot
+  module Helm
+    class FileUpdater < ::Dependabot::Shared::SharedFileUpdater
+      class ImageUpdater
+        def initialize: (dependency: untyped, dependency_files: untyped) -> void
+        def updated_values_yaml_content: (untyped) -> String
+      end
+    end
+  end
+end

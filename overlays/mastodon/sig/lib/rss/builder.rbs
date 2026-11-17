@@ -1,0 +1,5 @@
+module RSS
+  class Builder
+    def dsl: () -> RSS::Channel
+  end
+end

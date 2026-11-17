@@ -1,0 +1,44 @@
+module Faraday
+  class Adapter
+    class Test < ::Faraday::Adapter
+      def initialize: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> void
+      class Stub < ::Struct[untyped]
+        def host: () -> untyped
+        def path: () -> untyped
+        def query: () -> untyped
+        def headers: () -> untyped
+        def body: () -> untyped
+        def strict_mode: () -> untyped
+        def block: () -> untyped
+        def host=: (untyped) -> untyped
+        def path=: (untyped) -> untyped
+        def query=: (untyped) -> untyped
+        def headers=: (untyped) -> untyped
+        def body=: (untyped) -> untyped
+        def strict_mode=: (untyped) -> untyped
+        def block=: (untyped) -> untyped
+        def self.new: (?host: untyped, ?path: untyped, ?query: untyped, ?headers: untyped, ?body: untyped, ?strict_mode: untyped, ?block: untyped) -> instance | (?untyped host, ?untyped path, ?untyped query, ?untyped headers, ?untyped body, ?untyped strict_mode, ?untyped block) -> instance
+        def self.[]: (?host: untyped, ?path: untyped, ?query: untyped, ?headers: untyped, ?body: untyped, ?strict_mode: untyped, ?block: untyped) -> instance | (?untyped host, ?untyped path, ?untyped query, ?untyped headers, ?untyped body, ?untyped strict_mode, ?untyped block) -> instance
+        def matches?: (untyped) -> [untyped, {}]
+        def to_s: () -> String
+      end
+      class Stubs
+        def initialize: (?strict_mode: untyped) -> void
+        def empty?: () -> (false | true)
+        def match: (untyped) -> ([untyped, untyped] | false | nil)
+        def get: (String, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def head: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def post: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def put: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def patch: (untyped, ?untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def delete: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def options: (untyped, ?untyped) ?{ (*untyped) -> untyped } -> Array[untyped]
+        def clear: () -> Hash[untyped, untyped]
+        def verify_stubbed_calls: () -> nil
+        def strict_mode=: (untyped) -> Hash[untyped, untyped]
+        class NotFound < ::StandardError
+        end
+      end
+    end
+  end
+end

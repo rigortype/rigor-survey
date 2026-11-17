@@ -1,0 +1,5 @@
+module Ci
+  class BuildNameFinder
+    def initialize: (relation: untyped, name: untyped, project: untyped) -> void
+  end
+end

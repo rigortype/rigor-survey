@@ -1,0 +1,9 @@
+module Dependabot
+  module Opentofu
+    class Version < ::Dependabot::Version
+      def initialize: (untyped) -> void
+      def self.new: (untyped) -> Dependabot::Opentofu::Version
+      def to_s: () -> String
+    end
+  end
+end

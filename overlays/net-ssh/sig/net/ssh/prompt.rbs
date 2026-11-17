@@ -1,0 +1,13 @@
+module Net
+  module SSH
+    class Prompt
+      def self.default: (?untyped) -> Net::SSH::Prompt
+      def initialize: (?untyped) -> void
+      def self.askpass: () -> ("" | String | nil)
+      def start: (untyped) -> Net::SSH::Prompt::Prompter
+      class Prompter
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

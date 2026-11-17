@@ -1,0 +1,9 @@
+module TDiary
+  class CLI < ::Thor
+    def self.source_root: () -> String
+    def self.exit_on_failure?: () -> true
+    def assets_copy: () -> Array[untyped]
+    def htpasswd: () -> top
+    def in_tdiary_dir?: (untyped) -> (false | true)
+  end
+end

@@ -1,0 +1,7 @@
+module Mutations
+  module Labels
+    class Create < ::Mutations::BaseMutation
+      def resolve: (untyped) -> { label: untyped, errors: untyped }
+    end
+  end
+end

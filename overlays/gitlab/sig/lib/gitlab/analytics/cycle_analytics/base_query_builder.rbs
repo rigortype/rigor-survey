@@ -1,0 +1,10 @@
+module Gitlab
+  module Analytics
+    module CycleAnalytics
+      class BaseQueryBuilder
+        def initialize: (stage: untyped, ?params: untyped) -> void
+        def params: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

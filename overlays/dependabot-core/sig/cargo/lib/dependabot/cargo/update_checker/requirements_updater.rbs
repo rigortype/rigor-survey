@@ -1,0 +1,14 @@
+module Dependabot
+  module Cargo
+    class UpdateChecker < ::Dependabot::UpdateCheckers::Base
+      class RequirementsUpdater
+        def initialize: (requirements: untyped, updated_source: untyped, update_strategy: untyped, target_version: untyped) -> void
+        def updated_requirements: () -> (Array[Dependabot::DependencyRequirement | ::DependencyRequirement] | Array[Dependabot::DependencyRequirement])
+        def requirements: () -> Array[Dependabot::DependencyRequirement]
+        def target_version: () -> Gem::Version
+        class UnfixableRequirement < ::StandardError
+        end
+      end
+    end
+  end
+end

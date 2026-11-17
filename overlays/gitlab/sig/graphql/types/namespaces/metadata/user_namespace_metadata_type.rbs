@@ -1,0 +1,10 @@
+module Types
+  module Namespaces
+    module Metadata
+      class UserNamespaceMetadataType < ::Types::BaseObject
+        def issue_repositioning_disabled?: () -> false
+        def show_new_work_item?: () -> false
+      end
+    end
+  end
+end

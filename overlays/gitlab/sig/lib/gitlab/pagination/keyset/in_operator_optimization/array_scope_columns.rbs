@@ -1,0 +1,12 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      module InOperatorOptimization
+        class ArrayScopeColumns
+          def initialize: (untyped) -> void
+          def array_scope_cte_name: () -> "array_cte"
+        end
+      end
+    end
+  end
+end

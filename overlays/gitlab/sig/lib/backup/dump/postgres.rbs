@@ -1,0 +1,7 @@
+module Backup
+  module Dump
+    class Postgres
+      def dump: (untyped, untyped) -> (false | true)
+    end
+  end
+end

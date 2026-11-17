@@ -1,0 +1,3 @@
+class NotificationReason
+  def self.priority: (untyped) -> (6 | Integer)
+end

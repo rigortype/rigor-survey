@@ -1,0 +1,15 @@
+module Gitlab
+  module Ci
+    class Trace
+      class ChunkedIO
+        def initialize: (untyped) ?{ (*untyped) -> untyped } -> void
+        def binmode?: () -> true
+        def each_line: () -> nil
+        def read: (?untyped, ?untyped) -> String
+        def readline: () -> String
+        def present?: () -> true
+        def destroy!: () -> 0
+      end
+    end
+  end
+end

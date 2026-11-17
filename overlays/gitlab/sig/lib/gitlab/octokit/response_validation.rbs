@@ -1,0 +1,7 @@
+module Gitlab
+  module Octokit
+    class ResponseValidation < ::Faraday::Middleware
+      def on_complete: (untyped) -> nil
+    end
+  end
+end

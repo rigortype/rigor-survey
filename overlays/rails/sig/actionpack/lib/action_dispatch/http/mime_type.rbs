@@ -1,0 +1,23 @@
+module Mime
+  def self.eager_load!: () -> nil
+  class Type
+    def self.register_alias: (untyped, untyped, ?untyped) -> Mime::Type
+    def self.register: (untyped, untyped, ?untyped, ?untyped, ?untyped) -> Mime::Type
+    def initialize: (untyped, ?untyped, ?untyped) -> void
+    def to_str: () -> String
+    def all?: () -> false
+    class AcceptItem
+      def initialize: (untyped, untyped, ?untyped) -> void
+    end
+    class InvalidMimeType < ::StandardError
+    end
+  end
+  class AllType < ::Mime::Type
+    def all?: () -> true
+    def html?: () -> true
+  end
+  class NullType
+    def nil?: () -> true
+    def to_s: () -> ""
+  end
+end

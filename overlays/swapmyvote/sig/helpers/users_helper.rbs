@@ -1,0 +1,4 @@
+module UsersHelper
+  def potential_swap_expiry_mins: () -> (120 | Integer)
+  def contact_methods: (untyped) -> (Array[untyped] | [untyped])
+end

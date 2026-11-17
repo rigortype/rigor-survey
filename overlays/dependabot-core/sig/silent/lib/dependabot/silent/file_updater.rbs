@@ -1,0 +1,5 @@
+module SilentPackageManager
+  class FileUpdater < ::Dependabot::FileUpdaters::Base
+    def updated_dependency_files: () -> ([] | Array[untyped])
+  end
+end

@@ -1,0 +1,7 @@
+module Dependabot
+  class WorkflowSummary
+    def record_result: (directory: untyped, status: untyped, details: untyped) -> Array[untyped]
+    def write: (command: untyped, package_manager: untyped) -> (nil | true)
+    def build_markdown: (command: untyped, package_manager: untyped) -> String
+  end
+end

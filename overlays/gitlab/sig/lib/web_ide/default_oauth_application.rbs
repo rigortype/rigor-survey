@@ -1,0 +1,6 @@
+module WebIde
+  module DefaultOauthApplication
+    def self.oauth_application_callback_urls: () -> Array[String]
+    def self.default_settings: () -> Hash[String, untyped]
+  end
+end

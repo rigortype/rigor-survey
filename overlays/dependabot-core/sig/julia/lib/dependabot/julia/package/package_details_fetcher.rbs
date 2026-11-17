@@ -1,0 +1,10 @@
+module Dependabot
+  module Julia
+    module Package
+      class PackageDetailsFetcher
+        def initialize: (dependency: untyped, credentials: untyped, ?custom_registries: untyped) -> void
+        def fetch_package_releases: () -> Array[untyped]
+      end
+    end
+  end
+end

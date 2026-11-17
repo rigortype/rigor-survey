@@ -1,0 +1,6 @@
+module Arel
+  module OrderPredications
+    def asc: () -> Arel::Nodes::Ascending
+    def desc: () -> Arel::Nodes::Descending
+  end
+end

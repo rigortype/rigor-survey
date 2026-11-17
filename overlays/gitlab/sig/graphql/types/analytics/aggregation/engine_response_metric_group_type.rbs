@@ -1,0 +1,9 @@
+module Types
+  module Analytics
+    module Aggregation
+      module EngineResponseMetricGroupType
+        def self.build: (untyped, untyped, untyped) -> singleton(Types::BaseObject)
+      end
+    end
+  end
+end

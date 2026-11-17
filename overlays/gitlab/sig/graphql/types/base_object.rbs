@@ -1,0 +1,6 @@
+module Types
+  class BaseObject < ::GraphQL::Schema::Object
+    def self.authorization: () -> Gitlab::Graphql::Authorize::ObjectAuthorization
+    def self.granular_scope_authorization: () -> Gitlab::Graphql::Authz::GranularScopeAuthorization
+  end
+end

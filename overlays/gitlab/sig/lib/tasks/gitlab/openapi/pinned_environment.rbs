@@ -1,0 +1,11 @@
+module Tasks
+  module Gitlab
+    module Openapi
+      module PinnedEnvironment
+        def self.rerun: () -> bot
+        def self.pinned_env: () -> Hash[String, "false" | String | nil]
+        def self.pinned?: () -> (false | true)
+      end
+    end
+  end
+end

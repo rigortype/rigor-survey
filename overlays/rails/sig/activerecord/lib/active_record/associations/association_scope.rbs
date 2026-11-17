@@ -1,0 +1,12 @@
+module ActiveRecord
+  module Associations
+    class AssociationScope
+      def self.create: () ?{ (*untyped) -> untyped } -> ActiveRecord::Associations::AssociationScope
+      def initialize: (untyped) -> void
+      class ReflectionProxy < ::SimpleDelegator
+        def initialize: (untyped, untyped, untyped) -> void
+        def all_includes: () ?{ (*untyped) -> untyped } -> nil
+      end
+    end
+  end
+end

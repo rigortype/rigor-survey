@@ -1,0 +1,5 @@
+module WhereComposite
+  class TooManyIds < ::ArgumentError
+    def initialize: (untyped) -> void
+  end
+end

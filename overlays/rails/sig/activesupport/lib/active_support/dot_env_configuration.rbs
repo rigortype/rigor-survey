@@ -1,0 +1,6 @@
+module ActiveSupport
+  class DotEnvConfiguration < ::ActiveSupport::EnvConfiguration
+    def initialize: (untyped) -> void
+    def reload: () -> Hash[untyped, untyped]
+  end
+end

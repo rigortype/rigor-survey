@@ -1,0 +1,8 @@
+module Gitlab
+  module Email
+    class AttachmentUploader
+      def initialize: (untyped) -> void
+      def execute: (upload_parent: untyped, uploader_class: singleton(FileUploader), ?author: untyped) -> Array[untyped]
+    end
+  end
+end

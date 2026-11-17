@@ -1,0 +1,69 @@
+module ActionDispatch
+  module Journey
+    class Ast
+      def initialize: (untyped, untyped) -> void
+      def names: () -> Array[untyped]
+      def path_params: () -> Array[untyped]
+      def wildcard_options: () -> Hash[untyped, untyped]
+      def terminals: () -> Array[untyped]
+      def symbols: () -> Array[untyped]
+      def stars: () -> Array[untyped]
+    end
+    module Nodes
+      class Node
+        def initialize: (untyped) -> void
+        def type: () -> bot
+        def symbol?: () -> false
+        def literal?: () -> false
+        def terminal?: () -> false
+        def star?: () -> false
+        def group?: () -> false
+      end
+      class Terminal < ::ActionDispatch::Journey::Nodes::Node
+        def terminal?: () -> true
+      end
+      class Literal < ::ActionDispatch::Journey::Nodes::Terminal
+        def literal?: () -> true
+        def type: () -> :LITERAL
+      end
+      class Dummy < ::ActionDispatch::Journey::Nodes::Literal
+        def initialize: (?untyped) -> void
+        def literal?: () -> false
+      end
+      class Slash < ::ActionDispatch::Journey::Nodes::Terminal
+        def type: () -> :SLASH
+      end
+      class Dot < ::ActionDispatch::Journey::Nodes::Terminal
+        def type: () -> :DOT
+      end
+      class Symbol < ::ActionDispatch::Journey::Nodes::Terminal
+        def initialize: (untyped, ?untyped) -> void
+        def type: () -> :SYMBOL
+        def symbol?: () -> true
+      end
+      class Unary < ::ActionDispatch::Journey::Nodes::Node
+        def children: () -> [untyped]
+      end
+      class Group < ::ActionDispatch::Journey::Nodes::Unary
+        def type: () -> :GROUP
+        def group?: () -> true
+      end
+      class Star < ::ActionDispatch::Journey::Nodes::Unary
+        def initialize: (untyped) -> void
+        def star?: () -> true
+        def type: () -> :STAR
+      end
+      class Binary < ::ActionDispatch::Journey::Nodes::Node
+        def initialize: (untyped, untyped) -> void
+        def children: () -> [untyped, untyped]
+      end
+      class Cat < ::ActionDispatch::Journey::Nodes::Binary
+        def type: () -> :CAT
+      end
+      class Or < ::ActionDispatch::Journey::Nodes::Node
+        def initialize: (untyped) -> void
+        def type: () -> :OR
+      end
+    end
+  end
+end

@@ -1,0 +1,9 @@
+module Integrations
+  module ChatMessage
+    class NoteMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def activity: () -> { title: String, subtitle: String, text: untyped, image: untyped }
+      def target: () -> (String | nil)
+    end
+  end
+end

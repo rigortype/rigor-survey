@@ -1,0 +1,8 @@
+module ActiveSupport
+  module NumberHelper
+    class NumberConverter
+      def self.i18n_format_key: () -> Symbol
+      def initialize: (untyped, untyped, ?resolved: untyped) -> void
+    end
+  end
+end

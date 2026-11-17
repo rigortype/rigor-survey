@@ -1,0 +1,22 @@
+module Subscriptions
+  module Notes
+    class Deleted < ::Subscriptions::Notes::Base
+      class DeletedNote < ::Struct[untyped]
+        def model_id: () -> untyped
+        def model_name: () -> untyped
+        def discussion_model_id: () -> untyped
+        def last_discussion_note: () -> untyped
+        def noteable: () -> untyped
+        def model_id=: (untyped) -> untyped
+        def model_name=: (untyped) -> untyped
+        def discussion_model_id=: (untyped) -> untyped
+        def last_discussion_note=: (untyped) -> untyped
+        def noteable=: (untyped) -> untyped
+        def self.new: (?model_id: untyped, ?model_name: untyped, ?discussion_model_id: untyped, ?last_discussion_note: untyped, ?noteable: untyped) -> instance | (?untyped model_id, ?untyped model_name, ?untyped discussion_model_id, ?untyped last_discussion_note, ?untyped noteable) -> instance
+        def self.[]: (?model_id: untyped, ?model_name: untyped, ?discussion_model_id: untyped, ?last_discussion_note: untyped, ?noteable: untyped) -> instance | (?untyped model_id, ?untyped model_name, ?untyped discussion_model_id, ?untyped last_discussion_note, ?untyped noteable) -> instance
+        def to_global_id: () -> GlobalID
+        def discussion_id: () -> GlobalID
+      end
+    end
+  end
+end

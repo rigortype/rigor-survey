@@ -1,0 +1,8 @@
+module ActionController
+  module Testing
+    module Functional
+      def clear_instance_variables_between_requests: () -> Array[Symbol]
+      def recycle!: () -> nil
+    end
+  end
+end

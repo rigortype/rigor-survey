@@ -1,0 +1,9 @@
+module Mcp
+  module Tools
+    module MergeRequests
+      class ListMergeRequestsService < ::Mcp::Tools::Base::GraphqlService
+        def self.tool_aliases: () -> ["gitlab_merge_request_search"]
+      end
+    end
+  end
+end

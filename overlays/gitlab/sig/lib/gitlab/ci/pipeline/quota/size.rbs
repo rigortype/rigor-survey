@@ -1,0 +1,12 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Quota
+        class Size < ::Gitlab::Ci::Limit
+          def initialize: (untyped, untyped, untyped) -> void
+          def message: () -> String
+        end
+      end
+    end
+  end
+end

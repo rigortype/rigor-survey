@@ -1,0 +1,3 @@
+module MergeRequests
+  def self.table_name_prefix: () -> "merge_requests_"
+end

@@ -1,0 +1,9 @@
+module Gitlab
+  module Ci
+    class ProjectConfig
+      def initialize: (project: untyped, sha: untyped, ?custom_content: untyped, ?pipeline_source: untyped, ?pipeline_source_bridge: untyped, ?triggered_for_branch: untyped, ?ref: untyped, ?source_branch: untyped, ?pipeline_policy_context: untyped, ?inputs: untyped) -> void
+      def exists?: () -> (false | true)
+      def external?: () -> (false | true)
+    end
+  end
+end

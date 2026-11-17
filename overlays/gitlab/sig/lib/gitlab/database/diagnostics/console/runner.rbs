@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module Diagnostics
+      module Console
+        class Runner
+          def initialize: (database_names: [String, String], views: untyped, ?output: untyped, ?interactive: (false | true), ?prompt: untyped, ?pager: untyped) -> void
+          def database_names: () -> ["main", "ci"]
+          def printer: () -> Gitlab::Database::Diagnostics::Console::Printer
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,3 @@
+class InstanceFilter
+  def initialize: (untyped) -> void
+end

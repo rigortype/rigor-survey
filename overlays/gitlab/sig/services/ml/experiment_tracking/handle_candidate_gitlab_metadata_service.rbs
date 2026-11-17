@@ -1,0 +1,7 @@
+module Ml
+  module ExperimentTracking
+    class HandleCandidateGitlabMetadataService
+      def initialize: (untyped, untyped) -> void
+    end
+  end
+end

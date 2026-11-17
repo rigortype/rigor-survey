@@ -1,0 +1,12 @@
+module Gitlab
+  module Git
+    class Blame
+      def initialize: (untyped, untyped, untyped, ?range: untyped, ?ignore_revisions_blob: untyped) -> void
+      def each: () -> (Array[Gitlab::Git::BlameLine] | Enumerator[untyped, untyped])
+      def blames: () -> Array[Gitlab::Git::BlameLine]
+    end
+    class BlameLine
+      def initialize: (untyped, untyped, untyped, untyped, untyped, untyped) -> void
+    end
+  end
+end

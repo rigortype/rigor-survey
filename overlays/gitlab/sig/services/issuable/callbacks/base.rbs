@@ -1,0 +1,8 @@
+module Issuable
+  module Callbacks
+    class Base
+      def self.execute_without_params?: () -> false
+      def initialize: (issuable: untyped, current_user: untyped, ?params: untyped) -> void
+    end
+  end
+end

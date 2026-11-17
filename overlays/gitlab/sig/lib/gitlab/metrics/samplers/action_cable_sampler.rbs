@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Samplers
+      class ActionCableSampler < ::Gitlab::Metrics::Samplers::BaseSampler
+        def initialize: (?action_cable: untyped, **untyped) -> void
+        def metrics: () -> { active_connections: untyped, pool_min_size: untyped, pool_max_size: untyped, pool_current_size: untyped, pool_largest_size: untyped, pool_completed_tasks: untyped, pool_pending_tasks: untyped }
+      end
+    end
+  end
+end

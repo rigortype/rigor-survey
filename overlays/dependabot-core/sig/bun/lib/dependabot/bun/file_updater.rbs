@@ -1,0 +1,11 @@
+module Dependabot
+  module Bun
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> Array[Dependabot::DependencyFile]
+      class NoChangeError < ::StandardError
+        def initialize: (message: untyped, error_context: untyped) -> void
+        def sentry_context: () -> { extra: untyped }
+      end
+    end
+  end
+end

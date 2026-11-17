@@ -1,0 +1,12 @@
+module Google
+  module Protobuf
+    class Descriptor
+      def self.new: (*untyped) ?{ (*untyped) -> untyped } -> bot
+      def to_s: () -> String
+      def inspect: () -> String
+      def each_oneof: () ?{ (*untyped) -> untyped } -> nil
+      def each: () ?{ (*untyped) -> untyped } -> nil
+      def msgclass: () -> Class
+    end
+  end
+end

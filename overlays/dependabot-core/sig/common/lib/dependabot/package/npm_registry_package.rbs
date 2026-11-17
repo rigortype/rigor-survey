@@ -1,0 +1,16 @@
+module Dependabot
+  module Package
+    class NpmRegistryPackage < ::T::ImmutableStruct
+      def self.from_json: (untyped) ?{ (*untyped) -> untyped } -> Dependabot::Package::NpmRegistryPackage
+      def self.peer_dependencies: (details: untyped, package_name: untyped, version: untyped) -> Hash[String, String]
+      def self.parse_release: (version: untyped, details: untyped, released_at: untyped) -> Dependabot::Package::NpmRegistryPackage::Release
+      def self.parse_node_requirement: (untyped, untyped) -> (String | nil)
+      def self.object_hash: (untyped, untyped) -> ObjectHash
+      def self.string_map: (untyped, untyped, ?included_keys: untyped) -> Hash[untyped, untyped]
+      def self.optional_string: (untyped, untyped) -> (String | nil)
+      class Release < ::T::ImmutableStruct
+        def package_type: () -> ("git" | "npm")
+      end
+    end
+  end
+end

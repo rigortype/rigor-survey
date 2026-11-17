@@ -1,0 +1,7 @@
+class Trie
+  def remove: (untyped) -> nil
+  def removeUtil: (untyped, untyped, untyped) -> nil
+  class Node
+    def initialize: (?untyped) -> void
+  end
+end

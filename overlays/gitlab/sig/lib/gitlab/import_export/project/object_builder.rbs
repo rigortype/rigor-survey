@@ -1,0 +1,9 @@
+module Gitlab
+  module ImportExport
+    module Project
+      class ObjectBuilder < ::Gitlab::ImportExport::Base::ObjectBuilder
+        def initialize: (singleton(MergeRequestDiffCommit), Hash[String, untyped]) -> void
+      end
+    end
+  end
+end

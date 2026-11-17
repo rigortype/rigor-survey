@@ -1,0 +1,9 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class HeaderBuilder
+        def initialize: (untyped) -> void
+      end
+    end
+  end
+end

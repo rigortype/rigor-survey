@@ -1,0 +1,11 @@
+module Admin
+  module Metrics
+    class Measure
+      class InstanceFollowersMeasure < ::Admin::Metrics::Measure::BaseMeasure
+        def self.with_params?: () -> true
+        def key: () -> "instance_followers"
+        def total_in_time_range?: () -> false
+      end
+    end
+  end
+end

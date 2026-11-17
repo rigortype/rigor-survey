@@ -1,0 +1,7 @@
+module Ci
+  module Metadatable
+    def interruptible=: (untyped) -> bot
+    def id_tokens=: (untyped) -> bot
+    def secrets=: (untyped) -> bot
+  end
+end

@@ -1,0 +1,10 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class ColumnConditionBuilder
+        def initialize: (untyped, untyped) -> void
+        def where_conditions: (untyped) -> Array[untyped]
+      end
+    end
+  end
+end

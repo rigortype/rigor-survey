@@ -1,0 +1,23 @@
+module Gem
+  class SourceIndex
+    def self.from_installed_gems: (*untyped) -> Gem::SourceIndex
+    def self.installed_spec_directories: () -> Array[String]
+    def self.from_gems_in: (*untyped) -> Gem::SourceIndex
+    def self.load_specification: (untyped) -> (Gem::Specification | nil)
+    def initialize: (?untyped) -> void
+    def all_gems: () -> Hash[untyped, untyped]
+    def prerelease_gems: () -> Hash[untyped, untyped]
+    def released_gems: () -> Hash[untyped, untyped]
+    def load_gems_in: (*untyped) -> Gem::SourceIndex
+    def latest_specs: (?untyped) -> Array[untyped]
+    def each: () ?{ (*untyped) -> untyped } -> Hash[untyped, untyped]
+    def index_signature: () -> String
+    def gem_signature: (untyped) -> String
+    def size: () -> Integer
+    def refresh!: () -> Gem::SourceIndex
+    def outdated: () -> Array[untyped]
+    def ==: (untyped) -> (false | true)
+    def dump: () -> String
+    def gems: () -> Hash[untyped, untyped]
+  end
+end

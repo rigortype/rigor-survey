@@ -1,0 +1,8 @@
+module Gitlab
+  module Fp
+    class Message
+      def initialize: (?untyped) -> void
+      def to_s: () -> String
+    end
+  end
+end

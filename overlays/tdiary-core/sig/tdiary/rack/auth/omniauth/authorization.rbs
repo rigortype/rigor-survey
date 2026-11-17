@@ -1,0 +1,15 @@
+module TDiary
+  module Rack
+    class Auth
+      class OmniAuth
+        class Authorization
+          def initialize: (untyped, untyped) ?{ (*untyped) -> untyped } -> void
+          def login: (untyped) -> [302, Hash[String, "text/plain" | String], []]
+          def logout: (untyped) -> nil
+          def forbidden: () -> [403, Hash[String, "text/plain"], ["forbidden"]]
+          def callback: (untyped) -> [302, Hash[String, untyped], []]
+        end
+      end
+    end
+  end
+end

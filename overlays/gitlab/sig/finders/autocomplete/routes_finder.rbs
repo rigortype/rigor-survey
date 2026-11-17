@@ -1,0 +1,5 @@
+module Autocomplete
+  class RoutesFinder
+    def initialize: (untyped, ?untyped) -> void
+  end
+end

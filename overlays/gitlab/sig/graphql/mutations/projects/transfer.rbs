@@ -1,0 +1,7 @@
+module Mutations
+  module Projects
+    class Transfer < ::Mutations::BaseMutation
+      def resolve: (id: untyped, namespace_id: untyped) -> ({ project: untyped, errors: ["Target namespace must be a group or user namespace, not a project namespace."] } | { project: untyped, errors: [untyped] } | { project: untyped, errors: [] })
+    end
+  end
+end

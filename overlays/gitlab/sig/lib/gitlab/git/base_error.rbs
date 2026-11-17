@@ -1,0 +1,9 @@
+module Gitlab
+  module Git
+    class BaseError < ::StandardError
+      def initialize: (?untyped) -> void
+      def set_grpc_error_code: (untyped) -> "git"
+      def service: () -> "git"
+    end
+  end
+end

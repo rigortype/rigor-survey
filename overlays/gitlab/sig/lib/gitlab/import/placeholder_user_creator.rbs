@@ -1,0 +1,8 @@
+module Gitlab
+  module Import
+    class PlaceholderUserCreator
+      def initialize: (untyped) -> void
+      def placeholder_name: () -> String
+    end
+  end
+end

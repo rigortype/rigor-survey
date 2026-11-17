@@ -1,0 +1,7 @@
+module Dependabot
+  module GitSubmodules
+    class FileUpdater < ::Dependabot::FileUpdaters::Base
+      def updated_dependency_files: () -> [Dependabot::DependencyFile]
+    end
+  end
+end

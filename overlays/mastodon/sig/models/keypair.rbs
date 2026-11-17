@@ -1,0 +1,5 @@
+class Keypair < ::ApplicationRecord
+  def usable?: () -> (false | true)
+  def self.from_keyid: (untyped) -> (Keypair | nil)
+  def self.from_legacy_account: (untyped, ?uri: untyped) -> Keypair
+end

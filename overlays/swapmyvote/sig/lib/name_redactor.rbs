@@ -1,0 +1,3 @@
+class NameRedactor
+  def redact: (untyped) -> (String | nil)
+end

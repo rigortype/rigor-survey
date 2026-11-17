@@ -1,0 +1,10 @@
+module Integrations
+  module ChatMessage
+    class AlertMessage < ::Integrations::ChatMessage::BaseMessage
+      def initialize: (untyped) -> void
+      def attachments: () -> [{ title: untyped, title_link: untyped, color: "#C95823", fields: [{ title: "Severity", value: untyped, short: true }, { title: "Events", value: untyped, short: true }, { title: "Status", value: untyped, short: true }, { title: "Start time", value: untyped, short: true }] }]
+      def message: () -> String
+      def attachment_color: () -> "#C95823"
+    end
+  end
+end

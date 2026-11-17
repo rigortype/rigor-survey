@@ -1,0 +1,3 @@
+class FeaturedTag < ::ApplicationRecord
+  def sign?: () -> true
+end

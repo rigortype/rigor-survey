@@ -1,0 +1,10 @@
+module Sidebars
+  module Concerns
+    module ContainerWithHtmlOptions
+      def container_html_options: () -> { aria: { label: bot } }
+      def extra_container_html_options: () -> {}
+      def title: () -> bot
+      def link: () -> bot
+    end
+  end
+end

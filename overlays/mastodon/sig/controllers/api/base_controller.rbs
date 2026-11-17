@@ -1,0 +1,6 @@
+module Api
+  class BaseController < ::ApplicationController
+    def doorkeeper_unauthorized_render_options: (?error: untyped) -> { json: { error: untyped } }
+    def doorkeeper_forbidden_render_options: (*untyped) -> { json: { error: "This action is outside the authorized scopes" } }
+  end
+end

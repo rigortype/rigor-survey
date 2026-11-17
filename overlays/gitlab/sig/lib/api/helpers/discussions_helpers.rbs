@@ -1,0 +1,7 @@
+module API
+  module Helpers
+    module DiscussionsHelpers
+      def self.feature_category_per_noteable_type: () -> Hash[singleton(Commit) | singleton(Issue) | singleton(MergeRequest) | singleton(Snippet), :code_review_workflow | :source_code_management | :team_planning]
+    end
+  end
+end

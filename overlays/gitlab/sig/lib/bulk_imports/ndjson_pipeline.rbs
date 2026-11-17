@@ -1,0 +1,6 @@
+module BulkImports
+  module NdjsonPipeline
+    def transform: (untyped, untyped) -> ([untyped, Hash[untyped, untyped]] | nil)
+    def members_mapper: () -> Import::BulkImports::SourceUsersMapper
+  end
+end

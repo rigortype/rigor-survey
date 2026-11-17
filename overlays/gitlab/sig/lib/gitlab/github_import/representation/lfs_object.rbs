@@ -1,0 +1,12 @@
+module Gitlab
+  module GithubImport
+    module Representation
+      class LfsObject
+        def self.from_api_response: (untyped, ?untyped) -> Gitlab::GithubImport::Representation::LfsObject
+        def self.from_json_hash: (untyped) -> Gitlab::GithubImport::Representation::LfsObject
+        def initialize: (untyped) -> void
+        def github_identifiers: () -> { oid: untyped, size: untyped }
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Ci
+  class ResourceGroup < ::Ci::ApplicationRecord
+    def stale_processables: () -> ActiveRecord::Relation[Ci::Processable]
+    def current_processable: () -> (Ci::Processable | nil)
+  end
+end

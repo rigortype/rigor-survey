@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Tasks
+    class SQLiteDatabaseTasks < ::ActiveRecord::Tasks::AbstractTasks
+      def initialize: (untyped, ?untyped) -> void
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module ActionMailer
+  class MessageDelivery < ::Delegator
+    def initialize: (untyped, untyped, *untyped, **untyped) -> void
+  end
+end

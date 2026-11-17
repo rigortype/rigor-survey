@@ -1,0 +1,13 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class ReleasesImporter
+        def github_users: () -> Array[untyped]
+        def build_releases: () -> [Array[untyped], Array[untyped]]
+        def build_attributes: (untyped) -> { name: untyped, tag: untyped, author_id: untyped, description: untyped, created_at: untyped, updated_at: untyped, released_at: untyped, project_id: untyped }
+        def map_github_user_info: (untyped) -> { id: untyped, login: untyped }
+        def object_type: () -> :release
+      end
+    end
+  end
+end

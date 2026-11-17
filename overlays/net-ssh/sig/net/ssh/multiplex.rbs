@@ -1,0 +1,9 @@
+module Net
+  module SSH
+    module Multiplex
+      def self.validate_options!: (untyped) -> nil
+      def self.connect: (untyped, untyped, untyped, untyped, ?explicit: untyped) -> (Net::SSH::Connection::Session | nil)
+      def self.open_proxy: (untyped, untyped) -> (Socket | nil)
+    end
+  end
+end

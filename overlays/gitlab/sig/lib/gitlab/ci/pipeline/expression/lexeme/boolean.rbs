@@ -1,0 +1,13 @@
+module Gitlab
+  module Ci
+    module Pipeline
+      module Expression
+        module Lexeme
+          class Boolean < ::Gitlab::Ci::Pipeline::Expression::Lexeme::Value
+            def self.build: (untyped) -> Gitlab::Ci::Pipeline::Expression::Lexeme::Boolean
+          end
+        end
+      end
+    end
+  end
+end

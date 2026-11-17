@@ -1,0 +1,14 @@
+module PyCall
+  module LibPython
+    module Finder
+      def self.find_python_config: (?untyped) -> [untyped, Hash[untyped, untyped]]
+      def self.candidate_names: (untyped) -> Array[untyped]
+      def self.candidate_paths: (untyped) -> Array[untyped]
+      def self.normalize_path: (untyped, untyped, ?untyped) -> (String | nil)
+      def self.investigate_python_config: (untyped) -> Hash[untyped, untyped]
+      def self.python_investigator_py: () -> String
+      def self.apple?: () -> (false | true)
+      def self.debug?: () -> (false | true)
+    end
+  end
+end

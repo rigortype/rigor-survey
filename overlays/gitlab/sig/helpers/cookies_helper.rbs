@@ -1,0 +1,3 @@
+module CookiesHelper
+  def set_secure_cookie: (untyped, untyped, ?httponly: untyped, ?expires: untyped, ?type: untyped) -> { value: untyped, secure: untyped, httponly: untyped, expires: untyped }
+end

@@ -1,0 +1,8 @@
+module Gitlab
+  module GitalyClient
+    class HealthCheckService
+      def initialize: (untyped) -> void
+      def check: () -> ({ success: untyped } | { success: false, message: String })
+    end
+  end
+end

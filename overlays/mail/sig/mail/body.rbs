@@ -1,0 +1,10 @@
+module Mail
+  class Body
+    def initialize: (?untyped) -> void
+    def init_with: (untyped) -> Mail::PartsList
+    def multipart?: () -> (nil | true)
+    def split!: (String | nil) -> Mail::Body
+    def empty?: () -> (false | true)
+    def default_encoding: () -> ("7bit" | "8bit")
+  end
+end

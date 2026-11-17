@@ -1,0 +1,11 @@
+module ActionDispatch
+  module Http
+    module URL
+      def self.named_host?: (untyped) -> (false | true)
+      def protocol: () -> ("http://" | "https://")
+      def host_with_port: () -> String
+      def standard_port: () -> (443 | 80)
+      def port_string: () -> ("" | String)
+    end
+  end
+end

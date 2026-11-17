@@ -1,0 +1,8 @@
+module Gitlab
+  module TopologyServiceClient
+    class Metrics
+      def initialize: (cell_id: untyped, topology_service_address: untyped) -> void
+      def build_labels: (service: String, method: String, status_code: Integer) -> { rpc_service: untyped, rpc_method: untyped, rpc_status: untyped, rpc_system: "grpc", cell_id: untyped, topology_service_address: untyped }
+    end
+  end
+end

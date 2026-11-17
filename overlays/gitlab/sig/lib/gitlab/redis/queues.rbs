@@ -1,0 +1,9 @@
+module Gitlab
+  module Redis
+    class Queues < ::Gitlab::Redis::Wrapper
+      def self.shard_name: () -> "main"
+      def self.sidekiq_redis: () -> ConnectionPool[Sidekiq::RedisClientAdapter]
+      def self.create_shard_class: (untyped, untyped) -> singleton(Gitlab::Redis::Wrapper)
+    end
+  end
+end

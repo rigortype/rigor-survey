@@ -1,0 +1,7 @@
+module MergeRequests
+  module WorkItemRelations
+    class BaseService
+      def initialize: (merge_request: untyped, current_user: untyped) -> void
+    end
+  end
+end

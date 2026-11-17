@@ -1,0 +1,16 @@
+module Gitlab
+  module GithubImport
+    module Importer
+      class PullRequestsImporter
+        def importer_class: () -> singleton(Gitlab::GithubImport::Importer::PullRequestImporter)
+        def representation_class: () -> singleton(Gitlab::GithubImport::Representation::PullRequest)
+        def sidekiq_worker_class: () -> singleton(Gitlab::GithubImport::ImportPullRequestWorker)
+        def object_type: () -> :pull_request
+        def update_repository?: (untyped) -> (false | true)
+        def collection_method: () -> :pull_requests
+        def collection_options: () -> { state: "all", sort: "created", direction: "asc" }
+        def parallel_import_batch: () -> { size: untyped, delay: ActiveSupport::Duration }
+      end
+    end
+  end
+end

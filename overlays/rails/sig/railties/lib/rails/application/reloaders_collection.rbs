@@ -1,0 +1,8 @@
+module Rails
+  class Application < ::Rails::Engine
+    class ReloadersCollection
+      def <<: (untyped) -> Rails::Application::ReloadersCollection
+      def size: () -> Integer
+    end
+  end
+end

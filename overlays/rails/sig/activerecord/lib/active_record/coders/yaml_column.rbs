@@ -1,0 +1,11 @@
+module ActiveRecord
+  module Coders
+    class YAMLColumn < ::ActiveRecord::Coders::ColumnSerializer
+      def initialize: (untyped, ?untyped, ?permitted_classes: untyped, ?unsafe_load: untyped) -> void
+      def coder: () -> ActiveRecord::Coders::YAMLColumn::SafeCoder
+      class SafeCoder
+        def initialize: (?permitted_classes: untyped, ?unsafe_load: untyped) -> void
+      end
+    end
+  end
+end

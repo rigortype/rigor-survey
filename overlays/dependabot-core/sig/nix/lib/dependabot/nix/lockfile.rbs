@@ -1,0 +1,13 @@
+module Dependabot
+  module Nix
+    class Lockfile
+      def initialize: (untyped) -> void
+      def version: () -> (Integer | nil)
+      def input_path: (untyped) -> (Array[String] | [untyped] | nil)
+      def input_node: (untyped) -> (Hash[untyped, untyped] | nil)
+      def original_source: (untyped) -> (Hash[untyped, untyped] | nil)
+      def locked_source: (untyped) -> (Hash[untyped, untyped] | nil)
+      def locked_revision: (untyped) -> (String | nil)
+    end
+  end
+end

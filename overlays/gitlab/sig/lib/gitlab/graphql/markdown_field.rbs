@@ -1,0 +1,7 @@
+module Gitlab
+  module Graphql
+    module MarkdownField
+      def self.markdown_field: (untyped, **untyped) -> Symbol
+    end
+  end
+end

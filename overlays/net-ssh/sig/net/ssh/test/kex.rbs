@@ -1,0 +1,10 @@
+module Net
+  module SSH
+    module Test
+      class Kex
+        def initialize: (untyped, untyped, untyped) -> void
+        def exchange_keys: () -> { session_id: "abc-xyz", server_key: OpenSSL::PKey::RSA, shared_secret: OpenSSL::BN, hashing_algorithm: untyped }
+      end
+    end
+  end
+end

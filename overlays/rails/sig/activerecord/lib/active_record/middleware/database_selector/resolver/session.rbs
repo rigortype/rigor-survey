@@ -1,0 +1,12 @@
+module ActiveRecord
+  module Middleware
+    class DatabaseSelector
+      class Resolver
+        class Session
+          def self.call: (untyped) -> ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+          def initialize: (untyped) -> void
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,11 @@
+module Sidebars
+  module Explore
+    module Menus
+      class TopicsMenu < ::Sidebars::Menu
+        def sprite_icon: () -> "labels"
+        def render?: () -> true
+        def active_routes: () -> { page: untyped, path: "projects#topic" }
+      end
+    end
+  end
+end

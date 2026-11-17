@@ -1,0 +1,5 @@
+module Issuable
+  class ProcessAssignees
+    def initialize: (assignee_ids: ([String, String, String] | nil), add_assignee_ids: ([Integer, Integer, Integer] | [String, String, String] | nil), remove_assignee_ids: ([String, String, String] | nil), ?existing_assignee_ids: ([Integer, Integer, Integer] | [String, String, String]), ?extra_assignee_ids: [String, String, String]) -> void
+  end
+end

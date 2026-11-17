@@ -1,0 +1,5 @@
+class InvitePolicy < ::Policy
+  def index?: () -> true
+  def show?: () -> true
+  def accept?: () -> true
+end

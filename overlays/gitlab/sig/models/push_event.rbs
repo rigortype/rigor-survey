@@ -1,0 +1,5 @@
+class PushEvent < ::Event
+  def push_action?: () -> true
+  def push_with_commits?: () -> (false | true)
+  def md_ref?: () -> (false | true)
+end

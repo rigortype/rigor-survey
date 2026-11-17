@@ -1,0 +1,15 @@
+module Mail
+  module Parsers
+    class PhraseListsParser
+      def self.parse: (untyped) -> Mail::Parsers::PhraseListsParser::PhraseListsStruct
+      class PhraseListsStruct < ::Struct[untyped]
+        def phrases: () -> untyped
+        def error: () -> untyped
+        def phrases=: (untyped) -> untyped
+        def error=: (untyped) -> untyped
+        def self.new: (?phrases: untyped, ?error: untyped) -> instance | (?untyped phrases, ?untyped error) -> instance
+        def self.[]: (?phrases: untyped, ?error: untyped) -> instance | (?untyped phrases, ?untyped error) -> instance
+      end
+    end
+  end
+end

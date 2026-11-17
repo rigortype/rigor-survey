@@ -1,0 +1,3 @@
+class DiffNotePosition < ::ApplicationRecord
+  def position: () -> Gitlab::Diff::Position
+end

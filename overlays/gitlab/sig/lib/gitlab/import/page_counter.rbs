@@ -1,0 +1,9 @@
+module Gitlab
+  module Import
+    class PageCounter
+      def initialize: (untyped, Symbol, ?String) -> void
+      def set: (untyped) -> (false | true)
+      def cache_key: () -> String
+    end
+  end
+end

@@ -1,0 +1,17 @@
+module Net
+  module SSH
+    module Transport
+      class Algorithms
+        def self.allowed_packet?: (untyped) -> (false | true)
+        def initialize: (untyped, ?untyped) -> void
+        def start: () -> (false | nil)
+        def rekey!: () -> (false | nil)
+        def accept_kexinit: (untyped) -> (false | nil)
+        def pending?: () -> (false | true)
+        def allow?: (untyped) -> (false | true)
+        def initialized?: () -> (false | true)
+        def algorithms: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

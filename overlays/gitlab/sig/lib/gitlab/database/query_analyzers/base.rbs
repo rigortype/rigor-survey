@@ -1,0 +1,13 @@
+module Gitlab
+  module Database
+    module QueryAnalyzers
+      class Base
+        def self.requires_tracking?: (untyped) -> false
+        def self.end!: () -> nil
+        def self.context_key: () -> Symbol
+        def self.suppress_key: () -> Symbol
+        def self.analyzer_key: () -> Symbol
+      end
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module RbNaCl
+  module Serializable
+    def inspect: () -> String
+  end
+end

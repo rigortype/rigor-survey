@@ -1,0 +1,14 @@
+module Dependabot
+  module Python
+    class FileParser < ::Dependabot::FileParsers::Base
+      class PoetryLock
+        def initialize: (untyped) -> void
+        def self.from_file: (untyped) -> Dependabot::Python::FileParser::PoetryLock
+        class Package < ::T::ImmutableStruct
+          def self.from_object: (untyped) -> Dependabot::Python::FileParser::PoetryLock::Package
+          def to_h: () -> { name: untyped, version: untyped, source_type: untyped }
+        end
+      end
+    end
+  end
+end

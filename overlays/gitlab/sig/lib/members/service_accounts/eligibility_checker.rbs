@@ -1,0 +1,8 @@
+module Members
+  module ServiceAccounts
+    class EligibilityChecker
+      def initialize: (?target_group: untyped, ?target_project: untyped) -> void
+      def eligible?: (untyped) -> (false | true)
+    end
+  end
+end

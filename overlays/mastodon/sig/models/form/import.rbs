@@ -1,0 +1,9 @@
+module Form
+  class Import
+    def guessed_type: () -> (:blocking | :bookmarks | :domain_blocking | :following | :lists | :muting | nil)
+    def guessed_type_json: () -> (:custom_filters | nil)
+    def mode: () -> (:merge | :overwrite)
+    class EmptyFileError < ::StandardError
+    end
+  end
+end

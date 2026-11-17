@@ -1,0 +1,8 @@
+module Gitlab
+  module Ci
+    class Limit
+      def initialize: (untyped, untyped) -> void
+      def message: () -> bot
+    end
+  end
+end

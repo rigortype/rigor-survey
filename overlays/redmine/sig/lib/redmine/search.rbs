@@ -1,0 +1,11 @@
+module Redmine
+  module Search
+    class Fetcher
+      def initialize: (String, untyped, [String], ActiveRecord::Relation[Project], ?untyped) -> void
+      def result_count_by_type: () -> Hash[untyped, untyped]
+    end
+    class Tokenizer
+      def initialize: (String) -> void
+    end
+  end
+end

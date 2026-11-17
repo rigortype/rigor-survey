@@ -1,0 +1,7 @@
+module Gitlab
+  module WebHooks
+    class RateLimiter
+      def initialize: (untyped) -> void
+    end
+  end
+end

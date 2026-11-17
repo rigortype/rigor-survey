@@ -1,0 +1,13 @@
+module Gitlab
+  module Pagination
+    module Keyset
+      class ColumnOrderDefinition
+        def initialize: (attribute_name: untyped, order_expression: untyped, ?column_expression: untyped, ?reversed_order_expression: untyped, ?nullable: untyped, ?order_direction: untyped, ?sql_type: untyped, ?add_to_projections: (false | true)) -> void
+        def reverse: () -> Gitlab::Pagination::Keyset::ColumnOrderDefinition
+        def nullable?: () -> (false | true)
+        def order_direction_as_sql_string: () -> ("ASC" | "DESC" | String)
+        def add_to_projections: () -> true
+      end
+    end
+  end
+end

@@ -1,0 +1,6 @@
+module Projects
+  class ForksCountService < ::Projects::CountService
+    def cache_key_name: () -> "forks_count"
+    def self.query: (untyped) -> ActiveRecord::Relation[ForkNetworkMember]
+  end
+end

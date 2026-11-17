@@ -1,0 +1,16 @@
+module ActionController
+  module HttpAuthentication
+    module Basic
+      def encode_credentials: (untyped, untyped) -> String
+    end
+    module Digest
+      def decode_credentials_header: (untyped) -> ActiveSupport::HashWithIndifferentAccess
+      def decode_credentials: (untyped) -> ActiveSupport::HashWithIndifferentAccess
+      def authentication_header: (untyped, untyped) -> String
+    end
+    module Token
+      def token_and_options: (untyped) -> ([untyped, untyped] | nil)
+      def encode_credentials: (untyped, ?untyped) -> String
+    end
+  end
+end

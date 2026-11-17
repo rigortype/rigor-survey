@@ -1,0 +1,7 @@
+module ActiveRecord
+  module Associations
+    module Deprecation
+      def self.backtrace=: (untyped) -> (false | true)
+    end
+  end
+end

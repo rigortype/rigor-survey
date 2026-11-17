@@ -1,0 +1,10 @@
+module Gitlab
+  module Metrics
+    module Subscribers
+      class LoadBalancing < ::ActiveSupport::Subscriber
+        def web_transaction_completed: (untyped) -> (Array[FalseClass | TrueClass] | nil)
+        def self.load_balancing_payload: () -> Hash[untyped, untyped]
+      end
+    end
+  end
+end

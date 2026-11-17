@@ -1,0 +1,5 @@
+module ActiveModel
+  module Type
+    def self.default_value: () -> ActiveModel::Type::Value
+  end
+end
